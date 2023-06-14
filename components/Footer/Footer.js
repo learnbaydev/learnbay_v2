@@ -13,8 +13,16 @@ import {
   FaApple,
   FaAndroid,
 } from "react-icons/fa";
+import { PuneData } from "./FooterData";
+import { MumbaiData } from "./FooterData";
+import { ChennaiData } from "./FooterData";
+import { CanadaData } from "./FooterData";
+import { BangaloreData } from "./FooterData";
+import { HyderabadData } from "./FooterData";
+import { DubaiData } from "./FooterData";
+import { DelhiData } from "./FooterData";
 
-const Footer = ({ FsdNumber }) => {
+const Footer = ({ FsdNumber, menuItem }) => {
   return (
     <section className={styles.FooterSection}>
       <div className={styles.FooterDiv}>
@@ -92,17 +100,17 @@ const Footer = ({ FsdNumber }) => {
           </a>
           <a href="/software-development-program-with-specialization-in-blockchain">
             <p className={styles.FooterInnerli}>
-            Software Development Program in Blockchain
+              Software Development Program in Blockchain
             </p>
           </a>
           <a href="/full-stack-software-development-program">
             <p className={styles.FooterInnerli}>
-            Software Development Master Program
+              Software Development Master Program
             </p>
           </a>
           <a href="/software-development-program-with-specialization-in-cloud-computing-&-devops">
             <p className={styles.FooterInnerli}>
-            Software Development Program in Cloud and Devops
+              Software Development Program in Cloud and Devops
             </p>
           </a>
           <a href="/artificial-intelligence-certification-course">
@@ -250,269 +258,109 @@ const Footer = ({ FsdNumber }) => {
       >
         <div className={styles.FooterDivInner}>
           <p className={styles.FooterInnerP}>Pune</p>
-          <a href="/data-science-course-training-in-pune">
-            <p className={styles.FooterInnerli}>
-              Data Science Course Training in Pune
-            </p>
-          </a>
-          <a href="/machine-learning-course-training-in-pune">
-            <p className={styles.FooterInnerli}>
-              Machine learning course training in pune
-            </p>
-          </a>
-          <a href="/data-analytics-course-training-in-pune">
-            <p className={styles.FooterInnerli}>
-              data analytics course training in pune
-            </p>
-          </a>
-          <a href="/business-analytics-course-training-in-pune">
-            <p className={styles.FooterInnerli}>
-              business analytics course training in pune
-            </p>
-          </a>
-          <a href="/artificial-intelligence-ai-course-training-pune">
-            <p className={styles.FooterInnerli}>
-              artificial intelligence AI course training pune
-            </p>
-          </a>
-          <a href="/full-stack-software-developer-course-in-pune">
-            <p className={styles.FooterInnerli}>
-              Full stack software developer course in Pune
-            </p>
-          </a>
+          {PuneData.map((data) => {
+            const { id, name, url } = data;
+            return (
+              <>
+                <a href={url}>
+                  <p className={styles.FooterInnerli}>{name}</p>
+                </a>
+              </>
+            );
+          })}
         </div>
         <div className={styles.FooterDivInner}>
           <p className={styles.FooterInnerP}>Mumbai</p>
-          <a href="/data-science-course-training-in-mumbai">
-            <p className={styles.FooterInnerli}>
-              Data Science Course Training in Mumbai
-            </p>
-          </a>
-          <a href="/machine-learning-course-training-in-mumbai">
-            <p className={styles.FooterInnerli}>
-              Machine learning course training in Mumbai
-            </p>
-          </a>
-          <a href="/data-analytics-course-training-in-mumbai">
-            <p className={styles.FooterInnerli}>
-              data analytics course training in Mumbai
-            </p>
-          </a>
-          <a href="/business-analytics-course-training-in-mumbai">
-            <p className={styles.FooterInnerli}>
-              business analytics course training in Mumbai
-            </p>
-          </a>
-          <a href="/artificial-intelligence-ai-course-training-mumbai">
-            <p className={styles.FooterInnerli}>
-              artificial intelligence AI course training Mumbai
-            </p>
-          </a>
-          <a href="/full-stack-software-developer-course-in-mumbai">
-            <p className={styles.FooterInnerli}>
-              Full stack software developer course in mumbai
-            </p>
-          </a>
+          {MumbaiData.map((data) => {
+            const { id, name, url } = data;
+            return (
+              <>
+                <a href={url}>
+                  <p className={styles.FooterInnerli}>{name}</p>
+                </a>
+              </>
+            );
+          })}
         </div>
         <div className={styles.FooterDivInner}>
           <p className={styles.FooterInnerP}>Chennai</p>
-          <a href="/data-science-course-training-in-chennai">
-            <p className={styles.FooterInnerli}>
-              Data Science Course Training in Chennai
-            </p>
-          </a>
-          <a href="/machine-learning-course-training-in-chennai">
-            <p className={styles.FooterInnerli}>
-              Machine learning course training in Chennai
-            </p>
-          </a>
-          <a href="/data-analytics-course-training-in-chennai">
-            <p className={styles.FooterInnerli}>
-              data analytics course training in Chennai
-            </p>
-          </a>
-          <a href="/business-analytics-course-training-in-chennai">
-            <p className={styles.FooterInnerli}>
-              business analytics course training in Chennai
-            </p>
-          </a>
-          <a href="/artificial-intelligence-ai-course-training-chennai">
-            <p className={styles.FooterInnerli}>
-              artificial intelligence AI course training Chennai
-            </p>
-          </a>
-          <a href="/full-stack-software-developer-course-in-chennai">
-            <p className={styles.FooterInnerli}>
-              Full-stack software developer course in Chennai
-            </p>
-          </a>
+          {ChennaiData.map((data) => {
+            const { id, name, url } = data;
+            return (
+              <>
+                <a href={url}>
+                  <p className={styles.FooterInnerli}>{name}</p>
+                </a>
+              </>
+            );
+          })}
         </div>
         <div className={styles.FooterDivInner}>
           <p className={styles.FooterInnerP}>Canada</p>
-          <a href="/data-science-course-training-in-canada">
-            <p className={styles.FooterInnerli}>
-              Data Science Course Training in Canada
-            </p>
-          </a>
-          <a href="/machine-learning-course-training-in-canada">
-            <p className={styles.FooterInnerli}>
-              Machine learning course training in Canada
-            </p>
-          </a>
-          <a href="/data-analytics-course-training-in-canada">
-            <p className={styles.FooterInnerli}>
-              data analytics course training in Canada
-            </p>
-          </a>
-          <a href="/business-analytics-course-training-in-canada">
-            <p className={styles.FooterInnerli}>
-              business analytics course training in Canada
-            </p>
-          </a>
-          <a href="/artificial-intelligence-ai-course-training-canada">
-            <p className={styles.FooterInnerli}>
-              artificial intelligence AI course training Canada
-            </p>
-          </a>
-          <a href="/full-stack-software-developer-course-in-canada">
-            <p className={styles.FooterInnerli}>
-              full-stack software developer course in Canada
-            </p>
-          </a>
+          {CanadaData.map((data) => {
+            const { id, name, url } = data;
+            return (
+              <>
+                <a href={url}>
+                  <p className={styles.FooterInnerli}>{name}</p>
+                </a>
+              </>
+            );
+          })}
         </div>
       </div>
       <div className={styles.FooterDiv}>
         <div className={styles.FooterDivInner}>
           <p className={styles.FooterInnerP}>Bangalore</p>
-          <a href="/data-science-course-training-in-bangalore">
-            <p className={styles.FooterInnerli}>
-              Data Science Course Training in Bangalore
-            </p>
-          </a>
-          <a href="/machine-learning-course-training-in-bangalore">
-            <p className={styles.FooterInnerli}>
-              Machine learning course training in Bangalore
-            </p>
-          </a>
-          <a href="/data-analytics-course-training-in-bangalore">
-            <p className={styles.FooterInnerli}>
-              data analytics course training in Bangalore
-            </p>
-          </a>
-          <a href="/business-analytics-course-training-in-bangalore">
-            <p className={styles.FooterInnerli}>
-              business analytics course training in Bangalore
-            </p>
-          </a>
-          <a href="/artificial-intelligence-ai-course-training-bangalore">
-            <p className={styles.FooterInnerli}>
-              artificial intelligence AI course training Bangalore
-            </p>
-          </a>
-          <a href="/full-stack-software-developer-course-in-bangalore">
-            <p className={styles.FooterInnerli}>
-              Full-stack software developer course in Bangalore
-            </p>
-          </a>
+          {BangaloreData.map((data) => {
+            const { id, name, url } = data;
+            return (
+              <>
+                <a href={url}>
+                  <p className={styles.FooterInnerli}>{name}</p>
+                </a>
+              </>
+            );
+          })}
         </div>
         <div className={styles.FooterDivInner}>
           <p className={styles.FooterInnerP}>Hyderabad</p>
-          <a href="/data-science-course-training-in-hyderabad">
-            <p className={styles.FooterInnerli}>
-              Data Science Course Training in Hyderabad
-            </p>
-          </a>
-          <a href="/machine-learning-course-training-in-hyderabad">
-            <p className={styles.FooterInnerli}>
-              Machine learning course training in Hyderabad
-            </p>
-          </a>
-          <a href="/data-analytics-course-training-in-hyderabad">
-            <p className={styles.FooterInnerli}>
-              data analytics course training in Hyderabad
-            </p>
-          </a>
-          <a href="/business-analytics-course-training-in-hyderabad">
-            <p className={styles.FooterInnerli}>
-              business analytics course training in Hyderabad
-            </p>
-          </a>
-          <a href="/artificial-intelligence-ai-course-training-hyderabad">
-            <p className={styles.FooterInnerli}>
-              artificial intelligence AI course training Hyderabad
-            </p>
-          </a>
-          <a href="/full-stack-software-developer-course-in-hyderabad">
-            <p className={styles.FooterInnerli}>
-              Full-stack software developer course in hyderabad
-            </p>
-          </a>
+          {HyderabadData.map((data) => {
+            const { id, name, url } = data;
+            return (
+              <>
+                <a href={url}>
+                  <p className={styles.FooterInnerli}>{name}</p>
+                </a>
+              </>
+            );
+          })}
         </div>
         <div className={styles.FooterDivInner}>
           <p className={styles.FooterInnerP}>Dubai</p>
-          <a href="/data-science-course-training-in-dubai">
-            <p className={styles.FooterInnerli}>
-              Data Science Course Training in Dubai
-            </p>
-          </a>
-          <a href="/machine-learning-course-training-in-dubai">
-            <p className={styles.FooterInnerli}>
-              Machine learning course training in Dubai
-            </p>
-          </a>
-          <a href="/data-analytics-course-training-in-dubai">
-            <p className={styles.FooterInnerli}>
-              data analytics course training in Dubai
-            </p>
-          </a>
-          <a href="/business-analytics-course-training-in-dubai">
-            <p className={styles.FooterInnerli}>
-              business analytics course training in Dubai
-            </p>
-          </a>
-          <a href="/artificial-intelligence-ai-course-training-dubai">
-            <p className={styles.FooterInnerli}>
-              artificial intelligence AI course training Dubai
-            </p>
-          </a>
-          <a href="/full-stack-software-developer-course-in-dubai">
-            <p className={styles.FooterInnerli}>
-              Full-stack software developer course in Dubai
-            </p>
-          </a>
+          {DubaiData.map((data) => {
+            const { id, name, url } = data;
+            return (
+              <>
+                <a href={url}>
+                  <p className={styles.FooterInnerli}>{name}</p>
+                </a>
+              </>
+            );
+          })}
         </div>
         <div className={styles.FooterDivInner}>
           <p className={styles.FooterInnerP}>Delhi</p>
-          <a href="/data-science-course-training-in-delhi">
-            <p className={styles.FooterInnerli}>
-              Data Science Course Training in Delhi
-            </p>
-          </a>
-          <a href="/machine-learning-course-training-in-delhi">
-            <p className={styles.FooterInnerli}>
-              Machine learning course training in Delhi
-            </p>
-          </a>
-          <a href="/data-analytics-course-training-in-delhi">
-            <p className={styles.FooterInnerli}>
-              data analytics course training in Delhi
-            </p>
-          </a>
-          <a href="/business-analytics-course-training-in-delhi">
-            <p className={styles.FooterInnerli}>
-              business analytics course training in Delhi
-            </p>
-          </a>
-          <a href="/artificial-intelligence-ai-course-training-delhi">
-            <p className={styles.FooterInnerli}>
-              artificial intelligence AI course training Delhi
-            </p>
-          </a>
-          <a href="/full-stack-software-developer-course-in-delhi">
-            <p className={styles.FooterInnerli}>
-              Full-stack software developer course in Delhi
-            </p>
-          </a>
+          {DelhiData.map((data) => {
+            const { id, name, url } = data;
+            return (
+              <>
+                <a href={url}>
+                  <p className={styles.FooterInnerli}>{name}</p>
+                </a>
+              </>
+            );
+          })}
         </div>
       </div>
       <div className={styles.FooterBottom}>
