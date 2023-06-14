@@ -1,0 +1,25 @@
+.button {
+  padding: 12px 30px;
+  outline: none;
+  background-color: #0072bc;
+  color: white;
+  border: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  font-size: 14px;
+  border: 1px solid #0072bc;
+}
+
+.outLineBtn {
+  padding: 15px 20px;
+  border: 1px solid #0072bc;
+  color: #0072bc;
+  background-color: transparent;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  font-size: 14px;
+}
