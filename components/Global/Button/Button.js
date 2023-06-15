@@ -9,8 +9,4 @@ const Button = ({ text, passIcon, outline }) => {
   );
 };
 
-<<<<<<< HEAD
 export default Button;
-=======
-export default Button;
->>>>>>> 78a96a30eae499e12fc88f7020357d8963da8032
