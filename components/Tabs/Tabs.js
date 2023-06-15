@@ -2,14 +2,14 @@ import React, { useState, useEffect } from "react";
 import { IoIosArrowForward, IoIosArrowDown } from "react-icons/io";
 import { TabData } from "./TabData";
 import styles from "./Tabs.module.css";
-import { BsDot } from "react-icons/bs";
+
 
 const Tabs = ({ handleIcon }) => {
-  const [viewAll, setViewAll] = useState(true);
-  const [oneYear, setOneYear] = useState(false);
-  const [nonTech, setNonTech] = useState(false);
-  const [Guarantee, setGuarantee] = useState(false);
-  const [Stack, setStack] = useState(false);
+  // const [viewAll, setViewAll] = useState(true);
+  // const [oneYear, setOneYear] = useState(false);
+  // const [nonTech, setNonTech] = useState(false);
+  // const [Guarantee, setGuarantee] = useState(false);
+  // const [Stack, setStack] = useState(false);
   const [mobile, setMobile] = useState(false);
 
   const [dataLoop, setDataLoop] = useState([
