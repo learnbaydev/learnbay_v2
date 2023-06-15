@@ -34,6 +34,7 @@
     font-size: 14px;
     font-weight: 600;
     line-height: 26px;
+    margin: 14px 0px;
   }
 
   .FooterInnerli {
@@ -64,6 +65,8 @@
     border: 1px solid #fff;
     padding: 5px 15px;
     margin-bottom: 15px;
+    display: flex;
+    align-items: center;
   }
 }
 

@@ -13,16 +13,15 @@ import {
   FaApple,
   FaAndroid,
 } from "react-icons/fa";
-import { PuneData } from "./FooterData";
-import { MumbaiData } from "./FooterData";
-import { ChennaiData } from "./FooterData";
-import { CanadaData } from "./FooterData";
-import { BangaloreData } from "./FooterData";
-import { HyderabadData } from "./FooterData";
-import { DubaiData } from "./FooterData";
-import { DelhiData } from "./FooterData";
+import {
+  puneLocation,
+  OtherLocation,
+  CityFooterData,
+  HeadData,
+  CourseData,
+} from "./FooterData";
 
-const Footer = ({ FsdNumber, menuItem }) => {
+const Footer = ({ adPage }) => {
   return (
     <section className={styles.FooterSection}>
       <div className={styles.FooterDiv}>
@@ -31,9 +30,8 @@ const Footer = ({ FsdNumber, menuItem }) => {
             <Image
               src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/logo-light.png"
               alt="Learnbay"
-              quality={100}
               width="230"
-              height="60"
+              height="50"
             />
           </a>
           <p className={styles.FooterInnerli}>
@@ -67,7 +65,7 @@ const Footer = ({ FsdNumber, menuItem }) => {
               contacts@learnbay.co
             </Link>
           </span>
-          {FsdNumber ? (
+          {adPage ? (
             <>
               <span style={{ display: "flex", marginTop: "10px" }}>
                 <BsFillTelephoneFill className="bIcons" />
@@ -89,84 +87,38 @@ const Footer = ({ FsdNumber, menuItem }) => {
           )}
         </div>
         <div className={styles.FooterDivInner}>
-          <p className={styles.FooterInnerP}>Courses</p>
-          <a href="/data-science-certification-courses">
-            <p className={styles.FooterInnerli}>
-              Data Science Foundation Program
-            </p>
-          </a>
-          <a href="/advance-data-science-certification-courses">
-            <p className={styles.FooterInnerli}>Advanced DS and AI Program</p>
-          </a>
-          <a href="/software-development-program-with-specialization-in-blockchain">
-            <p className={styles.FooterInnerli}>
-              Software Development Program in Blockchain
-            </p>
-          </a>
-          <a href="/full-stack-software-development-program">
-            <p className={styles.FooterInnerli}>
-              Software Development Master Program
-            </p>
-          </a>
-          <a href="/software-development-program-with-specialization-in-cloud-computing-&-devops">
-            <p className={styles.FooterInnerli}>
-              Software Development Program in Cloud and Devops
-            </p>
-          </a>
-          <a href="/artificial-intelligence-certification-course">
-            <p className={styles.FooterInnerli}>
-              Advance AI & ML Program for Tech Professionals
-            </p>
-          </a>
-          <a href="/data-science-ai-for-managers">
-            <p className={styles.FooterInnerli}>
-              Data Science & AI For Managers
-            </p>
-          </a>
-          <a href="/data-science-ai-masters-program">
-            <p className={styles.FooterInnerli}>
-              Data Science & AI Master Program
-            </p>
-          </a>
-          <a href="/business-analytics-certification-course">
-            <p className={styles.FooterInnerli}>Business Analytics Program</p>
-          </a>
-          <a href="/data-analytics-certification-course">
-            <p className={styles.FooterInnerli}>Data Analytics Program</p>
-          </a>
-          <a href="/dsa-system-design">
-            <p className={styles.FooterInnerli}>
-              Data Structures Algorithms And System Design
-            </p>
-          </a>
+          {CourseData.map((Head, index) => {
+            return (
+              <div key={index}>
+                <p className={styles.FooterInnerP}>{Head.Head}</p>
+                {Head.Courses.map((Courses) => {
+                  return (
+                    <a href={Courses.url} key={Courses.name}>
+                      <p className={styles.FooterInnerli}>{Courses.name}</p>
+                    </a>
+                  );
+                })}
+              </div>
+            );
+          })}
         </div>
         <div className={styles.FooterDivInner}>
-          <p className={styles.FooterInnerP}>Learnbay</p>
-          <a href="/about-us">
-            <p className={styles.FooterInnerli}>About Us</p>
-          </a>
-          <a href="/contact-us">
-            <p className={styles.FooterInnerli}>Contact Us</p>
-          </a>
-          <a href="/demo">
-            <p className={styles.FooterInnerli}>Demo</p>
-          </a>
-          <a href="https://blog.learnbay.co/">
-            <p className={styles.FooterInnerli}>Blogs</p>
-          </a>
-          {/* <a href="/career-portal">
-            <p className={styles.FooterInnerli}>Career</p>
-          </a> */}
-          <p className={styles.FooterInnerP}>Terms</p>
-          <a href="/terms-conditions">
-            <p className={styles.FooterInnerli}>Terms and Conditions</p>
-          </a>
-          <a href="/refund-cancellation-policy">
-            <p className={styles.FooterInnerli}>Refund/Cancellation policy</p>
-          </a>
-          <a href="/privacy-policy">
-            <p className={styles.FooterInnerli}>Privacy Policy</p>
-          </a>
+          {HeadData.map((Head, index) => {
+            return (
+              <div key={index}>
+                <p className={styles.FooterInnerP}>{Head.Head}</p>
+                {Head.LearnbayData.map((LearnbayData) => {
+                  return (
+                    <a href={LearnbayData.url} key={LearnbayData.name}>
+                      <p className={styles.FooterInnerli}>
+                        {LearnbayData.name}
+                      </p>
+                    </a>
+                  );
+                })}
+              </div>
+            );
+          })}
         </div>
         <div className={styles.FooterDivInner}>
           <p className={styles.FooterInnerP}>Get Our Apps On</p>
@@ -188,181 +140,76 @@ const Footer = ({ FsdNumber, menuItem }) => {
           </a>
         </div>
       </div>
-      <div
-        className={styles.FooterDiv}
-        style={{
-          borderTop: "1px solid",
-          borderBottom: "1px solid",
-          borderColor: "#ffffff50",
-          alignItems: "end",
-        }}
-      >
-        <div className={styles.FooterDivInner}>
-          <p className={styles.FooterInnerP}>Project Innovation Lab Address </p>
-          <p className={styles.FooterInnerP}>Pune </p>
-          <p className={styles.FooterInnerli}>
-            Sky Loft, Creaticity Mall, Opposite Golf Course, Airport Rd,
-            Shastrinagar, Yerawada, Pune, Maharashtra 411006
-          </p>
-        </div>
-
-        <div className={styles.FooterDivInner}>
-          <p className={styles.FooterInnerP}>Mumbai</p>
-          <p className={styles.FooterInnerli}>
-            Business Centre, 2nd Floor, Apeejay House, Dinshaw Vacha Road,
-            Churchgate, Mumbai, Maharashtra 400020
-          </p>
-        </div>
-        <div className={styles.FooterDivInner}>
-          <p className={styles.FooterInnerP}>Delhi</p>
-          <p className={styles.FooterInnerli}>
-            Business Centre, Arunachal Building, 6th floor, Barakhamba Road, New
-            Delhi 110001
-          </p>
-        </div>
-        <div className={styles.FooterDivInner}>
-          <p className={styles.FooterInnerP}>Kolkata</p>
-          <p className={styles.FooterInnerli}>
-            Ambuja Neotia EcoCentre 15th floor, EM-4,EM-block, Sector 5 Kolkata
-            700091
-          </p>
-        </div>
-        <div className={styles.FooterDivInner}>
-          <p className={styles.FooterInnerP}>Hyderabad</p>
-          <p className={styles.FooterInnerli}>
-            Level 3, NSL Centrum, Road No 1, Lane, opp. Forum Mall, KPHB 5th
-            Phase, Hyderabad, Telangana 500072
-          </p>
-        </div>
-        <div className={styles.FooterDivInner}>
-          <p className={styles.FooterInnerP}>Bangalore</p>
-          <p className={styles.FooterInnerli}>
-            #87, above sangeetha mobiles, 14th main road, opp-white house,
-            sector 4, Hsr Layout, Bangalore 560102
-          </p>
-        </div>
-        <div className={styles.FooterDivInner}>
-          <p className={styles.FooterInnerP}>Chennai</p>
-          <p className={styles.FooterInnerli}>
-            Apeejay Business Centre, Phone Booth, 1st Floor, Apeejay House,
-            39/12 Haddows Road, Nungambakkam, Chennai 600 006
-          </p>
-        </div>
-      </div>
-      <div
-        className={styles.FooterDiv}
-        style={{
-          borderBottom: "1px solid",
-          borderColor: "#ffffff50",
-        }}
-      >
-        <div className={styles.FooterDivInner}>
-          <p className={styles.FooterInnerP}>Pune</p>
-          {PuneData.map((data) => {
-            const { id, name, url } = data;
+      {adPage ? (
+        ""
+      ) : (
+        <>
+          <div
+            className={styles.FooterDiv}
+            style={{
+              borderTop: "1px solid",
+              borderBottom: "1px solid",
+              borderColor: "#ffffff50",
+              alignItems: "end",
+            }}
+          >
+            <div className={styles.FooterDivInner}>
+              <p className={styles.FooterInnerP}>
+                Project Innovation Lab Address{" "}
+              </p>
+              {puneLocation.map((data) => {
+                const { cityName, location, index } = data;
+                return (
+                  <>
+                    <p className={styles.FooterInnerP} key={index}>{cityName}</p>
+                    <p className={styles.FooterInnerli}>{location}</p>
+                  </>
+                );
+              })}
+            </div>
+            {OtherLocation.map((data) => {
+              const { id, cityName, location } = data;
+              return (
+                <div className={styles.FooterDivInner} key={id}>
+                  <p className={styles.FooterInnerP}>{cityName} </p>
+                  <p className={styles.FooterInnerli}>{location}</p>
+                </div>
+              );
+            })}
+          </div>
+          {CityFooterData.map((data, index) => {
             return (
-              <>
-                <a href={url}>
-                  <p className={styles.FooterInnerli}>{name}</p>
-                </a>
-              </>
+              <div
+                className={styles.FooterDiv}
+                key={index}
+                style={{
+                  borderBottom: "1px solid",
+                  borderColor: "#ffffff50",
+                }}
+              >
+                {data.FirstDiv.map((cityData, index) => {
+                  return (
+                    <div className={styles.FooterDivInner} key={index}>
+                      <div>
+                        <p className={styles.FooterInnerP}>{cityData.city}</p>
+                        {cityData.cityData.map((city) => {
+                          return (
+                            <a href={city.url} key={city.name}>
+                              <p className={styles.FooterInnerli}>
+                                {city.name}
+                              </p>
+                            </a>
+                          );
+                        })}
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
             );
           })}
-        </div>
-        <div className={styles.FooterDivInner}>
-          <p className={styles.FooterInnerP}>Mumbai</p>
-          {MumbaiData.map((data) => {
-            const { id, name, url } = data;
-            return (
-              <>
-                <a href={url}>
-                  <p className={styles.FooterInnerli}>{name}</p>
-                </a>
-              </>
-            );
-          })}
-        </div>
-        <div className={styles.FooterDivInner}>
-          <p className={styles.FooterInnerP}>Chennai</p>
-          {ChennaiData.map((data) => {
-            const { id, name, url } = data;
-            return (
-              <>
-                <a href={url}>
-                  <p className={styles.FooterInnerli}>{name}</p>
-                </a>
-              </>
-            );
-          })}
-        </div>
-        <div className={styles.FooterDivInner}>
-          <p className={styles.FooterInnerP}>Canada</p>
-          {CanadaData.map((data) => {
-            const { id, name, url } = data;
-            return (
-              <>
-                <a href={url}>
-                  <p className={styles.FooterInnerli}>{name}</p>
-                </a>
-              </>
-            );
-          })}
-        </div>
-      </div>
-      <div className={styles.FooterDiv}>
-        <div className={styles.FooterDivInner}>
-          <p className={styles.FooterInnerP}>Bangalore</p>
-          {BangaloreData.map((data) => {
-            const { id, name, url } = data;
-            return (
-              <>
-                <a href={url}>
-                  <p className={styles.FooterInnerli}>{name}</p>
-                </a>
-              </>
-            );
-          })}
-        </div>
-        <div className={styles.FooterDivInner}>
-          <p className={styles.FooterInnerP}>Hyderabad</p>
-          {HyderabadData.map((data) => {
-            const { id, name, url } = data;
-            return (
-              <>
-                <a href={url}>
-                  <p className={styles.FooterInnerli}>{name}</p>
-                </a>
-              </>
-            );
-          })}
-        </div>
-        <div className={styles.FooterDivInner}>
-          <p className={styles.FooterInnerP}>Dubai</p>
-          {DubaiData.map((data) => {
-            const { id, name, url } = data;
-            return (
-              <>
-                <a href={url}>
-                  <p className={styles.FooterInnerli}>{name}</p>
-                </a>
-              </>
-            );
-          })}
-        </div>
-        <div className={styles.FooterDivInner}>
-          <p className={styles.FooterInnerP}>Delhi</p>
-          {DelhiData.map((data) => {
-            const { id, name, url } = data;
-            return (
-              <>
-                <a href={url}>
-                  <p className={styles.FooterInnerli}>{name}</p>
-                </a>
-              </>
-            );
-          })}
-        </div>
-      </div>
+        </>
+      )}
       <div className={styles.FooterBottom}>
         <div className={styles.FooterBottomInner}>
           <p className={styles.FooterInnerB}>
@@ -375,4 +222,4 @@ const Footer = ({ FsdNumber, menuItem }) => {
   );
 };
 
-export default React.memo(Footer);
+export default Footer;
