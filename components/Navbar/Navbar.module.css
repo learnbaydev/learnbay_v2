@@ -152,8 +152,11 @@
     width: 100%;
     gap: 0;
   }
-
+  .megaMenu {
+    position: absolute;
+  }
   .ham {
+    display: flex;
     font-size: 28px;
     margin-right: 10px;
     margin-left: 5px;
@@ -243,6 +246,7 @@
 @media (max-width: 801px) {
   .left {
     width: 100vw;
+    justify-content: space-between;
   }
   .nav {
     width: 100vw;

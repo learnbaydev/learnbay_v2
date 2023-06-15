@@ -136,6 +136,7 @@ const Navbar = ({
                   setIcon(!icon);
                   setShow(false);
                 }}
+                className="flexBox"
               >
                 <Button
                   text="Course"

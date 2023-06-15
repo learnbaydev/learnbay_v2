@@ -12,7 +12,11 @@
   font-size: 14px;
   border: 1px solid #0072bc;
 }
-
+.button:hover {
+  border: 1px solid #0072bc;
+  background-color: white;
+  color: #0072bc;
+}
 .outLineBtn {
   padding: 15px 20px;
   border: 1px solid #0072bc;
@@ -20,8 +24,12 @@
   background-color: transparent;
   cursor: pointer;
   display: flex;
-    gap: 5px;
+  gap: 5px;
   align-items: center;
   border-radius: 4px;
   font-size: 14px;
+}
+.outLineBtn:hover {
+  background-color: #0072bc;
+  color: white;
 }
