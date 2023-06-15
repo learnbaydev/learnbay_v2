@@ -3,15 +3,6 @@ import styles from "./Form.module.css";
 import "react-phone-number-input/style.css";
 import PhoneInput from "react-phone-number-input";
 import { useRouter } from "next/router";
-<<<<<<< HEAD
-import DatePicker from "react-datepicker";
-import setHours from "date-fns/setHours";
-import setMinutes from "date-fns/setMinutes";
-import addDays from "date-fns/addDays";
-import subDays from "date-fns/subDays";
-import getDay from "date-fns/getDay";
-=======
->>>>>>> 78a96a30eae499e12fc88f7020357d8963da8032
 
 const Form = ({
   popup,
@@ -170,19 +161,6 @@ router.pathname === "/learning-learnbay-select")
       setValue("");
     }
   };
-<<<<<<< HEAD
-  const isWeekday = (date) => {
-    const day = getDay(date);
-    return day !== 0;
-  };
-  const filterPassedTime = (time) => {
-    const currentDate = new Date();
-    const selectedDate = new Date(time);
-
-    return currentDate.getTime() < selectedDate.getTime();
-  };
-=======
->>>>>>> 78a96a30eae499e12fc88f7020357d8963da8032
 
   return (
     <div className={styles.App}>
