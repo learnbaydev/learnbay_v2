@@ -157,13 +157,13 @@ const Footer = ({ adPage }) => {
               <p className={styles.FooterInnerP}>
                 Project Innovation Lab Address{" "}
               </p>
-              {puneLocation.map((data) => {
-                const { cityName, location, index } = data;
+              {puneLocation.map((data, index) => {
+                const { cityName, location } = data;
                 return (
-                  <>
-                    <p className={styles.FooterInnerP} key={index}>{cityName}</p>
+                  <div key={index}>
+                    <p className={styles.FooterInnerP}>{cityName}</p>
                     <p className={styles.FooterInnerli}>{location}</p>
-                  </>
+                  </div>
                 );
               })}
             </div>
