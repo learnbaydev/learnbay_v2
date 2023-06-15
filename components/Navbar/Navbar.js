@@ -69,8 +69,10 @@ const Navbar = ({
         </div>
       </Popup>
 
-      <nav className={styles.nav}>
-        <div className={styles.left}>
+      <nav
+        className={`${styles.nav} flexBox flexJustSpaceBetween flexAlignCenter`}
+      >
+        <div className={`${styles.left} flexBox flexAlignCenter `}>
           {adPage ? (
             ""
           ) : (
@@ -153,7 +155,9 @@ const Navbar = ({
             ""
           )}
         </div>
-        <div className={styles.right}>
+        <div
+          className={`${styles.right} flexBox flexAlignCenter flexJustSpaceBetween`}
+        >
           {menuItem.map((data) => {
             const { id, name, url } = data;
             return (

@@ -111,4 +111,34 @@ a {
   height: auto;
 }
 .bgWrap {
+  position: absolute;
+  height: 100%;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+  width: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+.flexBox {
+  display: flex;
+}
+.flexBoxColumn {
+  flex-flow: column;
+}
+.flexBoxRow {
+  flex-flow: row;
+}
+
+.flexJustSpaceBetween {
+  justify-content: space-between;
+}
+.flexJustSpaceCenter {
+  justify-content: center;
+}
+.flexAlignCenter {
+  align-items: center;
+}
+.flexAlignStart {
+  align-items: start;
 }
