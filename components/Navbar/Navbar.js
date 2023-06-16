@@ -108,7 +108,7 @@ const Navbar = ({
               alt="Learnbay"
               quality={100}
               style={{ objectFit: "contain" }}
-              width={mobile ? "180" : "230"}
+              width={mobile ? "135" : "230"}
               height={60}
             />
           ) : (
@@ -118,7 +118,7 @@ const Navbar = ({
                 alt="Learnbay"
                 quality={100}
                 style={{ objectFit: "contain" }}
-                width={mobile ? "180" : "230"}
+                width={mobile ? "135" : "230"}
                 height={60}
               />
             </Link>
@@ -150,7 +150,7 @@ const Navbar = ({
             <div
               className={styles.megaMenu}
               onMouseOver={() => setIcon(true)}
-              onMouseLeave={() => setIcon(false)}
+              // onMouseLeave={() => setIcon(false)}
             >
               <Tabs handleIcon={handleIcon} />
             </div>

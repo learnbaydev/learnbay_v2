@@ -106,6 +106,9 @@
   color: #ff9562;
   border: 1px solid #ff9562;
 }
+.megaMenu{
+  position: absolute;
+}
 @media (max-width: 1281px) {
   .nav {
     padding: 0 20px;
@@ -116,6 +119,7 @@
     cursor: pointer;
     font-weight: 400;
   }
+
 }
 @media (max-width: 1070px) {
   .right span {
@@ -245,7 +249,7 @@
 
 @media (max-width: 801px) {
   .left {
-    width: 100vw;
+    width: 97%;
     justify-content: space-between;
   }
   .nav {

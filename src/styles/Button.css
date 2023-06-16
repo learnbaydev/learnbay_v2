@@ -35,3 +35,9 @@
   background-color: #0072bc;
   color: white;
 }
+@media (max-width:1281px) {
+  .button,.outLineBtn{
+     padding: 10px 20px;
+  }
+  
+}

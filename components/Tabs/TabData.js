@@ -92,7 +92,7 @@ export const TabData = [
       },
       {
         CName: "Marketing Analytics Program",
-        hours: " 200+ Hours | 5 & 7 Months{",
+        hours: " 200+ Hours | 5 & 7 Months",
         url: "/marketing-analytics",
       },
     ],

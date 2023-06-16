@@ -84,6 +84,14 @@ const FirstSection = ({
             />
           </div>
         </Popup>
+        <div className="bgWrap">
+          <Image
+            src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/FirstSectionBg.png"
+            fill={true}
+            priority={true}
+            alt="background Image"
+          />
+        </div>
         <div className={styles.FirstLeft}>
           <div className={styles.animationTextWrap}>
             <span ref={el} className={styles.animationText}></span>
@@ -95,7 +103,7 @@ const FirstSection = ({
             Domain Specialized Certification Program{" "}
             <span className={styles.h1Span}>For Working Professionals</span>
           </h1>
-          <div className="imgWrapperMobile">
+          <div className={styles.imgWrapperMobile}>
             <Image
               src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Home-Page-Header.png"
               width="580"
@@ -144,7 +152,7 @@ const FirstSection = ({
         </div>
 
         <div className={styles.secondLeft}>
-          <div className="imgWrapperDesktop">
+          <div className={styles.imgWrapperDesktop}>
             <Image
               src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Home-Page-Header.png"
               width="580"

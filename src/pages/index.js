@@ -7,6 +7,9 @@ const FirstSection = dynamic(() =>
   import("../../components/HomePage/FirstSection/FirstSection")
 );
 const Footer = dynamic(() => import("../../components/Footer/Footer"));
+const HomeLine = dynamic(() =>
+  import("../../components/HomePage/HomeLine/HomeLine")
+);
 
 export default function Home() {
   return (
@@ -31,6 +34,7 @@ export default function Home() {
 
       <Navbar />
       <FirstSection />
+      <HomeLine />
       <Course />
       <Footer />
     </>

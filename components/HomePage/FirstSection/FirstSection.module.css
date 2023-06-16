@@ -1,12 +1,18 @@
 .First {
-  background: url("https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/FirstSectionBg.png");
-  background-size: contain;
   margin-top: 70px;
   padding: 70px 100px 70px 100px;
   display: grid;
+  position: relative;
   grid-template-columns: 53% 43%;
   gap: 50px;
 
+}
+.imgWrapperMobile{
+  display: none;
+}
+.imgWrapperDesktop img{
+  width: 100%;
+  height: auto;
 }
 .ImageBlock{
   width: 300px;
@@ -32,7 +38,6 @@
 
 .h1 {
   color: #0072bc;
-
   font-weight: 700;
   line-height: 47px;
   margin: 5px 0px 20px 0px;
@@ -115,8 +120,18 @@
 }
 
 @media (max-width: 1281px) {
- .blink {
+.h1{
+  font-size: 30px;
+  line-height: 38px;
+}
+ .blink,.ptop {
   font-size: 18px;
+}
+.First{
+      padding: 40px 80px ;
+}
+.ImageBlock{
+  width: 250px;
 }
 }
 @media (max-width: 1024px) {
@@ -125,11 +140,77 @@
         line-height: 32px;
             margin: 7px 0px 20px 0px;
   }
- .blink {
+ .blink,.ptop {
   font-size: 17px;
 }
 .animationTextWrap{
   font-size: 20px;
+}
+.ImageBlock{
+  width: 200px;
+}
+}
+
+@media (max-width: 961px) {
+  .First{
+     padding: 30px 40px;
+     gap: 30px;
+  }
+  .h1{
+        font-size: 22px;
+  }
+  .animationTextWrap{
+  font-size: 19px;
+}
+  .blink, .ptop {
+  font-size: 15px;
+}
+.ImageBlock{
+  width: 180px;
+}
+
+}
+
+@media (max-width: 801px) {
+  .First{
+    grid-template-columns: 100%;
+
+  }
+  .secondLeft{
+    display: none;
+  }
+  .imgWrapperMobile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  .imgWrapperMobile img{
+    width: 50%;
+    height: auto;
+  }
+  .imgWrapperDesktop{
+    display: none;
+  }
+  .h1{
+        font-size: 31px;
+        text-align: center;
+            line-height: 32px;
+  }
+  .animationTextWrap{
+  font-size: 20px;
+   text-align: center;
+}
+  .blink, .ptop {
+  font-size: 18px;
+   text-align: center;
+}
+.btnWrapper {
+ justify-content: center;
+ align-self: center;
+}
+.ImageBlock{
+margin: auto;
 }
 }
 
@@ -138,6 +219,7 @@
     padding: 30px 20px;
     display: block;
   }
+  
 
   .FirstLeft {
     gap: 0;
@@ -145,16 +227,16 @@
 
   .FirstLeft p {
     margin: 10px 0px 20px 0px;
-    text-align: left;
+    text-align: center;
     font-size: 16px;
     line-height: 26px;
   }
 
   .FirstLeft .ptop {
     color: #767676;
-    font-size: 18px;
+    font-size: 16px;
     margin: 0;
-    text-align: left;
+    text-align: center;
   }
 
   .FirstLeft .ptopC {
@@ -175,7 +257,7 @@
     color: #0072bc;
     margin: 10px 0px 20px 0px;
     font-size: 24px;
-    text-align: left;
+    text-align: center;
     line-height: normal;
   }
 
@@ -217,12 +299,65 @@
   }
   .blink {
     line-height: 30px;
+    text-align: center;
   }
   .line {
     top: 82%;
     left: 80%;
   }
   .btnWrapper {
+    justify-content: center;
+  }
+}
+
+@media(max-width: 481px){
+   .imgWrapperMobile img{
+    width: 100%;
+  }
+  .h1{
+    font-size: 20px;
+  }
+
+   .FirstLeft p {
+    text-align: left;
+  }
+
+  .FirstLeft .ptop {
+    text-align: left;
+  }
+
+  .FirstLeft .ptopC {
+    text-align: left;
+  }
+
+  .FirstLeft .h1Span {
+    text-align: left;
+  }
+
+  .FirstLeft .h1 {
+    text-align: left;
+  }
+
+  .logos {
+    justify-content: left;
+    text-align: left;
+  }
+  .IBMlogo,
+  .IBMlogoPlay {
+    text-align: left;
+  }
+  .blink {
+    line-height: 30px;
+    text-align: left;
+  }
+
+  .btnWrapper {
     justify-content: left;
   }
+  .ImageBlock{
+    margin: 0px;
+  }
+    .animationTextWrap{
+   text-align: left;
+}
 }
