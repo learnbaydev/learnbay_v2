@@ -2,6 +2,7 @@ import Head from "next/head";
 import { FcMoneyTransfer } from "react-icons/fc";
 import Navbar from "../../components/Navbar/Navbar";
 import dynamic from "next/dynamic";
+import Course from "../../components/HomePage/Course/Course";
 const FirstSection = dynamic(() =>
   import("../../components/HomePage/FirstSection/FirstSection")
 );
@@ -30,6 +31,7 @@ export default function Home() {
 
       <Navbar />
       <FirstSection />
+      <Course />
       <Footer />
     </>
   );
