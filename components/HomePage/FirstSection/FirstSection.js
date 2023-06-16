@@ -39,8 +39,7 @@ const FirstSection = ({
         "Are you looking to upskill ?",
         "Gain a competitive edge",
         "Land your dream job",
-      ], // Strings to display
-      // Speed settings, try diffrent values untill you get good results
+      ],
       startDelay: 100,
       typeSpeed: 80,
       backSpeed: 50,
@@ -94,24 +93,25 @@ const FirstSection = ({
             Domain Specialized Certification Program{" "}
             <span className={styles.h1Span}>For Working Professionals</span>
           </h1>
-          <div className={styles.IBMlogoPlay}>
+          <div className={`${styles.imgWrapper} imgWrapperMobile`}>
             <Image
               src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Home-Page-Header.png"
               width="580"
               height="450"
-              layout="intrinsic"
               alt="data science course"
             />
           </div>
           <p className={styles.ptop}>In collaboration with</p>
-          <div className={styles.IBMlogo}>
-            <Image
-              src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/FirstSection.png"
-              width="283"
-              height="51"
-              layout="intrinsic"
-              alt="data science course"
-            />
+          <div className={styles.ImageBlock}>
+            <div className="imgWrapper">
+              <Image
+                src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/FirstSection.png"
+                width="283"
+                height="51"
+                priority={true}
+                alt="data science course"
+              />
+            </div>
           </div>
           <p className={styles.blink}>
             Advance your career by gaining expertise in your field and ace

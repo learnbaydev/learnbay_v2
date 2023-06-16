@@ -31,6 +31,17 @@ a {
   width: 100%;
   height: 100%;
 }
+.imgWrapperMobile{
+  display: none;
+}
+.imgWrapperDesktop{
+  display: flex;
+  width: 100%;
+}
+.imgWrapperDesktop img {
+  width: 100%;
+  height: auto;
+}
 .imgWrapper img {
   width: 100%;
   height: auto;
@@ -99,4 +110,12 @@ a {
   .wrapper {
     padding: 30px 20px;
   }
+}
+@media (max-width: 641px) {
+  .imgWrapperMobile{
+  display: flex;
+}
+.imgWrapperDesktop{
+  display: none;
+}
 }
