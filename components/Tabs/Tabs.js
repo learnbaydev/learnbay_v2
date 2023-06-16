@@ -1,15 +1,9 @@
-import React, { useState, useEffect } from "react";
-import { IoIosArrowForward, IoIosArrowDown } from "react-icons/io";
+import React, { useState } from "react";
+import { IoIosArrowForward } from "react-icons/io";
 import { TabData } from "./TabData";
 import styles from "./Tabs.module.css";
 
 const Tabs = ({ handleIcon }) => {
-  // const [viewAll, setViewAll] = useState(true);
-  // const [oneYear, setOneYear] = useState(false);
-  // const [nonTech, setNonTech] = useState(false);
-  // const [Guarantee, setGuarantee] = useState(false);
-  // const [Stack, setStack] = useState(false);
-  const [mobile, setMobile] = useState(false);
 
   const [dataLoop, setDataLoop] = useState([
     { title: "Popular Courses", value: true },
@@ -20,10 +14,8 @@ const Tabs = ({ handleIcon }) => {
   ]);
 
   const menuChange = (title, index) => {
-    // console.log(i);
 
     if (title === dataLoop[index].title) {
-      // for (let i = 0; i < dataLoop.length; i++) {
       setDataLoop([...dataLoop], (dataLoop[index].value = true));
       for (let i = 0; i < dataLoop.length; i++) {
         if (index === i) {
@@ -34,16 +26,6 @@ const Tabs = ({ handleIcon }) => {
       }
     }
   };
-
-  useEffect(() => {
-    let width = window.innerWidth;
-    if (width < 481) {
-      setMobile(true);
-    }
-    if (width > 481) {
-      setMobile(false);
-    }
-  }, []);
 
   return (
     <div className="wrapper">

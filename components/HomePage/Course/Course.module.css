@@ -70,8 +70,8 @@
 .courses {
   background: #ffffff;
 
-    box-shadow: 0 0 8px rgba(40,85,122,.18);
-    margin-top: 30px;
+  box-shadow: 0 0 8px rgba(40, 85, 122, 0.18);
+  margin-top: 30px;
 }
 .listPanel {
   display: flex;
@@ -83,23 +83,21 @@
 
 .span {
   padding: 20px;
-    width: 100%;
-    font-weight: 600;
-    cursor: pointer;
-    justify-content: start;
- border-bottom: 2px solid #28557a2e;
-  
+  width: 100%;
+  font-weight: 600;
+  cursor: pointer;
+  justify-content: start;
+  border-bottom: 2px solid #28557a2e;
 }
 .ActiveSpan {
   padding: 20px;
-    width: 100%;
-    font-weight: 600;
-    cursor: pointer;
-    justify-content: start;
+  width: 100%;
+  font-weight: 600;
+  cursor: pointer;
+  justify-content: start;
   border-top: 4px solid #2d9cd7;
-    border-right: 2px solid #28557a2e;
+  border-right: 2px solid #28557a2e;
   /* border-bottom: 3px solid #0072bc; */
- 
 }
 
 .gridPanel {
@@ -116,6 +114,8 @@
   transition: transform 0.3s ease-out 0s;
   pointer-events: auto;
 }
+
+.gridPanel 
 .Course h5 {
   font-size: 24px;
   margin: 0;
@@ -162,7 +162,6 @@
   background-color: white;
 }
 .imgWrap {
-  margin-top: -5px;
   border-radius: 8px;
 }
 .courseImg {
@@ -186,12 +185,13 @@
   display: flex;
   flex-flow: column;
   width: max-content;
+  margin-bottom: 20px;
 }
 .hr {
   border: 1px solid #efefef;
   background-color: #0072bc;
   height: 1px;
-  top: 30%;
+  top: 42%;
   position: absolute;
   width: 95%;
 }
@@ -199,7 +199,7 @@
   border: 1px solid #efefef;
   background-color: #0072bc;
   height: 1px;
-  bottom: -4%;
+  bottom: -1%;
   position: absolute;
   width: 95%;
 }
@@ -292,6 +292,12 @@
   gap: 20px;
   justify-content: space-evenly;
   padding: 0px 20px;
+}
+
+.h5font {
+  font-size: 24px;
+    margin: 0;
+    padding: 10px 20px;
 }
 
 @media (max-width: 1025px) {
@@ -397,7 +403,6 @@
     overflow: scroll;
     padding: 0;
     max-height: 650px;
-    height: 590px;
     margin-top: 0px;
   }
   .tagHead {
@@ -459,10 +464,8 @@
   .SliderWrap {
     display: flex;
     flex-flow: column;
-    margin-top: 480px;
     align-items: center;
     justify-content: center;
-    margin-bottom: 100px;
     position: relative;
     background-color: white;
   }
