@@ -43,7 +43,7 @@ const Tabs = ({ handleIcon }) => {
     if (width > 481) {
       setMobile(false);
     }
-  });
+  }, []);
 
   return (
     <div className="wrapper">
@@ -65,39 +65,43 @@ const Tabs = ({ handleIcon }) => {
                   {data.title}
                   <IoIosArrowForward />
                 </span>
-                <div className={styles.middlePanel}>
-                  {TabData.map((data, index) => {
-                    const { courseName } = data;
-                    return dataLoop[index].value ? (
-                      <div className={styles.RowWrap} key={index}>
-                        {courseName.map((data, index) => {
-                          return (
-                            <div className={styles.Row} key={index}>
-                              <a href={data.url}>
-                                <div
-                                  className={styles.Program}
-                                  onClick={() => handleIcon(false)}
-                                >
-                                  <div className={styles.ProLeft}>
-                                    <h5>{data.CName}</h5>
-                                    <span>{data.hours} </span>
+                {/*  For Mobile Tabs are visible onClick below middlePanel is for mobile view */}
+                {dataLoop[index].value ? (
+                  <div className={styles.middlePanel}>
+                    {TabData.map((data, index) => {
+                      const { courseName } = data;
+                      return dataLoop[index].value ? (
+                        <div className={styles.RowWrap} key={index}>
+                          {courseName.map((data, index) => {
+                            return (
+                              <div className={styles.Row} key={index}>
+                                <a href={data.url}>
+                                  <div
+                                    className={styles.Program}
+                                    onClick={() => handleIcon(false)}
+                                  >
+                                    <div className={styles.ProLeft}>
+                                      <h5>{data.CName}</h5>
+                                      <span>{data.hours} </span>
+                                    </div>
                                   </div>
-                                </div>
-                              </a>
-                            </div>
-                          );
-                        })}
-                      </div>
-                    ) : (
-                      ""
-                    );
-                  })}
-                </div>
+                                </a>
+                              </div>
+                            );
+                          })}
+                        </div>
+                      ) : (
+                        ""
+                      );
+                    })}
+                  </div>
+                ) : (
+                  ""
+                )}
               </div>
             );
           })}
         </div>
-
         <div className={styles.middlePanel}>
           {TabData.map((data, index) => {
             const { courseName } = data;

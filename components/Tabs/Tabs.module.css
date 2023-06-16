@@ -124,6 +124,9 @@
   .leftPanel {
     margin-right: 0px;
   }
+  .leftPanel .middlePanel {
+    display: flex;
+  }
   .leftPanel span {
     width: 100%;
   }
