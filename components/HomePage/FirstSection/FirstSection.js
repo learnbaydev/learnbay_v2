@@ -149,7 +149,6 @@ const FirstSection = ({
               src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Home-Page-Header.png"
               width="580"
               height="450"
-              layout="intrinsic"
               alt="data science course"
             />
           </div>
