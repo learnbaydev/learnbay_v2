@@ -5,6 +5,8 @@ import Popup from "../../Popup/Popup";
 import Form from "../../Form/Form";
 import Image from "next/image";
 import Typed from "typed.js";
+import dynamic from "next/dynamic";
+const Button = dynamic(() => import("../../Global/Button/Button"));
 
 const FirstSection = ({
   dataScience,
@@ -93,7 +95,7 @@ const FirstSection = ({
             Domain Specialized Certification Program{" "}
             <span className={styles.h1Span}>For Working Professionals</span>
           </h1>
-          <div className={`${styles.imgWrapper} imgWrapperMobile`}>
+          <div className="imgWrapperMobile">
             <Image
               src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Home-Page-Header.png"
               width="580"
@@ -125,18 +127,24 @@ const FirstSection = ({
           </div> */}
           <div className={styles.btnWrapper}>
             <a href="#course">
-              <button className={styles.outLineBtn}>
-                Courses <FaChevronDown className="bIconS" />
-              </button>
+              <Button
+                className={styles.outLineBtn}
+                outline
+                text="Courses"
+                passIcon={<FaChevronDown className="bIconS" />}
+              />
             </a>
-            <button onClick={popupShow} className={styles.Btn}>
-              Enquire Now <FaBell className="bIconS" />
-            </button>
+            <Button
+              onClick={popupShow}
+              className={styles.Btn}
+              text="Enquire Now"
+              passIcon={<FaBell className="bIconS" />}
+            />
           </div>
         </div>
 
         <div className={styles.secondLeft}>
-          <div className={styles.PlayImg}>
+          <div className="imgWrapperDesktop">
             <Image
               src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Home-Page-Header.png"
               width="580"
