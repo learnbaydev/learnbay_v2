@@ -133,7 +133,7 @@ export const TestimonialFS = [
     name: "Binit Kumar Swalsingh",
     working: "",
     proImg:
-      "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Alumni+Images/Qudsia.png",
+      "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Alumni+Images/binit.png",
     sDesc:
       "Learnbay has helped me a lot to learn data science applications in the e-commerce industry...",
     lDesc:

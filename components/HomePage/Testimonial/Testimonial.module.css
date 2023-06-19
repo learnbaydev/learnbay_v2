@@ -112,6 +112,9 @@
   font-size: 32px;
   font-weight: 700;
 }
+@media (max-width: 1281px) {
+  
+}
 
 @media (max-width: 641px) {
   .h1 {

@@ -6,6 +6,7 @@ import Form from "../../Form/Form";
 import Image from "next/image";
 import Typed from "typed.js";
 import dynamic from "next/dynamic";
+import { Content } from "next/font/google";
 const Button = dynamic(() => import("../../Global/Button/Button"));
 
 const FirstSection = ({
@@ -90,6 +91,7 @@ const FirstSection = ({
             fill={true}
             priority={true}
             alt="background Image"
+            style={{ objectFit: "contain" }}
           />
         </div>
         <div className={styles.FirstLeft}>

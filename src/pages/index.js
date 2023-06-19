@@ -3,6 +3,9 @@ import { FcMoneyTransfer } from "react-icons/fc";
 import Navbar from "../../components/Navbar/Navbar";
 import dynamic from "next/dynamic";
 import Course from "../../components/HomePage/Course/Course";
+const Testimonial = dynamic(() =>
+  import("../../components/HomePage/Testimonial/Testimonial")
+);
 const FirstSection = dynamic(() =>
   import("../../components/HomePage/FirstSection/FirstSection")
 );
@@ -36,6 +39,7 @@ export default function Home() {
       <FirstSection />
       <HomeLine />
       <Course />
+      <Testimonial redirectDS={true} />
       <Footer />
     </>
   );
