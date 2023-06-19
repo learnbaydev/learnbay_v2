@@ -39,6 +39,7 @@
 }
 .right a {
   font-weight: 600;
+  font-size: 16px;
 }
 .right span:hover {
   color: #0072bc;

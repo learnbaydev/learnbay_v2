@@ -18,7 +18,7 @@
   background-color: white;
   color: #0072bc;
 }
-.outLineBtn {
+.outLineBtn, .outLineBtn1 {
   padding: 15px 20px;
   border: 1px solid #0072bc;
   color: #0072bc;
