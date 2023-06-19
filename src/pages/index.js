@@ -6,6 +6,7 @@ import Course from "../../components/HomePage/Course/Course";
 const Testimonial = dynamic(() =>
   import("../../components/HomePage/Testimonial/Testimonial")
 );
+import KeyFeatures from "../../components/HomePage/KeyFeatures/KeyFeatures";
 const FirstSection = dynamic(() =>
   import("../../components/HomePage/FirstSection/FirstSection")
 );
@@ -40,6 +41,14 @@ export default function Home() {
       <HomeLine />
       <Course />
       <Testimonial redirectDS={true} />
+      <KeyFeatures
+        titleCourse="Data Science Placement Report"
+        brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Placement+Report.pdf"
+        popup={true}
+        idss="wSB-phYhG10"
+        dataScience={true}
+        radio={true}
+      />
       <Footer />
     </>
   );
