@@ -1,7 +1,7 @@
 export const TabData = [
   {
-    id: "Data Science and AI",
-    title: "Popular Courses",
+    id: "Popular Courses",
+    title: "Popular Courses", 
     courseName: [
       {
         id: 1,
@@ -98,7 +98,7 @@ export const TabData = [
     ],
   },
   {
-    id: "Full Stack Program",
+    id: "Software Development",
     title: "Software Development",
     courseName: [
       {
@@ -119,7 +119,7 @@ export const TabData = [
     ],
   },
   {
-    id: "Digital Marketing",
+    id: "Master Program",
     title: "Master Program",
     courseName: [
       {
@@ -135,7 +135,7 @@ export const TabData = [
     ],
   },
   {
-    id: "Popular Courses",
+    id: "View All",
     title: "View All",
     courseName: [
       {

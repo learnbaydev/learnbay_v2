@@ -6,6 +6,9 @@ import Course from "../../components/HomePage/Course/Course";
 const Testimonial = dynamic(() =>
   import("../../components/HomePage/Testimonial/Testimonial")
 );
+import Switch from "../../components/HomePage/switch/switch";
+import ContactUs from "../../components/HomePage/ContactUs/ContactUs";
+import SeventhSection from "../../components/Global/Button/SeventhSection/SeventhSection";
 const FirstSection = dynamic(() =>
   import("../../components/HomePage/FirstSection/FirstSection")
 );
@@ -40,6 +43,9 @@ export default function Home() {
       <HomeLine />
       <Course />
       <Testimonial redirectDS={true} />
+      <Switch />
+      <ContactUs />
+      <SeventhSection />
       <Footer />
     </>
   );
