@@ -9,6 +9,7 @@ const Testimonial = dynamic(() =>
 import Switch from "../../components/HomePage/switch/switch";
 import ContactUs from "../../components/HomePage/ContactUs/ContactUs";
 import SeventhSection from "../../components/Global/Button/SeventhSection/SeventhSection";
+import KeyFeatures from "../../components/HomePage/KeyFeatures/KeyFeatures";
 const FirstSection = dynamic(() =>
   import("../../components/HomePage/FirstSection/FirstSection")
 );
@@ -46,6 +47,14 @@ export default function Home() {
       <Switch />
       <ContactUs />
       <SeventhSection />
+      <KeyFeatures
+        titleCourse="Data Science Placement Report"
+        brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Placement+Report.pdf"
+        popup={true}
+        idss="wSB-phYhG10"
+        dataScience={true}
+        radio={true}
+      />
       <Footer />
     </>
   );
