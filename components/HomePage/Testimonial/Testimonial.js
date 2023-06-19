@@ -11,6 +11,7 @@ import dynamic from "next/dynamic";
 const ReviewPopup = dynamic(() => import("../ReviewPopup/ReviewPopup"));
 import { redirect } from "next/dist/server/api-utils";
 import { TestimonialDS, TestimonialFS } from "./TestimonialData";
+import { Pagination, Navigation } from "swiper";
 
 function Testimonial({ redirectDS }) {
   const [mobile, setMobile] = useState(false);
@@ -60,14 +61,23 @@ function Testimonial({ redirectDS }) {
           <div className={styles.Testimonial}>
             <div className={styles.swiperleft}>
               <Swiper
-                slidesPerView={mobile ? 1.1 : 3.1}
-                spaceBetween={mobile ? 10 : 85}
-                scrollbar={{ draggable: true }}
-                autoplay={{
-                  delay: 2500,
+                loop={true}
+                loopFillGroupWithBlank={true}
+                breakpoints={{
+                  1281: { slidesPerView: 3, spaceBetween: 60 },
+                  1024: { slidesPerView: 3, spaceBetween: 55 },
+                  961: { slidesPerView: 2.5, spaceBetween: 20 },
+                  801: { slidesPerView: 2, spaceBetween: 20 },
+                  641: { slidesPerView: 2, spaceBetween: 20 },
+                  100: { slidesPerView: 1.4, spaceBetween: 20 },
                 }}
+                pagination={{
+                  dynamicBullets: true,
+                  clickable: true,
+                }}
+                style={{ width: "100%" }}
                 grabCursor={true}
-                modules={[Scrollbar]}
+                modules={[Pagination, Navigation]}
                 className="mySwiper"
               >
                 {testimonialArray.map((data) => {
@@ -134,8 +144,8 @@ function Testimonial({ redirectDS }) {
                               <Image
                                 src={complogo}
                                 loading="lazy"
-                                width={mobile ? 130 : 140}
-                                height={mobile ? 21 : 23}
+                                width={mobile ? 130 : 110}
+                                height={mobile ? 21 : 20}
                                 alt="company-logo"
                               />
                             </div>

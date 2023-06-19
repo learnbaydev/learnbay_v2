@@ -113,7 +113,15 @@
   font-weight: 700;
 }
 @media (max-width: 1281px) {
-  
+  .mainSlider {
+  height: 440px;
+  margin-top: 56px;
+}
+}
+
+@media(max-width:768px){
+  .mainSlider {
+  height: 481px;}
 }
 
 @media (max-width: 641px) {
