@@ -1,11 +1,13 @@
 import Head from "next/head";
-import { FcMoneyTransfer } from "react-icons/fc";
 import Navbar from "../../components/Navbar/Navbar";
 import dynamic from "next/dynamic";
 import Course from "../../components/HomePage/Course/Course";
 import Switch from "../../components/HomePage/switch/switch";
 import ContactUs from "../../components/HomePage/ContactUs/ContactUs";
 import SeventhSection from "../../components/Global/Button/SeventhSection/SeventhSection";
+import BoxShape from "../../components/HomePage/BoxShape/BoxShape";
+import styles from "../styles/Home.module.css";
+
 const FirstSection = dynamic(() =>
   import("../../components/HomePage/FirstSection/FirstSection")
 );
@@ -38,6 +40,7 @@ export default function Home() {
       <Navbar />
       <FirstSection />
       <HomeLine />
+      <BoxShape />
       <Course />
       <Switch />
       <ContactUs />
