@@ -2,7 +2,7 @@ export const HomeBoxData = [
   {
     id: 1,
     img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/Live-classes-home.svg",
-    title: "100% Live Online Classes",
+    title: "Live Online Classes",
     desc: "Faculty led Live Interactive online classes. Ask doubts in live classroom",
     active: true,
   },

@@ -150,7 +150,7 @@ const Navbar = ({
             <div
               className={styles.megaMenu}
               onMouseOver={() => setIcon(true)}
-              // onMouseLeave={() => setIcon(false)}
+              onMouseLeave={() => setIcon(false)}
             >
               <Tabs handleIcon={handleIcon} />
             </div>
