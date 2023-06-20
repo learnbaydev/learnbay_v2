@@ -8,17 +8,12 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/effect-fade";
 // import required modules
-import { EffectFade, Autoplay } from "swiper";
+import { Autoplay } from "swiper";
 import Popup from "../../Popup/Popup";
 import Form from "../../Form/Form";
 import Image from "next/image";
-import { BsBriefcase } from "react-icons/bs";
-import { AiOutlinePieChart } from "react-icons/ai";
-import { GiTeacher } from "react-icons/gi";
-import { TbCertificate } from "react-icons/tb";
-import { FiVideo } from "react-icons/fi";
-import { BsCodeSquare } from "react-icons/bs";
-
+import { KeyFeaturesSwiper } from "./KeyFeatureSwiperData";
+import VideoTestimonial from "../../VideoTestimonial/VideoTestimonial";
 const KeyFeatures = ({
   dataScience,
   radio,
@@ -43,26 +38,7 @@ const KeyFeatures = ({
   };
   return (
     <>
-      <Popup trigger={popupsB} setTrigger={setPopupsB} className="popupModal">
-        <div className="leftPopup">
-          <div
-            className="whiteP"
-            style={{ width: "350px", height: "400px" }}
-          ></div>
-        </div>
-        <div className="RightPopup">
-          <h5>Download Brochure</h5>
-          <Form
-            dataScience={dataScience}
-            dataScienceCounselling={dataScienceCounselling}
-            downloadBrochure
-            titleCourse={titleCourse}
-            brochureLink={brochureLink}
-            radio={radio}
-          />
-        </div>
-      </Popup>
-      <section className={styles.Features}>
+      <section className={`${styles.Features} wrapper`}>
         <Popup
           trigger={popups}
           setTrigger={setPopups}
@@ -108,7 +84,7 @@ const KeyFeatures = ({
                 spaceBetween={30}
                 grabCursor={true}
                 loop={true}
-                loopFillGroupWithBlank={true}
+                loopfillgroupwithblank="true"
                 autoplay={{
                   delay: 1500,
                   disableOnInteraction: false,
@@ -116,116 +92,25 @@ const KeyFeatures = ({
                 modules={[Autoplay]}
                 className="mySwiper"
               >
-                <SwiperSlide className={styles.slide}>
-                  <div className={styles.slideWrap}>
-                    <div className={styles.number}>
-                      {/* <Image
-                        src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/1.png"
-                        width={30}
-                        height={49}
-                        layout="intrinsic"
-                      /> */}
-                      <AiOutlinePieChart className={styles.numberIcon} />
-                    </div>
-                    <p>
-                      India’s top rated domain specialized program for
-                      professional
-                    </p>
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide className={styles.slide}>
-                  <div className={styles.slideWrap}>
-                    <div className={styles.number}>
-                      {/* <Image
-                        src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/2.png"
-                        width={37}
-                        height={50}
-                        layout="intrinsic"
-                      /> */}
-                      <BsBriefcase className={styles.numberIcon} />
-                    </div>
-
-                    <p>
-                      Secure your dream job even after taking a break in your
-                      career
-                    </p>
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide className={styles.slide}>
-                  <div className={styles.slideWrap}>
-                    <div className={styles.number}>
-                      {/* <Image
-                        src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/3.png"
-                        width={37}
-                        height={50}
-                        layout="intrinsic"
-                      /> */}
-                      <BsCodeSquare className={styles.numberIcon} />
-                    </div>
-                    <p>
-                      Transition to a successful career with zero coding
-                      experience
-                    </p>
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide className={styles.slide}>
-                  <div className={styles.slideWrap}>
-                    <div className={styles.number}>
-                      {/* <Image
-                        src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/4.png"
-                        width={41}
-                        height={50}
-                        layout="intrinsic"
-                      /> */}
-                      <FiVideo className={styles.numberIcon} />
-                    </div>
-                    <p>
-                      Live and interactive classes designed specially for
-                      professionals
-                    </p>
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide className={styles.slide}>
-                  <div className={styles.slideWrap}>
-                    <div className={styles.number}>
-                      {/* <Image
-                        src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/4.png"
-                        width={41}
-                        height={50}
-                        layout="intrinsic"
-                      /> */}
-                      <TbCertificate className={styles.numberIcon} />
-                    </div>
-                    <p>
-                      Get dual certificate from IBM & Microsoft upon course
-                      completion
-                    </p>
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide className={styles.slide}>
-                  <div className={styles.slideWrap}>
-                    <div className={styles.number}>
-                      {/* <Image
-                        src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/4.png"
-                        width={41}
-                        height={50}
-                        layout="intrinsic"
-                      /> */}
-                      <GiTeacher className={styles.numberIcon} />
-                    </div>
-                    <p>
-                      Get on-demand doubt-solving with experienced industry
-                      mentors
-                    </p>
-                  </div>
-                </SwiperSlide>
+                {KeyFeaturesSwiper.map((data, index) => {
+                  return (
+                    <SwiperSlide className={styles.slide} key={index}>
+                      <div className={styles.slideWrap}>
+                        <div className={styles.number}>{data.icon}</div>
+                        <p>{data.para}</p>
+                      </div>
+                    </SwiperSlide>
+                  );
+                })}
               </Swiper>
             </div>
           </div>
         </div>
+        <VideoTestimonial />
       </section>
+
       <div className={styles.RightWrap}>
-        <h2 className={styles.h1}>300+ placement and hiring partners</h2>
+        <h2>300+ placement and hiring partners</h2>
         <div className={styles.imgWrap}>
           <div className={styles.imgShowD}>
             <Image

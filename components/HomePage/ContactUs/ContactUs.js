@@ -10,7 +10,7 @@ function ContactUs({ dataScience, dataScienceCounselling }) {
           Looking to upskill? <br />
         </h2>
         <h2 className={styles.h1}>
-          <span className={styles.h1Span}>Start with India's #1</span>
+          <span className={styles.h1Span}>Start with India&apos;s #1</span>
           <br />
           <span className={styles.h1Span}>professional courses</span>
         </h2>

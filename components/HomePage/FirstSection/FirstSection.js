@@ -35,7 +35,7 @@ const FirstSection = ({
     if (width < 481) {
       setMobile(true);
     }
-  });
+  }, []);
   useEffect(() => {
     const typed = new Typed(el.current, {
       strings: [
