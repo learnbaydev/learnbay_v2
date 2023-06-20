@@ -55,8 +55,8 @@ const Course = ({ dataScience, radio, dataScienceCounselling }) => {
       setValue(1.03);
       setMobile(true);
     } else if (width <= 641) {
-      setValue(1.03);
-    } else if (width <= 800) {
+      setValue(1.5);
+    } else if (width <= 801) {
       setValue(2);
     } else if (width <= 961) {
       setValue(2.3);
@@ -115,7 +115,7 @@ const Course = ({ dataScience, radio, dataScienceCounselling }) => {
             );
           })}
         </div>
-        <div className={styles.middlePanel}>
+        <div>
           {courseDetails.map((courseDetail, index) => {
             const { courses } = courseDetail;
             return CourseLoop[index].value ? (

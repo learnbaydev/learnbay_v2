@@ -11,8 +11,7 @@ export const TestimonialDS = [
       "I had a great learning experience at Learnbay. The faculties here are top notch. Right from enrollment to getting a good job, they keep putting enormous efforts for each and every candidate. Thanks to all the trainers, backend team, the HR team and to the directors for making this journey smooth.",
     complogo:
       "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/HCL-logo.png",
-    statLogo:
-      "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/HCL-logo.png",
+    statLogo: "140% Hike",
   },
   {
     id: 2,
@@ -26,7 +25,7 @@ export const TestimonialDS = [
       "Thanks to the Learnbay data science course and outstanding assistance, I could ace the TCS interview and secure a job with a 400% pay hike. My understanding of the course was greatly improved by the real-time projects and respective IBM project experience certification.",
     complogo:
       "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/TCS.png",
-    statLogo: "  140% Hike",
+    statLogo: "  210% Hike",
   },
   {
     id: 3,
@@ -98,20 +97,6 @@ export const TestimonialDS = [
       "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Bridgei2i-logo.png",
     statLogo: "  127% Hike",
   },
-  {
-    id: 8,
-    name: "Vishal",
-    working: "Working at Bridge i2i",
-    proImg:
-      "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/vishal-home.png",
-    sDesc:
-      "One on One counseling from experts has guided me to  make the right decision. The Learnbay team was amazing in assisting me with ...",
-    lDesc:
-      "One on One counseling from experts has guided me to make the right decision. The Learnbay team was amazing in assisting me with live projects and preparing for the placements. Thank you! Learnbay for your tremendous support in excelling in my Data Science Career.",
-    complogo:
-      "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Bridgei2i-logo.png",
-    statLogo: "  127% Hike",
-  },
 ];
 
 export const TestimonialFS = [
@@ -133,7 +118,7 @@ export const TestimonialFS = [
     name: "Binit Kumar Swalsingh",
     working: "",
     proImg:
-      "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Alumni+Images/Qudsia.png",
+      "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Alumni+Images/binit.png",
     sDesc:
       "Learnbay has helped me a lot to learn data science applications in the e-commerce industry...",
     lDesc:
