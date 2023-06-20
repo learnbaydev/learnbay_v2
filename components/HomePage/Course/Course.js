@@ -65,7 +65,7 @@ const Course = ({ dataScience, radio, dataScienceCounselling }) => {
     } else if (width <= 1280) {
       setValue(2.8);
     } else if (width <= 1281) {
-      setValue(2.9);
+      setValue(2.4);
     }
   });
 
@@ -137,7 +137,7 @@ const Course = ({ dataScience, radio, dataScienceCounselling }) => {
                           grabCursor={true}
                           modules={[Pagination]}
                           className="mySwiper"
-                          style={{width:"inherit"}}
+                          style={{ width: "inherit" }}
                         >
                           {courseDetail.courseDetails.map((viewAllData) => {
                             const {

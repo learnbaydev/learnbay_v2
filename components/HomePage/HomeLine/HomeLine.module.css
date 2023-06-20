@@ -9,9 +9,17 @@
       rgba(239, 239, 239, 0) 100%
     );
   }
+  .featureIcons, .featureIcons1, .featureIcons2{
+    font-size: 40px;
+  }
   .featureIcons{
-   color: #edb552;
-   font-size: "40px";
+     color: #2DB621;
+  }
+  .featureIcons1{
+         color: #0072bc;
+  }
+   .featureIcons2{
+            color: #edb552;
   }
   .feature .container {
     display: flex;

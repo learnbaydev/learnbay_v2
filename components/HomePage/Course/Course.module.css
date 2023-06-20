@@ -246,6 +246,32 @@
   .Course {
     padding: 40px 80px;
   }
+  .Course h2 {
+  font-size: 30px;
+}
+.span,.ActiveSpan {
+  padding: 15px;
+  text-align: center;
+}
+.SliderWrap {
+ width: 300px;
+ margin-left: 0 !important;
+}
+.headWrapper h6{
+ font-size: 18px;
+}
+.hr {
+  top: 27%;
+  width: 87%;
+}
+.hr1 {
+  top: 100%;
+  width: 100%;
+      left: 0%;
+}
+.btnWrapper button {
+  padding: 15px 15px;
+}
 }
 
 @media (max-width: 1024px) {
@@ -342,7 +368,7 @@
 
   .gridPanel {
     grid-template-columns: 85% 85%;
-    overflow: scroll;
+    /* overflow: scroll; */
     padding: 0;
     max-height: 650px;
     margin-top: 0px;
@@ -432,5 +458,8 @@
   .fillBtn {
     height: 100%;
     border-radius: 0px 0px 8px 0px;
+  }
+  .imgWrapper{
+    width: 300px!important;
   }
 }

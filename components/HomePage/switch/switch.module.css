@@ -90,25 +90,13 @@
     margin: 0px;
   }
   .switch {
-    display: grid;
-    grid-template-columns: 23% 13% 23% 13% 23%;
+     display: flex;
+    justify-content: center;
   }
-}
-@media (max-width: 641px) {
-  .head {
-    margin: 0px;
-  }
-  .switch {
-    display: grid;
-    grid-template-columns: 23% 13% 23% 13% 23%;
-  }
+ 
 }
 
 @media (max-width: 600px) {
-  .switch {
-    display: flex;
-    justify-content: center;
-  }
 
   .head {
     padding: 30px 20px;
