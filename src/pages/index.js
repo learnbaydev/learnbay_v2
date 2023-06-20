@@ -50,6 +50,7 @@ export default function Home() {
       <Switch />
       <ContactUs />
       <SeventhSection />
+      <Testimonial redirectDS={true} />
       <KeyFeatures
         titleCourse="Data Science Placement Report"
         brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Placement+Report.pdf"
