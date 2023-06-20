@@ -72,6 +72,7 @@
   border-radius: 10px 10px 10px 10px;
   box-shadow: 0px 0px 5px 0px #48c35550;
   padding: 12px;
+  color: #fff;
 }
 
 .btn1:hover {
@@ -103,6 +104,33 @@
 .bIcon {
   font-size: 20px;
   margin-left: 10px;
+}
+
+@media  (max-width: 1024px) {
+  .LearnSupport {
+    padding: 30px 30px 30px 30px;
+  }
+}
+
+@media  (max-width: 961px) {
+  .LearnSupport {
+    padding: 30px 30px 30px 30px;
+  }
+}
+
+@media (max-width: 801px) {
+  .LearnSupport {
+    padding: 30px 30px 30px 30px;
+  }
+}
+
+@media (max-width: 641px) {
+  .LearnSupport {
+    padding: 30px 30px 30px 30px;
+  }
+  .rightPart {
+    display: none;
+  }
 }
 
 @media (max-width: 481px) {

@@ -74,6 +74,42 @@ font-weight: 700;
   border-bottom: 4px solid #f99600;
 }
 
+@media (max-width: 1024px) {
+  .ContactUs {
+    padding: 30px;
+  }
+  .h1Span {
+    font-size: 34px;
+  }
+  .RightSide {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 961px) {
+  .ContactUs {
+    padding: 30px;
+  }
+  .h1Span {
+    font-size: 34px;
+  }
+  .RightSide {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 801px) {
+  .ContactUs {
+    padding: 20px;
+  }
+  .h1Span {
+    font-size: 34px;
+  }
+  .RightSide {
+    padding: 10px;
+  }
+}
+
 @media (max-width: 641px) {
   .ContactUs {
     display: block;
