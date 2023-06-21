@@ -54,7 +54,7 @@
   z-index: 1;
   display: flex;
   flex-flow: column;
-  gap: 5px;
+  gap: 10px;
   justify-content: center;
   align-items: center;
   /* height: max-content; */
@@ -164,7 +164,7 @@
   .imgBack {
     width: max-content;
   }
-  
+
   .box,
   .box:hover {
     padding: 15px;
@@ -172,17 +172,14 @@
   }
 
   .boxWrap {
-    
     padding: 50px 25px;
   }
 }
 
-@media (max-width: 961px){
-
+@media (max-width: 961px) {
   .boxWrap {
     padding: 50px 25px;
   }
-
 }
 @media (max-width: 801px) {
   .box {

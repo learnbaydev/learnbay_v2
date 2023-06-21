@@ -12,30 +12,16 @@ const Button = dynamic(() => import("../../Global/Button/Button"));
 const FirstSection = ({
   dataScience,
   radio,
-  btnHide,
-  second,
-  third,
-  idss,
+
   dataScienceCounselling,
 }) => {
-  const [mobile, setMobile] = useState(false);
-  const [show, setShow] = useState(false);
   const [popups, setPopups] = useState(false);
   const el = useRef(null);
 
   const popupShow = () => {
     setPopups(true);
   };
-  const showMenu = () => {
-    setShow(!show);
-  };
 
-  useEffect(() => {
-    let width = window.innerWidth;
-    if (width < 481) {
-      setMobile(true);
-    }
-  }, []);
   useEffect(() => {
     const typed = new Typed(el.current, {
       strings: [
