@@ -9,7 +9,7 @@ const Testimonial = dynamic(() =>
 );
 import Switch from "../../components/HomePage/switch/switch";
 import ContactUs from "../../components/HomePage/ContactUs/ContactUs";
-import SeventhSection from "../../components/Global/Button/SeventhSection/SeventhSection";
+import SeventhSection from "../../components/Global/SeventhSection/SeventhSection";
 const FirstSection = dynamic(() =>
   import("../../components/HomePage/FirstSection/FirstSection")
 );
