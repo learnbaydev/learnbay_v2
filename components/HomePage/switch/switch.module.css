@@ -90,7 +90,9 @@
     margin: 0px;
   }
   .switch {
-    display: flex;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    gap: 20px;
     justify-content: center;
     padding: 10px 30px;
   }

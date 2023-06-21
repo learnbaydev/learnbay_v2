@@ -1,15 +1,23 @@
 import Head from "next/head";
 import Navbar from "../../components/Navbar/Navbar";
 import dynamic from "next/dynamic";
-import BoxShape from "../../components/HomePage/BoxShape/BoxShape";
-import KeyFeatures from "../../components/HomePage/KeyFeatures/KeyFeatures";
-import Course from "../../components/HomePage/Course/Course";
+const BoxShape = dynamic(() =>
+  import("../../components/HomePage/BoxShape/BoxShape")
+);
+const KeyFeatures = dynamic(() =>
+  import("../../components/HomePage/KeyFeatures/KeyFeatures")
+);
+const Course = dynamic(() => import("../../components/HomePage/Course/Course"));
 const Testimonial = dynamic(() =>
   import("../../components/HomePage/Testimonial/Testimonial")
 );
-import Switch from "../../components/HomePage/switch/switch";
-import ContactUs from "../../components/HomePage/ContactUs/ContactUs";
-import SeventhSection from "../../components/Global/SeventhSection/SeventhSection";
+const Switch = dynamic(() => import("../../components/HomePage/switch/switch"));
+const ContactUs = dynamic(() =>
+  import("../../components/HomePage/ContactUs/ContactUs")
+);
+const SeventhSection = dynamic(() =>
+  import("../../components/Global/SeventhSection/SeventhSection")
+);
 const FirstSection = dynamic(() =>
   import("../../components/HomePage/FirstSection/FirstSection")
 );
@@ -17,8 +25,6 @@ const Footer = dynamic(() => import("../../components/Footer/Footer"));
 const HomeLine = dynamic(() =>
   import("../../components/HomePage/HomeLine/HomeLine")
 );
-
-
 
 export default function Home() {
   return (
@@ -44,7 +50,7 @@ export default function Home() {
       <Navbar />
       <FirstSection />
       <HomeLine />
-      <BoxShape/>
+      <BoxShape />
       <Course />
       <Switch />
       <KeyFeatures

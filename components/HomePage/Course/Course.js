@@ -134,7 +134,7 @@ const Course = ({ dataScience, radio, dataScienceCounselling }) => {
                       <div className={styles.gridPanel}>
                         <Swiper
                           slidesPerView={value}
-                          spaceBetween={mobile ? 90 : 20}
+                          spaceBetween={mobile ? 20 : 20}
                           pagination={{
                             clickable: true,
                           }}
@@ -163,6 +163,8 @@ const Course = ({ dataScience, radio, dataScienceCounselling }) => {
                                         src={img}
                                         width={100}
                                         height={272}
+                                        quality={100}
+                                        unoptimized={true}
                                         style={{ objectFit: "cover" }}
                                         alt="data science course"
                                       />
