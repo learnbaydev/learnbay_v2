@@ -1,15 +1,31 @@
+import React, { useState } from "react";
 import Head from "next/head";
-import Image from "next/image";
-import styles from "@/styles/Home.module.css";
 import Navbar from "../../../components/Navbar/Navbar";
 import Footer from "../../../components/Footer/Footer";
+import Form from "../../../components/Form/Form";
+import Popup from "../../../components/Popup/Popup";
+import FirstSection from "../../../components/CoursePage/FirstSection/FirstSection";
+import SeventhSection from "../../../components/Global/SeventhSection/SeventhSection";
+import SecondSection from "../../../components/CoursePage/SecondSection/SecondSection";
+import Testimonial from "../../../components/HomePage/Testimonial/Testimonial";
+import ThirdSection from "../../../components/CoursePage/ThirdSection/ThirdSection";
+import Switch from "../../../components/HomePage/switch/switch";
 
-export default function datascience() {
+function blockchain() {
+  // const [popups, setPopups] = useState(false);
+  // const [video, setVideo] = useState(false);
+  // const videoSHow = () => {
+  //   setVideo(true);
+  // };
+
+  const popupShow = () => {
+    setPopups(true);
+  };
   return (
     <>
       <Head>
         <title>
-        Artificial Intelligence and Data Science Course - Learnbay
+          Artificial Intelligence and Data Science Course - Learnbay
         </title>
         <meta
           name="description"
@@ -26,13 +42,57 @@ export default function datascience() {
         />
         <link
           rel="canonical"
-          href="https://www.learnbay.co/advance-data-science-certification-courses"
+          href="https://www.learnbay.co/datascience/advance-data-science-certification-courses"
         />
       </Head>
       <main>
-      <Navbar />
-      <Footer />
+        <Navbar popup={true} dataScienceCounselling={true} />
+        {/* <Popup trigger={popups} setTrigger={setPopups} className="popupModal">
+          <div className="leftPopup">
+            <div className="whiteP" />
+          </div>
+          <div className="RightPopup">
+            <h5>Apply For Counselling</h5>
+            {/* <p>Fill the below details to get started</p> */}
+        {/* <Form
+          popup={true}
+          // setTrigger={setPopups}
+          fullStack={true}
+          dataScience={true}
+          titleCourse="Advanced Data Science and AI Program with domain specialization"
+          brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Advance+Data+Science+and+AI+Certification+Program+Learnbay.pdf"
+        /> */}
+        {/* {/* </div> */}
+        {/* </Popup> */}
+        <FirstSection
+          FirstTyped="Guaranteed Interview Calls"
+          SecondTyped="Capstone Project Certificate"
+          ThirdTyped="Live Interactive Classes"
+          dataScience={true}
+          titleCourse="Advanced Data Science and AI Program with domain specialization"
+          brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Advance+Data+Science+and+AI+Certification+Program+Learnbay.pdf"
+          first="Tools"
+          second="Tips"
+          third="Technology"
+          FirstRightImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/advance+DS+header+image.webp"
+          firstToparaImg="with domain specialization"
+          firstHeading="Advanced Data Science and AI Program"
+          firstTopPara="Specialization over generalization"
+          idss="bfl64ANfSV0"
+          srcD="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Advance+Data+Science+and+AI+Certification+Program+Learnbay.pdf"
+        />
+        <SecondSection />
+        <Testimonial
+          redirectDS={true}
+          para="Discover the impact of our programs on career growth"
+        />
+        <ThirdSection leftImage="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/whoIsProgram.webp"/>
+        <Switch />
+        <SeventhSection />
+        <Footer />
       </main>
     </>
   );
 }
+
+export default blockchain;
