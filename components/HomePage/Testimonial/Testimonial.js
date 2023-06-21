@@ -13,7 +13,7 @@ import { redirect } from "next/dist/server/api-utils";
 import { TestimonialDS, TestimonialFS } from "./TestimonialData";
 import { Pagination, Navigation } from "swiper";
 
-function Testimonial({ redirectDS }) {
+function Testimonial({ redirectDS, para }) {
   const [mobile, setMobile] = useState(false);
   const [img, setImg] = useState({
     cLogo: "",
@@ -50,6 +50,9 @@ function Testimonial({ redirectDS }) {
         imgSrc={img}
       />
       <h2 className={styles.h1}>Our Alumni Profile</h2>
+      <p className={styles.ptop}>
+          {para}
+        </p>
       <div className={styles.line}>
         <img
           src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/alumni-arrow.png"
@@ -64,7 +67,7 @@ function Testimonial({ redirectDS }) {
                 loop={true}
                 loopFillGroupWithBlank={true}
                 breakpoints={{
-                  1281: { slidesPerView: 3, spaceBetween: 60 },
+                  1281: { slidesPerView: 3.1, spaceBetween: 60 },
                   1024: { slidesPerView: 3, spaceBetween: 55 },
                   961: { slidesPerView: 3, spaceBetween: 20 },
                   801: { slidesPerView: 2.5, spaceBetween: 20 },

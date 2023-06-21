@@ -76,7 +76,7 @@ function FirstSection({
           />
         </div>
       </Popup>
-      <VideoPopup triggers={video} setTriggers={setVideo} ids={idss} />
+      {/* <VideoPopup triggers={video} setTriggers={setVideo} ids={idss} /> */}
 
       {/* For Mobile View */}
 

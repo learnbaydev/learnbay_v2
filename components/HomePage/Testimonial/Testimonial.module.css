@@ -120,6 +120,13 @@ position: absolute;
   right: 39px;
   top: -22px !important;
 }
+.ptop {
+  font-size: 20px;
+  margin: 0px 100px;
+  color: #767676;
+  line-height: 26px;
+  text-align: center;
+}
 @media (max-width: 1281px) {
   .mainSlider {
   height: 405px;
@@ -164,6 +171,12 @@ position: absolute;
 }
 
 @media (max-width: 641px) {
+  .ptop {
+    color: #767676;
+    font-size: 18px;
+    padding: 0px 20px;
+    margin: 0;
+  }
   .h1 {
     color: black;
     margin: 20px 0px 10px 0px;
