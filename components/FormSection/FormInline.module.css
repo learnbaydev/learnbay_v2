@@ -20,7 +20,7 @@
   margin-bottom: 10px;
 }
 .formGrid {
-  width: 80%;
+  width: 100%;
   display: grid;
   gap: 10px;
   grid-template-columns: 49% 49%;

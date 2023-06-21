@@ -68,8 +68,8 @@ function Testimonial({ redirectDS }) {
                   1024: { slidesPerView: 3, spaceBetween: 55 },
                   961: { slidesPerView: 2.5, spaceBetween: 20 },
                   801: { slidesPerView: 2, spaceBetween: 20 },
-                  641: { slidesPerView: 2, spaceBetween: 20 },
-                  100: { slidesPerView: 1.4, spaceBetween: 20 },
+                  641: { slidesPerView: 1.2, spaceBetween: 20 },
+                  100: { slidesPerView: 1.3, spaceBetween: 20 },
                 }}
                 pagination={{
                   dynamicBullets: true,
@@ -100,7 +100,7 @@ function Testimonial({ redirectDS }) {
                             <h3>{name}</h3>
                             <p>{working}</p>
                           </div>
-                          <div>
+                          <div className={styles.proImgWrap}>
                             <Image
                               src={proImg}
                               loading="lazy"
@@ -144,8 +144,8 @@ function Testimonial({ redirectDS }) {
                               <Image
                                 src={complogo}
                                 loading="lazy"
-                                width={mobile ? 130 : 110}
-                                height={mobile ? 21 : 20}
+                                width={mobile ? 130 : 90}
+                                height={mobile ? 21 : 25}
                                 alt="company-logo"
                               />
                             </div>

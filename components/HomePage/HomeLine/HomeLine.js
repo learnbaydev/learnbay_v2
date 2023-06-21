@@ -16,12 +16,12 @@ const HomeLine = ({ Emi }) => {
           </div>
           <hr className={styles.hr} />
           <div className={styles.middle}>
-            <BiBriefcase className={styles.featureIcons} />
+            <BiBriefcase className={styles.featureIcons1} />
             <p>300+ hiring partners</p>
           </div>
           <hr className={styles.hr} />
           <div className={styles.right}>
-            <FaAward className={styles.featureIcons} />
+            <FaAward className={styles.featureIcons2} />
             <p>100% job calls</p>
           </div>
         </div>
