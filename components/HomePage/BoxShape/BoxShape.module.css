@@ -1,6 +1,6 @@
 .box {
-  width: 27%;
-  height: max-content;
+  width: 31%;
+  /* height: max-content; */
   padding: 44px 25px;
   display: flex;
   gap: 10px;
@@ -33,8 +33,8 @@
 }
 
 .boxShape:hover .box:nth-child(2) {
-  width: 27%;
-  height: max-content;
+  width: 31%;
+  /* height: max-content; */
   padding: 44px 25px;
   display: flex;
   gap: 10px;
@@ -50,14 +50,14 @@
 
 .box:hover {
   position: relative;
-  width: 27%;
+  width: 31%;
   z-index: 1;
   display: flex;
   flex-flow: column;
   gap: 5px;
   justify-content: center;
   align-items: center;
-  height: max-content;
+  /* height: max-content; */
   padding: 44px 25px;
   background: #e3f4ff;
   border-radius: 7px;
@@ -156,7 +156,7 @@
     padding: 20px 15px;
   }
 }
-@media (max-width: 1025px) {
+@media (max-width: 1024px) {
   .box h5 {
     font-size: 20px;
     text-align: center;
@@ -164,11 +164,25 @@
   .imgBack {
     width: max-content;
   }
+  
   .box,
   .box:hover {
     padding: 15px;
     width: 33%;
   }
+
+  .boxWrap {
+    
+    padding: 50px 25px;
+  }
+}
+
+@media (max-width: 961px){
+
+  .boxWrap {
+    padding: 50px 25px;
+  }
+
 }
 @media (max-width: 801px) {
   .box {
@@ -178,7 +192,7 @@
 
   .box,
   .box:hover {
-    height: 280px;
+    height: auto;
     width: 31%;
   }
   .box p {
@@ -220,8 +234,36 @@
     height: fit-content;
     width: 100%;
   }
-
+  .boxActive {
+    height: fit-content;
+    width: 100%;
+  }
   .imgBack {
     width: max-content;
+  }
+
+  .boxShape {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-top: 40px;
+    gap: 20px;
+  }
+
+  .boxShape:hover .box:nth-child(2) {
+    width: 100%;
+    /* height: max-content; */
+    padding: 44px 25px;
+    display: flex;
+    gap: 10px;
+    flex-flow: column;
+    position: relative;
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff;
+    box-shadow: 0px 0px 11px rgba(41, 121, 173, 0.1);
+    border-radius: 7px !important;
   }
 }
