@@ -22,11 +22,12 @@ const HomeLine = ({ Emi }) => {
               className={styles.featureIcons}
               style={{ color: "#0072bc" }}
             />
+
             <p>300+ hiring partners</p>
           </div>
           <hr className={styles.hr} />
           <div className={styles.right}>
-            <FaAward className={styles.featureIcons} />
+            <FaAward className={styles.featureIcons2} />
             <p>100% job calls</p>
           </div>
         </div>
