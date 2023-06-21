@@ -144,12 +144,13 @@ const FirstSection = ({
                 passIcon={<FaChevronDown className="bIconS" />}
               />
             </a>
-            <Button
-              onClick={popupShow}
-              className={styles.Btn}
-              text="Enquire Now"
-              passIcon={<FaBell className="bIconS" />}
-            />
+            <div onClick={popupShow}>
+              <Button
+                className={styles.Btn}
+                text="Enquire Now"
+                passIcon={<FaBell className="bIconS" />}
+              />
+            </div>
           </div>
         </div>
 
