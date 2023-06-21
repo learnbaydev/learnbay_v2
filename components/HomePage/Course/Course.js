@@ -51,11 +51,15 @@ const Course = ({ dataScience, radio, dataScienceCounselling }) => {
 
   useEffect(() => {
     let width = window.innerWidth;
+    if (width < 481) {
+      setValue(1.4);
+      setMobile(true);
+    }
     if (width < 600) {
-      setValue(1.03);
+      setValue(1.2);
       setMobile(true);
     } else if (width <= 641) {
-      setValue(1);
+      setValue(1.6);
     } else if (width <= 801) {
       setValue(2);
     } else if (width <= 961) {
@@ -67,7 +71,7 @@ const Course = ({ dataScience, radio, dataScienceCounselling }) => {
     } else if (width <= 1281) {
       setValue(2.4);
     }
-  });
+  }, []);
 
   return (
     <div className={styles.Course} id="course">
@@ -130,14 +134,13 @@ const Course = ({ dataScience, radio, dataScienceCounselling }) => {
                       <div className={styles.gridPanel}>
                         <Swiper
                           slidesPerView={value}
-                          spaceBetween={mobile ? 10 : 20}
+                          spaceBetween={mobile ? 90 : 20}
                           pagination={{
                             clickable: true,
                           }}
                           grabCursor={true}
                           modules={[Pagination]}
                           className="mySwiper"
-                          style={{ width: "inherit" }}
                         >
                           {courseDetail.courseDetails.map((viewAllData) => {
                             const {
