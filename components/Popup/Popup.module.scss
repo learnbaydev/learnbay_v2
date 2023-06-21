@@ -127,7 +127,7 @@
       padding: 30px 60px;
       width: 80%;
       border-radius: 5px;
-      border: 2px solid #2d9cd7;
+
       height: fit-content;
       background-color: white;
 
@@ -236,15 +236,18 @@
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 850px) {
   .popupInner {
     backdrop-filter: blur(16px) saturate(180%);
     -webkit-backdrop-filter: blur(16px) saturate(180%);
     background-color: white;
     background-image: none !important;
     padding: 30px 10px;
+    display: flex !important;
   }
+
   .popupInners {
+    display: flex !important;
     backdrop-filter: blur(16px) saturate(180%);
     -webkit-backdrop-filter: blur(16px) saturate(180%);
     background-color: white;

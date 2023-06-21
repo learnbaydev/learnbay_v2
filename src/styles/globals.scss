@@ -154,6 +154,16 @@ a {
   .wrapper {
     padding: 40px 80px;
   }
+  .whiteP {
+    width: 300px;
+  }
+  .RightPopup {
+    display: flex;
+    flex-flow: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+  }
 }
 @media (max-width: 1024px) {
   .wrapper {
@@ -163,6 +173,21 @@ a {
 @media (max-width: 961px) {
   .wrapper {
     padding: 30px 40px;
+  }
+  .whiteP {
+    width: 350px;
+  }
+  .RightPopup {
+    width: 90%;
+    margin-left: 50px;
+  }
+}
+@media (max-width: 850px) {
+  .leftPopup {
+    display: none;
+  }
+  .RightPopup {
+    margin-left: 0;
   }
 }
 @media (max-width: 801px) {
