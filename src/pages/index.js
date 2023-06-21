@@ -46,11 +46,7 @@ export default function Home() {
       <HomeLine />
       <BoxShape/>
       <Course />
-      <Testimonial redirectDS={true} />
       <Switch />
-      <ContactUs />
-      <SeventhSection />
-      <Testimonial redirectDS={true} />
       <KeyFeatures
         titleCourse="Data Science Placement Report"
         brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Placement+Report.pdf"
@@ -59,6 +55,9 @@ export default function Home() {
         dataScience={true}
         radio={true}
       />
+      <Testimonial redirectDS={true} />
+      <ContactUs />
+      <SeventhSection />
       <Footer />
     </>
   );

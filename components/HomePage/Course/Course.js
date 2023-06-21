@@ -55,7 +55,7 @@ const Course = ({ dataScience, radio, dataScienceCounselling }) => {
       setValue(1.03);
       setMobile(true);
     } else if (width <= 641) {
-      setValue(1.5);
+      setValue(1);
     } else if (width <= 801) {
       setValue(2);
     } else if (width <= 961) {
@@ -63,7 +63,7 @@ const Course = ({ dataScience, radio, dataScienceCounselling }) => {
     } else if (width <= 1025) {
       setValue(2.6);
     } else if (width <= 1280) {
-      setValue(2.8);
+      setValue(3);
     } else if (width <= 1281) {
       setValue(2.4);
     }
