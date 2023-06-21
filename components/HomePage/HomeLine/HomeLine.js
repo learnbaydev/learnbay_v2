@@ -26,7 +26,7 @@ const HomeLine = ({ Emi }) => {
           </div>
           <hr className={styles.hr} />
           <div className={styles.right}>
-            <FaAward className={styles.featureIcons} />
+            <FaAward className={styles.featureIcons2} />
             <p>100% job calls</p>
           </div>
         </div>

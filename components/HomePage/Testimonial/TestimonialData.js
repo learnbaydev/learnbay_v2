@@ -28,20 +28,6 @@ export const TestimonialDS = [
     statLogo: "  210% Hike",
   },
   {
-    id: 3,
-    name: "Aravind Kumar",
-    working: "SA - Data Scientist",
-    proImg:
-      "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/aravind-home.png",
-    sDesc:
-      "Choosing Learnbay was my best decision ever. The instructors were encouraging and glad to answer questions. The best feature is that ...",
-    lDesc:
-      "Choosing Learnbay was my best decision ever. The instructors were encouraging and glad to answer questions. The best feature is that their flexible modules & small size batches. I was able to manage  my time and learn while working. Thanks to Learnbay for my lucrative placement.",
-    complogo:
-      "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/themathcompany-logo.png",
-    statLogo: "142% Hike",
-  },
-  {
     id: 4,
     name: "Ritish Kumar",
     working: "Working at Capgemini",
@@ -96,6 +82,20 @@ export const TestimonialDS = [
     complogo:
       "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Bridgei2i-logo.png",
     statLogo: "  127% Hike",
+  },
+  {
+    id: 3,
+    name: "Aravind Kumar",
+    working: "SA - Data Scientist",
+    proImg:
+      "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/aravind-home.png",
+    sDesc:
+      "Choosing Learnbay was my best decision ever. The instructors were encouraging and glad to answer questions. The best feature is that ...",
+    lDesc:
+      "Choosing Learnbay was my best decision ever. The instructors were encouraging and glad to answer questions. The best feature is that their flexible modules & small size batches. I was able to manage  my time and learn while working. Thanks to Learnbay for my lucrative placement.",
+    complogo:
+      "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/themathcompany-logo.png",
+    statLogo: "142% Hike",
   },
 ];
 
