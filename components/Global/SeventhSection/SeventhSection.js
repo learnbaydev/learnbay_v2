@@ -58,7 +58,6 @@ function SeventhSection({ fullStackCont }) {
                 src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/learners-support-guy.png"
                 width="681"
                 height="515"
-                layout="intrinsic"
                 alt="data science course"
               />
               </div>

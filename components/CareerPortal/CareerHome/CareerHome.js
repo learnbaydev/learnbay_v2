@@ -25,7 +25,6 @@ function CareerHome() {
             src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/course.learnbay.co/Career-Portal.png"
             width="522"
             height="380"
-            layout="intrinsic"
             alt="data science course"
           />
         </div>
