@@ -1,0 +1,264 @@
+.Features {
+  background-color: #f3faff;
+  position: relative;
+  /* padding: 80px 100px 200px 100px; */
+  /* margin-bottom: 100px; */
+  padding-bottom: 250px;
+}
+.topHead {
+  font-size: 32px;
+  margin: 0;
+  color: black;
+
+  text-align: center;
+  font-weight: 700;
+}
+
+.FeatureWrap {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 49% 49%;
+  gap: 20px;
+  width: 100%;
+  align-items: center;
+}
+.bIcon {
+  margin-left: 5px;
+}
+.LeftWrap {
+  display: flex;
+  flex-flow: column;
+  padding: 20px;
+  width: 100%;
+}
+.LeftWrapImg {
+  cursor: pointer;
+}
+.LeftWrap h6 {
+  font-size: 25px;
+  margin: 0;
+  font-weight: 500;
+  color: #0072bc;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.LeftWrap h6 span {
+  border-bottom: 3px solid #edb552;
+}
+.LeftWrap p {
+  display: flex;
+  font-size: 16px;
+  margin: 0;
+  font-weight: 500;
+  margin-top: 1em;
+}
+.tickIcon {
+  color: #3c59a8;
+  margin-right: 10px;
+  font-size: 20px;
+}
+.LeftWrap {
+  border-radius: 44px;
+  height: 100%;
+  padding: 50px;
+}
+.rightSide {
+  width: 100%;
+  height: 300px;
+}
+
+.circle {
+  font-size: 54px;
+  color: #d9d9d9;
+}
+.slide {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid #b8e3ff;
+  background-color: #fefeff;
+  padding: 30px 20px;
+}
+.slide p {
+  color: rgb(0, 0, 0);
+}
+.slideWrap {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 30px;
+  grid-template-columns: 15% 80%;
+}
+.btn {
+  padding: 12px 24px;
+  border-radius: 8px;
+  margin: auto;
+  color: #0072bc;
+  font-size: 16px;
+  font-weight: 400;
+  background-color: white;
+  margin-top: 20px;
+  border: 1px solid #0072bc;
+  justify-content: center;
+  display: flex;
+}
+.btn:hover {
+  background-color: #0072bc;
+  color: white;
+}
+.bIcons {
+  color: #0072bc;
+  font-size: 45px;
+}
+.paraWrap {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  padding: 5px 40px;
+  border-radius: 4px;
+  display: grid;
+  grid-template-columns: 10% 89%;
+  align-items: center;
+  font-size: 22px;
+  gap: 20px;
+  margin: 0;
+  position: relative;
+  font-weight: 500;
+  margin-bottom: 20px;
+  margin-top: 1em;
+  border-left: 3px solid #516c82;
+}
+.number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #eaedf2;
+  padding: 5px;
+  font-size: 70px;
+}
+.RightWrap {
+  background-color: #fff;
+  border-radius: 20px;
+  background: url("https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Network-reach-BG.png");
+  margin: auto;
+  margin: -180px 100px 100px 100px;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 30px 200px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.imgShowM {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  /* .Features {
+    padding: 50px 20px 0px 20px;
+  } */
+  .LeftWrap {
+    padding: 20px;
+  }
+  .btn {
+    margin: auto;
+  }
+  .LeftWrap h6 {
+    font-size: 25px;
+    margin: 0;
+    font-weight: 500;
+    color: #0072bc;
+  }
+  .FeatureWrap {
+    grid-template-columns: 44% 54%;
+  }
+  .RightWrap {
+    padding: 20px;
+  }
+.imgWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+}
+
+
+@media (max-width: 801px) {
+  .RightWrap h2 {
+    font-size: 22px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 641px) {
+  .FeatureWrap {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+  }
+  .topHead {
+    font-size: 24px;
+    font-weight: 600;
+  }
+
+  .RightWrap {
+    margin: 0px 20px 100px 20px;
+    padding: 20px;
+    margin-top: -60px;
+  }
+  .Features {
+    display: block;
+    flex-flow: column;
+    padding: 30px 20px 100px 20px;
+    margin: 0;
+  }
+  .slide {
+    width: fit-content;
+  }
+  .slideWrap {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+  }
+  .imgShowD {
+    display: none;
+  }
+  .imgShowM {
+    display: block;
+  }
+}
+
+@media (max-width: 600px) {
+  .h1 {
+    color: #0072bc;
+    margin: 10px 0px 20px 0px;
+    font-size: 24px;
+  }
+  .FeatureWrap {
+    margin-top: 30px;
+    display: block;
+    align-items: center;
+  }
+  .LeftWrap {
+    display: flex;
+    flex-flow: column;
+    padding: 20px;
+  }
+  .topHead {
+    font-size: 24px;
+    margin: 0;
+    text-align: center;
+    font-weight: 700;
+  }
+  .btn {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin: auto;
+  }
+}
