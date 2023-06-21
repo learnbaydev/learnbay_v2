@@ -1,9 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import styles from "./BoxShape.module.css";
 import Image from "next/image";
 import { HomeBoxData } from "./BoxShapeData";
-
-// Custom hook for hover functionality
 
 const BoxShape = () => {
   return (
@@ -14,7 +12,7 @@ const BoxShape = () => {
         you make your past work experience relevant
       </p>
       <div className={styles.boxShape}>
-        {HomeBoxData.map((data, index) => {
+        {HomeBoxData.map((data) => {
           const { img, title, desc, id } = data;
 
           return (
@@ -22,8 +20,6 @@ const BoxShape = () => {
               className={styles.box}
               key={id}
               id="box"
-              // onMouseEnter={() => handleMouseEnter(index)}
-              // onMouseLeave={handleMouseLeave}
             >
               <div className={styles.imgBack}>
                 <Image

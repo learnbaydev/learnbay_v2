@@ -38,11 +38,11 @@ const VideoTestimonialSwiper = ({ review }) => {
         }}
         breakpoints={{
           1024: { slidesPerView: 4.2, spaceBetween: 40 },
-          961: { slidesPerView: 1.8, spaceBetween: 20 },
-          801: { slidesPerView: 2.3, spaceBetween: 40 },
-          641: { slidesPerView: 2.1, spaceBetween: 10 },
-          481: { slidesPerView: 1.6, spaceBetween: 10 },
-          100: { slidesPerView: 1.2, spaceBetween: 10 },
+          961: { slidesPerView: 4, spaceBetween: 20 },
+          801: { slidesPerView: 3.5, spaceBetween: 40 },
+          641: { slidesPerView: 3.5, spaceBetween: 10 },
+          481: { slidesPerView: 3.3, spaceBetween: 10 },
+          100: { slidesPerView: 2.2, spaceBetween: 10 },
         }}
         loop={true}
         loopFillGroupWithBlank={true}
