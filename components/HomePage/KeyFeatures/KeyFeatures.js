@@ -117,7 +117,6 @@ const KeyFeatures = ({
               src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Network-reach-company-logos.png"
               width="1148"
               height="414"
-              layout="intrinsic"
               alt="Learnbay"
             />
           </div>
