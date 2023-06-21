@@ -112,11 +112,11 @@ const KeyFeatures = ({
       <div className={styles.RightWrap}>
         <h2>300+ placement and hiring partners</h2>
         <div className={styles.imgWrap}>
-          <div className={styles.imgShowD}>
+          <div className={`${styles.imgShowD} imgWrapper`}>
             <Image
               src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Network-reach-company-logos.png"
-              width="1148"
-              height="414"
+              width={1148}
+              height={414}
               alt="Learnbay"
             />
           </div>
