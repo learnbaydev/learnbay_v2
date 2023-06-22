@@ -100,7 +100,7 @@ function blockchain() {
           dataScienceCounselling={true}
           serviceBasic={true}
           careerH1="Career Service"
-          careerSpan=" Basic"
+          careerSpan="Basic"
           dataScience={true}
           titleCourse="Advanced Data Science and AI Program with domain specialization"
           brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Advance+Data+Science+and+AI+Certification+Program+Learnbay.pdf"
