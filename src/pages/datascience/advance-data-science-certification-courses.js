@@ -10,6 +10,9 @@ import SecondSection from "../../../components/CoursePage/SecondSection/SecondSe
 import Testimonial from "../../../components/HomePage/Testimonial/Testimonial";
 import ThirdSection from "../../../components/CoursePage/ThirdSection/ThirdSection";
 import Switch from "../../../components/HomePage/switch/switch";
+import GrowthStats from "../../../components/CoursePage/GrowthStat/GrowthStats";
+import ToolsCovered from "../../../components/CoursePage/ToolsCovered/ToolsCovered";
+import FeeSection from "../../../components/CoursePage/FeeSection/FeeSection";
 
 function blockchain() {
   // const [popups, setPopups] = useState(false);
@@ -86,8 +89,26 @@ function blockchain() {
           redirectDS={true}
           para="Discover the impact of our programs on career growth"
         />
-        <ThirdSection leftImage="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/whoIsProgram.webp"/>
+        <ThirdSection leftImage="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/whoIsProgram.webp" />
         <Switch />
+        <GrowthStats
+          img1="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Scope+of+DS+left+image.png"
+          heading="Be the future: Grow your Data Science & AI skills "
+          para1="Data Science market to reach $133 billion by 2026"
+          para2="The global AI market to hit US$ 1,597.1 billion by 2030 "
+          para3="Influences on nearly all sectors of the current industries"
+        />
+        <ToolsCovered />
+        <FeeSection 
+         Fee="₹ 99,000 + 18% GST"
+         FeeEmi="₹ 9,735/month"
+         FeeHeading="Program Fee & Financing"
+         FeeContent1="0% interest rate"
+         FeeContent2="No cost EMI"
+         FeeContent3="Flexible payment"
+         FeeContent4="Easy loan procedure"
+         FeeContent5="15 days refund policy"
+         FeeContent6="No additional cost"/>
         <SeventhSection />
         <Footer />
       </main>
