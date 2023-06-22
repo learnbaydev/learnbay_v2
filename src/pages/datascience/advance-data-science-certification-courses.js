@@ -9,7 +9,7 @@ import FirstSection from "../../../components/CoursePage/FirstSection/FirstSecti
 import SeventhSection from "../../../components/Global/SeventhSection/SeventhSection";
 import SecondSection from "../../../components/CoursePage/SecondSection/SecondSection";
 import Testimonial from "../../../components/HomePage/Testimonial/Testimonial";
-// import ThirdSection from "../../../components/CoursePage/ThirdSection/ThirdSection";
+// // import ThirdSection from "../../../components/CoursePage/ThirdSection/ThirdSection";
 import Switch from "../../../components/HomePage/switch/switch";
 import FourthSection from "../../../components/CoursePage/FourthSection/FourthSection";
 import FifthSection from "../../../components/CoursePage/FifthSection/FifthSection";
@@ -92,7 +92,7 @@ function blockchain() {
           redirectDS={true}
           para="Discover the impact of our programs on career growth"
         />
-        {/* <ThirdSection leftImage="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/whoIsProgram.webp"/> */}
+        {/* {/* <ThirdSection leftImage="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/whoIsProgram.webp"/> */}
         <FourthSection redirectDS={true} />
         <FifthSection />
         <SixthSectionCTA />
@@ -111,7 +111,11 @@ function blockchain() {
           hours="250+ Hours"
           project="12+ Real Time"
         />
+        <FourthSection redirectDS={true} />
+        <FifthSection />
+        <SixthSectionCTA />
         <Switch />
+        <Project />
         <Project />
         <SeventhSection />
         <Footer />
