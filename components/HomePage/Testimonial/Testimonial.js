@@ -39,7 +39,7 @@ function Testimonial({ redirectDS, para }) {
     if (width < 600) {
       setMobile(true);
     }
-  }, []);
+  }, [redirectDS]);
   return (
     <div className={styles.testimonial}>
       <ReviewPopup
