@@ -13,6 +13,7 @@ import Switch from "../../../components/HomePage/switch/switch";
 import FourthSection from "../../../components/CoursePage/FourthSection/FourthSection";
 import FifthSection from "../../../components/CoursePage/FifthSection/FifthSection";
 import SixthSectionCTA from "../../../components/CoursePage/SixthSectionCTA/Counselling";
+import Project from "../../../components/CoursePage/Project/Project";
 
 function blockchain() {
   // const [popups, setPopups] = useState(false);
@@ -94,6 +95,7 @@ function blockchain() {
         <FifthSection />
         <SixthSectionCTA />
         <Switch />
+        <Project />
         <SeventhSection />
         <Footer />
       </main>
