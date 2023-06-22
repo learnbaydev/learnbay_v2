@@ -1,76 +1,185 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import styles from "./ThirdSection.module.css";
 import Image from "next/image";
-import { ThirdSectionData } from "./ThirdSectionData";
+import Form from "../../Form/Form";
+import Popup from "../../Popup/Popup";
+import { FaDownload } from "react-icons/fa";
+import "swiper/css";
+import "swiper/css/navigation";
 
-function ThirdSection({leftImage}) {
+function ThirdSection({
+  dataScience,
+  dataScienceCounselling,
+  secondLine,
+  thirdHead,
+  point1,
+  point2,
+  point3,
+  point4,
+  thirdHeadSpan,
+  titleCourse,
+  brochureLink,
+}) {
+  const [popups, setPopups] = useState(false);
+  const [popupsB, setPopupsB] = useState(false);
+
+  const popupShow = () => {
+    setPopups(true);
+  };
+  const popupShowD = () => {
+    setPopupsB(true);
+  };
+  const [mobile, setMobile] = useState(false);
+
+  useEffect(() => {
+    let width = window.innerWidth;
+    if (width < 481) {
+      setMobile(true);
+    }
+  });
   return (
-    <div  className={styles.program}>
-      <h4>Who Is This Program For?</h4>
-      <div className={styles.programWrap}>
-        <div className={styles.left}>
-          <Image src={leftImage} width={373} height={406} />
+    <>
+      <Popup trigger={popupsB} setTrigger={setPopupsB} className="popupModal">
+        <div className="leftPopup">
+          <div
+            className="whiteP"
+            style={{ width: "350px", height: "400px" }}
+          ></div>
         </div>
+        <div className="RightPopup">
+          <h5>Download Brochure</h5>
+          <Form
+            dataScience={dataScience}
+            dataScienceCounselling={dataScienceCounselling}
+            downloadBrochure
+            titleCourse={titleCourse}
+            brochureLink={brochureLink}
+          />
+        </div>
+      </Popup>
+      <section className={styles.Features}>
         <div>
-          <div className={styles.boxWrap}>
-            {ThirdSectionData.map((data, index) => {
-                const {icon, heading, para} = data;
-                return ( <div className={styles.leftSide} key={index}>
-                    <div className={styles.boxIcon}>
-                      <div>{icon}
-                        {/* <MdOutlineCastForEducation className={styles.bIcon} /> */}
-                      </div>
-                    </div>
-                    <h4 className={styles.heading}>{heading}</h4>
-                    <p>{para}</p>
-                  </div>
-
-                );
-            })}
-            {/* <div className={styles.top}>
-              <div className={styles.leftSide}>
-                <div className={styles.boxIcon}>
-                  <div className={styles.imgWrap}>
-                    <MdOutlineCastForEducation className={styles.bIcon} />
-                  </div>
+          <h6 className={styles.infop}>300+ placement and hiring partners</h6>
+          {/* <p className={styles.ptop}>
+            Experience the power of our industry connections
+          </p> */}
+          <div className={styles.FeatureWrap}>
+            <div className={styles.LeftWrap}>
+              <div className={styles.ParaWrap} style={{ marginTop: "0" }}>
+                <div className={styles.number}>
+                  <Image
+                    src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/1.png"
+                    width={30}
+                    height={60}
+                    layout="intrinsic"
+                  />
                 </div>
-                <h4 className={styles.heading}>{heading1}</h4>
-                <p>{para1}</p>
+                <span>{point1}</span>
               </div>
-              <div className={styles.rightSide}>
-                <div className={styles.boxIcon}>
-                  <div className={styles.imgWrap}>
-                    <MdOutlineWorkOutline className={styles.oIcon} />
-                  </div>
+              <div className={styles.ParaWrap1}>
+                <div className={styles.number}>
+                  <Image
+                    src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/2.png"
+                    width={40}
+                    height={60}
+                    layout="intrinsic"
+                  />
                 </div>
-                <h4 className={styles.heading1}>{heading2}</h4>
-                <p>{para2}</p>
+                <span>{point2}</span>
+              </div>
+              <div className={styles.ParaWrap2}>
+                <div className={styles.number}>
+                  <Image
+                    src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/3.png"
+                    width={40}
+                    height={60}
+                    layout="intrinsic"
+                  />
+                </div>
+                <span>{point3}</span>
+              </div>
+              <div className={styles.ParaWrap3}>
+                <div className={styles.number}>
+                  <Image
+                    src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/4.png"
+                    width={40}
+                    height={60}
+                    layout="intrinsic"
+                  />
+                </div>
+                <span>{point4}</span>
               </div>
             </div>
-            <div className={styles.bottom}>
-              <div className={styles.rightSide}>
-                <div className={styles.boxIcon}>
-                  <div className={styles.imgWrap}>
-                    <FaUserGraduate className={styles.oIcon} />
-                  </div>
-                </div>
-                <h4 className={styles.heading1}>{heading3}</h4>
-                <p>{para3}</p>
-              </div>
-              <div className={styles.leftSide}>
-                <div className={styles.boxIcon}>
-                  <div className={styles.imgWrap}>
-                    <GiStairsGoal className={styles.bIcon} />
-                  </div>
-                </div>
-                <h4 className={styles.heading}>{heading4}</h4>
-                <p>{para4}</p>
-              </div>
-            </div> */}
+            <div className={styles.RightWrap}>
+              <Image
+                src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Placement+Logos+No+Map.png"
+                width="850"
+                height="600"
+                layout="intrinsic"
+                alt="Learnbay"
+              />
+            </div>
+          </div>
+        </div>
+        <div className={styles.btnWrap}>
+          <button onClick={popupShowD} className={styles.fillBtn}>
+            Download Placement Report
+            <FaDownload style={{ marginLeft: "10px" }} />
+          </button>
+        </div>
+      </section>
+      <div className={styles.map}>
+        <Image
+          src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Map(learners).png"
+          width="617"
+          height="779"
+          layout="intrinsic"
+          alt="data science course"
+        />
+      </div>
+      <div className={styles.First}>
+        <Popup
+          trigger={popups}
+          setTrigger={setPopups}
+          className="popupModal"
+          downloadBrochure
+        >
+          <div className="leftPopup">
+            <div
+              className="whiteP"
+              style={{ width: "340px", height: "400px" }}
+            ></div>
+          </div>
+          <div className="RightPopup">
+            <h5>Apply For Counselling</h5>
+            <Form
+              dataScience={dataScience}
+              dataScienceCounselling={dataScienceCounselling}
+              titleCourse={titleCourse}
+              brochureLink={brochureLink}
+            />
+          </div>
+        </Popup>
+        <div className={styles.FirstLeft}>
+          <p className={styles.ptopBox}>{secondLine}</p>
+          <h1 className={styles.h1}>
+            {thirdHead}
+            <span className={styles.h1Span}>{thirdHeadSpan}</span>
+          </h1>
+        </div>
+        <div className={styles.secondLeft}>
+          <div className={styles.PlayImg}>
+            <Image
+              src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Alumni-Map-Mobile-View.png"
+              width="910"
+              height="920"
+              layout="intrinsic"
+              alt="data science course"
+            />
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }
 
