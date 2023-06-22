@@ -50,7 +50,7 @@ function Testimonial({ redirectDS, para }) {
         imgSrc={img}
       />
       <h2 className={styles.h1}>Our Alumni Profile</h2>
-      <p className={styles.ptop}>
+      {/* <p className={styles.ptop}>
           {para}
         </p>
       <div className={styles.line}>
@@ -58,7 +58,7 @@ function Testimonial({ redirectDS, para }) {
           src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/alumni-arrow.png"
           width="80px"
         />
-      </div>
+      </div> */}
       <section>
         <div className={styles.Section1}>
           <div className={styles.Testimonial}>
@@ -73,7 +73,6 @@ function Testimonial({ redirectDS, para }) {
                   801: { slidesPerView: 2.5, spaceBetween: 20 },
                   641: { slidesPerView: 2, spaceBetween: 20 },
                   100: { slidesPerView: 1.2, spaceBetween: 20 },
-
                 }}
                 pagination={{
                   dynamicBullets: true,
@@ -143,15 +142,24 @@ function Testimonial({ redirectDS, para }) {
                         </div>
 
                         {redirectDS ? (
-                          <div className={styles.imgHike}>
-                            <div>
-                              <Image
-                                src={complogo}
-                                loading="lazy"
-                                width={mobile ? 130 : 90}
-                                height={mobile ? 21 : 25}
-                                alt="company-logo"
-                              />
+                          <div className={styles.imgHike} id={id}>
+                            <div
+                              className={styles.imgWrap}
+                              style={
+                                id === "tcs"
+                                  ? { width: "20%" }
+                                  : { width: "auto" }
+                              }
+                            >
+                              <div className="imgWrapper">
+                                <Image
+                                  src={complogo}
+                                  loading="lazy"
+                                  width={mobile ? 130 : 90}
+                                  height={mobile ? 21 : 25}
+                                  alt="company-logo"
+                                />
+                              </div>
                             </div>
                             <div className={styles.nameHike}>
                               <p>
