@@ -2,11 +2,11 @@ import React, { useState, useEffect, useRef } from "react";
 import styles from "./FirstSection.module.css";
 import { FaDownload, FaPlayCircle } from "react-icons/fa";
 import Form from "../../Form/Form";
-// import Popup from "../../Popup/Popup";
-// import Popup from "../../Popup/Popup";
+import Popup from "../../Popup/Popup";
 import Image from "next/image";
 import Typed from "typed.js";
 // import VideoPopup from "../../VideoPopup/VideoPopup";
+import Button from "../../Global/Button/Button";
 
 function FirstSection({
   dataScience,
@@ -25,7 +25,7 @@ function FirstSection({
   SecondTyped,
   ThirdTyped,
 }) {
-  // const [popups, setPopups] = useState(false);
+  const [popups, setPopups] = useState(false);
   const [video, setVideo] = useState(false);
   const videoSHow = () => {
     setVideo(true);
@@ -54,7 +54,7 @@ function FirstSection({
   }, []);
   return (
     <div className={styles.First}>
-      {/* <Popup
+      <Popup
         trigger={popups}
         setTrigger={setPopups}
         className="popupModal"
@@ -76,7 +76,7 @@ function FirstSection({
             brochureLink={brochureLink}
           />
         </div>
-      </Popup> */}
+      </Popup>
       {/* <VideoPopup triggers={video} setTriggers={setVideo} ids={idss} /> */}
 
       {/* For Mobile View */}
@@ -91,7 +91,6 @@ function FirstSection({
             src={FirstRightImg}
             width="508"
             height="327"
-            layout="intrinsic"
             alt="data science course"
           />
         </div>
@@ -101,9 +100,8 @@ function FirstSection({
         <div className={styles.IBMlogo}>
           <Image
             src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/FirstSection.png"
-            width="283"
+            width="270"
             height="51"
-            layout="intrinsic"
             alt="data science course"
           />
         </div>
@@ -111,59 +109,29 @@ function FirstSection({
           <span ref={el} className={styles.animationText}></span>
         </div>
 
-        <div className={styles.logos}>
-          <div style={{ textAlign: "center" }}>
-            <Image
-              src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Career-report-logo.png"
-              width="40"
-              height="40"
-              layout="intrinsic"
-              alt="data science course"
-              className={styles.courseimg}
-            />
-            <p className={styles.ptopR}>
-              <b>4.66/5</b>
-            </p>
-          </div>
-          <div style={{ textAlign: "center" }}>
-            <Image
-              src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Google-logo.png"
-              width="40"
-              height="40"
-              layout="intrinsic"
-              alt="data science course"
-              className={styles.courseimg}
-            />
-            <p className={styles.ptopR}>
-              <b>4.8/5</b>
-            </p>
-          </div>
-          <div style={{ textAlign: "center" }}>
-            <Image
-              src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Switchup-logo.png"
-              width="40"
-              height="40"
-              layout="intrinsic"
-              alt="data science course"
-              className={styles.courseimg}
-            />
-            <p className={styles.ptopR}>
-              <b>4.79/5</b>
-            </p>
-          </div>
-        </div>
+        {/* Button */}
         <div className={styles.btnImage}>
-          <button onClick={popupShow} className={styles.fillBtn}>
-            Brochure
-            <FaDownload style={{ marginLeft: "10px" }} />
-          </button>
+          <div onClick={popupShow}>
+            <Button
+              className={styles.button}
+              text="Brochure"
+              passIcon={<FaDownload style={{ marginLeft: "10px" }} />}
+            />
+          </div>
           {softwareBtnHide ? (
             <></>
           ) : (
-            <button onClick={videoSHow}>
-              Intro Video{" "}
-              <FaPlayCircle style={{ marginLeft: "10px", fontSize: "22px" }} />{" "}
-            </button>
+            <div onClick={videoSHow}>
+              <Button
+                className={styles.outLineBtn}
+                text="Intro Video"
+                passIcon={
+                  <FaPlayCircle
+                    style={{ marginLeft: "10px", fontSize: "22px" }}
+                  />
+                }
+              />
+            </div>
           )}
         </div>
       </div>
@@ -171,56 +139,14 @@ function FirstSection({
       {/* For desktop View */}
 
       <div className={styles.secondLeft}>
-        <div className={styles.PlayImg}>
+        <div className="imgWrapper">
           <Image
             src={FirstRightImg}
             width="580"
             height="450"
-            layout="intrinsic"
             alt="data science course"
           />
         </div>
-        {/* <div className={styles.logosD}>
-          <div style={{ textAlign: "center" }}>
-            <Image
-              src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Career-report-logo.png"
-              width="40"
-              height="40"
-              layout="intrinsic"
-              alt="data science course"
-              className={styles.courseimg}
-            />
-            <p className={styles.ptopR}>
-              <b>4.66/5</b>
-            </p>
-          </div>
-          <div style={{ textAlign: "center" }}>
-            <Image
-              src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Google-logo.png"
-              width="40"
-              height="40"
-              layout="intrinsic"
-              alt="data science course"
-              className={styles.courseimg}
-            />
-            <p className={styles.ptopR}>
-              <b>4.8/5</b>
-            </p>
-          </div>
-          <div style={{ textAlign: "center" }}>
-            <Image
-              src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Switchup-logo.png"
-              width="40"
-              height="40"
-              layout="intrinsic"
-              alt="data science course"
-              className={styles.courseimg}
-            />
-            <p className={styles.ptopR}>
-              <b>4.79/5</b>
-            </p>
-          </div>
-        </div> */}
       </div>
     </div>
   );
