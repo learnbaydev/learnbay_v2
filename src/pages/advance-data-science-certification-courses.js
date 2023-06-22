@@ -5,7 +5,9 @@ import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
 import Form from "../../components/Form/Form";
 import Popup from "../../components/Popup/Popup";
+import { DataScienceCourseData } from "../../Data/DataScienceCourse";
 import FirstSection from "../../components/CoursePage/FirstSection/FirstSection";
+import SyllabusNew from "../../components/CoursePage/Syllabus/Syllabus";
 
 function blockchain() {
   // const [popups, setPopups] = useState(false);
@@ -76,6 +78,21 @@ function blockchain() {
           firstTopPara="Specialization over generalization"
           idss="bfl64ANfSV0"
           srcD="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Advance+Data+Science+and+AI+Certification+Program+Learnbay.pdf"
+        />
+        <SyllabusNew
+          dataScienceCounselling={true}
+          serviceBasic={true}
+          careerH1="Career Service"
+          careerSpan=" Basic"
+          dataScience={true}
+          titleCourse="Advanced Data Science and AI Program with domain specialization"
+          brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Advance+Data+Science+and+AI+Certification+Program+Learnbay.pdf"
+          syllabus={DataScienceCourseData[0].syllabus}
+          syllabusDesc={DataScienceCourseData[0].syllabusDesc}
+          popupHead={DataScienceCourseData[0].popupHead}
+          srcD="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Advance+Data+Science+and+AI+Certification+Program+Learnbay.pdf"
+          hours="250+ Hours"
+          project="12+ Real Time"
         />
       </main>
     </>
