@@ -99,19 +99,23 @@ function FirstSection({
         <p className={styles.ptop} style={{ color: "#000" }}>
           In Collaboration With
         </p>
-        <div className={styles.IBMlogo}>
-          <Image
-            src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/FirstSection.png"
-            width="270"
-            height="51"
-            alt="data science course"
-          />
+        <div className={styles.ImageBlock}>
+          <div className="imgWrapper">
+            <Image
+              src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/FirstSection.png"
+              width="283"
+              height="51"
+              priority={true}
+              alt="data science course"
+            />
+          </div>
         </div>
         <div className={styles.animationTextWrap}>
           <span ref={el} className={styles.animationText}></span>
         </div>
 
         {/* Button */}
+
         <div className={styles.btnImage}>
           <div onClick={popupShow}>
             <Button
@@ -119,60 +123,37 @@ function FirstSection({
               text="Brochure"
               passIcon={<FaDownload style={{ marginLeft: "10px" }} />}
             />
-            {/* Button */}
-            <div className={styles.btnImage}>
-              <div onClick={popupShow}>
+          </div>
+          {softwareBtnHide ? (
+            <></>
+          ) : (
+            <>
+              <div onClick={videoSHow}>
                 <Button
-                  className={styles.button}
-                  text="Brochure"
-                  passIcon={<FaDownload style={{ marginLeft: "10px" }} />}
+                  className={styles.outLineBtn}
+                  text="Intro Video"
+                  passIcon={
+                    <FaPlayCircle
+                      style={{ marginLeft: "10px", fontSize: "22px" }}
+                    />
+                  }
                 />
               </div>
-              {softwareBtnHide ? (
-                <></>
-              ) : (
-                <>
-                  <div onClick={videoSHow}>
-                    <Button
-                      className={styles.outLineBtn}
-                      text="Intro Video"
-                      passIcon={
-                        <FaPlayCircle
-                          style={{ marginLeft: "10px", fontSize: "22px" }}
-                        />
-                      }
-                    />
-                  </div>
-                  <div onClick={videoSHow}>
-                    <Button
-                      className={styles.outLineBtn}
-                      text="Intro Video"
-                      passIcon={
-                        <FaPlayCircle
-                          style={{ marginLeft: "10px", fontSize: "22px" }}
-                        />
-                      }
-                    />
-                  </div>
-                </>
-              )}
-            </div>
-          </div>
+            </>
+          )}
+        </div>
+      </div>
 
-          {/* For desktop View */}
+      {/* For desktop View */}
 
-          <div className={styles.secondLeft}>
-            <div className="imgWrapper">
-              <div className="imgWrapper">
-                <Image
-                  src={FirstRightImg}
-                  width="580"
-                  height="450"
-                  alt="data science course"
-                />
-              </div>
-            </div>
-          </div>
+      <div className={styles.secondLeft}>
+        <div className="imgWrapper">
+          <Image
+            src={FirstRightImg}
+            width="580"
+            height="450"
+            alt="data science course"
+          />
         </div>
       </div>
     </div>

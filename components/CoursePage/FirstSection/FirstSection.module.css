@@ -129,7 +129,10 @@
   justify-content: space-evenly;
 }
 
-
+.ImageBlock{
+  width: 300px;
+  height: max-content;
+}
 @media (max-width: 1281px) {
   .h1 {
     font-size: 30px;
@@ -145,6 +148,14 @@
   margin-top: 6px;
   margin-bottom: 16px;
 }
+.ImageBlock{
+  width: 250px;
+}
+}
+@media(max-width:1024px){
+  .ImageBlock{
+  width: 200px;
+}
 }
 @media (max-width: 961px) {
   .h1 {font-size: 22px;}
@@ -154,6 +165,9 @@
   .animationText {
       font-size: 21px;}
         .animationTextWrap {margin-bottom: 7px;}
+        .ImageBlock{
+  width: 180px;
+}
 }
 @media (max-width: 801px) {
   .First {
@@ -178,6 +192,9 @@
   .btnImage{
     margin: auto !important;
   }
+  .ImageBlock{
+margin: auto;
+}
 }
 
 @media (max-width: 481px) {
@@ -203,4 +220,7 @@
   justify-content: left !important;
     text-align: left !important;
  }
+  .ImageBlock{
+    margin: 0px;
+  }
 }
