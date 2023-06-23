@@ -8,6 +8,7 @@ import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/scrollbar";
 import Popup from "../../Popup/Popup";
+import Button from "../../Global/Button/Button";
 
 function SyllabusNew({
   syllabus,
@@ -26,27 +27,17 @@ function SyllabusNew({
     setPopups(true);
   };
 
-  const [mobile, setMobile] = useState(false);
-  useEffect(() => {
-    let width = window.innerWidth;
-    if (width < 600) {
-      setMobile(true);
-    }
-  });
-
   const [state, setState] = useState(syllabus);
   const [Beginner, setBeginner] = useState(true);
   const [Advanced, setAdvanced] = useState(false);
   const [Pop, setPop] = useState(false);
-
   useEffect(() => {
     if (Advanced) {
       setState(advSyllabus);
     } else {
       setState(syllabus);
     }
-  });
-
+  }, [Advanced, advSyllabus, syllabus]);
   const handleChange = (index) => {
     setState(
       state.map((faq, i) => {
@@ -366,10 +357,12 @@ function SyllabusNew({
               })}
             </>
           )}
-          <button onClick={popupShow}>
-            Download Detailed Syllabus
-            <FaDownload style={{ marginLeft: "10px" }} />
-          </button>
+          <div onClick={popupShow}>
+            <Button
+              text="Download Detailed Syllabus"
+              passIcon={<FaDownload style={{ marginLeft: "10px" }} />}
+            />
+          </div>
         </div>
         <div className={styles.button}>
           <div className={styles.formWrapper}>
