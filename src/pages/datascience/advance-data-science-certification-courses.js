@@ -117,7 +117,7 @@ function blockchain() {
           threeCertificate
           data={DataScienceCourseData[0].Certificate}
         />
-        <Project />
+        <Project redirectDS={true} />
         <SeventhSection />
         <Footer />
       </main>
