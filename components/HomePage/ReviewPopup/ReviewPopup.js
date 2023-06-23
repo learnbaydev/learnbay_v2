@@ -21,7 +21,7 @@ const ReviewPopup = (props) => {
       document.body.style.overflow = "unset";
     }
   }, [props.trigger]);
-  console.log(props);
+
   return props.trigger ? (
     <div className={styles.popup}>
       <div

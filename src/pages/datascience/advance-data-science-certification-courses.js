@@ -16,6 +16,7 @@ import FifthSection from "../../../components/CoursePage/FifthSection/FifthSecti
 import SixthSectionCTA from "../../../components/CoursePage/SixthSectionCTA/Counselling";
 import Project from "../../../components/CoursePage/Project/Project";
 import SyllabusNew from "../../../components/CoursePage/Syllabus/Syllabus";
+import Certificate from "../../../components/CoursePage/Certificate/Certificate";
 
 function blockchain() {
   // const [popups, setPopups] = useState(false);
@@ -112,6 +113,7 @@ function blockchain() {
           hours="250+ Hours"
           project="12+ Real Time"
         />
+        <Certificate />
         <Project />
         <SeventhSection />
         <Footer />

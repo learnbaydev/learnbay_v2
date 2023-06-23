@@ -8,6 +8,7 @@ import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/scrollbar";
 import Popup from "../../Popup/Popup";
+import Button from "../../Global/Button/Button";
 
 function SyllabusNew({
   syllabus,
@@ -356,10 +357,12 @@ function SyllabusNew({
               })}
             </>
           )}
-          <button onClick={popupShow}>
-            Download Detailed Syllabus
-            <FaDownload style={{ marginLeft: "10px" }} />
-          </button>
+          <div onClick={popupShow}>
+            <Button
+              text="Download Detailed Syllabus"
+              passIcon={<FaDownload style={{ marginLeft: "10px" }} />}
+            />
+          </div>
         </div>
         <div className={styles.button}>
           <div className={styles.formWrapper}>
