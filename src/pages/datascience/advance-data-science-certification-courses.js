@@ -114,7 +114,7 @@ function blockchain() {
           project="12+ Real Time"
         />
         <Certificate />
-        <Project />
+        {/* <Project /> */}
         <SeventhSection />
         <Footer />
       </main>
