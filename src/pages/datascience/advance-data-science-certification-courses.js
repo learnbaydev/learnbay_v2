@@ -115,6 +115,11 @@ function blockchain() {
         />
         <Certificate />
         {/* <Project /> */}
+        <Certificate
+          threeCertificate
+          data={DataScienceCourseData[0].Certificate}
+        />
+        <Project />
         <SeventhSection />
         <Footer />
       </main>
