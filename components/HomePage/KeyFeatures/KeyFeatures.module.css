@@ -13,6 +13,12 @@
   text-align: center;
   font-weight: 700;
 }
+.imgWrap {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 20px;
+}
 
 .FeatureWrap {
   margin-top: 30px;
@@ -139,6 +145,7 @@
 .RightWrap {
   background-color: #fff;
   border-radius: 20px;
+
   background: url("https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Network-reach-BG.png");
   margin: auto;
   margin: -180px 100px 100px 100px;
@@ -179,14 +186,13 @@
   .RightWrap {
     padding: 20px;
   }
-.imgWrap {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+  .imgWrap {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 20px;
+  }
 }
-
-}
-
 
 @media (max-width: 801px) {
   .RightWrap h2 {
