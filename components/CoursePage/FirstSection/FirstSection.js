@@ -3,11 +3,10 @@ import styles from "./FirstSection.module.css";
 import { FaDownload, FaPlayCircle } from "react-icons/fa";
 import Form from "../../Form/Form";
 import Popup from "../../Popup/Popup";
-import Popup from "../../Popup/Popup";
+
 import Image from "next/image";
 import Typed from "typed.js";
 // import VideoPopup from "../../VideoPopup/VideoPopup";
-import Button from "../../Global/Button/Button";
 import Button from "../../Global/Button/Button";
 
 function FirstSection({
@@ -28,7 +27,7 @@ function FirstSection({
   ThirdTyped,
 }) {
   const [popups, setPopups] = useState(false);
-  const [popups, setPopups] = useState(false);
+
   const [video, setVideo] = useState(false);
   const videoSHow = () => {
     setVideo(true);
@@ -58,7 +57,6 @@ function FirstSection({
   return (
     <div className={styles.First}>
       <Popup
-      <Popup
         trigger={popups}
         setTrigger={setPopups}
         className="popupModal"
@@ -81,7 +79,7 @@ function FirstSection({
           />
         </div>
       </Popup>
-      <VideoPopup triggers={video} setTriggers={setVideo} ids={idss} />
+      {/* <VideoPopup triggers={video} setTriggers={setVideo} ids={idss} /> */}
 
       {/* For Mobile View */}
 
@@ -105,7 +103,6 @@ function FirstSection({
           <Image
             src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/FirstSection.png"
             width="270"
-            width="270"
             height="51"
             alt="data science course"
           />
@@ -121,58 +118,61 @@ function FirstSection({
               className={styles.button}
               text="Brochure"
               passIcon={<FaDownload style={{ marginLeft: "10px" }} />}
-        {/* Button */}
-        <div className={styles.btnImage}>
-          <div onClick={popupShow}>
-            <Button
-              className={styles.button}
-              text="Brochure"
-              passIcon={<FaDownload style={{ marginLeft: "10px" }} />}
             />
+            {/* Button */}
+            <div className={styles.btnImage}>
+              <div onClick={popupShow}>
+                <Button
+                  className={styles.button}
+                  text="Brochure"
+                  passIcon={<FaDownload style={{ marginLeft: "10px" }} />}
+                />
+              </div>
+              {softwareBtnHide ? (
+                <></>
+              ) : (
+                <>
+                  <div onClick={videoSHow}>
+                    <Button
+                      className={styles.outLineBtn}
+                      text="Intro Video"
+                      passIcon={
+                        <FaPlayCircle
+                          style={{ marginLeft: "10px", fontSize: "22px" }}
+                        />
+                      }
+                    />
+                  </div>
+                  <div onClick={videoSHow}>
+                    <Button
+                      className={styles.outLineBtn}
+                      text="Intro Video"
+                      passIcon={
+                        <FaPlayCircle
+                          style={{ marginLeft: "10px", fontSize: "22px" }}
+                        />
+                      }
+                    />
+                  </div>
+                </>
+              )}
+            </div>
           </div>
-          {softwareBtnHide ? (
-            <></>
-          ) : (
-            <>
-            <div onClick={videoSHow}>
-              <Button
-                className={styles.outLineBtn}
-                text="Intro Video"
-                passIcon={
-                  <FaPlayCircle
-                    style={{ marginLeft: "10px", fontSize: "22px" }}
-                  />
-                }
-              />
+
+          {/* For desktop View */}
+
+          <div className={styles.secondLeft}>
+            <div className="imgWrapper">
+              <div className="imgWrapper">
+                <Image
+                  src={FirstRightImg}
+                  width="580"
+                  height="450"
+                  alt="data science course"
+                />
+              </div>
             </div>
-            <div onClick={videoSHow}>
-              <Button
-                className={styles.outLineBtn}
-                text="Intro Video"
-                passIcon={
-                  <FaPlayCircle
-                    style={{ marginLeft: "10px", fontSize: "22px" }}
-                  />
-                }
-              />
-
-            </div>
-            </>
-          )}
-        </div>
-      </div>
-
-      {/* For desktop View */}
-
-      <div className={styles.secondLeft}>
-        <div className="imgWrapper">
-        <div className="imgWrapper">
-          <Image
-            src={FirstRightImg}
-            width="580"
-            height="450"
-            alt="data science course"
-          />
+          </div>
         </div>
       </div>
     </div>
