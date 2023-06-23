@@ -4,6 +4,7 @@ import Navbar from "../../../components/Navbar/Navbar";
 import Footer from "../../../components/Footer/Footer";
 import Form from "../../../components/Form/Form";
 import Popup from "../../../components/Popup/Popup";
+import { DataScienceCourseData } from "../../../Data/DataScienceCourse";
 import FirstSection from "../../../components/CoursePage/FirstSection/FirstSection";
 import SeventhSection from "../../../components/Global/SeventhSection/SeventhSection";
 import SecondSection from "../../../components/CoursePage/SecondSection/SecondSection";
@@ -13,6 +14,12 @@ import Switch from "../../../components/HomePage/switch/switch";
 import GrowthStats from "../../../components/CoursePage/GrowthStat/GrowthStats";
 import ToolsCovered from "../../../components/CoursePage/ToolsCovered/ToolsCovered";
 import FeeSection from "../../../components/CoursePage/FeeSection/FeeSection";
+import FourthSection from "../../../components/CoursePage/FourthSection/FourthSection";
+import FifthSection from "../../../components/CoursePage/FifthSection/FifthSection";
+import SixthSectionCTA from "../../../components/CoursePage/SixthSectionCTA/Counselling";
+import Project from "../../../components/CoursePage/Project/Project";
+import SyllabusNew from "../../../components/CoursePage/Syllabus/Syllabus";
+import Certificate from "../../../components/CoursePage/Certificate/Certificate";
 
 function blockchain() {
   // const [popups, setPopups] = useState(false);
@@ -109,6 +116,30 @@ function blockchain() {
          FeeContent4="Easy loan procedure"
          FeeContent5="15 days refund policy"
          FeeContent6="No additional cost"/>
+        <Switch />
+        <FourthSection redirectDS={true} />
+        <FifthSection />
+        <SixthSectionCTA />
+        <SyllabusNew
+          dataScienceCounselling={true}
+          serviceBasic={true}
+          careerH1="Career Service"
+          careerSpan="Basic"
+          dataScience={true}
+          titleCourse="Advanced Data Science and AI Program with domain specialization"
+          brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Advance+Data+Science+and+AI+Certification+Program+Learnbay.pdf"
+          syllabus={DataScienceCourseData[0].syllabus}
+          syllabusDesc={DataScienceCourseData[0].syllabusDesc}
+          popupHead={DataScienceCourseData[0].popupHead}
+          srcD="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Advance+Data+Science+and+AI+Certification+Program+Learnbay.pdf"
+          hours="250+ Hours"
+          project="12+ Real Time"
+        />
+        <Certificate
+          threeCertificate
+          data={DataScienceCourseData[0].Certificate}
+        />
+        <Project redirectDS={true} />
         <SeventhSection />
         <Footer />
       </main>

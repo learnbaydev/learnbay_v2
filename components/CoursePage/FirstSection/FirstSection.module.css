@@ -129,107 +129,98 @@
   justify-content: space-evenly;
 }
 
-.PlayImg {
-  text-align: center;
-  margin: 0px 0px 30px 0px;
+.ImageBlock{
+  width: 300px;
+  height: max-content;
 }
-
-@media (max-width: 641px) {
-  .First {
-    padding: 30px 20px 30px 20px;
-    display: block;
-  }
-
-  .FirstLeft p {
-    margin: 10px 0px 20px 0px;
-    text-align: center;
-    font-size: 16px;
-  }
-  .btnImage {
-    display: flex;
-    width: 100%;
-
-    justify-content: flex-start;
-    align-items: flex-start;
-  }
-
-  .FirstLeft .ptop {
-    color: #767676;
-    font-size: 18px;
-    margin: 0;
-    text-align: left;
-    line-height: 24px;
-  }
-
-  .FirstLeft .ptopC {
-    font-size: 16px;
-    margin: 0px;
-    text-align: left;
-  }
-
-  .FirstLeft .h1Span {
-    text-align: center;
-    color: #f99600;
-  }
-
-  .FirstLeft .h1 {
-    color: #0072bc;
-    margin: 10px 0px 20px 0px;
-    font-size: 27px;
-    text-align: left;
-    line-height: 34px;
-  }
-
-  .logos {
-    display: flex;
-    justify-content: flex-start;
-    gap: 50px;
-    margin-top: 20px;
-    text-align: left;
-  }
-  .IBMlogo,
-  .IBMlogoPlay {
-    text-align: left;
-    margin: 10px 0px;
-  }
-
-  .IBMlogoPlay {
-    display: none;
-  }
-
-  .secondLeft {
-    display: none;
-  }
-
-  .PlayImg {
-    display: none;
-  }
-
-  .logosD {
-    display: none;
+@media (max-width: 1281px) {
+  .h1 {
+    font-size: 30px;
+    line-height: 39px;
   }
   .animationText {
-    font-size: 20px;
+    font-size: 23px;
   }
-  .FirstLeft button {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    font-size: 16px;
-    height: fit-content;
-    margin-top: 20px;
-    padding: 15px 12px;
-   
-  }
-  .blink {
-    line-height: 30px;
-  }
-  .line {
-    display: none;
+  .ptop{
+    font-size: 19px;
   }
   .animationTextWrap {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  height: 40px;
+  margin-top: 6px;
+  margin-bottom: 16px;
 }
+.ImageBlock{
+  width: 250px;
+}
+}
+@media(max-width:1024px){
+  .ImageBlock{
+  width: 200px;
+}
+}
+@media (max-width: 961px) {
+  .h1 {font-size: 22px;}
+   .ptopC{
+    font-size: 19px !important;
+  }
+  .animationText {
+      font-size: 21px;}
+        .animationTextWrap {margin-bottom: 7px;}
+        .ImageBlock{
+  width: 180px;
+}
+}
+@media (max-width: 801px) {
+  .First {
+        display: flex;
+    flex-flow: column;
+     padding: 70px 50px 70px 50px;
+  }
+  .animationTextWrap{
+   justify-content: center ;
+    text-align: center ;
+ }
+ .ptopC,.h1,.ptop,.IBMlogo{
+  text-align: center;
+  justify-content: center;
+}
+ .secondLeft{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+ }
+  .btnImage{
+    margin: auto !important;
+  }
+  .ImageBlock{
+margin: auto;
+}
+}
+
+@media (max-width: 481px) {
+  .First{
+        padding: 70px 50px 70px 50px;
+  }
+  .h1 {font-size: 27px;}
+   .ptopC{
+    font-size: 23px !important;
+  }
+  .ptopC,.h1,.ptop{
+    justify-content: left;
+    text-align: left;
+  }
+  .btnImage{
+    margin: 0 !important;
+  }
+ .animationTextWrap{
+   justify-content: left;
+    text-align: left;
+ }
+ .IBMlogo{
+  justify-content: left !important;
+    text-align: left !important;
+ }
+  .ImageBlock{
+    margin: 0px;
+  }
 }
