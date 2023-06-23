@@ -113,7 +113,10 @@ function blockchain() {
           hours="250+ Hours"
           project="12+ Real Time"
         />
-        <Certificate />
+        <Certificate
+          threeCertificate
+          data={DataScienceCourseData[0].Certificate}
+        />
         <Project />
         <SeventhSection />
         <Footer />

@@ -45,9 +45,38 @@ export const DataScienceCourseData = [
       JobD: " Our program seeks to eliminate financial risk in the upskilling journey with our 100% job assistance.",
     },
     Certificate: {
-      popupHead: "Download Data science Brochure",
-      title: "Get Certificate directly from AI companies",
-      desc: "Get 100% job assistance and real-work experience by learning from the best data science institute in India and crack interviews with confidence.",
+      twoCertificate: [
+        {
+          id: 1,
+          img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Certificate-blue.png",
+          title: "Course Completion Certificate from IBM",
+          para: [
+            "Complete your training with the internationally recognized certificate.",
+            "Validate your Data Science and AI skills with IBM Course Completion Certificate.",
+            "Get acknowledged in IT sector by adding IBM Certificate to your profile.",
+          ],
+        },
+        {
+          id: 2,
+          img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Certificate-Yellow.png",
+          title: "Capstone Project Certificate from IBM",
+          para: [
+            "Globally recognized IBM certification based on industrial-level projects.",
+            "Work on 1 capstone project certified by IBM.",
+            "Individualized project experience with easy access to premium job opportunities.",
+          ],
+        },
+      ],
+      oneCertificate: {
+        id: 3,
+        img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Microsoft-certificate-data.png",
+        title: "Certification in Collaboration with Microsoft",
+        para: [
+          "Industry-certified Microsoft certificates",
+          "Gain expertise & get recognized worldwide",
+          "Boost job opportunities and earnings with Microsoft’s certification",
+        ],
+      },
     },
     RealWork: {
       desc: "Our Advanced Data science and AI course with 100% job assistance follows a project-based learning approach. Further, it       focuses on helping learners build relevant experience in the technologies to land your super dream job.",
