@@ -93,6 +93,7 @@ function blockchain() {
           para="Discover the impact of our programs on career growth"
         />
         {/* {/* <ThirdSection leftImage="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/whoIsProgram.webp"/> */}
+        <Switch />
         <FourthSection redirectDS={true} />
         <FifthSection />
         <SixthSectionCTA />
@@ -111,11 +112,6 @@ function blockchain() {
           hours="250+ Hours"
           project="12+ Real Time"
         />
-        <FourthSection redirectDS={true} />
-        <FifthSection />
-        <SixthSectionCTA />
-        <Switch />
-        <Project />
         <Project />
         <SeventhSection />
         <Footer />

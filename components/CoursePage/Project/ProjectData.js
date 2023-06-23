@@ -93,3 +93,100 @@ export const projectDS = [
       "Netflix is a global entertainment video streaming site. They offer content in various regional languages. Build a local recommendation engine for Netflix customers residing in south Bangalore on their weekend and weekdays activities, utilizing NLP.",
   },
 ];
+
+export const projectHR = [
+  {
+    id: 1,
+    domain: "HR Domain",
+    CLogo:
+      "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/ge.png",
+    SDesc:
+      " E uses predictive analytics to forecast future talent needs  and identify gaps in their workforce. By analyzing HR data such as employee demographics...",
+    PopupImg:
+      "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/Hr-domain-img.png",
+    Heading: "Workforce Planning at GE",
+    LDesc:
+      "E uses predictive analytics to forecast future talent needs and identify gaps in their workforce. By analyzing HR data such as employee demographics, attrition rates, and skills, GE can make informed decisions about hiring and workforce planning. Tools and Techniques used: Predictive analytics, Demographic analysis, Skills gap analysis. ",
+  },
+  {
+    id: 2,
+    domain: "Management at Deloitte",
+    CLogo:
+      "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/deloite.png",
+    SDesc:
+      "  Deloitte uses a data-driven approach to performance management. The company utilizes analytics to measure employee performance...",
+    PopupImg:
+      "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/Marketing-domain-img.png",
+    Heading: "Performance Management at Deloitte",
+    LDesc:
+      "Deloitte uses a data-driven approach to performance management. The company utilizes analytics to measure employee performance, provide feedback, and identify areas for improvement. Tools and Techniques used: Performance metrics, Feedback analysis, Continuous performance management. ",
+  },
+  {
+    id: 3,
+    domain: "Diversity and Inclusion at Google",
+    CLogo:
+      "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/google.png",
+    SDesc:
+      "  Google uses analytics to monitor and improve diversity and inclusion within the company. By analyzing HR data...",
+    PopupImg:
+      "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/supplyChain.png",
+    Heading: "Performance Management at Deloitte",
+    LDesc:
+      "Google uses analytics to monitor and improve diversity and inclusion within the company. By analyzing HR data, such as employee demographics and hiring practices, Google can identify areas where it needs to improve diversity and create initiatives to promote inclusion. Tools and Techniques used: Diversity metrics, Demographic analysis, Inclusion programs. ",
+  },
+  {
+    id: 4,
+    domain: "Compensation Analytics at Netflix",
+    CLogo:
+      "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/netflix.png",
+    SDesc:
+      "  Netflix uses analytics to determine employee compensation packages. By analyzing HR data such as market benchmarks...",
+    PopupImg:
+      "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/Sales-domain.png",
+    Heading: "Compensation Analytics at Netflix",
+    LDesc:
+      "Netflix uses analytics to determine employee compensation packages. By analyzing HR data such as market benchmarks, employee performance, and tenure, Netflix can offer compensation packages that are competitive and fair. Tools and Techniques used: Compensation analysis, Market benchmarking, Performance analysis. ",
+  },
+  {
+    id: 5,
+    domain: "Succession Planning at AT&T",
+    CLogo:
+      "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/at%26t.png",
+    SDesc:
+      " AT&T uses analytics to identify high-potential employees and develop them for future leadership roles...",
+    PopupImg:
+      "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/supplyChain.png",
+    Heading: "Succession Planning at AT&T",
+    LDesc:
+      "AT&T uses analytics to identify high-potential employees and develop them for future leadership roles. By analyzing HR data such as performance metrics, skills, and career aspirations, AT&T can create targeted development plans for its employees.   ",
+  },
+];
+
+export const projectBFSI = [
+  {
+    id: 1,
+    domain: "Risk Management",
+    CLogo:
+      "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/JP.png",
+    SDesc:
+      " Develop a risk management system that uses predictive analytics to identify and assess risks in the financial sector.",
+    PopupImg:
+      "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/Hr-domain-img.png",
+    Heading: "Risk Management",
+    LDesc:
+      "Develop a risk management system that uses predictive analytics to identify and assess risks in the financial sector. Tools used: SAS, Tableau. Company: JPMorgan Chase. ",
+  },
+  {
+    id: 2,
+    domain: "Risk Management",
+    CLogo:
+      "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/JP.png",
+    SDesc:
+      " Develop a risk management system that uses predictive analytics to identify and assess risks in the financial sector.",
+    PopupImg:
+      "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/Hr-domain-img.png",
+    Heading: "Risk Management",
+    LDesc:
+      "Develop a risk management system that uses predictive analytics to identify and assess risks in the financial sector. Tools used: SAS, Tableau. Company: JPMorgan Chase. ",
+  },
+];

@@ -6,7 +6,6 @@ import Popup from "../../Popup/Popup";
 import { FaDownload } from "react-icons/fa";
 import "swiper/css";
 import "swiper/css/navigation";
-import {} from "./FourthSectionData";
 import Button from "../../Global/Button/Button";
 import {
   PlacementDS,
