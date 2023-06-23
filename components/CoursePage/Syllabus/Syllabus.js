@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import styles from "./FourthSection.module.css";
+import styles from "./Syllabus.module.css";
 import { FaChevronUp, FaChevronDown } from "react-icons/fa";
 import { FaDownload } from "react-icons/fa";
 import Form from "../../Form/Form";
@@ -26,27 +26,17 @@ function SyllabusNew({
     setPopups(true);
   };
 
-  const [mobile, setMobile] = useState(false);
-  useEffect(() => {
-    let width = window.innerWidth;
-    if (width < 600) {
-      setMobile(true);
-    }
-  });
-
   const [state, setState] = useState(syllabus);
   const [Beginner, setBeginner] = useState(true);
   const [Advanced, setAdvanced] = useState(false);
   const [Pop, setPop] = useState(false);
-
   useEffect(() => {
     if (Advanced) {
       setState(advSyllabus);
     } else {
       setState(syllabus);
     }
-  });
-
+  }, [Advanced, advSyllabus, syllabus]);
   const handleChange = (index) => {
     setState(
       state.map((faq, i) => {
@@ -187,14 +177,13 @@ function SyllabusNew({
                 <div className={styles.Tab}>
                   <div>
                     <span
-                    onClick={() => {
-                      setPop(true);
-                      setBeginner(true);
-                      setAdvanced(false);
-                    }}
+                      onClick={() => {
+                        setPop(true);
+                        setBeginner(true);
+                        setAdvanced(false);
+                      }}
                       className={Beginner ? styles.ActiveSpan : styles.span}
                     >
-
                       Beginner
                     </span>
                   </div>
@@ -203,7 +192,7 @@ function SyllabusNew({
                       onClick={() => {
                         setPop(true);
                         setBeginner(false);
-                      setAdvanced(true);
+                        setAdvanced(true);
                       }}
                       className={Advanced ? styles.ActiveSpan : styles.span}
                     >
