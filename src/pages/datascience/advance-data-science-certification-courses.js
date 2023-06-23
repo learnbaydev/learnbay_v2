@@ -8,7 +8,7 @@ import FirstSection from "../../../components/CoursePage/FirstSection/FirstSecti
 import SeventhSection from "../../../components/Global/SeventhSection/SeventhSection";
 import SecondSection from "../../../components/CoursePage/SecondSection/SecondSection";
 import Testimonial from "../../../components/HomePage/Testimonial/Testimonial";
-import ThirdSection from "../../../components/CoursePage/ThirdSection/ThirdSection";
+import ThirdSection from "../../../components/CoursePage/WhoProgram/ThirdSection";
 import Switch from "../../../components/HomePage/switch/switch";
 import GrowthStats from "../../../components/CoursePage/GrowthStat/GrowthStats";
 import ToolsCovered from "../../../components/CoursePage/ToolsCovered/ToolsCovered";
