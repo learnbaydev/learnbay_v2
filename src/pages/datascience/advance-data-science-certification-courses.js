@@ -8,7 +8,7 @@ import FirstSection from "../../../components/CoursePage/FirstSection/FirstSecti
 import SeventhSection from "../../../components/Global/SeventhSection/SeventhSection";
 import SecondSection from "../../../components/CoursePage/SecondSection/SecondSection";
 import Testimonial from "../../../components/HomePage/Testimonial/Testimonial";
-import ThirdSection from "../../../components/CoursePage/WhoProgram/ThirdSection";
+import WhoProgram from "../../../components/CoursePage/WhoProgram/ThirdSection";
 import Switch from "../../../components/HomePage/switch/switch";
 import GrowthStats from "../../../components/CoursePage/GrowthStat/GrowthStats";
 import ToolsCovered from "../../../components/CoursePage/ToolsCovered/ToolsCovered";
@@ -89,7 +89,7 @@ function blockchain() {
           redirectDS={true}
           para="Discover the impact of our programs on career growth"
         />
-        <ThirdSection leftImage="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/whoIsProgram.webp" />
+        <WhoProgram leftImage="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/whoIsProgram.webp" />
         <Switch />
         <GrowthStats
           img1="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Scope+of+DS+left+image.png"
