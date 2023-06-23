@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import styles from "./FourthSection.module.css";
+import styles from "./Syllabus.module.css";
 import { FaChevronUp, FaChevronDown } from "react-icons/fa";
 import { FaDownload } from "react-icons/fa";
 import Form from "../../Form/Form";
@@ -187,14 +187,13 @@ function SyllabusNew({
                 <div className={styles.Tab}>
                   <div>
                     <span
-                    onClick={() => {
-                      setPop(true);
-                      setBeginner(true);
-                      setAdvanced(false);
-                    }}
+                      onClick={() => {
+                        setPop(true);
+                        setBeginner(true);
+                        setAdvanced(false);
+                      }}
                       className={Beginner ? styles.ActiveSpan : styles.span}
                     >
-
                       Beginner
                     </span>
                   </div>
@@ -203,7 +202,7 @@ function SyllabusNew({
                       onClick={() => {
                         setPop(true);
                         setBeginner(false);
-                      setAdvanced(true);
+                        setAdvanced(true);
                       }}
                       className={Advanced ? styles.ActiveSpan : styles.span}
                     >
