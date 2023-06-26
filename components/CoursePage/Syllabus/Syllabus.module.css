@@ -5,15 +5,6 @@
   gap: 25px;
 }
 
-.infop {
-  color: #0072bc;
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 20px;
-  margin: 10px 0px;
-  text-align: center;
-}
-
 .FlexInput {
   display: flex;
   font-size: 22px;
@@ -23,19 +14,6 @@
 
 .btnRadio {
   width: 18px;
-}
-
-.h11 {
-  color: #0072bc;
-  margin: 5px 0px 20px 0px;
-  padding: 0px 100px;
-  text-align: left;
-  padding-left: 100px;
-  font-size: 32px;
-}
-
-.project {
-  padding-top: 50px;
 }
 
 .syllabusLeft {
@@ -49,37 +27,6 @@
 .syllabusLeft h4 {
   font-size: 36px;
   font-weight: 800;
-}
-.Syllabusbutton {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 20px;
-}
-
-.Syllabus button {
-  font-size: 18px;
-  border-radius: 4px;
-  background-color: #0072bc !important;
-  font-weight: 700;
-  color: white !important;
-}
-
-.Syllabus button:hover {
-  background: #fff;
-  color: #0072bc;
-  border: 1px solid #0072bc;
-}
-
-.boxBlueB {
-  background: #0072BC;
-  padding: 20px;
-  border-radius: 10px;
-}
-
-.boxBlueB .BoxP {
-  font-size: 22px;
-  color: #fff;
-  margin: 0;
 }
 
 .ques {
@@ -127,6 +74,10 @@
   border-radius: 3px;
   margin-bottom: 30px;
 }
+.ans h5 {
+  font-size: 16px;
+  margin: 10px 0px;
+}
 .ansV {
   display: none;
 }
@@ -163,16 +114,6 @@
   margin-bottom: -23px;
   z-index: 0;
 }
-.white {
-  z-index: 1;
-  position: absolute;
-  background-color: rgb(255, 255, 255);
-  width: 10px;
-  bottom: -30px;
-  left: 33px;
-  height: 51px;
-  margin-top: -30px;
-}
 
 .syllabusRight {
   position: sticky;
@@ -181,167 +122,10 @@
   z-index: 1;
   margin: 0px 10px;
 }
-.PProgram {
-  border-radius: 4px 4px 0px 0px;
-}
-.PProgram > p {
-  font-size: 16px;
-  margin: 0;
-  color: #0072bc;
-  font-weight: 600;
-  padding: 15px 20px 0px 20px;
-}
-.PProgram p span {
-  padding-bottom: 5px;
-  border-bottom: 2px solid #edb552;
-}
-.PProgramInner {
-  display: grid;
-  grid-template-columns: 49% 49%;
-
-  font-size: 14px;
-
-  padding: 10px 20px 10px 50px;
-}
-.PProgramInners {
-  font-size: 14px;
-  padding: 40px 20px;
-}
-.PProgrammains {
-  background: #ffffff;
-  border-width: 0px 6px;
-  display: flex;
-  flex-flow: column;
-  gap: 20px;
-  border-style: solid;
-  border-color: #0072bc;
-  position: relative;
-  z-index: 10;
-  border-radius: 17px;
-}
-.PProgrammain {
-  background-image: url("https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/syllabus-sideLine.png");
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin-bottom: 70px;
-}
-.PProgramInner div,
-.PProgrammains p {
-  display: flex;
-  gap: 8px;
-  align-items: center;
-}
-
-.PProgrammains h5 {
-  margin: 0;
-  text-align: center;
-  font-size: 22px;
-  position: absolute;
-  margin: auto;
-  left: 45px;
-  top: -15px;
-  justify-content: center;
-  font-weight: 600;
-}
-.PProgrammains h5 span {
-  padding-bottom: 5px;
-  border-bottom: 4px solid #edb552;
-}
-.PProgramInner p {
-  font-size: 14px;
-  font-weight: 600;
-  color: black;
-}
-.PProgramInner p span {
-  font-size: 11px;
-  color: #7c7c7c;
-}
-.shadowImg {
-  position: absolute;
-  left: -10px;
-  width: 100%;
-  height: auto;
-  z-index: 0;
-  bottom: -40px;
-}
-
-.h1Span {
-  background: linear-gradient(90deg, #f99600 50%, #edb552 103.64%);
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.sliderBox {
-  background: url("https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Career-Services-Pro.png");
-  background-size: contain;
-  background-position: left;
-  background-repeat: no-repeat;
-  display: grid;
-  grid-template-columns: 30% 70%;
-}
-
-.h1 {
-  color: black;
-  margin: 0px;
-  padding: 0px 100px;
-  text-align: center;
-  font-size: 32px;
-  font-weight: 700;
-}
-
-.para {
-  font-size: 16px;
-  color: #616161;
-  margin: 10px 0px;
-  padding: 0px 20px;
-}
-
-.name h3 {
-  margin: 0;
-  font-size: 20px;
-}
-
-.name p {
-  margin: 0;
-  font-size: 18px;
-  border-bottom: 1px solid #0072bc;
-  width: fit-content;
-  color: #0072bc;
-}
-
-.Testimonial {
-  padding: 0px 100px 30px 100px;
-}
-
-.slide {
-  height: 480px;
-}
-
-.mainSlider {
-  background: #ffffff;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 15px;
-  padding: 30px;
-  height: 280px;
-}
-
-.blueIcon {
-  font-size: 30px;
-}
-
-.imgP P {
-  font-size: 22px;
-}
-
-.imgP {
-  display: flex;
-  gap: 10px;
-}
 
 .syllabusLeft button {
-  margin-left: 24px;
   margin-top: 30px;
+  margin-left: 30px;
 }
 .formWrapper {
   display: flex;
@@ -356,8 +140,10 @@
 }
 .formWrapper h4 {
   margin-top: 30px;
+  margin-bottom: 20px;
   color: #646464;
   font-size: 22px;
+  text-align: center;
 }
 .ptop {
   font-size: 20px;
@@ -376,8 +162,8 @@
   gap: 20px;
 }
 .ActiveSpan {
-  background-color: #0072BC1A;
-  color: #0072BC;
+  background-color: #0072bc1a;
+  color: #0072bc;
   padding: 10px 30px;
   font-size: 20px;
   border-bottom: 1px solid #000;
@@ -387,6 +173,9 @@
 .span {
   padding: 10px 30px;
   font-size: 20px;
+}
+.h1 {
+  text-align: center;
 }
 @media (max-width: 1281px) {
   .Syllabus {
@@ -400,10 +189,10 @@
   }
 
   .Tab {
-  height: 55px;
-  gap: 0;
+    height: 55px;
+    gap: 0;
   }
-  
+
   .PIcons {
     font-size: 22px;
     margin-right: 10px;
@@ -424,16 +213,6 @@
     margin-bottom: -23px;
     z-index: 0;
   }
-  .white {
-    z-index: 1;
-    position: absolute;
-    background-color: rgb(255, 255, 255);
-    width: 10px;
-    bottom: -30px;
-    left: 33px;
-    height: 51px;
-    margin-top: -30px;
-  }
 
   .syllabusRight {
     position: sticky;
@@ -441,124 +220,6 @@
     top: 80px;
     z-index: 1;
     margin: 0px 10px;
-  }
-  .PProgram {
-    border-radius: 4px 4px 0px 0px;
-  }
-  .PProgram > p {
-    font-size: 16px;
-    margin: 0;
-    color: #0072bc;
-    font-weight: 600;
-    padding: 15px 20px 0px 20px;
-  }
-  .PProgram p span {
-    padding-bottom: 5px;
-    border-bottom: 2px solid #edb552;
-  }
-  .PProgramInner {
-    display: grid;
-    grid-template-columns: 49% 49%;
-
-    font-size: 14px;
-
-    padding: 10px 20px 10px 10px;
-  }
-  .PProgramInners {
-    font-size: 14px;
-    padding: 40px 20px;
-  }
-  .PProgrammains {
-    background: #ffffff;
-    border-width: 0px 6px;
-    display: flex;
-    flex-flow: column;
-    gap: 20px;
-    border-style: solid;
-    border-color: #0072bc;
-    position: relative;
-    z-index: 10;
-    border-radius: 17px;
-  }
-  .PProgrammain {
-    background-image: url("https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/syllabus-sideLine.png");
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin-bottom: 70px;
-  }
-  .PProgramInner div,
-  .PProgrammains p {
-    display: flex;
-    gap: 8px;
-    align-items: center;
-  }
-
-  .PProgrammains h5 {
-    margin: 0;
-    text-align: center;
-    font-size: 17px;
-    position: absolute;
-    margin: auto;
-    left: 15px;
-    top: -5px;
-    justify-content: center;
-    font-weight: 600;
-  }
-  .PProgrammains h5 span {
-    padding-bottom: 5px;
-    border-bottom: 4px solid #edb552;
-  }
-  .PProgramInner p {
-    font-size: 14px;
-    font-weight: 600;
-    color: black;
-  }
-  .PProgramInner p span {
-    font-size: 11px;
-    color: #7c7c7c;
-  }
-  .shadowImg {
-    position: absolute;
-    left: -10px;
-    width: 100%;
-    height: auto;
-    z-index: 0;
-    bottom: -40px;
-  }
-}
-
-@media (min-width: 641px) and (max-width: 960px) {
-  .Syllabus {
-    margin: 40px 20px 20px 20px;
-    display: block;
-  }
-  .syllabusLeft {
-    margin-bottom: 20px;
-  }
-  .PProgram p {
-    font-size: 26px;
-  }
-  .PProgramInner {
-    margin: 20px 0px 0px 80px;
-  }
-  .PProgramInner p {
-    font-size: 17px;
-  }
-  .PProgrammains {
-    margin-top: 20px;
-  }
-  .PProgrammains h5 {
-    font-size: 26px;
-  }
-  .PProgrammain {
-    background-size: cover;
-  }
-  .syllabusRight {
-    margin-top: 60px;
-  }
-  .FaqWrapper {
-    margin-left: 0px;
   }
 }
 
@@ -575,6 +236,7 @@
     margin: auto;
   }
 }
+
 @media (max-width: 641px) {
   .Syllabus {
     margin: 30px 10px;
@@ -582,8 +244,52 @@
     flex-flow: column;
     gap: 30px;
   }
-}
 
+  .careerPro {
+    padding: 0px 20px 50px 20px;
+  }
+
+  .slide {
+    height: fit-content;
+  }
+
+  /* .imgP {
+      display: grid;
+      grid-template-columns: 10% 90%;
+    } */
+
+  .imgP P {
+    margin: 0;
+    margin-top: 20px;
+    font-size: 16px;
+  }
+
+  .bulb {
+    margin: auto;
+  }
+
+  .button {
+    margin: auto;
+    margin-top: -30px;
+  }
+  .h1 {
+    color: black;
+    margin: 0px 0px 10px 0px;
+    padding: 0px;
+  }
+
+  .button {
+    display: none;
+  }
+
+  .ptop {
+    font-size: 18px;
+    margin: 0;
+    color: #767676;
+    line-height: 26px;
+    text-align: center;
+  }
+}
 @media (max-width: 481px) {
   .Syllabus {
     display: grid;
@@ -626,136 +332,5 @@
 
   .syllabusRight {
     margin: 0px;
-  }
-
-  .white {
-    z-index: 1;
-    position: absolute;
-    background-color: rgb(255, 255, 255);
-    width: 10px;
-    left: 29px;
-    height: 53px;
-    margin-top: -29px;
-  }
-  .PProgrammain {
-    background-image: url(/syllabus-sideLine.png);
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin-bottom: 60px;
-  }
-  .PProgramInner {
-    display: grid;
-    grid-template-columns: 45% 45%;
-    font-size: 14px;
-    padding: 20px 20px 20px 20px;
-  }
-  .PProgramInner div,
-  .PProgrammains p {
-    display: flex;
-    flex-direction: column;
-    gap: 0;
-    align-items: center;
-  }
-  .PProgramInner p {
-    display: grid;
-    align-items: center;
-  }
-  .PProgrammains h5 {
-    left: 30px;
-  }
-}
-
-@media (max-width: 641px) {
-  .h1Span {
-    background: linear-gradient(90deg, #f99600 50%, #edb552 103.64%);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-
-  .h1 {
-    color: black;
-    margin: 10px 0px 20px 0px;
-    font-size: 24px;
-  }
-
-  .careerPro {
-    padding: 0px 20px 50px 20px;
-  }
-  .Testimonial {
-    padding: 0px;
-  }
-  .slide {
-    height: fit-content;
-  }
-  .mainSlider {
-    padding: 0px;
-    height: 210px;
-    margin: 10px 5px 40px 5px;
-    text-align: left;
-  }
-
-  /* .imgP {
-      display: grid;
-      grid-template-columns: 10% 90%;
-    } */
-
-  .imgP P {
-    margin: 0;
-    margin-top: 20px;
-    font-size: 16px;
-  }
-
-  .bulb {
-    margin: auto;
-  }
-
-  .h11 {
-    color: #0072bc;
-    margin: 10px 0px 20px 0px;
-    font-size: 24px;
-    text-align: left;
-    padding: 0;
-  }
-  .infop {
-    color: #0072bc;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 16px;
-    margin: 10px 0px;
-    text-align: center;
-  }
-
-  .button {
-    margin: auto;
-    margin-top: -30px;
-  }
-  .h1 {
-    color: black;
-    margin: 0px 0px 10px 0px;
-    padding: 0px;
-  }
-  .sliderBox {
-    background: url("https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/MAp.png");
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: grid;
-    grid-template-columns: 30% 70%;
-  }
-
-  .button {
-    display: none;
-  }
-
-  .project {
-    padding-top: 50px;
-  }
-  .ptop {
-    font-size: 18px;
-    margin: 0;
-    color: #767676;
-    line-height: 26px;
-    text-align: center;
   }
 }
