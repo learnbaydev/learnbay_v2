@@ -19,6 +19,7 @@ import {
   projectCloud,
   projectBlockchain,
 } from "./ProjectData";
+import Button from "../../Global/Button/Button";
 
 const Project = ({
   tools,
@@ -211,7 +212,6 @@ const Project = ({
                       src={CLogo}
                       alt="Learnbay"
                       quality={100}
-                      objectFit="contain"
                       width="90"
                       height="45"
                     />
@@ -238,16 +238,14 @@ const Project = ({
       </div>
 
       <div>
-        <button
-          onClick={popupShowP}
-          style={{ margin: "auto", fontSize: "16px" }}
-        >
-          <FaDownload
-            className={styles.bicon}
-            style={{ marginRight: "10px" }}
+        <div onClick={popupShowP} className="buttonAlignCenter">
+          <Button
+            className={styles.outLineBtn}
+            text="Explore Projects"
+            style={{ margin: "auto", fontSize: "16px" }}
+            passIcon={<FaDownload style={{ marginRight: "10px" }} />}
           />
-          Explore Projects
-        </button>
+        </div>
       </div>
     </div>
   );
