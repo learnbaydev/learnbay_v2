@@ -2,8 +2,8 @@ export const switchData = [
   {
     id: 1,
     img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/course-report.webp",
-    height: "94",
-    width: "180",
+    height: "125",
+    width: "206",
     text: "4.7",
     alt: "Course Report",
     url: "https://www.coursereport.com/schools/learnbay",
@@ -12,7 +12,7 @@ export const switchData = [
     id: 2,
     img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/switch-UP.webp",
     height: "125",
-    width: "256",
+    width: "206",
     text: "4.79",
     alt: "Switch Up",
     url: "https://www.switchup.org/bootcamps/learnbay",
@@ -20,7 +20,7 @@ export const switchData = [
   {
     id: 3,
     img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/Google-review.webp",
-    height: "121",
+    height: "125",
     width: "206",
     text: "4.8",
     alt: "Google Review",

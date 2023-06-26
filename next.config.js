@@ -13,6 +13,9 @@ module.exports = {
       "learnbay-wb.s3.ap-south-1.amazonaws.com",
       "skillslash-cdn.s3.ap-south-1.amazonaws.com",
     ],
+
+    formats: ["image/avif", "image/webp"],
+    minimumCacheTTL: 60,
   },
   async redirects() {
     return [

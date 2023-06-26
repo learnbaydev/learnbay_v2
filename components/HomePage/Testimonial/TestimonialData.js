@@ -14,7 +14,7 @@ export const TestimonialDS = [
     statLogo: "140% Hike",
   },
   {
-    id: 2,
+    id: "tcs",
     name: "Mohammad Israr",
     working: "Working at TCS",
     proImg:
@@ -84,7 +84,7 @@ export const TestimonialDS = [
     statLogo: "  127% Hike",
   },
   {
-    id: 3,
+    id: "math",
     name: "Aravind Kumar",
     working: "SA - Data Scientist",
     proImg:

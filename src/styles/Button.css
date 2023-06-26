@@ -18,8 +18,9 @@
   background-color: white;
   color: #0072bc;
 }
-.outLineBtn, .outLineBtn1 {
-  padding: 15px 20px;
+.outLineBtn,
+.outLineBtn1 {
+  padding: 12px 20px;
   border: 1px solid #0072bc;
   color: #0072bc;
   background-color: transparent;
@@ -35,9 +36,9 @@
   background-color: #0072bc;
   color: white;
 }
-@media (max-width:1281px) {
-  .button,.outLineBtn{
-     padding: 10px 20px;
+@media (max-width: 1281px) {
+  .button,
+  .outLineBtn {
+    padding: 10px 20px;
   }
-  
 }

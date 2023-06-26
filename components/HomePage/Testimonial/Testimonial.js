@@ -13,7 +13,7 @@ import { redirect } from "next/dist/server/api-utils";
 import { TestimonialDS, TestimonialFS } from "./TestimonialData";
 import { Pagination, Navigation } from "swiper";
 
-function Testimonial({ redirectDS }) {
+function Testimonial({ redirectDS, para }) {
   const [mobile, setMobile] = useState(false);
   const [img, setImg] = useState({
     cLogo: "",
@@ -39,7 +39,7 @@ function Testimonial({ redirectDS }) {
     if (width < 600) {
       setMobile(true);
     }
-  }, []);
+  }, [redirectDS]);
   return (
     <div className={styles.testimonial}>
       <ReviewPopup
@@ -50,12 +50,15 @@ function Testimonial({ redirectDS }) {
         imgSrc={img}
       />
       <h2 className={styles.h1}>Our Alumni Profile</h2>
+      {/* <p className={styles.ptop}>
+          {para}
+        </p>
       <div className={styles.line}>
         <img
           src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/alumni-arrow.png"
           width="80px"
         />
-      </div>
+      </div> */}
       <section>
         <div className={styles.Section1}>
           <div className={styles.Testimonial}>
@@ -64,13 +67,12 @@ function Testimonial({ redirectDS }) {
                 loop={true}
                 loopFillGroupWithBlank={true}
                 breakpoints={{
-                  1281: { slidesPerView: 3, spaceBetween: 60 },
+                  1281: { slidesPerView: 3.1, spaceBetween: 60 },
                   1024: { slidesPerView: 3, spaceBetween: 55 },
                   961: { slidesPerView: 3, spaceBetween: 20 },
                   801: { slidesPerView: 2.5, spaceBetween: 20 },
                   641: { slidesPerView: 2, spaceBetween: 20 },
                   100: { slidesPerView: 1.2, spaceBetween: 20 },
-
                 }}
                 pagination={{
                   dynamicBullets: true,
@@ -140,15 +142,24 @@ function Testimonial({ redirectDS }) {
                         </div>
 
                         {redirectDS ? (
-                          <div className={styles.imgHike}>
-                            <div>
-                              <Image
-                                src={complogo}
-                                loading="lazy"
-                                width={mobile ? 130 : 90}
-                                height={mobile ? 21 : 25}
-                                alt="company-logo"
-                              />
+                          <div className={styles.imgHike} id={id}>
+                            <div
+                              className={styles.imgWrap}
+                              style={
+                                id === "tcs"
+                                  ? { width: "20%" }
+                                  : { width: "auto" }
+                              }
+                            >
+                              <div className="imgWrapper">
+                                <Image
+                                  src={complogo}
+                                  loading="lazy"
+                                  width={mobile ? 130 : 90}
+                                  height={mobile ? 21 : 25}
+                                  alt="company-logo"
+                                />
+                              </div>
                             </div>
                             <div className={styles.nameHike}>
                               <p>

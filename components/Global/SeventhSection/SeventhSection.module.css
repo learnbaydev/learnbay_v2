@@ -11,11 +11,8 @@
 }
 
 .LearnSupport {
-  padding: 30px 100px 30px 350px;
-  background: url("https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/learners-support-bg.png");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  padding: 30px 100px 30px 300px;
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -69,7 +66,7 @@
   border-style: solid;
   border-width: 1px 1px 1px 1px;
   border-color: #48c355;
-  border-radius: 10px 10px 10px 10px;
+  border-radius: 4px;
   box-shadow: 0px 0px 5px 0px #48c35550;
   padding: 12px;
   color: #fff;
@@ -80,47 +77,36 @@
   background-color: #fff;
 }
 
-.btn2 {
-  text-align: center;
-  font-size: 16px;
-  font-weight: 400;
-  fill: #ffffff;
-  color: #0072bc;
-  background-color: white;
-  padding: 12px;
-  border-style: solid;
-  border-width: 1px 1px 1px 1px;
-  border-color: #0072bc;
-  border-radius: 10px 10px 10px 10px;
-  box-shadow: 0px 0px 5px 0px rgb(52 56 112 / 31%);
-}
-
-.btn2:hover {
-  background-color: #0072bc;
-  color: white;
-  border: 1px solid #fff;
-}
-
 .bIcon {
   font-size: 20px;
   margin-left: 10px;
 }
 
-@media  (max-width: 1024px) {
+@media (max-width: 1024px) {
   .LearnSupport {
-    padding: 30px 30px 30px 30px;
+    padding: 30px 30px 30px 180px;
   }
 }
 
-@media  (max-width: 961px) {
+@media (max-width: 961px) {
   .LearnSupport {
-    padding: 30px 30px 30px 30px;
+    padding: 30px 30px 30px 180px;
   }
 }
 
 @media (max-width: 801px) {
   .LearnSupport {
-    padding: 30px 30px 30px 30px;
+    padding: 30px 30px 30px 180px;
+  }
+  .LearnSupport h5 {
+    font-size: 22px;
+    line-height: 24px;
+  }
+  .pBot {
+    font-size: 16px;
+  }
+  .LearnSupport .pTop {
+    font-size: 18px;
   }
 }
 
