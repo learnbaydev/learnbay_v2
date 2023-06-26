@@ -9,17 +9,15 @@ import FirstSection from "../../../components/CoursePage/FirstSection/FirstSecti
 import SeventhSection from "../../../components/Global/SeventhSection/SeventhSection";
 import SecondSection from "../../../components/CoursePage/SecondSection/SecondSection";
 import Testimonial from "../../../components/HomePage/Testimonial/Testimonial";
-import WhoProgram from "../../../components/CoursePage/WhoProgram/ThirdSection";
+// // import ThirdSection from "../../../components/CoursePage/ThirdSection/ThirdSection";
 import Switch from "../../../components/HomePage/switch/switch";
-import GrowthStats from "../../../components/CoursePage/GrowthStat/GrowthStats";
-import ToolsCovered from "../../../components/CoursePage/ToolsCovered/ToolsCovered";
-import FeeSection from "../../../components/CoursePage/FeeSection/FeeSection";
 import FourthSection from "../../../components/CoursePage/FourthSection/FourthSection";
 import FifthSection from "../../../components/CoursePage/FifthSection/FifthSection";
 import SixthSectionCTA from "../../../components/CoursePage/SixthSectionCTA/Counselling";
 import Project from "../../../components/CoursePage/Project/Project";
 import SyllabusNew from "../../../components/CoursePage/Syllabus/Syllabus";
-import Certificate from "../../../components/CoursePage/Certificate/Certificate";
+import DomainSection from "../../../components/newDesign/DomainSection/DomainSection";
+
 
 function blockchain() {
   // const [popups, setPopups] = useState(false);
@@ -96,8 +94,7 @@ function blockchain() {
           redirectDS={true}
           para="Discover the impact of our programs on career growth"
         />
-        <WhoProgram leftImage="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/whoIsProgram.webp" />
-        <Switch />
+        {/* {/* <ThirdSection leftImage="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/whoIsProgram.webp"/> */}
         <FourthSection redirectDS={true} />
         <FifthSection />
         <SixthSectionCTA />
@@ -116,33 +113,18 @@ function blockchain() {
           hours="250+ Hours"
           project="12+ Real Time"
         />
-        <GrowthStats
-          img1="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Scope+of+DS+left+image.png"
-          heading="Be the future: Grow your Data Science & AI skills "
-          para1="Data Science market to reach $133 billion by 2026"
-          para2="The global AI market to hit US$ 1,597.1 billion by 2030 "
-          para3="Influences on nearly all sectors of the current industries"
+        <FourthSection redirectDS={true} />
+        <FifthSection />
+        <SixthSectionCTA />
+        <Switch />
+        <DomainSection
+          dataScience={true}
+          titleCourse="Advanced Data Science and AI Program with domain specialization"
+          brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Advance+Data+Science+and+AI+Certification+Program+Learnbay.pdf"
         />
-        <ToolsCovered />
-        <Certificate
-          threeCertificate
-          data={DataScienceCourseData[0].Certificate}
-        />
-        <FeeSection
-          Fee="₹ 99,000 + 18% GST"
-          FeeEmi="₹ 9,735/month"
-          FeeHeading="Program Fee & Financing"
-          FeeContent1="0% interest rate"
-          FeeContent2="No cost EMI"
-          FeeContent3="Flexible payment"
-          FeeContent4="Easy loan procedure"
-          FeeContent5="15 days refund policy"
-          FeeContent6="No additional cost"
-        />
-        {/* <DomainElectives/> */}
-        <Project redirectDS={true} />
-        {/* <BatchDetails/> */}
-        {/* <FAQ/> */}
+        
+        <Project />
+        
         <SeventhSection />
         <Footer />
       </main>
@@ -151,3 +133,4 @@ function blockchain() {
 }
 
 export default blockchain;
+
