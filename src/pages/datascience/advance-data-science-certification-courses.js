@@ -98,25 +98,6 @@ function blockchain() {
         />
         <WhoProgram leftImage="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/whoIsProgram.webp" />
         <Switch />
-        <GrowthStats
-          img1="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Scope+of+DS+left+image.png"
-          heading="Be the future: Grow your Data Science & AI skills "
-          para1="Data Science market to reach $133 billion by 2026"
-          para2="The global AI market to hit US$ 1,597.1 billion by 2030 "
-          para3="Influences on nearly all sectors of the current industries"
-        />
-        <ToolsCovered />
-        <FeeSection 
-         Fee="₹ 99,000 + 18% GST"
-         FeeEmi="₹ 9,735/month"
-         FeeHeading="Program Fee & Financing"
-         FeeContent1="0% interest rate"
-         FeeContent2="No cost EMI"
-         FeeContent3="Flexible payment"
-         FeeContent4="Easy loan procedure"
-         FeeContent5="15 days refund policy"
-         FeeContent6="No additional cost"/>
-        <Switch />
         <FourthSection redirectDS={true} />
         <FifthSection />
         <SixthSectionCTA />
@@ -135,11 +116,33 @@ function blockchain() {
           hours="250+ Hours"
           project="12+ Real Time"
         />
+        <GrowthStats
+          img1="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Scope+of+DS+left+image.png"
+          heading="Be the future: Grow your Data Science & AI skills "
+          para1="Data Science market to reach $133 billion by 2026"
+          para2="The global AI market to hit US$ 1,597.1 billion by 2030 "
+          para3="Influences on nearly all sectors of the current industries"
+        />
+        <ToolsCovered />
         <Certificate
           threeCertificate
           data={DataScienceCourseData[0].Certificate}
         />
+        <FeeSection
+          Fee="₹ 99,000 + 18% GST"
+          FeeEmi="₹ 9,735/month"
+          FeeHeading="Program Fee & Financing"
+          FeeContent1="0% interest rate"
+          FeeContent2="No cost EMI"
+          FeeContent3="Flexible payment"
+          FeeContent4="Easy loan procedure"
+          FeeContent5="15 days refund policy"
+          FeeContent6="No additional cost"
+        />
+        {/* <DomainElectives/> */}
         <Project redirectDS={true} />
+        {/* <BatchDetails/> */}
+        {/* <FAQ/> */}
         <SeventhSection />
         <Footer />
       </main>
