@@ -16,6 +16,8 @@ import FifthSection from "../../../components/CoursePage/FifthSection/FifthSecti
 import SixthSectionCTA from "../../../components/CoursePage/SixthSectionCTA/Counselling";
 import Project from "../../../components/CoursePage/Project/Project";
 import SyllabusNew from "../../../components/CoursePage/Syllabus/Syllabus";
+import DomainSection from "../../../components/newDesign/DomainSection/DomainSection";
+
 
 function blockchain() {
   // const [popups, setPopups] = useState(false);
@@ -115,8 +117,14 @@ function blockchain() {
         <FifthSection />
         <SixthSectionCTA />
         <Switch />
+        <DomainSection
+          dataScience={true}
+          titleCourse="Advanced Data Science and AI Program with domain specialization"
+          brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Advance+Data+Science+and+AI+Certification+Program+Learnbay.pdf"
+        />
+        
         <Project />
-        <Project />
+        
         <SeventhSection />
         <Footer />
       </main>

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import styles from "./FourthSection.module.css";
+import styles from "./Syllabus.module.css";
 import { FaChevronUp, FaChevronDown } from "react-icons/fa";
 import { FaDownload } from "react-icons/fa";
 import Form from "../../Form/Form";
