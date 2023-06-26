@@ -14,6 +14,7 @@ function Counselling({
   brochureLink,
 }) {
   const [popups, setPopups] = useState(false);
+  const [mobile, setMobile] = useState(false);
 
   const popupShow = () => {
     setPopups(true);
