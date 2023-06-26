@@ -19,6 +19,7 @@ import FifthSection from "../../../components/CoursePage/FifthSection/FifthSecti
 import SixthSectionCTA from "../../../components/CoursePage/SixthSectionCTA/Counselling";
 import Project from "../../../components/CoursePage/Project/Project";
 import SyllabusNew from "../../../components/CoursePage/Syllabus/Syllabus";
+import DomainSection from "../../../components/newDesign/DomainSection/DomainSection";
 import Certificate from "../../../components/CoursePage/Certificate/Certificate";
 
 function blockchain() {
@@ -116,6 +117,18 @@ function blockchain() {
           hours="250+ Hours"
           project="12+ Real Time"
         />
+        <FourthSection redirectDS={true} />
+        <FifthSection />
+        <SixthSectionCTA />
+        <Switch />
+        <DomainSection
+          dataScience={true}
+          titleCourse="Advanced Data Science and AI Program with domain specialization"
+          brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Advance+Data+Science+and+AI+Certification+Program+Learnbay.pdf"
+        />
+        
+        <Project />
+
         <GrowthStats
           img1="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Scope+of+DS+left+image.png"
           heading="Be the future: Grow your Data Science & AI skills "
@@ -151,3 +164,4 @@ function blockchain() {
 }
 
 export default blockchain;
+
