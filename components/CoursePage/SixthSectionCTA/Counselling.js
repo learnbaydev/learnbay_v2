@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from "react";
 import styles from "../FourthSection/FourthSection.module.css";
 import Form from "../../Form/Form";
-import Popup from "../../Popup/Popup";
+const Popup = dynamic(() => import("../../Popup/Popup"));
 import { FaArrowRight } from "react-icons/fa";
 import "swiper/css";
 import "swiper/css/navigation";
-import Button from "../../Global/Button/Button";
+import dynamic from "next/dynamic";
+const Button = dynamic(() => import("../../Global/Button/Button"));
 
 function Counselling({
   dataScience,

@@ -18,7 +18,7 @@ function SecondSection() {
           return (
             <div className={styles.blue} key={index}>
               <div>
-                <h4 className={styles.heading}>{heading}</h4>
+                <h5 className={styles.heading}>{heading}</h5>
                 <p className={styles.textBox}>{para}</p>
               </div>
               <div className={styles.imgWrap}>

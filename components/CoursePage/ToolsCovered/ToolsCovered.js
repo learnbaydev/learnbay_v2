@@ -9,7 +9,7 @@ function ToolsCovered({
   hidetools,
 }) {
   return (
-    <div>
+    <div className="wrapper">
       {blockChainTools ? (
         <>
           <div className={styles.toolscoverd}>

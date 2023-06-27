@@ -5,18 +5,18 @@ import { BsCheck } from "react-icons/bs";
 
 const GrowthStats = ({ img1, heading, para1, para2, para3 }) => {
   return (
-    <div className={styles.wrapper}>
+    <div className={`${styles.wrapper} wrapper`}>
       <div className={styles.imgWrapper}>
         <div className="imgWrapper">
-          <Image src={img1} height="241" width="500" alt="growth-stats" />
+          <Image src={img1} height={241} width={500} alt="growth-stats" />
         </div>
       </div>
       <div className={styles.rightContent}>
         <h4>{heading}</h4>
         <Image
           src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/line-break.webp"
-          height={"3"}
-          width={"190"}
+          height={3}
+          width={190}
           alt="line-break"
         />
         <div className={styles.checkpoint}>
