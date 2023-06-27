@@ -2,12 +2,12 @@ import React, { useState, useEffect, useRef } from "react";
 import styles from "./FirstSection.module.css";
 import { FaDownload, FaPlayCircle } from "react-icons/fa";
 import Form from "../../Form/Form";
-import Popup from "../../Popup/Popup";
-
 import Image from "next/image";
 import Typed from "typed.js";
-// import VideoPopup from "../../VideoPopup/VideoPopup";
-import Button from "../../Global/Button/Button";
+import dynamic from "next/dynamic";
+const Button = dynamic(() => import("../../Global/Button/Button"));
+const VideoPopup = dynamic(() => import("../VideoPopup/VideoPopup"));
+const Popup = dynamic(() => import("../../Popup/Popup"));
 
 function FirstSection({
   dataScience,
@@ -79,7 +79,7 @@ function FirstSection({
           />
         </div>
       </Popup>
-      {/* <VideoPopup triggers={video} setTriggers={setVideo} ids={idss} /> */}
+      <VideoPopup triggers={video} setTriggers={setVideo} ids={idss} />
 
       {/* For Mobile View */}
 
