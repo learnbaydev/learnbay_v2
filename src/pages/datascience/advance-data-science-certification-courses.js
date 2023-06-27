@@ -19,7 +19,19 @@ import FifthSection from "../../../components/CoursePage/FifthSection/FifthSecti
 import SixthSectionCTA from "../../../components/CoursePage/SixthSectionCTA/Counselling";
 import Project from "../../../components/CoursePage/Project/Project";
 import SyllabusNew from "../../../components/CoursePage/Syllabus/Syllabus";
+import DomainSection from "../../../components/newDesign/DomainSection/DomainSection";
 import Certificate from "../../../components/CoursePage/Certificate/Certificate";
+import FAQNew from "../../../components/CoursePage/FAQNew/FAQNew";
+import {
+  FaqData2,
+  DomainFaqData2,
+  PaymentFaqData2,
+  CapstoneFaqData2,
+  CertificationFaqData2,
+  jobFaqData2,
+  MentorshipFaqData2,
+  SupportFaqData2,
+} from "../../../components/CoursePage/FAQNew/FaqData";
 
 function blockchain() {
   // const [popups, setPopups] = useState(false);
@@ -139,10 +151,22 @@ function blockchain() {
           FeeContent5="15 days refund policy"
           FeeContent6="No additional cost"
         />
-        {/* <DomainElectives/> */}
+        <DomainSection
+          dataScience={true}
+          titleCourse="Advanced Data Science and AI Program with domain specialization"
+          brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Advance+Data+Science+and+AI+Certification+Program+Learnbay.pdf"
+        />
         <Project redirectDS={true} />
-        {/* <BatchDetails/> */}
-        {/* <FAQ/> */}
+        <FAQNew
+          FaqDatas={FaqData2}
+          DomainFaqDatas={DomainFaqData2}
+          PaymentFaqDatas={PaymentFaqData2}
+          CapstoneFaqDatas={CapstoneFaqData2}
+          CertificationFaqDatas={CertificationFaqData2}
+          jobFaqDatas={jobFaqData2}
+          MentorshipFaqDatas={MentorshipFaqData2}
+          SupportFaqDatas={SupportFaqData2}
+        />
         <SeventhSection />
         <Footer />
       </main>
@@ -151,3 +175,4 @@ function blockchain() {
 }
 
 export default blockchain;
+
