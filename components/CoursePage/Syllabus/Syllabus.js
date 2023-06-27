@@ -357,7 +357,7 @@ function SyllabusNew({
               })}
             </>
           )}
-          <div onClick={popupShow}>
+          <div onClick={popupShow} style={{ margin: "30px 0" }}>
             <Button
               text="Download Detailed Syllabus"
               passIcon={<FaDownload style={{ marginLeft: "10px" }} />}

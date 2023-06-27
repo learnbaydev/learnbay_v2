@@ -100,12 +100,6 @@
   color: #edb552;
 }
 
-.line {
-  margin-top: 35px;
-  z-index: 1;
-  margin-left: 28px;
-}
-
 .FaqWrapper {
   margin-top: 22px;
   margin-left: 0px;
@@ -199,17 +193,11 @@
     color: #edb552;
   }
 
-  .line {
-    margin-top: 35px;
-    z-index: 1;
-    margin-left: 24px;
-  }
-
   .FaqWrapper {
     margin-top: 22px;
-    margin-left: 7px;
+
     padding-top: 2px;
-    padding-left: 22px;
+
     margin-bottom: -23px;
     z-index: 0;
   }
@@ -224,9 +212,6 @@
 }
 
 @media (max-width: 801px) {
-  .line {
-    margin-left: 16px;
-  }
   .syllabusLeft h4 {
     font-size: 24px;
   }
@@ -234,6 +219,9 @@
     font-size: 16px;
     padding: 15px;
     margin: auto;
+  }
+  .Syllabus {
+    margin: 20px 20px 0px 20px;
   }
 }
 
