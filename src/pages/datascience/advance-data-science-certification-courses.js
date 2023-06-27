@@ -170,10 +170,10 @@ function Blockchain() {
           para3="Influences on nearly all sectors of the current industries"
         />
         <ToolsCovered />
-        <Certificate
+        {/* <Certificate
           threeCertificate
           data={DataScienceCourseData[0].Certificate}
-        />
+        /> */}
         <FeeSection
           Fee="₹ 99,000 + 18% GST"
           FeeEmi="₹ 9,735/month"
