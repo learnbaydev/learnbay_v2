@@ -37,7 +37,6 @@ function DomainSection({
     if (width < 600) {
       setMobile(true);
     }
-
     if (dataScience) {
       setDomainDataArray(DomainSectionData);
     } else if (BAdomain) {
@@ -96,6 +95,33 @@ function DomainSection({
                   <Swiper
                     slidesPerView={mobile ? 1.1 : 2}
                     spaceBetween={mobile ? 10 : 15}
+                    breakpoints={{
+
+                      481: {
+                        slidesPerView: 1.5,
+                        spaceBetween: 20,
+                      },
+                      641: {
+                        slidesPerView: 1.6,
+                        spaceBetween: 20,
+                      },
+                      801: {
+                        slidesPerView: 1,
+                        spaceBetween: 15,
+                      },
+                      961: {
+                        slidesPerView: 1.4,
+                        spaceBetween: 15,
+                      },
+                      1024: {
+                        slidesPerView: 1.5,
+                        spaceBetween: 15,
+                      },
+                      1280: {
+                        slidesPerView: 2,
+                        spaceBetween: 50,
+                      },
+                    }}
                     scrollbar={{ draggable: true }}
                     autoplay={{
                       delay: 2500,
@@ -106,8 +132,15 @@ function DomainSection({
                     className="mySwiper"
                   >
                     {domainDataArray.map((data) => {
-                      const { id, p1, p2, desc, btn, BrochureLink, TitleCourse } =
-                        data;
+                      const {
+                        id,
+                        p1,
+                        p2,
+                        desc,
+                        btn,
+                        BrochureLink,
+                        TitleCourse,
+                      } = data;
 
                       return (
                         <SwiperSlide className={styles.slide} key={id}>
@@ -131,20 +164,19 @@ function DomainSection({
                                 })}
                               </ul>
                             </div>
-                            <div onClick={() => {
-                                  setBrochureLink(BrochureLink);
-                                  setTitleCourse(TitleCourse);
-                                  popupShow();
-                                }} style={{ marginTop: "20px" }}>
+                            <div
+                              onClick={() => {
+                                setBrochureLink(BrochureLink);
+                                setTitleCourse(TitleCourse);
+                                popupShow();
+                              }}
+                              style={{ marginTop: "20px" }}
+                            >
                               <Button
-                                
                                 className={styles.fillBtn}
-                              
                                 text={btn}
-                                
                                 passIcon={<FaDownload className="bIconS" />}
                               />
-
                             </div>
                           </div>
                         </SwiperSlide>

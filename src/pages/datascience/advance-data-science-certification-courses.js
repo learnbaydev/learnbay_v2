@@ -21,6 +21,17 @@ import Project from "../../../components/CoursePage/Project/Project";
 import SyllabusNew from "../../../components/CoursePage/Syllabus/Syllabus";
 import DomainSection from "../../../components/newDesign/DomainSection/DomainSection";
 import Certificate from "../../../components/CoursePage/Certificate/Certificate";
+import FAQNew from "../../../components/CoursePage/FAQNew/FAQNew";
+import {
+  FaqData2,
+  DomainFaqData2,
+  PaymentFaqData2,
+  CapstoneFaqData2,
+  CertificationFaqData2,
+  jobFaqData2,
+  MentorshipFaqData2,
+  SupportFaqData2,
+} from "../../../components/CoursePage/FAQNew/FaqData";
 
 function blockchain() {
   // const [popups, setPopups] = useState(false);
@@ -101,7 +112,7 @@ function blockchain() {
         <Switch />
         <FourthSection redirectDS={true} />
         <FifthSection />
-        <SixthSectionCTA />
+        {/* <SixthSectionCTA /> */}
         <SyllabusNew
           dataScienceCounselling={true}
           serviceBasic={true}
@@ -119,7 +130,7 @@ function blockchain() {
         />
         <FourthSection redirectDS={true} />
         <FifthSection />
-        <SixthSectionCTA />
+        {/* <SixthSectionCTA /> */}
         <Switch />
         <DomainSection
           dataScience={true}
@@ -156,6 +167,16 @@ function blockchain() {
         <Project redirectDS={true} />
         {/* <BatchDetails/> */}
         {/* <FAQ/> */}
+        <FAQNew
+          FaqDatas={FaqData2}
+          DomainFaqDatas={DomainFaqData2}
+          PaymentFaqDatas={PaymentFaqData2}
+          CapstoneFaqDatas={CapstoneFaqData2}
+          CertificationFaqDatas={CertificationFaqData2}
+          jobFaqDatas={jobFaqData2}
+          MentorshipFaqDatas={MentorshipFaqData2}
+          SupportFaqDatas={SupportFaqData2}
+        />
         <SeventhSection />
         <Footer />
       </main>
