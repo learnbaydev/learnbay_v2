@@ -112,7 +112,7 @@ function blockchain() {
         <Switch />
         <FourthSection redirectDS={true} />
         <FifthSection />
-        {/* <SixthSectionCTA /> */}
+        <SixthSectionCTA />
         <SyllabusNew
           dataScienceCounselling={true}
           serviceBasic={true}
@@ -128,18 +128,6 @@ function blockchain() {
           hours="250+ Hours"
           project="12+ Real Time"
         />
-        <FourthSection redirectDS={true} />
-        <FifthSection />
-        {/* <SixthSectionCTA /> */}
-        <Switch />
-        <DomainSection
-          dataScience={true}
-          titleCourse="Advanced Data Science and AI Program with domain specialization"
-          brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Advance+Data+Science+and+AI+Certification+Program+Learnbay.pdf"
-        />
-        
-        <Project />
-
         <GrowthStats
           img1="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Scope+of+DS+left+image.png"
           heading="Be the future: Grow your Data Science & AI skills "
@@ -163,10 +151,12 @@ function blockchain() {
           FeeContent5="15 days refund policy"
           FeeContent6="No additional cost"
         />
-        {/* <DomainElectives/> */}
+        <DomainSection
+          dataScience={true}
+          titleCourse="Advanced Data Science and AI Program with domain specialization"
+          brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Advance+Data+Science+and+AI+Certification+Program+Learnbay.pdf"
+        />
         <Project redirectDS={true} />
-        {/* <BatchDetails/> */}
-        {/* <FAQ/> */}
         <FAQNew
           FaqDatas={FaqData2}
           DomainFaqDatas={DomainFaqData2}
