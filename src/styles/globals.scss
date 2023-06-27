@@ -25,7 +25,7 @@ h1 {
   font-size: 34px;
 }
 h4 {
-  font-size: 37px;
+  font-size: 32px;
   color: black;
 }
 h3 {
@@ -152,6 +152,10 @@ a {
 @media (max-width: 1281px) {
   .wrapper {
     padding: 40px 80px;
+  }
+  h4 {
+    font-size: 28px !important;
+    color: black;
   }
   .whiteP {
     width: 300px;

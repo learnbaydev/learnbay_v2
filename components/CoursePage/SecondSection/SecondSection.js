@@ -7,7 +7,7 @@ function SecondSection() {
   return (
     <div className={`${styles.second} wrapper`}>
       <div>
-        <h2 className={styles.h1}>Why Choose Us?</h2>
+        <h4 className={styles.h1}>Why Choose Us?</h4>
         <p className={styles.ptop}>
           India&apos;s top rated bootcamp for working professionals
         </p>
@@ -18,7 +18,7 @@ function SecondSection() {
           return (
             <div className={styles.blue} key={index}>
               <div>
-                <h4 className={styles.heading}>{heading}</h4>
+                <h5 className={styles.heading}>{heading}</h5>
                 <p className={styles.textBox}>{para}</p>
               </div>
               <div className={styles.imgWrap}>

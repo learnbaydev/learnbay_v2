@@ -164,7 +164,7 @@ const Navbar = ({
           {menuItem.map((data) => {
             const { id, name, url } = data;
             return (
-              <span onClick={showMenu} key={id}>
+              <span key={id}>
                 <Link href={url}>{name}</Link>
               </span>
             );

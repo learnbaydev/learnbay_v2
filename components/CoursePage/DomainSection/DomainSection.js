@@ -72,23 +72,24 @@ function DomainSection({
       <>
         <div className={styles.bulb}>
           <div className={styles.img}>
-            <Image
-              src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Domain-Electives-Left-Guy.png"
-              layout="intrinsic"
-              loading="lazy"
-              width="671"
-              height="704"
-              alt="Bulb"
-            />
+            <div className="imgWrapper">
+              <Image
+                src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Domain-Electives-Left-Guy.png"
+                loading="lazy"
+                width="671"
+                height="704"
+                alt="Bulb"
+              />
+            </div>
           </div>
           <p className={styles.bgP}>Become a domain expert</p>
         </div>
         <div>
           <section>
             <div className={styles.Section1}>
-              <h2 className={styles.h1}>
+              <h4 className={styles.h1}>
                 <span className={styles.h1Span}>Domain Electives</span>
-              </h2>
+              </h4>
 
               <div className={styles.Testimonial}>
                 <div className={styles.swiperleft}>
@@ -96,7 +97,6 @@ function DomainSection({
                     slidesPerView={mobile ? 1.1 : 2}
                     spaceBetween={mobile ? 10 : 15}
                     breakpoints={{
-
                       481: {
                         slidesPerView: 1.5,
                         spaceBetween: 20,
@@ -118,8 +118,8 @@ function DomainSection({
                         spaceBetween: 15,
                       },
                       1280: {
-                        slidesPerView: 2,
-                        spaceBetween: 50,
+                        slidesPerView: 2.1,
+                        spaceBetween: 30,
                       },
                     }}
                     scrollbar={{ draggable: true }}
@@ -159,8 +159,8 @@ function DomainSection({
                                 }}
                                 className={styles.para}
                               >
-                                {desc.map((data) => {
-                                  return <li>{data}</li>;
+                                {desc.map((data, i) => {
+                                  return <li key={i}>{data}</li>;
                                 })}
                               </ul>
                             </div>

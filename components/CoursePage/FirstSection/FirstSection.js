@@ -119,27 +119,24 @@ function FirstSection({
         <div className={styles.btnImage}>
           <div onClick={popupShow}>
             <Button
-              className={styles.button}
               text="Brochure"
               passIcon={<FaDownload style={{ marginLeft: "10px" }} />}
             />
           </div>
           {softwareBtnHide ? (
-            <></>
+            ""
           ) : (
-            <>
-              <div onClick={videoSHow}>
-                <Button
-                  className={styles.outLineBtn}
-                  text="Intro Video"
-                  passIcon={
-                    <FaPlayCircle
-                      style={{ marginLeft: "10px", fontSize: "22px" }}
-                    />
-                  }
-                />
-              </div>
-            </>
+            <div onClick={videoSHow}>
+              <Button
+                outline={true}
+                text="Intro Video"
+                passIcon={
+                  <FaPlayCircle
+                    style={{ marginLeft: "10px", fontSize: "22px" }}
+                  />
+                }
+              />
+            </div>
           )}
         </div>
       </div>

@@ -4,6 +4,7 @@ import Navbar from "../../../components/Navbar/Navbar";
 import Footer from "../../../components/Footer/Footer";
 import Form from "../../../components/Form/Form";
 import dynamic from "next/dynamic";
+import { DataScienceCourseData } from "../../../Data/DataScienceCourse";
 const Popup = dynamic(() => import("../../../components/Popup/Popup"));
 const FirstSection = dynamic(() =>
   import("../../../components/CoursePage/FirstSection/FirstSection")
@@ -48,7 +49,7 @@ const SyllabusNew = dynamic(() =>
   import("../../../components/CoursePage/Syllabus/Syllabus")
 );
 const DomainSection = dynamic(() =>
-  import("../../../components/newDesign/DomainSection/DomainSection")
+  import("../../../components/CoursePage//DomainSection/DomainSection")
 );
 const Certificate = dynamic(() =>
   import("../../../components/CoursePage/Certificate/Certificate")
@@ -140,14 +141,15 @@ function Blockchain() {
         <SecondSection />
         <Testimonial
           redirectDS={true}
+          heading="Our Alumni Speak"
           para="Discover the impact of our programs on career growth"
         />
         <WhoProgram leftImage="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/whoIsProgram.webp" />
         <Switch />
         <FourthSection redirectDS={true} />
-        <FifthSection />
+        {/* <FifthSection /> */}
         <SixthSectionCTA />
-        {/* <SyllabusNew
+        <SyllabusNew
           dataScienceCounselling={true}
           serviceBasic={true}
           careerH1="Career Service"
@@ -155,13 +157,13 @@ function Blockchain() {
           dataScience={true}
           titleCourse="Advanced Data Science and AI Program with domain specialization"
           brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Advance+Data+Science+and+AI+Certification+Program+Learnbay.pdf"
-          // syllabus={DataScienceCourseData[0].syllabus}
+          syllabus={DataScienceCourseData[0].syllabus}
           syllabusDesc={DataScienceCourseData[0].syllabusDesc}
           popupHead={DataScienceCourseData[0].popupHead}
           srcD="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Advance+Data+Science+and+AI+Certification+Program+Learnbay.pdf"
           hours="250+ Hours"
           project="12+ Real Time"
-        /> */}
+        />
         <GrowthStats
           img1="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Scope+of+DS+left+image.png"
           heading="Be the future: Grow your Data Science & AI skills "
@@ -170,10 +172,10 @@ function Blockchain() {
           para3="Influences on nearly all sectors of the current industries"
         />
         <ToolsCovered />
-        {/* <Certificate
+        <Certificate
           threeCertificate
           data={DataScienceCourseData[0].Certificate}
-        /> */}
+        />
         <FeeSection
           Fee="₹ 99,000 + 18% GST"
           FeeEmi="₹ 9,735/month"

@@ -126,11 +126,26 @@
     display: grid;
     grid-template-columns: 49% 49%;
   }
+  .leftSideP {
+    padding: 20px;
+  }
+  .MicroCert {
+    padding: 30px 0px;
+  }
 }
 
 @media (max-width: 1025px) {
   .leftSideP {
     padding: 0px 10px;
+  }
+  .rightSide h6 {
+    margin-top: 0 !important;
+    font-size: 22px !important;
+    line-height: 30px !important;
+    margin-bottom: 10px !important;
+  }
+  .rightSide p {
+    margin: 10px 0;
   }
 }
 

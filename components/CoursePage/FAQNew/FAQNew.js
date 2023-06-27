@@ -27,10 +27,9 @@ function FAQNew({
   const [Support, setSupport] = useState(false);
   const [mobile, setMobile] = useState(false);
   return (
-    <div>
-                <p className={styles.infop}>FAQs</p>
-    <div className={styles.Course}>
+    <div className={`${styles.course} wrapper`}>
       <div className={styles.courseM}>
+        <h4 className={styles.infop}>FAQs</h4>
         <div className={styles.courses}>
           <div className={styles.listPanel}>
             <span
@@ -275,12 +274,12 @@ function FAQNew({
                 }}
                 style={
                   viewAll
-                  ? {
-                    background: "#E1F1F566",
-                    color: "#0072BC",
-                    textAlign: "center",
-                  }
-                : { background: "none", textAlign: "center" }
+                    ? {
+                        background: "#E1F1F566",
+                        color: "#0072BC",
+                        textAlign: "center",
+                      }
+                    : { background: "none", textAlign: "center" }
                 }
               >
                 COURSE RELATED
@@ -300,12 +299,12 @@ function FAQNew({
                 }}
                 style={
                   oneYear
-                  ? {
-                    background: "#E1F1F566",
-                    color: "#0072BC",
-                    textAlign: "center",
-                  }
-                : { background: "none", textAlign: "center" }
+                    ? {
+                        background: "#E1F1F566",
+                        color: "#0072BC",
+                        textAlign: "center",
+                      }
+                    : { background: "none", textAlign: "center" }
                 }
               >
                 DOMAIN ELECTIVES
@@ -325,12 +324,12 @@ function FAQNew({
                 }}
                 style={
                   nonTech
-                  ? {
-                    background: "#E1F1F566",
-                    color: "#0072BC",
-                    textAlign: "center",
-                  }
-                : { background: "none", textAlign: "center" }
+                    ? {
+                        background: "#E1F1F566",
+                        color: "#0072BC",
+                        textAlign: "center",
+                      }
+                    : { background: "none", textAlign: "center" }
                 }
               >
                 PAYMENTS AND SCHOLARSHIPS
@@ -350,12 +349,12 @@ function FAQNew({
                 }}
                 style={
                   manager
-                  ? {
-                    background: "#E1F1F566",
-                    color: "#0072BC",
-                    textAlign: "center",
-                  }
-                : { background: "none", textAlign: "center" }
+                    ? {
+                        background: "#E1F1F566",
+                        color: "#0072BC",
+                        textAlign: "center",
+                      }
+                    : { background: "none", textAlign: "center" }
                 }
               >
                 CAPSTONE AND REAL-TIME PROJECTS
@@ -375,12 +374,12 @@ function FAQNew({
                 }}
                 style={
                   Guarantee
-                  ? {
-                    background: "#E1F1F566",
-                    color: "#0072BC",
-                    textAlign: "center",
-                  }
-                : { background: "none", textAlign: "center" }
+                    ? {
+                        background: "#E1F1F566",
+                        color: "#0072BC",
+                        textAlign: "center",
+                      }
+                    : { background: "none", textAlign: "center" }
                 }
               >
                 CERTIFICATION
@@ -400,12 +399,12 @@ function FAQNew({
                 }}
                 style={
                   Assistance
-                  ? {
-                    background: "#E1F1F566",
-                    color: "#0072BC",
-                    textAlign: "center",
-                  }
-                : { background: "none", textAlign: "center" }
+                    ? {
+                        background: "#E1F1F566",
+                        color: "#0072BC",
+                        textAlign: "center",
+                      }
+                    : { background: "none", textAlign: "center" }
                 }
               >
                 JOB ASSISTANCE
@@ -425,12 +424,12 @@ function FAQNew({
                 }}
                 style={
                   Mentorship
-                  ? {
-                    background: "#E1F1F566",
-                    color: "#0072BC",
-                    textAlign: "center",
-                  }
-                : { background: "none", textAlign: "center" }
+                    ? {
+                        background: "#E1F1F566",
+                        color: "#0072BC",
+                        textAlign: "center",
+                      }
+                    : { background: "none", textAlign: "center" }
                 }
               >
                 MENTORSHIPS
@@ -450,12 +449,12 @@ function FAQNew({
                 }}
                 style={
                   Support
-                  ? {
-                    background: "#E1F1F566",
-                    color: "#0072BC",
-                    textAlign: "center",
-                  }
-                : { background: "none", textAlign: "center" }
+                    ? {
+                        background: "#E1F1F566",
+                        color: "#0072BC",
+                        textAlign: "center",
+                      }
+                    : { background: "none", textAlign: "center" }
                 }
               >
                 SUPPORT
@@ -464,63 +463,62 @@ function FAQNew({
           </Swiper>
         </div>
         {viewAll ? (
-            <div className={styles.gridPanel}>
-              <FAQ FaqData={FaqDatas} />
-            </div>
-          ) : (
-            ""
-          )}
-          {oneYear ? (
-            <div className={styles.gridPanel}>
-              <FAQ FaqData={DomainFaqDatas} />
-            </div>
-          ) : (
-            ""
-          )}
-          {nonTech ? (
-            <div className={styles.gridPanel}>
-              <FAQ FaqData={PaymentFaqDatas} />
-            </div>
-          ) : (
-            ""
-          )}
-          {Guarantee ? (
-            <div className={styles.gridPanel}>
-              <FAQ FaqData={CertificationFaqDatas} />
-            </div>
-          ) : (
-            ""
-          )}
-          {Assistance ? (
-            <div className={styles.gridPanel}>
-              <FAQ FaqData={jobFaqDatas} />
-            </div>
-          ) : (
-            ""
-          )}
-          {manager ? (
-            <div className={styles.gridPanel}>
-              <FAQ FaqData={CapstoneFaqDatas} />
-            </div>
-          ) : (
-            ""
-          )}
-          {Mentorship ? (
-            <div className={styles.gridPanel}>
-              <FAQ FaqData={MentorshipFaqDatas} />
-            </div>
-          ) : (
-            ""
-          )}
-          {Support ? (
-            <div className={styles.gridPanel}>
-              <FAQ FaqData={SupportFaqDatas} />
-            </div>
-          ) : (
-            ""
-          )}
+          <div className={styles.gridPanel}>
+            <FAQ FaqData={FaqDatas} />
+          </div>
+        ) : (
+          ""
+        )}
+        {oneYear ? (
+          <div className={styles.gridPanel}>
+            <FAQ FaqData={DomainFaqDatas} />
+          </div>
+        ) : (
+          ""
+        )}
+        {nonTech ? (
+          <div className={styles.gridPanel}>
+            <FAQ FaqData={PaymentFaqDatas} />
+          </div>
+        ) : (
+          ""
+        )}
+        {Guarantee ? (
+          <div className={styles.gridPanel}>
+            <FAQ FaqData={CertificationFaqDatas} />
+          </div>
+        ) : (
+          ""
+        )}
+        {Assistance ? (
+          <div className={styles.gridPanel}>
+            <FAQ FaqData={jobFaqDatas} />
+          </div>
+        ) : (
+          ""
+        )}
+        {manager ? (
+          <div className={styles.gridPanel}>
+            <FAQ FaqData={CapstoneFaqDatas} />
+          </div>
+        ) : (
+          ""
+        )}
+        {Mentorship ? (
+          <div className={styles.gridPanel}>
+            <FAQ FaqData={MentorshipFaqDatas} />
+          </div>
+        ) : (
+          ""
+        )}
+        {Support ? (
+          <div className={styles.gridPanel}>
+            <FAQ FaqData={SupportFaqDatas} />
+          </div>
+        ) : (
+          ""
+        )}
       </div>
-    </div>
     </div>
   );
 }

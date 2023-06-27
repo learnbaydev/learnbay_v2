@@ -59,10 +59,10 @@ const FifthSection = ({
         </Popup>
         <div className={styles.FirstLeft}>
           <p className={styles.ptopBox}>Invest in yourself!</p>
-          <h1 className={styles.h1}>
+          <h4 className={styles.h1}>
             Stay Ahead Of The Curve With Support Of Our
             <span className={styles.h1Span}> Alumni Community</span>
-          </h1>
+          </h4>
         </div>
         <div className={styles.secondLeft}>
           <div className={styles.PlayImg}>
@@ -70,7 +70,6 @@ const FifthSection = ({
               src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Alumni-Map-Mobile-View.png"
               width="910"
               height="920"
-              layout="intrinsic"
               alt="data science course"
             />
           </div>
