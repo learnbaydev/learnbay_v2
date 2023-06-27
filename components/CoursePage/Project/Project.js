@@ -1,11 +1,12 @@
 import styles from "./project.module.scss";
 import React, { useState, useEffect } from "react";
 import Form from "../../Form/Form";
-import Popup from "../../Popup/Popup";
+import dynamic from "next/dynamic";
+const Popup = dynamic(() => import("../../Popup/Popup"));
+const ProjectPopup = dynamic(() => import("./ProjectPopup"));
 import Image from "next/image";
 import { BsCheck2 } from "react-icons/bs";
 import { FaDownload, FaTools, FaLaptopCode } from "react-icons/fa";
-import ProjectPopup from "./ProjectPopup";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper";
 import "swiper/css";
@@ -172,6 +173,10 @@ const Project = ({
             300: {
               slidesPerView: 1.3,
               spaceBetween: 35,
+            },
+            761: {
+              slidesPerView: 2,
+              spaceBetween: 30,
             },
             961: {
               slidesPerView: 2.1,

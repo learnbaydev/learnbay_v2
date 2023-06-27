@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import Form from "../../Form/Form";
 import Image from "next/image";
-import Popup from "../../Popup/Popup";
+import dynamic from "next/dynamic";
+const Popup = dynamic(() => import("../../Popup/Popup"));
 import styles from "../FourthSection/FourthSection.module.css";
 
 const FifthSection = ({

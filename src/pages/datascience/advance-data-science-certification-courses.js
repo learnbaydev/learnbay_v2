@@ -3,25 +3,59 @@ import Head from "next/head";
 import Navbar from "../../../components/Navbar/Navbar";
 import Footer from "../../../components/Footer/Footer";
 import Form from "../../../components/Form/Form";
-import Popup from "../../../components/Popup/Popup";
-import { DataScienceCourseData } from "../../../Data/DataScienceCourse";
-import FirstSection from "../../../components/CoursePage/FirstSection/FirstSection";
-import SeventhSection from "../../../components/Global/SeventhSection/SeventhSection";
-import SecondSection from "../../../components/CoursePage/SecondSection/SecondSection";
-import Testimonial from "../../../components/HomePage/Testimonial/Testimonial";
-import WhoProgram from "../../../components/CoursePage/WhoProgram/ThirdSection";
-import Switch from "../../../components/HomePage/switch/switch";
-import GrowthStats from "../../../components/CoursePage/GrowthStat/GrowthStats";
-import ToolsCovered from "../../../components/CoursePage/ToolsCovered/ToolsCovered";
-import FeeSection from "../../../components/CoursePage/FeeSection/FeeSection";
-import FourthSection from "../../../components/CoursePage/FourthSection/FourthSection";
-import FifthSection from "../../../components/CoursePage/FifthSection/FifthSection";
-import SixthSectionCTA from "../../../components/CoursePage/SixthSectionCTA/Counselling";
-import Project from "../../../components/CoursePage/Project/Project";
-import SyllabusNew from "../../../components/CoursePage/Syllabus/Syllabus";
-import DomainSection from "../../../components/newDesign/DomainSection/DomainSection";
-import Certificate from "../../../components/CoursePage/Certificate/Certificate";
-import FAQNew from "../../../components/CoursePage/FAQNew/FAQNew";
+import dynamic from "next/dynamic";
+const Popup = dynamic(() => import("../../../components/Popup/Popup"));
+const FirstSection = dynamic(() =>
+  import("../../../components/CoursePage/FirstSection/FirstSection")
+);
+const SecondSection = dynamic(() =>
+  import("../../../components/CoursePage/SecondSection/SecondSection")
+);
+const SeventhSection = dynamic(() =>
+  import("../../../components/Global/SeventhSection/SeventhSection")
+);
+const Testimonial = dynamic(() =>
+  import("../../../components/HomePage/Testimonial/Testimonial")
+);
+const WhoProgram = dynamic(() =>
+  import("../../../components/CoursePage/WhoProgram/ThirdSection")
+);
+const Switch = dynamic(() =>
+  import("../../../components/HomePage/switch/switch")
+);
+const GrowthStats = dynamic(() =>
+  import("../../../components/CoursePage/GrowthStat/GrowthStats")
+);
+const ToolsCovered = dynamic(() =>
+  import("../../../components/CoursePage/ToolsCovered/ToolsCovered")
+);
+const FeeSection = dynamic(() =>
+  import("../../../components/CoursePage/FeeSection/FeeSection")
+);
+const FourthSection = dynamic(() =>
+  import("../../../components/CoursePage/FourthSection/FourthSection")
+);
+const FifthSection = dynamic(() =>
+  import("../../../components/CoursePage/FifthSection/FifthSection")
+);
+const SixthSectionCTA = dynamic(() =>
+  import("../../../components/CoursePage/SixthSectionCTA/Counselling")
+);
+const Project = dynamic(() =>
+  import("../../../components/CoursePage/Project/Project")
+);
+const SyllabusNew = dynamic(() =>
+  import("../../../components/CoursePage/Syllabus/Syllabus")
+);
+const DomainSection = dynamic(() =>
+  import("../../../components/newDesign/DomainSection/DomainSection")
+);
+const Certificate = dynamic(() =>
+  import("../../../components/CoursePage/Certificate/Certificate")
+);
+const FAQNew = dynamic(() =>
+  import("../../../components/CoursePage/FAQNew/FAQNew")
+);
 import {
   FaqData2,
   DomainFaqData2,
@@ -33,12 +67,12 @@ import {
   SupportFaqData2,
 } from "../../../components/CoursePage/FAQNew/FaqData";
 
-function blockchain() {
-  // const [popups, setPopups] = useState(false);
-  // const [video, setVideo] = useState(false);
-  // const videoSHow = () => {
-  //   setVideo(true);
-  // };
+function Blockchain() {
+  const [popups, setPopups] = useState(false);
+  const [video, setVideo] = useState(false);
+  const videoSHow = () => {
+    setVideo(true);
+  };
 
   const popupShow = () => {
     setPopups(true);
@@ -69,23 +103,23 @@ function blockchain() {
       </Head>
       <main>
         <Navbar popup={true} dataScienceCounselling={true} />
-        {/* <Popup trigger={popups} setTrigger={setPopups} className="popupModal">
+        <Popup trigger={popups} setTrigger={setPopups} className="popupModal">
           <div className="leftPopup">
             <div className="whiteP" />
           </div>
           <div className="RightPopup">
             <h5>Apply For Counselling</h5>
             {/* <p>Fill the below details to get started</p> */}
-        {/* <Form
-          popup={true}
-          // setTrigger={setPopups}
-          fullStack={true}
-          dataScience={true}
-          titleCourse="Advanced Data Science and AI Program with domain specialization"
-          brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Advance+Data+Science+and+AI+Certification+Program+Learnbay.pdf"
-        /> */}
-        {/* {/* </div> */}
-        {/* </Popup> */}
+            <Form
+              popup={true}
+              setTrigger={setPopups}
+              fullStack={true}
+              dataScience={true}
+              titleCourse="Advanced Data Science and AI Program with domain specialization"
+              brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Advance+Data+Science+and+AI+Certification+Program+Learnbay.pdf"
+            />
+          </div>
+        </Popup>
         <FirstSection
           FirstTyped="Guaranteed Interview Calls"
           SecondTyped="Capstone Project Certificate"
@@ -113,7 +147,7 @@ function blockchain() {
         <FourthSection redirectDS={true} />
         <FifthSection />
         <SixthSectionCTA />
-        <SyllabusNew
+        {/* <SyllabusNew
           dataScienceCounselling={true}
           serviceBasic={true}
           careerH1="Career Service"
@@ -121,13 +155,13 @@ function blockchain() {
           dataScience={true}
           titleCourse="Advanced Data Science and AI Program with domain specialization"
           brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Advance+Data+Science+and+AI+Certification+Program+Learnbay.pdf"
-          syllabus={DataScienceCourseData[0].syllabus}
+          // syllabus={DataScienceCourseData[0].syllabus}
           syllabusDesc={DataScienceCourseData[0].syllabusDesc}
           popupHead={DataScienceCourseData[0].popupHead}
           srcD="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Advance+Data+Science+and+AI+Certification+Program+Learnbay.pdf"
           hours="250+ Hours"
           project="12+ Real Time"
-        />
+        /> */}
         <GrowthStats
           img1="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Scope+of+DS+left+image.png"
           heading="Be the future: Grow your Data Science & AI skills "
@@ -136,10 +170,10 @@ function blockchain() {
           para3="Influences on nearly all sectors of the current industries"
         />
         <ToolsCovered />
-        <Certificate
+        {/* <Certificate
           threeCertificate
           data={DataScienceCourseData[0].Certificate}
-        />
+        /> */}
         <FeeSection
           Fee="₹ 99,000 + 18% GST"
           FeeEmi="₹ 9,735/month"
@@ -174,5 +208,4 @@ function blockchain() {
   );
 }
 
-export default blockchain;
-
+export default Blockchain;
