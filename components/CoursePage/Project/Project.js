@@ -116,7 +116,7 @@ const Project = ({
 
       <div className={styles.headWrapper}>
         <div className={styles.left}>
-          <h3>Industry Projects</h3>
+          <h4>Industry Projects</h4>
           {SoftwareText ? (
             <p className={styles.ptop}>
               Work on live projects certified from IBM

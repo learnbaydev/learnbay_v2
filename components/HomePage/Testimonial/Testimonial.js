@@ -49,7 +49,7 @@ function Testimonial({ redirectDS, para }) {
         desc={desc}
         imgSrc={img}
       />
-      <h2 className={styles.h1}>Our Alumni Profile</h2>
+      <h4 className={styles.h1}>Our Alumni Profile</h4>
       {/* <p className={styles.ptop}>
           {para}
         </p>
@@ -128,6 +128,7 @@ function Testimonial({ redirectDS, para }) {
                                   });
                                   setDesc(lDesc);
                                   setImg({
+                                    id: id,
                                     cLogo: complogo,
                                     pLogo: proImg,
                                   });

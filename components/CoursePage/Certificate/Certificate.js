@@ -12,7 +12,7 @@ const Certificate = ({
     ""
   ) : (
     <div className="wrapper">
-      <p className={styles.infop}>Globally Recognized Program</p>
+      <h4 className={styles.infop}>Globally Recognized Program</h4>
       <p className={styles.ptop}>Sponsored by IBM and Microsoft</p>
       <CertificateTabAdvance
         threeCertificate={threeCertificate}

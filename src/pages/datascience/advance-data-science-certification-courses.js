@@ -19,7 +19,7 @@ import FifthSection from "../../../components/CoursePage/FifthSection/FifthSecti
 import SixthSectionCTA from "../../../components/CoursePage/SixthSectionCTA/Counselling";
 import Project from "../../../components/CoursePage/Project/Project";
 import SyllabusNew from "../../../components/CoursePage/Syllabus/Syllabus";
-import DomainSection from "../../../components/newDesign/DomainSection/DomainSection";
+import DomainSection from "../../../components/CoursePage/DomainSection/DomainSection";
 import Certificate from "../../../components/CoursePage/Certificate/Certificate";
 import FAQNew from "../../../components/CoursePage/FAQNew/FAQNew";
 import {
@@ -175,4 +175,3 @@ function blockchain() {
 }
 
 export default blockchain;
-

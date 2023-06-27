@@ -73,7 +73,7 @@ function FourthSection({
       </Popup>
       <section className={styles.Features}>
         <div>
-          <h6 className={styles.infop}>300+ placement and hiring partners</h6>
+          <h4 className={styles.infop}>300+ placement and hiring partners</h4>
           <div className={styles.FeatureWrap}>
             <div className={styles.LeftWrap}>
               {placementArray.map((data, index) => {

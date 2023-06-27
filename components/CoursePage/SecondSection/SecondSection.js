@@ -7,7 +7,7 @@ function SecondSection() {
   return (
     <div className={`${styles.second} wrapper`}>
       <div>
-        <h2 className={styles.h1}>Why Choose Us?</h2>
+        <h4 className={styles.h1}>Why Choose Us?</h4>
         <p className={styles.ptop}>
           India&apos;s top rated bootcamp for working professionals
         </p>
