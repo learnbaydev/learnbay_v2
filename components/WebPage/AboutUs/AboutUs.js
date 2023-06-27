@@ -1,5 +1,5 @@
 import React from "react";
-import CountUp from "react-countup";
+// import CountUp from "react-countup";
 import styles from "./AboutUs.module.css";
 import {
   FaUserFriends,
@@ -22,14 +22,15 @@ function AboutUs() {
         <h4 style={{ textAlign: "left" }}>
           <span>“Knowledge is power,”- (Francis Bacon)</span> And we want to empower all our aspirants to succeed.
         </h4>
+        <div className="imgWrapper">
         <div className={styles.right}>
           <Image
             src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/about-us.png"
             width="522"
             height="380"
-            layout="intrinsic"
             alt="data science course"
           />
+        </div>
         </div>
       </div>
       <div className={styles.MVDiv}>
@@ -54,25 +55,27 @@ function AboutUs() {
               </div>
             </div>
           </div>
-          <div className={styles.MiddleImg}>
+        <div className="imgWrapper">
+          <div className={styles.FirstImg}>
             <Image
               src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/vision.png"
               width="517"
               height="330"
-              layout="intrinsic"
               alt="data science course"
             />
           </div>
+          </div>
         </div>
         <div className={styles.FirstDiv}>
+        <div className="imgWrapper">
           <div className={styles.FirstImg}>
             <Image
               src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/mission.png"
               width="517"
               height="380"
-              layout="intrinsic"
               alt="data science course"
             />
+          </div>
           </div>
           <div className={styles.FirstText}>
             <h3>Mission</h3>
@@ -107,14 +110,15 @@ function AboutUs() {
       </div>
       <div className={styles.MainDiv}>
       <div className={styles.FirstDivMain}>
+        <div className="imgWrapper">
           <div className={styles.FirstImg}>
             <Image
               src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/Krishna+Kumar+(1).jpg"
-              width="391"
+              width="440"
               height="313"
-              layout="intrinsic"
               alt="data science course"
             />
+          </div>
           </div>
           <div className={styles.FirstTextTop}>
             <div className={styles.iconHead}>
@@ -133,14 +137,15 @@ function AboutUs() {
           </div>
         </div>
         <div className={styles.FirstDivMain}>
+        <div className="imgWrapper">
         <div className={styles.FirstImg}>
             <Image
               src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/Nisha+Kumari+(1).jpg"
               width="440"
               height="313"
-              layout="intrinsic"
               alt="data science course"
             />
+          </div>
           </div>
           <div className={styles.FirstTextTop}>
             <div className={styles.iconHead}>
@@ -153,15 +158,16 @@ function AboutUs() {
           </div>
         </div>
         <div className={styles.FirstDivMain}>
+        <div className="imgWrapper">
           <div className={styles.FirstImg}>
             <Image
               src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/Abhishek+Gupta+(1).jpg"
               width="440"
               height="313"
-              layout="intrinsic"
               alt="data science course"
               className={styles.img12}
             />
+          </div>
           </div>
           <div className={styles.FirstTextTop}>
             <div className={styles.iconHead}>
@@ -181,26 +187,28 @@ function AboutUs() {
             <div className={styles.iconBoxInner}>
               <BsGraphUp className={styles.BoxIcon} />
               <div>
-                <CountUp
+                {/* <CountUp
                   end={250}
+                  start={0}
                   delay={2}
                   duration={2}
                   suffix="%"
                   className={[styles.textStyle]}
-                />
+                /> */}
                 <p className={styles.list}>Highest Salary Hike</p>
               </div>
             </div>
             <div className={styles.iconBoxInner}>
               <FaAngleDoubleUp className={styles.BoxIcon} />
               <div>
-                <CountUp
+                {/* <CountUp
                   end={97}
+                  start={0}
                   delay={2}
                   duration={2}
                   suffix="%"
                   className={[styles.textStyle]}
-                />
+                /> */}
                 <p className={styles.list}>Average Salary Hike</p>
               </div>
             </div>
@@ -210,13 +218,14 @@ function AboutUs() {
                 alt="data science course"
               />
               <div>
-                <CountUp
+                {/* <CountUp
                   end={250}
+                  start={0}
                   delay={2}
                   duration={2}
                   suffix="+"
                   className={[styles.textStyle]}
-                />
+                /> */}
                 <p className={styles.list}>Hiring Partners</p>
               </div>
             </div>
@@ -226,13 +235,14 @@ function AboutUs() {
                 alt="data science course"
               />
               <div className={styles.CountBox}>
-                <CountUp
+                {/* <CountUp
                   end={10000}
+                  start={0}
                   delay={2}
                   duration={2}
                   suffix="+"
                   className={[styles.textStyle]}
-                />
+                /> */}
                 <p className={styles.list}>Careers Reshaped</p>
               </div>
             </div>

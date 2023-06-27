@@ -126,7 +126,7 @@ function blockchain() {
           titleCourse="Advanced Data Science and AI Program with domain specialization"
           brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Advance+Data+Science+and+AI+Certification+Program+Learnbay.pdf"
         />
-        
+
         <Project />
 
         <GrowthStats
@@ -136,7 +136,10 @@ function blockchain() {
           para2="The global AI market to hit US$ 1,597.1 billion by 2030 "
           para3="Influences on nearly all sectors of the current industries"
         />
-        <ToolsCovered />
+        <ToolsCovered
+          deskImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Tools-Logo.png"
+          mobImage="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Mobile-Tools-Covered.png"
+        />
         <Certificate
           threeCertificate
           data={DataScienceCourseData[0].Certificate}
@@ -164,4 +167,3 @@ function blockchain() {
 }
 
 export default blockchain;
-

@@ -84,7 +84,7 @@ const Project = ({
     redirectCloud,
     redirectBlockchain,
   ]);
-  console.log(projectArray);
+  // console.log(projectArray);
 
   return (
     <div className={styles.projectHeader}>
@@ -200,7 +200,7 @@ const Project = ({
               Title,
               LDesc,
             } = data;
-            console.log(data);
+            // console.log(data);
             return (
               <SwiperSlide className={styles.project} key={index}>
                 <div className={styles.header}>

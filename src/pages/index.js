@@ -47,7 +47,7 @@ export default function Home() {
         />
       </Head>
 
-      <Navbar />
+      <Navbar radio={true}/>
       <FirstSection />
       <HomeLine />
       <BoxShape />
