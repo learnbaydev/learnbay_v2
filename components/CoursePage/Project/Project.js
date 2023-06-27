@@ -84,7 +84,7 @@ const Project = ({
     redirectCloud,
     redirectBlockchain,
   ]);
-  console.log(projectArray);
+  // console.log(projectArray);
 
   return (
     <div className={styles.projectHeader}>
@@ -169,17 +169,17 @@ const Project = ({
           navigation={true}
           grabCursor={true}
           breakpoints={{
-            500: {
-              slidesPerView: 1.5,
-              spaceBetween: 40,
+            300: {
+              slidesPerView: 1.3,
+              spaceBetween: 35,
             },
             961: {
-              slidesPerView: 1.9,
+              slidesPerView: 2.1,
               spaceBetween: 40,
             },
             1024: {
-              slidesPerView: 2.5,
-              spaceBetween: 50,
+              slidesPerView: 2.8,
+              spaceBetween: 45,
             },
             1280: {
               slidesPerView: 3,
@@ -200,21 +200,26 @@ const Project = ({
               Title,
               LDesc,
             } = data;
-            console.log(data);
+            // console.log(data);
             return (
               <SwiperSlide className={styles.project} key={index}>
                 <div className={styles.header}>
                   <div className={styles.left}>
                     <h5>{domain}</h5>
                   </div>
-                  <div className={styles.right}>
-                    <Image
-                      src={CLogo}
-                      alt="Learnbay"
-                      quality={100}
-                      width="90"
-                      height="45"
-                    />
+                  <div
+                    className={styles.imgWrap}
+                    style={id === "BMW" ? { width: "35px" } : { width: "auto" }}
+                  >
+                    <div className="imgWrapper">
+                      <Image
+                        src={CLogo}
+                        alt="Learnbay"
+                        quality={100}
+                        width="80"
+                        height="40"
+                      />
+                    </div>
                   </div>
                 </div>
                 <div className={styles.body}>
@@ -238,11 +243,11 @@ const Project = ({
       </div>
 
       <div>
-        <div onClick={popupShowP} className="buttonAlignCenter">
+        <div onClick={popupShowP} className={styles.btn}>
           <Button
             className={styles.outLineBtn}
             text="Explore Projects"
-            style={{ margin: "auto", fontSize: "16px" }}
+            style={{ fontSize: "16px" }}
             passIcon={<FaDownload style={{ marginRight: "10px" }} />}
           />
         </div>

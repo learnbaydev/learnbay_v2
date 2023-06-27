@@ -134,6 +134,9 @@
   height: max-content;
 }
 @media (max-width: 1281px) {
+  .First {
+    padding: 40px 80px ;
+  }
   .h1 {
     font-size: 30px;
     line-height: 39px;
@@ -158,6 +161,8 @@
 }
 }
 @media (max-width: 961px) {
+   .First{
+     padding: 30px 40px;}
   .h1 {font-size: 22px;}
    .ptopC{
     font-size: 19px !important;
@@ -197,6 +202,10 @@ margin: auto;
 }
 }
 
+@media(max-width:641px){
+   .First {
+    padding: 30px 20px;}
+}
 @media (max-width: 481px) {
   .First{
         padding: 70px 50px 70px 50px;
