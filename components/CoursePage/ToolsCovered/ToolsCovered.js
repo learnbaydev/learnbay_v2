@@ -13,7 +13,7 @@ function ToolsCovered({
   const [mobile, setMobile] = useState(false);
   useEffect(() => {
     let width = window.innerWidth;
-    if (width < 641) {
+    if (width <= 641) {
       setMobile(true);
     }
   }, []);
@@ -23,7 +23,7 @@ function ToolsCovered({
         <p className={styles.infop}>Wide Range Of Tools & Modules</p>
         <div className="imgWrapper">
           <Image
-            src={mobile ? { mobImage } : { deskImg }}
+            src={mobile ?  mobImage  :  deskImg }
             alt="github"
             width="1458"
             height="186"
