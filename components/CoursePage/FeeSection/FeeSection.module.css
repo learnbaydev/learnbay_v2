@@ -192,9 +192,6 @@
 }
 
 @media (max-width: 641px) {
-  .feeWrapper {
-    padding: 20px;
-  }
   .priceWrap {
     display: flex;
     flex-direction: column;
