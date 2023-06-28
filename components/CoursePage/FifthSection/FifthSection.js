@@ -31,63 +31,63 @@ const FifthSection = ({
     }
   }, []);
   return (
-    <>
-      <div className={`${styles.map} imgWrapper`}>
+    <div className={styles.First}>
+      <div className="bgWrap">
         <Image
-          src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Map(learners).png"
-          width="617"
-          height="779"
-          alt="data science course"
+          src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Alumni-Map-BG.png "
+          className={styles.desktopImage}
+          alt="bg-image"
+          fill={true}
+          style={{ objectFit: "contain" }}
         />
       </div>
-      <div className={styles.First}>
-        <Popup
-          trigger={popups}
-          setTrigger={setPopups}
-          className="popupModal"
-          downloadBrochure
-        >
-          <div className="leftPopup">
-            <div
-              className="whiteP"
-              style={{ width: "340px", height: "400px" }}
-            ></div>
-          </div>
-          <div className="RightPopup">
-            <h5>Apply For Counselling</h5>
-            <Form
-              dataScience={dataScience}
-              dataScienceCounselling={dataScienceCounselling}
-              titleCourse={titleCourse}
-              brochureLink={brochureLink}
-            />
-          </div>
-        </Popup>
-        <div className={styles.FirstLeft}>
-          <p className={styles.ptopBox}>Invest in yourself!</p>
-          <h4 className={styles.h1}>
-            Stay Ahead Of The Curve With Support Of Our
-            <span className={styles.h1Span}> Alumni Community</span>
-          </h4>
+
+      <Popup
+        trigger={popups}
+        setTrigger={setPopups}
+        className="popupModal"
+        downloadBrochure
+      >
+        <div className="leftPopup">
+          <div
+            className="whiteP"
+            style={{ width: "340px", height: "400px" }}
+          ></div>
         </div>
-        <div className={styles.secondLeft}>
-          {mobile ? (
-            <div>
-              <div className="imgWrapper">
-                <Image
-                  src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Alumni-Map-Mobile-View.png"
-                  width="910"
-                  height="920"
-                  alt="data science course"
-                />
-              </div>
-            </div>
-          ) : (
-            ""
-          )}
+        <div className="RightPopup">
+          <h5>Apply For Counselling</h5>
+          <Form
+            dataScience={dataScience}
+            dataScienceCounselling={dataScienceCounselling}
+            titleCourse={titleCourse}
+            brochureLink={brochureLink}
+          />
         </div>
+      </Popup>
+      <div className={styles.FirstLeft}>
+        <p className={styles.ptopBox}>Invest in yourself!</p>
+        <h4 className={styles.h1}>
+          Stay Ahead Of The Curve With Support Of Our
+          <span className={styles.h1Span}> Alumni Community</span>
+        </h4>
       </div>
-    </>
+      <div className={styles.secondLeft}>
+        {mobile ? (
+          <div>
+            <div className="imgWrapper">
+              <Image
+                src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Alumni-Map-Mobile-View.png"
+                width="910"
+                height="920"
+                alt="data science course"
+              />
+            </div>
+          </div>
+        ) : (
+          ""
+        )}
+      </div>
+    </div>
   );
 };
 
