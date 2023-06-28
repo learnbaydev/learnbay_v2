@@ -212,4 +212,4 @@ function Blockchain() {
     </>
   );
 }
-export default blockchain;
+export default Blockchain;

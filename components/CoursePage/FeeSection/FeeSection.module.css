@@ -1,8 +1,6 @@
 .feeWrapper {
   display: flex;
   flex-flow: column;
-
-  padding: 0px 80px;
 }
 .feeWrapper h4 {
   color: black;
@@ -172,33 +170,28 @@
 }
 
 @media (max-width: 1024px) {
-
   .top h3 {
     margin: 10px 0;
     color: #0072bc;
     font-size: 15px;
-}
-.top p {
-  margin: 0;
-  color: #000;
-  font-size: 13px;
-}
+  }
+  .top p {
+    margin: 0;
+    color: #000;
+    font-size: 13px;
+  }
 }
 
 @media (max-width: 961px) {
-
   .top .left button {
-  background-color: transparent;
-  color: #0072bc;
-  padding: 8px 10px;
-  font-size: 13px;
-}
+    background-color: transparent;
+    color: #0072bc;
+    padding: 8px 10px;
+    font-size: 13px;
+  }
 }
 
 @media (max-width: 641px) {
-  .feeWrapper {
-    padding: 20px;
-  }
   .priceWrap {
     display: flex;
     flex-direction: column;
@@ -233,6 +226,4 @@
     font-size: 18px;
     margin: 0px 20px 20px 20px;
   }
-
-
 }
