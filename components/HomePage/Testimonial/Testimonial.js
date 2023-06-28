@@ -5,15 +5,14 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/scrollbar";
-import { Scrollbar } from "swiper";
 import { AiOutlineRise } from "react-icons/ai";
 import dynamic from "next/dynamic";
 const ReviewPopup = dynamic(() => import("../ReviewPopup/ReviewPopup"));
-import { redirect } from "next/dist/server/api-utils";
+
 import { TestimonialDS, TestimonialFS } from "./TestimonialData";
 import { Pagination, Navigation } from "swiper";
 
-function Testimonial({ redirectDS, para }) {
+function Testimonial({ redirectDS, para, heading }) {
   const [mobile, setMobile] = useState(false);
   const [img, setImg] = useState({
     cLogo: "",
@@ -49,11 +48,10 @@ function Testimonial({ redirectDS, para }) {
         desc={desc}
         imgSrc={img}
       />
-      <h2 className={styles.h1}>Our Alumni Profile</h2>
-      {/* <p className={styles.ptop}>
-          {para}
-        </p>
-      <div className={styles.line}>
+      <h4 className={styles.h1}>{heading}</h4>
+      {para === undefined ? "" : <p className={styles.ptop}>{para}</p>}
+
+      {/* <div className={styles.line}>
         <img
           src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/alumni-arrow.png"
           width="80px"
@@ -72,6 +70,7 @@ function Testimonial({ redirectDS, para }) {
                   961: { slidesPerView: 3, spaceBetween: 20 },
                   801: { slidesPerView: 2.5, spaceBetween: 20 },
                   641: { slidesPerView: 2, spaceBetween: 20 },
+                  481: { slidesPerView: 1.8, spaceBetween: 20 },
                   100: { slidesPerView: 1.2, spaceBetween: 20 },
                 }}
                 pagination={{
@@ -128,6 +127,7 @@ function Testimonial({ redirectDS, para }) {
                                   });
                                   setDesc(lDesc);
                                   setImg({
+                                    id: id,
                                     cLogo: complogo,
                                     pLogo: proImg,
                                   });

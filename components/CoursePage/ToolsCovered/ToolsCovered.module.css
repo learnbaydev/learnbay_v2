@@ -1,5 +1,5 @@
 .toolscoverd {
-    padding: 50px 0px 0px 0px;
+    padding: 50px 100px;
   }
 
   .infop {
@@ -20,6 +20,12 @@ display: flex;
     display: none;
   }
 
+  @media (max-width: 1025px) {
+    .toolscoverd {
+      padding: 50px 20px;
+    }
+  }
+
   @media (max-width: 961px) {
     .sliderTopD {
         padding: 20px 50px;
@@ -35,7 +41,7 @@ display: flex;
 
   @media (max-width: 641px) {
     .toolscoverd {
-        padding: 0px;
+        padding: 50px 20px;
       }
       .infop {
         font-size: 24px;

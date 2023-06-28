@@ -76,7 +76,7 @@ function SyllabusNew({
         </div>
       </Popup>
       <div className={styles.project}>
-        <h2 className={styles.h1}>A Roadmap For Success</h2>
+        <h4 className={styles.h1}>A Roadmap For Success</h4>
         <p className={styles.ptop}>
           Our comprehensive curriculum, designed for professionals
         </p>
@@ -357,7 +357,7 @@ function SyllabusNew({
               })}
             </>
           )}
-          <div onClick={popupShow}>
+          <div onClick={popupShow} style={{ margin: "30px 0" }}>
             <Button
               text="Download Detailed Syllabus"
               passIcon={<FaDownload style={{ marginLeft: "10px" }} />}
@@ -366,13 +366,14 @@ function SyllabusNew({
         </div>
         <div className={styles.button}>
           <div className={styles.formWrapper}>
-            <Image
-              src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Form-Girl.png"
-              width={535}
-              height={239}
-              layout="intrinsic"
-              alt="girl"
-            />
+            <div className="imgWrapper">
+              <Image
+                src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Form-Girl.png"
+                width={535}
+                height={239}
+                alt="girl"
+              />
+            </div>
             <h4>Request More Information</h4>
             <Form
               dataScienceCounselling={dataScienceCounselling}

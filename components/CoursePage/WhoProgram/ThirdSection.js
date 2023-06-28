@@ -20,7 +20,7 @@ function ThirdSection({leftImage}) {
                       <div>{icon}
                       </div>
                     </div>
-                    <h4 className={styles.heading}>{heading}</h4>
+                    <h5 className={styles.heading}>{heading}</h5>
                     <p>{para}</p>
                   </div>
 

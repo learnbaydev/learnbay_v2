@@ -2,12 +2,12 @@ import React, { useState, useEffect, useRef } from "react";
 import styles from "./FirstSection.module.css";
 import { FaDownload, FaPlayCircle } from "react-icons/fa";
 import Form from "../../Form/Form";
-import Popup from "../../Popup/Popup";
-
 import Image from "next/image";
 import Typed from "typed.js";
-// import VideoPopup from "../../VideoPopup/VideoPopup";
-import Button from "../../Global/Button/Button";
+import dynamic from "next/dynamic";
+const Button = dynamic(() => import("../../Global/Button/Button"));
+const VideoPopup = dynamic(() => import("../VideoPopup/VideoPopup"));
+const Popup = dynamic(() => import("../../Popup/Popup"));
 
 function FirstSection({
   dataScience,
@@ -79,7 +79,7 @@ function FirstSection({
           />
         </div>
       </Popup>
-      {/* <VideoPopup triggers={video} setTriggers={setVideo} ids={idss} /> */}
+      <VideoPopup triggers={video} setTriggers={setVideo} ids={idss} />
 
       {/* For Mobile View */}
 
@@ -119,27 +119,24 @@ function FirstSection({
         <div className={styles.btnImage}>
           <div onClick={popupShow}>
             <Button
-              className={styles.button}
               text="Brochure"
               passIcon={<FaDownload style={{ marginLeft: "10px" }} />}
             />
           </div>
           {softwareBtnHide ? (
-            <></>
+            ""
           ) : (
-            <>
-              <div onClick={videoSHow}>
-                <Button
-                  className={styles.outLineBtn}
-                  text="Intro Video"
-                  passIcon={
-                    <FaPlayCircle
-                      style={{ marginLeft: "10px", fontSize: "22px" }}
-                    />
-                  }
-                />
-              </div>
-            </>
+            <div onClick={videoSHow}>
+              <Button
+                outline={true}
+                text="Intro Video"
+                passIcon={
+                  <FaPlayCircle
+                    style={{ marginLeft: "10px", fontSize: "22px" }}
+                  />
+                }
+              />
+            </div>
           )}
         </div>
       </div>

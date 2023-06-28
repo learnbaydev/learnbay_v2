@@ -1,8 +1,6 @@
 .feeWrapper {
   display: flex;
   flex-flow: column;
-
-  padding: 0px 80px;
 }
 .feeWrapper h4 {
   color: black;
@@ -13,7 +11,7 @@
 }
 .priceWrap {
   display: grid;
-  grid-template-columns: 57% 40%;
+  grid-template-columns: 45% 55%;
   gap: 30px;
 }
 .price p {
@@ -179,7 +177,6 @@
 }
 
 @media (max-width: 1024px) {
-
   .top h3 {
     font-size: 15px;
 }
@@ -202,15 +199,10 @@
 .priceWrap{
   grid-template-columns: 54% 46%;
 }
-
-
-
 }
 
 @media (max-width: 961px) {
-
-  .top .left button {
-  
+  .top .left button {  
   font-size: 13px;
 }
 
@@ -290,9 +282,6 @@
 }
 
 @media (max-width: 641px) {
-  .feeWrapper {
-    padding: 20px;
-  }
   .priceWrap {
     display: flex;
     flex-direction: column;
@@ -327,6 +316,4 @@
     font-size: 18px;
     margin: 0px 20px 20px 20px;
   }
-
-
 }
