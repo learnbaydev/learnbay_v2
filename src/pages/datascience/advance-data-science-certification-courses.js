@@ -147,7 +147,7 @@ function Blockchain() {
         <WhoProgram leftImage="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/whoIsProgram.webp" />
         <Switch />
         <FourthSection redirectDS={true} />
-        {/* <FifthSection /> */}
+        <FifthSection />
         <SixthSectionCTA />
         <SyllabusNew
           dataScienceCounselling={true}
