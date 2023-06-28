@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import styles from "./ProjectPopup.module.scss";
-
 import { IoClose } from "react-icons/io5";
+import Image from "next/image";
 
 const ProjectPopup = (props) => {
   let color = "transparent";
@@ -13,6 +13,7 @@ const ProjectPopup = (props) => {
       document.body.style.overflow = "unset";
     }
   }, [props.trigger]);
+  // console.log(props, "props data");
   return props.trigger ? (
     <div className={styles.popup}>
       <div
@@ -38,12 +39,21 @@ const ProjectPopup = (props) => {
 
         <div className={styles.InnerGrid}>
           <div className={styles.imgWrap}>
-            <img src={props.imgsrc} alt="data science course" />
+            <div className="imgWrapper">
+              <Image
+                src={props.imgsrc.PopupImg}
+                width="200"
+                height="200"
+                alt="data science course"
+              />
+            </div>
           </div>
           <div className={styles.contentWrap}>
-            <h5>{props.title}</h5>
-            <p><b>{props.PTitle}</b></p>
-            <p>{props.desc}</p>
+            <h5>{props.title.Title}</h5>
+            <p>
+              <b>{props.PTitle.ProjectTitle}</b>
+            </p>
+            <p>{props.desc.LDesc}</p>
           </div>
         </div>
       </div>

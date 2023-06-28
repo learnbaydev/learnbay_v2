@@ -8,9 +8,7 @@
   margin-right: 0px;
   height: max-content;
 }
-#math {
-  background-color: red;
-}
+
 #tcs .imgWrap {
   width: 20%;
 }
@@ -77,7 +75,9 @@
 
   color: #0072bc;
 }
-
+#tcs .imgWrap {
+  width: 20%;
+}
 .paraDiv {
   border-radius: 15px;
   padding: 0px 20px 0px 20px;

@@ -29,11 +29,10 @@
         display: grid;
         grid-template-columns: 49% 43%;
         gap: 50px;
-        .imgWrap img {
-          width: 100%;
-          height: auto;
-          border-radius: 15px;
-          margin-bottom: -5px;
+        .imgWrap  {
+          display: flex;
+          justify-content: center;
+          align-items: center;
         }
         .contentWrap {
           display: flex;
@@ -150,11 +149,11 @@
       display: flex;
       align-items: center;
       justify-content: space-evenly;
-      padding: 30px 60px;
-      width: 80%;
+      // padding: 30px 60px;
+      width: 90%;
       border-radius: 5px;
       border: 2px solid #2d9cd7;
-      height: 100%;
+      height: max-content;
       background-color: white;
 
       .closeBtn {
@@ -252,23 +251,7 @@
   }
 }
 
-@media (max-width: 600px) {
-  .popupInner {
-    backdrop-filter: blur(16px) saturate(180%);
-    -webkit-backdrop-filter: blur(16px) saturate(180%);
-    background-color: white;
-    background-image: none !important;
-    padding: 30px 10px;
-  }
-  .popupInners {
-    backdrop-filter: blur(16px) saturate(180%);
-    -webkit-backdrop-filter: blur(16px) saturate(180%);
-    background-color: white;
-    background-image: none !important;
-    padding: 30px 10px;
-  }
-}
-@media (max-width: 481px) {
+@media(max-width: 641px){
   .popup {
     width: 100vw;
     height: 100vh;
@@ -351,3 +334,102 @@
     }
   }
 }
+@media (max-width: 600px) {
+  .popupInner {
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: white;
+    background-image: none !important;
+    padding: 30px 10px;
+  }
+  .popupInners {
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: white;
+    background-image: none !important;
+    padding: 30px 10px;
+  }
+}
+// @media (max-width: 481px) {
+//   .popup {
+//     width: 100vw;
+//     height: 100vh;
+//     margin: auto;
+//     position: fixed;
+//     background-color: rgba(0, 0, 0, 0.23);
+//     overflow: hidden;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     z-index: 9999;
+//     .popupInner {
+//       background-image: none !important;
+//       padding: 30px 10px;
+//       max-width: 100%;
+//       display: flex;
+//       width: 95%;
+//       align-items: center;
+//       justify-content: center;
+//       height: max-content;
+//       text-align: left;
+
+//       background-color: white;
+//       margin-left: 10px;
+//       margin-right: 10px;
+//       .InnerGrid {
+//         display: flex;
+//         flex-flow: column;
+
+//         gap: 20px;
+//         .imgWrap img {
+//           width: 100%;
+//           height: auto;
+//           border-radius: 15px;
+//           margin-bottom: -5px;
+//         }
+//         .contentWrap {
+//           display: flex;
+//           flex-flow: column;
+//           padding: 0px 20px;
+
+//           align-items: flex-start;
+          
+//           h5 {
+//             font-size: 24px;
+//             margin: 0;
+//             margin-bottom: 10px;
+//             margin-top: 20px;
+//             text-align: left;
+            
+//           }
+//           p {
+//             margin: 0;
+//             margin-bottom: 10px;
+//             color: #646464;
+//             text-align: left;
+//           }
+//         }
+//       }
+//     }
+//     .popupInners {
+//       background-image: none !important;
+//       padding: 30px 20px;
+//       max-width: 100%;
+//       backdrop-filter: blur(16px) saturate(180%);
+//       -webkit-backdrop-filter: blur(16px) saturate(180%);
+//       background-color: white;
+//       margin-left: 10px;
+//       margin-right: 10px;
+//     }
+//     .popupInnersW {
+//       background-image: none !important;
+//       padding: 30px 20px;
+//       max-width: 100%;
+//       backdrop-filter: blur(16px) saturate(180%);
+//       -webkit-backdrop-filter: blur(16px) saturate(180%);
+//       background-color: white;
+//       margin-left: 10px;
+//       margin-right: 10px;
+//     }
+//   }
+// }

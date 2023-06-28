@@ -37,7 +37,6 @@ function DomainSection({
     if (width < 600) {
       setMobile(true);
     }
-
     if (dataScience) {
       setDomainDataArray(DomainSectionData);
     } else if (BAdomain) {
@@ -73,29 +72,56 @@ function DomainSection({
       <>
         <div className={styles.bulb}>
           <div className={styles.img}>
-            <Image
-              src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Domain-Electives-Left-Guy.png"
-              layout="intrinsic"
-              loading="lazy"
-              width="671"
-              height="704"
-              alt="Bulb"
-            />
+            <div className="imgWrapper">
+              <Image
+                src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Domain-Electives-Left-Guy.png"
+                loading="lazy"
+                width="671"
+                height="704"
+                alt="Bulb"
+              />
+            </div>
           </div>
           <p className={styles.bgP}>Become a domain expert</p>
         </div>
         <div>
           <section>
             <div className={styles.Section1}>
-              <h2 className={styles.h1}>
+              <h4 className={styles.h1}>
                 <span className={styles.h1Span}>Domain Electives</span>
-              </h2>
+              </h4>
 
               <div className={styles.Testimonial}>
                 <div className={styles.swiperleft}>
                   <Swiper
                     slidesPerView={mobile ? 1.1 : 2}
                     spaceBetween={mobile ? 10 : 15}
+                    breakpoints={{
+                      481: {
+                        slidesPerView: 1.5,
+                        spaceBetween: 20,
+                      },
+                      641: {
+                        slidesPerView: 1.6,
+                        spaceBetween: 20,
+                      },
+                      801: {
+                        slidesPerView: 1,
+                        spaceBetween: 15,
+                      },
+                      961: {
+                        slidesPerView: 1.4,
+                        spaceBetween: 15,
+                      },
+                      1024: {
+                        slidesPerView: 1.5,
+                        spaceBetween: 15,
+                      },
+                      1280: {
+                        slidesPerView: 2.1,
+                        spaceBetween: 30,
+                      },
+                    }}
                     scrollbar={{ draggable: true }}
                     autoplay={{
                       delay: 2500,
@@ -106,8 +132,15 @@ function DomainSection({
                     className="mySwiper"
                   >
                     {domainDataArray.map((data) => {
-                      const { id, p1, p2, desc, btn, BrochureLink, TitleCourse } =
-                        data;
+                      const {
+                        id,
+                        p1,
+                        p2,
+                        desc,
+                        btn,
+                        BrochureLink,
+                        TitleCourse,
+                      } = data;
 
                       return (
                         <SwiperSlide className={styles.slide} key={id}>
@@ -126,25 +159,24 @@ function DomainSection({
                                 }}
                                 className={styles.para}
                               >
-                                {desc.map((data) => {
-                                  return <li>{data}</li>;
+                                {desc.map((data, i) => {
+                                  return <li key={i}>{data}</li>;
                                 })}
                               </ul>
                             </div>
-                            <div onClick={() => {
-                                  setBrochureLink(BrochureLink);
-                                  setTitleCourse(TitleCourse);
-                                  popupShow();
-                                }} style={{ marginTop: "20px" }}>
+                            <div
+                              onClick={() => {
+                                setBrochureLink(BrochureLink);
+                                setTitleCourse(TitleCourse);
+                                popupShow();
+                              }}
+                              style={{ marginTop: "20px" }}
+                            >
                               <Button
-                                
                                 className={styles.fillBtn}
-                              
                                 text={btn}
-                                
                                 passIcon={<FaDownload className="bIconS" />}
                               />
-
                             </div>
                           </div>
                         </SwiperSlide>

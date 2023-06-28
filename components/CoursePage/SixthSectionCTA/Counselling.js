@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from "react";
 import styles from "../FourthSection/FourthSection.module.css";
 import Form from "../../Form/Form";
-import Popup from "../../Popup/Popup";
+import Image from "next/image";
+const Popup = dynamic(() => import("../../Popup/Popup"));
 import { FaArrowRight } from "react-icons/fa";
 import "swiper/css";
 import "swiper/css/navigation";
-import Button from "../../Global/Button/Button";
+import dynamic from "next/dynamic";
+const Button = dynamic(() => import("../../Global/Button/Button"));
 
 function Counselling({
   dataScience,
@@ -19,14 +21,8 @@ function Counselling({
     setPopups(true);
   };
 
-  useEffect(() => {
-    let width = window.innerWidth;
-    if (width < 481) {
-      setMobile(true);
-    }
-  });
   return (
-    <>
+    <div className={`${styles.CTA}  wrapper`}>
       <Popup
         trigger={popups}
         setTrigger={setPopups}
@@ -49,7 +45,16 @@ function Counselling({
           />
         </div>
       </Popup>
-      <div className={styles.CTA}>
+      <div className="bgWrap">
+        <Image
+          src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/ctaBanner.webp"
+          fill={true}
+          alt="cta-back"
+          className={styles.img}
+          style={{ objectFit: "contain" }}
+        />
+      </div>
+      <div className={styles.CTAInner}>
         <div className={styles.boxBlue}>
           <h2 className={styles.boxH2}>
             Can’t decide which program to opt for?
@@ -67,7 +72,7 @@ function Counselling({
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

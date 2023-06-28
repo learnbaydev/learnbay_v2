@@ -8,15 +8,6 @@
   gap: 50px;
 }
 
-.FirstLeft button {
-  font-size: 18px;
-  border-radius: 4px;
-  background-color: transparent;
-  border: 1px solid #0072bc;
-  font-weight: 700;
-  color: #0072bc;
-  height: 100%;
-}
 .fillBtn {
   font-size: 18px;
   border-radius: 4px;
@@ -24,12 +15,6 @@
   font-weight: 700;
   color: white !important;
   height: 100%;
-}
-
-.FirstLeft button:hover {
-  background: #fff;
-  color: #0072bc;
-  border: 1px solid #0072bc;
 }
 
 /* .imgArrow {
@@ -129,11 +114,14 @@
   justify-content: space-evenly;
 }
 
-.ImageBlock{
+.ImageBlock {
   width: 300px;
   height: max-content;
 }
 @media (max-width: 1281px) {
+  .First {
+    padding: 40px 80px;
+  }
   .h1 {
     font-size: 30px;
     line-height: 39px;
@@ -141,86 +129,103 @@
   .animationText {
     font-size: 23px;
   }
-  .ptop{
+  .ptop {
     font-size: 19px;
   }
   .animationTextWrap {
-  margin-top: 6px;
-  margin-bottom: 16px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+  }
+  .ImageBlock {
+    width: 250px;
+  }
 }
-.ImageBlock{
-  width: 250px;
-}
-}
-@media(max-width:1024px){
-  .ImageBlock{
-  width: 200px;
-}
+@media (max-width: 1024px) {
+  .ImageBlock {
+    width: 200px;
+  }
 }
 @media (max-width: 961px) {
-  .h1 {font-size: 22px;}
-   .ptopC{
+  .First {
+    padding: 30px 40px;
+  }
+  .h1 {
+    font-size: 22px;
+  }
+  .ptopC {
     font-size: 19px !important;
   }
   .animationText {
-      font-size: 21px;}
-        .animationTextWrap {margin-bottom: 7px;}
-        .ImageBlock{
-  width: 180px;
-}
+    font-size: 21px;
+  }
+  .animationTextWrap {
+    margin-bottom: 7px;
+  }
+  .ImageBlock {
+    width: 180px;
+  }
 }
 @media (max-width: 801px) {
   .First {
-        display: flex;
+    display: flex;
     flex-flow: column;
-     padding: 70px 50px 70px 50px;
+    padding: 70px 50px 70px 50px;
   }
-  .animationTextWrap{
-   justify-content: center ;
-    text-align: center ;
- }
- .ptopC,.h1,.ptop,.IBMlogo{
-  text-align: center;
-  justify-content: center;
-}
- .secondLeft{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
- }
-  .btnImage{
+  .animationTextWrap {
+    justify-content: center;
+    text-align: center;
+  }
+  .ptopC,
+  .h1,
+  .ptop,
+  .IBMlogo {
+    text-align: center;
+    justify-content: center;
+  }
+  .secondLeft {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .btnImage {
     margin: auto !important;
   }
-  .ImageBlock{
-margin: auto;
-}
+  .ImageBlock {
+    margin: auto;
+  }
 }
 
+@media (max-width: 641px) {
+  .First {
+    padding: 30px 20px;
+  }
+}
 @media (max-width: 481px) {
-  .First{
-        padding: 70px 50px 70px 50px;
+  .h1 {
+    font-size: 27px;
   }
-  .h1 {font-size: 27px;}
-   .ptopC{
-    font-size: 23px !important;
+  .ptopC {
+    font-size: 18px !important;
   }
-  .ptopC,.h1,.ptop{
+  .ptopC,
+  .h1,
+  .ptop {
     justify-content: left;
     text-align: left;
   }
-  .btnImage{
+  .btnImage {
     margin: 0 !important;
   }
- .animationTextWrap{
-   justify-content: left;
+  .animationTextWrap {
+    justify-content: left;
     text-align: left;
- }
- .IBMlogo{
-  justify-content: left !important;
+  }
+  .IBMlogo {
+    justify-content: left !important;
     text-align: left !important;
- }
-  .ImageBlock{
+  }
+  .ImageBlock {
     margin: 0px;
   }
 }

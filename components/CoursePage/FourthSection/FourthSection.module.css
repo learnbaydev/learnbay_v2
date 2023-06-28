@@ -73,53 +73,18 @@
   border-radius: 20px;
 }
 
-.blueD {
-  background: url("https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Box-blue.png");
-}
-
-.green {
-  background: url("https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Box-green.png");
-}
-
-.yellow {
-  background: url("https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Box-yellow.png");
-}
-
-.blue {
-  background: url("https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Box-light-blue.png");
-}
-
-.blue,
-.blueD,
-.yellow,
-.green {
-  background-size: contain;
-  background-repeat: no-repeat;
-  padding: 50px;
-  background-position: center;
-}
-
 .map {
   text-align: center;
-}
-
-.boxBlue {
-  padding: 0px 20px;
-  background: url("https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/ctaBanner.webp");
-  background-repeat: no-repeat;
-  background-size: contain;
-  margin-left: 0;
-  padding: 20px 300px;
-  height: 370px;
 }
 
 .boxH2 {
   color: #000;
   margin: 0;
-  padding-top: 90px;
+  padding-top: 7px;
   font-size: 37px;
   line-height: 40px;
-  width: 47%;
+  width: 50%;
+  margin-bottom: 10px;
 }
 
 .boxP {
@@ -163,8 +128,8 @@
 }
 
 .First {
-  margin-top: 70px;
-  padding: 50px 100px 100px 100px;
+  margin-top: 20px;
+  padding: 50px 100px 30px 100px;
   display: grid;
   grid-template-columns: 50% 50%;
   background: url(https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Alumni-Map-BG.png);
@@ -231,7 +196,9 @@
 }
 
 .CTA {
-  margin: auto;
+  padding: 70px 150px;
+  position: relative;
+  margin: 80px 0;
 }
 
 .secondLeft {
@@ -290,7 +257,8 @@
   font-size: 20px;
 }
 .LeftWrap {
-  padding: 0px 20px 20px 20px;
+  padding: 0px 20px 0px 20px;
+  height: 100%;
 }
 .RightWrap {
   background: #ffffff;
@@ -317,18 +285,22 @@
   display: grid;
   grid-template-columns: 10% 89%;
   align-items: center;
+  justify-content: center;
   font-size: 22px;
   gap: 20px;
   margin: 0;
   position: relative;
   font-weight: 500;
-  margin-bottom: 20px;
-  margin-top: 1em;
+  margin: 10px 0;
 }
 .ParaWrap {
   grid-template-columns: 10% 89%;
   gap: 20px;
+  height: 95px;
   border-left: 3px solid #516c82;
+}
+.ParaWrap:nth-child(1) {
+  grid-template-columns: 8% 89%;
 }
 .ParaWrap1 {
   border-left: 3px solid #e5c586;
@@ -406,26 +378,41 @@
 }
 @media (max-width: 1280px) {
   .ParaWrap span {
-  font-size: 18px !important;
-}
-.infop{font-size: 28px;
-}
-.h1 {
- font-size: 28px;
-}
-.boxP{
-  margin-top: 10px;
-}
-.boxBlue button{
-   margin-top: 35px;
-}
+    font-size: 18px !important;
+  }
+  .infop {
+    font-size: 28px;
+  }
+  .h1 {
+    font-size: 28px;
+  }
+  .boxP {
+    margin-top: 10px;
+  }
+  .boxBlue button {
+    margin-top: 35px;
+  }
+  .boxH2 {
+    font-size: 25px;
+    line-height: 30px;
+  }
 }
 
+@media (max-width: 1024px) {
+  .LeftWrap {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+  }
+  .ParaWrap {
+    height: 70px;
+  }
+}
 @media (max-width: 1025px) {
   .Features {
     padding: 50px 20px 0px 20px;
   }
-  .LeftWrap,
+
   .RightWrap {
     padding: 20px;
   }
@@ -446,29 +433,64 @@
   .FeatureWrap {
     grid-template-columns: 44% 54%;
   }
+  .First {
+    height: 600px;
+  }
 }
 
 @media (max-width: 961px) {
-  .boxBlue{
-        padding: 20px 50px;
+  .boxBlue {
+    padding-top: 13px;
   }
-  .boxH2{
-        padding-top: 40px;
+  .boxH2 {
+    font-size: 18px;
+    line-height: 18px;
   }
 }
 
 @media (max-width: 801px) {
-   .FeatureWrap {
+  .FeatureWrap {
     flex-flow: column;
     display: flex;
   }
+  .CTA {
+    padding: 0px 120px;
+    position: relative;
+    margin: 80px 0;
+
+    background: linear-gradient(
+      90deg,
+      rgba(237, 233, 233, 0) 0%,
+      rgba(235, 235, 235, 0.6) 52.6%,
+      rgba(239, 239, 239, 0) 100%
+    );
+  }
+  .img {
+    display: none;
+  }
   .h1 {
- font-size: 24px;
-}
-.boxH2{
-      font-size: 21px;
+    font-size: 24px;
+  }
+  .boxH2 {
+    font-size: 21px;
     width: 74%;
-}
+    line-height: 30px;
+    text-align: center;
+  }
+  .boxBlue {
+    padding: 20px 60px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .boxP {
+    width: 90%;
+    text-align: center;
+  }
+  .boxBlue Button {
+    font-size: 15px;
+  }
 }
 
 @media (max-width: 641px) {
@@ -481,13 +503,15 @@
     font-size: 24px;
     font-weight: 600;
   }
+
   .boxP {
     color: #000;
     width: 100%;
+    margin-top: 15px;
   }
-    .ParaWrap span {
-  font-size: 15px;
-}
+  .ParaWrap span {
+    font-size: 15px;
+  }
 }
 
 @media (max-width: 600px) {
@@ -612,13 +636,17 @@
     font-size: 20px;
     margin-bottom: 0px;
   }
-
+  .CTA {
+    padding: 0 20px;
+  }
   .infopP {
     text-align: left;
   }
   .boxBlue {
-    padding: 50px 20px;
+    padding: 20px 0px;
     margin-left: 0;
+    align-items: flex-start;
+    justify-content: flex-start;
     background-size: cover;
     height: fit-content;
   }
@@ -628,9 +656,13 @@
   .boxH2 {
     color: #000;
     margin: 0;
-    font-size: 26px;
-    width: 100%;
+    text-align: left;
+    font-size: 23px;
+    width: 70%;
     padding-top: 0px;
+  }
+  .boxP {
+    text-align: left;
   }
   .h1 {
     font-size: 20px;
@@ -650,5 +682,11 @@
   }
   .Features .btnWrap {
     margin-top: 20px;
+  }
+}
+
+@media (max-width: 481px) {
+  .boxH2 {
+    line-height: 30px;
   }
 }

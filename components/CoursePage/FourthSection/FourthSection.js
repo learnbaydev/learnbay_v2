@@ -73,18 +73,14 @@ function FourthSection({
       </Popup>
       <section className={styles.Features}>
         <div>
-          <h6 className={styles.infop}>300+ placement and hiring partners</h6>
+          <h4 className={styles.infop}>300+ placement and hiring partners</h4>
           <div className={styles.FeatureWrap}>
             <div className={styles.LeftWrap}>
               {placementArray.map((data, index) => {
                 // console.log(data);
                 const { id, img, desc } = data;
                 return redirectDS ? (
-                  <div
-                    className={styles.ParaWrap}
-                    style={{ marginTop: "0" }}
-                    key={index}
-                  >
+                  <div className={styles.ParaWrap} key={index}>
                     <div className={`${styles.number} imgWrapper `}>
                       <Image
                         src={img}
@@ -101,12 +97,14 @@ function FourthSection({
               })}
             </div>
             <div className={`${styles.RightWrap}  `}>
-              <Image
-                src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Placement+Logos+No+Map.png"
-                width="480"
-                height="360"
-                alt="Learnbay placement partners"
-              />
+              <div className="imgWrapper">
+                <Image
+                  src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Placement+Logos+No+Map.png"
+                  width="480"
+                  height="360"
+                  alt="Learnbay placement partners"
+                />
+              </div>
             </div>
           </div>
         </div>

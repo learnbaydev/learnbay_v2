@@ -1,11 +1,12 @@
 import styles from "./project.module.scss";
 import React, { useState, useEffect } from "react";
 import Form from "../../Form/Form";
-import Popup from "../../Popup/Popup";
+import dynamic from "next/dynamic";
+const Popup = dynamic(() => import("../../Popup/Popup"));
+const ProjectPopup = dynamic(() => import("./ProjectPopup"));
 import Image from "next/image";
 import { BsCheck2 } from "react-icons/bs";
 import { FaDownload, FaTools, FaLaptopCode } from "react-icons/fa";
-import ProjectPopup from "./ProjectPopup";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper";
 import "swiper/css";
@@ -116,7 +117,7 @@ const Project = ({
 
       <div className={styles.headWrapper}>
         <div className={styles.left}>
-          <h3>Industry Projects</h3>
+          <h4>Industry Projects</h4>
           {SoftwareText ? (
             <p className={styles.ptop}>
               Work on live projects certified from IBM
@@ -169,17 +170,21 @@ const Project = ({
           navigation={true}
           grabCursor={true}
           breakpoints={{
-            500: {
-              slidesPerView: 1.5,
-              spaceBetween: 40,
+            300: {
+              slidesPerView: 1.3,
+              spaceBetween: 35,
+            },
+            761: {
+              slidesPerView: 2,
+              spaceBetween: 30,
             },
             961: {
-              slidesPerView: 1.9,
+              slidesPerView: 2.1,
               spaceBetween: 40,
             },
             1024: {
-              slidesPerView: 2.5,
-              spaceBetween: 50,
+              slidesPerView: 2.8,
+              spaceBetween: 45,
             },
             1280: {
               slidesPerView: 3,
@@ -207,14 +212,19 @@ const Project = ({
                   <div className={styles.left}>
                     <h5>{domain}</h5>
                   </div>
-                  <div className={styles.right}>
-                    <Image
-                      src={CLogo}
-                      alt="Learnbay"
-                      quality={100}
-                      width="90"
-                      height="45"
-                    />
+                  <div
+                    className={styles.imgWrap}
+                    style={id === "BMW" ? { width: "35px" } : { width: "auto" }}
+                  >
+                    <div className="imgWrapper">
+                      <Image
+                        src={CLogo}
+                        alt="Learnbay"
+                        quality={100}
+                        width="80"
+                        height="40"
+                      />
+                    </div>
                   </div>
                 </div>
                 <div className={styles.body}>
@@ -238,11 +248,11 @@ const Project = ({
       </div>
 
       <div>
-        <div onClick={popupShowP} className="buttonAlignCenter">
+        <div onClick={popupShowP} className={styles.btn}>
           <Button
             className={styles.outLineBtn}
             text="Explore Projects"
-            style={{ margin: "auto", fontSize: "16px" }}
+            style={{ fontSize: "16px" }}
             passIcon={<FaDownload style={{ marginRight: "10px" }} />}
           />
         </div>

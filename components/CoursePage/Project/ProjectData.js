@@ -44,7 +44,7 @@ export const projectDS = [
       "An automated inventory management system will keep track of stock levels and upcoming orders. In addition, you can contribute to DataCo's intelligent supply chain software generation project by using ML algorithms and R programming skills.",
   },
   {
-    id: 4,
+    id: "BMW",
     domain: "Sales Domain",
     CLogo:
       "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/Untitled-design-2.png",

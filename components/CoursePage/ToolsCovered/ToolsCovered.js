@@ -9,7 +9,7 @@ function ToolsCovered({
   hidetools,
   deskImg,
   mobImage,
-}) {
+}) { 
   const [mobile, setMobile] = useState(false);
   useEffect(() => {
     let width = window.innerWidth;
