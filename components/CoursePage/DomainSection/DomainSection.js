@@ -159,8 +159,12 @@ function DomainSection({
                                 }}
                                 className={styles.para}
                               >
-                                {desc.map((data, i) => {
-                                  return <li key={i}>{data}</li>;
+
+                                {desc.map((data) => {
+                                  return <li key={id}>{data}</li>;
+
+                                // {desc.map((data, i) => {
+                                //   return <li key={i}>{data}</li>;
                                 })}
                               </ul>
                             </div>
