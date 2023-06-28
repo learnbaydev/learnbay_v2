@@ -1,0 +1,104 @@
+.Demo {
+    margin: 70px 0px;
+    padding: 0px;
+}
+
+.Back {
+    background-color: #f4fcfe;
+    height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 59% 39%;
+    align-items: center;
+    margin: auto;
+    padding: 0px 100px;
+  }
+
+  .Back h4 {
+    text-align: left;
+  }
+
+.DemoInner {
+    padding: 30px 100px;
+}
+
+.top {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.bot {
+    font-size: 16px;
+}
+
+.listPanel {
+    display: flex;
+    justify-content: left;
+}
+
+.listPanel span {
+    padding: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    width: 20%;
+    background-color: #e5f3fa;
+}
+
+.gridPanel {
+    display: grid;
+    grid-template-columns: 24.5% 24.5% 24.5% 24.5%;
+    gap: 10px;
+    padding: 0px;
+    margin-top: 20px;
+}
+
+@media (max-width: 1025px) {
+    .Back {
+        padding: 0px 20px;
+    }
+    .DemoInner {
+        padding: 30px 20px;
+    }
+}
+
+@media (max-width: 641px) {
+
+    .Back {
+        height: 100%;
+        text-align: left;
+        padding: 100px 20px 30px 20px;
+        display: block;
+      }
+
+      .Back h4 {
+        text-align: center;
+      }
+
+    .Demo {
+        margin: 20px 0px;
+    }
+
+    .DemoInner {
+        padding: 30px 20px;
+    }
+
+    .listPanel {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+    }
+
+    .listPanel span {
+        font-size: 14px;
+        width: 100%;
+        padding: 15px 10px;
+    }
+
+    .gridPanel {
+        display: block;
+        width: 100%;
+    }
+
+}

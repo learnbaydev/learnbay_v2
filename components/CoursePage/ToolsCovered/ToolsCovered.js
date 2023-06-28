@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import styles from "./ToolsCovered.module.css";
 import Image from "next/image";
 
@@ -7,13 +7,43 @@ function ToolsCovered({
   blockChainTools,
   baFamilyTools,
   hidetools,
-}) {
+  deskImg,
+  mobImage,
+}) { 
+  const [mobile, setMobile] = useState(false);
+  useEffect(() => {
+    let width = window.innerWidth;
+    if (width <= 641) {
+      setMobile(true);
+    }
+  }, []);
   return (
-    <div className="wrapper">
-      {blockChainTools ? (
+    <div>
+      <div className={styles.toolscoverd}>
+        <p className={styles.infop}>Wide Range Of Tools & Modules</p>
+        <div className="imgWrapper">
+          <Image
+            src={mobile ?  mobImage  :  deskImg }
+            alt="github"
+            width="1458"
+            height="186"
+          />
+        </div>
+      </div>
+      {/* {blockChainTools ? (
         <>
+          {" "}
           <div className={styles.toolscoverd}>
             <p className={styles.infop}>Wide Range Of Tools & Modules</p>
+            <div className="imgWrapper">
+              <Image
+                src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Tools-Logo-Blockchain.png"
+                alt="github"
+                width="1458"
+                height="186"
+                objectFit="contain"
+              />
+            </div>
             <div className={styles.sliderTopD}>
               <div className="imgWrapper">
                 <Image
@@ -21,7 +51,7 @@ function ToolsCovered({
                   alt="github"
                   width="1458"
                   height="186"
-                  style={{ objectFit: "contain" }}
+                  objectFit="contain"
                 />
               </div>
             </div>
@@ -32,18 +62,19 @@ function ToolsCovered({
                   alt="github"
                   width="481"
                   height="153"
-                  style={{ objectFit: "contain" }}
+                  objectFit="contain"
                 />
               </div>
             </div>
-          </div>
+          </div>{" "}
         </>
       ) : (
         <>
           {softTools ? (
             <>
+              {" "}
               <div className={styles.toolscoverd}>
-                <h4 className={styles.infop}>Wide Range Of Tools & Modules</h4>
+                <p className={styles.infop}>Wide Range Of Tools & Modules</p>
                 <div className={styles.sliderTopD}>
                   <div className="imgWrapper">
                     <Image
@@ -51,7 +82,7 @@ function ToolsCovered({
                       alt="github"
                       width="1458"
                       height="186"
-                      style={{ objectFit: "contain" }}
+                      objectFit="contain"
                     />
                   </div>
                 </div>
@@ -62,14 +93,15 @@ function ToolsCovered({
                       alt="github"
                       width="481"
                       height="153"
-                      style={{ objectFit: "contain" }}
+                      objectFit="contain"
                     />
                   </div>
                 </div>
-              </div>
+              </div>{" "}
             </>
           ) : (
             <>
+              {" "}
               {baFamilyTools ? (
                 <div className={styles.toolscoverd}>
                   <p className={styles.infop}>Wide Range Of Tools & Modules</p>
@@ -80,7 +112,7 @@ function ToolsCovered({
                         alt="github"
                         width="1458"
                         height="186"
-                        style={{ objectFit: "contain" }}
+                        objectFit="contain"
                       />
                     </div>
                   </div>
@@ -91,7 +123,7 @@ function ToolsCovered({
                         alt="github"
                         width="481"
                         height="153"
-                        style={{ objectFit: "contain" }}
+                        objectFit="contain"
                       />
                     </div>
                   </div>
@@ -105,6 +137,14 @@ function ToolsCovered({
                       <p className={styles.infop}>
                         Wide Range Of Tools & Modules
                       </p>
+                      <div className="imgWrapper">
+                        <Image
+                          src={mobile ? { mobImage } : { deskImg }}
+                          alt="github"
+                          width="1458"
+                          height="186"
+                        />
+                      </div>
                       <div className={styles.sliderTopD}>
                         <div className="imgWrapper">
                           <Image
@@ -112,7 +152,7 @@ function ToolsCovered({
                             alt="github"
                             width="1458"
                             height="186"
-                            style={{ objectFit: "contain" }}
+                            objectFit="contain"
                           />
                         </div>
                       </div>
@@ -123,18 +163,18 @@ function ToolsCovered({
                             alt="github"
                             width="481"
                             height="153"
-                            style={{ objectFit: "contain" }}
+                            objectFit="contain"
                           />
                         </div>
                       </div>
                     </div>
                   )}
                 </>
-              )}
+              )}{" "}
             </>
           )}
         </>
-      )}
+      )} */}
     </div>
   );
 }
