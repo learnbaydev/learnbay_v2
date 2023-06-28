@@ -12,13 +12,11 @@ const Popup = dynamic(() => import("../../Popup/Popup"));
 function FirstSection({
   dataScience,
   softwareBtnHide,
-  second,
   idss,
   firstToparaImg,
   firstHeading,
   FirstRightImg,
   firstTopPara,
-  srcD,
   titleCourse,
   brochureLink,
   dataScienceCounselling,

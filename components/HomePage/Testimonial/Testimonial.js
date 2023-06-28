@@ -9,10 +9,9 @@ import { AiOutlineRise } from "react-icons/ai";
 import dynamic from "next/dynamic";
 const ReviewPopup = dynamic(() => import("../ReviewPopup/ReviewPopup"));
 
-import { TestimonialDS, TestimonialFS } from "./TestimonialData";
 import { Pagination, Navigation } from "swiper";
 
-function Testimonial({ redirectDS, para, heading }) {
+function Testimonial({ redirectDS, para, heading, Testimonial }) {
   const [mobile, setMobile] = useState(false);
   const [img, setImg] = useState({
     cLogo: "",
@@ -28,17 +27,13 @@ function Testimonial({ redirectDS, para, heading }) {
   const popupShow = () => {
     setPopups(true);
   };
-  const [testimonialArray, setTestimonialArray] = useState(TestimonialDS);
+  const [testimonialArray, setTestimonialArray] = useState(Testimonial);
   useEffect(() => {
-    redirectDS
-      ? setTestimonialArray(TestimonialDS)
-      : setTestimonialArray(TestimonialFS);
-
     let width = window.innerWidth;
     if (width < 600) {
       setMobile(true);
     }
-  }, [redirectDS]);
+  }, []);
   return (
     <div className={styles.testimonial}>
       <ReviewPopup
@@ -155,8 +150,8 @@ function Testimonial({ redirectDS, para, heading }) {
                                 <Image
                                   src={complogo}
                                   loading="lazy"
-                                  width={mobile ? 130 : 90}
-                                  height={mobile ? 21 : 25}
+                                  width={90}
+                                  height={25}
                                   alt="company-logo"
                                 />
                               </div>
