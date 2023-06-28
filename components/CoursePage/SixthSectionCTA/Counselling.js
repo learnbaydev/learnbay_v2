@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import styles from "../FourthSection/FourthSection.module.css";
 import Form from "../../Form/Form";
+import Image from "next/image";
 const Popup = dynamic(() => import("../../Popup/Popup"));
 import { FaArrowRight } from "react-icons/fa";
 import "swiper/css";
@@ -15,20 +16,13 @@ function Counselling({
   brochureLink,
 }) {
   const [popups, setPopups] = useState(false);
-  const [mobile, setMobile] = useState(false);
 
   const popupShow = () => {
     setPopups(true);
   };
 
-  useEffect(() => {
-    let width = window.innerWidth;
-    if (width < 481) {
-      setMobile(true);
-    }
-  });
   return (
-    <>
+    <div className={`${styles.CTA}  wrapper`}>
       <Popup
         trigger={popups}
         setTrigger={setPopups}
@@ -51,7 +45,16 @@ function Counselling({
           />
         </div>
       </Popup>
-      <div className={styles.CTA}>
+      <div className="bgWrap">
+        <Image
+          src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/ctaBanner.webp"
+          fill={true}
+          alt="cta-back"
+          className={styles.img}
+          style={{ objectFit: "contain" }}
+        />
+      </div>
+      <div className={styles.CTAInner}>
         <div className={styles.boxBlue}>
           <h2 className={styles.boxH2}>
             Can’t decide which program to opt for?
@@ -69,7 +72,7 @@ function Counselling({
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

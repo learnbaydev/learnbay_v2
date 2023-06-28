@@ -196,7 +196,9 @@
 } */
 
 .CTA {
-  margin: auto;
+  padding: 70px 150px;
+  position: relative;
+  margin: 80px 0;
 }
 
 .secondLeft {
@@ -397,9 +399,6 @@
 }
 
 @media (max-width: 1024px) {
-  .boxBlue {
-    padding: 20px 174px;
-  }
   .LeftWrap {
     display: flex;
     flex-flow: column;
@@ -454,15 +453,40 @@
     flex-flow: column;
     display: flex;
   }
+  .CTA {
+    padding: 0px 120px;
+    position: relative;
+    margin: 80px 0;
+
+    background: linear-gradient(
+      90deg,
+      rgba(237, 233, 233, 0) 0%,
+      rgba(235, 235, 235, 0.6) 52.6%,
+      rgba(239, 239, 239, 0) 100%
+    );
+  }
+  .img {
+    display: none;
+  }
   .h1 {
     font-size: 24px;
   }
   .boxH2 {
     font-size: 21px;
     width: 74%;
+    line-height: 30px;
+    text-align: center;
   }
   .boxBlue {
     padding: 20px 60px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .boxP {
+    width: 90%;
+    text-align: center;
   }
   .boxBlue Button {
     font-size: 15px;
@@ -479,6 +503,7 @@
     font-size: 24px;
     font-weight: 600;
   }
+
   .boxP {
     color: #000;
     width: 100%;
@@ -611,13 +636,17 @@
     font-size: 20px;
     margin-bottom: 0px;
   }
-
+  .CTA {
+    padding: 0 20px;
+  }
   .infopP {
     text-align: left;
   }
   .boxBlue {
-    padding: 50px 20px;
+    padding: 20px 0px;
     margin-left: 0;
+    align-items: flex-start;
+    justify-content: flex-start;
     background-size: cover;
     height: fit-content;
   }
@@ -627,9 +656,13 @@
   .boxH2 {
     color: #000;
     margin: 0;
-    font-size: 26px;
-    width: 100%;
+    text-align: left;
+    font-size: 23px;
+    width: 70%;
     padding-top: 0px;
+  }
+  .boxP {
+    text-align: left;
   }
   .h1 {
     font-size: 20px;
@@ -654,6 +687,6 @@
 
 @media (max-width: 481px) {
   .boxH2 {
-    line-height: 25px;
+    line-height: 30px;
   }
 }

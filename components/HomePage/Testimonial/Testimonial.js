@@ -70,6 +70,7 @@ function Testimonial({ redirectDS, para, heading }) {
                   961: { slidesPerView: 3, spaceBetween: 20 },
                   801: { slidesPerView: 2.5, spaceBetween: 20 },
                   641: { slidesPerView: 2, spaceBetween: 20 },
+                  481: { slidesPerView: 1.8, spaceBetween: 20 },
                   100: { slidesPerView: 1.2, spaceBetween: 20 },
                 }}
                 pagination={{
