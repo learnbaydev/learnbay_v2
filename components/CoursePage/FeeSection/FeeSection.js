@@ -50,7 +50,7 @@ const FeeSection = ({
       setSpaceBetween(10);
       setMobile(true);
     }
-  });
+  }, []);
   return (
     <div className={`${styles.feeWrapper} wrapper`}>
       <Popup
