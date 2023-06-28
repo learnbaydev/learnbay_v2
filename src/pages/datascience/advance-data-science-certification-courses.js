@@ -149,7 +149,7 @@ function Blockchain() {
           placementData={DataScienceCourseData[0].fourthSection}
           redirectDS={true}
         />
-        {/* <FifthSection /> */}
+        <FifthSection />
         <SixthSectionCTA />
         <SyllabusNew
           dataScienceCounselling={true}
