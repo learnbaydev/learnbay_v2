@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Form from "../../Form/Form";
 import Image from "next/image";
 import dynamic from "next/dynamic";
@@ -24,6 +24,12 @@ const FifthSection = ({
     setPopupsB(true);
   };
   const [mobile, setMobile] = useState(false);
+  useEffect(() => {
+    let width = window.innerWidth;
+    if (width < 641) {
+      setMobile(true);
+    }
+  }, []);
   return (
     <>
       <div className={`${styles.map} imgWrapper`}>
@@ -65,14 +71,20 @@ const FifthSection = ({
           </h4>
         </div>
         <div className={styles.secondLeft}>
-          <div className={styles.PlayImg}>
-            <Image
-              src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Alumni-Map-Mobile-View.png"
-              width="910"
-              height="920"
-              alt="data science course"
-            />
-          </div>
+          {mobile ? (
+            <div>
+              <div className="imgWrapper">
+                <Image
+                  src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Alumni-Map-Mobile-View.png"
+                  width="910"
+                  height="920"
+                  alt="data science course"
+                />
+              </div>
+            </div>
+          ) : (
+            ""
+          )}
         </div>
       </div>
     </>
