@@ -97,8 +97,9 @@
     }
 
     .gridPanel {
-        display: block;
+        display: grid;
         width: 100%;
+        grid-template-columns: 100%;
     }
 
 }
