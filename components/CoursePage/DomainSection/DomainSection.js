@@ -7,23 +7,16 @@ import "swiper/css/free-mode";
 import "swiper/css/scrollbar";
 import { Autoplay, Scrollbar } from "swiper";
 import { FaDownload } from "react-icons/fa";
-import Link from "next/link";
+// import Link from "next/link";
 import Form from "../../Form/Form";
 import Popup from "../../Popup/Popup";
 // import Button from "../../Global/Button/Button";
-import { DomainSectionData, BAdomainData } from "./DomainSectionData";
+// import { DomainSectionData, BAdomainData } from "./DomainSectionData";
 import dynamic from "next/dynamic";
 const Button = dynamic(() => import("../../Global/Button/Button"));
 
-function DomainSection({
-  dataScience,
-  BAdomain,
-  imgDomain,
-  Blockchain,
-  Cloud,
-  Software,
-}) {
-  const [domainDataArray, setDomainDataArray] = useState(DomainSectionData);
+function DomainSection({ dataScience, domainSectionData }) {
+  const [domainDataArray, setDomainDataArray] = useState(domainSectionData);
 
   const [mobile, setMobile] = useState(false);
   const [popups, setPopups] = useState(false);
@@ -37,18 +30,18 @@ function DomainSection({
     if (width < 600) {
       setMobile(true);
     }
-    if (dataScience) {
-      setDomainDataArray(DomainSectionData);
-    } else if (BAdomain) {
-      setDomainDataArray(BAdomainData);
-    } else if (Blockchain) {
-      setDomainDataArray(BlockchainData);
-    } else if (Software) {
-      setDomainDataArray(SoftwareData);
-    } else if (Cloud) {
-      setDomainDataArray(CloudData);
-    }
-  }, [dataScience, BAdomain, Blockchain, Software, Cloud]);
+    // if (dataScience) {
+    //   setDomainDataArray(DomainSectionData);
+    // } else if (BAdomain) {
+    //   setDomainDataArray(BAdomainData);
+    // } else if (Blockchain) {
+    //   setDomainDataArray(BlockchainData);
+    // } else if (Software) {
+    //   setDomainDataArray(SoftwareData);
+    // } else if (Cloud) {
+    //   setDomainDataArray(CloudData);
+    // }
+  }, []);
 
   return (
     <div className={styles.sliderBox}>
@@ -131,7 +124,7 @@ function DomainSection({
                     autoPlay={true}
                     className="mySwiper"
                   >
-                    {domainDataArray.map((data) => {
+                    {domainDataArray.map((data, index) => {
                       const {
                         id,
                         p1,
@@ -143,8 +136,8 @@ function DomainSection({
                       } = data;
 
                       return (
-                        <SwiperSlide className={styles.slide} key={id}>
-                          <div className={styles.mainSliderYellow} key={id}>
+                        <SwiperSlide className={styles.slide} key={index}>
+                          <div className={styles.mainSliderYellow}>
                             <div className={styles.number}>
                               <p>{p1}</p>
                               <hr className={styles.hr} />
@@ -152,19 +145,19 @@ function DomainSection({
                             <div className={styles.imgP}>
                               <p>{p2}</p>
                             </div>
-                            <div>
+                            <div key={index}>
                               <ul
                                 style={{
                                   padding: "0px 0px 0px 20px",
                                 }}
                                 className={styles.para}
+                                key={titleCourse}
                               >
-
                                 {desc.map((data) => {
-                                  return <li key={id}>{data}</li>;
+                                  return <li key={data}>{data}</li>;
 
-                                // {desc.map((data, i) => {
-                                //   return <li key={i}>{data}</li>;
+                                  // {desc.map((data, i) => {
+                                  //   return <li key={i}>{data}</li>;
                                 })}
                               </ul>
                             </div>

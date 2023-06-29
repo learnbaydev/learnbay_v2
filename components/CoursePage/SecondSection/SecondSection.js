@@ -1,9 +1,8 @@
 import React from "react";
 import Image from "next/image";
 import styles from "./SecondSection.module.css";
-import { SecondSectionData } from "./SecondSectionData";
 
-function SecondSection() {
+function SecondSection({ SecondSectionData }) {
   return (
     <div className={`${styles.second} wrapper`}>
       <div>

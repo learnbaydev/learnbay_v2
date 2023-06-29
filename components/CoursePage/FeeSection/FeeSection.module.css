@@ -11,7 +11,7 @@
 }
 .priceWrap {
   display: grid;
-  grid-template-columns: 45% 55%;
+  grid-template-columns: 45% 50%;
   gap: 30px;
 }
 .price p {
@@ -169,8 +169,8 @@
   text-align: center;
 }
 
-@media (max-width: 1281px){
-  .priceWrap{
+@media (max-width: 1281px) {
+  .priceWrap {
     display: grid;
     grid-template-columns: 50% 50%;
   }
@@ -179,106 +179,97 @@
 @media (max-width: 1024px) {
   .top h3 {
     font-size: 15px;
-}
-.top p {
+  }
+  .top p {
+    font-size: 13px;
+  }
+  .leftSide h5 {
+    font-size: 24px;
+  }
+  .leftSide p {
+    font-size: 15px;
+  }
 
-  font-size: 13px;
-}
-.leftSide h5 {
-  font-size: 24px;
-}
-.leftSide p {
- 
-  font-size: 15px;
-}
+  .leftSide {
+    gap: 26px;
+  }
 
-.leftSide{
-  gap: 26px;
-}
-
-.priceWrap{
-  grid-template-columns: 54% 46%;
-}
+  .priceWrap {
+    grid-template-columns: 54% 46%;
+  }
 }
 
 @media (max-width: 961px) {
-  .top .left button {  
-  font-size: 13px;
-}
+  .top .left button {
+    font-size: 13px;
+  }
 
-.leftSide h5 {
-  font-size: 20px;
-  margin: 10px 0px 0px;
-}
+  .leftSide h5 {
+    font-size: 20px;
+    margin: 10px 0px 0px;
+  }
 
-.leftSide p {
-  font-size: 15px;
-}
+  .leftSide p {
+    font-size: 15px;
+  }
 
-.priceWrap{
-  grid-template-columns: 40% 60%;
-}
+  .priceWrap {
+    grid-template-columns: 40% 60%;
+  }
 
-.list div {
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-  width: 100%;
-  gap: 10px;
-}
+  .list div {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    width: 100%;
+    gap: 10px;
+  }
 
-.list {
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-  width: 100%;
-  gap: 10px;
+  .list {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    width: 100%;
+    gap: 10px;
+  }
 }
-
-}
-
 
 @media (max-width: 800px) {
-
   .top .left button {
-  font-size: 13px;
-}
+    font-size: 13px;
+  }
 
-.leftSide h5 {
-  font-size: 20px;
-  
-}
+  .leftSide h5 {
+    font-size: 20px;
+  }
 
-.leftSide p {
-  font-size: 15px;
-}
+  .leftSide p {
+    font-size: 15px;
+  }
 
-.list div {
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  gap: 10px;
-}
+  .list div {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 10px;
+  }
 
-.list {
-  display: flex;
-  flex-flow: column;
-  gap: 10px;
-}
+  .list {
+    display: flex;
+    flex-flow: column;
+    gap: 10px;
+  }
 
-.leftSide {
- 
-  gap: 15px;
-  
-}
+  .leftSide {
+    gap: 15px;
+  }
 
-.priceWrap {
-  grid-template-columns: 50% 50%;
-  gap: 30px;
-}
-
+  .priceWrap {
+    grid-template-columns: 50% 50%;
+    gap: 30px;
+  }
 }
 
 @media (max-width: 641px) {

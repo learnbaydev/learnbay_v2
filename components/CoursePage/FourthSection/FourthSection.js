@@ -7,21 +7,19 @@ import { FaDownload } from "react-icons/fa";
 import "swiper/css";
 import "swiper/css/navigation";
 import Button from "../../Global/Button/Button";
-import {
-  PlacementDS,
-  PlacementFS,
-  PlacementMasters,
-} from "./FourthSectionData";
+// import {
+//   PlacementDS,
+//   PlacementFS,
+//   PlacementMasters,
+// } from "./FourthSectionData";
 
 function FourthSection({
   dataScience,
   dataScienceCounselling,
-
+  placementData,
   titleCourse,
   brochureLink,
   redirectDS,
-  redirectFS,
-  redirectMasters,
 }) {
   const [popups, setPopups] = useState(false);
   const [popupsB, setPopupsB] = useState(false);
@@ -32,25 +30,24 @@ function FourthSection({
   const popupShowD = () => {
     setPopupsB(true);
   };
-  const [mobile, setMobile] = useState(false);
 
-  const [placementArray, setPlacementArray] = useState(PlacementDS);
-  useEffect(() => {
-    if (redirectDS) {
-      setPlacementArray(PlacementDS);
-    }
-    if (redirectFS) {
-      setPlacementArray(PlacementFS);
-    }
-    if (redirectMasters) {
-      setPlacementArray(PlacementMasters);
-    }
+  const [placementArray, setPlacementArray] = useState(placementData);
+  // useEffect(() => {
+  //   if (redirectDS) {
+  //     setPlacementArray(PlacementDS);
+  //   }
+  //   if (redirectFS) {
+  //     setPlacementArray(PlacementFS);
+  //   }
+  //   if (redirectMasters) {
+  //     setPlacementArray(PlacementMasters);
+  //   }
 
-    let width = window.innerWidth;
-    if (width < 481) {
-      setMobile(true);
-    }
-  }, [redirectDS, redirectFS, redirectMasters]);
+  //   let width = window.innerWidth;
+  //   if (width < 481) {
+  //     setMobile(true);
+  //   }
+  // }, [redirectDS, redirectFS, redirectMasters]);
   return (
     <>
       <Popup trigger={popupsB} setTrigger={setPopupsB} className="popupModal">
@@ -77,7 +74,6 @@ function FourthSection({
           <div className={styles.FeatureWrap}>
             <div className={styles.LeftWrap}>
               {placementArray.map((data, index) => {
-                // console.log(data);
                 const { id, img, desc } = data;
                 return redirectDS ? (
                   <div className={styles.ParaWrap} key={index}>
