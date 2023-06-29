@@ -149,7 +149,6 @@ const FeeSection = ({
                 slidesPerView={mobile ? 3 : slidesPerView}
                 slidesPerGroup={1}
                 loop={true}
-                loopFillGroupWithBlank={true}
                 autoplay={{
                   delay: 1000,
                   disableOnInteraction: false,

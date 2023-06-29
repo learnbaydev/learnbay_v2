@@ -58,7 +58,6 @@ function Testimonial({ redirectDS, para, heading, Testimonial }) {
             <div className={styles.swiperleft}>
               <Swiper
                 loop={true}
-                loopFillGroupWithBlank={true}
                 breakpoints={{
                   1281: { slidesPerView: 3.1, spaceBetween: 60 },
                   1024: { slidesPerView: 3, spaceBetween: 55 },

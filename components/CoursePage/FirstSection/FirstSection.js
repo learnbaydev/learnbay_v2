@@ -103,7 +103,7 @@ function FirstSection({
               src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/FirstSection.png"
               width="283"
               height="51"
-              priority={true}
+              loading="lazy"
               alt="data science course"
             />
           </div>

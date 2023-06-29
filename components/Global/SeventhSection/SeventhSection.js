@@ -19,15 +19,20 @@ function SeventhSection({ fullStackCont }) {
 
       <div className={styles.LearnSupport}>
         <div className="bgWrap">
-          <Image
-            src={
-              mobile
-                ? "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/learner's-support.png"
-                : "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/learners-support-bg.png"
-            }
-            fill={true}
-            alt="Learners support"
-          />
+          {mobile ? (
+            <Image
+              src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/learner's-support.png"
+              fill={true}
+              className={styles.deskImage}
+              alt="Learners support"
+            />
+          ) : (
+            <Image
+              src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/learners-support-bg.png"
+              fill={true}
+              alt="Learners support"
+            />
+          )}
         </div>
         <div className={styles.learnInner}>
           <p className={styles.pTop}>Have any questions in mind?</p>

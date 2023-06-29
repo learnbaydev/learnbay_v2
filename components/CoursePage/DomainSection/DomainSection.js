@@ -124,7 +124,7 @@ function DomainSection({ dataScience, domainSectionData }) {
                     autoPlay={true}
                     className="mySwiper"
                   >
-                    {domainDataArray.map((data) => {
+                    {domainDataArray.map((data, index) => {
                       const {
                         id,
                         p1,
@@ -136,8 +136,8 @@ function DomainSection({ dataScience, domainSectionData }) {
                       } = data;
 
                       return (
-                        <SwiperSlide className={styles.slide} key={id}>
-                          <div className={styles.mainSliderYellow} key={id}>
+                        <SwiperSlide className={styles.slide} key={index}>
+                          <div className={styles.mainSliderYellow}>
                             <div className={styles.number}>
                               <p>{p1}</p>
                               <hr className={styles.hr} />
@@ -145,15 +145,16 @@ function DomainSection({ dataScience, domainSectionData }) {
                             <div className={styles.imgP}>
                               <p>{p2}</p>
                             </div>
-                            <div>
+                            <div key={index}>
                               <ul
                                 style={{
                                   padding: "0px 0px 0px 20px",
                                 }}
                                 className={styles.para}
+                                key={titleCourse}
                               >
                                 {desc.map((data) => {
-                                  return <li key={id}>{data}</li>;
+                                  return <li key={data}>{data}</li>;
 
                                   // {desc.map((data, i) => {
                                   //   return <li key={i}>{data}</li>;
