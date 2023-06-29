@@ -87,7 +87,7 @@ function Testimonial({ redirectDS, para, heading, Testimonial }) {
                     complogo,
                     statLogo,
                   } = data;
-                  // console.log(data);
+
                   return (
                     <SwiperSlide className={styles.slide} key={id}>
                       <div className={styles.mainSlider}>

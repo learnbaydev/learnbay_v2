@@ -74,7 +74,6 @@ function FourthSection({
           <div className={styles.FeatureWrap}>
             <div className={styles.LeftWrap}>
               {placementArray.map((data, index) => {
-                // console.log(data);
                 const { id, img, desc } = data;
                 return redirectDS ? (
                   <div className={styles.ParaWrap} key={index}>

@@ -203,16 +203,7 @@ function Blockchain() {
           tools="12+"
           project="15+"
         />
-        <FAQNew
-          FaqDatas={FaqData2}
-          DomainFaqDatas={DomainFaqData2}
-          PaymentFaqDatas={PaymentFaqData2}
-          CapstoneFaqDatas={CapstoneFaqData2}
-          CertificationFaqDatas={CertificationFaqData2}
-          jobFaqDatas={jobFaqData2}
-          MentorshipFaqDatas={MentorshipFaqData2}
-          SupportFaqDatas={SupportFaqData2}
-        />
+        <FAQNew FAQNewData={DataScienceCourseData[0].faq} />
         <SeventhSection />
         <Footer />
       </main>
