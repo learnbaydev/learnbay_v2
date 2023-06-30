@@ -30,7 +30,6 @@ const Course = ({ dataScience, radio, dataScienceCounselling }) => {
   ]);
 
   const menuChange = (title, index) => {
-    console.log(title, CourseLoop[index].title);
     if (title === CourseLoop[index].title) {
       setCourseLoop([...CourseLoop], (CourseLoop[index].value = true));
       for (let i = 0; i < CourseLoop.length; i++) {

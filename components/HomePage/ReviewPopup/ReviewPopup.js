@@ -21,7 +21,7 @@ const ReviewPopup = (props) => {
       document.body.style.overflow = "unset";
     }
   }, [props.trigger]);
-  console.log(props);
+
   return props.trigger ? (
     <div className={styles.popup}>
       <div
@@ -66,15 +66,17 @@ const ReviewPopup = (props) => {
               <p className={styles.para}>{props.desc}</p>
             </div>
 
-            <div className={styles.imgHike}>
+            <div className={styles.imgHike} id={props.imgSrc.id}>
               <div>
-                <Image
-                  src={props.imgSrc.cLogo}
-                  loading="lazy"
-                  width={mobile ? 130 : 140}
-                  height={mobile ? 21 : 23}
-                  alt="preksha-home"
-                />
+                <div className="imgWrapper">
+                  <Image
+                    src={props.imgSrc.cLogo}
+                    loading="lazy"
+                    width={mobile ? 130 : 140}
+                    height={mobile ? 21 : 23}
+                    alt="preksha-home"
+                  />
+                </div>
               </div>
               <div className={styles.nameHike}>
                 <p>

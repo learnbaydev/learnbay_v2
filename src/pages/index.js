@@ -47,7 +47,7 @@ export default function Home() {
         />
       </Head>
 
-      <Navbar />
+      <Navbar radio={true}/>
       <FirstSection />
       <HomeLine />
       <BoxShape />
@@ -61,7 +61,7 @@ export default function Home() {
         dataScience={true}
         radio={true}
       />
-      <Testimonial redirectDS={true} />
+      <Testimonial redirectDS={true} heading="Our Alumni Profile" />
       <ContactUs />
       <SeventhSection />
       <Footer />

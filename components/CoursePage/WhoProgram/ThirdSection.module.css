@@ -5,7 +5,7 @@
   display: grid;
   grid-template-columns: 40% 52%;
   gap: 60px;
-  padding: 40px 100px;
+  padding: 40px 0;
 }
 .programWrap h4 {
   font-size: 18px;
@@ -75,7 +75,7 @@
   top: 10px;
   padding-bottom: 5px;
   border-radius: 0px;
-
+  text-align: left;
   font-size: 20px;
 }
 
@@ -90,7 +90,6 @@
 }
 
 @media (max-width: 1024px) {
-
   .boxWrap {
     display: grid;
     grid-template-columns: 46% 46%;
@@ -103,14 +102,12 @@
 
 @media (max-width: 801px) {
   .programWrap {
-    padding: 20px 0;
     grid-template-columns: 100%;
   }
 }
 
 @media (max-width: 641px) {
   .programWrap {
-    padding: 20px 0px;
     grid-template-columns: 100%;
     display: grid;
     gap: 30px;
@@ -125,7 +122,6 @@
 
 @media (max-width: 481px) {
   .programWrap {
-    padding: 20px 0px;
     grid-template-columns: 100%;
   }
   .programWrap h4 {

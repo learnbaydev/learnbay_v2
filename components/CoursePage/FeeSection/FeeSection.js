@@ -14,7 +14,6 @@ import Form from "../../Form/Form";
 import dynamic from "next/dynamic";
 const Button = dynamic(() => import("../../Global/Button/Button"));
 
-
 const FeeSection = ({
   FeeHeading,
   Fee,
@@ -51,9 +50,9 @@ const FeeSection = ({
       setSpaceBetween(10);
       setMobile(true);
     }
-  });
+  }, []);
   return (
-    <div className={styles.feeWrapper}>
+    <div className={`${styles.feeWrapper} wrapper`}>
       <Popup
         trigger={popups}
         setTrigger={setPopups}
@@ -69,7 +68,10 @@ const FeeSection = ({
         <div className="RightPopup">
           <h5>Apply For Counselling</h5>
 
-          <Form dataScience={dataScience} dataScienceCounselling={dataScienceCounselling}/>
+          <Form
+            dataScience={dataScience}
+            dataScienceCounselling={dataScienceCounselling}
+          />
         </div>
       </Popup>
       <h4>{FeeHeading}</h4>
@@ -107,11 +109,8 @@ const FeeSection = ({
           </div>
 
           <div onClick={popupShow}>
-              <Button
-                className={styles.Btn}
-                text="Enroll Now"
-              />
-            </div>
+            <Button className={styles.Btn} text="Enroll Now" />
+          </div>
         </div>
         <div className={styles.rightSide}>
           <div className={styles.top}>
@@ -120,12 +119,9 @@ const FeeSection = ({
               <h3>{FeeEmi}</h3>
             </div>
             <div className={styles.left}>
-            <div onClick={() => popupShow(false, true)}>
-              <Button
-                className={styles.Btn}
-                text="Start Learning"
-              />
-            </div>
+              <div onClick={() => popupShow(false, true)}>
+                <Button className={styles.Btn} text="Start Learning" />
+              </div>
             </div>
           </div>
           <div className={styles.middle}>
@@ -153,7 +149,6 @@ const FeeSection = ({
                 slidesPerView={mobile ? 3 : slidesPerView}
                 slidesPerGroup={1}
                 loop={true}
-                loopFillGroupWithBlank={true}
                 autoplay={{
                   delay: 1000,
                   disableOnInteraction: false,
@@ -166,66 +161,66 @@ const FeeSection = ({
                   <>
                     {" "}
                     <SwiperSlide>
-              <div className="imgWrapper">
-                      <Image
-                        src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/liquiloans.webp"
-                        alt="liqiloans"
-                        width={mobile ? "90" : "150"}
-                        height="40"
-                      />
+                      <div className="imgWrapper">
+                        <Image
+                          src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/liquiloans.webp"
+                          alt="liqiloans"
+                          width={mobile ? "90" : "150"}
+                          height="40"
+                        />
                       </div>
                     </SwiperSlide>
                     <SwiperSlide>
-              <div className="imgWrapper">
-                      <Image
-                        src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/propelld.webp"
-                        alt="Propelled"
-                        width="120"
-                        height="40"
-                      />
+                      <div className="imgWrapper">
+                        <Image
+                          src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/propelld.webp"
+                          alt="Propelled"
+                          width="120"
+                          height="40"
+                        />
                       </div>
                     </SwiperSlide>
                     <SwiperSlide>
-              <div className="imgWrapper">
-                      <Image
-                        src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/zest-logo.webp"
-                        alt="zest"
-                        width="80"
-                        height="20"
-                      />
+                      <div className="imgWrapper">
+                        <Image
+                          src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/zest-logo.webp"
+                          alt="zest"
+                          width="80"
+                          height="20"
+                        />
                       </div>
                     </SwiperSlide>
                   </>
                 ) : (
                   <>
                     <SwiperSlide>
-              <div className="imgWrapper">
-                      <Image
-                        src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/liquiloans.webp"
-                        alt="liqiLoans"
-                        width="300"
-                        height="120"
-                      />
+                      <div className="imgWrapper">
+                        <Image
+                          src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/liquiloans.webp"
+                          alt="liqiLoans"
+                          width="300"
+                          height="120"
+                        />
                       </div>
                     </SwiperSlide>
                     <SwiperSlide>
-              <div className="imgWrapper">
-                      <Image
-                        src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/propelld.webp"
-                        alt="propelld"
-                        width="500"
-                        height="200"
-                      />
+                      <div className="imgWrapper">
+                        <Image
+                          src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/propelld.webp"
+                          alt="propelld"
+                          width="500"
+                          height="200"
+                        />
                       </div>
                     </SwiperSlide>
                     <SwiperSlide>
-              <div className="imgWrapper">
-                      <Image
-                        src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/zest-logo.webp"
-                        alt="Zest"
-                        width="200"
-                        height="58"
-                      />
+                      <div className="imgWrapper">
+                        <Image
+                          src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/zest-logo.webp"
+                          alt="Zest"
+                          width="200"
+                          height="58"
+                        />
                       </div>
                     </SwiperSlide>
                   </>
