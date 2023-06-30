@@ -23,10 +23,23 @@ padding: 0px 100px;
 .top {
     font-size: 20px;
     font-weight: 500;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    color: #000;
 }
 
 .bot {
     font-size: 16px;
+    display: block;
+    color: #000;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    color: #000;
 }
 
 @media (max-width: 600px) {
