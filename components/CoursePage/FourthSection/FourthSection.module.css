@@ -6,16 +6,16 @@
   font-weight: 700;
 }
 
-.infopP {
+/* .infopP {
   color: #0072bc;
   text-transform: uppercase;
   font-weight: 600;
   font-size: 20px;
   margin: 10px 0px 30px 0px;
   text-align: center;
-}
+} */
 
-.boxGrey {
+/* .boxGrey {
   text-align: center;
   background: linear-gradient(
     90deg,
@@ -27,34 +27,34 @@
   gap: 50px;
   display: grid;
   margin-top: 30px;
-}
+} */
 
-.check {
+/* .check {
   color: green;
-}
+} */
 
-.checkP {
+/* .checkP {
   display: flex;
   gap: 10px;
   align-items: center;
   font-size: 20px;
-}
+} */
 
-.boxText {
+/* .boxText {
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   margin: 50px 0px;
   gap: 80px;
-}
+} */
 
-.Htop {
+/* .Htop {
   color: #0072bc;
   font-size: 26px;
   font-weight: bold;
   margin: 0;
-}
+} */
 
 .ptop {
   color: #636363;
@@ -111,17 +111,17 @@
   padding: 0px 200px;
 }
 
-.batchImage {
+/* .batchImage {
   display: flex;
   margin-top: 50px;
   padding: 50px 100px 20px 100px;
   background-color: #f8f8f8;
   box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.08);
-}
-
+} */
+/* 
 .imgPlacement {
   width: 400px;
-}
+}  */
 
 .map {
   display: none;
@@ -132,11 +132,8 @@
   padding: 50px 100px 30px 100px;
   display: grid;
   grid-template-columns: 50% 50%;
-  background: url(https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Alumni-Map-BG.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
   height: 700px;
+  position: relative;
 }
 
 .FirstLeft button {
@@ -151,9 +148,9 @@
   text-align: center;
 }
 
-.hrDesing {
+/* .hrDesing {
   border: 1px solid #cdcdcd;
-}
+} */
 
 .ptopB {
   color: #767676;
@@ -181,19 +178,19 @@
   display: none;
 }
 
-.IBMlogoPlay {
+/* .IBMlogoPlay {
   display: none;
-}
+} */
 
-.logosD {
+/* .logosD {
   display: flex;
   justify-content: space-evenly;
-}
+} */
 
-.PlayImg {
+/* .PlayImg {
   text-align: center;
   margin: 50px 0px 30px 0px;
-}
+} */
 
 .CTA {
   padding: 70px 150px;
@@ -217,12 +214,12 @@
   justify-content: center;
   align-items: center;
 }
-.topHead {
+/* .topHead {
   font-size: 35px;
   margin: 0;
   text-align: center;
   font-weight: 500;
-}
+} */
 .FeatureWrap {
   margin-top: 30px;
   display: grid;
@@ -231,9 +228,9 @@
   justify-content: center;
   align-items: center;
 }
-.bIcon {
+/* .bIcon {
   margin-left: 5px;
-}
+} */
 .LeftWrap {
   display: flex;
   flex-flow: column;
@@ -251,11 +248,11 @@
   border-bottom: 3px solid #edb552;
 }
 
-.tickIcon {
+/* .tickIcon {
   color: #3c59a8;
   margin-right: 10px;
   font-size: 20px;
-}
+} */
 .LeftWrap {
   padding: 0px 20px 0px 20px;
   height: 100%;
@@ -339,10 +336,10 @@
   margin: 0;
 }
 
-.numberIcon {
+/* .numberIcon {
   padding: 0;
   margin: 0;
-}
+} */
 .number {
   display: flex;
   display: flex;
@@ -366,10 +363,10 @@
   color: #0072bc;
   border: 1px solid #0072bc;
 }
-.bIcons {
+/* .bIcons {
   color: #28557a;
   font-size: 45px;
-}
+} */
 .RightWrap {
   background: WHITE;
   display: flex;
@@ -433,9 +430,9 @@
   .FeatureWrap {
     grid-template-columns: 44% 54%;
   }
-  .First {
+  /* .First {
     height: 600px;
-  }
+  } */
 }
 
 @media (max-width: 961px) {
@@ -550,7 +547,7 @@
 }
 
 @media (max-width: 641px) {
-  .boxGrey {
+  /* .boxGrey {
     text-align: center;
     background: linear-gradient(
       90deg,
@@ -569,7 +566,7 @@
   .green {
     background-size: contain;
     padding: 10px;
-  }
+  } */
 
   .boxText {
     display: grid;
@@ -579,6 +576,10 @@
     text-align: center;
     margin: 50px 20px;
     gap: 10px;
+  }
+
+  .desktopImage{
+    display: none;
   }
 
   .ptop {
@@ -592,7 +593,7 @@
     font-weight: bold;
     margin: 0;
   }
-  .batch {
+  /* .batch {
     padding: 30px 20px;
     text-align: center;
   }
@@ -606,7 +607,7 @@
     color: #767676;
     margin: 0;
     padding: 0px;
-  }
+  } */
   .First {
     display: block;
     margin-top: 0px;
@@ -674,9 +675,9 @@
     margin-bottom: 10px;
     font-size: 14px;
   }
-  .PlayImg {
+  /* .PlayImg {
     margin: 0px;
-  }
+  } */
   .secondLeft {
     display: block;
   }

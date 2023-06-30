@@ -11,32 +11,25 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
-import {
-  projectDS,
-  projectFS,
-  projectHR,
-  projectBFSI,
-  projectMarketing,
-  projectCloud,
-  projectBlockchain,
-} from "./ProjectData";
+// import {
+//   projectDS,
+//   projectFS,
+//   projectHR,
+//   projectBFSI,
+//   projectMarketing,
+//   projectCloud,
+//   projectBlockchain,
+// } from "./ProjectData";
 import Button from "../../Global/Button/Button";
 
 const Project = ({
   tools,
   project,
-  DsProject,
+  projectData,
   dataScience,
   titleCourse,
   brochureLink,
   SoftwareText,
-  redirectDS,
-  redirectFS,
-  redirectHR,
-  redirectMarketing,
-  redirectBFSI,
-  redirectCloud,
-  redirectBlockchain,
 }) => {
   const [popups, setPopups] = useState(false);
   const [popupsP, setPopupsP] = useState(false);
@@ -53,39 +46,38 @@ const Project = ({
     setPopupsP(true);
   };
 
-  const [projectArray, setProjectArray] = useState(projectDS);
-  useEffect(() => {
-    if (redirectDS) {
-      setProjectArray(projectDS);
-    }
-    if (redirectFS) {
-      setProjectArray(projectFS);
-    }
-    if (redirectHR) {
-      setProjectArray(projectHR);
-    }
-    if (redirectMarketing) {
-      setProjectArray(projectMarketing);
-    }
-    if (redirectBFSI) {
-      setProjectArray(projectBFSI);
-    }
-    if (redirectCloud) {
-      setProjectArray(projectCloud);
-    }
-    if (redirectBlockchain) {
-      setProjectArray(projectBlockchain);
-    }
-  }, [
-    redirectDS,
-    redirectFS,
-    redirectHR,
-    redirectMarketing,
-    redirectBFSI,
-    redirectCloud,
-    redirectBlockchain,
-  ]);
-  // console.log(projectArray);
+  const [projectArray, setProjectArray] = useState(projectData);
+  // useEffect(() => {
+  //   if (redirectDS) {
+  //     setProjectArray(projectDS);
+  //   }
+  //   if (redirectFS) {
+  //     setProjectArray(projectFS);
+  //   }
+  //   if (redirectHR) {
+  //     setProjectArray(projectHR);
+  //   }
+  //   if (redirectMarketing) {
+  //     setProjectArray(projectMarketing);
+  //   }
+  //   if (redirectBFSI) {
+  //     setProjectArray(projectBFSI);
+  //   }
+  //   if (redirectCloud) {
+  //     setProjectArray(projectCloud);
+  //   }
+  //   if (redirectBlockchain) {
+  //     setProjectArray(projectBlockchain);
+  //   }
+  // }, [
+  //   redirectDS,
+  //   redirectFS,
+  //   redirectHR,
+  //   redirectMarketing,
+  //   redirectBFSI,
+  //   redirectCloud,
+  //   redirectBlockchain,
+  // ]);
 
   return (
     <div className={styles.projectHeader}>
@@ -152,7 +144,7 @@ const Project = ({
             <div className={styles.rightProjectNumb}>
               <FaTools className={styles.rIcon} />
               <div>
-                <h5>{tools} Tools</h5>
+                <h5>{tools}</h5>
                 <p>Covered</p>
               </div>
             </div>
@@ -205,7 +197,7 @@ const Project = ({
               Title,
               LDesc,
             } = data;
-            // console.log(data);
+
             return (
               <SwiperSlide className={styles.project} key={index}>
                 <div className={styles.header}>

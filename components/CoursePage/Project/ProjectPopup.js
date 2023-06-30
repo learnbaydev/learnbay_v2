@@ -13,7 +13,7 @@ const ProjectPopup = (props) => {
       document.body.style.overflow = "unset";
     }
   }, [props.trigger]);
-  // console.log(props, "props data");
+
   return props.trigger ? (
     <div className={styles.popup}>
       <div

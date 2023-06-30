@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import Head from "next/head";
 import Navbar from "../../../components/Navbar/Navbar";
 import Footer from "../../../components/Footer/Footer";
-import Form from "../../../components/Form/Form";
+
 import dynamic from "next/dynamic";
 import { DataScienceCourseData } from "../../../Data/DataScienceCourse";
-const Popup = dynamic(() => import("../../../components/Popup/Popup"));
+
 const FirstSection = dynamic(() =>
   import("../../../components/CoursePage/FirstSection/FirstSection")
 );
@@ -70,14 +70,7 @@ import {
 
 function Blockchain() {
   const [popups, setPopups] = useState(false);
-  const [video, setVideo] = useState(false);
-  const videoSHow = () => {
-    setVideo(true);
-  };
 
-  const popupShow = () => {
-    setPopups(true);
-  };
   return (
     <>
       <Head>
@@ -104,14 +97,14 @@ function Blockchain() {
       </Head>
       <main>
         <Navbar popup={true} dataScienceCounselling={true} />
-        <Popup trigger={popups} setTrigger={setPopups} className="popupModal">
+        {/* <Popup trigger={popups} setTrigger={setPopups} className="popupModal">
           <div className="leftPopup">
             <div className="whiteP" />
           </div>
           <div className="RightPopup">
             <h5>Apply For Counselling</h5>
             {/* <p>Fill the below details to get started</p> */}
-            <Form
+        {/* <Form
               popup={true}
               setTrigger={setPopups}
               fullStack={true}
@@ -120,7 +113,7 @@ function Blockchain() {
               brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Advance+Data+Science+and+AI+Certification+Program+Learnbay.pdf"
             />
           </div>
-        </Popup>
+        </Popup> */}
         <FirstSection
           FirstTyped="Guaranteed Interview Calls"
           SecondTyped="Capstone Project Certificate"
@@ -138,16 +131,25 @@ function Blockchain() {
           idss="bfl64ANfSV0"
           srcD="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Advance+Data+Science+and+AI+Certification+Program+Learnbay.pdf"
         />
-        <SecondSection />
+        <SecondSection
+          SecondSectionData={DataScienceCourseData[0].secondSection}
+        />
         <Testimonial
           redirectDS={true}
+          Testimonial={DataScienceCourseData[0].testimonial}
           heading="Our Alumni Speak"
           para="Discover the impact of our programs on career growth"
         />
-        <WhoProgram leftImage="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/whoIsProgram.webp" />
+        <WhoProgram
+          leftImage="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/whoIsProgram.webp"
+          ThirdSectionData={DataScienceCourseData[0].thirdSection}
+        />
         <Switch />
-        <FourthSection redirectDS={true} />
-        {/* <FifthSection /> */}
+        <FourthSection
+          placementData={DataScienceCourseData[0].fourthSection}
+          redirectDS={true}
+        />
+        <FifthSection />
         <SixthSectionCTA />
         <SyllabusNew
           dataScienceCounselling={true}
@@ -194,18 +196,14 @@ function Blockchain() {
           dataScience={true}
           titleCourse="Advanced Data Science and AI Program with domain specialization"
           brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Advance+Data+Science+and+AI+Certification+Program+Learnbay.pdf"
+          domainSectionData={DataScienceCourseData[0].domainSection}
         />
-        <Project redirectDS={true} />
-        <FAQNew
-          FaqDatas={FaqData2}
-          DomainFaqDatas={DomainFaqData2}
-          PaymentFaqDatas={PaymentFaqData2}
-          CapstoneFaqDatas={CapstoneFaqData2}
-          CertificationFaqDatas={CertificationFaqData2}
-          jobFaqDatas={jobFaqData2}
-          MentorshipFaqDatas={MentorshipFaqData2}
-          SupportFaqDatas={SupportFaqData2}
+        <Project
+          projectData={DataScienceCourseData[0].project}
+          tools="12+"
+          project="15+"
         />
+        <FAQNew FAQNewData={DataScienceCourseData[0].faq} />
         <SeventhSection />
         <Footer />
       </main>
