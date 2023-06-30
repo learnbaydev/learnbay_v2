@@ -47,15 +47,15 @@ function terms() {
 <p className={styles.top}>*User Conduct Agreement -</p>
 
 <p className={styles.bot}>While you enroll for a course/program, by creating a User Account, you agree that:</p>
-<li className={styles.bot}>You will not create multiple User Accounts</li>
-<li className={styles.bot}>You will abide by these Terms and any Program-specific terms</li>
+<li className={styles.bot1}>You will not create multiple User Accounts</li>
+<li className={styles.bot1}>You will abide by these Terms and any Program-specific terms</li>
 
 <p className={styles.top}>Content Liabilities (For User)</p>
-<li className={styles.bot}>All the information and website content seen, heard, and read by the user on the website is copyrighted and belongs only to Learnbay and its partners, affiliates, or third parties. You can use the website, the services, and the content for non-commercial and personal use only.
+<li className={styles.bot1}>All the information and website content seen, heard, and read by the user on the website is copyrighted and belongs only to Learnbay and its partners, affiliates, or third parties. You can use the website, the services, and the content for non-commercial and personal use only.
 </li>
-<li className={styles.bot}>It is prohibited to use any digital images, logos, or designs from the Learnbay website. In copyright issues, users have to take written consent from the trademark owner or Learnbay in this matter.</li>
-<li className={styles.bot}>Users can download and print the available information on the website for non-commercial and personal use only.</li>
-<li className={styles.bot}>Users will not share, transfer any information from the Learnbay website or produce work that could be displayed, distributed, or transmitted.</li>
+<li className={styles.bot1}>It is prohibited to use any digital images, logos, or designs from the Learnbay website. In copyright issues, users have to take written consent from the trademark owner or Learnbay in this matter.</li>
+<li className={styles.bot1}>Users can download and print the available information on the website for non-commercial and personal use only.</li>
+<li className={styles.bot1}>Users will not share, transfer any information from the Learnbay website or produce work that could be displayed, distributed, or transmitted.</li>
 
 <p className={styles.top}>*Copyright License</p>
 <p className={styles.bot}>Non-commercial and private use only means that you are only allowed to download or copy the Learnbay Content. The terms do not allow anyone to resell, reproduce, modify, retransmit, distribute, gain any commercial advantage from using Readbay programs or content, or create derivative work from them.</p>
@@ -81,31 +81,31 @@ function terms() {
 <p className={styles.bot}>You must have our permission before linking to us. You also need to remove any links upon request immediately. You must agree to all of our linking terms if we change our policies about linking at any time.</p>
 
 <p className={styles.top}>Hyperlinks</p>
-<li className={styles.bot}>Do not mirror or frame the homepage of Learnbay or any other pages of our website on any other website or webpage</li>
-<li className={styles.bot}>Refrain from linking the Learnbay pages and subpages with spam/bad links or anchor text that gives a false impression of the company. Do not create misunderstandings among the users</li>
-<li className={styles.bot}>Refrain from using or including copyrighted images, registered trademarks, designs, or content, linked with the Learnbay website</li>
-<li className={styles.bot}>Refrain from linking web pages that offer abusive and pornographic content. Do not link with pages that violate human rights</li>
+<li className={styles.bot1}>Do not mirror or frame the homepage of Learnbay or any other pages of our website on any other website or webpage</li>
+<li className={styles.bot1}>Refrain from linking the Learnbay pages and subpages with spam/bad links or anchor text that gives a false impression of the company. Do not create misunderstandings among the users</li>
+<li className={styles.bot1}>Refrain from using or including copyrighted images, registered trademarks, designs, or content, linked with the Learnbay website</li>
+<li className={styles.bot1}>Refrain from linking web pages that offer abusive and pornographic content. Do not link with pages that violate human rights</li>
 
 
 <p className={styles.top}>Claims of Intellectual property violations</p>
 
 <p className={styles.bot}>If you find your work published on our website without your permission in a way that causes copyright infringement, provide us information and we will act on it.</p>
-<li className={styles.bot}>The owner of the copyright or authorized person should send a digital or physical signature/ proof</li>
-<li className={styles.bot}>Provide a description of the copyrighted work that you claim to be infringing your intellectual property</li>
-<li className={styles.bot}>Provide a description of how and where the material used is infringing on the Learnbay website</li>
-<li className={styles.bot}>Provide enough details to locate it on the website of Learnbay</li>
-<li className={styles.bot}>Provide your contact details such as email address, telephone number, residential address</li>
-<li className={styles.bot}>Provide a statement for accurate information and claim of the copyright or intellectual property</li>
-<li className={styles.bot}>Reach out to Learnbay and notify your claims of copyright</li>
+<li className={styles.bot1}>The owner of the copyright or authorized person should send a digital or physical signature/ proof</li>
+<li className={styles.bot1}>Provide a description of the copyrighted work that you claim to be infringing your intellectual property</li>
+<li className={styles.bot1}>Provide a description of how and where the material used is infringing on the Learnbay website</li>
+<li className={styles.bot1}>Provide enough details to locate it on the website of Learnbay</li>
+<li className={styles.bot1}>Provide your contact details such as email address, telephone number, residential address</li>
+<li className={styles.bot1}>Provide a statement for accurate information and claim of the copyright or intellectual property</li>
+<li className={styles.bot1}>Reach out to Learnbay and notify your claims of copyright</li>
 
 <p className={styles.top}>Transaction terms</p>
 
-<li className={styles.bot}>To make a transaction on the Learnbay website, you are bound to pay for that transaction</li>
-<li className={styles.bot}>Carefully go through the payment details such as Subscription timeline and conditions,  Processing fees, Discounts, taxes, the total bill, etc</li>
-<li className={styles.bot}>Additional Terms and Conditions are required for certain programs, read before you agree</li>
-<li className={styles.bot}>Learnbay provides no warranties of any kind, with respect to any product or services sold on or through the Learnbay website</li>
-<li className={styles.bot}>No additional or different terms regarding any purchase order, transmission, communication, or documentation are binding upon Learnbay unless agreed by us in writing</li>
-<li className={styles.bot}>Learnbay has the right to modify, or change without prior notice and at its sole discretion, to limit the number of orders on any item or refuse services to anyone</li>
+<li className={styles.bot1}>To make a transaction on the Learnbay website, you are bound to pay for that transaction</li>
+<li className={styles.bot1}>Carefully go through the payment details such as Subscription timeline and conditions,  Processing fees, Discounts, taxes, the total bill, etc</li>
+<li className={styles.bot1}>Additional Terms and Conditions are required for certain programs, read before you agree</li>
+<li className={styles.bot1}>Learnbay provides no warranties of any kind, with respect to any product or services sold on or through the Learnbay website</li>
+<li className={styles.bot1}>No additional or different terms regarding any purchase order, transmission, communication, or documentation are binding upon Learnbay unless agreed by us in writing</li>
+<li className={styles.bot1}>Learnbay has the right to modify, or change without prior notice and at its sole discretion, to limit the number of orders on any item or refuse services to anyone</li>
 
 
 <p className={styles.top}>*I-llegitimate link voiding</p>
@@ -137,24 +137,24 @@ function terms() {
 
 <p className={styles.bot}>If you are a copyright owner or the agent of such an owner and believe that any content we provide violates your copyright, please get in touch with us please kindly provide your contact information, including phone and email. You must include a statement outlining your sincere belief that the usage of the content is not permitted. And last, we kindly ask that you include the allegedly copyrighted material and provide valid source details.</p>
 <p className={styles.bot}>*Instructions for postings/website use that cannot be posted on the platform by you.</p>
-<li className={styles.bot}>Any dishonest, obscene, defamatory, or threatening content is not allowed</li>
-<li className={styles.bot}>Posting content that violates copyrights</li>
-<li className={styles.bot}>Content that you are not authorized to reveal</li>
-<li className={styles.bot}>Content that could offend is sexual, obscene, immoral, or illegal</li>
-<li className={styles.bot}>This AI agent can create high-quality content using structured data and machine learning, but it needs to be told what kind of content to create</li>
-<li className={styles.bot}>Viruses, Trojan horses, and worms are created to cause negative effects such as harm, interference with systems, or stealing data</li>
-<li className={styles.bot}>You are not allowed to automate content posting on the platform or use robots, spiders, or scripts</li>
-<li className={styles.bot}>The content should not violate any rights, go against the law and encourage illegal actions</li>
+<li className={styles.bot1}>Any dishonest, obscene, defamatory, or threatening content is not allowed</li>
+<li className={styles.bot1}>Posting content that violates copyrights</li>
+<li className={styles.bot1}>Content that you are not authorized to reveal</li>
+<li className={styles.bot1}>Content that could offend is sexual, obscene, immoral, or illegal</li>
+<li className={styles.bot1}>This AI agent can create high-quality content using structured data and machine learning, but it needs to be told what kind of content to create</li>
+<li className={styles.bot1}>Viruses, Trojan horses, and worms are created to cause negative effects such as harm, interference with systems, or stealing data</li>
+<li className={styles.bot1}>You are not allowed to automate content posting on the platform or use robots, spiders, or scripts</li>
+<li className={styles.bot1}>The content should not violate any rights, go against the law and encourage illegal actions</li>
 
 
 <p className={styles.top}>Security breach:-</p>
 <p className={styles.bot}>You are not allowed to try to disrupt the process of this Platform, including</p>
-<li className={styles.bot}>Trying to log in with another person's username</li>
-<li className={styles.bot}>Tampering with network traffic</li>
-<li className={styles.bot}>Making unauthorized modifications in transmission to email or online newsgroups</li>
-<li className={styles.bot}>Edit the HTML source code</li>
-<li className={styles.bot}>Attempt to hack</li>
-<li className={styles.bot}>Upload, transfer files or install files that are protected by intellectual property laws that affect other computers
+<li className={styles.bot1}>Trying to log in with another person's username</li>
+<li className={styles.bot1}>Tampering with network traffic</li>
+<li className={styles.bot1}>Making unauthorized modifications in transmission to email or online newsgroups</li>
+<li className={styles.bot1}>Edit the HTML source code</li>
+<li className={styles.bot1}>Attempt to hack</li>
+<li className={styles.bot1}>Upload, transfer files or install files that are protected by intellectual property laws that affect other computers
 </li>
 <li className={styles.bot}>Advertising, selling products or services, or Spam products such as eBooks, digital downloads, or phishing links</li>
 

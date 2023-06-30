@@ -2,6 +2,8 @@ import React from "react";
 import { FaMapMarkedAlt, FaEnvelope, FaWhatsapp } from "react-icons/fa";
 import styles from "./ContactUs.module.css";
 import Image from "next/image";
+import dynamic from "next/dynamic";
+const Button = dynamic(() => import("../../Global/Button/Button"));
 
 function ContactUs() {
   return (
@@ -31,23 +33,41 @@ function ContactUs() {
         </p>
         <div className={styles.Inner}>
           <div className={styles.InnerBox}>
-            <a href="https://goo.gl/maps/4tC9yN8VTkBf72cW9" target="_blank"><FaMapMarkedAlt className={styles.tick} /></a>
+            <a href="https://goo.gl/maps/4tC9yN8VTkBf72cW9" target="_blank">
+              <FaMapMarkedAlt className={styles.tick} />
+            </a>
             <h3>HSR Layout</h3>
-            <a href="https://goo.gl/maps/4tC9yN8VTkBf72cW9" target="_blank"><p>
-            #1090 , 1st floor, 18th cross road HSR layout sector 3, Bangalore - 560102 (Above Sangam Sweets)
-            </p></a>
+            <a href="https://goo.gl/maps/4tC9yN8VTkBf72cW9" target="_blank">
+              <p>
+                #1090 , 1st floor, 18th cross road HSR layout sector 3,
+                Bangalore - 560102 (Above Sangam Sweets)
+              </p>
+            </a>
           </div>
           <div className={styles.InnerBox}>
-          <a href="mailto:contacts@learnbay.co" target="_blank"><FaEnvelope className={styles.tick} /></a>
+            <a href="mailto:contacts@learnbay.co" target="_blank">
+              <FaEnvelope className={styles.tick} />
+            </a>
             <h3>Contact Us</h3>
-            <a href="mailto:contacts@learnbay.co" target="_blank"><p>Email :- contacts@learnbay.co</p></a>
-            <a href="tel:+917795687988" target="_blank"><p>Phone :- (+91) 77956 87988</p></a>
+            <a href="mailto:contacts@learnbay.co" target="_blank">
+              <p>Email :- contacts@learnbay.co</p>
+            </a>
+            <a href="tel:+917795687988" target="_blank">
+              <p>Phone :- (+91) 77956 87988</p>
+            </a>
           </div>
           <div className={styles.InnerBox}>
-          <a href="https://wa.me/+917795687988" target="_blank"><FaWhatsapp className={styles.tick}  /></a>
+            <a href="https://wa.me/+917795687988" target="_blank">
+              <FaWhatsapp className={styles.tick} />
+            </a>
             <h3>Whatsapp</h3>
             <a href="https://wa.me/+917795687988" target="_blank">
-              <button className={styles.btn1}>(+91) 77956 87988</button>
+
+              <Button
+                className={styles.btn}
+                style={{ marginTop: "25px" }}
+                text="(+91) 77956 87988"
+              />
             </a>
           </div>
         </div>
