@@ -48,6 +48,7 @@
 }
 .EmailInputs {
   border-radius: 8px;
+
   width: 100%;
   padding: 10px;
   border: 1px solid grey;
@@ -192,14 +193,6 @@
   width: 80%;
   padding: 10px 25px;
   display: flex;
-  outline: none;
-  background-color: #0072bc;
-  color: white;
-  border: 0;
-  cursor: pointer;
-  gap: 5px;
-  border-radius: 4px;
-  border: 1px solid #0072bc;
   margin-top: 20px;
   align-items: center;
   justify-content: center;
@@ -241,7 +234,7 @@
 
 .alert {
   margin: 0;
-  color: #2c9cd7 !important;
+  color: #2C9CD7 !important;
   font-size: 18px !important;
 }
 .bottomWrap {
@@ -258,16 +251,8 @@
   width: 80%;
 }
 
-@media (max-width: 800px) {
-
-  .button{
-    font-size: 15px;
-  }
-  
-}
-
-@media (min-width: 961px) and (max-width: 1281px) {
-  .App button {
-    font-size: 11px;
-  }
-}
+@media (min-width: 961px) and (max-width: 1281px){
+  .App button{
+   font-size: 11px;
+ }
+ }

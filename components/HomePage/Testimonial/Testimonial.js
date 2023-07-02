@@ -52,7 +52,7 @@ function Testimonial({ redirectDS, para, heading, Testimonial }) {
           width="80px"
         />
       </div> */}
-      <section>
+      {/* <section>
         <div className={styles.Section1}>
           <div className={styles.Testimonial}>
             <div className={styles.swiperleft}>
@@ -173,7 +173,7 @@ function Testimonial({ redirectDS, para, heading, Testimonial }) {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 }

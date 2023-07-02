@@ -1,8 +1,11 @@
 import React from "react";
 import styles from "./FirstSection.module.css";
 import Image from "next/image";
-import { FaDownload } from "react-icons/fa";
+// import { FaDownload } from "react-icons/fa";
+import { FaChevronDown, FaBell, FaDownload } from "react-icons/fa";
 import { firstSectionData } from "./FirstSectionData";
+import dynamic from "next/dynamic";
+const Button = dynamic(() => import("../../../Global/Button/Button"));
 
 function FirstSection() {
   return (
@@ -27,10 +30,12 @@ function FirstSection() {
                   />
                 </div>
                 <div className={styles.button}>
-                  <button>
-                    {btnName}
-                    <FaDownload style={{ marginLeft: "10px" }} />
-                  </button>
+              
+                  <Button
+                    text={btnName}
+                    passIcon={<FaDownload className="bIconS" />}
+                    style={{ marginLeft: "10px" }}
+                  />
                 </div>
               </div>
             </a>
@@ -38,9 +43,13 @@ function FirstSection() {
         })}
       </div>
       <div className={styles.backThankbot}>
-      {firstSectionData.map((data, index) => {
+        {firstSectionData.map((data, index) => {
           const { btnName } = data;
-          return ( <p className={styles.botText} key={index}>{btnName}</p> );
+          return (
+            <p className={styles.botText} key={index}>
+              {btnName}
+            </p>
+          );
         })}
       </div>
     </section>

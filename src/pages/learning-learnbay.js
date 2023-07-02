@@ -1,11 +1,11 @@
 import React from "react";
 import Head from "next/head";
-import FirstSectionLearning from "../components/NewDesign/HomePage/FirstSectionLearning/FirstSection";
+import FirstSectionLearning from "../../components/WebPage/FirstSectionLearning/FirstSection";
 import styles from "../styles/Home.module.css";
-import Navbar from "../components/Navbar/Navbar";
-import Footer from "../components/Footer/Footer";
-import BottomBar from "../components/BottomBar/BottomBar";
-import OfferPopup from "../components/OfferPopup/OfferPopup";
+import Navbar from "../../components/Navbar/Navbar";
+import Footer from "../../components/Footer/Footer";
+import BottomBar from "../../components/WebPage/BottomBar/BottomBar";
+import OfferPopup from "../../components/OfferPopup/OfferPopup";
 
 function learning() {
   return (
