@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import styles from "./FirstSection.module.css";
-import Form from "../../../Form/Form";
-import Popup from "../../../Popup/Popup";
+import Form from "../../Form/Form";
+import Popup from "../../Popup/Popup";
 import { FaCheckCircle, FaBell } from "react-icons/fa";
+import dynamic from "next/dynamic";
+const Button = dynamic(() => import("../../Global/Button/Button"));
 
 const FirstSection = ({ dataScience, dataScienceCounselling }) => {
   const [popups, setPopups] = useState(false);
@@ -56,9 +58,16 @@ const FirstSection = ({ dataScience, dataScienceCounselling }) => {
               </p>
             </div>
           </div>
-          <button onClick={popupShow} className={styles.Btn}>
-            Enquire Now <FaBell className="bIconS" />
-          </button>
+    
+
+          <div onClick={popupShow} className={styles.centerButton}>
+          <Button
+     
+              className={styles.Btn}
+              text="Enquire Now"
+              passIcon={<FaBell className="bIconS" />}
+            />
+            </div>
         </div>
         <div className={styles.rightSectionIcon}></div>
       </div>
