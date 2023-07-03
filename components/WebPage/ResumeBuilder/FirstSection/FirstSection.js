@@ -42,6 +42,9 @@ function FirstSection() {
                 </div>
               </Link>
             </div>
+         
+              </div>
+            </a>
           );
         })}
       </div>
