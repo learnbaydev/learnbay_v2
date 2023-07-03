@@ -48,11 +48,11 @@ export default function Home() {
         />
       </Head>
 
-      <Navbar radio={true} />
-      <FirstSection />
+      <Navbar radio={true}  dataScienceCounselling={true}/>
+      <FirstSection  dataScienceCounselling={true} radio={true}/>
       <HomeLine />
       <BoxShape />
-      <Course />
+      <Course dataScience={true} radio={true}/>
       <Switch />
       <KeyFeatures
         titleCourse="Data Science Placement Report"
@@ -67,7 +67,7 @@ export default function Home() {
         heading="Our Alumni Profile"
         Testimonial={DataScienceCourseData[0].testimonial}
       />
-      <ContactUs />
+      <ContactUs dataScienceCounselling={true} radio={true}/>
       <SeventhSection />
       <Footer />
     </>
