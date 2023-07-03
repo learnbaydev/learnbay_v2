@@ -5,6 +5,7 @@ import Image from "next/image";
 import { FaChevronDown, FaBell, FaDownload } from "react-icons/fa";
 import { firstSectionData } from "./FirstSectionData";
 import dynamic from "next/dynamic";
+import Link from "next/link";
 const Button = dynamic(() => import("../../../Global/Button/Button"));
 
 function FirstSection() {
@@ -18,27 +19,29 @@ function FirstSection() {
         {firstSectionData.map((data, index) => {
           const { img, url, btnName } = data;
           return (
-            <a href={url} target="_blank">
-              <div className={styles.boxIinner} key={index}>
-                <div>
-                  <Image
-                    src={img}
-                    width="355"
-                    height="480"
-                    layout="intrinsic"
-                    alt="data science course"
-                  />
+            <div>
+              {" "}
+              <Link href={url} target="_blank">
+                <div className={styles.boxIinner} key={index}>
+                  <div>
+                    <Image
+                      src={img}
+                      width="355"
+                      height="480"
+                      layout="intrinsic"
+                      alt="data science course"
+                    />
+                  </div>
+                  <div className={styles.button}>
+                    <Button
+                      text={btnName}
+                      passIcon={<FaDownload className="bIconS" />}
+                      style={{ marginLeft: "10px" }}
+                    />
+                  </div>
                 </div>
-                <div className={styles.button}>
-              
-                  <Button
-                    text={btnName}
-                    passIcon={<FaDownload className="bIconS" />}
-                    style={{ marginLeft: "10px" }}
-                  />
-                </div>
-              </div>
-            </a>
+              </Link>
+            </div>
           );
         })}
       </div>
