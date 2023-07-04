@@ -1,9 +1,10 @@
 import Head from "next/head";
 import styles from '../styles/Counseling.module.css';
 import { React } from "react";
-import Navbar from "../components/Navbar/Navbar";
+import Navbar from "../../components/Navbar/Navbar";
 import Image from "next/image";
-import Form from "../components/Form/Form";
+import Form from "../../components/Form/Form";
+
 
 function Counselling() {
   return (
@@ -19,8 +20,8 @@ function Counselling() {
           <div className={styles.forml}>
           <Image
             src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/popup-back+3.png"
-            width="400px"
-            height="500px"
+            width="400"
+            height="500"
             alt="LearnsupportImg"
           />
           </div>

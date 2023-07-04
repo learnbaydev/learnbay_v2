@@ -140,7 +140,7 @@ border-radius: 10px;
   border-width: 0px 3px 3px 3px;
   box-shadow: -1px 0px 10px 2px rgb(4 135 217 / 20%);
   cursor: pointer;
-  width: 320px;
+  width: 330px;
 }
 
 .boxesInner:hover {
@@ -259,6 +259,16 @@ border-radius: 10px;
   align-items: center;
   margin-top: 15px;
 
+}
+
+.secondSection h4{
+  font-size: 32px;
+  margin-bottom: 20px;
+  margin-top: 0;
+  color: #000;
+  padding: 0;
+  font-weight: 700;
+  text-align: center;
 }
 
 
