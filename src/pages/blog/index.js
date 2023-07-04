@@ -70,40 +70,41 @@ export default function blog({ allPostsData }) {
             let aurl = `/blog/author/${makeUrl}`;
             return (
               <div key={id}>
-                <Link href={url}>
-                  <div
-                    className={styles.blog}
-                    key={id}
-                    style={{
-                      background: `linear-gradient(0deg, rgba(0,0,0,0.8) 34%, rgba(255,255,255,0) 200%), url(${headerImg}) no-repeat center center `,
-                      backgroundSize: "cover",
-                    }}
-                  >
+                <div
+                  className={styles.blog}
+                  key={id}
+                  style={{
+                    background: `linear-gradient(0deg, rgba(0,0,0,0.8) 34%, rgba(255,255,255,0) 200%), url(${headerImg}) no-repeat center center `,
+                    backgroundSize: "cover",
+                  }}
+                >
+                  <Link href={url} passHref>
                     <h4>{title}</h4>
+                  </Link>
 
-                    <Link href={aurl}>
-                      <div className={styles.profileWrap}>
-                        <Image
-                          src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main-blog/avatar-02.webp"
-                          width="80"
-                          height="45"
-                          layout="intrinsic"
-                          alt="blog_writer"
-                          className={styles.blogIMg}
-                        />
-
-                        <span>
-                          <h5>{author}</h5>
-                          <p>
-                            {date} <BsDot className={styles.dot} />
-                            <IoTimeOutline className={styles.time} />
-                            {readTime}
-                          </p>
-                        </span>
-                      </div>
+                  <div className={styles.profileWrap}>
+                    <Link href={aurl} passHref>
+                      <Image
+                        src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main-blog/avatar-02.webp"
+                        width="80"
+                        height="45"
+                        layout="intrinsic"
+                        alt="blog_writer"
+                        className={styles.blogIMg}
+                      />
                     </Link>
+                    <span>
+                      <Link href={aurl} passHref>
+                        <h5>{author}</h5>
+                      </Link>
+                      <p>
+                        {date} <BsDot className={styles.dot} />
+                        <IoTimeOutline className={styles.time} />
+                        {readTime}
+                      </p>
+                    </span>
                   </div>
-                </Link>
+                </div>
               </div>
             );
           })}
@@ -152,9 +153,9 @@ export default function blog({ allPostsData }) {
                       let amakeUrl = author.toLowerCase().replace(/\s+/g, "-");
                       let aurl = `/blog/author/${amakeUrl}`;
                       return (
-                        <Link href={url} key={id}>
-                          <div className={styles.categoryPost} key={id}>
-                            <div className={styles.leftCategoryPost}>
+                        <div className={styles.categoryPost} key={id}>
+                          <div className={styles.leftCategoryPost}>
+                            <a href={url} target="_blank" rel="noreferrer">
                               <Image
                                 src={headerImg}
                                 width="300"
@@ -163,46 +164,46 @@ export default function blog({ allPostsData }) {
                                 layout="intrinsic"
                                 className={styles.categoryPostImg}
                               />
-                            </div>
-                            <div className={styles.rightCategoryPost} key={id}>
-                              <a
-                                href={tUrl}
-                                target="_blank"
-                                rel="noreferrer"
-                                className={styles.link}
-                              >
-                                <span className={styles.tagSpan}>
-                                  {category}
-                                </span>
-                              </a>
-                              <a href={url} target="_blank" rel="noreferrer">
-                                <h4>{title}</h4>
-                              </a>
-                              <p>{desc}</p>
+                            </a>
+                          </div>
+                          <div className={styles.rightCategoryPost} key={id}>
+                            <a
+                              href={tUrl}
+                              target="_blank"
+                              rel="noreferrer"
+                              className={styles.link}
+                            >
+                              <span className={styles.tagSpan}>{category}</span>
+                            </a>
+                            <a href={url} target="_blank" rel="noreferrer">
+                              <h4>{title}</h4>
+                            </a>
+                            <p>{desc}</p>
 
+                            <div className={styles.profileWrap}>
                               <Link href={aurl}>
-                                <div className={styles.profileWrap}>
-                                  <Image
-                                    src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main-blog/avatar-02.webp"
-                                    width="80"
-                                    height="45"
-                                    layout="intrinsic"
-                                    alt="blog_writer"
-                                    className={styles.blogIMg}
-                                  />
-                                  <span>
-                                    <h5>{author}</h5>
-                                    <p>
-                                      {date} <BsDot className={styles.dot} />
-                                      <IoTimeOutline className={styles.time} />
-                                      {readTime}
-                                    </p>
-                                  </span>
-                                </div>
+                                <Image
+                                  src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main-blog/avatar-02.webp"
+                                  width="80"
+                                  height="45"
+                                  layout="intrinsic"
+                                  alt="blog_writer"
+                                  className={styles.blogIMg}
+                                />
                               </Link>
+                              <span>
+                                <Link href={aurl}>
+                                  <h5>{author}</h5>
+                                </Link>
+                                <p>
+                                  {date} <BsDot className={styles.dot} />
+                                  <IoTimeOutline className={styles.time} />
+                                  {readTime}
+                                </p>
+                              </span>
                             </div>
                           </div>
-                        </Link>
+                        </div>
                       );
                     }
                   )}
@@ -230,9 +231,9 @@ export default function blog({ allPostsData }) {
                       let amakeUrl = author.toLowerCase().replace(/\s+/g, "-");
                       let aurl = `/blog/author/${amakeUrl}`;
                       return (
-                        <Link href={url} key={id}>
-                          <div className={styles.categoryPost} key={id}>
-                            <div className={styles.leftCategoryPost}>
+                        <div className={styles.categoryPost} key={id}>
+                          <div className={styles.leftCategoryPost}>
+                            <a href={url} target="_blank" rel="noreferrer">
                               <Image
                                 src={headerImg}
                                 width="400"
@@ -241,46 +242,46 @@ export default function blog({ allPostsData }) {
                                 layout="intrinsic"
                                 className={styles.categoryPostImg}
                               />
-                            </div>
-                            <div className={styles.rightCategoryPost} key={id}>
-                              <a
-                                href={tUrl}
-                                target="_blank"
-                                rel="noreferrer"
-                                className={styles.link}
-                              >
-                                <span className={styles.tagSpan}>
-                                  {category}
-                                </span>
-                              </a>
-                              <a href={url} target="_blank" rel="noreferrer">
-                                <h4>{title}</h4>
-                              </a>
-                              <p>{desc}</p>
+                            </a>
+                          </div>
+                          <div className={styles.rightCategoryPost} key={id}>
+                            <a
+                              href={tUrl}
+                              target="_blank"
+                              rel="noreferrer"
+                              className={styles.link}
+                            >
+                              <span className={styles.tagSpan}>{category}</span>
+                            </a>
+                            <a href={url} target="_blank" rel="noreferrer">
+                              <h4>{title}</h4>
+                            </a>
+                            <p>{desc}</p>
 
+                            <div className={styles.profileWrap}>
                               <Link href={aurl}>
-                                <div className={styles.profileWrap}>
-                                  <Image
-                                    src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main-blog/avatar-02.webp"
-                                    width="80"
-                                    height="45"
-                                    layout="intrinsic"
-                                    alt="blog_writer"
-                                    className={styles.blogIMg}
-                                  />
-                                  <span>
-                                    <h5>{author}</h5>
-                                    <p>
-                                      {date} <BsDot className={styles.dot} />
-                                      <IoTimeOutline className={styles.time} />
-                                      {readTime}
-                                    </p>
-                                  </span>
-                                </div>
+                                <Image
+                                  src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main-blog/avatar-02.webp"
+                                  width="80"
+                                  height="45"
+                                  layout="intrinsic"
+                                  alt="blog_writer"
+                                  className={styles.blogIMg}
+                                />
                               </Link>
+                              <span>
+                                <Link href={aurl}>
+                                  <h5>{author}</h5>
+                                </Link>
+                                <p>
+                                  {date} <BsDot className={styles.dot} />
+                                  <IoTimeOutline className={styles.time} />
+                                  {readTime}
+                                </p>
+                              </span>
                             </div>
                           </div>
-                        </Link>
+                        </div>
                       );
                     }
                   )}
