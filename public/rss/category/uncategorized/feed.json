@@ -1,0 +1,37 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "Learnbay blog",
+    "home_page_url": "https://blog.learnbay.co",
+    "feed_url": "https://blog.learnbay.co/rss/category/feed.json",
+    "icon": "https://blog.learnbay.co/logo.svg",
+    "author": {
+        "name": "Learnbay",
+        "url": " https://twitter.com/Learnbay"
+    },
+    "items": [
+        {
+            "id": "https://blog.learnbay.co/category/uncategorized",
+            "url": "https://blog.learnbay.co/category/uncategorized",
+            "title": "Gradient Descent for Machine Learning",
+            "summary": "It is an optimization algorithm to find the values of parameters(coefficient) of a function(f) that minimizes the cost function. It is used when parameters can not be calculated by Linear algebra...",
+            "date_modified": "2022-03-05T18:30:00.000Z",
+            "author": {}
+        },
+        {
+            "id": "https://blog.learnbay.co/category/uncategorized",
+            "url": "https://blog.learnbay.co/category/uncategorized",
+            "title": "Data Science at Intern Level",
+            "summary": "As Data Science holds the grand title of sexiest job of the decade the idea of pursuing it becomes still more uneasy, more to that there is the viral notion of “Data Science is the toughest to build career in”...",
+            "date_modified": "2022-01-06T18:30:00.000Z",
+            "author": {}
+        },
+        {
+            "id": "https://blog.learnbay.co/category/uncategorized",
+            "url": "https://blog.learnbay.co/category/uncategorized",
+            "title": "Exploratory Data Analysis on Iris dataset",
+            "summary": "Exploratory Data Analysis refers to the critical process of performing initial investigations on data so as to discover patterns, spot anomalies, to test hypotheses and to check assumptions with the help of summary statistics and graphical representations...",
+            "date_modified": "2021-01-02T18:30:00.000Z",
+            "author": {}
+        }
+    ]
+}

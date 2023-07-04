@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+    <channel>
+        <title>Learnbay blog</title>
+        <link>https://blog.learnbay.co</link>
+        <description></description>
+        <lastBuildDate>Wed, 21 Sep 2022 10:36:45 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>Feed for Node.js</generator>
+        <image>
+            <title>Learnbay blog</title>
+            <url>https://blog.learnbay.co/logo.svg</url>
+            <link>https://blog.learnbay.co</link>
+        </image>
+        <copyright>All rights reserved 2022, Learnbay</copyright>
+        <item>
+            <title><![CDATA[What Is Generative AI? All You Need To Know!]]></title>
+            <link>https://blog.learnbay.co/category/ai</link>
+            <guid>https://blog.learnbay.co/category/ai</guid>
+            <pubDate>Mon, 19 Sep 2022 18:30:00 GMT</pubDate>
+            <description><![CDATA[AI-generated deep fake and synthetic data** appears to be a very fascinating topic these days, with a developing trend. We've seen a lot of examples, and one of the most common examples of Deepfake and Synthetic data is Instagram or TikTok]]></description>
+        </item>
+    </channel>
+</rss>
