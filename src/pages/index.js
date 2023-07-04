@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Navbar from "../../components/Navbar/Navbar";
 import dynamic from "next/dynamic";
-import { DataScienceCourseData } from "../../Data/DataScienceCourse";
+import { DataScienceCourseData } from "../../Data/AdvanceDataScienceCourse";
 const BoxShape = dynamic(() =>
   import("../../components/HomePage/BoxShape/BoxShape")
 );
@@ -48,11 +48,11 @@ export default function Home() {
         />
       </Head>
 
-      <Navbar radio={true}  dataScienceCounselling={true}/>
-      <FirstSection  dataScienceCounselling={true} radio={true}/>
+      <Navbar radio={true} dataScienceCounselling={true} />
+      <FirstSection dataScienceCounselling={true} radio={true} />
       <HomeLine />
       <BoxShape />
-      <Course dataScience={true} radio={true}/>
+      <Course dataScience={true} radio={true} />
       <Switch />
       <KeyFeatures
         titleCourse="Data Science Placement Report"
@@ -67,7 +67,7 @@ export default function Home() {
         heading="Our Alumni Profile"
         Testimonial={DataScienceCourseData[0].testimonial}
       />
-      <ContactUs dataScienceCounselling={true} radio={true}/>
+      <ContactUs dataScienceCounselling={true} radio={true} />
       <SeventhSection />
       <Footer />
     </>

@@ -3,14 +3,14 @@ import fs from "fs";
 import path from "path";
 import { NextSeo } from "next-seo"; // Add this import statement
 import matter from "gray-matter";
-import { getSortedPostsData } from "../../lib/posts";
-import styles from "../../styles/blogM.module.css";
+import { getSortedPostsData } from "../../../../lib/posts";
+import styles from "../../../styles/blogM.module.css";
 import Head from "next/head";
 import Image from "next/image";
 import { BsDot } from "react-icons/bs";
 import { IoTimeOutline } from "react-icons/io5";
-import { sortByDate } from "../../utils";
-import authorstyle from "../../styles/author.module.css";
+import { sortByDate } from "../../../../utils";
+import authorstyle from "../../../styles/author.module.css";
 import Link from 'next/link';
 import {
 
