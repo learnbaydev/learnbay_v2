@@ -83,15 +83,16 @@ export default function blog({ allPostsData }) {
                   </Link>
 
                   <div className={styles.profileWrap}>
-                    <Image
-                      src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main-blog/avatar-02.webp"
-                      width="80"
-                      height="45"
-                      layout="intrinsic"
-                      alt="blog_writer"
-                      className={styles.blogIMg}
-                    />
-
+                    <Link href={aurl} passHref>
+                      <Image
+                        src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main-blog/avatar-02.webp"
+                        width="80"
+                        height="45"
+                        layout="intrinsic"
+                        alt="blog_writer"
+                        className={styles.blogIMg}
+                      />
+                    </Link>
                     <span>
                       <Link href={aurl} passHref>
                         <h5>{author}</h5>
@@ -154,14 +155,16 @@ export default function blog({ allPostsData }) {
                       return (
                         <div className={styles.categoryPost} key={id}>
                           <div className={styles.leftCategoryPost}>
-                            <Image
-                              src={headerImg}
-                              width="300"
-                              height="180"
-                              alt={categoryPosts.id}
-                              layout="intrinsic"
-                              className={styles.categoryPostImg}
-                            />
+                            <a href={url} target="_blank" rel="noreferrer">
+                              <Image
+                                src={headerImg}
+                                width="300"
+                                height="180"
+                                alt={categoryPosts.id}
+                                layout="intrinsic"
+                                className={styles.categoryPostImg}
+                              />
+                            </a>
                           </div>
                           <div className={styles.rightCategoryPost} key={id}>
                             <a
@@ -178,16 +181,18 @@ export default function blog({ allPostsData }) {
                             <p>{desc}</p>
 
                             <div className={styles.profileWrap}>
-                              <Image
-                                src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main-blog/avatar-02.webp"
-                                width="80"
-                                height="45"
-                                layout="intrinsic"
-                                alt="blog_writer"
-                                className={styles.blogIMg}
-                              />
+                              <Link href={aurl}>
+                                <Image
+                                  src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main-blog/avatar-02.webp"
+                                  width="80"
+                                  height="45"
+                                  layout="intrinsic"
+                                  alt="blog_writer"
+                                  className={styles.blogIMg}
+                                />
+                              </Link>
                               <span>
-                                <Link href={aurl} passHref>
+                                <Link href={aurl}>
                                   <h5>{author}</h5>
                                 </Link>
                                 <p>
@@ -228,14 +233,16 @@ export default function blog({ allPostsData }) {
                       return (
                         <div className={styles.categoryPost} key={id}>
                           <div className={styles.leftCategoryPost}>
-                            <Image
-                              src={headerImg}
-                              width="400"
-                              height="190"
-                              alt={categoryPosts.id}
-                              layout="intrinsic"
-                              className={styles.categoryPostImg}
-                            />
+                            <a href={url} target="_blank" rel="noreferrer">
+                              <Image
+                                src={headerImg}
+                                width="400"
+                                height="190"
+                                alt={categoryPosts.id}
+                                layout="intrinsic"
+                                className={styles.categoryPostImg}
+                              />
+                            </a>
                           </div>
                           <div className={styles.rightCategoryPost} key={id}>
                             <a
@@ -252,14 +259,16 @@ export default function blog({ allPostsData }) {
                             <p>{desc}</p>
 
                             <div className={styles.profileWrap}>
-                              <Image
-                                src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main-blog/avatar-02.webp"
-                                width="80"
-                                height="45"
-                                layout="intrinsic"
-                                alt="blog_writer"
-                                className={styles.blogIMg}
-                              />
+                              <Link href={aurl}>
+                                <Image
+                                  src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main-blog/avatar-02.webp"
+                                  width="80"
+                                  height="45"
+                                  layout="intrinsic"
+                                  alt="blog_writer"
+                                  className={styles.blogIMg}
+                                />
+                              </Link>
                               <span>
                                 <Link href={aurl}>
                                   <h5>{author}</h5>
