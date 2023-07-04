@@ -1,8 +1,7 @@
-import Link from 'next/link'
-import {sortByDate, slugify } from '../utils'
+import {sortByDate, slugify } from '../../utils'
 import Link from 'next/link';
 // import { getSortedPostsData } from "../lib/posts";
-import styles from "../styles/blogM.module.css";
+// import styles from "../../blogM.module.css";
 import Image from "next/image";
 import { BsDot } from "react-icons/bs";
 import Head from "next/head";

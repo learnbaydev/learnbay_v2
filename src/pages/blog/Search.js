@@ -1,12 +1,12 @@
 import Head from 'next/head'
-import Post from '../components/Post'
+import Post from '../../../components/BlogPage/Post'
 // import Banner from "../components/Banner";
-import search from "../search.json";
+import search from "../../../search.json";
 import { useRouter } from 'next/router'
 // import { NextSeo } from 'next-seo';
-import { sortByDate, ImageUrl } from '../utils'
-import styles from "../styles/blogM.module.css";
-import Sidebar from "../components/Sidebar"
+import { sortByDate, ImageUrl } from '../../../utils'
+import styles from "../../styles/blogM.module.css";
+import Sidebar from "../../../components/BlogPage/Sidebar"
 
 export default function Search() {
     const { query } = useRouter()
