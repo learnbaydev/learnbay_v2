@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
 function CategorySection() {
-  return (
-    <div>CategorySection</div>
-  )
+  return <div>CategorySection</div>;
 }
 
-export default CategorySection
+export default CategorySection;
