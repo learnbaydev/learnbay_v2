@@ -1,4 +1,3 @@
-// import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -20,10 +19,10 @@ import Footer from "../../../components/Footer/Footer";
 export default function Post({ postData, posts }) {
   // console.log(postData);
   let makeUrl = postData.author.toLowerCase().replace(/\s+/g, "-");
-  let aurl = `blog/author/${makeUrl}`;
+  let aurl = `/blog/author/${makeUrl}`;
 
   let catUrl = postData.category.toLowerCase().replace(/\s+/g, "-");
-  let curl = `blog/category/${catUrl}`;
+  let curl = `/blog/category/${catUrl}`;
 
   const [isContentVisible, setIsContentVisible] = useState(false);
 
@@ -40,7 +39,6 @@ export default function Post({ postData, posts }) {
             href="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/Learnbay-Favicon-L.png"
           />
           <title>{postData.stitle}</title>
-          {/* <html lang="en" /> */}
 
           <meta name="description" content={postData.desc} />
 
@@ -66,50 +64,10 @@ export default function Post({ postData, posts }) {
           <meta name="robots" content="index, follow" />
 
           <link href="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main-blog/Learnbay-Favicon-L.png" />
-          {/* Schema genertor start */}
-          {/* <script
-            type="application/ld+json"
-            dangerouslySetInnerHTML={{
-              __html: `{
-                  "@context": "https://schema.org",
-                  "@type": "Article",
-                  "mainEntityOfPage": {
-                  "@type": "WebPage",
-                  "@id": "https://blog.learnbay.co/${postData.id}"
-                  },
-                  "headline": "${postData.title}",
-                  "description": "${postData.desc}",
-                  "image": "${postData.img}",   
-                  "author": {
-                  "@type": "Person",
-                  "name": "${postData.author}",
-                  "url": "https://blog.learnbay.co/"
-                  },  
-                  "publisher": {
-                  "@type": "Organization",
-                  "name": "Learnbay",
-                  "logo": {
-                  "@type": "ImageObject",
-                   "url": "https://blog.learnbay.co/_next/image?url=https%3A%2F%2Flearnbay-wb.s3.ap-south-1.amazonaws.com%2Fmain-blog%2FLearnbay-Logo.webp&w=256&q=100"
-                  }
-                 },
-               "datePublished": "${postData.date}"
-                }
-              } `,
-            }} /> */}
-          {/* Schema Generator End */}
         </Head>
 
         <Navbar />
         <div className={styles.DivImg}>
-          {/* <img
-            src={postData.img}
-            alt={postData.alt}
-            width="100%"
-            height="450px"
-            className={styles.bImg}
-          ></img> */}
-
           <Image
             src={postData.img}
             alt={postData.alt}
@@ -163,9 +121,6 @@ export default function Post({ postData, posts }) {
                       const url = `/blog/#${uMake}`;
                       return (
                         <div key={i}>
-                          {/* <div className={styles.numberBack}>
-                            <span className={styles.number}>{i}</span>
-                          </div> */}
                           <span>
                             <p className={styles.tocContent}>
                               <Link href={url}>{table}</Link>
@@ -216,38 +171,6 @@ export default function Post({ postData, posts }) {
                       )}
                     </div>
                   </div>
-
-                  {/* <button onClick={toggleContent}>
-        {isContentVisible ? 'Hide Content' : 'Table of content'}
-      </button>
-      {isContentVisible &&  <div className={styles.contentT}>
-                    {postData.table.map((table, i) => {
-                      const removeSpecial = table.replace(
-                        /[&\/\\#+()$~%.'":*?<>{}]/g,
-                        ""
-                      );
-                      const uMake = removeSpecial
-                        .toLowerCase()
-                        .replace(/\s+/g, "-");
-                      const url = `/blog/#${uMake}`;
-                      return (
-                        <div key={i}>
-                          
-                          <span>
-                            <p className={styles.tocContent}>
-                              <Link href={url}>{table}</Link>
-                            </p>
-
-                            <hr className={styles.tableline} />
-                          </span>
-
-                          <div>
-
-                          </div>
-                        </div>
-                      );
-                    })}
-                  </div>} */}
                 </div>
               </div>
             </div>
@@ -257,19 +180,6 @@ export default function Post({ postData, posts }) {
                 <article dangerouslySetInnerHTML={{ __html: postData.body }} />
                 <hr />
 
-                {/* tags & keywords section */}
-                {/* <div className={styles.tag}>
-                  <div className={styles.lSide}>
-                    <p>Tags</p>{" "}
-                    {postData.tag.map((tag, i) => {
-                      return <span key={i}>#{tag}</span>
-                        ;
-                    })}
-
-
-
-                  </div>
-                </div> */}
                 <div>
                   <h1 className={styles.rpH1}>Related Posts</h1>
                   <div className={styles.relatePost}>
