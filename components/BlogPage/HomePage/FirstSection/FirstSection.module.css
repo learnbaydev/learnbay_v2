@@ -60,6 +60,8 @@
 .profileImg {
   border-radius: 50%;
   overflow: hidden;
+  height: 50px;
+  width: 50px;
 }
 .pD {
   margin: 0px;
