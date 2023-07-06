@@ -8,6 +8,7 @@ import { sortByDate } from "../../../utils";
 // import BottomBar from "../../../components/WebPage/BottomBar/BottomBar";
 import OfferPopup from "../../../components/OfferPopup/OfferPopup";
 import FirstSection from "../../../components/BlogPage/HomePage/FirstSection/FirstSection";
+import CategorySection from '../../../components/BlogPage/HomePage/CategorySection/CategorySection'
 
 export default function blog({ allPostsData }) {
   const length = parseInt(allPostsData.length);
@@ -43,11 +44,11 @@ export default function blog({ allPostsData }) {
       </Head>
       <main>
         <Navbar popup={true} dataScienceCounselling={true} />
+        <FirstSection allPostsData={allPostsData} />
+        <CategorySection categoryPostTag={categoryPostTag} allPostsData={allPostsData} />
 
-        <div id="feature">
-          <FirstSection allPostsData={allPostsData} />
-        </div>
         <OfferPopup offer={false} />
+
         {/* <BottomBar /> */}
         <Footer />
       </main>
