@@ -2,336 +2,119 @@ import React from "react";
 import styles from "./CategorySection.module.css";
 import Link from "next/link";
 import Image from "next/image";
-import { BsDot } from "react-icons/bs";
-import { IoTimeOutline } from "react-icons/io5";
-// import { getSortedPostsData } from "../../../../lib/posts";
-// import generateRssFeed from "../../../../lib/generateRss";
-// import generateCategoryRssFeed from "geneRateCategoryRss";
 
-
-export default function CategorySection({ allPostsData }){
+export default function CategorySection({ categoryPostTag, allPostsData }) {
   return (
-    <section className={styles.categoryPosts}>
-      <div className={styles.viewMoreSection}>
-        <h2>Data Science & Business Analytics (234)</h2>
-        <Link href="#" passHref>
-        <p>View More</p>
-        </Link>
-      </div>
+    <>
+      {[...categoryPostTag].map((post, i) => {
+        let tag = post;
+        const categoryPosts = allPostsData.filter(
+          (post) => post.category === tag
+        );
+        let makeUrl = post.toLowerCase().replace(/\s+/g, "-");
+        let url = `/blog/category/${makeUrl}`;
 
-      <div className={styles.categoryWrapper}>
-        <div className={styles.blogWrap}>
-          <div>
-            <div className={styles.blog}>
-              <div className="bgWrap">
-                {" "}
-                <Image
-                  src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main-blog/blog/scp.jpg"
-                  fill={true}
-                  alt="backround image"
-                  style={{ objectFit: "cover" }}
-                />
-              </div>
-            </div>
-            <div className={styles.profileWrap}>
-              <Link href="#" passHref>
-                <h4>The Future of Data Analytics Career</h4>
-                <p>
-                  The willingness of businesses to invest in Artificial
-                  Intelligence (AI)....
-                </p>
-
-                
-
-                <span>Read More</span>
-
-                <div className={styles.authordiv}>
-                  <hr className={styles.hrline} />
-
-                  <p>
-                    26/05/2023 <b>By</b>
-
-                    
-                    <span>Manas Khochar</span>
-                  </p>
-                </div>
+        return (
+          <section className={styles.categoryPosts} key={i}>
+            <div className={styles.viewMoreSection}>
+              <h2>{post} (234)</h2>
+              <Link href={url} passHref>
+                <p>View More</p>
               </Link>
             </div>
-          </div>
 
-          <div>
-            <div className={styles.blog}>
-              <div className="bgWrap">
-                {" "}
-                <Image
-                  src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main-blog/blog/scp.jpg"
-                  fill={true}
-                  alt="backround image"
-                  style={{ objectFit: "cover" }}
-                />
+            <div className={styles.categoryWrapper}>
+              <div className={styles.blogWrap}>
+                {categoryPosts
+                  .slice(0, 6)
+                  .map(
+                    ({
+                      id,
+                      date,
+                      title,
+                      author,
+                      readTime,
+                      headerImg,
+                      tag,
+                      category,
+                      desc,
+                    }) => {
+                      let url = `/blog/${id}`;
+                      let tUrl = `/blog/category/${category
+                        .toLowerCase()
+                        .replace(/\s+/g, "-")}`;
+
+                      // console.log("@@@@", categoryPosts)
+                      let amakeUrl = author.toLowerCase().replace(/\s+/g, "-");
+                      let aurl = `/blog/author/${amakeUrl}`;
+                      return (
+                        <div key={id}>
+                          <div className={styles.blog}>
+                            <div className="bgWrap">
+                              {" "}
+                              <Image
+                                src={headerImg}
+                                width="300"
+                                height="180"
+                                alt={categoryPosts.id}
+                                className={styles.categoryPostImg}
+                          
+                                style={{ objectFit: "cover" }}
+                              />
+                            </div>
+                          </div>
+                          <div className={styles.profileWrap}>
+                            <Link href={url}  passHref>
+                              <h4>{title}</h4>
+                              <p>
+                              {desc}
+                              </p>
+
+                              <span>Read More</span>
+
+                              <div className={styles.authordiv}>
+                                <hr className={styles.hrline} />
+
+                                <p>
+                                  26/05/2023 <b>By</b>
+                                  <span>Manas Khochar</span>
+                                </p>
+                              </div>
+                            </Link>
+                          </div>
+                        </div>
+                      );
+                    }
+                  )}
               </div>
-            </div>
-            <div className={styles.profileWrap}>
-              <Link href="#" passHref>
-                <h4>The Future of Data Analytics Career</h4>
-                <p>
-                  The willingness of businesses to invest in Artificial
-                  Intelligence (AI)....
-                </p>
 
-                <span>Read More</span>
-
-                <div className={styles.authordiv}>
-                  <hr className={styles.hrline} />
-
-                  <p>
-                    26/05/2023 <b>By</b>
-                    <span>Manas Khochar</span>
-                  </p>
+              <div className={styles.categoryPostRightSide}>
+                <div className={styles.categoryPost}>
+                  <div className={styles.rightCategoryPostFirst}>
+                    <a href="#" target="_blank" rel="noreferrer">
+                      <p>
+                        An Introduction to Python Programming : Core Concepts
+                      </p>
+                    </a>
+                    <div className={styles.rightCategoryPostSecond}>
+                      <p>21/06/2023</p>
+                      <Link
+                        href="#"
+                        target="_blank"
+                        rel="noreferrer"
+                        className={styles.link}
+                      >
+                        <p className={styles.tagSpan}>Data Science</p>
+                      </Link>
+                    </div>
+                    <hr className={styles.hrline} />
+                  </div>
                 </div>
-              </Link>
-            </div>
-          </div>
-
-          <div>
-            <div className={styles.blog}>
-              <div className="bgWrap">
-                {" "}
-                <Image
-                  src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main-blog/blog/scp.jpg"
-                  fill={true}
-                  alt="backround image"
-                  style={{ objectFit: "cover" }}
-                />
               </div>
             </div>
-            <div className={styles.profileWrap}>
-              <Link href="#" passHref>
-                <h4>The Future of Data Analytics Career</h4>
-                <p>
-                  The willingness of businesses to invest in Artificial
-                  Intelligence (AI)....
-                </p>
-
-                <span>Read More</span>
-
-                <div className={styles.authordiv}>
-                  <hr className={styles.hrline} />
-
-                  <p>
-                    26/05/2023 <b>By</b>
-                    <span>Manas Khochar</span>
-                  </p>
-                </div>
-              </Link>
-            </div>
-          </div>
-
-          <div>
-            <div className={styles.blog}>
-              <div className="bgWrap">
-                {" "}
-                <Image
-                  src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main-blog/blog/scp.jpg"
-                  fill={true}
-                  alt="backround image"
-                  style={{ objectFit: "cover" }}
-                />
-              </div>
-            </div>
-            <div className={styles.profileWrap}>
-              <Link href="#" passHref>
-                <h4>The Future of Data Analytics Career</h4>
-                <p>
-                  The willingness of businesses to invest in Artificial
-                  Intelligence (AI)....
-                </p>
-
-                <span>Read More</span>
-
-                <div className={styles.authordiv}>
-                  <hr className={styles.hrline} />
-
-                  <p>
-                    26/05/2023 <b>By</b>
-                    <span>Manas Khochar</span>
-                  </p>
-                </div>
-              </Link>
-            </div>
-          </div>
-
-          <div>
-            <div className={styles.blog}>
-              <div className="bgWrap">
-                {" "}
-                <Image
-                  src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main-blog/blog/scp.jpg"
-                  fill={true}
-                  alt="backround image"
-                  style={{ objectFit: "cover" }}
-                />
-              </div>
-            </div>
-            <div className={styles.profileWrap}>
-              <Link href="#" passHref>
-                <h4>The Future of Data Analytics Career</h4>
-                <p>
-                  The willingness of businesses to invest in Artificial
-                  Intelligence (AI)....
-                </p>
-
-                <span>Read More</span>
-
-                <div className={styles.authordiv}>
-                  <hr className={styles.hrline} />
-                  <p>
-                    26/05/2023
-                    <b>By</b> <span> Manas Khochar</span>
-                  </p>
-                </div>
-              </Link>
-            </div>
-          </div>
-
-          <div>
-            <div className={styles.blog}>
-              <div className="bgWrap">
-                {" "}
-                <Image
-                  src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main-blog/blog/scp.jpg"
-                  fill={true}
-                  alt="backround image"
-                  style={{ objectFit: "cover" }}
-                />
-              </div>
-            </div>
-            <div className={styles.profileWrap}>
-              <Link href="#" passHref>
-                <h4>The Future of Data Analytics Career</h4>
-                <p>
-                  The willingness of businesses to invest in Artificial
-                  Intelligence (AI)....
-                </p>
-
-                <span>Read More</span>
-
-                <div className={styles.authordiv}>
-                  <hr className={styles.hrline} />
-
-                  <p>
-                    26/05/2023 <b>By</b>
-                    <span>Manas Khochar</span>
-                  </p>
-                </div>
-              </Link>
-            </div>
-          </div>
-        </div>
-
-        <div className={styles.categoryPostRightSide}>
-          <div className={styles.categoryPost}>
-            <div className={styles.rightCategoryPostFirst}>
-              <a href="#" target="_blank" rel="noreferrer">
-                <p>An Introduction to Python Programming : Core Concepts</p>
-              </a>
-              <div className={styles.rightCategoryPostSecond}>
-                <p>21/06/2023</p>
-                <Link
-                  href="#"
-                  target="_blank"
-                  rel="noreferrer"
-                  className={styles.link}
-                >
-                  <p className={styles.tagSpan}>Data Science</p>
-                </Link>
-              </div>
-              <hr className={styles.hrline} />
-            </div>
-            <div className={styles.rightCategoryPostFirst}>
-              <a href="#" target="_blank" rel="noreferrer">
-                <p>An Introduction to Python Programming : Core Concepts</p>
-              </a>
-              <div className={styles.rightCategoryPostSecond}>
-                <p>21/06/2023</p>
-                <Link
-                  href="#"
-                  target="_blank"
-                  rel="noreferrer"
-                  className={styles.link}
-                >
-                  <p className={styles.tagSpan}>Data Science</p>
-                </Link>
-              </div>
-              <hr className={styles.hrline} />
-            </div>
-            <div className={styles.rightCategoryPostFirst}>
-              <a href="#" target="_blank" rel="noreferrer">
-                <p>An Introduction to Python Programming : Core Concepts</p>
-              </a>
-              <div className={styles.rightCategoryPostSecond}>
-                <p>21/06/2023</p>
-                <Link
-                  href="#"
-                  target="_blank"
-                  rel="noreferrer"
-                  className={styles.link}
-                >
-                  <p className={styles.tagSpan}>Data Science</p>
-                </Link>
-              </div>
-              <hr className={styles.hrline} />
-            </div>
-            <div className={styles.rightCategoryPostFirst}>
-              <a href="#" target="_blank" rel="noreferrer">
-                <p>An Introduction to Python Programming : Core Concepts</p>
-              </a>
-              <div className={styles.rightCategoryPostSecond}>
-                <p>21/06/2023</p>
-                <Link
-                  href="#"
-                  target="_blank"
-                  rel="noreferrer"
-                  className={styles.link}
-                >
-                  <p className={styles.tagSpan}>Data Science</p>
-                </Link>
-              </div>
-              <hr className={styles.hrline} />
-            </div>
-            <div className={styles.rightCategoryPostFirst}>
-              <a href="#" target="_blank" rel="noreferrer">
-                <p>An Introduction to Python Programming : Core Concepts</p>
-              </a>
-              <div className={styles.rightCategoryPostSecond}>
-                <p>21/06/2023</p>
-                <Link
-                  href="#"
-                  target="_blank"
-                  rel="noreferrer"
-                  className={styles.link}
-                >
-                  <p className={styles.tagSpan}>Data Science</p>
-                </Link>
-              </div>
-              <hr className={styles.hrline} />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+          </section>
+        );
+      })}
+    </>
   );
 }
-
-export async function getStaticProps(_context) {
-  await generateRssFeed();
-  await generateCategoryRssFeed();
-  const allPostsData = getSortedPostsData();
-
-  return {
-    props: {
-      allPostsData: allPostsData.sort(sortByDate),
-    },
-  };
-}
-

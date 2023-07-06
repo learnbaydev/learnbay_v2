@@ -4,7 +4,7 @@ import Navbar from "../../../components/Navbar/Navbar";
 import Footer from "../../../components/Footer/Footer";
 
 import dynamic from "next/dynamic";
-import { DataScienceCourseData } from "../../../Data/DataScienceCourse";
+import { DataScienceCourseData } from "../../../Data/AdvanceDataScienceCourse";
 
 const FirstSection = dynamic(() =>
   import("../../../components/CoursePage/FirstSection/FirstSection")

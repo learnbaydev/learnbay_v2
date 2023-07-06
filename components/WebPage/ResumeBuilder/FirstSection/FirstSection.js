@@ -19,43 +19,32 @@ function FirstSection() {
         {firstSectionData.map((data, index) => {
           const { img, url, btnName } = data;
           return (
-            <div>
-              {" "}
-              <Link href={url} target="_blank">
-                <div className={styles.boxIinner} key={index}>
-                  <div>
-                    <Image
-                      src={img}
-                      width="355"
-                      height="480"
-                      layout="intrinsic"
-                      alt="data science course"
-                    />
-                  </div>
-                  <div className={styles.button}>
-                    <Button
-                      text={btnName}
-                      passIcon={<FaDownload className="bIconS" />}
-                      style={{ marginLeft: "10px" }}
-                    />
-                  </div>
+            <a href={url} target="_blank">
+              <div className={styles.boxIinner} key={index}>
+                <div>
+                  <Image
+                    src={img}
+                    width="355"
+                    height="480"
+                    layout="intrinsic"
+                    alt="data science course"
+                  />
                 </div>
-              </Link>
-            </div>
-         
+                <div className={styles.button}>
+                  <button>
+                    {btnName}
+                    <FaDownload style={{ marginLeft: "10px" }} />
+                  </button>
+                </div>
               </div>
             </a>
           );
         })}
       </div>
       <div className={styles.backThankbot}>
-        {firstSectionData.map((data, index) => {
+      {firstSectionData.map((data, index) => {
           const { btnName } = data;
-          return (
-            <p className={styles.botText} key={index}>
-              {btnName}
-            </p>
-          );
+          return ( <p className={styles.botText} key={index}>{btnName}</p> );
         })}
       </div>
     </section>
