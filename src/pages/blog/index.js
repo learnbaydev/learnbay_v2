@@ -48,6 +48,7 @@ export default function blog({ allPostsData }) {
         <meta name="keywords" content="Learnbay Blogs" />
         <meta name="robots" content="index, follow" />
       </Head>
+      <Navbar />
       <div className={styles.BackP} style={{ marginTop: "70px" }}>
         {/* <h4>
         <b>Our Blogs</b>
@@ -292,6 +293,7 @@ export default function blog({ allPostsData }) {
           </section>
         );
       })}
+      <Footer />
     </>
   );
 }
