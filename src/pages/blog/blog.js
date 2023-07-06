@@ -43,7 +43,10 @@ export default function blog({ allPostsData }) {
       </Head>
       <main>
         <Navbar popup={true} dataScienceCounselling={true} />
-        <FirstSection allPostsData={allPostsData} />
+
+        <div id="feature">
+          <FirstSection allPostsData={allPostsData} />
+        </div>
         <OfferPopup offer={false} />
         {/* <BottomBar /> */}
         <Footer />
