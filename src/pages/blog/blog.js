@@ -46,6 +46,7 @@ export default function blog({ allPostsData }) {
         <Navbar popup={true} dataScienceCounselling={true} />
         <FirstSection allPostsData={allPostsData} />
         <CategorySection categoryPostTag={categoryPostTag} allPostsData={allPostsData} />
+
         <OfferPopup offer={false} />
 
         {/* <BottomBar /> */}
