@@ -4,6 +4,7 @@ import Footer from "../../../components/Footer/Footer";
 import BottomBar from "../../../components/WebPage/BottomBar/BottomBar";
 import OfferPopup from "../../../components/OfferPopup/OfferPopup";
 import FirstSection from "../../../components/BlogPage/HomePage/FirstSection/FirstSection";
+import CourseSection from "../../../components/BlogPage/CourseSection/CourseSection";
 
 export default function blog() {
   return (
@@ -38,6 +39,7 @@ export default function blog() {
         <FirstSection />
         <OfferPopup offer={false} />
         {/* <BottomBar /> */}
+        <CourseSection />
         <Footer />
       </main>
     </div>
