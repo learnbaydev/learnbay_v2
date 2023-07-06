@@ -61,6 +61,8 @@ export default function blog({ allPostsData }) {
           <Sidebar />
         </section>
       </section>
+
+
       <section className={styles.blogWrap}>
         {allPostsData
           .slice(0, 3)
