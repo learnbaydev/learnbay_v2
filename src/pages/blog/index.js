@@ -300,7 +300,7 @@ export default function blog({ allPostsData }) {
 
 export async function getStaticProps(_context) {
   // await generateRssFeed();
-  // await generateCategoryRssFeed();
+  // await generateCategoryRssFeed(); 
   const allPostsData = getSortedPostsData();
 
   return {
