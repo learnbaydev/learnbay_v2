@@ -10,6 +10,7 @@ import OfferPopup from "../../../components/OfferPopup/OfferPopup";
 import FirstSection from "../../../components/BlogPage/HomePage/FirstSection/FirstSection";
 import CourseSection from "../../../components/BlogPage/CourseSection/CourseSection";
 import CategorySection from "../../../components/BlogPage/HomePage/CategorySection/CategorySection";
+import CategorySection from "../../../components/BlogPage/HomePage/CategorySection/CategorySection";
 
 export default function blog({ allPostsData }) {
   const length = parseInt(allPostsData.length);

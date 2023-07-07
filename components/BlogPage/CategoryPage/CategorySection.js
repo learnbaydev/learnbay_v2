@@ -1,9 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import styles from "./CategorySection.module.css";
 import Image from "next/image";
 import Link from "next/link";
 import { CiSearch } from "react-icons/ci";
-import { IoTimeOutline } from "react-icons/io5";
+import dynamic from "next/dynamic";
+const Button = dynamic(() => import("../../Global/Button/Button"));
 
 function CategorySection({ categoryPosts }) {
   const [search, setSearch] = useState();
@@ -14,6 +15,13 @@ function CategorySection({ categoryPosts }) {
 
   const handleOptionChange = (e) => {
     setSelectedOption(e.target.value);
+  };
+
+  
+  const [visible, setVisible] = useState(3);
+
+  const showMoreItems = () => {
+    setVisible((prevValue) => prevValue + 9);
   };
   return (
     <>
@@ -65,7 +73,7 @@ function CategorySection({ categoryPosts }) {
       <section className={styles.categoryWrapper}>
         <div className={styles.blogWrap}>
           {categoryPosts
-            .slice(0, 6)
+            .slice(0, 4)
             .map(
               ({ id, date, title, author, desc, headerImg, categoryPosts }) => {
                 const url = `/blog/${id}`;
@@ -105,11 +113,17 @@ function CategorySection({ categoryPosts }) {
                 );
               }
             )}
-        </div>
+        <div className={styles.loadMore} onClick={showMoreItems}>
+  <Button 
+                className={styles.outLineBtn}
+                text="Load More..."
+              />
+</div>
+</div>
         <div className={styles.rightSide}>
             <p>Interview Questions (256)</p>
             <p>Interview Questions (256)</p>
-            <p>Interview Questions (256)</p>
+            <p>Interview Questions (256)</p> 
             <p>Interview Questions (256)</p>
             <p>Interview Questions (256)</p>
             <p>Interview Questions (256)</p>
@@ -121,9 +135,6 @@ function CategorySection({ categoryPosts }) {
             <p>Interview Questions (256)</p>
         </div>
       </section>
-      {/* <div className={styles.loadMore}>
-  <button onClick={showMoreItems}>Load More...</button>
-</div> */}
     </>
   );
 }
