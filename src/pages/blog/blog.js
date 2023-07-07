@@ -1,4 +1,5 @@
 import Head from "next/head";
+import React, { useEffect, useState } from "react";
 import Navbar from "../../../components/Navbar/Navbar";
 import Footer from "../../../components/Footer/Footer";
 import generateRssFeed from "../../../lib/generateRss";
@@ -10,6 +11,8 @@ import OfferPopup from "../../../components/OfferPopup/OfferPopup";
 import FirstSection from "../../../components/BlogPage/HomePage/FirstSection/FirstSection";
 
 export default function blog({ allPostsData }) {
+  // console.log(allPostsData);
+
   const length = parseInt(allPostsData.length);
   let singleCategoryPost = allPostsData.map((post) => {
     return post.category;
@@ -61,7 +64,7 @@ export async function getStaticProps(_context) {
 
   return {
     props: {
-      allPostsData: allPostsData.sort(sortByDate),
+      allPostsData: allPostsData.sort(sortByDate).slice(0, 6),
     },
   };
 }
