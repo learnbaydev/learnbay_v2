@@ -6,7 +6,7 @@ import Image from "next/image";
 export default function CategorySection({ categoryPostTag, allPostsData }) {
   return (
     <>
-      {[...categoryPostTag].slice(0,2).map((post, i) => {
+      {[...categoryPostTag].slice(0, 2).map((post, i) => {
         let tag = post;
         const categoryPosts = allPostsData.filter(
           (post) => post.category === tag
@@ -22,16 +22,14 @@ export default function CategorySection({ categoryPostTag, allPostsData }) {
         return (
           <section className={styles.categoryPosts} key={i}>
             <div className={styles.viewMoreSection}>
-        
-              <div className={styles.viewMoreSection1}> 
+              <div className={styles.viewMoreSection1}>
                 <h2>{post} (234)</h2>
                 <Link href={url} passHref>
-                <p>View All</p>
-              </Link>
+                  <p>View All</p>
+                </Link>
               </div>
 
               <div></div>
-             
             </div>
 
             <div className={styles.categoryWrapper}>
@@ -71,9 +69,12 @@ export default function CategorySection({ categoryPostTag, allPostsData }) {
                         </div>
                         <div className={styles.profileWrap}>
                           <Link href={url} passHref>
-                            <h4>The Future of Data Analytics Career Career{"..."}</h4>
+                            <h4>
+                              The Future of Data Analytics Career Career{"..."}
+                            </h4>
                             <p>
-                              The willingness of businesses to invest in Artificial Intelligence (AI){"..."}
+                              The willingness of businesses to invest in
+                              Artificial Intelligence (AI){"..."}
                             </p>
                             <span>Read More</span>
                             <div className={styles.authordiv}>
@@ -96,20 +97,15 @@ export default function CategorySection({ categoryPostTag, allPostsData }) {
                   <div className={styles.categoryPost}>
                     <div className={styles.rightCategoryPostFirst}>
                       {secondBlogPosts.map(
-                        ({
-                          id,
-                          date,
-                          title,
-                          author,
-                          category,
-                          desc,
-                        }) => {
+                        ({ id, date, title, author, category, desc }) => {
                           let url = `/blog/${id}`;
                           let tUrl = `/blog/category/${category
                             .toLowerCase()
                             .replace(/\s+/g, "-")}`;
 
-                          let amakeUrl = author.toLowerCase().replace(/\s+/g, "-");
+                          let amakeUrl = author
+                            .toLowerCase()
+                            .replace(/\s+/g, "-");
                           let aurl = `/blog/author/${amakeUrl}`;
                           return (
                             <div key={id}>
@@ -118,7 +114,12 @@ export default function CategorySection({ categoryPostTag, allPostsData }) {
                               </a>
                               <div className={styles.rightCategoryPostSecond}>
                                 <p>{date}</p>
-                                <Link href="#" target="_blank" rel="noreferrer" className={styles.link}>
+                                <Link
+                                  href="#"
+                                  target="_blank"
+                                  rel="noreferrer"
+                                  className={styles.link}
+                                >
                                   <p className={styles.tagSpan}>{category}</p>
                                 </Link>
                               </div>
@@ -132,6 +133,47 @@ export default function CategorySection({ categoryPostTag, allPostsData }) {
                 </div>
               )}
             </div>
+
+            {i === 1 && (
+              <div className={styles.categoryPostRightSideM}>
+                <div className={styles.categoryPost}>
+                  <div className={styles.rightCategoryPostFirst}>
+                    {secondBlogPosts.map(
+                      ({ id, date, title, author, category, desc }) => {
+                        let url = `/blog/${id}`;
+                        let tUrl = `/blog/category/${category
+                          .toLowerCase()
+                          .replace(/\s+/g, "-")}`;
+
+                        let amakeUrl = author
+                          .toLowerCase()
+                          .replace(/\s+/g, "-");
+                        let aurl = `/blog/author/${amakeUrl}`;
+                        return (
+                          <div key={id}>
+                            <a href="#" target="_blank" rel="noreferrer">
+                              <p>{title}</p>
+                            </a>
+                            <div className={styles.rightCategoryPostSecond}>
+                              <p>{date}</p>
+                              <Link
+                                href="#"
+                                target="_blank"
+                                rel="noreferrer"
+                                className={styles.link}
+                              >
+                                <p className={styles.tagSpan}>{category}</p>
+                              </Link>
+                            </div>
+                            <hr className={styles.hrline} />
+                          </div>
+                        );
+                      }
+                    )}
+                  </div>
+                </div>
+              </div>
+            )}
           </section>
         );
       })}
