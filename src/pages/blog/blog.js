@@ -8,6 +8,7 @@ import { sortByDate } from "../../../utils";
 // import BottomBar from "../../../components/WebPage/BottomBar/BottomBar";
 import OfferPopup from "../../../components/OfferPopup/OfferPopup";
 import FirstSection from "../../../components/BlogPage/HomePage/FirstSection/FirstSection";
+import CourseSection from "../../../components/BlogPage/CourseSection/CourseSection";
 import CategorySection from '../../../components/BlogPage/HomePage/CategorySection/CategorySection'
 
 export default function blog({ allPostsData }) {
@@ -46,9 +47,11 @@ export default function blog({ allPostsData }) {
         <Navbar popup={true} dataScienceCounselling={true} />
         <FirstSection allPostsData={allPostsData} />
         <CategorySection categoryPostTag={categoryPostTag} allPostsData={allPostsData} />
+
         <OfferPopup offer={false} />
 
         {/* <BottomBar /> */}
+        <CourseSection />
         <Footer />
       </main>
     </div>
