@@ -1,12 +1,25 @@
 import Head from "next/head";
 import Navbar from "../../../components/Navbar/Navbar";
 import Footer from "../../../components/Footer/Footer";
-import BottomBar from "../../../components/WebPage/BottomBar/BottomBar";
+import generateRssFeed from "../../../lib/generateRss";
+import generateCategoryRssFeed from "../../../lib/geneRateCategoryRss";
+import { getSortedPostsData } from "../../../lib/posts";
+import { sortByDate } from "../../../utils";
+// import BottomBar from "../../../components/WebPage/BottomBar/BottomBar";
 import OfferPopup from "../../../components/OfferPopup/OfferPopup";
 import FirstSection from "../../../components/BlogPage/HomePage/FirstSection/FirstSection";
+<<<<<<< HEAD
 import CourseSection from "../../../components/BlogPage/CourseSection/CourseSection";
+=======
+import CategorySection from '../../../components/BlogPage/HomePage/CategorySection/CategorySection'
+>>>>>>> 9325f1e521020f31933478fa13be82a6c6463c71
 
-export default function blog() {
+export default function blog({ allPostsData }) {
+  const length = parseInt(allPostsData.length);
+  let singleCategoryPost = allPostsData.map((post) => {
+    return post.category;
+  });
+  let categoryPostTag = Array.from(new Set(singleCategoryPost));
   return (
     <div>
       <Head>
@@ -34,14 +47,27 @@ export default function blog() {
         <meta name="robots" content="index, follow" />
       </Head>
       <main>
-        {" "}
         <Navbar popup={true} dataScienceCounselling={true} />
-        <FirstSection />
+        <FirstSection allPostsData={allPostsData} />
+        <CategorySection categoryPostTag={categoryPostTag} allPostsData={allPostsData} />
+
         <OfferPopup offer={false} />
+
         {/* <BottomBar /> */}
         <CourseSection />
         <Footer />
       </main>
     </div>
   );
+}
+export async function getStaticProps(_context) {
+  await generateRssFeed();
+  await generateCategoryRssFeed();
+  const allPostsData = getSortedPostsData();
+
+  return {
+    props: {
+      allPostsData: allPostsData.sort(sortByDate),
+    },
+  };
 }
