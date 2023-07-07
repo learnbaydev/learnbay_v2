@@ -9,15 +9,17 @@ import { sortByDate } from "../../../utils";
 // import BottomBar from "../../../components/WebPage/BottomBar/BottomBar";
 import OfferPopup from "../../../components/OfferPopup/OfferPopup";
 import FirstSection from "../../../components/BlogPage/HomePage/FirstSection/FirstSection";
+import CourseSection from "../../../components/BlogPage/CourseSection/CourseSection";
+import CategorySection from "../../../components/BlogPage/HomePage/CategorySection/CategorySection";
 
-export default function blog({ allPostsData }) {
+export default function blog({ allPostsData, categoryPostTag }) {
   // console.log(allPostsData);
 
-  const length = parseInt(allPostsData.length);
-  let singleCategoryPost = allPostsData.map((post) => {
-    return post.category;
-  });
-  let categoryPostTag = Array.from(new Set(singleCategoryPost));
+  // const length = parseInt(allPostsData.length);
+  // let singleCategoryPost = allPostsData.map((post) => {
+  //   return post.category;
+  // });
+  // let categoryPostTag = Array.from(new Set(singleCategoryPost));
   return (
     <div>
       <Head>
@@ -46,12 +48,16 @@ export default function blog({ allPostsData }) {
       </Head>
       <main>
         <Navbar popup={true} dataScienceCounselling={true} />
+        <FirstSection allPostsData={allPostsData} />
+        <CategorySection
+          categoryPostTag={categoryPostTag}
+          allPostsData={allPostsData}
+        />
 
-        <div id="feature">
-          <FirstSection allPostsData={allPostsData} />
-        </div>
         <OfferPopup offer={false} />
+
         {/* <BottomBar /> */}
+        <CourseSection />
         <Footer />
       </main>
     </div>
@@ -61,10 +67,15 @@ export async function getStaticProps(_context) {
   await generateRssFeed();
   await generateCategoryRssFeed();
   const allPostsData = getSortedPostsData();
+  let singleCategoryPost = allPostsData.map((post) => {
+    return post.category;
+  });
+  let categoryPostTag = Array.from(new Set(singleCategoryPost));
 
   return {
     props: {
-      allPostsData: allPostsData.sort(sortByDate).slice(0, 6),
+      allPostsData: allPostsData.sort(sortByDate).slice(0, 4),
+      categoryPostTag,
     },
   };
 }

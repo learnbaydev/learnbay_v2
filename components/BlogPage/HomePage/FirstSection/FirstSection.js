@@ -60,7 +60,6 @@ function FirstSection({ allPostsData }) {
             clickable: true,
           }}
           loop={true}
-          loopFillGroupWithBlank={true}
           grabCursor={true}
           modules={[FreeMode, Pagination]}
           className="mySwiper"

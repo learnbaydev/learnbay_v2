@@ -3,6 +3,6 @@ import { getSortedPostsData } from "../../../lib/posts";
 export default function handler(req, res) {
   const blogData = getSortedPostsData();
   if (req.method === "GET") {
-    res.status(200).send(blogData);
+    res.status(200).json({ blogData });
   }
 }
