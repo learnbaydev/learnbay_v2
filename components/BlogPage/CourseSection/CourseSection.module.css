@@ -62,7 +62,7 @@
   display: flex;
   width: 60%;
   margin-bottom: 20px;
-  margin-left: 395px;
+  margin-left: 420px;
   justify-content: flex-end;
   gap: 10px;
 }
@@ -291,13 +291,16 @@
   .btnWrapper button {
     padding: 15px 15px;
   }
+  .listPanel{
+    margin-left: 439px;
+  }
 }
 
 @media (max-width: 1024px) {
   .span,
   .ActiveSpan {
     font-size: 14px;
-    padding: 15px;
+    padding: 9px;
   }
   .gridPanel {
     height: 520px;
@@ -313,7 +316,10 @@
 @media (max-width: 961px) {
   .span,
   .ActiveSpan {
-    padding: 15px 0px 15px 15px;
+    padding: 7px  7px;
+  }
+  .listPanel{
+    margin-left: 360px;
   }
 }
 
@@ -321,6 +327,18 @@
   .span,
   .ActiveSpan {
     font-size: 12px;
+  }
+  .listPanel{
+        margin-left: 300px;
+  }
+  .span{  
+    padding: 7px 7px !important;
+    width: 51%;
+    font-size: 11px;
+  }
+  .ActiveSpan{
+       padding: 7px 7px !important;
+         width: 61%;
   }
 }
 
@@ -333,9 +351,15 @@
   margin-left: 3px;
   justify-content: start;
 }
-.span{  padding: 12px 7px;
-    width: max-content;
-    font-size: 12px;}
+.span{  
+    padding: 7px 7px !important;
+    width: 40%;
+    font-size: 11px;
+  }
+  .ActiveSpan{
+       padding: 7px 7px !important;
+       width: 40%;
+  }
    .listPanel {
     display: flex;
    width: 100%;  
@@ -352,7 +376,7 @@
   }
 
   .headWrapper {
-    margin-bottom: 0;
+    margin-bottom: 10px;
   }
   .paraDiv {
     margin-top: 30px;

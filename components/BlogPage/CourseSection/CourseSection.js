@@ -137,8 +137,8 @@ const Course = ({ dataScience, radio, dataScienceCounselling }) => {
                           breakpoints={{
                             1281: { slidesPerView: 3.1, spaceBetween: 60 },
                             1024: { slidesPerView: 2.9, spaceBetween: 55 },
-                            961: { slidesPerView: 2.8, spaceBetween: 20 },
-                            801: { slidesPerView: 2.7, spaceBetween: 20 },
+                            961: { slidesPerView: 2.5, spaceBetween: 30 },
+                            801: { slidesPerView: 2, spaceBetween: 20 },
                             641: { slidesPerView: 1.8, spaceBetween: 80 },
                             481: { slidesPerView: 1.8, spaceBetween: 40 },
                             100: { slidesPerView: 1.2, spaceBetween: 20 },
@@ -163,7 +163,7 @@ const Course = ({ dataScience, radio, dataScienceCounselling }) => {
                               ratingCount,
                               courseTime,
                             } = viewAllData;
-                            console.log(viewAllData);
+                            // console.log(viewAllData);
 
                             return (
                               <SwiperSlide className={styles.leftSide} key={id}>
