@@ -4,16 +4,13 @@ import { NextSeo } from "next-seo"; // Add this import statement
 import path from "path";
 import matter from "gray-matter";
 import { getSortedPostsData } from "../../../../lib/posts";
-import styles from "../../../styles/blogM.module.css";
 import Head from "next/head";
-import Image from "next/image";
-import { BsDot } from "react-icons/bs";
-import { IoTimeOutline } from "react-icons/io5";
 import { sortByDate } from "../../../../utils";
 import { useState } from "react";
 import Navbar from "../../../../components/Navbar/Navbar";
 import Footer from "../../../../components/Footer/Footer";
 import CategorySection from "../../../../components/BlogPage/CategoryPage/CategorySection";
+import Course from "../../../../components/HomePage/Course/Course";
 
 export default function CategoryBlog({ categoryPosts }) {
   const [visible, setVisible] = useState(9);
@@ -55,9 +52,8 @@ export default function CategoryBlog({ categoryPosts }) {
       </Head>
 
       <Navbar />
-      <CategorySection categoryPosts={categoryPosts}/>
-
-      
+      <CategorySection categoryPosts={categoryPosts} />
+      <Course />
 
       <Footer />
     </>

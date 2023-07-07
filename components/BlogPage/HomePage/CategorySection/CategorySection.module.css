@@ -98,7 +98,7 @@
   display: grid;
   grid-template-columns: 65% 35%;
 }
-.viewMoreSection1{
+.viewMoreSection1 {
   display: grid;
   grid-template-columns: 90% 10%;
 }
@@ -173,14 +173,13 @@
 }
 
 @media (max-width: 1024px) {
-
-  .categoryPost{
-    padding:20px;
+  .categoryPost {
+    padding: 20px;
   }
 
-  .blogWrap{
+  .blogWrap {
     grid-template-columns: 33% 33% 33%;
-  }  
+  }
   .viewMoreSection h2 {
     font-size: 20px;
   }
@@ -189,24 +188,19 @@
     font-size: 16px;
   }
 
-  .profileWrap h4{
+  .profileWrap h4 {
     font-size: 15px;
     line-height: 20px;
   }
 
-  .profileWrap p{
+  .profileWrap p {
     font-size: 0.81rem;
     gap: 7px;
-  
   }
 
-  .rightCategoryPostFirst p{
+  .rightCategoryPostFirst p {
     font-size: 15px;
   }
-
-  
-
- 
 }
 
 @media (max-width: 600px) {
