@@ -32,7 +32,7 @@ export default function CategoryBlog({ categoryPosts }) {
         title={`${cattitle}`}
         description={`${catdesc}`}
         // Add other SEO properties as needed
-      />
+      /> 
 
       <Head>
         {categoryPosts.slice(0, 1).map(({ category, categoryPosts }) => {
