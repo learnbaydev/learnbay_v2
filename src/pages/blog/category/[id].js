@@ -14,6 +14,7 @@ import { useState } from "react";
 import Navbar from "../../../../components/Navbar/Navbar";
 import Footer from "../../../../components/Footer/Footer";
 import CategorySection from "../../../../components/BlogPage/CategoryPage/CategorySection";
+import Course from "../../../../components/BlogPage/CourseSection/CourseSection";
 
 export default function CategoryBlog({ categoryPosts }) {
   const [visible, setVisible] = useState(9);
@@ -56,7 +57,7 @@ export default function CategoryBlog({ categoryPosts }) {
 
       <Navbar />
       <CategorySection categoryPosts={categoryPosts}/>
-
+      {/* <Course /> */}
       
 
       <Footer />

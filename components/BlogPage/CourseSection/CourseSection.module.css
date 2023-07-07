@@ -189,6 +189,8 @@
 
 .Div {
  justify-content: space-between;
+ width: fit-content;
+ display: flex;
 }
 .Div .rate{ color: #F99600;}
 .Div .tag{
