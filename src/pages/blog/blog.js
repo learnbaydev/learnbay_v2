@@ -8,11 +8,8 @@ import { sortByDate } from "../../../utils";
 // import BottomBar from "../../../components/WebPage/BottomBar/BottomBar";
 import OfferPopup from "../../../components/OfferPopup/OfferPopup";
 import FirstSection from "../../../components/BlogPage/HomePage/FirstSection/FirstSection";
-<<<<<<< HEAD
 import CourseSection from "../../../components/BlogPage/CourseSection/CourseSection";
-=======
-import CategorySection from '../../../components/BlogPage/HomePage/CategorySection/CategorySection'
->>>>>>> 9325f1e521020f31933478fa13be82a6c6463c71
+import CategorySection from "../../../components/BlogPage/HomePage/CategorySection/CategorySection";
 
 export default function blog({ allPostsData }) {
   const length = parseInt(allPostsData.length);
@@ -49,7 +46,10 @@ export default function blog({ allPostsData }) {
       <main>
         <Navbar popup={true} dataScienceCounselling={true} />
         <FirstSection allPostsData={allPostsData} />
-        <CategorySection categoryPostTag={categoryPostTag} allPostsData={allPostsData} />
+        <CategorySection
+          categoryPostTag={categoryPostTag}
+          allPostsData={allPostsData}
+        />
 
         <OfferPopup offer={false} />
 
