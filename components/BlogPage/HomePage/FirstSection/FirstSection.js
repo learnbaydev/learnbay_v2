@@ -65,7 +65,7 @@ function FirstSection({ allPostsData }) {
           className="mySwiper"
         >
           {allPostsData
-            .slice(0, 3)
+            .slice(0, 9)
             .map(
               ({
                 id,

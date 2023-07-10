@@ -6,7 +6,7 @@ import { CiSearch } from "react-icons/ci";
 import dynamic from "next/dynamic";
 const Button = dynamic(() => import("../../Global/Button/Button"));
 
-function CategorySection({ categoryPosts }) {
+function CategorySection({ categoryPosts, categoryPostTag }) {
   const [search, setSearch] = useState();
   function findSerach(value) {
     setSearch(value.target.value);
@@ -72,10 +72,13 @@ function CategorySection({ categoryPosts }) {
           {categoryPosts
             .slice(0, 4)
             .map(
-              ({ id, date, title, author, desc, headerImg, categoryPosts }) => {
+              (
+                { id, date, title, author, desc, headerImg, categoryPosts },
+                index
+              ) => {
                 const url = `/blog/${id}`;
                 return (
-                  <div key={id} className={styles.blogUpper}>
+                  <div key={index} className={styles.blogUpper}>
                     <div className={styles.profileWrap}>
                       <Link href={url} passHref>
                         <h4>{title}</h4>
@@ -115,18 +118,15 @@ function CategorySection({ categoryPosts }) {
           </div>
         </div>
         <div className={styles.rightSide}>
-          <p>Interview Questions (256)</p>
-          <p>Interview Questions (256)</p>
-          <p>Interview Questions (256)</p>
-          <p>Interview Questions (256)</p>
-          <p>Interview Questions (256)</p>
-          <p>Interview Questions (256)</p>
-          <p>Interview Questions (256)</p>
-          <p>Interview Questions (256)</p>
-          <p>Interview Questions (256)</p>
-          <p>Interview Questions (256)</p>
-          <p>Interview Questions (256)</p>
-          <p>Interview Questions (256)</p>
+          {categoryPostTag.map((data, index) => {
+            let makeUrl = data.toLowerCase().replace(/\s+/g, "-");
+            let url = `/blog/category/${makeUrl}`;
+            return (
+              <Link href={url}>
+                <p key={index}>{data}</p>
+              </Link>
+            );
+          })}
         </div>
       </section>
     </>

@@ -14,7 +14,7 @@ import CategorySection from "../../../components/BlogPage/HomePage/CategorySecti
 
 export default function blog({ allPostsData, categoryPostTag }) {
   // console.log(allPostsData);
-
+  console.log(categoryPostTag, "blog");
   // const length = parseInt(allPostsData.length);
   // let singleCategoryPost = allPostsData.map((post) => {
   //   return post.category;
@@ -54,7 +54,7 @@ export default function blog({ allPostsData, categoryPostTag }) {
           allPostsData={allPostsData}
         />
 
-        <OfferPopup offer={false} />
+        {/* <OfferPopup offer={false} /> */}
 
         {/* <BottomBar /> */}
         <CourseSection />
@@ -74,7 +74,7 @@ export async function getStaticProps(_context) {
 
   return {
     props: {
-      allPostsData: allPostsData.sort(sortByDate).slice(0, 4),
+      allPostsData: allPostsData.sort(sortByDate).slice(0, 10),
       categoryPostTag,
     },
   };

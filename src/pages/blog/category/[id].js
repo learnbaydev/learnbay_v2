@@ -10,9 +10,9 @@ import { useState } from "react";
 import Navbar from "../../../../components/Navbar/Navbar";
 import Footer from "../../../../components/Footer/Footer";
 import CategorySection from "../../../../components/BlogPage/CategoryPage/CategorySection";
-import Course from "../../../../components/HomePage/Course/Course";
+import CourseSection from "../../../../components/BlogPage/CourseSection/CourseSection";
 
-export default function CategoryBlog({ categoryPosts }) {
+export default function CategoryBlog({ categoryPosts, categoryPostTag }) {
   const [visible, setVisible] = useState(9);
 
   const showMoreItems = () => {
@@ -52,8 +52,11 @@ export default function CategoryBlog({ categoryPosts }) {
       </Head>
 
       <Navbar />
-      <CategorySection categoryPosts={categoryPosts} />
-      <Course />
+      <CategorySection
+        categoryPosts={categoryPosts}
+        categoryPostTag={categoryPostTag}
+      />
+      <CourseSection />
 
       <Footer />
     </>
@@ -91,10 +94,14 @@ export async function getStaticProps({ params: { id } }) {
   const categoryPosts = allPostsData.filter(
     (post) => post.category.toLowerCase().replace(/\s+/g, "-") === id
   );
-
+  let singleCategoryPost = allPostsData.map((post) => {
+    return post.category;
+  });
+  let categoryPostTag = Array.from(new Set(singleCategoryPost));
   return {
     props: {
       categoryPosts: categoryPosts.sort(sortByDate),
+      categoryPostTag,
     },
   };
 }

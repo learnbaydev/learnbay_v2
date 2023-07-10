@@ -360,16 +360,21 @@
   }
   .span {
     padding: 7px 7px !important;
-    width: 40%;
-    font-size: 11px;
+    width: max-content;
+    font-size: 14px;
   }
   .ActiveSpan {
     padding: 7px 7px !important;
-    width: 40%;
+    width: max-content;
   }
   .listPanel {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
     width: 100%;
+  }
+  .head {
+    display: none;
   }
   /* do tab mobile part */
 }
@@ -380,7 +385,12 @@
     margin-top: 30px;
     width: 100%;
   }
-
+  .spanWrap {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
   .headWrapper {
     margin-bottom: 10px;
   }

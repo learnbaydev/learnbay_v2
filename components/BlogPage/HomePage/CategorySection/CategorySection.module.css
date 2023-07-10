@@ -37,11 +37,16 @@
   border-radius: 10px;
   position: relative;
   bottom: 35px;
+  display: flex;
+  flex-flow: column;
+  gap: 10px;
 }
 
 .profileWrap h4 {
   font-size: 18px;
   font-weight: 400;
+  height: 46px;
+  overflow: hidden;
   margin: 10px 0px 0px 0px;
   line-height: 23px;
 }
@@ -51,7 +56,7 @@
   flex-flow: column;
   color: #0072bc;
   font-weight: bold;
-  margin-top: 7px;
+
   font-size: 0.75rem;
   line-height: 1rem;
 }
@@ -158,12 +163,22 @@
 }
 
 .authordiv {
+  display: flex;
+  align-items: center;
   margin-top: 10px;
 }
 
-.categoryPostRightSide .categoryPost {
-  display: block;
+.categoryPost {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+  position: absolute;
   padding: 34px;
+}
+.categoryPostRightSide {
+  position: relative;
+
+  top: 0px;
 }
 
 @media (max-width: 1281px) {
