@@ -133,7 +133,7 @@ export default function CategorySection({ categoryPostTag, allPostsData }) {
                 </div>
               )}
             </div>
-
+           
             {i === 1 && (
               <div className={styles.categoryPostRightSideM}>
                 <div className={styles.categoryPost}>
