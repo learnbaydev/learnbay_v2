@@ -1,4 +1,5 @@
 import Head from "next/head";
+import React, { useEffect, useState } from "react";
 import Navbar from "../../../components/Navbar/Navbar";
 import Footer from "../../../components/Footer/Footer";
 import generateRssFeed from "../../../lib/generateRss";
@@ -9,14 +10,16 @@ import { sortByDate } from "../../../utils";
 import OfferPopup from "../../../components/OfferPopup/OfferPopup";
 import FirstSection from "../../../components/BlogPage/HomePage/FirstSection/FirstSection";
 import CourseSection from "../../../components/BlogPage/CourseSection/CourseSection";
-import CategorySection from '../../../components/BlogPage/HomePage/CategorySection/CategorySection'
+import CategorySection from "../../../components/BlogPage/HomePage/CategorySection/CategorySection";
 
-export default function blog({ allPostsData }) {
-  const length = parseInt(allPostsData.length);
-  let singleCategoryPost = allPostsData.map((post) => {
-    return post.category;
-  });
-  let categoryPostTag = Array.from(new Set(singleCategoryPost));
+export default function blog({ allPostsData, categoryPostTag }) {
+  // console.log(allPostsData);
+  console.log(categoryPostTag, "blog");
+  // const length = parseInt(allPostsData.length);
+  // let singleCategoryPost = allPostsData.map((post) => {
+  //   return post.category;
+  // });
+  // let categoryPostTag = Array.from(new Set(singleCategoryPost));
   return (
     <div>
       <Head>
@@ -46,9 +49,12 @@ export default function blog({ allPostsData }) {
       <main>
         <Navbar popup={true} dataScienceCounselling={true} />
         <FirstSection allPostsData={allPostsData} />
-        <CategorySection categoryPostTag={categoryPostTag} allPostsData={allPostsData} />
+        <CategorySection
+          categoryPostTag={categoryPostTag}
+          allPostsData={allPostsData}
+        />
 
-        <OfferPopup offer={false} />
+        {/* <OfferPopup offer={false} /> */}
 
         {/* <BottomBar /> */}
         <CourseSection />
@@ -61,10 +67,15 @@ export async function getStaticProps(_context) {
   await generateRssFeed();
   await generateCategoryRssFeed();
   const allPostsData = getSortedPostsData();
+  let singleCategoryPost = allPostsData.map((post) => {
+    return post.category;
+  });
+  let categoryPostTag = Array.from(new Set(singleCategoryPost));
 
   return {
     props: {
-      allPostsData: allPostsData.sort(sortByDate),
+      allPostsData: allPostsData.sort(sortByDate).slice(0, 10),
+      categoryPostTag,
     },
   };
 }

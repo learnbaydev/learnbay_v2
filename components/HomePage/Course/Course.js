@@ -105,7 +105,7 @@ const Course = ({ dataScience, radio, dataScienceCounselling }) => {
           {courseDetails.map((CourseData, index) => {
             return (
               <span
-                key={CourseData.id}
+                key={index}
                 onClick={() => {
                   menuChange(CourseData.title, index);
                 }}

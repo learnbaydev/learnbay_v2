@@ -232,6 +232,13 @@
     display: grid;
     grid-template-columns: 59% 40%;
     gap: 10px;
+    width: 100%;
+  }
+  .formControl {
+    width: 100%;
+  }
+  .formControl input {
+    width: 100%;
   }
   .innerP {
     grid-template-columns: 60% 95% 66%;
