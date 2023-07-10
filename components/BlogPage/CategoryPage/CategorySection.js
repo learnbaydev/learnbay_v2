@@ -46,9 +46,7 @@ function CategorySection({ categoryPosts }) {
             >
               <option value="">Categories</option>
               <option value="Data-Science">Data Science</option>
-              <option value="Software-Decvelopmewnt">
-                Software Decvelopmewnt
-              </option>
+              <option value="Software-Development">Software Development</option>
             </select>
           </div>
           <div className={styles.formControl}>
@@ -78,17 +76,6 @@ function CategorySection({ categoryPosts }) {
                 const url = `/blog/${id}`;
                 return (
                   <div key={id} className={styles.blogUpper}>
-                    <div className={styles.blog}>
-                      {" "}
-                      <Image
-                        src={headerImg}
-                        width="300"
-                        height="180"
-                        // alt={categoryPosts.id}
-                        className={styles.categoryPostImg}
-                        style={{ objectFit: "cover" }}
-                      />
-                    </div>
                     <div className={styles.profileWrap}>
                       <Link href={url} passHref>
                         <h4>{title}</h4>
@@ -107,6 +94,17 @@ function CategorySection({ categoryPosts }) {
                           </div>
                         </div>
                       </Link>
+                    </div>
+                    <div className={styles.blog}>
+                      <div className="bgWrap">
+                        <Image
+                          src={headerImg}
+                          fill={true}
+                          // alt={categoryPosts.id}
+                          className={styles.categoryPostImg}
+                          style={{ objectFit: "cover" }}
+                        />
+                      </div>
                     </div>
                   </div>
                 );
