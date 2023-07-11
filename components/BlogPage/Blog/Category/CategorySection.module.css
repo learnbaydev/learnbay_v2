@@ -1,5 +1,5 @@
 .blogWrap {
-  height: 85%;
+  height: 100%;
   display: grid;
   grid-template-columns: 31% 31% 31%;
   margin: 0px 70px 0px 40px;
@@ -96,6 +96,7 @@
 
 .categoryPosts {
   cursor: pointer;
+  overflow-x: scroll;
 }
 
 .viewMoreSection {
@@ -121,9 +122,9 @@
 
 .categoryWrapper {
   display: grid;
-  grid-template-columns: 69% 29%;
+  grid-template-columns: 100%;
   gap: 0px;
-  padding: 25px;
+  /* padding: 25px; */
 }
 .categoryPost {
   display: grid;
@@ -173,7 +174,7 @@
   flex-flow: column;
   width: 100%;
   position: absolute;
-  padding: 34px;
+  padding: 20px;
 }
 .categoryPostRightSide {
   position: relative;

@@ -11,7 +11,6 @@ import Popup from "../../Popup/Popup";
 import Form from "../../Form/Form";
 import { Details } from "./courseDetails";
 import { BiTimeFive } from "react-icons/bi";
-import { FaStar } from "react-icons/fa";
 import { TbCurrencyRupee } from "react-icons/tb";
 
 const Course = ({ dataScience, radio, dataScienceCounselling }) => {
@@ -97,26 +96,30 @@ const Course = ({ dataScience, radio, dataScienceCounselling }) => {
           />
         </div>
       </Popup>
-      <h2>Industry Accredited Certification For Professionals</h2>
 
       <div className={styles.courses}>
         <div className={styles.listPanel}>
-          {Details.map((CourseData, index) => {
-            // console.log(Details);
-            return (
-              <span
-                key={CourseData.id}
-                onClick={() => {
-                  menuChange(CourseData.title, index);
-                }}
-                className={
-                  CourseLoop[index].value ? styles.ActiveSpan : styles.span
-                }
-              >
-                {CourseData.title}
-              </span>
-            );
-          })}
+          <div className={styles.head}>
+            <p className={styles.popular}>Popular course</p>
+          </div>
+          <div className={styles.spanWrap}>
+            {Details.map((CourseData, index) => {
+              // console.log(Details);
+              return (
+                <span
+                  key={index}
+                  onClick={() => {
+                    menuChange(CourseData.title, index);
+                  }}
+                  className={
+                    CourseLoop[index].value ? styles.ActiveSpan : styles.span
+                  }
+                >
+                  {CourseData.title}
+                </span>
+              );
+            })}
+          </div>
         </div>
         <div>
           {Details.map((courseDetail, index) => {
@@ -150,82 +153,89 @@ const Course = ({ dataScience, radio, dataScienceCounselling }) => {
                           modules={[Pagination]}
                           className="mySwiper"
                         >
-                          {courseDetail.courseDetails.map((viewAllData) => {
-                            const {
-                              id,
-                              title,
-                              title1,
-                              img,
-                              para,
-                              link1,
-                              rating,
-                              tag,
-                              ratingCount,
-                              courseTime,
-                            } = viewAllData;
-                            // console.log(viewAllData);
+                          {courseDetail.courseDetails.map(
+                            (viewAllData, index) => {
+                              const {
+                                id,
+                                title,
+                                title1,
+                                img,
+                                para,
+                                link1,
+                                rating,
+                                tag,
+                                ratingCount,
+                                courseTime,
+                              } = viewAllData;
+                              // console.log(viewAllData);
 
-                            return (
-                              <SwiperSlide className={styles.leftSide} key={id}>
-                                <div key={id} className={styles.SliderWrap}>
-                                  <a href={link1} className={styles.imgWrap}>
-                                    <div className="imgWrapper">
-                                      <Image
-                                        src={img}
-                                        width={100}
-                                        height={272}
-                                        quality={100}
-                                        unoptimized={true}
-                                        style={{ objectFit: "cover" }}
-                                        alt="data science course"
-                                      />
-                                    </div>
-                                  </a>
-                                  <div className={styles.contentBox}>
-                                    <div className={styles.paraDiv}>
-                                      <p className={styles.Div}>
-                                        <div className={styles.tag}>{tag}</div>{" "}
-                                        <div className={styles.rate}>
-                                          {rating.map((data, index) => {
-                                            return data;
-                                          })}
-                                        </div>
-                                      </p>
-                                      <div className={styles.headWrapper}>
-                                        <h6 className={styles.mainHead}>
-                                          {title}
-                                          <br />
-                                          {title1}
-                                        </h6>
+                              return (
+                                <SwiperSlide
+                                  className={styles.leftSide}
+                                  key={index}
+                                >
+                                  <div key={id} className={styles.SliderWrap}>
+                                    <a href={link1} className={styles.imgWrap}>
+                                      <div className="imgWrapper">
+                                        <Image
+                                          src={img}
+                                          width={100}
+                                          height={272}
+                                          quality={100}
+                                          unoptimized={true}
+                                          style={{ objectFit: "cover" }}
+                                          alt="data science course"
+                                        />
                                       </div>
-                                      <hr />
+                                    </a>
+                                    <div className={styles.contentBox}>
                                       <div className={styles.paraDiv}>
-                                        <p>
-                                          <BiTimeFive
-                                            className={styles.checkCircle}
-                                          />
-                                          {para[0]} | {courseTime}
-                                        </p>
-                                        {/* <p>
+                                        <div className={styles.Div}>
+                                          <div className={styles.tag}>
+                                            {tag}
+                                          </div>{" "}
+                                          <div className={styles.rate}>
+                                            {rating.map((data, index) => {
+                                              return <p key={index}>{data}</p>;
+                                            })}
+                                          </div>
+                                        </div>
+                                        <div className={styles.headWrapper}>
+                                          <h6 className={styles.mainHead}>
+                                            {title}
+                                            <br />
+                                            {title1}
+                                          </h6>
+                                        </div>
+                                        <hr />
+                                        <div className={styles.paraDiv}>
+                                          <p>
+                                            <BiTimeFive
+                                              className={styles.checkCircle}
+                                            />
+                                            {para[0]} | {courseTime}
+                                          </p>
+                                          {/* <p>
                                           <AiOutlineFundProjectionScreen
                                             className={styles.checkCircle}
                                             style={{ color: "#edb552" }}
                                           />
                                           {para[1]}
                                         </p> */}
-                                        <p className={styles.singleP}>
-                                          <TbCurrencyRupee
-                                            className={styles.checkCircle}
-                                          />
-                                          {para[2]}
-                                        </p>
+                                          <p className={styles.singleP}>
+                                            <TbCurrencyRupee
+                                              className={styles.checkCircle}
+                                            />
+                                            {para[2]}
+                                          </p>
+                                        </div>
                                       </div>
                                     </div>
                                   </div>
-                                </div>
-                              </SwiperSlide>
-                            );
-                          })}
+                                </SwiperSlide>
+                              );
+                            }
+                          )}
                         </Swiper>
                       </div>
                     </div>
