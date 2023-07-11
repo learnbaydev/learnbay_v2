@@ -14,7 +14,7 @@ import CategorySection from "../../../components/BlogPage/HomePage/CategorySecti
 
 export default function blog({ allPostsData, categoryPostTag }) {
   // console.log(allPostsData);
-  console.log(categoryPostTag, "blog");
+  // console.log(categoryPostTag, "blog");
   // const length = parseInt(allPostsData.length);
   // let singleCategoryPost = allPostsData.map((post) => {
   //   return post.category;

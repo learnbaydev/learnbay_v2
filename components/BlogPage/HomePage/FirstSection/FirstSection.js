@@ -17,6 +17,17 @@ function FirstSection({ allPostsData }) {
     setSearch(value.target.value);
   }
 
+  useEffect(() => {
+    //
+    var input = document.getElementById("myInput");
+    input.addEventListener("keypress", function (event) {
+      if (event.key === "Enter") {
+        event.preventDefault();
+        document.getElementById("myBtn").click();
+      }
+    });
+  });
+
   return (
     <>
       <div className={styles.upperDiv}>
@@ -35,17 +46,20 @@ function FirstSection({ allPostsData }) {
           <div className={styles.formControl}>
             <CiSearch />
             <input
+              id="myInput"
               onChange={findSerach}
               type="text"
               placeholder="Search"
               aria-label="Search"
               aria-describedby="button-search"
             />
+
             <Link
               href={{
-                pathname: "/Search",
+                pathname: "/blog/Search",
                 query: { q: search?.toLowerCase() },
               }}
+              id="myBtn"
             ></Link>
           </div>
         </div>

@@ -8,6 +8,7 @@ import Image from "next/image";
 
 
 
+
 export default function Sidebar() {
   const [search, setSearch] = useState()
   function findSerach(value) {
@@ -29,20 +30,7 @@ export default function Sidebar() {
   
 
   return (
-    // <div className="col-lg-4">
-
-    //   <div className="card mb-4">
-    //     <div className="card-header">Search</div>
-    //     <div className="card-body">
-    //       <div className="input-group">
-    //         <input onChange={findSerach} className="form-control" type="text" placeholder="Enter search term..." aria-label="Enter search term..." aria-describedby="button-search" />
-    //         <Link href={{ pathname: '/Search', query: { q: search?.toLowerCase() } }}> 
-    //           <a className="btn btn-primary" id="button-search">Go!</a>
-    //         </Link>
-    //       </div>
-    //     </div>
-    //   </div>
-    // </div>
+   
 
     <div
       className={styles.container}
@@ -54,13 +42,10 @@ export default function Sidebar() {
         type="text"
         placeholder="Enter search term..."
       />
-      <Link href={{ pathname: '/Search', query: { q: search?.toLowerCase() } }} >
-        <p className={styles.searchicon} id="myBtn"><Image src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main-blog/blog/search.png" alt="" height={20} width={20} /></p>
+      <Link href={{ pathname: '/blog/Search', query: { q: search?.toLowerCase() } }} id="myBtn" >
       </Link>   
 
-        {/* <a href={`/blogs`} className={styles.blogButton}>
-            <button>View All Blogs</button>
-        </a>  */}
+   
     </div>
 
   )
