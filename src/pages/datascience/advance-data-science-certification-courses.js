@@ -111,7 +111,7 @@ function Blockchain() {
         />
         <Testimonial
           redirectDS={true}
-          Testimonial={DataScienceCourseData[0].testimonial}
+          testimonialArray={DataScienceCourseData[0].testimonial}
           heading="Our Alumni Speak"
           para="Discover the impact of our programs on career growth"
         />
