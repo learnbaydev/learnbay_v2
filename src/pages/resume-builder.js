@@ -5,6 +5,8 @@ import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
 import FirstSection from "../../components/WebPage/ResumeBuilder/FirstSection/FirstSection";
 import ThirdSection from "../../components/WebPage/ResumeBuilder/ThirdSection/ThirdSection";
+import BottomBar from "../../components/WebPage/BottomBar/BottomBar";
+import OfferPopup from "../../components/OfferPopup/OfferPopup";
 
 const ResumeBuilder = () => {
   return (
@@ -29,6 +31,8 @@ const ResumeBuilder = () => {
       <FirstSection />
       <ThirdSection idss="4PBfjKsw580" />
       <Footer />
+      <BottomBar radio={true} />
+      <OfferPopup />
     </div>
   );
 };

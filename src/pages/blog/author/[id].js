@@ -15,6 +15,8 @@ import Link from "next/link";
 import { FaLinkedinIn } from "react-icons/fa";
 import Navbar from "../../../../components/Navbar/Navbar";
 import Footer from "../../../../components/Footer/Footer";
+import BottomBar from "../../../../components/WebPage/BottomBar/BottomBar";
+import OfferPopup from "../../../../components/OfferPopup/OfferPopup";
 
 export default function CategoryBlog({ categoryPosts }) {
   const [visible, setVisible] = useState(9);
@@ -22,20 +24,10 @@ export default function CategoryBlog({ categoryPosts }) {
   const showMoreItems = () => {
     setVisible((prevValue) => prevValue + 9);
   };
-  const [state, setstate] = useState();
 
   const authortitle = categoryPosts[0]?.authortitle || "";
 
   const adesc = categoryPosts[0]?.adesc || "";
-
-  // useEffect(() => {
-  //   categoryPosts.map((value,i) =>{
-  //     setstate(value.author)
-  //     // console.log(value.author)
-  //   })
-
-  // }, );
-  // console.log("@@@@@@",cattitle)
   return (
     <>
       <NextSeo
@@ -132,7 +124,6 @@ export default function CategoryBlog({ categoryPosts }) {
                       src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main-blog/blog/avatar-02.webp"
                       width="80"
                       height="45"
-                      layout="intrinsic"
                       alt="blog_writer"
                       className={styles.blogIMg}
                     />
@@ -155,6 +146,8 @@ export default function CategoryBlog({ categoryPosts }) {
         <button onClick={showMoreItems}>Load More...</button>
       </div>
       <Footer />
+      <BottomBar radio={true}/>
+      <OfferPopup />
     </>
   );
 }

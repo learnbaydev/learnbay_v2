@@ -1,9 +1,10 @@
 import React from "react";
 import Head from "next/head";
-import Privacy from "../../components/WebPage/Privacy/Privacy";
+import Privacy from "../../components/WebPage/privacy/privacy";
 import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
 import OfferPopup from "../../components/OfferPopup/OfferPopup";
+import BottomBar from "../../components/WebPage/BottomBar/BottomBar";
 function privacy() {
   return (
     <div>
@@ -23,6 +24,7 @@ function privacy() {
         <Privacy />
         <OfferPopup offer={false} />
         <Footer />
+        <BottomBar radio={true} />
       </main>
     </div>
   );
