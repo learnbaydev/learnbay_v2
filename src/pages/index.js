@@ -2,6 +2,8 @@ import Head from "next/head";
 import Navbar from "../../components/Navbar/Navbar";
 import dynamic from "next/dynamic";
 import { DataScienceCourseData } from "../../Data/AdvanceDataScienceCourse";
+import BottomBar from "../../components/WebPage/BottomBar/BottomBar";
+import OfferPopup from "../../components/OfferPopup/OfferPopup";
 const BoxShape = dynamic(() =>
   import("../../components/HomePage/BoxShape/BoxShape")
 );
@@ -70,6 +72,8 @@ export default function Home() {
       <ContactUs dataScienceCounselling={true} radio={true} />
       <SeventhSection />
       <Footer />
+      <BottomBar radio={true}/>
+      <OfferPopup />
     </>
   );
 }

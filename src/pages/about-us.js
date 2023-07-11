@@ -23,9 +23,9 @@ export default function Home() {
       <main>
         <Navbar radio={true}/>
         <AboutUs />
-        {/* <OfferPopup offer={false} />
-        <BottomBar /> */}
         <Footer />
+        <OfferPopup />
+        <BottomBar radio={true} />
       </main>
     </div>
   );

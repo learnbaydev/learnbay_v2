@@ -5,8 +5,7 @@ import TyPageCta from "../../components/WebPage/Thankyou/TyPageCta/TyPageCta";
 import Survey from "../../components/WebPage/Thankyou/Survey/Survey";
 import Footer from "../../components/Footer/Footer";
 import BottomBar from "../../components/WebPage/BottomBar/BottomBar";
-
-
+import OfferPopup from "../../components/OfferPopup/OfferPopup";
 
 const ThankYouDemo = () => {
   const dataArray = [];
@@ -52,6 +51,8 @@ const ThankYouDemo = () => {
       />
       <BottomBar />
       <Footer />
+      <BottomBar radio={true} />
+      <OfferPopup />
     </div>
   );
 };

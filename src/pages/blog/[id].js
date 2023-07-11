@@ -17,6 +17,8 @@ import Navbar from "../../../components/Navbar/Navbar";
 import Footer from "../../../components/Footer/Footer";
 import Blog from "../../../components/BlogPage/Blog/Category/CategorySection";
 import FirstSection from "../../../components/BlogPage/Blog/FirstSection/FirstSection";
+import OfferPopup from "../../../components/OfferPopup/OfferPopup";
+import BottomBar from "../../../components/WebPage/BottomBar/BottomBar";
 
 export default function Post({ postData, posts, allPostsData }) {
   // console.log(postData);
@@ -220,6 +222,8 @@ export default function Post({ postData, posts, allPostsData }) {
         </div>
       </main>
       <Footer />
+      <OfferPopup />
+      <BottomBar radio={true} />
     </>
   );
 }
