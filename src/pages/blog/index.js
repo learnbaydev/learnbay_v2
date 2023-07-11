@@ -1,29 +1,27 @@
-import React from "react";
-import { getSortedPostsData } from "../../../lib/posts";
-import styles from "../../styles/blogM.module.css";
 import Head from "next/head";
-import Image from "next/image";
-import { BsDot } from "react-icons/bs";
-import { sortByDate } from "../../../utils";
-import { IoTimeOutline } from "react-icons/io5";
-import generateRssFeed from "../../../lib/generateRss";
-import generateCategoryRssFeed from "../../../lib/geneRateCategoryRss";
-import Link from "next/link";
-import Sidebar from "../../../components/BlogPage/Sidebar";
-import Search from "../../../components/BlogPage/search";
-import utilStyles from "../../styles/utils.module.css";
+import React, { useEffect, useState } from "react";
 import Navbar from "../../../components/Navbar/Navbar";
 import Footer from "../../../components/Footer/Footer";
+import generateRssFeed from "../../../lib/generateRss";
+import generateCategoryRssFeed from "../../../lib/geneRateCategoryRss";
+import { getSortedPostsData } from "../../../lib/posts";
+import { sortByDate } from "../../../utils";
+// import BottomBar from "../../../components/WebPage/BottomBar/BottomBar";
+import OfferPopup from "../../../components/OfferPopup/OfferPopup";
+import FirstSection from "../../../components/BlogPage/HomePage/FirstSection/FirstSection";
+import CourseSection from "../../../components/BlogPage/CourseSection/CourseSection";
+import CategorySection from "../../../components/BlogPage/HomePage/CategorySection/CategorySection";
 
-export default function blog({ allPostsData }) {
-  const length = parseInt(allPostsData.length);
-  let singleCategoryPost = allPostsData.map((post) => {
-    return post.category;
-  });
-  let categoryPostTag = Array.from(new Set(singleCategoryPost));
-
+export default function blog({ allPostsData, categoryPostTag }) {
+  // console.log(allPostsData);
+  console.log(categoryPostTag, "blog");
+  // const length = parseInt(allPostsData.length);
+  // let singleCategoryPost = allPostsData.map((post) => {
+  //   return post.category;
+  // });
+  // let categoryPostTag = Array.from(new Set(singleCategoryPost));
   return (
-    <>
+    <div>
       <Head>
         <title>
           LearnBay Blogs - Latest Career Upskilling Trends and Learning
@@ -48,264 +46,36 @@ export default function blog({ allPostsData }) {
         <meta name="keywords" content="Learnbay Blogs" />
         <meta name="robots" content="index, follow" />
       </Head>
-      <Navbar />
-      <div className={styles.BackP} style={{ marginTop: "70px" }}>
-        {/* <h4>
-        <b>Our Blogs</b>
+      <main>
+        <Navbar popup={true} dataScienceCounselling={true} />
+        <FirstSection allPostsData={allPostsData} />
+        <CategorySection
+          categoryPostTag={categoryPostTag}
+          allPostsData={allPostsData}
+        />
 
-      </h4> */}
-      </div>
-      <section className={styles.blogHead}>
-        <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-          <p>Latest Blogs</p>
+        {/* <OfferPopup offer={false} /> */}
 
-          <Sidebar />
-        </section>
-      </section>
-
-
-      <section className={styles.blogWrap}>
-        {allPostsData
-          .slice(0, 3)
-          .map(({ id, date, title, author, readTime, headerImg }) => {
-            const url = `/blog/${id}`;
-            let makeUrl = author.toLowerCase().replace(/\s+/g, "-");
-            let aurl = `/blog/author/${makeUrl}`;
-            return (
-              <div key={id}>
-                <div
-                  className={styles.blog}
-                  key={id}
-                  style={{
-                    background: `linear-gradient(0deg, rgba(0,0,0,0.8) 34%, rgba(255,255,255,0) 200%), url(${headerImg}) no-repeat center center `,
-                    backgroundSize: "cover",
-                  }}
-                >
-                  <Link href={url} passHref>
-                    <h4>{title}</h4>
-                  </Link>
-
-                  <div className={styles.profileWrap}>
-                    <Link href={aurl} passHref>
-                      <Image
-                        src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main-blog/avatar-02.webp"
-                        width="80"
-                        height="45"
-                        layout="intrinsic"
-                        alt="blog_writer"
-                        className={styles.blogIMg}
-                      />
-                    </Link>
-                    <span>
-                      <Link href={aurl} passHref>
-                        <h5>{author}</h5>
-                      </Link>
-                      <p>
-                        {date} <BsDot className={styles.dot} />
-                        <IoTimeOutline className={styles.time} />
-                        {readTime}
-                      </p>
-                    </span>
-                  </div>
-                </div>
-              </div>
-            );
-          })}
-      </section>
-      {[...categoryPostTag].map((post, i) => {
-        let tag = post;
-        const categoryPosts = allPostsData.filter(
-          (post) => post.category === tag
-        );
-        let makeUrl = post.toLowerCase().replace(/\s+/g, "-");
-        let url = `/blog/category/${makeUrl}`;
-        // let amakeUrl = author.toLowerCase().replace(/\s+/g, "-");
-        // let aurl = `/author/${makeUrl}`;
-        return (
-          <section className={styles.categoryPosts} key={i}>
-            <span>
-              <p className={styles.tagNameH}>
-                {post}{" "}
-                <a href={url}>
-                  <button>View More</button>
-                </a>
-              </p>{" "}
-            </span>
-            <div className={styles.categoryWrapper}>
-              <div>
-                {categoryPosts
-                  .slice(0, 2)
-                  .map(
-                    ({
-                      id,
-                      date,
-                      title,
-                      author,
-                      readTime,
-                      headerImg,
-                      tag,
-                      category,
-                      desc,
-                    }) => {
-                      let url = `/blog/${id}`;
-                      let tUrl = `/blog/category/${category
-                        .toLowerCase()
-                        .replace(/\s+/g, "-")}`;
-
-                      // console.log("@@@@", categoryPosts)
-                      let amakeUrl = author.toLowerCase().replace(/\s+/g, "-");
-                      let aurl = `/blog/author/${amakeUrl}`;
-                      return (
-                        <div className={styles.categoryPost} key={id}>
-                          <div className={styles.leftCategoryPost}>
-                            <a href={url} target="_blank" rel="noreferrer">
-                              <Image
-                                src={headerImg}
-                                width="300"
-                                height="180"
-                                alt={categoryPosts.id}
-                                layout="intrinsic"
-                                className={styles.categoryPostImg}
-                              />
-                            </a>
-                          </div>
-                          <div className={styles.rightCategoryPost} key={id}>
-                            <a
-                              href={tUrl}
-                              target="_blank"
-                              rel="noreferrer"
-                              className={styles.link}
-                            >
-                              <span className={styles.tagSpan}>{category}</span>
-                            </a>
-                            <a href={url} target="_blank" rel="noreferrer">
-                              <h4>{title}</h4>
-                            </a>
-                            <p>{desc}</p>
-
-                            <div className={styles.profileWrap}>
-                              <Link href={aurl}>
-                                <Image
-                                  src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main-blog/avatar-02.webp"
-                                  width="80"
-                                  height="45"
-                                  layout="intrinsic"
-                                  alt="blog_writer"
-                                  className={styles.blogIMg}
-                                />
-                              </Link>
-                              <span>
-                                <Link href={aurl}>
-                                  <h5>{author}</h5>
-                                </Link>
-                                <p>
-                                  {date} <BsDot className={styles.dot} />
-                                  <IoTimeOutline className={styles.time} />
-                                  {readTime}
-                                </p>
-                              </span>
-                            </div>
-                          </div>
-                        </div>
-                      );
-                    }
-                  )}
-              </div>
-              <div className={styles.categoryPostRightSide}>
-                {categoryPosts
-                  .slice(2, 3)
-                  .map(
-                    ({
-                      id,
-                      date,
-                      title,
-                      author,
-                      readTime,
-                      headerImg,
-                      tag,
-                      category,
-                      desc,
-                    }) => {
-                      let url = `/blog/${id}`;
-                      let tUrl = `/blog/category/${category
-                        .toLowerCase()
-                        .replace(/\s+/g, "-")}`;
-
-                      let amakeUrl = author.toLowerCase().replace(/\s+/g, "-");
-                      let aurl = `/blog/author/${amakeUrl}`;
-                      return (
-                        <div className={styles.categoryPost} key={id}>
-                          <div className={styles.leftCategoryPost}>
-                            <a href={url} target="_blank" rel="noreferrer">
-                              <Image
-                                src={headerImg}
-                                width="400"
-                                height="190"
-                                alt={categoryPosts.id}
-                                layout="intrinsic"
-                                className={styles.categoryPostImg}
-                              />
-                            </a>
-                          </div>
-                          <div className={styles.rightCategoryPost} key={id}>
-                            <a
-                              href={tUrl}
-                              target="_blank"
-                              rel="noreferrer"
-                              className={styles.link}
-                            >
-                              <span className={styles.tagSpan}>{category}</span>
-                            </a>
-                            <a href={url} target="_blank" rel="noreferrer">
-                              <h4>{title}</h4>
-                            </a>
-                            <p>{desc}</p>
-
-                            <div className={styles.profileWrap}>
-                              <Link href={aurl}>
-                                <Image
-                                  src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main-blog/avatar-02.webp"
-                                  width="80"
-                                  height="45"
-                                  layout="intrinsic"
-                                  alt="blog_writer"
-                                  className={styles.blogIMg}
-                                />
-                              </Link>
-                              <span>
-                                <Link href={aurl}>
-                                  <h5>{author}</h5>
-                                </Link>
-                                <p>
-                                  {date} <BsDot className={styles.dot} />
-                                  <IoTimeOutline className={styles.time} />
-                                  {readTime}
-                                </p>
-                              </span>
-                            </div>
-                          </div>
-                        </div>
-                      );
-                    }
-                  )}
-              </div>
-            </div>
-          </section>
-        );
-      })}
-      <Footer />
-    </>
+        {/* <BottomBar /> */}
+        <CourseSection />
+        <Footer />
+      </main>
+    </div>
   );
 }
-
 export async function getStaticProps(_context) {
-  // await generateRssFeed();
-  // await generateCategoryRssFeed(); 
+  await generateRssFeed();
+  await generateCategoryRssFeed();
   const allPostsData = getSortedPostsData();
+  let singleCategoryPost = allPostsData.map((post) => {
+    return post.category;
+  });
+  let categoryPostTag = Array.from(new Set(singleCategoryPost));
 
   return {
     props: {
-      allPostsData: allPostsData.sort(sortByDate),
+      allPostsData: allPostsData.sort(sortByDate).slice(0, 10),
+      categoryPostTag,
     },
   };
 }

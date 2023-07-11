@@ -1,29 +1,46 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./CategorySection.module.css";
 import Link from "next/link";
 import Image from "next/image";
 
-export default function CategorySection({ categoryPostTag, allPostsData }) {
+export default function CategorySection({ categoryPostTag }) {
+  const [allPostsData, setAllBlogPostsData] = useState([]);
+  useEffect(() => {
+    const fetchCertificateId = async () => {
+      const data = await fetch("/api/sendBlog", {
+        method: "GET",
+      });
+
+      if (data.status === 200) {
+        const { blogData } = await data.json();
+        setAllBlogPostsData(blogData);
+      }
+    };
+    fetchCertificateId();
+  }, []);
+
   return (
     <>
       {[...categoryPostTag].slice(0, 2).map((post, i) => {
         let tag = post;
+
         const categoryPosts = allPostsData.filter(
           (post) => post.category === tag
         );
         let makeUrl = post.toLowerCase().replace(/\s+/g, "-");
         let url = `/blog/category/${makeUrl}`;
 
-        console.log("@@@@", categoryPostTag);
+        // console.log("@@@@", categoryPostTag);
 
         const firstBlogPosts = categoryPosts.slice(0, 6);
-        const secondBlogPosts = categoryPosts.slice(0, 4);
 
         return (
           <section className={styles.categoryPosts} key={i}>
             <div className={styles.viewMoreSection}>
               <div className={styles.viewMoreSection1}>
-                <h2>{post} (234)</h2>
+                <h2>
+                  {post} ({categoryPosts.length})
+                </h2>
                 <Link href={url} passHref>
                   <p>View All</p>
                 </Link>
@@ -35,21 +52,8 @@ export default function CategorySection({ categoryPostTag, allPostsData }) {
             <div className={styles.categoryWrapper}>
               <div className={styles.blogWrap}>
                 {firstBlogPosts.map(
-                  ({
-                    id,
-                    date,
-                    title,
-                    author,
-                    readTime,
-                    headerImg,
-                    tag,
-                    category,
-                    desc,
-                  }) => {
+                  ({ id, date, title, author, headerImg, desc }) => {
                     let url = `/blog/${id}`;
-                    let tUrl = `/blog/category/${category
-                      .toLowerCase()
-                      .replace(/\s+/g, "-")}`;
 
                     let amakeUrl = author.toLowerCase().replace(/\s+/g, "-");
                     let aurl = `/blog/author/${amakeUrl}`;
@@ -69,53 +73,49 @@ export default function CategorySection({ categoryPostTag, allPostsData }) {
                         </div>
                         <div className={styles.profileWrap}>
                           <Link href={url} passHref>
-                            <h4>
-                              The Future of Data Analytics Career Career{"..."}
-                            </h4>
-                            <p>
-                              The willingness of businesses to invest in
-                              Artificial Intelligence (AI){"..."}
-                            </p>
+                            <h4>{title}...</h4>
+                          </Link>
+                          <p>{desc.substring(0, 60)}...</p>
+                          <Link href={url} passHref>
                             <span>Read More</span>
-                            <div className={styles.authordiv}>
-                              <hr className={styles.hrline} />
+                          </Link>
+                          <div className={styles.authordiv}>
+                            <hr className={styles.hrline} />
+                            <Link href={aurl}>
                               <p>
                                 {date} <b>By</b>
                                 <span>{author}</span>
                               </p>
-                            </div>
-                          </Link>
+                            </Link>
+                          </div>
                         </div>
                       </div>
                     );
                   }
                 )}
               </div>
-
+              {/*side bar map function ------start------*/}
               {i === 0 && (
                 <div className={styles.categoryPostRightSide}>
                   <div className={styles.categoryPost}>
                     <div className={styles.rightCategoryPostFirst}>
-                      {secondBlogPosts.map(
-                        ({ id, date, title, author, category, desc }) => {
+                      {allPostsData
+                        .slice(10, 20)
+                        .map(({ id, date, title, author, category, desc }) => {
                           let url = `/blog/${id}`;
                           let tUrl = `/blog/category/${category
                             .toLowerCase()
                             .replace(/\s+/g, "-")}`;
 
-                          let amakeUrl = author
-                            .toLowerCase()
-                            .replace(/\s+/g, "-");
-                          let aurl = `/blog/author/${amakeUrl}`;
                           return (
                             <div key={id}>
-                              <a href="#" target="_blank" rel="noreferrer">
+                              <a href={url} target="_blank" rel="noreferrer">
                                 <p>{title}</p>
                               </a>
                               <div className={styles.rightCategoryPostSecond}>
                                 <p>{date}</p>
                                 <Link
-                                  href="#"
+                                  href={tUrl}
                                   target="_blank"
                                   rel="noreferrer"
                                   className={styles.link}
@@ -126,54 +126,12 @@ export default function CategorySection({ categoryPostTag, allPostsData }) {
                               <hr className={styles.hrline} />
                             </div>
                           );
-                        }
-                      )}
+                        })}
                     </div>
                   </div>
                 </div>
               )}
             </div>
-           
-            {i === 1 && (
-              <div className={styles.categoryPostRightSideM}>
-                <div className={styles.categoryPost}>
-                  <div className={styles.rightCategoryPostFirst}>
-                    {secondBlogPosts.map(
-                      ({ id, date, title, author, category, desc }) => {
-                        let url = `/blog/${id}`;
-                        let tUrl = `/blog/category/${category
-                          .toLowerCase()
-                          .replace(/\s+/g, "-")}`;
-
-                        let amakeUrl = author
-                          .toLowerCase()
-                          .replace(/\s+/g, "-");
-                        let aurl = `/blog/author/${amakeUrl}`;
-                        return (
-                          <div key={id}>
-                            <a href="#" target="_blank" rel="noreferrer">
-                              <p>{title}</p>
-                            </a>
-                            <div className={styles.rightCategoryPostSecond}>
-                              <p>{date}</p>
-                              <Link
-                                href="#"
-                                target="_blank"
-                                rel="noreferrer"
-                                className={styles.link}
-                              >
-                                <p className={styles.tagSpan}>{category}</p>
-                              </Link>
-                            </div>
-                            <hr className={styles.hrline} />
-                          </div>
-                        );
-                      }
-                    )}
-                  </div>
-                </div>
-              </div>
-            )}
           </section>
         );
       })}

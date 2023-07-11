@@ -6,7 +6,7 @@ import { CiSearch } from "react-icons/ci";
 import dynamic from "next/dynamic";
 const Button = dynamic(() => import("../../Global/Button/Button"));
 
-function CategorySection({ categoryPosts }) {
+function CategorySection({ categoryPosts, categoryPostTag }) {
   const [search, setSearch] = useState();
   function findSerach(value) {
     setSearch(value.target.value);
@@ -17,7 +17,6 @@ function CategorySection({ categoryPosts }) {
     setSelectedOption(e.target.value);
   };
 
-  
   const [visible, setVisible] = useState(3);
 
   const showMoreItems = () => {
@@ -47,9 +46,7 @@ function CategorySection({ categoryPosts }) {
             >
               <option value="">Categories</option>
               <option value="Data-Science">Data Science</option>
-              <option value="Software-Decvelopmewnt">
-                Software Decvelopmewnt
-              </option>
+              <option value="Software-Development">Software Development</option>
             </select>
           </div>
           <div className={styles.formControl}>
@@ -75,21 +72,13 @@ function CategorySection({ categoryPosts }) {
           {categoryPosts
             .slice(0, 4)
             .map(
-              ({ id, date, title, author, desc, headerImg, categoryPosts }) => {
+              (
+                { id, date, title, author, desc, headerImg, categoryPosts },
+                index
+              ) => {
                 const url = `/blog/${id}`;
                 return (
-                  <div key={id} className={styles.blogUpper}>
-                    <div className={styles.blog}>
-                      {" "}
-                      <Image
-                        src={headerImg}
-                        width="300"
-                        height="180"
-                        // alt={categoryPosts.id}
-                        className={styles.categoryPostImg}
-                        style={{ objectFit: "cover" }}
-                      />
-                    </div>
+                  <div key={index} className={styles.blogUpper}>
                     <div className={styles.profileWrap}>
                       <Link href={url} passHref>
                         <h4>{title}</h4>
@@ -109,30 +98,35 @@ function CategorySection({ categoryPosts }) {
                         </div>
                       </Link>
                     </div>
+                    <div className={styles.blog}>
+                      <div className="bgWrap">
+                        <Image
+                          src={headerImg}
+                          fill={true}
+                          // alt={categoryPosts.id}
+                          className={styles.categoryPostImg}
+                          style={{ objectFit: "cover" }}
+                        />
+                      </div>
+                    </div>
                   </div>
                 );
               }
             )}
-        <div className={styles.loadMore} onClick={showMoreItems}>
-  <Button 
-                className={styles.outLineBtn}
-                text="Load More..."
-              />
-</div>
-</div>
+          <div className={styles.loadMore} onClick={showMoreItems}>
+            <Button className={styles.outLineBtn} text="Load More..." />
+          </div>
+        </div>
         <div className={styles.rightSide}>
-            <p>Interview Questions (256)</p>
-            <p>Interview Questions (256)</p>
-            <p>Interview Questions (256)</p> 
-            <p>Interview Questions (256)</p>
-            <p>Interview Questions (256)</p>
-            <p>Interview Questions (256)</p>
-            <p>Interview Questions (256)</p>
-            <p>Interview Questions (256)</p>
-            <p>Interview Questions (256)</p>
-            <p>Interview Questions (256)</p>
-            <p>Interview Questions (256)</p>
-            <p>Interview Questions (256)</p>
+          {categoryPostTag.map((data, index) => {
+            let makeUrl = data.toLowerCase().replace(/\s+/g, "-");
+            let url = `/blog/category/${makeUrl}`;
+            return (
+              <Link href={url}>
+                <p key={index}>{data}</p>
+              </Link>
+            );
+          })}
         </div>
       </section>
     </>
