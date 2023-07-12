@@ -11,6 +11,8 @@ import Navbar from "../../../../components/Navbar/Navbar";
 import Footer from "../../../../components/Footer/Footer";
 import CategorySection from "../../../../components/BlogPage/CategoryPage/CategorySection";
 import CourseSection from "../../../../components/BlogPage/CourseSection/CourseSection";
+import OfferPopup from "../../../../components/OfferPopup/OfferPopup";
+import BottomBar from "../../../../components/WebPage/BottomBar/BottomBar";
 
 export default function CategoryBlog({ categoryPosts, categoryPostTag }) {
   const [visible, setVisible] = useState(9);
@@ -59,6 +61,8 @@ export default function CategoryBlog({ categoryPosts, categoryPostTag }) {
       <CourseSection />
 
       <Footer />
+      <OfferPopup />
+      <BottomBar radio={true} />
     </>
   );
 }

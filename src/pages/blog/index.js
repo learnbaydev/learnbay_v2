@@ -11,6 +11,7 @@ import OfferPopup from "../../../components/OfferPopup/OfferPopup";
 import FirstSection from "../../../components/BlogPage/HomePage/FirstSection/FirstSection";
 import CourseSection from "../../../components/BlogPage/CourseSection/CourseSection";
 import CategorySection from "../../../components/BlogPage/HomePage/CategorySection/CategorySection";
+import BottomBar from "../../../components/WebPage/BottomBar/BottomBar";
 
 export default function blog({ allPostsData, categoryPostTag }) {
   // console.log(allPostsData);
@@ -53,12 +54,10 @@ export default function blog({ allPostsData, categoryPostTag }) {
           categoryPostTag={categoryPostTag}
           allPostsData={allPostsData}
         />
-
-        {/* <OfferPopup offer={false} /> */}
-
-        {/* <BottomBar /> */}
         <CourseSection />
         <Footer />
+        <OfferPopup />
+        <BottomBar radio={true}/>
       </main>
     </div>
   );

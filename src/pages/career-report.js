@@ -8,6 +8,8 @@ import styles from "../styles/Home.module.css";
 // import OfferPopup from "../../components/OfferPopup/OfferPopup";
 import SecondSection from "../../components/CareerReport/SecondSection/SecondSection";
 import ThirdSection from "../../components/CareerReport/ThirdSection/ThirdSection";
+import OfferPopup from "../../components/OfferPopup/OfferPopup";
+import BottomBar from "../../components/WebPage/BottomBar/BottomBar";
 
 function careerReport() {
   return (
@@ -36,8 +38,8 @@ function careerReport() {
       <FirstSection />
       <SecondSection />
       <ThirdSection />
-      {/* <OfferPopup offer={false} /> */}
-      {/* <BottomBar /> */}
+      <OfferPopup />
+      <BottomBar radio={true} />
       <Footer />
     </div>
   );

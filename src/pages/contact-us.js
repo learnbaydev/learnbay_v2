@@ -4,6 +4,7 @@ import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
 import OfferPopup from "../../components/OfferPopup/OfferPopup";
 import ContactUs from "../../components/WebPage/ContactUs/ContactUs";
+import BottomBar from '../../components/WebPage/BottomBar/BottomBar';
 
 function contactus() {
   return (
@@ -18,8 +19,8 @@ function contactus() {
       <main>  <Navbar popup={true} dataScienceCounselling={true} />
 
         <ContactUs />
-        <OfferPopup offer={false} />                      
-         
+        <OfferPopup />                      
+         <BottomBar radio={true} />
         <Footer />
       </main>
     </div>

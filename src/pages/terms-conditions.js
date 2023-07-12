@@ -1,9 +1,10 @@
 import React from "react";
 import Head from "next/head";
-import Terms from "../../components/WebPage/Terms/Terms";
+import Terms from "../../components/WebPage/terms/terms";
 import Navbar from "../../components/Navbar/Navbar";
 import OfferPopup from "../../components/OfferPopup/OfferPopup";
 import Footer from "../../components/Footer/Footer";
+import BottomBar from "../../components/WebPage/BottomBar/BottomBar";
 
 function terms() {
   return (
@@ -24,6 +25,8 @@ function terms() {
 
         <OfferPopup offer={false} />
         <Footer />
+        <BottomBar radio={true}/>
+        <OfferPopup />
       </main>
     </div>
   );

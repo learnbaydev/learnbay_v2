@@ -12,11 +12,15 @@ import { BsDot } from "react-icons/bs";
 import { IoTimeOutline } from "react-icons/io5";
 import Socialshare from "../../../components/BlogPage/Socialshare/Socialshare";
 import React, { useState } from "react";
-import { FaArrowRight, FaChevronDown, FaChevronUp } from "react-icons/fa";
+import { FaChevronDown } from "react-icons/fa";
 import Navbar from "../../../components/Navbar/Navbar";
 import Footer from "../../../components/Footer/Footer";
+import Blog from "../../../components/BlogPage/Blog/Category/CategorySection";
+import FirstSection from "../../../components/BlogPage/Blog/FirstSection/FirstSection";
+import OfferPopup from "../../../components/OfferPopup/OfferPopup";
+import BottomBar from "../../../components/WebPage/BottomBar/BottomBar";
 
-export default function Post({ postData, posts }) {
+export default function Post({ postData, posts, allPostsData }) {
   // console.log(postData);
   let makeUrl = postData.author.toLowerCase().replace(/\s+/g, "-");
   let aurl = `/blog/author/${makeUrl}`;
@@ -67,7 +71,9 @@ export default function Post({ postData, posts }) {
         </Head>
 
         <Navbar />
-        <div className={styles.DivImg}>
+
+        <FirstSection allPostsData={allPostsData} />
+        {/* <div className={styles.DivImg}>
           <Image
             src={postData.img}
             alt={postData.alt}
@@ -75,13 +81,13 @@ export default function Post({ postData, posts }) {
             width="100"
             height="35"
           />
-        </div>
+        </div> */}
       </section>
 
       <main>
         <div className={styles.Open}>
-          <Socialshare postData={postData} />
-          <div className={styles.headerInfo}>
+          {/* <Socialshare postData={postData} /> */}
+          {/* <div className={styles.headerInfo}>
             <h1>{postData.mainH1}</h1>
             <div className={styles.Bloginfo}>
               By{" "}
@@ -102,12 +108,12 @@ export default function Post({ postData, posts }) {
               <BsDot className="bIcon" /> {postData.publish}{" "}
               <strong className={styles.date}>{postData.date}</strong>
             </div>
-          </div>
+          </div> */}
           <div className={styles.bodyInfo}>
             <div className={styles.rightInfo}>
               <div className={styles.blogdiv1}>
                 <div className={styles.table}>
-                  <h5 className={styles.contentH}> Table of content</h5>
+                  {/* <h5 className={styles.contentH}> Table of content</h5> */}
 
                   <div className={styles.contentT}>
                     {postData.table.map((table, i) => {
@@ -121,13 +127,13 @@ export default function Post({ postData, posts }) {
                       const url = `/blog/#${uMake}`;
                       return (
                         <div key={i}>
-                          <span>
+                          <div className={styles.divContent}>
                             <p className={styles.tocContent}>
                               <Link href={url}>{table}</Link>
                             </p>
 
                             <hr className={styles.tableline} />
-                          </span>
+                          </div>
                         </div>
                       );
                     })}
@@ -210,10 +216,14 @@ export default function Post({ postData, posts }) {
                 <hr />
               </div>
             </div>
+
+            <Blog />
           </div>
         </div>
       </main>
       <Footer />
+      <OfferPopup />
+      <BottomBar radio={true} />
     </>
   );
 }

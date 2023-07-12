@@ -5,8 +5,8 @@ import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
 import BottomBar from "../../components/WebPage/BottomBar/BottomBar";
 import Image from "next/image";
-import OfferPopup from "../../components/OfferPopup/OfferPopup";
 import Head from "next/head";
+import OfferPopup from "../../components/OfferPopup/OfferPopup";
 
 const sumbit = () => {
   return (
@@ -35,14 +35,12 @@ const sumbit = () => {
             src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/Submit-info.png"
             width="441"
             height="600"
-            layout="intrinsic"
           />
         </div>
       </div>
-
-      {/* <OfferPopup offer={false} />                       */}
-      <BottomBar />
+      <BottomBar radio={true}/>
       <Footer />
+      <OfferPopup />
     </div>
   );
 };

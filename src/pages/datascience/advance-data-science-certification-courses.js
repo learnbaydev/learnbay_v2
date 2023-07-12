@@ -57,16 +57,8 @@ const Certificate = dynamic(() =>
 const FAQNew = dynamic(() =>
   import("../../../components/CoursePage/FAQNew/FAQNew")
 );
-import {
-  FaqData2,
-  DomainFaqData2,
-  PaymentFaqData2,
-  CapstoneFaqData2,
-  CertificationFaqData2,
-  jobFaqData2,
-  MentorshipFaqData2,
-  SupportFaqData2,
-} from "../../../components/CoursePage/FAQNew/FaqData";
+import OfferPopup from "../../../components/OfferPopup/OfferPopup";
+import BottomBar from "../../../components/WebPage/BottomBar/BottomBar";
 
 function Blockchain() {
   const [popups, setPopups] = useState(false);
@@ -97,23 +89,6 @@ function Blockchain() {
       </Head>
       <main>
         <Navbar popup={true} dataScienceCounselling={true} />
-        {/* <Popup trigger={popups} setTrigger={setPopups} className="popupModal">
-          <div className="leftPopup">
-            <div className="whiteP" />
-          </div>
-          <div className="RightPopup">
-            <h5>Apply For Counselling</h5>
-            {/* <p>Fill the below details to get started</p> */}
-        {/* <Form
-              popup={true}
-              setTrigger={setPopups}
-              fullStack={true}
-              dataScience={true}
-              titleCourse="Advanced Data Science and AI Program with domain specialization"
-              brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Advance+Data+Science+and+AI+Certification+Program+Learnbay.pdf"
-            />
-          </div>
-        </Popup> */}
         <FirstSection
           FirstTyped="Guaranteed Interview Calls"
           SecondTyped="Capstone Project Certificate"
@@ -136,7 +111,7 @@ function Blockchain() {
         />
         <Testimonial
           redirectDS={true}
-          Testimonial={DataScienceCourseData[0].testimonial}
+          testimonialArray={DataScienceCourseData[0].testimonial}
           heading="Our Alumni Speak"
           para="Discover the impact of our programs on career growth"
         />
@@ -206,6 +181,8 @@ function Blockchain() {
         <FAQNew FAQNewData={DataScienceCourseData[0].faq} />
         <SeventhSection />
         <Footer />
+        <OfferPopup />
+        <BottomBar />
       </main>
     </>
   );
