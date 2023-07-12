@@ -57,16 +57,6 @@ const Certificate = dynamic(() =>
 const FAQNew = dynamic(() =>
   import("../../../components/CoursePage/FAQNew/FAQNew")
 );
-import {
-  FaqData2,
-  DomainFaqData2,
-  PaymentFaqData2,
-  CapstoneFaqData2,
-  CertificationFaqData2,
-  jobFaqData2,
-  MentorshipFaqData2,
-  SupportFaqData2,
-} from "../../../components/CoursePage/FAQNew/FaqData";
 
 function Blockchain() {
   const [popups, setPopups] = useState(false);
