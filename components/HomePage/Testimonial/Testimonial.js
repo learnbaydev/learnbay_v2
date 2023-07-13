@@ -11,7 +11,7 @@ const ReviewPopup = dynamic(() => import("../ReviewPopup/ReviewPopup"));
 
 import { Pagination, Navigation } from "swiper";
 
-function Testimonial({ redirectDS, para, heading, Testimonial, testimonialArray }) {
+function Testimonial({ redirectDS, para, heading, Testimonial }) {
   const [mobile, setMobile] = useState(false);
   const [img, setImg] = useState({
     cLogo: "",
@@ -75,7 +75,7 @@ function Testimonial({ redirectDS, para, heading, Testimonial, testimonialArray 
                 modules={[Pagination, Navigation]}
                 className="mySwiper"
               >
-                {testimonialArray.map((data) => {
+                {Testimonial.map((data) => {
                   const {
                     id,
                     name,
