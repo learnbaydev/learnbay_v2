@@ -5,6 +5,7 @@ import Navbar from "../../components/Navbar/Navbar";
 import OfferPopup from "../../components/OfferPopup/OfferPopup";
 import Footer from "../../components/Footer/Footer";
 import dynamic from "next/dynamic";
+import BottomBar from "../../components/WebPage/BottomBar/BottomBar";
 const Button = dynamic(() => import("../../components/Global/Button/Button"));
 
 export default function Home() {
@@ -43,6 +44,8 @@ export default function Home() {
         </div>
         <OfferPopup offer={false} />
         <Footer />
+        <BottomBar radio={true} />
+        <OfferPopup />
       </main>
     </div>
   );

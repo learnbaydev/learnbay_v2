@@ -5,7 +5,6 @@ import styles from "../styles/Home.module.css";
 import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
 import BottomBar from "../../components/WebPage/BottomBar/BottomBar";
-import OfferPopup from "../../components/OfferPopup/OfferPopup";
 
 function learning() {
   return (
@@ -39,8 +38,7 @@ function learning() {
         dataScienceCounselling={true}
         radio={true}
       />{" "}
-      <OfferPopup offer={false} />
-      <BottomBar />
+      <BottomBar radio={true}/>
       <Footer />
     </div>
   );
