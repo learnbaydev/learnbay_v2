@@ -2,7 +2,7 @@ import {
   MdOutlineCastForEducation,
   MdOutlineWorkOutline,
 } from "react-icons/md";
-import styles from "../components/CoursePage/WhoProgram/ThirdSection.module.css";
+import styles from "../../components/CoursePage/WhoProgram/ThirdSection.module.css";
 import { FaUserGraduate } from "react-icons/fa";
 import { GiStairsGoal } from "react-icons/gi";
 
