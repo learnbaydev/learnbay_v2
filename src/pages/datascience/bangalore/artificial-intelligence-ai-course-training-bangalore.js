@@ -1,39 +1,40 @@
 import Head from "next/head";
-import styles from "../../styles/Home.module.css";
+import styles from "../../../styles/Home.module.css";
 import dynamic from "next/dynamic";
 const FirstSection = dynamic(() =>
-  import("../../../components/CoursePage/FirstSection/FirstSection")
+  import("../../../../components/CoursePage/FirstSection/FirstSection")
 );
 const SecondSection = dynamic(() =>
-  import("../../../components/CoursePage/SecondSection/SecondSection")
+  import("../../../../components/CoursePage/SecondSection/SecondSection")
 );
 const ProgramInfo = dynamic(() =>
-  import("../../../components/SEO/ProgramInfo/ProgramInfo")
+  import("../../../../components/SEO/ProgramInfo/ProgramInfo")
 );
 const SeventhSection = dynamic(() =>
-  import("../../../components/Global/SeventhSection/SeventhSection")
+  import("../../../../components/Global/SeventhSection/SeventhSection")
 );
 const ProgramFee = dynamic(() =>
-  import("../../../components/SEO/ProgramInfo/ProgramFee/ProgramFee")
+  import("../../../../components/SEO/ProgramInfo/ProgramFee/ProgramFee")
 );
 const CityText = dynamic(() =>
-  import("../../../components/SEO/CityText/CityText")
+  import("../../../../components/SEO/CityText/CityText")
 );
 const CitiesLeft = dynamic(() =>
-  import("../../../components/SEO/CitiesLeft/CitiesLeft")
+  import("../../../../components/SEO/CitiesLeft/CitiesLeft")
 );
 const CitiesRight = dynamic(() =>
-  import("../../../components/SEO/CitiesRight/CitiesRight")
+  import("../../../../components/SEO/CitiesRight/CitiesRight")
 );
-import { DataScienceCourseData } from "../../../CityData/artificialIntelligenceAiCourseTrainingBangaloreData";
+import { DataScienceCourseData } from "../../../../CityData/Bangalore/artificialIntelligenceAiCourseTrainingBangaloreData";
 const FAQNew = dynamic(() =>
-  import("../../../components/CoursePage/FAQNew/FAQNew")
+  import("../../../../components/CoursePage/FAQNew/FAQNew")
 );
-import Popup from "../../../components/Popup/Popup";
-import Navbar from "../../../components/Navbar/Navbar";
-import Footer from "../../../components/Footer/Footer";
-import Form from "../../../components/Form/Form";
+import Popup from "../../../../components/Popup/Popup";
+import Navbar from "../../../../components/Navbar/Navbar";
+import Footer from "../../../../components/Footer/Footer";
+import Form from "../../../../components/Form/Form";
 import React, { useState } from "react";
+import Testimonial from "../../../../components/HomePage/Testimonial/Testimonial";
 // import {
 //   ArtificialFaqDataB,
 //   ArtificialDomainFaqDataB,
@@ -71,21 +72,10 @@ export default function Home() {
           rel="canonical"
           href="https://www.learnbay.co/artificial-intelligence-ai-course-training-bangalore"
         />
-        {/* <meta name="HandheldFriendly" content="true" /> */}
-        {/* <meta name="distribution" content="global" /> */}
         <meta
           name="copyright"
           content="Learnbay: Artificial Intelligence Courses Certification Training India"
         />
-        {/* <meta name="language" content="English" /> */}
-        {/* <meta name="rating" content="general" /> */}
-        {/* <meta name="revisit-after" content="Daily" /> */}
-        {/* <meta name="author" content="Learnbay" /> */}
-        {/* <meta name="googlebot" content="index,follow" /> */}
-        {/* <meta name="bingbot" content="index,follow" /> */}
-        {/* <meta name="expires" content="never" /> */}
-        {/* <meta name="coverage" content="Worldwide" /> */}
-        {/* <meta name="robots" content="ALL" /> */}
         <link
           rel="icon"
           href="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/Learnbay-Favicon-L.png"
@@ -481,7 +471,10 @@ export default function Home() {
           srcD="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Data+Science+%26+AI+Certification+Program+For+Managers+%26+Leaders+Learnbay.pdf"
           alt="artificial intelligence ai course training in bangalore"
         />
-        <ProgramInfo
+        <SecondSection
+          SecondSectionData={DataScienceCourseData[0].secondSection}
+        />
+        {/* <ProgramInfo
           p1="Global Recognition"
           p11="From IBM"
           p2="Industry Standard"
@@ -490,14 +483,17 @@ export default function Home() {
           p33="For Professionals"
           p4="Financing as low as"
           p44="₹ 10,816/month"
-        />
-        <ProgramFee
+        /> */}
+        {/* <ProgramFee
           Emi="₹ 10,816/month"
           Fee="₹ 1,10,000 + 18% GST"
           dataScience={true}
-        />
-        <SecondSection
-          SecondSectionData={DataScienceCourseData[0].secondSection}
+        /> */}
+        <Testimonial
+          redirectDS={true}
+          Testimonial={DataScienceCourseData[0].testimonial}
+          heading="Our Alumni Speak"
+          para="Discover the impact of our programs on career growth"
         />
         <div className="MainCities">
           <div className="CitiesLeft">
@@ -642,7 +638,6 @@ export default function Home() {
           CityTextLB="Locations Offered"
           CityTextL=" :Artificial Intelligence Training in Bangalore, Artificial Intelligence Course in Bangalore, Artificial Intelligence Training in BTM, Artificial Intelligence Training in Marathahalli, Artificial Intelligence Institute in Bangalore, Artificial Intelligence Training in Whitefield, Artificial Intelligence Training in Kundalahalli, Artificial Intelligence Training in ITPL, Artificial Intelligence Training Institute in Marathahalli, Artificial Intelligence Course in BTM, Artificial Intelligence Course in Marathahalli, Artificial Intelligence Course in Whitefield, Artificial Intelligence Course Bommanahalli, Artificial Intelligence Training in Bommanahalli, Artificial Intelligence Training in Electronic city, Artificial Intelligence Training in Koramangala, Artificial Intelligence Classes in BTM, Artificial Intelligence Classes in Bommanahalli, Artificial Intelligence Classes in Whitefield, Artificial Intelligence Classes in Marathahalli, Artificial Intelligence Course in Koramangala, Artificial Intelligence Training in Jayanagar, Artificial Intelligence Certification in Bangalore, Artificial Intelligence Certification Training in Bangalore, Artificial Intelligence Certification in BTM, Artificial Intelligence Certification in Whitefield, Best Artificial Intelligence Training, Best Artificial Intelligence Course"
         />
-        {/* <OfferPopup offer={false} /> */}
         <Footer />
       </main>
     </div>
