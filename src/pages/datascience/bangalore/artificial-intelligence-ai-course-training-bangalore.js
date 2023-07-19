@@ -83,48 +83,7 @@ export default function Home() {
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: ` {
- "@context": "https://schema.org/", 
- "@type": "HowTo", 
- "name": "How to apply for data science course?",
- "description": "You just have to follow 3 easy steps to enroll in our advanced data science course",
- "image": "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/home-page-header.webp",
- "totalTime": "PT6M",
- "estimatedCost": {
- "@type": "MonetaryAmount",
- "currency": "INR",
- "value": "6"
- },
- "supply": {
- "@type": "HowToSupply",
- "name": "We provide artificial intelligence ai course training in bangalore"
- },
- "tool": {
- "@type": "HowToTool",
- "name": "Data science, machine learning, artificial intelligence, data analytics"
- },
- "step": [{
- "@type": "HowToStep",
- "text": "Visit our website and fill the enquiry form",
- "image": "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/home-page-header.webp",
- "name": "Fill Enquiry Form",
- "url": "https://www.learnbay.co/data-science-course/"
- },{
- "@type": "HowToStep",
- "text": "Talk to our experts for career counseling",
- "image": "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/course.learnbay.co/NImages/data-science-ai-for-managers.png",
- "name": "Talk to Expert",
- "url": "https://www.learnbay.co/data-science-course/"
- },{
- "@type": "HowToStep",
- "text": "Get enrollment in our data science course",
- "image": "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/home-page-header.webp",
- "name": "Get enrollment",
- "url": "https://www.learnbay.co/"
- }] 
-
-  }
-} `,
+            __html: ` `,
           }}
         />
         <script
