@@ -139,7 +139,7 @@ function CertificateTab({
                     alt="Certificate"
                     quality={100}
                     width={1150}
-                    height={800}
+                          height={800}
                   />
                 </div>
               </div>

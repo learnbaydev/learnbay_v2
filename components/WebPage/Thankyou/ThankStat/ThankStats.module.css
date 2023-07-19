@@ -33,6 +33,7 @@
 }
 .rightContent button {
   margin-top: 30px;
+  cursor: pointer;
 }
 .checkpoint {
   display: flex;

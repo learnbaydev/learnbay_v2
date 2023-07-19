@@ -34,6 +34,7 @@
   font-weight: 500;
   color: #242424;
   background-color: #edbb52;
+  cursor: pointer;
 }
 .conteWrap {
   position: relative !important;

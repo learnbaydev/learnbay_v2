@@ -155,9 +155,6 @@ function DomainSection({ dataScience, domainSectionData }) {
                               >
                                 {desc.map((data) => {
                                   return <li key={data}>{data}</li>;
-
-                                  // {desc.map((data, i) => {
-                                  //   return <li key={i}>{data}</li>;
                                 })}
                               </ul>
                             </div>

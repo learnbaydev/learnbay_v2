@@ -4,7 +4,7 @@ import Navbar from "../../../components/Navbar/Navbar";
 import Footer from "../../../components/Footer/Footer";
 
 import dynamic from "next/dynamic";
-import { DataScienceCourseData } from "../../../Data/AdvanceDataScienceCourse";
+import { FoundationDataScienceCourseData } from "../../../Data/FoundationDataScienceCourse";
 
 const FirstSection = dynamic(() =>
   import("../../../components/CoursePage/FirstSection/FirstSection")
@@ -48,12 +48,6 @@ const Project = dynamic(() =>
 const SyllabusNew = dynamic(() =>
   import("../../../components/CoursePage/Syllabus/Syllabus")
 );
-const DomainSection = dynamic(() =>
-  import("../../../components/CoursePage//DomainSection/DomainSection")
-);
-const Certificate = dynamic(() =>
-  import("../../../components/CoursePage/Certificate/Certificate")
-);
 const FAQNew = dynamic(() =>
   import("../../../components/CoursePage/FAQNew/FAQNew")
 );
@@ -65,25 +59,20 @@ function Blockchain() {
   return (
     <>
       <Head>
-        <title>
-          Artificial Intelligence and Data Science Course - Learnbay
-        </title>
-        <meta
-          name="description"
-          content="Upskill yourself with cutting edge Artificial Intelligence and Data Science Skills, Techniques by enrolling into the Learnbay's Advanced Data Science Course."
-        />
+        <title>Data Science Course with Job Assistance - Learnbay</title>
         <meta name="robots" content="index, follow" />
         <meta
-          name="keywords"
-          content="Advanced Data Science and AI Program with domain specialization"
+          name="description"
+          content="Unlock the power of data with most comprehensive Data Science Course. Enroll now and become a certified Data Scientist."
         />
+        <meta name="keywords" content="Data Science Foundation Program" />
         <link
           rel="icon"
           href="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/Learnbay-Favicon-L.png"
         />
         <link
           rel="canonical"
-          href="https://www.learnbay.co/datascience/advance-data-science-certification-courses"
+          href="https://www.learnbay.co/data-science-certification-courses"
         />
       </Head>
       <main>
@@ -93,89 +82,82 @@ function Blockchain() {
           SecondTyped="Capstone Project Certificate"
           ThirdTyped="Live Interactive Classes"
           dataScience={true}
-          titleCourse="Advanced Data Science and AI Program with domain specialization"
-          brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Advance+Data+Science+and+AI+Certification+Program+Learnbay.pdf"
-          FirstRightImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/advance+DS+header+image.webp"
-          firstToparaImg="with domain specialization"
-          firstHeading="Advanced Data Science and AI Program"
-          firstTopPara="Specialization over generalization"
-          idss="bfl64ANfSV0"
+          ibmOnly={true}
+          titleCourse="Data Science Foundation Program"
+          brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Data+Science+Foundation+Program+Learnbay.pdf"
+          FirstRightImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/DS+Foundation+header.webp"
+          firstToparaImg="with industry-specific training"
+          firstHeading="Data Science and AI Foundation Program"
+          firstTopPara="Enhance your earning potential"
+          idss="tBKOlgHS-k8"
         />
         <SecondSection
-          SecondSectionData={DataScienceCourseData[0].secondSection}
+          SecondSectionData={FoundationDataScienceCourseData[0].secondSection}
         />
         <Testimonial
           redirectDS={true}
-          Testimonial={DataScienceCourseData[0].testimonial}
+          Testimonial={FoundationDataScienceCourseData[0].testimonial}
           heading="Our Alumni Speak"
           para="Discover the impact of our programs on career growth"
         />
         <WhoProgram
-          leftImage="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/whoIsProgram.webp"
-          ThirdSectionData={DataScienceCourseData[0].thirdSection}
+          leftImage="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/DS+Foundation+Who+is+this+program+for.webp"
+          ThirdSectionData={FoundationDataScienceCourseData[0].thirdSection}
         />
         <Switch />
         <FourthSection
-          placementData={DataScienceCourseData[0].fourthSection}
+          placementData={FoundationDataScienceCourseData[0].fourthSection}
           redirectDS={true}
           dataScience={true}
           titleCourse="Data Science Placement Report"
           brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Placement+Report.pdf"
         />
         <FifthSection />
-        <SixthSectionCTA dataScienceCounselling={true}/>
+        <SixthSectionCTA 
+          dataScienceCounselling={true}
+          />
         <SyllabusNew
           dataScienceCounselling={true}
           dataScience={true}
           titleCourse="Advanced Data Science and AI Program with domain specialization"
-          brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Advance+Data+Science+and+AI+Certification+Program+Learnbay.pdf"
-          syllabus={DataScienceCourseData[0].syllabus}
-          syllabusDesc={DataScienceCourseData[0].syllabusDesc}
-          popupHead={DataScienceCourseData[0].popupHead}
+          brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Data+Science+Foundation+Program+Learnbay.pdf"
+          syllabus={FoundationDataScienceCourseData[0].syllabus}
+          syllabusDesc={FoundationDataScienceCourseData[0].syllabusDesc}
+          popupHead={FoundationDataScienceCourseData[0].popupHead}
         />
-        <GrowthStats
-          img1="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Scope+of+DS+left+image.png"
-          heading="Be the future: Grow your Data Science & AI skills "
-          para1="Data Science market to reach $133 billion by 2026"
-          para2="The global AI market to hit US$ 1,597.1 billion by 2030 "
-          para3="Influences on nearly all sectors of the current industries"
+          <GrowthStats
+          img1="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Data+Science+Foundation+Scope.webp"
+          heading="Data science is the future! "
+          para1="Higher Growth: Annual growth rate of 30% in 2023"
+          para2="Big Earning Potential: Earn an average annual salary of INR 10 LPA"
+          para3="Strong Demand: Booming requirement across various industries and domains"
         />
         <ToolsCovered
           deskImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Tools-Logo.png"
           mobImage="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Mobile-Tools-Covered.png"
         />
-        <Certificate
-          threeCertificate
-          data={DataScienceCourseData[0].Certificate}
-        />
+      
         <FeeSection
-          Fee="₹ 99,000 + 18% GST"
-          FeeEmi="₹ 9,735/month"
-          FeeHeading="Program Fee & Financing"
-          FeeContent1="0% interest rate"
-          FeeContent2="No cost EMI"
-          FeeContent3="Flexible payment"
-          FeeContent4="Easy loan procedure"
-          FeeContent5="15 days refund policy"
-          FeeContent6="No additional cost"
-          dataScienceCounselling={true}
-        />
-        <DomainSection
-          dataScience={true}
-          titleCourse="Advanced Data Science and AI Program with domain specialization"
-          brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Advance+Data+Science+and+AI+Certification+Program+Learnbay.pdf"
-          domainSectionData={DataScienceCourseData[0].domainSection}
+            Fee="₹ 79,000 + 18% GST"
+            FeeEmi="₹ 7,768/month"
+            FeeHeading="Program Fee & Financing"
+            FeeContent1="0% interest rate"
+            FeeContent2="No cost EMI"
+            FeeContent3="Flexible payment"
+            FeeContent4="Easy loan procedure"
+            FeeContent5="15 days refund policy"
+            FeeContent6="No additional cost"
+            dataScienceCounselling={true}
         />
         <Project
-          projectData={DataScienceCourseData[0].project}
-          tools="12+"
+          projectData={FoundationDataScienceCourseData[0].project}
+          tools="8+ Tools"
+          project="4+ Projects"
           dataScience={true}
           titleCourse="Data Science Project Brochure"
           brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Data+Science+and+AI+Projects.pdf"
-          project="15+"
-          
         />
-        <FAQNew FAQNewData={DataScienceCourseData[0].faq} />
+        <FAQNew FAQNewData={FoundationDataScienceCourseData[0].faq} />
         <SeventhSection />
         <Footer />
         <BottomBar />
