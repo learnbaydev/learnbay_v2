@@ -1,13 +1,327 @@
-import {
-  MdOutlineCastForEducation,
-  MdOutlineWorkOutline,
-} from "react-icons/md";
-import styles from "../../components/CoursePage/WhoProgram/ThirdSection.module.css";
-import { FaUserGraduate } from "react-icons/fa";
-import { GiStairsGoal } from "react-icons/gi";
-
 export const DataScienceCourseData = [
   {
+    script1: {
+      "@context": "https://schema.org",
+      "@type": "NewsArticle",
+      mainEntityOfPage: {
+        "@type": "WebPage",
+        "@id": "https://www.learnbay.co/",
+      },
+      headline: "Artificial Intelligence (AI) training in Bangalore",
+      description:
+        "Artificial Intelligence Course in Bangalore. Learnbay is Advanced Artificial Intelligence Course Training Institute in Bangalore. Artificial Intelligence course in Bangalore will enhance your career",
+      image:
+        "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/home-page-header.webp",
+      author: {
+        "@type": "Organization",
+        name: "Learnbay",
+        url: "https://www.learnbay.co/",
+      },
+      publisher: {
+        "@type": "Organization",
+        name: "Learnbay",
+        logo: {
+          "@type": "ImageObject",
+          url: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/ALight/learnbay-logo.png",
+        },
+      },
+      datePublished: "2021-10-01",
+      dateModified: "2022-04-21",
+    },
+    script2: {
+      "@context": "https://schema.org",
+
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "What are Artificial Intelligence (AI) training courses available at Learnbay in Bangalore?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Foundational data science and Artificial Intelligence Training Course Advanced data science and AI Certification Course Machine learning and AI Certification Data Science and AI Certification Course for Managers and Leaders Data Science and Artificial Intelligence Training with Placement Assistance",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What are the prerequisites for these AI training Courses in Bangalore?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "There are no prerequisites for this artificial certification course as all modules are beginner-friendly and are taught from scratch. We provide special classes and assistance for Non-IT/Non-programmers. However, basic knowledge of applied Mathematics/Statistics is a must.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What if I miss a few classes of Learnbay AI courses due to an emergency?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "In case you miss a few classes, you will be provided with backup classes in other batches. But if you could not attend more classes, you can opt for batch change and join the next batch.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What is a Flexi Subscription in these advanced artificial intelligence courses in Bangalore?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Those who enroll for AI live classroom training are eligible for a Flexi Pass. With this option, we will share access to all the ongoing batch details for a period of 1 -3 years, so that you can attend live sessions from any batch and learn at your own pace. This option is best for people working in shifts or on weekends. Flexi Subscription Time-line: Foundational data science and Artificial Intelligence Training Course- 1 Year Advanced data science and AI Certification Course- 3 Years Machine learning and AI Certification- 3 Years Data Science and AI Certification Course for Managers and Leaders- 3 Years Data Science and Artificial Intelligence Training with Placement Assistance - 3-years",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What’s the duration of these advanced AI in Bangalore?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "The duration of these courses is about 6-15 months, which includes live lectures, hands-on practical training on live projects, and interview preparations. Classes will be conducted on weekdays and weekend batches. Monday to Friday - 2 hours/day and Saturday & Sunday - 3.5 hours/day Foundational Data Science and Artificial Intelligence Training Course (220+ hours) Weekday batch - 6 months Weekend batch - 8 months Machine learning and AI Certification (280+ hours) Weekday batch - 9.5 months Weekend batch - 11 months Advanced Data Science and AI Certification Course (270+ hours) Weekday batch - 7 months Weekend batch - 9 months Data Science and AI Certification Course for Managers and Leaders (340+ hours) Weekday batch - 11 months Weekend batch - 13 months Data Science and Artificial Intelligence Training with Placement Assistance (380+ hours) Weekday batch - 13 months Weekend batch - 15 months",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What is the learning mode of Artificial Intelligence Certification courses in Bangalore at Learnbay?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "We provide both classroom and online AI training modes. Based on your requirement, you can choose your preferred mode.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "How can I opt for a Hybrid mode of learning in IBM artificial intelligence training courses in Bangalore, At Learnbay?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Simply, you can choose an online mode of study for the theoretical classes and a classroom mode for all the capstone projects and interview preparation sessions.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What is domain specialization in the professional AI certification courses provided by Learnbay in Bangalore?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "We offer industry-specific full-stack AI modules, via which you learn the respective industry’s best practices. But this added benefit is available in all the three mentioned courses, except the foundational AI course.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What are the available elective domain options in the different artificial intelligence training courses of Learnbay in Bangalore?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Advanced Data Structure & algo; Automotive, IoT & Embedded; Cloud & DevOps; Sales, Marketing, & HR; Retail, E-Commerce, & Supply Chain; Healthcare, Pharma, & Clinical Research; BFSI; Manufacturing, Mechanical, & Telecom; Media, Hospitality, & Transportation; Oil, Gas, & Energy",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Which domain elective within the Learnbay AI Certification courses is best suited for me?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "After enrolling in the advanced AI courses, one must opt for domain electives. It is essential to have business/industry knowledge that is useful in feature engineering and modeling. Prior knowledge of the industry and domain aids in the development of more precise and accurate predictive models based on the dataset's attributes. Furthermore, the model will be more observable in a real-world situation",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Can I select multiple domain electives and do I need to pay extra charges in any of the eligible AI certification courses?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "You can select a pre-set maximum number (based on course) of domain electives (both tech and non-tech) based on your interest and career goals. Advance Data Science and AI Certification course- Maximum 2 domains. Data Science and AI Certification Course for Managers and Leaders- All domains Data Science and Artificial Intelligence Training with Placement Assistance- All domains Machine learning and AI Certification- maximum 4 domains No, you don’t need to pay any extra charges as domain electives and capstone projects are part of our curriculum.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What if I don't have any prior experience in any domain?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "If you don't have any prior work experience, you can opt for any electives to gain domain expertise and work on real-time industrial projects.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Can I change my domain electives later?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes, you can change your electives or repeat the training anytime but within the course accessibility duration.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What is the total fee for Learnbay AI Certifications courses in Bangalore?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "The total course fee for the Foundational Data Science and Artificial Intelligence Training Course is 88,500/- inclusive of GST. Advance Data Science and AI Certification course is 1,12,100/- inclusive of GST. Data Science and AI Certification Course for Managers and Leaders is 1,23,900/- inclusive of GST. Data Science and Artificial Intelligence Training with Placement Assistance is 1,47,500/- inclusive of GST. Machine learning and AI Certification is 1,23,900/-inclusive of GST",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Can I pay in installments for these AI Certification courses in Bangalore?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes, you can pay the installments using a credit card with a no-cost EMI option for up to 9 months. You can also choose an interest-free loan by submitting an Aadhar card, Pan Card, and 3-month salary slip.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Is there any scholarship/discount available for these Artificial intelligence training courses available in Bangalore? What is Group Discount?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Learnbay offers a 15 - 20% scholarship for early birds occasionally. Please check our websites or contact our sales team to know more about the applicable discounts. Group Discount : Group Discount is applicable only if you’re joining with your friends. 5% extra discount: Group of 2 8% extra discount: Group of 3 Max 10% discount: Groupe of 4+",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What is the refund policy for the Artificial Intelligence Certification courses at Learnbay?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Candidates are advised to read Learnbay’s Refund/Cancellation Policy before enrolling in the course.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "How many capstone projects will be there?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Depending on the course you choose the number of capstone projects will vary. Foundational Artificial Intelligence Training Course - 1 Capstone. Advance Data Science and AI Certification course -2 Capstones. Data Science and AI Certification Course for Managers and Leaders- 2 Capstones. Data Science and Artificial Intelligence Training with Placement Assistance- 3 Capstones. Machine learning and AI Certification- 2 Capstones.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "How many real-time projects/case studies will be covered in these artificial intelligence certification courses in Bangalore?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Depending on the course you choose the number of live projects will vary. Foundational Data Science and Artificial Intelligence Training Course- 8 projects. Advance Data Science and AI Certification course-12 projects. Data Science and AI Certification Course for Managers and Leaders- 15 projects. Data Science and Artificial Intelligence Training with Placement Assistance- 15 projects. Machine learning and AI Certification- 15 projects. Click here to download the list of the projects.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "How will the projects be executed in Bangalore?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "At Learnbay, you will be required to work in a group where your project group will be assigned a specific project mentor with complete assistance and guidance.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Is there any accredited AI certification after course completion?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes, you will be awarded IBM accredited Data Scientist Certificate on successful course completion. But Based on the course you choose you can get Multiple certification options too. Foundational Data Science and Artificial Intelligence Training Course- 1 Course Completion Certificate. Advance Data Science and AI Certification course-1 Course Completion Certificate + 1-project experience certificate + 4 microdata science skills certificates = 6 Certificates. Data Science and AI Certification Course for Managers and Leaders- 1 Course Completion Certificate + 1-project experience certificate + 6 microdata science skills certificates= 8 Certificates. Data Science and Artificial Intelligence Training with Placement Assistance- 1 Course Completion Certificates Machine learning and AI Certification- 1 Course Completion Certificate + 1-project experience certificate + 4 microdata science skills certificates = 6 Certificates. *All the certificates accredited by IBM. For more details, please refer to the respective course brochures.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What's the eligibility for a job assistance Program in Learnbay artificial intelligence training courses in Bangalore?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "You should have completed the course with : A minimum score of 70% in assessments Should have completed the assignments and case studies Worked and successfully completed the minimum recommended number of real-time projects.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "How long will I get support for job assistance at Learnbay in Bangalore?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "At Learnbay, you’ll be provided with job assistance after the completion of the course for a period of 1 year. What is a job-readiness program? The Job readiness program helps you prepare for interviews which include: Resume preparation sessions, Preparing projects for a strong portfolio, Interview guidance and prep sessions, 1:1 Mock interviews based on targeted companies and roles.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Will I get job referrals at Learnbay?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes, we offer dedicated placement assistance by referring to your profile through our partnered consultancies and companies.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What is an interview guarantee feature?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "As a special feature, we provide interview assurance. That means once you complete the course by fulfilling all the scoring and attendance-related criteria, we’ll provide assured interview calls and job referrals. You will get this facility until you get placed.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Until when do the students get the facility of mentorship?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Our Mentors will provide AI training to the students until the completion of the course.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Can a Learnbay student in Bangalore choose to study from their desired mentor?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Every batch has its respective mentor, but if a student is not satisfied with its mentor’s teaching method, they can raise the issue to management and resolve the issues by replacing them with other mentors.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "When is the job assistance provided at Learnbay and how long will I get it?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Job assistance is provided after the completion of the course. It includes build-up sessions, mock interviews, and referrals from top MNC’s/startups. This assistance is provided unless one gets placed in a company.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "How long will I get Job referrals?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "You’ll be provided with job assistance after the completion of the course for a period of 1 year.",
+          },
+        },
+      ],
+    },
+    script3: {
+      "@context": "http://schema.org",
+      "@type": "EducationEvent",
+      name: "Artificial Intelligence (AI) training in Bangalore",
+      description:
+        "Artificial Intelligence Course in Bangalore. Learnbay is Advanced Artificial Intelligence Course Training Institute in Bangalore. Artificial Intelligence course in Bangalore will enhance your career",
+      image:
+        "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/ALight/learnbay-logo.png",
+      performer: "Learnbay",
+      offers: {
+        "@type": "AggregateOffer",
+        lowPrice: "39999",
+        highPrice: "110000",
+        url: "https://www.learnbay.co/",
+        availability: "https://schema.org/InStock",
+        price: "39999",
+        priceCurrency: "INR",
+        validFrom: "2022-05-01",
+      },
+      startDate: "2022-05-01",
+      endDate: "2022-08-31",
+      url: "https://www.learnbay.co/",
+      duration: "80",
+      eventAttendanceMode: "https://schema.org/MixedEventAttendanceMode",
+      eventStatus: "http://schema.org/EventScheduled",
+      location: [
+        {
+          "@type": "VirtualLocation",
+          url: "https://www.learnbay.co/",
+        },
+        {
+          "@type": "Place",
+          name: "Learnbay - Artificial Intelligence(Ai), Artificial Intelligence(Ai) Course Training in Bangalore",
+          address: {
+            "@type": "PostalAddress",
+            streetAddress:
+              "#1090 , 1st floor, 18th cross road HSR layout sector 3, Bangalore - 560102 (Above Sangam Sweets)",
+
+            addressLocality: "HSR Sector 3",
+            postalCode: "560102",
+            addressCountry: "Bengaluru, Karnataka,INDIA",
+          },
+          geo: {
+            "@type": "GeoCoordinates",
+            latitude: "12.914745887585838",
+            longitude: "77.64087553886982",
+          },
+        },
+      ],
+      organizer: {
+        "@type": "Organization",
+        name: "Learnbay",
+        url: "https://www.learnbay.co",
+      },
+    },
     secondSection: [
       {
         id: 1,
@@ -142,576 +456,6 @@ export const DataScienceCourseData = [
         statLogo: "142% Hike",
       },
     ],
-    thirdSection: [
-      {
-        id: 1,
-        icon: <MdOutlineCastForEducation className={styles.bIcon} />,
-        heading: "Education",
-        para: "Bachelor's degree with consistent good academics",
-      },
-      {
-        id: 1,
-        icon: <MdOutlineWorkOutline className={styles.oIcon} />,
-        heading: "Work experience",
-        para: "Minimum 1 year of IT/Non-IT work experience",
-      },
-      {
-        id: 1,
-        icon: <FaUserGraduate className={styles.oIcon} />,
-        heading: "Career stage",
-        para: "Early to mid-career professionals interested in data science",
-      },
-      {
-        id: 1,
-        icon: <GiStairsGoal className={styles.bIcon} />,
-        heading: "Aspirations",
-        para: "To become a data-driven professional & optimise strategies",
-      },
-    ],
-    fourthSection: [
-      {
-        id: 1,
-        img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/1.png",
-        desc: "Get 1 year of job & placement support",
-      },
-      {
-        id: 2,
-        img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/2.png",
-        desc: "Get 3 mock interviews with industry leaders",
-      },
-      {
-        id: 3,
-        img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/3.png",
-        desc: "Resume build up session",
-      },
-      {
-        id: 4,
-        img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/4.png",
-        desc: "Get 5-8 interview calls",
-      },
-    ],
-    domainSection: [
-      {
-        id: 1,
-        p1: "#1",
-        p2: "BFSI",
-        btn: "Download Brochure",
-        desc: [
-          "Work on 20+ real time case studies and assignments",
-          "Designed for executive-level BFSI professionals, accountant, etc.",
-          "Learn finance analysis tools, generate data insights, integrate data-driven methods to future-proof business operations",
-        ],
-        BrochureLink:
-          "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Banking%2C+Finance+and+Insurance+Domain.pdf",
-        TitleCourse: "BFSI (Banking, Finance, Services and Insurance) Domain",
-      },
-      {
-        id: 2,
-        p1: "#2",
-        p2: "Manufacturing",
-        desc: [
-          "Work on 20+ real time case studies and assignments",
-          "For production manager, quality control inspector, manufacturing engineer etc.",
-          "Discover cutting-edge tech like AI and data science, and develop strategic skills as a business or data analyst",
-        ],
-        btn: "Download Brochure",
-        BrochureLink:
-          "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Manufacturing%2C+Mechanical+and+Telecom+Domain.pdf",
-        TitleCourse: "Manufacturing, Mechanical and Telecom Domain",
-      },
-
-      {
-        id: 3,
-        p1: "#3",
-        p2: "Energy, Oil and Gas",
-        desc: [
-          "Work on 20+ real time case studies and assignments",
-          "For petroleum engineers, environmental specialists, operation managers etc.",
-          "Master your data analysis skills and create a dynamic dashboard to describe your insights",
-        ],
-        btn: "Download Brochure",
-        BrochureLink:
-          "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Energy%2C+Oil+and+Gas+Domain.pdf",
-        TitleCourse: "Energy, Oil and Gas Domain",
-      },
-
-      {
-        id: 4,
-        p1: "#4",
-        p2: "Healthcare",
-        desc: [
-          "Work on 20+ real time case studies and assignments",
-          "For pharmacists, therapists, health administrators, etc.",
-          "Achieve success in a competitive market by utilizing advanced tools and methodology to leverage technology and gain a competitive edge",
-        ],
-        btn: "Download Brochure",
-        BrochureLink:
-          "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Healthcare%2C+Pharma+and+Clinical+Research+Domain.pdf",
-        TitleCourse: "Healthcare, Pharma and Clinical Research Domain",
-      },
-
-      {
-        id: 5,
-        p1: "#5",
-        p2: "Supply Chain, E-Commerce & Retail",
-        desc: [
-          "Work on 20+ real time case studies and assignments",
-          "Learn Supply Chain, E-Commerce & Retail analysis tools, generate data insights, integrate data-driven methods to future-proof business operations",
-        ],
-        btn: "Download Brochure",
-        BrochureLink:
-          "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Retail%2C+Ecommerce+and+Supply+chain+Domain.pdf",
-        TitleCourse: "Retail, Ecommerce and Supply Chain Domain",
-      },
-    ],
-    project: [
-      {
-        id: 1,
-        domain: "HR Domain",
-        CLogo: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/1-1.png",
-        SDesc:
-          "  IBM intends to boost their HR department by identifying employees' masked inconsistency...",
-        PopupImg:
-          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/Hr-domain-img.png",
-        ProjectTitle: "HR Domain",
-        Title:
-          "Career progression planning of employees with workforce defections & efficiency",
-        LDesc:
-          "IBM intends to boost its HR department by identifying employees' masked inconsistency. They need models to identify the graphical variations in their 14000+ employees' performances. Help them build models with your regressions and other ML abilities.",
-      },
-      {
-        id: 2,
-        domain: "Marketing Domain",
-        CLogo:
-          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Project+company+logos/swiggy.png",
-        SDesc:
-          "  Swiggy seeks a broad marketing campaign. But they need automated keyword generation tools...",
-        PopupImg:
-          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/Marketing-domain-img.png",
-        ProjectTitle: "Marketing Domain",
-        Title:
-          "Descriptive study of trends and irregularities with prediction analysis for conversion.",
-        LDesc:
-          "Swiggy seeks a broad marketing campaign. But they need automated keyword generation tools. They also require proper message preparation and delivery of the same to the right audience at the right time. You can help them with text analytics and NLP-based keyword research solutions",
-      },
-      {
-        id: 3,
-        domain: "Manufacturing Domain",
-        CLogo:
-          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/Untitled-design-3.png",
-        SDesc:
-          "  This project helped BOSCH to predict their internal failures  by production line dataset analysis...",
-        PopupImg:
-          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/supplyChain.png",
-        ProjectTitle: "Manufacturing Domain",
-        Title:
-          "Condition-based preventative maintenance and fault prediction in depth",
-        LDesc:
-          "An automated inventory management system will keep track of stock levels and upcoming orders. In addition, you can contribute to DataCo's intelligent supply chain software generation project by using ML algorithms and R programming skills.",
-      },
-      {
-        id: "BMW",
-        domain: "Sales Domain",
-        CLogo:
-          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/Untitled-design-2.png",
-        SDesc:
-          "      BMW allows existing customers to sell used cars but many competitors are now offering better resale values...",
-        PopupImg:
-          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/Sales-domain.png",
-        ProjectTitle: "Sales Domain",
-        Title: "Forecasting future sales with trends and price maximization",
-        LDesc:
-          "BMW allows existing customers to sell used cars  but many competitors are now offering better resale values. A data science-powered statistical app from BMW will provide the best market value for used cars based on parameters like Km driven, daily pricing up and down, manufacturing dates, and so on. Develop your analytical skills through such projects.",
-      },
-      {
-        id: 5,
-        domain: "Healthcare Domain",
-        CLogo: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/5(2).png",
-        SDesc:
-          "  Samsung will launch a new healthcare app soon. The key goal of this app is accurate human activity...",
-        PopupImg:
-          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/supplyChain.png",
-        ProjectTitle: "Healthcare Domain",
-        Title:
-          "Understanding covid-19 cases and fatality rate by time series forecasting",
-        LDesc:
-          "Samsung will launch a new healthcare app soon. The key goal of this app is accurate human activity tracking and providing relevant health-related recommendations. Continuous analysis of a massive amount of mobile data is required for such an app.",
-      },
-      {
-        id: 6,
-        domain: "E-Commerce Domain",
-        CLogo: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/4(2).png",
-        SDesc:
-          "   Amazon has made a goal to identify the most successful consumer electronic products...",
-        PopupImg:
-          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/supplyChain.png",
-        ProjectTitle: "E-Commerce Domain",
-        Title:
-          "Recommendation system with customer lifetime value analysis (CLV)",
-        LDesc:
-          "Amazon has made a goal to identify the most successful consumer electronic products. For these, they require live customer review analysis. You can take part in the assisting project of customer insight regeneration from the ongoing and existing reviews via a suitable data visualization approach.",
-      },
-      {
-        id: 7,
-        domain: "Entertainment Domain",
-        CLogo: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/9-1.png",
-        SDesc:
-          "  Netflix is a global entertainment video streaming site. They offer content in various regional languages...",
-        PopupImg:
-          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/supplyChain.png",
-        Title:
-          "Building a content recommendation model on the basis of regional viewer categorization",
-        ProjectTitle: "Media Domain",
-
-        LDesc:
-          "Netflix is a global entertainment video streaming site. They offer content in various regional languages. Build a local recommendation engine for Netflix customers residing in south Bangalore on their weekend and weekdays activities, utilizing NLP.",
-      },
-    ],
-    Certificate: {
-      twoCertificate: [
-        {
-          id: 1,
-          img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Certificate-blue.png",
-          title: "Course Completion Certificate from IBM",
-          para: [
-            "Complete your training with the internationally recognized certificate.",
-            "Validate your Data Science and AI skills with IBM Course Completion Certificate.",
-            "Get acknowledged in IT sector by adding IBM Certificate to your profile.",
-          ],
-        },
-        {
-          id: 2,
-          img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Certificate-Yellow.png",
-          title: "Capstone Project Certificate from IBM",
-          para: [
-            "Globally recognized IBM certification based on industrial-level projects.",
-            "Work on 1 capstone project certified by IBM.",
-            "Individualized project experience with easy access to premium job opportunities.",
-          ],
-        },
-      ],
-      oneCertificate: {
-        id: 3,
-        img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Microsoft-certificate-data.png",
-        title: "Certification in Collaboration with Microsoft",
-        para: [
-          "Industry-certified Microsoft certificates",
-          "Gain expertise & get recognized worldwide",
-          "Boost job opportunities and earnings with Microsoft’s certification",
-        ],
-      },
-    },
-    syllabusDesc:
-      "Learnbay provides Live, Interactive Online Sessions guided by Professionals working in top MNCs. All sessions are covered practically with real-time industrial projects and case studies.",
-    popupHead: "Download Data science Course Brochure",
-    syllabus: [
-      {
-        Module0: {
-          title: "Module 0 :- Preparatory Classes (Programming + Maths)",
-          content: [
-            {
-              chap: {
-                title: "Topic 1 :- Cohort Orientation ",
-                desc: [
-                  "A brief introduction to tools related to data ",
-                  "Learn about particular real-time projects and Capstone projects",
-                  "Data and its impact on career opportunities",
-                  "Utilizing data, to enhance industrial operations and management",
-                ],
-              },
-            },
-
-            {
-              chap: {
-                title: "Topic 2 :- Fundamentals of Programming",
-                desc: [
-                  "Introduction to Anaconda & Jupyter notebook",
-                  "Flavors of python Introduction to Git, GitHub",
-                  "Python Fundamentals",
-                ],
-              },
-            },
-            {
-              chap: {
-                title: "Topic 3 :- Fundamentals of Statistics",
-                desc: [
-                  "Mean, Median, Mode",
-                  "Standard Deviation, Average. Probability, Permutations, and Combinations",
-                  "Introduction to Linear Algebra",
-                ],
-              },
-            },
-          ],
-          id: 0,
-          open: true,
-        },
-      },
-      {
-        Module0: {
-          title: "Term 1 :- Python for Data Science",
-          content: [
-            {
-              chap: {
-                title: "Module 1 :- Python Programming",
-                desc: [
-                  "Programming Basics & Environment Setup",
-                  "Python Programming Overview",
-                  "Strings, Decisions & Loop Control",
-                  "Python Data Types",
-                  "Functions And Modules",
-                  "Class hands-on: 8+ Programs to be covered in the functions, Lambda, modules, Generators, and Packages class",
-                  "File I/O And Exceptional Handling and Regular Expression",
-                  "Class hands-on: 10+ Programs to be covered in class from File IO, Reg-ex and exception handling",
-                  "Data Analysis Using Numpy",
-                  "Data Analysis Using Pandas",
-                  "Data Visualization using Matplotlib",
-                  "Data Visualization using Seaborn",
-                  "Case Study on Numpy, Pandas, Matplotlib 1 Case Study on Pandas And Seaborn",
-                ],
-              },
-            },
-          ],
-          id: 1,
-          open: false,
-        },
-      },
-      {
-        Module0: {
-          title: "Term 2 :- Statistics and Machine Learning",
-          content: [
-            {
-              chap: {
-                title: "Module 1 :- Statistics",
-                desc: [
-                  "Fundamentals of Math and Probability",
-                  "All about Population & Sample",
-                  "Introduction to Statistics, Statistical Thinking",
-                  "Descriptive Statistics",
-                  " Inferential Statistics",
-                  "Hypothesis Testing",
-                  "Linear Algebra",
-                  "Data Processing & Exploratory Data Analysis",
-                  "EDA",
-                  "Statistics Assignments: Total 4 practice sets and Assignments from Statistics",
-                ],
-              },
-            },
-            {
-              chap: {
-                title: "Module 2 :- Machine Learning",
-                desc: [
-                  "Introduction to Machine Learning",
-                  "Regression and Classification Models",
-                  "Linear Regression Model",
-                  "Data Preprocessing",
-                  "Encoding the Data",
-                  "Logistic Regression Model",
-                  "Evaluation Metrics for Classification model",
-                  "K Nearest Neighbours Model",
-                  "Decision Tree Model",
-                  "Random Forest Model",
-                  "Hyperparameter Tuning",
-                  "Naive Baye’s Model",
-                  "Case Study on Kart Model Business & Random Forest",
-                  "K Means and Hierarchical Clustering",
-                  "Hierarchical Clustering",
-                  "Principal Component Analysis (PCA):",
-                  "Support Vector Machine(SVM)",
-                ],
-              },
-            },
-          ],
-          id: 2,
-          open: false,
-        },
-      },
-      {
-        Module0: {
-          title: "Term 3 :- Data Science Tools",
-          content: [
-            {
-              chap: {
-                title: "Module 1 :- SQL",
-                desc: [
-                  "SQL and RDBMS",
-                  "Advance SQL",
-                  "NoSQL, HBase & MongoDB",
-                  "JSON Data & CRUD",
-                  "Programming with SQL",
-                ],
-              },
-            },
-            {
-              chap: {
-                title: "Module 2 :- MongoDB",
-                desc: ["Introduction to MongoDB", "MongoDB (Advance)"],
-              },
-            },
-
-            {
-              chap: {
-                title: "Module 3 :- Tableau ",
-                desc: [
-                  "Introduction to Tableau",
-                  "Visual Analytics",
-                  "Dashboard and Stories",
-                  "Hands-on: Connecting data source and data cleansing",
-                  "Working with various charts, Deployment of Predictive model in visualization",
-                ],
-              },
-            },
-            {
-              chap: {
-                title: "Module 4 :- PowerBI",
-                desc: [
-                  "Getting Started With Power BI",
-                  "Programming with Power BI",
-                ],
-              },
-            },
-            {
-              chap: {
-                title: "Module 5 :- Big Data & Spark Analytics",
-                desc: [
-                  "Introduction To Hadoop & Big Data",
-                  "What is Spark",
-                  "Getting to know PySpark",
-                  "Hands-on: Map reduce Use Case : Youtube data analysis & Spark RDD programming",
-                ],
-              },
-            },
-            {
-              chap: {
-                title: "Module 6 :- Time Series",
-                desc: [
-                  "Introduction to Time Series Forecasting",
-                  "Introduction to ARIMA Models",
-                  "Case Study on Time series classification of smartphone data to predict user behavior, Performing Time Series Analysis on Stock Prices & Time series forecasting of sales data",
-                ],
-              },
-            },
-          ],
-          id: 3,
-          open: false,
-        },
-      },
-      {
-        Module0: {
-          title: "Term 4 :- Artificial Intelligence Tools",
-          content: [
-            {
-              chap: {
-                title: "Module 1 :- Deep Learning Using Tensorflow",
-                desc: [
-                  "Introduction to Deep Learning And TensorFlow",
-                  "TensorFlow Classification Examples",
-                  "Understanding Neural Networks With TensorFlow",
-                  "Convolutional Neural Network (CNN)",
-                  "Project on Building a CNN for Image Classification",
-                ],
-              },
-            },
-            {
-              chap: {
-                title: "Module 2 :- Natural Language Processing (NLP)",
-                desc: [
-                  "Natural Language Processing",
-                  "Text Analysis",
-                  "KNN",
-                  "Use cases on NLP: Sentiment analysis for marketing",
-                ],
-              },
-            },
-            {
-              chap: {
-                title:
-                  "Module 3 :- Model Training & Deployment Using (AWS GCP)",
-                desc: [
-                  "AWS (Amazon Web Services)",
-                  "GCP (Google Cloud Platform)",
-                  "Introduction to AWS and GCP Cloud ML Engine",
-                  "Deploying Machine Learning Model",
-                  "Training Machine Learning Model",
-                ],
-              },
-            },
-          ],
-          id: 4,
-          open: false,
-        },
-      },
-      {
-        Module0: {
-          title: "Term 5 :- Deployment (AWS+Azure)",
-          content: [
-            {
-              chap: {
-                title:
-                  "Module 1 :- Introduction to AWS and Azure Machine Learning Services:",
-                desc: [
-                  "Overview of AWS SageMaker and Azure Machine Learning",
-                  "Key features and benefits of using these platforms",
-                  "Understanding different types of machine learning algorithms and use cases",
-                ],
-              },
-            },
-            {
-              chap: {
-                title: "Module 2 :- Setting up the Environment:",
-                desc: [
-                  "Creating AWS and Azure accounts",
-                  "Configuring the required tools and SDKs (e.g. AWS CLI, Azure CLI, Azure PowerShell)",
-                  "Understanding the infrastructure requirements for training and deploying models (e.g. EC2 instances, GPU instances, Azure ML Compute)",
-                ],
-              },
-            },
-            {
-              chap: {
-                title: "Module 3 :- Data Preparation and Feature Engineering:",
-                desc: [
-                  "Understanding the data requirements for machine learning models (e.g. structured vs unstructured data, data size, data quality)",
-                  "Data cleaning and preprocessing techniques (e.g. missing value imputation, feature scaling, encoding categorical variables)",
-                  "Feature selection and engineering techniques (e.g. PCA, feature importance)",
-                ],
-              },
-            },
-            {
-              chap: {
-                title: "Module 4 :- Model Training and Evaluation:",
-                desc: [
-                  "Choosing the right machine learning algorithm and model (e.g. regression, classification, clustering)",
-                  "Training models using AWS SageMaker and Azure Machine Learning (e.g. using built-in algorithms, custom code)",
-                  "Evaluating model performance and tuning hyperparameters (e.g. cross-validation, hyperparameter optimization)",
-                ],
-              },
-            },
-            {
-              chap: {
-                title: "Module 5 :- Model Deployment and Management:",
-                desc: [
-                  "Deploying trained models on AWS SageMaker and Azure Machine Learning (e.g. creating endpoints, batch inference)",
-                  "Monitoring model performance and managing versions (e.g. model drift, A/B testing)",
-                  "Integration with other services and applications (e.g. AWS Lambda, Azure Functions)",
-                ],
-              },
-            },
-            {
-              chap: {
-                title:
-                  "Module 6 :- Advanced Topics in Machine Learning on AWS and Azure:",
-                desc: [
-                  "Deep learning techniques and architectures (e.g. neural networks, convolutional neural networks, recurrent neural networks)",
-                  "Natural Language Processing (NLP) use cases (e.g. text classification, sentiment analysis, language translation)",
-                  "Understanding the costs and pricing models for machine learning on AWS and Azure (e.g. instance pricing, storage pricing, model deployment pricing)",
-                ],
-              },
-            },
-          ],
-          id: 5,
-          open: false,
-        },
-      },
-    ],
     faq: [
       {
         id: 1,
@@ -826,12 +570,12 @@ export const DataScienceCourseData = [
             id: 2,
             ques: "Is there any scholarship/discount available for Data Science Foundation Program? What is Group Discount?",
             ans: `Learnbay offers a 15 – 20% scholarship for early birds occasionally.
-          Please check our websites or contact our sales team to know more about the applicable discounts.
-          Group Discount :
-          Group Discount is applicable only if you’re joining with your friends.
-          5% extra discount : Group of 2,
-          8% extra discount : Group of 3,
-          Max 10% discount : Group of 4+`,
+        Please check our websites or contact our sales team to know more about the applicable discounts.
+        Group Discount :
+        Group Discount is applicable only if you’re joining with your friends.
+        5% extra discount : Group of 2,
+        8% extra discount : Group of 3,
+        Max 10% discount : Group of 4+`,
             open: false,
           },
           {
@@ -907,10 +651,10 @@ export const DataScienceCourseData = [
             id: 2,
             ques: "What is a job-readiness program?",
             ans: `Job-readiness program helps you prepare for interviews which include:
-          Resume preparation sessions,
-          Preparing projects for a strong portfolio,
-          Interview guidance and prep sessions,
-          1:1 Mock interviews based on targeted companies and roles.`,
+        Resume preparation sessions,
+        Preparing projects for a strong portfolio,
+        Interview guidance and prep sessions,
+        1:1 Mock interviews based on targeted companies and roles.`,
             open: false,
           },
           {
@@ -960,5 +704,168 @@ export const DataScienceCourseData = [
         ],
       },
     ],
+    ProgramBot1:
+      "Learnbay has enriched Artificial Intelligence (AI) training in Bangalore, guided and mentored by industry experts from MAANG companies. Learnbay's experts are dedicated to students' growth and career support. Domain electives are available to assure your full-stack Data science and AI expertise in your chosen industries. Learnbay AI training in Bangalore gives students real-time MNC and capstone project experience certified by IBM. Also, you get quick answers from the Learnbay Q&A forum and updated solutions for any queries with the least possible waiting time.",
+    ProgramHead3:
+      "How does Learnbay artificial intelligence training become the most promising institute for experienced professionals in Bangalore?",
+    ProgramBot3:
+      "Learnbay is such an institute that offers end-to-end professional, better to say, job-ready artificial intelligence training across Bangalore.",
+    ProgramBot31:
+      "There are a number of Artificial Intelligence engineers or AI expert training providers in Bangalore, but Learnbay provides custom-fit training for successful AI career switch to experienced working professionals from any domain. The latest tools and updated modules are used to keep students on track with the present-day industry work scenario. This Artificial intelligence certification program also ensures guaranteed placement assurance. ",
+    ProgramHead4: "Is Artificial intelligence a Good career in Bangalore?",
+    ProgramBot4:
+      "Bangalore is a huge tech hub and works with the latest technologies to the best of its abilities. Irrespective of tech or non-tech industries, everyone is now getting extremely dependent on AI innovations. Hence the work culture, as well as the job market, demands in getting changes. But the number of candidates properly adaptable to such changes is very few.",
+    ProgramBot5:
+      "Companies are facing different kinds of challenges as the advancement in technology by Artificial intelligence is big, but there are a few Artificial intelligence engineers/ experts. Learnbay wants to provide a solution for this by teaching the best Artificial Intelligence skills to learners who are eager to learn and own the ability for the same.",
+    ProgramBot6:
+      "The best part at Learnbay is that you get the variable options of artificial intelligence courses to choose from- according to your career stage and professional background. Available course options are:",
+    Courselink1: "/data-science-certification-courses",
+    Courselink2: "/advance-data-science-certification-courses",
+    Courselink3: "/artificial-intelligence-certification-course",
+    Courselink4: "/data-science-ai-for-managers",
+    Courselink5: "/data-science-ai-masters-program",
+    Course1: "Foundational Data Science and AI Program",
+    Course2: "Advanced-Data Science and AI Program with Domain Specialization",
+    Course3:
+      "Artificial Intelligence and Machine Learning Program with Domain Specialization",
+    Course4: "Data Science and AI Program for Managers and Leaders",
+    Course5: "Data Science and AI master program",
+    DomainHead1:
+      " Why is domain specialization important in job-ready  Artificial intelligence training in Bangalore?",
+    DomainBot1:
+      "Artificial intelligence has a lot of subsets and components. Expertising Artificial ,intelligence in specific domains gives an edge to your earned AI skills. If you pursue Learnbay Artificial intelligence course training in Bangalore, there are many domains to select from. The options include banking, oil, gas, etc. Every sector or industry has different requirements and work processes. Domain specialization helps you have an extra mark by completing this AI certification course. If you have already earned 4 years of experience in any domain, then in the present scenario, it's almost impossible to successfully switch into an AI career without domain-focused AI skills.",
+    DomainBot2:
+      "Learnbay's mentors and guides suggest the best domain for students after analyzing profiles and students' learning desires.",
+    DomainBot3: "List of available Domain-Electivess",
+    DomainList1: "HR, Sales, and Marketing",
+    DomainList2: "Energy, oil, and Gas",
+    DomainList3: "Mechanical, manufacturing, and telecom",
+    DomainList4: "Pharmaceutical and clinical research",
+    DomainList5: "Media, hospitality, and transportation",
+    DomainList6: "Testing and Development Domain",
+    DomainList7: "DeOps and Cloud",
+    DomainList8: "IoT, automotive, and embedded systems",
+    DomainList9: "Supply chain and e-commerce",
+    DomainList10: "Banking, Finance, and Marketing Domain",
+    Domainlink1:
+      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Sales%2C+Marketing+and+HR+Domain.pdf",
+    Domainlink2:
+      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Energy%2C+Oil+and+Gas+Domain.pdf",
+    Domainlink3:
+      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Manufacturing%2C+Mechanical+and+Telecom+Domain.pdf",
+    Domainlink4:
+      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Healthcare%2C+Pharma+and+Clinical+Research+Domain.pdf",
+    Domainlink5:
+      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Media%2C+Hospitality+and+Transportation+Domain.pdf",
+    Domainlink6:
+      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Development+and+Testing+Domain.pdf",
+    Domainlink7:
+      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Cloud+and+Devops+Domain.pdf",
+    Domainlink8:
+      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Automotive%2C+IOT+and+Embedded+Domain.pdf",
+    Domainlink9:
+      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Retail%2C+Ecommerce+and+Supply+chain+Domain.pdf",
+    Domainlink10:
+      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Banking%2C+Finance+and+Insurance+Domain.pdf",
+    CertificationBot1:
+      "Learnbay Provides students with an IBM AI course completion certificate. This IBM-certified program helps you to be at the top of other profiles. The artificial intelligence course completion certificate by IBM ensures you are recognized as a skilled Artificial intelligence professional. Not only that, as you process with the modules, you get micro AI certifications by IBM like machine learning with python, Deep Learning with TensorFlow, and so on. As per your chosen course, you achieve 1 to 8 number micro certificates from IBM. Even once you complete the project, IBM issues a project experience certificate in AI too.",
+    src: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/Managers-4.jpeg",
+    ModuleBot1:
+      "Learnbay artificial intelligence and ML training in Bangalore include 400 hrs of uninterrupted live classes conducted by MAANG experts. The foundational and advanced program also consists of  200+ sessions. The most impressive information is that all of these classes are completely live and interactive only. Students can attend multiple sessions of classes and instructors. Learnbay Provides 1- 3 years of flexi membership on artificial intelligence training so that students can learn at ease and in comfort from their devices. Students get to talk to mentors and guides with 1-1 live sessions to clear all their doubts. Our LMS is always updated with the latest version of courses and is altered according to the industry demands and standards. Here you get crisp industry-curated training on R, NLP, artificial neural networks, and so on.",
+    ModuleBot2:
+      "Learnbay provides special basic coding classes and regular updates of coding assignments. Students can participate in Learnbay's exclusive hackathons and webinars.",
+    syllabush1: "Preparatory Classes (Programming + Maths)",
+    syllabusb1: "6 Hours",
+    SyllabusBotlist11: "Anaconda Installation",
+    SyllabusBotlist12: "Basics of Programming",
+    SyllabusBotlist13: "Memory Management",
+    SyllabusBotlist14: "Compiler and Interpreter",
+    SyllabusBotlist15: "Syntax of Python",
+    SyllabusBotlist16: "Basics of Statistics",
+    syllabush2: "Python Programming (Basic + Advance)",
+    syllabusb2: "40 Hours",
+    SyllabusBotlist21: "Git and GitHub",
+    SyllabusBotlist22: "Operators + Data Types + Loops",
+    SyllabusBotlist23: "Functions + Regular Expression",
+    SyllabusBotlist24: "Conditional Statement",
+    SyllabusBotlist25: "File & Exceptional Handling",
+    SyllabusBotlist26: "Numpy, Pandas, Matplotlib, etc.",
+    syllabush3: "Statistics and Machine Learning",
+    syllabusb3: "70 Hours",
+    SyllabusBotlist31: "Linear Algebra, Probability",
+    SyllabusBotlist32: "Permutation & Combination",
+    SyllabusBotlist33: "Descriptive & Inferential Stats",
+    SyllabusBotlist34: "Hypothesis Testing",
+    SyllabusBotlist35: "Time Series Analysis",
+    SyllabusBotlist36: "ML Algorithms",
+    syllabush4: "Industrial Projects & Capstone Projects",
+    syllabusb4: "12+ Classes",
+    SyllabusBotlist41: "Text Classification",
+    SyllabusBotlist42: "Human Activity Recognition",
+    SyllabusBotlist43: "Forecasting Business KPI's",
+    SyllabusBotlist44: "Credit Risk Analysis",
+    SyllabusBotlist45: "Customer Churn Prediction",
+    SyllabusBotlist46: "Sentiment Analysis",
+    syllabussrc:
+      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Data+Science+%26+AI+Certification+Program+For+Managers+%26+Leaders+Learnbay.pdf",
+    JobBot1:
+      "Learnbay Artificial intelligence program in Bangalore ensures guaranteed placement assistance. Learnbay’s guides and mentors build your resume and portfolio and also refer your profiles so that you get a interview calls. Other than the placement assistance AI course, even in other courses, you get at least the promise of assured AI job interviews in Bangalore.",
+    JobHead2:
+      "What are the job roles you find in Bangalore as an Artificial engineer?",
+    JobBot3: "Artificial Intelligence has created a lot of new job roles like:",
+    JobBot4:
+      "Artificial intelligence Engineer.Machine learning engineer.Research scientist.Business intelligence developer.Data scientist.Big Data Engineer.Robotics Scientist.",
+    ProjectsBot1:
+      "Learnbay always encourages students to work with their creativity and understanding on projects and assignments. Completing projects and capstones would add a star to your profile as you have worked on live projects from the top reputed companies and the best startups. You can complete 1 to 3 capstone artificial intelligence projects (as per course). All of them are fresh and trending. This project helps you to solve business problems suffered by your domain.",
+    src1: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/SAMSUNG.png",
+    ProjectsH1: "Samsung Health Monitor App",
+    Projectsp1:
+      "Samsung will launch a new healthcare app soon. The key goal of this app is accurate human activity tracking and providing relevant health-related recommendations. Continuous analysis of a massive amount of mobile data is required for such an app.",
+    src2: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/IBM.png",
+    ProjectsH2: "IBM HR Analytics",
+    Projectsp2:
+      "IBM intends to boost its HR department by identifying employees' masked inconsistency. They need models to identify the graphical variations in their 14000+ employees' performances. Help them build models with your regressions and other Data science abilities.",
+    src3: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/amazon1.png",
+    ProjectsH3: "Amazon Customer Review Analysis",
+    Projectsp3:
+      "Amazon has made a goal to identify the most successful consumer electronic products. For these, they require live customer review analysis. You can participate in the assisting project of customer insight regeneration from the ongoing and existing reviews via a suitable data visualization approach.",
+    src4: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/BMW.png",
+    ProjectsH4: "BMW Used Car Price Optimization",
+    Projectsp4:
+      "BMW allows existing customers to sell used cars  but many competitors are now offering better resale values. A data science-powered statistical app from BMW will provide the best market value for used cars based on parameters like Km driven, daily pricing up and down, manufacturing dates, etc. Develop your analytical skills through such projects.",
+    AlumniBot1:
+      "Learnbay’s Artificial Intelligence training in Bangalore placement assurance for students and has emplaced thousands of students in the top companies and MNCs all over Bangalore. We have a few stories who have worked hard and have gained success by Learning the Artificial intelligence course at Learnbay. ",
+    Asrc1: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/devraj.jpg",
+    AlumniH1: "Deveraj",
+    Alumnip1:
+      "The quality of the content is very nice. What I liked the most was mainly the instructor concentrating on the practical part, live project sessions make you feel confident to attend interviews. Multiple batch options, access for any instructor class videos or materials. The totally positive environment around.",
+    Asrc2: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/shezan.png",
+    AlumniH2: "Shezan Baig",
+    Alumnip2:
+      "Learnbay is one of the most remarkable data science institutes I've come across. Compared to other institutes in India, it offers a data science course at a low cost. Excellent value for money. Finally, I achieved job satisfaction. I would strongly advise everyone to attend this institute.",
+    Asrc3: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/viraj.png",
+    AlumniH3: "Viraj Ghodke",
+    Alumnip3:
+      "For me, learning using the Learnbay platform has been a great experience. The teaching and management team are very helpful. They are constantly willing to clarify each individual's doubts and meet the needs of working professionals. The practice interview sessions were simply like a clone of MNC interviews.",
+    Asrc4: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/shubhangi.png",
+    AlumniH4: "Shubhangi J. Waghmare ",
+    Alumnip4:
+      "The best in Industry offerings from both cost and curriculum wise. One advantage of joining here is you can access their resources for a lifetime, unlike others where you have accessibility only for a year or so. Most importantly, there is continuous assistance for recruitment.",
+    alt1: "artificial intelligence ai course training in bangalore",
+    alt2: "artificial intelligence ai course training in bangalore",
+    alt3: "artificial intelligence ai course training in bangalore",
+    alt4: "artificial intelligence ai course training in bangalore",
+    alt5: "artificial intelligence ai course training in bangalore",
+    alt6: "artificial intelligence ai course training in bangalore",
+    alt7: "artificial intelligence ai course training in bangalore",
+    alt8: "artificial intelligence ai course training in bangalore",
+    alt9: "artificial intelligence ai course training in bangalore",
+    CityTextB:
+      "Artificial Intelligence Course Certification Training locations in Bangalore ",
+    CityText:
+      " :Ammrutha halli [560092], Maruthi Seva Nagar [560033], Kuvempu Layout [560077], Bellandur [560103], Jayanagar III Block [560011], Anandnagar [560024], Nandinilayout [560096], B SK II Stage [560070], Indiranagar [560038], Yelahanka [560063], Chickpet [560053], Domlur [560071], Bansashankari III Stage [560085], Vimanapura [560017], Nagarbhavi [560072], Basaveshwaranagar [560079], Bommanahalli [560068], Mico Layout [560076], Electronic City [560100], Taverekere [560029], Nehru Nagar [560020], Agram[560007], Halsuru Pete [560002], Basavanagudi [560004], R.M.V. Extension II [560094], Jayanagar [560041], Carmelaram [560035], New Thippasandra [560075], Kanakanagar [560032], Nayandahalli [560039], Fraser Town [560005], Jalahalli East [560014], Kacharakanahalli [560084], Malleswaram West [560055], Bannerghatta [560083], Srirampuram [560021], Rajarajeshwarinagar [560098], Sivan Chetty Gardens [560042], Dommasandra [562125], Whitefield [560066], Vidyaranyapura [560097], Bolare [560082], Mathikere [560054], Doddanekkundi [560037], Hampinnagar [560104], C.V.Raman Nagar [560093], Chikkabanavara [560090], Attur [560064], Kumbalagodu [560074], Bhattarahalli [560049], Chikkalasandra [560061], Sharada Nagar [560065], Jalahalli West [560015], H.K.P Road [560051], Jp Nagar III Phase [560078], Sadashiva nagar [560080], Krishnarajapuram R S [560016], Mahalakshipuram Layout [560086], Guddadahalli [560026], Chudenapura [560060], Vidhana Soudha [560001], Shanthinagar [560027], Rajaji Nagar [560010], Chandapura [560099], Ramakrishna Hegde Nagar [560045], Shalabh Bhatnagar [560012], Peenya [560058], Ashoknagar [560050], Jalahalli Nacen [560013], Banawadi [560043], Malleswaram [560003], Doddakallasandra [560062], K.G Road [560009], Muthusandra [560087], Marathahalli [560056], JC Nagar [560006], Chamrajpet [560018], HSR Layout [560102], Devanagundi [560067], Yeswanthpura [560022], Mahadevapura [560048],Hulsur Bazaar [560008],Magadi Road [560023], Adugodi [560030], Bagalgunte [560073], Devasandra [560036], Rv Niketan [560059], Narasimharaja Colony [560019], Koramangala VI Bk [560095], Agara [560034], Vijayanagar East [560040], Benson Town [560046], Viveknagar S.O [560047], Dasarahalli [560057], Bapagrama [560091], Richmond Town [560025].",
+    CityTextLB: "Locations Offered",
+    CityTextL:
+      " :Artificial Intelligence Training in Bangalore, Artificial Intelligence Course in Bangalore, Artificial Intelligence Training in BTM, Artificial Intelligence Training in Marathahalli, Artificial Intelligence Institute in Bangalore, Artificial Intelligence Training in Whitefield, Artificial Intelligence Training in Kundalahalli, Artificial Intelligence Training in ITPL, Artificial Intelligence Training Institute in Marathahalli, Artificial Intelligence Course in BTM, Artificial Intelligence Course in Marathahalli, Artificial Intelligence Course in Whitefield, Artificial Intelligence Course Bommanahalli, Artificial Intelligence Training in Bommanahalli, Artificial Intelligence Training in Electronic city, Artificial Intelligence Training in Koramangala, Artificial Intelligence Classes in BTM, Artificial Intelligence Classes in Bommanahalli, Artificial Intelligence Classes in Whitefield, Artificial Intelligence Classes in Marathahalli, Artificial Intelligence Course in Koramangala, Artificial Intelligence Training in Jayanagar, Artificial Intelligence Certification in Bangalore, Artificial Intelligence Certification Training in Bangalore, Artificial Intelligence Certification in BTM, Artificial Intelligence Certification in Whitefield, Best Artificial Intelligence Training, Best Artificial Intelligence Course",
   },
 ];
