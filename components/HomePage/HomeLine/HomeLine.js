@@ -22,6 +22,7 @@ const HomeLine = ({ Emi }) => {
               className={styles.featureIcons}
               style={{ color: "#0072bc" }}
             />
+
             <p>300+ hiring partners</p>
           </div>
           <hr className={styles.hr} />

@@ -5,15 +5,13 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/scrollbar";
-import { Scrollbar } from "swiper";
 import { AiOutlineRise } from "react-icons/ai";
 import dynamic from "next/dynamic";
 const ReviewPopup = dynamic(() => import("../ReviewPopup/ReviewPopup"));
-import { redirect } from "next/dist/server/api-utils";
-import { TestimonialDS, TestimonialFS } from "./TestimonialData";
+
 import { Pagination, Navigation } from "swiper";
 
-function Testimonial({ redirectDS }) {
+function Testimonial({ redirectDS, para, heading, Testimonial }) {
   const [mobile, setMobile] = useState(false);
   const [img, setImg] = useState({
     cLogo: "",
@@ -29,12 +27,7 @@ function Testimonial({ redirectDS }) {
   const popupShow = () => {
     setPopups(true);
   };
-  const [testimonialArray, setTestimonialArray] = useState(TestimonialDS);
   useEffect(() => {
-    redirectDS
-      ? setTestimonialArray(TestimonialDS)
-      : setTestimonialArray(TestimonialFS);
-
     let width = window.innerWidth;
     if (width < 600) {
       setMobile(true);
@@ -49,26 +42,28 @@ function Testimonial({ redirectDS }) {
         desc={desc}
         imgSrc={img}
       />
-      <h2 className={styles.h1}>Our Alumni Profile</h2>
-      <div className={styles.line}>
+      <h4 className={styles.h1}>{heading}</h4>
+      {para === undefined ? "" : <p className={styles.ptop}>{para}</p>}
+
+      {/* <div className={styles.line}>
         <img
           src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/alumni-arrow.png"
           width="80px"
         />
-      </div>
+      </div> */}
       <section>
         <div className={styles.Section1}>
           <div className={styles.Testimonial}>
             <div className={styles.swiperleft}>
               <Swiper
                 loop={true}
-                loopFillGroupWithBlank={true}
                 breakpoints={{
-                  1281: { slidesPerView: 3, spaceBetween: 60 },
+                  1281: { slidesPerView: 3.1, spaceBetween: 60 },
                   1024: { slidesPerView: 3, spaceBetween: 55 },
                   961: { slidesPerView: 3, spaceBetween: 20 },
                   801: { slidesPerView: 2.5, spaceBetween: 20 },
                   641: { slidesPerView: 2, spaceBetween: 20 },
+                  481: { slidesPerView: 1.8, spaceBetween: 20 },
                   100: { slidesPerView: 1.2, spaceBetween: 20 },
                 }}
                 pagination={{
@@ -80,7 +75,7 @@ function Testimonial({ redirectDS }) {
                 modules={[Pagination, Navigation]}
                 className="mySwiper"
               >
-                {testimonialArray.map((data) => {
+                {Testimonial.map((data) => {
                   const {
                     id,
                     name,
@@ -91,7 +86,7 @@ function Testimonial({ redirectDS }) {
                     complogo,
                     statLogo,
                   } = data;
-                  // console.log(data);
+
                   return (
                     <SwiperSlide className={styles.slide} key={id}>
                       <div className={styles.mainSlider}>
@@ -125,6 +120,7 @@ function Testimonial({ redirectDS }) {
                                   });
                                   setDesc(lDesc);
                                   setImg({
+                                    id: id,
                                     cLogo: complogo,
                                     pLogo: proImg,
                                   });
@@ -139,15 +135,24 @@ function Testimonial({ redirectDS }) {
                         </div>
 
                         {redirectDS ? (
-                          <div className={styles.imgHike}>
-                            <div>
-                              <Image
-                                src={complogo}
-                                loading="lazy"
-                                width={mobile ? 130 : 90}
-                                height={mobile ? 21 : 25}
-                                alt="company-logo"
-                              />
+                          <div className={styles.imgHike} id={id}>
+                            <div
+                              className={styles.imgWrap}
+                              style={
+                                id === "tcs"
+                                  ? { width: "20%" }
+                                  : { width: "auto" }
+                              }
+                            >
+                              <div className="imgWrapper">
+                                <Image
+                                  src={complogo}
+                                  loading="lazy"
+                                  width={90}
+                                  height={25}
+                                  alt="company-logo"
+                                />
+                              </div>
                             </div>
                             <div className={styles.nameHike}>
                               <p>

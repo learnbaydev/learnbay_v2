@@ -30,7 +30,6 @@ const Course = ({ dataScience, radio, dataScienceCounselling }) => {
   ]);
 
   const menuChange = (title, index) => {
-    console.log(title, CourseLoop[index].title);
     if (title === CourseLoop[index].title) {
       setCourseLoop([...CourseLoop], (CourseLoop[index].value = true));
       for (let i = 0; i < CourseLoop.length; i++) {
@@ -51,11 +50,15 @@ const Course = ({ dataScience, radio, dataScienceCounselling }) => {
 
   useEffect(() => {
     let width = window.innerWidth;
+    if (width < 481) {
+      setValue(1.4);
+      setMobile(true);
+    }
     if (width < 600) {
-      setValue(1.03);
+      setValue(1.2);
       setMobile(true);
     } else if (width <= 641) {
-      setValue(1);
+      setValue(1.6);
     } else if (width <= 801) {
       setValue(2);
     } else if (width <= 961) {
@@ -67,7 +70,7 @@ const Course = ({ dataScience, radio, dataScienceCounselling }) => {
     } else if (width <= 1281) {
       setValue(2.4);
     }
-  });
+  }, []);
 
   return (
     <div className={styles.Course} id="course">
@@ -102,7 +105,7 @@ const Course = ({ dataScience, radio, dataScienceCounselling }) => {
           {courseDetails.map((CourseData, index) => {
             return (
               <span
-                key={CourseData.id}
+                key={index}
                 onClick={() => {
                   menuChange(CourseData.title, index);
                 }}
@@ -130,14 +133,13 @@ const Course = ({ dataScience, radio, dataScienceCounselling }) => {
                       <div className={styles.gridPanel}>
                         <Swiper
                           slidesPerView={value}
-                          spaceBetween={mobile ? 10 : 20}
+                          spaceBetween={mobile ? 20 : 20}
                           pagination={{
                             clickable: true,
                           }}
                           grabCursor={true}
                           modules={[Pagination]}
                           className="mySwiper"
-                          style={{ width: "inherit" }}
                         >
                           {courseDetail.courseDetails.map((viewAllData) => {
                             const {
@@ -160,6 +162,8 @@ const Course = ({ dataScience, radio, dataScienceCounselling }) => {
                                         src={img}
                                         width={100}
                                         height={272}
+                                        quality={100}
+                                        unoptimized={true}
                                         style={{ objectFit: "cover" }}
                                         alt="data science course"
                                       />

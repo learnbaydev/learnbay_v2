@@ -8,7 +8,7 @@
   grid-template-columns: 59% 39%;
   align-items: center;
   margin: auto;
-  padding: 0px 100px;
+  padding: 0px 80px;
 }
 
 .about {
@@ -338,140 +338,76 @@
 }
 
 .contP {
-  display: flex;
+  display: block;
   align-items: center;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  color: #000;
 }
 
-/* .innerContent {
-  width: 70%;
-} */
+.CareerH{
 
-@media (max-width: 600px) {
-  .Back {
-    height: 100%;
-    text-align: left;
-    padding: 100px 20px 30px 20px;
-    display: block;
-  }
+  font-size: 1.5em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
 
-  .about {
-    margin: 20px 0px;
-  }
+}
+
+.CareerP{
+
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  color: #000;
+
+}
+@media(max-width:1024px){
 
   .about h4 {
-    font-size: 30px;
-    text-align: left;
-    padding: 0;
-  }
-
-  .FirstDiv {
-    display: block;
-    text-align: center;
-    margin-top: 30px;
-    align-items: center;
-  }
-
-  .OurJourney {
-    padding: 20px;
-  }
-
-  .OurJourneyDiv {
-    padding: 10px;
-  }
-
-  .MiddleDiv {
-    display: flex;
-    flex-direction: column-reverse;
-    text-align: center;
-    margin-top: 30px;
-    align-items: center;
-  }
-
-  .FirstImg {
-    height: 350px;
-  }
-
-  .MiddleImg {
-    height: 350px;
-    width: 100%;
-  }
-
-  .FirstText {
-    padding: 20px;
-  }
-
-  .MVDiv {
-    padding: 20px;
+    font-size: 35px;
+    font-weight: 800;
+    padding-right: 120px;
   }
 
   .Placement {
-    padding: 20px;
+    text-align: center;
+    padding: 50px 40px 0 40px;;
+  }
+  
+
+}
+
+@media(max-width:800px){
+
+  .about h4 {
+    font-size: 25px;
+    font-weight: 800;
+    padding-right: 120px;
+  }
+  
+
+}
+
+@media(max-width:641px){
+
+  .about h4 {
+    font-size: 25px;
+    font-weight: 800;
+    padding-right: 120px;
+  }
+  .Back{
+    padding: 0px 28px;
+    height: fit-content;
   }
   .Placement h3 {
     font-size: 24px;
   }
-  .iconBoxP {
-    display: block;
-  }
-  .OurPlacementDiv {
-    padding: 0px;
-  }
-  .CDDiv {
-    display: block;
-    margin: 0;
-  }
-  .CDImg {
-    height: 350px;
-  }
-  .CDText {
-    padding: 30px 0px;
-  }
-  .FirstText h3 {
-    font-size: 24px;
-  }
-  .OurJourney h3 {
-    font-size: 24px;
-  }
-  .culture {
-    padding: 50px 20px;
-    display: block;
-  }
 
-  .head {
-    font-size: 30px;
-    color: #fff;
-    margin-bottom: 20px;
-    margin-top: 0;
-  }
-
-  .img3 {
-    display: block;
-    flex-direction: row;
-  }
-
-  .img1 {
-    display: block;
-    flex-direction: row;
-  }
-
-  .img {
-    display: block;
-    align-items: center;
-  }
-  .para {
-    font-size: 18px;
-    margin: 0;
-    padding-right: 0px;
-  }
-
-  .about {
-    margin-bottom: 0;
-  }
-  .iconBoxCont {
-    padding: 20px;
-  }
-  .contP {
-    display: grid;
-    grid-template-columns: 10% 90%;
+  .CareerH{
+    font-size: 22px;
   }
 }

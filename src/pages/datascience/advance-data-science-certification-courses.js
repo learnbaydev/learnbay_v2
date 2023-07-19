@@ -1,15 +1,72 @@
+import React, { useState } from "react";
 import Head from "next/head";
-import Image from "next/image";
-import styles from "@/styles/Home.module.css";
 import Navbar from "../../../components/Navbar/Navbar";
 import Footer from "../../../components/Footer/Footer";
 
-export default function datascience() {
+import dynamic from "next/dynamic";
+import { DataScienceCourseData } from "../../../Data/AdvanceDataScienceCourse";
+
+const FirstSection = dynamic(() =>
+  import("../../../components/CoursePage/FirstSection/FirstSection")
+);
+const SecondSection = dynamic(() =>
+  import("../../../components/CoursePage/SecondSection/SecondSection")
+);
+const SeventhSection = dynamic(() =>
+  import("../../../components/Global/SeventhSection/SeventhSection")
+);
+const Testimonial = dynamic(() =>
+  import("../../../components/HomePage/Testimonial/Testimonial")
+);
+const WhoProgram = dynamic(() =>
+  import("../../../components/CoursePage/WhoProgram/ThirdSection")
+);
+const Switch = dynamic(() =>
+  import("../../../components/HomePage/switch/switch")
+);
+const GrowthStats = dynamic(() =>
+  import("../../../components/CoursePage/GrowthStat/GrowthStats")
+);
+const ToolsCovered = dynamic(() =>
+  import("../../../components/CoursePage/ToolsCovered/ToolsCovered")
+);
+const FeeSection = dynamic(() =>
+  import("../../../components/CoursePage/FeeSection/FeeSection")
+);
+const FourthSection = dynamic(() =>
+  import("../../../components/CoursePage/FourthSection/FourthSection")
+);
+const FifthSection = dynamic(() =>
+  import("../../../components/CoursePage/FifthSection/FifthSection")
+);
+const SixthSectionCTA = dynamic(() =>
+  import("../../../components/CoursePage/SixthSectionCTA/Counselling")
+);
+const Project = dynamic(() =>
+  import("../../../components/CoursePage/Project/Project")
+);
+const SyllabusNew = dynamic(() =>
+  import("../../../components/CoursePage/Syllabus/Syllabus")
+);
+const DomainSection = dynamic(() =>
+  import("../../../components/CoursePage//DomainSection/DomainSection")
+);
+const Certificate = dynamic(() =>
+  import("../../../components/CoursePage/Certificate/Certificate")
+);
+const FAQNew = dynamic(() =>
+  import("../../../components/CoursePage/FAQNew/FAQNew")
+);
+import BottomBar from "../../../components/WebPage/BottomBar/BottomBar";
+
+function Blockchain() {
+  const [popups, setPopups] = useState(false);
+
   return (
     <>
       <Head>
         <title>
-        Artificial Intelligence and Data Science Course - Learnbay
+          Artificial Intelligence and Data Science Course - Learnbay
         </title>
         <meta
           name="description"
@@ -26,13 +83,104 @@ export default function datascience() {
         />
         <link
           rel="canonical"
-          href="https://www.learnbay.co/advance-data-science-certification-courses"
+          href="https://www.learnbay.co/datascience/advance-data-science-certification-courses"
         />
       </Head>
       <main>
-      <Navbar />
-      <Footer />
+        <Navbar popup={true} dataScienceCounselling={true} />
+        <FirstSection
+          FirstTyped="Guaranteed Interview Calls"
+          SecondTyped="Capstone Project Certificate"
+          ThirdTyped="Live Interactive Classes"
+          dataScience={true}
+          titleCourse="Advanced Data Science and AI Program with domain specialization"
+          brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Advance+Data+Science+and+AI+Certification+Program+Learnbay.pdf"
+          FirstRightImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/advance+DS+header+image.webp"
+          firstToparaImg="with domain specialization"
+          firstHeading="Advanced Data Science and AI Program"
+          firstTopPara="Specialization over generalization"
+          idss="bfl64ANfSV0"
+        />
+        <SecondSection
+          SecondSectionData={DataScienceCourseData[0].secondSection}
+        />
+        <Testimonial
+          redirectDS={true}
+          Testimonial={DataScienceCourseData[0].testimonial}
+          heading="Our Alumni Speak"
+          para="Discover the impact of our programs on career growth"
+        />
+        <WhoProgram
+          leftImage="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/whoIsProgram.webp"
+          ThirdSectionData={DataScienceCourseData[0].thirdSection}
+        />
+        <Switch />
+        <FourthSection
+          placementData={DataScienceCourseData[0].fourthSection}
+          redirectDS={true}
+          dataScience={true}
+          titleCourse="Data Science Placement Report"
+          brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Placement+Report.pdf"
+        />
+        <FifthSection />
+        <SixthSectionCTA dataScienceCounselling={true}/>
+        <SyllabusNew
+          dataScienceCounselling={true}
+          dataScience={true}
+          titleCourse="Advanced Data Science and AI Program with domain specialization"
+          brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Advance+Data+Science+and+AI+Certification+Program+Learnbay.pdf"
+          syllabus={DataScienceCourseData[0].syllabus}
+          syllabusDesc={DataScienceCourseData[0].syllabusDesc}
+          popupHead={DataScienceCourseData[0].popupHead}
+        />
+        <GrowthStats
+          img1="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Scope+of+DS+left+image.png"
+          heading="Be the future: Grow your Data Science & AI skills "
+          para1="Data Science market to reach $133 billion by 2026"
+          para2="The global AI market to hit US$ 1,597.1 billion by 2030 "
+          para3="Influences on nearly all sectors of the current industries"
+        />
+        <ToolsCovered
+          deskImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Tools-Logo.png"
+          mobImage="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Mobile-Tools-Covered.png"
+        />
+        <Certificate
+          threeCertificate
+          data={DataScienceCourseData[0].Certificate}
+        />
+        <FeeSection
+          Fee="₹ 99,000 + 18% GST"
+          FeeEmi="₹ 9,735/month"
+          FeeHeading="Program Fee & Financing"
+          FeeContent1="0% interest rate"
+          FeeContent2="No cost EMI"
+          FeeContent3="Flexible payment"
+          FeeContent4="Easy loan procedure"
+          FeeContent5="15 days refund policy"
+          FeeContent6="No additional cost"
+          dataScienceCounselling={true}
+        />
+        <DomainSection
+          dataScience={true}
+          titleCourse="Advanced Data Science and AI Program with domain specialization"
+          brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Advance+Data+Science+and+AI+Certification+Program+Learnbay.pdf"
+          domainSectionData={DataScienceCourseData[0].domainSection}
+        />
+        <Project
+          projectData={DataScienceCourseData[0].project}
+          tools="12+"
+          dataScience={true}
+          titleCourse="Data Science Project Brochure"
+          brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Data+Science+and+AI+Projects.pdf"
+          project="15+"
+          
+        />
+        <FAQNew FAQNewData={DataScienceCourseData[0].faq} />
+        <SeventhSection />
+        <Footer />
+        <BottomBar />
       </main>
     </>
   );
 }
+export default Blockchain;
