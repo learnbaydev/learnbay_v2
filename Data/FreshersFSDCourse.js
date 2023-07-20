@@ -853,7 +853,7 @@ import {
             {
               id: 0,
               ques: "Is there any accredited certification after course completion?",
-              ans: "Yes, you will be awarded IBM accredited Foundational Data Science Certificate on successful course completion. ",
+              ans: "Yes, you will be awarded IBM accredited software development Completion Certificate on successful course completion.",
               open: true,
             },
           ],

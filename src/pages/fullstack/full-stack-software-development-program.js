@@ -4,7 +4,7 @@ import Navbar from "../../../components/Navbar/Navbar";
 import Footer from "../../../components/Footer/Footer";
 
 import dynamic from "next/dynamic";
-import { FreshersFSDData } from "../../../Data/FreshersFSDCourse";
+import { FSSPDataScienceCourseData } from "../../../Data/FullStackSoftwareProgram";
 
 const FirstSection = dynamic(() =>
   import("../../../components/CoursePage/FirstSection/FirstSection")
@@ -66,14 +66,14 @@ function Blockchain() {
   return (
     <>
       <Head>
-        <title>Software Development Program For Freshers - Learnbay</title>
+        <title>Master Program in Software Development - Learnbay</title>
         <meta
           name="description"
           content="Learnbay's Full Stack Software Development Course will help you become a skilled software developer. Gain practical experience and master key coding skills."
         />
         <meta
           name="keywords"
-          content="Software Development Program For Freshers"
+          content="Software Development Master Program with Domain Specialization"
         />
         <link
           rel="icon"
@@ -88,47 +88,47 @@ function Blockchain() {
         <Navbar popup={true} dataScienceCounselling={true} />
         <FirstSection
           softwareBtnHide={true}
-          FirstTyped="IBM Certificate"
-          SecondTyped="Mock Interviews"
+          FirstTyped="Microsoft & IBM Certificate"
+          SecondTyped="Domain Specialized Program"
           ThirdTyped="Live Interactive Classes"
           dataScience={true}
-          titleCourse="Software Development Program Designed For Freshers"
-          brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Software+Development+Program+for+Freshers.pdf"
-          ibmOnly={true}
-          FirstRightImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/SD-fresher-header.webp"
-          firstToparaImg="Designed For Freshers"
-          firstHeading="Software Development Program"
-          firstTopPara="Join the next generation of developers"
+          titleCourse="Software Development Master Program with Domain Specialization"
+          brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Full+Stack+Software+Development+Program+Learnbay.pdf"
+          FirstRightImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/SW-Dev-Master-Header.png"
+          firstToparaImg="with Domain Specialization"
+          firstHeading="Software Development Master Program"
+          firstTopPara="Get ready to level up your coding expertise"
           idss="bfl64ANfSV0"
         />
-        <SecondSection SecondSectionData={FreshersFSDData[0].secondSection} />
+        <SecondSection
+          SecondSectionData={FSSPDataScienceCourseData[0].secondSection}
+        />
         <Testimonial
-          Testimonial={FreshersFSDData[0].testimonial}
+          Testimonial={FSSPDataScienceCourseData[0].testimonial}
           heading="Our Alumni Speak"
           para="Discover the impact of our programs on career growth"
         />
         <WhoProgram
-          leftImage="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/who-is-fresher.webp"
-          ThirdSectionData={FreshersFSDData[0].thirdSection}
+          leftImage="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/SW+Dev+Masters+-+Who+is+this+program+for.png"
+          ThirdSectionData={FSSPDataScienceCourseData[0].thirdSection}
         />
         <Switch />
         <FourthSection
-          placementData={FreshersFSDData[0].fourthSection}
+          placementData={FSSPDataScienceCourseData[0].fourthSection}
           redirectDS={true}
-          dataScience={true}
-          titleCourse="Full Stack Placement Report"
-          brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Placement+Report+(1).pdf"
         />
         <FifthSection />
-        <SixthSectionCTA dataScienceCounselling={true} />
+        <SixthSectionCTA />
         <SyllabusNew
+          software={true}
           dataScienceCounselling={true}
           dataScience={true}
-          titleCourse="Software Development Program Designed For Freshers"
-          brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Software+Development+Program+for+Freshers.pdf"
-          syllabus={FreshersFSDData[0].syllabus}
-          syllabusDesc={FreshersFSDData[0].syllabusDesc}
-          popupHead={FreshersFSDData[0].popupHead}
+          advSyllabus={FSSPDataScienceCourseData[0].advSyllabus}
+          titleCourse="Software Development Master Program with Domain Specialization"
+          brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Full+Stack+Software+Development+Program+Learnbay.pdf"
+          syllabus={FSSPDataScienceCourseData[0].syllabus}
+          syllabusDesc={FSSPDataScienceCourseData[0].syllabusDesc}
+          popupHead={FSSPDataScienceCourseData[0].popupHead}
         />
         <GrowthStats
           img1="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/SW+Dev+Masters+Scope+Image-min.png"
@@ -143,12 +143,12 @@ function Blockchain() {
           mobImage="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/TOOLS-SDE-mobile.png"
         />
         <Certificate
-          oneCertificate={true}
-          data={FreshersFSDData[0].Certificate}
+          twoCertificate={true}
+          data={FSSPDataScienceCourseData[0].Certificate}
         />
         <FeeSection
-          Fee="₹ 60,000+ 18% GST"
-          FeeEmi="₹ 5,900/month"
+          Fee="₹ 1,10,000+ 18% GST"
+          FeeEmi="₹ 10,817/month"
           FeeHeading="Program Fee & Financing"
           FeeContent1="0% interest rate"
           FeeContent2="No cost EMI"
@@ -156,18 +156,22 @@ function Blockchain() {
           FeeContent4="Easy loan procedure"
           FeeContent5="15 days refund policy"
           FeeContent6="No additional cost"
-          para="We are dedicated to making best course for Data Structures and Algorithms accessible. We are committed to helping you find a way to budget for this Course and offer a variety of financing options to make it more economical"
+          dataScienceCounselling={true}
         />
-
+        <DomainSection
+          dataScience={true}
+          domainSectionData={FSSPDataScienceCourseData[0].domainSection}
+        />
         <Project
-          redirectDS={true}
-          projectData={FreshersFSDData[0].project}
-          SoftwareText={true}
+          projectData={FSSPDataScienceCourseData[0].project}
           tools="16+ Tools"
-          project="8+ Case Studies"
-          logoHide={true}
+          project="12+ Case Studies"
+          SoftwareText={true}
+          dataScience={true}
+          titleCourse="Full Stack Project Brochure"
+          brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Real-time+Projects+%26+Use+cases.pdf"
         />
-        {/* <FAQNew FAQNewData={FreshersFSDData [0].faq} /> */}
+        <FAQNew FAQNewData={FSSPDataScienceCourseData[0].faq} />
         <SeventhSection />
         <Footer />
         <OfferPopup />

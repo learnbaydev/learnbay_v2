@@ -4,7 +4,7 @@ import Navbar from "../../../components/Navbar/Navbar";
 import Footer from "../../../components/Footer/Footer";
 
 import dynamic from "next/dynamic";
-import { DataScienceCourseData } from "../../../Data/AdvanceDataScienceCourse";
+import { AIMLDataScienceCourseData } from "../../../Data/AIMLDataScienceCourse";
 
 const FirstSection = dynamic(() =>
   import("../../../components/CoursePage/FirstSection/FirstSection")
@@ -57,6 +57,7 @@ const Certificate = dynamic(() =>
 const FAQNew = dynamic(() =>
   import("../../../components/CoursePage/FAQNew/FAQNew")
 );
+import OfferPopup from "../../../components/OfferPopup/OfferPopup";
 import BottomBar from "../../../components/WebPage/BottomBar/BottomBar";
 
 function Blockchain() {
@@ -64,18 +65,19 @@ function Blockchain() {
 
   return (
     <>
-      <Head>
+       <Head>
         <title>
-          Artificial Intelligence and Data Science Course - Learnbay
+          Artificial Intelligence and Machine Learning Course - Learnbay
         </title>
+        <meta name="robots" content="index, follow" />
+
         <meta
           name="description"
-          content="Upskill yourself with cutting edge Artificial Intelligence and Data Science Skills, Techniques by enrolling into the Learnbay's Advanced Data Science Course."
+          content="Enroll in Learnbay&rsquo;s Comprehensive Artificial Intelligence and Machine Learning Course to improve your AI and Machine Learning skills."
         />
-        <meta name="robots" content="index, follow" />
         <meta
           name="keywords"
-          content="Advanced Data Science and AI Program with domain specialization"
+          content="Artificial Intelligence and Machine Learning Program"
         />
         <link
           rel="icon"
@@ -83,7 +85,7 @@ function Blockchain() {
         />
         <link
           rel="canonical"
-          href="https://www.learnbay.co/datascience/advance-data-science-certification-courses"
+          href="https://www.learnbay.co/artificial-intelligence-certification-course"
         />
       </Head>
       <main>
@@ -93,89 +95,91 @@ function Blockchain() {
           SecondTyped="Capstone Project Certificate"
           ThirdTyped="Live Interactive Classes"
           dataScience={true}
-          titleCourse="Advanced Data Science and AI Program with domain specialization"
-          brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Advance+Data+Science+and+AI+Certification+Program+Learnbay.pdf"
-          FirstRightImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/advance+DS+header+image.webp"
-          firstToparaImg="with domain specialization"
-          firstHeading="Advanced Data Science and AI Program"
-          firstTopPara="Specialization over generalization"
-          idss="bfl64ANfSV0"
+          titleCourse="AI & ML Program for tech professionals"
+          brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Advance+AI+%26+ML+Certification+Program+Learnbay.pdf"
+          idss="Jn2puEQC8yk"
+          FirstRightImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/AIML-Header.png"
+          firstToparaImg="AI & ML Program for tech professionals"
+          firstHeading="Transform your future with our certified"
+          firstTopPara="Expand beyond technology"
         />
         <SecondSection
-          SecondSectionData={DataScienceCourseData[0].secondSection}
+          SecondSectionData={AIMLDataScienceCourseData[0].secondSection}
         />
         <Testimonial
           redirectDS={true}
-          Testimonial={DataScienceCourseData[0].testimonial}
+          Testimonial={AIMLDataScienceCourseData[0].testimonial}
           heading="Our Alumni Speak"
           para="Discover the impact of our programs on career growth"
         />
         <WhoProgram
-          leftImage="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/whoIsProgram.webp"
-          ThirdSectionData={DataScienceCourseData[0].thirdSection}
+          leftImage="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/AIML-Who.png"
+          ThirdSectionData={AIMLDataScienceCourseData[0].thirdSection}
         />
         <Switch />
         <FourthSection
-          placementData={DataScienceCourseData[0].fourthSection}
+          placementData={AIMLDataScienceCourseData[0].fourthSection}
           redirectDS={true}
           dataScience={true}
           titleCourse="Data Science Placement Report"
           brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Placement+Report.pdf"
+
         />
         <FifthSection />
         <SixthSectionCTA dataScienceCounselling={true}/>
         <SyllabusNew
           dataScienceCounselling={true}
+          serviceBasic={true}
           dataScience={true}
           titleCourse="Advanced Data Science and AI Program with domain specialization"
-          brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Advance+Data+Science+and+AI+Certification+Program+Learnbay.pdf"
-          syllabus={DataScienceCourseData[0].syllabus}
-          syllabusDesc={DataScienceCourseData[0].syllabusDesc}
-          popupHead={DataScienceCourseData[0].popupHead}
+          brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Advance+AI+%26+ML+Certification+Program+Learnbay.pdf"
+          syllabus={AIMLDataScienceCourseData[0].syllabus}
+          syllabusDesc={AIMLDataScienceCourseData[0].syllabusDesc}
+          popupHead={AIMLDataScienceCourseData[0].popupHead}
         />
-        <GrowthStats
-          img1="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Scope+of+DS+left+image.png"
-          heading="Be the future: Grow your Data Science & AI skills "
-          para1="Data Science market to reach $133 billion by 2026"
-          para2="The global AI market to hit US$ 1,597.1 billion by 2030 "
-          para3="Influences on nearly all sectors of the current industries"
+       <GrowthStats
+          img1="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/AIML-Scope.png"
+          heading="Dive into the advanced tech industry & unlock limitless career potential "
+          para1="Higher Growth: Compound annual growth rate (CAGR) of 8.2% in 2023"
+          para2="Big Earning Potential: Earn an average salary of INR 20 LPA"
+          para3="Strong Demand: Booming requirement across various industries and domains"
         />
         <ToolsCovered
           deskImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Tools-Logo.png"
           mobImage="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Mobile-Tools-Covered.png"
         />
-        <Certificate
+            <Certificate
           threeCertificate={true}
-          data={DataScienceCourseData[0].Certificate}
+          data={AIMLDataScienceCourseData[0].Certificate}
         />
         <FeeSection
-          Fee="₹ 99,000 + 18% GST"
-          FeeEmi="₹ 9,735/month"
-          FeeHeading="Program Fee & Financing"
-          FeeContent1="0% interest rate"
-          FeeContent2="No cost EMI"
-          FeeContent3="Flexible payment"
-          FeeContent4="Easy loan procedure"
-          FeeContent5="15 days refund policy"
-          FeeContent6="No additional cost"
-          dataScienceCounselling={true}
+         AIMLCertificate={true}
+         Fee="₹ 1,10,000 + 18% GST"
+         FeeEmi="₹ 10,817/month"
+         FeeHeading="Program Fee & Financing"
+         FeeContent2="No cost EMI"
+         FeeContent3="Flexible payment"
+         FeeContent4="Easy loan procedure"
+         FeeContent5="15 days refund policy"
+         dataScienceCounselling={true}
         />
         <DomainSection
           dataScience={true}
-          domainSectionData={DataScienceCourseData[0].domainSection}
+          domainSectionData={AIMLDataScienceCourseData[0].domainSection}
         />
         <Project
-          projectData={DataScienceCourseData[0].project}
-          tools="12+"
-          dataScience={true}
+          projectData={AIMLDataScienceCourseData[0].project}
+          tools="16+ Tools"
+          project="12+ Projects"
           titleCourse="Data Science Project Brochure"
+          dataScience={true}
           brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Data+Science+and+AI+Projects.pdf"
-          project="15+"
-          
+
         />
-        <FAQNew FAQNewData={DataScienceCourseData[0].faq} />
+        <FAQNew FAQNewData={AIMLDataScienceCourseData[0].faq} />
         <SeventhSection />
         <Footer />
+        <OfferPopup />
         <BottomBar />
       </main>
     </>

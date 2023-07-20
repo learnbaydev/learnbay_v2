@@ -125,7 +125,6 @@
   display: flex;
   flex-flow: column;
   width: 100%;
-  margin-top: 22px;
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
 }
 .formWrapper {
@@ -170,6 +169,17 @@
 }
 .h1 {
   text-align: center;
+}
+.boxBlueB {
+  background: #0072BC;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.boxBlueB .BoxP {
+  font-size: 22px;
+  color: #fff;
+  margin: 0;
 }
 @media (max-width: 1281px) {
   .Syllabus {

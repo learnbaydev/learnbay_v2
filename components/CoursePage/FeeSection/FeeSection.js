@@ -38,11 +38,11 @@ const FeeSection = ({
     let width = window.innerWidth;
 
     if (width < 801) {
-      setSlidesPerView(9);
+      setSlidesPerView(3);
       setSpaceBetween(20);
     }
     if (width < 641) {
-      setSlidesPerView(5);
+      setSlidesPerView(3);
       setSpaceBetween(20);
     }
     if (width < 481) {
@@ -151,7 +151,6 @@ const FeeSection = ({
                 loop={true}
                 autoplay={{
                   delay: 1000,
-                  disableOnInteraction: false,
                 }}
                 grabCursor={true}
                 modules={[Autoplay]}
