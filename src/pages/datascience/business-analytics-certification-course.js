@@ -4,7 +4,7 @@ import Navbar from "../../../components/Navbar/Navbar";
 import Footer from "../../../components/Footer/Footer";
 
 import dynamic from "next/dynamic";
-import { FreshersFSDData } from "../../../Data/FreshersFSDCourse";
+import { BADataScienceCourseData } from "../../../Data/BusinessAnalyticsData";
 
 const FirstSection = dynamic(() =>
   import("../../../components/CoursePage/FirstSection/FirstSection")
@@ -65,90 +65,87 @@ function Blockchain() {
 
   return (
     <>
-      <Head>
-        <title>Software Development Program For Freshers - Learnbay</title>
+       <Head>
+        <title>Business Analytics Certification Course - Learnbay</title>
+        <meta name="robots" content="index, follow" />
         <meta
           name="description"
-          content="Learnbay's Full Stack Software Development Course will help you become a skilled software developer. Gain practical experience and master key coding skills."
+          content="Enroll Now in Learnbay's professional business analytics course. Master the business analytics techniques and gain valuable insights to advance your career."
         />
-        <meta
-          name="keywords"
-          content="Software Development Program For Freshers"
-        />
+        <meta name="keywords" content="Business Analytics Master Program" />
         <link
           rel="icon"
           href="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/Learnbay-Favicon-L.png"
         />
         <link
           rel="canonical"
-          href="https://www.learnbay.co/software-development-program-with-specialization-data-science-and-ai"
+          href="https://www.learnbay.co/business-analytics-certification-course"
         />
       </Head>
       <main>
         <Navbar popup={true} dataScienceCounselling={true} />
         <FirstSection
-          softwareBtnHide={true}
-          FirstTyped="IBM Certificate"
-          SecondTyped="Mock Interviews"
+          FirstTyped="Guaranteed Interview Calls"
+          SecondTyped="Capstone Project Certificate"
           ThirdTyped="Live Interactive Classes"
           dataScience={true}
-          titleCourse="Software Development Program Designed For Freshers"
-          brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Software+Development+Program+for+Freshers.pdf"
-          ibmOnly={true}
-          FirstRightImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/SD-fresher-header.webp"
-          firstToparaImg="Designed For Freshers"
-          firstHeading="Software Development Program"
-          firstTopPara="Join the next generation of developers"
-          idss="bfl64ANfSV0"
+          titleCourse="Business Analytics Master Program"
+          brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Business+Analytics+Certification+Program+Learnbay.pdf"
+          idss="4j80WXLTvGE"
+          FirstRightImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/manager+header+image.webp"
+          firstToparaImg=" Business Analytics Master Program"
+          firstHeading="Elevate your expertise with"
         />
-        <SecondSection SecondSectionData={FreshersFSDData[0].secondSection} />
+        <SecondSection
+          SecondSectionData={BADataScienceCourseData [0].secondSection}
+        />
         <Testimonial
-          Testimonial={FreshersFSDData[0].testimonial}
+          redirectDS={true}
+          Testimonial={BADataScienceCourseData [0].testimonial}
           heading="Our Alumni Speak"
           para="Discover the impact of our programs on career growth"
         />
         <WhoProgram
-          leftImage="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/who-is-fresher.webp"
-          ThirdSectionData={FreshersFSDData[0].thirdSection}
+          leftImage="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/BA-Masters-who.png"
+          ThirdSectionData={BADataScienceCourseData [0].thirdSection}
         />
         <Switch />
         <FourthSection
-          placementData={FreshersFSDData[0].fourthSection}
+          placementData={BADataScienceCourseData [0].fourthSection}
           redirectDS={true}
           dataScience={true}
-          titleCourse="Full Stack Placement Report"
-          brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Placement+Report+(1).pdf"
+          titleCourse="Data Science Placement Report"
+          brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Placement+Report.pdf"
         />
         <FifthSection />
-        <SixthSectionCTA dataScienceCounselling={true} />
+        <SixthSectionCTA dataScienceCounselling={true}/>
         <SyllabusNew
           dataScienceCounselling={true}
           dataScience={true}
-          titleCourse="Software Development Program Designed For Freshers"
-          brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Software+Development+Program+for+Freshers.pdf"
-          syllabus={FreshersFSDData[0].syllabus}
-          syllabusDesc={FreshersFSDData[0].syllabusDesc}
-          popupHead={FreshersFSDData[0].popupHead}
+          titleCourse="Business Analytics Master Program"
+          brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Business+Analytics+Certification+Program+Learnbay.pdf"
+          syllabus={BADataScienceCourseData[0].syllabus}
+          syllabusDesc={BADataScienceCourseData[0].syllabusDesc}
+          popupHead={BADataScienceCourseData[0].popupHead}
         />
         <GrowthStats
-          img1="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/SW+Dev+Masters+Scope+Image-min.png"
-          heading="Embrace the future of technology & unlock endless career opportunities"
-          para1="Higher Growth: Compound annual growth rate of CAGR of 11.9% in 2023"
-          para2="Maximize Cloud Opportunities: Unleash your potential & earn 8 LPA"
-          para3="Strong Demand: Growing need for tech wizards across various industries"
+          img1="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Scope-Business-Analytics.png"
+          heading="Future of Business Analytics"
+          para1="Business analytics market to hit $106B by 2027"
+          para2="Get an average salary of INR 10+ lakhs"
+          para3="Abundant opportunities in various industries and domains"
         />
-
         <ToolsCovered
-          deskImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Tools-Logo-SDE.png"
-          mobImage="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/TOOLS-SDE-mobile.png"
+          deskImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/BA+Family+Tools+Covered.png"
+          mobImage="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/BA-Family-Tools-Covered-mobile.png"
         />
         <Certificate
-          oneCertificate={true}
-          data={FreshersFSDData[0].Certificate}
+          threeCertificate={true}
+          data={BADataScienceCourseData [0].Certificate}
         />
         <FeeSection
-          Fee="₹ 60,000+ 18% GST"
-          FeeEmi="₹ 5,900/month"
+          Fee="₹ 1,10,000 + 18% GST"
+          FeeEmi="₹ 10,816/month"
           FeeHeading="Program Fee & Financing"
           FeeContent1="0% interest rate"
           FeeContent2="No cost EMI"
@@ -156,21 +153,24 @@ function Blockchain() {
           FeeContent4="Easy loan procedure"
           FeeContent5="15 days refund policy"
           FeeContent6="No additional cost"
-          para="We are dedicated to making best course for Data Structures and Algorithms accessible. We are committed to helping you find a way to budget for this Course and offer a variety of financing options to make it more economical"
+          dataScienceCounselling={true}
         />
-
+           <DomainSection
+          dataScience={true}
+          domainSectionData={BADataScienceCourseData[0].domainSection}
+        />
         <Project
-          redirectDS={true}
-          projectData={FreshersFSDData[0].project}
-          SoftwareText={true}
+          projectData={BADataScienceCourseData [0].project}
           tools="16+ Tools"
-          project="8+ Case Studies"
-          logoHide={true}
+          project="15+ Projects"
+          dataScience={true}
+          titleCourse="Business Analytics Project Brochure"
+          brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Business+Analytics+Projects.pdf"
         />
-        {/* <FAQNew FAQNewData={FreshersFSDData [0].faq} /> */}
+        <FAQNew FAQNewData={BADataScienceCourseData [0].faq} />
         <SeventhSection />
         <Footer />
-        <OfferPopup />
+        <OfferPopup BAFamily={true} />
         <BottomBar />
       </main>
     </>

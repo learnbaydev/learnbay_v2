@@ -102,7 +102,7 @@ function Blockchain() {
         />
         <SecondSection SecondSectionData={BlockchainFSDData[0].secondSection} />
         <Testimonial
-        FSDTestimonial={true}
+          FSDTestimonial={true}
           Testimonial={BlockchainFSDData[0].testimonial}
           heading="Our Alumni Speak"
           para="Discover the impact of our programs on career growth"
@@ -120,7 +120,7 @@ function Blockchain() {
           brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Placement+Report+(1).pdf"
         />
         <FifthSection />
-        <SixthSectionCTA dataScienceCounselling={true}/>
+        <SixthSectionCTA dataScienceCounselling={true} />
         <SyllabusNew
           dataScienceCounselling={true}
           dataScience={true}
@@ -169,8 +169,8 @@ function Blockchain() {
           brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Real-time+Projects+%26+Use+cases.pdf"
         />
         <FAQNew FAQNewData={BlockchainFSDData[0].faq} />
-        <SeventhSection fullStackCont={true} />
-        <Footer adPage={true} />
+        <SeventhSection />
+        <Footer />
         <BottomBar />
       </main>
     </>

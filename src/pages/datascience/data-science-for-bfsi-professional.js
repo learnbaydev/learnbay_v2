@@ -4,7 +4,7 @@ import Navbar from "../../../components/Navbar/Navbar";
 import Footer from "../../../components/Footer/Footer";
 
 import dynamic from "next/dynamic";
-import { FreshersFSDData } from "../../../Data/FreshersFSDCourse";
+import { DsBFSIScienceCourseData } from "../../../Data/DsBFSIData";
 
 const FirstSection = dynamic(() =>
   import("../../../components/CoursePage/FirstSection/FirstSection")
@@ -66,89 +66,89 @@ function Blockchain() {
   return (
     <>
       <Head>
-        <title>Software Development Program For Freshers - Learnbay</title>
+        <title>
+          Data Analytics in Finance and Banking (BFSI) Course - Learnbay
+        </title>
+        <meta name="robots" content="index, follow" />
         <meta
           name="description"
-          content="Learnbay's Full Stack Software Development Course will help you become a skilled software developer. Gain practical experience and master key coding skills."
+          content="This Financial Analyst Course for BFSI Professionals will help you advance your career in finance analytics. Acquire BFSI-specific knowledge. Enroll Now"
         />
-        <meta
-          name="keywords"
-          content="Software Development Program For Freshers"
-        />
+        <meta name="keywords" content="Banking & Finance Analytics Program" />
         <link
           rel="icon"
           href="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/Learnbay-Favicon-L.png"
         />
         <link
           rel="canonical"
-          href="https://www.learnbay.co/software-development-program-with-specialization-data-science-and-ai"
+          href="https://www.learnbay.co/data-science-for-bfsi-professional"
         />
       </Head>
       <main>
         <Navbar popup={true} dataScienceCounselling={true} />
         <FirstSection
-          softwareBtnHide={true}
-          FirstTyped="IBM Certificate"
-          SecondTyped="Mock Interviews"
+          FirstTyped="Guaranteed Interview Calls"
+          SecondTyped="Capstone Project Certificate"
           ThirdTyped="Live Interactive Classes"
           dataScience={true}
-          titleCourse="Software Development Program Designed For Freshers"
-          brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Software+Development+Program+for+Freshers.pdf"
-          ibmOnly={true}
-          FirstRightImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/SD-fresher-header.webp"
-          firstToparaImg="Designed For Freshers"
-          firstHeading="Software Development Program"
-          firstTopPara="Join the next generation of developers"
-          idss="bfl64ANfSV0"
+          titleCourse="Banking & Finance Analytics Program"
+          brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Data+Science+%26+AI+for+BFSI+Professionals.pdf"
+          FirstRightImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/BFSI-header-image.webp"
+          firstToparaImg="for BFSI Professionals"
+          firstHeading="Data Science and AI "
+          firstTopPara="Ready to master the finance domain?"
+          idss="4j80WXLTvGE"
         />
-        <SecondSection SecondSectionData={FreshersFSDData[0].secondSection} />
+        <SecondSection
+          SecondSectionData={DsBFSIScienceCourseData [0].secondSection}
+        />
         <Testimonial
-          Testimonial={FreshersFSDData[0].testimonial}
+          redirectDS={true}
+          Testimonial={DsBFSIScienceCourseData [0].testimonial}
           heading="Our Alumni Speak"
           para="Discover the impact of our programs on career growth"
         />
         <WhoProgram
-          leftImage="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/who-is-fresher.webp"
-          ThirdSectionData={FreshersFSDData[0].thirdSection}
+          leftImage="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/BFSI+_+Who+is+this+program+for+_+image.webp"
+          ThirdSectionData={DsBFSIScienceCourseData [0].thirdSection}
         />
         <Switch />
         <FourthSection
-          placementData={FreshersFSDData[0].fourthSection}
+          placementData={DsBFSIScienceCourseData [0].fourthSection}
           redirectDS={true}
           dataScience={true}
-          titleCourse="Full Stack Placement Report"
-          brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Placement+Report+(1).pdf"
+          titleCourse="Data Science Placement Report"
+          brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Placement+Report.pdf"
         />
         <FifthSection />
-        <SixthSectionCTA dataScienceCounselling={true} />
+        <SixthSectionCTA dataScienceCounselling={true}/>
         <SyllabusNew
           dataScienceCounselling={true}
           dataScience={true}
-          titleCourse="Software Development Program Designed For Freshers"
-          brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Software+Development+Program+for+Freshers.pdf"
-          syllabus={FreshersFSDData[0].syllabus}
-          syllabusDesc={FreshersFSDData[0].syllabusDesc}
-          popupHead={FreshersFSDData[0].popupHead}
+          titleCourse="Banking & Finance Analytics Program "
+          brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Data+Science+%26+AI+for+BFSI+Professionals.pdf"
+          syllabus={DsBFSIScienceCourseData[0].syllabus}
+          syllabusDesc={DsBFSIScienceCourseData[0].syllabusDesc}
+          popupHead={DsBFSIScienceCourseData[0].popupHead}
         />
-        <GrowthStats
-          img1="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/SW+Dev+Masters+Scope+Image-min.png"
-          heading="Embrace the future of technology & unlock endless career opportunities"
-          para1="Higher Growth: Compound annual growth rate of CAGR of 11.9% in 2023"
-          para2="Maximize Cloud Opportunities: Unleash your potential & earn 8 LPA"
-          para3="Strong Demand: Growing need for tech wizards across various industries"
+         <GrowthStats
+          img1="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/BFSI+Scope.webp"
+          heading="How is analytics changing finance?"
+          para1="Higher Growth: Annual growth rate of 10.4% in 2023 "
+          para2="Big Earning Potential: Earn an average salary of INR 10 LPA"
+          para3="Enormous demand for individuals in the banking and finance sector"
         />
-
         <ToolsCovered
-          deskImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Tools-Logo-SDE.png"
-          mobImage="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/TOOLS-SDE-mobile.png"
+          deskImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Tools-Logo.png"
+          mobImage="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Mobile-Tools-Covered.png"
         />
         <Certificate
-          oneCertificate={true}
-          data={FreshersFSDData[0].Certificate}
+          twoCertificate={true}
+          data={DsBFSIScienceCourseData [0].Certificate}
         />
         <FeeSection
-          Fee="₹ 60,000+ 18% GST"
-          FeeEmi="₹ 5,900/month"
+          Fee="₹ 89,000 + 18% GST"
+          FeeEmi="₹ 8,752/month"
           FeeHeading="Program Fee & Financing"
           FeeContent1="0% interest rate"
           FeeContent2="No cost EMI"
@@ -156,18 +156,18 @@ function Blockchain() {
           FeeContent4="Easy loan procedure"
           FeeContent5="15 days refund policy"
           FeeContent6="No additional cost"
-          para="We are dedicated to making best course for Data Structures and Algorithms accessible. We are committed to helping you find a way to budget for this Course and offer a variety of financing options to make it more economical"
+          dataScienceCounselling={true}
         />
-
+           
         <Project
-          redirectDS={true}
-          projectData={FreshersFSDData[0].project}
-          SoftwareText={true}
+          projectData={DsBFSIScienceCourseData [0].project}
           tools="16+ Tools"
-          project="8+ Case Studies"
-          logoHide={true}
+          project="12+ Projects"
+          dataScience={true}
+          titleCourse="BFSI Project Brochure"
+          brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Business+Analytics+Projects.pdf"
         />
-        {/* <FAQNew FAQNewData={FreshersFSDData [0].faq} /> */}
+        <FAQNew FAQNewData={DsBFSIScienceCourseData [0].faq} />
         <SeventhSection />
         <Footer />
         <OfferPopup />

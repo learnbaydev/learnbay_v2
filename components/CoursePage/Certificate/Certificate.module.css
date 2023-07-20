@@ -50,7 +50,7 @@
 }
 .MicroCert {
   display: grid;
-  grid-template-columns: 48% 49%;
+  grid-template-columns: 55% 44%;
   width: 100%;
   height: 100%;
   padding: 20px 70px 0px 70px;
@@ -63,12 +63,6 @@
   align-items: flex-start;
   flex-flow: column;
   margin-top: 30px;
-}
-.rightSide h6 {
-  margin-top: 0 !important;
-  font-size: 27px !important;
-  line-height: 40px !important;
-  margin-bottom: 10px !important;
 }
 .certificate h2 {
   text-align: center;
@@ -96,9 +90,11 @@
 
 .leftSide h6,
 .rightSide h6 {
-  color: #0072bc;
   margin: 0;
-  margin-top: 20px;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #ecbb53;
+  color: #0072bc;
   font-size: 20px;
   font-weight: 600;
   line-height: 24px;
@@ -112,12 +108,12 @@
   margin: 10px 0;
   font-weight: 400;
   line-height: 24px;
+  color: #000;
 }
 
 .checkCircle {
   margin-right: 15px;
-  font-size: 24px;
-  color: #2d9cd7;
+  font-size: 20px;
 }
 
 @media (max-width: 1281px) {

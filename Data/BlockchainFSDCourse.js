@@ -1064,6 +1064,18 @@ export const BlockchainFSDData = [
         ],
       },
       {
+        id: 5,
+        sectionName: "Certification",
+        data: [
+          {
+            id: 0,
+            ques: "Is there any accredited certification after course completion?",
+            ans: "Yes, you will be awarded IBM accredited software development Completion Certificate on successful course completion.",
+            open: true,
+          },
+        ],
+      },
+      {
         id: 6,
         sectionName: "Job Assistance",
         data: [
