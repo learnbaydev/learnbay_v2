@@ -1,8 +1,12 @@
 import React from "react";
 import styles from "./FirstSection.module.css";
 import Image from "next/image";
-import { FaDownload } from "react-icons/fa";
+// import { FaDownload } from "react-icons/fa";
+import { FaChevronDown, FaBell, FaDownload } from "react-icons/fa";
 import { firstSectionData } from "./FirstSectionData";
+import dynamic from "next/dynamic";
+import Link from "next/link";
+const Button = dynamic(() => import("../../../Global/Button/Button"));
 
 function FirstSection() {
   return (

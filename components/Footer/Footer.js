@@ -21,7 +21,7 @@ import {
   CourseData,
 } from "./FooterData";
 
-const Footer = ({ adPage }) => {
+const Footer = ({ adPage, adPageCity }) => {
   return (
     <section className={styles.FooterSection}>
       <div className={styles.FooterDiv}>
@@ -140,7 +140,7 @@ const Footer = ({ adPage }) => {
           </a>
         </div>
       </div>
-      {adPage ? (
+      {adPageCity ? (
         ""
       ) : (
         <>

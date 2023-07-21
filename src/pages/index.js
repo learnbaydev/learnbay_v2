@@ -1,6 +1,9 @@
 import Head from "next/head";
 import Navbar from "../../components/Navbar/Navbar";
 import dynamic from "next/dynamic";
+import { DataScienceCourseData } from "../../Data/AdvanceDataScienceCourse";
+import BottomBar from "../../components/WebPage/BottomBar/BottomBar";
+import OfferPopup from "../../components/OfferPopup/OfferPopup";
 const BoxShape = dynamic(() =>
   import("../../components/HomePage/BoxShape/BoxShape")
 );
@@ -47,11 +50,11 @@ export default function Home() {
         />
       </Head>
 
-      <Navbar radio={true}/>
-      <FirstSection />
+      <Navbar radio={true} dataScienceCounselling={true} />
+      <FirstSection dataScienceCounselling={true} radio={true} />
       <HomeLine />
       <BoxShape />
-      <Course />
+      <Course dataScience={true} radio={true} />
       <Switch />
       <KeyFeatures
         titleCourse="Data Science Placement Report"
@@ -61,10 +64,16 @@ export default function Home() {
         dataScience={true}
         radio={true}
       />
-      <Testimonial redirectDS={true} heading="Our Alumni Profile" />
-      <ContactUs />
+      <Testimonial
+        redirectDS={true}
+        heading="Our Alumni Profile"
+        Testimonial={DataScienceCourseData[0].testimonial}
+      />
+      <ContactUs dataScienceCounselling={true} radio={true} />
       <SeventhSection />
       <Footer />
+      <BottomBar radio={true}/>
+      <OfferPopup />
     </>
   );
 }

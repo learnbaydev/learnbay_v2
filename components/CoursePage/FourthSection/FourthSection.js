@@ -58,7 +58,7 @@ function FourthSection({
           ></div>
         </div>
         <div className="RightPopup">
-          <h5>Download Brochure</h5>
+          <h5>Download Report</h5>
           <Form
             dataScience={dataScience}
             dataScienceCounselling={dataScienceCounselling}
@@ -105,7 +105,7 @@ function FourthSection({
           </div>
         </div>
         <div className={styles.btnWrap}>
-          <div onClick={popupShow}>
+          <div onClick={setPopupsB}>
             <Button
               className={styles.fillBtn}
               text=" Download Placement Report"

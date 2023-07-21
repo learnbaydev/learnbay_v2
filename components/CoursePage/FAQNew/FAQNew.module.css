@@ -38,6 +38,7 @@
 }
 .courses {
   display: flex;
+  margin-top: 40px;
 }
 .listPanel {
   display: flex;

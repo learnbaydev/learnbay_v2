@@ -1,5 +1,5 @@
 import styles from "./project.module.scss";
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Form from "../../Form/Form";
 import dynamic from "next/dynamic";
 const Popup = dynamic(() => import("../../Popup/Popup"));
@@ -11,15 +11,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
-// import {
-//   projectDS,
-//   projectFS,
-//   projectHR,
-//   projectBFSI,
-//   projectMarketing,
-//   projectCloud,
-//   projectBlockchain,
-// } from "./ProjectData";
 import Button from "../../Global/Button/Button";
 
 const Project = ({
@@ -30,6 +21,7 @@ const Project = ({
   titleCourse,
   brochureLink,
   SoftwareText,
+  redirectDS,
 }) => {
   const [popups, setPopups] = useState(false);
   const [popupsP, setPopupsP] = useState(false);
@@ -47,37 +39,6 @@ const Project = ({
   };
 
   const [projectArray, setProjectArray] = useState(projectData);
-  // useEffect(() => {
-  //   if (redirectDS) {
-  //     setProjectArray(projectDS);
-  //   }
-  //   if (redirectFS) {
-  //     setProjectArray(projectFS);
-  //   }
-  //   if (redirectHR) {
-  //     setProjectArray(projectHR);
-  //   }
-  //   if (redirectMarketing) {
-  //     setProjectArray(projectMarketing);
-  //   }
-  //   if (redirectBFSI) {
-  //     setProjectArray(projectBFSI);
-  //   }
-  //   if (redirectCloud) {
-  //     setProjectArray(projectCloud);
-  //   }
-  //   if (redirectBlockchain) {
-  //     setProjectArray(projectBlockchain);
-  //   }
-  // }, [
-  //   redirectDS,
-  //   redirectFS,
-  //   redirectHR,
-  //   redirectMarketing,
-  //   redirectBFSI,
-  //   redirectCloud,
-  //   redirectBlockchain,
-  // ]);
 
   return (
     <div className={styles.projectHeader}>
@@ -109,15 +70,19 @@ const Project = ({
 
       <div className={styles.headWrapper}>
         <div className={styles.left}>
-          <h4>Industry Projects</h4>
-          {SoftwareText ? (
+          {SoftwareText ? (<>
+          <h4>Case Studies</h4>
             <p className={styles.ptop}>
-              Work on live projects certified from IBM
+              Work on live Case Studies certified from IBM
             </p>
+            </>
           ) : (
+            <>
+          <h4>Industry Projects</h4>
             <p className={styles.ptop}>
               Work on live capstone projects certified from IBM
             </p>
+            </>
           )}
           <div className={styles.iconWrapper}>
             <div className={styles.middle}>
@@ -204,6 +169,7 @@ const Project = ({
                   <div className={styles.left}>
                     <h5>{domain}</h5>
                   </div>
+                  {redirectDS ? ("") : (
                   <div
                     className={styles.imgWrap}
                     style={id === "BMW" ? { width: "35px" } : { width: "auto" }}
@@ -218,10 +184,11 @@ const Project = ({
                       />
                     </div>
                   </div>
+                  )}
                 </div>
                 <div className={styles.body}>
                   <p>{SDesc}</p>
-                  <span
+                  {redirectDS ? ("") : (<span
                     onClick={() => {
                       popupShow();
                       setTitle({ Title });
@@ -231,7 +198,8 @@ const Project = ({
                     }}
                   >
                     Learn More
-                  </span>
+                  </span>)}
+                  
                 </div>
               </SwiperSlide>
             );

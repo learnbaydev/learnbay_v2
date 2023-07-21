@@ -23,6 +23,7 @@ function FirstSection({
   FirstTyped,
   SecondTyped,
   ThirdTyped,
+  ibmOnly,
 }) {
   const [popups, setPopups] = useState(false);
 
@@ -98,15 +99,23 @@ function FirstSection({
           In Collaboration With
         </p>
         <div className={styles.ImageBlock}>
-          <div className="imgWrapper">
-            <Image
-              src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/FirstSection.png"
-              width="283"
-              height="51"
-              loading="lazy"
-              alt="data science course"
-            />
-          </div>
+            {ibmOnly ? (
+              <Image
+                src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/ibm-single-home.png"
+                width="127"
+                height="51"
+                loading="lazy"
+                alt="data science course"
+              />
+            ) : (
+              <Image
+                src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/FirstSection.png"
+                width="283"
+                height="51"
+                loading="lazy"
+                alt="data science course"
+              />
+            )}
         </div>
         <div className={styles.animationTextWrap}>
           <span ref={el} className={styles.animationText}></span>

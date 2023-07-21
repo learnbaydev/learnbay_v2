@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import styles from "./OfferPopup.module.css";
 import { AiFillCloseCircle } from "react-icons/ai";
+import Button from "../Global/Button/Button";
 
 const OfferPopup = ({
   title,
@@ -133,11 +134,18 @@ const OfferPopup = ({
                       <p style={{ fontSize: "12px" }}>
                         *Terms & Conditions applied.
                       </p>
-                      <a href="/submit-info" target="_blank">
-                        <button onClick={handelOpen} style={{ width: "100%" }}>
-                          Apply For Scholarship Now!
-                        </button>
-                      </a>
+                      {/* <a href="/submit-info" target="_blank">
+                        <Button >
+                         
+                        </Button> */}
+                        <a href="/submit-info" target="_blank" onClick={handelOpen}>
+              <Button
+                
+                text=" Apply For Scholarship Now!"
+                // passIcon={<FaArrowRight className="bIconS" />}
+              />
+            </a>
+                      {/* </a> */}
                     </div>
                   </>
                 )}

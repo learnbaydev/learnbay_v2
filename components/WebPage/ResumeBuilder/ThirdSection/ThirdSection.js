@@ -6,6 +6,8 @@ import VideoPopup from "../../VideoPopup/VideoPopup";
 import { FaBell } from "react-icons/fa";
 import Popup from "../../Popup/Popup";
 import Form from "../../Form/Form";
+import dynamic from "next/dynamic";
+const Button = dynamic(() => import("../../../Global/Button/Button"));
 
 function ThirdSection({idss}) {
   const [video, setVideo] = useState(false);
@@ -59,7 +61,7 @@ function ThirdSection({idss}) {
         </div>
         <div className={styles.right}>
           <div className={styles.FormThank}>
-            <h4>Apply For Counselling</h4>
+            <h4 className={styles.RightPopupH}>Apply For Counselling</h4>
             <FormInline radio={true} dataScienceCounselling={true} />
           </div>
         </div>
@@ -70,11 +72,18 @@ function ThirdSection({idss}) {
           <p className={styles.greenButton}>FREE</p>
           <h4>PROFILE REVIEW & CONSULTATION</h4>
           <p>from Industry Expert</p>
-          <button onClick={popupShow} className={styles.Btn}>
-              Book Now <FaBell className="bIconS" />
-            </button>
+        
+           <div onClick={popupShow} className={styles.centerButton}>
+            <Button
+     
+              className={styles.Btndiv}
+              text="Book Now"
+              passIcon={<FaBell className="bIconS" />}
+            />
+            </div>
         </div>
         <div className={styles.left}>
+          <div className="imgWrapper">
           <Image
             onClick={videoSHow}
             src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/whylearnbay-left-image.png"
@@ -82,6 +91,7 @@ function ThirdSection({idss}) {
             height={393}
             className={styles.LeftWrapImg}
           />
+        </div>
         </div>
       </section>
     </>

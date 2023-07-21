@@ -1,10 +1,10 @@
 import React from "react";
-import FirstHeader from "../components/Thankyou/FirstHeader/FirstHeader";
-import ThankStats from "../components/Thankyou/ThankStat/ThankStats";
-import TyPageCta from "../components/Thankyou/TyPageCta/TyPageCta";
-import Survey from "../components/Thankyou/Survey/Survey";
-import Footer from "../components/Footer/Footer";
-import BottomBar from "../components/BottomBar/BottomBar";
+import FirstHeader from "../../components/WebPage/Thankyou/FirstHeader/FirstHeader";
+import ThankStats from "../../components/WebPage/Thankyou/ThankStat/ThankStats";
+import Survey from "../../components//WebPage/Thankyou/Survey/Survey";
+import Footer from "../../components/Footer/Footer";
+import BottomBar from "../../components/WebPage/BottomBar/BottomBar";
+import OfferPopup from "../../components/OfferPopup/OfferPopup";
 
 const ThankYouDemo = () => {
   return (
@@ -26,8 +26,10 @@ const ThankYouDemo = () => {
         header="Are you seeking the perfect course that will propel your career to new heights?"
         para="Unleash your full potential with our personalized and tailored course suggestions that will guide you towards your ideal learning journey."
       />
-      <BottomBar />
+      <BottomBar radio={true}/>
       <Footer />
+      <BottomBar />
+      <OfferPopup />
     </div>
   );
 };

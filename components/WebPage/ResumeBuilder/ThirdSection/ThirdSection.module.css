@@ -22,6 +22,7 @@
     font-size: 20px;
     margin-bottom: 10px;
     margin-top: 0px;
+    color: #000;
   }
 
   .imgDiv {
@@ -71,6 +72,18 @@
   .cont button {
     margin-top: 30px;
   }
+
+  .RightPopupH{
+    font-size: 32px;
+    margin-bottom: 20px;
+    margin-top: 0;
+    color: #000;
+    padding: 0;
+    font-weight: 700;
+    text-align: center;
+  }
+
+
 
 @media (max-width: 1281px) {
     .main {
@@ -165,9 +178,23 @@
         text-align: center;
     }
 
+
+
     .Btn {
         margin: auto;
         margin-bottom: 30px;
     }
+}
+
+@media (max-width: 481px){
+
+    .centerButton {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 15px;
+      }
+      
+
 }
 

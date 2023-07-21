@@ -89,13 +89,6 @@ function SyllabusNew({
                 <p className={styles.BoxP}>
                   How much do you rate yourself in programming?
                 </p>
-                {/* {Pop ? (
-                  <p className={styles.BoxP}>
-                    First Rate yourself in Programming
-                  </p>
-                ) : (
-                  ""
-                )} */}
                 <div className={styles.FlexInput}>
                   <input
                     id="Data Science Program"
