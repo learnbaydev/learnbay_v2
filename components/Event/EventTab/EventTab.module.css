@@ -118,7 +118,6 @@ width: 100%;
   font-size: 26px;
   margin: 0;
   max-width: max-content;
-
   margin-bottom: 20px;
   padding-bottom: 20px;
   border-bottom: 1px solid rgba(120, 120, 120, 0.227);
@@ -137,13 +136,33 @@ width: 100%;
   font-size: 20px;
 }
 
+@media(max-width:1281px){
+  .leftSide h6,
+.middleSide h6,
+.rightSide h6 {
+  font-size: 20px;
+}
+}
+
 @media (max-width: 961px) {
+    .leftSide h6,
+.middleSide h6,
+.rightSide h6 {
+  font-size: 17px;
+}
   .Course {
     padding: 0px 30px;
   }
-  .leftSide h6 {
-    font-size: 22px;
+
+  .footer p{
+    font-size: 13px;
   }
+  .footer span{
+    font-size: 10px;
+  }
+  .contentI p{
+  font-size: 12px;
+}
 }
 @media (max-width: 801px) {
   .Course {
@@ -159,14 +178,25 @@ width: 100%;
     font-size: 14px;
   }
   .footer p {
-    font-size: 14px;
+        font-size: 10px;
+    font-weight: 600;
   }
+  .courses {
+     grid-template-columns: 20% 75%;
+    gap: 30px;
+}
+.span ,.ActiveSpan {
+ font-size: 12px;
+     padding: 10px 10px;
+}
+
 }
 @media (max-width: 641px) {
   .Course {
     padding: 0px;
   }
   .gridPanel {
+    grid-template-columns: 100%;
     flex-flow: column;
   }
   .leftSide {
