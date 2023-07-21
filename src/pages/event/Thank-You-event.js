@@ -2,7 +2,7 @@ import React from "react";
 import styles from "../../styles/ThankYou.module.css";
 import Head from "next/head";
 import Image from "next/image";
-import Navbar from "../../Components/Navbar/Navbar";
+import Navbar from "../../../components/Navbar/Navbar";
 
 const ThankYou = () => {
   return (
