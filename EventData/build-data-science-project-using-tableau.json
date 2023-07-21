@@ -1,0 +1,70 @@
+{
+    "metaInfo": {
+      "title": "Build Data Science Project using Tableau",
+      "desc": "Enroll in the Data Science Course Event and learn from live classes. Get Knowledge by working on industry projects.",
+      "keyword": "NLP",
+      "canonical": "https://www.learnbay.co/Event/build-data-science-project-using-tableau"
+    },
+    "mainData": {
+      "title": "Build Data Science Project using Tableau",
+    "eventDate": "November 26, 2022",
+      "tag": "Data science",
+      "eventTime": "11 A.M. to 1 P.M.",
+      "Duration": "120min",
+      "img": "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/DS+Project+Using+Tableau-10.png",
+      "register": "868"
+    },
+    "header": {
+      "title": "Build Data Science Project using Tableau",
+      "titleSpan": "With Industry Expert",
+      "desc": "For Professionals with 1+ years Working Exp",
+      "eventDate": "26th to 27th November",
+      "eventTime": "11 A.M. to 1 P.M.",
+      "imgSrc": "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/Abhishek+Sir-01.png",
+      "register": "868",
+      "width": "600",
+      "height": "560",
+      "alt": "Header",
+      "instructor": "Mr.Abhishek",
+      "href1": "https://youtu.be/0ygCpnwFkSI"
+      
+    },
+    "feature": {
+      "title": "Data Science Masterclass Features",
+      "h1": "Customized learning",
+      "p1": "Fulfill your learning goals and get expert assistance.",
+      "h2": "Live Classes",
+      "p2": "Get 100% live sessions led by Data Science experts.",
+      "h3": "Shareable certification",
+      "p3": "Attend the training and get acknowledged IBM certification.",
+      "img1": "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/Customized-Learning.png",
+      "img2": "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/Live-Classes.png",
+      "img3": "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/Shareable-Certification.png"
+    },
+    "profile": {
+      "pImg": "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/Abhishek-Sir.png",
+      "desc": "Data Scientist",
+      "pName": "Mr.Abhishek",
+ 
+      "mIcon": "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/amazon1.png",
+      "list1": "3+ years of experience in Python",
+      "list2": "2 Open-source contribution"
+    },
+    "whyUs": {
+      "title": "You will learn about",
+      "l1": "Data Preprocessing using Numpy",
+      "l2": "Data Cleaning using Pandas",
+      "l3": "Data Visualization using Tableau",
+      "l4": "Data Visualization using matplotlib"
+    },
+    "whoCan": {
+      "title": "This masterclass is for",
+      "heading1": "Data Scientist",
+      "para1": "Data Scientist aspirants who are aiming to accelerate their respective careers by upskilling with Data Science.",
+      "heading2": "Peer Working Professionals",
+      "para2": "Professionals, irrespective of their domains, who have great enthusiasm to make a career transition into Data Science.",
+      "heading3": "About Learnbay Academy",
+      "para3": " Learnbay Academy is an ed-tech company, founded by alumni of IIT Kharagpur."
+    }
+  }
+  

@@ -1,11 +1,11 @@
 import React from "react";
-import Navbar from "../../Components/Navbar/Navbar";
+import Navbar from "../../../components/Navbar/Navbar";
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../../styles/DataScienceEvent.module.css";
-import EventTab from "../../Components/Event/EventTab/EventTab";
-import { getSortedPostsData } from "../../lib/event";
-import { sortByDateEvent } from "../../utils";
+import EventTab from "../../../components/Event/EventTab/EventTab";
+import { getSortedPostsData } from "../../../lib/event";
+import { sortByDateEvent } from "../../util";
 
 export default function index({ eventData }) {
   return (
