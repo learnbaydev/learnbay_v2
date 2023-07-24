@@ -57,6 +57,10 @@ const Certificate = dynamic(() =>
 const FAQNew = dynamic(() =>
   import("../../../components/CoursePage/FAQNew/FAQNew")
 );
+const BatchDetails = dynamic(() =>
+  import("../../../components/CoursePage/BatchDetails/BatchDetails")
+);
+
 import BottomBar from "../../../components/WebPage/BottomBar/BottomBar";
 
 function Blockchain() {
@@ -123,7 +127,7 @@ function Blockchain() {
           brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Placement+Report.pdf"
         />
         <FifthSection />
-        <SixthSectionCTA dataScienceCounselling={true}/>
+        <SixthSectionCTA dataScienceCounselling={true} />
         <SyllabusNew
           dataScienceCounselling={true}
           dataScience={true}
@@ -171,7 +175,10 @@ function Blockchain() {
           titleCourse="Data Science Project Brochure"
           brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Data+Science+and+AI+Projects.pdf"
           project="15+"
-          
+        />
+        <BatchDetails
+          CourseFeeHead="Data Science and AI Foundation Program : Batch Details"
+          BAFamily
         />
         <FAQNew FAQNewData={DataScienceCourseData[0].faq} />
         <SeventhSection />

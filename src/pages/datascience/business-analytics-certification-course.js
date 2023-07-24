@@ -65,7 +65,7 @@ function Blockchain() {
 
   return (
     <>
-       <Head>
+      <Head>
         <title>Business Analytics Certification Course - Learnbay</title>
         <meta name="robots" content="index, follow" />
         <meta
@@ -97,28 +97,28 @@ function Blockchain() {
           firstHeading="Elevate your expertise with"
         />
         <SecondSection
-          SecondSectionData={BADataScienceCourseData [0].secondSection}
+          SecondSectionData={BADataScienceCourseData[0].secondSection}
         />
         <Testimonial
           redirectDS={true}
-          Testimonial={BADataScienceCourseData [0].testimonial}
+          Testimonial={BADataScienceCourseData[0].testimonial}
           heading="Our Alumni Speak"
           para="Discover the impact of our programs on career growth"
         />
         <WhoProgram
           leftImage="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/BA-Masters-who.png"
-          ThirdSectionData={BADataScienceCourseData [0].thirdSection}
+          ThirdSectionData={BADataScienceCourseData[0].thirdSection}
         />
         <Switch />
         <FourthSection
-          placementData={BADataScienceCourseData [0].fourthSection}
+          placementData={BADataScienceCourseData[0].fourthSection}
           redirectDS={true}
           dataScience={true}
           titleCourse="Data Science Placement Report"
           brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Placement+Report.pdf"
         />
         <FifthSection />
-        <SixthSectionCTA dataScienceCounselling={true}/>
+        <SixthSectionCTA dataScienceCounselling={true} />
         <SyllabusNew
           dataScienceCounselling={true}
           dataScience={true}
@@ -141,7 +141,7 @@ function Blockchain() {
         />
         <Certificate
           threeCertificate={true}
-          data={BADataScienceCourseData [0].Certificate}
+          data={BADataScienceCourseData[0].Certificate}
         />
         <FeeSection
           Fee="₹ 1,10,000 + 18% GST"
@@ -155,19 +155,23 @@ function Blockchain() {
           FeeContent6="No additional cost"
           dataScienceCounselling={true}
         />
-           <DomainSection
+        <DomainSection
           dataScience={true}
           domainSectionData={BADataScienceCourseData[0].domainSection}
         />
         <Project
-          projectData={BADataScienceCourseData [0].project}
+          projectData={BADataScienceCourseData[0].project}
           tools="16+ Tools"
           project="15+ Projects"
           dataScience={true}
           titleCourse="Business Analytics Project Brochure"
           brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Business+Analytics+Projects.pdf"
         />
-        <FAQNew FAQNewData={BADataScienceCourseData [0].faq} />
+        <BatchDetails
+          BAFamily={true}
+          CourseFeeHead="Business Analytics Master Program : Batch Details"
+        />
+        <FAQNew FAQNewData={BADataScienceCourseData[0].faq} />
         <SeventhSection />
         <Footer />
         <OfferPopup BAFamily={true} />

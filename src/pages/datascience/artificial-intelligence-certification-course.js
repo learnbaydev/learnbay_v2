@@ -65,7 +65,7 @@ function Blockchain() {
 
   return (
     <>
-       <Head>
+      <Head>
         <title>
           Artificial Intelligence and Machine Learning Course - Learnbay
         </title>
@@ -123,10 +123,9 @@ function Blockchain() {
           dataScience={true}
           titleCourse="Data Science Placement Report"
           brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Placement+Report.pdf"
-
         />
         <FifthSection />
-        <SixthSectionCTA dataScienceCounselling={true}/>
+        <SixthSectionCTA dataScienceCounselling={true} />
         <SyllabusNew
           dataScienceCounselling={true}
           serviceBasic={true}
@@ -137,7 +136,7 @@ function Blockchain() {
           syllabusDesc={AIMLDataScienceCourseData[0].syllabusDesc}
           popupHead={AIMLDataScienceCourseData[0].popupHead}
         />
-       <GrowthStats
+        <GrowthStats
           img1="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/AIML-Scope.png"
           heading="Dive into the advanced tech industry & unlock limitless career potential "
           para1="Higher Growth: Compound annual growth rate (CAGR) of 8.2% in 2023"
@@ -148,20 +147,20 @@ function Blockchain() {
           deskImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Tools-Logo.png"
           mobImage="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Mobile-Tools-Covered.png"
         />
-            <Certificate
+        <Certificate
           threeCertificate={true}
           data={AIMLDataScienceCourseData[0].Certificate}
         />
         <FeeSection
-         AIMLCertificate={true}
-         Fee="₹ 1,10,000 + 18% GST"
-         FeeEmi="₹ 10,817/month"
-         FeeHeading="Program Fee & Financing"
-         FeeContent2="No cost EMI"
-         FeeContent3="Flexible payment"
-         FeeContent4="Easy loan procedure"
-         FeeContent5="15 days refund policy"
-         dataScienceCounselling={true}
+          AIMLCertificate={true}
+          Fee="₹ 1,10,000 + 18% GST"
+          FeeEmi="₹ 10,817/month"
+          FeeHeading="Program Fee & Financing"
+          FeeContent2="No cost EMI"
+          FeeContent3="Flexible payment"
+          FeeContent4="Easy loan procedure"
+          FeeContent5="15 days refund policy"
+          dataScienceCounselling={true}
         />
         <DomainSection
           dataScience={true}
@@ -174,7 +173,10 @@ function Blockchain() {
           titleCourse="Data Science Project Brochure"
           dataScience={true}
           brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Data+Science+and+AI+Projects.pdf"
-
+        />
+        <BatchDetails
+          CourseFeeHead="Artificial Intelligence & Machine Learning Program:Batch Details"
+          BAFamily
         />
         <FAQNew FAQNewData={AIMLDataScienceCourseData[0].faq} />
         <SeventhSection />

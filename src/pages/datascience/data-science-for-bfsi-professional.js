@@ -100,28 +100,28 @@ function Blockchain() {
           idss="4j80WXLTvGE"
         />
         <SecondSection
-          SecondSectionData={DsBFSIScienceCourseData [0].secondSection}
+          SecondSectionData={DsBFSIScienceCourseData[0].secondSection}
         />
         <Testimonial
           redirectDS={true}
-          Testimonial={DsBFSIScienceCourseData [0].testimonial}
+          Testimonial={DsBFSIScienceCourseData[0].testimonial}
           heading="Our Alumni Speak"
           para="Discover the impact of our programs on career growth"
         />
         <WhoProgram
           leftImage="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/BFSI+_+Who+is+this+program+for+_+image.webp"
-          ThirdSectionData={DsBFSIScienceCourseData [0].thirdSection}
+          ThirdSectionData={DsBFSIScienceCourseData[0].thirdSection}
         />
         <Switch />
         <FourthSection
-          placementData={DsBFSIScienceCourseData [0].fourthSection}
+          placementData={DsBFSIScienceCourseData[0].fourthSection}
           redirectDS={true}
           dataScience={true}
           titleCourse="Data Science Placement Report"
           brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Placement+Report.pdf"
         />
         <FifthSection />
-        <SixthSectionCTA dataScienceCounselling={true}/>
+        <SixthSectionCTA dataScienceCounselling={true} />
         <SyllabusNew
           dataScienceCounselling={true}
           dataScience={true}
@@ -131,7 +131,7 @@ function Blockchain() {
           syllabusDesc={DsBFSIScienceCourseData[0].syllabusDesc}
           popupHead={DsBFSIScienceCourseData[0].popupHead}
         />
-         <GrowthStats
+        <GrowthStats
           img1="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/BFSI+Scope.webp"
           heading="How is analytics changing finance?"
           para1="Higher Growth: Annual growth rate of 10.4% in 2023 "
@@ -144,7 +144,7 @@ function Blockchain() {
         />
         <Certificate
           twoCertificate={true}
-          data={DsBFSIScienceCourseData [0].Certificate}
+          data={DsBFSIScienceCourseData[0].Certificate}
         />
         <FeeSection
           Fee="₹ 89,000 + 18% GST"
@@ -158,16 +158,17 @@ function Blockchain() {
           FeeContent6="No additional cost"
           dataScienceCounselling={true}
         />
-           
+
         <Project
-          projectData={DsBFSIScienceCourseData [0].project}
+          projectData={DsBFSIScienceCourseData[0].project}
           tools="16+ Tools"
           project="12+ Projects"
           dataScience={true}
           titleCourse="BFSI Project Brochure"
           brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Business+Analytics+Projects.pdf"
         />
-        <FAQNew FAQNewData={DsBFSIScienceCourseData [0].faq} />
+        <BatchDetails CourseFeeHead="Banking and Finance: Batch Details" />
+        <FAQNew FAQNewData={DsBFSIScienceCourseData[0].faq} />
         <SeventhSection />
         <Footer />
         <OfferPopup />
