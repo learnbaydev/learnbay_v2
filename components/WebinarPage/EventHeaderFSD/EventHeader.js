@@ -25,16 +25,18 @@ export const EventHeader = ({deskimg, mobimg}) => {
             quality={100}
 
             width="100%"
-            height="400px"
+            height="400"
           />
         ) : (
-          <img
+         
+          <img 
             src={deskimg}
             alt="Learnbay"
             quality={100}
             width="100%"
-            height="500px"
+            height="100%"
           />
+          
         )}
       </section>
     </div>
