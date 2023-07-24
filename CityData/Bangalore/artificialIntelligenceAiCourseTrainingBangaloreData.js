@@ -458,7 +458,7 @@ export const DataScienceCourseData = [
     ],
     faq: [
       {
-        id: 1,
+        id: 0,
         sectionName: "Course Related",
         data: [
           {
@@ -500,7 +500,7 @@ export const DataScienceCourseData = [
         ],
       },
       {
-        id: 2,
+        id: 1,
         sectionName: "Domain Electives",
         data: [
           {
@@ -548,7 +548,7 @@ export const DataScienceCourseData = [
         ],
       },
       {
-        id: 3,
+        id: 2,
         sectionName: "Payments and Scholarships",
         data: [
           {
@@ -591,7 +591,7 @@ export const DataScienceCourseData = [
         ],
       },
       {
-        id: 4,
+        id: 3,
         sectionName: "Capstone and Real-Time Projects",
         data: [
           {
@@ -619,7 +619,7 @@ export const DataScienceCourseData = [
         ],
       },
       {
-        id: 5,
+        id: 4,
         sectionName: "Certification",
         data: [
           {
@@ -631,7 +631,7 @@ export const DataScienceCourseData = [
         ],
       },
       {
-        id: 6,
+        id: 5,
         sectionName: "Job Assistance",
         data: [
           {
@@ -666,7 +666,7 @@ export const DataScienceCourseData = [
         ],
       },
       {
-        id: 7,
+        id: 6,
         sectionName: "Mentorship",
         data: [
           {
@@ -685,7 +685,7 @@ export const DataScienceCourseData = [
         ],
       },
       {
-        id: 8,
+        id: 7,
         sectionName: "Support",
         data: [
           {
@@ -719,17 +719,17 @@ export const DataScienceCourseData = [
       "Companies are facing different kinds of challenges as the advancement in technology by Artificial intelligence is big, but there are a few Artificial intelligence engineers/ experts. Learnbay wants to provide a solution for this by teaching the best Artificial Intelligence skills to learners who are eager to learn and own the ability for the same.",
     ProgramBot6:
       "The best part at Learnbay is that you get the variable options of artificial intelligence courses to choose from- according to your career stage and professional background. Available course options are:",
-      Courselink1: "/data-science-certification-courses",
-      Courselink2: "/advance-data-science-certification-courses",
-      Courselink3: "/artificial-intelligence-certification-course",
-      Courselink4: "/data-science-ai-for-managers",
-      Courselink5: "/data-science-ai-masters-program",
-      Course1:
-        "Data Science and AI Foundation Program with industry-specific training",
-      Course2: "Advanced Data Science and AI Program with domain specialization",
-      Course3: "AI & ML Program for tech professionals",
-      Course4: "Data Science and AI Program For Manager & Leaders",
-      Course5: "Data Science and AI master program",
+    Courselink1: "/data-science-certification-courses",
+    Courselink2: "/advance-data-science-certification-courses",
+    Courselink3: "/artificial-intelligence-certification-course",
+    Courselink4: "/data-science-ai-for-managers",
+    Courselink5: "/data-science-ai-masters-program",
+    Course1:
+      "Data Science and AI Foundation Program with industry-specific training",
+    Course2: "Advanced Data Science and AI Program with domain specialization",
+    Course3: "AI & ML Program for tech professionals",
+    Course4: "Data Science and AI Program For Manager & Leaders",
+    Course5: "Data Science and AI master program",
     DomainHead1:
       " Why is domain specialization important in job-ready  Artificial intelligence training in Bangalore?",
     DomainBot1:
@@ -754,7 +754,7 @@ export const DataScienceCourseData = [
       "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Retail%2C+Ecommerce+and+Supply+chain+Domain.pdf",
     CertificationBot1:
       "Learnbay Provides students with an IBM AI course completion certificate. This IBM-certified program helps you to be at the top of other profiles. The artificial intelligence course completion certificate by IBM ensures you are recognized as a skilled Artificial intelligence professional. Not only that, as you process with the modules, you get micro AI certifications by IBM like machine learning with python, Deep Learning with TensorFlow, and so on. As per your chosen course, you achieve 1 to 8 number micro certificates from IBM. Even once you complete the project, IBM issues a project experience certificate in AI too.",
-      src33:
+    src33:
       "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Microsoft-certificate-data.png",
     src: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Certificate-blue.png",
     src22:
@@ -763,40 +763,40 @@ export const DataScienceCourseData = [
       "Learnbay artificial intelligence and ML training in Bangalore include 400 hrs of uninterrupted live classes conducted by MAANG experts. The foundational and advanced program also consists of  200+ sessions. The most impressive information is that all of these classes are completely live and interactive only. Students can attend multiple sessions of classes and instructors. Learnbay Provides 1- 3 years of flexi membership on artificial intelligence training so that students can learn at ease and in comfort from their devices. Students get to talk to mentors and guides with 1-1 live sessions to clear all their doubts. Our LMS is always updated with the latest version of courses and is altered according to the industry demands and standards. Here you get crisp industry-curated training on R, NLP, artificial neural networks, and so on.",
     ModuleBot2:
       "Learnbay provides special basic coding classes and regular updates of coding assignments. Students can participate in Learnbay's exclusive hackathons and webinars.",
-      syllabush1: "Preparatory Classes (Programming + Maths)",
-      syllabusb1: "6 Hours",
-      SyllabusBotlist11: "Anaconda Installation",
-      SyllabusBotlist12: "Basics of Programming",
-      SyllabusBotlist13: "Memory Management",
-      SyllabusBotlist14: "Compiler and Interpreter",
-      SyllabusBotlist15: "Syntax of Python",
-      SyllabusBotlist16: "Basics of Statistics",
-      syllabush2: "Python Programming (Basic + Advance)",
-      syllabusb2: "40 Hours",
-      SyllabusBotlist21: "Git and GitHub",
-      SyllabusBotlist22: "Operators + Data Types + Loops",
-      SyllabusBotlist23: "Functions + Regular Expression",
-      SyllabusBotlist24: "Conditional Statement",
-      SyllabusBotlist25: "File & Exceptional Handling",
-      SyllabusBotlist26: "Numpy, Pandas, Matplotlib, etc.",
-      syllabush3: "Statistics and Machine Learning",
-      syllabusb3: "70 Hours",
-      SyllabusBotlist31: "Linear Algebra, Probability",
-      SyllabusBotlist32: "Permutation & Combination",
-      SyllabusBotlist33: "Descriptive & Inferential Stats",
-      SyllabusBotlist34: "Hypothesis Testing",
-      SyllabusBotlist35: "Time Series Analysis",
-      SyllabusBotlist36: "ML Algorithms",
-      syllabush4: "Industrial Projects & Capstone Projects",
-      syllabusb4: "12+ Classes",
-      SyllabusBotlist41: "Text Classification",
-      SyllabusBotlist42: "Human Activity Recognition",
-      SyllabusBotlist43: "Forecasting Business KPI's",
-      SyllabusBotlist44: "Credit Risk Analysis",
-      SyllabusBotlist45: "Customer Churn Prediction",
-      SyllabusBotlist46: "Sentiment Analysis",
-      syllabussrc:
-        "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Advance+AI+%26+ML+Certification+Program+Learnbay.pdf",
+    syllabush1: "Preparatory Classes (Programming + Maths)",
+    syllabusb1: "6 Hours",
+    SyllabusBotlist11: "Anaconda Installation",
+    SyllabusBotlist12: "Basics of Programming",
+    SyllabusBotlist13: "Memory Management",
+    SyllabusBotlist14: "Compiler and Interpreter",
+    SyllabusBotlist15: "Syntax of Python",
+    SyllabusBotlist16: "Basics of Statistics",
+    syllabush2: "Python Programming (Basic + Advance)",
+    syllabusb2: "40 Hours",
+    SyllabusBotlist21: "Git and GitHub",
+    SyllabusBotlist22: "Operators + Data Types + Loops",
+    SyllabusBotlist23: "Functions + Regular Expression",
+    SyllabusBotlist24: "Conditional Statement",
+    SyllabusBotlist25: "File & Exceptional Handling",
+    SyllabusBotlist26: "Numpy, Pandas, Matplotlib, etc.",
+    syllabush3: "Statistics and Machine Learning",
+    syllabusb3: "70 Hours",
+    SyllabusBotlist31: "Linear Algebra, Probability",
+    SyllabusBotlist32: "Permutation & Combination",
+    SyllabusBotlist33: "Descriptive & Inferential Stats",
+    SyllabusBotlist34: "Hypothesis Testing",
+    SyllabusBotlist35: "Time Series Analysis",
+    SyllabusBotlist36: "ML Algorithms",
+    syllabush4: "Industrial Projects & Capstone Projects",
+    syllabusb4: "12+ Classes",
+    SyllabusBotlist41: "Text Classification",
+    SyllabusBotlist42: "Human Activity Recognition",
+    SyllabusBotlist43: "Forecasting Business KPI's",
+    SyllabusBotlist44: "Credit Risk Analysis",
+    SyllabusBotlist45: "Customer Churn Prediction",
+    SyllabusBotlist46: "Sentiment Analysis",
+    syllabussrc:
+      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Advance+AI+%26+ML+Certification+Program+Learnbay.pdf",
     JobBot1:
       "Learnbay Artificial intelligence program in Bangalore ensures guaranteed placement assistance. Learnbay’s guides and mentors build your resume and portfolio and also refer your profiles so that you get a interview calls. Other than the placement assistance AI course, even in other courses, you get at least the promise of assured AI job interviews in Bangalore.",
     JobHead2:
