@@ -782,7 +782,7 @@ export const AIMLDataScienceCourseData = [
   ],
     faq: [
       {
-        id: 1,
+        id: 0,
         sectionName: "Course Related",
         data: [
           {
@@ -828,7 +828,7 @@ export const AIMLDataScienceCourseData = [
         ],
       },
       {
-        id: 2,
+        id: 1,
         sectionName: "Domain Electives",
         data: [
           {
@@ -880,7 +880,7 @@ export const AIMLDataScienceCourseData = [
         ],
       },
       {
-        id: 3,
+        id: 2,
         sectionName: "Payments and Scholarships",
         data: [
           {
@@ -922,7 +922,7 @@ export const AIMLDataScienceCourseData = [
         ],
       },
       {
-        id: 4,
+        id: 3,
         sectionName: "Capstone and Real-Time Projects",
         data: [
           {
@@ -950,7 +950,7 @@ export const AIMLDataScienceCourseData = [
         ],
       },
       {
-        id: 5,
+        id: 4,
         sectionName: "Certification",
         data: [
           {
@@ -973,7 +973,7 @@ export const AIMLDataScienceCourseData = [
         ],
       },
       {
-        id: 6,
+        id: 5,
         sectionName: "Job Assistance",
         data: [
           {
@@ -1011,7 +1011,7 @@ export const AIMLDataScienceCourseData = [
         ],
       },
       {
-        id: 7,
+        id: 6,
         sectionName: "Mentorship",
         data: [
           {
@@ -1030,7 +1030,7 @@ export const AIMLDataScienceCourseData = [
         ],
       },
       {
-        id: 8,
+        id: 7,
         sectionName: "Support",
         data: [
           {
