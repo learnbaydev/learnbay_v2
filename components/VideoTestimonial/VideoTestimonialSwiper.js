@@ -31,7 +31,6 @@ const VideoTestimonialSwiper = ({ review }) => {
       <Swiper
         slidesPerView={4.2}
         spaceBetween={40}
-        freeMode={true}
         pagination={{
           dynamicBullets: true,
           clickable: true,
@@ -45,7 +44,6 @@ const VideoTestimonialSwiper = ({ review }) => {
           100: { slidesPerView: 2.2, spaceBetween: 10 },
         }}
         loop={true}
-        loopFillGroupWithBlank={true}
         grabCursor={true}
         modules={[FreeMode, Pagination]}
         className="mySwiper"
