@@ -65,7 +65,7 @@ function Blockchain() {
 
   return (
     <>
-       <Head>
+      <Head>
         <title>HR Analytics Course with Job Assistance - Learnbay</title>
         <meta name="robots" content="index, follow" />
         <meta
@@ -94,29 +94,27 @@ function Blockchain() {
           firstTopPara="Experience the future of analytics"
           idss="kh54EexuNJo"
         />
-        <SecondSection
-          SecondSectionData={HRCourseData [0].secondSection}
-        />
+        <SecondSection SecondSectionData={HRCourseData[0].secondSection} />
         <Testimonial
           redirectDS={true}
-          Testimonial={HRCourseData [0].testimonial}
+          Testimonial={HRCourseData[0].testimonial}
           heading="Our Alumni Speak"
           para="Discover the impact of our programs on career growth"
         />
         <WhoProgram
           leftImage="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/HR++Who+is+this+program+for+_+image.webp"
-          ThirdSectionData={HRCourseData [0].thirdSection}
+          ThirdSectionData={HRCourseData[0].thirdSection}
         />
         <Switch />
         <FourthSection
-          placementData={HRCourseData [0].fourthSection}
+          placementData={HRCourseData[0].fourthSection}
           redirectDS={true}
           dataScience={true}
           titleCourse="Data Science Placement Report"
           brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Placement+Report.pdf"
         />
         <FifthSection />
-        <SixthSectionCTA dataScienceCounselling={true}/>
+        <SixthSectionCTA dataScienceCounselling={true} />
         <SyllabusNew
           dataScienceCounselling={true}
           dataScience={true}
@@ -126,7 +124,7 @@ function Blockchain() {
           syllabusDesc={HRCourseData[0].syllabusDesc}
           popupHead={HRCourseData[0].popupHead}
         />
-      <GrowthStats
+        <GrowthStats
           img1="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/HR+Analytics+Scope.webp"
           heading="Join the billion-dollar HR Analytics market and secure your future!"
           para1="Get an average salary of ₹19.7 lakhs"
@@ -137,10 +135,7 @@ function Blockchain() {
           deskImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/BA+Family+Tools+Covered.png"
           mobImage="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/BA-Family-Tools-Covered-mobile.png"
         />
-        <Certificate
-          twoCertificate={true}
-          data={HRCourseData [0].Certificate}
-        />
+        <Certificate twoCertificate={true} data={HRCourseData[0].Certificate} />
         <FeeSection
           Fee="₹ 89,000 + 18% GST"
           FeeEmi="₹ 8,752/month"
@@ -153,16 +148,20 @@ function Blockchain() {
           FeeContent6="No additional cost"
           dataScienceCounselling={true}
         />
-           
+
         <Project
-          projectData={HRCourseData [0].project}
+          projectData={HRCourseData[0].project}
           tools="16+ Tools"
           project="12+ Projects"
           dataScience={true}
           titleCourse="HR Analytics Project Brochure"
           brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Business+Analytics+Projects.pdf"
         />
-        <FAQNew FAQNewData={HRCourseData [0].faq} />
+        <BatchDetails
+          BAFamily={true}
+          CourseFeeHead="Hr Analytics : Batch Details"
+        />
+        <FAQNew FAQNewData={HRCourseData[0].faq} />
         <SeventhSection />
         <Footer />
         <OfferPopup />

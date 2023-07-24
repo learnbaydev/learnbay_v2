@@ -902,7 +902,7 @@ export const DataScienceCourseData = [
           {
             id: 0,
             ques: "What’s the eligibility for a job assistance program at Learnbay?",
-        
+
             ans: `You should have completed the course with :
             A minimum score of 70% in assessments.
             Should have completed the assignments and case studies.
@@ -940,7 +940,7 @@ export const DataScienceCourseData = [
           {
             id: 0,
             ques: "Until when will the Learnbay students get the facility of mentorship?",
-        
+
             ans: "Our mentors will provide data science training to the students until the completion of the course depending on the specialization. Post completion, students can reach out to specialized mentors for project and placement purposes.",
             open: true,
           },
@@ -959,7 +959,7 @@ export const DataScienceCourseData = [
           {
             id: 0,
             ques: "When is the job assistance provided and how long will I get it?",
-        
+
             ans: "At Learnbay, placement assistance is provided after the completion of the course. It includes build-up sessions, mock interviews, and referrals from top MNC’s/startups. This assistance is provided unless one gets placed in a company.",
             open: true,
           },

@@ -719,17 +719,17 @@ export const DataScienceCourseData = [
       "Companies are facing different kinds of challenges as the advancement in technology by Artificial intelligence is big, but there are a few Artificial intelligence engineers/ experts. Learnbay wants to provide a solution for this by teaching the best Artificial Intelligence skills to learners who are eager to learn and own the ability for the same.",
     ProgramBot6:
       "The best part at Learnbay is that you get the variable options of artificial intelligence courses to choose from- according to your career stage and professional background. Available course options are:",
-      Courselink1: "/data-science-certification-courses",
-      Courselink2: "/advance-data-science-certification-courses",
-      Courselink3: "/artificial-intelligence-certification-course",
-      Courselink4: "/data-science-ai-for-managers",
-      Courselink5: "/data-science-ai-masters-program",
-      Course1:
-        "Data Science and AI Foundation Program with industry-specific training",
-      Course2: "Advanced Data Science and AI Program with domain specialization",
-      Course3: "AI & ML Program for tech professionals",
-      Course4: "Data Science and AI Program For Manager & Leaders",
-      Course5: "Data Science and AI master program",
+    Courselink1: "/data-science-certification-courses",
+    Courselink2: "/advance-data-science-certification-courses",
+    Courselink3: "/artificial-intelligence-certification-course",
+    Courselink4: "/data-science-ai-for-managers",
+    Courselink5: "/data-science-ai-masters-program",
+    Course1:
+      "Data Science and AI Foundation Program with industry-specific training",
+    Course2: "Advanced Data Science and AI Program with domain specialization",
+    Course3: "AI & ML Program for tech professionals",
+    Course4: "Data Science and AI Program For Manager & Leaders",
+    Course5: "Data Science and AI master program",
     DomainHead1:
       " Why is domain specialization important in job-ready  Artificial intelligence training in Bangalore?",
     DomainBot1:
@@ -754,7 +754,7 @@ export const DataScienceCourseData = [
       "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Retail%2C+Ecommerce+and+Supply+chain+Domain.pdf",
     CertificationBot1:
       "Learnbay Provides students with an IBM AI course completion certificate. This IBM-certified program helps you to be at the top of other profiles. The artificial intelligence course completion certificate by IBM ensures you are recognized as a skilled Artificial intelligence professional. Not only that, as you process with the modules, you get micro AI certifications by IBM like machine learning with python, Deep Learning with TensorFlow, and so on. As per your chosen course, you achieve 1 to 8 number micro certificates from IBM. Even once you complete the project, IBM issues a project experience certificate in AI too.",
-      src33:
+    src33:
       "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Microsoft-certificate-data.png",
     src: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Certificate-blue.png",
     src22:

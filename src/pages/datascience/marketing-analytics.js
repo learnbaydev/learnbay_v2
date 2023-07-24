@@ -65,7 +65,7 @@ function Blockchain() {
 
   return (
     <>
-       <Head>
+      <Head>
         <title>Marketing Analytics Certification Course - Learnbay</title>
         <meta name="robots" content="index, follow" />
         <meta
@@ -97,29 +97,27 @@ function Blockchain() {
           firstHeading="Elevate your career with certification in"
           firstTopPara="Experience the future of analytics"
         />
-        <SecondSection
-          SecondSectionData={MACourseData [0].secondSection}
-        />
+        <SecondSection SecondSectionData={MACourseData[0].secondSection} />
         <Testimonial
           redirectDS={true}
-          Testimonial={MACourseData [0].testimonial}
+          Testimonial={MACourseData[0].testimonial}
           heading="Our Alumni Speak"
           para="Discover the impact of our programs on career growth"
         />
         <WhoProgram
           leftImage="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/marketing+_+Who-is-this-program-for+_+image.webp"
-          ThirdSectionData={MACourseData [0].thirdSection}
+          ThirdSectionData={MACourseData[0].thirdSection}
         />
         <Switch />
         <FourthSection
-          placementData={MACourseData [0].fourthSection}
+          placementData={MACourseData[0].fourthSection}
           redirectDS={true}
           dataScience={true}
           titleCourse="Data Science Placement Report"
           brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Placement+Report.pdf"
         />
         <FifthSection />
-        <SixthSectionCTA dataScienceCounselling={true}/>
+        <SixthSectionCTA dataScienceCounselling={true} />
         <SyllabusNew
           dataScienceCounselling={true}
           dataScience={true}
@@ -129,7 +127,7 @@ function Blockchain() {
           syllabusDesc={MACourseData[0].syllabusDesc}
           popupHead={MACourseData[0].popupHead}
         />
-     <GrowthStats
+        <GrowthStats
           img1="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Marketing+Analytics+Scope.webp"
           heading="The future is bright in Marketing Analytics - are you ready?"
           para1="High earning potential: Earn an average annual salary of 10 LPA"
@@ -140,10 +138,7 @@ function Blockchain() {
           deskImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/BA+Family+Tools+Covered.png"
           mobImage="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/BA-Family-Tools-Covered-mobile.png"
         />
-        <Certificate
-          twoCertificate={true}
-          data={MACourseData [0].Certificate}
-        />
+        <Certificate twoCertificate={true} data={MACourseData[0].Certificate} />
         <FeeSection
           Fee="₹ 89,000 + 18% GST"
           FeeEmi="₹ 8,752/month"
@@ -156,17 +151,20 @@ function Blockchain() {
           FeeContent6="No additional cost"
           dataScienceCounselling={true}
         />
-           
+
         <Project
-          projectData={MACourseData [0].project}
+          projectData={MACourseData[0].project}
           tools="16+ Tools"
           project="12+ Projects"
           dataScience={true}
           titleCourse="Marketing Analytics Project Brochure"
           brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Business+Analytics+Projects.pdf"
-
         />
-        <FAQNew FAQNewData={MACourseData [0].faq} />
+        <BatchDetails
+          BAFamily={true}
+          CourseFeeHead="Data Science and AI Foundation Program : Batch Details"
+        />
+        <FAQNew FAQNewData={MACourseData[0].faq} />
         <SeventhSection />
         <Footer />
         <OfferPopup />

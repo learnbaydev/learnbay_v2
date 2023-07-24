@@ -65,7 +65,7 @@ function Blockchain() {
 
   return (
     <>
-        <Head>
+      <Head>
         <title>
           Data Science and AI Program For Managers and Leaders - Learnbay
         </title>
@@ -104,30 +104,28 @@ function Blockchain() {
           firstTopPara="Empower your leadership journey"
         />
         <SecondSection
-          SecondSectionData={ManagersDataScienceCourseData [0].secondSection}
+          SecondSectionData={ManagersDataScienceCourseData[0].secondSection}
         />
         <Testimonial
           redirectDS={true}
-          Testimonial={ManagersDataScienceCourseData [0].testimonial}
+          Testimonial={ManagersDataScienceCourseData[0].testimonial}
           heading="Our Alumni Speak"
           para="Discover the impact of our programs on career growth"
         />
         <WhoProgram
           leftImage="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/manager+_Who+is+this+program+for_+image.webp"
-          ThirdSectionData={ManagersDataScienceCourseData [0].thirdSection}
+          ThirdSectionData={ManagersDataScienceCourseData[0].thirdSection}
         />
         <Switch />
         <FourthSection
-          placementData={ManagersDataScienceCourseData [0].fourthSection}
+          placementData={ManagersDataScienceCourseData[0].fourthSection}
           redirectDS={true}
           dataScience={true}
           titleCourse="Data Science Placement Report"
           brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Placement+Report.pdf"
         />
         <FifthSection />
-        <SixthSectionCTA 
-          dataScienceCounselling={true}
-        />
+        <SixthSectionCTA dataScienceCounselling={true} />
         <SyllabusNew
           dataScienceCounselling={true}
           dataScience={true}
@@ -150,7 +148,7 @@ function Blockchain() {
         />
         <Certificate
           threeCertificate={true}
-          data={ ManagersDataScienceCourseData [0].Certificate}
+          data={ManagersDataScienceCourseData[0].Certificate}
         />
         <FeeSection
           Fee="₹ 1,10,000 + 18% GST"
@@ -164,19 +162,20 @@ function Blockchain() {
           FeeContent6="No additional cost"
           dataScienceCounselling={true}
         />
-           <DomainSection
+        <DomainSection
           dataScience={true}
           domainSectionData={ManagersDataScienceCourseData[0].domainSection}
         />
         <Project
-          projectData={ManagersDataScienceCourseData [0].project}
+          projectData={ManagersDataScienceCourseData[0].project}
           tools="16+ Tools"
           project="13+ Projects"
           dataScience={true}
           titleCourse="Business Analytics Project Brochure"
           brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Business+Analytics+Projects.pdf"
         />
-        <FAQNew FAQNewData={ManagersDataScienceCourseData [0].faq} />
+        <BatchDetails CourseFeeHead="Data science course for Mangers: Batch Details" />
+        <FAQNew FAQNewData={ManagersDataScienceCourseData[0].faq} />
         <SeventhSection />
         <Footer />
         <OfferPopup />

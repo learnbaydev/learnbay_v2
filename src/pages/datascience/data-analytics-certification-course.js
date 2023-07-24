@@ -122,7 +122,7 @@ function Blockchain() {
           brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Placement+Report.pdf"
         />
         <FifthSection />
-        <SixthSectionCTA dataScienceCounselling={true}/>
+        <SixthSectionCTA dataScienceCounselling={true} />
         <SyllabusNew
           dataScienceCounselling={true}
           serviceBasic={true}
@@ -173,8 +173,8 @@ function Blockchain() {
           dataScience={true}
           titleCourse="Business Analytics Project Brochure"
           brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Business+Analytics+Projects.pdf"
-
         />
+        <BatchDetails CourseFeeHead="Data science course for Mangers: Batch Details" />
         <FAQNew FAQNewData={DADataScienceCourseData[0].faq} />
         <SeventhSection />
         <Footer />
