@@ -259,6 +259,14 @@
 .Reviewbtn{
     margin: auto;
 }
+
+.cityFee {
+  margin-top: -50px;
+}
+
+.faqCity {
+  margin: -40px -110px -40px -80px;
+}
   
   @media (max-width: 1281px) {
     .program {
