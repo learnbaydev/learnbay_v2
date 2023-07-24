@@ -514,7 +514,7 @@ export const AIDubaiCourseData = [
     ],
     faq: [
       {
-        id: 1,
+        id: 0,
         sectionName: "Course Related",
         data: [
           {
@@ -602,7 +602,7 @@ export const AIDubaiCourseData = [
         ],
       },
       {
-        id: 2,
+        id: 1,
         sectionName: "Domain Electives",
         data: [
           {
@@ -660,7 +660,7 @@ export const AIDubaiCourseData = [
         ],
       },
       {
-        id: 3,
+        id: 2,
         sectionName: "Payments and Scholarships",
         data: [
           {
@@ -707,7 +707,7 @@ export const AIDubaiCourseData = [
         ],
       },
       {
-        id: 4,
+        id: 3,
         sectionName: "Capstone and Real-Time Projects",
         data: [
           {
@@ -746,7 +746,7 @@ export const AIDubaiCourseData = [
         ],
       },
       {
-        id: 5,
+        id: 4,
         sectionName: "Certification",
         data: [
           {
@@ -764,7 +764,7 @@ export const AIDubaiCourseData = [
         ],
       },
       {
-        id: 6,
+        id: 5,
         sectionName: "Job Assistance",
         data: [
           {
@@ -808,7 +808,7 @@ export const AIDubaiCourseData = [
         ],
       },
       {
-        id: 7,
+        id: 6,
         sectionName: "Mentorship",
         data: [
           {
@@ -827,7 +827,7 @@ export const AIDubaiCourseData = [
         ],
       },
       {
-        id: 8,
+        id: 7,
         sectionName: "Support",
         data: [
           {
@@ -906,40 +906,41 @@ export const AIDubaiCourseData = [
       "With a Flexi pass, students can attend multiple classes in different batches with different instructors to learn at their convenience.",
     ModuleBot3:
       "In addition to this, Learnbay has incorporated a dedicated programming module for All of its data science and AI courses which includes 6 to 8 hours of python and R programming training for non-technical folks.",
-    syllabush1: "Preparatory Classes (Programming + Maths)",
-    syllabusb1: "6 Hours",
-    SyllabusBotlist11: "Anaconda Installation",
-    SyllabusBotlist12: "Basics of Programming",
-    SyllabusBotlist13: "Memory Management",
-    SyllabusBotlist14: "Compiler and Interpreter",
-    SyllabusBotlist15: "Syntax of Python",
-    SyllabusBotlist16: "Basics of Statistics",
-    syllabush2: "Python Programming (Basic + Advance)",
-    syllabusb2: "40 Hours",
-    SyllabusBotlist21: "Git and GitHub",
-    SyllabusBotlist22: "Operators + Data Types + Loops",
-    SyllabusBotlist23: "Functions + Regular Expression",
-    SyllabusBotlist24: "Conditional Statement",
-    SyllabusBotlist25: "File & Exceptional Handling",
-    SyllabusBotlist26: "Numpy, Pandas, Matplotlib, etc.",
-    syllabush3: "Statistics and Machine Learning",
-    syllabusb3: "70 Hours",
-    SyllabusBotlist31: "Linear Algebra, Probability",
-    SyllabusBotlist32: "Permutation & Combination",
-    SyllabusBotlist33: "Descriptive & Inferential Stats",
-    SyllabusBotlist34: "Hypothesis Testing",
-    SyllabusBotlist35: "Time Series Analysis",
-    SyllabusBotlist36: "ML Algorithms",
-    syllabush4: "Industrial Projects & Capstone Projects",
-    syllabusb4: "12+ Classes",
-    SyllabusBotlist41: "Text Classification",
-    SyllabusBotlist42: "Human Activity Recognition",
-    SyllabusBotlist43: "Forecasting Business KPI's",
-    SyllabusBotlist44: "Credit Risk Analysis",
-    SyllabusBotlist45: "Customer Churn Prediction",
-    SyllabusBotlist46: "Sentiment Analysis",
-    syllabussrc:
-      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Advance+AI+%26+ML+Certification+Program+Learnbay.pdf",
+      syllabush1: "Preparatory Classes (Programming + Maths)",
+      syllabusb1: "6 Hours",
+      SyllabusBotlist11: "Cohort Orientation",
+      SyllabusBotlist12: "Fundamentals of Programming",
+      SyllabusBotlist13: "Python Fundamentals",
+      SyllabusBotlist14: "Fundamentals of Statistics",
+      SyllabusBotlist15: "Mean, Median, Mode",
+      SyllabusBotlist16: "Introduction to Linear Algebra",
+      syllabush2: "Python for Data Science (Basic + Advance)",
+      syllabusb2: "40 Hours",
+      SyllabusBotlist21: "Python Programming",
+      SyllabusBotlist22: "Statistics and Machine Learning",
+      SyllabusBotlist23: "Machine Learning",
+      SyllabusBotlist24: "Naive Baye’s Model",
+      SyllabusBotlist25: "Hierarchical Clustering",
+      SyllabusBotlist26: "Support Vector Machine(SVM)",
+      syllabush3: "Artificial Intelligence Tools",
+      syllabusb3: "70 Hours",
+      SyllabusBotlist31: "Deep Learning Using Tensorflow",
+      SyllabusBotlist32: "Natural Language Processing (NLP)",
+      SyllabusBotlist33: "Computer Vision",
+      SyllabusBotlist34: "Reinforcement Learning",
+      SyllabusBotlist35: "Model Training",
+      SyllabusBotlist36: "Deployment Using (AWS GCP)",
+      syllabush4: "Deployment (AWS+Azure)",
+      syllabusb4: "12+ Classes",
+      SyllabusBotlist41: "Introduction to AWS and Azure Machine Learning Services",
+      SyllabusBotlist42: "Setting up the Environment",
+      SyllabusBotlist43: "Data Preparation and Feature Engineering",
+      SyllabusBotlist44: "Model Training and Evaluation",
+      SyllabusBotlist45: "Model Deployment and Management",
+      SyllabusBotlist46: "Advanced Topics in Machine Learning on AWS and Azure",
+      syllabussrc:
+        "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Advance+AI+%26+ML+Certification+Program+Learnbay.pdf",
+
     JobHead1: "Job support program of artificial intelligence course:",
     JobBot1:
       "Learnbay has a channel of 250+ hiring partners in Dubai and all over the world. It has helped countless AI and ML enthusiasts crack difficult interviews with our job assistance feature. This assistance includes portfolio building and soft skills training workshops. Our placement experts help them in finding the relevant AI job roles and prepare them accordingly. They also conduct personalized mock interviews as per the candidate's screening process of top MNCs and Dubai-based companies.",

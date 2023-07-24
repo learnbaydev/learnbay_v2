@@ -465,7 +465,7 @@ export const AIPuneCourseData = [
     ],
     faq: [
       {
-        id: 1,
+        id: 0,
         sectionName: "Course Related",
         data: [
           {
@@ -553,7 +553,7 @@ export const AIPuneCourseData = [
         ],
       },
       {
-        id: 2,
+        id: 1,
         sectionName: "Domain Electives",
         data: [
           {
@@ -612,7 +612,7 @@ export const AIPuneCourseData = [
         ],
       },
       {
-        id: 3,
+        id: 2,
         sectionName: "Payments and Scholarships",
         data: [
           {
@@ -659,7 +659,7 @@ export const AIPuneCourseData = [
         ],
       },
       {
-        id: 4,
+        id: 3,
         sectionName: "Capstone and Real-Time Projects",
         data: [
           {
@@ -699,7 +699,7 @@ export const AIPuneCourseData = [
         ],
       },
       {
-        id: 5,
+        id: 4,
         sectionName: "Certification",
         data: [
           {
@@ -717,7 +717,7 @@ export const AIPuneCourseData = [
         ],
       },
       {
-        id: 6,
+        id: 5,
         sectionName: "Job Assistance",
         data: [
           {
@@ -761,7 +761,7 @@ export const AIPuneCourseData = [
         ],
       },
       {
-        id: 7,
+        id: 6,
         sectionName: "Mentorship",
         data: [
           {
@@ -780,7 +780,7 @@ export const AIPuneCourseData = [
         ],
       },
       {
-        id: 8,
+        id: 7,
         sectionName: "Support",
         data: [
           {
@@ -841,39 +841,41 @@ export const AIPuneCourseData = [
               src:"https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/Managers-4.jpeg",
               ModuleBot1:"Learnbay Artificial intelligence training in Pune consists of 400hrs of hassle-free classes led by PRODUCT Based Companies experts. Our foundational and advanced program has around 200+ classes. Here you get 18+ AI modules and tools.",
               ModuleBot2:"Each of the AI courses offered by Learnbay are planned with different modules as per the consented career stage of the professionals. All of the courses are equipped with properly balanced theoretical and practical sub-modules. The most important modules that Learnbay artificial intelligence course covers are SQL, Pandas, Numpy, Data visualization, NP, artificial neural network, etc. Keeping the non-programmer huddle about programming in mind, Learnbay AI courses also offer basic programming sub-modules.",
-              syllabush1:"Preparatory Classes (Programming + Maths)",
-              syllabusb1:"6 Hours",
-              SyllabusBotlist11:"Anaconda Installation",
-              SyllabusBotlist12:"Basics of Programming",
-              SyllabusBotlist13:"Memory Management",
-              SyllabusBotlist14:"Compiler and Interpreter",
-              SyllabusBotlist15:"Syntax of Python",
-              SyllabusBotlist16:"Basics of Statistics",
-              syllabush2:"Python Programming (Basic + Advance)",
-              syllabusb2:"40 Hours",
-              SyllabusBotlist21:"Git and GitHub",
-              SyllabusBotlist22:"Operators + Data Types + Loops",
-              SyllabusBotlist23:"Functions + Regular Expression",
-              SyllabusBotlist24:"Conditional Statement",
-              SyllabusBotlist25:"File & Exceptional Handling",
-              SyllabusBotlist26:"Numpy, Pandas, Matplotlib, etc.",
-              syllabush3:"Statistics and Machine Learning",
-              syllabusb3:"70 Hours",
-              SyllabusBotlist31:"Linear Algebra, Probability",
-              SyllabusBotlist32:"Permutation & Combination",
-              SyllabusBotlist33:"Descriptive & Inferential Stats",
-              SyllabusBotlist34:"Hypothesis Testing",
-              SyllabusBotlist35:"Time Series Analysis",
-              SyllabusBotlist36:"ML Algorithms",
-              syllabush4:"Industrial Projects & Capstone Projects",
-              syllabusb4:"12+ Classes",
-              SyllabusBotlist41:"Text Classification",
-              SyllabusBotlist42:"Human Activity Recognition",
-              SyllabusBotlist43:"Forecasting Business KPI's",
-              SyllabusBotlist44:"Credit Risk Analysis",
-              SyllabusBotlist45:"Customer Churn Prediction",
-              SyllabusBotlist46:"Sentiment Analysis",
-              syllabussrc:"https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Data+Science+%26+AI+Certification+Program+For+Managers+%26+Leaders+Learnbay.pdf",
+              syllabush1: "Preparatory Classes (Programming + Maths)",
+              syllabusb1: "6 Hours",
+              SyllabusBotlist11: "Cohort Orientation",
+              SyllabusBotlist12: "Fundamentals of Programming",
+              SyllabusBotlist13: "Python Fundamentals",
+              SyllabusBotlist14: "Fundamentals of Statistics",
+              SyllabusBotlist15: "Mean, Median, Mode",
+              SyllabusBotlist16: "Introduction to Linear Algebra",
+              syllabush2: "Python for Data Science (Basic + Advance)",
+              syllabusb2: "40 Hours",
+              SyllabusBotlist21: "Python Programming",
+              SyllabusBotlist22: "Statistics and Machine Learning",
+              SyllabusBotlist23: "Machine Learning",
+              SyllabusBotlist24: "Naive Baye’s Model",
+              SyllabusBotlist25: "Hierarchical Clustering",
+              SyllabusBotlist26: "Support Vector Machine(SVM)",
+              syllabush3: "Artificial Intelligence Tools",
+              syllabusb3: "70 Hours",
+              SyllabusBotlist31: "Deep Learning Using Tensorflow",
+              SyllabusBotlist32: "Natural Language Processing (NLP)",
+              SyllabusBotlist33: "Computer Vision",
+              SyllabusBotlist34: "Reinforcement Learning",
+              SyllabusBotlist35: "Model Training",
+              SyllabusBotlist36: "Deployment Using (AWS GCP)",
+              syllabush4: "Deployment (AWS+Azure)",
+              syllabusb4: "12+ Classes",
+              SyllabusBotlist41: "Introduction to AWS and Azure Machine Learning Services",
+              SyllabusBotlist42: "Setting up the Environment",
+              SyllabusBotlist43: "Data Preparation and Feature Engineering",
+              SyllabusBotlist44: "Model Training and Evaluation",
+              SyllabusBotlist45: "Model Deployment and Management",
+              SyllabusBotlist46: "Advanced Topics in Machine Learning on AWS and Azure",
+              syllabussrc:
+                "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Advance+AI+%26+ML+Certification+Program+Learnbay.pdf",
+
               JobBot1:"Learnbay Artificial Intelligence certifications in Pune even come with a Placement Assistance. The artificial intelligence courses offered by Learnbay come with mock interview training sessions, resume help, and an unlimited number of MNC and start-up referrals, until you land on suitable AI job role.",
               JobBot2:"The roles and responsibilities you can target by competing Learbbay AI Course are:",
               JobBot3:"Business intelligence developer. Data scientist. Big Data Engineer. Artificial intelligence Engineer. Machine learning engineer. Research scientist. Robotics Scientist.",

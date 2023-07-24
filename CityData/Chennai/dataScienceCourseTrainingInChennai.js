@@ -1,17 +1,17 @@
-export const DataScienceCourseData = [
+export const DataScienceChennaiCourseData = [
   {
     script1: {
-      "@context": "https://schema.org",
+      "@context": "https://schema.org/",
       "@type": "NewsArticle",
       mainEntityOfPage: {
         "@type": "WebPage",
         "@id": "https://www.learnbay.co/",
       },
-      headline: "Artificial Intelligence (AI) training in Bangalore",
+      headline: "Data science Course Training In Chennai",
       description:
-        "Artificial Intelligence Course in Bangalore. Learnbay is Advanced Artificial Intelligence Course Training Institute in Bangalore. Artificial Intelligence course in Bangalore will enhance your career",
+        "Data science course in Chennai. Learnbay is Advanced Data Science Course Training Institute in Chennai. Data science course in Chennai will enhance your career",
       image:
-        "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/home-page-header.webp",
+        "https://www.learnbay.co/data-science-course/wp-content/uploads/2019/02/Add-a-heading-1-600x486.jpg",
       author: {
         "@type": "Organization",
         name: "Learnbay",
@@ -22,7 +22,7 @@ export const DataScienceCourseData = [
         name: "Learnbay",
         logo: {
           "@type": "ImageObject",
-          url: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/ALight/learnbay-logo.png",
+          url: "https://www.learnbay.co/data-science-course/wp-content/uploads/2020/11/logo-dark.png",
         },
       },
       datePublished: "2021-10-01",
@@ -30,28 +30,27 @@ export const DataScienceCourseData = [
     },
     script2: {
       "@context": "https://schema.org",
-
       "@type": "FAQPage",
       mainEntity: [
         {
           "@type": "Question",
-          name: "What are Artificial Intelligence (AI) training courses available at Learnbay in Bangalore?",
+          name: "What are Data Science Training courses available at Learnbay in Chennai?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Foundational data science and Artificial Intelligence Training Course Advanced data science and AI Certification Course Machine learning and AI Certification Data Science and AI Certification Course for Managers and Leaders Data Science and Artificial Intelligence Training with Placement Assistance",
+            text: "Foundational Data Science Training Course, Advance Data Science Certification Course, Data Science Certification Course for Managers and Leaders, Data Science Training with Placement Assistance,",
           },
         },
         {
           "@type": "Question",
-          name: "What are the prerequisites for these AI training Courses in Bangalore?",
+          name: "What are the prerequisites for these Data Science training Courses in Chennai?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "There are no prerequisites for this artificial certification course as all modules are beginner-friendly and are taught from scratch. We provide special classes and assistance for Non-IT/Non-programmers. However, basic knowledge of applied Mathematics/Statistics is a must.",
+            text: "There are no prerequisites for this Data Science Foundation course as all modules are beginner-friendly and are taught from scratch. We provide special classes and assistance for Non-IT/Non-Programmers. However, basic knowledge of applied Mathematics/Statistics is a must.",
           },
         },
         {
           "@type": "Question",
-          name: "What if I miss a few classes of Learnbay AI courses due to an emergency?",
+          name: "What if I miss a few classes due to an emergency?",
           acceptedAnswer: {
             "@type": "Answer",
             text: "In case you miss a few classes, you will be provided with backup classes in other batches. But if you could not attend more classes, you can opt for batch change and join the next batch.",
@@ -59,31 +58,31 @@ export const DataScienceCourseData = [
         },
         {
           "@type": "Question",
-          name: "What is a Flexi Subscription in these advanced artificial intelligence courses in Bangalore?",
+          name: "What is a Flexi Subscription in these advanced data science courses in Chennai?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Those who enroll for AI live classroom training are eligible for a Flexi Pass. With this option, we will share access to all the ongoing batch details for a period of 1 -3 years, so that you can attend live sessions from any batch and learn at your own pace. This option is best for people working in shifts or on weekends. Flexi Subscription Time-line: Foundational data science and Artificial Intelligence Training Course- 1 Year Advanced data science and AI Certification Course- 3 Years Machine learning and AI Certification- 3 Years Data Science and AI Certification Course for Managers and Leaders- 3 Years Data Science and Artificial Intelligence Training with Placement Assistance - 3-years",
+            text: "Those who enroll for Data Science live classroom training are eligible for a Flexi Pass. With this option, we will share access to all the ongoing batch details for a period of 1 -3 years, so that you can attend live sessions from any batch and learn at your own pace. This option is best for people working in shifts or on weekends. Flexi Subscription Time-line: Foundational Data Science and AI Training course- 1 Year, Advance Data Science and AI Certification course- 3 Years, Data Science and AI Certification Course for Managers and Leaders- 3 Years, Data Science and AI Training with Placement Assistance - 3-years.",
           },
         },
         {
           "@type": "Question",
-          name: "What’s the duration of these advanced AI in Bangalore?",
+          name: "What’s the duration of these advanced data science courses in Chennai?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "The duration of these courses is about 6-15 months, which includes live lectures, hands-on practical training on live projects, and interview preparations. Classes will be conducted on weekdays and weekend batches. Monday to Friday - 2 hours/day and Saturday & Sunday - 3.5 hours/day Foundational Data Science and Artificial Intelligence Training Course (220+ hours) Weekday batch - 6 months Weekend batch - 8 months Machine learning and AI Certification (280+ hours) Weekday batch - 9.5 months Weekend batch - 11 months Advanced Data Science and AI Certification Course (270+ hours) Weekday batch - 7 months Weekend batch - 9 months Data Science and AI Certification Course for Managers and Leaders (340+ hours) Weekday batch - 11 months Weekend batch - 13 months Data Science and Artificial Intelligence Training with Placement Assistance (380+ hours) Weekday batch - 13 months Weekend batch - 15 months",
+            text: "The duration of these courses is about 6-15 months, which includes live lectures, hands-on practical training on live projects, and interview preparations. Classes will be conducted on weekdays and weekend batches. Monday to Friday - 2 hours/day and Saturday & Sunday - 3.5 hours/day, Foundational Data Science and AI Training course (220+ hours) :- Weekday batch - 6 months, Weekend batch - 8 months, Advance Data Science and AI Certification course (270+ hours) :- Weekday batch - 7 months, Weekend batch - 9 months, Data Science and AI Certification Course for Managers and Leaders (340+ hours) :- Weekday batch - 11 months, Weekend batch - 13 months, Data Science and AI Training with Placement Assistance (380+ hours) :- Weekday batch - 13 months, Weekend batch - 15 months.",
           },
         },
         {
           "@type": "Question",
-          name: "What is the learning mode of Artificial Intelligence Certification courses in Bangalore at Learnbay?",
+          name: "What is the mode of data science training in Chennai at Learnbay?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "We provide both classroom and online AI training modes. Based on your requirement, you can choose your preferred mode.",
+            text: "We provide both classroom and online data science training modes. Based on your requirement, you can choose your preferred mode.",
           },
         },
         {
           "@type": "Question",
-          name: "How can I opt for a Hybrid mode of learning in IBM artificial intelligence training courses in Bangalore, At Learnbay?",
+          name: "How can I opt for a Hybrid mode of learning in IBM data science training courses in Chennai, At Learnbay?",
           acceptedAnswer: {
             "@type": "Answer",
             text: "Simply, you can choose an online mode of study for the theoretical classes and a classroom mode for all the capstone projects and interview preparation sessions.",
@@ -91,42 +90,34 @@ export const DataScienceCourseData = [
         },
         {
           "@type": "Question",
-          name: "What is domain specialization in the professional AI certification courses provided by Learnbay in Bangalore?",
+          name: "What is domain specialization in the professional data science certification courses provided by Learnbay in Chennai?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "We offer industry-specific full-stack AI modules, via which you learn the respective industry’s best practices. But this added benefit is available in all the three mentioned courses, except the foundational AI course.",
+            text: "We offer industry-specific full-stack data science modules, via which you learn the respective industry’s best practices. But this added benefit is available in all the three mentioned courses, except the foundational data science course.",
           },
         },
         {
           "@type": "Question",
-          name: "What are the available elective domain options in the different artificial intelligence training courses of Learnbay in Bangalore?",
+          name: "What are the available elective domain options in the different data science training courses of Learnbay in Chennai?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Advanced Data Structure & algo; Automotive, IoT & Embedded; Cloud & DevOps; Sales, Marketing, & HR; Retail, E-Commerce, & Supply Chain; Healthcare, Pharma, & Clinical Research; BFSI; Manufacturing, Mechanical, & Telecom; Media, Hospitality, & Transportation; Oil, Gas, & Energy",
+            text: "Advanced Data Structure & algo; Automotive, IoT & Embedded; Cloud & DevOps; Sales, Marketing, & HR; Retail, E-Commerce, & Supply Chain; Healthcare, Pharma, & Clinical Research; BFSI; Manufacturing, Mechanical, & Telecom; Media, Hospitality, & Transportation; Oil, Gas, & Energy.",
           },
         },
         {
           "@type": "Question",
-          name: "Which domain elective within the Learnbay AI Certification courses is best suited for me?",
+          name: "Which data science specialization domain elective is best suited for me?.",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "After enrolling in the advanced AI courses, one must opt for domain electives. It is essential to have business/industry knowledge that is useful in feature engineering and modeling. Prior knowledge of the industry and domain aids in the development of more precise and accurate predictive models based on the dataset's attributes. Furthermore, the model will be more observable in a real-world situation",
+            text: "You can select your domain based on your prior work experience, academics, and career goals. Book a slot with our industry expert for free profile review and career guidance. +917795687988.",
           },
         },
         {
           "@type": "Question",
-          name: "Can I select multiple domain electives and do I need to pay extra charges in any of the eligible AI certification courses?",
+          name: "Why is domain specialization important in professional data science certification?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "You can select a pre-set maximum number (based on course) of domain electives (both tech and non-tech) based on your interest and career goals. Advance Data Science and AI Certification course- Maximum 2 domains. Data Science and AI Certification Course for Managers and Leaders- All domains Data Science and Artificial Intelligence Training with Placement Assistance- All domains Machine learning and AI Certification- maximum 4 domains No, you don’t need to pay any extra charges as domain electives and capstone projects are part of our curriculum.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "What if I don't have any prior experience in any domain?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "If you don't have any prior work experience, you can opt for any electives to gain domain expertise and work on real-time industrial projects.",
+            text: "After enrolling in the advanced data science courses, one must opt for domain electives. It is essential to have business/industry knowledge that is useful in feature engineering and modeling. Prior knowledge of the industry and domain aids in the development of more precise and accurate predictive models based on the dataset's attributes. Furthermore, the model will be more observable in a real-world situation.",
           },
         },
         {
@@ -139,15 +130,15 @@ export const DataScienceCourseData = [
         },
         {
           "@type": "Question",
-          name: "What is the total fee for Learnbay AI Certifications courses in Bangalore?",
+          name: "What is the total fee for Data Science Certifications courses in Chennai?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "The total course fee for the Foundational Data Science and Artificial Intelligence Training Course is 88,500/- inclusive of GST. Advance Data Science and AI Certification course is 1,12,100/- inclusive of GST. Data Science and AI Certification Course for Managers and Leaders is 1,23,900/- inclusive of GST. Data Science and Artificial Intelligence Training with Placement Assistance is 1,47,500/- inclusive of GST. Machine learning and AI Certification is 1,23,900/-inclusive of GST",
+            text: "The total course fee for the Foundational Data Science and AI Training course is 93,220/- inclusive of GST. Advance Data Science and AI Certification course is 1,12,100/- inclusive of GST. Data Science and AI Certification Course for Managers and Leaders is 1,23,900/- inclusive of GST. Data Science and AI Training with Placement Assistance is 1,47,500/- inclusive of GST.",
           },
         },
         {
           "@type": "Question",
-          name: "Can I pay in installments for these AI Certification courses in Bangalore?",
+          name: "Can I pay in installments for these Data Science Certification courses in Chennai?",
           acceptedAnswer: {
             "@type": "Answer",
             text: "Yes, you can pay the installments using a credit card with a no-cost EMI option for up to 9 months. You can also choose an interest-free loan by submitting an Aadhar card, Pan Card, and 3-month salary slip.",
@@ -155,18 +146,10 @@ export const DataScienceCourseData = [
         },
         {
           "@type": "Question",
-          name: "Is there any scholarship/discount available for these Artificial intelligence training courses available in Bangalore? What is Group Discount?",
+          name: "Is there any scholarship/discount available for these Data Science training courses available in Chennai? What is Group Discount?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Learnbay offers a 15 - 20% scholarship for early birds occasionally. Please check our websites or contact our sales team to know more about the applicable discounts. Group Discount : Group Discount is applicable only if you’re joining with your friends. 5% extra discount: Group of 2 8% extra discount: Group of 3 Max 10% discount: Groupe of 4+",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "What is the refund policy for the Artificial Intelligence Certification courses at Learnbay?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Candidates are advised to read Learnbay’s Refund/Cancellation Policy before enrolling in the course.",
+            text: "Learnbay offers a 15 - 20% scholarship for early birds occasionally. Please check our websites or contact our sales team to know more about the applicable discounts. Group Discount : Group Discount is applicable only if you’re joining with your friends. 5% extra discount: Group of 2 8% extra discount: Group of 3 Max 10% discount: Groupe of 4+.",
           },
         },
         {
@@ -174,20 +157,12 @@ export const DataScienceCourseData = [
           name: "How many capstone projects will be there?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Depending on the course you choose the number of capstone projects will vary. Foundational Artificial Intelligence Training Course - 1 Capstone. Advance Data Science and AI Certification course -2 Capstones. Data Science and AI Certification Course for Managers and Leaders- 2 Capstones. Data Science and Artificial Intelligence Training with Placement Assistance- 3 Capstones. Machine learning and AI Certification- 2 Capstones.",
+            text: "Depending on the course you choose the number of capstone projects will vary. Foundational Data Science and AI Training Course - 1 Capstone. Advance Data Science and AI Certification Course -2 Capstones. Data Science and AI Certification Course for Managers and Leaders- 2 Capstones. Data Science and AI Training with Placement Assistance- 3 Capstones. How many real-time projects/case studies will be covered in these Data Science certification courses in Chennai? Depending on the course you choose the number of live projects will vary. Foundational Data Science and AI Training course- 8 projects. Advance Data Science and AI Certification course-12 projects. Data Science and AI Certification Course for Managers and Leaders- 15 projects. Data Science and AI Training with Placement Assistance- 15 projects. Click here to download the list of the projects.",
           },
         },
         {
           "@type": "Question",
-          name: "How many real-time projects/case studies will be covered in these artificial intelligence certification courses in Bangalore?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Depending on the course you choose the number of live projects will vary. Foundational Data Science and Artificial Intelligence Training Course- 8 projects. Advance Data Science and AI Certification course-12 projects. Data Science and AI Certification Course for Managers and Leaders- 15 projects. Data Science and Artificial Intelligence Training with Placement Assistance- 15 projects. Machine learning and AI Certification- 15 projects. Click here to download the list of the projects.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "How will the projects be executed in Bangalore?",
+          name: "How will the projects be executed in Chennai?",
           acceptedAnswer: {
             "@type": "Answer",
             text: "At Learnbay, you will be required to work in a group where your project group will be assigned a specific project mentor with complete assistance and guidance.",
@@ -195,15 +170,15 @@ export const DataScienceCourseData = [
         },
         {
           "@type": "Question",
-          name: "Is there any accredited AI certification after course completion?",
+          name: "Is there any accredited data science certification after course completion?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Yes, you will be awarded IBM accredited Data Scientist Certificate on successful course completion. But Based on the course you choose you can get Multiple certification options too. Foundational Data Science and Artificial Intelligence Training Course- 1 Course Completion Certificate. Advance Data Science and AI Certification course-1 Course Completion Certificate + 1-project experience certificate + 4 microdata science skills certificates = 6 Certificates. Data Science and AI Certification Course for Managers and Leaders- 1 Course Completion Certificate + 1-project experience certificate + 6 microdata science skills certificates= 8 Certificates. Data Science and Artificial Intelligence Training with Placement Assistance- 1 Course Completion Certificates Machine learning and AI Certification- 1 Course Completion Certificate + 1-project experience certificate + 4 microdata science skills certificates = 6 Certificates. *All the certificates accredited by IBM. For more details, please refer to the respective course brochures.",
+            text: "Yes, you will be awarded IBM accredited Data Scientist Certificate on successful course completion. But Based on the course you choose you can get Multiple certification options too. Foundational Data Science and AI Training course- 1 Course Completion Certificate. Advance Data Science and AI Certification course-1 Course Completion Certificate + 1-project experience certificate + 4 microdata science skills certificates = 6 Certificates. Data Science and AI Certification Course for Managers and Leaders- 1 Course Completion Certificate + 1-project experience certificate + 6 microdata science skills certificates= 8 Certificates. Data Science and AI Training with Placement Assistance- 1 Course Completion Certificate *All the certificates accredited by IBM. For more details, please refer to the respective course brochures.",
           },
         },
         {
           "@type": "Question",
-          name: "What's the eligibility for a job assistance Program in Learnbay artificial intelligence training courses in Bangalore?",
+          name: "What's the eligibility for a job assistance Program in Learnbay Data science training courses in Chennai?",
           acceptedAnswer: {
             "@type": "Answer",
             text: "You should have completed the course with : A minimum score of 70% in assessments Should have completed the assignments and case studies Worked and successfully completed the minimum recommended number of real-time projects.",
@@ -211,18 +186,10 @@ export const DataScienceCourseData = [
         },
         {
           "@type": "Question",
-          name: "How long will I get support for job assistance at Learnbay in Bangalore?",
+          name: "How long will I get support for job assistance at Learnbay in Chennai?",
           acceptedAnswer: {
             "@type": "Answer",
             text: "At Learnbay, you’ll be provided with job assistance after the completion of the course for a period of 1 year. What is a job-readiness program? The Job readiness program helps you prepare for interviews which include: Resume preparation sessions, Preparing projects for a strong portfolio, Interview guidance and prep sessions, 1:1 Mock interviews based on targeted companies and roles.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Will I get job referrals at Learnbay?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Yes, we offer dedicated placement assistance by referring to your profile through our partnered consultancies and companies.",
           },
         },
         {
@@ -238,12 +205,12 @@ export const DataScienceCourseData = [
           name: "Until when do the students get the facility of mentorship?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Our Mentors will provide AI training to the students until the completion of the course.",
+            text: "Our mentors will provide data science training to the students until the completion of the course.",
           },
         },
         {
           "@type": "Question",
-          name: "Can a Learnbay student in Bangalore choose to study from their desired mentor?",
+          name: "Can a Learnbay student in Chennai choose to study from their desired mentor?",
           acceptedAnswer: {
             "@type": "Answer",
             text: "Every batch has its respective mentor, but if a student is not satisfied with its mentor’s teaching method, they can raise the issue to management and resolve the issues by replacing them with other mentors.",
@@ -265,16 +232,25 @@ export const DataScienceCourseData = [
             text: "You’ll be provided with job assistance after the completion of the course for a period of 1 year.",
           },
         },
+        {
+          "@type": "Question",
+          name: "How long will I get support for job assistance?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "You’ll be provided with job assistance after the completion of the course for a period of 1 year,",
+          },
+        },
       ],
     },
+
     script3: {
       "@context": "http://schema.org",
       "@type": "EducationEvent",
-      name: "Artificial Intelligence (AI) training in Bangalore",
+      name: "Data Science Course Training In Chennai",
       description:
-        "Artificial Intelligence Course in Bangalore. Learnbay is Advanced Artificial Intelligence Course Training Institute in Bangalore. Artificial Intelligence course in Bangalore will enhance your career",
+        "Learnbay offers a Data Science Course in Chennai, the most comprehensive Data Science course in the market, covering the complete Data Science lifecycle.",
       image:
-        "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/ALight/learnbay-logo.png",
+        "https://www.learnbay.co/data-science-course/wp-content/uploads/2020/11/logo-dark.png",
       performer: "Learnbay",
       offers: {
         "@type": "AggregateOffer",
@@ -282,12 +258,12 @@ export const DataScienceCourseData = [
         highPrice: "110000",
         url: "https://www.learnbay.co/",
         availability: "https://schema.org/InStock",
-        price: "39999",
+        price: "95,000",
         priceCurrency: "INR",
         validFrom: "2022-05-01",
       },
       startDate: "2022-05-01",
-      endDate: "2022-08-31",
+      endDate: "2022-10-31",
       url: "https://www.learnbay.co/",
       duration: "80",
       eventAttendanceMode: "https://schema.org/MixedEventAttendanceMode",
@@ -299,20 +275,19 @@ export const DataScienceCourseData = [
         },
         {
           "@type": "Place",
-          name: "Learnbay - Artificial Intelligence(Ai), Artificial Intelligence(Ai) Course Training in Bangalore",
+          name: "Learnbay - Data Science, data science Course Training In Chennai",
           address: {
             "@type": "PostalAddress",
             streetAddress:
-              "#1090 , 1st floor, 18th cross road HSR layout sector 3, Bangalore - 560102 (Above Sangam Sweets)",
-
+              " #1090 , 1st Floor, 18th Cross Road HSR Layout Sector 3, Bangalore - 560102 (Above Sangam Sweets)",
             addressLocality: "HSR Sector 3",
             postalCode: "560102",
             addressCountry: "Bengaluru, Karnataka,INDIA",
           },
           geo: {
             "@type": "GeoCoordinates",
-            latitude: "12.914745887585838",
-            longitude: "77.64087553886982",
+            latitude: "12.911762714349765,",
+            longitude: "77.64127379352328",
           },
         },
       ],
@@ -322,6 +297,7 @@ export const DataScienceCourseData = [
         url: "https://www.learnbay.co",
       },
     },
+    
     secondSection: [
       {
         id: 1,
@@ -570,12 +546,12 @@ export const DataScienceCourseData = [
             id: 2,
             ques: "Is there any scholarship/discount available for Data Science Foundation Program? What is Group Discount?",
             ans: `Learnbay offers a 15 – 20% scholarship for early birds occasionally.
-        Please check our websites or contact our sales team to know more about the applicable discounts.
-        Group Discount :
-        Group Discount is applicable only if you’re joining with your friends.
-        5% extra discount : Group of 2,
-        8% extra discount : Group of 3,
-        Max 10% discount : Group of 4+`,
+          Please check our websites or contact our sales team to know more about the applicable discounts.
+          Group Discount :
+          Group Discount is applicable only if you’re joining with your friends.
+          5% extra discount : Group of 2,
+          8% extra discount : Group of 3,
+          Max 10% discount : Group of 4+`,
             open: false,
           },
           {
@@ -651,10 +627,10 @@ export const DataScienceCourseData = [
             id: 2,
             ques: "What is a job-readiness program?",
             ans: `Job-readiness program helps you prepare for interviews which include:
-        Resume preparation sessions,
-        Preparing projects for a strong portfolio,
-        Interview guidance and prep sessions,
-        1:1 Mock interviews based on targeted companies and roles.`,
+          Resume preparation sessions,
+          Preparing projects for a strong portfolio,
+          Interview guidance and prep sessions,
+          1:1 Mock interviews based on targeted companies and roles.`,
             open: false,
           },
           {
@@ -719,17 +695,17 @@ export const DataScienceCourseData = [
       "Companies are facing different kinds of challenges as the advancement in technology by Artificial intelligence is big, but there are a few Artificial intelligence engineers/ experts. Learnbay wants to provide a solution for this by teaching the best Artificial Intelligence skills to learners who are eager to learn and own the ability for the same.",
     ProgramBot6:
       "The best part at Learnbay is that you get the variable options of artificial intelligence courses to choose from- according to your career stage and professional background. Available course options are:",
-      Courselink1: "/data-science-certification-courses",
-      Courselink2: "/advance-data-science-certification-courses",
-      Courselink3: "/artificial-intelligence-certification-course",
-      Courselink4: "/data-science-ai-for-managers",
-      Courselink5: "/data-science-ai-masters-program",
-      Course1:
-        "Data Science and AI Foundation Program with industry-specific training",
-      Course2: "Advanced Data Science and AI Program with domain specialization",
-      Course3: "AI & ML Program for tech professionals",
-      Course4: "Data Science and AI Program For Manager & Leaders",
-      Course5: "Data Science and AI master program",
+    Courselink1: "/data-science-certification-courses",
+    Courselink2: "/advance-data-science-certification-courses",
+    Courselink3: "/artificial-intelligence-certification-course",
+    Courselink4: "/data-science-ai-for-managers",
+    Courselink5: "/data-science-ai-masters-program",
+    Course1:
+      "Data Science and AI Foundation Program with industry-specific training",
+    Course2: "Advanced Data Science and AI Program with domain specialization",
+    Course3: "AI & ML Program for tech professionals",
+    Course4: "Data Science and AI Program For Manager & Leaders",
+    Course5: "Data Science and AI master program",
     DomainHead1:
       " Why is domain specialization important in job-ready  Artificial intelligence training in Bangalore?",
     DomainBot1:
@@ -754,7 +730,7 @@ export const DataScienceCourseData = [
       "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Retail%2C+Ecommerce+and+Supply+chain+Domain.pdf",
     CertificationBot1:
       "Learnbay Provides students with an IBM AI course completion certificate. This IBM-certified program helps you to be at the top of other profiles. The artificial intelligence course completion certificate by IBM ensures you are recognized as a skilled Artificial intelligence professional. Not only that, as you process with the modules, you get micro AI certifications by IBM like machine learning with python, Deep Learning with TensorFlow, and so on. As per your chosen course, you achieve 1 to 8 number micro certificates from IBM. Even once you complete the project, IBM issues a project experience certificate in AI too.",
-      src33:
+    src33:
       "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Microsoft-certificate-data.png",
     src: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Certificate-blue.png",
     src22:
@@ -763,40 +739,40 @@ export const DataScienceCourseData = [
       "Learnbay artificial intelligence and ML training in Bangalore include 400 hrs of uninterrupted live classes conducted by MAANG experts. The foundational and advanced program also consists of  200+ sessions. The most impressive information is that all of these classes are completely live and interactive only. Students can attend multiple sessions of classes and instructors. Learnbay Provides 1- 3 years of flexi membership on artificial intelligence training so that students can learn at ease and in comfort from their devices. Students get to talk to mentors and guides with 1-1 live sessions to clear all their doubts. Our LMS is always updated with the latest version of courses and is altered according to the industry demands and standards. Here you get crisp industry-curated training on R, NLP, artificial neural networks, and so on.",
     ModuleBot2:
       "Learnbay provides special basic coding classes and regular updates of coding assignments. Students can participate in Learnbay's exclusive hackathons and webinars.",
-      syllabush1: "Preparatory Classes (Programming + Maths)",
-      syllabusb1: "6 Hours",
-      SyllabusBotlist11: "Cohort Orientation",
-      SyllabusBotlist12: "Fundamentals of Programming",
-      SyllabusBotlist13: "Python Fundamentals",
-      SyllabusBotlist14: "Fundamentals of Statistics",
-      SyllabusBotlist15: "Mean, Median, Mode",
-      SyllabusBotlist16: "Introduction to Linear Algebra",
-      syllabush2: "Python for Data Science (Basic + Advance)",
-      syllabusb2: "40 Hours",
-      SyllabusBotlist21: "Python Programming",
-      SyllabusBotlist22: "Statistics and Machine Learning",
-      SyllabusBotlist23: "Machine Learning",
-      SyllabusBotlist24: "Naive Baye’s Model",
-      SyllabusBotlist25: "Hierarchical Clustering",
-      SyllabusBotlist26: "Support Vector Machine(SVM)",
-      syllabush3: "Artificial Intelligence Tools",
-      syllabusb3: "70 Hours",
-      SyllabusBotlist31: "Deep Learning Using Tensorflow",
-      SyllabusBotlist32: "Natural Language Processing (NLP)",
-      SyllabusBotlist33: "Computer Vision",
-      SyllabusBotlist34: "Reinforcement Learning",
-      SyllabusBotlist35: "Model Training",
-      SyllabusBotlist36: "Deployment Using (AWS GCP)",
-      syllabush4: "Deployment (AWS+Azure)",
-      syllabusb4: "12+ Classes",
-      SyllabusBotlist41: "Introduction to AWS and Azure Machine Learning Services",
-      SyllabusBotlist42: "Setting up the Environment",
-      SyllabusBotlist43: "Data Preparation and Feature Engineering",
-      SyllabusBotlist44: "Model Training and Evaluation",
-      SyllabusBotlist45: "Model Deployment and Management",
-      SyllabusBotlist46: "Advanced Topics in Machine Learning on AWS and Azure",
-      syllabussrc:
-        "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Advance+AI+%26+ML+Certification+Program+Learnbay.pdf",
+    syllabush1: "Preparatory Classes (Programming + Maths)",
+    syllabusb1: "6 Hours",
+    SyllabusBotlist11: "Anaconda Installation",
+    SyllabusBotlist12: "Basics of Programming",
+    SyllabusBotlist13: "Memory Management",
+    SyllabusBotlist14: "Compiler and Interpreter",
+    SyllabusBotlist15: "Syntax of Python",
+    SyllabusBotlist16: "Basics of Statistics",
+    syllabush2: "Python Programming (Basic + Advance)",
+    syllabusb2: "40 Hours",
+    SyllabusBotlist21: "Git and GitHub",
+    SyllabusBotlist22: "Operators + Data Types + Loops",
+    SyllabusBotlist23: "Functions + Regular Expression",
+    SyllabusBotlist24: "Conditional Statement",
+    SyllabusBotlist25: "File & Exceptional Handling",
+    SyllabusBotlist26: "Numpy, Pandas, Matplotlib, etc.",
+    syllabush3: "Statistics and Machine Learning",
+    syllabusb3: "70 Hours",
+    SyllabusBotlist31: "Linear Algebra, Probability",
+    SyllabusBotlist32: "Permutation & Combination",
+    SyllabusBotlist33: "Descriptive & Inferential Stats",
+    SyllabusBotlist34: "Hypothesis Testing",
+    SyllabusBotlist35: "Time Series Analysis",
+    SyllabusBotlist36: "ML Algorithms",
+    syllabush4: "Industrial Projects & Capstone Projects",
+    syllabusb4: "12+ Classes",
+    SyllabusBotlist41: "Text Classification",
+    SyllabusBotlist42: "Human Activity Recognition",
+    SyllabusBotlist43: "Forecasting Business KPI's",
+    SyllabusBotlist44: "Credit Risk Analysis",
+    SyllabusBotlist45: "Customer Churn Prediction",
+    SyllabusBotlist46: "Sentiment Analysis",
+    syllabussrc:
+      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Advance+AI+%26+ML+Certification+Program+Learnbay.pdf",
     JobBot1:
       "Learnbay Artificial intelligence program in Bangalore ensures guaranteed placement assistance. Learnbay’s guides and mentors build your resume and portfolio and also refer your profiles so that you get a interview calls. Other than the placement assistance AI course, even in other courses, you get at least the promise of assured AI job interviews in Bangalore.",
     JobHead2:
