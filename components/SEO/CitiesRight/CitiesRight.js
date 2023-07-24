@@ -4,6 +4,7 @@ import { BsClock } from "react-icons/bs";
 import { FiCheck } from "react-icons/fi";
 import Link from "next/link";
 import YoutubeVideo from "../YoutubeVideo/YoutubeVideo";
+import Button from "../../Global/Button/Button";
 
 const CitiesRight = ({
   ProgramHead1,
@@ -171,6 +172,8 @@ const CitiesRight = ({
   src2,
   src3,
   src4,
+  src22,
+  src33,
   ProjectsH1,
   ProjectsH2,
   ProjectsH3,
@@ -3192,56 +3195,56 @@ const CitiesRight = ({
           ) : (
             <>
               {" "}
-              <ul>
+              <ul className={styles.ulLi}>
                 <a href={Domainlink1} target="_blank">
-                  <li style={{ color: "#2D9CD7", fontWeight: "600" }}>
+                  <p style={{ color: "#2D9CD7", fontWeight: "600" }}>
                     {DomainList1}
-                  </li>
+                  </p>
                 </a>
                 <a href={Domainlink2} target="_blank">
-                  <li style={{ color: "#2D9CD7", fontWeight: "600" }}>
+                  <p style={{ color: "#2D9CD7", fontWeight: "600" }}>
                     {DomainList2}
-                  </li>
+                  </p>
                 </a>
                 <a href={Domainlink3} target="_blank">
-                  <li style={{ color: "#2D9CD7", fontWeight: "600" }}>
+                  <p style={{ color: "#2D9CD7", fontWeight: "600" }}>
                     {DomainList3}
-                  </li>
+                  </p>
                 </a>
                 <a href={Domainlink4} target="_blank">
-                  <li style={{ color: "#2D9CD7", fontWeight: "600" }}>
+                  <p style={{ color: "#2D9CD7", fontWeight: "600" }}>
                     {DomainList4}
-                  </li>
+                  </p>
                 </a>
                 <a href={Domainlink5} target="_blank">
-                  <li style={{ color: "#2D9CD7", fontWeight: "600" }}>
+                  <p style={{ color: "#2D9CD7", fontWeight: "600" }}>
                     {DomainList5}
-                  </li>
+                  </p>
                 </a>
                 <a href={Domainlink6} target="_blank">
-                  <li style={{ color: "#2D9CD7", fontWeight: "600" }}>
+                  <p style={{ color: "#2D9CD7", fontWeight: "600" }}>
                     {DomainList6}
-                  </li>
+                  </p>
                 </a>
                 <a href={Domainlink7} target="_blank">
-                  <li style={{ color: "#2D9CD7", fontWeight: "600" }}>
+                  <p style={{ color: "#2D9CD7", fontWeight: "600" }}>
                     {DomainList7}
-                  </li>
+                  </p>
                 </a>
                 <a href={Domainlink8} target="_blank">
-                  <li style={{ color: "#2D9CD7", fontWeight: "600" }}>
+                  <p style={{ color: "#2D9CD7", fontWeight: "600" }}>
                     {DomainList8}
-                  </li>
+                  </p>
                 </a>
                 <a href={Domainlink9} target="_blank">
-                  <li style={{ color: "#2D9CD7", fontWeight: "600" }}>
+                  <p style={{ color: "#2D9CD7", fontWeight: "600" }}>
                     {DomainList9}
-                  </li>
+                  </p>
                 </a>
                 <a href={Domainlink10} target="_blank">
-                  <li style={{ color: "#2D9CD7", fontWeight: "600" }}>
+                  <p style={{ color: "#2D9CD7", fontWeight: "600" }}>
                     {DomainList10}
-                  </li>
+                  </p>
                 </a>
               </ul>
             </>
@@ -3268,7 +3271,11 @@ const CitiesRight = ({
               <p className={styles.pp}>{CertificationBot6}</p>
               <h2 className={styles.pHead}>{CertificationHead3}</h2>
               <p className={styles.pp}>{CertificationBot7}</p>
-              <img src={src} alt={alt1}></img>
+              <div className={styles.certNew}>
+                <img src={src} alt={alt1}></img>
+                <img src={src22} alt={alt1}></img>
+                <img src={src33} alt={alt1}></img>
+              </div>
             </div>
           </div>
         </>
@@ -3467,7 +3474,7 @@ const CitiesRight = ({
         </div>
         <div className={styles.Button}>
           <a href={syllabussrc} target="_blank">
-            <button style={{ margin: "auto" }}>View Detailed Brochure</button>
+            <Button className={styles.btn} text="View Detailed Brochure" />
           </a>
         </div>
       </div>
@@ -3555,7 +3562,7 @@ const CitiesRight = ({
                 href="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Real-time+Projects+%26+Use+cases.pdf"
                 target="_blank"
               >
-                <button style={{ margin: "auto" }}>View All Projects</button>
+                <Button className={styles.btn} text="View All Projects" />
               </a>
             </>
           ) : (
@@ -3565,7 +3572,7 @@ const CitiesRight = ({
                 href="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Data+Science+and+AI+Projects.pdf"
                 target="_blank"
               >
-                <button style={{ margin: "auto" }}>View All Projects</button>
+                <Button className={styles.btn} text="View All Projects" />
               </a>
             </>
           )}
@@ -3610,14 +3617,14 @@ const CitiesRight = ({
                 href="https://www.google.com/search?q=learnbay&rlz=1C1VDKB_enIN998IN998&tbm=lcl&ei=uUDyYunBIoObz7sPzvu7wAQ&oq=learnbay&gs_l=psy-ab.3...0.0.0.6647.0.0.0.0.0.0.0.0..0.0....0...1c..64.psy-ab..0.0.0....0.vlnVRtRM_mw#lrd=0x3bae13b203864921:0xcd2b3d47edc34b69,1,,,&rlfi=hd:;si:14783977580914756457,l,CghsZWFybmJheUj0z4qEu66AgAhaFBAAGAAiCGxlYXJuYmF5KgQIAhAAkgEbc29mdHdhcmVfdHJhaW5pbmdfaW5zdGl0dXRl;mv:[[12.9145896,77.66070289999999],[12.8624165,77.6400574]]"
                 target="_blank"
               >
-                <button style={{ margin: "auto" }}>View All Reviews</button>
+                <Button className={styles.btn} text="View All Reviews" />
               </a>
             </>
           ) : (
             <>
               {" "}
               <a href="/reviews" target="_blank">
-                <button style={{ margin: "auto" }}>View All Reviews</button>
+                <Button className={styles.btn} text="View All Reviews" />
               </a>
             </>
           )}

@@ -24,6 +24,8 @@ function FirstSection({
   SecondTyped,
   ThirdTyped,
   ibmOnly,
+  cityParaCont,
+  cityPara,
 }) {
   const [popups, setPopups] = useState(false);
 
@@ -87,6 +89,9 @@ function FirstSection({
         <h1 className={styles.h1}>
           {firstHeading} <span className={styles.h1Span}>{firstToparaImg}</span>
         </h1>
+        <p className={styles.ptop} style={{ color: "#000" }}>
+       {cityParaCont}
+        </p>
         <div className={styles.IBMlogoPlay}>
           <Image
             src={FirstRightImg}
@@ -99,27 +104,27 @@ function FirstSection({
           In Collaboration With
         </p>
         <div className={styles.ImageBlock}>
-            {ibmOnly ? (
-              <Image
-                src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/ibm-single-home.png"
-                width="127"
-                height="51"
-                loading="lazy"
-                alt="data science course"
-              />
-            ) : (
-              <Image
-                src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/FirstSection.png"
-                width="283"
-                height="51"
-                loading="lazy"
-                alt="data science course"
-              />
-            )}
+          {ibmOnly ? (
+            <Image
+              src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/ibm-single-home.png"
+              width="127"
+              height="51"
+              loading="lazy"
+              alt="data science course"
+            />
+          ) : (
+            <Image
+              src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/FirstSection.png"
+              width="283"
+              height="51"
+              loading="lazy"
+              alt="data science course"
+            />
+          )}
         </div>
-        <div className={styles.animationTextWrap}>
-          <span ref={el} className={styles.animationText}></span>
-        </div>
+          <div className={styles.animationTextWrap}>
+            <span ref={el} className={styles.animationText}></span>
+          </div>
 
         {/* Button */}
 

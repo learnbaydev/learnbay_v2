@@ -35,16 +35,7 @@ import Footer from "../../../../components/Footer/Footer";
 import Form from "../../../../components/Form/Form";
 import React, { useState } from "react";
 import Testimonial from "../../../../components/HomePage/Testimonial/Testimonial";
-// import {
-//   ArtificialFaqDataB,
-//   ArtificialDomainFaqDataB,
-//   ArtificialPaymentFaqDataB,
-//   ArtificialCapstoneFaqDataB,
-//   ArtificialCertificationFaqDataB,
-//   ArtificialjobFaqDataB,
-//   ArtificialMentorshipFaqDataB,
-//   ArtificialSupportFaqDataB,
-// } from "../components/FAQ/FaqDataCity";
+import FeeSection from "../../../../components/CoursePage/FeeSection/FeeSection";
 
 export default function Home() {
   const [popups, setPopups] = useState(false);
@@ -55,7 +46,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-      <title>Best Artificial Intelligence Course in Dubai - Learnbay</title>
+        <title>Best Artificial Intelligence Course in Dubai - Learnbay</title>
         <meta name="robots" content="index, follow" />
         <meta
           name="description"
@@ -101,7 +92,7 @@ export default function Home() {
             __html: ` ${AIDubaiCourseData[0].script3} `,
           }}
         />
-         <script
+        <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: ` ${AIDubaiCourseData[0].script4} `,
@@ -117,7 +108,6 @@ export default function Home() {
           </div>
           <div className="RightPopup">
             <h5>Apply For Counselling</h5>
-            {/* <p>Fill the below details to get started</p> */}
             <Form popup={true} setTrigger={setPopups} dataScience={true} />
           </div>
         </Popup>
@@ -126,40 +116,35 @@ export default function Home() {
           SecondTyped="Capstone Project Certificate"
           ThirdTyped="Live Interactive Classes"
           dataScience={true}
-          idss="bfl64ANfSV0"
-          titleCourse="Advanced Data Science and AI Program with domain specialization"
-          brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Advance+Data+Science+and+AI+Certification+Program+Learnbay.pdf"
-          FirstRightImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/head/Managers+%26+Leaders.png"
-          firstToparaImg="Training in Bangalore"
-          firstHeading="Artificial Intelligence (AI)"
-          firstTopPara="Industry Curated Artificial Intelligence Program"
-          srcD="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Data+Science+%26+AI+Certification+Program+For+Managers+%26+Leaders+Learnbay.pdf"
-          alt="artificial intelligence ai course training in bangalore"
+          titleCourse="AI & ML Program for tech professionals"
+          brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Advance+AI+%26+ML+Certification+Program+Learnbay.pdf"
+          idss="Jn2puEQC8yk"
+          FirstRightImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/AIML-Header.png"
+          firstToparaImg="For Managers and Leaders"
+          firstHeading="Artificial Intelligence (AI) Course Training in Dubai"
+          firstTopPara="Job-oriented Data Science Training for working professionals"
+          cityParaCont=" Become a successful data science manager/leader within 11 months. Learn the secret data scientific tricks of managing data science projects. Learn directly from industry leaders via live classes and live projects."
         />
-        <SecondSection
-          SecondSectionData={AIDubaiCourseData[0].secondSection}
-        />
-        {/* <ProgramInfo
-          p1="Global Recognition"
-          p11="From IBM"
-          p2="Industry Standard"
-          p22="Training"
-          p3="Career Assistance"
-          p33="For Professionals"
-          p4="Financing as low as"
-          p44="₹ 10,816/month"
-        /> */}
-        {/* <ProgramFee
-          Emi="₹ 10,816/month"
-          Fee="₹ 1,10,000 + 18% GST"
-          dataScience={true}
-        /> */}
+        <SecondSection SecondSectionData={AIDubaiCourseData[0].secondSection} />
         <Testimonial
           redirectDS={true}
           Testimonial={AIDubaiCourseData[0].testimonial}
           heading="Our Alumni Speak"
           para="Discover the impact of our programs on career growth"
         />
+        <div className={styles.cityFee}>
+          <FeeSection
+            AIMLCertificate={true}
+            Fee="₹ 1,10,000 + 18% GST"
+            FeeEmi="₹ 10,817/month"
+            FeeHeading="Program Fee & Financing"
+            FeeContent2="No cost EMI"
+            FeeContent3="Flexible payment"
+            FeeContent4="Easy loan procedure"
+            FeeContent5="15 days refund policy"
+            dataScienceCounselling={true}
+          />
+        </div>
         <div className="MainCities">
           <div className="CitiesLeft">
             <CitiesLeft />
@@ -209,8 +194,11 @@ export default function Home() {
               Domainlink10={AIDubaiCourseData[0].Domainlink10}
               CertificationBot1={AIDubaiCourseData[0].CertificationBot1}
               src={AIDubaiCourseData[0].src}
+              src22={AIDubaiCourseData[0].src22}
+              src33={AIDubaiCourseData[0].src33}
               ModuleBot1={AIDubaiCourseData[0].ModuleBot1}
               ModuleBot2={AIDubaiCourseData[0].ModuleBot2}
+              syllabush1={AIDubaiCourseData[0].syllabush1}
               syllabusb1={AIDubaiCourseData[0].syllabusb1}
               SyllabusBotlist11={AIDubaiCourseData[0].SyllabusBotlist11}
               SyllabusBotlist12={AIDubaiCourseData[0].SyllabusBotlist12}
@@ -283,7 +271,9 @@ export default function Home() {
               alt8={AIDubaiCourseData[0].alt8}
               alt9={AIDubaiCourseData[0].alt9}
             />
-            <FAQNew FAQNewData={AIDubaiCourseData[0].faq} />
+            <div className={styles.faqCity}>
+              <FAQNew FAQNewData={AIDubaiCourseData[0].faq} />
+            </div>
           </div>
         </div>
         <SeventhSection />
