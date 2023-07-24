@@ -191,6 +191,22 @@
   }
 }
 
+@media (max-width:801px){
+  .para{
+    font-size: 13px;
+  }
+
+  .name{
+    font-size: 14px;
+  }
+
+  .imgP{
+    width: 50%;
+    height: 50%;
+    margin-left: 20px;
+  }
+}
+
 @media (max-width: 481px) {
   .CareerImpact {
     display: block;

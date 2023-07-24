@@ -29,8 +29,8 @@ const Footerfsd = () => {
             alt="Learnbay"
             quality={100}
             objectFit="contain"
-            width="230px"
-            height="60px"
+            width="230"
+            height="60"
           />
           <p className={styles.FooterInnerli}>
             Register for our webinar to get a complete understanding of Data

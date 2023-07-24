@@ -4,7 +4,7 @@ import Navbar from "../../../components/Navbar/Navbar";
 import Footer from "../../../components/Footer/Footer";
 
 import dynamic from "next/dynamic";
-import { AImastersDataScienceCourseData  } from "../../../Data/AIMasters";
+import { AImastersDataScienceCourseData } from "../../../Data/AIMasters";
 
 const FirstSection = dynamic(() =>
   import("../../../components/CoursePage/FirstSection/FirstSection")
@@ -65,7 +65,7 @@ function Blockchain() {
 
   return (
     <>
-       <Head>
+      <Head>
         <title>
           Master Program in Data Science and Artificial Intelligence - Learnbay
         </title>
@@ -100,28 +100,27 @@ function Blockchain() {
           FirstRightImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/DSAI-Masters-Header.png"
           // firstToparaImg="Data Science and AI Master Program"
           firstToparaImg="Data Science and AI Master Program"
-          
           firstHeading="Discover new horizons with"
           // firstHeading="Master Program in Data Science and Artificial Intelligence"
           firstTopPara="Become a master without master’s degree"
           srcD="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Data+Science+and+AI+Master's+Program+%5BWith+Unlimited+Interview+Calls%5D.pdf"
         />
         <SecondSection
-          SecondSectionData={AImastersDataScienceCourseData [0].secondSection}
+          SecondSectionData={AImastersDataScienceCourseData[0].secondSection}
         />
         <Testimonial
           redirectDS={true}
-          Testimonial={AImastersDataScienceCourseData [0].testimonial}
+          Testimonial={AImastersDataScienceCourseData[0].testimonial}
           heading="Our Alumni Speak"
           para="Discover the impact of our programs on career growth"
         />
         <WhoProgram
           leftImage="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/DSAI-Masters-Who.png"
-          ThirdSectionData={AImastersDataScienceCourseData [0].thirdSection}
+          ThirdSectionData={AImastersDataScienceCourseData[0].thirdSection}
         />
         <Switch />
         <FourthSection
-          placementData={AImastersDataScienceCourseData [0].fourthSection}
+          placementData={AImastersDataScienceCourseData[0].fourthSection}
           redirectDS={true}
           dataScience={true}
         />
@@ -149,7 +148,7 @@ function Blockchain() {
         />
         <Certificate
           threeCertificate
-          data={AImastersDataScienceCourseData [0].Certificate}
+          data={AImastersDataScienceCourseData[0].Certificate}
         />
         <FeeSection
           Fee="₹ 1,29,000 + 18% GST"
@@ -163,19 +162,20 @@ function Blockchain() {
           FeeContent6="No additional cost"
           dataScienceCounselling={true}
         />
-           <DomainSection
+        <DomainSection
           dataScience={true}
           domainSectionData={AImastersDataScienceCourseData[0].domainSection}
         />
         <Project
-          projectData={AImastersDataScienceCourseData [0].project}
+          projectData={AImastersDataScienceCourseData[0].project}
           tools="16+ tools"
           project="16+ Projects"
           dataScience={true}
           titleCourse="Data Science Project Brochure"
           brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Data+Science+and+AI+Projects.pdf"
         />
-        <FAQNew FAQNewData={AImastersDataScienceCourseData [0].faq} />
+        <BatchDetails CourseFeeHead="Data Science and AI Master Program : Batch Details" />
+        <FAQNew FAQNewData={AImastersDataScienceCourseData[0].faq} />
         <SeventhSection />
         <Footer />
         <OfferPopup />

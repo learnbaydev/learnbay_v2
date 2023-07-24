@@ -63,8 +63,8 @@ const EventFeature = ({ data, eventDateInfo, eventDataD, domainDataD, reviewsDat
         <Image
           src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/tutorial/domain/Line+48.png"
           layout="intrinsic"
-          width="90%"
-          height="5px"
+          width="90"
+          height="5"
           loading="lazy"
           alt="backImg"
         />
@@ -78,8 +78,8 @@ const EventFeature = ({ data, eventDateInfo, eventDataD, domainDataD, reviewsDat
         <Image
           src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/tutorial/domain/Line+48.png"
           layout="intrinsic"
-          width="90%"
-          height="5px"
+          width="90"
+          height="5"
           loading="lazy"
           alt="backImg"
         />
@@ -118,8 +118,8 @@ const EventFeature = ({ data, eventDateInfo, eventDataD, domainDataD, reviewsDat
                 layout="intrinsic"
                 objectFit="cover"
                 quality={100}
-                width="100px"
-                height="100px"
+                width="100"
+                height="100"
                 loading="lazy"
                 alt="backImg"
               />
@@ -202,8 +202,8 @@ const EventFeature = ({ data, eventDateInfo, eventDataD, domainDataD, reviewsDat
         <Image
           src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/tutorial/domain/Line+48.png"
           layout="intrinsic"
-          width="90%"
-          height="5px"
+          width="90"
+          height="5"
           loading="lazy"
           alt="backImg"
         />
@@ -217,8 +217,8 @@ const EventFeature = ({ data, eventDateInfo, eventDataD, domainDataD, reviewsDat
         <Image
           src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/tutorial/domain/Line+51.png"
           layout="intrinsic"
-          width="90%"
-          height="5px"
+          width="90"
+          height="5"
           loading="lazy"
           alt="backImg"
         />

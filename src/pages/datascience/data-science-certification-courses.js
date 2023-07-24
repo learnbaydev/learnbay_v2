@@ -113,9 +113,7 @@ function Blockchain() {
           brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Placement+Report.pdf"
         />
         <FifthSection />
-        <SixthSectionCTA 
-          dataScienceCounselling={true}
-          />
+        <SixthSectionCTA dataScienceCounselling={true} />
         <SyllabusNew
           dataScienceCounselling={true}
           dataScience={true}
@@ -125,7 +123,7 @@ function Blockchain() {
           syllabusDesc={FoundationDataScienceCourseData[0].syllabusDesc}
           popupHead={FoundationDataScienceCourseData[0].popupHead}
         />
-          <GrowthStats
+        <GrowthStats
           img1="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Data+Science+Foundation+Scope.webp"
           heading="Data science is the future! "
           para1="Higher Growth: Annual growth rate of 30% in 2023"
@@ -136,18 +134,18 @@ function Blockchain() {
           deskImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Tools-Logo.png"
           mobImage="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Mobile-Tools-Covered.png"
         />
-      
+
         <FeeSection
-            Fee="₹ 79,000 + 18% GST"
-            FeeEmi="₹ 7,768/month"
-            FeeHeading="Program Fee & Financing"
-            FeeContent1="0% interest rate"
-            FeeContent2="No cost EMI"
-            FeeContent3="Flexible payment"
-            FeeContent4="Easy loan procedure"
-            FeeContent5="15 days refund policy"
-            FeeContent6="No additional cost"
-            dataScienceCounselling={true}
+          Fee="₹ 79,000 + 18% GST"
+          FeeEmi="₹ 7,768/month"
+          FeeHeading="Program Fee & Financing"
+          FeeContent1="0% interest rate"
+          FeeContent2="No cost EMI"
+          FeeContent3="Flexible payment"
+          FeeContent4="Easy loan procedure"
+          FeeContent5="15 days refund policy"
+          FeeContent6="No additional cost"
+          dataScienceCounselling={true}
         />
         <Project
           projectData={FoundationDataScienceCourseData[0].project}
@@ -157,6 +155,7 @@ function Blockchain() {
           titleCourse="Data Science Project Brochure"
           brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Data+Science+and+AI+Projects.pdf"
         />
+        <BatchDetails CourseFeeHead="Data Science and AI Master Program : Batch Details" />
         <FAQNew FAQNewData={FoundationDataScienceCourseData[0].faq} />
         <SeventhSection />
         <Footer />
