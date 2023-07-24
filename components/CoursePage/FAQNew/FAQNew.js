@@ -43,10 +43,10 @@ function FAQNew({ FAQNewData }) {
               return (
                 <span
                   onClick={() => {
-                    menuChange(data.sectionName, index);
+                    menuChange(data.sectionName, data.id);
                   }}
                   style={
-                    dataLoop[index].value
+                    dataLoop[data.id].value
                       ? { background: "white", borderLeft: "4px solid #2D9CD7" }
                       : {}
                   }
