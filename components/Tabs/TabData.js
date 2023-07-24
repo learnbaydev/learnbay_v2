@@ -1,7 +1,7 @@
 export const TabData = [
   {
     id: "Popular Courses",
-    title: "Popular Courses", 
+    title: "Popular Courses",
     courseName: [
       {
         id: 1,
@@ -81,11 +81,15 @@ export const TabData = [
         url: "/datascience/data-science-for-bfsi-professional",
       },
       {
-        CName: "Data Analytics Program",
+        CName: (
+          <p>
+            Data Analytics <br /> Program
+          </p>
+        ),
         hours: "  180+ Hours | 5 & 6.5 Months",
         url: "/datascience/data-analytics-certification-course",
       },
-      
+
       {
         CName: "HR Analytics Program",
         hours: " 200+ Hours | 5 & 7 Months",
@@ -184,7 +188,7 @@ export const TabData = [
         hours: "   250+ Hours | 7 & 9 Months",
         url: "/datascience/business-analytics-certification-course",
       },
-      
+
       {
         CName: " Data Science and AI Program for BFSI Professionals",
         hours: "  250+ Hours | 7 & 9 Months",
@@ -201,7 +205,11 @@ export const TabData = [
         url: "/fullstack/software-development-program-for-freshers",
       },
       {
-        CName: "Data Analytics Program",
+        CName: (
+          <p>
+            Data Analytics <br /> Program
+          </p>
+        ),
         hours: " 180+ Hours | 5 & 6.5 Months",
         url: "/datascience/data-analytics-certification-course",
       },
@@ -215,7 +223,6 @@ export const TabData = [
         hours: "  200+ Hours | 5 & 7 Months",
         url: "/datascience/marketing-analytics",
       },
-      
     ],
   },
 ];

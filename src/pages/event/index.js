@@ -1,11 +1,11 @@
 import React from "react";
-import Navbar from "../../Components/Navbar/Navbar";
+import Navbar from "../../../components/Navbar/Navbar";
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../../styles/DataScienceEvent.module.css";
-import EventTab from "../../Components/Event/EventTab/EventTab";
-import { getSortedPostsData } from "../../lib/event";
-import { sortByDateEvent } from "../../utils";
+import EventTab from "../../../components/Event/EventTab/EventTab";
+import { getSortedPostsData } from "../../../lib/event";
+import { sortByDateEvent } from "../../util";
 
 export default function index({ eventData }) {
   return (
@@ -24,10 +24,10 @@ export default function index({ eventData }) {
         />
         <link rel="canonical" href="https://www.learnbay.co/event" />
       </Head>
-      <Navbar event={true} formotp= {true} />
+      <Navbar event={true} formotp={true} />
       <div className={styles.Back}>
         <h4 style={{ textAlign: "left" }}>
-        <b>Events on learnbay</b>
+          <b>Events on learnbay</b>
         </h4>
         <div>
           <Image

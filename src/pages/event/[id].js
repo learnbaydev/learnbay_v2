@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
 import Head from "next/head";
-import { EventHeader } from "../../Components/WebinarPage/EventHeaderFSD/EventHeader";
+import { EventHeader } from "../../../components/WebinarPage/EventHeaderFSD/EventHeader";
 import styles from "../../styles/DataScienceEvent.module.css";
-import EventFeature from "../../Components/WebinarPage/EventFeatures/EventFeature";
-import { getAllPostIds, getPostData } from "../../lib/event";
-import Navbar from "../../Components/Navbar/Navbar";
-import FormOtp from "../../Components/WebinarPage/FormOtp/FormOtp";
-import Footer from "../../Components/Event/EventFooter/Footer";
+import EventFeature from "../../../components/WebinarPage/EventFeatures/EventFeature";
+import { getAllPostIds, getPostData } from "../../../lib/event";
+import Navbar from "../../../components/Navbar/Navbar";
+import FormOtp from "../../../components/WebinarPage/FormOtp/FormOtp";
+import Footer from "../../../components/Event/EventFooter/Footer";
 import { FaHeart, FaUserFriends } from "react-icons/fa";
 
 export default function DataScienceEvent({ eventData, formotp }) {
