@@ -95,6 +95,8 @@
   overflow: auto;
   letter-spacing: 1px;
   font-weight: bold;
+  display: block;
+  color: #000;
 }
 .listMargin {
   margin-left: 0px;
