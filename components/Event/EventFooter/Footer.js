@@ -28,8 +28,8 @@ const Footerfsd = () => {
             alt="Learnbay"
             quality={100}
             objectFit="contain"
-            width="230px"
-            height="60px"
+            width="230"
+            height="60"
           />
           <p className={styles.FooterInnerli}>
             Enroll now on DSA and System Design Webinars led by top Industry

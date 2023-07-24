@@ -3,6 +3,8 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+
 .Back {
   background-color: #f4fcfe;
   height: 400px;
@@ -27,14 +29,24 @@
   display: grid;
   grid-template-columns: 68% 28%;
 }
+
+.Page21 {
+  display: grid;
+  grid-template-columns: 68% 28%;
+}
 .Pages {
+  display: grid;
+  margin-top: 90px;
+  grid-template-columns: 90% 10%;
+}
+.PagesD {
   display: grid;
   margin-top: 90px;
   grid-template-columns: 90% 10%;
 }
 
 .left {
-  margin: 50px 20px 50px 100px
+  margin: 50px 20px 50px 100px;
 }
 
 /* .right {
@@ -53,9 +65,9 @@
   border-radius: 8px;
   padding: 20px;
   box-shadow: 0 0 5px 0 rgb(45 156 215 / 31%);
-  position: sticky;
-    top: 80px;
-    margin-top: 50px;
+  position: fixed;
+  top: 2rem;
+  margin-top: 50px;
 }
 .header {
   display: flex;
@@ -112,7 +124,7 @@
 .line {
   width: 150px;
   margin-bottom: 30px;
-  background-color: #ECB552;
+  background-color: #ff9562;
   height: 4px;
   border-radius: 8px;
 }
@@ -165,7 +177,7 @@
   justify-content: center;
   margin-right: 30px;
   padding: 0;
-  background-color: #ECB552;
+  background-color: #ff9562;
   border-radius: 10px 10px 10px 10px;
 }
 
@@ -316,7 +328,7 @@
   position: relative;
   padding: 20px 40px;
   margin-top: 80px;
-  background-color: #F2FBFD;
+  background-color: #f2fbfd;
 }
 .profilePic {
   display: flex;
@@ -407,6 +419,60 @@
   padding: 20px 100px;
 }
 
+.rightDomain {
+  display: flex;
+  position: unset;
+  z-index: 0;
+  flex-flow: column;
+}
+
+.formDomain {
+  background-color: #ffffff90;
+  display: flex;
+  flex-flow: column;
+  border: 1px solid #fff;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 0 5px 0 rgb(45 156 215 / 31%);
+  position: fixed;
+  top: 2rem;
+  margin-top: 50px;
+}
+
+.headerDomain {
+  display: flex;
+  justify-content: space-between;
+}
+
+.headerDomain h3 {
+  margin: auto;
+  color: #000;
+  margin-bottom: 20px;
+  font-size: 26px;
+}
+
+.IconDomain {
+  margin-right: 5px;
+  color: #0077b5;
+}
+
+.iconsRegister {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px 0px 20px;
+  align-items: center;
+}
+
+.iconsRegisterp {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.IconDomain {
+  font-size: 24px;
+}
+
 /* event main page style end*/
 
 @media (max-width: 1281px) {
@@ -428,22 +494,56 @@
     padding: 20px 40px;
   }
 
+ 
+
   /* event main page style end*/
+}
+
+
+@media(max-width:1024px){
+  .headerDomain h3 {
+  
+    font-size: 20px;
+  }
+
+  .iconsRegister {
+    
+    padding: 0px 20px 0px 20px;
+
+  }
+}
+
+
+@media(max-width:961px) {
+
+  .headerDomain h3 {
+  
+    margin-bottom: 3px;
+  }
+
+  
 }
 
 @media (max-width: 801px) {
   .event {
     padding: 20px;
   }
+
+  .left{
+    margin: 50px 20px 50px 20px;
+  }
 }
 @media (max-width: 480px) {
   .container {
-    margin-bottom: 80px;
+    margin-bottom: 0px;
   }
   .Page {
     display: flex;
     flex-flow: column;
     background-image: none !important;
+  }
+  .Pages .prgrmFeature {
+    margin: 0;
   }
   .Back {
     height: 100%;
@@ -457,7 +557,7 @@
   }
 
   .left {
-    margin: 0px
+    margin: 0px;
   }
   .headWrap {
     margin-top: 70px;
@@ -509,10 +609,42 @@
     z-index: 0;
     flex-flow: column;
   }
+  .form {
+    position: inherit;
+    margin: 0;
+  }
   .Page2,
   .Pages {
     grid-template-columns: 100%;
-    padding: 30px 20px;
+    padding: 20px 20px 30px 20px;
+    display: flex;
+    margin-top: 0px;
+    flex-direction: column-reverse;
+  }
+
+  .Page21,
+  .PagesD {
+    grid-template-columns: 100%;
+    padding: 30px 20px 30px 20px;
+    display: flex;
+    margin-top: 0px;
+    flex-direction: column-reverse;
+  }
+
+  .formDomain {
+    grid-template-columns: 100%;
+    padding: 10px 20px;
+    display: flex;
+    margin-top: 0px;
+    position: initial;
+  }
+
+  .rightDomain {
+    display: flex;
+    position: unset;
+    z-index: 0;
+    flex-flow: column;
+    margin-bottom: 30px;
   }
 
   .why {
@@ -634,8 +766,5 @@
   .dots {
     color: #f28705;
     font-size: 46px;
-  }
-  .Pages .prgrmFeature {
-    margin: 0px;
   }
 }

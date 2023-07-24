@@ -302,3 +302,14 @@
 .date input:focus-visible {
   outline: 1px solid #0487d9;
 }
+
+
+@media(max-width:1024px){
+  .formWrapper {
+    padding: 4px 10px;
+}
+.button {
+  padding: 4px 25px;
+}
+
+}

@@ -182,6 +182,9 @@
   color: #000;
 }
 
+
+
+
 @media (max-width: 961px) {
   .CareerImpact {
     margin: 70px 30px;
@@ -189,6 +192,29 @@
   .slide {
     height: fit-content;
   }
+}
+
+@media(max-width: 801px){
+  .para{
+    font-size: 13px !important;
+  }
+
+  .name{
+    font-size: 14px !important;
+  }
+
+}
+
+@media (max-width: 641px){
+
+  .para{
+    font-size: 12px !important;
+  }
+
+  .name{
+    font-size: 13px !important;
+  }
+
 }
 
 @media (max-width: 481px) {
