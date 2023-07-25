@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../styles/InfoWebinar.module.css";
+import styles from "../../styles/InfoWebinar.module.css";
 import Head from "next/head";
 import Image from "next/image";
 import Navbar from "../../../../adlearnbay/Components/CoursePage/Navbar/NavbarThankYou";
