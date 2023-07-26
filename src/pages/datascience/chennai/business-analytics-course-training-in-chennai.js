@@ -117,7 +117,7 @@ export default function Home() {
           dataScienceCounselling={true}
           titleCourse="Business Analytics Course Training In Chennai"
           brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Business+Analytics+Certification+Program+Learnbay.pdf"
-          FirstRightImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/advance+DS+header+image.webp"
+          FirstRightImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/head/Businesss+Analytics.png"
           firstHeading="Business Analytics Course Training In Chennai"
           firstTopPara="Professional Business Analytics Program"
           idss="bfl64ANfSV0"

@@ -118,7 +118,7 @@ export default function Home() {
           cityParaCont=" Enroll in the best Job-ready full-stack software development course in Chennai. Take a 10-step step ahead of others towards the most lucrative salary package of product-based MNCs, which you deserve."
           titleCourse="Full-Stack Software Developer Course In Chennai To Achieve Your Dream Job"
           brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Full+Stack+Software+Development+Program+Learnbay.pdf"
-          FirstRightImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/advance+DS+header+image.webp"
+          FirstRightImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/head/W+Dev.png"
           firstHeading="Full-Stack Software Developer Course In Chennai To Achieve Your Dream Job"
           firstTopPara="Ace Your Coding Interview at PRODUCT Based Companies"
           idss="bfl64ANfSV0"
