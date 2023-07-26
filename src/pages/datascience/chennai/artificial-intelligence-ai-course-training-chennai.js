@@ -121,7 +121,7 @@ export default function Home() {
           dataScienceCounselling={true}
           titleCourse="Artificial Intelligence(Ai) Course Training In chennai For Managers and Leaders"
           brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Data+Science+%26+AI+Certification+Program+For+Managers+%26+Leaders+Learnbay.pdf"
-          FirstRightImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/advance+DS+header+image.webp"
+          FirstRightImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/head/Managers+%26+Leaders.png"
           firstHeading="Artificial Intelligence(Ai) Course Training In chennai For Managers and Leaders"
           firstTopPara="Industry-curated Training With Domain Specialization"
           idss="bfl64ANfSV0"
