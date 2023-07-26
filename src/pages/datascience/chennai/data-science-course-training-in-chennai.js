@@ -46,8 +46,10 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-      <title>Best Data Science Course in Chennai With IBM Certification</title>
-      <meta name="robots" content="index, follow" />
+      <title>
+          Best Data Science Course in Chennai With IBM Certification
+        </title>
+        <meta name="robots" content="index, follow" />
         <meta
           name="description"
           content="Learnbay's Most Extensive Data Science Training Course in Chennai in Collaboration with IBM which ensures unparalleled training and placement assistance."
@@ -99,8 +101,7 @@ export default function Home() {
           rel="canonical"
           href="https://www.learnbay.co/data-science-course-training-in-chennai"
         />
-        
-        <link
+         <link
           rel="icon"
           href="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/Learnbay-Favicon-L.png"
         />
@@ -288,15 +289,7 @@ export default function Home() {
               Asrc4={DataScienceChennaiCourseData[0].Asrc4}
               AlumniH4={DataScienceChennaiCourseData[0].AlumniH4}
               Alumnip4={DataScienceChennaiCourseData[0].Alumnip4}
-              alt1={DataScienceChennaiCourseData[0].alt1}
-              alt2={DataScienceChennaiCourseData[0].alt2}
-              alt3={DataScienceChennaiCourseData[0].alt3}
-              alt4={DataScienceChennaiCourseData[0].alt4}
-              alt5={DataScienceChennaiCourseData[0].alt5}
-              alt6={DataScienceChennaiCourseData[0].alt6}
-              alt7={DataScienceChennaiCourseData[0].alt7}
-              alt8={DataScienceChennaiCourseData[0].alt8}
-              alt9={DataScienceChennaiCourseData[0].alt9}
+           
             />
             <div className={styles.faqCity}>
               <FAQNew FAQNewData={DataScienceChennaiCourseData[0].faq} />

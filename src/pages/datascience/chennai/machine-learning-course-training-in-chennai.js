@@ -46,64 +46,33 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-      <title>Best Machine Learning Course in Chennai with Career Assistance</title>
-      <meta name="robots" content="index, follow" />
+      <title>
+          Best Machine Learning Course in Chennai with Career Assistance
+        </title>
+        <meta name="robots" content="index, follow" />
         <meta
           name="description"
-          content="Learnbay's Most Extensive Data Science Training Course in Chennai in Collaboration with IBM which ensures unparalleled training and placement assistance."
+          content="Join-us The Learnbay's Extensive Machine Learning Training Course in Chennai. Get mentored by top industry experts, multiple batches available. Enroll Now."
         />
         <meta
           name="keywords"
-          content="data science course in Chennai, data science training in Chennai, data science institute in Chennai, best data science institute in Chennai, data scientist course in Chennai,data scientist certification in Chennai, data science training institute in Chennai, advanced data science course in Chennai, data science course with Placement Assistance, data science course"
-        />
-        <meta
-          property="og:url"
-          content="https://www.learnbay.co/data-science-course-training-in-chennai"
-        />
-        <meta
-          property="og:title"
-          content="Data Science Course in Chennai | Data Science Training in Chennai"
-        />
-        <meta property="og:site_name" content="learnbay.co" />
-        <meta property="og:type" content="Learnbay_co:course" />
-        <meta
-          property="og:description"
-          content="Data science course in Chennai. Learnbay is Advanced Data Science Course Training Institute in Chennai. Data science course in Chennai will enhance your career"
-        />
-        <meta
-          property="og:image"
-          content="https://www.learnbay.co/_next/image?url=https%3A%2F%2Flearnbay-wb.s3.ap-south-1.amazonaws.com%2Fmain%2FLearnbay-Logo.webp&w=256&q=100"
-        />
-        <meta property="og:image:height" content="100" />
-        <meta property="og:image:width" content="256" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@Learnbay" />
-        <meta
-          name="twitter:title"
-          content="Data Science Course in Chennai | Data Science Training in Chennai"
-        />
-        <meta name="twitter:creator" content="@Learnbay" />
-        <meta
-          itemProp="description"
-          content="Data science course in Chennai. Learnbay is Advanced Data Science Course Training Institute in Chennai. Data science course in Chennai will enhance your career"
-        />
-        <meta
-          name="twitter:description"
-          content="Data science course in Chennai. Learnbay is Advanced Data Science Course Training Institute in Chennai. Data science course in Chennai will enhance your career"
-        />
-        <meta
-          name="twitter:image"
-          content="https://www.learnbay.co/_next/image?url=https%3A%2F%2Flearnbay-wb.s3.ap-south-1.amazonaws.com%2Fmain%2FLearnbay-Logo.webp&w=256&q=100"
+          content="Machine learning course in Chennai, Machine learning training in Chennai, Machine learning institute in Chennai, best Machine learning institute in Chennai, Machine learning course in Chennai, Machine learning certification in Chennai, Machine learning training institute in Chennai, advanced Machine learning course in Chennai, Machine learning course with Placement Assistance, Machine learning course"
         />
         <link
           rel="canonical"
-          href="https://www.learnbay.co/data-science-course-training-in-chennai"
+          href="https://www.learnbay.co/machine-learning-course-training-in-chennai"
         />
-        
+    
+        <meta
+          name="copyright"
+          content="Learnbay: Machine Learning Courses Certification Training India"
+        />
+   
         <link
           rel="icon"
           href="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/Learnbay-Favicon-L.png"
         />
+  
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -299,15 +268,7 @@ export default function Home() {
               Asrc4={ MachineLearningChennaiCourseData[0].Asrc4}
               AlumniH4={ MachineLearningChennaiCourseData[0].AlumniH4}
               Alumnip4={ MachineLearningChennaiCourseData[0].Alumnip4}
-              alt1={ MachineLearningChennaiCourseData[0].alt1}
-              alt2={ MachineLearningChennaiCourseData[0].alt2}
-              alt3={ MachineLearningChennaiCourseData[0].alt3}
-              alt4={ MachineLearningChennaiCourseData[0].alt4}
-              alt5={ MachineLearningChennaiCourseData[0].alt5}
-              alt6={ MachineLearningChennaiCourseData[0].alt6}
-              alt7={ MachineLearningChennaiCourseData[0].alt7}
-              alt8={ MachineLearningChennaiCourseData[0].alt8}
-              alt9={ MachineLearningChennaiCourseData[0].alt9}
+            
             />
             <div className={styles.faqCity}>
               <FAQNew FAQNewData={ MachineLearningChennaiCourseData[0].faq} />
