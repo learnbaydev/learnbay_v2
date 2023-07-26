@@ -179,10 +179,20 @@ const FeeSection = ({
                 <SwiperSlide className={styles.swiperSlide}>
                   <div className="imgWrapper">
                     <Image
-                      src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/zest-logo.webp"
-                      alt="Zest"
-                      width="200"
-                      height="58"
+                      src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/liquiloans.webp"
+                      alt="liqiLoans"
+                      width="300"
+                      height="120"
+                    />
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide className={styles.swiperSlide}>
+                  <div className="imgWrapper">
+                    <Image
+                      src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/propelld.webp"
+                      alt="propelld"
+                      width="500"
+                      height="200"
                     />
                   </div>
                 </SwiperSlide>
