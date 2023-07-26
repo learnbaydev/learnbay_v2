@@ -2170,9 +2170,9 @@ const CitiesRight = ({
           ""
         )}
 
-        {cityTextDSChennai ? (
+{cityTextDSChennai ? (
           <div className={styles.CitiesRightInner}>
-            <h2>
+            <h2 className={styles.cityRightH2}>
               <b>Data Science Certification from Learnbay</b>
             </h2>
             <p>
@@ -2665,27 +2665,7 @@ const CitiesRight = ({
                 This program’s data science course fee is INR 1,10,000,
                 excluding GST.<br></br>
               </li>
-              {/* <p>
-                    The course fee for this manager course is INR 105,000,
-                    exclusive of GST.
-                  </p> */}
-              {/* <li>
-                    <b>Data Science and AI Master Program - </b>This
-                    domain-specialised data science course is a complete boot
-                    camp covering everything a data scientist must possess. The
-                    duration of this master's program is 15 to 17 months,
-                    depending on your preferred batch (week and weekend). After
-                    completing this course, you will become an expert data
-                    scientist and be able to manage teams in leading firms.
-                  </li> */}
-              {/* <p>
-                    The course fee for this master's program is 125,000,
-                    Exclusive of GST.
-                  </p>
-                  <p>
-                    Note: All data science courses at Learnbay come with the
-                    option of no-cost EMI.
-                  </p> */}
+            
             </ol>
 
             <h3>
