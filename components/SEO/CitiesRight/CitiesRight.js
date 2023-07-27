@@ -255,8 +255,26 @@ const CitiesRight = ({
   cityTextDSPune,
   cityTextDSHyderabad,
   cityTextDSDelhi,
-
   cityTextDSmumbai,
+  ProgramBot22,
+  ProgramBot23,
+  ProgramBot24,
+  ProgramBot25,
+  ProgramBot26,
+  ProgramBot27,
+  ProgramBot28,
+  ProgramBot29,
+  ProgramBot42,
+  ProgramBot30,
+  ProgramBot33,
+  ProgramBot34,
+  ProgramBot35,
+  ProgramBot36,
+  ProgramBot37,
+  ProgramBot38,
+  ProgramBot39,
+  ProgramBot40,
+  ProgramBot41,
 }) => {
   const [read, setRead] = useState(false);
   const handler = () => {
@@ -444,6 +462,8 @@ const CitiesRight = ({
             <p>
               <b>Module 3 - Model Training and Deployment using ( AWS GCP) </b>
             </p>
+            <br />
+            <br />
             <h2>Premium Features of Data Science Training in Mumbai </h2>
             <p>
               Some of the premium features of online data science training in
@@ -2170,7 +2190,7 @@ const CitiesRight = ({
           ""
         )}
 
-{cityTextDSChennai ? (
+        {cityTextDSChennai ? (
           <div className={styles.CitiesRightInner}>
             <h2 className={styles.cityRightH2}>
               <b>Data Science Certification from Learnbay</b>
@@ -2665,7 +2685,6 @@ const CitiesRight = ({
                 This program’s data science course fee is INR 1,10,000,
                 excluding GST.<br></br>
               </li>
-            
             </ol>
 
             <h3>
@@ -3140,6 +3159,27 @@ const CitiesRight = ({
               </span>
             </a>
             <span className={styles.pp}>{ProgramBot21}</span>
+            <p className={styles.pp}>{ProgramBot22}</p>
+            <p className={styles.pp}>{ProgramBot23}</p>
+            <p className={styles.pp}>{ProgramBot24}</p>
+            <p className={styles.pp}>{ProgramBot25}</p>
+            <p className={styles.pp}>{ProgramBot26}</p>
+            <p className={styles.pp}>{ProgramBot27}</p>
+            <p className={styles.pp}>{ProgramBot28}</p>
+            <p className={styles.pp}>{ProgramBot29}</p>
+            <p className={styles.pp}>{ProgramBot30}</p>
+            <p className={styles.pp}>{ProgramBot31}</p>
+            <p className={styles.pp}>{ProgramBot32}</p>
+            <p className={styles.pp}>{ProgramBot33}</p>
+            <p className={styles.pp}>{ProgramBot34}</p>
+            <p className={styles.pp}>{ProgramBot35}</p>
+            <p className={styles.pp}>{ProgramBot36}</p>
+            <p className={styles.pp}>{ProgramBot37}</p>
+            <p className={styles.pp}>{ProgramBot38}</p>
+            <p className={styles.pp}>{ProgramBot39}</p>
+            <p className={styles.pp}>{ProgramBot40}</p>
+            <p className={styles.pp}>{ProgramBot41}</p>
+            <p className={styles.pp}>{ProgramBot42}</p>
           </div>
         )}
       </div>
