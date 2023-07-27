@@ -3165,7 +3165,7 @@ const CitiesRight = ({
           <p className={styles.pp}>{DomainBot3}</p>
           {fullStackCity ? (
             <>
-              <h2 className={styles.pHead}>{DomainHead2}</h2>
+             
               <h2 className={styles.pHead}>{DomainHead3}</h2>
               <h2 className={styles.pHead}>{DomainHead4}</h2>
               <h2 className={styles.pHead}>{DomainHead5}</h2>
