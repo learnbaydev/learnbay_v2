@@ -125,7 +125,7 @@ a {
 .MainCities {
   display: grid;
   grid-template-columns: 30% 70%;
-  margin: 0px 100px 70px 100px;
+  margin: 0px 100px 100px 100px;
 }
 
 //swiper css
@@ -217,10 +217,13 @@ a {
 @media (max-width: 801px) {
   .MainCities {
     display: block;
-    margin: 0px 30px;
+    margin: 0px 10px;
   }
   .wrapper {
     padding: 30px 20px;
+  }
+  .faqCity .course  .wrapper {
+    padding: 30px 0px !important;
   }
 }
 @media (max-width: 641px) {

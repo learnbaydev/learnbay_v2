@@ -58,6 +58,7 @@ const FAQNew = dynamic(() =>
 );
 import OfferPopup from "../../../components/OfferPopup/OfferPopup";
 import BottomBar from "../../../components/WebPage/BottomBar/BottomBar";
+import BatchDetails from "../../../components/CoursePage/BatchDetails/BatchDetails";
 import { ManagersDataScienceCourseData } from "../../../Data/DataScienceManagers";
 
 function Blockchain() {

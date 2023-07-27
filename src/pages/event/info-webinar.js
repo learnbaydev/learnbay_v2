@@ -2,9 +2,9 @@ import React from "react";
 import styles from "../../styles/InfoWebinar.module.css";
 import Head from "next/head";
 import Image from "next/image";
-import Navbar from "../../../../adlearnbay/Components/CoursePage/Navbar/NavbarThankYou";
-import Footer from "../../../../adlearnbay/Components/CoursePage/Footer/Footer";
-import FormOtp from "../../../../adlearnbay/Components/WebinarPage/FormOtp/FormOtp";
+import Navbar from "../../../components/Navbar/Navbar";
+import Footer from "../../../components/Footer/Footer";
+import FormOtp from "../../../components/WebinarPage/FormOtp/FormOtp";
 import cookies from "next-cookies";
 
 const ThankYouFsd = ({ initialName }) => {

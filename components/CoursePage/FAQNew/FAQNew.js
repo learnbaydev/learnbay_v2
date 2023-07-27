@@ -36,7 +36,7 @@ function FAQNew({ FAQNewData }) {
   };
 
   return (
-    <div className={`${styles.course} wrapper`}>
+    <div className={styles.course}>
       <div className={styles.courseM}>
         <h4 className={styles.infop}>FAQs</h4>
         <div className={styles.courses}>

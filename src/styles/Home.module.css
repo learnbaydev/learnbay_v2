@@ -301,6 +301,9 @@
     .Feature {
       margin-top: 20px;
     }
+    .faqCity {
+      margin: 0px -10px 0px -15px;
+    }
   }
   
   @media (max-width: 641px) {
