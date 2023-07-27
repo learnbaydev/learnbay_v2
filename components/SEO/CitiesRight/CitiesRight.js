@@ -264,6 +264,7 @@ const CitiesRight = ({
   ProgramBot27,
   ProgramBot28,
   ProgramBot29,
+  ProgramBot42,
   ProgramBot30,
   ProgramBot33,
   ProgramBot34,
@@ -274,7 +275,6 @@ const CitiesRight = ({
   ProgramBot39,
   ProgramBot40,
   ProgramBot41,
-  ProgramBot42,
 }) => {
   const [read, setRead] = useState(false);
   const handler = () => {
@@ -2190,7 +2190,7 @@ const CitiesRight = ({
           ""
         )}
 
-{cityTextDSChennai ? (
+        {cityTextDSChennai ? (
           <div className={styles.CitiesRightInner}>
             <h2 className={styles.cityRightH2}>
               <b>Data Science Certification from Learnbay</b>
@@ -2685,7 +2685,6 @@ const CitiesRight = ({
                 This program’s data science course fee is INR 1,10,000,
                 excluding GST.<br></br>
               </li>
-            
             </ol>
 
             <h3>
