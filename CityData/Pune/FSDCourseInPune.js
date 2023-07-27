@@ -288,27 +288,23 @@ export const FSDPuneCourseData= [
           sectionName: "Capstone and Real-Time Projects",
           data: [
             {
-                id: 0,
-                ques: "How many real-time projects/case studies will be there?",
-                ans: `We have a set of 5 Real-time projects from multiple industries like Healthcare, Banking, Finance, Insurance, Retail, etc.`,
-                linkText1: " Click here to download the list of the projects.",
-                link1:
-                  "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Data+Science+and+AI+Projects.pdf",
-                link: true,
-                open: true,
-              },
-              {
-                id: 1,
-                ques: " How many real-time projects will be there?",
-                ans: `We have a set of 5 Real-time projects from multiple industries like Healthcare, Banking, Finance, Insurance, Retail, etc.`,
-                open: false,
-              },
-              {
-                id: 2,
-                ques: "How will the project be executed?",
-                ans: "At Learnbay, you will be required to work in a group where your project group will be assigned a specific project mentor with complete assistance and guidance.",
-                open: false,
-              },
+              id: 0,
+              ques: "How many real-time projects will be there in the full-stack developer course?",
+              ans: `In the full-stack developer course, we have a set of 12+ real-time projects from multiple domains.In the full-stack developer course, we have a set of 12+ real-time projects from multiple domains.`,
+              open: true,
+            },
+            {
+              id: 1,
+              ques: "How do Learnbay’s full-stack software developer course projects help crack the MNC interview?",
+              ans: "Because of the specialized projects, you will be able to concentrate on a particular subject, which will make it easier for you to react with better clarity and accuracy to questions asked during interviews. After all, you will be skilled in domain-specific best practices.",
+              open: false,
+            },
+            {
+              id: 2,
+              ques: " What is Learnbay’s project innovation lab?",
+              ans: "Learnbay‘s project innovation lab is an essential approach to the hybrid learning process. where students may complete their projects offline at one of the seven training centers that Learnbay offers across India.",
+              open: false,
+            },
           ],
         },
 
@@ -330,36 +326,24 @@ export const FSDPuneCourseData= [
           sectionName: "Job Assistance",
           data: [
             {
-                id: 0,
-                ques: "What's the eligibility for a job assistance program in Learnbay?",
-                ans: `You should have completed the course with :
-                A minimum score of 70% in assessments
-               Should have completed the assignments and case studies
-               Worked and successfully completed the minimum recommended number of real-time projects.`,
-                open: true,
-              },
-              {
-                id: 1,
-                ques: "How many interview calls will I get at Learnbay?",
-                ans: `At Learnbay, you’ll be provided with job assistance after the completion of the course for a period of 1 year.`,
-                open: false,
-              },
-              {
-                id: 2,
-                ques: "What is a job-readiness program?",
-                ans: `Job readiness program helps you prepare for interviews which include:
-                Resume preparation sessions, 
-                Preparing projects for a strong portfolio, 
-                Interview guidance and prep sessions, 
-                1:1 Mock interviews based on targeted companies and roles.`,
-                open: false,
-              },
-              {
-                id: 3,
-                ques: "Will I get job referrals at Learnbay?",
-                ans: `Yes, we offer dedicated placement assistance by referring to your profile through our partnered consultancies and companies.`,
-                open: false,
-              },
+              id: 0,
+              ques: "What is a job assistance program?",
+          
+              ans: `Learnbay's Job assistance program assists you in obtaining job offers from major MNCs. The Program guides you through the resume-building and project portfolio preparation process. Here you get mock interviews with extensive learning support based on targeted companies and roles. All the mock interviews are conducted by highly experienced software developers.`,
+              open: true,
+            },
+            {
+              id: 1,
+              ques: "Is there any job assistance provided with this full-stack software developer course?",
+              ans: `You should have completed the course with: A minimum score of 70% in assessments. You should have completed the assignments and case studies, Worked, and successfully completed the minimum recommended number of real-time projects.`,
+              open: false,
+            },
+            {
+              id: 2,
+              ques: "What is the duration of the job assistance?",
+              ans: `You’ll be provided with job assistance after the completion of the course for a period of 1 year.`,
+              open: false,
+            },
           ],
         },
 
@@ -368,17 +352,24 @@ export const FSDPuneCourseData= [
           sectionName: "Mentorship",
           data: [
             {
-                id: 0,
-                ques: "Until when will the students get the facility of mentorship?",
-                ans: "Our mentors will provide Data Analytics training to the students until the completion of the course.",
-                open: true,
-              },
-              {
-                id: 1,
-                ques: "Can a Learnbay student choose to study from their desired mentor?",
-                ans: "Every batch has its respective mentor, but if a student is not satisfied with its mentor’s teaching method, they can raise the issue to management and resolve the issues by replacing them with other mentors.",
-                open: false,
-              },
+              id: 0,
+              ques: "Can a student change mentors based on specific interests after enrolment?",
+          
+              ans: "Every batch at Learnbay has a specific mentor, but if a student is unhappy with the way their mentor teaches, they can bring it up with a dedicated contact point, who will address the problem by finding new mentors or by changing the batch.",
+              open: true,
+            },
+            {
+              id: 1,
+              ques: "Is there any option for 1-on-1 learning?",
+              ans: "Learnbay Provides students with 1-on-1 doubt-clearing sessions. If a person has a specific question and wants to understand certain crucial topics, he or she might certainly benefit from such a session.",
+              open: false,
+            },
+            {
+              id: 2,
+              ques: "How long do students get access to mentor support?",
+              ans: "Our Mentors will provide advanced software development training and career insights/guidance to the students until the completion of the course, depending on the specialization. Post-course- completion also students can reach out to specialized mentors for project and placement purposes.",
+              open: false,
+            },
           ],
         },
 
@@ -387,19 +378,85 @@ export const FSDPuneCourseData= [
           sectionName: "Support",
           data: [
             {
-                id: 0,
-                ques: "When is the job assistance provided at Learnbay?",
-                ans: "Job assistance is provided after the completion of the course. It includes build-up sessions, mock interviews, and referrals from top MNC’s/startups. This assistance is provided unless one gets placed in a company.",
-                open: true,
-              },
-              {
-                id: 1,
-                ques: "How long will I get Job referrals?",
-                ans: "You’ll be provided with job assistance after the completion of the course for a period of 1 year.",
-                open: false,
-              },
+              id: 0,
+              ques: "Does Learnbay provide webinars and hackathons in full-stack development courses in Pune?",
+          
+              ans: "Learnbay offers a full-stack development course that includes webinars and hackathons. Students can enhance their knowledge further by enrolling in webinars and hackathons led by industry experts.",
+              open: true,
+            },
+            {
+              id: 1,
+              ques: "How long will I receive job referrals after completing a full-stack development course in pune?",
+              ans: "In full-stack software development, you’ll be provided with job referrals after the completion of the course for a period of 1 year.",
+              open: false,
+            },
           ],
         },
+
+        {
+          id: 8,
+          sectionName: "Eligiblity Criteria",
+          data: [
+            {
+              id: 0,
+              ques: "Can I still apply for a full stack developer course even though I do not hold a Bachelor of Technology or Bachelor of Engineering degree?",
+          
+              ans: "A person with basic computation and mathematical knowledge is also eligible to participate in this course; a BE or Btech degree is not essential to be part of a Full stack software developer course. Only you have to own the passion for coding.",
+              open: true,
+            },
+            {
+              id: 1,
+              ques: "I have no prior experience with coding; will this full-stack software developer course be beneficial to me?",
+              ans: "Learnbay offers specialized sessions for beginners who have no prior expertise with computer programming. So, this is not a concern; only you should have the aptitude to master coding. We will support you from scratch.",
+              open: false,
+            },
+            {
+              id: 2,
+              ques: "What are the prerequisites for the Full-stack Software Development Program?",
+              ans: "Nothing but basic coding knowledge is required to start with this course.",
+              open: false,
+            },
+            {
+              id: 2,
+              ques: "I am a working professional; will the course interfere with my professional life?",
+              ans: "Learnbay delivers weekend batches and weekday evening batches with specific time slots for working professionals, allowing them to choose the timings in a manner that does not interfere with their professional lives.",
+              open: false,
+            },
+            {
+              id: 2,
+              ques: "What are the documents required to enroll in the full-stack developer program in Pune?",
+              ans: "The admissions procedure is conducted online and personalized to your educational and career background. Only a few academic documents are required for the application procedure.",
+              open: false,
+            },
+          ],
+        },
+        {
+          id: 9,
+          sectionName: "Generic Queries",
+          data: [
+            {
+              id: 0,
+              ques: "What does a full-stack developer do?",
+          
+              ans: "The term Full-Stack developer refers to a person proficient in both the front-end and back-end of software development. They create and keep up-and-running fully-fledged systems with databases or servers.",
+              open: true,
+            },
+            {
+              id: 1,
+              ques: "What is the average full-stack software developer salary in Pune?",
+              ans: "The average package of full stack software developers ranges averagely around 6 LPA to 12 LPA depending on the company norms and interview aspects. Based on experience, it can reach up to 30 LPA while switching careers.",
+              open: false,
+            },
+            {
+              id: 2,
+              ques: "Is a full-stack developer a software engineer?",
+              ans: "The goal of Software engineers and full stack developers are quite the same. Both work with similar client project goals but via different sub-direction. Full stack developers are often in leadership roles. Software engineers, however, may be under the guidance of full-stack developers and can use their expertise to create specific features for projects.",
+              open: false,
+            },
+          ],
+        },
+
+        
       ],
   
       ProgramHead1: "A 360° Full Stack Software Developer Course with domain specialization.",
