@@ -18,6 +18,8 @@ function FAQNew({ FAQNewData }) {
     { title: "Job Assistance", value: false },
     { title: "Mentorship", value: false },
     { title: "Support", value: false },
+    { title: "Eligibility Criteria", value: false },
+    { title: "Generic Queries", value: false },
   ]);
 
   const menuChange = (title, index) => {
