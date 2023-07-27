@@ -154,13 +154,12 @@ export default function Home() {
           ThirdTyped="Live Interactive Classes"
           cityParaCont="Enhance your Data Science career with our comprehensive Data Science course in Chennai with IBM Certification. Our advanced Data Science training in Chennai will help you to make experts in Python, Power BI, etc. You will get training from industry leaders and masters to gain the most in-demand data science and AI skills."
           dataScience={true}
+          FirstRightImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/advance+DS+header+image.webp"
           titleCourse="Data Science Course in Chennai"
           brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Advance+Data+Science+and+AI+Certification+Program+Learnbay.pdf"
-          FirstRightImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/head/ADSAI.png"
-
           firstHeading="Data Science Course in Chennai"
           firstTopPara="Foundational and Advance Job-ready Program"
-          idss="bfl64ANfSV0"
+          idss="bfl64ANfSV0" 
         />
         <SecondSection SecondSectionData={DataScienceChennaiCourseData[0].secondSection} />
         <Testimonial
@@ -188,9 +187,7 @@ export default function Home() {
           </div>
           <div className="CitiesRight">
             <CitiesRight
-              
               cityTextDSChennai={true}
-              
               DomainHead1={DataScienceChennaiCourseData[0].DomainHead1}
               DomainBot1={DataScienceChennaiCourseData[0].DomainBot1}
               DomainBot2={DataScienceChennaiCourseData[0].DomainBot2}
@@ -218,6 +215,8 @@ export default function Home() {
               CertificationBot1={DataScienceChennaiCourseData[0].CertificationBot1}
               CertificationBot2={DataScienceChennaiCourseData[0].CertificationBot2}
               src={DataScienceChennaiCourseData[0].src}
+              src22={DataScienceChennaiCourseData[0].src22}
+              src33={DataScienceChennaiCourseData[0].src33}
               ModuleHead1={DataScienceChennaiCourseData[0].ModuleHead1}
               ModuleBot1={DataScienceChennaiCourseData[0].ModuleBot1}
               ModuleBot2={DataScienceChennaiCourseData[0].ModuleBot2}
@@ -298,10 +297,7 @@ export default function Home() {
         </div>
         <SeventhSection />
         <CityText
-          CityTextB={DataScienceChennaiCourseData[0].CityTextB}
-          CityText={DataScienceChennaiCourseData[0].CityText}
-          CityTextLB={DataScienceChennaiCourseData[0].CityTextLB}
-          CityTextL={DataScienceChennaiCourseData[0].CityTextL}
+          cityTextChennai={true}
         />
         <Footer />
       </main>

@@ -150,15 +150,15 @@ export default function Home() {
           FirstTyped="Guaranteed Interview Calls"
           SecondTyped="Capstone Project Certificate"
           ThirdTyped="Live Interactive Classes"
-          cityParaCont="Enhance your Data Science career with our comprehensive Data Science course in Chennai with IBM Certification. Our advanced Data Science training in Chennai will help you to make experts in Python, Power BI, etc. You will get training from industry leaders and masters to gain the most in-demand data science and AI skills."
+          cityParaCont="Enhance your career with industry-level data science courses in Mumbai. Learn and understand cutting-edge data science techniques with advanced IBM certifications. This will enhance your expertise in tools like Python, Power BI, machine learning, etc. You will receive in-depth data science training from industry leaders and experts, allowing you to gain the most in-demand data science and AI skills."
           dataScience={true}
           titleCourse="Advanced Data Science and AI Program with domain specialization"
           brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Advance+Data+Science+and+AI+Certification+Program+Learnbay.pdf"
           FirstRightImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/advance+DS+header+image.webp"
-          firstToparaImg="with domain specialization"
-          firstHeading="Advanced Data Science and AI Program"
-          firstTopPara="Specialization over generalization"
-          idss="bfl64ANfSV0"
+          firstToparaImg=" - Enroll Now"
+          firstHeading="Data Science Course in Mumbai"
+          firstTopPara="Foundational and Advance Job-ready Program"
+          idss="bfl64ANfSV0" 
         />
         <SecondSection
           SecondSectionData={DataScienceMumbaiCourseData[0].secondSection}
@@ -170,10 +170,10 @@ export default function Home() {
           para="Discover the impact of our programs on career growth"
         />
         <div className={styles.cityFee}>
-          <FeeSection
+        <FeeSection
             AIMLCertificate={true}
-            Fee="₹ 1,10,000 + 18% GST"
-            FeeEmi="₹ 10,817/month"
+            Fee="₹  99,000 + 18% GST"
+            FeeEmi="₹  9,735/month"
             FeeHeading="Program Fee & Financing"
             FeeContent2="No cost EMI"
             FeeContent3="Flexible payment"
@@ -188,23 +188,7 @@ export default function Home() {
           </div>
           <div className="CitiesRight">
             <CitiesRight
-              ProgramBot1={DataScienceMumbaiCourseData[0].ProgramBot1}
-              ProgramHead3={DataScienceMumbaiCourseData[0].ProgramHead3}
-              ProgramBot3={DataScienceMumbaiCourseData[0].ProgramBot3}
-              ProgramBot31={DataScienceMumbaiCourseData[0].ProgramBot31}
-              ProgramBot4={DataScienceMumbaiCourseData[0].ProgramBot4}
-              ProgramBot5={DataScienceMumbaiCourseData[0].ProgramBot5}
-              ProgramBot6={DataScienceMumbaiCourseData[0].ProgramBot6}
-              Courselink1={DataScienceMumbaiCourseData[0].Courselink1}
-              Courselink2={DataScienceMumbaiCourseData[0].Courselink2}
-              Courselink3={DataScienceMumbaiCourseData[0].Courselink3}
-              Courselink4={DataScienceMumbaiCourseData[0].Courselink4}
-              Courselink5={DataScienceMumbaiCourseData[0].Courselink5}
-              Course1={DataScienceMumbaiCourseData[0].Course1}
-              Course2={DataScienceMumbaiCourseData[0].Course2}
-              Course3={DataScienceMumbaiCourseData[0].Course3}
-              Course4={DataScienceMumbaiCourseData[0].Course4}
-              Course5={DataScienceMumbaiCourseData[0].Course5}
+            cityTextDSmumbai={true}
               DomainHead1={DataScienceMumbaiCourseData[0].DomainHead1}
               DomainBot1={DataScienceMumbaiCourseData[0].DomainBot1}
               DomainBot2={DataScienceMumbaiCourseData[0].DomainBot2}

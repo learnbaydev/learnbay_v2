@@ -271,14 +271,6 @@
   margin: auto;
 }
 
-.CitiesRightInner h2{
-
-  font-size: 1.5em;
-  margin-block-start: 0.83em;
-  margin-block-end: 0.83em;
-
-}
-
 
 @media (max-width: 650px) {
   .SyllabusBot {
@@ -286,12 +278,16 @@
     width: 100%;
   }
 
+  .ulLi {
+    padding: 0px;
+  }
+
   .certNew {
     display: block;
   }
 
   .SyllabusBot1 {
-    margin: 10px 10px 0px 10px;
+    margin: 10px 0px 0px 0px;
     width: auto;
   }
 
@@ -300,27 +296,27 @@
   }
 
   .SyllabusBot2 {
-    margin: 10px 10px 0px 10px;
+    margin: 10px 0px 0px 0px;
     width: auto;
   }
 
   .SyllabusBot3 {
-    margin: 10px 10px 0px 10px;
+    margin: 10px 0px 0px 0px;
     width: auto;
   }
 
   .SyllabusBot4 {
-    margin: 10px 10px 0px 10px;
+    margin: 10px 0px 0px 0px;
     width: auto;
   }
 
   .SyllabusBot5 {
-    margin: 10px 10px 0px 10px;
+    margin: 10px 0px 0px 0px;
     width: auto;
   }
 
   .SyllabusBot6 {
-    margin: 10px 10px 0px 10px;
+    margin: 10px 0px 0px 0px;
     width: auto;
   }
   .CitiesRightHead {
