@@ -59,6 +59,7 @@ const FAQNew = dynamic(() =>
 );
 import OfferPopup from "../../../components/OfferPopup/OfferPopup";
 import BottomBar from "../../../components/WebPage/BottomBar/BottomBar";
+import BatchDetails from "../../../components/CoursePage/BatchDetails/BatchDetails";
 
 function Blockchain() {
   const [popups, setPopups] = useState(false);
