@@ -379,6 +379,41 @@ export const AIMumbaiCourseData = [
       },
     },
 
+    secondSection: [
+      {
+        id: 1,
+        img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/icon1.png",
+        height: "40",
+        width: "43",
+        heading: "1:1 Doubt Session",
+        para: "Clear your doubts with industry experts and get real-time solutions",
+      },
+      {
+        id: 1,
+        img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/icon3.png",
+        height: "42",
+        width: "42",
+        heading: "Unlimited Interview Calls",
+        para: "Boost career chances, gain referrals from 300+ top recruiters",
+      },
+      {
+        id: 1,
+        img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/icon2.png",
+        height: "50",
+        width: "53",
+        heading: "IBM Project Certificate",
+        para: "Master the domain of AI & machine learning with certificate from IBM",
+      },
+      {
+        id: 1,
+        img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/icon4.png",
+        height: "40",
+        width: "40",
+        heading: "Designed For Professionals",
+        para: "Use tech innovation to drive career growth & acquire in-demand skills",
+      },
+    ],
+
     testimonial: [
       {
         id: 1,
