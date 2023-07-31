@@ -1,4 +1,4 @@
-export const DABangaloreCourseData = [
+export const DADubaiCourseData = [
   {
     script1: {
       "@context": "https://schema.org/",
