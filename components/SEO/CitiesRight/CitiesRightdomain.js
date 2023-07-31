@@ -2,7 +2,8 @@ import React from "react";
 import styles from "./CitiesRight.module.css";
 import { BsClock } from "react-icons/bs";
 import { FiCheck } from "react-icons/fi";
-import Button from "../../Global/Button/Button"; 
+import Button from "../../Global/Button/Button";
+import YoutubeVideo from "../../YoutubeVideo/YoutubeVideo";
 
 const CitiesRight = ({
   ProgramHead1,
@@ -683,6 +684,8 @@ const CitiesRight = ({
             <p className={styles.pp}>{ProgramBot16}</p>
           </div>
         )}
+
+      
       </div>
       <div id="Certification">
         <div className={styles.CitiesRightSpan}>
@@ -693,10 +696,10 @@ const CitiesRight = ({
           <p className={styles.pp}>{CertificationBot1}</p>
           <p className={styles.pp}>{CertificationBot2}</p>
           <div className={styles.certNew}>
-                <img src={src} ></img>
-                <img src={src22} ></img>
-                <img src={src33} ></img>
-              </div>
+            <img src={src}></img>
+            <img src={src22}></img>
+            <img src={src33}></img>
+          </div>
         </div>
       </div>
       <div id="Module">
@@ -872,7 +875,7 @@ const CitiesRight = ({
         </div>
         <div className={styles.Button}>
           <a href={syllabussrc} target="_blank">
-          <Button className={styles.btn} text="View Detailed Brochure" />
+            <Button className={styles.btn} text="View Detailed Brochure" />
           </a>
         </div>
       </div>
@@ -943,12 +946,12 @@ const CitiesRight = ({
           </div>
         </div>
         <div className={styles.Button}>
-        <a
-                href="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Data+Science+and+AI+Projects.pdf"
-                target="_blank"
-              >
-                <Button className={styles.btn} text="View All Projects" />
-              </a>
+          <a
+            href="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Data+Science+and+AI+Projects.pdf"
+            target="_blank"
+          >
+            <Button className={styles.btn} text="View All Projects" />
+          </a>
         </div>
       </div>
       <div id="Alumni">
@@ -983,9 +986,9 @@ const CitiesRight = ({
           </div>
         </div>
         <div className={styles.Button}>
-        <a href="/reviews" target="_blank">
-                <Button className={styles.btn} text="View All Reviews" />
-              </a>
+          <a href="/reviews" target="_blank">
+            <Button className={styles.btn} text="View All Reviews" />
+          </a>
         </div>
       </div>
       <div id="FAQ">
