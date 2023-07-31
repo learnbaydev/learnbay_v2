@@ -25,11 +25,7 @@ const CitiesLeft = dynamic(() =>
 const CitiesRight = dynamic(() =>
   import("../../../../components/SEO/CitiesRight/CitiesRight")
 );
-<<<<<<< HEAD
 import { DSPuneCourseData } from "../../../../CityData/Pune/dataScienceCourseTrainingInPune";
-=======
-import { DSPuneCourseData } from "../../../../CityData/Pune/DataScienceCourseTrainingPuneData";
->>>>>>> 16a04a77d8cb922b9e53f4dd315ff72be00f6905
 const FAQNew = dynamic(() =>
   import("../../../../components/CoursePage/FAQNew/FAQNew")
 );
@@ -50,14 +46,10 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-<<<<<<< HEAD
       <title>
             Best Data Science Courses Training in Pune- Learnbay
 
         </title>
-=======
-        <title>Best Data Science Courses Training in Pune- Learnbay</title>
->>>>>>> 16a04a77d8cb922b9e53f4dd315ff72be00f6905
         <meta name="robots" content="index, follow" />
         <meta
           name="description"
@@ -71,7 +63,6 @@ export default function Home() {
           rel="canonical"
           href="https://www.learnbay.co/data-science-course-training-in-pune"
         />
-<<<<<<< HEAD
         {/* <meta name="HandheldFriendly" content="true" /> */}
         {/* <meta name="distribution" content="global" /> */}
         <meta name="copyright" content="Learnbay" />
@@ -84,9 +75,6 @@ export default function Home() {
         {/* <meta name="expires" content="never" /> */}
         {/* <meta name="coverage" content="Worldwide" /> */}
         {/* <meta name="robots" content="ALL" /> */}
-=======
-        <meta name="copyright" content="Learnbay" />
->>>>>>> 16a04a77d8cb922b9e53f4dd315ff72be00f6905
         <meta
           property="og:url"
           content="https://www.learnbay.co/data-science-course-training-in-pune"
@@ -137,10 +125,6 @@ export default function Home() {
           name="twitter:image"
           content="https://www.learnbay.co/_next/image?url=https%3A%2F%2Flearnbay-wb.s3.ap-south-1.amazonaws.com%2Fmain%2FLearnbay-Logo.webp&w=256&q=100"
         ></meta>
-<<<<<<< HEAD
-
-=======
->>>>>>> 16a04a77d8cb922b9e53f4dd315ff72be00f6905
         <link
           rel="icon"
           href="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/Learnbay-Favicon-L.png"
@@ -192,7 +176,6 @@ export default function Home() {
           FirstTyped="Guaranteed Interview Calls"
           SecondTyped="Capstone Project Certificate"
           ThirdTyped="Live Interactive Classes"
-<<<<<<< HEAD
           dataScience={true}  
           titleCourse="Best Data Science Courses in Pune"
           brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Advance+Data+Science+and+AI+Certification+Program+Learnbay.pdf"
@@ -204,21 +187,6 @@ export default function Home() {
           cityParaCont=" Acquire the weight of an experienced candidate even at your first data science job. Get Industry-accredited training from the best Data Science courses in Pune. This course will help you to capitalize on your domain expertise by utilizing your existing domain knowledge in the data science field via fresh industrial capstones."
         />
         <SecondSection SecondSectionData={DSPuneCourseData[0].secondSection} />
-=======
-          cityParaCont="Acquire the weight of an experienced candidate even at your first data science job. Get Industry-accredited training from the best Data Science courses in Pune. This course will help you to capitalize on your domain expertise by utilizing your existing domain knowledge in the data science field via fresh industrial capstones."
-          dataScience={true}
-          titleCourse="Advanced Data Science and AI Program with domain specialization"
-          brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Advance+Data+Science+and+AI+Certification+Program+Learnbay.pdf"
-          FirstRightImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/advance+DS+header+image.webp"
-          firstToparaImg=" Courses in Pune"
-          firstHeading="Best Data Science"
-          firstTopPara="Foundational and Advance Job-ready Program"
-          idss="bfl64ANfSV0"
-        />
-        <SecondSection
-          SecondSectionData={DSPuneCourseData[0].secondSection}
-        />
->>>>>>> 16a04a77d8cb922b9e53f4dd315ff72be00f6905
         <Testimonial
           redirectDS={true}
           Testimonial={DSPuneCourseData[0].testimonial}
@@ -228,13 +196,8 @@ export default function Home() {
         <div className={styles.cityFee}>
           <FeeSection
             AIMLCertificate={true}
-<<<<<<< HEAD
             Fee="₹99,000 + 18% GST"
             FeeEmi="₹ 9,735/month"
-=======
-            Fee="₹  99,000 + 18% GST"
-            FeeEmi="₹  9,735/month"
->>>>>>> 16a04a77d8cb922b9e53f4dd315ff72be00f6905
             FeeHeading="Program Fee & Financing"
             FeeContent2="No cost EMI"
             FeeContent3="Flexible payment"
@@ -249,7 +212,6 @@ export default function Home() {
           </div>
           <div className="CitiesRight">
             <CitiesRight
-<<<<<<< HEAD
             
               cityTextDSPune={true}
               ProgramBot1={DSPuneCourseData[0].ProgramBot1}
@@ -269,9 +231,6 @@ export default function Home() {
               Course3={DSPuneCourseData[0].Course3}
               Course4={DSPuneCourseData[0].Course4}
               Course5={DSPuneCourseData[0].Course5}
-=======
-              cityTextDSPune={true}
->>>>>>> 16a04a77d8cb922b9e53f4dd315ff72be00f6905
               DomainHead1={DSPuneCourseData[0].DomainHead1}
               DomainBot1={DSPuneCourseData[0].DomainBot1}
               DomainBot2={DSPuneCourseData[0].DomainBot2}
@@ -296,13 +255,7 @@ export default function Home() {
               Domainlink8={DSPuneCourseData[0].Domainlink8}
               Domainlink9={DSPuneCourseData[0].Domainlink9}
               Domainlink10={DSPuneCourseData[0].Domainlink10}
-<<<<<<< HEAD
               CertificationBot1={DSPuneCourseData[0].CertificationBot1}
-=======
-              CertificationBot1={
-                DSPuneCourseData[0].CertificationBot1
-              }
->>>>>>> 16a04a77d8cb922b9e53f4dd315ff72be00f6905
               src={DSPuneCourseData[0].src}
               src22={DSPuneCourseData[0].src22}
               src33={DSPuneCourseData[0].src33}
@@ -310,7 +263,6 @@ export default function Home() {
               ModuleBot2={DSPuneCourseData[0].ModuleBot2}
               syllabush1={DSPuneCourseData[0].syllabush1}
               syllabusb1={DSPuneCourseData[0].syllabusb1}
-<<<<<<< HEAD
               SyllabusBotlist11={DSPuneCourseData[0].SyllabusBotlist11}
               SyllabusBotlist12={DSPuneCourseData[0].SyllabusBotlist12}
               SyllabusBotlist13={DSPuneCourseData[0].SyllabusBotlist13}
@@ -350,92 +302,6 @@ export default function Home() {
               ProjectsBot2= {DSPuneCourseData[0].ProjectsBot2}
   
         
-=======
-              SyllabusBotlist11={
-                DSPuneCourseData[0].SyllabusBotlist11
-              }
-              SyllabusBotlist12={
-                DSPuneCourseData[0].SyllabusBotlist12
-              }
-              SyllabusBotlist13={
-                DSPuneCourseData[0].SyllabusBotlist13
-              }
-              SyllabusBotlist14={
-                DSPuneCourseData[0].SyllabusBotlist14
-              }
-              SyllabusBotlist15={
-                DSPuneCourseData[0].SyllabusBotlist15
-              }
-              SyllabusBotlist16={
-                DSPuneCourseData[0].SyllabusBotlist16
-              }
-              syllabush2={DSPuneCourseData[0].syllabush2}
-              syllabusb2={DSPuneCourseData[0].syllabusb2}
-              SyllabusBotlist21={
-                DSPuneCourseData[0].SyllabusBotlist21
-              }
-              SyllabusBotlist22={
-                DSPuneCourseData[0].SyllabusBotlist22
-              }
-              SyllabusBotlist23={
-                DSPuneCourseData[0].SyllabusBotlist23
-              }
-              SyllabusBotlist24={
-                DSPuneCourseData[0].SyllabusBotlist24
-              }
-              SyllabusBotlist25={
-                DSPuneCourseData[0].SyllabusBotlist25
-              }
-              SyllabusBotlist26={
-                DSPuneCourseData[0].SyllabusBotlist26
-              }
-              syllabush3={DSPuneCourseData[0].syllabush3}
-              syllabusb3={DSPuneCourseData[0].syllabusb3}
-              SyllabusBotlist31={
-                DSPuneCourseData[0].SyllabusBotlist31
-              }
-              SyllabusBotlist32={
-                DSPuneCourseData[0].SyllabusBotlist32
-              }
-              SyllabusBotlist33={
-                DSPuneCourseData[0].SyllabusBotlist33
-              }
-              SyllabusBotlist34={
-                DSPuneCourseData[0].SyllabusBotlist34
-              }
-              SyllabusBotlist35={
-                DSPuneCourseData[0].SyllabusBotlist35
-              }
-              SyllabusBotlist36={
-                DSPuneCourseData[0].SyllabusBotlist36
-              }
-              syllabush4={DSPuneCourseData[0].syllabush4}
-              syllabusb4={DSPuneCourseData[0].syllabusb4}
-              SyllabusBotlist41={
-                DSPuneCourseData[0].SyllabusBotlist41
-              }
-              SyllabusBotlist42={
-                DSPuneCourseData[0].SyllabusBotlist42
-              }
-              SyllabusBotlist43={
-                DSPuneCourseData[0].SyllabusBotlist43
-              }
-              SyllabusBotlist44={
-                DSPuneCourseData[0].SyllabusBotlist44
-              }
-              SyllabusBotlist45={
-                DSPuneCourseData[0].SyllabusBotlist45
-              }
-              SyllabusBotlist46={
-                DSPuneCourseData[0].SyllabusBotlist46
-              }
-              syllabussrc={DSPuneCourseData[0].syllabussrc}
-              JobBot1={DSPuneCourseData[0].JobBot1}
-              JobHead2={DSPuneCourseData[0].JobHead2}
-              JobBot3={DSPuneCourseData[0].JobBot3}
-              JobBot4={DSPuneCourseData[0].JobBot4}
-              ProjectsBot1={DSPuneCourseData[0].ProgramBot1}
->>>>>>> 16a04a77d8cb922b9e53f4dd315ff72be00f6905
               src1={DSPuneCourseData[0].src1}
               ProjectsH1={DSPuneCourseData[0].ProjectsH1}
               Projectsp1={DSPuneCourseData[0].Projectsp1}
@@ -461,19 +327,7 @@ export default function Home() {
               Asrc4={DSPuneCourseData[0].Asrc4}
               AlumniH4={DSPuneCourseData[0].AlumniH4}
               Alumnip4={DSPuneCourseData[0].Alumnip4}
-<<<<<<< HEAD
           
-=======
-              alt1={DSPuneCourseData[0].alt1}
-              alt2={DSPuneCourseData[0].alt2}
-              alt3={DSPuneCourseData[0].alt3}
-              alt4={DSPuneCourseData[0].alt4}
-              alt5={DSPuneCourseData[0].alt5}
-              alt6={DSPuneCourseData[0].alt6}
-              alt7={DSPuneCourseData[0].alt7}
-              alt8={DSPuneCourseData[0].alt8}
-              alt9={DSPuneCourseData[0].alt9}
->>>>>>> 16a04a77d8cb922b9e53f4dd315ff72be00f6905
             />
             <div className={styles.faqCity}>
               <FAQNew FAQNewData={DSPuneCourseData[0].faq} />

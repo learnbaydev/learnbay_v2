@@ -25,7 +25,7 @@ const CitiesLeft = dynamic(() =>
 const CitiesRight = dynamic(() =>
   import("../../../../components/SEO/CitiesRight/CitiesRight")
 );
-import { DataScienceCourseData } from "../../../../CityData/Bangalore/AICourseTrainingBangaloreData";
+import { DataScienceCourseData } from "../../../../CityData/Bangalore/MLCourseTrainingBangaloreData";
 const FAQNew = dynamic(() =>
   import("../../../../components/CoursePage/FAQNew/FAQNew")
 );
@@ -46,25 +46,23 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-      <title>
-          Best Artificial Intelligence Course in Bangalore - Learnbay
-        </title>
+      <title>Machine Learning Course in Bangalore with Job Assistance</title>
         <meta name="robots" content="index, follow" />
         <meta
           name="description"
-          content="Learnbay offers the best Artificial Intelligence Training in Bangalore. Get mentorship from the industry experts with best career assistance. Enroll Now."
+          content="Learnbay offers the Most Advanced Machine Learning Training in Bangalore with Hands-on Projects, IBM Certification and Best Career Assistance. Sign-up Now."
         />
         <meta
           name="keywords"
-          content="Artificial Intelligence course in Bangalore, Artificial Intelligence training in Bangalore, Artificial Intelligence institute in Bangalore, best Artificial Intelligence institute in Bangalore, Artificial Intelligence course in Bangalore, Artificial Intelligence certification in Bangalore, Artificial Intelligence training institute in Bangalore, advanced Artificial Intelligence course in Bangalore, Artificial Intelligence course with Placement Assistance, Artificial Intelligence course"
+          content="Machine learning course in Bangalore, Machine learning training in Bangalore, Machine learning institute in Bangalore, best Machine learning institute in Bangalore, Machine learning course in Bangalore, Machine learning certification in Bangalore, Machine learning training institute in Bangalore, advanced Machine learning course in Bangalore, Machine learning course with Placement Assistance, Machine learning course"
         />
         <link
           rel="canonical"
-          href="https://www.learnbay.co/artificial-intelligence-ai-course-training-bangalore"
+          href="https://www.learnbay.co/machine-learning-course-training-in-bangalore"
         />
         <meta
           name="copyright"
-          content="Learnbay: Artificial Intelligence Courses Certification Training India"
+          content="Learnbay: Machine Learning Courses Certification Training India"
         />
         <link
           rel="icon"
@@ -119,13 +117,13 @@ export default function Home() {
           ThirdTyped="Live Interactive Classes"
           dataScience={true}
           titleCourse="AI & ML Program for tech professionals"
-          brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Data+Science+%26+AI+Certification+Program+For+Managers+%26+Leaders+Learnbay.pdf"
+          brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Advance+AI+%26+ML+Certification+Program+Learnbay.pdf"
           idss="Jn2puEQC8yk"
           FirstRightImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/AIML-Header.png"
           firstToparaImg="Training in Bangalore"
-          firstHeading="Artificial Intelligence (AI)"
-          firstTopPara="Industry Curated Artificial Intelligence Program"
-          cityParaCont="Become a successful data science manager/leader within 11 months. Learn the secret data scientific tricks of managing data science projects. Learn directly from industry leaders via live classes and live projects."
+          firstHeading="Machine Learning Course"
+          firstTopPara="Machine Learning Course For Experienced Tech Professionals"
+          cityParaCont="Be eligible to work as an AI/ML expert in MNC/PRODUCT Based Companies. Earn the most advanced industrial machine learning skill via fast-paced industry capstones. Be pros of NLP and computer vision."
         />
         <SecondSection SecondSectionData={DataScienceCourseData[0].secondSection} />
         <Testimonial

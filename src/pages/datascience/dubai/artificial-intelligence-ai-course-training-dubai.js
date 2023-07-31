@@ -25,7 +25,7 @@ const CitiesLeft = dynamic(() =>
 const CitiesRight = dynamic(() =>
   import("../../../../components/SEO/CitiesRight/CitiesRight")
 );
-import { AIDubaiCourseData } from "../../../../CityData/Dubai/artificialIntelligenceAiCourseTrainingDubaiData";
+import { AIDubaiCourseData } from "../../../../CityData/Dubai/AITrainingDubaiData";
 const FAQNew = dynamic(() =>
   import("../../../../components/CoursePage/FAQNew/FAQNew")
 );
@@ -117,7 +117,7 @@ export default function Home() {
           ThirdTyped="Live Interactive Classes"
           dataScience={true}
           titleCourse="AI & ML Program for tech professionals"
-          brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Advance+AI+%26+ML+Certification+Program+Learnbay.pdf"
+          brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Data+Science+%26+AI+Certification+Program+For+Managers+%26+Leaders+Learnbay.pdf"
           idss="Jn2puEQC8yk"
           FirstRightImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/AIML-Header.png"
           firstToparaImg="For Managers and Leaders"

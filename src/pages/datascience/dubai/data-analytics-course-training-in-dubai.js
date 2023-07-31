@@ -25,7 +25,7 @@ const CitiesLeft = dynamic(() =>
 const CitiesRight = dynamic(() =>
   import("../../../../components/SEO/CitiesRight/CitiesRightdomain")
 );
-import { DADubaiCourseData } from "../../../../CityData/Bangalore/DataAnalyticsCourseTrainingBangaloreData";
+import { DADubaiCourseData } from "../../../../CityData/Dubai/DataAnalyticsCourseTrainingDubaiData";
 const FAQNew = dynamic(() =>
   import("../../../../components/CoursePage/FAQNew/FAQNew")
 );

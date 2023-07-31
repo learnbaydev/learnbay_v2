@@ -25,7 +25,7 @@ const CitiesLeft = dynamic(() =>
 const CitiesRight = dynamic(() =>
   import("../../../../components/SEO/CitiesRight/CitiesRight")
 );
-import { MLDubaiCourseData } from "../../../../CityData/Dubai/MLCourseTrainingInDubai";
+import { MLDubaiCourseData } from "../../../../CityData/Dubai/MLCourseTrainingDubaiData";
 const FAQNew = dynamic(() =>
   import("../../../../components/CoursePage/FAQNew/FAQNew")
 );
@@ -279,12 +279,6 @@ export default function Home() {
           </div>
         </div>
         <SeventhSection />
-        <CityText
-          CityTextB={MLDubaiCourseData[0].CityTextB}
-          CityText={MLDubaiCourseData[0].CityText}
-          CityTextLB={MLDubaiCourseData[0].CityTextLB}
-          CityTextL={MLDubaiCourseData[0].CityTextL}
-        />
         <Footer />
       </main>
     </div>
