@@ -14,7 +14,7 @@ const SeventhSection = dynamic(() =>
   import("../../../../components/Global/SeventhSection/SeventhSection")
 );
 const ProgramFee = dynamic(() =>
-  import("../../../../components/SEO/ProgramInfo/ProgramFee/ProgramFee")
+  import("../../../../components/SEO/ProgramInfo/ProgramFee/ProgramFee") 
 );
 const CityText = dynamic(() =>
   import("../../../../components/SEO/CityText/CityText")
@@ -46,7 +46,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
     <Head>
-        <title>Best Artificial Intelligence Course in Canada - Learnbay</title>
+    <title>Best Artificial Intelligence Course in Canada - Learnbay</title>
         <meta name="robots" content="index, follow" />
         <meta
           name="description"
@@ -60,21 +60,10 @@ export default function Home() {
           rel="canonical"
           href="https://www.learnbay.co/artificial-intelligence-ai-course-training-canada"
         />
-        {/* <meta name="HandheldFriendly" content="true" /> */}
-        {/* <meta name="distribution" content="global" /> */}
         <meta
           name="copyright"
           content="Learnbay: Artificial Intelligence Courses Certification Training Canada"
         />
-        {/* <meta name="language" content="English" /> */}
-        {/* <meta name="rating" content="general" /> */}
-        {/* <meta name="revisit-after" content="Daily" /> */}
-        {/* <meta name="author" content="Learnbay" /> */}
-        {/* <meta name="googlebot" content="index,follow" /> */}
-        {/* <meta name="bingbot" content="index,follow" /> */}
-        {/* <meta name="expires" content="never" /> */}
-        {/* <meta name="coverage" content="Worldwide" /> */}
-        {/* <meta name="robots" content="ALL" /> */}
         <link
           rel="icon"
           href="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/Learnbay-Favicon-L.png"
@@ -109,7 +98,7 @@ export default function Home() {
             __html: ` ${AIcanadaCourseData[0].script4} `,
           }}
         />
-      </Head>
+      </Head> 
       <main>
         {" "}
         <Navbar popup={true} dataScience={true} />

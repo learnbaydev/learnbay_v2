@@ -1,4 +1,4 @@
-export const AIPuneCourseData = [
+export const MLPuneCourseData = [
   {
     script1: {
       "@context": "https://schema.org",
