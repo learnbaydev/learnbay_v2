@@ -275,6 +275,7 @@ const CitiesRight = ({
   ProgramBot39,
   ProgramBot40,
   ProgramBot41,
+  certificate2,
 }) => {
   const [read, setRead] = useState(false);
   const handler = () => {
@@ -3291,9 +3292,15 @@ const CitiesRight = ({
               <h2 className={styles.pHead}>{CertificationHead3}</h2>
               <p className={styles.pp}>{CertificationBot7}</p>
               <div className={styles.certNew}>
+                {certificate2 ? (<>
+                  <img src={src} alt={alt1}></img>
+                <img src={src22} alt={alt1}></img></>) : (
+                  <>
                 <img src={src} alt={alt1}></img>
                 <img src={src22} alt={alt1}></img>
                 <img src={src33} alt={alt1}></img>
+                </>
+                )}
               </div>
             </div>
           </div>
