@@ -1,11 +1,11 @@
-export const AIMumbaiCourseData = [
+export const AIHyderabadCourseData = [
   {
     script1: {
       "@context": "https://schema.org/",
       "@type": "HowTo",
-      name: "How to apply for Artificial Intelligence Course?",
+      name: "How to apply for Artificial Intelligence(Ai) course?",
       description:
-        "You just have to follow 3 easy steps to enroll in our advanced data science course",
+        "You just have to follow 3 easy steps to enroll in our advanced Artificial Intelligence(Ai) course",
       image:
         "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/home-page-header.webp",
       totalTime: "PT6M",
@@ -16,11 +16,11 @@ export const AIMumbaiCourseData = [
       },
       supply: {
         "@type": "HowToSupply",
-        name: "We provide Artificial Intelligence Course Training In Mumbai",
+        name: "We provide Advanced Artificial Intelligence(Ai) course in Hyderabad, Delhi, Pune, Chennai, Bangalore, Mumbai, Canada, Dubai",
       },
       tool: {
         "@type": "HowToTool",
-        name: "Data science, machine learning, artificial intelligence, data analytics",
+        name: "Data Science, Machine Learning, artificial intelligence, data analytics, Business Analytics",
       },
       step: [
         {
@@ -41,7 +41,7 @@ export const AIMumbaiCourseData = [
         },
         {
           "@type": "HowToStep",
-          text: "Get enrollment in our data science course",
+          text: "Get enrollment in our Artificial Intelligence(Ai) course",
           image:
             "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/home-page-header.webp",
           name: "Get enrollment",
@@ -56,9 +56,10 @@ export const AIMumbaiCourseData = [
         "@type": "WebPage",
         "@id": "https://www.learnbay.co/",
       },
-      headline: "Artificial Intelligence (AI) Course Training in Pune",
+      headline:
+        "Advanced Artificial Intelligence(Ai) Course Training in Hyderabad",
       description:
-        "Artificial Intelligence Course in Mumbai. Learnbay is Advanced Artificial Intelligence Course Training Institute in Mumbai. Artificial Intelligence course in Mumbai will enhance your career",
+        "Artificial Intelligence(Ai) Course in Hyderabad. Learnbay is the Best Artificial Intelligence(Ai) Courses Training Institute in Hyderabad with guarantied Job Assistance. Artificial Intelligence(Ai) course Certification will improve skills",
       image:
         "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/home-page-header.webp",
       author: {
@@ -83,15 +84,15 @@ export const AIMumbaiCourseData = [
       mainEntity: [
         {
           "@type": "Question",
-          name: "What are Artificial Intelligence (AI) training courses available at Learnbay in Mumbai?",
+          name: "What are Artificial Intelligence (AI) training courses available at Learnbay in Hyderabad?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Foundational data science and Artificial Intelligence Training Course, Advanced data science and AI Certification Course, Machine learning and AI Certification, Data Science and AI Certification Course for Managers and Leaders Data Science and Artificial Intelligence Training with Placement Assistance",
+            text: "Foundational data science and Artificial Intelligence Training Course, Advanced data science and AI Certification Course, Machine learning and AI Certification, Data Science and AI Certification Course for Managers and LeadersData Science and Artificial Intelligence Training with Placement Assistance",
           },
         },
         {
           "@type": "Question",
-          name: "What are the prerequisites for these AI training Courses in Mumbai?",
+          name: "What are the prerequisites for these AI training Courses in Hyderabad?",
           acceptedAnswer: {
             "@type": "Answer",
             text: "There are no prerequisites for this artificial certification course as all modules are beginner-friendly and are taught from scratch. We provide special classes and assistance for Non-IT/Non-programmers. However, basic knowledge of applied Mathematics/Statistics is a must.",
@@ -102,28 +103,29 @@ export const AIMumbaiCourseData = [
           name: "What if I miss a few classes of Learnbay AI courses due to an emergency?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "In case you miss a few classes, you will be provided with backup classes in other batches. But if you could not attend more classes, you can opt for batch change and join the next batch.",
+            text: "What if I miss a few classes of Learnbay AI courses due to an emergency?",
           },
         },
         {
           "@type": "Question",
-          name: "What is a Flexi Subscription in these advanced artificial intelligence courses in Mumbai?",
+          name: "What is a Flexi Subscription in these advanced artificial intelligence courses in Hyderabad?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Those who enroll for AI live classroom training are eligible for a Flexi Pass. With this option, we will share access to all the ongoing batch details for a period of 1 -3 years, so that you can attend live sessions from any batch and learn at your own pace. This option is best for people working in shifts or on weekends. Flexi Subscription Time-line: Foundational data science and Artificial Intelligence Training Course- 1 Year Advanced data science and AI Certification Course- 3 Years Machine learning and AI Certification- 3 Years Data Science and AI Certification Course for Managers and Leaders- 3 Years Data Science and Artificial Intelligence Training with Placement Assistance - 3-years",
+            text: "Those who enroll for AI live classroom training are eligible for a Flexi Pass. With this option, we will share access to all the ongoing batch details for a period of 1 -3 years, so that you can attend live sessions from any batch and learn at your own pace. This option is best for people working in shifts or on weekends. Flexi Subscription Time-line: Foundational data science and Artificial Intelligence Training Course- 1 Year Advanced data science and AI Certification Course- 3 Years Machine learning and AI Certification- 3 Years Data Science and AI Certification Course for Managers and Leaders- 3 Years Data Science and Artificial Intelligence Training with Placement Assistance - 3-years.",
           },
         },
         {
           "@type": "Question",
-          name: "What’s the duration of these advanced AI in Mumbai?",
+          name: "What’s the duration of these advanced AI in Hyderabad?",
+
           acceptedAnswer: {
             "@type": "Answer",
-            text: "The duration of these courses is about 6-15 months, which includes live lectures, hands-on practical training on live projects, and interview preparations. Classes will be conducted on weekdays and weekend batches. Monday to Friday - 2 hours/day and Saturday & Sunday - 3.5 hours/day Foundational Data Science and Artificial Intelligence Training Course (220+ hours) Weekday batch - 6 months Weekend batch - 8 months Machine learning and AI Certification (280+ hours) Weekday batch - 9.5 months Weekend batch - 11 months Advanced Data Science and AI Certification Course (270+ hours) Weekday batch - 7 months Weekend batch - 9 months Data Science and AI Certification Course for Managers and Leaders (340+ hours) Weekday batch - 11 months Weekend batch - 13 months Data Science and Artificial Intelligence Training with Placement Assistance (380+ hours) Weekday batch - 13 months Weekend batch - 15 months",
+            text: "The duration of these courses is about 6-15 months, which includes live lectures, hands-on practical training on live projects, and interview preparations. Classes will be conducted on weekdays and weekend batches. Monday to Friday - 2 hours/day and Saturday & Sunday - 3.5 hours/day Foundational Data Science and Artificial Intelligence Training Course (220+ hours) Weekday batch - 6 months Weekend batch - 8 months Machine learning and AI Certification (280+ hours) Weekday batch - 9.5 months Weekend batch - 11 months Advanced Data Science and AI Certification Course (270+ hours) Weekday batch - 7 months Weekend batch - 9 months Data Science and AI Certification Course for Managers and Leaders (340+ hours) Weekday batch - 11 months Weekend batch - 13 months Data Science and Artificial Intelligence Training with Placement Assistance (380+ hours) Weekday batch - 13 months Weekend batch - 15 months.",
           },
         },
         {
           "@type": "Question",
-          name: "What is the learning mode of Artificial Intelligence Certification courses in Mumbai at Learnbay?",
+          name: "What is the learning mode of Artificial Intelligence Certification courses in Hyderabad at Learnbay?",
           acceptedAnswer: {
             "@type": "Answer",
             text: "We provide both classroom and online AI training modes. Based on your requirement, you can choose your preferred mode.",
@@ -131,7 +133,7 @@ export const AIMumbaiCourseData = [
         },
         {
           "@type": "Question",
-          name: "How can I opt for a Hybrid mode of learning in IBM artificial intelligence training courses in Mumbai, At Learnbay?",
+          name: "How can I opt for a Hybrid mode of learning in IBM artificial intelligence training courses in Hyderabad, At Learnbay?",
           acceptedAnswer: {
             "@type": "Answer",
             text: "Simply, you can choose an online mode of study for the theoretical classes and a classroom mode for all the capstone projects and interview preparation sessions.",
@@ -139,7 +141,7 @@ export const AIMumbaiCourseData = [
         },
         {
           "@type": "Question",
-          name: "What is domain specialization in the professional AI certification courses provided by Learnbay in Mumbai?",
+          name: "What is domain specialization in the professional AI certification courses provided by Learnbay in Hyderabad?",
           acceptedAnswer: {
             "@type": "Answer",
             text: "We offer industry-specific full-stack AI modules, via which you learn the respective industry’s best practices. But this added benefit is available in all the three mentioned courses, except the foundational AI course.",
@@ -147,7 +149,7 @@ export const AIMumbaiCourseData = [
         },
         {
           "@type": "Question",
-          name: "What are the available elective domain options in the different artificial intelligence training courses of Learnbay in Mumbai?",
+          name: "What are the available elective domain options in the different artificial intelligence training courses of Learnbay in Hyderabad?",
           acceptedAnswer: {
             "@type": "Answer",
             text: "Advanced Data Structure & algo; Automotive, IoT & Embedded; Cloud & DevOps; Sales, Marketing, & HR; Retail, E-Commerce, & Supply Chain; Healthcare, Pharma, & Clinical Research; BFSI; Manufacturing, Mechanical, & Telecom; Media, Hospitality, & Transportation; Oil, Gas, & Energy",
@@ -158,7 +160,7 @@ export const AIMumbaiCourseData = [
           name: "Which domain elective within the Learnbay AI Certification courses is best suited for me?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "You can select your domain based on your prior work experience, academics, and career goals. Book a slot with our industry expert for free profile review and career guidance. Career Counselor: +917795687988",
+            text: "You can select your domain based on your prior work experience, academics, and career goals. Book a slot with our industry expert for free profile review and career guidance. +917795687988.",
           },
         },
         {
@@ -195,15 +197,15 @@ export const AIMumbaiCourseData = [
         },
         {
           "@type": "Question",
-          name: "What is the total fee for Learnbay AI Certifications courses in Mumbai?",
+          name: "What is the total fee for Learnbay AI Certifications courses in Hyderabad?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "The total course fee for the Foundational Data Science and Artificial Intelligence Training Course is 88,500/- inclusive of GST. Advance Data Science and AI Certification course is 1,12,100/- inclusive of GST. Data Science and AI Certification Course for Managers and Leaders is 1,23,900/- inclusive of GST. Data Science and Artificial Intelligence Training with Placement Assistance is 1,47,500/- inclusive of GST. Machine learning and AI Certification is 1,23,900/-inclusive of GST",
+            text: "The total course fee for the Foundational Data Science and Artificial Intelligence Training Course is 88,500/- inclusive of GST. Advance Data Science and AI Certification course is 1,12,100/- inclusive of GST. Data Science and AI Certification Course for Managers and Leaders is 1,23,900/- inclusive of GST. Data Science and Artificial Intelligence Training with Placement Assistance is 1,47,500/- inclusive of GST. Machine learning and AI Certification is 1,23,900/-inclusive of GST.",
           },
         },
         {
           "@type": "Question",
-          name: "Can I pay in installments for these AI Certification courses in Mumbai?",
+          name: "Can I pay in installments for these AI Certification courses in Hyderabad?",
           acceptedAnswer: {
             "@type": "Answer",
             text: "Yes, you can pay the installments using a credit card with a no-cost EMI option for up to 9 months. You can also choose an interest-free loan by submitting an Aadhar card, Pan Card, and 3-month salary slip.",
@@ -211,10 +213,10 @@ export const AIMumbaiCourseData = [
         },
         {
           "@type": "Question",
-          name: "Is there any scholarship/discount available for these Artificial intelligence training courses available in Mumbai? What is Group Discount?",
+          name: "Is there any scholarship/discount available for these Artificial intelligence training courses available in Hyderabad? What is Group Discount?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Learnbay offers a 15 - 20% scholarship for early birds occasionally. Please check our websites or contact our sales team to know more about the applicable discounts. Group Discount : Group Discount is applicable only if you’re joining with your friends. 5% extra discount: Group of 2 8% extra discount: Group of 3 Max 10% discount: Groupe of 4+",
+            text: "Learnbay offers a 15 - 20% scholarship for early birds occasionally. Please check our websites or contact our sales team to know more about the applicable discounts. Group Discount : Group Discount is applicable only if you’re joining with your friends. 5% extra discount: Group of 2 8% extra discount: Group of 3 Max 10% discount: Groupe of 4+.",
           },
         },
         {
@@ -222,7 +224,7 @@ export const AIMumbaiCourseData = [
           name: "What is the refund policy for the Artificial Intelligence Certification courses at Learnbay?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Candidates are advised to read Refund/Cancellation policy read before enrolling in the course.",
+            text: "Candidates are advised to read Learnbay’s Refund/Cancellation Policy before enrolling in the course.",
           },
         },
         {
@@ -235,7 +237,7 @@ export const AIMumbaiCourseData = [
         },
         {
           "@type": "Question",
-          name: "How many real-time projects/case studies will be covered in these artificial intelligence certification courses in Mumbai?",
+          name: "How many real-time projects/case studies will be covered in these artificial intelligence certification courses in Hyderabad?",
           acceptedAnswer: {
             "@type": "Answer",
             text: "Depending on the course you choose the number of live projects will vary. Foundational Data Science and Artificial Intelligence Training Course- 8 projects. Advance Data Science and AI Certification course-12 projects. Data Science and AI Certification Course for Managers and Leaders- 15 projects. Data Science and Artificial Intelligence Training with Placement Assistance- 15 projects. Machine learning and AI Certification- 15 projects. Click here to download the list of the projects.",
@@ -243,7 +245,7 @@ export const AIMumbaiCourseData = [
         },
         {
           "@type": "Question",
-          name: "How will the projects be executed in Mumbai?",
+          name: "How will the projects be executed in Hyderabad?",
           acceptedAnswer: {
             "@type": "Answer",
             text: "At Learnbay, you will be required to work in a group where your project group will be assigned a specific project mentor with complete assistance and guidance.",
@@ -257,9 +259,10 @@ export const AIMumbaiCourseData = [
             text: "Yes, you will be awarded IBM accredited Data Scientist Certificate on successful course completion. But Based on the course you choose you can get Multiple certification options too. Foundational Data Science and Artificial Intelligence Training Course- 1 Course Completion Certificate. Advance Data Science and AI Certification course-1 Course Completion Certificate + 1-project experience certificate + 4 microdata science skills certificates = 6 Certificates. Data Science and AI Certification Course for Managers and Leaders- 1 Course Completion Certificate + 1-project experience certificate + 6 microdata science skills certificates= 8 Certificates. Data Science and Artificial Intelligence Training with Placement Assistance- 1 Course Completion Certificates Machine learning and AI Certification- 1 Course Completion Certificate + 1-project experience certificate + 4 microdata science skills certificates = 6 Certificates. *All the certificates accredited by IBM. For more details, please refer to the respective course brochures.",
           },
         },
+
         {
           "@type": "Question",
-          name: "What's the eligibility for a job assistance Program in Learnbay artificial intelligence training courses in Mumbai?",
+          name: "What's the eligibility for a job assistance Program in Learnbay artificial intelligence training courses in Hyderabad?",
           acceptedAnswer: {
             "@type": "Answer",
             text: "You should have completed the course with : A minimum score of 70% in assessments Should have completed the assignments and case studies Worked and successfully completed the minimum recommended number of real-time projects.",
@@ -267,7 +270,7 @@ export const AIMumbaiCourseData = [
         },
         {
           "@type": "Question",
-          name: "How long will I get support for job assistance at Learnbay in Mumbai?",
+          name: "How long will I get support for job assistance at Learnbay in Hyderabad?",
           acceptedAnswer: {
             "@type": "Answer",
             text: "At Learnbay, you’ll be provided with job assistance after the completion of the course for a period of 1 year. What is a job-readiness program? The Job readiness program helps you prepare for interviews which include: Resume preparation sessions, Preparing projects for a strong portfolio, Interview guidance and prep sessions, 1:1 Mock interviews based on targeted companies and roles.",
@@ -299,7 +302,7 @@ export const AIMumbaiCourseData = [
         },
         {
           "@type": "Question",
-          name: "Can a Learnbay student in Mumbai choose to study from their desired mentor?",
+          name: "Can a Learnbay student in Hyderabad choose to study from their desired mentor?",
           acceptedAnswer: {
             "@type": "Answer",
             text: "Every batch has its respective mentor, but if a student is not satisfied with its mentor’s teaching method, they can raise the issue to management and resolve the issues by replacing them with other mentors.",
@@ -326,9 +329,9 @@ export const AIMumbaiCourseData = [
     script4: {
       "@context": "http://schema.org",
       "@type": "EducationEvent",
-      name: "Artificial Intelligence (AI) Course Training in Mumbai",
+      name: "Artificial Intelligence(Ai) Course Training in Hyderabad",
       description:
-        "Artificial Intelligence Course in Mumbai. Learnbay is Advanced Artificial Intelligence Course Training Institute in Mumbai. Artificial Intelligence course in Mumbai will enhance your career",
+        "Learnbay offers a Artificial Intelligence(Ai) course in Hyderabad, the most comprehensive Artificial Intelligence(Ai) course in the market, covering the complete Artificial Intelligence(Ai) lifecycle.",
       image:
         "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/ALight/learnbay-logo.png",
       performer: "Learnbay",
@@ -338,12 +341,12 @@ export const AIMumbaiCourseData = [
         highPrice: "110000",
         url: "https://www.learnbay.co/",
         availability: "https://schema.org/InStock",
-        price: "95000",
+        price: "39999",
         priceCurrency: "INR",
         validFrom: "2022-05-01",
       },
       startDate: "2022-05-01",
-      endDate: "2022-10-31",
+      endDate: "2022-08-31",
       url: "https://www.learnbay.co/",
       duration: "80",
       eventAttendanceMode: "https://schema.org/MixedEventAttendanceMode",
@@ -355,7 +358,7 @@ export const AIMumbaiCourseData = [
         },
         {
           "@type": "Place",
-          name: "Learnbay - Data Science, Data Analytics Course Training in Bangalore",
+          name: "Learnbay - Artificial Intelligence(Ai), Artificial Intelligence(Ai) Course Training in Hyderabad",
           address: {
             "@type": "PostalAddress",
             streetAddress:
@@ -413,7 +416,6 @@ export const AIMumbaiCourseData = [
         para: "Use tech innovation to drive career growth & acquire in-demand skills",
       },
     ],
-
     testimonial: [
       {
         id: 1,
@@ -516,20 +518,21 @@ export const AIMumbaiCourseData = [
     ],
     faq: [
       {
-        id: 1,
+        id: 0,
         sectionName: "Course Related",
         data: [
           {
             id: 0,
-            ques: "What are Artificial Intelligence (AI) training courses available at Learnbay in Mumbai?",
+            ques: "What are Artificial Intelligence (AI) training courses available at Learnbay in Hyderabad?",
+
             linkText1:
               "Foundational data science and Artificial Intelligence Training Course, ",
             linkText2: "Advanced data science and AI Certification Course, ",
-            linkText3: " Machine learning and AI Certification, ",
+            linkText3: "Machine learning and AI Certification, ",
             linkText4:
               "Data Science and AI Certification Course for Managers and Leaders",
             linkText5:
-              " Data Science and Artificial Intelligence Training with Placement Assistance",
+              "Data Science and Artificial Intelligence Training with Placement Assistance",
             link1: "/data-science-certification-courses",
             link2: "/advance-data-science-certification-courses",
             link3: "/data-science-ai-for-managers",
@@ -540,7 +543,7 @@ export const AIMumbaiCourseData = [
           },
           {
             id: 1,
-            ques: "What are the prerequisites for these AI training Courses in Mumbai?",
+            ques: "What are the prerequisites for these AI training Courses in Hyderabad?",
             ans: " There are no prerequisites for this artificial certification course as all modules are beginner-friendly and are taught from scratch. We provide special classes and assistance for Non-IT/Non-programmers. However, basic knowledge of applied Mathematics/Statistics is a must.",
             open: false,
           },
@@ -548,74 +551,75 @@ export const AIMumbaiCourseData = [
             id: 2,
             ques: "What if I miss a few classes of Learnbay AI courses due to an emergency?",
             ans: `In case you miss a few classes, you will be provided with backup classes in other batches.
-            But if you could not attend more classes, you can opt for batch change and join the next batch.  `,
+    But if you could not attend more classes, you can opt for batch change and join the next batch.  `,
             open: false,
           },
           {
             id: 3,
-            ques: "What is a Flexi Subscription in these advanced artificial intelligence courses in Mumbai?",
+            ques: "What is a Flexi Subscription in these advanced artificial intelligence courses in Hyderabad?",
             ans: `Those who enroll for AI live classroom training are eligible for a Flexi Pass. With this option, we will share access to all the ongoing batch details for a period of 1 -3 years, so that you can attend live sessions from any batch and learn at your own pace. This option is best for people working in shifts or on weekends.
-            Flexi Subscription Time-line:
-            Foundational data science and  Artificial Intelligence Training Course- 1 Year
-            Advanced data science and  AI Certification Course- 3 Years
-            Machine learning and AI Certification- 3 Years
-            Data Science and AI Certification Course for Managers and Leaders- 3 Years 
-            Data Science and Artificial Intelligence Training with Placement Assistance - 3-years`,
+    Flexi Subscription Time-line:
+    Foundational data science and  Artificial Intelligence Training Course- 1 Year
+    Advanced data science and  AI Certification Course- 3 Years
+    Machine learning and AI Certification- 3 Years
+    Data Science and AI Certification Course for Managers and Leaders- 3 Years 
+    Data Science and Artificial Intelligence Training with Placement Assistance - 3-years`,
             open: false,
           },
           {
             id: 4,
-            ques: "What’s the duration of these advanced AI in Mumbai?",
+            ques: "What’s the duration of these advanced AI in Hyderabad?",
             ans: `The duration of these courses is about 6-15 months, which includes live lectures, hands-on practical training on live projects, and interview preparations.
-            Classes will be conducted on weekdays and weekend batches. Monday to Friday - 2 hours/day and Saturday & Sunday - 3.5 hours/day
-            Foundational Data Science and Artificial Intelligence Training Course (220+ hours)
-            Weekday batch - 6 months
-            Weekend batch - 8 months
-            
-            Machine learning and AI Certification (280+ hours)
-            Weekday batch - 9.5 months
-            Weekend batch - 11 months
-            
-            Advanced Data Science and AI Certification Course (270+ hours)
-            Weekday batch - 7 months
-            Weekend batch - 9  months
-            
-            Data Science and AI Certification Course for Managers and Leaders (340+ hours)
-            Weekday batch - 11 months
-            Weekend batch - 13  months
-            
-            Data Science and Artificial Intelligence Training with Placement Assistance (380+ hours)
-            Weekday batch - 13 months
-            Weekend batch - 15  months`,
+    Classes will be conducted on weekdays and weekend batches. Monday to Friday - 2 hours/day and Saturday & Sunday - 3.5 hours/day
+    Foundational Data Science and Artificial Intelligence Training Course (220+ hours)
+    Weekday batch - 6 months
+    Weekend batch - 8 months
+    
+    Machine learning and AI Certification (280+ hours)
+    Weekday batch - 9.5 months
+    Weekend batch - 11 months
+    
+    Advanced Data Science and AI Certification Course (270+ hours)
+    Weekday batch - 7 months
+    Weekend batch - 9  months
+    
+    Data Science and AI Certification Course for Managers and Leaders (340+ hours)
+    Weekday batch - 11 months
+    Weekend batch - 13  months
+    
+    Data Science and Artificial Intelligence Training with Placement Assistance (380+ hours)
+    Weekday batch - 13 months
+    Weekend batch - 15  months`,
             open: false,
           },
           {
             id: 5,
-            ques: "What is the learning mode of Artificial Intelligence Certification courses in Mumbai at Learnbay?",
+            ques: "What is the learning mode of Artificial Intelligence Certification courses in Hyderabad at Learnbay?",
             ans: "We provide both classroom and online AI training modes. Based on your requirement, you can choose your preferred mode.",
             open: false,
           },
           {
             id: 6,
-            ques: "How can I opt for a Hybrid mode of learning in IBM artificial intelligence training courses in Mumbai, At Learnbay? ",
+            ques: "How can I opt for a Hybrid mode of learning in IBM artificial intelligence training courses in Hyderabad, At Learnbay? ",
             ans: "Simply, you can choose an online mode of study for the theoretical classes and a classroom mode for all the capstone projects and interview preparation sessions.",
             open: false,
           },
         ],
       },
+
       {
-        id: 2,
+        id: 1,
         sectionName: "Domain Electives",
         data: [
           {
             id: 0,
-            ques: "What is domain specialization in the professional AI certification courses provided by Learnbay in Mumbai?",
+            ques: "What is domain specialization in the professional AI certification courses provided by Learnbay in Hyderabad?",
             ans: "We offer industry-specific full-stack AI modules, via which you learn the respective industry’s best practices. But this added benefit is available in all the three mentioned courses, except the foundational AI course.",
             open: true,
           },
           {
             id: 1,
-            ques: "What are the available elective domain options in the different artificial intelligence training courses of Learnbay in Mumbai?",
+            ques: "What are the available elective domain options in the different artificial intelligence training courses of Learnbay in Hyderabad?",
             ans: "Advanced Data Structure & algo; Automotive, IoT & Embedded; Cloud & DevOps; Sales, Marketing, & HR; Retail, E-Commerce, & Supply Chain; Healthcare, Pharma, & Clinical Research; BFSI; Manufacturing, Mechanical, & Telecom; Media, Hospitality, & Transportation; Oil, Gas, & Energy",
             open: false,
           },
@@ -623,7 +627,7 @@ export const AIMumbaiCourseData = [
             id: 2,
             ques: "Which domain elective within the Learnbay AI Certification courses is best suited for me?",
             ans: `You can select your domain based on your prior work experience, academics, and career goals. 
-            Book a slot with our industry expert for free profile review and career guidance.`,
+    Book a slot with our industry expert for free profile review and career guidance.`,
             linkText1: " +917795687988 ",
             link1: "tel:+917795687988",
             link: true,
@@ -639,12 +643,12 @@ export const AIMumbaiCourseData = [
             id: 4,
             ques: "Can I select multiple domain electives and do I need to pay extra charges in any of the eligible AI certification courses?",
             ans: `You can select a pre-set maximum number (based on course) of domain electives (both tech and non-tech) based on your interest and career goals. 
-            Advance Data Science and AI Certification course- Maximum 2 domains. 
-            Data Science and AI Certification Course for Managers and Leaders- All domains 
-            Data Science and Artificial Intelligence Training with Placement Assistance- All domains
-            Machine learning and AI Certification- maximum 4 domains
-             
-            No, you don’t need to pay any extra charges as domain electives and capstone projects are part of our curriculum.`,
+    Advance Data Science and AI Certification course- Maximum 2 domains. 
+    Data Science and AI Certification Course for Managers and Leaders- All domains 
+    Data Science and Artificial Intelligence Training with Placement Assistance- All domains
+    Machine learning and AI Certification- maximum 4 domains
+     
+    No, you don’t need to pay any extra charges as domain electives and capstone projects are part of our curriculum.`,
             open: false,
           },
           {
@@ -661,45 +665,46 @@ export const AIMumbaiCourseData = [
           },
         ],
       },
+
       {
-        id: 3,
+        id: 2,
         sectionName: "Payments and Scholarships",
         data: [
           {
             id: 0,
-            ques: "What is the total fee for Learnbay AI Certifications courses in Mumbai?",
+            ques: "What is the total fee for Learnbay AI Certifications courses in Chennai?",
             ans: `The total course fee for the 
-            Foundational Data Science and Artificial Intelligence Training Course is 88,500/- inclusive of GST.
-            Advance Data Science and  AI Certification course is 1,12,100/- inclusive of GST.
-            Data Science and AI Certification Course for Managers and Leaders is 1,23,900/- inclusive of GST.
-            Data Science and Artificial Intelligence Training with Placement Assistance is 1,47,500/- inclusive of GST.
-            Machine learning and AI Certification is 1,23,900/-inclusive of GST`,
+              Foundational Data Science and Artificial Intelligence Training Course is 88,500/- inclusive of GST.
+              Advance Data Science and  AI Certification course is 1,12,100/- inclusive of GST.
+              Data Science and AI Certification Course for Managers and Leaders is 1,23,900/- inclusive of GST.
+              Data Science and Artificial Intelligence Training with Placement Assistance is 1,47,500/- inclusive of GST.
+              Machine learning and AI Certification is 1,23,900/-inclusive of GST`,
             open: true,
           },
           {
             id: 1,
-            ques: "Can I pay in installments for these AI Certification courses in Mumbai?",
+            ques: "Can I pay in installments for these AI Certification courses in Chennai?",
             ans: "Yes, you can pay the installments using a credit card with a no-cost EMI option for up to 9 months. You can also choose an interest-free loan by submitting an Aadhar card, Pan Card, and 3-month salary slip.",
             open: false,
           },
           {
             id: 2,
-            ques: " Is there any scholarship/discount available for these Artificial intelligence training courses available in Mumbai? What is Group Discount?",
+            ques: " Is there any scholarship/discount available for these Artificial intelligence training courses available in Chennai? What is Group Discount?",
             ans: `Learnbay offers a 15 - 20% scholarship for early birds occasionally.
-            Please check our websites or contact our sales team to know more about the applicable discounts.
-            
-            
-            Group Discount :
-            Group Discount is applicable only if you’re joining with your friends. 
-            5% extra discount: Group of 2
-            8% extra discount: Group of 3
-            Max 10% discount: Groupe of 4+ `,
+              Please check our websites or contact our sales team to know more about the applicable discounts.
+              
+              
+              Group Discount :
+              Group Discount is applicable only if you’re joining with your friends. 
+              5% extra discount: Group of 2
+              8% extra discount: Group of 3
+              Max 10% discount: Groupe of 4+ `,
             open: false,
           },
           {
             id: 3,
             ques: " What is the refund policy for the Artificial Intelligence  Certification courses at Learnbay?",
-            ans: `Candidates are advised to read `,
+            ans: `Candidates are advised to read  before`,
             linkText1: "Learnbay’s Refund/Cancellation Policy",
             link1: "/refund-cancellation-policy",
             ansAfter: " before enrolling in the course.",
@@ -708,8 +713,9 @@ export const AIMumbaiCourseData = [
           },
         ],
       },
+
       {
-        id: 4,
+        id: 3,
         sectionName: "Capstone and Real-Time Projects",
         data: [
           {
@@ -717,22 +723,22 @@ export const AIMumbaiCourseData = [
             ques: "How many capstone projects will be there? ",
             //Check This Question
             ans: `Depending on the course you choose the number of capstone projects will vary.  
-            Foundational Artificial Intelligence Training Course - 1 Capstone.
-            Advance Data Science and AI Certification course  -2 Capstones.
-            Data Science and AI Certification Course for Managers and Leaders- 2 Capstones.
-            Data Science and Artificial Intelligence Training with Placement Assistance- 3 Capstones.
-            Machine learning and AI Certification- 2 Capstones.`,
+    Foundational Artificial Intelligence Training Course - 1 Capstone.
+    Advance Data Science and AI Certification course  -2 Capstones.
+    Data Science and AI Certification Course for Managers and Leaders- 2 Capstones.
+    Data Science and Artificial Intelligence Training with Placement Assistance- 3 Capstones.
+    Machine learning and AI Certification- 2 Capstones.`,
             open: true,
           },
           {
             id: 1,
-            ques: " How many real-time projects/case studies will be covered in these artificial intelligence certification courses in Mumbai?",
+            ques: " How many real-time projects/case studies will be covered in these artificial intelligence certification courses in Hyderabad?",
             ans: `Depending on the course you choose the number of live projects will vary.  
-            Foundational Data Science and Artificial Intelligence Training Course- 8 projects.
-            Advance Data Science and AI Certification course-12 projects.
-            Data Science and AI Certification Course for Managers and Leaders- 15 projects.
-            Data Science and Artificial Intelligence Training with Placement Assistance- 15 projects.
-            Machine learning and AI Certification- 15 projects.`,
+    Foundational Data Science and Artificial Intelligence Training Course- 8 projects.
+    Advance Data Science and AI Certification course-12 projects.
+    Data Science and AI Certification Course for Managers and Leaders- 15 projects.
+    Data Science and Artificial Intelligence Training with Placement Assistance- 15 projects.
+    Machine learning and AI Certification- 15 projects.`,
             linkText1: " Click here to download the list of the projects.",
             link1:
               "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Data+Science+and+AI+Projects.pdf",
@@ -741,54 +747,56 @@ export const AIMumbaiCourseData = [
           },
           {
             id: 2,
-            ques: "How will the projects be executed in Mumbai?",
+            ques: "How will the projects be executed in Hyderabad?",
             ans: "At Learnbay, you will be required to work in a group where your project group will be assigned a specific project mentor with complete assistance and guidance.",
             open: false,
           },
         ],
       },
+
       {
-        id: 5,
+        id: 4,
         sectionName: "Certification",
         data: [
           {
             id: 0,
             ques: "Is there any accredited AI certification after course completion?",
             ans: `Yes, you will be awarded IBM accredited Data Scientist Certificate on successful course completion.  But Based on the course you choose you can get Multiple certification options too.
-            Foundational Data Science and Artificial Intelligence Training Course- 1 Course Completion Certificate.
-            Advance Data Science and AI Certification course-1 Course Completion Certificate + 1-project experience certificate + 4 microdata science skills certificates = 6 Certificates.
-            Data Science and AI Certification Course for Managers and Leaders- 1 Course Completion Certificate + 1-project experience certificate + 6 microdata science skills certificates= 8 Certificates.
-            Data Science and Artificial Intelligence Training with Placement Assistance- 1 Course Completion Certificates
-            Machine learning and AI Certification- 1 Course Completion Certificate + 1-project experience certificate + 4 microdata science skills certificates = 6 Certificates.
-            *All the certificates accredited by IBM. For more details, please refer to the respective course brochures.`,
+    Foundational Data Science and Artificial Intelligence Training Course- 1 Course Completion Certificate.
+    Advance Data Science and AI Certification course-1 Course Completion Certificate + 1-project experience certificate + 4 microdata science skills certificates = 6 Certificates.
+    Data Science and AI Certification Course for Managers and Leaders- 1 Course Completion Certificate + 1-project experience certificate + 6 microdata science skills certificates= 8 Certificates.
+    Data Science and Artificial Intelligence Training with Placement Assistance- 1 Course Completion Certificates
+    Machine learning and AI Certification- 1 Course Completion Certificate + 1-project experience certificate + 4 microdata science skills certificates = 6 Certificates.
+    *All the certificates accredited by IBM. For more details, please refer to the respective course brochures.`,
             open: true,
           },
         ],
       },
+
       {
-        id: 6,
+        id: 5,
         sectionName: "Job Assistance",
         data: [
           {
             id: 0,
-            ques: "What's the eligibility for a job assistance Program in Learnbay artificial intelligence training courses in Mumbai?",
+            ques: "What's the eligibility for a job assistance Program in Learnbay artificial intelligence training courses in Hyderabad?",
 
             ans: `You should have completed the course with :
-            A minimum score of 70% in assessments
-           Should have completed the assignments and case studies
-           Worked and successfully completed the minimum recommended number of real-time projects.`,
+    A minimum score of 70% in assessments
+   Should have completed the assignments and case studies
+   Worked and successfully completed the minimum recommended number of real-time projects.`,
             open: true,
           },
           {
             id: 1,
-            ques: "How long will I get support for job assistance at Learnbay in Mumbai?",
+            ques: "How long will I get support for job assistance at Learnbay in Hyderabad?",
             ans: `At Learnbay, you’ll be provided with job assistance after the completion of the course for a period of 1 year.
-            What is a job-readiness program?
-            The Job readiness program helps you prepare for interviews which include:
-            Resume preparation sessions, 
-            Preparing projects for a strong portfolio, 
-            Interview guidance and prep sessions, 
-            1:1 Mock interviews based on targeted companies and roles.`,
+    What is a job-readiness program?
+    The Job readiness program helps you prepare for interviews which include:
+    Resume preparation sessions, 
+    Preparing projects for a strong portfolio, 
+    Interview guidance and prep sessions, 
+    1:1 Mock interviews based on targeted companies and roles.`,
             open: false,
           },
           {
@@ -800,17 +808,19 @@ export const AIMumbaiCourseData = [
           {
             id: 3,
             ques: "What is an interview guarantee feature?",
-            ans: `In case you choose the Job or 100% money-back certification course then you can access this added facility. If you don’t get a job within 6 months of your course completion, we will initiate a full refund of your course fees. Note: `,
+            ans: `As a special feature, we provide interview assurance. That means once you complete the course by fulfilling all the scoring and attendance-related criteria, we’ll provide assured interview calls and job referrals. You will get this facility until you get placed. `,
             linkText1: " Terms and conditions ",
             link1: "/terms-conditions ",
             ansAfter: "applied.",
             link: true,
+
             open: false,
           },
         ],
       },
+
       {
-        id: 7,
+        id: 6,
         sectionName: "Mentorship",
         data: [
           {
@@ -822,14 +832,15 @@ export const AIMumbaiCourseData = [
           },
           {
             id: 1,
-            ques: "Can a Learnbay student in Mumbai choose to study from their desired mentor?",
+            ques: "Can a Learnbay student in Hyderabad choose to study from their desired mentor?",
             ans: "Every batch has its respective mentor, but if a student is not satisfied with its mentor’s teaching method, they can raise the issue to management and resolve the issues by replacing them with other mentors.",
             open: false,
           },
         ],
       },
+
       {
-        id: 8,
+        id: 7,
         sectionName: "Support",
         data: [
           {
@@ -848,22 +859,19 @@ export const AIMumbaiCourseData = [
         ],
       },
     ],
+
+    ProgramHead1:
+      "What is Learnbay Artificial Intelligence(AI) Course Training in Hyderabad?",
     ProgramBot1:
-      "Learnbay provides world-class artificial intelligence course training in Mumbai.",
+      "Learnbay is a very professional AI training center in Hyderabad. It provides industry-recognized artificial intelligence courses with the option to choose from a myriad of domain electives. This IBM artificial intelligence course stands out from the crowd because it combines advanced study packages with capstone projects. As a result, the curriculum in the modules is current and relevant to industry needs.",
     ProgramBot2:
-      "The course is developed by a team of leading experts with an aim to provide the students with full-fledged knowledge of artificial intelligence from both practical and theoretical perspectives. Our top-notch trainers will make sure you understand the concept and will help you implement AI techniques in the real world.",
-    ProgramHead3:
-      "What makes Learnbay in Mumbai the perfect institute for your AI career?",
+      "Our mentors provide the greatest artificial intelligence training to students with the help of live MNC and capstone projects. Learnbay artificial intelligence courses with placement is a fantastic initiative that has helped many students get great jobs all over Hyderabad.",
     ProgramBot3:
-      "Learnbay is such an institute that provides cutting-edge and research-driven artificial intelligence training for aspirants. Students are taught with the most updated tools and modules, ensuring that they are prepared for the highly competitive real world.",
+      "Using a balanced combination of existing data science and artificial intelligence methodologies and industry-specific best practices, you'll learn how to apply AI to real-world business challenges through the Learnbay artificial intelligence course.",
     ProgramBot31:
-      "Students get the opportunity to talk with mentors during live sessions to clear up all their queries.",
-    ProgramBot32:
-      "It also offers a 1- 3 year Flexi membership (based on course) for online artificial intelligence certification courses in Mumbai, allowing students to learn at their own pace but through completely interactive, live sessions.",
-    ProgramBot4:
-      "Learnbay Artificial intelligence courses ensure guaranteed placement assurance.",
+      "Learnbay's major goal is to equip candidates in Hyderabad with high-quality data science and AI training. Artificial intelligence training will be delivered to you with domain-specific modules precisely crafted by industry specialists. They also offer blended learning sessions and live doubt clearing sessions. It is the greatest AI course for working professionals since the modules are affordable and flexible, with the option of 0% interest EMI. Overall, this IBM artificial intelligence course covers everything that a student looking for the best AI course training in Hyderabad would want to learn.",
     ProgramHead4:
-      "Available Artificial Intelligence Certification Courses by Learnbay in Canada:",
+      "The present Artificial Intelligence Courses available at Learnbay:",
     Courselink1: "/data-science-certification-courses",
     Courselink2: "/advance-data-science-certification-courses",
     Courselink3: "/artificial-intelligence-certification-course",
@@ -877,12 +885,9 @@ export const AIMumbaiCourseData = [
     Course5: "Data Science and AI master program",
     DomainHead1: "Why Domain Specialization?",
     DomainBot1:
-      "Domain-focused Artificial intelligence courses are the ultimate key to AI career success today. Domain specialization plays an important role in the artificial intelligence workplace. Since the things you learn can be diverse, it helps you concentrate on one area so the AI solutions can be applied with the most of its efficacy and processing power to that specific field.",
-    DomainBot2:
-      "Such kind of domain-focused learning speeds up the learning progress and improves the accuracy of the production of an AI application/solution. Moreover, it's impossible to provide proper solutions without domain knowledge, so we have our AI learning modules based on domain knowledge to teach our students accordingly.",
-    DomainBot3:
-      "As a result, it is important to choose domain-specific AI courses to increase your chances of getting hired. At Learnbay, you get domain-specialized Artificial Intelligence Training. Based on your experience, you can select the following domain(s):",
-    DomainList1: "HR, Sales, and Meaning",
+      "Domain specialization concentrates your efforts on a single area of expertise to stand out from the crowded artificial intelligence job market. Furthermore, domain experience is essential to being a competent artificial intelligence professional. Artificial intelligence experts or application developers have a wide range of responsibilities. Thus they must have extensive knowledge of particular business operations in order to provide the most profitable artificial intelligence-powered solution. To land your dream career, you should take domain-specific AI courses.",
+    DomainBot3: "The domain electives for students at Learnbay:",
+    DomainList1: "HR, Sales, and Marketing",
     DomainList2: "Energy, oil, and Gas",
     DomainList3: "Mechanical, manufacturing, and telecom",
     DomainList4: "Pharmaceutical and clinical research",
@@ -913,15 +918,16 @@ export const AIMumbaiCourseData = [
     Domainlink10:
       "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Banking%2C+Finance+and+Insurance+Domain.pdf",
     CertificationBot1:
-      "All the five artificial intelligence courses available at Learnbay in Mumbai provide students with an IBM certificate upon completion of the AI courses. This IBM accreditation assures that you are acknowledged as an expert in artificial intelligence. Aside from this, you also get micro AI certification by IBM, such as machine learning with python, deep learning fundamentals, and more. According to your selected course, you'll receive 1 to 8 certificates from IBM. Following that, you will also get an AI Project experience certificate once you complete the capstone project.",
+      "Upon completing a course in artificial intelligence with placement from Learnbay, you will receive IBM certifications. Depending on your course, you will obtain one to eight certificates. Furthermore, upon completing capstone projects, you will receive an IBM project experience certificate.",
+    CertificationBot2:
+      "By partnering with IBM and a series of MNCs as well as startups, Learnbay has attained a significant milestone. Having this IBM certification on your resume will surely help you land a high-paying artificial intelligence job at one of the world's renowned corporations. Over 10,000 students have finished our Artificial Intelligence course, allowing them to pursue rewarding AI and machine learning professions across Hyderabad.",
     src: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/Managers-4.jpeg",
     ModuleBot1:
-      "Learnbay’s artificial intelligence and machine learning course includes 400+ hours of interactive live sessions led by PRODUCT Based Companies Experts. In contrast, the foundational and advanced AI certification course has nearly 200 hours of classes. All of Learnbay’s AI courses are conducted live and interactive. Students can attend multiple classes with multiple instructors. Our LMS is constantly updated to include the most recent version of courses and to meet industry requirements.",
+      "At Learnbay, we're committed to providing the highest-quality modules to prospective students. As a result, we've created different IBM artificial intelligence courses to keep up with the market's ever-changing needs. Our artificial intelligence training courses in Hyderabad come with variable learning modules based on the aspirant’s current career stages, earlier educational ground, and future career goals. The most advanced ML and AI certification courses for tech professionals consist of 400 hours long modules, whereas our Foundation and Advanced Data Science and AI courses are 200+ hours long. All include live interactive sessions. Students can attend many sessions with different teachers during the training in all of our courses. Learnbay also offers a 1 to 3-year Flexi membership that allows students to learn at their own pace.",
     ModuleBot2:
-      "In this course, you will learn about the basic concepts of AI, which include search algorithms, logical reasoning, graph theory, and many more. You will also get to understand how it's implemented in real-life use cases.",
-    ModuleHead2: "Support for Non-programmers:",
+      "Each of our modules is dedicated to the domains you have chosen. It includes the most popular AI tools, advanced probability, Numpy, Pandas, Matploitlip, Deep Learning, and MongoDB, among other tools and techniques.",
     ModuleBot3:
-      "Non-programmers can now learn to code with module 0 included in all of our AI courses. This module includes 6-8 hours of live training on the fundamentals of python and R programming for artificial intelligence.",
+      "The course module also designed an additional 6-8 hours of basic programming sessions for non-technical students.",
     syllabush1: "Preparatory Classes (Programming + Maths)",
     syllabusb1: "6 Hours",
     SyllabusBotlist11: "Anaconda Installation",
@@ -956,21 +962,16 @@ export const AIMumbaiCourseData = [
     SyllabusBotlist46: "Sentiment Analysis",
     syllabussrc:
       "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Data+Science+%26+AI+Certification+Program+For+Managers+%26+Leaders+Learnbay.pdf",
-    JobHead1: "Artificial Intelligence Interview preparation in Mumbai:",
     JobBot1:
-      "The artificial intelligence courses offered by Learnbay guarantee MNC/PRODUCT Based Companies interviews for its students. There is a specific artificial intelligence course in Mumbai that even refunds their course fees in case of unsuccessful placement.",
+      "Learnbay's career consultants will assist you in developing your CV and portfolio. Learnbay also refers your resume and portfolio to other companies. Learnbay guarantees top-tier companies in Hyderabad will interview you. You'll also get exposure to mock interviews that make you prepare for difficult real-life interviews.",
     JobBot2:
-      "Learnbay’s career coaches ensure that you are well prepared to land a high-paying job in the field of artificial intelligence and ML. They guide you with everything from resume preparation and soft skills training to conducting mock interviews. They make your portfolio up-to-date and appealing, as well as refer your profile to potential employers.",
-    JobBot5:
-      "Currently, more than 1000 Learnbay alumni are proudly working in various Artificial Intelligence and ML job roles across Mumbai and all over India. We also have a network of 500+ hiring partners like TCS, JP Morgan, and IBM, amongst others.",
-    JobHead2: "Artificial intelligence and its demand in Mumbai:",
+      "If you do not get hired within six months of finishing the course, the Placement Assistance program ensures that you will receive a complete return of your AI course fees.",
+    JobHead2:
+      "Why Is  Artificial Intelligence a promising career in Hyderabad?",
     JobBot3:
-      "Artificial Intelligence (AI) is a scientific field that emphasizes the creation of intelligent machines that work and react like humans. Computers have been used since rule-based systems to help in human decision-making, but AI research focuses on creating machines that function independently from human beings.",
+      "Artificial Intelligence is a broad term that refers to the process of having machines and computers act like humans without requiring human interaction. As a result of the ongoing expansion of this field's knowledge base, it is becoming a popular career choice. Many IT organizations are built on the foundation of Artificial intelligence and machine learning. A massive global phenomenon is poised to take over a variety of industries. As a result, the need for artificial intelligence expertise has skyrocketed. In Hyderabad and across India, the next several years will be fruitful for AI experts.",
     JobBot4:
-      "Lately, AI is becoming a crucial part of the IT world, with dozens of improvements and developments being adopted every year. Almost every industry is trying to incorporate AI and ML into their software systems in order to survive in the cut-throat competition.",
-    JobBot6:
-      "As a result, it is becoming a fascinating career for future buddies. There are jobs in artificial intelligence and data science everywhere these days, and Learnbay artificial intelligence training courses will certainly start you off on a path to a successful AI career.",
-    ProjectsHead1: "Live real-world Artificial Intelligence Projects:",
+      "AI engineer, Machine Learning Engineer, Robotics Engineer, and a variety of additional roles are all available in the field of Artificial Intelligence.",
     ProjectsBot1:
       "Learnbay always encourages students to work with their creativity and understanding on projects and assignments. Completing projects and capstones would add a star to your profile as you have worked on live projects from the top reputed companies and the best startups. You can complete 1 to 3 capstone artificial intelligence projects (as per course). All of them are fresh and trending. This project helps you to solve business problems suffered by your domain.",
     src1: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/SAMSUNG.png",
@@ -1007,21 +1008,22 @@ export const AIMumbaiCourseData = [
     AlumniH4: "Shubhangi J. Waghmare ",
     Alumnip4:
       "The best in Industry offerings from both cost and curriculum wise. One advantage of joining here is you can access their resources for a lifetime, unlike others where you have accessibility only for a year or so. Most importantly, there is continuous assistance for recruitment.",
-    alt1: "artificial intelligence ai course training in mumbai",
-    alt2: "artificial intelligence ai course training in mumbai",
-    alt3: "artificial intelligence ai course training in mumbai",
-    alt4: "artificial intelligence ai course training in mumbai",
-    alt5: "artificial intelligence ai course training in mumbai",
-    alt6: "artificial intelligence ai course training in mumbai",
-    alt7: "artificial intelligence ai course training in mumbai",
-    alt8: "artificial intelligence ai course training in mumbai",
-    alt9: "artificial intelligence ai course training in mumbai",
+    alt1: "artificial intelligence ai course training in hyderabad",
+    alt2: "artificial intelligence ai course training in hyderabad",
+    alt3: "artificial intelligence ai course training in hyderabad",
+    alt4: "artificial intelligence ai course training in hyderabad",
+    alt5: "artificial intelligence ai course training in hyderabad",
+    alt6: "artificial intelligence ai course training in hyderabad",
+    alt7: "artificial intelligence ai course training in hyderabad",
+    alt8: "artificial intelligence ai course training in hyderabad",
+    alt9: "artificial intelligence ai course training in hyderabad",
+
     CityTextB:
-      "Artificial Intelligence Course Certification Training locations in Mumbai ",
+      "Artificial Intelligence Course Certification Training locations in Hyderabad",
     CityText:
-      " :A I staff colony [400029], Aareymilk Colony [400065], Agripada [400011], Airport [400099], Ambewadi [400004], Andheri [400053], Andheri East [400069], Andheri Railway station [400058], Antop Hill [400037], Asvini [400005], Azad Nagar [400053], B P t colony [400003], B.N. bhavan [400051], B.P.lane [400003], Bandra West [400050], Bandra(east) [400051], Bangur Nagar [400090], Bazargate [400001], Best Staff colony [400012], Bharat Nagar [400007], Bhawani Shankar [400028], Borivali [400091], Borivali East [400066], Borvali West [400092], C G s colony [400013], Central Building [400020], Century Mill Chakala Midc [400093], Chamarbaug [400012], Charkop [400067], Chaupati [400004], Chinchbunder [400009], Chinchpokli [400011], Churchgate [400020], Colaba [400005], Cotton Exchange [400033], Cumballa Hill [400026], Dadar [400014], Dahisar [400068], Danda [400052], Daulat Nagar [400066], Delisle Road [400013], Dharavi [400017], Dockyard Road [400010], Dr Deshmukh marg [400026], Falkland Road [400008], Girgaon [400004], Gokhale Road [400028], Goregaon [400062], Goregaon East [400063], Government Colony [400051], Gowalia Tank [400026], Grant Road [400007], H.M.p. school [400058], Haffkin Institute [400012], Haines Road [400011], Hajiali [400034], Hanuman Road [400057], High Court bulding [400032], Holiday Camp [400005], Irla [400056], Ins Hamla [400095], International Airport [400099], J.B. nagar [400059], J.J.hospital [400008], Jacob Circle [400011], Jogeshwari East [400060], Jogeshwari West [400102], Juhu [400049], Kalachowki [400033], Kalbadevi [400002], Kamathipura [400008], Kandivali East [400101], Kandivali West [400067], Kapad Bazar [400016], Ketkipada [400068], Khar Colony [400052], Kharodi [400095], Kherwadi [400051], Kidwai Nagar [400031], L B s n e collage [400033], Lal Baug [400012], Liberty Garden [400064], M A marg [400008], M.P.t. [400001], Madh [400061], Madhavbaug [400004], Magthane [400066], Mahim [400016], Malabar Hill [400006], Malad [400064], Malad East [400097], Malad West dely [400064], Mandapeshwar [400103], Mandvi [400003], Mantralaya [400032], Marine Lines [400020], Marol Bazar [400059], Masjid [400003], Matunga Railway workshop [400019], Mazgaon [400010], Mori Road [400016], Motilal Nagar [400104], Mumbai Central [400008], Mumbai[400001], N . s.patkar [400007], Nagardas Road [400069], Nagari Niwara [400065], Naigaon [400014], Nariman Point [400021], New Prabhadevi road [400025], New Yogakshema [400021], Noor Baug [400003], Null Bazar [400003], Opera House [400004], Orlem [400064], Oshiwara [400102], Parel [400012], Parel Rly work shop [400003], Prabhadevi [400025], Princess Dock [400009], Rajbhavan [400035], Rajendra Nagar [400066], Ramwadi [400002], Ranade Road [400028], Rani Sati marg [400097], Reay Road [400033], S R p f camp [400060], S Savarkar marg [400028], S V marg [400007], S. c. court [400002], S. k.nagar [400066], Sahar P & t colony [400099], Santacruz Central [400054], Santacruz P&t colony [400029], Santacruz(east) [400055], Santacruz(west) [400054], Secretariate [400032], Seepz [400096], Sewri [400015], Sharma Estate [400063], Shivaji Park [400028], Shroff Mahajan [400002], Stock Exchange [400001], Tank Road [400033], Tardeo [400007], Thakurdwar [400002], Tulsiwadi [400034], V J b udyan [400027], V K bhavan [400010], V.P. road [400052], V.W.t.c. [400005], Vakola [400055], Vesava [400061], Vidyanagari [400098], Vileeparle (east) [400057], Vileparle(west) [400056], Wadala [400031], Worli [400018], Worli Colony [400030], 400701 [Navi Mumbai], 400602 [Thane].",
+      " : Medipalli[500098], A.G.College [500030], HMT Township [500054], Hal Hyderabad [500042], Kondapur [500084], Fatehdarwaza [500065], Begumpet [500016], Lingampalli [500019], Kattedan Ie [500077], Falaknuma [500053], Peerzadiguda [500039], Jillellaguda [500079], I.M.Colony [500082], Gajularamaram [500055], Banjara Hills [500034], Gachibowli [500032], Badangpet [500058], Film Nagar [500096], A.Gs. Staff Quarters [500045], Malakpet Colony [500036], Balanagar Township [500037], Amberpet [500013], Bharat Nagar Colony [500018], Chitkul [502307], Don Bosco Nagar [500086], Gsisr Bandlaguda [500068], Yakutpura [500023], Chaithanyapuri Colony [500060], Chandanagar [500050], Appa Himayathsagar [500008], Hyderabad Jubilee [500002], Meerpet [500097], Humayunnagar [500028], Aie Bollaram [502325], Chetlapotharam [502319], Srinagar Colony [500073], Gandhi Bhawan Hyderabad [500001], Darushifa [500024], Gandhinagar Hyderabad [500080], Sarada Nagar [500070], Barkatpura [500027], Gagan Mahal [500029], Elmela [502300], Sanjeev Reddy Nagar [500038], Manikonda [500089], Cyberabad [500081], Boduppal [500092], Dr.B R Ambedkar O.U [500033], Kphb Colony [500072], Huda Residential Complex [500035], Miyapur [500049], L B Nagar [500074], Ashoknagar Hyderabad [500020], Saidabad Colony [500059], Jntu Kukat Pally [500085], Bowenpally [500011], Icrisat [502324], Administrative Buildings [500007], Aziz Nagar [500075], Afzalgunj [500012], Karwan Sahu [500006],Gaganpahad [500052], Ibrahim Bagh Lines [500031], Putlibowli [500095], Bahadurpura [500064], A.Gs Office [500004], Bachupally [500090], A.I.E. R.C.Puram [502032], Ambernagar [500044].",
     CityTextLB: "Locations Offered",
     CityTextL:
-      " :Artificial Intelligence course training in Mumbai, Artificial Intelligence course training in Thane, Artificial Intelligence course in Bhandup, Artificial Intelligence Training in Chembur, Artificial Intelligence course institute in powai, Artificial Intelligence course in Tehsil, Artificial Intelligence training in Ghatkopar, Artificial Intelligence institute in Sion, Artificial Intelligence certification in Shivaji nagar, Artificial Intelligence course in Mulund, Artificial Intelligence training in sewri, Artificial Intelligence institute in Kannamwar nagar, Artificial Intelligence course in Parel, Artificial Intelligence certification in Anushakti Nagar, Artificial Intelligence Training in Sakinaka, Artificial Intelligence institute in kharodi, Artificial Intelligence certification in Madh, Artificial Intelligence course training in malad, Artificial Intelligence course training in Andheri, Artificial Intelligence training in Coal Bunder, Artificial Intelligence institute in Dharavi, Artificial Intelligence certification in Worli, Artificial Intelligence course in Aswini, Artificial Intelligence training in Goregaon, Artificial Intelligence institute in Kandivali, Artificial Intelligence course in Borivali, Artificial Intelligence certification in juhu, Artificial Intelligence training in Marol Naka, Artificial Intelligence institute in Jogheswari, Artificial Intelligence certification in vakola, Artificial Intelligence course in Bandra, Artificial Intelligence training in Kurla, Artificial Intelligence course training in navi mumbai, Artificial Intelligence course training in Kalyan .",
+      " :Artificial Intelligence Course Certification Training locations in Hyderabad , Artificial Intelligence Course in Hyderabad, Artificial Intelligence Course in Gachibowli, Business Analytics Training in Gachibowli,Artificial Intelligence Course in Madhapur, Business Analytics Training in Madhapur, Business Analytics Training Institute in Hyderabad, Artificial Intelligence Course in Kondapur, Business Analytics Training in Kondapur, Artificial Intelligence Course in Begumpet, Artificial Intelligence Course in Lingampalli, Artificial Intelligence Course in Banjara hills, Artificial Intelligence Course in L B Nagar, Artificial Intelligence Course in Boduppal, Artificial Intelligence Course in Kphb Colony, Business Analytics Training in Begumpet, Business Analytics Training in Lingampalli, Business Analytics Training in Banjara hills, Business Analytics Training in L B Nagar, Business Analytics Training in Boduppal, Business Analytics Training in KPhb Colony, Business Analytics Classroom Training in Hyderabad, Business Analytics Training near me, Artificial Intelligence Course near me, Business Analytics Institute near me, Business Scientist Course, Artificial Intelligence Course Certification Training, Artificial Intelligence Course Certification Training in Hyderabad, Best Artificial Intelligence Course, Best Business Analytics Training",
   },
 ];
