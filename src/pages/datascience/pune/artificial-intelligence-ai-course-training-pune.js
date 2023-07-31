@@ -13,6 +13,7 @@ const ProgramInfo = dynamic(() =>
 const SeventhSection = dynamic(() =>
   import("../../../../components/Global/SeventhSection/SeventhSection")
 );
+
 const ProgramFee = dynamic(() =>
   import("../../../../components/SEO/ProgramInfo/ProgramFee/ProgramFee")
 );
@@ -46,7 +47,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-      <title>Best Artificial Intelligence Course in Pune - Learnbay</title>
+        <title>Best Artificial Intelligence Course in Pune - Learnbay</title>
         <meta name="robots" content="index, follow" />
         <meta
           name="description"
