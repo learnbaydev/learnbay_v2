@@ -313,6 +313,7 @@ export const DABangaloreCourseData = [
         url: "https://www.learnbay.co",
       },
     },
+
     secondSection: [
       {
         id: 1,
