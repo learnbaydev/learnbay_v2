@@ -250,7 +250,7 @@ export const CityFooterData = [
           {
             id: 5,
             name: "artificial intelligence AI course training Dubai",
-            url: "/datascience/dubai/artificial-intelligence-ai-course-training-Dubai",
+            url: "/datascience/dubai/artificial-intelligence-ai-course-training-dubai",
           },
           {
             id: 6,
