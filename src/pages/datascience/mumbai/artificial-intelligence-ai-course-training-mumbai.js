@@ -47,7 +47,6 @@ export default function Home() {
     <div className={styles.container}>
       <Head>
         <title>
-          {" "}
           Artificial Intelligence Course in Mumbai with Job Assistance
         </title>
         <meta name="robots" content="index, follow" />
