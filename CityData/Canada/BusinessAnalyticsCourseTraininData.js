@@ -266,40 +266,40 @@ export const BAcanadaCourseData = [
  }
  ]
       },
-      secondSection: [
-        {
-          id: 1,
-          img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/icon1.png",
-          height: "40",
-          width: "43",
-          heading: "1:1 Doubt Session",
-          para: "Clear your doubts with industry experts and get real-time solutions",
-        },
-        {
-          id: 1,
-          img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/icon3.png",
-          height: "42",
-          width: "42",
-          heading: "Unlimited Interview Calls",
-          para: "Boost career chances, gain referrals from 300+ top recruiters",
-        },
-        {
-          id: 1,
-          img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/icon2.png",
-          height: "50",
-          width: "53",
-          heading: "IBM Project Certificate",
-          para: "Master the domain of AI & machine learning with certificate from IBM",
-        },
-        {
-          id: 1,
-          img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/icon4.png",
-          height: "40",
-          width: "40",
-          heading: "Designed For Professionals",
-          para: "Use tech innovation to drive career growth & acquire in-demand skills",
-        },
-      ],
+  secondSection: [
+      {
+        id: 1,
+        img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/icon1.png",
+        height: "40",
+        width: "43",
+        heading: "1:1 Doubt Session",
+        para: "Clear your doubts with industry experts and get real-time solutions",
+      },
+      {
+        id: 1,
+        img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/icon3.png",
+        height: "42",
+        width: "42",
+        heading: "Guaranteed Interview Calls",
+        para: "Boost career chances, gain referrals from 300+ top recruiters",
+      },
+      {
+        id: 1,
+        img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/icon2.png",
+        height: "50",
+        width: "53",
+        heading: "IBM Project Certificate",
+        para: "Master the domain of business analytics with certificate from IBM",
+      },
+      {
+        id: 1,
+        img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/icon4.png",
+        height: "40",
+        width: "40",
+        heading: "Designed For Professionals",
+        para: "Use tech innovation for strategy, skill acquisition, & business growth",
+      },
+    ],
       testimonial: [
         {
           id: 1,
@@ -617,7 +617,11 @@ export const BAcanadaCourseData = [
       CertificationHead1:"Certification Process at Learnbay:",
       CertificationBot1:"Learnbay has established partnerships for all its data science and business analytics courses. Students will be issued an IBM certificate on successful completion of the business analytics course with placement. To pass the certification process, it is important to pay close attention and complete all assignments and case studies on time.",
       CertificationBot2:"As a result, employers in Canada will notice your IBM accreditation and consider you for open positions in business analytics jobs. We also have partnered with major tech giants in order to promote the talents of our business analytics students.",
-      src:"https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/BA-DA.jpeg",
+      src33:
+      "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Microsoft-certificate-data.png",
+    src: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Certificate-blue.png",
+    src22:
+      "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Certificate-Yellow.png",
       ModuleHead1:"What is the syllabus for this business analytics training course?",
       ModuleHead2:"Support for non-programmers:",
       ModuleBot3:"As a part of our business analytics curriculum, a series of fundamental programming in python and R are held for non-technical aspirants. Thus, applicants from all backgrounds are encouraged to apply for this course.",

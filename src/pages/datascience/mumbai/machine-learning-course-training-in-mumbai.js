@@ -113,7 +113,7 @@ export default function Home() {
           FirstTyped="Guaranteed Interview Calls"
           SecondTyped="Capstone Project Certificate"
           ThirdTyped="Live Interactive Classes"
-          cityParaCont="Be eligible to work as an AI/ML expert in MNC/PRODUCT Based Companies. Earn the most advanced industrial machine learning skill via fast-paced industry capstones. Be pros of NLP and computer vision."
+          cityParaCont="Enhance your Machine Learning career with our comprehensive Machine Learning course in Mumbai with IBM Certification. Our advanced Machine Learning training in Mumbai will help you to make experts in Python, Power BI, etc. You will get training from industry leaders and masters to gain the most in-demand data science and AI skills."
           dataScience={true}
           titleCourse="Machine Learning Program with domain specialization"
           brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Advance+AI+%26+ML+Certification+Program+Learnbay.pdf"
@@ -151,7 +151,6 @@ export default function Home() {
           </div>
           <div className="CitiesRight">
             <CitiesRight
-              certificate1={true}
               ProgramBot1={MLMumbaiCourseData[0].ProgramBot1}
               ProgramHead3={MLMumbaiCourseData[0].ProgramHead3}
               ProgramBot3={MLMumbaiCourseData[0].ProgramBot3}

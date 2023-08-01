@@ -97,7 +97,7 @@ export default function Home() {
         />
         <SecondSection SecondSectionData={FSDelhiCourseData[0].secondSection} />
         <Testimonial
-          redirectDS={false}
+          redirectDS={true}
           Testimonial={FSDelhiCourseData[0].testimonial}
           heading="Our Alumni Speak"
           para="Discover the impact of our programs on career growth"
@@ -117,11 +117,10 @@ export default function Home() {
         </div>
         <div className="MainCities">
           <div className="CitiesLeft">
-            <CitiesLeft fullStackCity={true} />
+            <CitiesLeft />
           </div>
           <div className="CitiesRight">
             <CitiesRight
-              fullStackCity={true}
               ProgramBot1={FSDelhiCourseData[0].ProgramBot1}
               ProgramHead3={FSDelhiCourseData[0].ProgramHead3}
               ProgramBot3={FSDelhiCourseData[0].ProgramBot3}

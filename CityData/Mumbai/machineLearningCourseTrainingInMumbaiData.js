@@ -815,21 +815,38 @@ export const MLMumbaiCourseData = [
       "The Learnbay ML training program in Mumbai aims to build highly demanding machine learning engineers and machine learning experts as per the current competitive ML job market. As Ml is not a separate domain or a subject to generic machine learning skills are not at all going to help you get securely employed in the same. It seeks the most beneficial amalgamation of your ML knowledge along with a particular business field knowledge.",
     DomainBot2:
       "A master's degree in machine learning is completely worthless until you properly get trained on how to apply it in a specific industrial field like Supply chain, e-commerce, or Banking. Learnbay’s machine learning certifications in Mumbai come with elective options as follows:",
-    DomainList1: "• BFSI",
-    DomainList2: "• Manufacturing",
-    DomainList3: "• Energy, Oil and Gas",
-    DomainList4: "• Healthcare",
-    DomainList5: "• Supply Chain, E-Commerce & Retail",
+    DomainList1: "HR, Sales, and Marketing",
+    DomainList2: "Energy, oil, and Gas",
+    DomainList3: "Mechanical, manufacturing, and telecom",
+    DomainList4: "Pharmaceutical and clinical research",
+    DomainList5: "Media, hospitality, and transportation",
+    DomainList6: "Testing and Development Domain",
+    DomainList7: "DeOps and Cloud",
+    DomainList8: "IoT, automotive, and embedded systems",
+    DomainList9: "Supply chain and e-commerce",
+    DomainList10: "Banking, Finance, and Marketing Domain",
+    DomainBot3:
+      "The ML modules you get will be extremely focused on your chosen elective(s). This increases the chances of your selection as an ML professional in a multinational firm by 120%.",
     Domainlink1:
-      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Banking%2C+Finance+and+Insurance+Domain.pdf",
+      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Sales%2C+Marketing+and+HR+Domain.pdf",
     Domainlink2:
-      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Manufacturing%2C+Mechanical+and+Telecom+Domain.pdf",
-    Domainlink3:
       "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Energy%2C+Oil+and+Gas+Domain.pdf",
+    Domainlink3:
+      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Manufacturing%2C+Mechanical+and+Telecom+Domain.pdf",
     Domainlink4:
       "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Healthcare%2C+Pharma+and+Clinical+Research+Domain.pdf",
     Domainlink5:
+      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Media%2C+Hospitality+and+Transportation+Domain.pdf",
+    Domainlink6:
+      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Development+and+Testing+Domain.pdf",
+    Domainlink7:
+      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Cloud+and+Devops+Domain.pdf",
+    Domainlink8:
+      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Automotive%2C+IOT+and+Embedded+Domain.pdf",
+    Domainlink9:
       "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Retail%2C+Ecommerce+and+Supply+chain+Domain.pdf",
+    Domainlink10:
+      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Banking%2C+Finance+and+Insurance+Domain.pdf",
     CertificationHead1: "One Course but Multiple ML skill Certification",
     CertificationBot1:
       "Our machine learning training program in Mumbai has an end-to-end collaboration with IBM. The course is powered by six separate IBM certifications. Along with the most featured ‘Advance AI and ML Course Completion Certification’ and ‘Machine Learning project Certification,' you get four more micro ML skill Certificates- all issued by IBM.",

@@ -1,4 +1,4 @@
-export const MLBangaloreCourseData = [
+export const DataScienceCourseData = [
   {
     script1: {
       "@context": "https://schema.org/",
@@ -571,7 +571,7 @@ export const MLBangaloreCourseData = [
             linkText1: " +917795687988 ",
             link1: "tel:+917795687988",
             link: true,
-
+        
             open: false,
           },
           {
@@ -700,7 +700,7 @@ export const MLBangaloreCourseData = [
           {
             id: 0,
             ques: "What's the eligibility for a job assistance program at Learnbay?",
-
+        
             ans: `You should have completed the course with :
             A minimum score of 70% in assessments
            Should have completed the assignments and case studies
@@ -738,7 +738,7 @@ export const MLBangaloreCourseData = [
           {
             id: 0,
             ques: "Until when will the Learnbay students in Bangalore get the facility of mentorship? ",
-
+        
             ans: "Our Mentors will provide ML training to the students until the completion of the course depending on the specialization. Post completion, students can reach out to special mentors for project and placement purposes.",
             open: true,
           },
@@ -769,156 +769,123 @@ export const MLBangaloreCourseData = [
         ],
       },
     ],
-    ProgramBot1:
-      "Enroll in Learnbay's tech domain-specific machine learning course in Bangalore as it provides learners a wide range of domain specialization. This Machine Learning and training program is one of the best options for working professionals living across Bangalore.",
-    ProgramBot2:
-      "We conduct interactive classes guided by ML experts from PRODUCT Based Companies companies. We give industrial exposure with Real-time and capstone projects so that students can learn from the real world. Students get 6 machine learning IBM certificates.",
-    ProgramHead3: "Why Should You Choose This ML Training course in Bangalore?",
-    ProgramBot3:
-      "With this professional machine learning certification, you get vivid options of domains to choose from and specialize in.",
-    ProgramBot31:
-      "It ensures smooth live classes and access to any batch/instructor at learners' convenience, along with a 3-year Flexi pass.",
-    ProgramBot32:
-      "Not only that. For all the study materials and recorded copies of attended classes, there remains Lifetime free access to Learnbay LMS. It can be accessible even on mobile devices to learn from anywhere.",
-    ProgramBot4:
-      "You can pay the machine learning course fees through easy EMI options.",
-    ProgramHead5:
-      "Why is Learnbay Machine learning Certification one of the best courses to learn in Bangalore?",
-    ProgramHead6: "Career opportunities and growth:",
-    ProgramBot6:
-      "Machine learning (ML) will grow rapidly by 2025, creating new job roles and opportunities. ML can build your career so you can stand out in the crowd with these abilities. This machine learning program covers almost all work sectors like marketing. Finance, supply chain, e-commerce, hospitality, pharmaceutical, banking, etc.",
-    ProgramHead7: "Best Salaries:",
-    ProgramBot7:
-      "Machine learning engineers are among the highest-paid jobs in Bangalore and the IT domain. The average Machine learning engineer's salary is 8 LPA. It is the starting stage compensation range for machine learning professionals. As you get experience working as a Machine learning engineer, you might earn 15-23 lakhs per annum. The Learnbay ML and artificial intelligence course also help you choose the ML career path that fits best for you. But how?",
-    ProgramBot8:
-      "They offer personalized ML career counseling and respective custom-fit learning modules as per your work experience and academic profile.",
-    ProgramHead9: "Lack of Properly qualified machine learning experts",
-    ProgramBot9:
-      "Every business is integrating Artificial intelligence and Machine learning. There is a smaller number of experts in Machine learning, so as it keeps advancing, there is an increase in demand for Machine learning experts in Bangalore. Everyone is getting certified machine learning professionals, and a few of them own the actual skills that the industry wants. Learnbay machine learning course goes beyond the certification and makes you industry competence in the real sense.",
-    DomainHead1:
-      "What type of specialization do you get in the Learnbay Machine learning Courses?",
-    DomainBot1:
-      "Learnbay analyzes your profile and suggests the right domain for you. Students work within their respective domains and machine learning tools to expertise in a specific industry's ML skill. Learnbay's Machine learning training course in Bangalore offers tech-domain specialization so that you stand out in the domain students are best at.",
-    DomainBot2:
-      "In Bangalore, Learnbay has a wide range of domain electives for students to choose from and excel in Machine Learning skills",
-    DomainList1: "• BFSI",
-    DomainList2: "• Manufacturing",
-    DomainList3: "• Energy, Oil and Gas",
-    DomainList4: "• Healthcare",
-    DomainList5: "• Supply Chain, E-Commerce & Retail",
-    Domainlink1:
-      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Banking%2C+Finance+and+Insurance+Domain.pdf",
-    Domainlink2:
-      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Manufacturing%2C+Mechanical+and+Telecom+Domain.pdf",
-    Domainlink3:
-      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Energy%2C+Oil+and+Gas+Domain.pdf",
-    Domainlink4:
-      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Healthcare%2C+Pharma+and+Clinical+Research+Domain.pdf",
-    Domainlink5:
-      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Retail%2C+Ecommerce+and+Supply+chain+Domain.pdf",
-    CertificationHead1:
-      "Six Machine learning IBM certificates by Paying a Single Machine Learning course fee",
-    CertificationBot1:
-      "On the course completion, you get separate machine learning skill certificates from tech giant IBM for tools and skills like Deep Learning, Tensorflow, machine learning with python, capstone project certifications, etc. But the most significant achievement becomes the IBM ML project experience certification by completing two fresh capstone projects.",
-    src33:
-      "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Azure+AI+Fundamentals.png",
-    src: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Certificate-blue.png",
-    src22:
-      "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Certificate-Yellow.png",
-    ModuleBot1:
-      "Learnbay Machine learning course in Bangalore contains 300 hrs of hassle-free live classes from PRODUCT Based Companies experts. With 18+ comprehensively planned machine learning modules, students can easily achieve advanced industrial knowledge. Not only that, each of the modules owns such a sequence of submodules from basic to expert level so that a complete novice can also utilize the course with 100% ROI.",
-    ModuleBot2:
-      "Learnbay supports students to learn the basics of coding for weak programmers. Our faculties regularly update coding assignments, and we even conduct webinars and hackathons for students to learn collaboratively. Based on the current industrial trends, the industrial ML course by Learnbay has kept its focus on tools and skills like big data analytics, data structure & algorithm, NLP, time- analytics, etc.",
-    syllabush1: "Preparatory Classes (Programming + Maths)",
-    syllabusb1: "6 Hours",
-    SyllabusBotlist11: "Cohort Orientation",
-    SyllabusBotlist12: "Fundamentals of Programming",
-    SyllabusBotlist13: "Python Fundamentals",
-    SyllabusBotlist14: "Fundamentals of Statistics",
-    SyllabusBotlist15: "Mean, Median, Mode",
-    SyllabusBotlist16: "Introduction to Linear Algebra",
-    syllabush2: "Python for Data Science (Basic + Advance)",
-    syllabusb2: "40 Hours",
-    SyllabusBotlist21: "Python Programming",
-    SyllabusBotlist22: "Statistics and Machine Learning",
-    SyllabusBotlist23: "Machine Learning",
-    SyllabusBotlist24: "Naive Baye’s Model",
-    SyllabusBotlist25: "Hierarchical Clustering",
-    SyllabusBotlist26: "Support Vector Machine(SVM)",
-    syllabush3: "Statistics and Machine Learning",
-    syllabusb3: "70 Hours",
-    SyllabusBotlist31: "Linear Algebra, Probability",
-    SyllabusBotlist32: "Permutation & Combination",
-    SyllabusBotlist33: "Descriptive & Inferential Stats",
-    SyllabusBotlist34: "Hypothesis Testing",
-    SyllabusBotlist35: "Time Series Analysis",
-    SyllabusBotlist36: "ML Algorithms",
-    syllabush4: "Deployment (AWS+Azure)",
-    syllabusb4: "12+ Classes",
-    SyllabusBotlist41:
-      "Introduction to AWS and Azure Machine Learning Services",
-    SyllabusBotlist42: "Setting up the Environment",
-    SyllabusBotlist43: "Data Preparation and Feature Engineering",
-    SyllabusBotlist44: "Model Training and Evaluation",
-    SyllabusBotlist45: "Model Deployment and Management",
-    SyllabusBotlist46: "Advanced Topics in Machine Learning on AWS and Azure",
-    syllabussrc:
-      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Advance+AI+%26+ML+Certification+Program+Learnbay.pdf",
-    JobHead1:
-      "How does Learnbay’s ML certification become the most promising training for cracking MNC machine learning interviews?",
-    JobBot1:
-      "Learnbay is the best machine learning training institute in Bangalore from the perspective of job assistance. Our expert faculty offer you guidance on facing the product MNC Machine learning interviews with maximum possible efficacy. They prepare candidates with mock interviews and offer best-fit job referrals. Also, you get help with creating a resume and portfolio so that the same remains on top of the recruiter's list. Please note we provide guaranteed interview calls.",
-    JobHead2:
-      "Industrial Training with Ultimate Machine Learning Job Assistance",
-    JobBot3:
-      "Moreover, there are various industry-paced exclusive hackathons and webinars to participate in. This also increases your chances of referrals.",
-    JobBot4:
-      "As already told, you get Multiple mock-interview sessions by Artificial intelligence and Machine learning experts of specific domains and product MNC's/job roles. The job assistance program consists of tips and tricks, suggestions for building a remarkable resume, and an online portfolio.",
-    ProjectsBot1:
-      "Learnbay is keen on students to work on live ML projects, and capstones as the existence of properly done projects would be a key factor in their resume or portfolio. The Learnbay Machine Learning course in Bangalore contains 15 real-time projects and 2 capstone projects. Get IBM certificates for completing the course and projects (separate certificate for industrial project experience by IBM).",
-    src1: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/SAMSUNG.png",
-    ProjectsH1: "Samsung Health Monitor App",
-    Projectsp1:
-      "Samsung will launch a new healthcare app soon. The key goal of this app is accurate human activity tracking and providing relevant health-related recommendations. Continuous analysis of a massive amount of mobile data is required for such an app.",
-    src2: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/IBM.png",
-    ProjectsH2: "IBM HR Analytics",
-    Projectsp2:
-      "IBM intends to boost its HR department by identifying employees' masked inconsistency. They need models to identify the graphical variations in their 14000+ employees' performances. Help them build models with your regressions and other Data science abilities.",
-    src3: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/amazon1.png",
-    ProjectsH3: "Amazon Customer Review Analysis",
-    Projectsp3:
-      "Amazon has made a goal to identify the most successful consumer electronic products. For these, they require live customer review analysis. You can participate in the assisting project of customer insight regeneration from the ongoing and existing reviews via a suitable data visualization approach.",
-    src4: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/BMW.png",
-    ProjectsH4: "BMW Used Car Price Optimization",
-    Projectsp4:
-      " BMW allows existing customers to sell used cars  but many competitors are now offering better resale values. A data science-powered statistical app from BMW will provide the best market value for used cars based on parameters like Km driven, daily pricing up and down, manufacturing dates, etc. Develop your analytical skills through such projects.",
-    AlumniBot1:
-      "With the glory of 100% placement success, our Machine learning and AI course are becoming hugely popular day by day. Until now, 1000+ Learnbay candidates have already been placed in several MNCs and startups across Bangalore. All of them secured different highly paid machine learning job roles. Below is a small space where you can find a few such success stories.",
-    Asrc1: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/devraj.jpg",
-    AlumniH1: "Deveraj",
-    Alumnip1:
-      "The quality of the content is very nice. What I liked the most was mainly the instructor concentrating on the practical part, live project sessions make you feel confident to attend interviews. Multiple batch options, access for any instructor class videos or materials. The totally positive environment around.",
-    Asrc2: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/shezan.png",
-    AlumniH2: "Shezan Baig",
-    Alumnip2:
-      "Learnbay is one of the most remarkable Machine Learning institutes I've come across. Compared to other institutes in India, it offers a Machine Learning course at a low cost. Excellent value for money. Finally, I achieved job satisfaction. I would strongly advise everyone to attend this institute.",
-    Asrc3: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/viraj.png",
-    AlumniH3: "Viraj Ghodke",
-    Alumnip3:
-      "For me, learning using the Learnbay platform has been a great experience. The teaching and management team are very helpful. They are constantly willing to clarify each individual's doubts and meet the needs of working professionals. The practice interview sessions were simply like a clone of MNC interviews.",
-    Asrc4: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/shubhangi.png",
-    AlumniH4: "Shubhangi J. Waghmare ",
-    Alumnip4:
-      "The best in Industry offerings from both cost and curriculum wise. One advantage of joining here is you can access their resources for a lifetime, unlike others where you have accessibility only for a year or so. Most importantly, there is continuous assistance for recruitment.",
-    alt1: "machine learning course training in bangalore",
-    alt2: "machine learning course training in bangalore",
-    alt3: "machine learning course training in bangalore",
-    alt4: "machine learning course training in bangalore",
-    alt5: "machine learning course training in bangalore",
-    alt6: "machine learning course training in bangalore",
-    alt7: "machine learning course training in bangalore",
-    alt8: "machine learning course training in bangalore",
-    alt9: "machine learning course training in bangalore",
+    ProgramBot1:"Enroll in Learnbay's tech domain-specific machine learning course in Bangalore as it provides learners a wide range of domain specialization. This Machine Learning and training program is one of the best options for working professionals living across Bangalore.",
+              ProgramBot2:"We conduct interactive classes guided by ML experts from PRODUCT Based Companies companies. We give industrial exposure with Real-time and capstone projects so that students can learn from the real world. Students get 6 machine learning IBM certificates.",
+              ProgramHead3:"Why Should You Choose This ML Training course in Bangalore?",
+              ProgramBot3:"With this professional machine learning certification, you get vivid options of domains to choose from and specialize in.",
+              ProgramBot31:"It ensures smooth live classes and access to any batch/instructor at learners' convenience, along with a 3-year Flexi pass.",
+              ProgramBot32:"Not only that. For all the study materials and recorded copies of attended classes, there remains Lifetime free access to Learnbay LMS. It can be accessible even on mobile devices to learn from anywhere.",
+              ProgramBot4:"You can pay the machine learning course fees through easy EMI options.",
+              ProgramHead5:"Why is Learnbay Machine learning Certification one of the best courses to learn in Bangalore?",
+              ProgramHead6:"Career opportunities and growth:",
+              ProgramBot6:"Machine learning (ML) will grow rapidly by 2025, creating new job roles and opportunities. ML can build your career so you can stand out in the crowd with these abilities. This machine learning program covers almost all work sectors like marketing. Finance, supply chain, e-commerce, hospitality, pharmaceutical, banking, etc.",
+              ProgramHead7:"Best Salaries:",
+              ProgramBot7:"Machine learning engineers are among the highest-paid jobs in Bangalore and the IT domain. The average Machine learning engineer's salary is 8 LPA. It is the starting stage compensation range for machine learning professionals. As you get experience working as a Machine learning engineer, you might earn 15-23 lakhs per annum. The Learnbay ML and artificial intelligence course also help you choose the ML career path that fits best for you. But how?",
+              ProgramBot8:"They offer personalized ML career counseling and respective custom-fit learning modules as per your work experience and academic profile.",
+              ProgramHead9:"Lack of Properly qualified machine learning experts",
+              ProgramBot9:"Every business is integrating Artificial intelligence and Machine learning. There is a smaller number of experts in Machine learning, so as it keeps advancing, there is an increase in demand for Machine learning experts in Bangalore. Everyone is getting certified machine learning professionals, and a few of them own the actual skills that the industry wants. Learnbay machine learning course goes beyond the certification and makes you industry competence in the real sense.",
+              DomainHead1:"What type of specialization do you get in the Learnbay Machine learning Courses?",
+              DomainBot1:"Learnbay analyzes your profile and suggests the right domain for you. Students work within their respective domains and machine learning tools to expertise in a specific industry's ML skill. Learnbay's Machine learning training course in Bangalore offers tech-domain specialization so that you stand out in the domain students are best at.",
+              DomainBot2:"In Bangalore, Learnbay has a wide range of domain electives for students to choose from and excel in Machine Learning skills",
+              DomainList1: "• BFSI",
+              DomainList2: "• Manufacturing",
+              DomainList3: "• Energy, Oil and Gas",
+              DomainList4: "• Healthcare",
+              DomainList5: "• Supply Chain, E-Commerce & Retail",
+              Domainlink1:
+                "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Banking%2C+Finance+and+Insurance+Domain.pdf",
+              Domainlink2:
+                "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Manufacturing%2C+Mechanical+and+Telecom+Domain.pdf",
+              Domainlink3:
+                "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Energy%2C+Oil+and+Gas+Domain.pdf",
+              Domainlink4:
+                "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Healthcare%2C+Pharma+and+Clinical+Research+Domain.pdf",
+              Domainlink5:
+                "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Retail%2C+Ecommerce+and+Supply+chain+Domain.pdf",
+              CertificationHead1:"Six Machine learning IBM certificates by Paying a Single Machine Learning course fee",
+              CertificationBot1:"On the course completion, you get separate machine learning skill certificates from tech giant IBM for tools and skills like Deep Learning, Tensorflow, machine learning with python, capstone project certifications, etc. But the most significant achievement becomes the IBM ML project experience certification by completing two fresh capstone projects.",
+              src33:
+              "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Azure+AI+Fundamentals.png",
+            src: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Certificate-blue.png",
+            src22:
+              "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Certificate-Yellow.png",
+              ModuleBot1:"Learnbay Machine learning course in Bangalore contains 300 hrs of hassle-free live classes from PRODUCT Based Companies experts. With 18+ comprehensively planned machine learning modules, students can easily achieve advanced industrial knowledge. Not only that, each of the modules owns such a sequence of submodules from basic to expert level so that a complete novice can also utilize the course with 100% ROI.",
+              ModuleBot2:"Learnbay supports students to learn the basics of coding for weak programmers. Our faculties regularly update coding assignments, and we even conduct webinars and hackathons for students to learn collaboratively. Based on the current industrial trends, the industrial ML course by Learnbay has kept its focus on tools and skills like big data analytics, data structure & algorithm, NLP, time- analytics, etc.",
+              syllabush1: "Preparatory Classes (Programming + Maths)",
+              syllabusb1: "6 Hours",
+              SyllabusBotlist11: "Cohort Orientation",
+              SyllabusBotlist12: "Fundamentals of Programming",
+              SyllabusBotlist13: "Python Fundamentals",
+              SyllabusBotlist14: "Fundamentals of Statistics",
+              SyllabusBotlist15: "Mean, Median, Mode",
+              SyllabusBotlist16: "Introduction to Linear Algebra",
+              syllabush2: "Python for Data Science (Basic + Advance)",
+              syllabusb2: "40 Hours",
+              SyllabusBotlist21: "Python Programming",
+              SyllabusBotlist22: "Statistics and Machine Learning",
+              SyllabusBotlist23: "Machine Learning",
+              SyllabusBotlist24: "Naive Baye’s Model",
+              SyllabusBotlist25: "Hierarchical Clustering",
+              SyllabusBotlist26: "Support Vector Machine(SVM)",
+              syllabush3: "Statistics and Machine Learning",
+              syllabusb3: "70 Hours",
+              SyllabusBotlist31: "Linear Algebra, Probability",
+              SyllabusBotlist32: "Permutation & Combination",
+              SyllabusBotlist33: "Descriptive & Inferential Stats",
+              SyllabusBotlist34: "Hypothesis Testing",
+              SyllabusBotlist35: "Time Series Analysis",
+              SyllabusBotlist36: "ML Algorithms",
+              syllabush4: "Deployment (AWS+Azure)",
+              syllabusb4: "12+ Classes",
+              SyllabusBotlist41:
+                "Introduction to AWS and Azure Machine Learning Services",
+              SyllabusBotlist42: "Setting up the Environment",
+              SyllabusBotlist43: "Data Preparation and Feature Engineering",
+              SyllabusBotlist44: "Model Training and Evaluation",
+              SyllabusBotlist45: "Model Deployment and Management",
+              SyllabusBotlist46: "Advanced Topics in Machine Learning on AWS and Azure",
+              syllabussrc:
+                "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Advance+AI+%26+ML+Certification+Program+Learnbay.pdf",
+              JobHead1:"How does Learnbay’s ML certification become the most promising training for cracking MNC machine learning interviews?",
+              JobBot1:"Learnbay is the best machine learning training institute in Bangalore from the perspective of job assistance. Our expert faculty offer you guidance on facing the product MNC Machine learning interviews with maximum possible efficacy. They prepare candidates with mock interviews and offer best-fit job referrals. Also, you get help with creating a resume and portfolio so that the same remains on top of the recruiter's list. Please note we provide guaranteed interview calls.",
+              JobHead2:"Industrial Training with Ultimate Machine Learning Job Assistance",
+              JobBot3:"Moreover, there are various industry-paced exclusive hackathons and webinars to participate in. This also increases your chances of referrals.",
+              JobBot4:"As already told, you get Multiple mock-interview sessions by Artificial intelligence and Machine learning experts of specific domains and product MNC's/job roles. The job assistance program consists of tips and tricks, suggestions for building a remarkable resume, and an online portfolio.",
+              ProjectsBot1:"Learnbay is keen on students to work on live ML projects, and capstones as the existence of properly done projects would be a key factor in their resume or portfolio. The Learnbay Machine Learning course in Bangalore contains 15 real-time projects and 2 capstone projects. Get IBM certificates for completing the course and projects (separate certificate for industrial project experience by IBM).",
+              src1:"https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/SAMSUNG.png",
+              ProjectsH1:"Samsung Health Monitor App",
+              Projectsp1:"Samsung will launch a new healthcare app soon. The key goal of this app is accurate human activity tracking and providing relevant health-related recommendations. Continuous analysis of a massive amount of mobile data is required for such an app.",
+              src2:"https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/IBM.png",
+              ProjectsH2:"IBM HR Analytics",
+              Projectsp2:"IBM intends to boost its HR department by identifying employees' masked inconsistency. They need models to identify the graphical variations in their 14000+ employees' performances. Help them build models with your regressions and other Data science abilities.",
+              src3:"https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/amazon1.png",
+              ProjectsH3:"Amazon Customer Review Analysis",
+              Projectsp3:"Amazon has made a goal to identify the most successful consumer electronic products. For these, they require live customer review analysis. You can participate in the assisting project of customer insight regeneration from the ongoing and existing reviews via a suitable data visualization approach.",
+              src4:"https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/BMW.png",
+              ProjectsH4:"BMW Used Car Price Optimization",
+              Projectsp4:" BMW allows existing customers to sell used cars  but many competitors are now offering better resale values. A data science-powered statistical app from BMW will provide the best market value for used cars based on parameters like Km driven, daily pricing up and down, manufacturing dates, etc. Develop your analytical skills through such projects.",
+              AlumniBot1:"With the glory of 100% placement success, our Machine learning and AI course are becoming hugely popular day by day. Until now, 1000+ Learnbay candidates have already been placed in several MNCs and startups across Bangalore. All of them secured different highly paid machine learning job roles. Below is a small space where you can find a few such success stories.",
+              Asrc1:"https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/devraj.jpg",
+              AlumniH1:"Deveraj",
+              Alumnip1:"The quality of the content is very nice. What I liked the most was mainly the instructor concentrating on the practical part, live project sessions make you feel confident to attend interviews. Multiple batch options, access for any instructor class videos or materials. The totally positive environment around.",
+              Asrc2:"https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/shezan.png",
+              AlumniH2:"Shezan Baig",
+              Alumnip2:"Learnbay is one of the most remarkable Machine Learning institutes I've come across. Compared to other institutes in India, it offers a Machine Learning course at a low cost. Excellent value for money. Finally, I achieved job satisfaction. I would strongly advise everyone to attend this institute.",
+              Asrc3:"https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/viraj.png",
+              AlumniH3:"Viraj Ghodke",
+              Alumnip3:"For me, learning using the Learnbay platform has been a great experience. The teaching and management team are very helpful. They are constantly willing to clarify each individual's doubts and meet the needs of working professionals. The practice interview sessions were simply like a clone of MNC interviews.",
+              Asrc4:"https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/shubhangi.png",
+              AlumniH4:"Shubhangi J. Waghmare ",
+              Alumnip4:"The best in Industry offerings from both cost and curriculum wise. One advantage of joining here is you can access their resources for a lifetime, unlike others where you have accessibility only for a year or so. Most importantly, there is continuous assistance for recruitment.",
+              alt1:"machine learning course training in bangalore",
+              alt2:"machine learning course training in bangalore",
+              alt3:"machine learning course training in bangalore",
+              alt4:"machine learning course training in bangalore",
+              alt5:"machine learning course training in bangalore",
+              alt6:"machine learning course training in bangalore",
+              alt7:"machine learning course training in bangalore",
+              alt8:"machine learning course training in bangalore",
+              alt9:"machine learning course training in bangalore",
     CityTextB:
       "Artificial Intelligence Course Certification Training locations in Bangalore ",
     CityText:

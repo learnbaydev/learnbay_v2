@@ -115,7 +115,7 @@ export default function Home() {
           FirstTyped="Guaranteed Interview Calls"
           SecondTyped="Capstone Project Certificate"
           ThirdTyped="Live Interactive Classes"
-          cityParaCont="Enroll in the best Job-ready full-stack software development course in Mumbai. Take a 10-step step ahead of others towards the most lucrative salary package of product-based MNCs, which you deserve."
+          cityParaCont="Enhance your Full Stack Software Developer career with our comprehensive Full Stacke course in Mumbai with IBM Certification. Our advanced Data Science training in Mumbai will help you to make experts in Python, Power BI, etc. You will get training from industry leaders and masters to gain the most in-demand data science and AI skills."
           dataScience={true}
           titleCourse="Advanced Data Science and AI Program with domain specialization"
           brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Advance+Data+Science+and+AI+Certification+Program+Learnbay.pdf"
@@ -129,7 +129,7 @@ export default function Home() {
           SecondSectionData={FullStackMumbaiCourseData[0].secondSection}
         />
         <Testimonial
-          redirectDS={false}
+          redirectDS={true}
           Testimonial={FullStackMumbaiCourseData[0].testimonial}
           heading="Our Alumni Speak"
           para="Discover the impact of our programs on career growth"
@@ -149,11 +149,10 @@ export default function Home() {
         </div>
         <div className="MainCities">
           <div className="CitiesLeft">
-            <CitiesLeft fullStackCity={true} />
+            <CitiesLeft />
           </div>
           <div className="CitiesRight">
             <CitiesRight
-              fullStackCity={true}
               ProgramBot1={FullStackMumbaiCourseData[0].ProgramBot1}
               ProgramHead3={FullStackMumbaiCourseData[0].ProgramHead3}
               ProgramBot3={FullStackMumbaiCourseData[0].ProgramBot3}

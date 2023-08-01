@@ -194,12 +194,15 @@ export default function Home() {
               Domainlink8={BABangaloreCourseData[0].Domainlink8}
               Domainlink9={BABangaloreCourseData[0].Domainlink9}
               Domainlink10={BABangaloreCourseData[0].Domainlink10}
+              CertificationHead1={BABangaloreCourseData[0].CertificationHead1}
+
               CertificationBot1={BABangaloreCourseData[0].CertificationBot1}
               src={BABangaloreCourseData[0].src}
               src22={BABangaloreCourseData[0].src22}
               src33={BABangaloreCourseData[0].src33}
               ModuleBot1={BABangaloreCourseData[0].ModuleBot1}
               ModuleBot2={BABangaloreCourseData[0].ModuleBot2}
+              ModuleBot3={BABangaloreCourseData[0].ModuleBot3}
               syllabush1={BABangaloreCourseData[0].syllabush1}
               syllabusb1={BABangaloreCourseData[0].syllabusb1}
               SyllabusBotlist11={BABangaloreCourseData[0].SyllabusBotlist11}

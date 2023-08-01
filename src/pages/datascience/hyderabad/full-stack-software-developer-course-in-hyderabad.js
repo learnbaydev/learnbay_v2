@@ -121,8 +121,7 @@ export default function Home() {
           titleCourse="Full-Stack Software Developer Course In Hyderabad To Achieve Your Dream Job"
           brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Full+Stack+Software+Development+Program+Learnbay.pdf"
           FirstRightImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/head/W+Dev.png"
-          firstHeading="Full-Stack Software Developer Course In Hyderabad"
-          firstToparaImg=" To Achieve Your Dream Job"
+          firstHeading="Full-Stack Software Developer Course In Hyderabad To Achieve Your Dream Job"
           firstTopPara="Ace Your Coding Interview at PRODUCT Based Companies"
           idss="bfl64ANfSV0"
         />
@@ -130,7 +129,7 @@ export default function Home() {
           SecondSectionData={FullStackHyderabadCourseData[0].secondSection}
         />
         <Testimonial
-          redirectDS={false}
+          redirectDS={true}
           Testimonial={FullStackHyderabadCourseData[0].testimonial}
           heading="Our Alumni Speak"
           para="Discover the impact of our programs on career growth"
@@ -150,7 +149,7 @@ export default function Home() {
         </div>
         <div className="MainCities">
           <div className="CitiesLeft">
-            <CitiesLeft fullStackCity={true} />
+            <CitiesLeft />
           </div>
           <div className="CitiesRight">
             <CitiesRight
