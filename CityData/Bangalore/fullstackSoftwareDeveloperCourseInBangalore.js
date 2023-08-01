@@ -6,24 +6,24 @@ export const FullStackBangaloreCourseData = [
         img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/icon1.png",
         height: "40",
         width: "43",
-        heading: "1:1 Doubt Session",
-        para: "Clear your doubts with industry experts and get real-time solutions",
+        heading: "On-Demand Doubt Session",
+        para: "Clear your doubts with industry experts & get real-time solutions",
       },
       {
         id: 1,
         img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/icon3.png",
         height: "42",
         width: "42",
-        heading: "Unlimited Interview Calls",
-        para: "Boost career chances, gain referrals from 300+ top recruiters",
+        heading: "IBM+ Microsoft Certificate",
+        para: "Enhance skills with Microsoft & IBM course certificate",
       },
       {
         id: 1,
         img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/icon2.png",
         height: "50",
         width: "53",
-        heading: "IBM Project Certificate",
-        para: "Master the domain of AI & machine learning with certificate from IBM",
+        heading: "Peer Learning & Networking",
+        para: "Learn & collaborate with peers for growth & opportunities",
       },
       {
         id: 1,
@@ -31,107 +31,75 @@ export const FullStackBangaloreCourseData = [
         height: "40",
         width: "40",
         heading: "Designed For Professionals",
-        para: "Use tech innovation to drive career growth & acquire in-demand skills",
+        para: "Boost your career growth with hands-on software training",
       },
     ],
     testimonial: [
       {
         id: 1,
-        name: "Preksha Mishra",
-        working: "Working at HCL",
+        name: "Qudsia Tahniyath",
+
         proImg:
-          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/preksha-home.png",
+          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Alumni+Images/Qudsia.png",
+        // sDesc:
+        //   "Learnbay has helped me a lot to learn data science applications in the e-commerce industry...",
         sDesc:
-          "I had a great learning experience at Learnbay. The faculties here are top notch. Right from enrollment to getting a good job ...",
-        lDesc:
-          "I had a great learning experience at Learnbay. The faculties here are top notch. Right from enrollment to getting a good job, they keep putting enormous efforts for each and every candidate. Thanks to all the trainers, backend team, the HR team and to the directors for making this journey smooth.",
-        complogo:
-          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/HCL-logo.png",
-        statLogo: "140% Hike",
+          "Learnbay has helped me a lot to learn data science applications in the e-commerce industry. The live class concept was really helpful in receiving proper DS training. Thanks to all my mentors and the placement team.",
       },
       {
-        id: "tcs",
-        name: "Mohammad Israr",
-        working: "Working at TCS",
+        id: 2,
+        name: "Binit Kumar ",
+
         proImg:
-          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/asrar-home.png",
+          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Alumni+Images/binit.png",
+        // sDesc:
+        //   "Learnbay has helped me a lot to learn data science applications in the e-commerce industry...",
         sDesc:
-          "Thanks to the Learnbay data science course and outstanding assistance, I could ace the TCS interview and secure a job...",
-        lDesc:
-          "Thanks to the Learnbay data science course and outstanding assistance, I could ace the TCS interview and secure a job with a 400% pay hike. My understanding of the course was greatly improved by the real-time projects and respective IBM project experience certification.",
-        complogo:
-          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/TCS.png",
-        statLogo: "  210% Hike",
+          "Learnbay has helped me a lot to learn data science applications in the e-commerce industry. The live class concept was really helpful in receiving proper DS training. Thanks to all my mentors and the placement team.",
+      },
+      {
+        id: 3,
+        name: "Swarup Halder",
+
+        proImg:
+          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Alumni+Images/swarup.png",
+        // sDesc:
+        //   "I have enrolled in Software Development course. I had basic knowledge of DSA and since then it has been a wonderful learning experience...",
+        sDesc:
+          "I have enrolled in Software Development course. I had basic knowledge of DSA and since then it has been a wonderful learning experience. The teacher does an excellent job of explaining the concepts in a way that is easy to understand.",
       },
       {
         id: 4,
-        name: "Ritish Kumar",
-        working: "Working at Capgemini",
+        name: "Karanveer Bansal",
+
         proImg:
-          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/ritesh-home.png",
+          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Alumni+Images/karanveer.png",
+        // sDesc:
+        //   "I enrolled in Learnbay's full stack program. I already completed basic DSA and the live sessions were clear, with good teaching pace...",
         sDesc:
-          "I always had a dilemma about how to switch to the IT field until I stumbled upon the foundation data science course offered by Learnbay...",
-        lDesc:
-          "I always had a dilemma about how to switch to  IT field until I stumbled upon the foundation data science course offered by Learnbay. The perfect combination of flexibility, affordability, and supportiveness. They helped me get placed at Capgemini, and I’m delighted with my current career. All Thanks to Learnbay!",
-        complogo:
-          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Capgemni-logo.png",
-        statLogo: " 150% Hike",
+          "I enrolled in Learnbay's full stack program. I already completed basic DSA and the live sessions were clear, with good teaching pace. They offer an easy and simple EMI option for course fees.",
       },
       {
         id: 5,
-        name: "Sourabh Mourya",
-        working: "Working at HCL",
+        name: "Gowthaman Jeganathan",
+
         proImg:
-          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/saurabh-home.png",
+          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Alumni+Images/Gowthaman.png",
+        // sDesc:
+        //   "I'm currently enrolled in the Full Stack course and have completed the DSA and System Design modules...",
         sDesc:
-          "Flexible classes have helped me to manage my job  schedule. Learning Data Science directly from MNC experts provided the chance ...",
-        lDesc:
-          "Flexible classes have helped me to manage my job schedule. Learning Data Science directly from  experts provided the chance to learn industry-specific tricks and tips. I am grateful to the Learnbay team for providing an excellent  platform that enhanced my professional growth. Thank you very much! Learnbay.",
-        complogo:
-          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/HCL-logo.png",
-        statLogo: " 150% Hike",
+          "I'm currently enrolled in the Full Stack course and have completed the DSA and System Design modules. The trainers' teaching method has been enlightening for me as a beginner. Highly recommend Learnbay for upskilling.",
       },
       {
         id: 6,
-        name: "Abhishek Singh",
-        working: "Working at AGS",
+        name: "Abhishek Pakhide",
+
         proImg:
-          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/abhishek-home.png",
+          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Alumni+Images/Abhishek+Pakhide.png",
+        // sDesc:
+        //   "I recently finished Learnbay's Basic DSA Course online. The course is well-structured, taught by knowledgeable...",
         sDesc:
-          "I got placed at AGS within 9 months of joining Learnbay institute. Live interaction sessions are the best part here since ...",
-        lDesc:
-          "I got placed at AGS within 9 months of joining Learnbay institute. Live interaction sessions are  the best part here since we could clear all queries. The projects are excellent. Overall I had a great  experience and I urge everyone to enroll in this institute.",
-        complogo:
-          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/AGS-logo.png",
-        statLogo: "  132% Hike",
-      },
-      {
-        id: 7,
-        name: "Vishal",
-        working: "Working at Bridge i2i",
-        proImg:
-          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/vishal-home.png",
-        sDesc:
-          "One on One counseling from experts has guided me to  make the right decision. The Learnbay team was amazing in assisting me with ...",
-        lDesc:
-          "One on One counseling from experts has guided me to make the right decision. The Learnbay team was amazing in assisting me with live projects and preparing for the placements. Thank you! Learnbay for your tremendous support in excelling in my Data Science Career.",
-        complogo:
-          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Bridgei2i-logo.png",
-        statLogo: "  127% Hike",
-      },
-      {
-        id: "math",
-        name: "Aravind Kumar",
-        working: "SA - Data Scientist",
-        proImg:
-          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/aravind-home.png",
-        sDesc:
-          "Choosing Learnbay was my best decision ever. The instructors were encouraging and glad to answer questions. The best feature is that ...",
-        lDesc:
-          "Choosing Learnbay was my best decision ever. The instructors were encouraging and glad to answer questions. The best feature is that their flexible modules & small size batches. I was able to manage  my time and learn while working. Thanks to Learnbay for my lucrative placement.",
-        complogo:
-          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/themathcompany-logo.png",
-        statLogo: "142% Hike",
+          "I recently finished Learnbay's Basic DSA Course online. The course is well-structured, taught by knowledgeable trainers with a focus on interview preparation and data structure concepts. It benefits both novices and experts.",
       },
     ],
     faq: [
@@ -308,7 +276,7 @@ export const FullStackBangaloreCourseData = [
       },
 
       {
-        id: 4,
+        id: 5,
         sectionName: "Job Assistance",
         data: [
           {
@@ -334,8 +302,52 @@ export const FullStackBangaloreCourseData = [
       },
 
       {
-        id: 5,
-        sectionName: "Eligibility Criteria",
+        id: 6,
+        sectionName: "Mentorship",
+        data: [
+          {
+            id: 0,
+            ques: "Can a student change mentors based on specific interests after enrolment?",
+
+            ans: "Every batch at Learnbay has a specific mentor, but if a student is unhappy with the way their mentor teaches, they can bring it up with a dedicated contact point, who will address the problem by finding new mentors or by changing the batch.",
+            open: true,
+          },
+          {
+            id: 1,
+            ques: "Is there any option for 1-on-1 learning?",
+            ans: "Learnbay Provides students with 1-on-1 doubt-clearing sessions. If a person has a specific question and wants to understand certain crucial topics, he or she might certainly benefit from such a session.",
+            open: false,
+          },
+          {
+            id: 2,
+            ques: "How long do students get access to mentor support?",
+            ans: "Our Mentors will provide advanced software development training and career insights/guidance to the students until the completion of the course, depending on the specialization. Post-course- completion also students can reach out to specialized mentors for project and placement purposes.",
+            open: false,
+          },
+        ],
+      },
+      {
+        id: 7,
+        sectionName: "Support",
+        data: [
+          {
+            id: 0,
+            ques: "Does Learnbay provide webinars and hackathons in full-stack development courses in Bangalore?",
+
+            ans: "Learnbay offers a full-stack development course that includes webinars and hackathons. Students can enhance their knowledge further by enrolling in webinars and hackathons led by industry experts.",
+            open: true,
+          },
+          {
+            id: 1,
+            ques: "How long will I receive job referrals after completing a full-stack development course in Bangalore?",
+            ans: "In full-stack software development, you’ll be provided with job referrals after the completion of the course for a period of 1 year.",
+            open: false,
+          },
+        ],
+      },
+      {
+        id: 8,
+        sectionName: "Eligiblity Criteria",
         data: [
           {
             id: 0,
@@ -370,78 +382,31 @@ export const FullStackBangaloreCourseData = [
           },
         ],
       },
+      // {
+      //   id: 9,
+      //   sectionName: "Generic Queries",
+      //   data: [
+      //     {
+      //       id: 0,
+      //       ques: "What does a full-stack developer do?",
 
-      {
-        id: 6,
-        sectionName: "Mentorship",
-        data: [
-          {
-            id: 0,
-            ques: "Can a student change mentors based on specific interests after enrolment?",
-
-            ans: "Every batch at Learnbay has a specific mentor, but if a student is unhappy with the way their mentor teaches, they can bring it up with a dedicated contact point, who will address the problem by finding new mentors or by changing the batch.",
-            open: true,
-          },
-          {
-            id: 1,
-            ques: "Is there any option for 1-on-1 learning?",
-            ans: "Learnbay Provides students with 1-on-1 doubt-clearing sessions. If a person has a specific question and wants to understand certain crucial topics, he or she might certainly benefit from such a session.",
-            open: false,
-          },
-          {
-            id: 2,
-            ques: "How long do students get access to mentor support?",
-            ans: "Our Mentors will provide advanced software development training and career insights/guidance to the students until the completion of the course, depending on the specialization. Post-course- completion also students can reach out to specialized mentors for project and placement purposes.",
-            open: false,
-          },
-        ],
-      },
-
-      {
-        id: 7,
-        sectionName: "Generic Queries",
-        data: [
-          {
-            id: 0,
-            ques: "What does a full-stack developer do?",
-
-            ans: "The term Full-Stack developer refers to a person proficient in both the front-end and back-end of software development. They create and keep up-and-running fully-fledged systems with databases or servers.",
-            open: true,
-          },
-          {
-            id: 1,
-            ques: "What is the average full-stack software developer salary in Bangalore?",
-            ans: "The average package of full stack software developers ranges averagely around 6 LPA to 12 LPA depending on the company norms and interview aspects. Based on experience, it can reach up to 30 LPA while switching careers.",
-            open: false,
-          },
-          {
-            id: 2,
-            ques: "Is a full-stack developer a software engineer?",
-            ans: "The goal of Software engineers and full stack developers are quite the same. Both work with similar client project goals but via different sub-direction. Full stack developers are often in leadership roles. Software engineers, however, may be under the guidance of full-stack developers and can use their expertise to create specific features for projects.",
-            open: false,
-          },
-        ],
-      },
-
-      {
-        id: 7,
-        sectionName: "Support",
-        data: [
-          {
-            id: 0,
-            ques: "Does Learnbay provide webinars and hackathons in full-stack development courses in Bangalore?",
-
-            ans: "Learnbay offers a full-stack development course that includes webinars and hackathons. Students can enhance their knowledge further by enrolling in webinars and hackathons led by industry experts.",
-            open: true,
-          },
-          {
-            id: 1,
-            ques: "How long will I receive job referrals after completing a full-stack development course in Bangalore?",
-            ans: "In full-stack software development, you’ll be provided with job referrals after the completion of the course for a period of 1 year.",
-            open: false,
-          },
-        ],
-      },
+      //       ans: "The term Full-Stack developer refers to a person proficient in both the front-end and back-end of software development. They create and keep up-and-running fully-fledged systems with databases or servers.",
+      //       open: true,
+      //     },
+      //     {
+      //       id: 1,
+      //       ques: "What is the average full-stack software developer salary in Bangalore?",
+      //       ans: "The average package of full stack software developers ranges averagely around 6 LPA to 12 LPA depending on the company norms and interview aspects. Based on experience, it can reach up to 30 LPA while switching careers.",
+      //       open: false,
+      //     },
+      //     {
+      //       id: 2,
+      //       ques: "Is a full-stack developer a software engineer?",
+      //       ans: "The goal of Software engineers and full stack developers are quite the same. Both work with similar client project goals but via different sub-direction. Full stack developers are often in leadership roles. Software engineers, however, may be under the guidance of full-stack developers and can use their expertise to create specific features for projects.",
+      //       open: false,
+      //     },
+      //   ],
+      // },
     ],
 
     ProgramBot1:
