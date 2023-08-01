@@ -129,8 +129,8 @@ export default function Home() {
           dataScience={true}
           titleCourse="business analytics course training in canada"
           brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Business+Analytics+Certification+Program+Learnbay.pdf"
-          idss="Jn2puEQC8yk"
-          FirstRightImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/head/Businesss+Analytics.png"
+          idss="4j80WXLTvGE"
+          FirstRightImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/manager+header+image.webp"
           firstToparaImg="Training In Canada"
           firstHeading="Business Analytics Course"
           firstTopPara="Industrial Business Analytics Program for working professionals"

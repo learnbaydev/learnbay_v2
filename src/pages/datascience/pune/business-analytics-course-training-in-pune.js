@@ -120,9 +120,9 @@ export default function Home() {
           brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Business+Analytics+Certification+Program+Learnbay.pdf"
           idss="4j80WXLTvGE"
           FirstRightImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/manager+header+image.webp"
-          firstToparaImg="Training In Bangalore"
+          firstToparaImg="Training In Pune"
           firstHeading="Business Analytics Course"
-          firstTopPara="Job-ready Business Analytics Program with Live Industrial Projects"
+          firstTopPara="IBM-Certified Business Analytics training Program with Live Industrial Projects"
           cityParaCont="The best-suited course for working professionals with less than a year of work experience and dreaming for a lucrative and even growing future."
         />
         <SecondSection SecondSectionData={BAPuneCourseData[0].secondSection} />
@@ -192,7 +192,9 @@ export default function Home() {
               Domainlink8={BAPuneCourseData[0].Domainlink8}
               Domainlink9={BAPuneCourseData[0].Domainlink9}
               Domainlink10={BAPuneCourseData[0].Domainlink10}
-              CertificationBot1={BAPuneCourseData[0].CertificationBot1}
+              // CertificationBot1={BAPuneCourseData[0].CertificationBot1}
+              // certificate1={true}
+
               src={BAPuneCourseData[0].src}
               src22={BAPuneCourseData[0].src22}
               src33={BAPuneCourseData[0].src33}

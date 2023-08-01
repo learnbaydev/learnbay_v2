@@ -23,7 +23,7 @@ const CitiesLeft = dynamic(() =>
   import("../../../../components/SEO/CitiesLeft/CitiesLeft")
 );
 const CitiesRight = dynamic(() =>
-  import("../../../../components/SEO/CitiesRight/CitiesRight")
+  import("../../../../components/SEO/CitiesRight/CitiesRightdomain")
 );
 import { BusinessAnalyticsHyderabadCourseData } from "../../../../CityData/Hyderabad/businessAnalyticsCourseTrainingInHyderabad";
 const FAQNew = dynamic(() =>
@@ -117,10 +117,11 @@ export default function Home() {
           dataScienceCounselling={true}
           titleCourse="Business Analytics Course Training In Hyderabad"
           brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Business+Analytics+Certification+Program+Learnbay.pdf"
-          FirstRightImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/head/Businesss+Analytics.png"
+          FirstRightImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/manager+header+image.webp"
           firstHeading="Business Analytics Course Training In Hyderabad"
-          firstTopPara="Professional Business Analytics Program"
-          idss="bfl64ANfSV0"
+          firstToparaImg="For Non-tech Professionals"
+          firstTopPara="IBM Certified Business Analytics Course for Early Professionals"
+          idss="4j80WXLTvGE"
         />
         <SecondSection
           SecondSectionData={
@@ -161,8 +162,8 @@ export default function Home() {
                 BusinessAnalyticsHyderabadCourseData[0].ProgramHead3
               }
               ProgramBot3={BusinessAnalyticsHyderabadCourseData[0].ProgramBot3}
-              ProgramBot31={
-                BusinessAnalyticsHyderabadCourseData[0].ProgramBot31
+              ProgramBot66={
+                BusinessAnalyticsHyderabadCourseData[0].ProgramBot66
               }
               ProgramBot32={
                 BusinessAnalyticsHyderabadCourseData[0].ProgramBot32
@@ -222,9 +223,13 @@ export default function Home() {
                 BusinessAnalyticsHyderabadCourseData[0].CertificationBot2
               }
               src={BusinessAnalyticsHyderabadCourseData[0].src}
+              src22={BusinessAnalyticsHyderabadCourseData[0].src22}
+              src33={BusinessAnalyticsHyderabadCourseData[0].src33}
               ModuleHead1={BusinessAnalyticsHyderabadCourseData[0].ModuleHead1}
-              ModuleHead2={BusinessAnalyticsHyderabadCourseData[0].ModuleHead2}
+              ModuleBot1={BusinessAnalyticsHyderabadCourseData[0].ModuleBot1}
+              ModuleBot2={BusinessAnalyticsHyderabadCourseData[0].ModuleBot2}
               ModuleBot3={BusinessAnalyticsHyderabadCourseData[0].ModuleBot3}
+          
               ModuleHead3={BusinessAnalyticsHyderabadCourseData[0].ModuleHead3}
               ModuleBot4={BusinessAnalyticsHyderabadCourseData[0].ModuleBot4}
               syllabush1={BusinessAnalyticsHyderabadCourseData[0].syllabush1}
@@ -316,8 +321,8 @@ export default function Home() {
               JobBot3={BusinessAnalyticsHyderabadCourseData[0].JobBot3}
               JobBot4={BusinessAnalyticsHyderabadCourseData[0].JobBot4}
               JobBot6={BusinessAnalyticsHyderabadCourseData[0].JobBot6}
-              ProjectsBot1={BusinessAnalyticsHyderabadCourseData[0].ProgramBot1}
-              ProjectsBot2={BusinessAnalyticsHyderabadCourseData[0].ProgramBot2}
+              ProjectsBot1={BusinessAnalyticsHyderabadCourseData[0].ProjectsBot1}
+              ProjectsBot2={BusinessAnalyticsHyderabadCourseData[0].ProjectsBot2}
               src1={BusinessAnalyticsHyderabadCourseData[0].src1}
               ProjectsH1={BusinessAnalyticsHyderabadCourseData[0].ProjectsH1}
               Projectsp1={BusinessAnalyticsHyderabadCourseData[0].Projectsp1}

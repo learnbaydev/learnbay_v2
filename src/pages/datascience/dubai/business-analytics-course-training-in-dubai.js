@@ -120,9 +120,9 @@ export default function Home() {
           brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Business+Analytics+Certification+Program+Learnbay.pdf"
           idss="4j80WXLTvGE"
           FirstRightImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/manager+header+image.webp"
-          firstToparaImg="Training In Bangalore"
-          firstHeading="Business Analytics Course"
-          firstTopPara="Job-ready Business Analytics Program with Live Industrial Projects"
+          firstToparaImg="For Non-tech Professionals"
+          firstHeading="Business Analytics Course Training in Dubai"
+          firstTopPara="Industrial program for working professionals"
           cityParaCont="The best-suited course for working professionals with less than a year of work experience and dreaming for a lucrative and even growing future."
         />
         <SecondSection SecondSectionData={BADubaiCourseData[0].secondSection} />
@@ -151,10 +151,12 @@ export default function Home() {
           </div>
           <div className="CitiesRight">
             <CitiesRight
+              ProgramHead1={BADubaiCourseData[0].ProgramHead1}
               ProgramBot1={BADubaiCourseData[0].ProgramBot1}
               ProgramHead3={BADubaiCourseData[0].ProgramHead3}
               ProgramBot3={BADubaiCourseData[0].ProgramBot3}
               ProgramBot31={BADubaiCourseData[0].ProgramBot31}
+              ProgramBot32={BADubaiCourseData[0].ProgramBot32}
               ProgramBot4={BADubaiCourseData[0].ProgramBot4}
               ProgramBot5={BADubaiCourseData[0].ProgramBot5}
               ProgramBot6={BADubaiCourseData[0].ProgramBot6}
@@ -193,11 +195,15 @@ export default function Home() {
               Domainlink9={BADubaiCourseData[0].Domainlink9}
               Domainlink10={BADubaiCourseData[0].Domainlink10}
               CertificationBot1={BADubaiCourseData[0].CertificationBot1}
+              CertificationBot2={BADubaiCourseData[0].CertificationBot2}
               src={BADubaiCourseData[0].src}
               src22={BADubaiCourseData[0].src22}
               src33={BADubaiCourseData[0].src33}
               ModuleBot1={BADubaiCourseData[0].ModuleBot1}
               ModuleBot2={BADubaiCourseData[0].ModuleBot2}
+              ModuleBot3={BADubaiCourseData[0].ModuleBot3}
+              ModuleHead3={BADubaiCourseData[0].ModuleHead3}
+              ModuleBot4={BADubaiCourseData[0].ModuleBot4}
               syllabush1={BADubaiCourseData[0].syllabush1}
               syllabusb1={BADubaiCourseData[0].syllabusb1}
               SyllabusBotlist11={BADubaiCourseData[0].SyllabusBotlist11}
@@ -231,11 +237,15 @@ export default function Home() {
               SyllabusBotlist45={BADubaiCourseData[0].SyllabusBotlist45}
               SyllabusBotlist46={BADubaiCourseData[0].SyllabusBotlist46}
               syllabussrc={BADubaiCourseData[0].syllabussrc}
+              JobHead1={BADubaiCourseData[0].JobHead1}
               JobBot1={BADubaiCourseData[0].JobBot1}
               JobHead2={BADubaiCourseData[0].JobHead2}
               JobBot3={BADubaiCourseData[0].JobBot3}
               JobBot4={BADubaiCourseData[0].JobBot4}
-              ProjectsBot1={BADubaiCourseData[0].ProgramBot1}
+              JobBot5={BADubaiCourseData[0].JobBot5}
+              ProjectsBot1={BADubaiCourseData[0].ProjectsBot1}
+              ProjectsBot2={BADubaiCourseData[0].ProjectsBot2}
+
               src1={BADubaiCourseData[0].src1}
               ProjectsH1={BADubaiCourseData[0].ProjectsH1}
               Projectsp1={BADubaiCourseData[0].Projectsp1}
