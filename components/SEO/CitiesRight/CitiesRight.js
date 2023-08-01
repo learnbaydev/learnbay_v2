@@ -49,6 +49,9 @@ const CitiesRight = ({
   ProgramBot3,
   ProgramBot31,
   ProgramBot32,
+  ProgramBot66,
+  ProgramBot67,
+  ProgramBot32,
   ProgramBot4,
   ProgramBot5,
   ProgramBot51,
@@ -276,6 +279,7 @@ const CitiesRight = ({
   ProgramBot40,
   ProgramBot41,
   certificate2,
+  certificate1,
 }) => {
   const [read, setRead] = useState(false);
   const handler = () => {
@@ -1169,7 +1173,7 @@ const CitiesRight = ({
               ₹10,00,000 per annum. Wondering which is the{" "}
               <b>best Data Training Institute in Hyderabad</b>? Well, look no
               further. Learnbay’s customized and domain-specialized courses give
-              you an edge over the others. <br />, <br />, Choose{" "}
+              you an edge over the others. <br /> <br /> Choose{" "}
               <a
                 href="https://www.learnbay.co/data-science-course-training-in-hyderabad"
                 target="_blank"
@@ -3024,6 +3028,8 @@ const CitiesRight = ({
             <h2 className={styles.pHead}>{ProgramHead3}</h2>
             <p className={styles.pp}>{ProgramBot3}</p>
             <p className={styles.pp}>{ProgramBot31}</p>
+            <p className={styles.pp}>{ProgramBot66}</p>
+            <p className={styles.pp}>{ProgramBot67}</p>
             <p className={styles.pp}>
               <i>{ProgramBotItaliic31}</i>
             </p>
@@ -3292,17 +3298,25 @@ const CitiesRight = ({
               <h2 className={styles.pHead}>{CertificationHead3}</h2>
               <p className={styles.pp}>{CertificationBot7}</p>
               <div className={styles.certNew}>
-                {certificate2 ? (<>
+                {certificate1 ? (
                   <img src={src} alt={alt1}></img>
-                <img src={src22} alt={alt1}></img></>) : (
+                ) : (
                   <>
-                <img src={src} alt={alt1}></img>
-                <img src={src22} alt={alt1}></img>
-                <img src={src33} alt={alt1}></img>
-                </>
+                    {certificate2 ? (
+                      <>
+                        <img src={src} alt={alt1}></img>
+                        <img src={src22} alt={alt1}></img>
+                      </>
+                    ) : (
+                      <>
+                        <img src={src} alt={alt1}></img>
+                        <img src={src22} alt={alt1}></img>
+                        <img src={src33} alt={alt1}></img>
+                      </>
+                    )}
+                  </>
                 )}
               </div>
-            </div>
           </div>
         </>
       )}
