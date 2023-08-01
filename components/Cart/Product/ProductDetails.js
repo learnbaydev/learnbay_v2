@@ -15,17 +15,19 @@ export const courseDetails = [
             courseTime: "5-7 months",
             tag: "Data science",
             tagHead: "For Non-Tech Professionals",
-            brochureLinks:
-              "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Data+Science+Foundation+Program+Learnbay.pdf",
             titleCourse: "Data Science Foundation Program",
             para: [
               "200+ hours content",
               "4 Foundation",
               "Course Fee : ₹ 79,000 | No cost EMI",
             ],
-            link1: "/data-science-certification-courses",
-            link2:
-              "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Data+Science+Foundation+Program+Learnbay.pdf",
+            product: {
+              id: 1234,
+              name: "Data Science Foundation Program",
+              price: 79000.0,
+              img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/Course-home/Foundation.png",
+              currency: "INR",
+            },
           },
           {
             id: 2,
@@ -35,17 +37,19 @@ export const courseDetails = [
             title1: "& AI Program",
             tag: "Data science",
             tagHead: "Become A Domain Specialist",
-            brochureLinks:
-              "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Advance+Data+Science+and+AI+Certification+Program+Learnbay.pdf",
             titleCourse: "Advanced Data Science & AI Program",
             para: [
               "250+ hours content",
               "8 Advance + 2 Capstone",
               "Course Fee : ₹ 99,000 | No cost EMI",
             ],
-            link1: "/advance-data-science-certification-courses",
-            link2:
-              "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Advance+Data+Science+and+AI+Certification+Program+Learnbay.pdf",
+            product: {
+              id: 1235,
+              name: "Advanced Data Science & AI Program",
+              price: 99000.0,
+              img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/Course-home/Adv.+DSAI.png",
+              currency: "INR",
+            },
           },
           {
             id: 3,
@@ -55,17 +59,20 @@ export const courseDetails = [
             title1: "for Tech Professionals",
             tagHead: "For Working Professional",
             tag: "Data science",
-            brochureLinks:
-              "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Advance+AI+%26+ML+Certification+Program+Learnbay.pdf",
+
             titleCourse: "Advance AI & ML Program for Tech Professionals",
             para: [
               "350+ hours content",
               "10 Advance + 2 Capstone",
               "Course Fee : ₹ 1,10,000 | No cost EMI",
             ],
-            link1: "/artificial-intelligence-certification-course",
-            link2:
-              "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Advance+AI+%26+ML+Certification+Program+Learnbay.pdf",
+            product: {
+              id: 1236,
+              name: "Advance AI & ML Program",
+              price: 110000.0,
+              img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/Course-home/AIML.png",
+              currency: "INR",
+            },
           },
           {
             id: 4,
@@ -75,17 +82,20 @@ export const courseDetails = [
             courseTime: "11-13 months",
             tag: "Data science",
             tagHead: "For Sr. Managers/Team Lead",
-            brochureLinks:
-              "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Data+Science+%26+AI+Certification+Program+For+Managers+%26+Leaders+Learnbay.pdf",
+
             titleCourse: "Data Science & AI For Managers",
             para: [
               "400+ hours content",
               "10 Advance + 3 Capstone",
               "Course Fee : ₹ 1,10,000 | No cost EMI",
             ],
-            link1: "/data-science-ai-for-managers",
-            link2:
-              "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Data+Science+%26+AI+Certification+Program+For+Managers+%26+Leaders+Learnbay.pdf",
+            product: {
+              id: 1237,
+              name: "Data Science & AI For Managers",
+              price: 110000.0,
+              img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/Course-home/Managers.png",
+              currency: "INR",
+            },
           },
           {
             id: 5,
@@ -95,17 +105,20 @@ export const courseDetails = [
             courseTime: "13-15 months",
             tag: "Data science",
             tagHead: "Guaranteed Interview Call",
-            brochureLinks:
-              "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Data+Science+and+AI+Master's+Program+%5BWith+Unlimited+Interview+Calls%5D.pdf",
+
             titleCourse: "Data Science & AI Master Program",
             para: [
               "500+ hours content",
               "12 Advance + 4 Capstone",
               "Course Fee : ₹ 1,29,000 | No cost EMI",
             ],
-            link1: "/data-science-ai-masters-program",
-            link2:
-              "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Data+Science+and+AI+Master's+Program+%5BWith+Unlimited+Interview+Calls%5D.pdf",
+            product: {
+              id: 1237,
+              name: "Data Science & AI Master Program",
+              price: 129000.0,
+              img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/Course-home/DSAI+Master+(1).png",
+              currency: "INR",
+            },
           },
           {
             id: 6,
@@ -115,17 +128,20 @@ export const courseDetails = [
             courseTime: "7-9 months",
             tag: "Data science",
             tagHead: "Dedicated Mentorship",
-            brochureLinks:
-              "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Business+Analytics+Certification+Program+Learnbay.pdf",
+
             titleCourse: "Business Analytics Master Program",
             para: [
               "250+ hours content",
               "12 Advance + 4 Capstone",
               "Course Fee : ₹ 1,10,000 | No cost EMI",
             ],
-            link1: "1,10usiness-analytics-certification-course",
-            link2:
-              "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Business+Analytics+Certification+Program+Learnbay.pdf",
+            product: {
+              id: 1238,
+              name: "Business Analytics Master Program",
+              price: 110000.0,
+              img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/Course-home/BA.png",
+              currency: "INR",
+            },
           },
           {
             id: 7,
@@ -135,17 +151,20 @@ export const courseDetails = [
             title1: "Program",
             tag: "Data science",
             tagHead: "Work on Real-time Projects",
-            brochureLinks:
-              "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Data+Analytics+Certification+Program+Learnbay.pdf",
+
             titleCourse: "Data Analytics Program",
             para: [
               "180+ hours content",
               "8 Advance + 2 Capstopne",
               "Course Fee : ₹ 79,000 | No cost EMI",
             ],
-            link1: "/data-analytics-certification-course",
-            link2:
-              "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Data+Analytics+Certification+Program+Learnbay.pdf",
+            product: {
+              id: 1239,
+              name: "Data Analytics Program",
+              price: 79000.0,
+              img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/Course-home/DA.png",
+              currency: "INR",
+            },
           },
           {
             id: 8,
@@ -155,17 +174,20 @@ export const courseDetails = [
             courseTime: "7-9 months",
             tag: "Data science",
             tagHead: "For BFSI Professionals",
-            brochureLinks:
-              "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Data+Science+%26+AI+for+BFSI+Professionals.pdf",
+
             titleCourse: "Data Science and AI Program for BFSI Professionals",
             para: [
               "250+ hours content",
               "10 Advance + 2 Capstone",
               "Course Fee : ₹ 89,000 | No cost EMI",
             ],
-            link1: "/banking-finance-analytics",
-            link2:
-              "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Data+Analytics+Certification+Program+Learnbay.pdf",
+            product: {
+              id: 1240,
+              name: "Data Science and AI Program for BFSI Professionals",
+              price: 89000.0,
+              img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/Course-home/BFSI+(1).png",
+              currency: "INR",
+            },
           },
           {
             id: 9,
@@ -175,17 +197,20 @@ export const courseDetails = [
             title1: "Program",
             tag: "Data science",
             tagHead: "Leadership Role In HR Domain",
-            brochureLinks:
-              "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/HR+Analytics+Certification+Program.pdf",
+
             titleCourse: "HR Analytics Program",
             para: [
               "200+ hours content",
               "10 Advance + 2 Capstone",
               "Course Fee : ₹ 89,000 | No cost EMI",
             ],
-            link1: "/hr-analytics",
-            link2:
-              "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Data+Analytics+Certification+Program+Learnbay.pdf",
+            product: {
+              id: 1241,
+              name: "HR Analytics Program",
+              price: 89000.0,
+              img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/Course-home/HR.png",
+              currency: "INR",
+            },
           },
           {
             id: 10,
@@ -195,17 +220,20 @@ export const courseDetails = [
             title1: "Program",
             tag: "Data science",
             tagHead: "Excel data-driven marketing",
-            brochureLinks:
-              "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Marketing+Analytics+Certification+Program.pdf",
+
             titleCourse: "Marketing Analytics Program",
             para: [
               "200+ hours content",
               "10 Advance + 2 Capstone",
               "Course Fee : ₹ 89,000 | No cost EMI",
             ],
-            link1: "/marketing-analytics",
-            link2:
-              "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Data+Analytics+Certification+Program+Learnbay.pdf",
+            product: {
+              id: 1242,
+              name: "Marketing Analytics Program",
+              price: 89000.0,
+              img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/Course-home/Marketing.png",
+              currency: "INR",
+            },
           },
         ],
       },

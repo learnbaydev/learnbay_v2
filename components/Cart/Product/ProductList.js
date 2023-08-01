@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import styles from "./ProductList.module.css";
 import { BiTimeFive } from "react-icons/bi";
 import { AiOutlineFundProjectionScreen } from "react-icons/ai";
+import { IoIosCloseCircleOutline } from "react-icons/io";
 import { BsCartFill } from "react-icons/bs";
 import Image from "next/image";
 import { TbCurrencyRupee } from "react-icons/tb";
@@ -10,13 +11,17 @@ import { Pagination } from "swiper";
 import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
-
+import { useRouter } from "next/router";
+import { useDispatch } from "react-redux";
+import { addToCart } from "../../../redux/cart.slice";
 import { courseDetails } from "./ProductDetails";
 
 const Course = () => {
+  const dispatch = useDispatch();
+  const router = useRouter();
   const [mobile, setMobile] = useState(false);
   const [value, setValue] = useState(3.2);
-
+  const [showProduct, setShowProduct] = useState(false);
   const [CourseLoop, setCourseLoop] = useState([
     { title: "Data Science & AI", value: true },
     { title: "Software Development", value: false },
@@ -114,8 +119,6 @@ const Course = () => {
                               img,
                               para,
                               link1,
-                              titleCourse,
-                              brochureLinks,
                               courseTime,
                             } = viewAllData;
                             return (
@@ -165,10 +168,30 @@ const Course = () => {
                                     </div>
                                   </div>
                                   <div className={styles.btnWrapper}>
-                                    <button>
+                                    <button
+                                      onClick={() => {
+                                        dispatch(
+                                          addToCart(viewAllData.product)
+                                        );
+                                        router.push("/cart");
+                                      }}
+                                    >
                                       Add To Cart <BsCartFill />
                                     </button>
                                   </div>
+                                  {/* {showProduct ? (
+                                    <div className="cardWrap">
+                                      <div className="cardPop">
+                                        <IoIosCloseCircleOutline
+                                          className={styles.crossProduct}
+                                          onClick={() => setShowProduct(false)}
+                                        />
+                                        <ProductPopup data={viewAllData} />
+                                      </div>
+                                    </div>
+                                  ) : (
+                                    ""
+                                  )} */}
                                 </div>
                               </SwiperSlide>
                             );

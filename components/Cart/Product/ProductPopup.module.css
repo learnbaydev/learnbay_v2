@@ -1,0 +1,101 @@
+/*card styles*/
+
+.card {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+}
+.pInfo {
+  display: flex;
+  flex-basis: 90%;
+  padding: 0px 30px;
+  flex-flow: column;
+}
+.productInfo {
+  border-bottom: 1px dotted #646464;
+}
+.ProductInfoHead {
+  font-size: 16px;
+  color: black;
+  font-weight: 600;
+  margin: 5px 0px;
+}
+.crossProduct {
+  position: absolute;
+  left: 96%;
+  top: 3%;
+  color: #646464;
+  z-index: 1;
+  cursor: pointer;
+}
+.priceSection {
+  display: flex;
+}
+.cartIcon {
+  margin-top: -2px;
+  font-size: 22px;
+  color: white;
+}
+.card:hover,
+.card:focus,
+.card:active {
+  color: #0070f3;
+  border-color: #0070f3;
+}
+
+.card h3 {
+  margin: 0;
+  font-size: 22px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.blHeading {
+  font-size: 14px;
+  margin: 0;
+  color: #686868;
+}
+.headingDiv {
+  border-bottom: 1px dotted #686868;
+}
+.card h3 span {
+  font-size: 12px;
+  padding: 5px 10px;
+  background-color: #f28705;
+  color: white;
+  border-radius: 4px;
+}
+.priceSection {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card button {
+  background-color: #0487d9;
+  color: white;
+  border: 0;
+  padding: 10px 15px;
+  height: 50px;
+  font-weight: 100 !important;
+
+  cursor: pointer;
+  outline: none;
+  border-radius: 10px;
+}
+.ProductPrice {
+  font-size: 24px;
+  font-weight: 600;
+  color: black;
+}
+
+.card button:hover {
+  background-color: #f28705;
+  color: white;
+  -webkit-box-shadow: 0px 6px 9px -1px rgba(100, 100, 100, 1);
+  -moz-box-shadow: 0px 6px 9px -1px rgba(100, 100, 100, 1);
+  box-shadow: 0px 6px 9px -1px rgba(100, 100, 100, 1);
+
+  transition: background-color 0.5s ease;
+}

@@ -166,6 +166,33 @@ a {
   margin-bottom: 20px;
 }
 //icon css end home page
+
+//product popup css add to cart
+.cardWrap {
+  transition: all 0.3s ease-in-out;
+  animation: 2s infinite ease;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.748);
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  overflow: hidden;
+}
+.cardPop {
+  background-color: white;
+  border-radius: 10px;
+  width: 50%;
+  position: relative;
+  padding: 0px;
+}
+//product popup css add to cart end
+
 @media (max-width: 1281px) {
   .wrapper {
     padding: 40px 80px;
