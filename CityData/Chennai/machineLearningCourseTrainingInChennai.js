@@ -849,36 +849,21 @@ export const MachineLearningChennaiCourseData = [
       "This IBM machine learning course is customized as per the candidates’ chosen domain by our experts.",
     DomainBot3:
       "The following are the domain electives available in our  machine learning course in Chennai:",
-    DomainList1: "HR, Sales, and Marketing",
-    DomainList2: "Energy, oil, and Gas",
-    DomainList3: "Mechanical, manufacturing, and telecom",
-    DomainList4: "Pharmaceutical and clinical research",
-    DomainList5: "Media, hospitality, and transportation",
-    DomainList6: "Testing and Development Domain",
-    DomainList7: "DeOps and Cloud",
-    DomainList8: "IoT, automotive, and embedded systems",
-    DomainList9: "Supply chain and e-commerce",
-    DomainList10: "Banking, Finance, and Marketing Domain",
+    DomainList1: "• BFSI",
+    DomainList2: "• Manufacturing",
+    DomainList3: "• Energy, Oil and Gas",
+    DomainList4: "• Healthcare",
+    DomainList5: "• Supply Chain, E-Commerce & Retail",
     Domainlink1:
-      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Sales%2C+Marketing+and+HR+Domain.pdf",
+      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Banking%2C+Finance+and+Insurance+Domain.pdf",
     Domainlink2:
-      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Energy%2C+Oil+and+Gas+Domain.pdf",
-    Domainlink3:
       "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Manufacturing%2C+Mechanical+and+Telecom+Domain.pdf",
+    Domainlink3:
+      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Energy%2C+Oil+and+Gas+Domain.pdf",
     Domainlink4:
       "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Healthcare%2C+Pharma+and+Clinical+Research+Domain.pdf",
     Domainlink5:
-      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Media%2C+Hospitality+and+Transportation+Domain.pdf",
-    Domainlink6:
-      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Development+and+Testing+Domain.pdf",
-    Domainlink7:
-      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Cloud+and+Devops+Domain.pdf",
-    Domainlink8:
-      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Automotive%2C+IOT+and+Embedded+Domain.pdf",
-    Domainlink9:
       "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Retail%2C+Ecommerce+and+Supply+chain+Domain.pdf",
-    Domainlink10:
-      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Banking%2C+Finance+and+Insurance+Domain.pdf",
     CertificationHead1:
       "How many Certificates does the machine learning course in Chennai provide?",
     CertificationBot1:

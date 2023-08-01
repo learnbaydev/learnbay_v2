@@ -3358,9 +3358,7 @@ const CitiesRight = ({
                         <img src={src22} alt={alt1}></img>
                         <img src={src33} alt={alt1}></img>
                       </>
-                    )}
-                  </>
-                )}
+                    )}              
               </div>
             </div>
           </div>

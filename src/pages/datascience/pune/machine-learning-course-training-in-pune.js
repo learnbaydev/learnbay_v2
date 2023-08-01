@@ -46,9 +46,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-     
-       
-      <title>Machine Learning Certification Course in Pune - Learnbay</title>
+        <title>Machine Learning Certification Course in Pune - Learnbay</title>
         <meta name="robots" content="index, follow" />
         <meta
           name="description"
@@ -62,17 +60,14 @@ export default function Home() {
           rel="canonical"
           href="https://www.learnbay.co/machine-learning-course-training-in-pune"
         />
-
         <meta
           name="copyright"
           content="Learnbay: Machine Learning Courses Certification Training India"
         />
-      
         <link
           rel="icon"
           href="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/Learnbay-Favicon-L.png"
         />
-
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -120,13 +115,13 @@ export default function Home() {
           FirstTyped="Guaranteed Interview Calls"
           SecondTyped="Capstone Project Certificate"
           ThirdTyped="Live Interactive Classes"
-          dataScience={true}  
+          dataScience={true}
           titleCourse="Machine Learning Course Training In Pune"
           brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Advance+AI+%26+ML+Certification+Program+Learnbay.pdf"
           idss="Jn2puEQC8yk"
           FirstRightImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/head/ML.png"
-         
-          firstHeading="Machine Learning Course Training In Pune"
+          firstHeading="Machine Learning Course "
+          firstToparaImg="Training In Pune"
           firstTopPara="Industry-Curated & IBM Certified Professionals ML Training"
           cityParaCont=" Be eligible to work as an AI/ML expert in MNC/PRODUCT Based Companies. Earn the most advanced industrial machine learning skill via fast-paced industry capstones. Be pros of NLP and computer vision."
         />
@@ -156,7 +151,6 @@ export default function Home() {
           </div>
           <div className="CitiesRight">
             <CitiesRight
-            
               ProgramHead1={MLPuneCourseData[0].ProgramHead1}
               ProgramBot1={MLPuneCourseData[0].ProgramBot1}
               ProgramHead3={MLPuneCourseData[0].ProgramHead3}
@@ -249,9 +243,7 @@ export default function Home() {
               JobHead2={MLPuneCourseData[0].JobHead2}
               JobBot3={MLPuneCourseData[0].JobBot3}
               ProjectsBot1={MLPuneCourseData[0].ProjectsBot1}
-              ProjectsBot2= {MLPuneCourseData[0].ProjectsBot2}
-  
-        
+              ProjectsBot2={MLPuneCourseData[0].ProjectsBot2}
               src1={MLPuneCourseData[0].src1}
               ProjectsH1={MLPuneCourseData[0].ProjectsH1}
               Projectsp1={MLPuneCourseData[0].Projectsp1}
@@ -277,7 +269,6 @@ export default function Home() {
               Asrc4={MLPuneCourseData[0].Asrc4}
               AlumniH4={MLPuneCourseData[0].AlumniH4}
               Alumnip4={MLPuneCourseData[0].Alumnip4}
-          
             />
             <div className={styles.faqCity}>
               <FAQNew FAQNewData={MLPuneCourseData[0].faq} />
