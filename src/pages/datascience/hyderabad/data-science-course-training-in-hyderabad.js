@@ -154,12 +154,12 @@ export default function Home() {
           ThirdTyped="Live Interactive Classes"
           cityParaCont="Enhance your Data Science career with our comprehensive Data Science course in Hyderabad with IBM Certification. Our advanced Data Science training in Hyderabad will help you to make experts in Python, Power BI, etc. You will get training from industry leaders and masters to gain the most in-demand data science and AI skills."
           dataScience={true}
-          titleCourse="Data Science Course in Hyderabad"
+          titleCourse="Advanced Data Science and AI Program with domain specialization"
           brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Advance+Data+Science+and+AI+Certification+Program+Learnbay.pdf"
-          FirstRightImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/head/ADSAI.png"
+          idss="bfl64ANfSV0"
+          FirstRightImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/advance+DS+header+image.webp"
           firstHeading="Data Science Course in Hyderabad"
           firstTopPara="Foundational and Advance Job-ready Program"
-          idss="bfl64ANfSV0"
         />
         <SecondSection
           SecondSectionData={DataScienceHyderabadCourseData[0].secondSection}
@@ -171,17 +171,18 @@ export default function Home() {
           para="Discover the impact of our programs on career growth"
         />
         <div className={styles.cityFee}>
-          <FeeSection
-            AIMLCertificate={true}
-            Fee="₹99,000 + 18% GST"
-            FeeEmi="₹ 9,735/month"
-            FeeHeading="Program Fee & Financing"
-            FeeContent2="No cost EMI"
-            FeeContent3="Flexible payment"
-            FeeContent4="Easy loan procedure"
-            FeeContent5="15 days refund policy"
-            dataScienceCounselling={true}
-          />
+        <FeeSection
+          Fee="₹ 99,000 + 18% GST"
+          FeeEmi="₹ 9,735/month"
+          FeeHeading="Program Fee & Financing"
+          FeeContent1="0% interest rate"
+          FeeContent2="No cost EMI"
+          FeeContent3="Flexible payment"
+          FeeContent4="Easy loan procedure"
+          FeeContent5="15 days refund policy"
+          FeeContent6="No additional cost"
+          dataScienceCounselling={true}
+        />
         </div>
         <div className="MainCities">
           <div className="CitiesLeft">
@@ -221,6 +222,8 @@ export default function Home() {
                 DataScienceHyderabadCourseData[0].CertificationBot2
               }
               src={DataScienceHyderabadCourseData[0].src}
+              src22={DataScienceHyderabadCourseData[0].src22}
+              src33={DataScienceHyderabadCourseData[0].src33}
               ModuleHead1={DataScienceHyderabadCourseData[0].ModuleHead1}
               ModuleBot1={DataScienceHyderabadCourseData[0].ModuleBot1}
               ModuleBot2={DataScienceHyderabadCourseData[0].ModuleBot2}
@@ -313,8 +316,9 @@ export default function Home() {
               JobBot3={DataScienceHyderabadCourseData[0].JobBot3}
               JobBot4={DataScienceHyderabadCourseData[0].JobBot4}
               JobBot6={DataScienceHyderabadCourseData[0].JobBot6}
-              ProjectsBot1={DataScienceHyderabadCourseData[0].ProgramBot1}
-              ProjectsBot2={DataScienceHyderabadCourseData[0].ProgramBot2}
+              ProjectsHead1={DataScienceHyderabadCourseData[0].ProjectsHead1}
+              ProjectsBot1={DataScienceHyderabadCourseData[0].ProjectsBot1}
+              ProjectsBot2={DataScienceHyderabadCourseData[0].ProjectsBot2}
               src1={DataScienceHyderabadCourseData[0].src1}
               ProjectsH1={DataScienceHyderabadCourseData[0].ProjectsH1}
               Projectsp1={DataScienceHyderabadCourseData[0].Projectsp1}

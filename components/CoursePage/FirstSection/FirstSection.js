@@ -132,7 +132,7 @@ function FirstSection({
           <div onClick={popupShow}>
             <Button
               text="Brochure"
-              passIcon={<FaDownload style={{ marginLeft: "10px" }} />}
+              passIcon={<FaDownload style={{ marginLeft: "10px", fontSize: "22px" }} />}
             />
           </div>
           {softwareBtnHide ? (

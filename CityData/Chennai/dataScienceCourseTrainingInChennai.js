@@ -739,15 +739,15 @@ export const DataScienceChennaiCourseData = [
         data: [
           {
             id: 0,
-            ques: "When is the job assistance provided at Learnbay and how long will I get it?",
-
-            ans: "Job assistance is provided after the completion of the course. It includes build-up sessions, mock interviews, and referrals from top MNC’s/startups. This assistance is provided unless one gets placed in a company. ",
+            ques: "Until when do the students get the facility of mentorship?",
+        
+            ans: "Our mentors will provide data science training to the students until the completion of the course. ",
             open: true,
           },
           {
             id: 1,
-            ques: "How long will I get Job referrals?",
-            ans: "You’ll be provided with job assistance after the completion of the course for a period of 1 year.",
+            ques: "Can a Learnbay student in Chennai choose to study from their desired mentor?",
+            ans: "Every batch has its respective mentor, but if a student is not satisfied with its mentor’s teaching method, they can raise the issue to management and resolve the issues by replacing them with other mentors.",
             open: false,
           },
         ],
@@ -760,8 +760,8 @@ export const DataScienceChennaiCourseData = [
           {
             id: 0,
             ques: "When is the job assistance provided at Learnbay and how long will I get it?",
-
-            ans: "Job assistance is provided after the completion of the course. It includes build-up sessions, mock interviews, and referrals from top MNC’s/startups. This assistance is provided unless one gets placed in a company.",
+        
+            ans: "Job assistance is provided after the completion of the course. It includes build-up sessions, mock interviews, and referrals from top MNC’s/startups. This assistance is provided unless one gets placed in a company. ",
             open: true,
           },
           {
@@ -780,17 +780,21 @@ export const DataScienceChennaiCourseData = [
       "A domain-specific data scientist will have a far deeper understanding of the domain and its nuances, as well as the critical business problems that must be handled. Today, recruiters are on the lookout for domain-specific data scientists. Without domain knowledge, one can’t provide the exact analytical insights. Hence, it’s important to choose courses that offer domain electives options.",
     DomainBot3:
       "Learnbay offers full-stack domain-specialized Data Science Training in Chennai. Based on your experience, you can select the following domains:",
-    Courselink1: "/data-science-certification-courses",
-    Courselink2: "/advance-data-science-certification-courses",
-    Courselink3: "/artificial-intelligence-certification-course",
-    Courselink4: "/data-science-ai-for-managers",
-    Courselink5: "/data-science-ai-masters-program",
-    Course1:
-      "Data Science and AI Foundation Program with industry-specific training",
-    Course2: "Advanced Data Science and AI Program with domain specialization",
-    Course3: "AI & ML Program for tech professionals",
-    Course4: "Data Science and AI Program For Manager & Leaders",
-    Course5: "Data Science and AI master program",
+      DomainList1: "• BFSI",
+      DomainList2: "• Manufacturing",
+      DomainList3: "• Energy, Oil and Gas",
+      DomainList4: "• Healthcare",
+      DomainList5: "• Supply Chain, E-Commerce & Retail",
+      Domainlink1:
+        "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Banking%2C+Finance+and+Insurance+Domain.pdf",
+      Domainlink2:
+        "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Manufacturing%2C+Mechanical+and+Telecom+Domain.pdf",
+      Domainlink3:
+        "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Energy%2C+Oil+and+Gas+Domain.pdf",
+      Domainlink4:
+        "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Healthcare%2C+Pharma+and+Clinical+Research+Domain.pdf",
+      Domainlink5:
+        "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Retail%2C+Ecommerce+and+Supply+chain+Domain.pdf",
 
     CertificationBot1:
       "Using the Learnbay IBM data scientist course, you get hassle-free classes from multiple expert trainers. Additionally, you will get multiple IBM certifications for various data science and artificial intelligence micro-skills. Apart from this, you will receive an IBM Project Experience Certificate upon completion of the capstone project included in the Data Science and AI course in Chennai. You will obtain 1 to 8 certificates depending on the course you choose.",

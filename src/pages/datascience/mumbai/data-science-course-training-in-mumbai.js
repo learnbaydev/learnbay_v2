@@ -154,11 +154,11 @@ export default function Home() {
           dataScience={true}
           titleCourse="Advanced Data Science and AI Program with domain specialization"
           brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Advance+Data+Science+and+AI+Certification+Program+Learnbay.pdf"
+          idss="bfl64ANfSV0"
           FirstRightImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/advance+DS+header+image.webp"
           firstToparaImg=" - Enroll Now"
           firstHeading="Data Science Course in Mumbai"
           firstTopPara="Foundational and Advance Job-ready Program"
-          idss="bfl64ANfSV0" 
         />
         <SecondSection
           SecondSectionData={DataScienceMumbaiCourseData[0].secondSection}
@@ -171,16 +171,17 @@ export default function Home() {
         />
         <div className={styles.cityFee}>
         <FeeSection
-            AIMLCertificate={true}
-            Fee="₹  99,000 + 18% GST"
-            FeeEmi="₹  9,735/month"
-            FeeHeading="Program Fee & Financing"
-            FeeContent2="No cost EMI"
-            FeeContent3="Flexible payment"
-            FeeContent4="Easy loan procedure"
-            FeeContent5="15 days refund policy"
-            dataScienceCounselling={true}
-          />
+          Fee="₹ 99,000 + 18% GST"
+          FeeEmi="₹ 9,735/month"
+          FeeHeading="Program Fee & Financing"
+          FeeContent1="0% interest rate"
+          FeeContent2="No cost EMI"
+          FeeContent3="Flexible payment"
+          FeeContent4="Easy loan procedure"
+          FeeContent5="15 days refund policy"
+          FeeContent6="No additional cost"
+          dataScienceCounselling={true}
+        />
         </div>
         <div className="MainCities">
           <div className="CitiesLeft">
@@ -193,6 +194,17 @@ export default function Home() {
               DomainBot1={DataScienceMumbaiCourseData[0].DomainBot1}
               DomainBot2={DataScienceMumbaiCourseData[0].DomainBot2}
               DomainBot3={DataScienceMumbaiCourseData[0].DomainBot3}
+              DomainHead2={DataScienceMumbaiCourseData[0].DomainHead2}
+              DomainBot4={DataScienceMumbaiCourseData[0].DomainBot4}
+              DomainBot5={DataScienceMumbaiCourseData[0].DomainBot5}
+              DomainBot6={DataScienceMumbaiCourseData[0].DomainBot6}
+              DomainBot7={DataScienceMumbaiCourseData[0].DomainBot7}
+              DomainBot8={DataScienceMumbaiCourseData[0].DomainBot8}
+              DomainBot9={DataScienceMumbaiCourseData[0].DomainBot9}
+              DomainBot11={DataScienceMumbaiCourseData[0].DomainBot11}
+              DomainBot12={DataScienceMumbaiCourseData[0].DomainBot12}
+              DomainBot10={DataScienceMumbaiCourseData[0].DomainBot10}
+              DomainHead3={DataScienceMumbaiCourseData[0].DomainHead3}
               DomainList1={DataScienceMumbaiCourseData[0].DomainList1}
               DomainList2={DataScienceMumbaiCourseData[0].DomainList2}
               DomainList3={DataScienceMumbaiCourseData[0].DomainList3}
@@ -216,11 +228,52 @@ export default function Home() {
               CertificationBot1={
                 DataScienceMumbaiCourseData[0].CertificationBot1
               }
+              CertificationBot2={
+                DataScienceMumbaiCourseData[0].CertificationBot2
+              }
+              CertificationBot4={
+                DataScienceMumbaiCourseData[0].CertificationBot4
+              }
+              CertificationBot6={
+                DataScienceMumbaiCourseData[0].CertificationBot6
+              }
+              CertificationBot7={
+                DataScienceMumbaiCourseData[0].CertificationBot7
+              }
+              CertificationBot5={
+                DataScienceMumbaiCourseData[0].CertificationBot5
+              }
+              CertificationHead1={
+                DataScienceMumbaiCourseData[0].CertificationHead1
+              }
+              CertificationHead2={
+                DataScienceMumbaiCourseData[0].CertificationHead2
+              }
+              CertificationHead3={
+                DataScienceMumbaiCourseData[0].CertificationHead3
+              }
+              CertificationBot3={
+                DataScienceMumbaiCourseData[0].CertificationBot3
+              }
               src={DataScienceMumbaiCourseData[0].src}
               src22={DataScienceMumbaiCourseData[0].src22}
               src33={DataScienceMumbaiCourseData[0].src33}
+              ModuleHead1={DataScienceMumbaiCourseData[0].ModuleHead1}
               ModuleBot1={DataScienceMumbaiCourseData[0].ModuleBot1}
               ModuleBot2={DataScienceMumbaiCourseData[0].ModuleBot2}
+              ModuleBotL21={DataScienceMumbaiCourseData[0].ModuleBotL21}
+              ModuleBotL22={DataScienceMumbaiCourseData[0].ModuleBotL22}
+              ModuleBotL23={DataScienceMumbaiCourseData[0].ModuleBotL23}
+              ModuleBot21={DataScienceMumbaiCourseData[0].ModuleBot21}
+              ModuleHead2={DataScienceMumbaiCourseData[0].ModuleHead2}
+              ModuleBot3={DataScienceMumbaiCourseData[0].ModuleBot3}
+              ModuleHead3={DataScienceMumbaiCourseData[0].ModuleHead3}
+              ModuleBot4={DataScienceMumbaiCourseData[0].ModuleBot4}
+              ModuleBot41={DataScienceMumbaiCourseData[0].ModuleBot41}
+              ModuleBot42={DataScienceMumbaiCourseData[0].ModuleBot42}
+              ModuleBot43={DataScienceMumbaiCourseData[0].ModuleBot43}
+              ModuleBot44={DataScienceMumbaiCourseData[0].ModuleBot44}
+              ModuleBot45={DataScienceMumbaiCourseData[0].ModuleBot45}
               syllabush1={DataScienceMumbaiCourseData[0].syllabush1}
               syllabusb1={DataScienceMumbaiCourseData[0].syllabusb1}
               SyllabusBotlist11={
@@ -302,11 +355,23 @@ export default function Home() {
                 DataScienceMumbaiCourseData[0].SyllabusBotlist46
               }
               syllabussrc={DataScienceMumbaiCourseData[0].syllabussrc}
+              JobHead1={DataScienceMumbaiCourseData[0].JobHead1}
               JobBot1={DataScienceMumbaiCourseData[0].JobBot1}
+              JobBot2={DataScienceMumbaiCourseData[0].JobBot2}
+              JobBot5={DataScienceMumbaiCourseData[0].JobBot5}
               JobHead2={DataScienceMumbaiCourseData[0].JobHead2}
+              JobHead3={DataScienceMumbaiCourseData[0].JobHead3}
               JobBot3={DataScienceMumbaiCourseData[0].JobBot3}
               JobBot4={DataScienceMumbaiCourseData[0].JobBot4}
-              ProjectsBot1={DataScienceMumbaiCourseData[0].ProgramBot1}
+              JobBot6={DataScienceMumbaiCourseData[0].JobBot6}
+              JobBot7={DataScienceMumbaiCourseData[0].JobBot7}
+              JobBot8={DataScienceMumbaiCourseData[0].JobBot8}
+              ProjectsHead1={DataScienceMumbaiCourseData[0].ProjectsHead1}
+              ProjectsHead3={DataScienceMumbaiCourseData[0].ProjectsHead3}
+              ProjectsBot1={DataScienceMumbaiCourseData[0].ProjectsBot1}
+              ProjectsBot31={DataScienceMumbaiCourseData[0].ProjectsBot31}
+              ProjectsBot32={DataScienceMumbaiCourseData[0].ProjectsBot32}
+              ProjectsBot2={DataScienceMumbaiCourseData[0].ProjectsBot2}
               src1={DataScienceMumbaiCourseData[0].src1}
               ProjectsH1={DataScienceMumbaiCourseData[0].ProjectsH1}
               Projectsp1={DataScienceMumbaiCourseData[0].Projectsp1}

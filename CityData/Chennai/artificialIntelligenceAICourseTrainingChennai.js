@@ -330,30 +330,30 @@ export const AIChennaiCourseData = [
        }] 
        },
   
-      secondSection: [
+       secondSection: [
         {
           id: 1,
           img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/icon1.png",
           height: "40",
           width: "43",
           heading: "1:1 Doubt Session",
-          para: "Clear your doubts with industry experts and get real-time solutions",
+          para: "Talk to an expert & receive real-time solutions to your queries",
         },
         {
           id: 1,
           img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/icon3.png",
           height: "42",
           width: "42",
-          heading: "Unlimited Interview Calls",
-          para: "Boost career chances, gain referrals from 300+ top recruiters",
+          heading: "Guaranteed Interview Calls",
+          para: "Boost your job prospects with referrals from 300+ hiring partners",
         },
-        {
+        { 
           id: 1,
           img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/icon2.png",
           height: "50",
           width: "53",
           heading: "IBM Project Certificate",
-          para: "Master the domain of AI & machine learning with certificate from IBM",
+          para: "Grab opportunities with a portfolio & make a smooth career transition",
         },
         {
           id: 1,
@@ -361,7 +361,7 @@ export const AIChennaiCourseData = [
           height: "40",
           width: "40",
           heading: "Designed For Professionals",
-          para: "Use tech innovation to drive career growth & acquire in-demand skills",
+          para: "Prioritize growth & salary increases with in-demand skills",
         },
       ],
       testimonial: [
