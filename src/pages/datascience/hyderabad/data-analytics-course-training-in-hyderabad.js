@@ -20,10 +20,10 @@ const CityText = dynamic(() =>
   import("../../../../components/SEO/CityText/CityText")
 );
 const CitiesLeft = dynamic(() =>
-  import("../../../../components/SEO/CitiesLeft/CitiesLeft")
+  import("../../../../components/SEO/CitiesLeft/CitiesLeftDomain")
 );
 const CitiesRight = dynamic(() =>
-  import("../../../../components/SEO/CitiesRight/CitiesRight")
+  import("../../../../components/SEO/CitiesRight/CitiesRightdomain")
 );
 import { DataAnalyticsHyderabadCourseData } from "../../../../CityData/Hyderabad/dataAnalyticsCourseTrainingInHyderabad";
 const FAQNew = dynamic(() =>
@@ -144,12 +144,13 @@ export default function Home() {
           SecondTyped="Capstone Project Certificate"
           ThirdTyped="Live Interactive Classes"
           cityParaCont=" Working professionals with less than a year of experience who are hoping for a prosperous or even developing career path should take this course."
-          titleCourse="Data Analytics Course Training in Chennai For Professionals"
+          titleCourse="Data Analytics Course Training in Hyderabad"
           brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Data+Analytics+Certification+Program+Learnbay.pdf"
-          FirstRightImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/head/Data+Analytics.png"
-          firstHeading="Data Analytics Course Training in Chennai For Professionals"
-          firstTopPara="Industrial Program For Early Pros"
-          idss="bfl64ANfSV0"
+          FirstRightImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/data+analytics+header+image.webp"
+          firstHeading="Data Analytics Course Training in Hyderabad"
+          firstTopPara="First-Track Industrial Training For Early Professionals"
+          firstToparaImg="For Professionals"
+          idss="y_0IdhFKJKM"
         />
         <SecondSection
           SecondSectionData={DataAnalyticsHyderabadCourseData[0].secondSection}
@@ -179,6 +180,7 @@ export default function Home() {
           </div>
           <div className="CitiesRight">
             <CitiesRight
+            cityTextDAhyderabad={true}
               ProgramHead1={DataAnalyticsHyderabadCourseData[0].ProgramHead1}
               ProgramHead2={DataAnalyticsHyderabadCourseData[0].ProgramHead2}
               ProgramBot1={DataAnalyticsHyderabadCourseData[0].ProgramBot1}
@@ -226,10 +228,16 @@ export default function Home() {
               CertificationBot1={
                 DataAnalyticsHyderabadCourseData[0].CertificationBot1
               }
+              CertificationBot2={
+                DataAnalyticsHyderabadCourseData[0].CertificationBot2
+              }
+              
               src={DataAnalyticsHyderabadCourseData[0].src}
+              src22={DataAnalyticsHyderabadCourseData[0].src22}
               ModuleHead1={DataAnalyticsHyderabadCourseData[0].ModuleHead1}
               ModuleBot1={DataAnalyticsHyderabadCourseData[0].ModuleBot1}
               ModuleBot2={DataAnalyticsHyderabadCourseData[0].ModuleBot2}
+              ModuleBot3={DataAnalyticsHyderabadCourseData[0].ModuleBot3}
               syllabush1={DataAnalyticsHyderabadCourseData[0].syllabush1}
               syllabusb1={DataAnalyticsHyderabadCourseData[0].syllabusb1}
               SyllabusBotlist11={
@@ -319,8 +327,8 @@ export default function Home() {
               JobBot3={DataAnalyticsHyderabadCourseData[0].JobBot3}
               JobBot4={DataAnalyticsHyderabadCourseData[0].JobBot4}
               JobBot6={DataAnalyticsHyderabadCourseData[0].JobBot6}
-              ProjectsBot1={DataAnalyticsHyderabadCourseData[0].ProgramBot1}
-              ProjectsBot2={DataAnalyticsHyderabadCourseData[0].ProgramBot2}
+              ProjectsBot1={DataAnalyticsHyderabadCourseData[0].ProjectsBot1}
+              ProjectsBot2={DataAnalyticsHyderabadCourseData[0].ProjectsBot2}
               src1={DataAnalyticsHyderabadCourseData[0].src1}
               ProjectsH1={DataAnalyticsHyderabadCourseData[0].ProjectsH1}
               Projectsp1={DataAnalyticsHyderabadCourseData[0].Projectsp1}
