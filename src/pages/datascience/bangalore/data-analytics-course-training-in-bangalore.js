@@ -116,10 +116,10 @@ export default function Home() {
           SecondTyped="Capstone Project Certificate"
           ThirdTyped="Live Interactive Classes"
           dataScience={true}
-          titleCourse="Business Analytics Master Program"
-          brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Business+Analytics+Certification+Program+Learnbay.pdf"
-          idss="4j80WXLTvGE"
-          FirstRightImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/manager+header+image.webp"
+          titleCourse="Data Analytics Program"
+          brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Data+Analytics+Certification+Program+Learnbay.pdf"
+          idss="y_0IdhFKJKM"
+          FirstRightImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/data+analytics+header+image.webp"
           firstToparaImg="Course in Bangalore"
           firstHeading="Online Data Analytics"
           firstTopPara="IBM Certified Industry-paced Training"
@@ -204,6 +204,7 @@ export default function Home() {
               Domainlink9={DABangaloreCourseData[0].Domainlink9}
               Domainlink10={DABangaloreCourseData[0].Domainlink10}
               CertificationBot1={DABangaloreCourseData[0].CertificationBot1}
+              CertificationBot2={DABangaloreCourseData[0].CertificationBot2}
               src={DABangaloreCourseData[0].src}
               src22={DABangaloreCourseData[0].src22}
               ModuleBot1={DABangaloreCourseData[0].ModuleBot1}

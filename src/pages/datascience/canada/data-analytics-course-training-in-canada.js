@@ -20,10 +20,10 @@ const CityText = dynamic(() =>
   import("../../../../components/SEO/CityText/CityText")
 );
 const CitiesLeft = dynamic(() =>
-  import("../../../../components/SEO/CitiesLeft/CitiesLeft")
+  import("../../../../components/SEO/CitiesLeft/CitiesLeftDomain")
 );
 const CitiesRight = dynamic(() =>
-  import("../../../../components/SEO/CitiesRight/CitiesRight")
+  import("../../../../components/SEO/CitiesRight/CitiesRightdomain")
 );
 import { DAcanadaCourseData } from "../../../../CityData/Canada/DataAnalyticsCourseTrainingCanada";
 const FAQNew = dynamic(() =>
@@ -127,13 +127,13 @@ export default function Home() {
           SecondTyped="Capstone Project Certificate"
           ThirdTyped="Live Interactive Classes"
           dataScience={true}
-          titleCourse="AI & ML Program for tech professionals"
+          titleCourse="Data Analytics Program"
           brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Data+Analytics+Certification+Program+Learnbay.pdf"
-          idss="Jn2puEQC8yk"
-          FirstRightImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/head/Data+Analytics.png"
+          idss="y_0IdhFKJKM"
+          FirstRightImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/data+analytics+header+image.webp"
           firstToparaImg="For Professionals"
           firstHeading="Data Analytics Course in Canada "
-          firstTopPara="Foundational and Advance Job-ready Program"
+          firstTopPara="A Fast Track Career Upgradation Training Program For Early Professionals"
           cityParaCont="Working professionals with less than a year of experience who are hoping for a prosperous or even developing career path should take this course."
         />
         <SecondSection SecondSectionData={DAcanadaCourseData[0].secondSection} />
@@ -208,8 +208,9 @@ export default function Home() {
               Domainlink9={DAcanadaCourseData[0].Domainlink9}
               Domainlink10={DAcanadaCourseData[0].Domainlink10}
               CertificationHead1={DAcanadaCourseData[0].CertificationHead1}
-              CertificationBot1={DAcanadaCourseData[0].CertificationBot1}
-              CertificationBot2={DAcanadaCourseData[0].CertificationBot2}
+              // CertificationBot1={DAcanadaCourseData[0].CertificationBot1}
+              // CertificationBot2={DAcanadaCourseData[0].CertificationBot2}
+              certificate2={true}
               src={DAcanadaCourseData[0].src}
               src22={DAcanadaCourseData[0].src22}
               src33={DAcanadaCourseData[0].src33}
@@ -257,6 +258,7 @@ export default function Home() {
               JobHead2={DAcanadaCourseData[0].JobHead2}
               JobBot5={DAcanadaCourseData[0].JobBot5}
               JobBot4={DAcanadaCourseData[0].JobBot4}
+              JobBot6={DAcanadaCourseData[0].JobBot6}
               ProjectsBot1={DAcanadaCourseData[0].ProjectsBot1}
               ProjectsBot2={DAcanadaCourseData[0].ProjectsBot2}
               src1={DAcanadaCourseData[0].src1}

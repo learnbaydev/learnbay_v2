@@ -3280,45 +3280,45 @@ const CitiesRight = ({
       {fullStackCity ? (
         <></>
       ) : (
-        <>
-          {" "}
-          <div id="Certification">
-            <div className={styles.CitiesRightSpan}>
-              <span>Certification Details</span>
-            </div>
-            <div className={styles.CitiesRightInner}>
+        <div id="Certification">
+          <div className={styles.CitiesRightSpan}>
+            <span>Certification Details</span>
+          </div>
+          <div className={styles.CitiesRightInner}>
+            <div>
               <h2 className={styles.pHead}>{CertificationHead1}</h2>
               <p className={styles.pp}>{CertificationBot1}</p>
               <p className={styles.pp}>{CertificationBot2}</p>
               <p className={styles.pp}>{CertificationBot3}</p>
+            </div>
+            <div>
               <h2 className={styles.pHead}>{CertificationHead2}</h2>
               <p className={styles.pp}>{CertificationBot4}</p>
               <p className={styles.pp}>{CertificationBot5}</p>
               <p className={styles.pp}>{CertificationBot6}</p>
+            </div>
+            <div>
               <h2 className={styles.pHead}>{CertificationHead3}</h2>
               <p className={styles.pp}>{CertificationBot7}</p>
               <div className={styles.certNew}>
-                {certificate1 ? (
-                  <img src={src} alt={alt1}></img>
-                ) : (
+                {certificate1 ? <img src={src} alt={alt1} /> : null}
+                {certificate2 ? (
                   <>
-                    {certificate2 ? (
-                      <>
-                        <img src={src} alt={alt1}></img>
-                        <img src={src22} alt={alt1}></img>
-                      </>
-                    ) : (
-                      <>
-                        <img src={src} alt={alt1}></img>
-                        <img src={src22} alt={alt1}></img>
-                        <img src={src33} alt={alt1}></img>
-                      </>
-                    )}
+                    <img src={src} alt={alt1} />
+                    <img src={src22} alt={alt1} />
                   </>
-                )}
+                ) : null}
+                {!certificate1 && !certificate2 ? (
+                  <>
+                    <img src={src} alt={alt1} />
+                    <img src={src22} alt={alt1} />
+                    <img src={src33} alt={alt1} />
+                  </>
+                ) : null}
               </div>
+            </div>
           </div>
-        </>
+        </div>
       )}
       <div id="Module">
         <div className={styles.CitiesRightSpan}>
