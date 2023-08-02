@@ -368,15 +368,15 @@ export const DSPuneCourseData = [
         height: "40",
         width: "43",
         heading: "1:1 Doubt Session",
-        para: "Clear your doubts with industry experts and get real-time solutions",
+        para: "Talk to an expert & receive real-time solutions to your queries",
       },
       {
         id: 1,
         img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/icon3.png",
         height: "42",
         width: "42",
-        heading: "Unlimited Interview Calls",
-        para: "Boost career chances, gain referrals from 300+ top recruiters",
+        heading: "Guaranteed Interview Calls",
+        para: "Boost your job prospects with referrals from 300+ hiring partners",
       },
       {
         id: 1,
@@ -384,7 +384,7 @@ export const DSPuneCourseData = [
         height: "50",
         width: "53",
         heading: "IBM Project Certificate",
-        para: "Master the domain of AI & machine learning with certificate from IBM",
+        para: "Grab opportunities with a portfolio & make a smooth career transition",
       },
       {
         id: 1,
@@ -392,7 +392,7 @@ export const DSPuneCourseData = [
         height: "40",
         width: "40",
         heading: "Designed For Professionals",
-        para: "Use tech innovation to drive career growth & acquire in-demand skills",
+        para: "Prioritise growth, boost career with in-demand skills",
       },
     ],
     testimonial: [
@@ -797,77 +797,66 @@ export const DSPuneCourseData = [
       "In addition to seeking a skilled data scientist, many businesses also seek experts in particular fields. Learnbay plays an important role in data science training across Pune from this perspective by allowing students to select their own domain. Also, the data science learning modules you get are completely customized as per your chosen domain’s industry-level data scientific needs.",
     DomainBot3:
       "What are the domain electives available in Learnbay Data science courses in Pune?",
-    DomainList1: "HR, Sales, and Marketing",
-    DomainList2: "Energy, oil, and Gas",
-    DomainList3: "Mechanical, manufacturing, and telecom",
-    DomainList4: "Pharmaceutical and clinical research",
-    DomainList5: "Media, hospitality, and transportation",
-    DomainList6: "Testing and Development Domain",
-    DomainList7: "DeOps and Cloud",
-    DomainList8: "IoT, automotive, and embedded systems",
-    DomainList9: "Supply chain and e-commerce",
-    DomainList10: "Banking, Finance, and Marketing Domain",
-    Domainlink1:
-      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Sales%2C+Marketing+and+HR+Domain.pdf",
-    Domainlink2:
-      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Energy%2C+Oil+and+Gas+Domain.pdf",
-    Domainlink3:
-      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Manufacturing%2C+Mechanical+and+Telecom+Domain.pdf",
-    Domainlink4:
-      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Healthcare%2C+Pharma+and+Clinical+Research+Domain.pdf",
-    Domainlink5:
-      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Media%2C+Hospitality+and+Transportation+Domain.pdf",
-    Domainlink6:
-      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Development+and+Testing+Domain.pdf",
-    Domainlink7:
-      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Cloud+and+Devops+Domain.pdf",
-    Domainlink8:
-      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Automotive%2C+IOT+and+Embedded+Domain.pdf",
-    Domainlink9:
-      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Retail%2C+Ecommerce+and+Supply+chain+Domain.pdf",
-    Domainlink10:
-      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Banking%2C+Finance+and+Insurance+Domain.pdf",
+      DomainList1: "• BFSI",
+      DomainList2: "• Manufacturing",
+      DomainList3: "• Energy, Oil and Gas",
+      DomainList4: "• Healthcare",
+      DomainList5: "• Supply Chain, E-Commerce & Retail",
+      Domainlink1:
+        "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Banking%2C+Finance+and+Insurance+Domain.pdf",
+      Domainlink2:
+        "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Manufacturing%2C+Mechanical+and+Telecom+Domain.pdf",
+      Domainlink3:
+        "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Energy%2C+Oil+and+Gas+Domain.pdf",
+      Domainlink4:
+        "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Healthcare%2C+Pharma+and+Clinical+Research+Domain.pdf",
+      Domainlink5:
+        "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Retail%2C+Ecommerce+and+Supply+chain+Domain.pdf",
     CertificationBot1:
       "Students earn IBM Data Science Certification at the end of the course. Even the Advance program, Managers program consists of 6-8 separate IBM certificates on different sub-module completion. Even in these two courses, you get a data science project completion certificate issued by IBM.",
-    src: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/certificate.webp",
+      src33:
+      "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Microsoft-certificate-data.png",
+    src: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Certificate-blue.png",
+    src22:
+      "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Certificate-Yellow.png",
     ModuleBot1:
       "Within Learnbay’s Data scientists courses in Pune, every module is customized as per the present data science job market direction. There are even special coding classes for students from non-technical backgrounds so students can get along with other technical mates.",
     ModuleBot2:
       "The modules cover plenty of hands-on assignments on demanding  Data science tools. Our industry FAANG experts teach you to apply statistics, probability, and mathematical analysis skills. Learnbay helps students master Data scientist tools like Advance excel, SQL, MONGO-DB, TABLEAU, POWER BI, BIG DATA, SPARK ANALYTICS, PYTHON, and TIME SERIES. Professional Data scientists widely use these programs, and our students learn the same at the trending industry level throughout the Data science training in Pune.",
-    syllabush1: "Preparatory Classes (Programming + Maths)",
-    syllabusb1: "6 Hours",
-    SyllabusBotlist11: "Anaconda Installation",
-    SyllabusBotlist12: "Basics of Programming",
-    SyllabusBotlist13: "Memory Management",
-    SyllabusBotlist14: "Compiler and Interpreter",
-    SyllabusBotlist15: "Syntax of Python",
-    SyllabusBotlist16: "Basics of Statistics",
-    syllabush2: "Python Programming (Basic + Advance)",
-    syllabusb2: "40 Hours",
-    SyllabusBotlist21: "Git and GitHub",
-    SyllabusBotlist22: "Operators + Data Types + Loops",
-    SyllabusBotlist23: "Functions + Regular Expression",
-    SyllabusBotlist24: "Conditional Statement",
-    SyllabusBotlist25: "File & Exceptional Handling",
-    SyllabusBotlist26: "Numpy, Pandas, Matplotlib, etc.",
-    syllabush3: "Statistics and Machine Learning",
-    syllabusb3: "70 Hours",
-    SyllabusBotlist31: "Linear Algebra, Probability",
-    SyllabusBotlist32: "Permutation & Combination",
-    SyllabusBotlist33: "Descriptive & Inferential Stats",
-    SyllabusBotlist34: "Hypothesis Testing",
-    SyllabusBotlist35: "Time Series Analysis",
-    SyllabusBotlist36: "ML Algorithms",
-    syllabush4: "Industrial Projects & Capstone Projects",
-    syllabusb4: "12+ Classes",
-    SyllabusBotlist41: "Text Classification",
-    SyllabusBotlist42: "Human Activity Recognition",
-    SyllabusBotlist43: "Forecasting Business KPI's",
-    SyllabusBotlist44: "Credit Risk Analysis",
-    SyllabusBotlist45: "Customer Churn Prediction",
-    SyllabusBotlist46: "Sentiment Analysis",
-    syllabussrc:
-      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Advance+Data+Science+and+AI+Certification+Program+Learnbay.pdf",
+      syllabush1: " Preparatory Classes (Programming + Maths)",
+      syllabusb1: "6 Hours",
+      SyllabusBotlist11: " Cohort Orientation",
+      SyllabusBotlist12: "A brief introduction to tools related to data",
+      SyllabusBotlist13: " Fundamentals of Programming",
+      SyllabusBotlist14: "Introduction to Anaconda & Jupyter notebook",
+      SyllabusBotlist15: "Fundamentals of Statistics",
+      SyllabusBotlist16: "Mean, Median, Mode",
+      syllabush2: "Python for Data Science",
+      syllabusb2: "40 Hours",
+      SyllabusBotlist21: "Python Programming",
+      SyllabusBotlist22: "Data Analysis Using Numpy",
+      SyllabusBotlist23: "Python Programming Overview",
+      SyllabusBotlist24: "Python Data Types",
+      SyllabusBotlist25: "Strings, Decisions & Loop Control",
+      SyllabusBotlist26: "Data Analysis Using Pandas",
+      syllabush3: "Statistics and Machine Learning",
+      syllabusb3: "70 Hours",
+      SyllabusBotlist31: "Statistics",
+      SyllabusBotlist32: "Fundamentals of Math and Probability",
+      SyllabusBotlist33: "Descriptive Statistics",
+      SyllabusBotlist34: " Machine Learning",
+      SyllabusBotlist35: "Linear Regression Model",
+      SyllabusBotlist36: "Data Preprocessing",
+      syllabush4: " Data Science Tools",
+      syllabusb4: "12+ Classes",
+      SyllabusBotlist41: " SQL",
+      SyllabusBotlist42: "MongoDB",
+      SyllabusBotlist43: "Tableau",
+      SyllabusBotlist44: " PowerBI",
+      SyllabusBotlist45: " Big Data & Spark Analytics",
+      SyllabusBotlist46: "Big Data & Spark Analytics",
+      syllabussrc:
+        "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Advance+Data+Science+and+AI+Certification+Program+Learnbay.pdf",
     JobHead1:
       "Learnbay's data science course is best known for its high placement rate.",
     JobBot1:

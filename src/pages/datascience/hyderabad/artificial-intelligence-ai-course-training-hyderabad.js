@@ -118,13 +118,14 @@ export default function Home() {
           SecondTyped="Capstone Project Certificate"
           ThirdTyped="Live Interactive Classes"
           cityParaCont=" Become a successful data science manager/leader within 11 months. Learn the secret data scientific tricks of managing data science projects. Learn directly from industry leaders via live classes and live projects. "
-          dataScienceCounselling={true}
-          titleCourse="Artificial Intelligence(Ai) Course Training In chennai For Managers and Leaders"
+          dataScience={true}
+          titleCourse="Data Science and AI Program For Manager & Leaders"
           brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Data+Science+%26+AI+Certification+Program+For+Managers+%26+Leaders+Learnbay.pdf"
-          FirstRightImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/head/Managers+%26+Leaders.png"
-          firstHeading="Artificial Intelligence(Ai) Course Training In chennai For Managers and Leaders"
-          firstTopPara="Industry-curated Training With Domain Specialization"
-          idss="bfl64ANfSV0"
+          idss="osYNvuuI1_8"
+          FirstRightImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Business-Analytics-Masters-Header.png"
+          firstHeading="Artificial Intelligence(Ai) Course"
+          firstToparaImg="Training In Hyderabad"
+          firstTopPara="Become an AI Expert in Product-based MNC"
         />
         <SecondSection
           SecondSectionData={AIHyderabadCourseData[0].secondSection}
@@ -137,14 +138,15 @@ export default function Home() {
         />
         <div className={styles.cityFee}>
           <FeeSection
-            AIMLCertificate={true}
             Fee="₹ 1,10,000 + 18% GST"
-            FeeEmi="₹ 10,816/month"
+            FeeEmi="₹ 10,817/month"
             FeeHeading="Program Fee & Financing"
+            FeeContent1="0% interest rate"
             FeeContent2="No cost EMI"
             FeeContent3="Flexible payment"
             FeeContent4="Easy loan procedure"
             FeeContent5="15 days refund policy"
+            FeeContent6="No additional cost"
             dataScienceCounselling={true}
           />
         </div>
@@ -154,24 +156,27 @@ export default function Home() {
           </div>
           <div className="CitiesRight">
             <CitiesRight
-              ProgramHead1={AIHyderabadCourseData[0].ProgramHead1}
               ProgramBot1={AIHyderabadCourseData[0].ProgramBot1}
               ProgramBot2={AIHyderabadCourseData[0].ProgramBot2}
               ProgramBot3={AIHyderabadCourseData[0].ProgramBot3}
+              ProgramBot66={AIHyderabadCourseData[0].ProgramBot66}
+              ProgramHead1={AIHyderabadCourseData[0].ProgramHead1}
               ProgramHead4={AIHyderabadCourseData[0].ProgramHead4}
+              ProgramHead3={AIHyderabadCourseData[0].ProgramHead3}
+              ProgramBot67={AIHyderabadCourseData[0].ProgramBot67}
               ProgramBot4={AIHyderabadCourseData[0].ProgramBot4}
-              ProgramHead5={AIHyderabadCourseData[0].ProgramHead5}
+              ProgramBot5={AIHyderabadCourseData[0].ProgramBot5}
+              ProgramBot6={AIHyderabadCourseData[0].ProgramBot6}
               Courselink1={AIHyderabadCourseData[0].Courselink1}
               Courselink2={AIHyderabadCourseData[0].Courselink2}
               Courselink3={AIHyderabadCourseData[0].Courselink3}
               Courselink4={AIHyderabadCourseData[0].Courselink4}
               Courselink5={AIHyderabadCourseData[0].Courselink5}
-              ProgramBot5={AIHyderabadCourseData[0].ProgramBot5}
-              ProgramHead6={AIHyderabadCourseData[0].ProgramHead6}
-              ProgramBot6={AIHyderabadCourseData[0].ProgramBot6}
-              ProgramHead7={AIHyderabadCourseData[0].ProgramHead7}
-              ProgramBot8={AIHyderabadCourseData[0].ProgramBot8}
-              ProgramBot9={AIHyderabadCourseData[0].ProgramBot9}
+              Course1={AIHyderabadCourseData[0].Course1}
+              Course2={AIHyderabadCourseData[0].Course2}
+              Course3={AIHyderabadCourseData[0].Course3}
+              Course4={AIHyderabadCourseData[0].Course4}
+              Course5={AIHyderabadCourseData[0].Course5}
               DomainHead1={AIHyderabadCourseData[0].DomainHead1}
               DomainBot1={AIHyderabadCourseData[0].DomainBot1}
               DomainBot2={AIHyderabadCourseData[0].DomainBot2}
@@ -198,7 +203,10 @@ export default function Home() {
               Domainlink10={AIHyderabadCourseData[0].Domainlink10}
               CertificationHead1={AIHyderabadCourseData[0].CertificationHead1}
               CertificationBot1={AIHyderabadCourseData[0].CertificationBot1}
+              CertificationBot2={AIHyderabadCourseData[0].CertificationBot2}
               src={AIHyderabadCourseData[0].src}
+              src22={AIHyderabadCourseData[0].src22}
+              src33={AIHyderabadCourseData[0].src33}
               ModuleHead1={AIHyderabadCourseData[0].ModuleHead1}
               ModuleBot1={AIHyderabadCourseData[0].ModuleBot1}
               ModuleBot2={AIHyderabadCourseData[0].ModuleBot2}
@@ -245,8 +253,8 @@ export default function Home() {
               JobBot3={AIHyderabadCourseData[0].JobBot3}
               JobBot4={AIHyderabadCourseData[0].JobBot4}
               JobBot6={AIHyderabadCourseData[0].JobBot6}
-              ProjectsBot1={AIHyderabadCourseData[0].ProgramBot1}
-              ProjectsBot2={AIHyderabadCourseData[0].ProgramBot2}
+              ProjectsBot1={AIHyderabadCourseData[0].ProjectsBot1}
+              ProjectsBot2={AIHyderabadCourseData[0].ProjectsBot2}
               src1={AIHyderabadCourseData[0].src1}
               ProjectsH1={AIHyderabadCourseData[0].ProjectsH1}
               Projectsp1={AIHyderabadCourseData[0].Projectsp1}

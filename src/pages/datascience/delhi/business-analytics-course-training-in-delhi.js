@@ -20,12 +20,12 @@ const CityText = dynamic(() =>
   import("../../../../components/SEO/CityText/CityText")
 );
 const CitiesLeft = dynamic(() =>
-  import("../../../../components/SEO/CitiesLeft/CitiesLeft")
+  import("../../../../components/SEO/CitiesLeft/CitiesLeftDomain")
 );
 const CitiesRight = dynamic(() =>
-  import("../../../../components/SEO/CitiesRight/CitiesRight")
+  import("../../../../components/SEO/CitiesRight/CitiesRightdomain")
 );
-import { BADelhiCourseData } from "../../../../CityData/delhi/BusinessAnalyticsCourseTrainingDelhiData";
+import { BADelhiCourseData } from "../../../../CityData/Delhi/BusinessAnalyticsCourseTrainingDelhiData";
 const FAQNew = dynamic(() =>
   import("../../../../components/CoursePage/FAQNew/FAQNew")
 );
@@ -129,8 +129,8 @@ export default function Home() {
           dataScience={true}
           titleCourse="Business Analytics Course in Delhi"
           brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Business+Analytics+Certification+Program+Learnbay.pdf"
-          idss="Jn2puEQC8yk"
-          FirstRightImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/head/Businesss+Analytics.png"
+          idss="4j80WXLTvGE"
+          FirstRightImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/manager+header+image.webp"
           firstToparaImg="Training In Delhi"
           firstHeading="Business Analytics Course "
           firstTopPara="Industry-oriented business analytics program co-developed by IBM"
@@ -261,6 +261,8 @@ export default function Home() {
               JobBot1={BADelhiCourseData[0].JobBot1}
               JobBot2={BADelhiCourseData[0].JobBot2}
               JobBot3={BADelhiCourseData[0].JobBot3}
+              JobHead3={BADelhiCourseData[0].JobHead3}
+
               JobHead2={BADelhiCourseData[0].JobHead2}
               JobBot5={BADelhiCourseData[0].JobBot5}
               JobBot4={BADelhiCourseData[0].JobBot4}

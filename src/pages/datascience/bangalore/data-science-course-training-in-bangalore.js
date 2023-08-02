@@ -172,10 +172,10 @@ export default function Home() {
           SecondTyped="Capstone Project Certificate"
           ThirdTyped="Live Interactive Classes"
           dataScience={true}
-          titleCourse="Best Data Science Courses in Bangalore"
+          titleCourse="Advanced Data Science and AI Program with domain specialization"
           brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Advance+Data+Science+and+AI+Certification+Program+Learnbay.pdf"
           idss="bfl64ANfSV0"
-          FirstRightImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/course2.png"
+          FirstRightImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/advance+DS+header+image.webp"
           firstHeading="Best Data Science Courses in Bangalore"
           firstTopPara="Foundational and Advance Job-ready Program"
           cityParaCont="Enhance your Data Science career with the best Data Science courses in Bangalore with IBM Certification. Our advanced Data Science training will help you to make experts in Python, Power BI, etc. You will get training from industry leaders and masters to gain the most in-demand data science and AI skills."
@@ -190,17 +190,18 @@ export default function Home() {
           para="Discover the impact of our programs on career growth"
         />
         <div className={styles.cityFee}>
-          <FeeSection
-            AIMLCertificate={true}
-            Fee="₹95,000 + GST"
-            FeeEmi="₹ 9,342/month"
-            FeeHeading="Program Fee & Financing"
-            FeeContent2="No cost EMI"
-            FeeContent3="Flexible payment"
-            FeeContent4="Easy loan procedure"
-            FeeContent5="15 days refund policy"
-            dataScienceCounselling={true}
-          />
+        <FeeSection
+          Fee="₹ 99,000 + 18% GST"
+          FeeEmi="₹ 9,735/month"
+          FeeHeading="Program Fee & Financing"
+          FeeContent1="0% interest rate"
+          FeeContent2="No cost EMI"
+          FeeContent3="Flexible payment"
+          FeeContent4="Easy loan procedure"
+          FeeContent5="15 days refund policy"
+          FeeContent6="No additional cost"
+          dataScienceCounselling={true}
+        />
         </div>
         <div className="MainCities">
           <div className="CitiesLeft">
@@ -238,6 +239,7 @@ export default function Home() {
               CertificationBot1={DSBangaloreCourseData[0].CertificationBot1}
               src={DSBangaloreCourseData[0].src}
               src22={DSBangaloreCourseData[0].src22}
+              src33={DSBangaloreCourseData[0].src33}
               ModuleHead1={DSBangaloreCourseData[0].ModuleHead1}
               ModuleBot1={DSBangaloreCourseData[0].ModuleBot1}
               ModuleBot2={DSBangaloreCourseData[0].ModuleBot2}

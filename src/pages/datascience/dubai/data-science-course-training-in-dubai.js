@@ -158,11 +158,11 @@ export default function Home() {
           dataScience={true}
           titleCourse="Advanced Data Science and AI Program with domain specialization"
           brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Advance+Data+Science+and+AI+Certification+Program+Learnbay.pdf"
+          idss="bfl64ANfSV0"
           FirstRightImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/advance+DS+header+image.webp"
           firstToparaImg="Enroll Now"
           firstHeading="Data Science Course in Dubai - "
           firstTopPara="Foundational and Advance Job-ready Program"
-          idss="bfl64ANfSV0"
         />
         <SecondSection
           SecondSectionData={DSDubaiCourseData[0].secondSection}
@@ -174,17 +174,18 @@ export default function Home() {
           para="Discover the impact of our programs on career growth"
         />
         <div className={styles.cityFee}>
-          <FeeSection
-            AIMLCertificate={true}
-            Fee="₹  99,000 + 18% GST"
-            FeeEmi="₹  9,735/month"
-            FeeHeading="Program Fee & Financing"
-            FeeContent2="No cost EMI"
-            FeeContent3="Flexible payment"
-            FeeContent4="Easy loan procedure"
-            FeeContent5="15 days refund policy"
-            dataScienceCounselling={true}
-          />
+        <FeeSection
+          Fee="₹ 99,000 + 18% GST"
+          FeeEmi="₹ 9,735/month"
+          FeeHeading="Program Fee & Financing"
+          FeeContent1="0% interest rate"
+          FeeContent2="No cost EMI"
+          FeeContent3="Flexible payment"
+          FeeContent4="Easy loan procedure"
+          FeeContent5="15 days refund policy"
+          FeeContent6="No additional cost"
+          dataScienceCounselling={true}
+        />
         </div>
         <div className="MainCities">
           <div className="CitiesLeft">
@@ -194,23 +195,16 @@ export default function Home() {
             <CitiesRight
               ProgramHead1={DSDubaiCourseData[0].ProgramHead1}
               ProgramBot1={DSDubaiCourseData[0].ProgramBot1}
-              ProgramHead2={DSDubaiCourseData[0].ProgramHead2}
-              ProgramBot2={DSDubaiCourseData[0].ProgramBot2}
               ProgramHead3={DSDubaiCourseData[0].ProgramHead3}
-              ProgramHead4={DSDubaiCourseData[0].ProgramHead4}
               ProgramBot3={DSDubaiCourseData[0].ProgramBot3}
-              ProgramBot31={DSDubaiCourseData[0].ProgramBot31}
+              ProgramBot66={DSDubaiCourseData[0].ProgramBot66}
               ProgramBot4={DSDubaiCourseData[0].ProgramBot4}
-              ProgramBot5={DSDubaiCourseData[0].ProgramBot5}
-              ProgramBot6={DSDubaiCourseData[0].ProgramBot6}
               Courselink1={DSDubaiCourseData[0].Courselink1}
               Courselink2={DSDubaiCourseData[0].Courselink2}
-              Courselink3={DSDubaiCourseData[0].Courselink3}
               Courselink4={DSDubaiCourseData[0].Courselink4}
               Courselink5={DSDubaiCourseData[0].Courselink5}
               Course1={DSDubaiCourseData[0].Course1}
               Course2={DSDubaiCourseData[0].Course2}
-              Course3={DSDubaiCourseData[0].Course3}
               Course4={DSDubaiCourseData[0].Course4}
               Course5={DSDubaiCourseData[0].Course5}
               DomainHead1={DSDubaiCourseData[0].DomainHead1}
@@ -237,14 +231,25 @@ export default function Home() {
               Domainlink8={DSDubaiCourseData[0].Domainlink8}
               Domainlink9={DSDubaiCourseData[0].Domainlink9}
               Domainlink10={DSDubaiCourseData[0].Domainlink10}
+              CertificationHead1={
+                DSDubaiCourseData[0].CertificationHead1
+              }
               CertificationBot1={
                 DSDubaiCourseData[0].CertificationBot1
+              }
+              CertificationBot2={
+                DSDubaiCourseData[0].CertificationBot2
               }
               src={DSDubaiCourseData[0].src}
               src22={DSDubaiCourseData[0].src22}
               src33={DSDubaiCourseData[0].src33}
+              ModuleHead1={DSDubaiCourseData[0].ModuleHead1}
               ModuleBot1={DSDubaiCourseData[0].ModuleBot1}
               ModuleBot2={DSDubaiCourseData[0].ModuleBot2}
+              ModuleHead2={DSDubaiCourseData[0].ModuleHead2}
+              ModuleBot4={DSDubaiCourseData[0].ModuleBot4}
+              ModuleBot41={DSDubaiCourseData[0].ModuleBot41}
+              ModuleBot3={DSDubaiCourseData[0].ModuleBot3}
               syllabush1={DSDubaiCourseData[0].syllabush1}
               syllabusb1={DSDubaiCourseData[0].syllabusb1}
               SyllabusBotlist11={
@@ -326,11 +331,14 @@ export default function Home() {
                 DSDubaiCourseData[0].SyllabusBotlist46
               }
               syllabussrc={DSDubaiCourseData[0].syllabussrc}
+              JobHead1={DSDubaiCourseData[0].JobHead1}
               JobBot1={DSDubaiCourseData[0].JobBot1}
+              JobBot2={DSDubaiCourseData[0].JobBot2}
               JobHead2={DSDubaiCourseData[0].JobHead2}
               JobBot3={DSDubaiCourseData[0].JobBot3}
               JobBot4={DSDubaiCourseData[0].JobBot4}
-              ProjectsBot1={DSDubaiCourseData[0].ProgramBot1}
+              ProjectsBot1={DSDubaiCourseData[0].ProjectsBot1}
+              ProjectsBot2={DSDubaiCourseData[0].ProjectsBot2}
               src1={DSDubaiCourseData[0].src1}
               ProjectsH1={DSDubaiCourseData[0].ProjectsH1}
               Projectsp1={DSDubaiCourseData[0].Projectsp1}
