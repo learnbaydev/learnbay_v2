@@ -156,8 +156,9 @@ export default function Home() {
             <CitiesRight
               ProgramBot1={DataScienceCourseData[0].ProgramBot1}
               ProgramHead3={DataScienceCourseData[0].ProgramHead3}
+              ProgramHead4={DataScienceCourseData[0].ProgramHead4}
               ProgramBot3={DataScienceCourseData[0].ProgramBot3}
-              ProgramBot31={DataScienceCourseData[0].ProgramBot31}
+              ProgramBot66={DataScienceCourseData[0].ProgramBot66}
               ProgramBot4={DataScienceCourseData[0].ProgramBot4}
               ProgramBot5={DataScienceCourseData[0].ProgramBot5}
               ProgramBot6={DataScienceCourseData[0].ProgramBot6}
