@@ -379,6 +379,7 @@ export const FSDelhiCourseData = [
         heading: "On-Demand Doubt Session",
         para: "Clear your doubts with industry experts & get real-time solutions",
       },
+      //
       {
         id: 1,
         img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/icon3.png",
