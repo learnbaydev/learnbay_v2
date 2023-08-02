@@ -234,10 +234,11 @@ export default function Home() {
               SyllabusBotlist46={AIPuneCourseData[0].SyllabusBotlist46}
               syllabussrc={AIPuneCourseData[0].syllabussrc}
               JobBot1={AIPuneCourseData[0].JobBot1}
+              JobBot2={AIPuneCourseData[0].JobBot2}
               JobHead2={AIPuneCourseData[0].JobHead2}
               JobBot3={AIPuneCourseData[0].JobBot3}
               JobBot4={AIPuneCourseData[0].JobBot4}
-              ProjectsBot1={AIPuneCourseData[0].ProgramBot1}
+              ProjectsBot1={AIPuneCourseData[0].ProjectsBot1}
               src1={AIPuneCourseData[0].src1}
               ProjectsH1={AIPuneCourseData[0].ProjectsH1}
               Projectsp1={AIPuneCourseData[0].Projectsp1}

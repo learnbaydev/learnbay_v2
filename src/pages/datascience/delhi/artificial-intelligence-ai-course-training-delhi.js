@@ -166,9 +166,11 @@ export default function Home() {
           <div className="CitiesRight">
             <CitiesRight
               ProgramBot1={AIelhiCourseData[0].ProgramBot1}
+              ProgramBot2={AIelhiCourseData[0].ProgramBot2}
               ProgramHead3={AIelhiCourseData[0].ProgramHead3}
               ProgramBot3={AIelhiCourseData[0].ProgramBot3}
-              ProgramBot31={AIelhiCourseData[0].ProgramBot31}
+              ProgramBot66={AIelhiCourseData[0].ProgramBot66}
+              ProgramBot67={AIelhiCourseData[0].ProgramBot67}
               ProgramBot4={AIelhiCourseData[0].ProgramBot4}
               ProgramBot5={AIelhiCourseData[0].ProgramBot5}
               ProgramBot6={AIelhiCourseData[0].ProgramBot6}
@@ -207,11 +209,15 @@ export default function Home() {
               Domainlink9={AIelhiCourseData[0].Domainlink9}
               Domainlink10={AIelhiCourseData[0].Domainlink10}
               CertificationBot1={AIelhiCourseData[0].CertificationBot1}
+              CertificationBot2={AIelhiCourseData[0].CertificationBot2}
+              CertificationHead1={AIelhiCourseData[0].CertificationHead1}
               src={AIelhiCourseData[0].src}
               src22={AIelhiCourseData[0].src22}
               src33={AIelhiCourseData[0].src33}
               ModuleBot1={AIelhiCourseData[0].ModuleBot1}
               ModuleBot2={AIelhiCourseData[0].ModuleBot2}
+              ModuleBot3={AIelhiCourseData[0].ModuleBot3}
+              ModuleBot4={AIelhiCourseData[0].ModuleBot4}
               syllabush1={AIelhiCourseData[0].syllabush1}
               syllabusb1={AIelhiCourseData[0].syllabusb1}
               SyllabusBotlist11={AIelhiCourseData[0].SyllabusBotlist11}
@@ -246,7 +252,9 @@ export default function Home() {
               SyllabusBotlist46={AIelhiCourseData[0].SyllabusBotlist46}
               syllabussrc={AIelhiCourseData[0].syllabussrc}
               JobBot1={AIelhiCourseData[0].JobBot1}
+              JobBot2={AIelhiCourseData[0].JobBot2}
               JobHead2={AIelhiCourseData[0].JobHead2}
+              JobHead1={AIelhiCourseData[0].JobHead1}
               JobBot3={AIelhiCourseData[0].JobBot3}
               JobBot4={AIelhiCourseData[0].JobBot4}
               ProjectsBot1={AIelhiCourseData[0].ProgramBot1}
