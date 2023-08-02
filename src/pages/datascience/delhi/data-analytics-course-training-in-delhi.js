@@ -129,8 +129,8 @@ export default function Home() {
           dataScience={true}
           titleCourse="data analytics course training in delhi"
           brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Data+Analytics+Certification+Program+Learnbay.pdf"
-          idss="Jn2puEQC8yk"
-          FirstRightImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/head/Data+Analytics.png"
+          idss="y_0IdhFKJKM"
+          FirstRightImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/data+analytics+header+image.webp"
           firstToparaImg="For Professionals"
           firstHeading="Data Analytics Course Training In Delhi"
           firstTopPara="Fast track IBM Certified Data Analytics Course for early pros."

@@ -20,10 +20,10 @@ const CityText = dynamic(() =>
   import("../../../../components/SEO/CityText/CityText")
 );
 const CitiesLeft = dynamic(() =>
-  import("../../../../components/SEO/CitiesLeft/CitiesLeft")
+  import("../../../../components/SEO/CitiesLeft/CitiesLeftDomain")
 );
 const CitiesRight = dynamic(() =>
-  import("../../../../components/SEO/CitiesRight/CitiesRight")
+  import("../../../../components/SEO/CitiesRight/CitiesRightdomain")
 );
 import { DAPuneCourseData } from "../../../../CityData/Pune/dataAnalyticsCourseTrainingInPune";
 const FAQNew = dynamic(() =>
@@ -127,8 +127,8 @@ export default function Home() {
           titleCourse="Data Analytics Course Training in Pune"
           brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Data+Analytics+Certification+Program+Learnbay.pdf"
           idss="y_0IdhFKJKM"
-          FirstRightImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/course6.png"
-         
+          FirstRightImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/data+analytics+header+image.webp"
+          firstToparaImg="For Professionals"
           firstHeading="Data Analytics Course Training in Pune"
           firstTopPara="Industrial Training Program for Early-professionals"
           cityParaCont="Working professionals with less than a year of experience who are hoping for a prosperous or even developing career path should take this course."
@@ -162,6 +162,7 @@ export default function Home() {
             
               ProgramHead1={DAPuneCourseData[0].ProgramHead1}
               ProgramBot1={DAPuneCourseData[0].ProgramBot1}
+              ProgramBot2={DAPuneCourseData[0].ProgramBot2}
               ProgramBot3={DAPuneCourseData[0].ProgramBot3}
               ProgramHead3={DAPuneCourseData[0].ProgramHead3}
             
@@ -210,10 +211,8 @@ export default function Home() {
               CertificationBot1={DAPuneCourseData[0].CertificationBot1}
               CertificationBot2={DAPuneCourseData[0].CertificationBot2}
               src={DAPuneCourseData[0].src}
-              ModuleHead1={DAPuneCourseData[0].ModuleHead1}
-
               src22={DAPuneCourseData[0].src22}
-              src33={DAPuneCourseData[0].src33}
+              ModuleHead1={DAPuneCourseData[0].ModuleHead1}
               ModuleBot1={DAPuneCourseData[0].ModuleBot1}
               ModuleBot2={DAPuneCourseData[0].ModuleBot2}
               ModuleBot3={DAPuneCourseData[0].ModuleBot3}
