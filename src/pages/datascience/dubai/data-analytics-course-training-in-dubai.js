@@ -119,14 +119,14 @@ export default function Home() {
           SecondTyped="Capstone Project Certificate"
           ThirdTyped="Live Interactive Classes"
           dataScience={true}
-          titleCourse="Business Analytics Master Program"
-          brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Business+Analytics+Certification+Program+Learnbay.pdf"
-          idss="4j80WXLTvGE"
-          FirstRightImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/manager+header+image.webp"
-          firstToparaImg="Course in Bangalore"
-          firstHeading="Online Data Analytics"
-          firstTopPara="IBM Certified Industry-paced Training"
-          cityParaCont="Enhance your Data Analyst career with our comprehensive Data Analytics course in Bangalore with IBM Certification. Our advanced Data Analytics training in Bangalore will help you to make experts in Python, Power BI, etc. You will get training from industry leaders and masters to gain the most in-demand data analytics and AI skills."
+          titleCourse="Data Analytics Program"
+          brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Data+Analytics+Certification+Program+Learnbay.pdf"
+          idss="y_0IdhFKJKM"
+          FirstRightImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/data+analytics+header+image.webp"
+          firstToparaImg="Training in Dubai"
+          firstHeading="Data Analytics Course"
+          firstTopPara="Industry-ready Data analytics program"
+          cityParaCont="Working professionals with less than a year of experience who are hoping for a prosperous or even developing career path should take this course."
         />
         <SecondSection SecondSectionData={DADubaiCourseData[0].secondSection} />
         <Testimonial
@@ -154,7 +154,9 @@ export default function Home() {
           </div>
           <div className="CitiesRight">
             <CitiesRight
+             ProgramHead1={DADubaiCourseData[0].ProgramHead1}
               ProgramBot1={DADubaiCourseData[0].ProgramBot1}
+              ProgramBot2={DADubaiCourseData[0].ProgramBot2}
               ProgramHead3={DADubaiCourseData[0].ProgramHead3}
               ProgramBot3={DADubaiCourseData[0].ProgramBot3}
               ProgramBot31={DADubaiCourseData[0].ProgramBot31}
@@ -206,11 +208,13 @@ export default function Home() {
               Domainlink8={DADubaiCourseData[0].Domainlink8}
               Domainlink9={DADubaiCourseData[0].Domainlink9}
               Domainlink10={DADubaiCourseData[0].Domainlink10}
+              CertificationHead1={DADubaiCourseData[0].CertificationHead1}
               CertificationBot1={DADubaiCourseData[0].CertificationBot1}
               src={DADubaiCourseData[0].src}
               src22={DADubaiCourseData[0].src22}
               ModuleBot1={DADubaiCourseData[0].ModuleBot1}
               ModuleBot2={DADubaiCourseData[0].ModuleBot2}
+              ModuleBot3={DADubaiCourseData[0].ModuleBot3}
               syllabush1={DADubaiCourseData[0].syllabush1}
               syllabusb1={DADubaiCourseData[0].syllabusb1}
               SyllabusBotlist11={DADubaiCourseData[0].SyllabusBotlist11}
@@ -248,6 +252,7 @@ export default function Home() {
               JobHead2={DADubaiCourseData[0].JobHead2}
               JobBot3={DADubaiCourseData[0].JobBot3}
               JobBot4={DADubaiCourseData[0].JobBot4}
+              JobHead3={DADubaiCourseData[0].JobHead3}
               ProjectsBot1={DADubaiCourseData[0].ProgramBot1}
               src1={DADubaiCourseData[0].src1}
               ProjectsH1={DADubaiCourseData[0].ProjectsH1}

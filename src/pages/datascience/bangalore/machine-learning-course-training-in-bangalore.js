@@ -46,7 +46,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Machine Learning Course in Bangalore with Job Assistance</title>
+      <title>Machine Learning Course in Bangalore with Job Assistance</title>
         <meta name="robots" content="index, follow" />
         <meta
           name="description"
@@ -125,9 +125,7 @@ export default function Home() {
           firstTopPara="Machine Learning Course For Experienced Tech Professionals"
           cityParaCont="Be eligible to work as an AI/ML expert in MNC/PRODUCT Based Companies. Earn the most advanced industrial machine learning skill via fast-paced industry capstones. Be pros of NLP and computer vision."
         />
-        <SecondSection
-          SecondSectionData={DataScienceCourseData[0].secondSection}
-        />
+        <SecondSection SecondSectionData={DataScienceCourseData[0].secondSection} />
         <Testimonial
           redirectDS={true}
           Testimonial={DataScienceCourseData[0].testimonial}

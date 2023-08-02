@@ -122,8 +122,7 @@ export default function Home() {
           titleCourse="Machine Learning Course Training In Hyderabad"
           brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Advance+Data+Science+and+AI+Certification+Program+Learnbay.pdf"
           FirstRightImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/head/ML.png"
-          firstHeading="Machine Learning Course "
-          firstToparaImg="Training In Hyderabad"
+          firstHeading="Machine Learning Course Training In Hyderabad"
           firstTopPara="Machine Learning Course For Experienced Tech Professionals"
           idss="bfl64ANfSV0"
         />

@@ -379,15 +379,15 @@ export const DataScienceHyderabadCourseData = [
         height: "40",
         width: "43",
         heading: "1:1 Doubt Session",
-        para: "Clear your doubts with industry experts and get real-time solutions",
+        para: "Talk to an expert & receive real-time solutions to your queries",
       },
       {
         id: 1,
         img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/icon3.png",
         height: "42",
         width: "42",
-        heading: "Unlimited Interview Calls",
-        para: "Boost career chances, gain referrals from 300+ top recruiters",
+        heading: "Guaranteed Interview Calls",
+        para: "Boost your job prospects with referrals from 300+ hiring partners",
       },
       {
         id: 1,
@@ -395,7 +395,7 @@ export const DataScienceHyderabadCourseData = [
         height: "50",
         width: "53",
         heading: "IBM Project Certificate",
-        para: "Master the domain of AI & machine learning with certificate from IBM",
+        para: "Grab opportunities with a portfolio & make a smooth career transition",
       },
       {
         id: 1,
@@ -403,7 +403,7 @@ export const DataScienceHyderabadCourseData = [
         height: "40",
         width: "40",
         heading: "Designed For Professionals",
-        para: "Use tech innovation to drive career growth & acquire in-demand skills",
+        para: "Prioritise growth, boost career with in-demand skills",
       },
     ],
     testimonial: [
@@ -817,79 +817,68 @@ export const DataScienceHyderabadCourseData = [
       "A domain-specific Data scientist will have a much better grasp of the domain and its nuances and the essential business concerns that must be addressed. Recruiters are looking for domain-specific Data scientists at present. One cannot deliver precise analytical insights without subject understanding. As a result, it's critical to select courses that include domain electives.",
     DomainBot3:
       "Learnbay's Advanced data science course online covers domains in almost all sectors like :",
-    DomainList1: "HR, Sales, and Marketing",
-    DomainList2: "Energy, oil, and Gas",
-    DomainList3: "Mechanical, manufacturing, and telecom",
-    DomainList4: "Pharmaceutical and clinical research",
-    DomainList5: "Media, hospitality, and transportation",
-    DomainList6: "Testing and Development Domain",
-    DomainList7: "DeOps and Cloud",
-    DomainList8: "IoT, automotive, and embedded systems",
-    DomainList9: "Supply chain and e-commerce",
-    DomainList10: "Banking, Finance, and Marketing Domain",
-    Domainlink1:
-      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Sales%2C+Marketing+and+HR+Domain.pdf",
-    Domainlink2:
-      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Energy%2C+Oil+and+Gas+Domain.pdf",
-    Domainlink3:
-      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Manufacturing%2C+Mechanical+and+Telecom+Domain.pdf",
-    Domainlink4:
-      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Healthcare%2C+Pharma+and+Clinical+Research+Domain.pdf",
-    Domainlink5:
-      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Media%2C+Hospitality+and+Transportation+Domain.pdf",
-    Domainlink6:
-      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Development+and+Testing+Domain.pdf",
-    Domainlink7:
-      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Cloud+and+Devops+Domain.pdf",
-    Domainlink8:
-      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Automotive%2C+IOT+and+Embedded+Domain.pdf",
-    Domainlink9:
-      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Retail%2C+Ecommerce+and+Supply+chain+Domain.pdf",
-    Domainlink10:
-      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Banking%2C+Finance+and+Insurance+Domain.pdf",
+      DomainList1: "• BFSI",
+      DomainList2: "• Manufacturing",
+      DomainList3: "• Energy, Oil and Gas",
+      DomainList4: "• Healthcare",
+      DomainList5: "• Supply Chain, E-Commerce & Retail",
+      Domainlink1:
+        "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Banking%2C+Finance+and+Insurance+Domain.pdf",
+      Domainlink2:
+        "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Manufacturing%2C+Mechanical+and+Telecom+Domain.pdf",
+      Domainlink3:
+        "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Energy%2C+Oil+and+Gas+Domain.pdf",
+      Domainlink4:
+        "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Healthcare%2C+Pharma+and+Clinical+Research+Domain.pdf",
+      Domainlink5:
+        "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Retail%2C+Ecommerce+and+Supply+chain+Domain.pdf",
     CertificationBot1:
       "You get hassle-free classes from many professional educators when pursuing the Learnbay IBM data scientist course. You'll also receive multiple IBM certifications in Data Science and Artificial intelligence micro-skills. Aside from that, upon completion of the capstone project featured in the Data Science courses in Hyderabad, you will obtain an IBM Project Experience Certificate. Depending on your course, you will receive 1 to 8 certifications.",
     CertificationBot2:
       "For more details about the certification, you can read our brochures",
-    src: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/certificate.webp",
+      src33:
+      "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Microsoft-certificate-data.png",
+    src: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Certificate-blue.png",
+    src22:
+      "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Certificate-Yellow.png",
     ModuleBot1:
       "Expert Data scientists have meticulously crafted the Data science training modules. You'll master various data science tools and strategies to understand business problems in the Data Science certification course. Enrolling in Learnbay’s IBM Data science course in Hyderabad might help students realize their full potential as Data scientists. Our courses are meant to be simple to follow and comprehend while providing the finest possible Data science foundation. We teach you how your Data science abilities will be used in the future by using real-time capstone projects.",
     ModuleBot2:
       "A few of the most important data science submodules covered in our courses are Python, Statistics, MongoDB, Tensorflow, Deep Learning, Time series, Deployment GCP, and other data science tools.",
-    syllabush1: "Preparatory Classes (Programming + Maths)",
-    syllabusb1: "6 Hours",
-    SyllabusBotlist11: "Anaconda Installation",
-    SyllabusBotlist12: "Basics of Programming",
-    SyllabusBotlist13: "Memory Management",
-    SyllabusBotlist14: "Compiler and Interpreter",
-    SyllabusBotlist15: "Syntax of Python",
-    SyllabusBotlist16: "Basics of Statistics",
-    syllabush2: "Python Programming (Basic + Advance)",
-    syllabusb2: "40 Hours",
-    SyllabusBotlist21: "Git and GitHub",
-    SyllabusBotlist22: "Operators + Data Types + Loops",
-    SyllabusBotlist23: "Functions + Regular Expression",
-    SyllabusBotlist24: "Conditional Statement",
-    SyllabusBotlist25: "File & Exceptional Handling",
-    SyllabusBotlist26: "Numpy, Pandas, Matplotlib, etc.",
-    syllabush3: "Statistics and Machine Learning",
-    syllabusb3: "70 Hours",
-    SyllabusBotlist31: "Linear Algebra, Probability",
-    SyllabusBotlist32: "Permutation & Combination",
-    SyllabusBotlist33: "Descriptive & Inferential Stats",
-    SyllabusBotlist34: "Hypothesis Testing",
-    SyllabusBotlist35: "Time Series Analysis",
-    SyllabusBotlist36: "ML Algorithms",
-    syllabush4: "Industrial Projects & Capstone Projects",
-    syllabusb4: "12+ Classes",
-    SyllabusBotlist41: "Text Classification",
-    SyllabusBotlist42: "Human Activity Recognition",
-    SyllabusBotlist43: "Forecasting Business KPI's",
-    SyllabusBotlist44: "Credit Risk Analysis",
-    SyllabusBotlist45: "Customer Churn Prediction",
-    SyllabusBotlist46: "Sentiment Analysis",
-    syllabussrc:
-      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Advance+Data+Science+and+AI+Certification+Program+Learnbay.pdf",
+      syllabush1: " Preparatory Classes (Programming + Maths)",
+      syllabusb1: "6 Hours",
+      SyllabusBotlist11: " Cohort Orientation",
+      SyllabusBotlist12: "A brief introduction to tools related to data",
+      SyllabusBotlist13: " Fundamentals of Programming",
+      SyllabusBotlist14: "Introduction to Anaconda & Jupyter notebook",
+      SyllabusBotlist15: "Fundamentals of Statistics",
+      SyllabusBotlist16: "Mean, Median, Mode",
+      syllabush2: "Python for Data Science",
+      syllabusb2: "40 Hours",
+      SyllabusBotlist21: "Python Programming",
+      SyllabusBotlist22: "Data Analysis Using Numpy",
+      SyllabusBotlist23: "Python Programming Overview",
+      SyllabusBotlist24: "Python Data Types",
+      SyllabusBotlist25: "Strings, Decisions & Loop Control",
+      SyllabusBotlist26: "Data Analysis Using Pandas",
+      syllabush3: "Statistics and Machine Learning",
+      syllabusb3: "70 Hours",
+      SyllabusBotlist31: "Statistics",
+      SyllabusBotlist32: "Fundamentals of Math and Probability",
+      SyllabusBotlist33: "Descriptive Statistics",
+      SyllabusBotlist34: " Machine Learning",
+      SyllabusBotlist35: "Linear Regression Model",
+      SyllabusBotlist36: "Data Preprocessing",
+      syllabush4: " Data Science Tools",
+      syllabusb4: "12+ Classes",
+      SyllabusBotlist41: " SQL",
+      SyllabusBotlist42: "MongoDB",
+      SyllabusBotlist43: "Tableau",
+      SyllabusBotlist44: " PowerBI",
+      SyllabusBotlist45: " Big Data & Spark Analytics",
+      SyllabusBotlist46: "Big Data & Spark Analytics",
+      syllabussrc:
+        "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Advance+Data+Science+and+AI+Certification+Program+Learnbay.pdf",
     JobBot1:
       "The Data science curriculum at Learnbay includes a Job Assistance program. Students will receive CV preparation and soft skills training sessions by the end of the IBM Data science course. Our students gain confidence before the interviews by participating in various company-specific mock interviews. Furthermore, our representatives verify that your portfolio meets industry standards and appeals to hiring managers. In Hyderabad, you can take a Data science course with a placement assistance. You can claim a Data science course fee refund if you cannot find a Data science career role within six months of completing the course.",
     JobBot2:

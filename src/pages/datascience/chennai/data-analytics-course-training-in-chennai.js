@@ -20,10 +20,10 @@ const CityText = dynamic(() =>
   import("../../../../components/SEO/CityText/CityText")
 );
 const CitiesLeft = dynamic(() =>
-  import("../../../../components/SEO/CitiesLeft/CitiesLeft")
+  import("../../../../components/SEO/CitiesLeft/CitiesLeftDomain")
 );
 const CitiesRight = dynamic(() =>
-  import("../../../../components/SEO/CitiesRight/CitiesRight")
+  import("../../../../components/SEO/CitiesRight/CitiesRightdomain")
 );
 import { DataAnalyticsChennaiCourseData } from "../../../../CityData/Chennai/dataAnalyticsCourseTrainingInChennai";
 const FAQNew = dynamic(() =>
@@ -154,10 +154,11 @@ export default function Home() {
           cityParaCont=" Working professionals with less than a year of experience who are hoping for a prosperous or even developing career path should take this course."
           titleCourse="Data Analytics Course Training in Chennai For Professionals"
           brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Data+Analytics+Certification+Program+Learnbay.pdf"
-          FirstRightImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/head/Data+Analytics.png"
-          firstHeading="Data Analytics Course Training in Chennai For Professionals"
+          FirstRightImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/data+analytics+header+image.webp"
+          firstToparaImg="For Professionals"
+          firstHeading="Data Analytics Course Training in Chennai "
           firstTopPara="Industrial Program For Early Pros"
-          idss="bfl64ANfSV0"
+          idss="y_0IdhFKJKM"
         />
         <SecondSection
           SecondSectionData={DataAnalyticsChennaiCourseData[0].secondSection}
@@ -235,7 +236,11 @@ export default function Home() {
               CertificationBot1={
                 DataAnalyticsChennaiCourseData[0].CertificationBot1
               }
+              CertificationBot2={
+                DataAnalyticsChennaiCourseData[0].CertificationBot2
+              }
               src={DataAnalyticsChennaiCourseData[0].src}
+              src22={DataAnalyticsChennaiCourseData[0].src22}
               ModuleHead1={DataAnalyticsChennaiCourseData[0].ModuleHead1}
               ModuleBot1={DataAnalyticsChennaiCourseData[0].ModuleBot1}
               ModuleBot2={DataAnalyticsChennaiCourseData[0].ModuleBot2}
@@ -327,9 +332,11 @@ export default function Home() {
               JobHead2={DataAnalyticsChennaiCourseData[0].JobHead2}
               JobBot3={DataAnalyticsChennaiCourseData[0].JobBot3}
               JobBot4={DataAnalyticsChennaiCourseData[0].JobBot4}
+              JobHead3={DataAnalyticsChennaiCourseData[0].JobHead3}
               JobBot6={DataAnalyticsChennaiCourseData[0].JobBot6}
-              ProjectsBot1={DataAnalyticsChennaiCourseData[0].ProgramBot1}
-              ProjectsBot2={DataAnalyticsChennaiCourseData[0].ProgramBot2}
+              ProjectsHead1={DataAnalyticsChennaiCourseData[0].ProjectsHead1}
+              ProjectsBot1={DataAnalyticsChennaiCourseData[0].ProjectsBot1}
+              ProjectsBot2={DataAnalyticsChennaiCourseData[0].ProjectsBot2}
               src1={DataAnalyticsChennaiCourseData[0].src1}
               ProjectsH1={DataAnalyticsChennaiCourseData[0].ProjectsH1}
               Projectsp1={DataAnalyticsChennaiCourseData[0].Projectsp1}

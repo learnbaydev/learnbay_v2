@@ -1,4 +1,4 @@
-import Head from "next/head";
+  import Head from "next/head";
 import styles from "../../../styles/Home.module.css";
 import dynamic from "next/dynamic";
 const FirstSection = dynamic(() =>
@@ -119,13 +119,13 @@ export default function Home() {
           ThirdTyped="Live Interactive Classes"
           dataScience={true}
           titleCourse="Data Analytics Master Program"
-          brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Business+Analytics+Certification+Program+Learnbay.pdf"
-          idss="4j80WXLTvGE"
-          FirstRightImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/manager+header+image.webp"
-          firstToparaImg="Course in Mumbai"
-          firstHeading="Online Data Analytics"
-          firstTopPara="IBM Certified Industry-paced Training"
-          cityParaCont="Enhance your Data Analyst career with our comprehensive Data Analytics course in Mumbai with IBM Certification. Our advanced Data Analytics training in Mumbai will help you to make experts in Python, Power BI, etc. You will get training from industry leaders and masters to gain the most in-demand data analytics and AI skills."
+          brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Data+Analytics+Certification+Program+Learnbay.pdf"
+          idss="y_0IdhFKJKM"
+          FirstRightImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/data+analytics+header+image.webp"
+          firstToparaImg="For Professionals"
+          firstHeading="Data Analytics Course Training in Mumbai"
+          firstTopPara="In Collaboration with IBM"
+          cityParaCont="Working professionals with less than a year of experience who are hoping for a prosperous or even developing career path should take this course."
         />
         <SecondSection
           SecondSectionData={DAMumbaiCourseData[0].secondSection}
@@ -155,8 +155,12 @@ export default function Home() {
           </div>
           <div className="CitiesRight">
             <CitiesRight
+            ProgramHead1={DAMumbaiCourseData[0].ProgramHead1}
+            ProgramHead2={DAMumbaiCourseData[0].ProgramHead2}
               ProgramBot1={DAMumbaiCourseData[0].ProgramBot1}
+              ProgramBot2={DAMumbaiCourseData[0].ProgramBot2}
               ProgramHead3={DAMumbaiCourseData[0].ProgramHead3}
+              ProgramHead4={DAMumbaiCourseData[0].ProgramHead4}
               ProgramBot3={DAMumbaiCourseData[0].ProgramBot3}
               ProgramBot31={DAMumbaiCourseData[0].ProgramBot31}
               ProgramBot32={DAMumbaiCourseData[0].ProgramBot32}
@@ -207,11 +211,18 @@ export default function Home() {
               Domainlink8={DAMumbaiCourseData[0].Domainlink8}
               Domainlink9={DAMumbaiCourseData[0].Domainlink9}
               Domainlink10={DAMumbaiCourseData[0].Domainlink10}
+              CertificationHead1={DAMumbaiCourseData[0].CertificationHead1}
               CertificationBot1={DAMumbaiCourseData[0].CertificationBot1}
+              CertificationBot2={DAMumbaiCourseData[0].CertificationBot2}
               src={DAMumbaiCourseData[0].src}
               src22={DAMumbaiCourseData[0].src22}
+              ModuleHead1={DAMumbaiCourseData[0].ModuleHead1}
+              ModuleHead4={DAMumbaiCourseData[0].ModuleHead4}
               ModuleBot1={DAMumbaiCourseData[0].ModuleBot1}
               ModuleBot2={DAMumbaiCourseData[0].ModuleBot2}
+              ModuleBot3={DAMumbaiCourseData[0].ModuleBot3}
+              ModuleBot4={DAMumbaiCourseData[0].ModuleBot4}
+              ModuleHead2={DAMumbaiCourseData[0].ModuleHead2}
               syllabush1={DAMumbaiCourseData[0].syllabush1}
               syllabusb1={DAMumbaiCourseData[0].syllabusb1}
               SyllabusBotlist11={DAMumbaiCourseData[0].SyllabusBotlist11}
@@ -245,11 +256,15 @@ export default function Home() {
               SyllabusBotlist45={DAMumbaiCourseData[0].SyllabusBotlist45}
               SyllabusBotlist46={DAMumbaiCourseData[0].SyllabusBotlist46}
               syllabussrc={DAMumbaiCourseData[0].syllabussrc}
+              JobHead1={DAMumbaiCourseData[0].JobHead1}
               JobBot1={DAMumbaiCourseData[0].JobBot1}
+              JobBot2={DAMumbaiCourseData[0].JobBot2}
               JobHead2={DAMumbaiCourseData[0].JobHead2}
+              JobHead3={DAMumbaiCourseData[0].JobHead3}
               JobBot3={DAMumbaiCourseData[0].JobBot3}
               JobBot4={DAMumbaiCourseData[0].JobBot4}
-              ProjectsBot1={DAMumbaiCourseData[0].ProgramBot1}
+              JobBot6={DAMumbaiCourseData[0].JobBot6}
+              ProjectsBot1={DAMumbaiCourseData[0].ProjectsBot1}
               src1={DAMumbaiCourseData[0].src1}
               ProjectsH1={DAMumbaiCourseData[0].ProjectsH1}
               Projectsp1={DAMumbaiCourseData[0].Projectsp1}

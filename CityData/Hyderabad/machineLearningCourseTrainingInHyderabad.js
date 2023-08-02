@@ -825,21 +825,38 @@ export const MachineLearningHyderabadCourseData = [
       "Learnbay examines your profile and recommends a domain that is ideal for you. Students apply Machine learning technologies and work in their domains to gain proficiency in a certain industry's ML skills. Learnbay's Machine Learning training course in Hyderabad allows you to be the master of a specific industry’s ML best practices, enabling you to stand out in the domain and excel in it.",
     DomainBot2:
       "Learnbay in Hyderabad offers a diverse choice of domain electives for students to pick from:",
-    DomainList1: "• BFSI",
-    DomainList2: "• Manufacturing",
-    DomainList3: "• Energy, Oil and Gas",
-    DomainList4: "• Healthcare",
-    DomainList5: "• Supply Chain, E-Commerce & Retail",
+    DomainList1: "HR, Sales, and Marketing",
+    DomainList2: "Energy, oil, and Gas",
+    DomainList3: "Mechanical, manufacturing, and telecom",
+    DomainList4: "Pharmaceutical and clinical research",
+    DomainList5: "Media, hospitality, and transportation",
+    DomainList6: "Testing and Development Domain",
+    DomainList7: "DeOps and Cloud",
+    DomainList8: "IoT, automotive, and embedded systems",
+    DomainList9: "Supply chain and e-commerce",
+    DomainList10: "Banking, Finance, and Marketing Domain",
+    DomainBot3:
+      "The ML modules you get will be extremely focused on your chosen elective(s). This increases the chances of your selection as an ML professional in a multinational firm by 120%.",
     Domainlink1:
-      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Banking%2C+Finance+and+Insurance+Domain.pdf",
+      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Sales%2C+Marketing+and+HR+Domain.pdf",
     Domainlink2:
-      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Manufacturing%2C+Mechanical+and+Telecom+Domain.pdf",
-    Domainlink3:
       "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Energy%2C+Oil+and+Gas+Domain.pdf",
+    Domainlink3:
+      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Manufacturing%2C+Mechanical+and+Telecom+Domain.pdf",
     Domainlink4:
       "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Healthcare%2C+Pharma+and+Clinical+Research+Domain.pdf",
     Domainlink5:
+      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Media%2C+Hospitality+and+Transportation+Domain.pdf",
+    Domainlink6:
+      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Development+and+Testing+Domain.pdf",
+    Domainlink7:
+      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Cloud+and+Devops+Domain.pdf",
+    Domainlink8:
+      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Automotive%2C+IOT+and+Embedded+Domain.pdf",
+    Domainlink9:
       "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Retail%2C+Ecommerce+and+Supply+chain+Domain.pdf",
+    Domainlink10:
+      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Banking%2C+Finance+and+Insurance+Domain.pdf",
     CertificationBot1:
       "Students receive 6 IBM certificates by completing Machine Learning course training in Hyderabad.",
     CertificationBot2:

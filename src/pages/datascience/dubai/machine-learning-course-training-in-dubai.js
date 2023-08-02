@@ -46,7 +46,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>
+      <title>
           Best Machine Learning Course in Dubai with Career Assistance
         </title>
         <meta name="robots" content="index, follow" />
@@ -125,7 +125,7 @@ export default function Home() {
           firstToparaImg="For Managers and Leaders"
           firstHeading="Artificial Intelligence (AI) Course Training in Dubai"
           firstTopPara="Job-oriented Data Science Training for working professionals"
-          cityParaCont=" Be eligible to work as an AI/ML expert in MNC/PRODUCT Based Companies. Earn the most advanced industrial machine learning skill via fast-paced industry capstones. Be pros of NLP and computer vision."
+          cityParaCont=" Become a successful data science manager/leader within 11 months. Learn the secret data scientific tricks of managing data science projects. Learn directly from industry leaders via live classes and live projects."
         />
         <SecondSection SecondSectionData={MLDubaiCourseData[0].secondSection} />
         <Testimonial
@@ -153,7 +153,6 @@ export default function Home() {
           </div>
           <div className="CitiesRight">
             <CitiesRight
-              certificate1={true}
               ProgramBot1={MLDubaiCourseData[0].ProgramBot1}
               ProgramHead3={MLDubaiCourseData[0].ProgramHead3}
               ProgramBot3={MLDubaiCourseData[0].ProgramBot3}
@@ -197,8 +196,8 @@ export default function Home() {
               Domainlink10={MLDubaiCourseData[0].Domainlink10}
               CertificationBot1={MLDubaiCourseData[0].CertificationBot1}
               src={MLDubaiCourseData[0].src}
-              // src22={MLDubaiCourseData[0].src22}
-              // src33={MLDubaiCourseData[0].src33}
+              src22={MLDubaiCourseData[0].src22}
+              src33={MLDubaiCourseData[0].src33}
               ModuleBot1={MLDubaiCourseData[0].ModuleBot1}
               ModuleBot2={MLDubaiCourseData[0].ModuleBot2}
               syllabush1={MLDubaiCourseData[0].syllabush1}
