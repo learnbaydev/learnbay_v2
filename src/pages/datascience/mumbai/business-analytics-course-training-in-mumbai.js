@@ -122,7 +122,7 @@ export default function Home() {
           FirstRightImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/manager+header+image.webp"
           firstToparaImg="Training In Mumbai"
           firstHeading="Business Analytics Course"
-          firstTopPara="Job-ready Business Analytics Program with Live Industrial Projects"
+          firstTopPara="Industry-paced Project-based Training"
           cityParaCont="The best-suited course for working professionals with less than a year of work experience and dreaming for a lucrative and even growing future."
         />
         <SecondSection
@@ -138,7 +138,7 @@ export default function Home() {
           <FeeSection
             AIMLCertificate={true}
             Fee="₹ 1,10,000 + 18% GST"
-            FeeEmi="₹ 10,817/month"
+            FeeEmi="₹ 10,816/month"
             FeeHeading="Program Fee & Financing"
             FeeContent2="No cost EMI"
             FeeContent3="Flexible payment"
@@ -153,10 +153,13 @@ export default function Home() {
           </div>
           <div className="CitiesRight">
             <CitiesRight
+              ProgramHead1={BAMumbaiCourseData[0].ProgramHead1}
               ProgramBot1={BAMumbaiCourseData[0].ProgramBot1}
+              ProgramBot2={BAMumbaiCourseData[0].ProgramBot2}
               ProgramHead3={BAMumbaiCourseData[0].ProgramHead3}
               ProgramBot3={BAMumbaiCourseData[0].ProgramBot3}
               ProgramBot31={BAMumbaiCourseData[0].ProgramBot31}
+              ProgramBot32={BAMumbaiCourseData[0].ProgramBot32}
               ProgramBot4={BAMumbaiCourseData[0].ProgramBot4}
               ProgramBot5={BAMumbaiCourseData[0].ProgramBot5}
               ProgramBot6={BAMumbaiCourseData[0].ProgramBot6}
@@ -194,10 +197,13 @@ export default function Home() {
               Domainlink8={BAMumbaiCourseData[0].Domainlink8}
               Domainlink9={BAMumbaiCourseData[0].Domainlink9}
               Domainlink10={BAMumbaiCourseData[0].Domainlink10}
-              CertificationBot1={BAMumbaiCourseData[0].CertificationBot1}
+              // CertificationBot1={BAMumbaiCourseData[0].CertificationBot1}
               src={BAMumbaiCourseData[0].src}
               src22={BAMumbaiCourseData[0].src22}
               src33={BAMumbaiCourseData[0].src33}
+
+              
+              ModuleHead1={BAMumbaiCourseData[0].ModuleHead1}
               ModuleBot1={BAMumbaiCourseData[0].ModuleBot1}
               ModuleBot2={BAMumbaiCourseData[0].ModuleBot2}
               syllabush1={BAMumbaiCourseData[0].syllabush1}
@@ -233,11 +239,15 @@ export default function Home() {
               SyllabusBotlist45={BAMumbaiCourseData[0].SyllabusBotlist45}
               SyllabusBotlist46={BAMumbaiCourseData[0].SyllabusBotlist46}
               syllabussrc={BAMumbaiCourseData[0].syllabussrc}
+              JobHead1={BAMumbaiCourseData[0].JobHead1}
+
               JobBot1={BAMumbaiCourseData[0].JobBot1}
+              JobBot5={BAMumbaiCourseData[0].JobBot5}
               JobHead2={BAMumbaiCourseData[0].JobHead2}
               JobBot3={BAMumbaiCourseData[0].JobBot3}
               JobBot4={BAMumbaiCourseData[0].JobBot4}
-              ProjectsBot1={BAMumbaiCourseData[0].ProgramBot1}
+              ProjectsHead1={BAMumbaiCourseData[0].ProjectsHead1}
+              ProjectsBot1={BAMumbaiCourseData[0].ProjectsBot1}
               src1={BAMumbaiCourseData[0].src1}
               ProjectsH1={BAMumbaiCourseData[0].ProjectsH1}
               Projectsp1={BAMumbaiCourseData[0].Projectsp1}

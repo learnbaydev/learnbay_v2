@@ -25,7 +25,7 @@ const CitiesLeft = dynamic(() =>
 const CitiesRight = dynamic(() =>
   import("../../../../components/SEO/CitiesRight/CitiesRight")
 );
-import { DSDelhiCourseData } from "../../../../CityData/delhi/DataScienceCourseTrainingDelhiData";
+import { DSDelhiCourseData } from "../../../../CityData/Delhi/DataScienceCourseTrainingDelhiData";
 const FAQNew = dynamic(() =>
   import("../../../../components/CoursePage/FAQNew/FAQNew")
 );
@@ -45,7 +45,7 @@ export default function Home() {
   };
   return (
     <div className={styles.container}>
-     <Head>
+      <Head>
         <title>Data Science Course in Delhi With IBM Certification</title>
         <meta name="robots" content="index, follow" />
         <meta
@@ -94,6 +94,10 @@ export default function Home() {
         <meta
           name="twitter:image"
           content="https://www.learnbay.co/_next/image?url=https%3A%2F%2Flearnbay-wb.s3.ap-south-1.amazonaws.com%2Fmain%2FLearnbay-Logo.webp&w=256&q=100"
+        />
+        <link
+          rel="icon"
+          href="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/Learnbay-Favicon-L.png"
         />
         <link
           rel="canonical"
@@ -147,15 +151,14 @@ export default function Home() {
           SecondTyped="Capstone Project Certificate"
           ThirdTyped="Live Interactive Classes"
           dataScience={true}
-          titleCourse="Data Science Course in Delhi"
+          titleCourse="Advanced Data Science and AI Program with domain specialization"
           brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Advance+Data+Science+and+AI+Certification+Program+Learnbay.pdf"
-          idss="Jn2puEQC8yk"
-          FirstRightImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/course2.png"
-          firstToparaImg="Enroll Now"
-          firstHeading="Data Science Course in Delhi -"
+          idss="bfl64ANfSV0"
+          FirstRightImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/advance+DS+header+image.webp"
+          firstToparaImg=" - Enroll Now"
+          firstHeading="Data Science Course in Delhi"
           firstTopPara="Foundational and Advance Job-ready Program"
           cityParaCont="Enhance your Data Science career with our comprehensive Data Science course in Delhi with IBM Certification. Our advanced Data Science training in Delhi will help you to make experts in Python, Power BI, etc. You will get training from industry leaders and masters. to gain the most in-demand data science and AI skills."
-
         />
         <SecondSection SecondSectionData={DSDelhiCourseData[0].secondSection} />
         <Testimonial
@@ -165,17 +168,18 @@ export default function Home() {
           para="Discover the impact of our programs on career growth"
         />
         <div className={styles.cityFee}>
-          <FeeSection
-            AIMLCertificate={true}
-            Fee="₹  99,000 + 18% GST"
-            FeeEmi="₹  9,735/month"
-            FeeHeading="Program Fee & Financing"
-            FeeContent2="No cost EMI"
-            FeeContent3="Flexible payment"
-            FeeContent4="Easy loan procedure"
-            FeeContent5="15 days refund policy"
-            dataScienceCounselling={true}
-          />
+        <FeeSection
+          Fee="₹ 99,000 + 18% GST"
+          FeeEmi="₹ 9,735/month"
+          FeeHeading="Program Fee & Financing"
+          FeeContent1="0% interest rate"
+          FeeContent2="No cost EMI"
+          FeeContent3="Flexible payment"
+          FeeContent4="Easy loan procedure"
+          FeeContent5="15 days refund policy"
+          FeeContent6="No additional cost"
+          dataScienceCounselling={true}
+        />
         </div>
         <div className="MainCities">
           <div className="CitiesLeft">
@@ -183,30 +187,7 @@ export default function Home() {
           </div>
           <div className="CitiesRight">
             <CitiesRight
-             ProgramHead1={DSDelhiCourseData[0].ProgramHead1}
-              ProgramBot1={DSDelhiCourseData[0].ProgramBot1}
-              ProgramBot2={DSDelhiCourseData[0].ProgramBot2}
-              ProgramHead3={DSDelhiCourseData[0].ProgramHead3}
-              ProgramHead4={DSDelhiCourseData[0].ProgramHead4}
-              ProgramBot3={DSDelhiCourseData[0].ProgramBot3}
-              ProgramBot31={DSDelhiCourseData[0].ProgramBot31}
-              ProgramBot32={DSDelhiCourseData[0].ProgramBot32}
-              ProgramBot4={DSDelhiCourseData[0].ProgramBot4}
-              ProgramBot5={DSDelhiCourseData[0].ProgramBot5}
-              ProgramBot6={DSDelhiCourseData[0].ProgramBot6}
-              ProgramBot8={DSDelhiCourseData[0].ProgramBot8}
-              ProgramBot9={DSDelhiCourseData[0].ProgramBot9}
-              ProgramBot10={DSDelhiCourseData[0].ProgramBot10}
-              Courselink1={DSDelhiCourseData[0].Courselink1}
-              Courselink2={DSDelhiCourseData[0].Courselink2}
-              Courselink3={DSDelhiCourseData[0].Courselink3}
-              Courselink4={DSDelhiCourseData[0].Courselink4}
-              Courselink5={DSDelhiCourseData[0].Courselink5}
-              Course1={DSDelhiCourseData[0].Course1}
-              Course2={DSDelhiCourseData[0].Course2}
-              Course3={DSDelhiCourseData[0].Course3}
-              Course4={DSDelhiCourseData[0].Course4}
-              Course5={DSDelhiCourseData[0].Course5}
+            cityTextDSDelhi={true}
               DomainHead1={DSDelhiCourseData[0].DomainHead1}
               DomainBot1={DSDelhiCourseData[0].DomainBot1}
               DomainBot2={DSDelhiCourseData[0].DomainBot2}
@@ -237,11 +218,11 @@ export default function Home() {
               src={DSDelhiCourseData[0].src}
               src22={DSDelhiCourseData[0].src22}
               src33={DSDelhiCourseData[0].src33}
-             ModuleHead1={DSDelhiCourseData[0].ModuleHead1}
+              ModuleHead1={DSDelhiCourseData[0].ModuleHead1}
               ModuleBot1={DSDelhiCourseData[0].ModuleBot1}
               ModuleBot2={DSDelhiCourseData[0].ModuleBot2}
               ModuleBot3={DSDelhiCourseData[0].ModuleBot3}
-              ModuleHead3={DSDelhiCourseData[0] .ModuleHead3}
+              ModuleHead3={DSDelhiCourseData[0].ModuleHead3}
               ModuleBot4={DSDelhiCourseData[0].ModuleBot4}
               ModuleHead2={DSDelhiCourseData[0].ModuleHead2}
               syllabush1={DSDelhiCourseData[0].syllabush1}

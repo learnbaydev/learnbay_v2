@@ -116,14 +116,14 @@ export default function Home() {
           SecondTyped="Capstone Project Certificate"
           ThirdTyped="Live Interactive Classes"
           dataScience={true}
-          titleCourse="AI & ML Program for tech professionals"
-          brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Advance+AI+%26+ML+Certification+Program+Learnbay.pdf"
-          idss="Jn2puEQC8yk"
-          FirstRightImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/AIML-Header.png"
-          firstToparaImg="Training in Bangalore"
-          firstHeading="Artificial Intelligence (AI)"
-          firstTopPara="Job-oriented Data Science Training for working professionals"
-          cityParaCont=" Become a successful data science manager/leader within 11 months. Learn the secret data scientific tricks of managing data science projects. Learn directly from industry leaders via live classes and live projects."
+          titleCourse="Data Science and AI Program For Manager & Leaders"
+          brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Data+Science+%26+AI+Certification+Program+For+Managers+%26+Leaders+Learnbay.pdf"
+          idss="osYNvuuI1_8"
+          FirstRightImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Business-Analytics-Masters-Header.png"
+          firstToparaImg="For Managers and Leaders"
+          firstHeading="Artificial Intelligence (AI) Course Training in Pune"
+          firstTopPara="IBM Certified AI training With Domain Specialization and 100% job assistance"
+          cityParaCont="Become a successful data science manager/leader within 11 months. Learn the secret data scientific tricks of managing data science projects. Learn directly from industry leaders via live classes and live projects."
         />
         <SecondSection SecondSectionData={AIPuneCourseData[0].secondSection} />
         <Testimonial
@@ -133,17 +133,18 @@ export default function Home() {
           para="Discover the impact of our programs on career growth"
         />
         <div className={styles.cityFee}>
-          <FeeSection
-            AIMLCertificate={true}
-            Fee="₹ 1,10,000 + 18% GST"
-            FeeEmi="₹ 10,817/month"
-            FeeHeading="Program Fee & Financing"
-            FeeContent2="No cost EMI"
-            FeeContent3="Flexible payment"
-            FeeContent4="Easy loan procedure"
-            FeeContent5="15 days refund policy"
-            dataScienceCounselling={true}
-          />
+        <FeeSection
+          Fee="₹ 1,10,000 + 18% GST"
+          FeeEmi="₹ 10,817/month"
+          FeeHeading="Program Fee & Financing"
+          FeeContent1="0% interest rate"
+          FeeContent2="No cost EMI"
+          FeeContent3="Flexible payment"
+          FeeContent4="Easy loan procedure"
+          FeeContent5="15 days refund policy"
+          FeeContent6="No additional cost"
+          dataScienceCounselling={true}
+        />
         </div>
         <div className="MainCities">
           <div className="CitiesLeft">
@@ -154,7 +155,8 @@ export default function Home() {
               ProgramBot1={AIPuneCourseData[0].ProgramBot1}
               ProgramHead3={AIPuneCourseData[0].ProgramHead3}
               ProgramBot3={AIPuneCourseData[0].ProgramBot3}
-              ProgramBot31={AIPuneCourseData[0].ProgramBot31}
+              ProgramBot66={AIPuneCourseData[0].ProgramBot66}
+              ProgramBot67={AIPuneCourseData[0].ProgramBot67}
               ProgramBot4={AIPuneCourseData[0].ProgramBot4}
               ProgramBot5={AIPuneCourseData[0].ProgramBot5}
               ProgramBot6={AIPuneCourseData[0].ProgramBot6}
@@ -232,10 +234,11 @@ export default function Home() {
               SyllabusBotlist46={AIPuneCourseData[0].SyllabusBotlist46}
               syllabussrc={AIPuneCourseData[0].syllabussrc}
               JobBot1={AIPuneCourseData[0].JobBot1}
+              JobBot2={AIPuneCourseData[0].JobBot2}
               JobHead2={AIPuneCourseData[0].JobHead2}
               JobBot3={AIPuneCourseData[0].JobBot3}
               JobBot4={AIPuneCourseData[0].JobBot4}
-              ProjectsBot1={AIPuneCourseData[0].ProgramBot1}
+              ProjectsBot1={AIPuneCourseData[0].ProjectsBot1}
               src1={AIPuneCourseData[0].src1}
               ProjectsH1={AIPuneCourseData[0].ProjectsH1}
               Projectsp1={AIPuneCourseData[0].Projectsp1}

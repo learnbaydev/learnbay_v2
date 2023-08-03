@@ -286,7 +286,7 @@ export const BADelhiCourseData = [
           img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/icon3.png",
           height: "42",
           width: "42",
-          heading: "Unlimited Interview Calls",
+          heading: "Guaranteed Interview Calls",
           para: "Boost career chances, gain referrals from 300+ top recruiters",
         },
         {
@@ -295,7 +295,7 @@ export const BADelhiCourseData = [
           height: "50",
           width: "53",
           heading: "IBM Project Certificate",
-          para: "Master the domain of AI & machine learning with certificate from IBM",
+          para: "Master the domain of business analytics with certificate from IBM",
         },
         {
           id: 1,
@@ -303,7 +303,7 @@ export const BADelhiCourseData = [
           height: "40",
           width: "40",
           heading: "Designed For Professionals",
-          para: "Use tech innovation to drive career growth & acquire in-demand skills",
+          para: "Use tech innovation for strategy, skill acquisition, & business growth",
         },
       ],
       testimonial: [
@@ -670,7 +670,11 @@ export const BADelhiCourseData = [
       ProgramHead4:"Know more about Learnbay’s Business Analytics Course in Delhi.",
       CertificationHead1:"Certification process at Learnbay",
       CertificationBot2:"After the completion of the Business analytics course with placement, students will be awarded an IBM Certification. To be eligible for this certification, students must successfully complete all business analytics course modules, assessments, assignments, real-time projects as well as the final IBM Exams. Possessing this certificate will undoubtedly boost your portfolio and make you stand out in the business analytics job market.",
-      src:"https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/BA-DA.jpeg",
+      src33:
+      "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Microsoft-certificate-data.png",
+    src: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Certificate-blue.png",
+    src22:
+      "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Certificate-Yellow.png",
       ModuleBot1:"The business analytics course in Delhi comprises 200+ hours of live classes taught by PRODUCT Based Companies experts. The course modules are designed in such a way that they not only make you aware of various analytical techniques but also help you understand their application scenarios and how they can be effectively woven into daily work practices.",
       ModuleBot2:"The IBM business analytics course is an introduction to the principles, techniques, and tools of business analytics such as SQL, Advanced Excel, PowerBI, etc. It also covers the concepts of data description and data visualization, as well as statistical inference techniques.",
       ModuleHead2:"Special programming classes:",

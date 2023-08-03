@@ -45,7 +45,7 @@ export default function Home() {
   };
   return (
     <div className={styles.container}>
-     <Head>
+      <Head>
         <title>Best Data Science Course in Canada With IBM Certification</title>
         <meta name="robots" content="index, follow" />
         <meta
@@ -99,6 +99,10 @@ export default function Home() {
           rel="canonical"
           href="https://www.learnbay.co/data-science-course-training-in-canada"
         />
+                <link
+          rel="icon"
+          href="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/Learnbay-Favicon-L.png"
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -147,16 +151,18 @@ export default function Home() {
           SecondTyped="Capstone Project Certificate"
           ThirdTyped="Live Interactive Classes"
           dataScience={true}
-          titleCourse="AI & ML Program for tech professionals"
+          titleCourse="Advanced Data Science and AI Program with domain specialization"
           brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Advance+Data+Science+and+AI+Certification+Program+Learnbay.pdf"
-          idss="Jn2puEQC8yk"
-          FirstRightImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/course2.png"
-          firstToparaImg="Enroll Now"
-          firstHeading="Data Science Course in Canada "
+          idss="bfl64ANfSV0"
+          FirstRightImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/advance+DS+header+image.webp"
+          firstToparaImg=" - Enroll Now"
+          firstHeading="Data Science Course in Canada"
           firstTopPara="Foundational and Advance Job-ready Program"
           cityParaCont="Enhance your Data Science career with our comprehensive Data Science course in Canada with IBM Certification. Our advanced Data Science training in Canada will help you to make experts in Python, Power BI, etc. You will get training from industry leaders and masters. to gain the most in-demand data science and AI skills."
         />
-        <SecondSection SecondSectionData={DataSciencecanadaCourseData[0].secondSection} />
+        <SecondSection
+          SecondSectionData={DataSciencecanadaCourseData[0].secondSection}
+        />
         <Testimonial
           redirectDS={true}
           Testimonial={DataSciencecanadaCourseData[0].testimonial}
@@ -164,17 +170,18 @@ export default function Home() {
           para="Discover the impact of our programs on career growth"
         />
         <div className={styles.cityFee}>
-          <FeeSection
-            AIMLCertificate={true}
-            Fee="₹99,000 + 18% GST"
-            FeeEmi="₹ 9,735/month"
-            FeeHeading="Program Fee & Financing"
-            FeeContent2="No cost EMI"
-            FeeContent3="Flexible payment"
-            FeeContent4="Easy loan procedure"
-            FeeContent5="15 days refund policy"
-            dataScienceCounselling={true}
-          />
+        <FeeSection
+          Fee="₹ 99,000 + 18% GST"
+          FeeEmi="₹ 9,735/month"
+          FeeHeading="Program Fee & Financing"
+          FeeContent1="0% interest rate"
+          FeeContent2="No cost EMI"
+          FeeContent3="Flexible payment"
+          FeeContent4="Easy loan procedure"
+          FeeContent5="15 days refund policy"
+          FeeContent6="No additional cost"
+          dataScienceCounselling={true}
+        />
         </div>
         <div className="MainCities">
           <div className="CitiesLeft">
@@ -182,8 +189,9 @@ export default function Home() {
           </div>
           <div className="CitiesRight">
             <CitiesRight
-             ProgramHead1={DataSciencecanadaCourseData[0].ProgramHead1}
+              ProgramHead1={DataSciencecanadaCourseData[0].ProgramHead1}
               ProgramBot1={DataSciencecanadaCourseData[0].ProgramBot1}
+              ProgramHead2={DataSciencecanadaCourseData[0].ProgramHead2}
               ProgramBot2={DataSciencecanadaCourseData[0].ProgramBot2}
               ProgramHead3={DataSciencecanadaCourseData[0].ProgramHead3}
               ProgramHead4={DataSciencecanadaCourseData[0].ProgramHead4}
@@ -226,46 +234,101 @@ export default function Home() {
               Domainlink8={DataSciencecanadaCourseData[0].Domainlink8}
               Domainlink9={DataSciencecanadaCourseData[0].Domainlink9}
               Domainlink10={DataSciencecanadaCourseData[0].Domainlink10}
-              CertificationBot1={DataSciencecanadaCourseData[0].CertificationBot1}
-              CertificationBot2={DataSciencecanadaCourseData[0].CertificationBot2}
+              CertificationHead1={
+                DataSciencecanadaCourseData[0].CertificationHead1
+              }
+              CertificationBot1={
+                DataSciencecanadaCourseData[0].CertificationBot1
+              }
+              CertificationBot2={
+                DataSciencecanadaCourseData[0].CertificationBot2
+              }
               src={DataSciencecanadaCourseData[0].src}
               src22={DataSciencecanadaCourseData[0].src22}
               src33={DataSciencecanadaCourseData[0].src33}
-             ModuleHead1={DataSciencecanadaCourseData[0].ModuleHead1}
+              ModuleHead1={DataSciencecanadaCourseData[0].ModuleHead1}
               ModuleBot1={DataSciencecanadaCourseData[0].ModuleBot1}
               ModuleBot2={DataSciencecanadaCourseData[0].ModuleBot2}
               syllabush1={DataSciencecanadaCourseData[0].syllabush1}
               syllabusb1={DataSciencecanadaCourseData[0].syllabusb1}
-              SyllabusBotlist11={DataSciencecanadaCourseData[0].SyllabusBotlist11}
-              SyllabusBotlist12={DataSciencecanadaCourseData[0].SyllabusBotlist12}
-              SyllabusBotlist13={DataSciencecanadaCourseData[0].SyllabusBotlist13}
-              SyllabusBotlist14={DataSciencecanadaCourseData[0].SyllabusBotlist14}
-              SyllabusBotlist15={DataSciencecanadaCourseData[0].SyllabusBotlist15}
-              SyllabusBotlist16={DataSciencecanadaCourseData[0].SyllabusBotlist16}
+              SyllabusBotlist11={
+                DataSciencecanadaCourseData[0].SyllabusBotlist11
+              }
+              SyllabusBotlist12={
+                DataSciencecanadaCourseData[0].SyllabusBotlist12
+              }
+              SyllabusBotlist13={
+                DataSciencecanadaCourseData[0].SyllabusBotlist13
+              }
+              SyllabusBotlist14={
+                DataSciencecanadaCourseData[0].SyllabusBotlist14
+              }
+              SyllabusBotlist15={
+                DataSciencecanadaCourseData[0].SyllabusBotlist15
+              }
+              SyllabusBotlist16={
+                DataSciencecanadaCourseData[0].SyllabusBotlist16
+              }
               syllabush2={DataSciencecanadaCourseData[0].syllabush2}
               syllabusb2={DataSciencecanadaCourseData[0].syllabusb2}
-              SyllabusBotlist21={DataSciencecanadaCourseData[0].SyllabusBotlist21}
-              SyllabusBotlist22={DataSciencecanadaCourseData[0].SyllabusBotlist22}
-              SyllabusBotlist23={DataSciencecanadaCourseData[0].SyllabusBotlist23}
-              SyllabusBotlist24={DataSciencecanadaCourseData[0].SyllabusBotlist24}
-              SyllabusBotlist25={DataSciencecanadaCourseData[0].SyllabusBotlist25}
-              SyllabusBotlist26={DataSciencecanadaCourseData[0].SyllabusBotlist26}
+              SyllabusBotlist21={
+                DataSciencecanadaCourseData[0].SyllabusBotlist21
+              }
+              SyllabusBotlist22={
+                DataSciencecanadaCourseData[0].SyllabusBotlist22
+              }
+              SyllabusBotlist23={
+                DataSciencecanadaCourseData[0].SyllabusBotlist23
+              }
+              SyllabusBotlist24={
+                DataSciencecanadaCourseData[0].SyllabusBotlist24
+              }
+              SyllabusBotlist25={
+                DataSciencecanadaCourseData[0].SyllabusBotlist25
+              }
+              SyllabusBotlist26={
+                DataSciencecanadaCourseData[0].SyllabusBotlist26
+              }
               syllabush3={DataSciencecanadaCourseData[0].syllabush3}
               syllabusb3={DataSciencecanadaCourseData[0].syllabusb3}
-              SyllabusBotlist31={DataSciencecanadaCourseData[0].SyllabusBotlist31}
-              SyllabusBotlist32={DataSciencecanadaCourseData[0].SyllabusBotlist32}
-              SyllabusBotlist33={DataSciencecanadaCourseData[0].SyllabusBotlist33}
-              SyllabusBotlist34={DataSciencecanadaCourseData[0].SyllabusBotlist34}
-              SyllabusBotlist35={DataSciencecanadaCourseData[0].SyllabusBotlist35}
-              SyllabusBotlist36={DataSciencecanadaCourseData[0].SyllabusBotlist36}
+              SyllabusBotlist31={
+                DataSciencecanadaCourseData[0].SyllabusBotlist31
+              }
+              SyllabusBotlist32={
+                DataSciencecanadaCourseData[0].SyllabusBotlist32
+              }
+              SyllabusBotlist33={
+                DataSciencecanadaCourseData[0].SyllabusBotlist33
+              }
+              SyllabusBotlist34={
+                DataSciencecanadaCourseData[0].SyllabusBotlist34
+              }
+              SyllabusBotlist35={
+                DataSciencecanadaCourseData[0].SyllabusBotlist35
+              }
+              SyllabusBotlist36={
+                DataSciencecanadaCourseData[0].SyllabusBotlist36
+              }
               syllabush4={DataSciencecanadaCourseData[0].syllabush4}
               syllabusb4={DataSciencecanadaCourseData[0].syllabusb4}
-              SyllabusBotlist41={DataSciencecanadaCourseData[0].SyllabusBotlist41}
-              SyllabusBotlist42={DataSciencecanadaCourseData[0].SyllabusBotlist42}
-              SyllabusBotlist43={DataSciencecanadaCourseData[0].SyllabusBotlist43}
-              SyllabusBotlist44={DataSciencecanadaCourseData[0].SyllabusBotlist44}
-              SyllabusBotlist45={DataSciencecanadaCourseData[0].SyllabusBotlist45}
-              SyllabusBotlist46={DataSciencecanadaCourseData[0].SyllabusBotlist46}
+              SyllabusBotlist41={
+                DataSciencecanadaCourseData[0].SyllabusBotlist41
+              }
+              SyllabusBotlist42={
+                DataSciencecanadaCourseData[0].SyllabusBotlist42
+              }
+              SyllabusBotlist43={
+                DataSciencecanadaCourseData[0].SyllabusBotlist43
+              }
+              SyllabusBotlist44={
+                DataSciencecanadaCourseData[0].SyllabusBotlist44
+              }
+              SyllabusBotlist45={
+                DataSciencecanadaCourseData[0].SyllabusBotlist45
+              }
+              SyllabusBotlist46={
+                DataSciencecanadaCourseData[0].SyllabusBotlist46
+              }
               syllabussrc={DataSciencecanadaCourseData[0].syllabussrc}
               JobHead1={DataSciencecanadaCourseData[0].JobHead1}
               JobBot1={DataSciencecanadaCourseData[0].JobBot1}
@@ -318,12 +381,6 @@ export default function Home() {
           </div>
         </div>
         <SeventhSection />
-        <CityText
-          CityTextB={DataSciencecanadaCourseData[0].CityTextB}
-          CityText={DataSciencecanadaCourseData[0].CityText}
-          CityTextLB={DataSciencecanadaCourseData[0].CityTextLB}
-          CityTextL={DataSciencecanadaCourseData[0].CityTextL}
-        />
         <Footer />
       </main>
     </div>

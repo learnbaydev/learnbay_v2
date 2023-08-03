@@ -14,7 +14,7 @@ const SeventhSection = dynamic(() =>
   import("../../../../components/Global/SeventhSection/SeventhSection")
 );
 const ProgramFee = dynamic(() =>
-  import("../../../../components/SEO/ProgramInfo/ProgramFee/ProgramFee")
+  import("../../../../components/SEO/ProgramInfo/ProgramFee/ProgramFee") 
 );
 const CityText = dynamic(() =>
   import("../../../../components/SEO/CityText/CityText")
@@ -46,7 +46,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
     <Head>
-        <title>Best Artificial Intelligence Course in Canada - Learnbay</title>
+    <title>Best Artificial Intelligence Course in Canada - Learnbay</title>
         <meta name="robots" content="index, follow" />
         <meta
           name="description"
@@ -60,21 +60,10 @@ export default function Home() {
           rel="canonical"
           href="https://www.learnbay.co/artificial-intelligence-ai-course-training-canada"
         />
-        {/* <meta name="HandheldFriendly" content="true" /> */}
-        {/* <meta name="distribution" content="global" /> */}
         <meta
           name="copyright"
           content="Learnbay: Artificial Intelligence Courses Certification Training Canada"
         />
-        {/* <meta name="language" content="English" /> */}
-        {/* <meta name="rating" content="general" /> */}
-        {/* <meta name="revisit-after" content="Daily" /> */}
-        {/* <meta name="author" content="Learnbay" /> */}
-        {/* <meta name="googlebot" content="index,follow" /> */}
-        {/* <meta name="bingbot" content="index,follow" /> */}
-        {/* <meta name="expires" content="never" /> */}
-        {/* <meta name="coverage" content="Worldwide" /> */}
-        {/* <meta name="robots" content="ALL" /> */}
         <link
           rel="icon"
           href="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/Learnbay-Favicon-L.png"
@@ -109,7 +98,7 @@ export default function Home() {
             __html: ` ${AIcanadaCourseData[0].script4} `,
           }}
         />
-      </Head>
+      </Head> 
       <main>
         {" "}
         <Navbar popup={true} dataScience={true} />
@@ -127,10 +116,10 @@ export default function Home() {
           SecondTyped="Capstone Project Certificate"
           ThirdTyped="Live Interactive Classes"
           dataScience={true}
-          titleCourse="artificial intelligence ai course training in canada"
+          titleCourse="Data Science and AI Program For Manager & Leaders"
           brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Data+Science+%26+AI+Certification+Program+For+Managers+%26+Leaders+Learnbay.pdf"
-          idss="Jn2puEQC8yk"
-          FirstRightImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/head/Managers+%26+Leaders.png"
+          idss="osYNvuuI1_8"
+          FirstRightImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Business-Analytics-Masters-Header.png"
           firstToparaImg="For Managers and Leaders"
           firstHeading="Artificial Intelligence(Ai) Course Training In Canada"
           firstTopPara="Job-Assured Artificial Intelligence Training  Program"
@@ -145,17 +134,18 @@ export default function Home() {
           para="Discover the impact of our programs on career growth"
         />
         <div className={styles.cityFee}>
-          <FeeSection
-            AIMLCertificate={true}
-            Fee="₹  1,10,000 + 18% GST"
-            FeeEmi="₹  10,816/month"
-            FeeHeading="Program Fee & Financing"
-            FeeContent2="No cost EMI"
-            FeeContent3="Flexible payment"
-            FeeContent4="Easy loan procedure"
-            FeeContent5="15 days refund policy"
-            dataScienceCounselling={true}
-          />
+        <FeeSection
+          Fee="₹ 1,10,000 + 18% GST"
+          FeeEmi="₹ 10,817/month"
+          FeeHeading="Program Fee & Financing"
+          FeeContent1="0% interest rate"
+          FeeContent2="No cost EMI"
+          FeeContent3="Flexible payment"
+          FeeContent4="Easy loan procedure"
+          FeeContent5="15 days refund policy"
+          FeeContent6="No additional cost"
+          dataScienceCounselling={true}
+        />
         </div>
         <div className="MainCities">
           <div className="CitiesLeft">
@@ -169,7 +159,7 @@ export default function Home() {
               ProgramHead3={AIcanadaCourseData[0].ProgramHead3}
               ProgramHead4={AIcanadaCourseData[0].ProgramHead4}
               ProgramBot3={AIcanadaCourseData[0].ProgramBot3}
-              ProgramBot31={AIcanadaCourseData[0].ProgramBot31}
+              ProgramBot66={AIcanadaCourseData[0].ProgramBot66}
               ProgramBot32={AIcanadaCourseData[0].ProgramBot32}
               ProgramBot4={AIcanadaCourseData[0].ProgramBot4}
               ProgramBot5={AIcanadaCourseData[0].ProgramBot5}

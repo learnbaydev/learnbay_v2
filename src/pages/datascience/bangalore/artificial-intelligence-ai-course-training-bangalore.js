@@ -25,7 +25,7 @@ const CitiesLeft = dynamic(() =>
 const CitiesRight = dynamic(() =>
   import("../../../../components/SEO/CitiesRight/CitiesRight")
 );
-import { DataScienceCourseData } from "../../../../CityData/Bangalore/artificialIntelligenceAiCourseTrainingBangaloreData";
+import { DataScienceCourseData } from "../../../../CityData/Bangalore/AICourseTrainingBangaloreData";
 const FAQNew = dynamic(() =>
   import("../../../../components/CoursePage/FAQNew/FAQNew")
 );
@@ -118,14 +118,14 @@ export default function Home() {
           SecondTyped="Capstone Project Certificate"
           ThirdTyped="Live Interactive Classes"
           dataScience={true}
-          titleCourse="AI & ML Program for tech professionals"
-          brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Advance+AI+%26+ML+Certification+Program+Learnbay.pdf"
-          idss="Jn2puEQC8yk"
-          FirstRightImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/AIML-Header.png"
+          titleCourse="Data Science and AI Program For Manager & Leaders"
+          brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Data+Science+%26+AI+Certification+Program+For+Managers+%26+Leaders+Learnbay.pdf"
+          idss="osYNvuuI1_8"
+          FirstRightImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Business-Analytics-Masters-Header.png"
           firstToparaImg="Training in Bangalore"
           firstHeading="Artificial Intelligence (AI)"
-          firstTopPara="Job-oriented Data Science Training for working professionals"
-          cityParaCont=" Become a successful data science manager/leader within 11 months. Learn the secret data scientific tricks of managing data science projects. Learn directly from industry leaders via live classes and live projects."
+          firstTopPara="Industry Curated Artificial Intelligence Program"
+          cityParaCont="Become a successful data science manager/leader within 11 months. Learn the secret data scientific tricks of managing data science projects. Learn directly from industry leaders via live classes and live projects."
         />
         <SecondSection SecondSectionData={DataScienceCourseData[0].secondSection} />
         <Testimonial
@@ -135,17 +135,18 @@ export default function Home() {
           para="Discover the impact of our programs on career growth"
         />
         <div className={styles.cityFee}>
-          <FeeSection
-            AIMLCertificate={true}
-            Fee="₹ 1,10,000 + 18% GST"
-            FeeEmi="₹ 10,817/month"
-            FeeHeading="Program Fee & Financing"
-            FeeContent2="No cost EMI"
-            FeeContent3="Flexible payment"
-            FeeContent4="Easy loan procedure"
-            FeeContent5="15 days refund policy"
-            dataScienceCounselling={true}
-          />
+        <FeeSection
+          Fee="₹ 1,10,000 + 18% GST"
+          FeeEmi="₹ 10,817/month"
+          FeeHeading="Program Fee & Financing"
+          FeeContent1="0% interest rate"
+          FeeContent2="No cost EMI"
+          FeeContent3="Flexible payment"
+          FeeContent4="Easy loan procedure"
+          FeeContent5="15 days refund policy"
+          FeeContent6="No additional cost"
+          dataScienceCounselling={true}
+        />
         </div>
         <div className="MainCities">
           <div className="CitiesLeft">
@@ -155,8 +156,9 @@ export default function Home() {
             <CitiesRight
               ProgramBot1={DataScienceCourseData[0].ProgramBot1}
               ProgramHead3={DataScienceCourseData[0].ProgramHead3}
+              ProgramHead4={DataScienceCourseData[0].ProgramHead4}
               ProgramBot3={DataScienceCourseData[0].ProgramBot3}
-              ProgramBot31={DataScienceCourseData[0].ProgramBot31}
+              ProgramBot66={DataScienceCourseData[0].ProgramBot66}
               ProgramBot4={DataScienceCourseData[0].ProgramBot4}
               ProgramBot5={DataScienceCourseData[0].ProgramBot5}
               ProgramBot6={DataScienceCourseData[0].ProgramBot6}

@@ -89,7 +89,7 @@ function FirstSection({
         <h1 className={styles.h1}>
           {firstHeading} <span className={styles.h1Span}>{firstToparaImg}</span>
         </h1>
-        <p className={styles.ptop} style={{ color: "#000" }}>
+        <p className={styles.ptopCiity} style={{ color: "#000" }}>
        {cityParaCont}
         </p>
         <div className={styles.IBMlogoPlay}>
@@ -132,7 +132,7 @@ function FirstSection({
           <div onClick={popupShow}>
             <Button
               text="Brochure"
-              passIcon={<FaDownload style={{ marginLeft: "10px" }} />}
+              passIcon={<FaDownload style={{ marginLeft: "10px", fontSize: "22px" }} />}
             />
           </div>
           {softwareBtnHide ? (

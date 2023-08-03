@@ -267,6 +267,60 @@ export const DataScienceMumbaiCourseData = [
         },
       ],
     },
+    script4: {
+      "@context": "http://schema.org",
+      "@type": "EducationEvent",
+      name: "Data Science Course Training in Delhi",
+      description:
+        "Data science course in Delhi. Learnbay is Advanced Data Science Course Training Institute in Delhi. Data science course in Delhi will enhance your career",
+      image:
+        "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/ALight/learnbay-logo.png",
+      performer: "Learnbay",
+      offers: {
+        "@type": "AggregateOffer",
+        lowPrice: "39999",
+        highPrice: "110000",
+        url: "https://www.learnbay.co/",
+        availability: "https://schema.org/InStock",
+        price: "39999",
+        priceCurrency: "INR",
+        validFrom: "2022-05-01",
+      },
+      startDate: "2022-05-01",
+      endDate: "2022-08-31",
+      url: "https://www.learnbay.co/",
+      duration: "80",
+      eventAttendanceMode: "https://schema.org/MixedEventAttendanceMode",
+      eventStatus: "http://schema.org/EventScheduled",
+      location: [
+        {
+          "@type": "VirtualLocation",
+          url: "https://www.learnbay.co/",
+        },
+        {
+          "@type": "Place",
+          name: "Learnbay - Data Science, Data Analytics Course Training in Delhi",
+          address: {
+            "@type": "PostalAddress",
+            streetAddress:
+              " #1090 , 1st Floor, 18th Cross Road HSR Layout Sector 3, Bangalore - 560102 (Above Sangam Sweets)",
+            addressLocality: "HSR Sector 3",
+            postalCode: "560102",
+            addressCountry: "Bengaluru, Karnataka,INDIA",
+          },
+          geo: {
+            "@type": "GeoCoordinates",
+            latitude: "12.911762714349765,",
+            longitude: "77.64127379352328",
+          },
+        },
+      ],
+      organizer: {
+        "@type": "Organization",
+        name: "Learnbay",
+        url: "https://www.learnbay.co",
+      },
+    },
     secondSection: [
       {
         id: 1,
@@ -274,15 +328,15 @@ export const DataScienceMumbaiCourseData = [
         height: "40",
         width: "43",
         heading: "1:1 Doubt Session",
-        para: "Clear your doubts with industry experts and get real-time solutions",
+        para: "Talk to an expert & receive real-time solutions to your queries",
       },
       {
         id: 1,
         img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/icon3.png",
         height: "42",
         width: "42",
-        heading: "Unlimited Interview Calls",
-        para: "Boost career chances, gain referrals from 300+ top recruiters",
+        heading: "Guaranteed Interview Calls",
+        para: "Boost your job prospects with referrals from 300+ hiring partners",
       },
       {
         id: 1,
@@ -290,7 +344,7 @@ export const DataScienceMumbaiCourseData = [
         height: "50",
         width: "53",
         heading: "IBM Project Certificate",
-        para: "Master the domain of AI & machine learning with certificate from IBM",
+        para: "Grab opportunities with a portfolio & make a smooth career transition",
       },
       {
         id: 1,
@@ -298,7 +352,7 @@ export const DataScienceMumbaiCourseData = [
         height: "40",
         width: "40",
         heading: "Designed For Professionals",
-        para: "Use tech innovation to drive career growth & acquire in-demand skills",
+        para: "Prioritise growth, boost career with in-demand skills",
       },
     ],
     testimonial: [
@@ -408,38 +462,53 @@ export const DataScienceMumbaiCourseData = [
         data: [
           {
             id: 0,
-            ques: "What are the prerequisites for the Data Science Foundation Program in Mumbai?",
-            ans: "There are no prerequisites for this Data Science Foundation course as all modules are beginner-friendly and are taught from scratch. We provide special classes and assistance for Non-IT/Non-Programmers. However, basic knowledge of applied Mathematics/Statistics is a must.",
+            ques: "What are Data Science Courses available at Learnbay in Mumbai?",
+            linkText1: "Foundational Data Science Training Course, ",
+            linkText2: "Advance Data Science Certification Course, ",
+            linkText3: "Data Science Certification Course for Managers and Leaders, ",
+            linkText4: "Data Science Training with Placement Assistance",
+            link1: "/data-science-certification-courses",
+            link2: "/advance-data-science-certification-courses",
+            link3: "/data-science-ai-for-managers",
+            link4: "/data-science-ai-masters-program",
+            link: true,
             open: true,
           },
           {
             id: 1,
-            ques: "What if I miss a few classes due to an emergency?",
-            ans: "In case you miss a few classes, you will be provided with backup classes in other batches. But if you could not attend more classes, you can opt for batch change and join the next batch.",
+            ques: "What are the prerequisites for these Data Science Courses in Mumbai?",
+            ans: "There are no prerequisites for this Data Science Foundation course as all modules are beginner-friendly and are taught from scratch. We provide special classes and assistance for Non-IT/Non-Programmers. However, basic knowledge of applied Mathematics/Statistics is a must.",
             open: false,
           },
           {
             id: 2,
-            ques: "What is a Flexi Subscription in Data Science Foundation Program in Mumbai?",
-            ans: `Those who enroll for Data Science live classroom training are eligible for a Flexi Pass. With this option, we will share access to all the ongoing batch details for a period of 1.5 year, so that you can attend live sessions from any batch and learn at your own pace. This option is best for people working in shifts or on weekends.`,
+            ques: "What if I miss a few classes due to an emergency?",
+            ans: `In case you miss a few classes, you will be provided with backup classes in other batches.
+            But if you could not attend more classes, you can opt for batch change and join the next batch. `,
             open: false,
           },
           {
             id: 3,
-            ques: "What’s the duration of the Data Science Foundation Program?",
-            ans: "The duration of this Data Science Course is about 7 months (200+ hours) which includes live lectures, hands-on practical training on live projects, and interview preparations. Classes will be conducted on weekdays and weekend batches. Weekday batch – 5 months, Monday to Friday – 2 hours/day, Weekend batch – 7 months, Saturday & Sunday – 3.5 hours/day",
+            ques: "What is a Flexi Subscription in these advanced data science courses in Mumbai?",
+            ans: "Those who enroll for Data Science live classroom training are eligible for a Flexi Pass. With this option, we will share access to all the ongoing batch details for a period of 1 -3 years, so that you can attend live sessions from any batch and learn at your own pace. This option is best for people working in shifts or on weekends. Flexi Subscription Time-line: Foundational Data Science and AI Training course- 1 Year, Advance Data Science and AI Certification course- 3 Years, Data Science and AI Certification Course for Managers and Leaders- 3 Years, Data Science and AI Training with Placement Assistance  - 3-years.",
             open: false,
           },
           {
             id: 4,
-            ques: "What is the mode of Data Science training in Mumbai at Learnbay?",
-            ans: "We provide both classroom and online data science training modes. Based on your requirement, you can choose your preferred mode.",
+            ques: "What’s the duration of these advanced data science courses in Mumbai?",
+            ans: "The duration of these courses is about 6-15 months, which includes live lectures, hands-on practical training on live projects, and interview preparations. Classes will be conducted on weekdays and weekend batches. Monday to Friday - 2 hours/day and Saturday & Sunday - 3.5 hours/day, Foundational Data Science and AI Training course (220+ hours) :- Weekday batch - 6 months, Weekend batch - 8 months, Advance Data Science and AI Certification course (270+ hours) :- Weekday batch - 7 months, Weekend batch - 9  months, Data Science and AI Certification Course for Managers and Leaders (340+ hours) :- Weekday batch - 11 months, Weekend batch - 13  months, Data Science and AI Training with Placement Assistance (380+ hours) :- Weekday batch - 13 months, Weekend batch - 15  months",
             open: false,
           },
           {
             id: 5,
+            ques: "What is the mode of data science in Mumbai at Learnbay?",
+            ans: "We provide both classroom and online data science training modes. Based on your requirement, you can choose your preferred mode.",
+            open: false,
+          },
+          {
+            id: 6,
             ques: "How can I opt for a Hybrid mode of learning in IBM data science training courses in Mumbai, At Learnbay? ",
-            ans: "Simply, you can choose an online mode of study for the theoretical classes and a classroom mode for all the capstone project and interview preparation sessions.",
+            ans: "Simply, you can choose an online mode of study for the theoretical classes and a classroom mode for all the capstone projects and interview preparation sessions. ",
             open: false,
           },
         ],
@@ -451,32 +520,40 @@ export const DataScienceMumbaiCourseData = [
           {
             id: 0,
             ques: "What is domain specialization in the professional data science certification courses provided by Learnbay in Mumbai?",
-            ans: "We offer industry-specific full-stack data science modules, via which you learn the respective industry’s best practices. But this added benefit is available in all the three mentioned courses, except the foundational data science course.",
+            ans: "We offer industry-specific full-stack data science modules, via which you learn the respective industry’s best practices. But this added benefit is available in all the three mentioned courses, except the foundational data science course. ",
             open: true,
           },
           {
             id: 1,
             ques: "What are the available elective domain options in the different data science training courses of Learnbay in Mumbai?",
-            ans: " Advanced Data Structure & algo; Automotive, IoT & Embedded; Cloud & DevOps; Sales, Marketing, & HR; Retail, E-Commerce, & Supply Chain; Healthcare, Pharma, & Clinical Research; BFSI; Manufacturing, Mechanical, & Telecom; Media, Hospitality, & Transportation; Oil, Gas, & Energy ",
+            ans: " Advanced Data Structure & algo; Automotive, IoT & Embedded; Cloud & DevOps; Sales, Marketing, & HR; Retail, E-Commerce, & Supply Chain; Healthcare, Pharma, & Clinical Research; BFSI; Manufacturing, Mechanical, & Telecom; Media, Hospitality, & Transportation; Oil, Gas, & Energy",
             open: false,
           },
           {
             id: 2,
             ques: "Which data science specialization domain elective is best suited for me?",
             ans: `You can select your domain based on your prior work experience, academics, and career goals. 
-    Book a slot with our industry expert for free profile review and career guidance.`,
+            Book a slot with our industry expert for free profile review and career guidance.`,
+            linkText1: " +9177 ",
+            link1: "tel:+918239019096",
+            link: true,
             open: false,
           },
           {
             id: 3,
-            ques: "Why is domain specialization important in professional data science certification??",
+            ques: "Why is domain specialization important in professional data science certification?",
             ans: "After enrolling in the advanced data science courses, one must opt for domain electives. It is essential to have business/industry knowledge that is useful in feature engineering and modeling. Prior knowledge of the industry and domain aids in the development of more precise and accurate predictive models based on the dataset's attributes. Furthermore, the model will be more observable in a real-world situation.",
             open: false,
           },
           {
             id: 4,
-            ques: "Can I select multiple domain electives and do I need to pay extra charges in any of the eligible data science courses",
-            ans: "You can select a pre-set maximum number (based on course) of domain electives (both tech and non-tech) based on your interest and career goals. Advance Data Science and AI Certification course- Maximum 2 domains. Data Science and AI Certification Course for Managers and Leaders- All domains  Data Science and AI Training with Placement Assistance- All domains. No, you don’t need to pay any extra charges as domain electives and capstone projects are part of our curriculum.",
+            ques: "Can I select multiple domain electives and do I need to pay extra charges in any of the eligible data science courses?",
+            ans: `You can select a pre-set maximum number (based on course) of domain electives (both tech and non-tech) based on your interest and career goals. 
+            Advance Data Science and AI Certification course- Maximum 2 domains. 
+            Data Science and AI Certification Course for Managers and Leaders- All domains 
+            Data Science and AI Training with Placement Assistance- All domains
+             
+            No, you don’t need to pay any extra charges as domain electives and capstone projects are part of our curriculum.`,
             open: false,
           },
           {
@@ -499,40 +576,41 @@ export const DataScienceMumbaiCourseData = [
         data: [
           {
             id: 0,
-            ques: "What is the total fee for Data Science Foundation Program in Mumbai?",
-            ans: "The total course fee for the Foundational Data Science and AI Training course is 93,220/- inclusive of GST. Advance Data Science and AI Certification course is 1,12,100/- inclusive of GST.Data Science and AI Certification Course for Managers and Leaders is 1,23,900/- inclusive of GST. Data Science and AI Training with Placement Assistance is 1,47,500/- inclusive of GST.",
+            ques: "What is the total fee for Data Science Certifications courses in Mumbai?",
+            ans: `The total course fee for the 
+            Foundational Data Science and AI Training course is 93,220/- inclusive of GST.
+            Advance Data Science and AI Certification course is 1,12,100/- inclusive of GST.
+            Data Science and AI Certification Course for Managers and Leaders is 1,23,900/- inclusive of GST.
+            Data Science and AI Training with Placement Assistance is 1,47,500/- inclusive of GST.`,
             open: true,
           },
           {
             id: 1,
-            ques: "Can I pay in installments for Data Science Foundation Program in Mumbai?",
+            ques: "Can I pay in installments for these Data Science Certification courses in Mumbai?",
             ans: "Yes, you can pay the installments using a credit card with a no-cost EMI option for up to 9 months. You can also choose an interest-free loan by submitting an Aadhar card, Pan Card, and 3-month salary slip.",
-            linkText1: " +917795687988 ",
-            link1: "tel:+917795687988",
-            link: true,
             open: false,
           },
           {
             id: 2,
             ques: " Is there any scholarship/discount available for these Data Science training courses available in Mumbai? What is Group Discount?",
             ans: `Learnbay offers a 15 - 20% scholarship for early birds occasionally.
-    Please check our websites or contact our sales team to know more about the applicable discounts.
-    
-    
-    Group Discount :
-    Group Discount is applicable only if you’re joining with your friends. 
-    5% extra discount: Group of 2
-    8% extra discount: Group of 3
-    Max 10% discount: Groupe of 4+`,
+            Please check our websites or contact our sales team to know more about the applicable discounts.
+            
+            
+            Group Discount :
+            Group Discount is applicable only if you’re joining with your friends. 
+            5% extra discount: Group of 2
+            8% extra discount: Group of 3
+            Max 10% discount: Groupe of 4+`,
             open: false,
           },
           {
             id: 3,
-            ques: "What is the refund policy for the Data Science Foundation Program at Learnbay?",
-            ans: "Candidates are advised to read  ",
-            linkText1: "Learnbay’s Refund/Cancellation Policy",
+            ques: "What is the refund policy for the Data Science Certification courses at Learnbay?",
+            ans: `Candidates are advised to Learnbay’s `,
+            linkText1: "Refund/Cancellation policy",
             link1: "/refund-cancellation-policy",
-            ansAfter: "  before enrolling in the program.",
+            ansAfter: " read before enrolling in the course.",
             link: true,
             open: false,
           },
@@ -544,15 +622,28 @@ export const DataScienceMumbaiCourseData = [
         data: [
           {
             id: 0,
-            ques: "How many capstone projects will be there?",
-            ans: "Depending on the course you choose the number of capstone projects will vary.   Foundational Data Science and AI Training Course - 1 Capstone.Advance Data Science and AI Certification Course -2 Capstones. Data Science and AI Certification Course for Managers and Leaders- 2 Capstones. Data Science and AI Training with Placement Assistance- 3 Capstones. How many real-time projects/case studies will be covered in these Data Science certification courses in Mumbai? Depending on the course you choose the number of live projects will vary.Foundational Data Science and AI Training course- 8 projects. Advance Data Science and AI Certification course-12 projects. Data Science and AI Certification Course for Managers and Leaders- 15 projects. Data Science and AI Training with Placement Assistance- 15 projects.",
-
+            ques: "How many capstone projects will be there? ",
+            ans: `Depending on the course you choose the number of capstone projects will vary.  
+            Foundational Data Science and AI Training Course - 1 Capstone.
+            Advance Data Science and AI Certification Course -2 Capstones.
+            Data Science and AI Certification Course for Managers and Leaders- 2 Capstones.
+            Data Science and AI Training with Placement Assistance- 3 Capstones.
+            How many real-time projects/case studies will be covered in these Data Science certification courses in Mumbai?
+            Depending on the course you choose the number of live projects will vary.  
+            Foundational Data Science and AI Training course- 8 projects.
+            Advance Data Science and AI Certification course-12 projects.
+            Data Science and AI Certification Course for Managers and Leaders- 15 projects.
+            Data Science and AI Training with Placement Assistance- 15 projects.`,
+            linkText1: " Click here to download the list of the projects.",
+            link1:
+              "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Data+Science+and+AI+Projects.pdf",
+            link: true,
             open: true,
           },
           {
-            id: 2,
-            ques: "How will the project be executed in Mumbai?",
-            ans: `At Learnbay, you will be required to work in a group where your project group will be assigned a specific project mentor with complete assistance and guidance.`,
+            id: 1,
+            ques: "How will the projects be executed in Mumbai?",
+            ans: "At Learnbay, you will be required to work in a group where your project group will be assigned a specific project mentor with complete assistance and guidance.",
             open: false,
           },
         ],
@@ -564,7 +655,12 @@ export const DataScienceMumbaiCourseData = [
           {
             id: 0,
             ques: "Is there any accredited data science certification after course completion?",
-            ans: "Yes, you will be awarded IBM accredited Data Scientist Certificate on successful course completion.  But Based on the course you choose you can get Multiple certification options too. Foundational Data Science and AI Training course- 1 Course Completion Certificate.Advance Data Science and AI Certification course-1 Course Completion Certificate + 1-project experience certificate + 4 microdata science skills certificates = 6 Certificates.Data Science and AI Certification Course for Managers and Leaders- 1 Course Completion Certificate + 1-project experience certificate + 6 microdata science skills certificates= 8 Certificates.Data Science and AI Training with Placement Assistance- 1 Course Completion Certificate*All the certificates accredited by IBM. For more details, please refer to the respective course brochures.",
+            ans: `Yes, you will be awarded IBM accredited Data Scientist Certificate on successful course completion.  But Based on the course you choose you can get Multiple certification options too.
+            Foundational Data Science and AI Training course- 1 Course Completion Certificate.
+            Advance Data Science and AI Certification course-1 Course Completion Certificate + 1-project experience certificate + 4 microdata science skills certificates = 6 Certificates.
+            Data Science and AI Certification Course for Managers and Leaders- 1 Course Completion Certificate + 1-project experience certificate + 6 microdata science skills certificates= 8 Certificates.
+            Data Science and AI Training with Placement Assistance- 1 Course Completion Certificate
+            *All the certificates accredited by IBM. For more details, please refer to the respective course brochures.`,
             open: true,
           },
         ],
@@ -575,37 +671,40 @@ export const DataScienceMumbaiCourseData = [
         data: [
           {
             id: 0,
-            ques: "What’s the eligibility for a job assistance program at Learnbay?",
-
-            ans: "You should have completed the course with : A minimum score of 70% in assessments. Should have completed the assignments and case studies. Worked and successfully completed the minimum recommended number of real-time projects.",
+            ques: "What's the eligibility for a job assistance Program in Learnbay Data science training courses in Mumbai?",
+        
+            ans: `You should have completed the course with :
+            A minimum score of 70% in assessments
+           Should have completed the assignments and case studies
+           Worked and successfully completed the minimum recommended number of real-time projects.`,
             open: true,
           },
           {
             id: 1,
-            ques: "How many interview calls will I get at Learnbay?",
-            ans: "You’ll be provided 5 interview calls after the completion of the course.",
+            ques: "How long will I get support for job assistance at Learnbay in Mumbai?",
+            ans: `At Learnbay, you’ll be provided with job assistance after the completion of the course for a period of 1 year.`,
             open: false,
           },
           {
             id: 2,
             ques: "What is a job-readiness program?",
-            ans: `Job-readiness program helps you prepare for interviews which include:
-          Resume preparation sessions,
-          Preparing projects for a strong portfolio,
-          Interview guidance and prep sessions,
-          1:1 Mock interviews based on targeted companies and roles.`,
+            ans: `The Job readiness program helps you prepare for interviews which include:
+            Resume preparation sessions, 
+            Preparing projects for a strong portfolio, 
+            Interview guidance and prep sessions, 
+            1:1 Mock interviews based on targeted companies and roles.`,
             open: false,
           },
           {
             id: 3,
             ques: "Will I get job referrals at Learnbay?",
-            ans: "Yes, we provide placement assistance by referring your profile to our partnered consultancies and companies.",
+            ans: `Yes, we offer dedicated placement assistance by referring to your profile through our partnered consultancies and companies. `,
             open: false,
           },
           {
             id: 4,
             ques: "What is an interview guarantee feature?",
-            ans: "As a special feature, we provide interview assurance. That means once you complete the course by fulfilling all the scoring and attendance-related criteria, we’ll provide assured interview calls and job referrals. You will get this facility until you get placed.",
+            ans: `As a special feature, we provide interview assurance. That means once you complete the course by fulfilling all the scoring and attendance-related criteria, we’ll provide assured interview calls and job referrals. You will get this facility until you get placed.`,
             open: false,
           },
         ],
@@ -616,14 +715,14 @@ export const DataScienceMumbaiCourseData = [
         data: [
           {
             id: 0,
-            ques: "Until when will the students get the facility of mentorship?",
-
-            ans: "Our mentors will provide data science training to the students until the completion of the course.",
+            ques: "Until when do the students get the facility of mentorship?",
+        
+            ans: "Our mentors will provide data science training to the students until the completion of the course. ",
             open: true,
           },
           {
             id: 1,
-            ques: "Can a Learnbay student choose to study from their desired mentor?",
+            ques: "Can a Learnbay student in Mumbai choose to study from their desired mentor?",
             ans: "Every batch has its respective mentor, but if a student is not satisfied with its mentor’s teaching method, they can raise the issue to management and resolve the issues by replacing them with other mentors.",
             open: false,
           },
@@ -636,8 +735,8 @@ export const DataScienceMumbaiCourseData = [
           {
             id: 0,
             ques: "When is the job assistance provided at Learnbay and how long will I get it?",
-
-            ans: "Job assistance is provided after the completion of the course. It includes build-up sessions, mock interviews, and referrals from top MNC’s/startups. This assistance is provided unless one gets placed in a company.",
+        
+            ans: "Job assistance is provided after the completion of the course. It includes build-up sessions, mock interviews, and referrals from top MNC’s/startups. This assistance is provided unless one gets placed in a company. ",
             open: true,
           },
           {
@@ -649,6 +748,632 @@ export const DataScienceMumbaiCourseData = [
         ],
       },
     ],
+
+    ProgramBot1: (
+      <span>
+        Learnbay provides an exceptional <b>data science course in Mumbai</b>{" "}
+        taught by renowned industry professionals. These trainers come from
+        reputed MNCs, making Learnbay a reliable choice for those looking to
+        learn data science. Both tech and non-tech applicants who want to make a
+        career switch can also choose this course. Learnbay offers it online as
+        well as in hybrid mode.{" "}
+      </span>
+    ),
+    ProgramBot31: (
+      <span>
+        Our courses are created by professionals having in-depth knowledge of
+        Data Science. They are designed to be simpler to understand for people
+        unfamiliar with coding and analytical methods. The focus is always on
+        hiring the best data science subject matter experts to design course
+        modules.
+      </span>
+    ),
+    ProgramBot3: (
+      <span>
+        Learnbay’s <b>data science course in Mumbai</b> is intended to help
+        working individuals transition smoothly into a new job. The program also
+        offers industry-based practical training in a well-supervised learning
+        environment. It has been specially created to train professionals for
+        the growing need for data scientists in the commercial sector.
+      </span>
+    ),
+    ProgramBot32: (
+      <span>
+        You will receive the greatest and most reliable{" "}
+        <b>online data science training in Mumbai</b> at Learnbay, which is
+        created to match the expectations of the current competitive job market.
+        Learnbay's <b>data science course in Mumbai</b> is a great option for
+        people wishing to succeed in this sector because of the dramatic rise in
+        the production and use of data in the twenty-first century.
+      </span>
+    ),
+    ProgramBot4: (
+      <span>
+        There are many benefits to choosing{" "}
+        <b>online data scientist training in Mumbai</b>. With more data being
+        produced daily, corporations largely depend on data science, and Mumbai
+        is quickly becoming one of India's top job hubs. As a result, Mumbai
+        offers a variety of opportunities for{" "}
+        <b>online data science training</b>. However, when securing guaranteed
+        Job Assistance, the list of reliable options becomes shorter. Moreover,
+        considering the cost-effectiveness of the course, the list of reliable
+        options shrinks even further.
+      </span>
+    ),
+    ProgramBot5: (
+      <span>
+        In Mumbai, data science has become incredibly popular in recent years.
+        With a 31% share of job vacancies, Mumbai has emerged as India's
+        second-largest hotspot for analytics and data science jobs, according to
+        recent research by Analytics India Magazine. The survey also notes a 45%
+        growth in demand for data scientists in Mumbai over the course of the
+        previous year. These figures emphasize the significance of obtaining
+        top-notch <b>data science training in Mumbai</b> to satisfy the rising
+        demand for qualified specialists.
+      </span>
+    ),
+    ProgramBot6: (
+      <span>
+        We cover the data science course using various modules, some of which
+        are mentioned below:{" "}
+      </span>
+    ),
+    ProgramBot8: (
+      <span>
+        <ul>
+          <li>Cohort Orientation </li>
+          <li>Special Programming Classes</li>
+          <li>Basic Python Programming</li>
+          <li>Special Python Programming</li>
+          <li>Statistics</li>
+          <li>Machine Learning </li>
+          <li>SQL</li>
+          <li>Tableau</li>
+          <li>Deep Learning</li>
+        </ul>
+      </span>
+    ),
+    ProgramBot9: (
+      <span>
+        The course duration of the online <b>Data Science training in Mumbai</b>{" "}
+        is 250+ hours. Our trained professionals will tutor you for almost 9
+        months.{" "}
+      </span>
+    ),
+    ProgramBot10: (
+      <span>
+        The structured course consists of <b>4 terms.</b>
+      </span>
+    ),
+    ProgramBot11: (
+      <span>
+        <b>Module 0: Preparatory Session </b>
+      </span>
+    ),
+    ProgramBot12: (
+      <span>
+        This module helps you familiarize yourself with the basics of Data
+        Science and Machine Learning. It is a preliminary phase to help
+        individuals, particularly non-programmers, become comfortable with the
+        basics of maths, programming, and data science foundation. It covers
+        basic Python And R, Basic Mathematics, Essential Statistics for Data
+        Science, Introduction to Anaconda, Jupyter notebook, Git and GitHub for
+        data science, and other practical materials.{" "}
+      </span>
+    ),
+    ProgramBot13: (
+      <span>
+        <h2>Term 1 - Python for Data Science </h2>
+        <b>Module (1) - Python Programming </b>
+      </span>
+    ),
+    ProgramBot14: (
+      <span>
+        This module, which includes full-time, focused training sessions
+        delivered through <b>live instructor-led online training</b>, is an
+        important part of the course. It digs into Python programming
+        foundations, a crucial skill for anyone looking to start a career as a
+        modern data scientist. During this module, you will learn about
+        fundamental programming ideas, Python data types, functions, modules,
+        and libraries like Numpy and Pandas. Additionally, you will participate
+        in case studies using Python libraries and show how these tools are
+        applied in actual situations. You will have a strong foundation in
+        Python programming by the end of this module, giving you the knowledge
+        and abilities needed to start working as a data scientist.
+      </span>
+    ),
+    ProgramBot15: (
+      <span>
+        <h2>Term 2 - Statistics and Machine Learning </h2>
+        <b>Module (1) - Statistics </b>
+      </span>
+    ),
+    ProgramBot16: (
+      <span>
+        The next lesson, vital for data science, focuses on teaching fundamental
+        and statistical ideas. After this program, you will understand
+        probability, inferential and descriptive statistics, exploratory data
+        analysis (EDA), and data processing. You will also have the chance to
+        complete four practice assignments relating to statistics to enrich your
+        learning experience further. You can use your newly learned information
+        in these practical exercises, promoting experiential learning.{" "}
+      </span>
+    ),
+    ProgramBot17: (
+      <span>
+        <b>Module (2) - Machine Learning </b>
+      </span>
+    ),
+    ProgramBot18: (
+      <span>
+        This module gives you access to the most current machine-learning
+        methods and tools necessary for building models and reaching wise
+        conclusions. The advanced machine learning techniques covered in this
+        subject include support vector machines, principal component analysis
+        (PCA), clustering, K-nearest neighbors (KNN) models, and regression and
+        classification models. (SVM). Your instructor will walk you through each
+        of these methods, giving you in-depth explanations and examples from the
+        real world to help you understand. After finishing this subject, you'll
+        be prepared to use cutting-edge machine-learning techniques to build
+        solid models and analyze difficult data sets.{" "}
+      </span>
+    ),
+    ProgramBot19: (
+      <span>
+        This module gives you access to the most current machine-learning
+        methods and tools necessary for building models and reaching wise
+        conclusions. The advanced machine learning techniques covered in this
+        subject include support vector machines, principal component analysis
+        (PCA), clustering, K-nearest neighbors (KNN) models, and regression and
+        classification models. (SVM). Your instructor will walk you through each
+        of these methods, giving you in-depth explanations and examples from the
+        real world to help you understand. After finishing this subject, you'll
+        be prepared to use cutting-edge machine-learning techniques to build
+        solid models and analyze difficult data sets.{" "}
+      </span>
+    ),
+    ProgramBot20: (
+      <span>
+        <h2>
+          <b>Term 3 - Data Science Tools</b>
+        </h2>
+      </span>
+    ),
+    ProgramBot21: (
+      <span>
+        <p>
+          <b>Module 1 - SQL</b>
+        </p>
+        <p>
+          <b>Module 2 - Mongo DB </b>
+        </p>
+        <p>
+          <b>Module 3 - Tableau</b>
+        </p>
+        <p>
+          <b>Module 4 - PowerBI</b>
+        </p>
+        <p>
+          <b>Module 5 - Big Data and Spark Analytics</b>
+        </p>
+        <p>
+          <b>Module 6 - Time Series</b>
+        </p>
+      </span>
+    ),
+    ProgramBot22: (
+      <span>
+        <h2>
+          <b>Term 4: Artificial Intelligence Tools</b>
+        </h2>
+      </span>
+    ),
+    ProgramBot23: (
+      <span>
+        <p>
+          <b>Module 1 - Deep Learning using TensorFlow</b>
+        </p>
+        <p>
+          <b>Module 2 - Natural Language Processing</b>
+        </p>
+        <p>
+          <b>Module 3 - Model Training and Deployment using ( AWS GCP) </b>
+        </p>
+      </span>
+    ),
+    ProgramBot24: (
+      <span>
+        <h4>Premium Features of Data Science Training in Mumbai </h4>
+        <p>
+          Some of the premium features of online data science training in Mumbai
+          are
+        </p>
+      </span>
+    ),
+    ProgramBot25: (
+      <span>
+        <ol type="1">
+          <li>
+            <b>Live Interactive Classes:</b> Trained professionals take classes
+            in the most interactive and hassle-free way.{" "}
+          </li>
+
+          <li>
+            <b>One-on-one Mentorship:</b> You get a mentor who helps you
+            throughout the process. You get assistance till placements.{" "}
+          </li>
+
+          <li>
+            <b>Live Project Sessions:</b> These give you an idea of industry
+            standards. An exclusive feature of cloud lab is also available.
+          </li>
+
+          <li>
+            <b>Doubt Clearance Sessions:</b> After your live classes, you can
+            take expert doubt clearance sessions to clear any doubts.{" "}
+          </li>
+
+          <li>
+            <b>Resume Building Support:</b> Our experts teach you how to make a
+            resume to get interviews in top MNCs and product-based startups.{" "}
+          </li>
+
+          <li>
+            <b>Interview Preparation:</b> Learnbay trainers will equip you with
+            the latest and in-demand interview Q&A to confidently face the
+            tricky PRODUCT Based Companies interviews. Also, by participating in
+            several mock interviews, our professionals will assist you in
+            improving your interview success rate and accelerating the hiring
+            process.
+          </li>
+        </ol>
+      </span>
+    ),
+    ProgramBot25: (
+      <span>
+        <h2>
+          Data Science Foundation Program in Mumbai with Placement Assistance{" "}
+        </h2>
+      </span>
+    ),
+    ProgramBot26: (
+      <span>
+        <ul>
+          <li>
+            This course enhances your learning potential with industry-specific
+            training.
+          </li>
+          <li>
+            It is good for learners who belong to a non-technical background. If
+            you are a working professional looking forward to switching your
+            career, the foundation program will make it easy for you.{" "}
+          </li>
+          <li>This program’s fee is INR 1,10,000, excluding GST.</li>
+          <h3>Highlights of the Data Science Foundation Program in Mumbai </h3>
+          <li>
+            This course offers an immersive and thorough learning experience,
+            covering a variety of important subjects and approaches in data
+            science, with more than 200 hours of live sessions.
+          </li>
+          <li>
+            You get lifetime access to <b>recorded live classroom recordings</b>
+            , allowing you to review and solidify your understanding of key
+            ideas at your own speed.
+          </li>
+          <li>
+            Additionally, you will get to work on <b>offline live projects</b>{" "}
+            in the project innovation lab as part of the course, giving you
+            practical experience using data science techniques to solve
+            real-world issues.
+          </li>
+          <li>
+            The course involves 8+ hours of real-world industrial projects,
+            heavy reading, and lab work. These projects will help you advance
+            your knowledge and abilities while giving you significant job
+            experience.
+          </li>
+        </ul>
+      </span>
+    ),
+    // ProgramBot27: (
+    //   <span>
+    //     <h2>
+    //       Advance Data Science and AI Course in Mumbai with Placement Assistance{" "}
+    //     </h2>
+    //   </span>
+    // ),
+    ProgramBot42: (
+      <span>
+        <ul>
+          <li>
+            This program is ideal for students seeking in-depth instruction and
+            a deeper understanding of the field. It will help you advance your
+            knowledge of data science.
+          </li>
+
+          <li>
+            For anyone wishing to change careers or advance their skills, this
+            extensive course is meant to give a solid understanding of data
+            science.
+          </li>
+
+          <li>
+            This program is a cost-effective and accessible choice for anyone
+            wishing to increase their knowledge and proficiency in data science,
+            costing only INR 95,000 + 18% GST.
+          </li>
+
+          <h3>Highlights of Advance Data Science and AI Course in Mumbai</h3>
+          <li>250+ hours of rigorous training</li>
+          <li>Assured Interview calls</li>
+          <li>Premium mentoring by PRODUCT Based Companies and MNC experts</li>
+          <li>2 years flexible subscription of learning materials</li>
+          <li>12+ real-time industrial projects</li>
+        </ul>
+      </span>
+    ),
+    ProgramBot28: (
+      <span>
+        <h2>
+          Data Science and AI program for Managers and Leaders in Mumbai with
+          Placement Assistance{" "}
+        </h2>
+      </span>
+    ),
+    ProgramBot29: (
+      <span>
+        <ul>
+          <li>
+            If you are a manager or a leader with over 8+ years of experience,
+            this course is best suited for you.{" "}
+          </li>
+          <li>
+            Managers in every organization must have a strong understanding of
+            data science to make data-driven decisions effectively and boost
+            revenue growth.
+          </li>
+          <li>The course fee is INR 1,10,000, excluding GST.</li>
+
+          <h3>
+            Highlights of Data Science and AI Program for Managers and Leaders
+            in Mumbai
+          </h3>
+          <li>Consists of 400+ hours of live sessions </li>
+          <li>15+ real-time industrial projects</li>
+          <li>Online sessions guided by professionals working in top MNCs</li>
+          <li>
+            A variety of financing options are available to make it more
+            economical
+          </li>
+        </ul>
+      </span>
+    ),
+    ProgramBot30: (
+      <span>
+        <h2>
+          Data Science and AI Master Program in Mumbai with Placement Assistance{" "}
+        </h2>
+      </span>
+    ),
+    ProgramBot33: (
+      <span>
+        <ul>
+          <li>
+            Looking to become a specialized data scientist? Look no further than
+            our comprehensive training, covering everything you need to succeed
+            in this field.
+          </li>
+          <li>
+            Our master's program in data science is designed to provide a
+            thorough education in this rapidly-evolving field, with flexible
+            scheduling options to suit your needs.
+          </li>
+          <li>
+            Ready to take your data science skills to the next level? Our
+            program will help you become an expert in this field with the
+            knowledge and expertise you need to lead teams at top companies.
+          </li>
+          <li>
+            Investing in your education is always a smart choice; our master's
+            program in data science is no exception. With a course fee of INR
+            1,25,000 (excluding GST), it's an affordable option for anyone
+            looking to advance their career in this exciting field.
+          </li>
+
+          <h3>
+            Highlights of Data Science and AI Master Program in Mumbai with
+            Placement Assistance
+          </h3>
+          <li>Consists of 500+ hours of live sessions </li>
+          <li>35 LPA - 50 LPA salary package</li>
+          <li>20+ real-time industrial projects. </li>
+          <li>
+            Practical covering of real-time industrial projects and case studies
+          </li>
+        </ul>
+        <br />
+        <b>Note:</b> All data science courses at Learnbay come with the option
+        of no-cost EMI.
+      </span>
+    ),
+    ProgramBot34: (
+      <span>
+        <h2>Data Science Trends in Mumbai </h2>
+      </span>
+    ),
+    ProgramBot35: (
+      <span>
+        <p>
+          In Mumbai, the subject of data science is expanding quickly and has
+          recently seen several trends. Artificial intelligence (AI) and machine
+          learning (ML) across various businesses are among the most noticeable
+          trends. Businesses are now using these technologies to analyze massive
+          amounts of data to gain insights to help make better business choices.
+        </p>
+        <p>
+          Another trend is the rising usage of cloud-based data processing and
+          storage technology. Due to this development, businesses can process
+          and store massive data efficiently and economically. A prominent trend
+          in Mumbai has also been combining data science with other industries,
+          such as healthcare and finance.{" "}
+        </p>
+        <p>
+          The demand for talented data scientists is anticipated to grow as
+          businesses rely on data-driven insights, making it a viable career
+          choice for anyone wishing to enter the area.
+        </p>
+      </span>
+    ),
+    ProgramBot36: (
+      <span>
+        <h2>Best Data Science Training Institute in Mumbai</h2>
+      </span>
+    ),
+    ProgramBot37: (
+      <span>
+        <p>
+          The <b>best data science training institute in Mumbai</b> is{" "}
+          <a
+            href="https://www.learnbay.co/data-science-course-training-in-mumbai"
+            target="_blank"
+          >
+            Learnbay
+          </a>
+          . It offers <b>online data science training</b> to give students a
+          hands-on, business-based education. Some of the most knowledgeable
+          professionals in the field who work for premier MNCs teach the course.
+          This guarantees that it is current with the industry's most recent
+          trends and innovations. It is additionally created to satisfy the
+          requirements of today's fiercely competitive job market, making it a
+          solid option for anyone wishing to enter the field of data science.
+        </p>
+        <p>
+          Learnbay's course materials are created by experts and experienced
+          professionals who have done a considerable study to simplify it for
+          those new to coding and analytical approaches to learning.
+          Additionally, Learnbay's data science course offers both theoretical
+          and practical knowledge in a well-managed learning environment. The
+          course has a high Job Assistance rate and is specifically created to
+          assist working professionals in making a successful career shift. It
+          is also inexpensive, making it the perfect option for those who wish
+          to master data science without going over budget. Learnbay has
+          established itself as one of the best data science institutes in
+          Mumbai with the help of all these qualities
+        </p>
+        <p>
+          Learnbay's course materials are created by experts and experienced
+          professionals who have done a considerable study to simplify it for
+          those new to coding and analytical approaches to learning.
+          Additionally, <b>Learnbay's data science course</b> offers both
+          theoretical and practical knowledge in a well-managed learning
+          environment. The course has a high Job Assistance rate and is
+          specifically created to assist working professionals in making a
+          successful career shift. It is also inexpensive, making it the perfect
+          option for those who wish to master data science without going over
+          budget. Learnbay has established itself as one of the best{" "}
+          <b>data science institutes in Mumbai</b> with the help of all these
+          qualities.
+        </p>
+      </span>
+    ),
+    ProgramBot38: (
+      <span>
+        <h2>Why Choose Learnbay Data Science Training Institute in Mumbai?</h2>
+      </span>
+    ),
+    ProgramBot39: (
+      <span>
+        <ol type="1">
+          <li>
+            <b>Affordability:</b> As one of India’s highly expensive cities,
+            Mumbai’s professional training courses are higher. But the
+            artificial intelligence and data science courses provided by
+            Learnbay are comparatively much more affordable than the others.
+            Sometimes, It might not seem cheaper to you if you compare only the
+            price, but if you compare the benefits, certainly it's the best
+            option across Mumbai. At Learnbay, we never compromise the quality
+            of our data science certification course.
+          </li>{" "}
+          <br />
+          <li>
+            <b>Learning Flexibility:</b> With such an affordable and
+            cost-effective course, you get flexible learning hours with our
+            trainers and industry experts. And you can choose your instructor or
+            change your instructor, depending on your personal preferences.
+            Learnbay also offers doubt-clearing sessions with industry-based
+            PRODUCT Based Companies experts and data scientists. Keeping the
+            preferences of learners in mind, Learnbay offers online as well as
+            hybrid modes of teaching. Here you can opt and use Learnbay LMS on
+            your mobile device, which will help you learn and get updated with
+            the daily course on the go.
+          </li>{" "}
+          <br />
+          <li>
+            <b>Expertise:</b> Our instructors are working professionals with
+            more than 8+ years of experience in the field, such as Senior Data
+            Scientists, Machine Learning Engineers, AI Engineers, BI Developers,
+            Big Data Architects, and Senior Data Analysts from top-class
+            organizations.
+          </li>{" "}
+          <br />
+          <li>
+            <b>Promising Support:</b> Post-enrolment dedicated learning support
+            is the most significant thing you should look into while searching
+            for the <b>best data science training institute in Mumbai</b>. We
+            provide the surety of 100% job assistance. We provide the maximum
+            possible data science career support based on your performance and
+            ability. Apart from this, there are plenty of different courses to
+            choose from on our website. You can choose your custom-fit course
+            based on your career stage and upcoming career goal. If someone
+            lacks coding knowledge, they can take additional basic coding
+            classes.
+          </li>
+        </ol>
+      </span>
+    ),
+    ProgramBot40: (
+      <span>
+        <h2>Did You Know? </h2>{" "}
+      </span>
+    ),
+    ProgramBot41: (
+      <span>
+        <p>
+          In Mumbai, data science is assuming greater importance. Companies now
+          rely more on data science to help them make wise decisions due to the
+          volume of data created daily. Worldwide data production is predicted
+          to reach a startling 463 exabytes by 2025. In comparison, just 5
+          exabytes of data have been uttered by humans as a whole. As a result,
+          Mumbai will see an increase in demand for qualified data scientists.{" "}
+        </p>
+        <p>
+          Additionally, data science is a profitable field; in Mumbai, the
+          average <b>data scientist salary in Mumbai</b> is INR 10 lakhs.
+          Learnbay offers the <b>best data science training in Mumbai</b> if
+          you're interested in a career in data science.
+        </p>
+        <p>
+          The course is taught by some of the top professionals in the field and
+          is meant to give students practical, online, and industry-based
+          training. Learnbay also provides offline project sessions for
+          <a
+            href="https://www.learnbay.co/machine-learning-course-training-in-mumbai"
+            target="_blank"
+          >
+            machine learning
+          </a>{" "}
+          and{" "}
+          <a
+            href="https://www.learnbay.co/artificial-intelligence-ai-course-training-mumbai"
+            target="_blank"
+          >
+            artificial intelligence
+          </a>{" "}
+          courses in Mumbai.
+        </p>
+      </span>
+    ),
+    //
     DomainHead1: "What is data science and why should you study it?",
     DomainBot1:
       "To be precise, the science of data is all about assessing information, where you can easily manage the data and create some significant insights. It provides an integrated approach to statistics, Artificial Intelligence (AI), mathematics, data engineering, etc., that helps deal with and analyze enormous data sets.",
@@ -671,36 +1396,21 @@ export const DataScienceMumbaiCourseData = [
     DomainBot12: "• Offers better",
     DomainBot3:
       "At Learnbay, you can opt for your desired domain and specialize in the same during your data science training. The domain specialization provided by Learnbay are given below:-",
-    DomainList1: "HR, Sales, and Marketing",
-    DomainList2: "Energy, oil, and Gas",
-    DomainList3: "Mechanical, manufacturing, and telecom",
-    DomainList4: "Pharmaceutical and clinical research",
-    DomainList5: "Media, hospitality, and transportation",
-    DomainList6: "Testing and Development Domain",
-    DomainList7: "DevOps and Cloud",
-    DomainList8: "IoT, automotive, and embedded systems",
-    DomainList9: "Supply chain and e-commerce",
-    DomainList10: "Banking, Finance, and Marketing Domain",
-    Domainlink1:
-      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Sales%2C+Marketing+and+HR+Domain.pdf",
-    Domainlink2:
-      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Energy%2C+Oil+and+Gas+Domain.pdf",
-    Domainlink3:
-      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Manufacturing%2C+Mechanical+and+Telecom+Domain.pdf",
-    Domainlink4:
-      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Healthcare%2C+Pharma+and+Clinical+Research+Domain.pdf",
-    Domainlink5:
-      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Media%2C+Hospitality+and+Transportation+Domain.pdf",
-    Domainlink6:
-      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Development+and+Testing+Domain.pdf",
-    Domainlink7:
-      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Cloud+and+Devops+Domain.pdf",
-    Domainlink8:
-      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Automotive%2C+IOT+and+Embedded+Domain.pdf",
-    Domainlink9:
-      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Retail%2C+Ecommerce+and+Supply+chain+Domain.pdf",
-    Domainlink10:
-      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Banking%2C+Finance+and+Insurance+Domain.pdf",
+      DomainList1: "• BFSI",
+      DomainList2: "• Manufacturing",
+      DomainList3: "• Energy, Oil and Gas",
+      DomainList4: "• Healthcare",
+      DomainList5: "• Supply Chain, E-Commerce & Retail",
+      Domainlink1:
+        "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Banking%2C+Finance+and+Insurance+Domain.pdf",
+      Domainlink2:
+        "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Manufacturing%2C+Mechanical+and+Telecom+Domain.pdf",
+      Domainlink3:
+        "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Energy%2C+Oil+and+Gas+Domain.pdf",
+      Domainlink4:
+        "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Healthcare%2C+Pharma+and+Clinical+Research+Domain.pdf",
+      Domainlink5:
+        "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Retail%2C+Ecommerce+and+Supply+chain+Domain.pdf",
     CertificationHead1: "IBM Certification for data science course in Mumbai",
     CertificationBot1:
       "Having a well-recognized certification in a specific field is important when it comes to data science courses. Learnbay provides IBM certification upon course completion, which is globally recognized and can help you stand out.",
@@ -719,7 +1429,11 @@ export const DataScienceMumbaiCourseData = [
     CertificationHead3: "Are certifications in data science worthwhile?",
     CertificationBot7:
       "The answer is yes if you pursue the right course. Having a data science certification gives you an advantage over other applicants during interviews and enables you to highlight your skills in various data science technologies.",
-    src: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/certificate.webp",
+      src33:
+      "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Microsoft-certificate-data.png",
+    src: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Certificate-blue.png",
+    src22:
+      "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Certificate-Yellow.png",
     ModuleHead1:
       "What are the crucial tools and modules covered under the data science course in Mumbai?",
     ModuleBot1:
@@ -751,40 +1465,39 @@ export const DataScienceMumbaiCourseData = [
       "4. It also provides a basic understanding of various coding platforms and editors, such as Jupyter notebooks, Githubs, Git, and Anaconda.",
     ModuleBot45:
       "5. This module (0) deals with a few terminologies in statistics such as (Mean, Median, Mode Standard Deviation, Average, Probability, permutations, combinations and Introduction to Linear Algebra)",
-    syllabush1: "Preparatory Classes (Programming + Maths)",
-    syllabusb1: "6 Hours",
-    SyllabusBotlist11: "Anaconda Installation",
-    SyllabusBotlist12: "Basics of Programming",
-    SyllabusBotlist13: "Memory Management",
-    SyllabusBotlist14: "Compiler and Interpreter",
-    SyllabusBotlist15: "Syntax of Python",
-    SyllabusBotlist16: "Basics of Statistics",
-    syllabush2: "Python Programming (Basic + Advance)",
-    syllabusb2: "40 Hours",
-    SyllabusBotlist21: "Git and GitHub",
-    SyllabusBotlist22: "Operators + Data Types + Loops",
-    SyllabusBotlist23: "Functions + Regular Expression",
-    SyllabusBotlist24: "Conditional Statement",
-    SyllabusBotlist25: "File & Exceptional Handling",
-    SyllabusBotlist26: "Numpy, Pandas, Matplotlib, etc.",
-    syllabush3: "Statistics and Machine Learning",
-    syllabusb3: "70 Hours",
-    SyllabusBotlist31: "Linear Algebra, Probability",
-    SyllabusBotlist32: "Permutation & Combination",
-    SyllabusBotlist33: "Descriptive & Inferential Stats",
-    SyllabusBotlist34: "Hypothesis Testing",
-    SyllabusBotlist35: "Time Series Analysis",
-    SyllabusBotlist36: "ML Algorithms",
-    syllabush4: "Industrial Projects & Capstone Projects",
-    syllabusb4: "12+ Classes",
-    SyllabusBotlist41: "Text Classification",
-    SyllabusBotlist42: "Human Activity Recognition",
-    SyllabusBotlist43: "Forecasting Business KPI's",
-    SyllabusBotlist44: "Credit Risk Analysis",
-    SyllabusBotlist45: "Customer Churn Prediction",
-    SyllabusBotlist46: "Sentiment Analysis",
-    syllabussrc:
-      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Advance+Data+Science+and+AI+Certification+Program+Learnbay.pdf",
+      syllabush1:" Preparatory Classes (Programming + Maths)",
+      syllabusb1:"6 Hours",
+      SyllabusBotlist11:" Cohort Orientation",
+      SyllabusBotlist12:"A brief introduction to tools related to data",
+      SyllabusBotlist13:" Fundamentals of Programming",
+      SyllabusBotlist14:"Introduction to Anaconda & Jupyter notebook",
+      SyllabusBotlist15:"Fundamentals of Statistics",
+      SyllabusBotlist16:"Mean, Median, Mode",
+      syllabush2:"Python for Data Science",
+      syllabusb2:"40 Hours",
+      SyllabusBotlist21:"Python Programming",
+      SyllabusBotlist22:"Data Analysis Using Numpy",
+      SyllabusBotlist23:"Python Programming Overview",
+      SyllabusBotlist24:"Python Data Types",
+      SyllabusBotlist25:"Strings, Decisions & Loop Control",
+      SyllabusBotlist26:"Data Analysis Using Pandas",
+      syllabush3:"Statistics and Machine Learning",
+      syllabusb3:"70 Hours",
+      SyllabusBotlist31:"Statistics",
+      SyllabusBotlist32:"Fundamentals of Math and Probability",
+      SyllabusBotlist33:"Descriptive Statistics",
+      SyllabusBotlist34:" Machine Learning",
+      SyllabusBotlist35:"Linear Regression Model",
+      SyllabusBotlist36:"Data Preprocessing",
+      syllabush4:" Data Science Tools",
+      syllabusb4:"12+ Classes",
+      SyllabusBotlist41:" SQL",
+      SyllabusBotlist42:"MongoDB",
+      SyllabusBotlist43:"Tableau",
+      SyllabusBotlist44:" PowerBI",
+      SyllabusBotlist45:" Big Data & Spark Analytics",
+      SyllabusBotlist46:"Big Data & Spark Analytics",
+      syllabussrc:"https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Advance+Data+Science+and+AI+Certification+Program+Learnbay.pdf",
     JobHead1: "What is a job assistance program?",
     JobBot1:
       "While enrolling in any course or program, there is always thought persisting in learners about the jobs and placement after the course completion. So, here the job assistance program comes to play.",

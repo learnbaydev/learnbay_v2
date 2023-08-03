@@ -297,6 +297,55 @@ export const DataScienceChennaiCourseData = [
         url: "https://www.learnbay.co",
       },
     },
+    script4: {
+      "@context": "https://schema.org/",
+      "@type": "HowTo",
+      name: "How to apply for data science course?",
+      description:
+        "You just have to follow 3 easy steps to enroll in our advanced data science course",
+      image:
+        "https://www.learnbay.co/data-science-course/wp-content/uploads/2019/02/Add-a-heading-1-600x486.jpg",
+      totalTime: "PT6M",
+      estimatedCost: {
+        "@type": "MonetaryAmount",
+        currency: "INR",
+        value: "6",
+      },
+      supply: {
+        "@type": "HowToSupply",
+        name: "We provide Data Science Course in Chennai",
+      },
+      tool: {
+        "@type": "HowToTool",
+        name: "Data science, machine learning, artificial intelligence, data analytics",
+      },
+      step: [
+        {
+          "@type": "HowToStep",
+          text: "Visit our website and fill the enquiry form",
+          image:
+            "https://www.learnbay.co/data-science-course/wp-content/uploads/2019/02/Add-a-heading-1-600x486.jpg",
+          name: "Fill Enquiry Form",
+          url: "https://www.learnbay.co/data-science-course/",
+        },
+        {
+          "@type": "HowToStep",
+          text: "Talk to our experts for career counseling",
+          image:
+            "https://www.learnbay.co/data-science-course/wp-content/uploads/2021/05/Untitled-design-2021-05-22T113616.025.png",
+          name: "Talk to Expert",
+          url: "https://www.learnbay.co/data-science-course/",
+        },
+        {
+          "@type": "HowToStep",
+          text: "Get enrollment in our data science course",
+          image:
+            "https://www.learnbay.co/data-science-course/wp-content/uploads/2019/02/Add-a-heading-1-600x486.jpg",
+          name: "Get enrollment",
+          url: "https://www.learnbay.co/",
+        },
+      ],
+    },
 
     secondSection: [
       {
@@ -305,15 +354,15 @@ export const DataScienceChennaiCourseData = [
         height: "40",
         width: "43",
         heading: "1:1 Doubt Session",
-        para: "Clear your doubts with industry experts and get real-time solutions",
+        para: "Talk to an expert & receive real-time solutions to your queries",
       },
       {
         id: 1,
         img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/icon3.png",
         height: "42",
         width: "42",
-        heading: "Unlimited Interview Calls",
-        para: "Boost career chances, gain referrals from 300+ top recruiters",
+        heading: "Guaranteed Interview Calls",
+        para: "Boost your job prospects with referrals from 300+ hiring partners",
       },
       {
         id: 1,
@@ -321,7 +370,7 @@ export const DataScienceChennaiCourseData = [
         height: "50",
         width: "53",
         heading: "IBM Project Certificate",
-        para: "Master the domain of AI & machine learning with certificate from IBM",
+        para: "Grab opportunities with a portfolio & make a smooth career transition",
       },
       {
         id: 1,
@@ -329,7 +378,7 @@ export const DataScienceChennaiCourseData = [
         height: "40",
         width: "40",
         heading: "Designed For Professionals",
-        para: "Use tech innovation to drive career growth & acquire in-demand skills",
+        para: "Prioritise growth, boost career with in-demand skills",
       },
     ],
     testimonial: [
@@ -442,7 +491,8 @@ export const DataScienceChennaiCourseData = [
             ques: "What are Data Science Training courses available at Learnbay in Chennai?",
             linkText1: "Foundational Data Science Training Course, ",
             linkText2: "Advance Data Science Certification Course, ",
-            linkText3: "Data Science Certification Course for Managers and Leaders, ",
+            linkText3:
+              "Data Science Certification Course for Managers and Leaders, ",
             linkText4: "Data Science Training with Placement Assistance",
             link1: "/data-science-certification-courses",
             link2: "/advance-data-science-certification-courses",
@@ -689,6 +739,26 @@ export const DataScienceChennaiCourseData = [
         data: [
           {
             id: 0,
+            ques: "Until when do the students get the facility of mentorship?",
+        
+            ans: "Our mentors will provide data science training to the students until the completion of the course. ",
+            open: true,
+          },
+          {
+            id: 1,
+            ques: "Can a Learnbay student in Chennai choose to study from their desired mentor?",
+            ans: "Every batch has its respective mentor, but if a student is not satisfied with its mentor’s teaching method, they can raise the issue to management and resolve the issues by replacing them with other mentors.",
+            open: false,
+          },
+        ],
+      },
+
+      {
+        id: 7,
+        sectionName: "Support",
+        data: [
+          {
+            id: 0,
             ques: "When is the job assistance provided at Learnbay and how long will I get it?",
         
             ans: "Job assistance is provided after the completion of the course. It includes build-up sessions, mock interviews, and referrals from top MNC’s/startups. This assistance is provided unless one gets placed in a company. ",
@@ -702,28 +772,7 @@ export const DataScienceChennaiCourseData = [
           },
         ],
       },
-
-      {
-        id: 7,
-        sectionName: "Support",
-        data: [
-          {
-            id: 0,
-            ques: "When is the job assistance provided at Learnbay and how long will I get it?",
-
-            ans: "Job assistance is provided after the completion of the course. It includes build-up sessions, mock interviews, and referrals from top MNC’s/startups. This assistance is provided unless one gets placed in a company.",
-            open: true,
-          },
-          {
-            id: 1,
-            ques: "How long will I get Job referrals?",
-            ans: "You’ll be provided with job assistance after the completion of the course for a period of 1 year.",
-            open: false,
-          },
-        ],
-      },
     ],
-
     DomainHead1: "Why Domain Specialization?",
     DomainBot1:
       "Our domain-specific courses are designed to help students approach data science from a particular angle or industry.",
@@ -731,80 +780,69 @@ export const DataScienceChennaiCourseData = [
       "A domain-specific data scientist will have a far deeper understanding of the domain and its nuances, as well as the critical business problems that must be handled. Today, recruiters are on the lookout for domain-specific data scientists. Without domain knowledge, one can’t provide the exact analytical insights. Hence, it’s important to choose courses that offer domain electives options.",
     DomainBot3:
       "Learnbay offers full-stack domain-specialized Data Science Training in Chennai. Based on your experience, you can select the following domains:",
-    DomainList1: "HR, Sales, and Marketing",
-    DomainList2: "Energy, oil, and Gas",
-    DomainList3: "Mechanical, manufacturing, and telecom",
-    DomainList4: "Pharmaceutical and clinical research",
-    DomainList5: "Media, hospitality, and transportation",
-    DomainList6: "Testing and Development Domain",
-    DomainList7: "DeOps and Cloud",
-    DomainList8: "IoT, automotive, and embedded systems",
-    DomainList9: "Supply chain and e-commerce",
-    DomainList10: "Banking, Finance, and Marketing Domain",
-    Domainlink1:
-      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Sales%2C+Marketing+and+HR+Domain.pdf",
-    Domainlink2:
-      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Energy%2C+Oil+and+Gas+Domain.pdf",
-    Domainlink3:
-      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Manufacturing%2C+Mechanical+and+Telecom+Domain.pdf",
-    Domainlink4:
-      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Healthcare%2C+Pharma+and+Clinical+Research+Domain.pdf",
-    Domainlink5:
-      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Media%2C+Hospitality+and+Transportation+Domain.pdf",
-    Domainlink6:
-      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Development+and+Testing+Domain.pdf",
-    Domainlink7:
-      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Cloud+and+Devops+Domain.pdf",
-    Domainlink8:
-      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Automotive%2C+IOT+and+Embedded+Domain.pdf",
-    Domainlink9:
-      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Retail%2C+Ecommerce+and+Supply+chain+Domain.pdf",
-    Domainlink10:
-      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Banking%2C+Finance+and+Insurance+Domain.pdf",
+      DomainList1: "• BFSI",
+      DomainList2: "• Manufacturing",
+      DomainList3: "• Energy, Oil and Gas",
+      DomainList4: "• Healthcare",
+      DomainList5: "• Supply Chain, E-Commerce & Retail",
+      Domainlink1:
+        "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Banking%2C+Finance+and+Insurance+Domain.pdf",
+      Domainlink2:
+        "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Manufacturing%2C+Mechanical+and+Telecom+Domain.pdf",
+      Domainlink3:
+        "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Energy%2C+Oil+and+Gas+Domain.pdf",
+      Domainlink4:
+        "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Healthcare%2C+Pharma+and+Clinical+Research+Domain.pdf",
+      Domainlink5:
+        "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Retail%2C+Ecommerce+and+Supply+chain+Domain.pdf",
 
     CertificationBot1:
       "Using the Learnbay IBM data scientist course, you get hassle-free classes from multiple expert trainers. Additionally, you will get multiple IBM certifications for various data science and artificial intelligence micro-skills. Apart from this, you will receive an IBM Project Experience Certificate upon completion of the capstone project included in the Data Science and AI course in Chennai. You will obtain 1 to 8 certificates depending on the course you choose.",
     CertificationBot2:
       "To learn more about micro-skill certificates, please refer to the respective course brochures.",
-    src: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/certificate.webp",
+    src33:
+      "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Microsoft-certificate-data.png",
+    src: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Certificate-blue.png",
+    src22:
+      "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Certificate-Yellow.png",
     ModuleHead1:
       "Learn the most in-demand skills used by data scientists in Chennai",
     ModuleBot1:
       "The modules of data science course in Chennai are comprehensively designed by expert data scientists. In the data science certification course, you’ll learn different data science tools and techniques to understand business problems. Chennai learners can maximize their potential as data scientists by enrolling in this IBM data science course. Our courses are designed to be easy to follow and understand while giving you the best possible foundation in data science. We use real-life examples to show how your data science skills will be applied in the future.",
     ModuleBot2:
       "In addition to Python and R programming, our data science course will help you master job-ready data science skills like Statistics, MongoDB, TensorFlow, Deep Learning, Deployment GCP, Time Series, and other data science tools.",
-    syllabush1: "Preparatory Classes (Programming + Maths)",
+    syllabush1: " Preparatory Classes (Programming + Maths)",
     syllabusb1: "6 Hours",
-    SyllabusBotlist11: "Anaconda Installation",
-    SyllabusBotlist12: "Basics of Programming",
-    SyllabusBotlist13: "Memory Management",
-    SyllabusBotlist14: "Compiler and Interpreter",
-    SyllabusBotlist15: "Syntax of Python",
-    SyllabusBotlist16: "Basics of Statistics",
-    syllabush2: "Python Programming (Basic + Advance)",
+    SyllabusBotlist11: " Cohort Orientation",
+    SyllabusBotlist12: "A brief introduction to tools related to data",
+    SyllabusBotlist13: " Fundamentals of Programming",
+    SyllabusBotlist14: "Introduction to Anaconda & Jupyter notebook",
+    SyllabusBotlist15: "Fundamentals of Statistics",
+    SyllabusBotlist16: "Mean, Median, Mode",
+    syllabush2: "Python for Data Science",
     syllabusb2: "40 Hours",
-    SyllabusBotlist21: "Git and GitHub",
-    SyllabusBotlist22: "Operators + Data Types + Loops",
-    SyllabusBotlist23: "Functions + Regular Expression",
-    SyllabusBotlist24: "Conditional Statement",
-    SyllabusBotlist25: "File & Exceptional Handling",
-    SyllabusBotlist26: "Numpy, Pandas, Matplotlib, etc.",
+    SyllabusBotlist21: "Python Programming",
+    SyllabusBotlist22: "Data Analysis Using Numpy",
+    SyllabusBotlist23: "Python Programming Overview",
+    SyllabusBotlist24: "Python Data Types",
+    SyllabusBotlist25: "Strings, Decisions & Loop Control",
+    SyllabusBotlist26: "Data Analysis Using Pandas",
     syllabush3: "Statistics and Machine Learning",
     syllabusb3: "70 Hours",
-    SyllabusBotlist31: "Linear Algebra, Probability",
-    SyllabusBotlist32: "Permutation & Combination",
-    SyllabusBotlist33: "Descriptive & Inferential Stats",
-    SyllabusBotlist34: "Hypothesis Testing",
-    SyllabusBotlist35: "Time Series Analysis",
-    SyllabusBotlist36: "ML Algorithms",
-    syllabush4: "Industrial Projects & Capstone Projects",
+    SyllabusBotlist31: "Statistics",
+    SyllabusBotlist32: "Fundamentals of Math and Probability",
+    SyllabusBotlist33: "Descriptive Statistics",
+    SyllabusBotlist34: " Machine Learning",
+    SyllabusBotlist35: "Linear Regression Model",
+    SyllabusBotlist36: "Data Preprocessing",
+    syllabush4: " Data Science Tools",
     syllabusb4: "12+ Classes",
-    SyllabusBotlist41: "Text Classification",
-    SyllabusBotlist42: "Human Activity Recognition",
-    SyllabusBotlist43: "Forecasting Business KPI's",
-    SyllabusBotlist44: "Credit Risk Analysis",
-    SyllabusBotlist45: "Customer Churn Prediction",
-    SyllabusBotlist46: "Sentiment Analysis",
+    SyllabusBotlist41: " SQL",
+    SyllabusBotlist42: "MongoDB",
+    SyllabusBotlist43: "Tableau",
+    SyllabusBotlist44: " PowerBI",
+    SyllabusBotlist45: " Big Data & Spark Analytics",
+    SyllabusBotlist46: "Big Data & Spark Analytics",
     syllabussrc:
       "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Advance+Data+Science+and+AI+Certification+Program+Learnbay.pdf",
     JobHead1:
@@ -824,48 +862,237 @@ export const DataScienceChennaiCourseData = [
       "Our IBM-certified data science course is the perfect place to get started with a data science career in Chennai.",
     ProjectsHead1: "Live industrial data science projects at Learnbay ",
 
-     ProjectsBot1:"Learnbay’s premium cloud lab feature allows learners to grasp data science projects and approaches. In our data science and AI course, you can choose from 15+ real-time projects in your selected domains. Additionally, this cloud lab lets you observe and practice different data mining, data wrangling procedure and live MNC data projects.",
-              ProjectsBot2:"Plus, you will have the privilege of working on 2 to 3 data science capstone projects, followed by issuing an IBM Project experience certificate. Below are some of the live data science projects undertaken by our students:",
-              src1:"https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/SAMSUNG.png",
-              ProjectsH1:"Samsung Health Monitor App",
-              Projectsp1:"Samsung will launch a new healthcare app soon. The key goal of this app is accurate human activity tracking and providing relevant health-related recommendations. Continuous analysis of a massive amount of mobile data is required for such an app.",
-              src2:"https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/IBM.png",
-              ProjectsH2:"IBM HR Analytics",
-              Projectsp2:"IBM intends to boost its HR department by identifying employees' masked inconsistency. They need models to identify the graphical variations in their 14000+ employees' performances. Help them build models with your regressions and other ML abilities.",
-              src3:"https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/amazon1.png",
-              ProjectsH3:"Amazon Customer Review Analysis",
-              Projectsp3:"Amazon has made a goal to identify the most successful consumer electronic products. For these, they require live customer review analysis. You can take part in the assisting project of customer insight regeneration from the ongoing and existing reviews via a suitable data visualization approach.",
-              src4:"https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/BMW.png",
-              ProjectsH4:"BMW Used Car Price Optimization",
-              Projectsp4:"BMW allows existing customers to sell used cars  but many competitors are now offering better resale values. A data science-powered statistical app from BMW will provide the best market value for used cars based on parameters like Km driven, daily pricing up and down, manufacturing dates, and so on. Develop your analytical skills through such projects.",
-              AlumniBot1:"Learnbay’s IBM data science course aims to provide quality data scientists across Chennai. Many of our students have achieved data scientist jobs and other data science roles along with a 200% salary hike. Even More than 300 Learnbay data science and AI course alumni are in lead and management positions in top leading firms. Some of our alumni have shared their experiences:",
-              Asrc1:"https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/devraj.jpg",
-              AlumniH1:"Deveraj",
-              Alumnip1:"The quality of the content is very nice. What I liked the most was mainly the instructor concentrating on the practical part, live project sessions make you feel confident to attend interviews. Multiple batch options, access for any instructor class videos or materials. The totally positive environment around.",
-              Asrc2:"https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/shezan.png",
-              AlumniH2:"Shezan Baig",
-              Alumnip2:"Learnbay is one of the most remarkable data science institutes I've come across. Compared to other institutes in India, it offers a data science course at a low cost. Excellent value for money. Finally, I achieved job satisfaction. I would strongly advise everyone to attend this institute.",
-              Asrc3:"https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/viraj.png",
-              AlumniH3:"Viraj Ghodke",
-              Alumnip3:"For me, learning using the Learnbay platform has been a great experience. The teaching and management team are very helpful. They are constantly willing to clarify each individual's doubts and meet the needs of working professionals. The practice interview sessions were simply like a clone of MNC interviews.",
-              Asrc4: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/shubhangi.png",
-              AlumniH4: "Shubhangi J. Waghmare ",
-              Alumnip4:"The best in Industry offerings from both cost and curriculum wise. One advantage of joining here is you can access their resources for a lifetime, unlike others where you have accessibility only for a year or so. Most importantly, there is continuous assistance for recruitment.",
-              alt1:"data science course training in chennai",
-              alt2:"data science course training in chennai",
-              alt3:"data science course training in chennai",
-              alt4:"data science course training in chennai",
-              alt5:"data science course training in chennai",
-              alt6:"data science course training in chennai",
-              alt7:"data science course training in chennai",
-              alt8:"data science course training in chennai",
-              alt9:"data science course training in chennai",
+    ProjectsBot1:
+      "Learnbay’s premium cloud lab feature allows learners to grasp data science projects and approaches. In our data science and AI course, you can choose from 15+ real-time projects in your selected domains. Additionally, this cloud lab lets you observe and practice different data mining, data wrangling procedure and live MNC data projects.",
+    ProjectsBot2:
+      "Plus, you will have the privilege of working on 2 to 3 data science capstone projects, followed by issuing an IBM Project experience certificate. Below are some of the live data science projects undertaken by our students:",
+    src1: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/SAMSUNG.png",
+    ProjectsH1: "Samsung Health Monitor App",
+    Projectsp1:
+      "Samsung will launch a new healthcare app soon. The key goal of this app is accurate human activity tracking and providing relevant health-related recommendations. Continuous analysis of a massive amount of mobile data is required for such an app.",
+    src2: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/IBM.png",
+    ProjectsH2: "IBM HR Analytics",
+    Projectsp2:
+      "IBM intends to boost its HR department by identifying employees' masked inconsistency. They need models to identify the graphical variations in their 14000+ employees' performances. Help them build models with your regressions and other ML abilities.",
+    src3: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/amazon1.png",
+    ProjectsH3: "Amazon Customer Review Analysis",
+    Projectsp3:
+      "Amazon has made a goal to identify the most successful consumer electronic products. For these, they require live customer review analysis. You can take part in the assisting project of customer insight regeneration from the ongoing and existing reviews via a suitable data visualization approach.",
+    src4: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/BMW.png",
+    ProjectsH4: "BMW Used Car Price Optimization",
+    Projectsp4:
+      "BMW allows existing customers to sell used cars  but many competitors are now offering better resale values. A data science-powered statistical app from BMW will provide the best market value for used cars based on parameters like Km driven, daily pricing up and down, manufacturing dates, and so on. Develop your analytical skills through such projects.",
+    AlumniBot1:
+      "Learnbay’s IBM data science course aims to provide quality data scientists across Chennai. Many of our students have achieved data scientist jobs and other data science roles along with a 200% salary hike. Even More than 300 Learnbay data science and AI course alumni are in lead and management positions in top leading firms. Some of our alumni have shared their experiences:",
+    Asrc1: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/devraj.jpg",
+    AlumniH1: "Deveraj",
+    Alumnip1:
+      "The quality of the content is very nice. What I liked the most was mainly the instructor concentrating on the practical part, live project sessions make you feel confident to attend interviews. Multiple batch options, access for any instructor class videos or materials. The totally positive environment around.",
+    Asrc2: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/shezan.png",
+    AlumniH2: "Shezan Baig",
+    Alumnip2:
+      "Learnbay is one of the most remarkable data science institutes I've come across. Compared to other institutes in India, it offers a data science course at a low cost. Excellent value for money. Finally, I achieved job satisfaction. I would strongly advise everyone to attend this institute.",
+    Asrc3: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/viraj.png",
+    AlumniH3: "Viraj Ghodke",
+    Alumnip3:
+      "For me, learning using the Learnbay platform has been a great experience. The teaching and management team are very helpful. They are constantly willing to clarify each individual's doubts and meet the needs of working professionals. The practice interview sessions were simply like a clone of MNC interviews.",
+    Asrc4: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/shubhangi.png",
+    AlumniH4: "Shubhangi J. Waghmare ",
+    Alumnip4:
+      "The best in Industry offerings from both cost and curriculum wise. One advantage of joining here is you can access their resources for a lifetime, unlike others where you have accessibility only for a year or so. Most importantly, there is continuous assistance for recruitment.",
+    alt1: "data science course training in chennai",
+    alt2: "data science course training in chennai",
+    alt3: "data science course training in chennai",
+    alt4: "data science course training in chennai",
+    alt5: "data science course training in chennai",
+    alt6: "data science course training in chennai",
+    alt7: "data science course training in chennai",
+    alt8: "data science course training in chennai",
+    alt9: "data science course training in chennai",
     CityTextB:
-      "Artificial Intelligence Course Certification Training locations in Bangalore ",
+      "Data Science Course Certification Training locations in Chennai ",
     CityText:
-      " :Ammrutha halli [560092], Maruthi Seva Nagar [560033], Kuvempu Layout [560077], Bellandur [560103], Jayanagar III Block [560011], Anandnagar [560024], Nandinilayout [560096], B SK II Stage [560070], Indiranagar [560038], Yelahanka [560063], Chickpet [560053], Domlur [560071], Bansashankari III Stage [560085], Vimanapura [560017], Nagarbhavi [560072], Basaveshwaranagar [560079], Bommanahalli [560068], Mico Layout [560076], Electronic City [560100], Taverekere [560029], Nehru Nagar [560020], Agram[560007], Halsuru Pete [560002], Basavanagudi [560004], R.M.V. Extension II [560094], Jayanagar [560041], Carmelaram [560035], New Thippasandra [560075], Kanakanagar [560032], Nayandahalli [560039], Fraser Town [560005], Jalahalli East [560014], Kacharakanahalli [560084], Malleswaram West [560055], Bannerghatta [560083], Srirampuram [560021], Rajarajeshwarinagar [560098], Sivan Chetty Gardens [560042], Dommasandra [562125], Whitefield [560066], Vidyaranyapura [560097], Bolare [560082], Mathikere [560054], Doddanekkundi [560037], Hampinnagar [560104], C.V.Raman Nagar [560093], Chikkabanavara [560090], Attur [560064], Kumbalagodu [560074], Bhattarahalli [560049], Chikkalasandra [560061], Sharada Nagar [560065], Jalahalli West [560015], H.K.P Road [560051], Jp Nagar III Phase [560078], Sadashiva nagar [560080], Krishnarajapuram R S [560016], Mahalakshipuram Layout [560086], Guddadahalli [560026], Chudenapura [560060], Vidhana Soudha [560001], Shanthinagar [560027], Rajaji Nagar [560010], Chandapura [560099], Ramakrishna Hegde Nagar [560045], Shalabh Bhatnagar [560012], Peenya [560058], Ashoknagar [560050], Jalahalli Nacen [560013], Banawadi [560043], Malleswaram [560003], Doddakallasandra [560062], K.G Road [560009], Muthusandra [560087], Marathahalli [560056], JC Nagar [560006], Chamrajpet [560018], HSR Layout [560102], Devanagundi [560067], Yeswanthpura [560022], Mahadevapura [560048],Hulsur Bazaar [560008],Magadi Road [560023], Adugodi [560030], Bagalgunte [560073], Devasandra [560036], Rv Niketan [560059], Narasimharaja Colony [560019], Koramangala VI Bk [560095], Agara [560034], Vijayanagar East [560040], Benson Town [560046], Viveknagar S.O [560047], Dasarahalli [560057], Bapagrama [560091], Richmond Town [560025].",
+      <span>
+        :{" "}
+            <a
+              href="https://www.learnbay.co/data-science-course-training-in-chennai"
+              style={{ color: "#2D9CD7", fontWeight: "600" }}
+              target="_blank"
+            >
+              Anna Nagar
+            </a>{" "}
+            [600040],{" "}
+            <a
+              href="https://www.learnbay.co/data-science-course-training-in-chennai"
+              style={{ color: "#2D9CD7", fontWeight: "600" }}
+              target="_blank"
+            >
+              Thousand Lights
+            </a>{" "}
+            [600006],{" "}
+            <a
+              href="https://www.learnbay.co/data-science-course-training-in-chennai"
+              style={{ color: "#2D9CD7", fontWeight: "600" }}
+              target="_blank"
+            >
+              Adyar
+            </a>{" "}
+            [600020],{" "}
+            <a
+              href="https://www.learnbay.co/data-science-course-training-in-chennai"
+              style={{ color: "#2D9CD7", fontWeight: "600" }}
+              target="_blank"
+            >
+              Nungambakkam
+            </a>{" "}
+            [600034],{" "}
+            <a
+              href="https://www.learnbay.co/data-science-course-training-in-chennai"
+              style={{ color: "#2D9CD7", fontWeight: "600" }}
+              target="_blank"
+            >
+              Perambur
+            </a>{" "}
+            [600011],{" "}
+            <a
+              href="https://www.learnbay.co/data-science-course-training-in-chennai"
+              style={{ color: "#2D9CD7", fontWeight: "600" }}
+              target="_blank"
+            >
+              OMR
+            </a>{" "}
+            [600119],{" "}
+            <a
+              href="https://www.learnbay.co/data-science-course-training-in-chennai"
+              style={{ color: "#2D9CD7", fontWeight: "600" }}
+              target="_blank"
+            >
+              Guindy
+            </a>{" "}
+            [600032],{" "}
+            <a
+              href="https://www.learnbay.co/data-science-course-training-in-chennai"
+              style={{ color: "#2D9CD7", fontWeight: "600" }}
+              target="_blank"
+            >
+              Thiruvanmiyur
+            </a>{" "}
+            [600041],{" "}
+            <a
+              href="https://www.learnbay.co/data-science-course-training-in-chennai"
+              style={{ color: "#2D9CD7", fontWeight: "600" }}
+              target="_blank"
+            >
+              Perungudi
+            </a>{" "}
+            [600096],{" "}
+            <a
+              href="https://www.learnbay.co/data-science-course-training-in-chennai"
+              style={{ color: "#2D9CD7", fontWeight: "600" }}
+              target="_blank"
+            >
+              Thoraipakkam
+            </a>{" "}
+            [600097],{" "}
+            <a
+              href="https://www.learnbay.co/data-science-course-training-in-chennai"
+              style={{ color: "#2D9CD7", fontWeight: "600" }}
+              target="_blank"
+            >
+              Sholinganallur
+            </a>{" "}
+            [600119],{" "}
+            <a
+              href="https://www.learnbay.co/data-science-course-training-in-chennai"
+              style={{ color: "#2D9CD7", fontWeight: "600" }}
+              target="_blank"
+            >
+              Siruseri
+            </a>{" "}
+            [603103],{" "}
+            <a
+              href="https://www.learnbay.co/data-science-course-training-in-chennai"
+              style={{ color: "#2D9CD7", fontWeight: "600" }}
+              target="_blank"
+            >
+              Tambaram{" "}
+            </a>
+            [600045],{" "}
+            <a
+              href="https://www.learnbay.co/data-science-course-training-in-chennai"
+              style={{ color: "#2D9CD7", fontWeight: "600" }}
+              target="_blank"
+            >
+              Velachery{" "}
+            </a>
+            [600042],{" "}
+            <a
+              href="https://www.learnbay.co/data-science-course-training-in-chennai"
+              style={{ color: "#2D9CD7", fontWeight: "600" }}
+              target="_blank"
+            >
+              Meenambakkam{" "}
+            </a>
+            [600027],{" "}
+            <a
+              href="https://www.learnbay.co/data-science-course-training-in-chennai"
+              style={{ color: "#2D9CD7", fontWeight: "600" }}
+              target="_blank"
+            >
+              Chrompet{" "}
+            </a>
+            [600044],{" "}
+            <a
+              href="https://www.learnbay.co/data-science-course-training-in-chennai"
+              style={{ color: "#2D9CD7", fontWeight: "600" }}
+              target="_blank"
+            >
+              T nagar
+            </a>{" "}
+            [600017],{" "}
+            <a
+              href="https://www.learnbay.co/data-science-course-training-in-chennai"
+              style={{ color: "#2D9CD7", fontWeight: "600" }}
+              target="_blank"
+            >
+              Chennai central
+            </a>{" "}
+            [600020],{" "}
+            <a
+              href="https://www.learnbay.co/data-science-course-training-in-chennai"
+              style={{ color: "#2D9CD7", fontWeight: "600" }}
+              target="_blank"
+            >
+              Erukkancheri{" "}
+            </a>
+            [600118],{" "}
+            <a
+              href="https://www.learnbay.co/data-science-course-training-in-chennai"
+              style={{ color: "#2D9CD7", fontWeight: "600" }}
+              target="_blank"
+            >
+              World University Centre
+            </a>{" "}
+            [600031],{" "}
+            <a
+              href="https://www.learnbay.co/data-science-course-training-in-chennai"
+              style={{ color: "#2D9CD7", fontWeight: "600" }}
+              target="_blank"
+            >
+              Madras University{" "}
+            </a>
+            [600005],{" "}
+            <a
+              href="https://www.learnbay.co/data-science-course-training-in-chennai"
+              style={{ color: "#2D9CD7", fontWeight: "600" }}
+              target="_blank"
+            >
+              Indian Institute Of Technology
+            </a>{" "}
+            [600036].
+      </span>,
     CityTextLB: "Locations Offered",
     CityTextL:
-      " :Artificial Intelligence Training in Bangalore, Artificial Intelligence Course in Bangalore, Artificial Intelligence Training in BTM, Artificial Intelligence Training in Marathahalli, Artificial Intelligence Institute in Bangalore, Artificial Intelligence Training in Whitefield, Artificial Intelligence Training in Kundalahalli, Artificial Intelligence Training in ITPL, Artificial Intelligence Training Institute in Marathahalli, Artificial Intelligence Course in BTM, Artificial Intelligence Course in Marathahalli, Artificial Intelligence Course in Whitefield, Artificial Intelligence Course Bommanahalli, Artificial Intelligence Training in Bommanahalli, Artificial Intelligence Training in Electronic city, Artificial Intelligence Training in Koramangala, Artificial Intelligence Classes in BTM, Artificial Intelligence Classes in Bommanahalli, Artificial Intelligence Classes in Whitefield, Artificial Intelligence Classes in Marathahalli, Artificial Intelligence Course in Koramangala, Artificial Intelligence Training in Jayanagar, Artificial Intelligence Certification in Bangalore, Artificial Intelligence Certification Training in Bangalore, Artificial Intelligence Certification in BTM, Artificial Intelligence Certification in Whitefield, Best Artificial Intelligence Training, Best Artificial Intelligence Course",
+      " : Data Science Training in Chennai, Data Science Course in Chennai, Data Science Training in Anna Nagar, Data Science Training in Guindy, Data Science Institute in Chennai, Data Science Training in Siruseri, Data Science Training in Perungudi, Data Science Training in OMR, Data Science Training Institute in Adyar, Data Science Course in Anna Nagar, Data Science Course in chrompet, Data Science Course in Velchery, Data Science Course Nungambakkam, Data Science Training in Thoraipakkam, Data Science Course in OMR, Data Science Training in Madras university, Data Science Training in Tambaram, Data Science Online Classes in Anna Nagar, Data Science Course in Indian Institute Of Technology , Data Science Training in Chennai, Data Science Certification in Chennai, Data Science Certification Training in Chennai, Data Science Certification in Anna Nagar, Data Science Certification in Adyar, Best Data Science Training, Best Data Science Course.",
   },
 ];

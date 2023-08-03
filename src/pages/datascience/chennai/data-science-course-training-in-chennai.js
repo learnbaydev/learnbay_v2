@@ -46,7 +46,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-      <title>
+        <title>
           Best Data Science Course in Chennai With IBM Certification
         </title>
         <meta name="robots" content="index, follow" />
@@ -101,7 +101,7 @@ export default function Home() {
           rel="canonical"
           href="https://www.learnbay.co/data-science-course-training-in-chennai"
         />
-         <link
+        <link
           rel="icon"
           href="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/Learnbay-Favicon-L.png"
         />
@@ -154,15 +154,16 @@ export default function Home() {
           ThirdTyped="Live Interactive Classes"
           cityParaCont="Enhance your Data Science career with our comprehensive Data Science course in Chennai with IBM Certification. Our advanced Data Science training in Chennai will help you to make experts in Python, Power BI, etc. You will get training from industry leaders and masters to gain the most in-demand data science and AI skills."
           dataScience={true}
-          titleCourse="Data Science Course in Chennai"
+          titleCourse="Advanced Data Science and AI Program with domain specialization"
           brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Advance+Data+Science+and+AI+Certification+Program+Learnbay.pdf"
-          FirstRightImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/head/ADSAI.png"
-
+          idss="bfl64ANfSV0"
+          FirstRightImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/advance+DS+header+image.webp"
           firstHeading="Data Science Course in Chennai"
           firstTopPara="Foundational and Advance Job-ready Program"
-          idss="bfl64ANfSV0"
         />
-        <SecondSection SecondSectionData={DataScienceChennaiCourseData[0].secondSection} />
+        <SecondSection
+          SecondSectionData={DataScienceChennaiCourseData[0].secondSection}
+        />
         <Testimonial
           redirectDS={true}
           Testimonial={DataScienceChennaiCourseData[0].testimonial}
@@ -170,17 +171,18 @@ export default function Home() {
           para="Discover the impact of our programs on career growth"
         />
         <div className={styles.cityFee}>
-          <FeeSection
-            AIMLCertificate={true}
-            Fee="₹99,000 + 18% GST"
-            FeeEmi="₹ 9,735/month"
-            FeeHeading="Program Fee & Financing"
-            FeeContent2="No cost EMI"
-            FeeContent3="Flexible payment"
-            FeeContent4="Easy loan procedure"
-            FeeContent5="15 days refund policy"
-            dataScienceCounselling={true}
-          />
+        <FeeSection
+          Fee="₹ 99,000 + 18% GST"
+          FeeEmi="₹ 9,735/month"
+          FeeHeading="Program Fee & Financing"
+          FeeContent1="0% interest rate"
+          FeeContent2="No cost EMI"
+          FeeContent3="Flexible payment"
+          FeeContent4="Easy loan procedure"
+          FeeContent5="15 days refund policy"
+          FeeContent6="No additional cost"
+          dataScienceCounselling={true}
+        />
         </div>
         <div className="MainCities">
           <div className="CitiesLeft">
@@ -188,9 +190,7 @@ export default function Home() {
           </div>
           <div className="CitiesRight">
             <CitiesRight
-              
               cityTextDSChennai={true}
-              
               DomainHead1={DataScienceChennaiCourseData[0].DomainHead1}
               DomainBot1={DataScienceChennaiCourseData[0].DomainBot1}
               DomainBot2={DataScienceChennaiCourseData[0].DomainBot2}
@@ -215,44 +215,98 @@ export default function Home() {
               Domainlink8={DataScienceChennaiCourseData[0].Domainlink8}
               Domainlink9={DataScienceChennaiCourseData[0].Domainlink9}
               Domainlink10={DataScienceChennaiCourseData[0].Domainlink10}
-              CertificationBot1={DataScienceChennaiCourseData[0].CertificationBot1}
-              CertificationBot2={DataScienceChennaiCourseData[0].CertificationBot2}
+              CertificationBot1={
+                DataScienceChennaiCourseData[0].CertificationBot1
+              }
+              CertificationBot2={
+                DataScienceChennaiCourseData[0].CertificationBot2
+              }
               src={DataScienceChennaiCourseData[0].src}
+              src22={DataScienceChennaiCourseData[0].src22}
+              src33={DataScienceChennaiCourseData[0].src33}
               ModuleHead1={DataScienceChennaiCourseData[0].ModuleHead1}
               ModuleBot1={DataScienceChennaiCourseData[0].ModuleBot1}
               ModuleBot2={DataScienceChennaiCourseData[0].ModuleBot2}
               syllabush1={DataScienceChennaiCourseData[0].syllabush1}
               syllabusb1={DataScienceChennaiCourseData[0].syllabusb1}
-              SyllabusBotlist11={DataScienceChennaiCourseData[0].SyllabusBotlist11}
-              SyllabusBotlist12={DataScienceChennaiCourseData[0].SyllabusBotlist12}
-              SyllabusBotlist13={DataScienceChennaiCourseData[0].SyllabusBotlist13}
-              SyllabusBotlist14={DataScienceChennaiCourseData[0].SyllabusBotlist14}
-              SyllabusBotlist15={DataScienceChennaiCourseData[0].SyllabusBotlist15}
-              SyllabusBotlist16={DataScienceChennaiCourseData[0].SyllabusBotlist16}
+              SyllabusBotlist11={
+                DataScienceChennaiCourseData[0].SyllabusBotlist11
+              }
+              SyllabusBotlist12={
+                DataScienceChennaiCourseData[0].SyllabusBotlist12
+              }
+              SyllabusBotlist13={
+                DataScienceChennaiCourseData[0].SyllabusBotlist13
+              }
+              SyllabusBotlist14={
+                DataScienceChennaiCourseData[0].SyllabusBotlist14
+              }
+              SyllabusBotlist15={
+                DataScienceChennaiCourseData[0].SyllabusBotlist15
+              }
+              SyllabusBotlist16={
+                DataScienceChennaiCourseData[0].SyllabusBotlist16
+              }
               syllabush2={DataScienceChennaiCourseData[0].syllabush2}
               syllabusb2={DataScienceChennaiCourseData[0].syllabusb2}
-              SyllabusBotlist21={DataScienceChennaiCourseData[0].SyllabusBotlist21}
-              SyllabusBotlist22={DataScienceChennaiCourseData[0].SyllabusBotlist22}
-              SyllabusBotlist23={DataScienceChennaiCourseData[0].SyllabusBotlist23}
-              SyllabusBotlist24={DataScienceChennaiCourseData[0].SyllabusBotlist24}
-              SyllabusBotlist25={DataScienceChennaiCourseData[0].SyllabusBotlist25}
-              SyllabusBotlist26={DataScienceChennaiCourseData[0].SyllabusBotlist26}
+              SyllabusBotlist21={
+                DataScienceChennaiCourseData[0].SyllabusBotlist21
+              }
+              SyllabusBotlist22={
+                DataScienceChennaiCourseData[0].SyllabusBotlist22
+              }
+              SyllabusBotlist23={
+                DataScienceChennaiCourseData[0].SyllabusBotlist23
+              }
+              SyllabusBotlist24={
+                DataScienceChennaiCourseData[0].SyllabusBotlist24
+              }
+              SyllabusBotlist25={
+                DataScienceChennaiCourseData[0].SyllabusBotlist25
+              }
+              SyllabusBotlist26={
+                DataScienceChennaiCourseData[0].SyllabusBotlist26
+              }
               syllabush3={DataScienceChennaiCourseData[0].syllabush3}
               syllabusb3={DataScienceChennaiCourseData[0].syllabusb3}
-              SyllabusBotlist31={DataScienceChennaiCourseData[0].SyllabusBotlist31}
-              SyllabusBotlist32={DataScienceChennaiCourseData[0].SyllabusBotlist32}
-              SyllabusBotlist33={DataScienceChennaiCourseData[0].SyllabusBotlist33}
-              SyllabusBotlist34={DataScienceChennaiCourseData[0].SyllabusBotlist34}
-              SyllabusBotlist35={DataScienceChennaiCourseData[0].SyllabusBotlist35}
-              SyllabusBotlist36={DataScienceChennaiCourseData[0].SyllabusBotlist36}
+              SyllabusBotlist31={
+                DataScienceChennaiCourseData[0].SyllabusBotlist31
+              }
+              SyllabusBotlist32={
+                DataScienceChennaiCourseData[0].SyllabusBotlist32
+              }
+              SyllabusBotlist33={
+                DataScienceChennaiCourseData[0].SyllabusBotlist33
+              }
+              SyllabusBotlist34={
+                DataScienceChennaiCourseData[0].SyllabusBotlist34
+              }
+              SyllabusBotlist35={
+                DataScienceChennaiCourseData[0].SyllabusBotlist35
+              }
+              SyllabusBotlist36={
+                DataScienceChennaiCourseData[0].SyllabusBotlist36
+              }
               syllabush4={DataScienceChennaiCourseData[0].syllabush4}
               syllabusb4={DataScienceChennaiCourseData[0].syllabusb4}
-              SyllabusBotlist41={DataScienceChennaiCourseData[0].SyllabusBotlist41}
-              SyllabusBotlist42={DataScienceChennaiCourseData[0].SyllabusBotlist42}
-              SyllabusBotlist43={DataScienceChennaiCourseData[0].SyllabusBotlist43}
-              SyllabusBotlist44={DataScienceChennaiCourseData[0].SyllabusBotlist44}
-              SyllabusBotlist45={DataScienceChennaiCourseData[0].SyllabusBotlist45}
-              SyllabusBotlist46={DataScienceChennaiCourseData[0].SyllabusBotlist46}
+              SyllabusBotlist41={
+                DataScienceChennaiCourseData[0].SyllabusBotlist41
+              }
+              SyllabusBotlist42={
+                DataScienceChennaiCourseData[0].SyllabusBotlist42
+              }
+              SyllabusBotlist43={
+                DataScienceChennaiCourseData[0].SyllabusBotlist43
+              }
+              SyllabusBotlist44={
+                DataScienceChennaiCourseData[0].SyllabusBotlist44
+              }
+              SyllabusBotlist45={
+                DataScienceChennaiCourseData[0].SyllabusBotlist45
+              }
+              SyllabusBotlist46={
+                DataScienceChennaiCourseData[0].SyllabusBotlist46
+              }
               syllabussrc={DataScienceChennaiCourseData[0].syllabussrc}
               JobHead1={DataScienceChennaiCourseData[0].JobHead1}
               JobBot1={DataScienceChennaiCourseData[0].JobBot1}
@@ -262,9 +316,10 @@ export default function Home() {
               JobBot3={DataScienceChennaiCourseData[0].JobBot3}
               JobBot4={DataScienceChennaiCourseData[0].JobBot4}
               JobBot6={DataScienceChennaiCourseData[0].JobBot6}
-              ProjectsBot1={DataScienceChennaiCourseData[0].ProgramBot1}
-              ProjectsBot2={DataScienceChennaiCourseData[0].ProgramBot2}
+              ProjectsBot1={DataScienceChennaiCourseData[0].ProjectsBot1}
+              ProjectsBot2={DataScienceChennaiCourseData[0].ProjectsBot2}
               src1={DataScienceChennaiCourseData[0].src1}
+              ProjectsHead1={DataScienceChennaiCourseData[0].ProjectsHead1}
               ProjectsH1={DataScienceChennaiCourseData[0].ProjectsH1}
               Projectsp1={DataScienceChennaiCourseData[0].Projectsp1}
               src2={DataScienceChennaiCourseData[0].src2}
@@ -289,7 +344,6 @@ export default function Home() {
               Asrc4={DataScienceChennaiCourseData[0].Asrc4}
               AlumniH4={DataScienceChennaiCourseData[0].AlumniH4}
               Alumnip4={DataScienceChennaiCourseData[0].Alumnip4}
-           
             />
             <div className={styles.faqCity}>
               <FAQNew FAQNewData={DataScienceChennaiCourseData[0].faq} />
@@ -297,12 +351,7 @@ export default function Home() {
           </div>
         </div>
         <SeventhSection />
-        <CityText
-          CityTextB={DataScienceChennaiCourseData[0].CityTextB}
-          CityText={DataScienceChennaiCourseData[0].CityText}
-          CityTextLB={DataScienceChennaiCourseData[0].CityTextLB}
-          CityTextL={DataScienceChennaiCourseData[0].CityTextL}
-        />
+        <CityText cityTextChennai={true} />
         <Footer />
       </main>
     </div>

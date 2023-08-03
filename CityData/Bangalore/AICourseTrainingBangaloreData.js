@@ -1,92 +1,9 @@
-export const AIDubaiCourseData = [
+export const DataScienceCourseData = [
   {
     script1: {
-      "@context": "https://schema.org",
-      "@type": "NewsArticle",
-      mainEntityOfPage: {
-        "@type": "WebPage",
-        "@id": "https://www.learnbay.co/",
-      },
-      headline: "Artificial Intelligence (AI) course training in Dubai",
-      description:
-        "Artificial Intelligence Course in Dubai. Learnbay is Advanced Artificial Intelligence Course Training Institute in Dubai. Artificial Intelligence course in Dubai will enhance your career",
-      image:
-        "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/home-page-header.webp",
-      author: {
-        "@type": "Organization",
-        name: "Learnbay",
-        url: "https://www.learnbay.co/",
-      },
-      publisher: {
-        "@type": "Organization",
-        name: "Learnbay",
-        logo: {
-          "@type": "ImageObject",
-          url: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/ALight/learnbay-logo.png",
-        },
-      },
-      datePublished: "2021-10-01",
-      dateModified: "2022-04-21",
-    },
-    script2: {
-      "@context": "http://schema.org",
-      "@type": "EducationEvent",
-      name: "Artificial intelligence Course Training in Dubai",
-      description:
-        "Artificial Intelligence Course in Dubai. Learnbay is Advanced Artificial Intelligence Course Training Institute in Dubai. Artificial Intelligence course in Dubai will enhance your career",
-      image:
-        "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/ALight/learnbay-logo.png",
-      performer: "Learnbay",
-      offers: {
-        "@type": "AggregateOffer",
-        lowPrice: "39999",
-        highPrice: "110000",
-        url: "https://www.learnbay.co/",
-        availability: "https://schema.org/InStock",
-        price: "95000",
-        priceCurrency: "INR",
-        validFrom: "2022-05-01",
-      },
-      startDate: "2022-05-01",
-      endDate: "2022-10-31",
-      url: "https://www.excelr.com/data-science-course-training-in-bangalore",
-      duration: "80",
-      eventAttendanceMode: "https://schema.org/MixedEventAttendanceMode",
-      eventStatus: "http://schema.org/EventScheduled",
-      location: [
-        {
-          "@type": "VirtualLocation",
-          url: "https://www.learnbay.co/",
-        },
-        {
-          "@type": "Place",
-          name: "Learnbay - Artificial intelligence Course Training in Dubai",
-          address: {
-            "@type": "PostalAddress",
-            streetAddress:
-              "#1090 , 1st floor, 18th cross road HSR layout sector 3, Bangalore - 560102 (Above Sangam Sweets)",
-
-            addressLocality: "HSR Sector 3",
-            postalCode: "560102",
-            addressCountry: "Bengaluru, Karnataka,INDIA",
-          },
-          geo: {
-            "@type": "GeoCoordinates",
-            latitude: "12.914745887585838",
-            longitude: "77.64087553886982",
-          },
-        },
-      ],
-      organizer: {
-        "@type": "Organization",
-        name: "Learnbay",
-        url: "https://www.learnbay.co",
-      },
-    },
-    script3: {
       "@context": "https://schema.org/",
       "@type": "HowTo",
-      name: "How to apply for artificial intelligence course?",
+      name: "How to apply for data science course?",
       description:
         "You just have to follow 3 easy steps to enroll in our advanced data science course",
       image:
@@ -99,7 +16,7 @@ export const AIDubaiCourseData = [
       },
       supply: {
         "@type": "HowToSupply",
-        name: "We provide Advanced artificial intelligence course in Bangalore, Delhi, Pune, Chennai, Hyderabad, Mumbai, Canada, Dubai",
+        name: "We provide artificial intelligence ai course training in bangalore",
       },
       tool: {
         "@type": "HowToTool",
@@ -124,7 +41,7 @@ export const AIDubaiCourseData = [
         },
         {
           "@type": "HowToStep",
-          text: "Get enrollment in our artificial intelligence course",
+          text: "Get enrollment in our data science course",
           image:
             "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/home-page-header.webp",
           name: "Get enrollment",
@@ -132,21 +49,50 @@ export const AIDubaiCourseData = [
         },
       ],
     },
-    script4: {
+    script2: {
       "@context": "https://schema.org",
+      "@type": "NewsArticle",
+      mainEntityOfPage: {
+        "@type": "WebPage",
+        "@id": "https://www.learnbay.co/",
+      },
+      headline: "Artificial Intelligence (AI) training in Bangalore",
+      description:
+        "Artificial Intelligence Course in Bangalore. Learnbay is Advanced Artificial Intelligence Course Training Institute in Bangalore. Artificial Intelligence course in Bangalore will enhance your career",
+      image:
+        "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/home-page-header.webp",
+      author: {
+        "@type": "Organization",
+        name: "Learnbay",
+        url: "https://www.learnbay.co/",
+      },
+      publisher: {
+        "@type": "Organization",
+        name: "Learnbay",
+        logo: {
+          "@type": "ImageObject",
+          url: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/ALight/learnbay-logo.png",
+        },
+      },
+      datePublished: "2021-10-01",
+      dateModified: "2022-04-21",
+    },
+    script3: {
+      "@context": "https://schema.org",
+
       "@type": "FAQPage",
       mainEntity: [
         {
           "@type": "Question",
-          name: "What are Artificial Intelligence (AI) training courses available at Learnbay in Dubai?",
+          name: "What are Artificial Intelligence (AI) training courses available at Learnbay in Bangalore?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Foundational data science and Artificial Intelligence Training Course, Advanced data science and AI Certification Course, Machine learning and AI Certification, Data Science and AI Certification Course for Managers and Leaders Data Science and Artificial Intelligence Training with Placement Assistance",
+            text: "Foundational data science and Artificial Intelligence Training Course Advanced data science and AI Certification Course Machine learning and AI Certification Data Science and AI Certification Course for Managers and Leaders Data Science and Artificial Intelligence Training with Placement Assistance",
           },
         },
         {
           "@type": "Question",
-          name: "What are the prerequisites for these AI training Courses in Dubai?",
+          name: "What are the prerequisites for these AI training Courses in Bangalore?",
           acceptedAnswer: {
             "@type": "Answer",
             text: "There are no prerequisites for this artificial certification course as all modules are beginner-friendly and are taught from scratch. We provide special classes and assistance for Non-IT/Non-programmers. However, basic knowledge of applied Mathematics/Statistics is a must.",
@@ -162,7 +108,7 @@ export const AIDubaiCourseData = [
         },
         {
           "@type": "Question",
-          name: "What is a Flexi Subscription in these advanced artificial intelligence courses in Dubai?",
+          name: "What is a Flexi Subscription in these advanced artificial intelligence courses in Bangalore?",
           acceptedAnswer: {
             "@type": "Answer",
             text: "Those who enroll for AI live classroom training are eligible for a Flexi Pass. With this option, we will share access to all the ongoing batch details for a period of 1 -3 years, so that you can attend live sessions from any batch and learn at your own pace. This option is best for people working in shifts or on weekends. Flexi Subscription Time-line: Foundational data science and Artificial Intelligence Training Course- 1 Year Advanced data science and AI Certification Course- 3 Years Machine learning and AI Certification- 3 Years Data Science and AI Certification Course for Managers and Leaders- 3 Years Data Science and Artificial Intelligence Training with Placement Assistance - 3-years",
@@ -170,7 +116,7 @@ export const AIDubaiCourseData = [
         },
         {
           "@type": "Question",
-          name: "What is the duration of these advanced AI in Dubai?",
+          name: "What’s the duration of these advanced AI in Bangalore?",
           acceptedAnswer: {
             "@type": "Answer",
             text: "The duration of these courses is about 6-15 months, which includes live lectures, hands-on practical training on live projects, and interview preparations. Classes will be conducted on weekdays and weekend batches. Monday to Friday - 2 hours/day and Saturday & Sunday - 3.5 hours/day Foundational Data Science and Artificial Intelligence Training Course (220+ hours) Weekday batch - 6 months Weekend batch - 8 months Machine learning and AI Certification (280+ hours) Weekday batch - 9.5 months Weekend batch - 11 months Advanced Data Science and AI Certification Course (270+ hours) Weekday batch - 7 months Weekend batch - 9 months Data Science and AI Certification Course for Managers and Leaders (340+ hours) Weekday batch - 11 months Weekend batch - 13 months Data Science and Artificial Intelligence Training with Placement Assistance (380+ hours) Weekday batch - 13 months Weekend batch - 15 months",
@@ -178,7 +124,7 @@ export const AIDubaiCourseData = [
         },
         {
           "@type": "Question",
-          name: "What is the learning mode of Artificial Intelligence Certification courses in Dubai at Learnbay?",
+          name: "What is the learning mode of Artificial Intelligence Certification courses in Bangalore at Learnbay?",
           acceptedAnswer: {
             "@type": "Answer",
             text: "We provide both classroom and online AI training modes. Based on your requirement, you can choose your preferred mode.",
@@ -186,7 +132,7 @@ export const AIDubaiCourseData = [
         },
         {
           "@type": "Question",
-          name: "How can I opt for a Hybrid mode of learning in IBM artificial intelligence training courses in Dubai, At Learnbay?",
+          name: "How can I opt for a Hybrid mode of learning in IBM artificial intelligence training courses in Bangalore, At Learnbay?",
           acceptedAnswer: {
             "@type": "Answer",
             text: "Simply, you can choose an online mode of study for the theoretical classes and a classroom mode for all the capstone projects and interview preparation sessions.",
@@ -194,7 +140,7 @@ export const AIDubaiCourseData = [
         },
         {
           "@type": "Question",
-          name: "What is domain specialization in the professional AI certification courses provided by Learnbay in Dubai?",
+          name: "What is domain specialization in the professional AI certification courses provided by Learnbay in Bangalore?",
           acceptedAnswer: {
             "@type": "Answer",
             text: "We offer industry-specific full-stack AI modules, via which you learn the respective industry’s best practices. But this added benefit is available in all the three mentioned courses, except the foundational AI course.",
@@ -202,7 +148,7 @@ export const AIDubaiCourseData = [
         },
         {
           "@type": "Question",
-          name: "What are the available elective domain options in the different artificial intelligence training courses of Learnbay in Dubai?",
+          name: "What are the available elective domain options in the different artificial intelligence training courses of Learnbay in Bangalore?",
           acceptedAnswer: {
             "@type": "Answer",
             text: "Advanced Data Structure & algo; Automotive, IoT & Embedded; Cloud & DevOps; Sales, Marketing, & HR; Retail, E-Commerce, & Supply Chain; Healthcare, Pharma, & Clinical Research; BFSI; Manufacturing, Mechanical, & Telecom; Media, Hospitality, & Transportation; Oil, Gas, & Energy",
@@ -213,15 +159,7 @@ export const AIDubaiCourseData = [
           name: "Which domain elective within the Learnbay AI Certification courses is best suited for me?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "You can select your domain based on your prior work experience, academics, and career goals. Book a slot with our industry expert for free profile review and career guidance. +917795687988",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Why is domain specialization important in professional artificial intelligence certification?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "After enrolling in the advanced AI courses, one must opt for domain electives. It is essential to have business/industry knowledge that is useful in feature engineering and modeling. Prior knowledge of the industry and domain aids in the development of more precise and accurate predictive models based on the dataset's attributes. Furthermore, the model will be more observable in a real-world situation.",
+            text: "After enrolling in the advanced AI courses, one must opt for domain electives. It is essential to have business/industry knowledge that is useful in feature engineering and modeling. Prior knowledge of the industry and domain aids in the development of more precise and accurate predictive models based on the dataset's attributes. Furthermore, the model will be more observable in a real-world situation",
           },
         },
         {
@@ -250,7 +188,7 @@ export const AIDubaiCourseData = [
         },
         {
           "@type": "Question",
-          name: "What is the total fee for Learnbay AI Certifications courses in Dubai?",
+          name: "What is the total fee for Learnbay AI Certifications courses in Bangalore?",
           acceptedAnswer: {
             "@type": "Answer",
             text: "The total course fee for the Foundational Data Science and Artificial Intelligence Training Course is 88,500/- inclusive of GST. Advance Data Science and AI Certification course is 1,12,100/- inclusive of GST. Data Science and AI Certification Course for Managers and Leaders is 1,23,900/- inclusive of GST. Data Science and Artificial Intelligence Training with Placement Assistance is 1,47,500/- inclusive of GST. Machine learning and AI Certification is 1,23,900/-inclusive of GST",
@@ -258,7 +196,7 @@ export const AIDubaiCourseData = [
         },
         {
           "@type": "Question",
-          name: "Can I pay in installments for these AI Certification courses in Dubai?",
+          name: "Can I pay in installments for these AI Certification courses in Bangalore?",
           acceptedAnswer: {
             "@type": "Answer",
             text: "Yes, you can pay the installments using a credit card with a no-cost EMI option for up to 9 months. You can also choose an interest-free loan by submitting an Aadhar card, Pan Card, and 3-month salary slip.",
@@ -266,7 +204,7 @@ export const AIDubaiCourseData = [
         },
         {
           "@type": "Question",
-          name: "Is there any scholarship/discount available for these Artificial intelligence training courses available in Dubai? What is Group Discount?",
+          name: "Is there any scholarship/discount available for these Artificial intelligence training courses available in Bangalore? What is Group Discount?",
           acceptedAnswer: {
             "@type": "Answer",
             text: "Learnbay offers a 15 - 20% scholarship for early birds occasionally. Please check our websites or contact our sales team to know more about the applicable discounts. Group Discount : Group Discount is applicable only if you’re joining with your friends. 5% extra discount: Group of 2 8% extra discount: Group of 3 Max 10% discount: Groupe of 4+",
@@ -290,7 +228,7 @@ export const AIDubaiCourseData = [
         },
         {
           "@type": "Question",
-          name: "How many real-time projects/case studies will be covered in these artificial intelligence certification courses in Dubai?",
+          name: "How many real-time projects/case studies will be covered in these artificial intelligence certification courses in Bangalore?",
           acceptedAnswer: {
             "@type": "Answer",
             text: "Depending on the course you choose the number of live projects will vary. Foundational Data Science and Artificial Intelligence Training Course- 8 projects. Advance Data Science and AI Certification course-12 projects. Data Science and AI Certification Course for Managers and Leaders- 15 projects. Data Science and Artificial Intelligence Training with Placement Assistance- 15 projects. Machine learning and AI Certification- 15 projects. Click here to download the list of the projects.",
@@ -298,7 +236,7 @@ export const AIDubaiCourseData = [
         },
         {
           "@type": "Question",
-          name: "How will the projects be executed in Dubai?",
+          name: "How will the projects be executed in Bangalore?",
           acceptedAnswer: {
             "@type": "Answer",
             text: "At Learnbay, you will be required to work in a group where your project group will be assigned a specific project mentor with complete assistance and guidance.",
@@ -314,7 +252,7 @@ export const AIDubaiCourseData = [
         },
         {
           "@type": "Question",
-          name: "What's the eligibility for a job assistance Program in Learnbay artificial intelligence training courses in Dubai?",
+          name: "What's the eligibility for a job assistance Program in Learnbay artificial intelligence training courses in Bangalore?",
           acceptedAnswer: {
             "@type": "Answer",
             text: "You should have completed the course with : A minimum score of 70% in assessments Should have completed the assignments and case studies Worked and successfully completed the minimum recommended number of real-time projects.",
@@ -322,7 +260,7 @@ export const AIDubaiCourseData = [
         },
         {
           "@type": "Question",
-          name: "How long will I get support for job assistance at Learnbay in Dubai?",
+          name: "How long will I get support for job assistance at Learnbay in Bangalore?",
           acceptedAnswer: {
             "@type": "Answer",
             text: "At Learnbay, you’ll be provided with job assistance after the completion of the course for a period of 1 year. What is a job-readiness program? The Job readiness program helps you prepare for interviews which include: Resume preparation sessions, Preparing projects for a strong portfolio, Interview guidance and prep sessions, 1:1 Mock interviews based on targeted companies and roles.",
@@ -354,7 +292,7 @@ export const AIDubaiCourseData = [
         },
         {
           "@type": "Question",
-          name: "Can a Learnbay student in Dubai choose to study from their desired mentor?",
+          name: "Can a Learnbay student in Bangalore choose to study from their desired mentor?",
           acceptedAnswer: {
             "@type": "Answer",
             text: "Every batch has its respective mentor, but if a student is not satisfied with its mentor’s teaching method, they can raise the issue to management and resolve the issues by replacing them with other mentors.",
@@ -378,6 +316,61 @@ export const AIDubaiCourseData = [
         },
       ],
     },
+    script4: {
+      "@context": "http://schema.org",
+      "@type": "EducationEvent",
+      name: "Artificial Intelligence (AI) training in Bangalore",
+      description:
+        "Artificial Intelligence Course in Bangalore. Learnbay is Advanced Artificial Intelligence Course Training Institute in Bangalore. Artificial Intelligence course in Bangalore will enhance your career",
+      image:
+        "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/ALight/learnbay-logo.png",
+      performer: "Learnbay",
+      offers: {
+        "@type": "AggregateOffer",
+        lowPrice: "39999",
+        highPrice: "110000",
+        url: "https://www.learnbay.co/",
+        availability: "https://schema.org/InStock",
+        price: "39999",
+        priceCurrency: "INR",
+        validFrom: "2022-05-01",
+      },
+      startDate: "2022-05-01",
+      endDate: "2022-08-31",
+      url: "https://www.learnbay.co/",
+      duration: "80",
+      eventAttendanceMode: "https://schema.org/MixedEventAttendanceMode",
+      eventStatus: "http://schema.org/EventScheduled",
+      location: [
+        {
+          "@type": "VirtualLocation",
+          url: "https://www.learnbay.co/",
+        },
+        {
+          "@type": "Place",
+          name: "Learnbay - Artificial Intelligence(Ai), Artificial Intelligence(Ai) Course Training in Bangalore",
+          address: {
+            "@type": "PostalAddress",
+            streetAddress:
+              "#1090 , 1st floor, 18th cross road HSR layout sector 3, Bangalore - 560102 (Above Sangam Sweets)",
+
+            addressLocality: "HSR Sector 3",
+            postalCode: "560102",
+            addressCountry: "Bengaluru, Karnataka,INDIA",
+          },
+          geo: {
+            "@type": "GeoCoordinates",
+            latitude: "12.914745887585838",
+            longitude: "77.64087553886982",
+          },
+        },
+      ],
+      organizer: {
+        "@type": "Organization",
+        name: "Learnbay",
+        url: "https://www.learnbay.co",
+      },
+    },
     secondSection: [
       {
         id: 1,
@@ -385,23 +378,23 @@ export const AIDubaiCourseData = [
         height: "40",
         width: "43",
         heading: "1:1 Doubt Session",
-        para: "Clear your doubts with industry experts and get real-time solutions",
+        para: "Talk to an expert & receive real-time solutions to your queries",
       },
       {
         id: 1,
         img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/icon3.png",
         height: "42",
         width: "42",
-        heading: "Unlimited Interview Calls",
-        para: "Boost career chances, gain referrals from 300+ top recruiters",
+        heading: "Guaranteed Interview Calls",
+        para: "Boost your job prospects with referrals from 300+ hiring partners",
       },
-      {
+      { 
         id: 1,
         img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/icon2.png",
         height: "50",
         width: "53",
         heading: "IBM Project Certificate",
-        para: "Master the domain of AI & machine learning with certificate from IBM",
+        para: "Grab opportunities with a portfolio & make a smooth career transition",
       },
       {
         id: 1,
@@ -409,7 +402,7 @@ export const AIDubaiCourseData = [
         height: "40",
         width: "40",
         heading: "Designed For Professionals",
-        para: "Use tech innovation to drive career growth & acquire in-demand skills",
+        para: "Prioritize growth & salary increases with in-demand skills",
       },
     ],
     testimonial: [
@@ -519,26 +512,17 @@ export const AIDubaiCourseData = [
         data: [
           {
             id: 0,
-            ques: "What are Artificial Intelligence (AI) training courses available at Learnbay in Dubai?",
-            linkText1:
-              "Foundational data science and Artificial Intelligence Training Course, ",
-            linkText2: "Advanced data science and AI Certification Course, ",
-            linkText3: " Machine learning and AI Certification, ",
-            linkText4:
-              "Data Science and AI Certification Course for Managers and Leaders",
-            linkText5:
-              " Data Science and Artificial Intelligence Training with Placement Assistance",
-            link1: "/data-science-certification-courses",
-            link2: "/advance-data-science-certification-courses",
-            link3: "/data-science-ai-for-managers",
-            link4: "/data-science-ai-for-managers",
-            link5: "/data-science-ai-masters-program",
-            link: true,
+            ques: "What are Artificial Intelligence (AI) training courses available at Learnbay in Bangalore?",
+            ans: `Foundational data science and Artificial Intelligence Training Course
+            Advanced data science and AI Certification Course
+            Machine learning and AI Certification
+            Data Science and AI Certification Course for Managers and Leaders 
+            Data Science and Artificial Intelligence Training with Placement Assistance`,
             open: true,
           },
           {
             id: 1,
-            ques: "What are the prerequisites for these AI training Courses in Dubai?",
+            ques: "What are the prerequisites for these AI training Courses in Bangalore?",
             ans: " There are no prerequisites for this artificial certification course as all modules are beginner-friendly and are taught from scratch. We provide special classes and assistance for Non-IT/Non-programmers. However, basic knowledge of applied Mathematics/Statistics is a must.",
             open: false,
           },
@@ -551,7 +535,7 @@ export const AIDubaiCourseData = [
           },
           {
             id: 3,
-            ques: "What is a Flexi Subscription in these advanced artificial intelligence courses in Dubai?",
+            ques: "What is a Flexi Subscription in these advanced artificial intelligence courses in Bangalore?",
             ans: `Those who enroll for AI live classroom training are eligible for a Flexi Pass. With this option, we will share access to all the ongoing batch details for a period of 1 -3 years, so that you can attend live sessions from any batch and learn at your own pace. This option is best for people working in shifts or on weekends.
             Flexi Subscription Time-line:
             Foundational data science and  Artificial Intelligence Training Course- 1 Year
@@ -563,7 +547,7 @@ export const AIDubaiCourseData = [
           },
           {
             id: 4,
-            ques: "What’s the duration of these advanced AI in Dubai?",
+            ques: "What’s the duration of these advanced AI in Bangalore?",
             ans: `The duration of these courses is about 6-15 months, which includes live lectures, hands-on practical training on live projects, and interview preparations.
             Classes will be conducted on weekdays and weekend batches. Monday to Friday - 2 hours/day and Saturday & Sunday - 3.5 hours/day
             Foundational Data Science and Artificial Intelligence Training Course (220+ hours)
@@ -589,13 +573,13 @@ export const AIDubaiCourseData = [
           },
           {
             id: 5,
-            ques: "What is the learning mode of Artificial Intelligence Certification courses in Dubai at Learnbay?",
+            ques: "What is the learning mode of Artificial Intelligence Certification courses in Bangalore at Learnbay?",
             ans: "We provide both classroom and online AI training modes. Based on your requirement, you can choose your preferred mode.",
             open: false,
           },
           {
             id: 6,
-            ques: "How can I opt for a Hybrid mode of learning in IBM artificial intelligence training courses in Dubai, At Learnbay? ",
+            ques: "How can I opt for a Hybrid mode of learning in IBM artificial intelligence training courses in Bangalore, At Learnbay? ",
             ans: "Simply, you can choose an online mode of study for the theoretical classes and a classroom mode for all the capstone projects and interview preparation sessions.",
             open: false,
           },
@@ -607,13 +591,13 @@ export const AIDubaiCourseData = [
         data: [
           {
             id: 0,
-            ques: "What is domain specialization in the professional AI certification courses provided by Learnbay in Dubai?",
+            ques: "What is domain specialization in the professional AI certification courses provided by Learnbay in Bangalore?",
             ans: "We offer industry-specific full-stack AI modules, via which you learn the respective industry’s best practices. But this added benefit is available in all the three mentioned courses, except the foundational AI course.",
             open: true,
           },
           {
             id: 1,
-            ques: "What are the available elective domain options in the different artificial intelligence training courses of Learnbay in Dubai?",
+            ques: "What are the available elective domain options in the different artificial intelligence training courses of Learnbay in Bangalore?",
             ans: "Advanced Data Structure & algo; Automotive, IoT & Embedded; Cloud & DevOps; Sales, Marketing, & HR; Retail, E-Commerce, & Supply Chain; Healthcare, Pharma, & Clinical Research; BFSI; Manufacturing, Mechanical, & Telecom; Media, Hospitality, & Transportation; Oil, Gas, & Energy",
             open: false,
           },
@@ -665,7 +649,7 @@ export const AIDubaiCourseData = [
         data: [
           {
             id: 0,
-            ques: "What is the total fee for Learnbay AI Certifications courses in Dubai?",
+            ques: "What is the total fee for Learnbay AI Certifications courses in Bangalore?",
             ans: `The total course fee for the 
             Foundational Data Science and Artificial Intelligence Training Course is 88,500/- inclusive of GST.
             Advance Data Science and  AI Certification course is 1,12,100/- inclusive of GST.
@@ -676,13 +660,14 @@ export const AIDubaiCourseData = [
           },
           {
             id: 1,
-            ques: "Can I pay in installments for these AI Certification courses in Dubai?",
+            ques: "Can I pay in installments for these AI Certification courses in Bangalore?",
             ans: "Yes, you can pay the installments using a credit card with a no-cost EMI option for up to 9 months. You can also choose an interest-free loan by submitting an Aadhar card, Pan Card, and 3-month salary slip.",
+            //Check
             open: false,
           },
           {
             id: 2,
-            ques: " Is there any scholarship/discount available for these Artificial intelligence training courses available in Dubai? What is Group Discount?",
+            ques: " Is there any scholarship/discount available for these Artificial intelligence training courses available in Bangalore? What is Group Discount?",
             ans: `Learnbay offers a 15 - 20% scholarship for early birds occasionally.
             Please check our websites or contact our sales team to know more about the applicable discounts.
             
@@ -697,7 +682,7 @@ export const AIDubaiCourseData = [
           {
             id: 3,
             ques: " What is the refund policy for the Artificial Intelligence  Certification courses at Learnbay?",
-            ans: `Candidates are advised to read `,
+            ans: `Candidates are advised to read  `,
             linkText1: "Learnbay’s Refund/Cancellation Policy",
             link1: "/refund-cancellation-policy",
             ansAfter: " before enrolling in the course.",
@@ -724,7 +709,7 @@ export const AIDubaiCourseData = [
           },
           {
             id: 1,
-            ques: " How many real-time projects/case studies will be covered in these artificial intelligence certification courses in Dubai?",
+            ques: " How many real-time projects/case studies will be covered in these artificial intelligence certification courses in Bangalore?",
             ans: `Depending on the course you choose the number of live projects will vary.  
             Foundational Data Science and Artificial Intelligence Training Course- 8 projects.
             Advance Data Science and AI Certification course-12 projects.
@@ -739,7 +724,7 @@ export const AIDubaiCourseData = [
           },
           {
             id: 2,
-            ques: "How will the projects be executed in Dubai?",
+            ques: "How will the projects be executed in Bangalore?",
             ans: "At Learnbay, you will be required to work in a group where your project group will be assigned a specific project mentor with complete assistance and guidance.",
             open: false,
           },
@@ -769,8 +754,8 @@ export const AIDubaiCourseData = [
         data: [
           {
             id: 0,
-            ques: "What's the eligibility for a job assistance Program in Learnbay artificial intelligence training courses in Dubai?",
-        
+            ques: "What's the eligibility for a job assistance Program in Learnbay artificial intelligence training courses in Bangalore?",
+
             ans: `You should have completed the course with :
             A minimum score of 70% in assessments
            Should have completed the assignments and case studies
@@ -779,7 +764,7 @@ export const AIDubaiCourseData = [
           },
           {
             id: 1,
-            ques: "How long will I get support for job assistance at Learnbay in Dubai?",
+            ques: "How long will I get support for job assistance at Learnbay in Bangalore?",
             ans: `At Learnbay, you’ll be provided with job assistance after the completion of the course for a period of 1 year.
             What is a job-readiness program?
             The Job readiness program helps you prepare for interviews which include:
@@ -798,7 +783,7 @@ export const AIDubaiCourseData = [
           {
             id: 3,
             ques: "What is an interview guarantee feature?",
-            ans: `In case you choose the Job or 100% money-back certification course then you can access this added facility. If you don’t get a job within 6 months of your course completion, we will initiate a full refund of your course fees. Note: `,
+            ans: `As a special feature, we provide interview assurance. That means once you complete the course by fulfilling all the scoring and attendance-related criteria, we’ll provide assured interview calls and job referrals. You will get this facility until you get placed. `,
             linkText1: " Terms and conditions ",
             link1: "/terms-conditions ",
             ansAfter: "applied.",
@@ -814,13 +799,13 @@ export const AIDubaiCourseData = [
           {
             id: 0,
             ques: "Until when do the students get the facility of mentorship?",
-        
+
             ans: "Our Mentors will provide AI training to the students until the completion of the course. ",
             open: true,
           },
           {
             id: 1,
-            ques: "Can a Learnbay student in Dubai choose to study from their desired mentor?",
+            ques: "Can a Learnbay student in Bangalore choose to study from their desired mentor?",
             ans: "Every batch has its respective mentor, but if a student is not satisfied with its mentor’s teaching method, they can raise the issue to management and resolve the issues by replacing them with other mentors.",
             open: false,
           },
@@ -833,7 +818,7 @@ export const AIDubaiCourseData = [
           {
             id: 0,
             ques: "When is the job assistance provided at Learnbay and how long will I get it?",
-        
+
             ans: "Job assistance is provided after the completion of the course. It includes build-up sessions, mock interviews, and referrals from top MNC’s/startups. This assistance is provided unless one gets placed in a company.",
             open: true,
           },
@@ -847,18 +832,20 @@ export const AIDubaiCourseData = [
       },
     ],
     ProgramBot1:
-      "As a leading and progressive institution, Learnbay provides the most advanced and modernized Artificial intelligence course training in Dubai. Our instructors use the best teaching methods with a wide range of domain electives that students may find beneficial in the future in a variety of fields. They are committed to students’ growth and advancement of their careers. The artificial intelligence course in Dubai is a perfect option for working professionals and individuals interested in learning more about AI and how it functions in various businesses and industries. These courses offer an average salary hike of 97%. Even it sometimes reaches to 400%-450% range.",
-    ProgramHead3: "How does Learnbay become the ideal place for you?",
+      "Learnbay has enriched Artificial Intelligence (AI) training in Bangalore, guided and mentored by industry experts from MAANG companies. Learnbay's experts are dedicated to students' growth and career support. Domain electives are available to assure your full-stack Data science and AI expertise in your chosen industries. Learnbay AI training in Bangalore gives students real-time MNC and capstone project experience certified by IBM. Also, you get quick answers from the Learnbay Q&A forum and updated solutions for any queries with the least possible waiting time.",
+    ProgramHead3:
+      "How does Learnbay artificial intelligence training become the most promising institute for experienced professionals in Bangalore?",
     ProgramBot3:
-      "Learnbay provides custom-fit artificial intelligence training for Dubai Aspirants. Our artificial intelligence certification courses are affordable and have the option of flexibility in choosing mentors and batches. Here, the trainers explain each concept very clearly as well as share their professional experiences during live interactive classes. Additionally, they are also available to clear students' doubts.",
-    ProgramBot31:
-      "Our IBM artificial intelligence courses deliver the cutting-edge theoretical and practical aspects of AI implementation. Students are kept up-to-date with the current job market by using the latest AI technologies and modules.",
-    ProgramBot32:
-      "Learnbay even supports learners coming from non-IT backgrounds by arranging additional programming classes. They also host a variety of webinars and hackathons to help pupils learn efficiently.",
+      "Learnbay is such an institute that offers end-to-end professional, better to say, job-ready artificial intelligence training across Bangalore.",
+      ProgramBot66:
+      "There are a number of Artificial Intelligence engineers or AI expert training providers in Bangalore, but Learnbay provides custom-fit training for successful AI career switch to experienced working professionals from any domain. The latest tools and updated modules are used to keep students on track with the present-day industry work scenario. This Artificial intelligence certification program also ensures guaranteed placement assurance. ",
+    ProgramHead4: "Is Artificial intelligence a Good career in Bangalore?",
     ProgramBot4:
-      "Additionally, you can even get a guarantee placement assistance in specific artificial intelligence certification programs.",
+      "Bangalore is a huge tech hub and works with the latest technologies to the best of its abilities. Irrespective of tech or non-tech industries, everyone is now getting extremely dependent on AI innovations. Hence the work culture, as well as the job market, demands in getting changes. But the number of candidates properly adaptable to such changes is very few.",
     ProgramBot5:
-      "Available Artificial Intelligence Certification Courses by Learnbay in Dubai:",
+      "Companies are facing different kinds of challenges as the advancement in technology by Artificial intelligence is big, but there are a few Artificial intelligence engineers/ experts. Learnbay wants to provide a solution for this by teaching the best Artificial Intelligence skills to learners who are eager to learn and own the ability for the same.",
+    ProgramBot6:
+      "The best part at Learnbay is that you get the variable options of artificial intelligence courses to choose from- according to your career stage and professional background. Available course options are:",
     Courselink1: "/data-science-certification-courses",
     Courselink2: "/advance-data-science-certification-courses",
     Courselink3: "/artificial-intelligence-certification-course",
@@ -870,10 +857,13 @@ export const AIDubaiCourseData = [
     Course3: "AI & ML Program for tech professionals",
     Course4: "Data Science and AI Program For Manager & Leaders",
     Course5: "Data Science and AI master program",
+    DomainHead1:
+      " Why is domain specialization important in job-ready  Artificial intelligence training in Bangalore?",
     DomainBot1:
-      "Mastering artificial intelligence tools and techniques is not the only thing you need to be successful in this field. It is recommended that learners specialize in a certain area of expertise or Domain before applying for  AI or ML jobs. Besides, domain knowledge helps us achieve a high level of precision and accuracy. Domain specialization not only helps in salary boost but also enables you to handle job duties more efficiently. In one world, domain specialization makes your data science career more sustainable in the real sense.",
+      "Artificial intelligence has a lot of subsets and components. Expertising Artificial ,intelligence in specific domains gives an edge to your earned AI skills. If you pursue Learnbay Artificial intelligence course training in Bangalore, there are many domains to select from. The options include banking, oil, gas, etc. Every sector or industry has different requirements and work processes. Domain specialization helps you have an extra mark by completing this AI certification course. If you have already earned 4 years of experience in any domain, then in the present scenario, it's almost impossible to successfully switch into an AI career without domain-focused AI skills.",
     DomainBot2:
-      "That’s why we have offered different domain electives for our AI courses.",
+      "Learnbay's mentors and guides suggest the best domain for students after analyzing profiles and students' learning desires.",
+    DomainBot3: "List of available Domain-Electivess",
     DomainList1: "• BFSI",
     DomainList2: "• Manufacturing",
     DomainList3: "• Energy, Oil and Gas",
@@ -889,71 +879,58 @@ export const AIDubaiCourseData = [
       "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Healthcare%2C+Pharma+and+Clinical+Research+Domain.pdf",
     Domainlink5:
       "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Retail%2C+Ecommerce+and+Supply+chain+Domain.pdf",
-    CertificationHead1:
-      "Learnbay has achieved a remarkable breakthrough by partnering with IBM.",
     CertificationBot1:
-      "The artificial intelligence course in Dubai provides students with a course completion IBM certificate. Apart from that, as you proceed through the modules, you will be issued extra IBM certificates for completing multiple Micro AI skills such as ML with Python, Deep Learning fundamentals, and so forth. Lastly, once you complete the capstone project, you will get an IBM project experience certification.",
-    CertificationBot2:
-      "As per your selected course, you will get around 1 to 8  certificates - all issued by IBM. This credential on your CV will make you a leap ahead of other applicants.",
+      "Learnbay Provides students with an IBM AI course completion certificate. This IBM-certified program helps you to be at the top of other profiles. The artificial intelligence course completion certificate by IBM ensures you are recognized as a skilled Artificial intelligence professional. Not only that, as you process with the modules, you get micro AI certifications by IBM like machine learning with python, Deep Learning with TensorFlow, and so on. As per your chosen course, you achieve 1 to 8 number micro certificates from IBM. Even once you complete the project, IBM issues a project experience certificate in AI too.",
     src33:
       "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Microsoft-certificate-data.png",
     src: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Certificate-blue.png",
     src22:
       "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Certificate-Yellow.png",
     ModuleBot1:
-      "Learnbay strives to provide the best Artificial Intelligence training possible for all AI enthusiasts in Dubai. Learnbay's artificial intelligence course comprises 400+ hours of interactive classes led by PRODUCT Based Companies experts. On the other hand, The foundational and advanced data science and AI also consists of 200+ hours of sessions. Each of our modules is completely focused on the chosen fields. The IBM artificial intelligence course covers the most popular AI and ML tools and concepts as well as advanced probability and Numpy, Deep Learning, and MongoDB.",
+      "Learnbay artificial intelligence and ML training in Bangalore include 400 hrs of uninterrupted live classes conducted by MAANG experts. The foundational and advanced program also consists of  200+ sessions. The most impressive information is that all of these classes are completely live and interactive only. Students can attend multiple sessions of classes and instructors. Learnbay Provides 1- 3 years of flexi membership on artificial intelligence training so that students can learn at ease and in comfort from their devices. Students get to talk to mentors and guides with 1-1 live sessions to clear all their doubts. Our LMS is always updated with the latest version of courses and is altered according to the industry demands and standards. Here you get crisp industry-curated training on R, NLP, artificial neural networks, and so on.",
     ModuleBot2:
-      "With a Flexi pass, students can attend multiple classes in different batches with different instructors to learn at their convenience.",
-    ModuleBot3:
-      "In addition to this, Learnbay has incorporated a dedicated programming module for All of its data science and AI courses which includes 6 to 8 hours of python and R programming training for non-technical folks.",
+      "Learnbay provides special basic coding classes and regular updates of coding assignments. Students can participate in Learnbay's exclusive hackathons and webinars.",
       syllabush1: "Preparatory Classes (Programming + Maths)",
       syllabusb1: "6 Hours",
       SyllabusBotlist11: "Cohort Orientation",
-      SyllabusBotlist12: "Fundamentals of Programming",
-      SyllabusBotlist13: "Python Fundamentals",
-      SyllabusBotlist14: "Fundamentals of Statistics",
-      SyllabusBotlist15: "Mean, Median, Mode",
-      SyllabusBotlist16: "Introduction to Linear Algebra",
-      syllabush2: "Python for Data Science (Basic + Advance)",
+      SyllabusBotlist12: "Data and its impact on career opportunities",
+      SyllabusBotlist13: "Fundamentals of programming",
+      SyllabusBotlist14: "Python Fundamentals",
+      SyllabusBotlist15: "Fundamentals of Statistics",
+      SyllabusBotlist16: "Mean, Median, Mode.",
+      syllabush2: "Statistics and Machine Learning",
       syllabusb2: "40 Hours",
-      SyllabusBotlist21: "Python Programming",
-      SyllabusBotlist22: "Statistics and Machine Learning",
-      SyllabusBotlist23: "Machine Learning",
-      SyllabusBotlist24: "Naive Baye’s Model",
-      SyllabusBotlist25: "Hierarchical Clustering",
-      SyllabusBotlist26: "Support Vector Machine(SVM)",
-      syllabush3: "Artificial Intelligence Tools",
+      SyllabusBotlist21: " Fundamentals of Math and Probability",
+      SyllabusBotlist22: " Descriptive Statistics",
+      SyllabusBotlist23: " Inferential Statistics",
+      SyllabusBotlist24: " Data Preprocessing",
+      SyllabusBotlist25: "Logistic Regression Model",
+      SyllabusBotlist26: "K Nearest Neighbours Model",
+      syllabush3: "Data Science Tools",
       syllabusb3: "70 Hours",
-      SyllabusBotlist31: "Deep Learning Using Tensorflow",
-      SyllabusBotlist32: "Natural Language Processing (NLP)",
-      SyllabusBotlist33: "Computer Vision",
-      SyllabusBotlist34: "Reinforcement Learning",
-      SyllabusBotlist35: "Model Training",
-      SyllabusBotlist36: "Deployment Using (AWS GCP)",
-      syllabush4: "Deployment (AWS+Azure)",
+      SyllabusBotlist31: "SQL",
+      SyllabusBotlist32: "MongoDB",
+      SyllabusBotlist33: "Tableau",
+      SyllabusBotlist34: "PowerBI",
+      SyllabusBotlist35: "Big Data & Spark Analytics",
+      SyllabusBotlist36: "Time Series",
+      syllabush4: "Artificial Intelligence Tools",
       syllabusb4: "12+ Classes",
-      SyllabusBotlist41: "Introduction to AWS and Azure Machine Learning Services",
-      SyllabusBotlist42: "Setting up the Environment",
-      SyllabusBotlist43: "Data Preparation and Feature Engineering",
-      SyllabusBotlist44: "Model Training and Evaluation",
-      SyllabusBotlist45: "Model Deployment and Management",
-      SyllabusBotlist46: "Advanced Topics in Machine Learning on AWS and Azure",
+      SyllabusBotlist41: "Deep Learning Using Tensorflow",
+      SyllabusBotlist42: "Natural Language Processing (NLP)",
+      SyllabusBotlist43: "Computer Vision",
+      SyllabusBotlist44: "Reinforcement Learning",
+      SyllabusBotlist45: "Deployment (AWS+Azure)",
+      SyllabusBotlist46: "Model Training and Evaluation",
       syllabussrc:
-        "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Advance+AI+%26+ML+Certification+Program+Learnbay.pdf",
-
-    JobHead1: "Job support program of artificial intelligence course:",
+        "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Data+Science+%26+AI+Certification+Program+For+Managers+%26+Leaders+Learnbay.pdf",
     JobBot1:
-      "Learnbay has a channel of 250+ hiring partners in Dubai and all over the world. It has helped countless AI and ML enthusiasts crack difficult interviews with our job assistance feature. This assistance includes portfolio building and soft skills training workshops. Our placement experts help them in finding the relevant AI job roles and prepare them accordingly. They also conduct personalized mock interviews as per the candidate's screening process of top MNCs and Dubai-based companies.",
-    JobBot2:
-      "If you are not placed within 6 months of course completion, you may request a refund of your AI course fee under Learnbay's 100% job assistance program.",
-    JobHead2: "Future of AI in Dubai",
-    JobBot3:
-      "Dubai is known to be a smart city in every sense. It has increased its focus on the adoption of advanced technologies like AI and data science for the development of its society. In Dubai, AI has evolved vastly in the past few years with practical applications in real-world scenarios. With such a heavy emphasis on AI technologies, AI career opportunities in Dubai are also expanding rapidly. In the coming years, Artificial Intelligence, Robotics, and ML are projected to be the most in-demand specializations in the technology sector in Dubai.",
+      "Learnbay Artificial intelligence program in Bangalore ensures guaranteed placement assistance. Learnbay’s guides and mentors build your resume and portfolio and also refer your profiles so that you get a interview calls. Other than the placement assistance AI course, even in other courses, you get at least the promise of assured AI job interviews in Bangalore.",
+    JobHead2:
+      "What are the job roles you find in Bangalore as an Artificial engineer?",
+    JobBot3: "Artificial Intelligence has created a lot of new job roles like:",
     JobBot4:
-      "The most in-demand jobs over the next five years require some sort of AI knowledge.",
-    JobBot5:
-      "Learnbay’s artificial intelligence certification will make you learn job-ready skills to land a lucrative aI position in prominent firms in Dubai.",
-    ProjectsHead1: "Real-world live artificial intelligence Projects",
+      "Artificial intelligence Engineer.Machine learning engineer.Research scientist.Business intelligence developer.Data scientist.Big Data Engineer.Robotics Scientist.",
     ProjectsBot1:
       "Learnbay always encourages students to work with their creativity and understanding on projects and assignments. Completing projects and capstones would add a star to your profile as you have worked on live projects from the top reputed companies and the best startups. You can complete 1 to 3 capstone artificial intelligence projects (as per course). All of them are fresh and trending. This project helps you to solve business problems suffered by your domain.",
     src1: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/SAMSUNG.png",
@@ -990,14 +967,21 @@ export const AIDubaiCourseData = [
     AlumniH4: "Shubhangi J. Waghmare ",
     Alumnip4:
       "The best in Industry offerings from both cost and curriculum wise. One advantage of joining here is you can access their resources for a lifetime, unlike others where you have accessibility only for a year or so. Most importantly, there is continuous assistance for recruitment.",
-    alt1: "artificial intelligence ai course training in dubai",
-    alt2: "artificial intelligence ai course training in dubai",
-    alt3: "artificial intelligence ai course training in dubai",
-    alt4: "artificial intelligence ai course training in dubai",
-    alt5: "artificial intelligence ai course training in dubai",
-    alt6: "artificial intelligence ai course training in dubai",
-    alt7: "artificial intelligence ai course training in dubai",
-    alt8: "artificial intelligence ai course training in dubai",
-    alt9: "artificial intelligence ai course training in dubai",
+    alt1: "artificial intelligence ai course training in bangalore",
+    alt2: "artificial intelligence ai course training in bangalore",
+    alt3: "artificial intelligence ai course training in bangalore",
+    alt4: "artificial intelligence ai course training in bangalore",
+    alt5: "artificial intelligence ai course training in bangalore",
+    alt6: "artificial intelligence ai course training in bangalore",
+    alt7: "artificial intelligence ai course training in bangalore",
+    alt8: "artificial intelligence ai course training in bangalore",
+    alt9: "artificial intelligence ai course training in bangalore",
+    CityTextB:
+      "Artificial Intelligence Course Certification Training locations in Bangalore ",
+    CityText:
+      " :Ammrutha halli [560092], Maruthi Seva Nagar [560033], Kuvempu Layout [560077], Bellandur [560103], Jayanagar III Block [560011], Anandnagar [560024], Nandinilayout [560096], B SK II Stage [560070], Indiranagar [560038], Yelahanka [560063], Chickpet [560053], Domlur [560071], Bansashankari III Stage [560085], Vimanapura [560017], Nagarbhavi [560072], Basaveshwaranagar [560079], Bommanahalli [560068], Mico Layout [560076], Electronic City [560100], Taverekere [560029], Nehru Nagar [560020], Agram[560007], Halsuru Pete [560002], Basavanagudi [560004], R.M.V. Extension II [560094], Jayanagar [560041], Carmelaram [560035], New Thippasandra [560075], Kanakanagar [560032], Nayandahalli [560039], Fraser Town [560005], Jalahalli East [560014], Kacharakanahalli [560084], Malleswaram West [560055], Bannerghatta [560083], Srirampuram [560021], Rajarajeshwarinagar [560098], Sivan Chetty Gardens [560042], Dommasandra [562125], Whitefield [560066], Vidyaranyapura [560097], Bolare [560082], Mathikere [560054], Doddanekkundi [560037], Hampinnagar [560104], C.V.Raman Nagar [560093], Chikkabanavara [560090], Attur [560064], Kumbalagodu [560074], Bhattarahalli [560049], Chikkalasandra [560061], Sharada Nagar [560065], Jalahalli West [560015], H.K.P Road [560051], Jp Nagar III Phase [560078], Sadashiva nagar [560080], Krishnarajapuram R S [560016], Mahalakshipuram Layout [560086], Guddadahalli [560026], Chudenapura [560060], Vidhana Soudha [560001], Shanthinagar [560027], Rajaji Nagar [560010], Chandapura [560099], Ramakrishna Hegde Nagar [560045], Shalabh Bhatnagar [560012], Peenya [560058], Ashoknagar [560050], Jalahalli Nacen [560013], Banawadi [560043], Malleswaram [560003], Doddakallasandra [560062], K.G Road [560009], Muthusandra [560087], Marathahalli [560056], JC Nagar [560006], Chamrajpet [560018], HSR Layout [560102], Devanagundi [560067], Yeswanthpura [560022], Mahadevapura [560048],Hulsur Bazaar [560008],Magadi Road [560023], Adugodi [560030], Bagalgunte [560073], Devasandra [560036], Rv Niketan [560059], Narasimharaja Colony [560019], Koramangala VI Bk [560095], Agara [560034], Vijayanagar East [560040], Benson Town [560046], Viveknagar S.O [560047], Dasarahalli [560057], Bapagrama [560091], Richmond Town [560025].",
+    CityTextLB: "Locations Offered",
+    CityTextL:
+      " :Artificial Intelligence Training in Bangalore, Artificial Intelligence Course in Bangalore, Artificial Intelligence Training in BTM, Artificial Intelligence Training in Marathahalli, Artificial Intelligence Institute in Bangalore, Artificial Intelligence Training in Whitefield, Artificial Intelligence Training in Kundalahalli, Artificial Intelligence Training in ITPL, Artificial Intelligence Training Institute in Marathahalli, Artificial Intelligence Course in BTM, Artificial Intelligence Course in Marathahalli, Artificial Intelligence Course in Whitefield, Artificial Intelligence Course Bommanahalli, Artificial Intelligence Training in Bommanahalli, Artificial Intelligence Training in Electronic city, Artificial Intelligence Training in Koramangala, Artificial Intelligence Classes in BTM, Artificial Intelligence Classes in Bommanahalli, Artificial Intelligence Classes in Whitefield, Artificial Intelligence Classes in Marathahalli, Artificial Intelligence Course in Koramangala, Artificial Intelligence Training in Jayanagar, Artificial Intelligence Certification in Bangalore, Artificial Intelligence Certification Training in Bangalore, Artificial Intelligence Certification in BTM, Artificial Intelligence Certification in Whitefield, Best Artificial Intelligence Training, Best Artificial Intelligence Course",
   },
 ];

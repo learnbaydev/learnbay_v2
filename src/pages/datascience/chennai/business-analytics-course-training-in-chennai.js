@@ -20,10 +20,10 @@ const CityText = dynamic(() =>
   import("../../../../components/SEO/CityText/CityText")
 );
 const CitiesLeft = dynamic(() =>
-  import("../../../../components/SEO/CitiesLeft/CitiesLeft")
+  import("../../../../components/SEO/CitiesLeft/CitiesLeftDomain")
 );
 const CitiesRight = dynamic(() =>
-  import("../../../../components/SEO/CitiesRight/CitiesRight")
+  import("../../../../components/SEO/CitiesRight/CitiesRightdomain")
 );
 import {  BusinessAnalyticsChennaiCourseData } from "../../../../CityData/Chennai/businessAnalyticsCourseTrainingInChennai";
 const FAQNew = dynamic(() =>
@@ -117,10 +117,11 @@ export default function Home() {
           dataScienceCounselling={true}
           titleCourse="Business Analytics Course Training In Chennai"
           brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Business+Analytics+Certification+Program+Learnbay.pdf"
-          FirstRightImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/head/Businesss+Analytics.png"
-          firstHeading="Business Analytics Course Training In Chennai"
+          FirstRightImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/manager+header+image.webp"
+          firstHeading="Business Analytics Course "
           firstTopPara="Professional Business Analytics Program"
-          idss="bfl64ANfSV0"
+          firstToparaImg="Training In Chennai"
+          idss="4j80WXLTvGE"
 
           
         />
@@ -156,8 +157,8 @@ export default function Home() {
               ProgramBot2={ BusinessAnalyticsChennaiCourseData[0].ProgramBot2}
               ProgramHead3={ BusinessAnalyticsChennaiCourseData[0].ProgramHead3}
               ProgramBot3={ BusinessAnalyticsChennaiCourseData[0].ProgramBot3}
-              ProgramBot31={ BusinessAnalyticsChennaiCourseData[0].ProgramBot31}
-              ProgramBot32={ BusinessAnalyticsChennaiCourseData[0].ProgramBot32}
+              ProgramBot66={ BusinessAnalyticsChennaiCourseData[0].ProgramBot66}
+              ProgramBot67={ BusinessAnalyticsChennaiCourseData[0].ProgramBot67}
               ProgramHead4={ BusinessAnalyticsChennaiCourseData[0].ProgramHead4}
               ProgramBot4={ BusinessAnalyticsChennaiCourseData[0].ProgramBot4}
               ProgramHead5={ BusinessAnalyticsChennaiCourseData[0].ProgramHead5}
@@ -195,6 +196,8 @@ export default function Home() {
               CertificationBot1={ BusinessAnalyticsChennaiCourseData[0].CertificationBot1}
               CertificationBot2={ BusinessAnalyticsChennaiCourseData[0].CertificationBot2}
               src={ BusinessAnalyticsChennaiCourseData[0].src}
+              src22={ BusinessAnalyticsChennaiCourseData[0].src22}
+              src33={ BusinessAnalyticsChennaiCourseData[0].src33}
               ModuleHead1={ BusinessAnalyticsChennaiCourseData[0].ModuleHead1}
               ModuleHead2={ BusinessAnalyticsChennaiCourseData[0].ModuleHead2}
         
@@ -240,10 +243,12 @@ export default function Home() {
               JobBot5={ BusinessAnalyticsChennaiCourseData[0].JobBot5}
               JobHead2={ BusinessAnalyticsChennaiCourseData[0].JobHead2}
               JobBot3={ BusinessAnalyticsChennaiCourseData[0].JobBot3}
+             
               JobBot4={ BusinessAnalyticsChennaiCourseData[0].JobBot4}
               JobBot6={ BusinessAnalyticsChennaiCourseData[0].JobBot6}
-              ProjectsBot1={ BusinessAnalyticsChennaiCourseData[0].ProgramBot1}
-              ProjectsBot2={ BusinessAnalyticsChennaiCourseData[0].ProgramBot2}
+              ProjectsHead1={ BusinessAnalyticsChennaiCourseData[0].ProjectsHead1}
+              ProjectsBot1={ BusinessAnalyticsChennaiCourseData[0].ProjectsBot1}
+              ProjectsBot2={ BusinessAnalyticsChennaiCourseData[0].ProjectsBot2}
               src1={ BusinessAnalyticsChennaiCourseData[0].src1}
               ProjectsH1={ BusinessAnalyticsChennaiCourseData[0].ProjectsH1}
               Projectsp1={ BusinessAnalyticsChennaiCourseData[0].Projectsp1}

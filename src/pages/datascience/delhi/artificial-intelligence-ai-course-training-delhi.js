@@ -25,7 +25,7 @@ const CitiesLeft = dynamic(() =>
 const CitiesRight = dynamic(() =>
   import("../../../../components/SEO/CitiesRight/CitiesRight")
 );
-import { AIelhiCourseData } from "../../../../CityData/delhi/ArtificialIntelligenceCourseTrainingDelhiData";
+import { AIelhiCourseData } from "../../../../CityData/Delhi/ArtificialIntelligenceCourseTrainingDelhiData";
 const FAQNew = dynamic(() =>
   import("../../../../components/CoursePage/FAQNew/FAQNew")
 );
@@ -128,10 +128,10 @@ export default function Home() {
           SecondTyped="Capstone Project Certificate"
           ThirdTyped="Live Interactive Classes"
           dataScience={true}
-          titleCourse="Artificial Intelligence (AI) Course Training in Delhi"
-          brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Advance+AI+%26+ML+Certification+Program+Learnbay.pdf"
-          idss="Jn2puEQC8yk"
-          FirstRightImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/head/Managers+%26+Leaders.png"
+          titleCourse="Data Science and AI Program For Manager & Leaders"
+          brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Data+Science+%26+AI+Certification+Program+For+Managers+%26+Leaders+Learnbay.pdf"
+          idss="osYNvuuI1_8"
+          FirstRightImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Business-Analytics-Masters-Header.png"
           firstToparaImg=" For Managers and Leaders"
           firstHeading="Artificial Intelligence (AI) Training in Delhi"
           firstTopPara="Becomes an AI Expertise In Product Based MNCs"
@@ -146,17 +146,18 @@ export default function Home() {
           para="Discover the impact of our programs on career growth"
         />
         <div className={styles.cityFee}>
-          <FeeSection
-            AIMLCertificate={true}
-            Fee="₹ 1,10,000 + 18% GST"
-            FeeEmi="₹ 10,816/month"
-            FeeHeading="Program Fee & Financing"
-            FeeContent2="No cost EMI"
-            FeeContent3="Flexible payment"
-            FeeContent4="Easy loan procedure"
-            FeeContent5="15 days refund policy"
-            dataScienceCounselling={true}
-          />
+        <FeeSection
+          Fee="₹ 1,10,000 + 18% GST"
+          FeeEmi="₹ 10,817/month"
+          FeeHeading="Program Fee & Financing"
+          FeeContent1="0% interest rate"
+          FeeContent2="No cost EMI"
+          FeeContent3="Flexible payment"
+          FeeContent4="Easy loan procedure"
+          FeeContent5="15 days refund policy"
+          FeeContent6="No additional cost"
+          dataScienceCounselling={true}
+        />
         </div>
         <div className="MainCities">
           <div className="CitiesLeft">
@@ -165,9 +166,11 @@ export default function Home() {
           <div className="CitiesRight">
             <CitiesRight
               ProgramBot1={AIelhiCourseData[0].ProgramBot1}
+              ProgramBot2={AIelhiCourseData[0].ProgramBot2}
               ProgramHead3={AIelhiCourseData[0].ProgramHead3}
               ProgramBot3={AIelhiCourseData[0].ProgramBot3}
-              ProgramBot31={AIelhiCourseData[0].ProgramBot31}
+              ProgramBot66={AIelhiCourseData[0].ProgramBot66}
+              ProgramBot67={AIelhiCourseData[0].ProgramBot67}
               ProgramBot4={AIelhiCourseData[0].ProgramBot4}
               ProgramBot5={AIelhiCourseData[0].ProgramBot5}
               ProgramBot6={AIelhiCourseData[0].ProgramBot6}
@@ -206,11 +209,15 @@ export default function Home() {
               Domainlink9={AIelhiCourseData[0].Domainlink9}
               Domainlink10={AIelhiCourseData[0].Domainlink10}
               CertificationBot1={AIelhiCourseData[0].CertificationBot1}
+              CertificationBot2={AIelhiCourseData[0].CertificationBot2}
+              CertificationHead1={AIelhiCourseData[0].CertificationHead1}
               src={AIelhiCourseData[0].src}
               src22={AIelhiCourseData[0].src22}
               src33={AIelhiCourseData[0].src33}
               ModuleBot1={AIelhiCourseData[0].ModuleBot1}
               ModuleBot2={AIelhiCourseData[0].ModuleBot2}
+              ModuleBot3={AIelhiCourseData[0].ModuleBot3}
+              ModuleBot4={AIelhiCourseData[0].ModuleBot4}
               syllabush1={AIelhiCourseData[0].syllabush1}
               syllabusb1={AIelhiCourseData[0].syllabusb1}
               SyllabusBotlist11={AIelhiCourseData[0].SyllabusBotlist11}
@@ -245,7 +252,9 @@ export default function Home() {
               SyllabusBotlist46={AIelhiCourseData[0].SyllabusBotlist46}
               syllabussrc={AIelhiCourseData[0].syllabussrc}
               JobBot1={AIelhiCourseData[0].JobBot1}
+              JobBot2={AIelhiCourseData[0].JobBot2}
               JobHead2={AIelhiCourseData[0].JobHead2}
+              JobHead1={AIelhiCourseData[0].JobHead1}
               JobBot3={AIelhiCourseData[0].JobBot3}
               JobBot4={AIelhiCourseData[0].JobBot4}
               ProjectsBot1={AIelhiCourseData[0].ProgramBot1}

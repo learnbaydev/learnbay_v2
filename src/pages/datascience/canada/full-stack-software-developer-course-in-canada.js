@@ -45,7 +45,7 @@ export default function Home() {
   };
   return (
     <div className={styles.container}>
-     <Head>
+      <Head>
         <title>Full Stack Developer Course In Canada - Learnbay</title>
         <meta name="robots" content="index, follow" />
         <meta
@@ -94,12 +94,12 @@ export default function Home() {
           firstHeading="Full-Stack Software Developer Course In Canada"
           firstTopPara="Ace Your Coding Interview at PRODUCT Based Companies"
           cityParaCont="Enroll in the best Job-ready full-stack software development course in Canada. Take a 10-step step ahead of others towards the most lucrative salary package of product-based MNCs, which you deserve. "
-
-
         />
-        <SecondSection SecondSectionData={FScanadaCourseData[0].secondSection} />
+        <SecondSection
+          SecondSectionData={FScanadaCourseData[0].secondSection}
+        />
         <Testimonial
-          redirectDS={true}
+          redirectDS={false}
           Testimonial={FScanadaCourseData[0].testimonial}
           heading="Our Alumni Speak"
           para="Discover the impact of our programs on career growth"
@@ -119,11 +119,12 @@ export default function Home() {
         </div>
         <div className="MainCities">
           <div className="CitiesLeft">
-            <CitiesLeft />
+            <CitiesLeft fullStackCity={true} />
           </div>
           <div className="CitiesRight">
             <CitiesRight
-             ProgramHead1={FScanadaCourseData[0].ProgramHead1}
+              fullStackCity={true}
+              ProgramHead1={FScanadaCourseData[0].ProgramHead1}
               ProgramBot1={FScanadaCourseData[0].ProgramBot1}
               ProgramBot2={FScanadaCourseData[0].ProgramBot2}
               ProgramHead3={FScanadaCourseData[0].ProgramHead3}
@@ -174,15 +175,15 @@ export default function Home() {
               CertificationHead1={FScanadaCourseData[0].CertificationHead1}
               CertificationBot1={FScanadaCourseData[0].CertificationBot1}
               CertificationBot2={FScanadaCourseData[0].CertificationBot2}
-              src={FScanadaCourseData[0].src}
-              src22={FScanadaCourseData[0].src22}
-              src33={FScanadaCourseData[0].src33}
-             ModuleHead1={FScanadaCourseData[0].ModuleHead1}
+              // src={FScanadaCourseData[0].src}
+              // src22={FScanadaCourseData[0].src22}
+              // src33={FScanadaCourseData[0].src33}
+              ModuleHead1={FScanadaCourseData[0].ModuleHead1}
               ModuleBot1={FScanadaCourseData[0].ModuleBot1}
               ModuleBot2={FScanadaCourseData[0].ModuleBot2}
               ModuleBot3={FScanadaCourseData[0].ModuleBot3}
-              ModuleHead3={FScanadaCourseData[0] .ModuleHead3}
-              ModuleBot4={FScanadaCourseData[0].ModuleBot4}
+              // ModuleHead3={FScanadaCourseData[0].ModuleHead3}
+              // ModuleBot4={FScanadaCourseData[0].ModuleBot4}
               ModuleHead2={FScanadaCourseData[0].ModuleHead2}
               syllabush1={FScanadaCourseData[0].syllabush1}
               syllabusb1={FScanadaCourseData[0].syllabusb1}
@@ -216,7 +217,7 @@ export default function Home() {
               SyllabusBotlist44={FScanadaCourseData[0].SyllabusBotlist44}
               SyllabusBotlist45={FScanadaCourseData[0].SyllabusBotlist45}
               SyllabusBotlist46={FScanadaCourseData[0].SyllabusBotlist46}
-              syllabussrc={FScanadaCourseData[0].syllabussrc}
+              // syllabussrc={FScanadaCourseData[0].syllabussrc}
               JobHead1={FScanadaCourseData[0].JobHead1}
               JobBot1={FScanadaCourseData[0].JobBot1}
               JobBot2={FScanadaCourseData[0].JobBot2}
