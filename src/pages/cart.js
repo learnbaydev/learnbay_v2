@@ -68,9 +68,9 @@ const CartPage = ({ isConnected }) => {
   const getTotalPrice = () => {
     return cart.reduce(
       (accumulator, item) =>
-        parseFloat(
-          accumulator + item[0].quantity * item[0].price
-        ).toLocaleString("en-US"),
+        parseFloat(accumulator + item.quantity * item.price).toLocaleString(
+          "en-US"
+        ),
       0
     );
   };
@@ -79,8 +79,8 @@ const CartPage = ({ isConnected }) => {
       (accumulator, item) =>
         parseFloat(
           accumulator +
-            item[0].quantity * item[0].price -
-            (discount / 100) * (accumulator + item[0].quantity * item[0].price)
+            item.quantity * item.price -
+            (discount / 100) * (accumulator + item.quantity * item.price)
         ).toLocaleString("en-US"),
       0
     );
@@ -260,7 +260,7 @@ const CartPage = ({ isConnected }) => {
         });
         if (response.status === 200) {
           const { couponName, msg } = await response.json();
-          console.log(typeof parseInt(couponName.discountPercent), "FrontEnd");
+          // console.log(typeof parseInt(couponName.discountPercent), "FrontEnd");
           setDiscount(parseInt(couponName.discountPercent));
           setDiscountMsg(msg);
         } else if (response.status === 404) {
@@ -318,30 +318,30 @@ const CartPage = ({ isConnected }) => {
           <div>Actions</div>
           <div>Total Price</div>
         </div>
-        {cart.map((item, i) => (
-          <div className={styles.body} key={item.title}>
-            <div className={styles.image}>
-              <Image src={item[0].img} height="120" width="205" alt="hello" />
+        {cart.map((item, i) => {
+          return (
+            <div className={styles.body} key={item.title}>
+              <div className={styles.image}>
+                <Image src={item.img} height="120" width="205" alt="hello" />
+              </div>
+              <p>{item.name}</p>
+              {/* <p>₹ {item.price.toLocaleString("en-US")}</p> */}
+              <p>{item.quantity}</p>
+              <div className={styles.buttons}>
+                <button onClick={() => dispatch(decrementQuantity(item.id))}>
+                  -
+                </button>
+                <button onClick={() => dispatch(removeFromCart(item.id))}>
+                  x
+                </button>
+              </div>
+              <p>
+                ₹{" "}
+                {parseFloat(item.quantity * item.price).toLocaleString("en-US")}
+              </p>
             </div>
-            <p>{item[0].name}</p>
-            <p>₹ {item[0].price.toLocaleString("en-US")}</p>
-            <p>{item[0].quantity}</p>
-            <div className={styles.buttons}>
-              <button onClick={() => dispatch(decrementQuantity(item.id))}>
-                -
-              </button>
-              <button onClick={() => dispatch(removeFromCart(item.id))}>
-                x
-              </button>
-            </div>
-            <p>
-              ₹{" "}
-              {parseFloat(item[0].quantity * item[0].price).toLocaleString(
-                "en-US"
-              )}
-            </p>
-          </div>
-        ))}
+          );
+        })}
         <form onSubmit={submitHandler}>
           <div>
             <input

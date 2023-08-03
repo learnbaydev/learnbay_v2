@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@next/bundle-analyzer": "^13.4.12",
     "@reduxjs/toolkit": "^1.9.5",
     "@typeform/embed-react": "^2.24.0",
     "axios": "^1.4.0",
@@ -20,6 +21,7 @@
     "js-cookie": "^3.0.5",
     "marked": "^5.1.0",
     "marked-mangle": "^1.1.0",
+    "mongodb": "^5.7.0",
     "next": "13.4.5",
     "next-cookies": "^2.0.3",
     "next-seo": "^6.1.0",

@@ -2,7 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 const CARD = "CARD";
 import { getCookie, setCookie } from "../lib/useCookies";
 const initialItem = getCookie("CARD");
-console.log(initialItem, "store");
+
 const cartSlice = createSlice({
   name: "cart",
   initialState: initialItem,
@@ -12,9 +12,9 @@ const cartSlice = createSlice({
       if (itemExists) {
         return;
       } else {
+        setCookie(CARD, { ...action.payload, quantity: 1 });
         state.push({ ...action.payload, quantity: 1 });
       }
-      setCookie(CARD, state);
     },
 
     decrementQuantity: (state, action) => {
