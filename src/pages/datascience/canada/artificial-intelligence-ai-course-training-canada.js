@@ -159,7 +159,7 @@ export default function Home() {
               ProgramHead3={AIcanadaCourseData[0].ProgramHead3}
               ProgramHead4={AIcanadaCourseData[0].ProgramHead4}
               ProgramBot3={AIcanadaCourseData[0].ProgramBot3}
-              ProgramBot31={AIcanadaCourseData[0].ProgramBot31}
+              ProgramBot66={AIcanadaCourseData[0].ProgramBot66}
               ProgramBot32={AIcanadaCourseData[0].ProgramBot32}
               ProgramBot4={AIcanadaCourseData[0].ProgramBot4}
               ProgramBot5={AIcanadaCourseData[0].ProgramBot5}

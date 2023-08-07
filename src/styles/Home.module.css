@@ -280,6 +280,9 @@
       margin: 30px 40px 70px 40px;
     }
   }
+
+  @media (max-width: 1024px) {
+    .faqCity {    margin: -40px 0px -40px 0px;}}
   
   @media (max-width: 1025px) {
     .boxShape {

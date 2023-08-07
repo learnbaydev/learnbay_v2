@@ -26,6 +26,7 @@ const CitiesRight = dynamic(() =>
   import("../../../../components/SEO/CitiesRight/CitiesRight")
 );
 import { MLDelhiCourseData } from "../../../../CityData/delhi/MachineLearningCourseDelhiData";
+
 const FAQNew = dynamic(() =>
   import("../../../../components/CoursePage/FAQNew/FAQNew")
 );
@@ -138,7 +139,6 @@ export default function Home() {
           firstHeading="Machine Learning Course Training In Delhi"
           firstTopPara="Job-Ready Machine Learning Training with Domain Specialization"
           cityParaCont="Be eligible to work as an AI/ML expert in MNC/PRODUCT Based Companies. Earn the most advanced industrial machine learning skill via fast-paced industry capstones. Be pros of NLP and computer vision."
-
         />
         <SecondSection SecondSectionData={MLDelhiCourseData[0].secondSection} />
         <Testimonial
@@ -166,7 +166,7 @@ export default function Home() {
           </div>
           <div className="CitiesRight">
             <CitiesRight
-             ProgramHead1={MLDelhiCourseData[0].ProgramHead1}
+              ProgramHead1={MLDelhiCourseData[0].ProgramHead1}
               ProgramBot1={MLDelhiCourseData[0].ProgramBot1}
               ProgramBot2={MLDelhiCourseData[0].ProgramBot2}
               ProgramHead3={MLDelhiCourseData[0].ProgramHead3}
@@ -220,11 +220,11 @@ export default function Home() {
               src={MLDelhiCourseData[0].src}
               src22={MLDelhiCourseData[0].src22}
               src33={MLDelhiCourseData[0].src33}
-             ModuleHead1={MLDelhiCourseData[0].ModuleHead1}
+              ModuleHead1={MLDelhiCourseData[0].ModuleHead1}
               ModuleBot1={MLDelhiCourseData[0].ModuleBot1}
               ModuleBot2={MLDelhiCourseData[0].ModuleBot2}
               ModuleBot3={MLDelhiCourseData[0].ModuleBot3}
-              ModuleHead3={MLDelhiCourseData[0] .ModuleHead3}
+              ModuleHead3={MLDelhiCourseData[0].ModuleHead3}
               ModuleBot4={MLDelhiCourseData[0].ModuleBot4}
               ModuleHead2={MLDelhiCourseData[0].ModuleHead2}
               syllabush1={MLDelhiCourseData[0].syllabush1}

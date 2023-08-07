@@ -25,7 +25,7 @@ const CitiesLeft = dynamic(() =>
 const CitiesRight = dynamic(() =>
   import("../../../../components/SEO/CitiesRight/CitiesRight")
 );
-import { FSDPuneCourseData} from "../../../../CityData/Pune/FSDCourseInPune";
+import { FSDPuneCourseData } from "../../../../CityData/Pune/FSDCourseInPune";
 const FAQNew = dynamic(() =>
   import("../../../../components/CoursePage/FAQNew/FAQNew")
 );
@@ -46,8 +46,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-     
-      <title>
+        <title>
           Best Full Stack Developer Course in Pune with Job Assistance
         </title>
         <meta name="robots" content="index, follow" />
@@ -71,8 +70,6 @@ export default function Home() {
           rel="icon"
           href="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/Learnbay-Favicon-L.png"
         />
-
-    
       </Head>
       <main>
         {" "}
@@ -91,19 +88,19 @@ export default function Home() {
           FirstTyped="Guaranteed Interview Calls"
           SecondTyped="Capstone Project Certificate"
           ThirdTyped="Live Interactive Classes"
-          dataScience={true}  
+          dataScience={true}
           titleCourse="Full-Stack Software Developer Course In Pune To Achieve Your Dream Job"
           brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Full+Stack+Software+Development+Program+Learnbay.pdf"
           idss="y_0IdhFKJKM"
           FirstRightImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/head/W+Dev.png"
-         
-          firstHeading="Full-Stack Software Developer Course In Pune To Achieve Your Dream Job"
+          firstToparaImg=" To Achieve Your Dream Job"
+          firstHeading="Full-Stack Software Developer Course In Pune "
           firstTopPara="Ace Your Coding Interview at PRODUCT Based Companies"
           cityParaCont="Enroll in the best Job-ready full-stack software development course in Pune. Take a 10-step step ahead of others towards the most lucrative salary package of product-based MNCs, which you deserve."
         />
         <SecondSection SecondSectionData={FSDPuneCourseData[0].secondSection} />
         <Testimonial
-          redirectDS={true}
+          redirectDS={false}
           Testimonial={FSDPuneCourseData[0].testimonial}
           heading="Our Alumni Speak"
           para="Discover the impact of our programs on career growth"
@@ -123,19 +120,16 @@ export default function Home() {
         </div>
         <div className="MainCities">
           <div className="CitiesLeft">
-            <CitiesLeft />
+            <CitiesLeft fullStackCity={true} />
           </div>
           <div className="CitiesRight">
             <CitiesRight
-
               fullStackCity={true}
-            
               ProgramHead1={FSDPuneCourseData[0].ProgramHead1}
               ProgramBot1={FSDPuneCourseData[0].ProgramBot1}
               ProgramBot2={FSDPuneCourseData[0].ProgramBot2}
               ProgramBot3={FSDPuneCourseData[0].ProgramBot3}
               ProgramHead3={FSDPuneCourseData[0].ProgramHead3}
-            
               ProgramBot31={FSDPuneCourseData[0].ProgramBot31}
               ProgramHead4={FSDPuneCourseData[0].ProgramHead4}
               ProgramHead5={FSDPuneCourseData[0].ProgramHead5}
@@ -148,14 +142,12 @@ export default function Home() {
               ProgramBot8={FSDPuneCourseData[0].ProgramBot8}
               ProgramBot9={FSDPuneCourseData[0].ProgramBot9}
               ProgramBot10={FSDPuneCourseData[0].ProgramBot10}
-
               ProgramHead8={FSDPuneCourseData[0].ProgramHead8}
               ProgramHead9={FSDPuneCourseData[0].ProgramHead9}
               ProgramHead10={FSDPuneCourseData[0].ProgramHead10}
               ProgramHead11={FSDPuneCourseData[0].ProgramHead11}
               ProgramHead12={FSDPuneCourseData[0].ProgramHead12}
               ProgramHead13={FSDPuneCourseData[0].ProgramHead13}
-
               Courselink1={FSDPuneCourseData[0].Courselink1}
               Courselink2={FSDPuneCourseData[0].Courselink2}
               Courselink3={FSDPuneCourseData[0].Courselink3}
@@ -174,9 +166,7 @@ export default function Home() {
               DomainHead5={FSDPuneCourseData[0].DomainHead5}
               DomainHead6={FSDPuneCourseData[0].DomainHead6}
               DomainHead7={FSDPuneCourseData[0].DomainHead7}
-              
               DomainBot2={FSDPuneCourseData[0].DomainBot2}
-
               DomainBot3={FSDPuneCourseData[0].DomainBot3}
               DomainList1={FSDPuneCourseData[0].DomainList1}
               DomainList2={FSDPuneCourseData[0].DomainList2}
@@ -202,7 +192,6 @@ export default function Home() {
               CertificationBot2={FSDPuneCourseData[0].CertificationBot2}
               src={FSDPuneCourseData[0].src}
               ModuleHead1={FSDPuneCourseData[0].ModuleHead1}
-
               src22={FSDPuneCourseData[0].src22}
               src33={FSDPuneCourseData[0].src33}
               ModuleBot1={FSDPuneCourseData[0].ModuleBot1}
@@ -250,9 +239,7 @@ export default function Home() {
               JobBot3={FSDPuneCourseData[0].JobBot3}
               JobBot6={FSDPuneCourseData[0].JobBot6}
               ProjectsBot1={FSDPuneCourseData[0].ProjectsBot1}
-              ProjectsBot2= {FSDPuneCourseData[0].ProjectsBot2}
-  
-        
+              ProjectsBot2={FSDPuneCourseData[0].ProjectsBot2}
               src1={FSDPuneCourseData[0].src1}
               ProjectsH1={FSDPuneCourseData[0].ProjectsH1}
               Projectsp1={FSDPuneCourseData[0].Projectsp1}
@@ -278,7 +265,6 @@ export default function Home() {
               Asrc4={FSDPuneCourseData[0].Asrc4}
               AlumniH4={FSDPuneCourseData[0].AlumniH4}
               Alumnip4={FSDPuneCourseData[0].Alumnip4}
-          
             />
             <div className={styles.faqCity}>
               <FAQNew FAQNewData={FSDPuneCourseData[0].faq} />

@@ -45,8 +45,8 @@ export default function Home() {
   };
   return (
     <div className={styles.container}>
-    <Head>
-    <title>
+      <Head>
+        <title>
           Best Machine Learning Course in Canada with Career Assistance
         </title>
         <meta name="robots" content="index, follow" />
@@ -121,14 +121,15 @@ export default function Home() {
           titleCourse="Machine Learning Course Training In Canada"
           brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Data+Science+%26+AI+Certification+Program+For+Managers+%26+Leaders+Learnbay.pdf"
           idss="Jn2puEQC8yk"
-          FirstRightImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/head/Managers+%26+Leaders.png"
+          FirstRightImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/head/ML.png"
           firstToparaImg="Training In Canada"
           firstHeading="Machine Learning Course"
           firstTopPara="Machine Learning Course For Experienced Tech Professionals"
           cityParaCont="Be eligible to work as an AI/ML expert in MNC/PRODUCT Based Companies. Earn the most advanced industrial machine learning skill via fast-paced industry capstones. Be pros of NLP and computer vision."
-
         />
-        <SecondSection SecondSectionData={MLcanadaCourseData[0].secondSection} />
+        <SecondSection
+          SecondSectionData={MLcanadaCourseData[0].secondSection}
+        />
         <Testimonial
           redirectDS={true}
           Testimonial={MLcanadaCourseData[0].testimonial}
@@ -154,7 +155,7 @@ export default function Home() {
           </div>
           <div className="CitiesRight">
             <CitiesRight
-             ProgramHead1={MLcanadaCourseData[0].ProgramHead1}
+              ProgramHead1={MLcanadaCourseData[0].ProgramHead1}
               ProgramBot1={MLcanadaCourseData[0].ProgramBot1}
               ProgramBot2={MLcanadaCourseData[0].ProgramBot2}
               ProgramHead3={MLcanadaCourseData[0].ProgramHead3}
@@ -208,11 +209,11 @@ export default function Home() {
               src={MLcanadaCourseData[0].src}
               src22={MLcanadaCourseData[0].src22}
               src33={MLcanadaCourseData[0].src33}
-             ModuleHead1={MLcanadaCourseData[0].ModuleHead1}
+              ModuleHead1={MLcanadaCourseData[0].ModuleHead1}
               ModuleBot1={MLcanadaCourseData[0].ModuleBot1}
               ModuleBot2={MLcanadaCourseData[0].ModuleBot2}
               ModuleBot3={MLcanadaCourseData[0].ModuleBot3}
-              ModuleHead3={MLcanadaCourseData[0] .ModuleHead3}
+              ModuleHead3={MLcanadaCourseData[0].ModuleHead3}
               ModuleBot4={MLcanadaCourseData[0].ModuleBot4}
               ModuleHead2={MLcanadaCourseData[0].ModuleHead2}
               syllabush1={MLcanadaCourseData[0].syllabush1}
