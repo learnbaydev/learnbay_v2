@@ -51,7 +51,6 @@ const CitiesRight = ({
   ProgramBot32,
   ProgramBot66,
   ProgramBot67,
-  ProgramBot32,
   ProgramBot4,
   ProgramBot5,
   ProgramBot51,
