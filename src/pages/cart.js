@@ -10,6 +10,7 @@ import {
 } from "../../redux/cart.slice";
 import styles from "../styles/CartPage.module.css";
 import PaymentForm from "../../components/Cart/PaymentForm/PaymentForm";
+import { getCookie, clearCookie } from "../../lib/useCookies";
 import { useRouter } from "next/router";
 import { AiOutlineCloseCircle } from "react-icons/ai";
 import { BsClipboardPlus, BsClipboardCheck } from "react-icons/bs";
@@ -36,7 +37,8 @@ const CartPage = ({ isConnected }) => {
     msg: "",
   });
 
-  const cart = useSelector((state) => state.cart);
+  // const cart = useSelector((state) => state.cart);
+  const cart = getCookie("CARD");
   const dispatch = useDispatch();
   const [details, setDetails] = useState({
     name: "",
@@ -328,10 +330,12 @@ const CartPage = ({ isConnected }) => {
               {/* <p>₹ {item.price.toLocaleString("en-US")}</p> */}
               <p>{item.quantity}</p>
               <div className={styles.buttons}>
-                <button onClick={() => dispatch(decrementQuantity(item.id))}>
-                  -
-                </button>
-                <button onClick={() => dispatch(removeFromCart(item.id))}>
+                <button onClick={() => clearCookie()}>-</button>
+                <button
+                  onClick={() => {
+                    clearCookie();
+                  }}
+                >
                   x
                 </button>
               </div>

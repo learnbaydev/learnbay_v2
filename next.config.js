@@ -16,6 +16,7 @@ const nextConfig = {
     formats: ["image/avif", "image/webp"],
     minimumCacheTTL: 60,
   },
+
   async redirects() {
     return [
       {
@@ -1024,10 +1025,10 @@ const nextConfig = {
   },
 };
 
-const withBundleAnalyzer = require("@next/bundle-analyzer")({
-  enabled: process.env.ANALYZE === "true",
-});
-module.exports = withBundleAnalyzer(nextConfig);
+// const withBundleAnalyzer = require("@next/bundle-analyzer")({
+//   enabled: process.env.ANALYZE === "true",
+// });
+// module.exports = withBundleAnalyzer(nextConfig);
 
 // module.exports = {
 //   images: {
@@ -1035,4 +1036,4 @@ module.exports = withBundleAnalyzer(nextConfig);
 //   },
 // };
 
-// module.exports = nextConfig;
+module.exports = nextConfig;
