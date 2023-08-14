@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Head from "next/head";
 import Navbar from "../../../components/Navbar/Navbar";
 import Footer from "../../../components/Footer/Footer";
@@ -66,6 +66,31 @@ import BatchDetailss from "../../../components/BatchDetails/BatchDetails";
 
 function Blockchain() {
   const [popups, setPopups] = useState(false);
+
+  const [batchDateData, setBatchDateData] = useState("");
+
+  useEffect(() => {
+    const fetchBatch = async () => {
+      const data = await fetch("/api/BatchDetails/getBatchDetails", {
+        method: "POST",
+        body: JSON.stringify("Data Science and AI"),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
+
+      if (data.status === 200) {
+        const { batchDate } = await data.json();
+
+        setBatchDateData(batchDate);
+
+        console.log("Batch Date Response:", batchDate);
+      }
+    };
+    fetchBatch();
+  }, []);
+ 
+
 
   return (
     <>
@@ -177,10 +202,28 @@ function Blockchain() {
           brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Data+Science+and+AI+Projects.pdf"
           project="15+"
         />
-        <BatchDetails
+        {/* <BatchDetails
           CourseFeeHead="Data Science and AI Foundation Program : Batch Details"
           BAFamily
-        />
+          batchDetails=""
+
+        /> */}
+
+{/* {batchDateData === "" ? (
+          ""
+        ) : batchDateData === null ? (
+          <BatchDates
+            batchDetails=""
+            CourseFeeHead="Data Science and AI Foundation Program : Batch Details"
+            BAFamily
+          />
+        ) : (
+          <BatchDetails
+            batchDetails={batchDateData.batchDetails}
+            CourseFeeHead="Data Science and AI Foundation Program : Batch Details"
+           BAFamily
+          />
+        )} */}
         <BatchDetailss />
         <FAQNew FAQNewData={DataScienceCourseData[0].faq} />
         <SeventhSection />
