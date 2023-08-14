@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Head from "next/head";
 import Navbar from "../../../components/Navbar/Navbar";
 import Footer from "../../../components/Footer/Footer";
@@ -63,6 +63,26 @@ import BatchDetails from "../../../components/CoursePage/BatchDetails/BatchDetai
 
 function Blockchain() {
   const [popups, setPopups] = useState(false);
+
+  useEffect(() => {
+    const fetchBatch = async () => {
+      const data = await fetch("/api/BatchDetails/getBatchDate", {
+        method: "POST",
+        body: JSON.stringify("Data Science and AI"),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
+      if (data.status === 200) {
+        const { batchDate } = await data.json();
+        setBatchDateData(batchDate);
+      }
+    };
+    fetchBatch();
+    
+  }, []);
+
+  
 
   return (
     <>
@@ -175,10 +195,11 @@ function Blockchain() {
           dataScience={true}
           brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Data+Science+and+AI+Projects.pdf"
         />
-        <BatchDetails
+        {/* <BatchDetails
           CourseFeeHead="Artificial Intelligence & Machine Learning Program:Batch Details"
           BAFamily
-        />
+          batchDetails=""
+        /> */}
         <FAQNew FAQNewData={AIMLDataScienceCourseData[0].faq} />
         <SeventhSection />
         <Footer />

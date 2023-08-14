@@ -92,6 +92,26 @@ function Blockchain() {
     fetchPopup();
   }, []);
 
+  useEffect(() => {
+    const fetchBatch = async () => {
+      const data = await fetch("/api/BatchDetails/getBatchDate", {
+        method: "POST",
+        body: JSON.stringify("Business Analytics Family"),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
+      if (data.status === 200) {
+        const { batchDate } = await data.json();
+        setBatchDateData(batchDate);
+      }
+    };
+    fetchBatch();
+    
+  }, []);
+
+  
+
   return (
     <>
       <Head>
@@ -196,10 +216,11 @@ function Blockchain() {
           titleCourse="Business Analytics Project Brochure"
           brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Business+Analytics+Projects.pdf"
         />
-        <BatchDetails
+        {/* <BatchDetails
           BAFamily={true}
           CourseFeeHead="Business Analytics Master Program : Batch Details"
-        />
+          batchDetails=""
+        /> */}
         <FAQNew FAQNewData={BADataScienceCourseData[0].faq} />
         <SeventhSection />
         <Footer />
