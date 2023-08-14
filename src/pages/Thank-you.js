@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from "react";
-import FirstHeader from "../components/Thankyou/FirstHeader/FirstHeader";
-import ThankStats from "../components/Thankyou/ThankStat/ThankStats";
-import TyPageCta from "../components/Thankyou/TyPageCta/TyPageCta";
-import Survey from "../components/Thankyou/Survey/Survey";
-import Footer from "../components/Footer/Footer";
-import BottomBar from "../components/BottomBar/BottomBar";
+import FirstHeader from "../../components/WebPage/Thankyou/FirstHeader/FirstHeader";
+import ThankStats from "../../components/WebPage/Thankyou/ThankStat/ThankStats";
+import TyPageCta from "../../components/WebPage/Thankyou/TyPageCta/TyPageCta";
+import Survey from "../../components/WebPage/Thankyou/Survey/Survey";
+import Footer from "../../components/Footer/Footer";
+import BottomBar from "../../components/WebPage/BottomBar/BottomBar";
+import OfferPopup from "../../components/OfferPopup/OfferPopup";
 
 const ThankYouDemo = () => {
   const dataArray = [];
@@ -50,6 +51,7 @@ const ThankYouDemo = () => {
       />
       <BottomBar />
       <Footer />
+      <BottomBar radio={true} />
     </div>
   );
 };

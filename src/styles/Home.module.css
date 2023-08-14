@@ -259,6 +259,14 @@
 .Reviewbtn{
     margin: auto;
 }
+
+.cityFee {
+  margin-top: -50px;
+}
+
+.faqCity {
+  margin: -40px -110px -40px -80px;
+}
   
   @media (max-width: 1281px) {
     .program {
@@ -272,6 +280,9 @@
       margin: 30px 40px 70px 40px;
     }
   }
+
+  @media (max-width: 1024px) {
+    .faqCity {    margin: -40px 0px -40px 0px;}}
   
   @media (max-width: 1025px) {
     .boxShape {
@@ -292,6 +303,9 @@
     }
     .Feature {
       margin-top: 20px;
+    }
+    .faqCity {
+      margin: 0px -10px 0px -15px;
     }
   }
   

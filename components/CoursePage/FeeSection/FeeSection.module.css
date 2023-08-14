@@ -9,6 +9,12 @@
   font-size: 32px;
   font-weight: 700;
 }
+.swiperSlide {
+  display: flex;
+  width: fit-content;
+  align-items: center;
+  justify-content: center;
+}
 .priceWrap {
   display: grid;
   grid-template-columns: 45% 50%;

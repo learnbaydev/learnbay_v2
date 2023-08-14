@@ -27,7 +27,6 @@ function Testimonial({ redirectDS, para, heading, Testimonial }) {
   const popupShow = () => {
     setPopups(true);
   };
-  const [testimonialArray, setTestimonialArray] = useState(Testimonial);
   useEffect(() => {
     let width = window.innerWidth;
     if (width < 600) {
@@ -76,7 +75,7 @@ function Testimonial({ redirectDS, para, heading, Testimonial }) {
                 modules={[Pagination, Navigation]}
                 className="mySwiper"
               >
-                {testimonialArray.map((data) => {
+                {Testimonial.map((data) => {
                   const {
                     id,
                     name,

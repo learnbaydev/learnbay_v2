@@ -15,7 +15,7 @@
   display: flex;
   width: 100%;
   height: fit-content;
-  padding-top: 20px;
+  padding-top: 12px;
   padding-left: 20px;
   padding-right: 20px;
   flex-flow: column;
@@ -31,12 +31,13 @@
   color: #000;
   margin-top: 8px;
   margin-bottom: 8px;
-  font-size: 18px;
+  font-size: 14px;
 }
 .Offer button {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
 }
 .Icon {
   position: absolute;

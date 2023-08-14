@@ -7,7 +7,7 @@ import { BsCheckCircleFill } from "react-icons/bs";
 import { FaMobileAlt, FaBell } from "react-icons/fa";
 import { MdPayment } from "react-icons/md";
 import { AiOutlineBank } from "react-icons/ai";
-import { Autoplay } from "swiper";
+import { Autoplay, FreeMode } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Popup from "../../Popup/Popup";
 import Form from "../../Form/Form";
@@ -25,32 +25,12 @@ const FeeSection = ({
   dataScienceCounselling,
   FeeEmi,
 }) => {
-  const [slidesPerView, setSlidesPerView] = useState(3);
   const [popups, setPopups] = useState(false);
-  const [spaceBetween, setSpaceBetween] = useState(70);
-  const [mobile, setMobile] = useState(false);
 
   const popupShow = () => {
     setPopups(true);
   };
 
-  useEffect(() => {
-    let width = window.innerWidth;
-
-    if (width < 801) {
-      setSlidesPerView(9);
-      setSpaceBetween(20);
-    }
-    if (width < 641) {
-      setSlidesPerView(5);
-      setSpaceBetween(20);
-    }
-    if (width < 481) {
-      setSlidesPerView(3);
-      setSpaceBetween(10);
-      setMobile(true);
-    }
-  }, []);
   return (
     <div className={`${styles.feeWrapper} wrapper`}>
       <Popup
@@ -144,87 +124,88 @@ const FeeSection = ({
             <div className={styles.slider}>
               <p className={styles.sliderHeading}>Payment Partner</p>
               <Swiper
-                spaceBetween={mobile ? 30 : spaceBetween}
-                centeredSlides={true}
-                slidesPerView={mobile ? 3 : slidesPerView}
-                slidesPerGroup={1}
-                loop={true}
+                slidesPerView={3}
+                spaceBetween={40}
+                breakpoints={{
+                  1024: { slidesPerView: 3, spaceBetween: 40 },
+                  961: { slidesPerView: 2, spaceBetween: 20 },
+                  801: { slidesPerView: 2, spaceBetween: 40 },
+                  641: { slidesPerView: 2, spaceBetween: 10 },
+                  481: { slidesPerView: 3, spaceBetween: 10 },
+                  100: { slidesPerView: 3, spaceBetween: 10 },
+                }}
                 autoplay={{
-                  delay: 1000,
+                  delay: 1500,
+                  loop: true,
                   disableOnInteraction: false,
                 }}
+                freeMode={true}
                 grabCursor={true}
-                modules={[Autoplay]}
+                centeredSlides={true}
+                loop={true}
+                modules={[FreeMode, Autoplay]}
                 className="mySwiper"
               >
-                {mobile ? (
-                  <>
-                    {" "}
-                    <SwiperSlide>
-                      <div className="imgWrapper">
-                        <Image
-                          src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/liquiloans.webp"
-                          alt="liqiloans"
-                          width={mobile ? "90" : "150"}
-                          height="40"
-                        />
-                      </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                      <div className="imgWrapper">
-                        <Image
-                          src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/propelld.webp"
-                          alt="Propelled"
-                          width="120"
-                          height="40"
-                        />
-                      </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                      <div className="imgWrapper">
-                        <Image
-                          src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/zest-logo.webp"
-                          alt="zest"
-                          width="80"
-                          height="20"
-                        />
-                      </div>
-                    </SwiperSlide>
-                  </>
-                ) : (
-                  <>
-                    <SwiperSlide>
-                      <div className="imgWrapper">
-                        <Image
-                          src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/liquiloans.webp"
-                          alt="liqiLoans"
-                          width="300"
-                          height="120"
-                        />
-                      </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                      <div className="imgWrapper">
-                        <Image
-                          src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/propelld.webp"
-                          alt="propelld"
-                          width="500"
-                          height="200"
-                        />
-                      </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                      <div className="imgWrapper">
-                        <Image
-                          src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/zest-logo.webp"
-                          alt="Zest"
-                          width="200"
-                          height="58"
-                        />
-                      </div>
-                    </SwiperSlide>
-                  </>
-                )}
+                <SwiperSlide className={styles.swiperSlide}>
+                  <div className="imgWrapper">
+                    <Image
+                      src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/liquiloans.webp"
+                      alt="liqiLoans"
+                      width="300"
+                      height="120"
+                    />
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide className={styles.swiperSlide}>
+                  <div className="imgWrapper">
+                    <Image
+                      src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/propelld.webp"
+                      alt="propelld"
+                      width="500"
+                      height="200"
+                    />
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide className={styles.swiperSlide}>
+                  <div className="imgWrapper">
+                    <Image
+                      src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/zest-logo.webp"
+                      alt="Zest"
+                      width="200"
+                      height="58"
+                    />
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide className={styles.swiperSlide}>
+                  <div className="imgWrapper">
+                    <Image
+                      src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/liquiloans.webp"
+                      alt="liqiLoans"
+                      width="300"
+                      height="120"
+                    />
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide className={styles.swiperSlide}>
+                  <div className="imgWrapper">
+                    <Image
+                      src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/propelld.webp"
+                      alt="propelld"
+                      width="500"
+                      height="200"
+                    />
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide className={styles.swiperSlide}>
+                  <div className="imgWrapper">
+                    <Image
+                      src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/zest-logo.webp"
+                      alt="Zest"
+                      width="200"
+                      height="58"
+                    />
+                  </div>
+                </SwiperSlide>
               </Swiper>
             </div>
           </div>

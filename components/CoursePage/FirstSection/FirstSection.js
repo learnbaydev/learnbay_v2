@@ -23,6 +23,9 @@ function FirstSection({
   FirstTyped,
   SecondTyped,
   ThirdTyped,
+  ibmOnly,
+  cityParaCont,
+  cityPara,
 }) {
   const [popups, setPopups] = useState(false);
 
@@ -86,6 +89,9 @@ function FirstSection({
         <h1 className={styles.h1}>
           {firstHeading} <span className={styles.h1Span}>{firstToparaImg}</span>
         </h1>
+        <p className={styles.ptopCiity} style={{ color: "#000" }}>
+       {cityParaCont}
+        </p>
         <div className={styles.IBMlogoPlay}>
           <Image
             src={FirstRightImg}
@@ -98,7 +104,15 @@ function FirstSection({
           In Collaboration With
         </p>
         <div className={styles.ImageBlock}>
-          <div className="imgWrapper">
+          {ibmOnly ? (
+            <Image
+              src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/ibm-single-home.png"
+              width="127"
+              height="51"
+              loading="lazy"
+              alt="data science course"
+            />
+          ) : (
             <Image
               src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/FirstSection.png"
               width="283"
@@ -106,11 +120,11 @@ function FirstSection({
               loading="lazy"
               alt="data science course"
             />
+          )}
+        </div>
+          <div className={styles.animationTextWrap}>
+            <span ref={el} className={styles.animationText}></span>
           </div>
-        </div>
-        <div className={styles.animationTextWrap}>
-          <span ref={el} className={styles.animationText}></span>
-        </div>
 
         {/* Button */}
 
@@ -118,7 +132,7 @@ function FirstSection({
           <div onClick={popupShow}>
             <Button
               text="Brochure"
-              passIcon={<FaDownload style={{ marginLeft: "10px" }} />}
+              passIcon={<FaDownload style={{ marginLeft: "10px", fontSize: "22px" }} />}
             />
           </div>
           {softwareBtnHide ? (

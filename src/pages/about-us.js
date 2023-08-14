@@ -21,11 +21,11 @@ export default function Home() {
         />
       </Head>
       <main>
-        <Navbar radio={true}/>
+        <Navbar radio={true} />
         <AboutUs />
-        {/* <OfferPopup offer={false} />
-        <BottomBar /> */}
         <Footer />
+
+        <BottomBar radio={true} />
       </main>
     </div>
   );

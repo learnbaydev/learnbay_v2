@@ -1,43 +1,43 @@
 export const TabData = [
   {
     id: "Popular Courses",
-    title: "Popular Courses", 
+    title: "Popular Courses",
     courseName: [
       {
         id: 1,
         CName: "Advance Data Science and AI Program",
         hours: "250+ Hours | 7 & 9 Months",
-        url: "/advance-data-science-certification-courses",
+        url: "/datascience/advance-data-science-certification-courses",
       },
       {
         CName: "Data Science and AI for Managers & Leaders",
         hours: "400+ Hours | 11 & 13 Months",
-        url: "/data-science-ai-for-managers",
+        url: "/datascience/data-science-ai-for-managers",
       },
       {
         CName: "Software Development Master Program",
-        hours: "300+ Hours | 9 & 11 Months",
-        url: "/full-stack-software-development-program",
+        hours: "400+ Hours | 9 & 11 Months",
+        url: "/fullstack/full-stack-software-development-program",
       },
       {
         CName: "Advance AI & ML Program For Tech Professionals",
         hours: "350+ Hours | 9 & 11 Months",
-        url: "/artificial-intelligence-certification-course",
+        url: "/datascience/artificial-intelligence-certification-course",
       },
       {
         CName: "Software Development in Blockchain",
         hours: "250+ Hours | 8 & 10 Months",
-        url: "/software-development-program-with-specialization-in-blockchain",
+        url: "/fullstack/software-development-program-with-specialization-in-blockchain",
       },
       {
         CName: "Data Science and AI Master Program",
         hours: "500+ Hours | 13 & 15 Months",
-        url: "/data-science-ai-masters-program",
+        url: "/datascience/data-science-ai-masters-program",
       },
       {
         CName: " Software Development in Cloud Computing & DevOps",
         hours: "250+ Hours | 8 & 10 Months",
-        url: "/software-development-program-with-specialization-in-cloud-computing-&-devops",
+        url: "/fullstack/software-development-program-with-specialization-in-cloud-computing-&-devops",
       },
     ],
   },
@@ -48,52 +48,57 @@ export const TabData = [
       {
         CName: "Data Science Foundation Program",
         hours: " 200+ Hours | 5 & 7 Months",
-        url: "/data-science-certification-courses",
+        url: "/datascience/data-science-certification-courses",
       },
       {
         CName: "Advance Data Science & AI Program",
         hours: " 250+ Hours | 7 & 9 Months",
-        url: "/advance-data-science-certification-courses",
+        url: "/datascience/advance-data-science-certification-courses",
       },
       {
         CName: "Advance AI & ML Program For Tech Professionals",
         hours: " 350+ Hours | 9 & 11 Months",
-        url: "/artificial-intelligence-certification-course",
+        url: "/datascience/artificial-intelligence-certification-course",
       },
       {
         CName: "Data Science and AI for Managers & Leaders",
         hours: " 400+ Hours | 11 & 13 Months",
-        url: "/data-science-ai-for-managers",
+        url: "/datascience/data-science-ai-for-managers",
       },
       {
         CName: "Data Science and AI Master Program",
         hours: "  500+ Hours | 13 & 15 Months",
-        url: "/data-science-ai-masters-program",
+        url: "/datascience/data-science-ai-masters-program",
       },
       {
         CName: "Business Analytics Master Program",
         hours: " 250+ Hours | 7 & 9 Months",
-        url: "/business-analytics-certification-course",
-      },
-      {
-        CName: "Data Analytics Program",
-        hours: "  180+ Hours | 5 & 6.5 Months",
-        url: "/data-analytics-certification-course",
+        url: "/datascience/business-analytics-certification-course",
       },
       {
         CName: "Data Science and AI Program for BFSI Professionals",
         hours: "   250+ Hours | 7 & 9 Months",
-        url: "/data-science-for-bfsi-professional",
+        url: "/datascience/data-science-for-bfsi-professional",
       },
+      {
+        CName: (
+          <p>
+            Data Analytics <br /> Program
+          </p>
+        ),
+        hours: "  180+ Hours | 5 & 6.5 Months",
+        url: "/datascience/data-analytics-certification-course",
+      },
+
       {
         CName: "HR Analytics Program",
         hours: " 200+ Hours | 5 & 7 Months",
-        url: "/hr-analytics",
+        url: "/datascience/hr-analytics",
       },
       {
         CName: "Marketing Analytics Program",
         hours: " 200+ Hours | 5 & 7 Months",
-        url: "/marketing-analytics",
+        url: "/datascience/marketing-analytics",
       },
     ],
   },
@@ -104,17 +109,22 @@ export const TabData = [
       {
         CName: "Software Development in Blockchain",
         hours: "250+ Hours | 8 & 10 Months",
-        url: "/software-development-program-with-specialization-in-blockchain",
+        url: "/fullstack/software-development-program-with-specialization-in-blockchain",
       },
       {
         CName: "Software Development Master Program",
-        hours: "300+ Hours | 9 & 11 Months",
-        url: "/full-stack-software-development-program",
+        hours: "400+ Hours | 9 & 11 Months",
+        url: "/fullstack/full-stack-software-development-program",
       },
       {
         CName: "  Software Development in Cloud Computing & DevOps",
         hours: " 250+ Hours | 8 & 10 Months",
-        url: "/software-development-program-with-specialization-in-cloud-computing-&-devops",
+        url: "/fullstack/software-development-program-with-specialization-in-cloud-computing-&-devops",
+      },
+      {
+        CName: "  Software Development Program For Freshers",
+        hours: " 300+ Hours | 8 & 10 Months",
+        url: "/fullstack/software-development-program-for-freshers",
       },
     ],
   },
@@ -125,12 +135,12 @@ export const TabData = [
       {
         CName: "Data Science and AI Master Program",
         hours: "500+ Hours | 13 & 15 Months",
-        url: "/data-science-ai-masters-program",
+        url: "/datascience/data-science-ai-masters-program",
       },
       {
         CName: "Software Development Master Program",
-        hours: " 300+ Hours | 9 & 11 Months",
-        url: "/full-stack-software-development-program",
+        hours: " 400+ Hours | 9 & 11 Months",
+        url: "/fullstack/full-stack-software-development-program",
       },
     ],
   },
@@ -141,67 +151,77 @@ export const TabData = [
       {
         CName: "Data Science Foundation Program",
         hours: "200+ Hours | 5 & 7 Months",
-        url: "/data-science-certification-courses",
+        url: "/datascience/data-science-certification-courses",
       },
       {
         CName: "Software Development in Blockchain",
         hours: "250+ Hours | 8 & 10 Months",
-        url: "/software-development-program-with-specialization-in-blockchain",
+        url: "/fullstack/software-development-program-with-specialization-in-blockchain",
       },
       {
         CName: "Advance Data Science & AI Program",
         hours: "250+ Hours | 7 & 9 Months",
-        url: "/advance-data-science-certification-courses",
+        url: "/datascience/advance-data-science-certification-courses",
       },
       {
         CName: "Software Development Master Program",
-        hours: " 300+ Hours | 9 & 11 Months",
-        url: "/full-stack-software-development-program",
+        hours: " 400+ Hours | 9 & 11 Months",
+        url: "/fullstack/full-stack-software-development-program",
       },
       {
         CName: "Advance AI & ML Program For Tech Professionals",
         hours: "350+ Hours | 9 & 11 Months",
-        url: "/artificial-intelligence-certification-course",
+        url: "/datascience/artificial-intelligence-certification-course",
       },
       {
         CName: "Data Science and AI for Managers & Leaders",
         hours: " 400+ Hours | 11 & 13 Months",
-        url: "/data-science-ai-for-managers",
+        url: "/datascience/data-science-ai-for-managers",
       },
       {
         CName: "Data Science and AI Master Program",
         hours: "  500+ Hours | 13 & 15 Months",
-        url: "/data-science-ai-masters-program",
+        url: "/datascience/data-science-ai-masters-program",
       },
       {
         CName: "Business Analytics Master Program",
         hours: "   250+ Hours | 7 & 9 Months",
-        url: "/business-analytics-certification-course",
+        url: "/datascience/business-analytics-certification-course",
       },
-      {
-        CName: "Data Analytics Program",
-        hours: " 180+ Hours | 5 & 6.5 Months",
-        url: "/data-analytics-certification-course",
-      },
+
       {
         CName: " Data Science and AI Program for BFSI Professionals",
         hours: "  250+ Hours | 7 & 9 Months",
-        url: "/data-science-for-bfsi-professional",
-      },
-      {
-        CName: " HR Analytics Program",
-        hours: " 200+ Hours | 5 & 7 Months",
-        url: "/hr-analytics",
-      },
-      {
-        CName: " Marketing Analytics Program",
-        hours: "  200+ Hours | 5 & 7 Months",
-        url: "/marketing-analytics",
+        url: "/datascience/data-science-for-bfsi-professional",
       },
       {
         CName: "  Software Development in Cloud Computing & DevOps",
         hours: "  250+ Hours | 8 & 10 Months",
-        url: "/software-development-program-with-specialization-in-cloud-computing-&-devops",
+        url: "/fullstack/software-development-program-with-specialization-in-cloud-computing-&-devops",
+      },
+      {
+        CName: "  Software Development Program For Freshers",
+        hours: " 300+ Hours | 8 & 10 Months",
+        url: "/fullstack/software-development-program-for-freshers",
+      },
+      {
+        CName: (
+          <p>
+            Data Analytics <br /> Program
+          </p>
+        ),
+        hours: " 180+ Hours | 5 & 6.5 Months",
+        url: "/datascience/data-analytics-certification-course",
+      },
+      {
+        CName: " HR Analytics Program",
+        hours: " 200+ Hours | 5 & 7 Months",
+        url: "/datascience/hr-analytics",
+      },
+      {
+        CName: " Marketing Analytics Program",
+        hours: "  200+ Hours | 5 & 7 Months",
+        url: "/datascience/marketing-analytics",
       },
     ],
   },

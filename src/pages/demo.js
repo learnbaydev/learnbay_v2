@@ -2,6 +2,8 @@ import Head from "next/head";
 import Demo from "../../components/WebPage/Demo/Demo";
 import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
+import BottomBar from "../../components/WebPage/BottomBar/BottomBar";
+import OfferPopup from "../../components/OfferPopup/OfferPopup";
 // import BottomBar from "../../components/BottomBar/BottomBar";
 // import OfferPopup from "../../components/OfferPopup/OfferPopup";
 
@@ -25,9 +27,8 @@ export default function Home() {
         {" "}
         <Navbar popup={true} dataScienceCounselling={true} />
         <Demo />
-        {/* <OfferPopup offer={false} />
-        <BottomBar /> */}
         <Footer />
+        <BottomBar radio={true} />
       </main>
     </div>
   );

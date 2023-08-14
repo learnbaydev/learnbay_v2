@@ -18,6 +18,9 @@ function FAQNew({ FAQNewData }) {
     { title: "Job Assistance", value: false },
     { title: "Mentorship", value: false },
     { title: "Support", value: false },
+    { title: "Eligiblity Criteria", value: false },
+    { title: "Generic Queries", value: false },
+
   ]);
 
   const menuChange = (title, index) => {
@@ -34,7 +37,7 @@ function FAQNew({ FAQNewData }) {
   };
 
   return (
-    <div className={`${styles.course} wrapper`}>
+    <div className={styles.course}>
       <div className={styles.courseM}>
         <h4 className={styles.infop}>FAQs</h4>
         <div className={styles.courses}>
@@ -43,10 +46,10 @@ function FAQNew({ FAQNewData }) {
               return (
                 <span
                   onClick={() => {
-                    menuChange(data.sectionName, index);
+                    menuChange(data.sectionName, data.id);
                   }}
                   style={
-                    dataLoop[index].value
+                    dataLoop[data.id].value
                       ? { background: "white", borderLeft: "4px solid #2D9CD7" }
                       : {}
                   }

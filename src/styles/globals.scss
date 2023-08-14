@@ -1,4 +1,5 @@
 @import "./Button.css";
+
 :root {
   --swiper-navigation-color: #edb552;
 }
@@ -23,7 +24,6 @@ body {
 }
 h1 {
   font-size: 34px;
-  
 }
 h4 {
   font-size: 32px;
@@ -47,7 +47,8 @@ h6 {
 p {
   margin: 0;
   font-size: 16px;
-  color: #646464;
+  color: #000;
+  margin-top: 10px;
 }
 .none {
   display: none;
@@ -120,6 +121,13 @@ a {
   flex-flow: column;
   padding: 40px 100px;
 }
+//city page css
+.MainCities {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  margin: 0px 100px 100px 100px;
+}
+
 //swiper css
 .swiper {
   width: 100%;
@@ -151,10 +159,20 @@ a {
   font-size: 40px;
   color: #0072bc;
 }
+
+.RightPopup h5 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
 //icon css end home page
 @media (max-width: 1281px) {
   .wrapper {
     padding: 40px 80px;
+  }
+  .MainCities {
+    display: grid;
+    margin: 0px 20px;
   }
   h4 {
     font-size: 28px;
@@ -197,8 +215,15 @@ a {
   }
 }
 @media (max-width: 801px) {
+  .MainCities {
+    display: block;
+    margin: 0px 10px;
+  }
   .wrapper {
     padding: 30px 20px;
+  }
+  .faqCity .course  .wrapper {
+    padding: 30px 0px !important;
   }
 }
 @media (max-width: 641px) {

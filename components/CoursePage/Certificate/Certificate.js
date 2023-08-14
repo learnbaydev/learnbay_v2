@@ -11,7 +11,7 @@ const Certificate = ({
   return NoCertificate ? (
     ""
   ) : (
-    <div className="wrapper">
+    <div className={`${styles.Certificate} wrapper`}>
       <h4 className={styles.infop}>Globally Recognized Program</h4>
       <p className={styles.ptop}>Sponsored by IBM and Microsoft</p>
       <CertificateTabAdvance

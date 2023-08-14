@@ -1,9 +1,10 @@
 import React from "react";
 import Head from "next/head";
-import Refund from "../../components/WebPage/Refund/Refund";
+import Refund from "../../components/WebPage/refund/refund";
 import Navbar from "../../components/Navbar/Navbar";
 import OfferPopup from "../../components/OfferPopup/OfferPopup";
 import Footer from "../../components/Footer/Footer";
+import BottomBar from "../../components/WebPage/BottomBar/BottomBar";
 
 function refund() {
   return (
@@ -28,8 +29,8 @@ function refund() {
         {" "}
         <Navbar popup={true} dataScienceCounselling={true} radio={true} />
         <Refund />
-        <OfferPopup offer={false} />
         <Footer />
+        <BottomBar radio={true} />
       </main>
     </div>
   );

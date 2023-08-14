@@ -1,0 +1,222 @@
+.mains {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.backThank {
+  background: url("https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/ALight/ThankYouBack.jpg");
+  height: fit-content;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  align-items: center;
+  margin: auto;
+  padding: 20px 100px;
+  margin-top: 70px;
+  color: #fff;
+}
+
+.backThank h4 {
+  color: #fff;
+  margin-left: 300px;
+  font-size: 26px;
+  text-align: left;
+}
+
+.FormThank h4 {
+  font-size: 20px;
+  color: #000;
+  margin-left: 0px;
+  text-align: center;
+  padding: 0px 70px;
+}
+
+.backThank h4 span {
+  color: #fff;
+  font-size: 40px;
+  text-align: left;
+}
+
+.Back {
+  background-color: #f4fcfe;
+  height: fit-content;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  align-items: center;
+  margin: auto;
+  padding: 50px 100px;
+  margin-top: 70px;
+  color: black;
+}
+
+.Back h4 {
+  text-align: left;
+}
+
+.right {
+  display: flex;
+  margin: auto;
+  width: 1300px;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.rights {
+  display: grid;
+  margin: auto;
+  width: 1300px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+  grid-template-columns: 25% 25% 25% 25%;
+}
+
+
+.hptop {
+  color: #000;
+  font-size: 36px;
+  color: white;
+  margin: 0;
+}
+
+.Ptopp {
+  font-size: 20px;
+  margin: 20px 10px;
+  color: Black;
+  text-align: center;
+  font-weight: 700;
+}
+
+.mainb {
+  display: flex;
+}
+
+.Button {
+  margin: 10px;
+  margin: auto;
+}
+
+.FormThank {
+  background: #fff;
+  padding: 30px 0px 30px 0px;
+  border-radius: 20px;
+  box-shadow: 0 0 5px 0 rgb(45 156 215 / 31%);
+  width: 90%;
+}
+
+@media (max-width: 481px) {
+  .mains {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+
+  .Back {
+    height: 100%;
+    text-align: left;
+    padding: 100px 20px 30px 20px;
+    display: block;
+  }
+
+  .Back h4 {
+    text-align: center;
+  }
+
+  .backThank {
+    height: 100%;
+    text-align: left;
+    padding: 20px 20px 30px 20px;
+    display: block;
+    background: #2FB1ED;
+  }
+
+  .backThank h4 {
+    text-align: center;
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .FormThank h4 {
+    font-size: 16px;
+    color: #000;
+    padding: 0px;
+  }
+
+  .right {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: auto;
+    margin-top: 20px;
+    text-align: center;
+    padding: 0px 20px;
+  }
+
+  .rights {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: auto;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .Ptop {
+    font-size: 20px;
+    margin: 15px;
+    color: white;
+  }
+  
+  .hptop {
+    color: #000;
+    font-size: 36px;
+    color: white;
+    margin: 0;
+  }
+
+  .Ptopp {
+    font-size: 20px;
+    margin: 20px 2px;
+    color: Black;
+    text-align: center;
+    font-weight: 600;
+    padding: 0px 20px;
+  }
+  
+  .mainb {
+    display: flex;
+  }
+  
+  .Button {
+    margin-bottom: 10px;
+  }
+
+  .Back button {
+    margin: auto;
+  }
+  .FormThank {
+    background: #fff;
+    padding: 30px 0px 30px 0px;
+    border-radius: 20px;
+    box-shadow: 0 0 5px 0 rgb(45 156 215 / 31%);
+    width: 100%;
+  }
+  .Back {
+    height: 100%;
+    text-align: left;
+    padding: 20px 20px 30px 20px;
+    display: block;
+  }
+}

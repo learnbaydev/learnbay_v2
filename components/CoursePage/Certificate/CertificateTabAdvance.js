@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styles from "./Certificate.module.css";
 import Image from "next/image";
-import { BsCheck2 } from "react-icons/bs";
+import { BsCheckCircle } from "react-icons/bs";
 
 function CertificateTab({
   threeCertificate,
@@ -62,16 +62,10 @@ function CertificateTab({
                       </div>
                       <div className={styles.rightSide}>
                         <h6>{title}</h6>
-                        <Image
-                          src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/horizintal-blue-line.svg"
-                          width={90}
-                          height={4}
-                          alt="data science course"
-                        />
                         {para.map((data, i) => {
                           return (
                             <p key={i}>
-                              <BsCheck2 className={styles.checkCircle} />
+                              <BsCheckCircle className={styles.checkCircle} />
                               {data}
                             </p>
                           );
@@ -93,6 +87,18 @@ function CertificateTab({
         <div>
           {oneCertificate ? (
             <div className={styles.MicroCert}>
+              
+              <div className={styles.rightSide}>
+                <h6>{data.oneCertificate.title}</h6>
+                {data.oneCertificate.para.map((data, i) => {
+                  return (
+                    <p key={i}>
+                      <BsCheckCircle className={styles.checkCircle} />
+                      {data}
+                    </p>
+                  );
+                })}
+              </div>
               <div className={styles.leftSide}>
                 <div className="imgWrapper">
                   <Image
@@ -103,27 +109,6 @@ function CertificateTab({
                     height={800}
                   />
                 </div>
-              </div>
-              <div className={styles.rightSide}>
-                <h6>{data.oneCertificate.title}</h6>
-                <div>
-                  <div className="imgWrapper">
-                    <Image
-                      src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/horizintal-blue-line.svg"
-                      width={130}
-                      height={4}
-                      alt="data science course"
-                    />
-                  </div>
-                </div>
-                {data.oneCertificate.para.map((data, i) => {
-                  return (
-                    <p key={i}>
-                      <BsCheck2 className={styles.checkCircle} />
-                      {data}
-                    </p>
-                  );
-                })}
               </div>
             </div>
           ) : (
@@ -132,6 +117,18 @@ function CertificateTab({
 
           {MActive ? (
             <div className={styles.MicroCert}>
+
+              <div className={styles.rightSide}>
+                <h6>{data.oneCertificate.title}</h6>
+                {data.oneCertificate.para.map((data, i) => {
+                  return (
+                    <p key={i}>
+                      <BsCheckCircle className={styles.checkCircle} />
+                      {data}
+                    </p>
+                  );
+                })}
+              </div>
               <div className={styles.leftSide}>
                 <div className="imgWrapper">
                   <Image
@@ -142,27 +139,6 @@ function CertificateTab({
                     height={800}
                   />
                 </div>
-              </div>
-              <div className={styles.rightSide}>
-                <h6>{data.oneCertificate.title}</h6>
-                <div>
-                  <div className="imgWrapper">
-                    <Image
-                      src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/horizintal-blue-line.svg"
-                      width={130}
-                      height={4}
-                      alt="data science course"
-                    />
-                  </div>
-                </div>
-                {data.oneCertificate.para.map((data, i) => {
-                  return (
-                    <p key={i}>
-                      <BsCheck2 className={styles.checkCircle} />
-                      {data}
-                    </p>
-                  );
-                })}
               </div>
             </div>
           ) : (

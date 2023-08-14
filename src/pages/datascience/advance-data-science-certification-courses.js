@@ -1,10 +1,9 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Head from "next/head";
 import Navbar from "../../../components/Navbar/Navbar";
 import Footer from "../../../components/Footer/Footer";
-
 import dynamic from "next/dynamic";
-import { DataScienceCourseData } from "../../../Data/DataScienceCourse";
+import { DataScienceCourseData } from "../../../Data/AdvanceDataScienceCourse";
 
 const FirstSection = dynamic(() =>
   import("../../../components/CoursePage/FirstSection/FirstSection")
@@ -57,19 +56,72 @@ const Certificate = dynamic(() =>
 const FAQNew = dynamic(() =>
   import("../../../components/CoursePage/FAQNew/FAQNew")
 );
-import {
-  FaqData2,
-  DomainFaqData2,
-  PaymentFaqData2,
-  CapstoneFaqData2,
-  CertificationFaqData2,
-  jobFaqData2,
-  MentorshipFaqData2,
-  SupportFaqData2,
-} from "../../../components/CoursePage/FAQNew/FaqData";
+const BatchDetails = dynamic(() =>
+  import("../../../components/CoursePage/BatchDetails/BatchDetails")
+);
+
+import BottomBar from "../../../components/WebPage/BottomBar/BottomBar";
+import OfferPopup from "../../../components/OfferPopup/OfferPopup";
+import BatchDetailss from "../../../components/BatchDetails/BatchDetails";
+
 
 function Blockchain() {
-  const [popups, setPopups] = useState(false);
+  // POPUP GET METHOD
+  const [popupData, setPopupData] = useState([]);
+  // console.log(popupData);
+  useEffect(() => {
+    // console.log("inside UseEFFect");
+    const fetchPopup = async () => {
+      const data = await fetch("/api/Popup/popupGenerate", {
+        method: "GET",
+      });
+      if (data.status === 200) {
+        const { popData } = await data.json();
+        // console.log(popData, "get data");
+        if (popData === []) {
+          setPopupData([]);
+        }
+
+        popData.map((data, i) => {
+          // console.log(data);
+          data.page.map((popupData, i) => {
+            // console.log(popData);
+            if (popupData === "Adv Data Science and AI") {
+              setPopupData(data);
+              console.log(popupData);
+              return;
+            }
+          });
+        });
+      }
+    };
+    fetchPopup();
+  }, []);
+
+  const [batchDateData, setBatchDateData] = useState("");
+
+  useEffect(() => {
+    const fetchBatch = async () => {
+      const data = await fetch("/api/BatchDetails/getBatchDetails", {
+        method: "POST",
+        body: JSON.stringify("Data Science and AI"),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
+
+      if (data.status === 200) {
+        const { batchDate } = await data.json();
+
+        setBatchDateData(batchDate);
+
+        console.log("Batch Date Response:", batchDate);
+      }
+    };
+    fetchBatch();
+  }, []);
+ 
+
 
   return (
     <>
@@ -97,23 +149,6 @@ function Blockchain() {
       </Head>
       <main>
         <Navbar popup={true} dataScienceCounselling={true} />
-        {/* <Popup trigger={popups} setTrigger={setPopups} className="popupModal">
-          <div className="leftPopup">
-            <div className="whiteP" />
-          </div>
-          <div className="RightPopup">
-            <h5>Apply For Counselling</h5>
-            {/* <p>Fill the below details to get started</p> */}
-        {/* <Form
-              popup={true}
-              setTrigger={setPopups}
-              fullStack={true}
-              dataScience={true}
-              titleCourse="Advanced Data Science and AI Program with domain specialization"
-              brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Advance+Data+Science+and+AI+Certification+Program+Learnbay.pdf"
-            />
-          </div>
-        </Popup> */}
         <FirstSection
           FirstTyped="Guaranteed Interview Calls"
           SecondTyped="Capstone Project Certificate"
@@ -121,15 +156,11 @@ function Blockchain() {
           dataScience={true}
           titleCourse="Advanced Data Science and AI Program with domain specialization"
           brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Advance+Data+Science+and+AI+Certification+Program+Learnbay.pdf"
-          first="Tools"
-          second="Tips"
-          third="Technology"
           FirstRightImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/advance+DS+header+image.webp"
           firstToparaImg="with domain specialization"
           firstHeading="Advanced Data Science and AI Program"
           firstTopPara="Specialization over generalization"
           idss="bfl64ANfSV0"
-          srcD="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Advance+Data+Science+and+AI+Certification+Program+Learnbay.pdf"
         />
         <SecondSection
           SecondSectionData={DataScienceCourseData[0].secondSection}
@@ -148,23 +179,20 @@ function Blockchain() {
         <FourthSection
           placementData={DataScienceCourseData[0].fourthSection}
           redirectDS={true}
+          dataScience={true}
+          titleCourse="Data Science Placement Report"
+          brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Placement+Report.pdf"
         />
         <FifthSection />
-        <SixthSectionCTA />
+        <SixthSectionCTA dataScienceCounselling={true} />
         <SyllabusNew
           dataScienceCounselling={true}
-          serviceBasic={true}
-          careerH1="Career Service"
-          careerSpan="Basic"
           dataScience={true}
           titleCourse="Advanced Data Science and AI Program with domain specialization"
           brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Advance+Data+Science+and+AI+Certification+Program+Learnbay.pdf"
           syllabus={DataScienceCourseData[0].syllabus}
           syllabusDesc={DataScienceCourseData[0].syllabusDesc}
           popupHead={DataScienceCourseData[0].popupHead}
-          srcD="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Advance+Data+Science+and+AI+Certification+Program+Learnbay.pdf"
-          hours="250+ Hours"
-          project="12+ Real Time"
         />
         <GrowthStats
           img1="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Scope+of+DS+left+image.png"
@@ -178,7 +206,7 @@ function Blockchain() {
           mobImage="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Mobile-Tools-Covered.png"
         />
         <Certificate
-          threeCertificate
+          threeCertificate={true}
           data={DataScienceCourseData[0].Certificate}
         />
         <FeeSection
@@ -191,21 +219,48 @@ function Blockchain() {
           FeeContent4="Easy loan procedure"
           FeeContent5="15 days refund policy"
           FeeContent6="No additional cost"
+          dataScienceCounselling={true}
         />
         <DomainSection
           dataScience={true}
-          titleCourse="Advanced Data Science and AI Program with domain specialization"
-          brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Advance+Data+Science+and+AI+Certification+Program+Learnbay.pdf"
           domainSectionData={DataScienceCourseData[0].domainSection}
         />
         <Project
           projectData={DataScienceCourseData[0].project}
           tools="12+"
+          dataScience={true}
+          titleCourse="Data Science Project Brochure"
+          brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Data+Science+and+AI+Projects.pdf"
           project="15+"
         />
+        {/* <BatchDetails
+          CourseFeeHead="Data Science and AI Foundation Program : Batch Details"
+          BAFamily
+          batchDetails=""
+
+        /> */}
+
+{/* {batchDateData === "" ? (
+          ""
+        ) : batchDateData === null ? (
+          <BatchDates
+            batchDetails=""
+            CourseFeeHead="Data Science and AI Foundation Program : Batch Details"
+            BAFamily
+          />
+        ) : (
+          <BatchDetails
+            batchDetails={batchDateData.batchDetails}
+            CourseFeeHead="Data Science and AI Foundation Program : Batch Details"
+           BAFamily
+          />
+        )} */}
+        <BatchDetailss />
         <FAQNew FAQNewData={DataScienceCourseData[0].faq} />
         <SeventhSection />
         <Footer />
+        <BottomBar />
+        {popupData.length == 0 ? "" : <OfferPopup popupData={popupData} />}
       </main>
     </>
   );
