@@ -62,6 +62,8 @@ const BatchDetails = dynamic(() =>
 
 import BottomBar from "../../../components/WebPage/BottomBar/BottomBar";
 import OfferPopup from "../../../components/OfferPopup/OfferPopup";
+import BatchDetailss from "../../../components/BatchDetails/BatchDetails";
+
 
 function Blockchain() {
   // POPUP GET METHOD
@@ -210,6 +212,7 @@ function Blockchain() {
           CourseFeeHead="Data Science and AI Foundation Program : Batch Details"
           BAFamily
         />
+        <BatchDetailss />
         <FAQNew FAQNewData={DataScienceCourseData[0].faq} />
         <SeventhSection />
         <Footer />
