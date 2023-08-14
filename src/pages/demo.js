@@ -28,8 +28,7 @@ export default function Home() {
         <Navbar popup={true} dataScienceCounselling={true} />
         <Demo />
         <Footer />
-        <BottomBar radio={true}/>
-        <OfferPopup />
+        <BottomBar radio={true} />
       </main>
     </div>
   );

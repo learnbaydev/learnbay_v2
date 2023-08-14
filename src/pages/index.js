@@ -72,8 +72,7 @@ export default function Home() {
       <ContactUs dataScienceCounselling={true} radio={true} />
       <SeventhSection />
       <Footer />
-      <BottomBar radio={true}/>
-      <OfferPopup />
+      <BottomBar radio={true} />
     </>
   );
 }

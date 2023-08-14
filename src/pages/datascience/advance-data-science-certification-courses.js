@@ -1,8 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Head from "next/head";
 import Navbar from "../../../components/Navbar/Navbar";
 import Footer from "../../../components/Footer/Footer";
-
 import dynamic from "next/dynamic";
 import { DataScienceCourseData } from "../../../Data/AdvanceDataScienceCourse";
 
@@ -62,10 +61,42 @@ const BatchDetails = dynamic(() =>
 );
 
 import BottomBar from "../../../components/WebPage/BottomBar/BottomBar";
+import OfferPopup from "../../../components/OfferPopup/OfferPopup";
 import BatchDetailss from "../../../components/BatchDetails/BatchDetails";
 
+
 function Blockchain() {
-  const [popups, setPopups] = useState(false);
+  // POPUP GET METHOD
+  const [popupData, setPopupData] = useState([]);
+  // console.log(popupData);
+  useEffect(() => {
+    // console.log("inside UseEFFect");
+    const fetchPopup = async () => {
+      const data = await fetch("/api/Popup/popupGenerate", {
+        method: "GET",
+      });
+      if (data.status === 200) {
+        const { popData } = await data.json();
+        // console.log(popData, "get data");
+        if (popData === []) {
+          setPopupData([]);
+        }
+
+        popData.map((data, i) => {
+          // console.log(data);
+          data.page.map((popupData, i) => {
+            // console.log(popData);
+            if (popupData === "Adv Data Science and AI") {
+              setPopupData(data);
+              console.log(popupData);
+              return;
+            }
+          });
+        });
+      }
+    };
+    fetchPopup();
+  }, []);
 
   return (
     <>
@@ -186,6 +217,7 @@ function Blockchain() {
         <SeventhSection />
         <Footer />
         <BottomBar />
+        {popupData.length == 0 ? "" : <OfferPopup popupData={popupData} />}
       </main>
     </>
   );

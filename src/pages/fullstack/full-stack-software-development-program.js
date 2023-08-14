@@ -175,7 +175,7 @@ function Blockchain() {
         <FAQNew FAQNewData={FSSPDataScienceCourseData[0].faq} />
         <SeventhSection />
         <Footer />
-        <OfferPopup />
+
         <BottomBar />
       </main>
     </>

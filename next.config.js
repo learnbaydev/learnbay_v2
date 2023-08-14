@@ -1,9 +1,4 @@
-/** @type {import('next').NextConfig} */
-// const nextConfig = {
-//   reactStrictMode: true,
-// }
-
-module.exports = {
+const nextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
@@ -1025,10 +1020,8 @@ module.exports = {
   },
 };
 
-// module.exports = {
-//   images: {
-//     domains: ["learnbay-wb.s3.ap-south-1.amazonaws.com"],
-//   },
-// };
-
-// module.exports = nextConfig;
+// const withBundleAnalyzer = require("@next/bundle-analyzer")({
+//   enabled: process.env.ANALYZE === "true",
+// });
+// module.exports = withBundleAnalyzer(nextConfig);
+module.exports = nextConfig;

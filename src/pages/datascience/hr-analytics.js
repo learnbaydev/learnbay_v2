@@ -165,7 +165,7 @@ function Blockchain() {
         <FAQNew FAQNewData={HRCourseData[0].faq} />
         <SeventhSection />
         <Footer />
-        <OfferPopup />
+
         <BottomBar />
       </main>
     </>
