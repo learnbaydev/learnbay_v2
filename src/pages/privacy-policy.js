@@ -11,7 +11,10 @@ function privacy() {
       <Head>
         <title>Learnbay - Privacy Policies</title>
         <meta name="robots" content="index, follow" />
-        <meta name="description" content="Learn about Learnbay's privacy policies, which ensure the security of your personal information." />
+        <meta
+          name="description"
+          content="Learn about Learnbay's privacy policies, which ensure the security of your personal information."
+        />
         <link
           rel="icon"
           href="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/Learnbay-Favicon-L.png"
@@ -22,7 +25,6 @@ function privacy() {
         {" "}
         <Navbar popup={true} dataScienceCounselling={true} radio={true} />
         <Privacy />
-        <OfferPopup offer={false} />
         <Footer />
         <BottomBar radio={true} />
       </main>

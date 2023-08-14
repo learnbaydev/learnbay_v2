@@ -168,7 +168,7 @@ function Blockchain() {
         <FAQNew FAQNewData={MACourseData[0].faq} />
         <SeventhSection />
         <Footer />
-        <OfferPopup />
+
         <BottomBar />
       </main>
     </>

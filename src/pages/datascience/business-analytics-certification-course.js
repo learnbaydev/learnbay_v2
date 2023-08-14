@@ -1,8 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Head from "next/head";
 import Navbar from "../../../components/Navbar/Navbar";
 import Footer from "../../../components/Footer/Footer";
-
 import dynamic from "next/dynamic";
 import { BADataScienceCourseData } from "../../../Data/BusinessAnalyticsData";
 
@@ -57,12 +56,41 @@ const Certificate = dynamic(() =>
 const FAQNew = dynamic(() =>
   import("../../../components/CoursePage/FAQNew/FAQNew")
 );
-import OfferPopup from "../../../components/OfferPopup/OfferPopup";
 import BottomBar from "../../../components/WebPage/BottomBar/BottomBar";
 import BatchDetails from "../../../components/CoursePage/BatchDetails/BatchDetails";
+import OfferPopup from "../../../components/OfferPopup/OfferPopup";
 
 function Blockchain() {
-  const [popups, setPopups] = useState(false);
+  // POPUP GET METHOD
+  const [popupData, setPopupData] = useState([]);
+  // console.log(popupData);
+  useEffect(() => {
+    // console.log("inside UseEFFect");
+    const fetchPopup = async () => {
+      const data = await fetch("/api/Popup/popupGenerate", {
+        method: "GET",
+      });
+      if (data.status === 200) {
+        const { popData } = await data.json();
+        // console.log(popData, "get data");
+        if (popData === []) {
+          setPopupData([]);
+        }
+
+        popData.map((data, i) => {
+          console.log(data);
+          data.page.map((popupData, i) => {
+            if (popupData === "Business Analytics Program") {
+              setPopupData(data);
+
+              return;
+            }
+          });
+        });
+      }
+    };
+    fetchPopup();
+  }, []);
 
   return (
     <>
@@ -175,8 +203,9 @@ function Blockchain() {
         <FAQNew FAQNewData={BADataScienceCourseData[0].faq} />
         <SeventhSection />
         <Footer />
-        <OfferPopup BAFamily={true} />
+
         <BottomBar />
+        {popupData.length == 0 ? "" : <OfferPopup popupData={popupData} />}
       </main>
     </>
   );

@@ -27,12 +27,16 @@ const ResumeBuilder = () => {
           href="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/Learnbay-Favicon-L.png"
         />
       </Head>
-      <Navbar popup={true} dataScienceCounselling={true} radio={true} eventLink={true}/>
+      <Navbar
+        popup={true}
+        dataScienceCounselling={true}
+        radio={true}
+        eventLink={true}
+      />
       <FirstSection />
       <ThirdSection idss="4PBfjKsw580" />
       <Footer />
       <BottomBar radio={true} />
-      <OfferPopup />
     </div>
   );
 };

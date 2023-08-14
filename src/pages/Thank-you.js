@@ -52,7 +52,6 @@ const ThankYouDemo = () => {
       <BottomBar />
       <Footer />
       <BottomBar radio={true} />
-      <OfferPopup />
     </div>
   );
 };

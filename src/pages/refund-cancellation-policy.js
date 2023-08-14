@@ -29,9 +29,8 @@ function refund() {
         {" "}
         <Navbar popup={true} dataScienceCounselling={true} radio={true} />
         <Refund />
-        <OfferPopup offer={false} />
         <Footer />
-        <BottomBar radio={true}/>
+        <BottomBar radio={true} />
       </main>
     </div>
   );

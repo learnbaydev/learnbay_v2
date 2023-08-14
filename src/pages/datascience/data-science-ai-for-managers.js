@@ -179,7 +179,7 @@ function Blockchain() {
         <FAQNew FAQNewData={ManagersDataScienceCourseData[0].faq} />
         <SeventhSection />
         <Footer />
-        <OfferPopup />
+
         <BottomBar />
       </main>
     </>
