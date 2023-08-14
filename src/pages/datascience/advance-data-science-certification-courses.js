@@ -62,8 +62,6 @@ const BatchDetails = dynamic(() =>
 
 import BottomBar from "../../../components/WebPage/BottomBar/BottomBar";
 import OfferPopup from "../../../components/OfferPopup/OfferPopup";
-import BatchDetailss from "../../../components/BatchDetails/BatchDetails";
-
 
 function Blockchain() {
   // POPUP GET METHOD
@@ -88,7 +86,7 @@ function Blockchain() {
             // console.log(popData);
             if (popupData === "Adv Data Science and AI") {
               setPopupData(data);
-              console.log(popupData);
+              // console.log(popupData);
               return;
             }
           });
@@ -110,6 +108,7 @@ function Blockchain() {
         },
       });
 
+      console.log(data.status);
       if (data.status === 200) {
         const { batchDate } = await data.json();
 
@@ -120,8 +119,6 @@ function Blockchain() {
     };
     fetchBatch();
   }, []);
- 
-
 
   return (
     <>
@@ -233,29 +230,9 @@ function Blockchain() {
           brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Data+Science+and+AI+Projects.pdf"
           project="15+"
         />
-        {/* <BatchDetails
-          CourseFeeHead="Data Science and AI Foundation Program : Batch Details"
-          BAFamily
-          batchDetails=""
 
-        /> */}
+        <BatchDetails batchDetails={batchDateData.batchDetails} />
 
-{/* {batchDateData === "" ? (
-          ""
-        ) : batchDateData === null ? (
-          <BatchDates
-            batchDetails=""
-            CourseFeeHead="Data Science and AI Foundation Program : Batch Details"
-            BAFamily
-          />
-        ) : (
-          <BatchDetails
-            batchDetails={batchDateData.batchDetails}
-            CourseFeeHead="Data Science and AI Foundation Program : Batch Details"
-           BAFamily
-          />
-        )} */}
-        <BatchDetailss />
         <FAQNew FAQNewData={DataScienceCourseData[0].faq} />
         <SeventhSection />
         <Footer />
