@@ -200,7 +200,7 @@ function Blockchain() {
         <FAQNew FAQNewData={DADataScienceCourseData[0].faq} />
         <SeventhSection />
         <Footer />
-        <OfferPopup />
+
         <BottomBar />
       </main>
     </>

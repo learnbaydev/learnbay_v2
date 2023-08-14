@@ -203,7 +203,7 @@ function Blockchain() {
         <FAQNew FAQNewData={AIMLDataScienceCourseData[0].faq} />
         <SeventhSection />
         <Footer />
-        <OfferPopup />
+
         <BottomBar />
       </main>
     </>

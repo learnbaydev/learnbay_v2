@@ -38,9 +38,7 @@ const sumbit = () => {
           />
         </div>
       </div>
-      <BottomBar radio={true}/>
-      <Footer />
-      <OfferPopup />
+      <BottomBar radio={true} />
     </div>
   );
 };

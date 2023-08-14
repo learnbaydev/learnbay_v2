@@ -171,7 +171,7 @@ function Blockchain() {
         {/* <FAQNew FAQNewData={FreshersFSDData [0].faq} /> */}
         <SeventhSection />
         <Footer />
-        <OfferPopup />
+
         <BottomBar />
       </main>
     </>

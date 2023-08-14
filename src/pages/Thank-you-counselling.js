@@ -26,10 +26,9 @@ const ThankYouDemo = () => {
         header="Are you seeking the perfect course that will propel your career to new heights?"
         para="Unleash your full potential with our personalized and tailored course suggestions that will guide you towards your ideal learning journey."
       />
-      <BottomBar radio={true}/>
+      <BottomBar radio={true} />
       <Footer />
       <BottomBar />
-      <OfferPopup />
     </div>
   );
 };

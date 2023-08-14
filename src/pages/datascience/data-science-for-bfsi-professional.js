@@ -190,7 +190,7 @@ function Blockchain() {
         <FAQNew FAQNewData={DsBFSIScienceCourseData[0].faq} />
         <SeventhSection />
         <Footer />
-        <OfferPopup />
+
         <BottomBar />
       </main>
     </>

@@ -12,7 +12,10 @@ function terms() {
       <Head>
         <title>Learnbay - Terms and Conditions</title>
         <meta name="robots" content="index, follow" />
-        <meta name="description" content="Learnbay's terms and conditions are clear and concise for your peace of mind. Explore more information for a smooth learning experience. Come join us today!" />
+        <meta
+          name="description"
+          content="Learnbay's terms and conditions are clear and concise for your peace of mind. Explore more information for a smooth learning experience. Come join us today!"
+        />
         <link
           rel="icon"
           href="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/Learnbay-Favicon-L.png"
@@ -23,10 +26,8 @@ function terms() {
         <Navbar popup={true} dataScienceCounselling={true} radio={true} />
         <Terms />
 
-        <OfferPopup offer={false} />
         <Footer />
-        <BottomBar radio={true}/>
-        <OfferPopup />
+        <BottomBar radio={true} />
       </main>
     </div>
   );
