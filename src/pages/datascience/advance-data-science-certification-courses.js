@@ -209,7 +209,7 @@ function Blockchain() {
         <FeeSection
           Fee="₹ 99,000 + 18% GST"
           FeeEmi="₹ 9,735/month"
-          FeeHeading="Program Fee & Financing"
+          FeeHeading="Program Fee and Financing"
           FeeContent1="0% interest rate"
           FeeContent2="No cost EMI"
           FeeContent3="Flexible payment"
