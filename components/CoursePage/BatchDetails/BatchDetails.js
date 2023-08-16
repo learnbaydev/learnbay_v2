@@ -13,28 +13,6 @@ function BatchDetails({ batchDetails }) {
         <p className={styles.infop}>Batch Details</p>
         <div className={styles.mobileView}>
           <div className={styles.NewBatch}>
-            {batchDetails.map((data, index) => {
-              // console.log(data, "inside map");
-              const { daysInfo, dateInfo, timeInfo } = data;
-              return (
-                <div className={styles.NewOrange} key={index}>
-                  <div>
-                    <p className={styles.listDay}>{daysInfo}</p>
-                  </div>
-                  <div className={styles.listMobile}>
-                    <p className={styles.list}>
-                      <MdDateRange className={styles.iconOrange} />
-                      {dateInfo}
-                    </p>
-                    <p className={styles.list}>
-                      <BiTimeFive className={styles.iconBlue} />
-                      {timeInfo}
-                    </p>
-                  </div>
-                </div>
-              );
-            })}
-
             {batchDetails === "" ? (
               <p>Batch Date will be updated soon!</p>
             ) : (
