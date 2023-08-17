@@ -230,8 +230,11 @@ function Blockchain() {
           brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Data+Science+and+AI+Projects.pdf"
           project="15+"
         />
-
-        <BatchDetails batchDetails={batchDateData.batchDetails} />
+        {batchDateData === "" ? (
+          ""
+        ) : (
+          <BatchDetails batchDetails={batchDateData.batchDetails} />
+        )}
 
         <FAQNew FAQNewData={DataScienceCourseData[0].faq} />
         <SeventhSection />

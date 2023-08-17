@@ -20,6 +20,7 @@ const CitiesRight = ({
   ProgramBot16,
   ProgramBot17,
   ProgramBot18,
+  ProgramBot32,
   ProgramHead3,
   ProgramHead4,
   ProgramHead5,
