@@ -98,14 +98,14 @@ const CartPage = ({ isConnected }) => {
 
     // Make API call to the serverless API
 
-    const data = await fetch("/api/razorpay", {
+    const data = await fetch("/api/payment/razorpay", {
       method: "POST",
       body: JSON.stringify({ prop: cart, discount: discount }),
       headers: {
         "Content-Type": "application/json",
       },
     }).then((t) => t.json());
-
+    console.log(data.amount, "amount for razor pay");
     var options = {
       key: process.env.RAZORPAY_KEY, // Enter the Key ID generated from the Dashboard
       name: "Skillslash Pvt Ltd",
@@ -135,18 +135,18 @@ const CartPage = ({ isConnected }) => {
         };
 
         // Validate payment at server - using webhooks is a better idea.
-        const result = await axios.post("/api/success", paymentData);
+        const result = await axios.post("/api/payment/success", paymentData);
 
         //Show user that payment is successful
 
-        console.log(result, "verifyData");
-        console.log(
-          response.razorpay_payment_id + "id",
-          "/n",
-          response.razorpay_order_id + "orderid",
-          "/n",
-          response.razorpay_signature + "signature"
-        );
+        // console.log(result, "verifyData");
+        // console.log(
+        //   response.razorpay_payment_id + "id",
+        //   "/n",
+        //   response.razorpay_order_id + "orderid",
+        //   "/n",
+        //   response.razorpay_signature + "signature"
+        // );
         let id = Math.floor(1000 + Math.random() * 9000);
         const invoiceData = {
           customerName: details.name,
@@ -163,17 +163,23 @@ const CartPage = ({ isConnected }) => {
         };
 
         try {
-          const data = await axios.post(`/api/generateInvoice`, invoiceData);
+          const data = await axios.post(
+            `/api/payment/generateInvoice`,
+            invoiceData
+          );
           // convert the response into an array Buffer
           if (data.status === 200) {
             const pdfName = data.json();
-            console.log(pdfName);
+            // console.log(pdfName);
             setPdfNames(pdfName);
           }
         } catch (error) {}
 
         //sending data to db//
-        const dbSend = await axios.post("/api/databaseAuth", paymentData);
+        const dbSend = await axios.post(
+          "/api/payment/databaseAuth",
+          paymentData
+        );
         const formData = new FormData();
         Object.entries(paymentData).forEach(([key, value]) => {
           formData.append(key, value);

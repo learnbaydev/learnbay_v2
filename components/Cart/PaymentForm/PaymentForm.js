@@ -27,7 +27,7 @@ const PaymentForm = ({ popup, setDetails }) => {
     }));
   };
 
-  let endPoint = "https://getform.io/f/fb4af2dc-0f8f-4518-8963-28058e9fa205";
+  let endPoint = "https://getform.io/f/94c74039-f505-4ebf-922e-b4728bd793e3";
 
   // Form Submit function
   const formSubmit = async (e) => {
