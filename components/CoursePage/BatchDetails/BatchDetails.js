@@ -7,6 +7,7 @@ function BatchDetails({ batchDetails }) {
   console.log(batchDetails, "inside compo");
   return batchDetails === "" ? (
     <p>No batch Date Available</p>
+    // hello
   ) : (
     <>
       <section className={styles.Syllabus}>
