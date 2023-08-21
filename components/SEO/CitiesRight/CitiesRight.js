@@ -568,6 +568,7 @@ const CitiesRight = ({
               <li>
                 If you are a manager or a leader with over 8+ years of
                 experience, this course is best suited for you.{" "}
+                {/* hello */}
               </li>
               <li>
                 Managers in every organization must have a strong understanding
