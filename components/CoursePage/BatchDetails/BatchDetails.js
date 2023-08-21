@@ -10,7 +10,7 @@ function BatchDetails({ batchDetails }) {
   ) : (
     <>
       <section className={styles.Syllabus}>
-        <p className={styles.infop}>Batch Details</p>
+        <p className={styles.infop}>Batch Details </p>
         <div className={styles.mobileView}>
           <div className={styles.NewBatch}>
             {batchDetails === "" ? (
