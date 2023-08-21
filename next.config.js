@@ -1,7 +1,3 @@
-/** @type {import('next').NextConfig} */
-// const nextConfig = {
-//   reactStrictMode: true,
-// }
 const nextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
@@ -22,318 +18,360 @@ const nextConfig = {
       {
         // this will match `/english(default)/something` being requested
         source: "/data-science-course/data-science-training-in-bangalore",
-        destination: "/data-science-course-training-in-bangalore",
+        destination:
+          "/datascience/bangalore/data-science-course-training-in-bangalore",
         permanent: true,
       },
       {
         // this will match `/english(default)/something` being requested
         source:
           "/data-science-course/data-science-online-training-in-bangalore",
-        destination: "/data-science-course-training-in-bangalore",
+        destination:
+          "/datascience/bangalore/data-science-course-training-in-bangalore",
         permanent: true,
       },
       {
         // this will match `/english(default)/something` being requested
         source: "/data-science-course/data-science-course-online-in-bangalore",
-        destination: "/data-science-course-training-in-bangalore",
+        destination:
+          "/datascience/bangalore/data-science-course-training-in-bangalore",
         permanent: true,
       },
       {
         // this will match `/english(default)/something` being requested
         source: "/data-science-course/data-science-course-in-bangalore",
-        destination: "/data-science-course-training-in-bangalore",
+        destination:
+          "/datascience/bangalore/data-science-course-training-in-bangalore",
         permanent: true,
       },
       {
         // this will match `/english(default)/something` being requested
         source: "/data-science-course/machine-learning-course-in-bangalore",
-        destination: "/machine-learning-course-training-in-bangalore",
+        destination:
+          "/datascience/bangalore/machine-learning-course-training-in-bangalore",
         permanent: true,
       },
       {
         // this will match `/english(default)/something` being requested
         source:
           "/data-science-course/machine-learning-course-online-in-bangalore",
-        destination: "/machine-learning-course-training-in-bangalore",
+        destination:
+          "/datascience/bangalore/machine-learning-course-training-in-bangalore",
         permanent: true,
       },
       {
         // this will match `/english(default)/something` being requested
         source:
           "/data-science-course/machine-learning-online-training-in-bangalore",
-        destination: "/machine-learning-course-training-in-bangalore",
+        destination:
+          "/datascience/bangalore/machine-learning-course-training-in-bangalore",
         permanent: true,
       },
       {
         // this will match `/english(default)/something` being requested
         source:
           "/data-science-course/machine-learning-course-training-in-bangalore",
-        destination: "/machine-learning-course-training-in-bangalore",
+        destination:
+          "/datascience/bangalore/machine-learning-course-training-in-bangalore",
         permanent: true,
       },
       {
         // this will match `/english(default)/something` being requested
         source: "/data-science-course/data-analytics-course-in-bangalore",
-        destination: "/data-analytics-course-training-in-bangalore",
+        destination:
+          "/datascience/bangalore/data-analytics-course-training-in-bangalore",
         permanent: true,
       },
       {
         // this will match `/english(default)/something` being requested
         source: "/data-science-course/data-analytics-training-in-bangalore",
-        destination: "/data-analytics-course-training-in-bangalore",
+        destination:
+          "/datascience/bangalore/data-analytics-course-training-in-bangalore",
         permanent: true,
       },
       {
         // this will match `/english(default)/something` being requested
         source:
           "/data-science-course/data-analytics-course-online-in-bangalore",
-        destination: "/data-analytics-course-training-in-bangalore",
+        destination:
+          "/datascience/bangalore/data-analytics-course-training-in-bangalore",
         permanent: true,
       },
       {
         // this will match `/english(default)/something` being requested
         source: "/data-science-course/business-analytics-course-in-bangalore",
-        destination: "/business-analytics-course-training-in-bangalore",
+        destination:
+          "/datascience/bangalore/business-analytics-course-training-in-bangalore",
         permanent: true,
       },
       {
         // this will match `/english(default)/something` being requested
         source: "/data-science-course/business-analytics-training-in-bangalore",
-        destination: "/business-analytics-course-training-in-bangalore",
+        destination:
+          "/datascience/bangalore/business-analytics-course-training-in-bangalore",
         permanent: true,
       },
       {
         // this will match `/english(default)/something` being requested
         source:
           "/data-science-course/artificial-intelligence-course-in-bangalore",
-        destination: "/artificial-intelligence-ai-course-training-bangalore",
+        destination:
+          "/datascience/bangalore/artificial-intelligence-ai-course-training-bangalore",
         permanent: true,
       },
       {
         // this will match `/english(default)/something` being requested
         source:
           "/data-science-course/artificial-intelligence-course-online-in-bangalore",
-        destination: "/artificial-intelligence-ai-course-training-bangalore",
+        destination:
+          "/datascience/bangalore/artificial-intelligence-ai-course-training-bangalore",
         permanent: true,
       },
       {
         // this will match `/english(default)/something` being requested
         source:
           "/data-science-course/artificial-intelligence-online-training-in-bangalore",
-        destination: "/artificial-intelligence-ai-course-training-bangalore",
+        destination:
+          "/datascience/bangalore/artificial-intelligence-ai-course-training-bangalore",
         permanent: true,
       },
       {
         // this will match `/english(default)/something` being requested
         source:
           "/data-science-course/artificial-intelligence-training-in-bangalore",
-        destination: "/artificial-intelligence-ai-course-training-bangalore",
+        destination:
+          "/datascience/bangalore/artificial-intelligence-ai-course-training-bangalore",
         permanent: true,
       },
       {
         // this will match `/english(default)/something` being requested
         source: "/data-science-course/data-science-course-in-pune",
-        destination: "/data-science-course-training-in-pune/",
+        destination: "/datascience/pune/data-science-course-training-in-pune",
         permanent: true,
       },
       {
         // this will match `/english(default)/something` being requested
         source: "/data-science-course/machine-learning-course-in-pune",
-        destination: "/machine-learning-course-training-in-pune",
+        destination:
+          "/datascience/pune/machine-learning-course-training-in-pune",
         permanent: true,
       },
       {
         // this will match `/english(default)/something` being requested
         source: "/data-science-course/data-analytics-course-in-pune",
-        destination: "/data-analytics-course-training-in-pune",
+        destination: "/datascience/pune/data-analytics-course-training-in-pune",
         permanent: true,
       },
       {
         // this will match `/english(default)/something` being requested
         source: "/data-science-course/business-analytics-course-in-pune",
-        destination: "/business-analytics-course-training-in-pune",
+        destination:
+          "/datascience/pune/business-analytics-course-training-in-pune",
         permanent: true,
       },
       {
         // this will match `/english(default)/something` being requested
         source: "/data-science-course/data-science-course-in-delhi",
-        destination: "/data-science-course-training-in-delhi/",
+        destination: "/datascience/delhi/data-science-course-training-in-delhi",
         permanent: true,
       },
       {
         // this will match `/english(default)/something` being requested
         source: "/data-science-course/machine-learning-course-in-delhi",
-        destination: "/machine-learning-course-training-in-delhi",
+        destination:
+          "/datascience/delhi/machine-learning-course-training-in-delhi",
         permanent: true,
       },
       {
         // this will match `/english(default)/something` being requested
         source: "/data-science-course/data-analytics-course-in-delhi",
-        destination: "/data-analytics-course-training-in-delhi",
+        destination:
+          "/datascience/delhi/data-analytics-course-training-in-delhi",
         permanent: true,
       },
       {
         // this will match `/english(default)/something` being requested
         source: "/data-science-course/business-analytics-course-in-delhi",
-        destination: "/business-analytics-course-training-in-delhi",
+        destination:
+          "/datascience/delhi/business-analytics-course-training-in-delhi",
         permanent: true,
       },
       {
         // this will match `/english(default)/something` being requested
         source: "/data-science-course/artificial-intelligence-course-in-delhi",
-        destination: "/artificial-intelligence-ai-course-training-delhi",
+        destination:
+          "/datascience/delhi/artificial-intelligence-ai-course-training-delhi",
         permanent: true,
       },
       {
         // this will match `/english(default)/something` being requested
         source:
           "/data-science-course/artificial-intelligence-course-in-chennai",
-        destination: "/artificial-intelligence-ai-course-training-chennai",
+        destination:
+          "/datascience/chennai/artificial-intelligence-ai-course-training-chennai",
         permanent: true,
       },
       {
         // this will match `/english(default)/something` being requested
         source: "/data-science-course/data-science-certification-in-mumbai",
-        destination: "/data-science-course-training-in-mumbai",
+        destination:
+          "/datascience/mumbai/data-science-course-training-in-mumbai",
         permanent: true,
       },
       {
         // this will match `/english(default)/something` being requested
         source: "/data-science-course/artificial-intelligence-course-in-mumbai",
-        destination: "/artificial-intelligence-ai-course-training-mumbai",
+        destination:
+          "/datascience/mumbai/artificial-intelligence-ai-course-training-mumbai",
         permanent: true,
       },
       {
         // this will match `/english(default)/something` being requested
         source: "/data-science-course/data-analytics-course-in-mumbai",
-        destination: "/data-analytics-course-training-in-mumbai",
+        destination:
+          "/datascience/mumbai/data-analytics-course-training-in-mumbai",
         permanent: true,
       },
       {
         // this will match `/english(default)/something` being requested
         source: "/data-science-course/data-science-courses-in-hyderabad",
-        destination: "/data-science-course-training-in-hyderabad",
+        destination:
+          "/datascience/hyderabad/data-science-course-training-in-hyderabad",
         permanent: true,
       },
       {
         // this will match `/english(default)/something` being requested
         source: "/data-science-course/data-science-training-in-hyderabad",
-        destination: "/data-science-course-training-in-hyderabad",
+        destination:
+          "/datascience/hyderabad/data-science-course-training-in-hyderabad",
         permanent: true,
       },
       {
         // this will match `/english(default)/something` being requested
         source: "/data-science-course/machine-learning-course-in-hyderabad",
-        destination: "/machine-learning-course-training-in-hyderabad",
+        destination:
+          "/datascience/hyderabad/machine-learning-course-training-in-hyderabad",
         permanent: true,
       },
       {
         // this will match `/english(default)/something` being requested
         source: "/data-science-course/data-analytics-course-in-hyderabad",
-        destination: "/data-analytics-course-training-in-hyderabad",
+        destination:
+          "/datascience/hyderabad/data-analytics-course-training-in-hyderabad",
         permanent: true,
       },
       {
         // this will match `/english(default)/something` being requested
         source: "/data-science-course/data-analytics-course-in-hyderabad-2",
-        destination: "/data-analytics-course-training-in-hyderabad",
+        destination:
+          "/datascience/hyderabad/data-analytics-course-training-in-hyderabad",
         permanent: true,
       },
       {
         // this will match `/english(default)/something` being requested
         source:
           "/data-science-course/business-analytics-online-course-in-hyderabad",
-        destination: "/business-analytics-course-training-in-hyderabad",
+        destination:
+          "/datascience/hyderabad/business-analytics-course-training-in-hyderabad",
         permanent: true,
       },
       {
         // this will match `/english(default)/something` being requested
         source:
           "/data-science-course/artificial-intelligence-course-in-hyderabad",
-        destination: "/artificial-intelligence-ai-course-training-hyderabad",
+        destination:
+          "/datascience/hyderabad/artificial-intelligence-ai-course-training-hyderabad",
         permanent: true,
       },
       {
         // this will match `/english(default)/something` being requested
         source: "/data-science-course/data-science-course-in-canada",
-        destination: "/data-science-course-training-in-canada",
+        destination:
+          "/datascience/canada/data-science-course-training-in-canada",
         permanent: true,
       },
       {
         // this will match `/english(default)/something` being requested
         source: "/data-science-course/data-analytics-course-in-canada",
-        destination: "/data-analytics-course-training-in-canada",
+        destination:
+          "/datascience/canada/data-analytics-course-training-in-canada",
         permanent: true,
       },
       {
         source: "/data-science-course",
-        destination: "/data-science-course-training-in-bangalore",
+        destination:
+          "/datascience/bangalore/data-science-course-training-in-bangalore",
         permanent: true,
       },
       {
         source: "/data-science-course/machine-learning-course-in-dubai",
-        destination: "/machine-learning-course-training-in-dubai",
+        destination:
+          "/datascience/dubai/machine-learning-course-training-in-dubai",
         permanent: true,
       },
       {
         source: "/data-science-course/data-analytics-course-in-dubai-uae",
-        destination: "/data-analytics-course-training-in-dubai",
+        destination:
+          "/datascience/dubai/data-analytics-course-training-in-dubai",
         permanent: true,
       },
 
       {
         source: "/data-science-course/business-analytics-course-in-dubai",
-        destination: "/business-analytics-course-training-in-dubai",
+        destination:
+          "/datascience/dubai/business-analytics-course-training-in-dubai",
         permanent: true,
       },
       {
         source: "/data-science-course/artificial-intelligence-course-in-dubai",
-        destination: "/artificial-intelligence-ai-course-training-dubai",
+        destination:
+          "/datascience/dubai/artificial-intelligence-ai-course-training-dubai",
         permanent: true,
       },
       {
         source: "/data-science-course/data-science-courses-in-chennai",
-        destination: "/data-science-course-training-in-chennai",
+        destination:
+          "/datascience/chennai/data-science-course-training-in-chennai",
         permanent: true,
       },
       {
         source: "/data-science-course/data-science-certification-courses",
-        destination: "/data-science-certification-courses",
+        destination: "/datascience/data-science-certification-courses",
         permanent: true,
       },
       {
         source:
           "/data-science-course/advance-data-science-certification-courses",
-        destination: "/advance-data-science-certification-courses",
+        destination: "/datascience/advance-data-science-certification-courses",
         permanent: true,
       },
       {
         source:
           "/data-science-course/artificial-intelligence-certification-course",
-        destination: "/artificial-intelligence-certification-course",
+        destination:
+          "/datascience/artificial-intelligence-certification-course",
         permanent: true,
       },
       {
         source: "/data-science-course/data-science-ai-for-managers",
-        destination: "/data-science-ai-for-managers",
+        destination: "/datascience/data-science-ai-for-managers",
         permanent: true,
       },
       {
         source:
           "/data-science-course/job-guarantee-or-money-back-data-science-ai-certification-course",
-        destination:
-          "/job-guarantee-or-money-back-data-science-ai-certification-course",
+        destination: "/datascience/data-science-ai-masters-program",
         permanent: true,
       },
       {
         source: "/data-science-course/data-science-certification-courses",
-        destination: "/data-science-certification-courses",
+        destination: "/datascience/data-science-certification-courses",
         permanent: true,
       },
       {
         source:
           "/data-science-course/data-analytics-business-analytics-programs-for-professionals",
-        destination: "/data-analytics-certification-course",
+        destination: "/datascience/data-analytics-certification-course",
         permanent: true,
       },
       {
@@ -650,18 +688,20 @@ const nextConfig = {
       },
       {
         source: "/data-science-course/data-science-certification-courses",
-        destination: "/data-science-certification-courses",
+        destination: "/datascience/data-science-certification-courses",
         permanent: true,
       },
       {
         source: "/data-science-course/business-analytics-course-in-bangalore",
-        destination: "/business-analytics-course-training-in-bangalore",
+        destination:
+          "/datascience/bangalore/business-analytics-course-training-in-bangalore",
         permanent: true,
       },
       {
         source:
           "/data-science-course/data-analytics-online-training-in-bangalore",
-        destination: "/data-analytics-course-training-in-bangalore",
+        destination:
+          "/datascience/bangalore/data-analytics-course-training-in-bangalore",
         permanent: true,
       },
       {
@@ -696,36 +736,36 @@ const nextConfig = {
       },
       {
         source: "/data-science-course/data-science-course-in-dubai-uae",
-        destination: "/data-science-course-training-in-dubai",
+        destination: "/datascience/dubai/data-science-course-training-in-dubai",
         permanent: true,
       },
       {
         source:
           "/data-science-course/product/data-science-and-ai-certification-freshers",
-        destination: "/advance-data-science-certification-courses",
+        destination: "/datascience/advance-data-science-certification-courses",
         permanent: true,
       },
       {
         source:
           "/data-science-course/data-science-and-ai-for-fresh-graduates-learnbay",
-        destination: "/full-stack-software-development-program",
+        destination: "/fullstack/full-stack-software-development-program",
         permanent: true,
       },
       {
         source: "/data-science-course/data-science-course-online",
-        destination: "/data-science-ai-for-managers",
+        destination: "/datascience/data-science-ai-for-managers",
         permanent: true,
       },
       {
         source: "/data-science-course/tag/learnbay",
-        destination: "/artificial-intelligence-certification-course",
+        destination:
+          "/datascience/artificial-intelligence-certification-course",
         permanent: true,
       },
       {
         source:
           "/data-science-course/data-science-and-ai-for-fresh-graduates-learnbay",
-        destination:
-          "/job-guarantee-or-money-back-data-science-ai-certification-course",
+        destination: "/datascience/data-science-ai-masters-program",
         permanent: true,
       },
       {
@@ -786,239 +826,421 @@ const nextConfig = {
 
       {
         source: "/data-analytics-certification-course-generic",
-        destination: "/data-analytics-certification-course",
+        destination: "/datascience/data-analytics-certification-course",
         permanent: true,
       },
 
       {
         source: "/data-science-ai-for-managers-generic",
-        destination: "/data-science-ai-for-managers",
+        destination: "/datascience/data-science-ai-for-managers",
         permanent: true,
       },
 
       {
         source: "/data-science-ai-masters-program-generic",
-        destination: "/data-science-ai-masters-program",
+        destination: "/datascience/data-science-ai-masters-program",
         permanent: true,
       },
 
       {
         source: "/data-science-certification-courses-generic",
-        destination: "/data-science-certification-courses",
+        destination: "/datascience/data-science-certification-courses",
         permanent: true,
       },
 
       {
         source: "/advance-data-science-certification-courses-generic",
-        destination: "/advance-data-science-certification-courses",
+        destination: "/datascience/advance-data-science-certification-courses",
         permanent: true,
       },
-      // blog page redirection
       {
-        source:
-          "/top-5-Job-ready-data-science-course-for-managers-and-leaders-in-2022",
+        source: "/advance-data-science-certification-courses",
+        destination: "/datascience/advance-data-science-certification-courses",
+        permanent: true,
+      },
+      {
+        source: "/artificial-intelligence-certification-course",
         destination:
-          "/top-5-Job-ready-data-science-course-for-managers-and-leaders-in-2023",
+          "/datascience/artificial-intelligence-certification-course",
         permanent: true,
       },
-
       {
-        source: "/know-the-top-10-data-science-trends-2022",
-        destination: "/know-the-top-10-data-science-trends-2023",
+        source: "/best-data-science-courses-in-india",
+        destination: "/datascience/best-data-science-courses-in-india",
         permanent: true,
       },
-
+      {
+        source: "/business-analytics-certification-course",
+        destination: "/datascience/business-analytics-certification-course",
+        permanent: true,
+      },
+      {
+        source: "/data-analytics-certification-course",
+        destination: "/datascience/data-analytics-certification-course",
+        permanent: true,
+      },
+      {
+        source: "/data-science-ai-for-managers",
+        destination: "/datascience/data-science-ai-for-managers",
+        permanent: true,
+      },
+      {
+        source: "/data-science-ai-masters-program",
+        destination: "/datascience/data-science-ai-masters-program",
+        permanent: true,
+      },
+      {
+        source: "/data-science-certification-courses",
+        destination: "/datascience/data-science-certification-courses",
+        permanent: true,
+      },
+      {
+        source: "/data-science-certification-courses",
+        destination: "/datascience/data-science-certification-courses",
+        permanent: true,
+      },
+      {
+        source: "/data-science-course",
+        destination: "/datascience/data-science-course",
+        permanent: true,
+      },
+      {
+        source: "/data-science-for-bfsi-professional",
+        destination: "/datascience/data-science-for-bfsi-professional",
+        permanent: true,
+      },
+      {
+        source: "/hr-analytics",
+        destination: "/datascience/hr-analytics",
+        permanent: true,
+      },
+      {
+        source: "/marketing-analytics",
+        destination: "/datascience/marketing-analytics",
+        permanent: true,
+      },
+      {
+        source: "/dsa-system-design",
+        destination: "/fullstack/dsa-system-design",
+        permanent: true,
+      },
+      {
+        source: "/full-stack-software-development-program",
+        destination: "/fullstack/full-stack-software-development-program",
+        permanent: true,
+      },
+      {
+        source: "/software-development-program-for-freshers",
+        destination: "/fullstack/software-development-program-for-freshers",
+        permanent: true,
+      },
       {
         source:
-          "/top-data-science-certifications-in-2022-exclusive-to-banking-professionals",
+          "/software-development-program-with-specialization-in-blockchain",
         destination:
-          "/top-data-science-certifications-in-2023-exclusive-to-banking-professionals",
+          "/fullstack/software-development-program-with-specialization-in-blockchain",
         permanent: true,
       },
-
-      {
-        source: "/necessity-of-machine-learning-in-retail",
-        destination: "/the-necessity-of-machine-learning-in-retail",
-        permanent: true,
-      },
-
       {
         source:
-          "/oops-why-2022-is-too-late-for-video-based-data-science-learning",
+          "/software-development-program-with-specialization-in-cloud-computing-&-devops",
         destination:
-          "/oops-why-2023-is-too-late-for-video-based-data-science-learning",
+          "/fullstack/software-development-program-with-specialization-in-cloud-computing-&-devops",
         permanent: true,
       },
-
       {
-        source:
-          "/a-few-fascinating-facts-of-artificial-intelligence-in-2022-and-beyond",
+        source: "/full-stack-web-development-program",
+        destination: "/fullstack/full-stack-web-development-program",
+        permanent: true,
+      },
+      {
+        source: "/artificial-intelligence-ai-course-training-bangalore",
         destination:
-          "/a-few-fascinating-facts-about-artificial-intelligence-in-2023-and-beyond",
+          "/datascience/bangalore/artificial-intelligence-ai-course-training-bangalore",
         permanent: true,
       },
-
       {
-        source:
-          "/a-few-fascinating-facts-about-artificial-intelligence-in-2022-and-beyond",
+        source: "/artificial-intelligence-ai-course-training-canada",
         destination:
-          "/a-few-fascinating-facts-about-artificial-intelligence-in-2023-and-beyond",
-        permanent: true,
-      },
-
-      {
-        source:
-          "/why-has-generative-ai-for-deepfake-and-synthetic-data-been-so-popular-till-now",
-        destination: "/what-is-generative-ai-all-you-need-to-know",
-        permanent: true,
-      },
-
-      {
-        source: "/category/uncategorized",
-        destination: "/blogs",
-        permanent: true,
-      },
-
-      {
-        source: "/[id]",
-        destination: "/category/hot-topic",
-        permanent: true,
-      },
-
-      {
-        source: "/category/ai",
-        destination: "/category/artificial-intelligence",
-        permanent: true,
-      },
-
-      {
-        source: "/category/hot-topic",
-        destination: "/category/hot-topics",
-        permanent: true,
-      },
-
-      {
-        source: "/xgboost-classifier",
-        destination: "/everything-about-the-xgboost-classifier",
-        permanent: true,
-      },
-
-      {
-        source: "/types-of-machine-learning-odels-quickly-explained",
-        destination: "/types-of-machine-learning-models-quickly-explained",
-        permanent: true,
-      },
-
-      {
-        source:
-          "/you-could-be-a-pro-in-data-science-by-self-assisting-data-scientist",
-        destination: "/you-could-be-a-pro-in-data-science-by-self-assisting",
-        permanent: true,
-      },
-
-      {
-        source: "/why-you-need-data-science",
-        destination: "/data-science-is-important-why-we-need-it",
-        permanent: true,
-      },
-
-      {
-        source: "/data-preprocessing",
-        destination: "/everything-about-data-preprocessing",
-        permanent: true,
-      },
-
-      {
-        source: "/decision-tree",
-        destination: "/everything-about-decision-tree-from-scratch",
-        permanent: true,
-      },
-
-      {
-        source: "/top-50-interview-question-on-statistics",
-        destination: "/top-25-interview-question-on-statistics",
+          "/datascience/canada/artificial-intelligence-ai-course-training-canada",
         permanent: true,
       },
       {
-        source:
-          "/successful-data-scientist-without-a-tech-degree-yes-i-is-possible",
+        source: "/artificial-intelligence-ai-course-training-chennai",
         destination:
-          "/successful-data-scientist-without-a-tech-degree-yes-it-is-possible",
+          "/datascience/chennai/artificial-intelligence-ai-course-training-chennai",
         permanent: true,
       },
       {
-        source:
-          "/media-hospitality-and-transportation-know-how-data-science-will-help-you-to-survive",
-        destination: "/data-science-in-media-hospitality-and-transportation",
-        permanent: true,
-      },
-
-      {
-        source: "/reliable-resources-for-data-science",
-        destination: "/reliable-sources-to-understand-about-data-science",
-        permanent: true,
-      },
-
-      {
-        source: "/how-to-get-the-best-data-science-internship-in-2023",
-        destination: "/data-science-at-intern-level",
-        permanent: true,
-      },
-
-      {
-        source: "/why-data-science-actually-matters-in-2023",
-        destination: "/data-science-is-important-why-we-need-it",
-        permanent: true,
-      },
-
-      {
-        source:
-          "/fundamentals-of-bagging-and-boosting-in-machine-learning-ensemble-meth",
+        source: "/artificial-intelligence-ai-course-training-delhi",
         destination:
-          "/fundamentals-of-bagging-and-boosting-in-machine-learning-ensemble-method",
+          "/datascience/delhi/artificial-intelligence-ai-course-training-delhi",
         permanent: true,
       },
-
+      {
+        source: "/artificial-intelligence-ai-course-training-dubai",
+        destination:
+          "/datascience/dubai/artificial-intelligence-ai-course-training-dubai",
+        permanent: true,
+      },
+      {
+        source: "/artificial-intelligence-ai-course-training-hyderabad",
+        destination:
+          "/datascience/hyderabad/artificial-intelligence-ai-course-training-hyderabad",
+        permanent: true,
+      },
+      {
+        source: "/artificial-intelligence-ai-course-training-mumbai",
+        destination:
+          "/datascience/mumbai/artificial-intelligence-ai-course-training-mumbai",
+        permanent: true,
+      },
+      {
+        source: "/artificial-intelligence-ai-course-training-pune",
+        destination:
+          "/datascience/pune/artificial-intelligence-ai-course-training-pune",
+        permanent: true,
+      },
+      {
+        source: "/business-analytics-course-training-in-bangalore",
+        destination:
+          "/datascience/bangalore/business-analytics-course-training-in-bangalore",
+        permanent: true,
+      },
+      {
+        source: "/business-analytics-course-training-in-canada",
+        destination:
+          "/datascience/canada/business-analytics-course-training-in-canada",
+        permanent: true,
+      },
+      {
+        source: "/business-analytics-course-training-in-chennai",
+        destination:
+          "/datascience/chennai/business-analytics-course-training-in-chennai",
+        permanent: true,
+      },
+      {
+        source: "/business-analytics-course-training-in-delhi",
+        destination:
+          "/datascience/delhi/business-analytics-course-training-in-delhi",
+        permanent: true,
+      },
+      {
+        source: "/business-analytics-course-training-in-dubai",
+        destination:
+          "/datascience/dubai/business-analytics-course-training-in-dubai",
+        permanent: true,
+      },
+      {
+        source: "/business-analytics-course-training-in-hyderabad",
+        destination:
+          "/datascience/hyderabad/business-analytics-course-training-in-hyderabad",
+        permanent: true,
+      },
+      {
+        source: "/business-analytics-course-training-in-mumbai",
+        destination:
+          "/datascience/mumbai/business-analytics-course-training-in-mumbai",
+        permanent: true,
+      },
+      {
+        source: "/business-analytics-course-training-in-pune",
+        destination:
+          "/datascience/pune/business-analytics-course-training-in-pune",
+        permanent: true,
+      },
+      {
+        source: "/data-analytics-course-training-in-bangalore",
+        destination:
+          "/datascience/bangalore/data-analytics-course-training-in-bangalore",
+        permanent: true,
+      },
+      {
+        source: "/data-analytics-course-training-in-canada",
+        destination:
+          "/datascience/canada/data-analytics-course-training-in-canada",
+        permanent: true,
+      },
+      {
+        source: "/data-analytics-course-training-in-chennai",
+        destination:
+          "/datascience/chennai/data-analytics-course-training-in-chennai",
+        permanent: true,
+      },
+      {
+        source: "/data-analytics-course-training-in-delhi",
+        destination:
+          "/datascience/delhi/data-analytics-course-training-in-delhi",
+        permanent: true,
+      },
+      {
+        source: "/data-analytics-course-training-in-dubai",
+        destination:
+          "/datascience/dubai/data-analytics-course-training-in-dubai",
+        permanent: true,
+      },
+      {
+        source: "/data-analytics-course-training-in-hyderabad",
+        destination:
+          "/datascience/hyderabad/data-analytics-course-training-in-hyderabad",
+        permanent: true,
+      },
+      {
+        source: "/data-analytics-course-training-in-mumbai",
+        destination:
+          "/datascience/mumbai/data-analytics-course-training-in-mumbai",
+        permanent: true,
+      },
+      {
+        source: "/data-analytics-course-training-in-pune",
+        destination: "/datascience/pune/data-analytics-course-training-in-pune",
+        permanent: true,
+      },
+      {
+        source: "/data-science-course-training-in-bangalore",
+        destination:
+          "/datascience/bangalore/data-science-course-training-in-bangalore",
+        permanent: true,
+      },
+      {
+        source: "/data-science-course-training-in-canada",
+        destination:
+          "/datascience/canada/data-science-course-training-in-canada",
+        permanent: true,
+      },
+      {
+        source: "/data-science-course-training-in-chennai",
+        destination:
+          "/datascience/chennai/data-science-course-training-in-chennai",
+        permanent: true,
+      },
+      {
+        source: "/data-science-course-training-in-delhi",
+        destination: "/datascience/delhi/data-science-course-training-in-delhi",
+        permanent: true,
+      },
+      {
+        source: "/data-science-course-training-in-dubai",
+        destination: "/datascience/dubai/data-science-course-training-in-dubai",
+        permanent: true,
+      },
+      {
+        source: "/data-science-course-training-in-hyderabad",
+        destination:
+          "/datascience/hyderabad/data-science-course-training-in-hyderabad",
+        permanent: true,
+      },
+      {
+        source: "/data-science-course-training-in-mumbai",
+        destination:
+          "/datascience/mumbai/data-science-course-training-in-mumbai",
+        permanent: true,
+      },
+      {
+        source: "/data-science-course-training-in-pune",
+        destination: "/datascience/pune/data-science-course-training-in-pune",
+        permanent: true,
+      },
+      {
+        source: "/machine-learning-course-training-in-bangalore",
+        destination:
+          "/datascience/bangalore/machine-learning-course-training-in-bangalore",
+        permanent: true,
+      },
+      {
+        source: "/machine-learning-course-training-in-canada",
+        destination:
+          "/datascience/canada/machine-learning-course-training-in-canada",
+        permanent: true,
+      },
+      {
+        source: "/machine-learning-course-training-in-chennai",
+        destination:
+          "/datascience/chennai/machine-learning-course-training-in-chennai",
+        permanent: true,
+      },
+      {
+        source: "/machine-learning-course-training-in-delhi",
+        destination:
+          "/datascience/delhi/machine-learning-course-training-in-delhi",
+        permanent: true,
+      },
+      {
+        source: "/machine-learning-course-training-in-dubai",
+        destination:
+          "/datascience/dubai/machine-learning-course-training-in-dubai",
+        permanent: true,
+      },
+      {
+        source: "/machine-learning-course-training-in-hyderabad",
+        destination:
+          "/datascience/hyderabad/machine-learning-course-training-in-hyderabad",
+        permanent: true,
+      },
+      {
+        source: "/machine-learning-course-training-in-mumbai",
+        destination:
+          "/datascience/mumbai/machine-learning-course-training-in-mumbai",
+        permanent: true,
+      },
+      {
+        source: "/machine-learning-course-training-in-pune",
+        destination:
+          "/datascience/pune/machine-learning-course-training-in-pune",
+        permanent: true,
+      },
+      {
+        source: "/full-stack-software-developer-course-in-bangalore",
+        destination:
+          "/fullstack/bangalore/full-stack-software-developer-course-in-bangalore",
+        permanent: true,
+      },
+      {
+        source: "/full-stack-software-developer-course-in-canada",
+        destination:
+          "/fullstack/canada/full-stack-software-developer-course-in-canada",
+        permanent: true,
+      },
+      {
+        source: "/full-stack-software-developer-course-in-chennai",
+        destination:
+          "/fullstack/chennai/full-stack-software-developer-course-in-chennai",
+        permanent: true,
+      },
+      {
+        source: "/full-stack-software-developer-course-in-delhi",
+        destination:
+          "/fullstack/delhi/full-stack-software-developer-course-in-delhi",
+        permanent: true,
+      },
+      {
+        source: "/full-stack-software-developer-course-in-dubai",
+        destination:
+          "/fullstack/dubai/full-stack-software-developer-course-in-dubai",
+        permanent: true,
+      },
+      {
+        source: "/full-stack-software-developer-course-in-hyderabad",
+        destination:
+          "/fullstack/hyderabad/full-stack-software-developer-course-in-hyderabad",
+        permanent: true,
+      },
+      {
+        source: "/full-stack-software-developer-course-in-mumbai",
+        destination:
+          "/fullstack/mumbai/full-stack-software-developer-course-in-mumbai",
+        permanent: true,
+      },
+      {
+        source: "/full-stack-software-developer-course-in-pune",
+        destination:
+          "/fullstack/pune/full-stack-software-developer-course-in-pune",
+        permanent: true,
+      },
       {
         source:
-          "/data-scientist-vs-data-analyst-know-the-ultimate-career-difference",
-        destination: "/data-analyst-vs-data-scientist ",
-        permanent: true,
-      },
-
-      {
-        source: "/blogs",
-        destination: "/",
-        permanent: true,
-      },
-
-      {
-        source: "/category/artificial-intelligence-",
-        destination: "/category/artificial-intelligence",
-        permanent: true,
-      },
-
-      // {
-      //   source: '/Search?q=',
-      //   destination: '/',
-      //   permanent: true,
-      // },
-
-      {
-        source: "/author/learnbay",
-        destination: "/",
-        permanent: true,
-      },
-
-      {
-        source: "/author",
-        destination: "/",
-        permanent: true,
-      },
-
-      {
-        source: "/full-stack-development-for-techies",
-        destination: "/full-stack-development-for-non-techies",
+          "/job-guarantee-or-money-back-data-science-ai-certification-course",
+        destination: "/datascience/data-science-ai-masters-program",
         permanent: true,
       },
     ];
@@ -1030,10 +1252,8 @@ const nextConfig = {
 // });
 // module.exports = withBundleAnalyzer(nextConfig);
 
-// module.exports = {
-//   images: {
-//     domains: ["learnbay-wb.s3.ap-south-1.amazonaws.com"],
-//   },
-// };
-
+// const withBundleAnalyzer = require("@next/bundle-analyzer")({
+//   enabled: process.env.ANALYZE === "true",
+// });
+// module.exports = withBundleAnalyzer(nextConfig);
 module.exports = nextConfig;

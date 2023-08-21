@@ -6,9 +6,11 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "analyze": "cross-env ANALYZE=true next build"
   },
   "dependencies": {
+    "@next/bundle-analyzer": "^13.4.12",
     "@next/bundle-analyzer": "^13.4.12",
     "@reduxjs/toolkit": "^1.9.5",
     "@typeform/embed-react": "^2.24.0",
@@ -19,6 +21,10 @@
     "feed": "^4.2.2",
     "fs": "^0.0.1-security",
     "googleapis": "^126.0.0",
+    "eslint-config-next": "^12.1.6",
+    "feed": "^4.2.2",
+    "fs": "^0.0.1-security",
+    "googleapis": "^125.0.0",
     "gray-matter": "^4.0.3",
     "handlebars": "^4.7.8",
     "hours": "^0.1.0",
@@ -48,6 +54,7 @@
   },
   "devDependencies": {
     "eslint": "^8.44.0",
-    "eslint-config-next": "12.1.6"
+    "eslint-config-next": "12.1.6",
+    "cross-env": "^7.0.3"
   }
 }

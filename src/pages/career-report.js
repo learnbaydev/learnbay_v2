@@ -38,7 +38,7 @@ function careerReport() {
       <FirstSection />
       <SecondSection />
       <ThirdSection />
-      <OfferPopup />
+
       <BottomBar radio={true} />
       <Footer />
     </div>

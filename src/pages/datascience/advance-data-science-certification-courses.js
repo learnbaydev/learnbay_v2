@@ -1,8 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Head from "next/head";
 import Navbar from "../../../components/Navbar/Navbar";
 import Footer from "../../../components/Footer/Footer";
-
 import dynamic from "next/dynamic";
 import { DataScienceCourseData } from "../../../Data/AdvanceDataScienceCourse";
 
@@ -62,9 +61,64 @@ const BatchDetails = dynamic(() =>
 );
 
 import BottomBar from "../../../components/WebPage/BottomBar/BottomBar";
+import OfferPopup from "../../../components/OfferPopup/OfferPopup";
 
 function Blockchain() {
-  const [popups, setPopups] = useState(false);
+  // POPUP GET METHOD
+  const [popupData, setPopupData] = useState([]);
+  // console.log(popupData);
+  useEffect(() => {
+    // console.log("inside UseEFFect");
+    const fetchPopup = async () => {
+      const data = await fetch("/api/Popup/popupGenerate", {
+        method: "GET",
+      });
+      if (data.status === 200) {
+        const { popData } = await data.json();
+        // console.log(popData, "get data");
+        if (popData === []) {
+          setPopupData([]);
+        }
+
+        popData.map((data, i) => {
+          // console.log(data);
+          data.page.map((popupData, i) => {
+            // console.log(popData);
+            if (popupData === "Adv Data Science and AI") {
+              setPopupData(data);
+              // console.log(popupData);
+              return;
+            }
+          });
+        });
+      }
+    };
+    fetchPopup();
+  }, []);
+
+  const [batchDateData, setBatchDateData] = useState("");
+
+  useEffect(() => {
+    const fetchBatch = async () => {
+      const data = await fetch("/api/BatchDetails/getBatchDetails", {
+        method: "POST",
+        body: JSON.stringify("Data Science and AI"),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
+
+      console.log(data.status);
+      if (data.status === 200) {
+        const { batchDate } = await data.json();
+
+        setBatchDateData(batchDate);
+
+        console.log("Batch Date Response:", batchDate);
+      }
+    };
+    fetchBatch();
+  }, []);
 
   return (
     <>
@@ -155,7 +209,7 @@ function Blockchain() {
         <FeeSection
           Fee="₹ 99,000 + 18% GST"
           FeeEmi="₹ 9,735/month"
-          FeeHeading="Program Fee & Financing"
+          FeeHeading="Program Fee and Financing"
           FeeContent1="0% interest rate"
           FeeContent2="No cost EMI"
           FeeContent3="Flexible payment"
@@ -176,14 +230,17 @@ function Blockchain() {
           brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Data+Science+and+AI+Projects.pdf"
           project="15+"
         />
-        <BatchDetails
-          CourseFeeHead="Data Science and AI Foundation Program : Batch Details"
-          BAFamily
-        />
+        {batchDateData === "" ? (
+          ""
+        ) : (
+          <BatchDetails batchDetails={batchDateData.batchDetails} />
+        )}
+
         <FAQNew FAQNewData={DataScienceCourseData[0].faq} />
         <SeventhSection />
         <Footer />
         <BottomBar />
+        {popupData.length == 0 ? "" : <OfferPopup popupData={popupData} />}
       </main>
     </>
   );
