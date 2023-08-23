@@ -30,6 +30,7 @@ const CartPage = ({ isConnected }) => {
   const [payLoading, setPayLoading] = useState(false);
   const [copy, setCopy] = useState({ copy1: false, copy2: false });
   let couponDataCode = "";
+
   const [successHandel, setSuccessHandel] = useState(false);
   const [showPayDetails, setShowPayDetails] = useState({
     paymentId: "",
@@ -50,6 +51,16 @@ const CartPage = ({ isConnected }) => {
   const [pdfNames, setPdfNames] = useState("");
   const [discount, setDiscount] = useState("");
   const [discountMsg, setDiscountMsg] = useState("");
+  const [showCancelCode, setShowCancelCode] = useState(false);
+
+  const cancelInputCode = async () => {
+    setDiscount("");
+    setDiscountMsg("");
+    couponDataCartRef.current.value = "";
+
+    setShowCancelCode(false);
+  };
+
   useEffect(() => {
     setMounted(true);
   });
@@ -249,7 +260,8 @@ const CartPage = ({ isConnected }) => {
 
   async function submitHandler(event) {
     event.preventDefault();
-    console.log("handler");
+    setShowCancelCode(true);
+    // console.log("handler");
     couponDataCode = couponDataCartRef.current.value;
     setDetails({ ...details, couponCode: couponDataCode });
 
@@ -361,6 +373,18 @@ const CartPage = ({ isConnected }) => {
               ref={couponDataCartRef}
               placeholder="Enter Promo code"
             />
+            {showCancelCode ? (
+              <button
+                onClick={() => {
+                  cancelInputCode();
+                }}
+              >
+                X
+              </button>
+            ) : (
+              ""
+            )}
+
             {discountMsg === "" ? "" : <p>{discountMsg}</p>}
           </div>
           <div>
@@ -384,8 +408,7 @@ const CartPage = ({ isConnected }) => {
         </form>
 
         <h2>
-          Grand Total: ₹{" "}
-          {discount === "" ? getTotalPrice() : getDiscountPrice()}
+          Grand Total: ₹{discount === "" ? getTotalPrice() : getDiscountPrice()}
         </h2>
 
         <PaymentForm setDetails={setDetails} />
