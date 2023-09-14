@@ -58,9 +58,49 @@ export default function Home() {
           name="keywords"
           content="Artificial Intelligence course in Bangalore, Artificial Intelligence training in Bangalore, Artificial Intelligence institute in Bangalore, best Artificial Intelligence institute in Bangalore, Artificial Intelligence course in Bangalore, Artificial Intelligence certification in Bangalore, Artificial Intelligence training institute in Bangalore, advanced Artificial Intelligence course in Bangalore, Artificial Intelligence course with Placement Assistance, Artificial Intelligence course"
         />
+
+        <meta
+          property="og:url"
+          content="https://www.learnbay.co/datascience/bangalore/artificial-intelligence-ai-course-training-bangalore"
+        />
+        <meta
+          property="og:title"
+          content="Artificial intelligence course Training In Bangalore with Placement Assistance"
+        />
+        <meta property="og:site_name" content="learnbay.co" />
+        <meta property="og:type" content="article" />
+        <meta
+          property="og:description"
+          content="Artificial intelligence course in Bangalore. We are Advanced Artificial intelligence course Certification Training Institute in Bangalore. Artificial intelligence course will enhance your career."
+        />
+        <meta
+          property="og:image"
+          content="https://www.learnbay.co/_next/image?url=https%3A%2F%2Flearnbay-wb.s3.ap-south-1.amazonaws.com%2Fmain%2FLearnbay-Logo.webp&w=256&q=100"
+        />
+        <meta property="og:image:height" content="100" />
+        <meta property="og:image:width" content="256" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@Learnbay" />
+        <meta
+          name="twitter:title"
+          content="Artificial intelligence course Training In Bangalore with Placement Assistance"
+        />
+        <meta name="twitter:creator" content="@Learnbay" />
+        <meta
+          itemProp="description"
+          content="Artificial intelligence course Bangalore. We are Advanced Artificial intelligence course Certification Training Institute in Bangalore. Artificial intelligence course will enhance your career."
+        />
+        <meta
+          name="twitter:description"
+          content="Artificial intelligence course Bangalore. We are Advanced Artificial intelligence course Certification Training Institute in Bangalore. Artificial intelligence course will enhance your career."
+        />
+        <meta
+          name="twitter:image"
+          content="https://www.learnbay.co/_next/image?url=https%3A%2F%2Flearnbay-wb.s3.ap-south-1.amazonaws.com%2Fmain%2FLearnbay-Logo.webp&w=256&q=100"
+        />
         <link
           rel="canonical"
-          href="https://www.learnbay.co/artificial-intelligence-ai-course-training-bangalore"
+          href="https://www.learnbay.co/datascience/bangalore/artificial-intelligence-ai-course-training-bangalore"
         />
         <meta
           name="copyright"

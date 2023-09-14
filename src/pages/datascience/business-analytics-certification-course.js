@@ -78,11 +78,12 @@ function Blockchain() {
         }
 
         popData.map((data, i) => {
-          console.log(data);
+          // console.log(data);
           data.page.map((popupData, i) => {
-            if (popupData === "Business Analytics Program") {
+            // console.log(popData);
+            if (popupData === "Business Analytics Family") {
               setPopupData(data);
-
+              // console.log(popupData);
               return;
             }
           });
@@ -92,23 +93,30 @@ function Blockchain() {
     fetchPopup();
   }, []);
 
+  const [batchDateData, setBatchDateData] = useState("");
+
   useEffect(() => {
     const fetchBatch = async () => {
-      const data = await fetch("/api/BatchDetails/getBatchDate", {
+      const data = await fetch("/api/BatchDetails/getBatchDetails", {
         method: "POST",
         body: JSON.stringify("Business Analytics Family"),
         headers: {
           "Content-Type": "application/json",
         },
       });
+
+      console.log(data.status);
       if (data.status === 200) {
         const { batchDate } = await data.json();
+
         setBatchDateData(batchDate);
+
+        console.log("Batch Date Response:", batchDate);
       }
     };
     fetchBatch();
-    
   }, []);
+
 
   
 
@@ -128,7 +136,7 @@ function Blockchain() {
         />
         <link
           rel="canonical"
-          href="https://www.learnbay.co/business-analytics-certification-course"
+          href="https://www.learnbay.co/datascience/business-analytics-certification-course"
         />
       </Head>
       <main>
@@ -216,11 +224,11 @@ function Blockchain() {
           titleCourse="Business Analytics Project Brochure"
           brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Business+Analytics+Projects.pdf"
         />
-        {/* <BatchDetails
-          BAFamily={true}
-          CourseFeeHead="Business Analytics Master Program : Batch Details"
-          batchDetails=""
-        /> */}
+         {batchDateData === "" ? (
+          ""
+        ) : (
+          <BatchDetails batchDetails={batchDateData.batchDetails} />
+        )}
         <FAQNew FAQNewData={BADataScienceCourseData[0].faq} />
         <SeventhSection />
         <Footer />

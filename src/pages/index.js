@@ -4,6 +4,7 @@ import dynamic from "next/dynamic";
 import { DataScienceCourseData } from "../../Data/AdvanceDataScienceCourse";
 import BottomBar from "../../components/WebPage/BottomBar/BottomBar";
 import OfferPopup from "../../components/OfferPopup/OfferPopup";
+import WhatsappFloat from "../../components/WhatappsFloat/WhatsappFloat";
 const BoxShape = dynamic(() =>
   import("../../components/HomePage/BoxShape/BoxShape")
 );
@@ -72,6 +73,7 @@ export default function Home() {
       <ContactUs dataScienceCounselling={true} radio={true} />
       <SeventhSection />
       <Footer />
+      <WhatsappFloat chat360code1={true} />
       <BottomBar radio={true} />
     </>
   );

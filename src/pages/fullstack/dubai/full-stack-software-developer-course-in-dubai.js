@@ -56,9 +56,49 @@ export default function Home() {
           name="keywords"
           content="Full-Stack Software Developer Course in Dubai, Full-Stack Software Developer Course training in Dubai, Full-Stack Software Developer Course institute in Dubai, best Full-Stack Software Developer Course institute in Dubai, data scientist course in Dubai,data scientist certification in Dubai, Full-Stack Software Developer Course training institute in Dubai, advanced Full-Stack Software Developer Course in Dubai, Full-Stack Software Developer Course with Placement Assistance, Full-Stack Software Developer Course"
         />
+ <meta
+          property="og:url"
+          content="https://www.learnbay.co/fullstack/dubai/full-stack-software-developer-course-in-dubai"
+        />
+        <meta
+          property="og:title"
+          content="Full-Stack Software Developer Course in Dubai | Data Science Training in Dubai"
+        />
+        <meta property="og:site_name" content="learnbay.co" />
+        <meta property="og:type" content="Learnbay_co:course" />
+        <meta
+          property="og:description"
+          content="Full-Stack Software Developer Course in Dubai. Learnbay is Advanced Full-Stack Software Developer Course Training Institute in Dubai. Full-Stack Software Developer Course in Dubai will enhance your career"
+        />
+        <meta
+          property="og:image"
+          content="https://www.learnbay.co/_next/image?url=https%3A%2F%2Flearnbay-wb.s3.ap-south-1.amazonaws.com%2Fmain%2FLearnbay-Logo.webp&w=256&q=100"
+        />
+        <meta property="og:image:height" content="100" />
+        <meta property="og:image:width" content="256" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@Learnbay" />
+        <meta
+          name="twitter:title"
+          content="Full-Stack Software Developer Course in Dubai | Data Science Training in Dubai"
+        />
+        <meta name="twitter:creator" content="@Learnbay" />
+        <meta
+          itemProp="description"
+          content="Full-Stack Software Developer Course in Dubai. Learnbay is Advanced Full-Stack Software Developer Course Training Institute in Dubai. Full-Stack Software Developer Course in Dubai will enhance your career"
+        />
+        <meta
+          name="twitter:description"
+          content="Full-Stack Software Developer Course in Dubai. Learnbay is Advanced Full-Stack Software Developer Course Training Institute in Dubai. Full-Stack Software Developer Course in Dubai will enhance your career"
+        />
+        <meta
+          name="twitter:image"
+          content="https://www.learnbay.co/_next/image?url=https%3A%2F%2Flearnbay-wb.s3.ap-south-1.amazonaws.com%2Fmain%2FLearnbay-Logo.webp&w=256&q=100"
+        />
+
         <link
           rel="canonical"
-          href="https://www.learnbay.co/full-stack-software-developer-course-in-dubai"
+          href="https://www.learnbay.co/fullstack/dubai/full-stack-software-developer-course-in-dubai"
         />
         <meta
           name="copyright"

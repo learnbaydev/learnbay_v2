@@ -56,9 +56,51 @@ export default function Home() {
           name="keywords"
           content="Data Analytics course in Delhi, Data Analytics training in Delhi, Data Analytics institute in Delhi, best Data Analytics institute in Delhi, Data Analytics course in Delhi, Data Analytics certification in Delhi, Data Analytics training institute in Delhi, advanced Data Analytics course in Delhi, Data Analytics course with Placement Assistance, Data Analytics course"
         />
+<meta
+          property="og:url"
+          content="https://www.learnbay.co/datascience/delhi/data-analytics-course-training-in-delhi"
+        />
+        <meta
+          property="og:title"
+          content="Data Analytics Course  in Delhi | Data Science Training in Delhi"
+        />
+        <meta property="og:site_name" content="learnbay.co" />
+        <meta property="og:type" content="article" />
+        <meta
+          property="og:description"
+          content="Data Analytics Course  in Delhi. Learnbay is Advanced Data Analytics Course  Training Institute in Delhi. Data Analytics Course  in Delhi will enhance your career"
+        />
+        <meta
+          property="og:image"
+          content="https://www.learnbay.co/_next/image?url=https%3A%2F%2Flearnbay-wb.s3.ap-south-1.amazonaws.com%2Fmain%2FLearnbay-Logo.webp&w=256&q=100"
+        />
+        <meta property="og:image:height" content="100" />
+        <meta property="og:image:width" content="256" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@Learnbay" />
+        <meta
+          name="twitter:title"
+          content="Data Analytics Course  in Delhi | Data Science Training in Delhi"
+        />
+        <meta name="twitter:creator" content="@Learnbay" />
+        <meta
+          itemProp="description"
+          content="Data Analytics Course  in Delhi. Learnbay is Advanced Data Analytics Course  Training Institute in Delhi. Data Analytics Course  in Delhi will enhance your career"
+        />
+        <meta
+          name="twitter:description"
+          content="Data Analytics Course  in Delhi. Learnbay is Advanced Data Analytics Course  Training Institute in Delhi. Data Analytics Course  in Delhi will enhance your career"
+        />
+        <meta
+          name="twitter:image"
+          content="https://www.learnbay.co/_next/image?url=https%3A%2F%2Flearnbay-wb.s3.ap-south-1.amazonaws.com%2Fmain%2FLearnbay-Logo.webp&w=256&q=100"
+        />
+
+
+
         <link
           rel="canonical"
-          href="https://www.learnbay.co/data-analytics-course-training-in-delhi"
+          href="https://www.learnbay.co/datascience/delhi/data-analytics-course-training-in-delhi"
         />
         {/* <meta name="HandheldFriendly" content="true" /> */}
         {/* <meta name="distribution" content="global" /> */}

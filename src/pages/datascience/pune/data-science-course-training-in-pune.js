@@ -59,9 +59,49 @@ export default function Home() {
           name="keywords"
           content="data science online course, data science certification in pune, data science course in india, data science course in pune, data science training in pune, data science courses, data science courses in pune, data science course, data science training, data science institute, data science certification,"
         />
+
+<meta
+          property="og:url"
+          content="https://www.learnbay.co/datascience/pune/data-science-course-training-in-pune"
+        />
+        <meta
+          property="og:title"
+          content="Data Science Course in pune | Data Science Training in pune"
+        />
+        <meta property="og:site_name" content="learnbay.co" />
+        <meta property="og:type" content="Learnbay_co:course" />
+        <meta
+          property="og:description"
+          content="Data science course in pune. Learnbay is Advanced Data Science Course Training Institute in pune. Data science course in pune will enhance your career"
+        />
+        <meta
+          property="og:image"
+          content="https://www.learnbay.co/_next/image?url=https%3A%2F%2Flearnbay-wb.s3.ap-south-1.amazonaws.com%2Fmain%2FLearnbay-Logo.webp&w=256&q=100"
+        />
+        <meta property="og:image:height" content="100" />
+        <meta property="og:image:width" content="256" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@Learnbay" />
+        <meta
+          name="twitter:title"
+          content="Data Science Course in Chennai | Data Science Training in Chennai"
+        />
+        <meta name="twitter:creator" content="@Learnbay" />
+        <meta
+          itemProp="description"
+          content="Data science course in Chennai. Learnbay is Advanced Data Science Course Training Institute in Chennai. Data science course in Chennai will enhance your career"
+        />
+        <meta
+          name="twitter:description"
+          content="Data science course in Chennai. Learnbay is Advanced Data Science Course Training Institute in Chennai. Data science course in Chennai will enhance your career"
+        />
+        <meta
+          name="twitter:image"
+          content="https://www.learnbay.co/_next/image?url=https%3A%2F%2Flearnbay-wb.s3.ap-south-1.amazonaws.com%2Fmain%2FLearnbay-Logo.webp&w=256&q=100"
+        />
         <link
           rel="canonical"
-          href="https://www.learnbay.co/data-science-course-training-in-pune"
+          href="https://www.learnbay.co/datascience/pune/data-science-course-training-in-pune"
         />
         {/* <meta name="HandheldFriendly" content="true" /> */}
         {/* <meta name="distribution" content="global" /> */}

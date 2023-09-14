@@ -58,9 +58,50 @@ export default function Home() {
           name="keywords"
           content="Full-Stack Software Developer Course in Hyderabad, Full-Stack Software Developer Course training in Hyderabad, Full-Stack Software Developer Course institute in Hyderabad, best Full-Stack Software Developer Course institute in Hyderabad, data scientist course in Hyderabad,data scientist certification in Hyderabad, Full-Stack Software Developer Course training institute in Hyderabad, advanced Full-Stack Software Developer Course in Hyderabad, Full-Stack Software Developer Course with Placement Assistance, Full-Stack Software Developer Course"
         />
+<meta
+          property="og:url"
+          content="https://www.learnbay.co/fullstack/hyderabad/full-stack-software-developer-course-in-hyderabad"
+        />
+        <meta
+          property="og:title"
+          content="Full-Stack Software Developer Course in Hyderabad | Data Science Training in Hyderabad"
+        />
+        <meta property="og:site_name" content="learnbay.co" />
+        <meta property="og:type" content="Learnbay_co:course" />
+        <meta
+          property="og:description"
+          content="Full-Stack Software Developer Course in Chennai. Learnbay is Advanced Full-Stack Software Developer Course Training Institute in Hyderabad. Full-Stack Software Developer Course in Hyderabad will enhance your career"
+        />
+        <meta
+          property="og:image"
+          content="https://www.learnbay.co/_next/image?url=https%3A%2F%2Flearnbay-wb.s3.ap-south-1.amazonaws.com%2Fmain%2FLearnbay-Logo.webp&w=256&q=100"
+        />
+        <meta property="og:image:height" content="100" />
+        <meta property="og:image:width" content="256" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@Learnbay" />
+        <meta
+          name="twitter:title"
+          content="Full-Stack Software Developer Course in Hyderabad | Data Science Training in Hyderabad"
+        />
+        <meta name="twitter:creator" content="@Learnbay" />
+        <meta
+          itemProp="description"
+          content="Full-Stack Software Developer Course in Hyderabad. Learnbay is Advanced Full-Stack Software Developer Course Training Institute in Hyderabad. Full-Stack Software Developer Course in Hyderabad will enhance your career"
+        />
+        <meta
+          name="twitter:description"
+          content="Full-Stack Software Developer Course in Hyderabad. Learnbay is Advanced Full-Stack Software Developer Course Training Institute in Hyderabad. Full-Stack Software Developer Course in Hyderabad will enhance your career"
+        />
+        <meta
+          name="twitter:image"
+          content="https://www.learnbay.co/_next/image?url=https%3A%2F%2Flearnbay-wb.s3.ap-south-1.amazonaws.com%2Fmain%2FLearnbay-Logo.webp&w=256&q=100"
+        />
+
+
         <link
           rel="canonical"
-          href="https://www.learnbay.co/full-stack-software-developer-course-in-hyderabad"
+          href="https://www.learnbay.co/fullstack/hyderabad/full-stack-software-developer-course-in-hyderabad"
         />
         <meta
           name="copyright"

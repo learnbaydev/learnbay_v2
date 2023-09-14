@@ -58,9 +58,49 @@ export default function Home() {
           name="keywords"
           content="Machine learning course in Mumbai, Machine learning training in Mumbai, Machine learning institute in Mumbai, best Machine learning institute in Mumbai, Machine learning course in Mumbai, Machine learning certification in Mumbai, Machine learning training institute in Mumbai, advanced Machine learning course in Mumbai, Machine learning course with Placement Assistance, Machine learning course"
         />
+ <meta
+          property="og:url"
+          content="https://www.learnbay.co/datascience/mumbai/machine-learning-course-training-in-mumbai"
+        />
+        <meta
+          property="og:title"
+          content="Machine Learning Course in Mumbai | Data Science Training in Mumbai"
+        />
+        <meta property="og:site_name" content="learnbay.co" />
+        <meta property="og:type" content="Learnbay_co:course" />
+        <meta
+          property="og:description"
+          content="Machine Learning Course in Mumbai. Learnbay is Advanced Machine Learning Course Training Institute in Mumbai. Machine Learning Course in Mumbai will enhance your career"
+        />
+        <meta
+          property="og:image"
+          content="https://www.learnbay.co/_next/image?url=https%3A%2F%2Flearnbay-wb.s3.ap-south-1.amazonaws.com%2Fmain%2FLearnbay-Logo.webp&w=256&q=100"
+        />
+        <meta property="og:image:height" content="100" />
+        <meta property="og:image:width" content="256" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@Learnbay" />
+        <meta
+          name="twitter:title"
+          content="Machine Learning Course in Mumbai | Data Science Training in Mumbai"
+        />
+        <meta name="twitter:creator" content="@Learnbay" />
+        <meta
+          itemProp="description"
+          content="Machine Learning Course in Mumbai. Learnbay is Advanced Machine Learning Course Training Institute in Mumbai. Machine Learning Course in Mumbai will enhance your career"
+        />
+        <meta
+          name="twitter:description"
+          content="Machine Learning Course in Mumbai. Learnbay is Advanced Machine Learning Course Training Institute in Mumbai. Machine Learning Course in Mumbai will enhance your career"
+        />
+        <meta
+          name="twitter:image"
+          content="https://www.learnbay.co/_next/image?url=https%3A%2F%2Flearnbay-wb.s3.ap-south-1.amazonaws.com%2Fmain%2FLearnbay-Logo.webp&w=256&q=100"
+        />
+
         <link
           rel="canonical"
-          href="https://www.learnbay.co/machine-learning-course-training-in-mumbai"
+          href="https://www.learnbay.co/datascience/mumbai/machine-learning-course-training-in-mumbai"
         />
         <link
           rel="icon"

@@ -52,13 +52,53 @@ export default function Home() {
           name="description"
           content="Learnbay offers the best Artificial Intelligence Training in Dubai. Get mentorship from the industry experts with best career assistance. Enroll Now."
         />
+<meta
+          property="og:url"
+          content="https://www.learnbay.co/datascience/dubai/artificial-intelligence-ai-course-training-dubai"
+        />
+        <meta
+          property="og:title"
+          content="Artificial Intelligence in Dubai | Data Science Training in Dubai"
+        />
+        <meta property="og:site_name" content="learnbay.co" />
+        <meta property="og:type" content="Learnbay_co:course" />
+        <meta
+          property="og:description"
+          content="Artificial Intelligence in Dubai. Learnbay is Advanced Artificial Intelligence Training Institute in Dubai. Artificial Intelligence in Dubai will enhance your career"
+        />
+        <meta
+          property="og:image"
+          content="https://www.learnbay.co/_next/image?url=https%3A%2F%2Flearnbay-wb.s3.ap-south-1.amazonaws.com%2Fmain%2FLearnbay-Logo.webp&w=256&q=100"
+        />
+        <meta property="og:image:height" content="100" />
+        <meta property="og:image:width" content="256" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@Learnbay" />
+        <meta
+          name="twitter:title"
+          content="Artificial Intelligence in Dubai | Data Science Training in Dubai"
+        />
+        <meta name="twitter:creator" content="@Learnbay" />
+        <meta
+          itemProp="description"
+          content="Artificial Intelligence in Dubai. Learnbay is Advanced Artificial Intelligence Training Institute in Dubai. Artificial Intelligence in Dubai will enhance your career"
+        />
+        <meta
+          name="twitter:description"
+          content="Artificial Intelligence in Dubai. Learnbay is Advanced Artificial Intelligence Training Institute in Dubai. Artificial Intelligence in Dubai will enhance your career"
+        />
+        <meta
+          name="twitter:image"
+          content="https://www.learnbay.co/_next/image?url=https%3A%2F%2Flearnbay-wb.s3.ap-south-1.amazonaws.com%2Fmain%2FLearnbay-Logo.webp&w=256&q=100"
+        />
+
         <meta
           name="keywords"
           content="Artificial Intelligence course in Dubai, Artificial Intelligence training in Dubai, Artificial Intelligence institute in Dubai, best Artificial Intelligence institute in Dubai, Artificial Intelligence course in Dubai, Artificial Intelligence certification in Dubai, Artificial Intelligence training institute in Dubai, advanced Artificial Intelligence course in Dubai, Artificial Intelligence course with Placement Assistance, Artificial Intelligence course"
         />
         <link
           rel="canonical"
-          href="https://www.learnbay.co/artificial-intelligence-ai-course-training-dubai"
+          href="https://www.learnbay.co/datascience/dubai/artificial-intelligence-ai-course-training-dubai"
         />
         <meta
           name="copyright"

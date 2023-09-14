@@ -42,3 +42,12 @@
     padding: 10px 20px;
   }
 }
+@media (max-width: 1281px){
+.outLineBtn{
+  position: relative;
+    top: -15px;
+
+    flex-flow: row-reverse;
+}
+}
+

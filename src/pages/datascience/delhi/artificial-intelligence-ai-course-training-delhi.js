@@ -56,9 +56,50 @@ export default function Home() {
           name="keywords"
           content="Artificial Intelligence course in Delhi, Artificial Intelligence training in Delhi, Artificial Intelligence institute in Delhi, best Artificial Intelligence institute in Delhi, Artificial Intelligence course in Delhi, Artificial Intelligence certification in Delhi, Artificial Intelligence training institute in Delhi, advanced Artificial Intelligence course in Delhi, Artificial Intelligence course with Placement Assistance, Artificial Intelligence course"
         />
+ <meta
+          property="og:url"
+          content="https://www.learnbay.co/datascience/delhi/artificial-intelligence-ai-course-training-delhi"
+        />
+        <meta
+          property="og:title"
+          content="Artificial Intellgince Course in Delhi | Data Science Training in Delhi"
+        />
+        <meta property="og:site_name" content="learnbay.co" />
+        <meta property="og:type" content="article" />
+        <meta
+          property="og:description"
+          content="Artificial Intellgince Course in Delhi. Learnbay is Advanced Artificial Intellgince Course Training Institute in Delhi. Artificial Intellgince Course in Delhi will enhance your career"
+        />
+        <meta
+          property="og:image"
+          content="https://www.learnbay.co/_next/image?url=https%3A%2F%2Flearnbay-wb.s3.ap-south-1.amazonaws.com%2Fmain%2FLearnbay-Logo.webp&w=256&q=100"
+        />
+        <meta property="og:image:height" content="100" />
+        <meta property="og:image:width" content="256" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@Learnbay" />
+        <meta
+          name="twitter:title"
+          content="Artificial Intellgince Course in Delhi | Data Science Training in Delhi"
+        />
+        <meta name="twitter:creator" content="@Learnbay" />
+        <meta
+          itemProp="description"
+          content="Artificial Intellgince Course in Delhi. Learnbay is Advanced Artificial Intellgince Course Training Institute in Delhi. Artificial Intellgince Course in Delhi will enhance your career"
+        />
+        <meta
+          name="twitter:description"
+          content="Artificial Intellgince Course in Delhi. Learnbay is Advanced Artificial Intellgince Course Training Institute in Delhi. Artificial Intellgince Course in Delhi will enhance your career"
+        />
+        <meta
+          name="twitter:image"
+          content="https://www.learnbay.co/_next/image?url=https%3A%2F%2Flearnbay-wb.s3.ap-south-1.amazonaws.com%2Fmain%2FLearnbay-Logo.webp&w=256&q=100"
+        />
+
+
         <link
           rel="canonical"
-          href="https://www.learnbay.co/artificial-intelligence-ai-course-training-delhi"
+          href="https://www.learnbay.co/datascience/delhi/artificial-intelligence-ai-course-training-delhi"
         />
 
         {/* <meta name="HandheldFriendly" content="true" /> */}

@@ -56,9 +56,49 @@ export default function Home() {
           name="keywords"
           content="Machine learning course in Bangalore, Machine learning training in Bangalore, Machine learning institute in Bangalore, best Machine learning institute in Bangalore, Machine learning course in Bangalore, Machine learning certification in Bangalore, Machine learning training institute in Bangalore, advanced Machine learning course in Bangalore, Machine learning course with Placement Assistance, Machine learning course"
         />
+
+<meta
+          property="og:url"
+          content="https://www.learnbay.co/datascience/bangalore/machine-learning-course-training-in-bangalore"
+        />
+        <meta
+          property="og:title"
+          content="Machine Learning course Training In Bangalore with Placement Assistance"
+        />
+        <meta property="og:site_name" content="learnbay.co" />
+        <meta property="og:type" content="article" />
+        <meta
+          property="og:description"
+          content="Machine Learning coursein Bangalore. We are Advanced Machine Learning courseCertification Training Institute in Bangalore. Machine Learning coursewill enhance your career."
+        />
+        <meta
+          property="og:image"
+          content="https://www.learnbay.co/_next/image?url=https%3A%2F%2Flearnbay-wb.s3.ap-south-1.amazonaws.com%2Fmain%2FLearnbay-Logo.webp&w=256&q=100"
+        />
+        <meta property="og:image:height" content="100" />
+        <meta property="og:image:width" content="256" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@Learnbay" />
+        <meta
+          name="twitter:title"
+          content="Machine Learning courseTraining In Bangalore with Placement Assistance"
+        />
+        <meta name="twitter:creator" content="@Learnbay" />
+        <meta
+          itemProp="description"
+          content="Machine Learning courseBangalore. We are Advanced Machine Learning courseCertification Training Institute in Bangalore. Machine Learning coursewill enhance your career."
+        />
+        <meta
+          name="twitter:description"
+          content="Machine Learning courseBangalore. We are Advanced Machine Learning courseCertification Training Institute in Bangalore. Machine Learning coursewill enhance your career."
+        />
+        <meta
+          name="twitter:image"
+          content="https://www.learnbay.co/_next/image?url=https%3A%2F%2Flearnbay-wb.s3.ap-south-1.amazonaws.com%2Fmain%2FLearnbay-Logo.webp&w=256&q=100"
+        />
         <link
           rel="canonical"
-          href="https://www.learnbay.co/machine-learning-course-training-in-bangalore"
+          href="https://www.learnbay.co/datascience/bangalore/machine-learning-course-training-in-bangalore"
         />
         <meta
           name="copyright"

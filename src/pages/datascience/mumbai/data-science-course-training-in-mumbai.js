@@ -58,7 +58,7 @@ export default function Home() {
         />
         <meta
           property="og:url"
-          content="https://www.learnbay.co/data-science-course-training-in-mumbai"
+          content="https://www.learnbay.co/datascience/mumbai/data-science-course-training-in-mumbai"
         />
         <meta
           property="og:title"
@@ -80,16 +80,16 @@ export default function Home() {
         <meta name="twitter:site" content="@Learnbay" />
         <meta
           name="twitter:title"
-          content="Data Science Course in Chennai | Data Science Training in Chennai"
+          content="Data Science Course in Mumbai | Data Science Training in Mumbai"
         />
         <meta name="twitter:creator" content="@Learnbay" />
         <meta
           itemProp="description"
-          content="Data science course in Chennai. Learnbay is Advanced Data Science Course Training Institute in Chennai. Data science course in Chennai will enhance your career"
+          content="Data science course in Mumbai. Learnbay is Advanced Data Science Course Training Institute in Mumbai. Data science course in Mumbai will enhance your career"
         />
         <meta
           name="twitter:description"
-          content="Data science course in Chennai. Learnbay is Advanced Data Science Course Training Institute in Chennai. Data science course in Chennai will enhance your career"
+          content="Data science course in Mumbai. Learnbay is Advanced Data Science Course Training Institute in Mumbai. Data science course in Mumbai will enhance your career"
         />
         <meta
           name="twitter:image"
@@ -97,7 +97,7 @@ export default function Home() {
         />
         <link
           rel="canonical"
-          href="https://www.learnbay.co/data-science-course-training-in-mumbai"
+          href="https://www.learnbay.co/datascience/mumbai/data-science-course-training-in-mumbai"
         />
         <link
           rel="icon"

@@ -58,9 +58,49 @@ export default function Home() {
           name="keywords"
           content="Machine learning course in Chennai, Machine learning training in Chennai, Machine learning institute in Chennai, best Machine learning institute in Chennai, Machine learning course in Chennai, Machine learning certification in Chennai, Machine learning training institute in Chennai, advanced Machine learning course in Chennai, Machine learning course with Placement Assistance, Machine learning course"
         />
+ <meta
+          property="og:url"
+          content="https://www.learnbay.co/datascience/chennai/machine-learning-course-training-in-chennai"
+        />
+        <meta
+          property="og:title"
+          content="machine Learning Course in Chennai | Data Science Training in Chennai"
+        />
+        <meta property="og:site_name" content="learnbay.co" />
+        <meta property="og:type" content="Learnbay_co:course" />
+        <meta
+          property="og:description"
+          content="machine Learning Course in Chennai. Learnbay is Advanced machine Learning Course Training Institute in Chennai. machine Learning Course in Chennai will enhance your career"
+        />
+        <meta
+          property="og:image"
+          content="https://www.learnbay.co/_next/image?url=https%3A%2F%2Flearnbay-wb.s3.ap-south-1.amazonaws.com%2Fmain%2FLearnbay-Logo.webp&w=256&q=100"
+        />
+        <meta property="og:image:height" content="100" />
+        <meta property="og:image:width" content="256" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@Learnbay" />
+        <meta
+          name="twitter:title"
+          content="machine Learning Course in Chennai | Data Science Training in Chennai"
+        />
+        <meta name="twitter:creator" content="@Learnbay" />
+        <meta
+          itemProp="description"
+          content="machine Learning Course in Chennai. Learnbay is Advanced machine Learning Course Training Institute in Chennai. machine Learning Course in Chennai will enhance your career"
+        />
+        <meta
+          name="twitter:description"
+          content="machine Learning Course in Chennai. Learnbay is Advanced machine Learning Course Training Institute in Chennai. machine Learning Course in Chennai will enhance your career"
+        />
+        <meta
+          name="twitter:image"
+          content="https://www.learnbay.co/_next/image?url=https%3A%2F%2Flearnbay-wb.s3.ap-south-1.amazonaws.com%2Fmain%2FLearnbay-Logo.webp&w=256&q=100"
+        />
+
         <link
           rel="canonical"
-          href="https://www.learnbay.co/machine-learning-course-training-in-chennai"
+          href="https://www.learnbay.co/datascience/chennai/machine-learning-course-training-in-chennai"
         />
         <meta
           name="copyright"

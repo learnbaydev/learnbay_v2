@@ -56,9 +56,49 @@ export default function Home() {
           name="keywords"
           content="Artificial Intelligence course in Canada, Artificial Intelligence training in Canada, Artificial Intelligence institute in Canada, best Artificial Intelligence institute in Canada, Artificial Intelligence course in Canada, Artificial Intelligence certification in Canada, Artificial Intelligence training institute in Canada, advanced Artificial Intelligence course in Canada, Artificial Intelligence course with Placement Assistance, Artificial Intelligence course"
         />
+
+<meta
+          property="og:url"
+          content="https://www.learnbay.co/datascience/canada/artificial-intelligence-ai-course-training-canada"
+        />
+        <meta
+          property="og:title"
+          content=" Artificial intelligence in Canada | Data Science Training in Canada"
+        />
+        <meta property="og:site_name" content="learnbay.co" />
+        <meta property="og:type" content="Learnbay_co:course" />
+        <meta
+          property="og:description"
+          content=" Artificial intelligence in Canada. Learnbay is Advanced  Artificial intelligence Training Institute in Canada.  Artificial intelligence in Canada will enhance your career"
+        />
+        <meta
+          property="og:image"
+          content="https://www.learnbay.co/_next/image?url=https%3A%2F%2Flearnbay-wb.s3.ap-south-1.amazonaws.com%2Fmain%2FLearnbay-Logo.webp&w=256&q=100"
+        />
+        <meta property="og:image:height" content="100" />
+        <meta property="og:image:width" content="256" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@Learnbay" />
+        <meta
+          name="twitter:title"
+          content=" Artificial intelligence in Canada | Artificial intelligence Training in Canada"
+        />
+        <meta name="twitter:creator" content="@Learnbay" />
+        <meta
+          itemProp="description"
+          content=" Artificial intelligence in Canada. Learnbay is Advanced  Artificial intelligence Training Institute in Canada.  Artificial intelligence in Canada will enhance your career"
+        />
+        <meta
+          name="twitter:description"
+          content=" Artificial intelligence in Canada. Learnbay is Advanced  Artificial intelligence Training Institute in Canada.  Artificial intelligence in Canada will enhance your career"
+        />
+        <meta
+          name="twitter:image"
+          content="https://www.learnbay.co/_next/image?url=https%3A%2F%2Flearnbay-wb.s3.ap-south-1.amazonaws.com%2Fmain%2FLearnbay-Logo.webp&w=256&q=100"
+        />
         <link
           rel="canonical"
-          href="https://www.learnbay.co/artificial-intelligence-ai-course-training-canada"
+          href="https://www.learnbay.co/datascience/canada/artificial-intelligence-ai-course-training-canada"
         />
         <meta
           name="copyright"

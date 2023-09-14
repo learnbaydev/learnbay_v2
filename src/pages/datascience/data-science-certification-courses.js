@@ -55,26 +55,61 @@ import BottomBar from "../../../components/WebPage/BottomBar/BottomBar";
 import BatchDetails from "../../../components/CoursePage/BatchDetails/BatchDetails";
 
 function Blockchain() {
-  const [popups, setPopups] = useState(false);
+ // POPUP GET METHOD
+ const [popupData, setPopupData] = useState([]);
+ // console.log(popupData);
+ useEffect(() => {
+   // console.log("inside UseEFFect");
+   const fetchPopup = async () => {
+     const data = await fetch("/api/Popup/popupGenerate", {
+       method: "GET",
+     });
+     if (data.status === 200) {
+       const { popData } = await data.json();
+       // console.log(popData, "get data");
+       if (popData === []) {
+         setPopupData([]);
+       }
 
-  useEffect(() => {
-    const fetchBatch = async () => {
-      const data = await fetch("/api/BatchDetails/getBatchDate", {
-        method: "POST",
-        body: JSON.stringify("Data Science and AI"),
-        headers: {
-          "Content-Type": "application/json",
-        },
-      });
-      if (data.status === 200) {
-        const { batchDate } = await data.json();
-        setBatchDateData(batchDate);
-      }
-    };
-    fetchBatch();
-    
-  }, []);
+       popData.map((data, i) => {
+         // console.log(data);
+         data.page.map((popupData, i) => {
+           // console.log(popData);
+           if (popupData === "Adv Data Science and AI") {
+             setPopupData(data);
+             // console.log(popupData);
+             return;
+           }
+         });
+       });
+     }
+   };
+   fetchPopup();
+ }, []);
 
+ const [batchDateData, setBatchDateData] = useState("");
+
+ useEffect(() => {
+   const fetchBatch = async () => {
+     const data = await fetch("/api/BatchDetails/getBatchDetails", {
+       method: "POST",
+       body: JSON.stringify("Data Science and AI"),
+       headers: {
+         "Content-Type": "application/json",
+       },
+     });
+
+     console.log(data.status);
+     if (data.status === 200) {
+       const { batchDate } = await data.json();
+
+       setBatchDateData(batchDate);
+
+       console.log("Batch Date Response:", batchDate);
+     }
+   };
+   fetchBatch();
+ }, []);
   return (
     <>
       <Head>
@@ -91,7 +126,7 @@ function Blockchain() {
         />
         <link
           rel="canonical"
-          href="https://www.learnbay.co/data-science-certification-courses"
+          href="https://www.learnbay.co/datascience/data-science-certification-courses"
         />
       </Head>
       <main>
@@ -174,7 +209,11 @@ function Blockchain() {
           titleCourse="Data Science Project Brochure"
           brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Data+Science+and+AI+Projects.pdf"
         />
-        {/* <BatchDetails CourseFeeHead="Data Science and AI Master Program : Batch Details" batchDetails=""/> */}
+          {batchDateData === "" ? (
+          ""
+        ) : (
+          <BatchDetails batchDetails={batchDateData.batchDetails} />
+        )}
         <FAQNew FAQNewData={FoundationDataScienceCourseData[0].faq} />
         <SeventhSection />
         <Footer />

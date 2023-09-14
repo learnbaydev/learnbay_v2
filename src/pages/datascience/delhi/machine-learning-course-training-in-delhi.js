@@ -25,7 +25,7 @@ const CitiesLeft = dynamic(() =>
 const CitiesRight = dynamic(() =>
   import("../../../../components/SEO/CitiesRight/CitiesRight")
 );
-import { MLDelhiCourseData } from "../../../../CityData/delhi/MachineLearningCourseDelhiData";
+import { MLDelhiCourseData } from "../../../../CityData/Delhi/MachineLearningCourseDelhiData";
 
 const FAQNew = dynamic(() =>
   import("../../../../components/CoursePage/FAQNew/FAQNew")
@@ -59,9 +59,51 @@ export default function Home() {
           name="keywords"
           content="Machine learning course in Delhi, Machine learning training in Delhi, Machine learning institute in Delhi, best Machine learning institute in Delhi, Machine learning course in Delhi, Machine learning certification in Delhi, Machine learning training institute in Delhi, advanced Machine learning course in Delhi, Machine learning course with Placement Assistance, Machine learning course"
         />
+<meta
+          property="og:url"
+          content="https://www.learnbay.co/datascience/delhi/machine-learning-course-training-in-delhi"
+        />
+        <meta
+          property="og:title"
+          content="Machine Learning Course in Delhi | Data Science Training in Delhi"
+        />
+        <meta property="og:site_name" content="learnbay.co" />
+        <meta property="og:type" content="article" />
+        <meta
+          property="og:description"
+          content="Machine Learning Course in Delhi. Learnbay is Advanced Machine Learning Course Training Institute in Delhi. Machine Learning Course in Delhi will enhance your career"
+        />
+        <meta
+          property="og:image"
+          content="https://www.learnbay.co/_next/image?url=https%3A%2F%2Flearnbay-wb.s3.ap-south-1.amazonaws.com%2Fmain%2FLearnbay-Logo.webp&w=256&q=100"
+        />
+        <meta property="og:image:height" content="100" />
+        <meta property="og:image:width" content="256" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@Learnbay" />
+        <meta
+          name="twitter:title"
+          content="Machine Learning Course in Delhi | Data Science Training in Delhi"
+        />
+        <meta name="twitter:creator" content="@Learnbay" />
+        <meta
+          itemProp="description"
+          content="Machine Learning Course in Delhi. Learnbay is Advanced Machine Learning Course Training Institute in Delhi. Machine Learning Course in Delhi will enhance your career"
+        />
+        <meta
+          name="twitter:description"
+          content="Machine Learning Course in Delhi. Learnbay is Advanced Machine Learning Course Training Institute in Delhi. Machine Learning Course in Delhi will enhance your career"
+        />
+        <meta
+          name="twitter:image"
+          content="https://www.learnbay.co/_next/image?url=https%3A%2F%2Flearnbay-wb.s3.ap-south-1.amazonaws.com%2Fmain%2FLearnbay-Logo.webp&w=256&q=100"
+        />
+
+
+
         <link
           rel="canonical"
-          href="https://www.learnbay.co/machine-learning-course-training-in-delhi"
+          href="https://www.learnbay.co/datascience/delhi/machine-learning-course-training-in-delhi"
         />
         {/* <meta name="robots" content="NOODP,NOYDIR" /> */}
         {/* <meta name="HandheldFriendly" content="true" /> */}

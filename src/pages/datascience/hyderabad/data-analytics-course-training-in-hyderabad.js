@@ -58,7 +58,7 @@ export default function Home() {
         />
         <meta
           property="og:url"
-          content="https://www.learnbay.co/data-science-course-training-in-hyderabad"
+          content="https://www.learnbay.co/datascience/hyderabad/data-science-course-training-in-hyderabad"
         />
         <meta
           property="og:title"
@@ -89,7 +89,7 @@ export default function Home() {
         />
         <link
           rel="canonical"
-          href="https://www.learnbay.co/data-analytics-course-training-in-hyderabad"
+          href="https://www.learnbay.co/datascience/hyderabad/data-analytics-course-training-in-hyderabad"
         />
         <link
           rel="icon"
