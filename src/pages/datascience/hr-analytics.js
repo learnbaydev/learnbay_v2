@@ -62,24 +62,60 @@ import BottomBar from "../../../components/WebPage/BottomBar/BottomBar";
 import BatchDetails from "../../../components/CoursePage/BatchDetails/BatchDetails";
 
 function Blockchain() {
-  const [popups, setPopups] = useState(false);
+  // POPUP GET METHOD
+  const [popupData, setPopupData] = useState([]);
+  // console.log(popupData);
+  useEffect(() => {
+    // console.log("inside UseEFFect");
+    const fetchPopup = async () => {
+      const data = await fetch("/api/Popup/popupGenerate", {
+        method: "GET",
+      });
+      if (data.status === 200) {
+        const { popData } = await data.json();
+        // console.log(popData, "get data");
+        if (popData === []) {
+          setPopupData([]);
+        }
+
+        popData.map((data, i) => {
+          // console.log(data);
+          data.page.map((popupData, i) => {
+            // console.log(popData);
+            if (popupData === "Business Analytics Family") {
+              setPopupData(data);
+              // console.log(popupData);
+              return;
+            }
+          });
+        });
+      }
+    };
+    fetchPopup();
+  }, []);
+
+  const [batchDateData, setBatchDateData] = useState("");
 
   useEffect(() => {
     const fetchBatch = async () => {
-      const data = await fetch("/api/BatchDetails/getBatchDate", {
+      const data = await fetch("/api/BatchDetails/getBatchDetails", {
         method: "POST",
         body: JSON.stringify("Business Analytics Family"),
         headers: {
           "Content-Type": "application/json",
         },
       });
+
+      console.log(data.status);
       if (data.status === 200) {
         const { batchDate } = await data.json();
+
         setBatchDateData(batchDate);
+
+        console.log("Batch Date Response:", batchDate);
       }
     };
     fetchBatch();
-    
   }, []);
 
   return (
@@ -96,7 +132,7 @@ function Blockchain() {
           rel="icon"
           href="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/Learnbay-Favicon-L.png"
         />
-        <link rel="canonical" href="https://www.learnbay.co/hr-analytics" />
+        <link rel="canonical" href="https://www.learnbay.co/datascience/hr-analytics" />
       </Head>
       <main>
         <Navbar popup={true} dataScienceCounselling={true} />
@@ -176,11 +212,11 @@ function Blockchain() {
           titleCourse="HR Analytics Project Brochure"
           brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Business+Analytics+Projects.pdf"
         />
-        {/* <BatchDetails
-          BAFamily={true}
-          CourseFeeHead="Hr Analytics : Batch Details"
-          batchDetails=""
-        /> */}
+          {batchDateData === "" ? (
+          ""
+        ) : (
+          <BatchDetails batchDetails={batchDateData.batchDetails} />
+        )}
         <FAQNew FAQNewData={HRCourseData[0].faq} />
         <SeventhSection />
         <Footer />

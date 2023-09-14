@@ -54,13 +54,53 @@ export default function Home() {
           name="description"
           content="Learnbay offers the Best Machine Learning Training program in Hyderabad with the highly-skilled industry experts and mentors. Enroll Now."
         />
+ <meta
+          property="og:url"
+          content="https://www.learnbay.co/datascience/hyderabad/machine-learning-course-training-in-hyderabad"
+        />
+        <meta
+          property="og:title"
+          content="Machine Learning Course in Hyderabad | Data Science Training in Hyderabad"
+        />
+        <meta property="og:site_name" content="learnbay.co" />
+        <meta property="og:type" content="Learnbay_co:course" />
+        <meta
+          property="og:description"
+          content="Machine Learning Course in Chennai. Learnbay is Advanced Machine Learning Course Training Institute in Hyderabad. Machine Learning Course in Hyderabad will enhance your career"
+        />
+        <meta
+          property="og:image"
+          content="https://www.learnbay.co/_next/image?url=https%3A%2F%2Flearnbay-wb.s3.ap-south-1.amazonaws.com%2Fmain%2FLearnbay-Logo.webp&w=256&q=100"
+        />
+        <meta property="og:image:height" content="100" />
+        <meta property="og:image:width" content="256" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@Learnbay" />
+        <meta
+          name="twitter:title"
+          content="Machine Learning Course in Hyderabad | Data Science Training in Hyderabad"
+        />
+        <meta name="twitter:creator" content="@Learnbay" />
+        <meta
+          itemProp="description"
+          content="Machine Learning Course in Hyderabad. Learnbay is Advanced Machine Learning Course Training Institute in Hyderabad. Machine Learning Course in Hyderabad will enhance your career"
+        />
+        <meta
+          name="twitter:description"
+          content="Machine Learning Course in Hyderabad. Learnbay is Advanced Machine Learning Course Training Institute in Hyderabad. Machine Learning Course in Hyderabad will enhance your career"
+        />
+        <meta
+          name="twitter:image"
+          content="https://www.learnbay.co/_next/image?url=https%3A%2F%2Flearnbay-wb.s3.ap-south-1.amazonaws.com%2Fmain%2FLearnbay-Logo.webp&w=256&q=100"
+        />
+
         <meta
           name="keywords"
           content="Machine learning course in Hyderabad, Machine learning training in Hyderabad, Machine learning institute in Hyderabad, best Machine learning institute in Hyderabad, Machine learning course in Hyderabad, Machine learning certification in Hyderabad, Machine learning training institute in Hyderabad, advanced Machine learning course in Hyderabad, Machine learning course with Placement Assistance, Machine learning course"
         />
         <link
           rel="canonical"
-          href="https://www.learnbay.co/machine-learning-course-training-in-hyderabad"
+          href="https://www.learnbay.co/datascience/hyderabad/machine-learning-course-training-in-hyderabad"
         />
         <meta
           name="copyright"

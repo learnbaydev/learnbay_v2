@@ -50,25 +50,25 @@ export default function Home() {
         <meta name="robots" content="index, follow" />
         <meta
           name="description"
-          content="Learnbay's Most Extensive Data Science Training Course in Chennai in Collaboration with IBM which ensures unparalleled training and placement assistance."
+          content="Learnbay's Most Extensive Data Analytics Training Course in Chennai in Collaboration with IBM which ensures unparalleled training and placement assistance."
         />
         <meta
           name="keywords"
-          content="data science course in Chennai, data science training in Chennai, data science institute in Chennai, best data science institute in Chennai, data scientist course in Chennai,data scientist certification in Chennai, data science training institute in Chennai, advanced data science course in Chennai, data science course with Placement Assistance, data science course"
+          content="Data Analytics Course in Chennai, data Analytics training in Chennai, data science institute in Chennai, best data science institute in Chennai, data scientist course in Chennai,data scientist certification in Chennai, data science training institute in Chennai, advanced Data Analytics Course in Chennai, Data Analytics Course with Placement Assistance, Data Analytics Course"
         />
         <meta
           property="og:url"
-          content="https://www.learnbay.co/data-science-course-training-in-chennai"
+          content="https://www.learnbay.co/datascience/chennai/data-science-course-training-in-chennai"
         />
         <meta
           property="og:title"
-          content="Data Science Course in Chennai | Data Science Training in Chennai"
+          content="Data Analytics Course in Chennai | Data Science Training in Chennai"
         />
         <meta property="og:site_name" content="learnbay.co" />
         <meta property="og:type" content="Learnbay_co:course" />
         <meta
           property="og:description"
-          content="Data science course in Chennai. Learnbay is Advanced Data Science Course Training Institute in Chennai. Data science course in Chennai will enhance your career"
+          content="Data Analytics Course in Chennai. Learnbay is Advanced Data Analytics Course Training Institute in Chennai. Data Analytics Course in Chennai will enhance your career"
         />
         <meta
           property="og:image"
@@ -80,16 +80,16 @@ export default function Home() {
         <meta name="twitter:site" content="@Learnbay" />
         <meta
           name="twitter:title"
-          content="Data Science Course in Chennai | Data Science Training in Chennai"
+          content="Data Analytics Course in Chennai | Data Science Training in Chennai"
         />
         <meta name="twitter:creator" content="@Learnbay" />
         <meta
           itemProp="description"
-          content="Data science course in Chennai. Learnbay is Advanced Data Science Course Training Institute in Chennai. Data science course in Chennai will enhance your career"
+          content="Data Analytics Course in Chennai. Learnbay is Advanced Data Analytics Course Training Institute in Chennai. Data Analytics Course in Chennai will enhance your career"
         />
         <meta
           name="twitter:description"
-          content="Data science course in Chennai. Learnbay is Advanced Data Science Course Training Institute in Chennai. Data science course in Chennai will enhance your career"
+          content="Data Analytics Course in Chennai. Learnbay is Advanced Data Analytics Course Training Institute in Chennai. Data Analytics Course in Chennai will enhance your career"
         />
         <meta
           name="twitter:image"
@@ -97,7 +97,7 @@ export default function Home() {
         />
         <link
           rel="canonical"
-          href="https://www.learnbay.co/data-science-course-training-in-chennai"
+          href="https://www.learnbay.co/datascience/chennai/data-science-course-training-in-chennai"
         />
         <link
           rel="icon"

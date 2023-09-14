@@ -56,9 +56,50 @@ export default function Home() {
           name="keywords"
           content="Business Analytics course in Canada, Business Analytics training in Canada, Business Analytics institute in Canada, best Business Analytics institute in Canada, Business Analytics course in Canada, Business Analytics certification in Canada, Business Analytics training institute in Canada, advanced Business Analytics course in Canada, Business Analytics course with Placement Assistance, Business Analytics course"
         />
+<meta
+          property="og:url"
+          content="https://www.learnbay.co/datascience/canada/business-analytics-course-training-in-canada"
+        />
+        <meta
+          property="og:title"
+          content="Business Analytics course in Canada | Data Science Training in Canada"
+        />
+        <meta property="og:site_name" content="learnbay.co" />
+        <meta property="og:type" content="Learnbay_co:course" />
+        <meta
+          property="og:description"
+          content="Business Analytics course in Canada. Learnbay is Advanced Business Analytics course Training Institute in Canada. Business Analytics course in Canada will enhance your career"
+        />
+        <meta
+          property="og:image"
+          content="https://www.learnbay.co/_next/image?url=https%3A%2F%2Flearnbay-wb.s3.ap-south-1.amazonaws.com%2Fmain%2FLearnbay-Logo.webp&w=256&q=100"
+        />
+        <meta property="og:image:height" content="100" />
+        <meta property="og:image:width" content="256" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@Learnbay" />
+        <meta
+          name="twitter:title"
+          content="Business Analytics course in Canada | Data Science Training in Canada"
+        />
+        <meta name="twitter:creator" content="@Learnbay" />
+        <meta
+          itemProp="description"
+          content="Business Analytics course in Canada. Learnbay is Advanced Business Analytics course Training Institute in Canada. Business Analytics course in Canada will enhance your career"
+        />
+        <meta
+          name="twitter:description"
+          content="Business Analytics course in Canada. Learnbay is Advanced Business Analytics course Training Institute in Canada. Business Analytics course in Canada will enhance your career"
+        />
+        <meta
+          name="twitter:image"
+          content="https://www.learnbay.co/_next/image?url=https%3A%2F%2Flearnbay-wb.s3.ap-south-1.amazonaws.com%2Fmain%2FLearnbay-Logo.webp&w=256&q=100"
+        />
+
+
         <link
           rel="canonical"
-          href="https://www.learnbay.co/business-analytics-course-training-in-canada"
+          href="https://www.learnbay.co/datascience/canada/business-analytics-course-training-in-canada"
         />
         {/* <meta name="HandheldFriendly" content="true" /> */}
         {/* <meta name="distribution" content="global" /> */}

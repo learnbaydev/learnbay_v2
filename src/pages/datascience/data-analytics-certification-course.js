@@ -60,10 +60,64 @@ const FAQNew = dynamic(() =>
 import OfferPopup from "../../../components/OfferPopup/OfferPopup";
 import BottomBar from "../../../components/WebPage/BottomBar/BottomBar";
 import BatchDetails from "../../../components/CoursePage/BatchDetails/BatchDetails";
+import Content from "../../../components/SEO/Content/content"
 
 function Blockchain() {
-  const [popups, setPopups] = useState(false);
-
+   // POPUP GET METHOD
+   const [popupData, setPopupData] = useState([]);
+   // console.log(popupData);
+   useEffect(() => {
+     // console.log("inside UseEFFect");
+     const fetchPopup = async () => {
+       const data = await fetch("/api/Popup/popupGenerate", {
+         method: "GET",
+       });
+       if (data.status === 200) {
+         const { popData } = await data.json();
+         // console.log(popData, "get data");
+         if (popData === []) {
+           setPopupData([]);
+         }
+ 
+         popData.map((data, i) => {
+           // console.log(data);
+           data.page.map((popupData, i) => {
+             // console.log(popData);
+             if (popupData === "Adv Data Science and AI") {
+               setPopupData(data);
+               // console.log(popupData);
+               return;
+             }
+           });
+         });
+       }
+     };
+     fetchPopup();
+   }, []);
+ 
+   const [batchDateData, setBatchDateData] = useState("");
+ 
+   useEffect(() => {
+     const fetchBatch = async () => {
+       const data = await fetch("/api/BatchDetails/getBatchDetails", {
+         method: "POST",
+         body: JSON.stringify("Data Science and AI"),
+         headers: {
+           "Content-Type": "application/json",
+         },
+       });
+ 
+       console.log(data.status);
+       if (data.status === 200) {
+         const { batchDate } = await data.json();
+ 
+         setBatchDateData(batchDate);
+ 
+         console.log("Batch Date Response:", batchDate);
+       }
+     };
+     fetchBatch();
+   }, []);
   useEffect(() => {
     const fetchBatch = async () => {
       const data = await fetch("/api/BatchDetails/getBatchDate", {
@@ -101,7 +155,7 @@ function Blockchain() {
         />
         <link
           rel="canonical"
-          href="https://www.learnbay.co/data-analytics-certification-course"
+          href="https://www.learnbay.co/datascience/data-analytics-certification-course"
         />
       </Head>
       <main>
@@ -193,11 +247,13 @@ function Blockchain() {
           titleCourse="Business Analytics Project Brochure"
           brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Business+Analytics+Projects.pdf"
         />
-        {/* <BatchDetails
-          CourseFeeHead="Data science course for Mangers: Batch Details"
-          batchDetails=""
-        /> */}
+          {batchDateData === "" ? (
+          ""
+        ) : (
+          <BatchDetails batchDetails={batchDateData.batchDetails} />
+        )}
         <FAQNew FAQNewData={DADataScienceCourseData[0].faq} />
+          <Content dataScienceCounselling={true} />
         <SeventhSection />
         <Footer />
 

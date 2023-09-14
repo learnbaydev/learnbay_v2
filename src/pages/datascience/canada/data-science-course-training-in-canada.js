@@ -58,11 +58,11 @@ export default function Home() {
         />
         <meta
           property="og:url"
-          content="https://www.learnbay.co/data-science-course-training-in-canada"
+          content="https://www.learnbay.co/datascience/canada/data-science-course-training-in-canada"
         />
         <meta
           property="og:title"
-          content="ata Science Course in Canada | Data Science Training in Canada"
+          content="data Science Course in Canada | Data Science Training in Canada"
         />
         <meta property="og:site_name" content="learnbay.co" />
         <meta property="og:type" content="Learnbay_co:course" />
@@ -80,7 +80,7 @@ export default function Home() {
         <meta name="twitter:site" content="@Learnbay" />
         <meta
           name="twitter:title"
-          content="ata Science Course in Canada | Data Science Training in Canada"
+          content="Data Science Course in Canada | Data Science Training in Canada"
         />
         <meta name="twitter:creator" content="@Learnbay" />
         <meta
@@ -97,7 +97,7 @@ export default function Home() {
         />
         <link
           rel="canonical"
-          href="https://www.learnbay.co/data-science-course-training-in-canada"
+          href="https://www.learnbay.co/datascience/canada/data-science-course-training-in-canada"
         />
                 <link
           rel="icon"
