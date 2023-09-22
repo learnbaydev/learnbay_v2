@@ -1,12 +1,17 @@
 .Course {
   padding: 40px 100px;
 }
+
 .Course h2 {
   color: black;
   font-weight: 700;
   margin: 0;
   font-size: 32px;
-  text-align: center;
+  text-align: left;
+}
+
+.mainHeadGreen {
+  color:#0072bc !important;
 }
 
 .listPanel .mPanel {
@@ -17,33 +22,47 @@
   width: 100%;
 }
 
+.divBox {
+  margin-top: 40px;
+}
+
 .bellIcon {
   font-size: 20px;
 }
 
+.contButton {
+  box-shadow: 0px 4px 3.35601px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 0px 0px 8px 8px;
+  margin-top: -5px;
+}
+
+.green {
+  background: #2DB621;
+  color: #fff;
+}
+
 .span {
-  padding: 20px;
-  width: 100%;
-  font-weight: 600;
+  padding: 5px 0px;
+  width: fit-content;
+  font-weight: 400;
   cursor: pointer;
+  color: #676767;
 
   justify-content: start;
-  border-bottom: 2px solid #28557a2e;
 }
 .ActiveSpan {
-  padding: 20px;
-  width: 100%;
-  font-weight: 600;
+  padding: 5px 0px;
+  width: fit-content;
+  font-weight: 400;
   cursor: pointer;
   justify-content: start;
-  border-top: 4px solid #2d9cd7;
-  border-right: 2px solid #28557a2e;
+  border-bottom: 2px solid #0072BC;
+  color: #0072BC;
 }
 .gridPanel {
   display: flex;
   height: 510px;
   width: 100%;
-  margin-top: 20px;
   gap: 20px;
   padding: 0px 20px;
   overflow: auto;
@@ -55,40 +74,41 @@
 
 .courses {
   background: #ffffff;
-  box-shadow: 0 0 8px rgba(40, 85, 122, 0.18);
   margin-top: 30px;
 }
 .listPanel {
   display: flex;
-  width: 100%;
-  margin-bottom: 20px;
+  width: fit-content;
+  gap: 100px;
+  margin-bottom: 50px;
   justify-content: flex-start;
 }
 
-.span {
+
+
+/* .span {
   padding: 20px;
   width: 100%;
   font-weight: 600;
   cursor: pointer;
   justify-content: start;
-  border-bottom: 2px solid #28557a2e;
-}
-.ActiveSpan {
+   border-bottom: 2px solid #28557a2e;
+} */
+/* .ActiveSpan {
   padding: 20px;
   width: 100%;
   font-weight: 600;
   cursor: pointer;
   justify-content: start;
-  border-top: 4px solid #2d9cd7;
-  border-right: 2px solid #28557a2e;
-}
+  border-top: 4px solid #2d9cd7; 
+   border-right: 2px solid #28557a2e;
+} */
 
 .gridPanel {
   display: flex;
-  height: 530px;
+  height: 430px;
   width: 100%;
   max-height: 600px;
-  margin-top: 20px;
   gap: 20px;
   padding: 0px;
   overflow: auto;
@@ -120,67 +140,73 @@
   flex-flow: column;
   border-radius: 8px;
   background-color: white;
-  box-shadow: -1px 0px 10px 2px rgba(4, 135, 217, 0.1);
 }
 .contentBox {
   width: 100%;
   position: relative;
   flex-flow: column;
   align-items: center;
-  border-radius: 19px;
-  padding: 0px 20px 20px 20px;
+  padding: 10px 20px 12px 20px;
   margin-left: 0px;
   background-color: white;
 }
 .imgWrap {
   border-radius: 8px;
+  position: relative;
+    z-index: 1;
 }
 
 .leftSide h6 {
-  font-size: 22px;
+  font-size: 14px;
+  font-weight: 700;
   margin: 0;
   width: 100%;
-  margin-top: 0px;
-  color: #0072bc;
+  color: #000;
 }
 .headWrapper {
   display: flex;
   flex-flow: column;
-  width: max-content;
-  margin-bottom: 20px;
+  text-align: center;
 }
 .hr {
   border: 1px solid #efefef;
   background-color: #0072bc;
   height: 1px;
-  top: 34%;
+  top: 45%;
   position: absolute;
-  width: 95%;
+  width: 100%;
+  right: 0px;
 }
 .hr1 {
-  border: 1px solid #efefef;
+  border: 0.3px solid #efefef;
   background-color: #0072bc;
-  height: 1px;
+  height: 0.3px;
   bottom: -1%;
+  left: 0px;
   position: absolute;
-  width: 95%;
+  width: 49.7%;
 }
 .mainHead {
-  background: #0072bc;
+  background: #000;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   -text-fill-color: transparent;
 }
+
 .leftSide p {
   display: flex;
   color: #676767;
-  margin: 16px 0px;
   align-items: center;
+  font-size: 14px;
+    font-weight: 400;
+    margin: 0;
+    margin-top: 20px;
 }
 
 .leftSide p:last-child {
   margin: 0;
+  margin-top: 10px;
 }
 
 .singleP {
@@ -193,7 +219,7 @@
   font-size: 22px;
 }
 .btnWrapper {
-  display: grid;
+  display: flex;
   grid-template-columns: 50% 1% 49%;
   width: 100%;
   gap: 0px;
@@ -209,7 +235,7 @@
   justify-content: center;
   height: 100%;
   border: 0;
-  font-size: 16px;
+  font-size: 14px;
 }
 .btnWrapper a {
   display: flex;
@@ -237,7 +263,8 @@
 }
 
 .h5font {
-  font-size: 24px;
+  font-size: 20px;
+  font-weight: 700;
   margin: 0;
   padding: 10px 20px;
 }

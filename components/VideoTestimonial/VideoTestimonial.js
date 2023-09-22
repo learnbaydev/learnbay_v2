@@ -20,7 +20,7 @@ const VideoTestimonial = ({ event }) => {
 
       <div>
         <div className={styles.headings}>
-          <h4>Learners Reviews</h4>
+          {/* <h4>Learners Reviews</h4> */}
           <VideoTestimonialSwiper review={review} />
         </div>
       </div>

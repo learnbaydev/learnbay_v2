@@ -21,7 +21,7 @@ export const courseDetails = [
             para: [
               "250+ hours content",
               "8 Advance + 2 Capstone",
-              "Course Fee : ₹ 99,000 | No cost EMI",
+              "Course Fee : ₹ 99,000 ",
             ],
             link1: "/advance-data-science-certification-courses",
             link2:
@@ -41,7 +41,7 @@ export const courseDetails = [
             para: [
               "400+ hours content",
               "10 Advance + 3 Capstone",
-              "Course Fee : ₹ 1,10,000 | No cost EMI",
+              "Course Fee : ₹ 1,10,000 ",
             ],
             link1: "/data-science-ai-for-managers",
             link2:
@@ -61,7 +61,7 @@ export const courseDetails = [
             para: [
               "350+ hours content",
               "10 Advance + 2 Capstone",
-              "Course Fee : ₹ 1,10,000 | No cost EMI",
+              "Course Fee : ₹ 1,10,000 ",
             ],
             link1: "/artificial-intelligence-certification-course",
             link2:
@@ -74,6 +74,7 @@ export const courseDetails = [
             title1: "Master Program",
             courseTime: "13-15 months",
             tagHead: "Guaranteed Interview Call",
+            Green: true,
             tag: "Data science",
             brochureLinks:
               "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Data+Science+and+AI+Master's+Program+%5BWith+Unlimited+Interview+Calls%5D.pdf",
@@ -81,7 +82,7 @@ export const courseDetails = [
             para: [
               "500 + hours content",
               "12 Advance + 4 Capstone",
-              "Course Fee : ₹ 1,29,000 | No cost EMI",
+              "Course Fee : ₹ 1,29,000 ",
             ],
             link1: "/data-science-ai-masters-program",
             link2:
@@ -101,13 +102,14 @@ export const courseDetails = [
             title1: "Master Program",
             tagHead: "Crack Job Interviews",
             tag: "Full stack",
+            Green: true,
             brochureLinks:
               "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Full+Stack+Software+Development+Program+Learnbay.pdf",
             titleCourse: "Software Development Master Program",
             para: [
               "300+ hours content",
               "12 Projects",
-              "Course Fee : ₹ 1,10,000 | No cost EMI",
+              "Course Fee : ₹ 1,10,000 ",
             ],
             link1: "/full-stack-software-development-program",
             link2:
@@ -127,7 +129,7 @@ export const courseDetails = [
             para: [
               "250+ hours content",
               "12 Projects",
-              "Course Fee : ₹ 95,000 | No cost EMI",
+              "Course Fee : ₹ 95,000 ",
             ],
             link1:
               "/software-development-program-with-specialization-in-blockchain",
@@ -149,7 +151,7 @@ export const courseDetails = [
             para: [
               "250+ hours content",
               "12 Projects",
-              "Course Fee : ₹ 95,000 | No cost EMI",
+              "Course Fee : ₹ 95,000 ",
             ],
             link1:
               "/software-development-program-with-specialization-in-cloud-computing-&-devops",
@@ -162,8 +164,8 @@ export const courseDetails = [
   },
 
   {
-    id: "Data Science & AI",
-    title: "Data Science & AI",
+    id: "Certification Courses",
+    title: "Certification Courses",
     courses: [
       {
         courseName: "Data Science & AI",
@@ -183,7 +185,7 @@ export const courseDetails = [
             para: [
               "200+ hours content",
               "4 Foundation",
-              "Course Fee : ₹ 79,000 | No cost EMI",
+              "Course Fee : ₹ 79,000 ",
             ],
             link1: "/data-science-certification-courses",
             link2:
@@ -203,7 +205,7 @@ export const courseDetails = [
             para: [
               "250+ hours content",
               "8 Advance + 2 Capstone",
-              "Course Fee : ₹ 99,000 | No cost EMI",
+              "Course Fee : ₹ 99,000 ",
             ],
             link1: "/advance-data-science-certification-courses",
             link2:
@@ -223,7 +225,7 @@ export const courseDetails = [
             para: [
               "350+ hours content",
               "10 Advance + 2 Capstone",
-              "Course Fee : ₹ 1,10,000 | No cost EMI",
+              "Course Fee : ₹ 1,10,000 ",
             ],
             link1: "/artificial-intelligence-certification-course",
             link2:
@@ -243,7 +245,7 @@ export const courseDetails = [
             para: [
               "400+ hours content",
               "10 Advance + 3 Capstone",
-              "Course Fee : ₹ 1,10,000 | No cost EMI",
+              "Course Fee : ₹ 1,10,000 ",
             ],
             link1: "/data-science-ai-for-managers",
             link2:
@@ -254,6 +256,7 @@ export const courseDetails = [
             img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/Course-home/DSAI+Master+(1).png",
             title: "Data Science & AI ",
             title1: "Master Program",
+            Green: true,
             courseTime: "13-15 months",
             tag: "Data science",
             tagHead: "Guaranteed Interview Call",
@@ -263,7 +266,7 @@ export const courseDetails = [
             para: [
               "500+ hours content",
               "12 Advance + 4 Capstone",
-              "Course Fee : ₹ 1,29,000 | No cost EMI",
+              "Course Fee : ₹ 1,29,000 ",
             ],
             link1: "/data-science-ai-masters-program",
             link2:
@@ -274,6 +277,7 @@ export const courseDetails = [
             img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/Course-home/BA.png",
             title: "Business Analytics",
             title1: "Master Program",
+            Green: true,
             courseTime: "7-9 months",
             tag: "Data science",
             tagHead: "Dedicated Mentorship",
@@ -283,7 +287,7 @@ export const courseDetails = [
             para: [
               "250+ hours content",
               "12 Advance + 4 Capstone",
-              "Course Fee : ₹ 1,10,000 | No cost EMI",
+              "Course Fee : ₹ 1,10,000 ",
             ],
             link1: "1,10usiness-analytics-certification-course",
             link2:
@@ -303,7 +307,7 @@ export const courseDetails = [
             para: [
               "180+ hours content",
               "8 Advance + 2 Capstopne",
-              "Course Fee : ₹ 79,000 | No cost EMI",
+              "Course Fee : ₹ 79,000 ",
             ],
             link1: "/data-analytics-certification-course",
             link2:
@@ -323,7 +327,7 @@ export const courseDetails = [
             para: [
               "250+ hours content",
               "10 Advance + 2 Capstone",
-              "Course Fee : ₹ 89,000 | No cost EMI",
+              "Course Fee : ₹ 89,000 ",
             ],
             link1: "/banking-finance-analytics",
             link2:
@@ -343,7 +347,7 @@ export const courseDetails = [
             para: [
               "200+ hours content",
               "10 Advance + 2 Capstone",
-              "Course Fee : ₹ 89,000 | No cost EMI",
+              "Course Fee : ₹ 89,000 ",
             ],
             link1: "/hr-analytics",
             link2:
@@ -363,7 +367,7 @@ export const courseDetails = [
             para: [
               "200+ hours content",
               "10 Advance + 2 Capstone",
-              "Course Fee : ₹ 89,000 | No cost EMI",
+              "Course Fee : ₹ 89,000 ",
             ],
             link1: "/marketing-analytics",
             link2:
@@ -374,84 +378,85 @@ export const courseDetails = [
     ],
   },
 
-  {
-    id: "Software Development",
-    title: "Software Development",
-    courses: [
-      {
-        courseName: "Software Development",
-        id: "Software Development",
-        courseDetails: [
-          {
-            id: 1,
-            img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/software-blockchain.png",
-            title: "Software Development ",
-            courseTime: "8-10 months",
-            title1: "Program in Blockchain",
-            tag: "Full stack",
-            tagHead: "For Non-Tech Professionals",
-            brochureLinks:
-              "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Software+Development+with+Specialization+in+Blockchain.pdf",
-            titleCourse: "Software Development Program in Blockchain",
-            para: [
-              "250+ hours content",
-              "12 Projects",
-              "Course Fee : ₹ 95,000 | No cost EMI",
-            ],
-            link1:
-              "/software-development-program-with-specialization-in-blockchain",
-            link2:
-              "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Software+Development+with+Specialization+in+Blockchain.pdf",
-          },
-          {
-            img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/SDE-masters.png",
-            title: "Software Development ",
-            courseTime: "9-11 months",
-            title1: "Master Program",
-            tagHead: "Crack Job Interviews",
-            tag: "Full stack",
-            brochureLinks:
-              "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Full+Stack+Software+Development+Program+Learnbay.pdf",
-            titleCourse: "Software Development Master Program",
-            para: [
-              "300+ hours content",
-              "12 Projects",
-              "Course Fee : ₹ 1,10,000 | No cost EMI",
-            ],
-            link1: "/full-stack-software-development-program",
-            link2:
-              "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Full+Stack+Software+Development+Program+Learnbay.pdf",
-          },
-          {
-            id: 3,
-            img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/software-Devops.png",
-            title: "Software Development Program ",
-            courseTime: "8-10 months",
-            title1: "in Cloud Computing & DevOps",
-            tagHead: "Be a Product Design Pro",
-            tag: "Full stack",
-            brochureLinks:
-              "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Software+Development+with+Specialization+in+Cloud+and+DevOps.pdf",
-            titleCourse:
-              "Software Development Program in Cloud Computing & DevOps",
-            para: [
-              "250+ hours content",
-              "12 Projects",
-              "Course Fee : ₹ 95,000 | No cost EMI",
-            ],
-            link1:
-              "/software-development-program-with-specialization-in-cloud-computing-&-devops",
-            link2:
-              "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Software+Development+with+Specialization+in+Cloud+and+DevOps.pdf",
-          },
-        ],
-      },
-    ],
-  },
+  // {
+  //   id: "Software Development",
+  //   title: "Software Development",
+  //   courses: [
+  //     {
+  //       courseName: "Software Development",
+  //       id: "Software Development",
+  //       courseDetails: [
+  //         {
+  //           id: 1,
+  //           img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/software-blockchain.png",
+  //           title: "Software Development ",
+  //           courseTime: "8-10 months",
+  //           title1: "Program in Blockchain",
+  //           tag: "Full stack",
+  //           tagHead: "For Non-Tech Professionals",
+  //           brochureLinks:
+  //             "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Software+Development+with+Specialization+in+Blockchain.pdf",
+  //           titleCourse: "Software Development Program in Blockchain",
+  //           para: [
+  //             "250+ hours content",
+  //             "12 Projects",
+  //             "Course Fee : ₹ 95,000 ",
+  //           ],
+  //           link1:
+  //             "/software-development-program-with-specialization-in-blockchain",
+  //           link2:
+  //             "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Software+Development+with+Specialization+in+Blockchain.pdf",
+  //         },
+  //         {
+  //           img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/SDE-masters.png",
+  //           title: "Software Development ",
+  //           courseTime: "9-11 months",
+  //           title1: "Master Program",
+  //           tagHead: "Crack Job Interviews",
+  //           Green: true,
+  //           tag: "Full stack",
+  //           brochureLinks:
+  //             "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Full+Stack+Software+Development+Program+Learnbay.pdf",
+  //           titleCourse: "Software Development Master Program",
+  //           para: [
+  //             "300+ hours content",
+  //             "12 Projects",
+  //             "Course Fee : ₹ 1,10,000 ",
+  //           ],
+  //           link1: "/full-stack-software-development-program",
+  //           link2:
+  //             "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Full+Stack+Software+Development+Program+Learnbay.pdf",
+  //         },
+  //         {
+  //           id: 3,
+  //           img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/software-Devops.png",
+  //           title: "Software Development Program ",
+  //           courseTime: "8-10 months",
+  //           title1: "in Cloud Computing & DevOps",
+  //           tagHead: "Be a Product Design Pro",
+  //           tag: "Full stack",
+  //           brochureLinks:
+  //             "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Software+Development+with+Specialization+in+Cloud+and+DevOps.pdf",
+  //           titleCourse:
+  //             "Software Development Program in Cloud Computing & DevOps",
+  //           para: [
+  //             "250+ hours content",
+  //             "12 Projects",
+  //             "Course Fee : ₹ 95,000 ",
+  //           ],
+  //           link1:
+  //             "/software-development-program-with-specialization-in-cloud-computing-&-devops",
+  //           link2:
+  //             "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Software+Development+with+Specialization+in+Cloud+and+DevOps.pdf",
+  //         },
+  //       ],
+  //     },
+  //   ],
+  // },
 
   {
-    id: "Master Program",
-    title: "Master Program",
+    id: "Master Degree Program",
+    title: "Master Degree Program",
     courses: [
       {
         courseName: "Data Science & AI",
@@ -462,6 +467,7 @@ export const courseDetails = [
             img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/Course-home/DSAI+Master+(1).png",
             title: "Data Science & AI ",
             title1: "Master Program",
+            Green: true,
             courseTime: "13-15 months",
             tag: "Data science",
             tagHead: "Guaranteed Interview Call",
@@ -471,7 +477,7 @@ export const courseDetails = [
             para: [
               "500+ hours content",
               "12 Advance + 4 Capstone",
-              "Course Fee : ₹ 1,29,000 | No cost EMI",
+              "Course Fee : ₹ 1,29,000 ",
             ],
             link1: "/data-science-ai-masters-program",
             link2:
@@ -489,6 +495,7 @@ export const courseDetails = [
             title: "Software Development ",
             courseTime: "9-11 months",
             title1: "Master Program",
+            Green: true,
             tagHead: "Crack Job Interviews",
             tag: "Full stack",
             brochureLinks:
@@ -497,7 +504,7 @@ export const courseDetails = [
             para: [
               "300+ hours content",
               "12 Projects",
-              "Course Fee : ₹ 1,10,000 | No cost EMI",
+              "Course Fee : ₹ 1,10,000 ",
             ],
             link1: "/full-stack-software-development-program",
             link2:
@@ -531,7 +538,7 @@ export const courseDetails = [
             para: [
               "200+ hours content",
               "4 Foundation",
-              "Course Fee : ₹ 79,000 | No cost EMI",
+              "Course Fee : ₹ 79,000 ",
             ],
             link1: "/data-science-certification-courses",
             link2:
@@ -551,7 +558,7 @@ export const courseDetails = [
             para: [
               "250+ hours content",
               "8 Advance + 2 Capstone",
-              "Course Fee : ₹ 99,000 | No cost EMI",
+              "Course Fee : ₹ 99,000 ",
             ],
             link1: "/advance-data-science-certification-courses",
             link2:
@@ -571,7 +578,7 @@ export const courseDetails = [
             para: [
               "350+ hours content",
               "10 Advance + 2 Capstone",
-              "Course Fee : ₹ 1,10,000 | No cost EMI",
+              "Course Fee : ₹ 1,10,000 ",
             ],
             link1: "/artificial-intelligence-certification-course",
             link2:
@@ -591,7 +598,7 @@ export const courseDetails = [
             para: [
               "400+ hours content",
               "10 Advance + 3 Capstone",
-              "Course Fee : ₹ 1,10,000 | No cost EMI",
+              "Course Fee : ₹ 1,10,000 ",
             ],
             link1: "/data-science-ai-for-managers",
             link2:
@@ -602,6 +609,7 @@ export const courseDetails = [
             img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/Course-home/DSAI+Master+(1).png",
             title: "Data Science & AI ",
             title1: "Master Program",
+            Green: true,
             courseTime: "13-15 months",
             tagHead: "Guaranteed Interview Call",
             tag: "Data science",
@@ -611,7 +619,7 @@ export const courseDetails = [
             para: [
               "500+ hours content",
               "12 Advance + 4 Capstone",
-              "Course Fee : ₹ 1,29,000 | No cost EMI",
+              "Course Fee : ₹ 1,29,000 ",
             ],
             link1: "/data-science-ai-masters-program",
             link2:
@@ -631,7 +639,7 @@ export const courseDetails = [
             para: [
               "180+ hours content",
               "8 Advance + 2 Capstopne",
-              "Course Fee : ₹ 79,000 | No cost EMI",
+              "Course Fee : ₹ 79,000 ",
             ],
             link1: "/data-analytics-certification-course",
             link2:
@@ -642,6 +650,7 @@ export const courseDetails = [
             img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/Course-home/BA.png",
             title: "Business Analytics",
             title1: "Master Program",
+            Green: true,
             courseTime: "7-9 months",
             tag: "Data science",
             tagHead: "Dedicated Mentorship",
@@ -652,7 +661,7 @@ export const courseDetails = [
             para: [
               "250+ hours content",
               "12 Advance + 2 Capstone",
-              "Course Fee : ₹ 1,10,000 | No cost EMI",
+              "Course Fee : ₹ 1,10,000 ",
             ],
             link1: "/business-analytics-certification-course",
             link2:
@@ -672,7 +681,7 @@ export const courseDetails = [
             para: [
               "250+ hours content",
               "10 Advance + 2 Capstone",
-              "Course Fee : ₹ 89,000 | No cost EMI",
+              "Course Fee : ₹ 89,000 ",
             ],
             link1: "/banking-finance-analytics",
             link2:
@@ -692,7 +701,7 @@ export const courseDetails = [
             para: [
               "200+ hours content",
               "10 Advance + 2 Capstone",
-              "Course Fee : ₹ 89,000 | No cost EMI",
+              "Course Fee : ₹ 89,000 ",
             ],
             link1: "/hr-analytics",
             link2:
@@ -712,7 +721,7 @@ export const courseDetails = [
             para: [
               "200+ hours content",
               "10 Advance + 2 Capstone",
-              "Course Fee : ₹ 89,000 | No cost EMI",
+              "Course Fee : ₹ 89,000 ",
             ],
             link1: "/marketing-analytics",
             link2:
@@ -738,7 +747,7 @@ export const courseDetails = [
             para: [
               "250+ hours content",
               "12 Projects",
-              "Course Fee : ₹ 95,000 | No cost EMI",
+              "Course Fee : ₹ 95,000 ",
             ],
             link1:
               "/software-development-program-with-specialization-in-blockchain",
@@ -751,6 +760,7 @@ export const courseDetails = [
             title: "Software Development ",
             courseTime: "9-11 months",
             title1: "Master Program",
+            Green: true,
             tagHead: "Crack Job Interviews",
             tag: "Full stack",
             brochureLinks:
@@ -759,7 +769,7 @@ export const courseDetails = [
             para: [
               "300+ hours content",
               "12 Projects",
-              "Course Fee : ₹ 1,10,000 | No cost EMI",
+              "Course Fee : ₹ 1,10,000 ",
             ],
             link1: "/full-stack-software-development-program",
             link2:
@@ -780,7 +790,7 @@ export const courseDetails = [
             para: [
               "250+ hours content",
               "12 Projects",
-              "Course Fee : ₹ 95,000 | No cost EMI",
+              "Course Fee : ₹ 95,000 ",
             ],
             link1:
               "/software-development-program-with-specialization-in-cloud-computing-&-devops",
@@ -808,7 +818,7 @@ export const StackD = [
     para: [
       "250+ hours content",
       "12 Projects",
-      "Course Fee : ₹ 95,000 | No cost EMI",
+      "Course Fee : ₹ 95,000 ",
     ],
     link1: "/software-development-program-with-specialization-in-blockchain",
     link2:
@@ -819,6 +829,7 @@ export const StackD = [
     title: "Software Development ",
     courseTime: "9-11 months",
     title1: "Master Program",
+    Green: true,
     tagHead: "Crack Job Interviews",
     tag: "Full stack",
     brochureLinks:
@@ -827,7 +838,7 @@ export const StackD = [
     para: [
       "300+ hours content",
       "12 Projects",
-      "Course Fee : ₹ 1,10,000 | No cost EMI",
+      "Course Fee : ₹ 1,10,000 ",
     ],
     link1: "/full-stack-software-development-program",
     link2:
@@ -847,7 +858,7 @@ export const StackD = [
     para: [
       "250+ hours content",
       "12 Projects",
-      "Course Fee : ₹ 95,000 | No cost EMI",
+      "Course Fee : ₹ 95,000 ",
     ],
     link1:
       "/software-development-program-with-specialization-in-cloud-computing-&-devops",
@@ -872,7 +883,7 @@ export const viewAllD = [
     para: [
       "200+ hours content",
       "4 Foundation",
-      "Course Fee : ₹ 79,000 | No cost EMI",
+      "Course Fee : ₹ 79,000 ",
     ],
     link1: "/data-science-certification-courses",
     link2:
@@ -892,7 +903,7 @@ export const viewAllD = [
     para: [
       "250+ hours content",
       "8 Advance + 2 Capstone",
-      "Course Fee : ₹ 99,000 | No cost EMI",
+      "Course Fee : ₹ 99,000 ",
     ],
     link1: "/advance-data-science-certification-courses",
     link2:
@@ -912,7 +923,7 @@ export const viewAllD = [
     para: [
       "350+ hours content",
       "10 Advance + 2 Capstone",
-      "Course Fee : ₹ 1,10,000 | No cost EMI",
+      "Course Fee : ₹ 1,10,000 ",
     ],
     link1: "/artificial-intelligence-certification-course",
     link2:
@@ -932,7 +943,7 @@ export const viewAllD = [
     para: [
       "400+ hours content",
       "10 Advance + 3 Capstone",
-      "Course Fee : ₹ 1,10,000 | No cost EMI",
+      "Course Fee : ₹ 1,10,000 ",
     ],
     link1: "/data-science-ai-for-managers",
     link2:
@@ -943,6 +954,7 @@ export const viewAllD = [
     img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/Course-home/DSAI+Master+(1).png",
     title: "Data Science & AI ",
     title1: "Master Program",
+    Green: true,
     courseTime: "13-15 months",
     tagHead: "Guaranteed Interview Call",
     tag: "Data science",
@@ -952,7 +964,7 @@ export const viewAllD = [
     para: [
       "500+ hours content",
       "12 Advance + 4 Capstone",
-      "Course Fee : ₹ 1,29,000 | No cost EMI",
+      "Course Fee : ₹ 1,29,000 ",
     ],
     link1: "/data-science-ai-masters-program",
     link2:
@@ -972,7 +984,7 @@ export const viewAllD = [
     para: [
       "180+ hours content",
       "8 Advance + 2 Capstopne",
-      "Course Fee : ₹ 79,000 | No cost EMI",
+      "Course Fee : ₹ 79,000 ",
     ],
     link1: "/data-analytics-certification-course",
     link2:
@@ -983,6 +995,7 @@ export const viewAllD = [
     img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/Course-home/BA.png",
     title: "Business Analytics",
     title1: "Master Program",
+    Green: true,
     courseTime: "7-9 months",
     tag: "Data science",
     tagHead: "Dedicated Mentorship",
@@ -993,7 +1006,7 @@ export const viewAllD = [
     para: [
       "250+ hours content",
       "12 Advance + 2 Capstone",
-      "Course Fee : ₹ 1,10,000 | No cost EMI",
+      "Course Fee : ₹ 1,10,000 ",
     ],
     link1: "/business-analytics-certification-course",
     link2:
@@ -1013,7 +1026,7 @@ export const viewAllD = [
     para: [
       "250+ hours content",
       "12 Projects",
-      "Course Fee : ₹ 95,000 | No cost EMI",
+      "Course Fee : ₹ 95,000 ",
     ],
     link1: "/software-development-program-with-specialization-in-blockchain",
     link2:
@@ -1025,6 +1038,7 @@ export const viewAllD = [
     title: "Software Development ",
     courseTime: "9-11 months",
     title1: "Master Program",
+    Green: true,
     tagHead: "Crack Job Interviews",
     tag: "Full stack",
     brochureLinks:
@@ -1033,7 +1047,7 @@ export const viewAllD = [
     para: [
       "300+ hours content",
       "12 Projects",
-      "Course Fee : ₹ 1,10,000 | No cost EMI",
+      "Course Fee : ₹ 1,10,000 ",
     ],
     link1: "/full-stack-software-development-program",
     link2:
@@ -1053,7 +1067,7 @@ export const viewAllD = [
     para: [
       "250+ hours content",
       "12 Projects",
-      "Course Fee : ₹ 95,000 | No cost EMI",
+      "Course Fee : ₹ 95,000 ",
     ],
     link1:
       "/software-development-program-with-specialization-in-cloud-computing-&-devops",
@@ -1074,7 +1088,7 @@ export const viewAllD = [
     para: [
       "250+ hours content",
       "10 Advance + 2 Capstone",
-      "Course Fee : ₹ 89,000 | No cost EMI",
+      "Course Fee : ₹ 89,000 ",
     ],
     link1: "/banking-finance-analytics",
     link2:
@@ -1094,7 +1108,7 @@ export const viewAllD = [
     para: [
       "200+ hours content",
       "10 Advance + 2 Capstone",
-      "Course Fee : ₹ 89,000 | No cost EMI",
+      "Course Fee : ₹ 89,000 ",
     ],
     link1: "/hr-analytics",
     link2:
@@ -1114,7 +1128,7 @@ export const viewAllD = [
     para: [
       "200+ hours content",
       "10 Advance + 2 Capstone",
-      "Course Fee : ₹ 89,000 | No cost EMI",
+      "Course Fee : ₹ 89,000 ",
     ],
     link1: "/marketing-analytics",
     link2:
@@ -1137,7 +1151,7 @@ export const ForProgrammersD = [
     para: [
       "250+ hours content",
       "8 Advance + 2 Capstone",
-      "Course Fee : ₹ 99,000 | No cost EMI",
+      "Course Fee : ₹ 99,000 ",
     ],
     link1: "/advance-data-science-certification-courses",
     link2:
@@ -1149,6 +1163,7 @@ export const ForProgrammersD = [
     title: "Software Development ",
     courseTime: "9-11 months",
     title1: "Master Program",
+    Green: true,
     tagHead: "Crack Job Interviews",
     tag: "Full stack",
     brochureLinks:
@@ -1157,7 +1172,7 @@ export const ForProgrammersD = [
     para: [
       "300+ hours content",
       "12 Projects",
-      "Course Fee : ₹ 1,10,000 | No cost EMI",
+      "Course Fee : ₹ 1,10,000 ",
     ],
     link1: "/full-stack-software-development-program",
     link2:
@@ -1177,7 +1192,7 @@ export const ForProgrammersD = [
     para: [
       "400+ hours content",
       "10 Advance + 3 Capstone",
-      "Course Fee : ₹ 1,10,000 | No cost EMI",
+      "Course Fee : ₹ 1,10,000 ",
     ],
     link1: "/data-science-ai-for-managers",
     link2:
@@ -1197,7 +1212,7 @@ export const ForProgrammersD = [
     para: [
       "350+ hours content",
       "10 Advance + 2 Capstone",
-      "Course Fee : ₹ 1,10,000 | No cost EMI",
+      "Course Fee : ₹ 1,10,000 ",
     ],
     link1: "/artificial-intelligence-certification-course",
     link2:
@@ -1217,7 +1232,7 @@ export const ForProgrammersD = [
     para: [
       "250+ hours content",
       "12 Projects",
-      "Course Fee : ₹ 95,000 | No cost EMI",
+      "Course Fee : ₹ 95,000 ",
     ],
     link1: "/software-development-program-with-specialization-in-blockchain",
     link2:
@@ -1228,6 +1243,7 @@ export const ForProgrammersD = [
     img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/Course-home/DSAI+Master+(1).png",
     title: "Data Science & AI ",
     title1: "Master Program",
+    Green: true,
     courseTime: "13-15 months",
     tagHead: "Guaranteed Interview Call",
     tag: "Data science",
@@ -1237,7 +1253,7 @@ export const ForProgrammersD = [
     para: [
       "500 + hours content",
       "12 Advance + 4 Capstone",
-      "Course Fee : ₹ 1,29,000 | No cost EMI",
+      "Course Fee : ₹ 1,29,000 ",
     ],
     link1: "/data-science-ai-masters-program",
     link2:
@@ -1257,7 +1273,7 @@ export const ForProgrammersD = [
     para: [
       "250+ hours content",
       "12 Projects",
-      "Course Fee : ₹ 95,000 | No cost EMI",
+      "Course Fee : ₹ 95,000 ",
     ],
     link1:
       "/software-development-program-with-specialization-in-cloud-computing-&-devops",
@@ -1281,7 +1297,7 @@ export const ForNonProgrammerD = [
     para: [
       "200+ hours content",
       "4 Foundation",
-      "Course Fee : ₹ 79,000 | No cost EMI",
+      "Course Fee : ₹ 79,000 ",
     ],
     link1: "/data-science-certification-courses",
     link2:
@@ -1301,7 +1317,7 @@ export const ForNonProgrammerD = [
     para: [
       "250+ hours content",
       "8 Advance + 2 Capstone",
-      "Course Fee : ₹ 99,000 | No cost EMI",
+      "Course Fee : ₹ 99,000 ",
     ],
     link1: "/advance-data-science-certification-courses",
     link2:
@@ -1321,7 +1337,7 @@ export const ForNonProgrammerD = [
     para: [
       "350+ hours content",
       "10 Advance + 2 Capstone",
-      "Course Fee : ₹ 1,10,000 | No cost EMI",
+      "Course Fee : ₹ 1,10,000 ",
     ],
     link1: "/artificial-intelligence-certification-course",
     link2:
@@ -1341,7 +1357,7 @@ export const ForNonProgrammerD = [
     para: [
       "400+ hours content",
       "10 Advance + 3 Capstone",
-      "Course Fee : ₹ 1,10,000 | No cost EMI",
+      "Course Fee : ₹ 1,10,000 ",
     ],
     link1: "/data-science-ai-for-managers",
     link2:
@@ -1352,6 +1368,7 @@ export const ForNonProgrammerD = [
     img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/Course-home/DSAI+Master+(1).png",
     title: "Data Science & AI ",
     title1: "Master Program",
+    Green: true,
     courseTime: "13-15 months",
     tag: "Data science",
     tagHead: "Guaranteed Interview Call",
@@ -1361,7 +1378,7 @@ export const ForNonProgrammerD = [
     para: [
       "500+ hours content",
       "12 Advance + 4 Capstone",
-      "Course Fee : ₹ 1,29,000 | No cost EMI",
+      "Course Fee : ₹ 1,29,000 ",
     ],
     link1: "/data-science-ai-masters-program",
     link2:
@@ -1372,6 +1389,7 @@ export const ForNonProgrammerD = [
     img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/Course-home/BA.png",
     title: "Business Analytics",
     title1: "Master Program",
+    Green: true,
     courseTime: "7-9 months",
     tag: "Data science",
     tagHead: "Dedicated Mentorship",
@@ -1381,7 +1399,7 @@ export const ForNonProgrammerD = [
     para: [
       "250+ hours content",
       "12 Advance + 4 Capstone",
-      "Course Fee : ₹ 1,10,000 | No cost EMI",
+      "Course Fee : ₹ 1,10,000 ",
     ],
     link1: "1,10usiness-analytics-certification-course",
     link2:
@@ -1401,7 +1419,7 @@ export const ForNonProgrammerD = [
     para: [
       "180+ hours content",
       "8 Advance + 2 Capstopne",
-      "Course Fee : ₹ 79,000 | No cost EMI",
+      "Course Fee : ₹ 79,000 ",
     ],
     link1: "/data-analytics-certification-course",
     link2:
@@ -1421,7 +1439,7 @@ export const ForNonProgrammerD = [
     para: [
       "250+ hours content",
       "10 Advance + 2 Capstone",
-      "Course Fee : ₹ 89,000 | No cost EMI",
+      "Course Fee : ₹ 89,000 ",
     ],
     link1: "/banking-finance-analytics",
     link2:
@@ -1441,7 +1459,7 @@ export const ForNonProgrammerD = [
     para: [
       "200+ hours content",
       "10 Advance + 2 Capstone",
-      "Course Fee : ₹ 89,000 | No cost EMI",
+      "Course Fee : ₹ 89,000 ",
     ],
     link1: "/hr-analytics",
     link2:
@@ -1461,7 +1479,7 @@ export const ForNonProgrammerD = [
     para: [
       "200+ hours content",
       "10 Advance + 2 Capstone",
-      "Course Fee : ₹ 89,000 | No cost EMI",
+      "Course Fee : ₹ 89,000 ",
     ],
     link1: "/marketing-analytics",
     link2:
@@ -1475,6 +1493,7 @@ export const JobGuaranteeD = [
     img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/Course-home/DSAI+Master+(1).png",
     title: "Data Science & AI ",
     title1: "Master Program",
+    Green: true,
     courseTime: "13-15 months",
     tag: "Data science",
     tagHead: "Guaranteed Interview Call",
@@ -1484,7 +1503,7 @@ export const JobGuaranteeD = [
     para: [
       "500+ hours content",
       "12 Advance + 4 Capstone",
-      "Course Fee : ₹ 1,29,000 | No cost EMI",
+      "Course Fee : ₹ 1,29,000 ",
     ],
     link1: "/data-science-ai-masters-program",
     link2:
@@ -1496,6 +1515,7 @@ export const JobGuaranteeD = [
     title: "Software Development ",
     courseTime: "9-11 months",
     title1: "Master Program",
+    Green: true,
     tagHead: "Crack Job Interviews",
     tag: "Full stack",
     brochureLinks:
@@ -1504,7 +1524,7 @@ export const JobGuaranteeD = [
     para: [
       "300+ hours content",
       "12 Projects",
-      "Course Fee : ₹ 1,10,000 | No cost EMI",
+      "Course Fee : ₹ 1,10,000 ",
     ],
     link1: "/full-stack-software-development-program",
     link2:

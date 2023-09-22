@@ -1,0 +1,28 @@
+.First {
+  padding: 0px 100px;
+  background: url("https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/FirstSectionBg.png");
+  background-size: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  flex-direction: column;
+  text-align: center;
+}
+
+.First h3 {
+  font-size: 31px;
+  font-weight: 600;
+}
+
+.First p {
+  margin-top: 10px;
+  color: #4545459e;
+  font-size: 18px;
+  font-weight: 500;
+  width: fit-content;
+}
+
+.Button {
+  margin-top: 40px;
+}
