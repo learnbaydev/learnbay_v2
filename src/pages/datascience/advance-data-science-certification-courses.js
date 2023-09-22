@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from "react";
-import Head from "next/head";
-import Navbar from "../../../components/Navbar/Navbar";
-import Footer from "../../../components/Footer/Footer";
 import dynamic from "next/dynamic";
+import Head from "next/head";
+import { useEffect, useState } from "react";
 import { DataScienceCourseData } from "../../../Data/AdvanceDataScienceCourse";
+import Footer from "../../../components/Footer/Footer";
+import Navbar from "../../../components/Navbar/Navbar";
 
 const FirstSection = dynamic(() =>
   import("../../../components/CoursePage/FirstSection/FirstSection")
@@ -60,8 +60,8 @@ const BatchDetails = dynamic(() =>
   import("../../../components/CoursePage/BatchDetails/BatchDetails")
 );
 
-import BottomBar from "../../../components/WebPage/BottomBar/BottomBar";
 import OfferPopup from "../../../components/OfferPopup/OfferPopup";
+import BottomBar from "../../../components/WebPage/BottomBar/BottomBar";
 
 function Blockchain() {
   // POPUP GET METHOD
@@ -76,7 +76,7 @@ function Blockchain() {
       if (data.status === 200) {
         const { popData } = await data.json();
         // console.log(popData, "get data");
-        if (popData === []) {
+        if (popData == []) {
           setPopupData([]);
         }
 
