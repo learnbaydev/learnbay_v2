@@ -60,6 +60,7 @@ const KeyFeatures = ({
               dataScience={dataScience}
               dataScienceCounselling={dataScienceCounselling}
               downloadBrochure
+              upSkillingHide={true}
             />
           </div>
         </Popup>
@@ -170,7 +171,7 @@ const KeyFeatures = ({
             />
           </div>
           <div className={styles.imgShowM}></div>
-          <button onClick={popupShowD} className={styles.btn}>
+          <button onClick={popupShow} className={styles.btn}>
             Download Placement Report{" "}
             <FaDownload style={{ marginLeft: "10px" }} />
           </button>

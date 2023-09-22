@@ -1,9 +1,12 @@
-import React, { useState, useEffect } from "react";
-import Head from "next/head";
-import Navbar from "../../../components/Navbar/Navbar";
-import Footer from "../../../components/Footer/Footer";
 import dynamic from "next/dynamic";
+import Head from "next/head";
+import { useEffect, useState } from "react";
 import { BADataScienceCourseData } from "../../../Data/BusinessAnalyticsData";
+import BatchDetails from "../../../components/CoursePage/BatchDetails/BatchDetails";
+import Footer from "../../../components/Footer/Footer";
+import Navbar from "../../../components/Navbar/Navbar";
+import OfferPopup from "../../../components/OfferPopup/OfferPopup";
+import BottomBar from "../../../components/WebPage/BottomBar/BottomBar";
 
 const FirstSection = dynamic(() =>
   import("../../../components/CoursePage/FirstSection/FirstSection")
@@ -56,9 +59,6 @@ const Certificate = dynamic(() =>
 const FAQNew = dynamic(() =>
   import("../../../components/CoursePage/FAQNew/FAQNew")
 );
-import BottomBar from "../../../components/WebPage/BottomBar/BottomBar";
-import BatchDetails from "../../../components/CoursePage/BatchDetails/BatchDetails";
-import OfferPopup from "../../../components/OfferPopup/OfferPopup";
 
 function Blockchain() {
   // POPUP GET METHOD
@@ -73,7 +73,7 @@ function Blockchain() {
       if (data.status === 200) {
         const { popData } = await data.json();
         // console.log(popData, "get data");
-        if (popData === []) {
+        if (popData == []) {
           setPopupData([]);
         }
 
@@ -116,9 +116,6 @@ function Blockchain() {
     };
     fetchBatch();
   }, []);
-
-
-  
 
   return (
     <>
@@ -224,7 +221,7 @@ function Blockchain() {
           titleCourse="Business Analytics Project Brochure"
           brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Business+Analytics+Projects.pdf"
         />
-         {batchDateData === "" ? (
+        {batchDateData === "" ? (
           ""
         ) : (
           <BatchDetails batchDetails={batchDateData.batchDetails} />

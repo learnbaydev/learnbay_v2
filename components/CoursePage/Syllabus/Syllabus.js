@@ -72,6 +72,7 @@ function SyllabusNew({
             downloadBrochure
             titleCourse={titleCourse}
             brochureLink={brochureLink}
+            upSkillingHide={true}
           />
         </div>
       </Popup>

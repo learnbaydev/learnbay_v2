@@ -94,6 +94,7 @@ const Course = ({ dataScience, radio, dataScienceCounselling, Green }) => {
             dataScienceCounselling={dataScienceCounselling}
             radio={radio}
             downloadBrochure
+            upSkillingHide={true}
           />
         </div>
       </Popup>
