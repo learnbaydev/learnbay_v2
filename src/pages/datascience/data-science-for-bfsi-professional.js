@@ -136,7 +136,7 @@ function Blockchain() {
         />
         <link
           rel="canonical"
-          href="https://www.learnbay.co/data-science-for-bfsi-professional"
+          href="https://www.learnbay.co/datascience/data-science-for-bfsi-professional"
         />
       </Head>
       <main>

@@ -58,7 +58,7 @@ export default function Home() {
         />
         <meta
           property="og:url"
-          content="https://www.learnbay.co/data-science-course-training-in-dubai"
+          content="https://www.learnbay.co/datascience/dubai/data-science-course-training-in-dubai"
         />
         <meta
           property="og:title"

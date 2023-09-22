@@ -56,9 +56,49 @@ export default function Home() {
           name="keywords"
           content="Business Analytics course in Dubai, Business Analytics training in Dubai, Business Analytics institute in Dubai, best Business Analytics institute in Dubai, Business Analytics course in Dubai, Business Analytics certification in Dubai, Business Analytics training institute in Dubai, advanced Business Analytics course in Dubai, Business Analytics course with Placement Assistance, Business Analytics course"
         />
+<meta
+          property="og:url"
+          content="https://www.learnbay.co/datascience/dubai/business-analytics-course-training-in-dubai"
+        />
+        <meta
+          property="og:title"
+          content="Business Analytics Course in Dubai | Data Science Training in Dubai"
+        />
+        <meta property="og:site_name" content="learnbay.co" />
+        <meta property="og:type" content="Learnbay_co:course" />
+        <meta
+          property="og:description"
+          content="Business Analytics Course in Dubai. Learnbay is Advanced Business Analytics Course Training Institute in Dubai. Business Analytics Course in Dubai will enhance your career"
+        />
+        <meta
+          property="og:image"
+          content="https://www.learnbay.co/_next/image?url=https%3A%2F%2Flearnbay-wb.s3.ap-south-1.amazonaws.com%2Fmain%2FLearnbay-Logo.webp&w=256&q=100"
+        />
+        <meta property="og:image:height" content="100" />
+        <meta property="og:image:width" content="256" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@Learnbay" />
+        <meta
+          name="twitter:title"
+          content="Business Analytics Course in Dubai | Data Science Training in Dubai"
+        />
+        <meta name="twitter:creator" content="@Learnbay" />
+        <meta
+          itemProp="description"
+          content="Business Analytics Course in Dubai. Learnbay is Advanced Business Analytics Course Training Institute in Dubai. Business Analytics Course in Dubai will enhance your career"
+        />
+        <meta
+          name="twitter:description"
+          content="Business Analytics Course in Dubai. Learnbay is Advanced Business Analytics Course Training Institute in Dubai. Business Analytics Course in Dubai will enhance your career"
+        />
+        <meta
+          name="twitter:image"
+          content="https://www.learnbay.co/_next/image?url=https%3A%2F%2Flearnbay-wb.s3.ap-south-1.amazonaws.com%2Fmain%2FLearnbay-Logo.webp&w=256&q=100"
+        />
+
         <link
           rel="canonical"
-          href="https://www.learnbay.co/business-analytics-course-training-in-dubai"
+          href="https://www.learnbay.co/datascience/dubai/business-analytics-course-training-in-dubai"
         />
         <meta
           name="copyright"

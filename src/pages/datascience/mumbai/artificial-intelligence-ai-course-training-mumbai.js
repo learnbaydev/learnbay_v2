@@ -54,13 +54,53 @@ export default function Home() {
           name="description"
           content="Learnbay provides Artificial Intelligence Training in Mumbai For Managers and Leaders. Our courses are affordable and flexible. Enroll Now."
         />
+
+<meta
+          property="og:url"
+          content="https://www.learnbay.co/datascience/mumbai/artificial-intelligence-ai-course-training-mumbai"
+        />
+        <meta
+          property="og:title"
+          content="Artifical intellgince Course in Mumbai | Data Science Training in Mumbai"
+        />
+        <meta property="og:site_name" content="learnbay.co" />
+        <meta property="og:type" content="Learnbay_co:course" />
+        <meta
+          property="og:description"
+          content="Artifical intellgince Course in Mumbai. Learnbay is Advanced Artifical intellgince Course Training Institute in Mumbai. Artifical intellgince Course in Mumbai will enhance your career"
+        />
+        <meta
+          property="og:image"
+          content="https://www.learnbay.co/_next/image?url=https%3A%2F%2Flearnbay-wb.s3.ap-south-1.amazonaws.com%2Fmain%2FLearnbay-Logo.webp&w=256&q=100"
+        />
+        <meta property="og:image:height" content="100" />
+        <meta property="og:image:width" content="256" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@Learnbay" />
+        <meta
+          name="twitter:title"
+          content="Artifical intellgince Course in Mumbai | Data Science Training in Mumbai"
+        />
+        <meta name="twitter:creator" content="@Learnbay" />
+        <meta
+          itemProp="description"
+          content="Artifical intellgince Course in Mumbai. Learnbay is Advanced Artifical intellgince Course Training Institute in Mumbai. Artifical intellgince Course in Mumbai will enhance your career"
+        />
+        <meta
+          name="twitter:description"
+          content="Artifical intellgince Course in Mumbai. Learnbay is Advanced Artifical intellgince Course Training Institute in Mumbai. Artifical intellgince Course in Mumbai will enhance your career"
+        />
+        <meta
+          name="twitter:image"
+          content="https://www.learnbay.co/_next/image?url=https%3A%2F%2Flearnbay-wb.s3.ap-south-1.amazonaws.com%2Fmain%2FLearnbay-Logo.webp&w=256&q=100"
+        />
         <meta
           name="keywords"
           content="Artificial Intelligence course in Mumbai, Artificial Intelligence training in Mumbai, Artificial Intelligence institute in Mumbai, best Artificial Intelligence institute in Mumbai, Artificial Intelligence course in Mumbai, Artificial Intelligence certification in Mumbai, Artificial Intelligence training institute in Mumbai, advanced Artificial Intelligence course in Mumbai, Artificial Intelligence course with Placement Assistance, Artificial Intelligence course"
         />
         <link
           rel="canonical"
-          href="https://www.learnbay.co/artificial-intelligence-ai-course-training-mumbai"
+          href="https://www.learnbay.co/datascience/mumbai/artificial-intelligence-ai-course-training-mumbai"
         />
         <meta
           name="copyright"

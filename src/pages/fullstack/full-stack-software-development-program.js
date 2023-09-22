@@ -82,7 +82,7 @@ function Blockchain() {
         />
         <link
           rel="canonical"
-          href="https://www.learnbay.co/software-development-program-with-specialization-data-science-and-ai"
+          href="https://www.learnbay.co/fullstack/full-stack-software-development-program"
         />
       </Head>
       <main>

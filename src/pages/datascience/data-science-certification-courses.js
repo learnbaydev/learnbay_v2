@@ -126,7 +126,7 @@ function Blockchain() {
         />
         <link
           rel="canonical"
-          href="https://www.learnbay.co/data-science-certification-courses"
+          href="https://www.learnbay.co/datascience/data-science-certification-courses"
         />
       </Head>
       <main>

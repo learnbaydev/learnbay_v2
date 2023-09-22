@@ -132,7 +132,7 @@ function Blockchain() {
           rel="icon"
           href="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/Learnbay-Favicon-L.png"
         />
-        <link rel="canonical" href="https://www.learnbay.co/hr-analytics" />
+        <link rel="canonical" href="https://www.learnbay.co/datascience/hr-analytics" />
       </Head>
       <main>
         <Navbar popup={true} dataScienceCounselling={true} />

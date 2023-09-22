@@ -59,9 +59,48 @@ export default function Home() {
           name="keywords"
           content="Data Analytics course in Dubai, Data Analytics training in Dubai, Data Analytics institute in Dubai, best Data Analytics institute in Dubai, Data Analytics course in Dubai, Data Analytics certification in Dubai, Data Analytics training institute in Dubai, advanced Data Analytics course in Dubai, Data Analytics course with Placement Assistance, Data Analytics course"
         />
+        <meta
+          property="og:url"
+          content="https://www.learnbay.co/datascience/dubai/data-analytics-course-training-in-dubai"
+        />
+        <meta
+          property="og:title"
+          content="Data Analytics Courese in Dubai | Data Science Training in Dubai"
+        />
+        <meta property="og:site_name" content="learnbay.co" />
+        <meta property="og:type" content="Learnbay_co:course" />
+        <meta
+          property="og:description"
+          content="Data Analytics Courese in Dubai. Learnbay is Advanced Data Analytics Courese Training Institute in Dubai. Data Analytics Courese in Dubai will enhance your career"
+        />
+        <meta
+          property="og:image"
+          content="https://www.learnbay.co/_next/image?url=https%3A%2F%2Flearnbay-wb.s3.ap-south-1.amazonaws.com%2Fmain%2FLearnbay-Logo.webp&w=256&q=100"
+        />
+        <meta property="og:image:height" content="100" />
+        <meta property="og:image:width" content="256" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@Learnbay" />
+        <meta
+          name="twitter:title"
+          content="Data Analytics Courese in Dubai | Data Science Training in Dubai"
+        />
+        <meta name="twitter:creator" content="@Learnbay" />
+        <meta
+          itemProp="description"
+          content="Data Analytics Courese in Dubai. Learnbay is Advanced Data Analytics Courese Training Institute in Dubai. Data Analytics Courese in Dubai will enhance your career"
+        />
+        <meta
+          name="twitter:description"
+          content="Data Analytics Courese in Dubai. Learnbay is Advanced Data Analytics Courese Training Institute in Dubai. Data Analytics Courese in Dubai will enhance your career"
+        />
+        <meta
+          name="twitter:image"
+          content="https://www.learnbay.co/_next/image?url=https%3A%2F%2Flearnbay-wb.s3.ap-south-1.amazonaws.com%2Fmain%2FLearnbay-Logo.webp&w=256&q=100"
+        />
         <link
           rel="canonical"
-          href="https://www.learnbay.co/data-analytics-course-training-in-dubai"
+          href="https://www.learnbay.co/datascience/dubai/data-analytics-course-training-in-dubai"
         />
         <meta
           name="copyright"

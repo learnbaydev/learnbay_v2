@@ -101,7 +101,7 @@ export default function Home() {
         />
         <link
           rel="canonical"
-          href="https://www.learnbay.co/data-science-course-training-in-delhi"
+          href="https://www.learnbay.co/datascience/delhi/data-science-course-training-in-delhi"
         />
         <script
           type="application/ld+json"

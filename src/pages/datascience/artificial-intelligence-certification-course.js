@@ -142,7 +142,7 @@ function Blockchain() {
         />
         <link
           rel="canonical"
-          href="https://www.learnbay.co/artificial-intelligence-certification-course"
+          href="https://www.learnbay.co/datascience/artificial-intelligence-certification-course"
         />
       </Head>
       <main>

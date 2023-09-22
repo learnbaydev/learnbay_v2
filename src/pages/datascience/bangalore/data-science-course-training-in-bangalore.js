@@ -79,11 +79,11 @@ export default function Home() {
         />
         <link
           rel="canonical"
-          href="https://www.learnbay.co/data-science-course-training-in-bangalore"
+          href="https://www.learnbay.co/datascience/bangalore/data-science-course-training-in-bangalore"
         />
         <meta
           property="og:url"
-          content="https://www.learnbay.co/data-science-course-training-in-bangalore"
+          content="https://www.learnbay.co/datascience/bangalore/data-science-course-training-in-bangalore"
         />
         <meta
           property="og:title"

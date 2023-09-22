@@ -56,9 +56,49 @@ export default function Home() {
           name="keywords"
           content="Full-Stack Software Developer Course in Bangalore, Full-Stack Software Developer Course training in Bangalore, Full-Stack Software Developer Course institute in Bangalore, best Full-Stack Software Developer Course institute in Bangalore, data scientist course in Bangalore,data scientist certification in Bangalore, Full-Stack Software Developer Course training institute in Bangalore, advanced Full-Stack Software Developer Course in Bangalore, Full-Stack Software Developer Course with Placement Assistance, Full-Stack Software Developer Course"
         />
+
+<meta
+          property="og:url"
+          content="https://www.learnbay.co/fullstack/bangalore/full-stack-software-developer-course-in-bangalore"
+        />
+        <meta
+          property="og:title"
+          content="Full stack software developer course In Bangalore with Placement Assistance"
+        />
+        <meta property="og:site_name" content="learnbay.co" />
+        <meta property="og:type" content="article" />
+        <meta
+          property="og:description"
+          content="Full stack software developer course in Bangalore. We are Advanced Full stack software developer course Certification Training Institute in Bangalore. Full stack software developer course will enhance your career."
+        />
+        <meta
+          property="og:image"
+          content="https://www.learnbay.co/_next/image?url=https%3A%2F%2Flearnbay-wb.s3.ap-south-1.amazonaws.com%2Fmain%2FLearnbay-Logo.webp&w=256&q=100"
+        />
+        <meta property="og:image:height" content="100" />
+        <meta property="og:image:width" content="256" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@Learnbay" />
+        <meta
+          name="twitter:title"
+          content="Full stack software developer course Training In Bangalore with Placement Assistance"
+        />
+        <meta name="twitter:creator" content="@Learnbay" />
+        <meta
+          itemProp="description"
+          content="Full stack software developer course Bangalore. We are Advanced Full stack software developer course Certification Training Institute in Bangalore. Full stack software developer course will enhance your career."
+        />
+        <meta
+          name="twitter:description"
+          content="Full stack software developer course Bangalore. We are Advanced Full stack software developer course Certification Training Institute in Bangalore. Full stack software developer course will enhance your career."
+        />
+        <meta
+          name="twitter:image"
+          content="https://www.learnbay.co/_next/image?url=https%3A%2F%2Flearnbay-wb.s3.ap-south-1.amazonaws.com%2Fmain%2FLearnbay-Logo.webp&w=256&q=100"
+        />
         <link
           rel="canonical"
-          href="https://www.learnbay.co/full-stack-software-developer-course-in-bangalore"
+          href="https://www.learnbay.co/fullstack/bangalore/full-stack-software-developer-course-in-bangalore"
         />
         <meta
           name="copyright"

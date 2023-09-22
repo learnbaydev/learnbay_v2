@@ -60,6 +60,7 @@ const FAQNew = dynamic(() =>
 import OfferPopup from "../../../components/OfferPopup/OfferPopup";
 import BottomBar from "../../../components/WebPage/BottomBar/BottomBar";
 import BatchDetails from "../../../components/CoursePage/BatchDetails/BatchDetails";
+import Content from "../../../components/SEO/Content/content"
 
 function Blockchain() {
    // POPUP GET METHOD
@@ -154,7 +155,7 @@ function Blockchain() {
         />
         <link
           rel="canonical"
-          href="https://www.learnbay.co/data-analytics-certification-course"
+          href="https://www.learnbay.co/datascience/data-analytics-certification-course"
         />
       </Head>
       <main>
@@ -252,6 +253,7 @@ function Blockchain() {
           <BatchDetails batchDetails={batchDateData.batchDetails} />
         )}
         <FAQNew FAQNewData={DADataScienceCourseData[0].faq} />
+          <Content dataScienceCounselling={true} />
         <SeventhSection />
         <Footer />
 

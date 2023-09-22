@@ -52,13 +52,53 @@ export default function Home() {
           name="description"
           content="Best Artificial Intelligence Training Program in Pune with flexible schedules, IBM certification, job assistance, and more. Enhance your skills and advance your career. Enroll Now."
         />
+<meta
+          property="og:url"
+          content="https://www.learnbay.co/datascience/pune/artificial-intelligence-ai-course-training-pune"
+        />
+        <meta
+          property="og:title"
+          content="Artificail Intelligence Course in pune | Data Science Training in pune"
+        />
+        <meta property="og:site_name" content="learnbay.co" />
+        <meta property="og:type" content="Learnbay_co:course" />
+        <meta
+          property="og:description"
+          content="Artificail Intelligence Course in pune. Learnbay is Advanced Artificail Intelligence Course Training Institute in pune. Artificail Intelligence Course in pune will enhance your career"
+        />
+        <meta
+          property="og:image"
+          content="https://www.learnbay.co/_next/image?url=https%3A%2F%2Flearnbay-wb.s3.ap-south-1.amazonaws.com%2Fmain%2FLearnbay-Logo.webp&w=256&q=100"
+        />
+        <meta property="og:image:height" content="100" />
+        <meta property="og:image:width" content="256" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@Learnbay" />
+        <meta
+          name="twitter:title"
+          content="Artificail Intelligence Course in Chennai | Data Science Training in Chennai"
+        />
+        <meta name="twitter:creator" content="@Learnbay" />
+        <meta
+          itemProp="description"
+          content="Artificail Intelligence Course in Chennai. Learnbay is Advanced Artificail Intelligence Course Training Institute in Chennai. Artificail Intelligence Course in Chennai will enhance your career"
+        />
+        <meta
+          name="twitter:description"
+          content="Artificail Intelligence Course in Chennai. Learnbay is Advanced Artificail Intelligence Course Training Institute in Chennai. Artificail Intelligence Course in Chennai will enhance your career"
+        />
+        <meta
+          name="twitter:image"
+          content="https://www.learnbay.co/_next/image?url=https%3A%2F%2Flearnbay-wb.s3.ap-south-1.amazonaws.com%2Fmain%2FLearnbay-Logo.webp&w=256&q=100"
+        />
+
         <meta
           name="keywords"
           content="Artificial Intelligence course in Pune, Artificial Intelligence training in Pune, Artificial Intelligence institute in Pune, best Artificial Intelligence institute in Pune, Artificial Intelligence course in Pune, Artificial Intelligence certification in Pune, Artificial Intelligence training institute in Pune, advanced Artificial Intelligence course in Pune, Artificial Intelligence course with Placement Assistance, Artificial Intelligence course"
         />
         <link
           rel="canonical"
-          href="https://www.learnbay.co/artificial-intelligence-ai-course-training-pune"
+          href="https://www.learnbay.co/datascience/pune/artificial-intelligence-ai-course-training-pune"
         />
         <meta
           name="copyright"

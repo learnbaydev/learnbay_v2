@@ -52,13 +52,54 @@ export default function Home() {
           name="description"
           content="Best Full Stack Web Development Course in Mumbai and Master the Most in-demand Coding and Web Development Skills. Signup Now."
         />
+
+<meta
+          property="og:url"
+          content="https://www.learnbay.co/fullstack/mumbai/full-stack-software-developer-course-in-mumbai"
+        />
+        <meta
+          property="og:title"
+          content="Best Full Stack Web Development Course | Data Science Training in Mumbai"
+        />
+        <meta property="og:site_name" content="learnbay.co" />
+        <meta property="og:type" content="Learnbay_co:course" />
+        <meta
+          property="og:description"
+          content="Best Full Stack Web Development Course. Learnbay is Advanced Artifical intellgince Course Training Institute in Mumbai. Best Full Stack Web Development Course will enhance your career"
+        />
+        <meta
+          property="og:image"
+          content="https://www.learnbay.co/_next/image?url=https%3A%2F%2Flearnbay-wb.s3.ap-south-1.amazonaws.com%2Fmain%2FLearnbay-Logo.webp&w=256&q=100"
+        />
+        <meta property="og:image:height" content="100" />
+        <meta property="og:image:width" content="256" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@Learnbay" />
+        <meta
+          name="twitter:title"
+          content="Best Full Stack Web Development Course | Data Science Training in Mumbai"
+        />
+        <meta name="twitter:creator" content="@Learnbay" />
+        <meta
+          itemProp="description"
+          content="Best Full Stack Web Development Course. Learnbay is Advanced Artifical intellgince Course Training Institute in Mumbai. Best Full Stack Web Development Course will enhance your career"
+        />
+        <meta
+          name="twitter:description"
+          content="Best Full Stack Web Development Course. Learnbay is Advanced Artifical intellgince Course Training Institute in Mumbai. Best Full Stack Web Development Course will enhance your career"
+        />
+        <meta
+          name="twitter:image"
+          content="https://www.learnbay.co/_next/image?url=https%3A%2F%2Flearnbay-wb.s3.ap-south-1.amazonaws.com%2Fmain%2FLearnbay-Logo.webp&w=256&q=100"
+        />
+       
         <meta
           name="keywords"
           content="Full-Stack Software Developer Course in Mumbai, Full-Stack Software Developer Course training in Mumbai, Full-Stack Software Developer Course institute in Mumbai, best Full-Stack Software Developer Course institute in Mumbai, data scientist course in Mumbai,data scientist certification in Mumbai, Full-Stack Software Developer Course training institute in Mumbai, advanced Full-Stack Software Developer Course in Mumbai, Full-Stack Software Developer Course with Placement Assistance, Full-Stack Software Developer Course"
         />
         <link
           rel="canonical"
-          href="https://www.learnbay.co/full-stack-software-developer-course-in-mumbai"
+          href="https://www.learnbay.co/fullstack/mumbai/full-stack-software-developer-course-in-mumbai"
         />
         <meta
           name="copyright"
