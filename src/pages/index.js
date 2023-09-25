@@ -30,6 +30,18 @@ const HomeLine = dynamic(() =>
   import("../../components/HomePage/HomeLine/HomeLine")
 );
 
+const NewsSection = dynamic(() =>
+  import("../../components/HomePage/NewsSection/NewsSection")
+);
+
+import { DADataScienceCourseData } from "../../Data/DataAnalyticsData";
+
+
+
+// const ArticleSection = dynamic(() =>
+//   import("../../components/HomePage/Project/ArticleSection")
+// );
+
 export default function Home() {
   return (
     <>
@@ -71,7 +83,12 @@ export default function Home() {
         Testimonial={DataScienceCourseData[0].testimonial}
       />
       <ContactUs dataScienceCounselling={true} radio={true} />
+      <NewsSection
+          projectData={DADataScienceCourseData[0].newsdata}
+        />
+        {/* <ArticleSection/> */}
       <SeventhSection />
+
       <Footer />
       <WhatsappFloat chat360code1={true} />
       <BottomBar radio={true} />
