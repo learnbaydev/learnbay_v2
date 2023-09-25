@@ -1,7 +1,8 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef, lazy, Suspense } from "react";
+const Form = lazy(() => import('../../Form/Form'));
 import styles from "./FirstSection.module.css";
 import { FaDownload, FaPlayCircle } from "react-icons/fa";
-import Form from "../../Form/Form";
+// import Form from "../../Form/Form";
 import Image from "next/image";
 import Typed from "typed.js";
 import dynamic from "next/dynamic";
@@ -71,6 +72,7 @@ function FirstSection({
         </div>
         <div className="RightPopup">
           <h5>Download Brochure</h5>
+          <Suspense>
           <Form
             dataScience={dataScience}
             dataScienceCounselling={dataScienceCounselling}
@@ -79,6 +81,7 @@ function FirstSection({
             titleCourse={titleCourse}
             brochureLink={brochureLink}
           />
+          </Suspense>
         </div>
       </Popup>
       <VideoPopup triggers={video} setTriggers={setVideo} ids={idss} />
@@ -99,6 +102,7 @@ function FirstSection({
             width="508"
             height="327"
             alt="data science course"
+            loading="lazy"
           />
         </div>
         <p className={styles.ptop} style={{ color: "#000" }}>
@@ -112,6 +116,7 @@ function FirstSection({
               height="51"
               loading="lazy"
               alt="data science course"
+
             />
           ) : (
             <Image
@@ -163,6 +168,7 @@ function FirstSection({
             width="580"
             height="450"
             alt="data science course"
+            loading="lazy"
           />
         </div>
       </div>

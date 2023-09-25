@@ -42,7 +42,7 @@ const SixthSectionCTA = dynamic(() =>
   import("../../../components/CoursePage/SixthSectionCTA/Counselling")
 );
 const Project = dynamic(() =>
-  import("../../../components/CoursePage/Project/Project")
+  import("../../../components/CoursePage/Project/NewsSection")
 );
 const SyllabusNew = dynamic(() =>
   import("../../../components/CoursePage/Syllabus/Syllabus")
