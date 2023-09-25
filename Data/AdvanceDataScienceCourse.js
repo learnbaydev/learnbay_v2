@@ -47,98 +47,105 @@ export const DataScienceCourseData = [
         id: 1,
         name: "Preksha Mishra",
         working: "Working at HCL",
+        link: "D-gcPaK_-x4",
         proImg:
-          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/preksha-home.png",
+          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/reviewNew.webp",
         sDesc:
           "I had a great learning experience at Learnbay. The faculties here are top notch. Right from enrollment to getting a good job ...",
         lDesc:
           "I had a great learning experience at Learnbay. The faculties here are top notch. Right from enrollment to getting a good job, they keep putting enormous efforts for each and every candidate. Thanks to all the trainers, backend team, the HR team and to the directors for making this journey smooth.",
         complogo:
-          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/HCL-logo.png",
+          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/microsoft.webp",
         statLogo: "140% Hike",
       },
       {
-        id: "tcs",
+        id: 2,
         name: "Mohammad Israr",
         working: "Working at TCS",
+        link: "D-gcPaK_-x4",
         proImg:
-          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/asrar-home.png",
+          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/reviewNew.webp",
         sDesc:
           "Thanks to the Learnbay data science course and outstanding assistance, I could ace the TCS interview and secure a job...",
         lDesc:
           "Thanks to the Learnbay data science course and outstanding assistance, I could ace the TCS interview and secure a job with a 400% pay hike. My understanding of the course was greatly improved by the real-time projects and respective IBM project experience certification.",
         complogo:
-          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/TCS.png",
+          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/microsoft.webp",
         statLogo: "  210% Hike",
       },
       {
         id: 4,
         name: "Ritish Kumar",
         working: "Working at Capgemini",
+        link: "D-gcPaK_-x4",
         proImg:
-          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/ritesh-home.png",
+          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/reviewNew.webp",
         sDesc:
           "I always had a dilemma about how to switch to the IT field until I stumbled upon the foundation data science course offered by Learnbay...",
         lDesc:
           "I always had a dilemma about how to switch to  IT field until I stumbled upon the foundation data science course offered by Learnbay. The perfect combination of flexibility, affordability, and supportiveness. They helped me get placed at Capgemini, and I’m delighted with my current career. All Thanks to Learnbay!",
         complogo:
-          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Capgemni-logo.png",
+          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/microsoft.webp",
         statLogo: " 150% Hike",
       },
       {
         id: 5,
         name: "Sourabh Mourya",
         working: "Working at HCL",
+        link: "D-gcPaK_-x4",
         proImg:
-          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/saurabh-home.png",
+          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/reviewNew.webp",
         sDesc:
           "Flexible classes have helped me to manage my job  schedule. Learning Data Science directly from MNC experts provided the chance ...",
         lDesc:
           "Flexible classes have helped me to manage my job schedule. Learning Data Science directly from  experts provided the chance to learn industry-specific tricks and tips. I am grateful to the Learnbay team for providing an excellent  platform that enhanced my professional growth. Thank you very much! Learnbay.",
         complogo:
-          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/HCL-logo.png",
+          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/microsoft.webp",
         statLogo: " 150% Hike",
       },
       {
         id: 6,
         name: "Abhishek Singh",
         working: "Working at AGS",
+        link: "D-gcPaK_-x4",
         proImg:
-          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/abhishek-home.png",
+          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/reviewNew.webp",
         sDesc:
           "I got placed at AGS within 9 months of joining Learnbay institute. Live interaction sessions are the best part here since ...",
         lDesc:
           "I got placed at AGS within 9 months of joining Learnbay institute. Live interaction sessions are  the best part here since we could clear all queries. The projects are excellent. Overall I had a great  experience and I urge everyone to enroll in this institute.",
         complogo:
-          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/AGS-logo.png",
+          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/microsoft.webp",
         statLogo: "  132% Hike",
       },
       {
         id: 7,
         name: "Vishal",
         working: "Working at Bridge i2i",
+        link: "D-gcPaK_-x4",
         proImg:
-          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/vishal-home.png",
+          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/reviewNew.webp",
         sDesc:
           "One on One counseling from experts has guided me to  make the right decision. The Learnbay team was amazing in assisting me with ...",
         lDesc:
           "One on One counseling from experts has guided me to make the right decision. The Learnbay team was amazing in assisting me with live projects and preparing for the placements. Thank you! Learnbay for your tremendous support in excelling in my Data Science Career.",
         complogo:
-          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Bridgei2i-logo.png",
+          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/microsoft.webp",
         statLogo: "  127% Hike",
       },
       {
         id: "math",
         name: "Aravind Kumar",
         working: "SA - Data Scientist",
+        link: "D-gcPaK_-x4",
         proImg:
-          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/aravind-home.png",
+          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/reviewNew.webp",
         sDesc:
           "Choosing Learnbay was my best decision ever. The instructors were encouraging and glad to answer questions. The best feature is that ...",
         lDesc:
           "Choosing Learnbay was my best decision ever. The instructors were encouraging and glad to answer questions. The best feature is that their flexible modules & small size batches. I was able to manage  my time and learn while working. Thanks to Learnbay for my lucrative placement.",
         complogo:
-          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/themathcompany-logo.png",
+          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/microsoft.webp",
         statLogo: "142% Hike",
       },
     ],
@@ -970,6 +977,57 @@ export const DataScienceCourseData = [
             open: false,
           },
         ],
+      },
+    ],
+    newsData: [
+      {
+        id: 1,
+        domain: "HR Domain HR Domain HR Domain",
+        CLogo: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/1-1.png",
+        SDesc:
+          "  27 Aug 2023",
+      },
+      {
+        id: 2,
+        domain: "HR Domain HR Domain HR Domain",
+        CLogo: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/1-1.png",
+        SDesc:
+          "  27 Aug 2023",
+      },
+      {
+        id: 3,
+        domain: "HR Domain HR Domain HR Domain",
+        CLogo: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/1-1.png",
+        SDesc:
+          "  27 Aug 2023",
+      },
+      {
+        id: 4,
+        domain: "HR Domain HR Domain HR Domain",
+        CLogo: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/1-1.png",
+        SDesc:
+          "  27 Aug 2023",
+      },
+      {
+        id: 5,
+        domain: "HR Domain HR Domain HR Domain",
+        CLogo: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/1-1.png",
+        SDesc:
+          "  27 Aug 2023",
+      },
+      {
+        id: 6,
+        domain: "HR Domain HR Domain HR Domain",
+        CLogo: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/1-1.png",
+        SDesc:
+          "  27 Aug 2023",
+      },
+      {
+        id: 7,
+        domain: "HR Domain HR Domain HR Domain",
+        CLogo: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/1-1.png",
+        SDesc:
+          "  27 Aug 2023",
       },
     ],
   },

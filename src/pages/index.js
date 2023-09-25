@@ -5,6 +5,8 @@ import { DataScienceCourseData } from "../../Data/AdvanceDataScienceCourse";
 import BottomBar from "../../components/WebPage/BottomBar/BottomBar";
 import OfferPopup from "../../components/OfferPopup/OfferPopup";
 import WhatsappFloat from "../../components/WhatappsFloat/WhatsappFloat";
+import TrainerSection from "../../components/HomePage/TrainerSection/TrainerSection";
+import Media from "../../components/HomePage/Media/Media";
 const BoxShape = dynamic(() =>
   import("../../components/HomePage/BoxShape/BoxShape")
 );
@@ -66,9 +68,9 @@ export default function Home() {
       <Navbar radio={true} dataScienceCounselling={true} />
       <FirstSection dataScienceCounselling={true} radio={true} />
       <HomeLine />
-      <BoxShape />
+      {/* <BoxShape /> */}
       <Course dataScience={true} radio={true} />
-      <Switch />
+      {/* <Switch /> */}
       <KeyFeatures
         titleCourse="Data Science Placement Report"
         brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Placement+Report.pdf"
@@ -79,14 +81,15 @@ export default function Home() {
       />
       <Testimonial
         redirectDS={true}
-        heading="Our Alumni Profile"
+        heading="Our Alumni Spotlight"
         Testimonial={DataScienceCourseData[0].testimonial}
       />
+      <TrainerSection />
       <ContactUs dataScienceCounselling={true} radio={true} />
-      <NewsSection
-          projectData={DADataScienceCourseData[0].newsdata}
+      <Media
+          projectData={DataScienceCourseData[0].newsData}
         />
-        {/* <ArticleSection/> */}
+
       <SeventhSection />
 
       <Footer />

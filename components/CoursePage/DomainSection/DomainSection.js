@@ -57,6 +57,7 @@ function DomainSection({ dataScience, domainSectionData }) {
           <Form
             dataScience={dataScience}
             downloadBrochure
+            upSkillingHide={true}
             titleCourse={titleCourse}
             brochureLink={brochureLink}
           />

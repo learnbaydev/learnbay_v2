@@ -77,6 +77,7 @@ function FirstSection({
             dataScience={dataScience}
             dataScienceCounselling={dataScienceCounselling}
             downloadBrochure
+            upSkillingHide={true}
             titleCourse={titleCourse}
             brochureLink={brochureLink}
           />

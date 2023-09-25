@@ -15,7 +15,7 @@
 
 .formWrappers {
   margin-bottom: 10px;
-  width: 80%;
+  width: 100%;
   height: 100%;
   margin-bottom: 10px;
 }
@@ -163,20 +163,15 @@
   width: max-content;
   padding: 10px 25px;
   display: flex;
+
   margin-top: 20px;
   align-items: center;
   justify-content: center;
   font-size: 20px;
-  outline: none;
   background-color: #0072bc;
-  color: white;
-  cursor: pointer;
-  display: flex;
-  gap: 5px;
-  outline: none;
-  align-items: center;
-  border-radius: 4px;
-  border: 1px solid #0072bc;
+    color: #fff;
+    border-radius: 4px;
+    border: 1px solid #0072bc;
 }
 .App form {
   display: flex;
@@ -217,11 +212,11 @@
 
 .dsCourseInp{
   text-align: left;
-  margin-left: 65px;
+  /* margin-left: 65px; */
 }
 .fsdCourseInp{
   text-align: left;
-  margin-left: 65px;
+  /* margin-left: 65px; */
 }
 
 @media (max-width: 600px) {

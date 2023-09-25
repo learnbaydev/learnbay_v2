@@ -54,6 +54,7 @@ const Project = ({
           <Form
             dataScience={dataScience}
             downloadBrochure
+            upSkillingHide={true}
             titleCourse={titleCourse}
             brochureLink={brochureLink}
           />

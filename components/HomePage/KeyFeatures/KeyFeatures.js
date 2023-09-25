@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styles from "./KeyFeatures.module.css";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { FaDownload } from "react-icons/fa";
+import { FaChair, FaChartLine, FaClock, FaDownload, FaRupeeSign, FaUser } from "react-icons/fa";
 import VideoPopup from "../../Global/VideoPopup/VideoPopup";
 // Import Swiper styles
 import "swiper/css";
@@ -14,6 +14,9 @@ import Form from "../../Form/Form";
 import Image from "next/image";
 import { KeyFeaturesSwiper } from "./KeyFeatureSwiperData";
 import VideoTestimonial from "../../VideoTestimonial/VideoTestimonial";
+import { switchData } from "./switchData";
+import { AiFillStar } from "react-icons/ai";
+
 const KeyFeatures = ({
   dataScience,
   radio,
@@ -57,6 +60,7 @@ const KeyFeatures = ({
               dataScience={dataScience}
               dataScienceCounselling={dataScienceCounselling}
               downloadBrochure
+              upSkillingHide={true}
             />
           </div>
         </Popup>
@@ -75,9 +79,31 @@ const KeyFeatures = ({
                   className={styles.LeftWrapImg}
                 />
               </div>
+              <div className={styles.switch}>
+                {switchData.map((data) => {
+                  const { img, height, url, width, text, alt, id } = data;
+                  return (
+                    <a href={url} target="_blank" key={id}>
+                      <div className={styles.switchInner}>
+                        <div className="imgWrapper">
+                          <Image
+                            src={img}
+                            width={width}
+                            height={height}
+                            alt={alt}
+                          />
+                        </div>
+                        <div className={styles.rating}>
+                          {text} <AiFillStar className={styles.star} />
+                        </div>
+                      </div>
+                    </a>
+                  );
+                })}
+              </div>
             </div>
             <div className={styles.rightSide}>
-              <Swiper
+              {/* <Swiper
                 direction={"vertical"}
                 slidesPerView={3}
                 // slidesPerColumn={1}
@@ -102,15 +128,39 @@ const KeyFeatures = ({
                     </SwiperSlide>
                   );
                 })}
-              </Swiper>
+              </Swiper> */}
+              <div className={styles.firstBox}>
+                <div className={styles.box}>
+                  <FaUser className={styles.number} />
+                  <h5>50K+</h5>
+                  <p>Learners</p>
+                </div>
+                <div className={styles.box}>
+                  <FaRupeeSign className={styles.number} />
+                  <h5>5-25 LPA</h5>
+                  <p>Salary Range</p>
+                </div>
+              </div>
+              <div className={styles.secondBox}>
+                <div className={styles.box}>
+                  <FaClock className={styles.number} />
+                  <h5>100%</h5>
+                  <p>Placement Assistance</p>
+                </div>
+                <div className={styles.box}>
+                  <FaChartLine className={styles.number} />
+                  <h5>₹10 LPA</h5>
+                  <p>Avg Salary</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <VideoTestimonial />
+        {/* <VideoTestimonial /> */}
       </section>
 
       <div className={styles.RightWrap}>
-        <h2>300+ placement and hiring partners</h2>
+        <h2>The Network Reach of Our Bay</h2>
         <div className={styles.imgWrap}>
           <div className={`${styles.imgShowD} imgWrapper`}>
             <Image
@@ -121,7 +171,7 @@ const KeyFeatures = ({
             />
           </div>
           <div className={styles.imgShowM}></div>
-          <button onClick={popupShowD} className={styles.btn}>
+          <button onClick={popupShow} className={styles.btn}>
             Download Placement Report{" "}
             <FaDownload style={{ marginLeft: "10px" }} />
           </button>

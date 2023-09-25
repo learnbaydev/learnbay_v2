@@ -60,6 +60,7 @@ const FifthSection = ({
             dataScience={dataScience}
             dataScienceCounselling={dataScienceCounselling}
             titleCourse={titleCourse}
+            upSkillingHide={true}
             brochureLink={brochureLink}
           />
         </div>
