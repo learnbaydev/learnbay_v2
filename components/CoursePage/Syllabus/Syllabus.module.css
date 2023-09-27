@@ -181,6 +181,21 @@
   color: #fff;
   margin: 0;
 }
+
+.topBar {
+  padding: 50px 0px 20px 0px;
+  text-align: left;
+  width: 86%;
+  display: flex;
+  align-items: baseline;
+  margin: auto;
+}
+
+.topBar span {
+  padding-left: 70px;
+  color: #0072BC;
+  font-weight: 700;
+}
 @media (max-width: 1281px) {
   .Syllabus {
     margin: 70px 20px 0px 20px;

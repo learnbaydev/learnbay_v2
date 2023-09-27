@@ -1,10 +1,11 @@
-import React, { useState } from "react";
 import Head from "next/head";
-import Navbar from "../../../components/Navbar/Navbar";
+import { useState } from "react";
 import Footer from "../../../components/Footer/Footer";
+import Navbar from "../../../components/Navbar/Navbar";
 
 import dynamic from "next/dynamic";
 import { BlockchainFSDData } from "../../../Data/BlockchainFSDCourse";
+import BottomBar from "../../../components/WebPage/BottomBar/BottomBar";
 
 const FirstSection = dynamic(() =>
   import("../../../components/CoursePage/FirstSection/FirstSection")
@@ -43,7 +44,7 @@ const SixthSectionCTA = dynamic(() =>
   import("../../../components/CoursePage/SixthSectionCTA/Counselling")
 );
 const Project = dynamic(() =>
-  import("../../../components/CoursePage/Project/NewsSection")
+  import("../../../components/CoursePage/Project/Project")
 );
 const SyllabusNew = dynamic(() =>
   import("../../../components/CoursePage/Syllabus/Syllabus")
@@ -54,8 +55,6 @@ const Certificate = dynamic(() =>
 const FAQNew = dynamic(() =>
   import("../../../components/CoursePage/FAQNew/FAQNew")
 );
-import BottomBar from "../../../components/WebPage/BottomBar/BottomBar";
-import BatchDetails from "../../../components/CoursePage/BatchDetails/BatchDetails";
 
 function Blockchain() {
   const [popups, setPopups] = useState(false);

@@ -42,7 +42,7 @@ const SixthSectionCTA = dynamic(() =>
   import("../../../components/CoursePage/SixthSectionCTA/Counselling")
 );
 const Project = dynamic(() =>
-  import("../../../components/CoursePage/Project/NewsSection")
+  import("../../../components/CoursePage/Project/Project")
 );
 const SyllabusNew = dynamic(() =>
   import("../../../components/CoursePage/Syllabus/Syllabus")
@@ -182,7 +182,18 @@ function Blockchain() {
         />
         <FifthSection />
         <SixthSectionCTA dataScienceCounselling={true} />
+        {/* <SyllabusNew
+          dataScienceCounselling={true}
+          dataScience={true}
+          titleCourse="Advanced Data Science and AI Program with domain specialization"
+          brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Advance+Data+Science+and+AI+Certification+Program+Learnbay.pdf"
+          syllabus={DataScienceCourseData[0].syllabus}
+          syllabusDesc={DataScienceCourseData[0].syllabusDesc}
+          popupHead={DataScienceCourseData[0].popupHead}
+        /> */}
         <SyllabusNew
+          syllabusHead={DataScienceCourseData[0].syllabusHead}
+          masterSyllabus={DataScienceCourseData[0].masterSyllabus}
           dataScienceCounselling={true}
           dataScience={true}
           titleCourse="Advanced Data Science and AI Program with domain specialization"

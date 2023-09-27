@@ -9,6 +9,11 @@ import "swiper/css/free-mode";
 import "swiper/css/scrollbar";
 import Popup from "../../Popup/Popup";
 import Button from "../../Global/Button/Button";
+import { Navigation } from "swiper";
+import "swiper/css";
+import "swiper/css/free-mode";
+import "swiper/css/navigation";
+import { Swiper, SwiperSlide } from "swiper/react";
 
 function SyllabusNew({
   syllabus,
@@ -20,11 +25,34 @@ function SyllabusNew({
   advSyllabus,
   dataScienceCounselling,
   pop,
+  syllabusHead,
+  masterSyllabus,
 }) {
   const [popups, setPopups] = useState(false);
 
+  const [mobile, setMobile] = useState(false);
+  useEffect(() => {
+    let width = window.innerWidth;
+    if (width < 600) {
+      setMobile(true);
+    }
+  });
+
   const popupShow = () => {
     setPopups(true);
+  };
+
+  const [cSyllabus, setCSyllabus] = useState(syllabus);
+  const changeSyllabus = (data) => {
+    console.log("hello");
+    for (const key in masterSyllabus) {
+      if (masterSyllabus.hasOwnProperty(key)) {
+        if (key === data) {
+          console.log(key, data);
+          setCSyllabus(masterSyllabus[key]);
+        }
+      }
+    }
   };
 
   const [state, setState] = useState(syllabus);
@@ -82,6 +110,26 @@ function SyllabusNew({
           Our comprehensive curriculum, designed for professionals
         </p>
       </div>{" "}
+      <div className={styles.topBar}>
+        <Swiper
+          modules={[Navigation]}
+          slidesPerView={mobile ? 3 : 3}
+          spaceBetween={mobile ? 10 : 10}
+          navigation
+          grabCursor={true}
+          className="mySwiper"
+        >
+          {syllabusHead.map((data, i) => {
+            return (
+              <SwiperSlide className={styles.slide}>
+                <span key={i} onClick={() => changeSyllabus(data)}>
+                  {data}
+                </span>
+              </SwiperSlide>
+            );
+          })}
+        </Swiper>
+      </div>
       <section className={styles.Syllabus}>
         <div className={styles.syllabusLeft}>
           {software ? (
@@ -275,8 +323,8 @@ function SyllabusNew({
           ) : (
             <>
               {" "}
-              {state.map((syllabusData, i) => {
-                const { Module0 } = syllabusData;
+              {cSyllabus.map((data, i) => {
+                const { Module0 } = data;
 
                 return (
                   <div key={Module0.title}>
@@ -285,6 +333,78 @@ function SyllabusNew({
                         <div className={styles.line}>
                           {/* <BsFillCircleFill className={styles.bIcons} /> */}
                         </div>
+                        <div
+                          className={styles.FaqWrapper}
+                          onClick={() => {
+                            let id = i;
+                            handleChange(id);
+                          }}
+                          key={Module0.title}
+                        >
+                          {Module0.open ? (
+                            <div className={styles.quesO}>
+                              <h2>{Module0.title}</h2>
+
+                              <span>
+                                {Module0.open ? (
+                                  <FaChevronUp className="icon" />
+                                ) : (
+                                  <FaChevronDown className="icon" />
+                                )}
+                              </span>
+                            </div>
+                          ) : (
+                            <div className={styles.ques}>
+                              <h2>{Module0.title}</h2>
+                              <span>
+                                {Module0.open ? (
+                                  <FaChevronUp className="icon" />
+                                ) : (
+                                  <FaChevronDown className="icon" />
+                                )}
+                              </span>
+                            </div>
+                          )}
+
+                          {Module0.open ? (
+                            <div className={styles.ans}>
+                              <p>{Module0.desc}</p>
+                              {Module0.content.map((content, i) => {
+                                return (
+                                  <div key={content.chap.title}>
+                                    <h5>{content.chap.title}</h5>
+                                    {content.chap.desc.map((desc, i) => {
+                                      return (
+                                        <div key={i}>
+                                          {desc === "" ? (
+                                            ""
+                                          ) : (
+                                            <li key={desc}>{desc}</li>
+                                          )}
+                                        </div>
+                                      );
+                                    })}
+                                  </div>
+                                );
+                              })}
+                            </div>
+                          ) : (
+                            ""
+                          )}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                );
+              })}
+              {state.map((syllabusData, i) => {
+                const { Module0 } = syllabusData;
+
+                return (
+                  <div key={Module0.title}>
+                    <div className={styles.QOuter}>
+                      <div className={styles.QInner}>
+                        <div className={styles.line}></div>
                         <div
                           className={styles.FaqWrapper}
                           onClick={() => {

@@ -489,10 +489,11 @@ export const FullStackDubaiCourseData = [
     AlumniH3: "Kamlesh Sahu",
     Alumnip3:
       "This Course Helped me in getting 6 month SDE INTERNSHIP at AMAZON,India. The advance DSA topics are taught and explained in such a simplified manner that even a newbie can catch up very easily.",
-    Asrc4: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/Ashutosh.jpg",
-    AlumniH4: "Ashutosh Chamoli",
+    Asrc4:
+      "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Alumni+Images/Qudsia.png",
+    AlumniH4: "Qudsia Tahniyath",
     Alumnip4:
-      "I have done the DS & Algo course from Learnbay. I learned from the basics time complexity, arrays, linked list, stack to advance data structures – trees, graphs etc. Getting into product based MNC was always my dream and this course helped me achieve it .",
+      "Learnbay has helped me a lot to learn data science applications in the e-commerce industry. The live class concept was really helpful in receiving proper DS training. Thanks to all my mentors and the placement team.",
     alt1: "Full-Stack Software Developer Course training in Dubai",
     alt2: "Full-Stack Software Developer Course training in Dubai",
     alt3: "Full-Stack Software Developer Course training in Dubai",
