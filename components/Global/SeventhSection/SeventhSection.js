@@ -15,7 +15,7 @@ function SeventhSection({ fullStackCont }) {
   }, []);
   return (
     <div className={styles.Section2}>
-      <p className={styles.infop}>24X7 Learner’s Support</p>
+      {/* <p className={styles.infop}>24X7 Learner’s Support</p> */}
 
       <div className={styles.LearnSupport}>
         <div className="bgWrap">
@@ -35,11 +35,10 @@ function SeventhSection({ fullStackCont }) {
           )}
         </div>
         <div className={styles.learnInner}>
-          <p className={styles.pTop}>Have any questions in mind?</p>
+          <p className={styles.pTop}>Got more questions?</p>
           <h5>Talk to our team directly</h5>
           <p className={styles.pBot}>
-            Reach out to us and your career guide will get in touch with you
-            shortly
+          Reach us and a learning consultant will get in touch with you shortly
           </p>
           {fullStackCont ? (
             <div className={styles.btnWrap}>

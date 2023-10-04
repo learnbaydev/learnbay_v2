@@ -1,5 +1,5 @@
 .Section2 {
-  margin-top: 50px;
+  margin: 100px 0px;
 }
 
 .infop {
@@ -13,38 +13,43 @@
 .LearnSupport {
   padding: 30px 100px 30px 300px;
   position: relative;
-  display: flex;
   align-items: center;
   justify-content: flex-start;
   height: fit-content;
   margin-top: 30px;
   margin-bottom: 0px;
+  display: grid;
+    grid-template-columns: 50% 50%;
 }
 
 .pBot {
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
   color: #0072bc;
   margin: 0;
   margin-bottom: 30px;
-  padding-right: 80px;
+  padding-right: 180px;
+font-size: 20px;
+line-height: normal;
 }
 
 .LearnSupport .pTop {
   color: #f99600;
   margin: 0;
   margin-bottom: 10px;
-  font-size: 24px;
+  font-size: 20px;
+  margin-bottom: 30px;
+font-weight: 600;
+line-height: normal;
 }
 .LearnSupport h5 {
-  font-style: normal;
-  font-weight: 600;
-  font-size: 28px;
   color: #0072bc;
-  line-height: 37px;
   margin: 0;
   margin-bottom: 20px;
+font-size: 26px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
 }
 
 .btnWrap {

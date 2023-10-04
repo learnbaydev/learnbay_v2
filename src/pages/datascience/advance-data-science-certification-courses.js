@@ -42,10 +42,10 @@ const SixthSectionCTA = dynamic(() =>
   import("../../../components/CoursePage/SixthSectionCTA/Counselling")
 );
 const Project = dynamic(() =>
-  import("../../../components/CoursePage/Project/NewsSection")
+  import("../../../components/CoursePage/Project/Project")
 );
 const SyllabusNew = dynamic(() =>
-  import("../../../components/CoursePage/Syllabus/Syllabus")
+  import("../../../components/CoursePage/Syllabus/MasterSyllabus")
 );
 const DomainSection = dynamic(() =>
   import("../../../components/CoursePage//DomainSection/DomainSection")
@@ -62,6 +62,7 @@ const BatchDetails = dynamic(() =>
 
 import OfferPopup from "../../../components/OfferPopup/OfferPopup";
 import BottomBar from "../../../components/WebPage/BottomBar/BottomBar";
+import ContactUs from "../../../components/HomePage/ContactUs/ContactUs";
 
 function Blockchain() {
   // POPUP GET METHOD
@@ -147,16 +148,17 @@ function Blockchain() {
       <main>
         <Navbar popup={true} dataScienceCounselling={true} />
         <FirstSection
-          FirstTyped="Guaranteed Interview Calls"
-          SecondTyped="Capstone Project Certificate"
+          // FirstTyped="Guaranteed Interview Calls"
+          // SecondTyped="Capstone Project Certificate"
           ThirdTyped="Live Interactive Classes"
           dataScience={true}
           titleCourse="Advanced Data Science and AI Program with domain specialization"
+          cityParaCont="Elevate your tech career with our Master's programs"
           brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Advance+Data+Science+and+AI+Certification+Program+Learnbay.pdf"
-          FirstRightImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/advance+DS+header+image.webp"
+          FirstRightImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/coursepageB.webp"
           firstToparaImg="with domain specialization"
           firstHeading="Advanced Data Science and AI Program"
-          firstTopPara="Specialization over generalization"
+          // firstTopPara="Specialization over generalization"
           idss="bfl64ANfSV0"
         />
         <SecondSection
@@ -181,8 +183,21 @@ function Blockchain() {
           brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Placement+Report.pdf"
         />
         <FifthSection />
-        <SixthSectionCTA dataScienceCounselling={true} />
+        {/* <SixthSectionCTA dataScienceCounselling={true} /> */}
+        {/* <SyllabusNew
+          dataScienceCounselling={true}
+          dataScience={true}
+          titleCourse="Advanced Data Science and AI Program with domain specialization"
+          brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Advance+Data+Science+and+AI+Certification+Program+Learnbay.pdf"
+          syllabus={DataScienceCourseData[0].syllabus}
+          syllabusDesc={DataScienceCourseData[0].syllabusDesc}
+          popupHead={DataScienceCourseData[0].popupHead}
+        /> */}
+        <ContactUs dataScienceCounselling={true} />
+
         <SyllabusNew
+          syllabusHead={DataScienceCourseData[0].syllabusHead}
+          masterSyllabus={DataScienceCourseData[0].masterSyllabus}
           dataScienceCounselling={true}
           dataScience={true}
           titleCourse="Advanced Data Science and AI Program with domain specialization"
@@ -191,13 +206,13 @@ function Blockchain() {
           syllabusDesc={DataScienceCourseData[0].syllabusDesc}
           popupHead={DataScienceCourseData[0].popupHead}
         />
-        <GrowthStats
+        {/* <GrowthStats
           img1="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Scope+of+DS+left+image.png"
           heading="Be the future: Grow your Data Science & AI skills "
           para1="Data Science market to reach $133 billion by 2026"
           para2="The global AI market to hit US$ 1,597.1 billion by 2030 "
           para3="Influences on nearly all sectors of the current industries"
-        />
+        /> */}
         <ToolsCovered
           deskImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Tools-Logo.png"
           mobImage="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Mobile-Tools-Covered.png"
@@ -207,8 +222,8 @@ function Blockchain() {
           data={DataScienceCourseData[0].Certificate}
         />
         <FeeSection
-          Fee="₹ 99,000 + 18% GST"
-          FeeEmi="₹ 9,735/month"
+          Fee="₹ 99,000"
+          FeeEmi="₹ 9,735/"
           FeeHeading="Program Fee and Financing"
           FeeContent1="0% interest rate"
           FeeContent2="No cost EMI"
@@ -230,11 +245,11 @@ function Blockchain() {
           brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Data+Science+and+AI+Projects.pdf"
           project="15+"
         />
-        {batchDateData === "" ? (
+        {/* {batchDateData === "" ? (
           ""
         ) : (
           <BatchDetails batchDetails={batchDateData.batchDetails} />
-        )}
+        )} */}
 
         <FAQNew FAQNewData={DataScienceCourseData[0].faq} />
         <SeventhSection />

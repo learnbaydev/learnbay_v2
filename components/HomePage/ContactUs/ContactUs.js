@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./ContactUs.module.css";
 import FormInline from "../../FormSection/FormInline";
 
-function ContactUs({ dataScience, dataScienceCounselling }) {
+function ContactUs({ dataScience, dataScienceCounselling, radio }) {
   return (
     <section className={styles.ContactUs}>
       <div className={styles.LeftSide}>
@@ -27,12 +27,12 @@ function ContactUs({ dataScience, dataScienceCounselling }) {
       </div>
       <div className={styles.RightSide}>
         <p className={styles.NormalPForm}>
-          Apply for Career <span className={styles.span}>Counselling</span>
+          Apply for <span className={styles.span}>Career Counselling</span>
         </p>
         <FormInline
           dataScience={dataScience}
           dataScienceCounselling={dataScienceCounselling}
-          radio={true}
+          radio={radio}
         />
       </div>
     </section>

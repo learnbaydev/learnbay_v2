@@ -292,17 +292,15 @@ const Form = ({
               popup
                 ? {
                     border: "0",
-                    height: "50px",
-                    borderRadius: "10px",
-                    padding: "10px 10px",
-                    border: "1px solid grey",
+                    padding: "0px",
+                    borderBottom: "1px solid #C4C4C4",
+                    paddingBottom : "10px",
                   }
                 : {
                     border: "0",
-                    height: "50px",
-                    borderRadius: "10px",
-                    padding: "10px 10px",
-                    border: "1px solid grey",
+                    padding: "0px",
+                    borderBottom: "1px solid #C4C4C4",
+                    paddingBottom : "10px",
                   }
             }
             name="phone"
