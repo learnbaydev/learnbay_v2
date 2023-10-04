@@ -1,26 +1,23 @@
 .First {
-  background: url("https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/FirstSectionBg.png");
   background-size: contain;
   margin-top: 70px;
   padding: 70px 100px 70px 100px;
   display: grid;
   grid-template-columns: 53% 43%;
   gap: 50px;
+  background: linear-gradient(274deg, rgba(0, 114, 188, 0.08) 3.17%, rgba(0, 114, 188, 0.00) 99.8%);
 }
-
 .fillBtn {
   font-size: 18px;
   border-radius: 4px;
-  background-color: #0072bc !important;
+  background-color: #0072BC !important;
   font-weight: 700;
   color: white !important;
   height: 100%;
 }
-
 /* .imgArrow {
     margin-top: -30px !important;
 } */
-
 .ptopC {
   font-size: 22px;
   font-weight: 600;
@@ -31,44 +28,36 @@
   line-height: 30px;
   margin: 0;
 }
-
 .ptop {
   font-size: 20px;
   text-align: left;
   margin: 10px 0px 10px 0px;
   line-height: 30px;
 }
-
 .ptopR {
   font-size: 20px;
   font-weight: 600;
   margin: 0;
   text-align: center;
 }
-
 .ptopCiity {
   font-size: 18px;
   margin-bottom: 20px;
 }
-
 .h1Span {
-  color: #f99600;
+  color: #000;
 }
-
 .h1 {
-  color: #0072bc;
-
+  color: #000;
   font-weight: 700;
   margin: 15px 0px 20px 0px;
   text-align: left;
   line-height: 50px;
   font-size: 34px;
 }
-
 .FirstLeft {
   position: relative;
 }
-
 .line {
   position: absolute;
   top: 72%;
@@ -89,9 +78,24 @@
   width: max-content;
   font-size: 27px;
   color: #767676;
-
   font-weight: 600;
+  position: absolute;
+  left: 33%;
+  animation: animate 2s linear infinite;
+  transform: translate(-50%, -50%);
 }
+  @keyframes animate {
+  50% {
+    transform: translate(-50%, -50%)
+    perspective(200px)
+    rotateX(-360deg)
+  }
+  100% {
+    transform: translate(-50%, -50%)
+    perspective(200px)
+    rotateX(-360deg)
+  }
+  }
 .btnImage {
   display: flex;
   gap: 10px;
@@ -101,24 +105,19 @@
 .descLine {
   color: #767676;
   margin: 0 !important;
-
   margin-bottom: 20px !important;
   text-transform: uppercase;
 }
-
 .logos {
   display: none;
 }
-
 .IBMlogoPlay {
   display: none;
 }
-
 .logosD {
   display: flex;
   justify-content: space-evenly;
 }
-
 .ImageBlock {
   width: 300px;
   height: max-content;
@@ -200,7 +199,6 @@
     margin: auto;
   }
 }
-
 @media (max-width: 641px) {
   .First {
     padding: 30px 20px;
@@ -234,3 +232,9 @@
     margin: 0px;
   }
 }
+
+
+
+
+
+

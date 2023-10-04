@@ -6,43 +6,37 @@
   display: grid;
   grid-template-columns: 50% 50%;
   align-items: center;
+  margin-bottom: 100px;
 }
-
 .h1Span {
-  color: #0072bc;
+  color: #0072BC;
   font-size: 38px;
 }
-
 .h1 {
-  color: #f99600;
   margin: 25px 0px;
   font-weight: 700;
   line-height: 47px;
   text-align: left;
   font-size: 30px;
 }
-
 .boxSection {
   display: grid;
   grid-template-columns: 30% 30%;
   gap: 30px;
 }
-
 .box {
   border: 1px solid #fff;
 }
-
 .icon {
-  color: #2db621;
+  color: #2DB621;
   margin: 0;
   display: flex;
   gap: 5px;
   font-size: 20px;
   justify-content: flex-end;
 }
-
 .BoldP {
-  color: #f99600;
+  color: #535151;
 padding-top: 20px;
   font-weight: 700;
   line-height: 47px;
@@ -50,30 +44,28 @@ padding-top: 20px;
   text-align: center;
   font-size: 44px;
 }
-
 .NormalP {
   color: #606060;
   margin: 0;
   text-align: center;
   padding-bottom: 20px;
 }
-
 .NormalPForm {
-  font-size: 24px;
+  font-size: 17px;
   text-align: center;
   margin: 0;
   margin-bottom: 30px;
-  color: #0072bc;
-font-weight: 700;
+  color: #555555;
 }
-
+.NormalPForm span{
+  font-weight: 700;
+}
 .RightSide {
   background: #fff;
   padding: 30px 20px 30px 20px;
   border-radius: 10px;
-  border-bottom: 4px solid #f99600;
+  border-bottom: 6px solid #F99600;
 }
-
 @media (max-width: 1024px) {
   .ContactUs {
     padding: 30px;
@@ -85,7 +77,6 @@ font-weight: 700;
     padding: 10px;
   }
 }
-
 @media (max-width: 961px) {
   .ContactUs {
     padding: 30px;
@@ -97,9 +88,7 @@ font-weight: 700;
     padding: 10px;
   }
 }
-
 @media (max-width: 801px) {
-
   .ContactUs {
     padding: 20px;
   }
@@ -120,9 +109,7 @@ font-weight: 700;
 .h1 {
   line-height: 32px;
 }
-
 }
-
 @media (max-width: 641px) {
   .ContactUs {
     display: block;
@@ -139,7 +126,7 @@ font-weight: 700;
     font-size: 30px;
   }
   .span {
-    color: #f99600;
+    color: #F99600;
   }
   .boxSection {
     display: grid;
@@ -149,7 +136,7 @@ font-weight: 700;
   }
   .RightSide {
     padding: 30px 20px;
-    border-bottom: 4px solid #f99600;
+    border-bottom: 4px solid #F99600;
     margin: auto;
   }
   .NormalPForm {
@@ -159,7 +146,6 @@ font-weight: 700;
     font-size: 36px;
   }
 }
-
 @media (max-width: 481px) {
   .RightSide {
     width: 100%;

@@ -29,7 +29,7 @@ function SyllabusNew({
   masterSyllabus,
 }) {
   const [popups, setPopups] = useState(false);
-
+  const [active, setActive] = useState([]);
   const [mobile, setMobile] = useState(false);
   useEffect(() => {
     let width = window.innerWidth;
@@ -41,7 +41,16 @@ function SyllabusNew({
   const popupShow = () => {
     setPopups(true);
   };
-
+  useEffect(() => {
+    syllabusHead.map((data, i) => {
+      let value = false;
+      if (i == 0) value = true;
+      return setActive((prevActive) => [
+        ...prevActive,
+        { id: i, value: value },
+      ]);
+    });
+  }, []);
   const [cSyllabus, setCSyllabus] = useState(syllabus);
   const changeSyllabus = (data) => {
     console.log("hello");
@@ -54,7 +63,18 @@ function SyllabusNew({
       }
     }
   };
-
+  const changeActive = (id) => {
+    setActive(
+      active.map((faq, i) => {
+        if (i === id) {
+          faq.value = !faq.value;
+        } else {
+          faq.value = false;
+        }
+        return faq;
+      })
+    );
+  };
   const [state, setState] = useState(syllabus);
   const [Beginner, setBeginner] = useState(true);
   const [Advanced, setAdvanced] = useState(false);
@@ -114,20 +134,44 @@ function SyllabusNew({
         <Swiper
           modules={[Navigation]}
           slidesPerView={mobile ? 3 : 3}
-          spaceBetween={mobile ? 10 : 10}
+          spaceBetween={mobile ? 0 : 0}
           navigation
           grabCursor={true}
           className="mySwiper"
         >
-          {syllabusHead.map((data, i) => {
-            return (
-              <SwiperSlide className={styles.slide}>
-                <span key={i} onClick={() => changeSyllabus(data)}>
-                  {data}
-                </span>
-              </SwiperSlide>
-            );
-          })}
+          {active.length > 0
+            ? syllabusHead.map((data, i) => {
+                const splitString = data.split("(");
+                return (
+                  <SwiperSlide
+                    className={active[i].value ? styles.ASlide : styles.slide}
+                  >
+                    <span
+                      key={i}
+                      onClick={() => {
+                        changeActive(i);
+                        changeSyllabus(data);
+                      }}
+                      className={styles.wrapSpan}
+                      style={
+                        active[i].value
+                          ? { color: "#0072bc" }
+                          : { color: "#646464" }
+                      }
+                    >
+                      {splitString[0]}
+                      <span
+                        className={
+                          active[i].value ? styles.colorHeading : styles.blank
+                        }
+                      >
+                        ({splitString[1]}
+                      </span>
+                    </span>
+                  </SwiperSlide>
+                );
+              })
+            : ""}
         </Swiper>
       </div>
       <section className={styles.Syllabus}>

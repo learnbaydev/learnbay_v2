@@ -136,6 +136,11 @@ a {
 
 .swiper-button-next, .swiper-button-prev {
   color: #0072BC !important;
+  --swiper-navigation-size: 20px !important;
+}
+
+.swiper-android .swiper-slide, .swiper-wrapper {
+  padding: 0px 0px 0px 40px;
 }
 
 .swiper-slide {
