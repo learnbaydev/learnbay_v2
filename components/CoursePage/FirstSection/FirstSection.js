@@ -9,6 +9,7 @@ import dynamic from "next/dynamic";
 const Button = dynamic(() => import("../../Global/Button/Button"));
 const VideoPopup = dynamic(() => import("../VideoPopup/VideoPopup"));
 const Popup = dynamic(() => import("../../Popup/Popup"));
+
 function FirstSection({
   dataScience,
   softwareBtnHide,
@@ -54,7 +55,9 @@ function FirstSection({
   //   };
   // }, []);
   return (
+    
     <div className={styles.First}>
+   
       <Popup
         trigger={popups}
         setTrigger={setPopups}
@@ -158,6 +161,7 @@ function FirstSection({
         </div>
       </div>
     </div>
+ 
   );
 }
 export default FirstSection;

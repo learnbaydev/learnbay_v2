@@ -101,6 +101,7 @@ function SyllabusNew({
 
   return (
     <>
+    <div id="curriculum">
       <Popup
         trigger={popups}
         setTrigger={setPopups}
@@ -296,6 +297,7 @@ function SyllabusNew({
             // passIcon={<FaDownload style={{ marginLeft: "10px" }} />}
           />
         </div>
+      </div>
       </div>
     </>
   );
