@@ -38,8 +38,9 @@ function FAQNew({ FAQNewData }) {
 
   return (
     <div className={styles.course}>
-      <div className={styles.courseM}>
         <h4 className={styles.infop}>FAQs</h4>
+        <p>Curriculum is specifically engineered to meet the expectations of leading tech companies.</p>
+      <div className={styles.courseM}>
         <div className={styles.courses}>
           <div className={styles.listPanel}>
             {FAQNewData.map((data, index) => {
@@ -50,7 +51,7 @@ function FAQNew({ FAQNewData }) {
                   }}
                   style={
                     dataLoop[data.id].value
-                      ? { background: "white", borderLeft: "4px solid #2D9CD7" }
+                      ? { background: "white",color:"#000", borderLeft: "4px solid #2D9CD7" }
                       : {}
                   }
                   key={index}

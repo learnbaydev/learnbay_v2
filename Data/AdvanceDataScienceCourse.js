@@ -204,9 +204,10 @@ export const DataScienceCourseData = [
         p2: "BFSI",
         btn: "Download Brochure",
         desc: [
-          "Work on 20+ real time case studies and assignments",
-          "Designed for executive-level BFSI professionals, accountant, etc.",
-          "Learn finance analysis tools, generate data insights, integrate data-driven methods to future-proof business operations",
+          // "Work on 20+ real time case studies and assignments",
+          // "Designed for executive-level BFSI professionals, accountant, etc.",
+          // "Learn finance analysis tools, generate data insights, integrate data-driven methods to future-proof business operations",
+          "Pursue projects on recording sensors in seismic, manufacturing, and exploration operations to  manufacturing, and exploration operations to "
         ],
         BrochureLink:
           "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Banking%2C+Finance+and+Insurance+Domain.pdf",
@@ -217,9 +218,10 @@ export const DataScienceCourseData = [
         p1: "#2",
         p2: "Manufacturing",
         desc: [
-          "Work on 20+ real time case studies and assignments",
-          "For production manager, quality control inspector, manufacturing engineer etc.",
-          "Discover cutting-edge tech like AI and data science, and develop strategic skills as a business or data analyst",
+          // "Work on 20+ real time case studies and assignments",
+          // "For production manager, quality control inspector, manufacturing engineer etc.",
+          // "Discover cutting-edge tech like AI and data science, and develop strategic skills as a business or data analyst",
+          "Pursue projects on recording sensors in seismic, manufacturing, and exploration operations to  manufacturing, and exploration operations to "
         ],
         btn: "Download Brochure",
         BrochureLink:
@@ -232,9 +234,11 @@ export const DataScienceCourseData = [
         p1: "#3",
         p2: "Energy, Oil and Gas",
         desc: [
-          "Work on 20+ real time case studies and assignments",
-          "For petroleum engineers, environmental specialists, operation managers etc.",
-          "Master your data analysis skills and create a dynamic dashboard to describe your insights",
+          // "Work on 20+ real time case studies and assignments",
+          // "For petroleum engineers, environmental specialists, operation managers etc.",
+          // "Master your data analysis skills and create a dynamic dashboard to describe your insights",
+          "Pursue projects on recording sensors in seismic, manufacturing, and exploration operations to  manufacturing, and exploration operations to "
+
         ],
         btn: "Download Brochure",
         BrochureLink:
@@ -247,9 +251,11 @@ export const DataScienceCourseData = [
         p1: "#4",
         p2: "Healthcare",
         desc: [
-          "Work on 20+ real time case studies and assignments",
-          "For pharmacists, therapists, health administrators, etc.",
-          "Achieve success in a competitive market by utilizing advanced tools and methodology to leverage technology and gain a competitive edge",
+          // "Work on 20+ real time case studies and assignments",
+          // "For pharmacists, therapists, health administrators, etc.",
+          // "Achieve success in a competitive market by utilizing advanced tools and methodology to leverage technology and gain a competitive edge",
+          "Pursue projects on recording sensors in seismic, manufacturing, and exploration operations to  manufacturing, and exploration operations to "
+
         ],
         btn: "Download Brochure",
         BrochureLink:
@@ -262,8 +268,10 @@ export const DataScienceCourseData = [
         p1: "#5",
         p2: "Supply Chain, E-Commerce & Retail",
         desc: [
-          "Work on 20+ real time case studies and assignments",
-          "Learn Supply Chain, E-Commerce & Retail analysis tools, generate data insights, integrate data-driven methods to future-proof business operations",
+          // "Work on 20+ real time case studies and assignments",
+          // "Learn Supply Chain, E-Commerce & Retail analysis tools, generate data insights, integrate data-driven methods to future-proof business operations",
+          "Pursue projects on recording sensors in seismic, manufacturing, and exploration operations to  manufacturing, and exploration operations to "
+
         ],
         btn: "Download Brochure",
         BrochureLink:
@@ -411,9 +419,15 @@ export const DataScienceCourseData = [
     syllabusDesc:
       "Learnbay provides Live, Interactive Online Sessions guided by Professionals working in top MNCs. All sessions are covered practically with real-time industrial projects and case studies.",
     popupHead: "Download Data science Course Brochure",
-    syllabusHead: ["Team-1", "Team-2", "Team-3", "Team-4"],
+    syllabusHead: [
+      "Term 1 Foundation Track(30 ECTS Credits)",
+      "Term 2 Statistics & Machine Learning( 25 ECTS Credits) ",
+      "Term 3 Artificial Intelligence Tools( 25 ECTS Credits)",
+      "Term 4 :- Artificial Intelligence Tools( 25 ECTS Credits) ",
+      "Term 5 :- Deployment (AWS+Azure)( 25 ECTS Credits) ",
+    ],
     masterSyllabus: {
-      "Team-1": [
+      "Term 1 Foundation Track(30 ECTS Credits)": [
         {
           Module0: {
             title: "Module 0 :- Preparatory Classes (Programming + Maths)",
@@ -484,6 +498,12 @@ export const DataScienceCourseData = [
             open: false,
           },
         },
+
+       
+
+       
+      ],
+      "Term 2 Statistics & Machine Learning( 25 ECTS Credits) ": [
         {
           Module0: {
             title: "Term 2 :- Statistics and Machine Learning",
@@ -531,318 +551,11 @@ export const DataScienceCourseData = [
               },
             ],
             id: 2,
-            open: false,
-          },
-        },
-        {
-          Module0: {
-            title: "Term 3 :- Data Science Tools",
-            content: [
-              {
-                chap: {
-                  title: "Module 1 :- SQL",
-                  desc: [
-                    "SQL and RDBMS",
-                    "Advance SQL",
-                    "NoSQL, HBase & MongoDB",
-                    "JSON Data & CRUD",
-                    "Programming with SQL",
-                  ],
-                },
-              },
-              {
-                chap: {
-                  title: "Module 2 :- MongoDB",
-                  desc: ["Introduction to MongoDB", "MongoDB (Advance)"],
-                },
-              },
-
-              {
-                chap: {
-                  title: "Module 3 :- Tableau ",
-                  desc: [
-                    "Introduction to Tableau",
-                    "Visual Analytics",
-                    "Dashboard and Stories",
-                    "Hands-on: Connecting data source and data cleansing",
-                    "Working with various charts, Deployment of Predictive model in visualization",
-                  ],
-                },
-              },
-              {
-                chap: {
-                  title: "Module 4 :- PowerBI",
-                  desc: [
-                    "Getting Started With Power BI",
-                    "Programming with Power BI",
-                  ],
-                },
-              },
-              {
-                chap: {
-                  title: "Module 5 :- Big Data & Spark Analytics",
-                  desc: [
-                    "Introduction To Hadoop & Big Data",
-                    "What is Spark",
-                    "Getting to know PySpark",
-                    "Hands-on: Map reduce Use Case : Youtube data analysis & Spark RDD programming",
-                  ],
-                },
-              },
-              {
-                chap: {
-                  title: "Module 6 :- Time Series",
-                  desc: [
-                    "Introduction to Time Series Forecasting",
-                    "Introduction to ARIMA Models",
-                    "Case Study on Time series classification of smartphone data to predict user behavior, Performing Time Series Analysis on Stock Prices & Time series forecasting of sales data",
-                  ],
-                },
-              },
-            ],
-            id: 3,
-            open: false,
-          },
-        },
-        {
-          Module0: {
-            title: "Term 4 :- Artificial Intelligence Tools",
-            content: [
-              {
-                chap: {
-                  title: "Module 1 :- Deep Learning Using Tensorflow",
-                  desc: [
-                    "Introduction to Deep Learning And TensorFlow",
-                    "TensorFlow Classification Examples",
-                    "Understanding Neural Networks With TensorFlow",
-                    "Convolutional Neural Network (CNN)",
-                    "Project on Building a CNN for Image Classification",
-                  ],
-                },
-              },
-              {
-                chap: {
-                  title: "Module 2 :- Natural Language Processing (NLP)",
-                  desc: [
-                    "Natural Language Processing",
-                    "Text Analysis",
-                    "KNN",
-                    "Use cases on NLP: Sentiment analysis for marketing",
-                  ],
-                },
-              },
-              {
-                chap: {
-                  title:
-                    "Module 3 :- Model Training & Deployment Using (AWS GCP)",
-                  desc: [
-                    "AWS (Amazon Web Services)",
-                    "GCP (Google Cloud Platform)",
-                    "Introduction to AWS and GCP Cloud ML Engine",
-                    "Deploying Machine Learning Model",
-                    "Training Machine Learning Model",
-                  ],
-                },
-              },
-            ],
-            id: 4,
-            open: false,
-          },
-        },
-        {
-          Module0: {
-            title: "Term 5 :- Deployment (AWS+Azure)",
-            content: [
-              {
-                chap: {
-                  title:
-                    "Module 1 :- Introduction to AWS and Azure Machine Learning Services:",
-                  desc: [
-                    "Overview of AWS SageMaker and Azure Machine Learning",
-                    "Key features and benefits of using these platforms",
-                    "Understanding different types of machine learning algorithms and use cases",
-                  ],
-                },
-              },
-              {
-                chap: {
-                  title: "Module 2 :- Setting up the Environment:",
-                  desc: [
-                    "Creating AWS and Azure accounts",
-                    "Configuring the required tools and SDKs (e.g. AWS CLI, Azure CLI, Azure PowerShell)",
-                    "Understanding the infrastructure requirements for training and deploying models (e.g. EC2 instances, GPU instances, Azure ML Compute)",
-                  ],
-                },
-              },
-              {
-                chap: {
-                  title:
-                    "Module 3 :- Data Preparation and Feature Engineering:",
-                  desc: [
-                    "Understanding the data requirements for machine learning models (e.g. structured vs unstructured data, data size, data quality)",
-                    "Data cleaning and preprocessing techniques (e.g. missing value imputation, feature scaling, encoding categorical variables)",
-                    "Feature selection and engineering techniques (e.g. PCA, feature importance)",
-                  ],
-                },
-              },
-              {
-                chap: {
-                  title: "Module 4 :- Model Training and Evaluation:",
-                  desc: [
-                    "Choosing the right machine learning algorithm and model (e.g. regression, classification, clustering)",
-                    "Training models using AWS SageMaker and Azure Machine Learning (e.g. using built-in algorithms, custom code)",
-                    "Evaluating model performance and tuning hyperparameters (e.g. cross-validation, hyperparameter optimization)",
-                  ],
-                },
-              },
-              {
-                chap: {
-                  title: "Module 5 :- Model Deployment and Management:",
-                  desc: [
-                    "Deploying trained models on AWS SageMaker and Azure Machine Learning (e.g. creating endpoints, batch inference)",
-                    "Monitoring model performance and managing versions (e.g. model drift, A/B testing)",
-                    "Integration with other services and applications (e.g. AWS Lambda, Azure Functions)",
-                  ],
-                },
-              },
-              {
-                chap: {
-                  title:
-                    "Module 6 :- Advanced Topics in Machine Learning on AWS and Azure:",
-                  desc: [
-                    "Deep learning techniques and architectures (e.g. neural networks, convolutional neural networks, recurrent neural networks)",
-                    "Natural Language Processing (NLP) use cases (e.g. text classification, sentiment analysis, language translation)",
-                    "Understanding the costs and pricing models for machine learning on AWS and Azure (e.g. instance pricing, storage pricing, model deployment pricing)",
-                  ],
-                },
-              },
-            ],
-            id: 5,
-            open: false,
-          },
-        },
-      ],
-      "Team-2": [
-        {
-          Module0: {
-            title: "Mo + Maths)",
-            content: [
-              {
-                chap: {
-                  title: "Topic 1 :- Cohort Orientation ",
-                  desc: [
-                    "A brief introduction to tools related to data ",
-                    "Learn about particular real-time projects and Capstone projects",
-                    "Data and its impact on career opportunities",
-                    "Utilizing data, to enhance industrial operations and management",
-                  ],
-                },
-              },
-
-              {
-                chap: {
-                  title: "Topic 2 :- Fundamentals of Programming",
-                  desc: [
-                    "Introduction to Anaconda & Jupyter notebook",
-                    "Flavors of python Introduction to Git, GitHub",
-                    "Python Fundamentals",
-                  ],
-                },
-              },
-              {
-                chap: {
-                  title: "Topic 3 :- Fundamentals of Statistics",
-                  desc: [
-                    "Mean, Median, Mode",
-                    "Standard Deviation, Average. Probability, Permutations, and Combinations",
-                    "Introduction to Linear Algebra",
-                  ],
-                },
-              },
-            ],
-            id: 0,
             open: true,
           },
         },
-        {
-          Module0: {
-            title: "Term 1 :- Python for Data Science",
-            content: [
-              {
-                chap: {
-                  title: "Module 1 :- Python Programming",
-                  desc: [
-                    "Programming Basics & Environment Setup",
-                    "Python Programming Overview",
-                    "Strings, Decisions & Loop Control",
-                    "Python Data Types",
-                    "Functions And Modules",
-                    "Class hands-on: 8+ Programs to be covered in the functions, Lambda, modules, Generators, and Packages class",
-                    "File I/O And Exceptional Handling and Regular Expression",
-                    "Class hands-on: 10+ Programs to be covered in class from File IO, Reg-ex and exception handling",
-                    "Data Analysis Using Numpy",
-                    "Data Analysis Using Pandas",
-                    "Data Visualization using Matplotlib",
-                    "Data Visualization using Seaborn",
-                    "Case Study on Numpy, Pandas, Matplotlib 1 Case Study on Pandas And Seaborn",
-                  ],
-                },
-              },
-            ],
-            id: 1,
-            open: false,
-          },
-        },
-        {
-          Module0: {
-            title: "Term 2 :- Statistics and Machine Learning",
-            content: [
-              {
-                chap: {
-                  title: "Module 1 :- Statistics",
-                  desc: [
-                    "Fundamentals of Math and Probability",
-                    "All about Population & Sample",
-                    "Introduction to Statistics, Statistical Thinking",
-                    "Descriptive Statistics",
-                    " Inferential Statistics",
-                    "Hypothesis Testing",
-                    "Linear Algebra",
-                    "Data Processing & Exploratory Data Analysis",
-                    "EDA",
-                    "Statistics Assignments: Total 4 practice sets and Assignments from Statistics",
-                  ],
-                },
-              },
-              {
-                chap: {
-                  title: "Module 2 :- Machine Learning",
-                  desc: [
-                    "Introduction to Machine Learning",
-                    "Regression and Classification Models",
-                    "Linear Regression Model",
-                    "Data Preprocessing",
-                    "Encoding the Data",
-                    "Logistic Regression Model",
-                    "Evaluation Metrics for Classification model",
-                    "K Nearest Neighbours Model",
-                    "Decision Tree Model",
-                    "Random Forest Model",
-                    "Hyperparameter Tuning",
-                    "Naive Baye’s Model",
-                    "Case Study on Kart Model Business & Random Forest",
-                    "K Means and Hierarchical Clustering",
-                    "Hierarchical Clustering",
-                    "Principal Component Analysis (PCA):",
-                    "Support Vector Machine(SVM)",
-                  ],
-                },
-              },
-            ],
-            id: 2,
-            open: false,
-          },
-        },
+      ],
+      "Term 3 Artificial Intelligence Tools( 25 ECTS Credits)" : [
         {
           Module0: {
             title: "Term 3 :- Data Science Tools",
@@ -910,318 +623,11 @@ export const DataScienceCourseData = [
               },
             ],
             id: 3,
-            open: false,
-          },
-        },
-        {
-          Module0: {
-            title: "Term 4 :- Artificial Intelligence Tools",
-            content: [
-              {
-                chap: {
-                  title: "Module 1 :- Deep Learning Using Tensorflow",
-                  desc: [
-                    "Introduction to Deep Learning And TensorFlow",
-                    "TensorFlow Classification Examples",
-                    "Understanding Neural Networks With TensorFlow",
-                    "Convolutional Neural Network (CNN)",
-                    "Project on Building a CNN for Image Classification",
-                  ],
-                },
-              },
-              {
-                chap: {
-                  title: "Module 2 :- Natural Language Processing (NLP)",
-                  desc: [
-                    "Natural Language Processing",
-                    "Text Analysis",
-                    "KNN",
-                    "Use cases on NLP: Sentiment analysis for marketing",
-                  ],
-                },
-              },
-              {
-                chap: {
-                  title:
-                    "Module 3 :- Model Training & Deployment Using (AWS GCP)",
-                  desc: [
-                    "AWS (Amazon Web Services)",
-                    "GCP (Google Cloud Platform)",
-                    "Introduction to AWS and GCP Cloud ML Engine",
-                    "Deploying Machine Learning Model",
-                    "Training Machine Learning Model",
-                  ],
-                },
-              },
-            ],
-            id: 4,
-            open: false,
-          },
-        },
-        {
-          Module0: {
-            title: "Term 5 :- Deployment (AWS+Azure)",
-            content: [
-              {
-                chap: {
-                  title:
-                    "Module 1 :- Introduction to AWS and Azure Machine Learning Services:",
-                  desc: [
-                    "Overview of AWS SageMaker and Azure Machine Learning",
-                    "Key features and benefits of using these platforms",
-                    "Understanding different types of machine learning algorithms and use cases",
-                  ],
-                },
-              },
-              {
-                chap: {
-                  title: "Module 2 :- Setting up the Environment:",
-                  desc: [
-                    "Creating AWS and Azure accounts",
-                    "Configuring the required tools and SDKs (e.g. AWS CLI, Azure CLI, Azure PowerShell)",
-                    "Understanding the infrastructure requirements for training and deploying models (e.g. EC2 instances, GPU instances, Azure ML Compute)",
-                  ],
-                },
-              },
-              {
-                chap: {
-                  title:
-                    "Module 3 :- Data Preparation and Feature Engineering:",
-                  desc: [
-                    "Understanding the data requirements for machine learning models (e.g. structured vs unstructured data, data size, data quality)",
-                    "Data cleaning and preprocessing techniques (e.g. missing value imputation, feature scaling, encoding categorical variables)",
-                    "Feature selection and engineering techniques (e.g. PCA, feature importance)",
-                  ],
-                },
-              },
-              {
-                chap: {
-                  title: "Module 4 :- Model Training and Evaluation:",
-                  desc: [
-                    "Choosing the right machine learning algorithm and model (e.g. regression, classification, clustering)",
-                    "Training models using AWS SageMaker and Azure Machine Learning (e.g. using built-in algorithms, custom code)",
-                    "Evaluating model performance and tuning hyperparameters (e.g. cross-validation, hyperparameter optimization)",
-                  ],
-                },
-              },
-              {
-                chap: {
-                  title: "Module 5 :- Model Deployment and Management:",
-                  desc: [
-                    "Deploying trained models on AWS SageMaker and Azure Machine Learning (e.g. creating endpoints, batch inference)",
-                    "Monitoring model performance and managing versions (e.g. model drift, A/B testing)",
-                    "Integration with other services and applications (e.g. AWS Lambda, Azure Functions)",
-                  ],
-                },
-              },
-              {
-                chap: {
-                  title:
-                    "Module 6 :- Advanced Topics in Machine Learning on AWS and Azure:",
-                  desc: [
-                    "Deep learning techniques and architectures (e.g. neural networks, convolutional neural networks, recurrent neural networks)",
-                    "Natural Language Processing (NLP) use cases (e.g. text classification, sentiment analysis, language translation)",
-                    "Understanding the costs and pricing models for machine learning on AWS and Azure (e.g. instance pricing, storage pricing, model deployment pricing)",
-                  ],
-                },
-              },
-            ],
-            id: 5,
-            open: false,
-          },
-        },
-      ],
-      "Team-3": [
-        {
-          Module0: {
-            title: "Maratory Classes (Programming + Maths)",
-            content: [
-              {
-                chap: {
-                  title: "Topic 1 :- Cohort Orientation ",
-                  desc: [
-                    "A brief introduction to tools related to data ",
-                    "Learn about particular real-time projects and Capstone projects",
-                    "Data and its impact on career opportunities",
-                    "Utilizing data, to enhance industrial operations and management",
-                  ],
-                },
-              },
-
-              {
-                chap: {
-                  title: "Topic 2 :- Fundamentals of Programming",
-                  desc: [
-                    "Introduction to Anaconda & Jupyter notebook",
-                    "Flavors of python Introduction to Git, GitHub",
-                    "Python Fundamentals",
-                  ],
-                },
-              },
-              {
-                chap: {
-                  title: "Topic 3 :- Fundamentals of Statistics",
-                  desc: [
-                    "Mean, Median, Mode",
-                    "Standard Deviation, Average. Probability, Permutations, and Combinations",
-                    "Introduction to Linear Algebra",
-                  ],
-                },
-              },
-            ],
-            id: 0,
             open: true,
           },
         },
-        {
-          Module0: {
-            title: "Term 1 :- Python for Data Science",
-            content: [
-              {
-                chap: {
-                  title: "Module 1 :- Python Programming",
-                  desc: [
-                    "Programming Basics & Environment Setup",
-                    "Python Programming Overview",
-                    "Strings, Decisions & Loop Control",
-                    "Python Data Types",
-                    "Functions And Modules",
-                    "Class hands-on: 8+ Programs to be covered in the functions, Lambda, modules, Generators, and Packages class",
-                    "File I/O And Exceptional Handling and Regular Expression",
-                    "Class hands-on: 10+ Programs to be covered in class from File IO, Reg-ex and exception handling",
-                    "Data Analysis Using Numpy",
-                    "Data Analysis Using Pandas",
-                    "Data Visualization using Matplotlib",
-                    "Data Visualization using Seaborn",
-                    "Case Study on Numpy, Pandas, Matplotlib 1 Case Study on Pandas And Seaborn",
-                  ],
-                },
-              },
-            ],
-            id: 1,
-            open: false,
-          },
-        },
-        {
-          Module0: {
-            title: "Term 2 :- Statistics and Machine Learning",
-            content: [
-              {
-                chap: {
-                  title: "Module 1 :- Statistics",
-                  desc: [
-                    "Fundamentals of Math and Probability",
-                    "All about Population & Sample",
-                    "Introduction to Statistics, Statistical Thinking",
-                    "Descriptive Statistics",
-                    " Inferential Statistics",
-                    "Hypothesis Testing",
-                    "Linear Algebra",
-                    "Data Processing & Exploratory Data Analysis",
-                    "EDA",
-                    "Statistics Assignments: Total 4 practice sets and Assignments from Statistics",
-                  ],
-                },
-              },
-              {
-                chap: {
-                  title: "Module 2 :- Machine Learning",
-                  desc: [
-                    "Introduction to Machine Learning",
-                    "Regression and Classification Models",
-                    "Linear Regression Model",
-                    "Data Preprocessing",
-                    "Encoding the Data",
-                    "Logistic Regression Model",
-                    "Evaluation Metrics for Classification model",
-                    "K Nearest Neighbours Model",
-                    "Decision Tree Model",
-                    "Random Forest Model",
-                    "Hyperparameter Tuning",
-                    "Naive Baye’s Model",
-                    "Case Study on Kart Model Business & Random Forest",
-                    "K Means and Hierarchical Clustering",
-                    "Hierarchical Clustering",
-                    "Principal Component Analysis (PCA):",
-                    "Support Vector Machine(SVM)",
-                  ],
-                },
-              },
-            ],
-            id: 2,
-            open: false,
-          },
-        },
-        {
-          Module0: {
-            title: "Term 3 :- Data Science Tools",
-            content: [
-              {
-                chap: {
-                  title: "Module 1 :- SQL",
-                  desc: [
-                    "SQL and RDBMS",
-                    "Advance SQL",
-                    "NoSQL, HBase & MongoDB",
-                    "JSON Data & CRUD",
-                    "Programming with SQL",
-                  ],
-                },
-              },
-              {
-                chap: {
-                  title: "Module 2 :- MongoDB",
-                  desc: ["Introduction to MongoDB", "MongoDB (Advance)"],
-                },
-              },
-
-              {
-                chap: {
-                  title: "Module 3 :- Tableau ",
-                  desc: [
-                    "Introduction to Tableau",
-                    "Visual Analytics",
-                    "Dashboard and Stories",
-                    "Hands-on: Connecting data source and data cleansing",
-                    "Working with various charts, Deployment of Predictive model in visualization",
-                  ],
-                },
-              },
-              {
-                chap: {
-                  title: "Module 4 :- PowerBI",
-                  desc: [
-                    "Getting Started With Power BI",
-                    "Programming with Power BI",
-                  ],
-                },
-              },
-              {
-                chap: {
-                  title: "Module 5 :- Big Data & Spark Analytics",
-                  desc: [
-                    "Introduction To Hadoop & Big Data",
-                    "What is Spark",
-                    "Getting to know PySpark",
-                    "Hands-on: Map reduce Use Case : Youtube data analysis & Spark RDD programming",
-                  ],
-                },
-              },
-              {
-                chap: {
-                  title: "Module 6 :- Time Series",
-                  desc: [
-                    "Introduction to Time Series Forecasting",
-                    "Introduction to ARIMA Models",
-                    "Case Study on Time series classification of smartphone data to predict user behavior, Performing Time Series Analysis on Stock Prices & Time series forecasting of sales data",
-                  ],
-                },
-              },
-            ],
-            id: 3,
-            open: false,
-          },
-        },
+      ],
+      "Term 4 :- Artificial Intelligence Tools( 25 ECTS Credits) ": [
         {
           Module0: {
             title: "Term 4 :- Artificial Intelligence Tools",
@@ -1264,318 +670,11 @@ export const DataScienceCourseData = [
               },
             ],
             id: 4,
-            open: false,
-          },
-        },
-        {
-          Module0: {
-            title: "Term 5 :- Deployment (AWS+Azure)",
-            content: [
-              {
-                chap: {
-                  title:
-                    "Module 1 :- Introduction to AWS and Azure Machine Learning Services:",
-                  desc: [
-                    "Overview of AWS SageMaker and Azure Machine Learning",
-                    "Key features and benefits of using these platforms",
-                    "Understanding different types of machine learning algorithms and use cases",
-                  ],
-                },
-              },
-              {
-                chap: {
-                  title: "Module 2 :- Setting up the Environment:",
-                  desc: [
-                    "Creating AWS and Azure accounts",
-                    "Configuring the required tools and SDKs (e.g. AWS CLI, Azure CLI, Azure PowerShell)",
-                    "Understanding the infrastructure requirements for training and deploying models (e.g. EC2 instances, GPU instances, Azure ML Compute)",
-                  ],
-                },
-              },
-              {
-                chap: {
-                  title:
-                    "Module 3 :- Data Preparation and Feature Engineering:",
-                  desc: [
-                    "Understanding the data requirements for machine learning models (e.g. structured vs unstructured data, data size, data quality)",
-                    "Data cleaning and preprocessing techniques (e.g. missing value imputation, feature scaling, encoding categorical variables)",
-                    "Feature selection and engineering techniques (e.g. PCA, feature importance)",
-                  ],
-                },
-              },
-              {
-                chap: {
-                  title: "Module 4 :- Model Training and Evaluation:",
-                  desc: [
-                    "Choosing the right machine learning algorithm and model (e.g. regression, classification, clustering)",
-                    "Training models using AWS SageMaker and Azure Machine Learning (e.g. using built-in algorithms, custom code)",
-                    "Evaluating model performance and tuning hyperparameters (e.g. cross-validation, hyperparameter optimization)",
-                  ],
-                },
-              },
-              {
-                chap: {
-                  title: "Module 5 :- Model Deployment and Management:",
-                  desc: [
-                    "Deploying trained models on AWS SageMaker and Azure Machine Learning (e.g. creating endpoints, batch inference)",
-                    "Monitoring model performance and managing versions (e.g. model drift, A/B testing)",
-                    "Integration with other services and applications (e.g. AWS Lambda, Azure Functions)",
-                  ],
-                },
-              },
-              {
-                chap: {
-                  title:
-                    "Module 6 :- Advanced Topics in Machine Learning on AWS and Azure:",
-                  desc: [
-                    "Deep learning techniques and architectures (e.g. neural networks, convolutional neural networks, recurrent neural networks)",
-                    "Natural Language Processing (NLP) use cases (e.g. text classification, sentiment analysis, language translation)",
-                    "Understanding the costs and pricing models for machine learning on AWS and Azure (e.g. instance pricing, storage pricing, model deployment pricing)",
-                  ],
-                },
-              },
-            ],
-            id: 5,
-            open: false,
-          },
-        },
-      ],
-      "Team-4": [
-        {
-          Module0: {
-            title: "Maratory Classes (Programming + Maths)",
-            content: [
-              {
-                chap: {
-                  title: "Topic 1 :- Cohort Orientation ",
-                  desc: [
-                    "A brief introduction to tools related to data ",
-                    "Learn about particular real-time projects and Capstone projects",
-                    "Data and its impact on career opportunities",
-                    "Utilizing data, to enhance industrial operations and management",
-                  ],
-                },
-              },
-
-              {
-                chap: {
-                  title: "Topic 2 :- Fundamentals of Programming",
-                  desc: [
-                    "Introduction to Anaconda & Jupyter notebook",
-                    "Flavors of python Introduction to Git, GitHub",
-                    "Python Fundamentals",
-                  ],
-                },
-              },
-              {
-                chap: {
-                  title: "Topic 3 :- Fundamentals of Statistics",
-                  desc: [
-                    "Mean, Median, Mode",
-                    "Standard Deviation, Average. Probability, Permutations, and Combinations",
-                    "Introduction to Linear Algebra",
-                  ],
-                },
-              },
-            ],
-            id: 0,
             open: true,
           },
         },
-        {
-          Module0: {
-            title: "Term 1 :- Python for Data Science",
-            content: [
-              {
-                chap: {
-                  title: "Module 1 :- Python Programming",
-                  desc: [
-                    "Programming Basics & Environment Setup",
-                    "Python Programming Overview",
-                    "Strings, Decisions & Loop Control",
-                    "Python Data Types",
-                    "Functions And Modules",
-                    "Class hands-on: 8+ Programs to be covered in the functions, Lambda, modules, Generators, and Packages class",
-                    "File I/O And Exceptional Handling and Regular Expression",
-                    "Class hands-on: 10+ Programs to be covered in class from File IO, Reg-ex and exception handling",
-                    "Data Analysis Using Numpy",
-                    "Data Analysis Using Pandas",
-                    "Data Visualization using Matplotlib",
-                    "Data Visualization using Seaborn",
-                    "Case Study on Numpy, Pandas, Matplotlib 1 Case Study on Pandas And Seaborn",
-                  ],
-                },
-              },
-            ],
-            id: 1,
-            open: false,
-          },
-        },
-        {
-          Module0: {
-            title: "Term 2 :- Statistics and Machine Learning",
-            content: [
-              {
-                chap: {
-                  title: "Module 1 :- Statistics",
-                  desc: [
-                    "Fundamentals of Math and Probability",
-                    "All about Population & Sample",
-                    "Introduction to Statistics, Statistical Thinking",
-                    "Descriptive Statistics",
-                    " Inferential Statistics",
-                    "Hypothesis Testing",
-                    "Linear Algebra",
-                    "Data Processing & Exploratory Data Analysis",
-                    "EDA",
-                    "Statistics Assignments: Total 4 practice sets and Assignments from Statistics",
-                  ],
-                },
-              },
-              {
-                chap: {
-                  title: "Module 2 :- Machine Learning",
-                  desc: [
-                    "Introduction to Machine Learning",
-                    "Regression and Classification Models",
-                    "Linear Regression Model",
-                    "Data Preprocessing",
-                    "Encoding the Data",
-                    "Logistic Regression Model",
-                    "Evaluation Metrics for Classification model",
-                    "K Nearest Neighbours Model",
-                    "Decision Tree Model",
-                    "Random Forest Model",
-                    "Hyperparameter Tuning",
-                    "Naive Baye’s Model",
-                    "Case Study on Kart Model Business & Random Forest",
-                    "K Means and Hierarchical Clustering",
-                    "Hierarchical Clustering",
-                    "Principal Component Analysis (PCA):",
-                    "Support Vector Machine(SVM)",
-                  ],
-                },
-              },
-            ],
-            id: 2,
-            open: false,
-          },
-        },
-        {
-          Module0: {
-            title: "Term 3 :- Data Science Tools",
-            content: [
-              {
-                chap: {
-                  title: "Module 1 :- SQL",
-                  desc: [
-                    "SQL and RDBMS",
-                    "Advance SQL",
-                    "NoSQL, HBase & MongoDB",
-                    "JSON Data & CRUD",
-                    "Programming with SQL",
-                  ],
-                },
-              },
-              {
-                chap: {
-                  title: "Module 2 :- MongoDB",
-                  desc: ["Introduction to MongoDB", "MongoDB (Advance)"],
-                },
-              },
-
-              {
-                chap: {
-                  title: "Module 3 :- Tableau ",
-                  desc: [
-                    "Introduction to Tableau",
-                    "Visual Analytics",
-                    "Dashboard and Stories",
-                    "Hands-on: Connecting data source and data cleansing",
-                    "Working with various charts, Deployment of Predictive model in visualization",
-                  ],
-                },
-              },
-              {
-                chap: {
-                  title: "Module 4 :- PowerBI",
-                  desc: [
-                    "Getting Started With Power BI",
-                    "Programming with Power BI",
-                  ],
-                },
-              },
-              {
-                chap: {
-                  title: "Module 5 :- Big Data & Spark Analytics",
-                  desc: [
-                    "Introduction To Hadoop & Big Data",
-                    "What is Spark",
-                    "Getting to know PySpark",
-                    "Hands-on: Map reduce Use Case : Youtube data analysis & Spark RDD programming",
-                  ],
-                },
-              },
-              {
-                chap: {
-                  title: "Module 6 :- Time Series",
-                  desc: [
-                    "Introduction to Time Series Forecasting",
-                    "Introduction to ARIMA Models",
-                    "Case Study on Time series classification of smartphone data to predict user behavior, Performing Time Series Analysis on Stock Prices & Time series forecasting of sales data",
-                  ],
-                },
-              },
-            ],
-            id: 3,
-            open: false,
-          },
-        },
-        {
-          Module0: {
-            title: "Term 4 :- Artificial Intelligence Tools",
-            content: [
-              {
-                chap: {
-                  title: "Module 1 :- Deep Learning Using Tensorflow",
-                  desc: [
-                    "Introduction to Deep Learning And TensorFlow",
-                    "TensorFlow Classification Examples",
-                    "Understanding Neural Networks With TensorFlow",
-                    "Convolutional Neural Network (CNN)",
-                    "Project on Building a CNN for Image Classification",
-                  ],
-                },
-              },
-              {
-                chap: {
-                  title: "Module 2 :- Natural Language Processing (NLP)",
-                  desc: [
-                    "Natural Language Processing",
-                    "Text Analysis",
-                    "KNN",
-                    "Use cases on NLP: Sentiment analysis for marketing",
-                  ],
-                },
-              },
-              {
-                chap: {
-                  title:
-                    "Module 3 :- Model Training & Deployment Using (AWS GCP)",
-                  desc: [
-                    "AWS (Amazon Web Services)",
-                    "GCP (Google Cloud Platform)",
-                    "Introduction to AWS and GCP Cloud ML Engine",
-                    "Deploying Machine Learning Model",
-                    "Training Machine Learning Model",
-                  ],
-                },
-              },
-            ],
-            id: 4,
-            open: false,
-          },
-        },
+      ],
+      "Term 5 :- Deployment (AWS+Azure)( 25 ECTS Credits) ": [
         {
           Module0: {
             title: "Term 5 :- Deployment (AWS+Azure)",
@@ -1645,7 +744,7 @@ export const DataScienceCourseData = [
               },
             ],
             id: 5,
-            open: false,
+            open: true,
           },
         },
       ],

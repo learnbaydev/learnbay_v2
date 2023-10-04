@@ -1,8 +1,8 @@
 .switch {
   display: flex;
-  gap: 15px;
+  gap: 80px;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
   width: 100%;
   margin-bottom: -10px;
 }

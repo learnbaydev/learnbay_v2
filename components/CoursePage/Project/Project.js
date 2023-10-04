@@ -71,21 +71,22 @@ const Project = ({
 
       <div className={styles.headWrapper}>
         <div className={styles.left}>
-          {SoftwareText ? (<>
-          <h4>Case Studies</h4>
-            <p className={styles.ptop}>
-              Work on live Case Studies certified from IBM
-            </p>
+          {SoftwareText ? (
+            <>
+              <h4>Case Studies</h4>
+              <p className={styles.ptop}>
+                Work on live Case Studies certified from IBM
+              </p>
             </>
           ) : (
             <>
-          <h4>Industry Projects</h4>
-            <p className={styles.ptop}>
-              Work on live capstone projects certified from IBM
-            </p>
+              <h4>Industry Projects</h4>
+              <p className={styles.ptop}>
+              Curriculum is specifically engineered to meet the expectations of leading tech companies. 
+              </p>
             </>
           )}
-          <div className={styles.iconWrapper}>
+          {/* <div className={styles.iconWrapper}>
             <div className={styles.middle}>
               <BsCheck2 className={styles.icon} />
               <p>Practice with latest tools</p>
@@ -114,7 +115,7 @@ const Project = ({
                 <p>Covered</p>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
 
@@ -145,7 +146,7 @@ const Project = ({
               spaceBetween: 45,
             },
             1280: {
-              slidesPerView: 3,
+              slidesPerView: 4.25,
               spaceBetween: 50,
             },
           }}
@@ -170,37 +171,44 @@ const Project = ({
                   <div className={styles.left}>
                     <h5>{domain}</h5>
                   </div>
-                  {redirectDS ? ("") : (
-                  <div
-                    className={styles.imgWrap}
-                    style={id === "BMW" ? { width: "35px" } : { width: "auto" }}
-                  >
-                    <div className="imgWrapper">
-                      <Image
-                        src={CLogo}
-                        alt="Learnbay"
-                        quality={100}
-                        width="80"
-                        height="40"
-                      />
+                  {redirectDS ? (
+                    ""
+                  ) : (
+                    <div
+                      className={styles.imgWrap}
+                      style={
+                        id === "BMW" ? { width: "70px" } : { width: "auto" }
+                      }
+                    >
+                      <div className="imgWrapper">
+                        <Image
+                          src={CLogo}
+                          alt="Learnbay"
+                          quality={100}
+                          width="80"
+                          height="40"
+                        />
+                      </div>
                     </div>
-                  </div>
                   )}
                 </div>
                 <div className={styles.body}>
                   <p>{SDesc}</p>
-                  {redirectDS ? ("") : (<span
-                    onClick={() => {
-                      popupShow();
-                      setTitle({ Title });
-                      setProjectTitle({ ProjectTitle });
-                      setDesc({ LDesc });
-                      setImg({ PopupImg });
-                    }}
-                  >
-                    Learn More
-                  </span>)}
-                  
+                  {redirectDS ? (
+                    ""
+                  ) : (
+                    <span
+                      onClick={() => {
+                        popupShow();
+                        setTitle({ Title });
+                        setProjectTitle({ ProjectTitle });
+                        setDesc({ LDesc });
+                        setImg({ PopupImg });
+                      }}
+                    >
+                      Learn More
+                    </span>
+                  )}
                 </div>
               </SwiperSlide>
             );

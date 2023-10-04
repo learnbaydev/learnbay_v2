@@ -29,13 +29,13 @@
   height: 50px;
 }
 .NameInputs {
-  border-radius: 8px;
-  padding: 10px;
+  padding: 0px;
+  border: 0;
   width: 100%;
-  border: 1px solid grey;
+  border-bottom: 1px solid #C4C4C4;
   outline: none;
   background-color: rgba(255, 255, 255);
-  height: 50px;
+padding-bottom: 10px;
 }
 .EmailInput {
   border-radius: 2px;
@@ -47,21 +47,21 @@
   height: 50px;
 }
 .EmailInputs {
-  border-radius: 8px;
+  padding: 0px;
+  border: 0;
   width: 100%;
-  padding: 10px;
-  border: 1px solid grey;
+  border-bottom: 1px solid #C4C4C4;
   outline: none;
   background-color: rgba(255, 255, 255);
-  height: 50px;
+padding-bottom: 10px;
 }
 
 .NameInput::placeholder,
 .NameInputs::placeholder,
 .EmailInput::placeholder,
 .EmailInputs::placeholder {
-  color: rgb(168, 168, 168);
-  font-size: 16px;
+  color: #C4C4C4;
+  font-size: 14px;
 }
 .NameInput:active,
 .EmailInput:active {
@@ -77,8 +77,8 @@
 }
 .Phone input::placeholder,
 .Phones input::placeholder {
-  color: rgb(167, 167, 167);
-  font-size: 16px;
+  color: #C4C4C4;
+  font-size: 14px;
 }
 
 .formWrapper select {
@@ -109,15 +109,14 @@
 }
 
 .formWrappers select {
-  height: 50px;
+  padding: 0px;
+  border: 0;
   width: 100%;
-  border-radius: 8px;
-
-  border: 1px solid grey;
-  font-size: 16px;
-  padding: 10px;
-  color: rgb(167, 167, 167);
+  border-bottom: 1px solid #C4C4C4;
   outline: none;
+  color: #C4C4C4;
+  background-color: rgba(255, 255, 255);
+padding-bottom: 10px;
 }
 .formWrappers select::placeholder {
   color: rgb(167, 167, 167);
@@ -189,8 +188,7 @@
 }
 
 .button {
-  width: 80%;
-  padding: 10px 25px;
+  padding: 10px 40px;
   display: flex;
   outline: none;
   background-color: #0072bc;
@@ -203,7 +201,7 @@
   margin-top: 20px;
   align-items: center;
   justify-content: center;
-  font-size: 18px;
+  font-size: 14px;
 
 
 }
@@ -251,8 +249,7 @@
   font-size: 18px !important;
 }
 .bottomWrap {
-  padding-bottom: 70px;
-  background-color: #ffeed4;
+  padding-bottom: 20px;
   width: 100%;
   display: flex;
   flex-flow: column;

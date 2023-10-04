@@ -1,7 +1,7 @@
 .button {
   padding: 12px 30px;
   outline: none;
-  background-color: #0072bc;
+  background-color: #0072BC;
   color: white;
   border: 0;
   cursor: pointer;
@@ -11,18 +11,18 @@
   align-items: center;
   border-radius: 4px;
   font-size: 16px;
-  border: 1px solid #0072bc;
+  border: 1px solid #0072BC;
 }
 .button:hover {
-  border: 1px solid #0072bc;
+  border: 1px solid #0072BC;
   background-color: white;
-  color: #0072bc;
+  color: #0072BC;
 }
 .outLineBtn,
 .outLineBtn1 {
   padding: 12px 20px;
-  border: 1px solid #0072bc;
-  color: #0072bc;
+  border: 1px solid #0072BC;
+  color: #0072BC;
   background-color: transparent;
   cursor: pointer;
   display: flex;
@@ -33,9 +33,47 @@
   font-size: 16px;
 }
 .outLineBtn:hover {
-  background-color: #0072bc;
+  background-color: #0072BC;
   color: white;
 }
+.nobannerButton
+  {
+    padding: 14px 85px;
+    border: 1px solid #0072BC;
+    color: #0072BC;
+    background-color: transparent;
+    cursor: pointer;
+    display: flex;
+    gap: 5px;
+    outline: none;
+    align-items: center;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  .nobannerButton:hover {
+    background-color: #0072BC;
+    color: white;
+  }
+  .bannerButton {
+    padding: 14px 85px;
+    outline: none;
+    background-color: #0072BC;
+    color: white;
+    border: 0;
+    cursor: pointer;
+    display: flex;
+    gap: 5px;
+    outline: none;
+    align-items: center;
+    border-radius: 4px;
+    font-size: 14px;
+    border: 1px solid #0072BC;
+  }
+  .bannerButton:hover {
+    border: 1px solid #0072BC;
+    background-color: white;
+    color: #0072BC;
+  }
 @media (max-width: 1281px) {
   .button,
   .outLineBtn {
@@ -45,9 +83,7 @@
 @media (max-width: 1281px){
 .outLineBtn{
   position: relative;
-    top: -15px;
-
+    top: 0px;
     flex-flow: row-reverse;
 }
 }
-
