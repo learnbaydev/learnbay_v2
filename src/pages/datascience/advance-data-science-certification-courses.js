@@ -60,9 +60,14 @@ const BatchDetails = dynamic(() =>
   import("../../../components/CoursePage/BatchDetails/BatchDetails")
 );
 
+const SecondNavbar = dynamic(()=>
+  import("../../../components/CoursePage/SecondNavbar/SecondNavbar")
+);
+
 import OfferPopup from "../../../components/OfferPopup/OfferPopup";
 import BottomBar from "../../../components/WebPage/BottomBar/BottomBar";
 import ContactUs from "../../../components/HomePage/ContactUs/ContactUs";
+// import SecondNavbar from "../../../components/CoursePage/SecondNavbar/SecondNavbar";
 
 function Blockchain() {
   // POPUP GET METHOD
@@ -164,6 +169,7 @@ function Blockchain() {
         <SecondSection
           SecondSectionData={DataScienceCourseData[0].secondSection}
         />
+        <SecondNavbar/>
         <Testimonial
           redirectDS={true}
           Testimonial={DataScienceCourseData[0].testimonial}

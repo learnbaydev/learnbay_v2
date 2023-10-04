@@ -41,7 +41,7 @@ function Testimonial({ redirectDS, para, heading, Testimonial }) {
     }
   }, []);
   return (
-    <div className={styles.testimonial}>
+    <div className={styles.testimonial} id="alumni">
        <VideoPopup triggers={video} setTriggers={setVideo} ids={vId} />
       <ReviewPopup
         trigger={popups}

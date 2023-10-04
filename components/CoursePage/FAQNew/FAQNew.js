@@ -37,7 +37,7 @@ function FAQNew({ FAQNewData }) {
   };
 
   return (
-    <div className={styles.course}>
+    <div className={styles.course} id="faqs">
         <h4 className={styles.infop}>FAQs</h4>
         <p>Curriculum is specifically engineered to meet the expectations of leading tech companies.</p>
       <div className={styles.courseM}>
