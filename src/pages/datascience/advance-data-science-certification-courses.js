@@ -204,6 +204,7 @@ function Blockchain() {
         <SyllabusNew
           syllabusHead={DataScienceCourseData[0].syllabusHead}
           masterSyllabus={DataScienceCourseData[0].masterSyllabus}
+          MasterSyllabusDefault={DataScienceCourseData[0].MasterSyllabusDefault}
           dataScienceCounselling={true}
           dataScience={true}
           titleCourse="Advanced Data Science and AI Program with domain specialization"

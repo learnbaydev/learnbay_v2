@@ -426,83 +426,79 @@ export const DataScienceCourseData = [
       "Term 4 :- Artificial Intelligence Tools( 25 ECTS Credits) ",
       "Term 5 :- Deployment (AWS+Azure)( 25 ECTS Credits) ",
     ],
+    "MasterSyllabusDefault": [
+      {
+        Module0: {
+          title: "Module 0 :- Preparatory Classes (Programming + Maths)",
+          content: [
+            {
+              chap: {
+                title: "Topic 1 :- Cohort Orientation ",
+                desc: [
+                  "A brief introduction to tools related to data ",
+                  "Learn about particular real-time projects and Capstone projects",
+                  "Data and its impact on career opportunities",
+                  "Utilizing data, to enhance industrial operations and management",
+                ],
+              },
+            },
+
+            {
+              chap: {
+                title: "Topic 2 :- Fundamentals of Programming",
+                desc: [
+                  "Introduction to Anaconda & Jupyter notebook",
+                  "Flavors of python Introduction to Git, GitHub",
+                  "Python Fundamentals",
+                ],
+              },
+            },
+            {
+              chap: {
+                title: "Topic 3 :- Fundamentals of Statistics",
+                desc: [
+                  "Mean, Median, Mode",
+                  "Standard Deviation, Average. Probability, Permutations, and Combinations",
+                  "Introduction to Linear Algebra",
+                ],
+              },
+            },
+          ],
+          id: 0,
+          open: true,
+        },
+      },
+      {
+        Module0: {
+          title: "Term 1 :- Python for Data Science",
+          content: [
+            {
+              chap: {
+                title: "Module 1 :- Python Programming",
+                desc: [
+                  "Programming Basics & Environment Setup",
+                  "Python Programming Overview",
+                  "Strings, Decisions & Loop Control",
+                  "Python Data Types",
+                  "Functions And Modules",
+                  "Class hands-on: 8+ Programs to be covered in the functions, Lambda, modules, Generators, and Packages class",
+                  "File I/O And Exceptional Handling and Regular Expression",
+                  "Class hands-on: 10+ Programs to be covered in class from File IO, Reg-ex and exception handling",
+                  "Data Analysis Using Numpy",
+                  "Data Analysis Using Pandas",
+                  "Data Visualization using Matplotlib",
+                  "Data Visualization using Seaborn",
+                  "Case Study on Numpy, Pandas, Matplotlib 1 Case Study on Pandas And Seaborn",
+                ],
+              },
+            },
+          ],
+          id: 1,
+          open: false,
+        },
+      },
+    ],
     masterSyllabus: {
-      "Term 1 Foundation Track(30 ECTS Credits)": [
-        {
-          Module0: {
-            title: "Module 0 :- Preparatory Classes (Programming + Maths)",
-            content: [
-              {
-                chap: {
-                  title: "Topic 1 :- Cohort Orientation ",
-                  desc: [
-                    "A brief introduction to tools related to data ",
-                    "Learn about particular real-time projects and Capstone projects",
-                    "Data and its impact on career opportunities",
-                    "Utilizing data, to enhance industrial operations and management",
-                  ],
-                },
-              },
-
-              {
-                chap: {
-                  title: "Topic 2 :- Fundamentals of Programming",
-                  desc: [
-                    "Introduction to Anaconda & Jupyter notebook",
-                    "Flavors of python Introduction to Git, GitHub",
-                    "Python Fundamentals",
-                  ],
-                },
-              },
-              {
-                chap: {
-                  title: "Topic 3 :- Fundamentals of Statistics",
-                  desc: [
-                    "Mean, Median, Mode",
-                    "Standard Deviation, Average. Probability, Permutations, and Combinations",
-                    "Introduction to Linear Algebra",
-                  ],
-                },
-              },
-            ],
-            id: 0,
-            open: true,
-          },
-        },
-        {
-          Module0: {
-            title: "Term 1 :- Python for Data Science",
-            content: [
-              {
-                chap: {
-                  title: "Module 1 :- Python Programming",
-                  desc: [
-                    "Programming Basics & Environment Setup",
-                    "Python Programming Overview",
-                    "Strings, Decisions & Loop Control",
-                    "Python Data Types",
-                    "Functions And Modules",
-                    "Class hands-on: 8+ Programs to be covered in the functions, Lambda, modules, Generators, and Packages class",
-                    "File I/O And Exceptional Handling and Regular Expression",
-                    "Class hands-on: 10+ Programs to be covered in class from File IO, Reg-ex and exception handling",
-                    "Data Analysis Using Numpy",
-                    "Data Analysis Using Pandas",
-                    "Data Visualization using Matplotlib",
-                    "Data Visualization using Seaborn",
-                    "Case Study on Numpy, Pandas, Matplotlib 1 Case Study on Pandas And Seaborn",
-                  ],
-                },
-              },
-            ],
-            id: 1,
-            open: false,
-          },
-        },
-
-       
-
-       
-      ],
       "Term 2 Statistics & Machine Learning( 25 ECTS Credits) ": [
         {
           Module0: {
