@@ -39,16 +39,17 @@
   color: #535151;
 padding-top: 20px;
   font-weight: 700;
-  line-height: 47px;
+  line-height: 58px;
   margin: 0px;
-  text-align: center;
-  font-size: 44px;
+  font-size: 60px;
+  padding-left: 12px;
 }
 .NormalP {
   color: #606060;
   margin: 0;
-  text-align: center;
   padding-bottom: 20px;
+  padding-left: 12px;
+  font-weight: 500;
 }
 .NormalPForm {
   font-size: 17px;

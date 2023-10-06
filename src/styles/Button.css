@@ -22,8 +22,8 @@
 .outLineBtn1 {
   padding: 12px 20px;
   border: 1px solid #0072BC;
-  color: #0072BC;
-  background-color: transparent;
+  color: #fff;
+  background-color: #0072BC;
   cursor: pointer;
   display: flex;
   gap: 5px;
@@ -31,6 +31,7 @@
   align-items: center;
   border-radius: 4px;
   font-size: 16px;
+  font-weight: 800;
 }
 .outLineBtn:hover {
   background-color: #0072BC;

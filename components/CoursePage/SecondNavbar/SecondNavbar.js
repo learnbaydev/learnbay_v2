@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import styles from "./SecondNavbar.module.css";
+import Button from "../../Global/Button/Button";
+import dynamic from "next/dynamic";
+const Popup = dynamic(() => import("../../Popup/Popup"));
 
 function SecondNavbar() {
   const [active, setActive] = useState(false);
@@ -8,6 +11,10 @@ function SecondNavbar() {
   const [active2, setActive2] = useState(true);
   const [active3, setActive3] = useState(false);
   const [active4, setActive4] = useState(false);
+
+  const popupShow = () => {
+    setPopups(true);
+  };
   return (
     <>
     <div className={styles.upperDiv}>
@@ -82,6 +89,12 @@ function SecondNavbar() {
           FAQs
         </p>
       </Link>
+      <div onClick={popupShow}>
+            <Button
+              text="APPLY FOR COUNSELLING"
+              outline={true}
+            />
+        </div>
     </div>
     
    
