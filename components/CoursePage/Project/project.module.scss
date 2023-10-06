@@ -189,6 +189,7 @@ line-height: 158%; /* 31.6px */
         .header {
           display: flex;
           flex-flow: column-reverse;
+          height: 100px;
 
           align-items: self-start;
           // justify-content: space-between;
@@ -234,6 +235,7 @@ line-height: 158%;
             font-size: 14px;
             color: rgb(115, 115, 115);
             margin-top: 10px;
+            height: 75px;
           }
           .tool {
             display: grid;
