@@ -87,10 +87,9 @@ function SyllabusNew({
     }
   }, [Advanced, advSyllabus, syllabus]);
 
- const handleChange = (index) => {
-    console.log(index, "handelChange");
-    setCSyllabus(
-      cSyllabus.map((faq, i) => {
+  const handleChange = (index) => {
+    setState(
+      state.map((faq, i) => {
         if (i === index) {
           faq.Module0.open = !faq.Module0.open;
         } else {

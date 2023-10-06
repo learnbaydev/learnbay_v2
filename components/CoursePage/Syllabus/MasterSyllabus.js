@@ -27,6 +27,7 @@ function SyllabusNew({
   pop,
   syllabusHead,
   masterSyllabus,
+  MasterSyllabusDefault,
 }) {
   const [popups, setPopups] = useState(false);
   const [active, setActive] = useState([]);
@@ -51,7 +52,7 @@ function SyllabusNew({
       ]);
     });
   }, []);
-  const [cSyllabus, setCSyllabus] = useState(syllabus);
+  const [cSyllabus, setCSyllabus] = useState(MasterSyllabusDefault);
   const changeSyllabus = (data) => {
     console.log("hello");
     for (const key in masterSyllabus) {
@@ -87,8 +88,9 @@ function SyllabusNew({
     }
   }, [Advanced, advSyllabus, syllabus]);
   const handleChange = (index) => {
-    setState(
-      state.map((faq, i) => {
+    console.log(index, "handelChange");
+    setCSyllabus(
+      cSyllabus.map((faq, i) => {
         if (i === index) {
           faq.Module0.open = !faq.Module0.open;
         } else {
