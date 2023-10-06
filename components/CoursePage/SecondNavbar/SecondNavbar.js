@@ -89,13 +89,14 @@ function SecondNavbar() {
           FAQs
         </p>
       </Link>
-      <div onClick={popupShow}>
+
+    </div>
+    <div onClick={popupShow}>
             <Button
               text="APPLY FOR COUNSELLING"
               outline={true}
             />
         </div>
-    </div>
     
    
   </div>
