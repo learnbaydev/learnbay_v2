@@ -98,7 +98,7 @@ function SyllabusNew({
         return faq;
       })
     );
-  };
+  }; 
 
   return (
     <>
