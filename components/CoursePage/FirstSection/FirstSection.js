@@ -85,6 +85,8 @@ function FirstSection({
         </div>
       </Popup>
       <VideoPopup triggers={video} setTriggers={setVideo} ids={idss} />
+
+      
       {/* For Mobile View */}
       <div className={styles.FirstLeft}>
         <p className={styles.ptopC}>{firstTopPara}</p>
@@ -133,7 +135,7 @@ function FirstSection({
           <div onClick={popupShow}>
             <Button
               bannerButton={true}
-              text="EXPLORE PROGRAM"
+              text="Brochure"
             />
           </div>
           {softwareBtnHide ? (
@@ -142,7 +144,7 @@ function FirstSection({
             <div onClick={videoSHow}>
               <Button
                 nobannerButton={true}
-                text="ENQUIRE NOW"
+                text="Intro video"
               />
             </div>
           )}

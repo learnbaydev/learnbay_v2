@@ -91,7 +91,7 @@ function SecondNavbar() {
       </Link>
 
     </div>
-    <div onClick={popupShow}>
+    <div onClick={popupShow} className={styles.btnHide}>
             <Button
               text="APPLY FOR COUNSELLING"
               outline={true}

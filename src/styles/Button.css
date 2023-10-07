@@ -88,3 +88,13 @@
     flex-flow: row-reverse;
 }
 }
+
+@media (max-width: 481px){
+ 
+  .bannerButton{
+    padding: 14px 50px;
+  }
+  .nobannerButton{
+    padding: 14px 50px;
+  }
+}

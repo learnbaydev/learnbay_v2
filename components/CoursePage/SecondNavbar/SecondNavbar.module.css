@@ -61,15 +61,18 @@
   @media (max-width: 641px){
     .upperDiv {
         display: grid;
-        grid-template-columns: 56% 30%;
+        grid-template-columns: 100%;
         gap: 15px;
         width: 100%;
         padding: 10px 10px;
       }
       .innerP {
         display: grid;
-        grid-template-columns: 70% 90% 40%;
+        grid-template-columns: 25% 25% 25% 25% 25%;
+        gap: 0px;
         overflow: scroll;
-        gap: 10px;
+      }
+      .btnHide {
+        display: none;
       }
   }

@@ -413,7 +413,7 @@ export const puneLocation = [
     id: 1,
     cityName: "Pune",
     location:
-      "Sky Loft, Creaticity Mall, Opposite Golf Course, Airport Rd, Shastrinagar, Yerawada, Pune, Maharashtra 411006",
+      "Ofc No. 408, 4th Floor, Inorbit Mall, City Space, Opp To Fiserv, Viman Nagar, Pune, Maharashtra 411014",
   },
 ];
 

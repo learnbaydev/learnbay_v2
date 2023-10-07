@@ -146,8 +146,8 @@ const Project = ({
               spaceBetween: 45,
             },
             1280: {
-              slidesPerView: 4.25,
-              spaceBetween: 50,
+              slidesPerView: 4.8,
+              spaceBetween: 25,
             },
           }}
           modules={[Pagination, Navigation]}
@@ -166,7 +166,7 @@ const Project = ({
             } = data;
 
             return (
-              <SwiperSlide className={styles.project} key={index}>
+              <SwiperSlide className={styles.project} key={index} >
                 <div className={styles.header}>
                   <div className={styles.left}>
                     <h5>{domain}</h5>
