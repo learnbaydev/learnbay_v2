@@ -207,7 +207,7 @@ export const DataScienceCourseData = [
           // "Work on 20+ real time case studies and assignments",
           // "Designed for executive-level BFSI professionals, accountant, etc.",
           // "Learn finance analysis tools, generate data insights, integrate data-driven methods to future-proof business operations",
-          "Pursue projects on recording sensors in seismic, manufacturing, and exploration operations to  manufacturing, and exploration operations to "
+          "Pursue projects on recording sensors in seismic, manufacturing, and exploration operations to  manufacturing, and exploration operations to ",
         ],
         BrochureLink:
           "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Banking%2C+Finance+and+Insurance+Domain.pdf",
@@ -221,7 +221,7 @@ export const DataScienceCourseData = [
           // "Work on 20+ real time case studies and assignments",
           // "For production manager, quality control inspector, manufacturing engineer etc.",
           // "Discover cutting-edge tech like AI and data science, and develop strategic skills as a business or data analyst",
-          "Pursue projects on recording sensors in seismic, manufacturing, and exploration operations to  manufacturing, and exploration operations to "
+          "Pursue projects on recording sensors in seismic, manufacturing, and exploration operations to  manufacturing, and exploration operations to ",
         ],
         btn: "Download Brochure",
         BrochureLink:
@@ -237,8 +237,7 @@ export const DataScienceCourseData = [
           // "Work on 20+ real time case studies and assignments",
           // "For petroleum engineers, environmental specialists, operation managers etc.",
           // "Master your data analysis skills and create a dynamic dashboard to describe your insights",
-          "Pursue projects on recording sensors in seismic, manufacturing, and exploration operations to  manufacturing, and exploration operations to "
-
+          "Pursue projects on recording sensors in seismic, manufacturing, and exploration operations to  manufacturing, and exploration operations to ",
         ],
         btn: "Download Brochure",
         BrochureLink:
@@ -254,8 +253,7 @@ export const DataScienceCourseData = [
           // "Work on 20+ real time case studies and assignments",
           // "For pharmacists, therapists, health administrators, etc.",
           // "Achieve success in a competitive market by utilizing advanced tools and methodology to leverage technology and gain a competitive edge",
-          "Pursue projects on recording sensors in seismic, manufacturing, and exploration operations to  manufacturing, and exploration operations to "
-
+          "Pursue projects on recording sensors in seismic, manufacturing, and exploration operations to  manufacturing, and exploration operations to ",
         ],
         btn: "Download Brochure",
         BrochureLink:
@@ -270,8 +268,7 @@ export const DataScienceCourseData = [
         desc: [
           // "Work on 20+ real time case studies and assignments",
           // "Learn Supply Chain, E-Commerce & Retail analysis tools, generate data insights, integrate data-driven methods to future-proof business operations",
-          "Pursue projects on recording sensors in seismic, manufacturing, and exploration operations to  manufacturing, and exploration operations to "
-
+          "Pursue projects on recording sensors in seismic, manufacturing, and exploration operations to  manufacturing, and exploration operations to ",
         ],
         btn: "Download Brochure",
         BrochureLink:
@@ -426,7 +423,7 @@ export const DataScienceCourseData = [
       "Term 4 :- Artificial Intelligence Tools( 25 ECTS Credits) ",
       "Term 5 :- Deployment (AWS+Azure)( 25 ECTS Credits) ",
     ],
-    "MasterSyllabusDefault": [
+    MasterSyllabusDefault: [
       {
         Module0: {
           title: "Module 0 :- Preparatory Classes (Programming + Maths)",
@@ -499,6 +496,78 @@ export const DataScienceCourseData = [
       },
     ],
     masterSyllabus: {
+      "Term 1 Foundation Track(30 ECTS Credits)": [
+        {
+          Module0: {
+            title: "Module 0 :- Preparatory Classes (Programming + Maths)",
+            content: [
+              {
+                chap: {
+                  title: "Topic 1 :- Cohort Orientation ",
+                  desc: [
+                    "A brief introduction to tools related to data ",
+                    "Learn about particular real-time projects and Capstone projects",
+                    "Data and its impact on career opportunities",
+                    "Utilizing data, to enhance industrial operations and management",
+                  ],
+                },
+              },
+
+              {
+                chap: {
+                  title: "Topic 2 :- Fundamentals of Programming",
+                  desc: [
+                    "Introduction to Anaconda & Jupyter notebook",
+                    "Flavors of python Introduction to Git, GitHub",
+                    "Python Fundamentals",
+                  ],
+                },
+              },
+              {
+                chap: {
+                  title: "Topic 3 :- Fundamentals of Statistics",
+                  desc: [
+                    "Mean, Median, Mode",
+                    "Standard Deviation, Average. Probability, Permutations, and Combinations",
+                    "Introduction to Linear Algebra",
+                  ],
+                },
+              },
+            ],
+            id: 0,
+            open: true,
+          },
+        },
+        {
+          Module0: {
+            title: "Term 1 :- Python for Data Science",
+            content: [
+              {
+                chap: {
+                  title: "Module 1 :- Python Programming",
+                  desc: [
+                    "Programming Basics & Environment Setup",
+                    "Python Programming Overview",
+                    "Strings, Decisions & Loop Control",
+                    "Python Data Types",
+                    "Functions And Modules",
+                    "Class hands-on: 8+ Programs to be covered in the functions, Lambda, modules, Generators, and Packages class",
+                    "File I/O And Exceptional Handling and Regular Expression",
+                    "Class hands-on: 10+ Programs to be covered in class from File IO, Reg-ex and exception handling",
+                    "Data Analysis Using Numpy",
+                    "Data Analysis Using Pandas",
+                    "Data Visualization using Matplotlib",
+                    "Data Visualization using Seaborn",
+                    "Case Study on Numpy, Pandas, Matplotlib 1 Case Study on Pandas And Seaborn",
+                  ],
+                },
+              },
+            ],
+            id: 1,
+            open: false,
+          },
+        },
+      ],
       "Term 2 Statistics & Machine Learning( 25 ECTS Credits) ": [
         {
           Module0: {
@@ -551,7 +620,7 @@ export const DataScienceCourseData = [
           },
         },
       ],
-      "Term 3 Artificial Intelligence Tools( 25 ECTS Credits)" : [
+      "Term 3 Artificial Intelligence Tools( 25 ECTS Credits)": [
         {
           Module0: {
             title: "Term 3 :- Data Science Tools",
