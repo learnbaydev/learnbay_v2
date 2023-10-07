@@ -27,6 +27,7 @@
   flex-flow: column;
   line-height: 20px;
   color: #454545;
+  height: 100px;
 }
 .para span {
   color: #0072bc;
@@ -218,5 +219,6 @@
 @media (max-width: 641px) {
   .mainSlider {
     margin-bottom: 10px;
+    height: fit-content;
   }
 }

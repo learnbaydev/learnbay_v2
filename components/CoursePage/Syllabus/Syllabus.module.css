@@ -230,13 +230,15 @@ padding: 10px 20px;
   padding-bottom: 35px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.25);
   width: fit-content !important;
-  padding-right: 70px;
+  padding-right: 30px;
+  padding-left: 50px;
 }
 .ASlide {
   padding-bottom: 35px;
   border-bottom: 2px solid #0072BC;
   width: fit-content !important;
-  padding-right: 70px;
+  padding-right: 30px;
+  padding-left: 50px;
 }
 .topBar {
   padding: 50px 100px 20px 100px;
@@ -328,6 +330,14 @@ line-height: 126.5%;
     gap: 30px;
   }
 
+  .ASlide {
+    padding: 10px 0px !important;
+  }
+
+  .slide {
+    padding: 10px 10px !important;
+  }
+
   .careerPro {
     padding: 0px 20px 50px 20px;
   }
@@ -371,6 +381,9 @@ line-height: 126.5%;
     color: #767676;
     line-height: 26px;
     text-align: center;
+  }
+  .topBar {
+    padding: 40px 10px 20px 10px;
   }
 }
 @media (max-width: 481px) {
