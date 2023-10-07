@@ -181,6 +181,7 @@ function Blockchain() {
         <FifthSection />
         <SixthSectionCTA dataScienceCounselling={true} />
         <SyllabusNew
+          
           dataScienceCounselling={true}
           dataScience={true}
           titleCourse="Data Science and AI Program For Manager & Leaders"
