@@ -116,6 +116,7 @@ padding-top: 20px;
     display: block;
     padding: 10px 20px 30px 20px;
     background-size: cover;
+  margin-bottom: 50px;
   }
   .h1 {
     font-weight: 700;
@@ -146,6 +147,7 @@ padding-top: 20px;
   .BoldP {
     font-size: 36px;
   }
+  
 }
 @media (max-width: 481px) {
   .RightSide {

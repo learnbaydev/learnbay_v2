@@ -493,12 +493,17 @@
     flex-flow: column;
     padding: 0px;
   }
+.Nimg{
+  display: none;
+}
   .RightWrap {
-    background-repeat: no-repeat;
-    background-size: cover;
     width: 100%;
     margin-top: 20px;
-    padding: 0px;
+    padding: 20px;
+    border-radius: 2.07px;
+border: 0.345px solid rgba(0, 0, 0, 0.20);
+background: #FFF;
+box-shadow: 0px 0px 1.38003px 0px rgba(0, 0, 0, 0.15);
   }
   .topHead {
     font-size: 26px;
