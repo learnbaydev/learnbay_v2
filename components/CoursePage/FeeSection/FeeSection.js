@@ -108,9 +108,22 @@ const FeeSection = ({
               <h2>
                 {FeeEmi} <span>month</span>
               </h2>
-              <div onClick={() => popupShow(false, true)}>
-                 <Button className={styles.Btn} text="Request a Callback" />
-               </div>
+                 <Button  onClick={() => popupShow(false, true)} className={styles.Btn} text="Request a Callback" />
+               <div className={styles.feeh}>
+                <div>
+                  <p>Payment Partners</p>
+                </div>
+                <div className="imgWrapper" style={{paddingRight:"10px"}}>
+                   <Image
+                     src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/coursePage/Finance+partners.webp"
+                     alt="Zest"
+                     width="300"
+                     height="80"
+                   />
+                 </div>
+                <div>
+                </div>
+              </div>
             </div>
             <div className={styles.fingst}>
               <h3>

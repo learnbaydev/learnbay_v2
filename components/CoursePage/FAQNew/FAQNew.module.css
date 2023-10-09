@@ -194,8 +194,8 @@ line-height: 158%;
   .listPanel span {
     font-size: 14px;
     width: 90%;
-    padding: 15px 5px;
-    background: #fff;
+    padding: 15px 5px 0px 5px;
+    background: #fff !important;
   }
 
   .gridPanel {

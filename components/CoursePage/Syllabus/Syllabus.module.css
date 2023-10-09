@@ -390,8 +390,12 @@ line-height: 126.5%;
   .Syllabus {
     display: grid;
     grid-template-columns: auto;
-    margin: 40px 20px;
+    margin: 40px 20px 0px 20px;
     gap: 0px;
+  }
+
+  .buttonDiv {
+    display: block;
   }
 
   .syllabusLeft {
