@@ -123,15 +123,15 @@ const Project = ({
         <Swiper
           slidesPerView={1}
           spaceBetween={30}
-          pagination={{
-            clickable: true,
-          }}
+          // pagination={{
+          //   clickable: true,
+          // }}
           navigation={true}
           grabCursor={true}
           breakpoints={{
             300: {
-              slidesPerView: 1.3,
-              spaceBetween: 35,
+              slidesPerView: 1.5,
+              spaceBetween: 0,
             },
             761: {
               slidesPerView: 2,

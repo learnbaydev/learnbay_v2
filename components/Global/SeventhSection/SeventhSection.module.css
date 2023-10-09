@@ -122,37 +122,41 @@ line-height: normal;
   .rightPart {
     display: none;
   }
+  .Section2 {
+    margin: 50px 0px;
+  }
 }
 
 @media (max-width: 481px) {
   .LearnSupport {
-    padding: 40px 20px 0px 20px;
+    padding: 24px 20px 0px 20px;
     display: block;
     margin: 0px 20px 20px 20px;
     border-radius: 10px;
-    height: 700px;
+    height: 730px;
     justify-content: space-evenly;
     margin-top: 30px;
   }
   .LearnSupport .pTop {
-    font-size: 20px;
-    font-weight: bold;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 18px;
   }
   .LearnSupport h5 {
-    font-size: 26px;
+    font-size: 22px;
     line-height: 35px;
   }
 
   .pBot {
     font-size: 16px;
-    line-height: 30px;
+    line-height: 26px;
     padding-right: 0px;
   }
 
   .btnWrap {
     display: grid;
-    margin-top: 30px;
-    margin-bottom: 20px;
+    margin-top: 40px;
+    margin-bottom: 0px;
     gap: 20px;
   }
 

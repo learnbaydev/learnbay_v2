@@ -165,3 +165,80 @@ ul.fee2 li {
 .feesmain {
   padding-top: 100px;
 }
+
+@media (max-width: 641px) {
+  .feesmain p {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .feesmain {
+    padding-top: 50px;
+  }
+
+  .batch {
+    display: block;
+    margin: 30px 10px;
+  border-image: none;
+  border: none;
+  }
+
+  .feesbatch {
+    gap: 10px;
+    height: fit-content;
+    padding: 10px 0px !important;
+  }
+  .botttomDiv {
+    display: none;
+  }
+  .fin {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .fingst {
+    padding: 30px 0px;
+  }
+  .fingst h3 {
+    font-size: 24px;
+  }
+  .fingst span {
+    font-size: 24px;
+    font-weight: 400;
+  }
+  .firstfin {
+    margin: auto;
+    background-color: none;
+    border: 0;
+    box-shadow: none;
+    margin-top: 2px;
+    height: fit-content;
+    padding: 0px;
+    align-items: center;
+  }
+
+  .firstfin p {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+
+  .firstfin h2 {
+    font-size: 24px;
+    margin-bottom: 14px;
+  }
+
+  .firstfin span {
+    font-size: 24px;
+    font-weight: 600;
+  }
+  .firstfin button {
+font-size: 20px;
+width: fit-content;
+padding: 24px;
+font-weight: 500;
+margin: auto;
+  }
+  .feeh {
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+}

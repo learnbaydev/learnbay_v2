@@ -75,9 +75,10 @@ function CertificateTab({
                   quality={100}
                   width={100}
                   height={50}
+                  className={styles.arrowImg}
                   style={{position:"relative",top:"160px"}}
                 />
-              <div className="imgWrapper" style={{padding:"0px 80px"}}>
+              <div className={`${styles.CertificateDiv} imgWrapper`}>
                 <Image
                   src={data.oneCertificate.img}
                   alt="Certificate"
@@ -110,10 +111,11 @@ function CertificateTab({
                   alt="arrow"
                   quality={100}
                   width={100}
+                  className={styles.arrowImg}
                   height={50}
                   style={{position:"relative",top:"160px"}}
                 />
-              <div className="imgWrapper" style={{padding:"0px 80px"}}>
+              <div className={`${styles.CertificateDiv} imgWrapper`}>
                 <Image
                   src={data.oneCertificate.img}
                   alt="Certificate"
@@ -153,9 +155,10 @@ function CertificateTab({
                  quality={100}
                  width={100}
                  height={50}
+                 className={styles.arrowImg}
                  style={{position:"relative",top:"160px"}}
                />
-             <div className="imgWrapper" style={{padding:"0px 80px"}}>
+             <div className={`${styles.CertificateDiv} imgWrapper`}>
                <Image
                  src={data.oneCertificate.img}
                  alt="Certificate"
@@ -189,9 +192,10 @@ function CertificateTab({
                  quality={100}
                  width={100}
                  height={50}
+                 className={styles.arrowImg}
                  style={{position:"relative",top:"160px"}}
                />
-             <div className="imgWrapper" style={{padding:"0px 80px"}}>
+             <div className={`${styles.CertificateDiv} imgWrapper`}>
                <Image
                  src={data.oneCertificate.img}
                  alt="Certificate"

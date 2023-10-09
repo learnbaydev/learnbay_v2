@@ -26,7 +26,7 @@ const ToolsCovered = () => {
           navigation={true}
           grabCursor={true}
           breakpoints={{
-            500: { slidesPerView: 1.5, spaceBetween: 40 },
+            500: { slidesPerView: 7, spaceBetween: 40 },
             961: { slidesPerView: 1.9, spaceBetween: 40 },
             1024: { slidesPerView: 2.5, spaceBetween: 50 },
             1280: { slidesPerView: 5.25, spaceBetween: 30 },
