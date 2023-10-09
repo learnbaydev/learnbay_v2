@@ -144,3 +144,31 @@
     text-align: center;
   }
 }
+
+@media(max-width:481px){
+  .switchInner {
+    margin-bottom: 15px;
+    display: grid;
+    gap: 5px;
+    grid-template-columns: 80% 50%;
+    align-items: center;
+    padding: 0;
+    font-size: 12px;
+    color: #0072BC;
+    font-weight: 400;
+  }
+
+  .switch {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    gap: 20px;
+    justify-content: center;
+    padding: 10px 30px;
+  }
+
+  .switcImg{
+    width: 120px  !important;
+    height: 60px !important;
+
+  }
+}

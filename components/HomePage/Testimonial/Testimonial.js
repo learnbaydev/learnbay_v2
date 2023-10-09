@@ -11,6 +11,8 @@ const ReviewPopup = dynamic(() => import("../ReviewPopup/ReviewPopup"));
 import VideoPopup from "../../Global/VideoPopup/VideoPopup";
 
 import { Pagination, Navigation } from "swiper";
+import "swiper/css/scrollbar";
+import { Scrollbar } from "swiper";
 
 function Testimonial({ redirectDS, para, heading, Testimonial }) {
   const [mobile, setMobile] = useState(false);
@@ -74,13 +76,17 @@ function Testimonial({ redirectDS, para, heading, Testimonial }) {
                   481: { slidesPerView: 1.8, spaceBetween: 20 },
                   100: { slidesPerView: 1.2, spaceBetween: 20 },
                 }}
-                pagination={{
-                  dynamicBullets: true,
-                  clickable: true,
-                }}
-                style={{ width: "100%" }}
+                // pagination={{
+                //   dynamicBullets: true,
+                //   clickable: true,
+                // }}
+                scrollbar={{ draggable: true }}
                 grabCursor={true}
-                modules={[Pagination, Navigation]}
+                
+        
+                style={{ width: "100%" }}
+                
+                modules={[Pagination, Navigation, Scrollbar]}
                 className="mySwiper"
               >
                 {Testimonial.map((data) => {
