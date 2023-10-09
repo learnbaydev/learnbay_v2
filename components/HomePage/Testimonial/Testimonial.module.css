@@ -216,9 +216,12 @@
   }
 }
 
-@media (max-width: 641px) {
+@media (max-width: 481px) {
   .mainSlider {
-    margin-bottom: 10px;
+    margin-bottom: 35px;
     height: fit-content;
+  }
+  .imgP {
+    margin-top: -35px;
   }
 }

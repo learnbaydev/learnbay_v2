@@ -175,6 +175,17 @@ a {
   margin-bottom: 20px;
 }
 //icon css end home page
+
+.swiper-scrollbar-drag {
+  background-color: #0072bc !important;
+  width: 20% !important;
+}
+
+.swiper-horizontal > .swiper-scrollbar {
+  width: 20% !important;
+  left: 40% !important;
+}
+
 @media (max-width: 1281px) {
   .wrapper {
     padding: 40px 80px;
@@ -252,4 +263,9 @@ a {
     font-weight: 700;
     margin: 0 0 20px;
   }
+  .swiper-horizontal > .swiper-scrollbar {
+    width: 80% !important;
+    left: 10% !important;
+  
+}
 }
