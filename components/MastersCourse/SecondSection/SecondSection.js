@@ -34,8 +34,9 @@ function SecondSection({ SecondSectionData }) {
     //   </div>
     // </div>
     <div className={styles.boxP}>
+      <div className={styles.boxD}>
     <div className={styles.boxC}>
-      <div> 
+      <div > 
             <Image
               src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/coursePage/f1.webp"
               width="50"
@@ -43,8 +44,10 @@ function SecondSection({ SecondSectionData }) {
               priority={true}
               alt="data science course"
             />
-          </div> <p>176% Average Salary Hike</p> 
+          </div> <p>Globally <br></br>Recognized Degree</p> 
     </div>
+    </div>
+    <div className={styles.boxE}>
     <div  className={styles.boxC}>
       <div>
         <Image
@@ -53,8 +56,10 @@ function SecondSection({ SecondSectionData }) {
               height="50"
               priority={true}
               alt="data science course"
-            /></div> <p> 1-on-1 Dedicated Doubt Sessions</p>
+            /></div> <p>Immigration <br></br>Opportunities</p>
     </div>
+    </div>
+    <div className={styles.boxE}>
     <div className={styles.boxC}>
       <div>
         <Image
@@ -63,8 +68,10 @@ function SecondSection({ SecondSectionData }) {
               height="50"
               priority={true}
               alt="data science course"
-            /></div> <p> 450+ Placement Partners </p>
+            /></div> <p>Transferable<br></br> ECTS Credits</p>
     </div>
+    </div>
+    <div className={styles.boxD}>
     <div className={styles.boxC}>
       <div>
         <Image
@@ -73,7 +80,8 @@ function SecondSection({ SecondSectionData }) {
               height="50"
               priority={true}
               alt="data science course"
-            /></div> <p>Curriculum inclusive of Generative AI</p>
+            /></div> <p>Curriculum inclusive <br></br>of Generative AI</p>
+    </div>
     </div>
   </div>
   );
