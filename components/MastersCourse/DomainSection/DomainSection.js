@@ -65,36 +65,22 @@ function DomainSection({ dataScience, domainSectionData }) {
         </div>
       </Popup>
       <>
-        <div className={styles.bulb}>
-          <div className={styles.img}>
-            <div className="imgWrapper">
-              <Image
-                src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Domain-Electives-Left-Guy.png"
-                loading="lazy"
-                width="671"
-                height="704"
-                alt="Bulb"
-              />
-            </div>
-          </div>
-          <p className={styles.bgP}>Become a domain expert</p>
-        </div>
+        <h4 className={styles.h1}>
+          <p className={styles.h1Span}>Domain Electives</p>
+        </h4>
         <div>
           <section>
             <div className={styles.Section1}>
-              <h4 className={styles.h1}>
-                <span className={styles.h1Span}>Domain Electives</span>
-              </h4>
-
               <div className={styles.Testimonial}>
                 <div className={styles.swiperleft}>
                   <Swiper
                     slidesPerView={mobile ? 1.1 : 2}
                     spaceBetween={mobile ? 10 : 15}
                     breakpoints={{
+                    
                       481: {
-                        slidesPerView: 1.5,
-                        spaceBetween: 20,
+                        slidesPerView: 1,
+                        spaceBetween: 0,
                       },
                       641: {
                         slidesPerView: 1.6,
@@ -124,7 +110,7 @@ function DomainSection({ dataScience, domainSectionData }) {
                     }}
                     grabCursor={true}
                     modules={[Autoplay, Pagination]}
-                    autoPlay={true}
+                    // autoPlay={true}
                     className="mySwiper"
                   >
                     {domainDataArray.map((data, index) => {
@@ -140,16 +126,28 @@ function DomainSection({ dataScience, domainSectionData }) {
 
                       return (
                         <SwiperSlide className={styles.slide} key={index}>
+                          <div className={styles.bulb}>
+                            <div className={styles.imgDiv}>
+                              <div class={styles.img}>
+                                <Image
+                                  src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/bfsi.png"
+                                  loading="lazy"
+                                  width="50"
+                                  height="50"
+                                  alt="Bulb"
+                                />
+                              </div>
+                              <div className={styles.bgPDiv}>
+                                <p className={styles.bgP}>{p2}</p>
+                              </div>
+                            </div>
+                          </div>
                           <div className={styles.mainSliderYellow}>
-                            <div className={styles.number}>
-                              <p>{p1}</p>
-                              <hr className={styles.hr} />
-                            </div>
-                            <div className={styles.imgP}>
-                              <p>{p2}</p>
-                            </div>
+                            {/* <div className={styles.imgP}>
+                              <p></p>
+                            </div> */}
                             <div key={index}>
-                              <ul
+                              <p
                                 style={{
                                   padding: "0px 0px 0px 20px",
                                 }}
@@ -157,9 +155,9 @@ function DomainSection({ dataScience, domainSectionData }) {
                                 key={titleCourse}
                               >
                                 {desc.map((data) => {
-                                  return <li key={data}>{data}</li>;
+                                  return <span key={data}>{data}</span>;
                                 })}
-                              </ul>
+                              </p>
                             </div>
                             <div
                               onClick={() => {
@@ -167,11 +165,12 @@ function DomainSection({ dataScience, domainSectionData }) {
                                 setTitleCourse(TitleCourse);
                                 popupShow();
                               }}
-                              style={{ marginTop: "20px" }}
+                              className={styles.butonDiv}
                             >
                               <Button
                                 className={styles.fillBtn}
                                 text={btn}
+                                style={{margin:"auto"}}
                                 passIcon={<FaDownload className="bIconS" />}
                               />
                             </div>
