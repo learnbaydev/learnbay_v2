@@ -77,30 +77,29 @@ function DomainSection({ dataScience, domainSectionData }) {
                     slidesPerView={mobile ? 1.1 : 2}
                     spaceBetween={mobile ? 10 : 15}
                     breakpoints={{
-                    
-                      481: {
-                        slidesPerView: 1,
-                        spaceBetween: 0,
+                      1280: {
+                        slidesPerView: 2.2,
+                        spaceBetween: 30,
                       },
-                      641: {
-                        slidesPerView: 1.6,
-                        spaceBetween: 20,
-                      },
-                      801: {
-                        slidesPerView: 1,
+                      1024: {
+                        slidesPerView: 1.5,
                         spaceBetween: 15,
                       },
                       961: {
                         slidesPerView: 1.4,
                         spaceBetween: 15,
                       },
-                      1024: {
-                        slidesPerView: 1.5,
+                      801: {
+                        slidesPerView: 1,
                         spaceBetween: 15,
                       },
-                      1280: {
-                        slidesPerView: 2.2,
-                        spaceBetween: 30,
+                      641: {
+                        slidesPerView: 1.6,
+                        spaceBetween: 20,
+                      },
+                      481: {
+                        slidesPerView: 1,
+                        spaceBetween: 0,
                       },
                     }}
                     // scrollbar={{ draggable: true }}

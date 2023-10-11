@@ -189,6 +189,7 @@
   }
   .bgPDiv{
     padding-top: 10px;
+    width: 100%;
 
   }
   .butonDiv {
@@ -199,18 +200,17 @@
   .bgP {
     background: #01436E;
     color: #fff;
-    padding: 10px 130px 10px 120px;
+    padding: 10px;
     width: fit-content;
-    font-size: 25px;
+    font-size: 14px;
     font-weight: 700;
     display: flex;
     justify-content: center;
     margin: 0;
-    margin-top: -10px;
     border-radius: 4px;
     z-index: 11;
     position: relative;
-    width: 100px;
+    width: 100%;
   }
   .mainSliderYellow {
     border-bottom: none;
