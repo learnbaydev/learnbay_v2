@@ -1,0 +1,101 @@
+@media (max-width: 641px) {
+.consmain {
+    display: grid;
+    grid-template-columns: 90%;
+    margin: 21px;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    /* opacity: 0.55; */
+background: linear-gradient(90deg, #E4F5FF 0.16%, #FFF6E9 99.84%);
+box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25) inset;
+  
+    
+}
+.consmain h4 {
+    text-align: center;
+    line-height: 40px;
+   
+   
+}
+.consmain p{
+color: #5E5E5E;
+text-align: center;
+/* font-family: Open Sans; */
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 150.5%; /* 18.975px */
+}
+.conbtn {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 10px;
+}
+
+
+.conbtn button {
+    /* background-color: red; */
+    border-radius: 3px;
+    border: 1px solid rgba(0, 0, 0, 0.70);
+    padding: 11px 0px 10px 5px;
+    margin-top: 18px;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.consbtn {
+    background-color: #0072BC;
+    margin: 22px 52px;
+    text-align: center;
+    padding: 12px 10px 10px 4px;
+    width: 70%;
+    color: #FFF;
+    text-align: center;
+    /* font-family: Open Sans; */
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    /* line-height: 155%; */
+    letter-spacing: 0.654px;
+    text-transform: capitalize;
+    border: none;
+    border-radius: 4px;
+
+}
+
+
+}
+
+@media (max-width: 481px ) {
+    .consbtn {
+    background-color: #0072BC;
+    margin: 22px 52px;
+    text-align: center;
+    padding: 12px 10px 10px 4px;
+    width: 70%;
+    color: #FFF;
+    text-align: center;
+    /* font-family: Open Sans; */
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    /* line-height: 155%; */
+    letter-spacing: 0.654px;
+    text-transform: capitalize;
+    border: none;
+    border-radius: 4px;
+}
+.conbtn button {
+    font-size: 15px;
+}
+
+
+}
+@media (max-width: 481px ) {
+    .conbtn button {
+        font-size: 12px;
+    }
+
+
+}
