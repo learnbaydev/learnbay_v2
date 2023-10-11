@@ -265,7 +265,7 @@
   display: flex;
   gap: 40px;
   width: 100%;
-  background-color: #262626;
+  background: linear-gradient(90deg, #262626 0%, #393939 99.02%);
   margin-top: 50px;
 }
 .pWrap {
@@ -302,7 +302,7 @@
   padding: 0px 0 70px 100px;
   align-items: center;
   justify-content: space-between;
-  background-color: #262626;
+  background: linear-gradient(90deg, #262626 0%, #393939 99.02%);
 }
 .rightSide {
   display: flex;
@@ -395,6 +395,7 @@
   .certificate {
     padding: 0px 14px;
     margin-top: 30px;
+    
   }
   .leftSideP {
     padding: 0px;
@@ -520,7 +521,10 @@
   }
 
   .Certificate{
-    background-color: #262626;
+    background: linear-gradient(90deg, #262626 0%, #393939 99.02%);
+  }
+  .Certificate img {
+    background: linear-gradient(90deg, #262626 0%, #393939 99.02%);
 
   }
 }

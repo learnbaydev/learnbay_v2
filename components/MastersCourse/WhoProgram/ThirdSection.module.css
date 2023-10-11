@@ -96,7 +96,7 @@
     text-align: left;
   }
   .programWrap {
-    padding: 40px 0px;
+    padding: 38px 0px 40px;
     align-items: center;
   }
 }
@@ -135,9 +135,13 @@
 @media (max-width: 481px) {
   .programWrap {
     grid-template-columns: 100%;
+    
   }
   .programWrap h4 {
-    font-size: 18px;
+    font-size: 21px;
+    color: #000;
+    padding: 0;
+    font-weight: 700;
   }
   .left {
     display: none;
