@@ -38,7 +38,7 @@ function SecondSection({ SecondSectionData }) {
     <div className={styles.boxC}>
       <div > 
             <Image
-              src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/coursePage/f1.webp"
+              src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/global.png"
               width="50"
               height="50"
               priority={true}
@@ -51,7 +51,7 @@ function SecondSection({ SecondSectionData }) {
     <div  className={styles.boxC}>
       <div>
         <Image
-              src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/coursePage/f2.webp"
+              src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/immigration.png"
               width="50"
               height="50"
               priority={true}
@@ -63,7 +63,7 @@ function SecondSection({ SecondSectionData }) {
     <div className={styles.boxC}>
       <div>
         <Image
-              src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/coursePage/f3.webp"
+              src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/credits.png"
               width="50"
               height="50"
               priority={true}
@@ -75,7 +75,7 @@ function SecondSection({ SecondSectionData }) {
     <div className={styles.boxC}>
       <div>
         <Image
-              src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/coursePage/f4.webp"
+              src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/generative.png"
               width="50"
               height="50"
               priority={true}

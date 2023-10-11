@@ -174,16 +174,15 @@
     box-shadow: none;
     margin: 36px 4px;
     padding: 2px 0px;
-    grid-gap: 18px;
+    grid-gap: 16px;
     /* gap: 87px; */
     justify-content: center;
     align-items: center;
   }
   .boxC{
     border-radius: 0.928px;
-    /* background: #FFF; */
     box-shadow: 0px 0px 1.78873px 0px rgba(0, 0, 0, 0.15);
-    padding: 33px 3px;
+    padding: 25px 3px;
     display: flex;
     flex-flow: column;
     justify-content: center;
@@ -207,7 +206,8 @@
   .boxD {
     border-radius: 3px;
    
-    background: #d8ecf8;
+    background: #eaf5fb;
+background: #0072BC20;
     
   
      /* opacity: 0.20;  */
@@ -216,7 +216,7 @@
   .boxE {
     border-radius: 3px;
 /* opacity: 0.08; */
-background: #f2e6d4;
+background: #FFF7EB;
   }
 }
 
