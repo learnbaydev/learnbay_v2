@@ -2,6 +2,7 @@ import dynamic from "next/dynamic";
 import Head from "next/head";
 import { useEffect, useState } from "react";
 import { DataScienceMastersinCS } from "../../../Data/DataScienceAiMastersinCS";
+import MentorsSection from "../../../components/MastersCourse/MentorsSection/MentorsSection";
 
 const Footer = dynamic(() => import("../../../components/Footer/Footer"));
 
@@ -237,6 +238,7 @@ function Blockchain() {
           brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Data+Science+and+AI+Projects.pdf"
           project="15+"
         />
+        <MentorsSection />
         {/* {batchDateData === "" ? (
           ""
         ) : (

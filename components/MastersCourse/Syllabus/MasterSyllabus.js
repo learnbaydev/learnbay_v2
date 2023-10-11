@@ -103,7 +103,7 @@ function SyllabusNew({
 
   return (
     <>
-      <div id="curriculum">
+      <div id="curriculum" className={styles.containerDiv}>
         <Popup
           trigger={popups}
           setTrigger={setPopups}
@@ -285,14 +285,14 @@ function SyllabusNew({
           </div>
         </section>
         <div className={styles.buttonDiv}>
-          <div onClick={popupShow} style={{ margin: "30px 0" }}>
+          <div onClick={popupShow}>
             <Button
               bannerButton={true}
               text="START YOUR APPLICATION"
               // passIcon={<FaDownload style={{ marginLeft: "10px" }} />}
             />
           </div>
-          <div onClick={popupShow} style={{ margin: "30px 0" }}>
+          <div onClick={popupShow}>
             <Button
               nobannerButton={true}
               text="DOWNLOAD BROCHURE"
