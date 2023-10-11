@@ -403,7 +403,7 @@
 }
 @media (max-width: 641px) {
   .header {
-    padding: 30px 20px 0px 20px;
+    padding: 10px 20px 0px 20px;
     display: flex;
     gap: 40px;
     width: 100%;
@@ -455,13 +455,13 @@
     margin-bottom: 0 !important;
   }
   .header p {
-    font-size: 14px;
-    font-weight: 600;
+    font-size: 18px;
     width: max-content;
-    padding: 5px 8px;
+    padding: 5px 0px;
+    font-weight: 400;
   }
   .activeP {
-    font-size: 14px !important;
+    font-size: 16px;
   }
   .gridPanel {
     width: 100%;
@@ -505,7 +505,7 @@
     display: grid;
     width: 100%;
     grid-template-columns: 20% 70%;
-    gap: 5px;
+    gap: 10px;
     padding: 0px;
     overflow:hidden;
   }
@@ -515,7 +515,8 @@
     padding-top: 40px;
   }
   .ptop{
-    color: #fff;
+    color: #D6D6D6;
+    font-size: 16px;
   }
 
   .Certificate{

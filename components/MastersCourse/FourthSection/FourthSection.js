@@ -121,8 +121,6 @@
 
 // export default FourthSection;
 
-
-
 import React, { useState, useEffect } from "react";
 import styles from "./FourthSection.module.css";
 import Image from "next/image";
@@ -154,6 +152,13 @@ function FourthSection({
     setPopupsB(true);
   };
   const [placementArray, setPlacementArray] = useState(placementData);
+  const [mobile, setMobile] = useState(false);
+  useEffect(() => {
+    let width = window.innerWidth;
+    if (width < 641) {
+      setMobile(true);
+    }
+  }, []);
   // useEffect(() => {
   //   if (redirectDS) {
   //     setPlacementArray(PlacementDS);
@@ -216,12 +221,21 @@ function FourthSection({
             </div> */}
             <div className={`${styles.RightWrap}  `}>
               <div className="imgWrapper">
-                <Image
-                  src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/work-place.png"
-                  width="1200"
-                  height="250"
-                  alt="Learnbay placement partners"
-                />
+                {mobile ? (
+                  <Image
+                    src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/company-mobile.png"
+                    width="1200"
+                    height="250"
+                    alt="Learnbay placement partners"
+                  />
+                ) : (
+                  <Image
+                    src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/work-place.png"
+                    width="1200"
+                    height="250"
+                    alt="Learnbay placement partners"
+                  />
+                )}
               </div>
             </div>
           </div>

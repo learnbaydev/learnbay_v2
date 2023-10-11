@@ -76,11 +76,11 @@ function Testimonial({ redirectDS, para, heading, Testimonial }) {
                   481: { slidesPerView: 1.8, spaceBetween: 20 },
                   100: { slidesPerView: 1.2, spaceBetween: 20 },
                 }}
-                // pagination={{
-                //   dynamicBullets: true,
-                //   clickable: true,
-                // }}
-                scrollbar={{ draggable: true }}
+                pagination={{
+                  dynamicBullets: true,
+                  clickable: true,
+                }}
+                // scrollbar={{ draggable: true }}
                 grabCursor={true}
                 
         

@@ -64,7 +64,8 @@
         grid-template-columns: 100%;
         gap: 15px;
         width: 100%;
-        padding: 20px 10px;
+        padding: 0px 10px 0px 10px;
+        height: 47px;
       }
       .innerP {
         display: grid;
@@ -79,14 +80,16 @@
 
   @media (max-width: 481px){
     .innerP {
-     
       grid-template-columns:  16% 18% 22% 13% 9%;
       grid-gap: 10px;
+      justify-content: space-around;
+      text-align: center;
       
     }
 
     .innerP p {
-      font-size: 12px;
+      font-size: 14px;
+      margin: 0;
   }
   .innerP p:hover {
     color: #0072BC;

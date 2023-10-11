@@ -2,7 +2,7 @@
 
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination } from "swiper";
+import { Pagination } from "swiper";
 import "swiper/css";
 import styles from "./ToolsCovered.module.css";
 import Image from "next/image";
@@ -23,30 +23,32 @@ const ToolsCovered = () => {
       <p className={styles.infop}>Programming Languages & Tools Covered</p>
       <div className={styles.sliderContainer}>
         <Swiper
-          navigation={true}
+          pagination={{
+            dynamicBullets: true,
+            clickable: true,
+          }}
           grabCursor={true}
           breakpoints={{
-            393: {
-              slidesPerView: 3,
-              spaceBetween: 10,
-            },
+            1280: { slidesPerView: 5.25, spaceBetween: 30 },
             481: {
               slidesPerView: 3,
               spaceBetween: 10,
             },
-         
-            1280: { slidesPerView: 5.25, spaceBetween: 30 },
+            393: {
+              slidesPerView: 3,
+              spaceBetween: 10,
+            },
           }}
-          modules={[Pagination, Navigation]}
+          modules={[Pagination]}
           className="mySwiper"
          
         >
           {images.map((image, index) => (
-            <SwiperSlide key={index} style={{marginLeft:'40px'}}>
+            <SwiperSlide key={index}>
               <div className={styles.column}>
                 <Image
                   src={image}
-                  width={100}
+                  width={80}
                   height={60}
                   style={{
                     margin: "auto",
