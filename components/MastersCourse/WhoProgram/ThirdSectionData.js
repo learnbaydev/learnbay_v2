@@ -8,7 +8,7 @@ export const ThirdSectionData = [
         id: 1,
         icon: <MdOutlineCastForEducation className={styles.bIcon} />,
         heading: "Education",
-        para: "Bachelor's degree with consistent good academics",
+        para: "Non-tech professionals with 6 months experience",
       },
       {
         id: 1,
