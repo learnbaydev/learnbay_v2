@@ -184,7 +184,7 @@
   }
   .h1 {
     color: black;
-    margin: 20px 0px 10px 0px;
+    margin: 20px 0px 0px 0px;
     font-size: 24px;
   }
   .imgP {
@@ -192,7 +192,8 @@
   }
 
   .testimonial {
-    margin-top: 0px;
+    margin-top: 35px;
+    
   }
 
   .Testimonial {

@@ -47,11 +47,13 @@ const FeeSection = ({
           />
         </div>
       </Popup>
+      <div className={styles.feeshead}>
       <h2>Fee & Batch Details</h2>
       <p>
         Curriculum is specifically engineered to meet the expectations of
         leading tech companies
       </p>
+      </div>
       <div className={styles.mainbatch}>
         <div className={styles.batch}>
           <div>
