@@ -135,6 +135,7 @@
 @media (max-width: 481px) {
   .programWrap {
     grid-template-columns: 100%;
+    
   }
   .programWrap h4 {
     font-size: 21px;
