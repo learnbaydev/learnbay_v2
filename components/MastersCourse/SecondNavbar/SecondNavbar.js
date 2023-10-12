@@ -12,97 +12,76 @@ function SecondNavbar() {
   const [active3, setActive3] = useState(false);
   const [active4, setActive4] = useState(false);
 
+  const [activeSection, setActiveSection] = useState(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            // Get the ID of the section that is currently in the viewport
+            const sectionId = entry.target.getAttribute('id');
+            setActiveSection(sectionId);
+          }
+        });
+      },
+      { threshold: 0.5 }
+    );
+
+    // Observe all sections with IDs matching your navigation links
+    const sections = document.querySelectorAll("#alumni, #eligibility, #curriculum, #fees, #faqs");
+    sections.forEach((section) => {
+      observer.observe(section);
+    });
+
+    return () => {
+      sections.forEach((section) => {
+        observer.unobserve(section);
+      });
+    };
+  }, []);
+
   const popupShow = () => {
     setPopups(true);
   };
+
   return (
     <>
-    <div className={styles.upperDiv}>
-    <div className={styles.innerP}>
-      <Link href="#alumni ">
-        <p
-          className={active2 ? styles.active : styles.inactive}
-          onClick={() => {
-            setActive(false);
-            setActive1(false);
-            setActive3(false);
-            setActive2(true);
-            setActive4(false);
-          }}
-        >
-          Alumni 
-        </p>
-      </Link>
-      <Link href="#eligibility">
-        <p
-          className={active ? styles.active : styles.inactive}
-          onClick={() => {
-            setActive(true);
-            setActive1(false);
-            setActive3(false);
-            setActive2(false);
-            setActive4(false);
-          }}
-        >
-          Eligibility
-        </p>
-      </Link>
-      <Link href="#curriculum">
-        <p
-          className={active1 ? styles.active : styles.inactive}
-          onClick={() => {
-            setActive1(true);
-            setActive(false);
-            setActive2(false);
-            setActive3(false);
-            setActive4(false);
-          }}
-        >
-         Curriculum
-        </p>
-      </Link>
-      <Link href="#fees">
-        <p
-          className={active3 ? styles.active : styles.inactive}
-          onClick={() => {
-            setActive1(false);
-            setActive(false);
-            setActive2(false);
-            setActive3(true);
-            setActive4(false);
-          }}
-        >
-         Fees
-        </p>
-      </Link>
-      <Link href="#faqs">
-        <p
-          className={active4 ? styles.active : styles.inactive}
-          onClick={() => {
-            setActive1(false);
-            setActive(false);
-            setActive2(false);
-            setActive3(false);
-            setActive4(true);
-          }}
-        >
-          FAQs
-        </p>
-      </Link>
-
-    </div>
-    <div onClick={popupShow} className={styles.btnHide}>
-            <Button
-              text="APPLY FOR COUNSELLING"
-              outline={true}
-            />
+      <div className={styles.upperDiv}>
+        <div className={styles.innerP}>
+          <Link href="#alumni">
+            <p className={activeSection === 'alumni' ? styles.active : styles.inactive}>
+              Alumni
+            </p>
+          </Link>
+          <Link href="#eligibility">
+            <p className={activeSection === 'eligibility' ? styles.active : styles.inactive}>
+              Eligibility
+            </p>
+          </Link>
+          <Link href="#curriculum">
+            <p className={activeSection === 'curriculum' ? styles.active : styles.inactive}>
+              Curriculum
+            </p>
+          </Link>
+          <Link href="#fees">
+            <p className={activeSection === 'fees' ? styles.active : styles.inactive}>
+              Fees
+            </p>
+          </Link>
+          <Link href="#faqs">
+            <p className={activeSection === 'faqs' ? styles.active : styles.inactive}>
+              FAQs
+            </p>
+          </Link>
         </div>
-    
-   
-  </div>
-  <hr />
-  </>
+        <div onClick={popupShow} className={styles.btnHide}>
+          <Button text="APPLY FOR COUNSELLING" outline={true} />
+        </div>
+      </div>
+      <hr />
+    </>
   );
 }
 
-export default SecondNavbar
+export default SecondNavbar;
