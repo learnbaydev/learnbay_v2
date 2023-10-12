@@ -1,7 +1,7 @@
 @media (max-width: 641px) {
   .consmain {
     display: grid;
-    padding: 21px 0px 37px 0px;
+    padding: 21px 25px 37px 25px;
     justify-content: center;
     align-items: center;
     /* opacity: 0.55; */
@@ -37,12 +37,12 @@
     padding: 11px 0px 10px 5px;
     font-weight: 500;
     display: grid;
-    grid-template-columns: 9% 76%;
+    grid-template-columns: 13% 70%;
     align-items: center;
     text-align: center;
     font-size: 13px;
     padding: 10px 4px;
-    gap: 6px;
+    gap: 10px;
   }
 
   .consbtn {
@@ -72,7 +72,7 @@
     /* padding: 22px; */
     padding: none;
     margin: 0px;
-    font-size: 15px;
+    font-size: 22px;
   }
 }
 
