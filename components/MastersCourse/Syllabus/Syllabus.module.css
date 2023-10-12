@@ -249,7 +249,7 @@ padding: 10px 20px;
 }
 .wrapSpan {
   color: rgba(11, 11, 11, 0.60);
-  font-size: 16px;
+  font-size: 13px;
   font-style: normal;
   font-weight: 500;
   line-height: 126.5%; 
@@ -331,7 +331,7 @@ line-height: 126.5%;
   }
 
   .ASlide {
-    padding: 10px 0px !important;
+    padding: 10px 0px 10px 30px !important;
   }
 
   .slide {

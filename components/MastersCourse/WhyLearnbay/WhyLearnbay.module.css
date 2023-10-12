@@ -1,53 +1,59 @@
 .container {
-    background: linear-gradient(90deg, #262626 0%, #393939 99.02%);
-    padding: 15px 14px;
+  background: linear-gradient(90deg, #262626 0%, #393939 99.02%);
+  padding: 15px 14px;
 }
 
 .heading {
-    color: #F99600;
-text-align: center;
-font-size: 24px;
-font-weight: 700;
+  color: #f99600;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
 }
 
+.proIcon {
+  padding: 25px 0px 0px 15px;
+  width: 66px;
+  height: 74px;
+}
 .boxinner {
-    border-radius: 3px;
-border: 1px solid #F99600;
-backdrop-filter: blur(2px);
+  border-radius: 3px;
+  border: 1px solid #f99600;
+  backdrop-filter: blur(2px);
+  display: flex;
+  gap: 15px;
 }
 
 .boxinner p {
-    color: #FFF;
-font-size: 22px;
-font-weight: 700;
-padding: 20px 60px;
-margin: 0;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 700;
+  padding: 20px 15px 20px 0px;
+  margin: 0;
 }
 
 .InnerDiv {
-    margin-top: 30px;
-    margin-bottom: 40px;
+  margin-top: 30px;
+  margin-bottom: 40px;
 }
 
 .ParaBox {
-    border-radius: 3px;
-background: #F3F3F3;
-padding: 30px 32px;
-margin-top: 10px;
+  border-radius: 3px;
+  background: #f3f3f3;
+  padding: 30px 32px;
+  margin-top: 10px;
 }
 
 .ParaBox p {
-    margin: 0;
+  margin: 0;
 }
 
 .para {
-    color: #444;
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 28px;
+  color: #444;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 28px;
 }
 
 .ParaBox span {
-    color: #0072BC;
+  color: #0072bc;
 }
-

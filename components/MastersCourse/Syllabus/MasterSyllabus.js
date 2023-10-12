@@ -137,7 +137,7 @@ function SyllabusNew({
         <div className={styles.topBar}>
           <Swiper
             modules={[Navigation]}
-            slidesPerView={mobile ? 3 : 2.7}
+            slidesPerView={mobile ? 1.19 : 2.7}
             spaceBetween={mobile ? 0 : 0}
             navigation
             grabCursor={true}
@@ -159,7 +159,7 @@ function SyllabusNew({
                         className={styles.wrapSpan}
                         style={
                           active[i].value
-                            ? { color: "#0072bc", fontWeight: "700" }
+                            ? { color: "#0072bc" }
                             : { color: "#646464" }
                         }
                       >
