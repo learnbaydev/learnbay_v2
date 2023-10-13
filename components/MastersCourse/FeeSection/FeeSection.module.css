@@ -2,6 +2,7 @@
   display:  flex;
   justify-content: center;
   align-items: center;
+  font-size: 27px;
 }
 .feesmain p {
   display:  flex;
@@ -9,6 +10,7 @@
   align-items: center;
   color: #484848;
   margin: 0;
+  line-height: 40px;
 }
 .feesbatch {
 display:  flex;
@@ -69,32 +71,35 @@ padding: 0;
   border-radius: 5px;
 }
 .firstfin {
-  background-color: white;
-  height: 200px;
-  padding: 19px;
-  box-shadow: 0px 0px 1px 0px grey;
-  line-height: 44px;
-  border-radius: 0px 6px 0px 0px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 10px 10px 10px;
+  border-radius: 0px 0px 5.358px 0px;
+background: #FFF;
+box-shadow: 0px 0px 3.57213px 0px rgba(0, 0, 0, 0.15);
 }
 .firstfin h2 {
   color: #484848;
 }
 .fingst {
   background-color: #FFF9F1;
-  padding: 37px 25px;
-  /* box-shadow: 0px 0px 1px 0px grey; */
-  border-radius: 0px 0px 6px 0px;
-  text-align: center;
+    padding: 37px 25px;
+    /* box-shadow: 0px 0px 1px 0px grey; */
+    border-radius: 0px 0px 3px 0px;
+    text-align: center;
+    border-top: 0.1px solid #e9e9e9;
 }
 .fingst  h3 {
   color: #484848;
   font-size: 20px;
 }
-.fin span {
+.montspan {
 color: #484848;
 font-size: 12px;
 font-style: normal;
-font-weight: 500;
+font-weight: 700;
 line-height: 158%;
 }
 .fin button {
@@ -141,7 +146,7 @@ ul.feesbatch, ul.fee2 {
   padding: 0;
 }
 ul.fee2 li {
-  margin-bottom: 15px; /* Add space below each list item */
+  margin-bottom: 5px; /* Add space below each list item */
 }
 .botttomDiv {
   display: grid;
@@ -154,6 +159,12 @@ ul.fee2 li {
   color: #F99600;
   text-align: left;
   display: block;
+  line-height: 20px;
+  font-weight: 500;
+
+}
+.feeh1  {
+  display:none;
 }
 
 .feeh{
@@ -164,6 +175,13 @@ ul.fee2 li {
 
 .feesmain {
   padding-top: 100px;
+}
+.gstspan {
+  color: #484848;
+font-size: 12px;
+font-style: normal;
+font-weight: 350;
+line-height: 158%; /* 31.6px */
 }
 
 @media (max-width: 641px) {
@@ -216,10 +234,16 @@ ul.fee2 li {
     font-size: 22px;
     font-weight: 650;
   }
-  .fingst span {
-    font-size: 22px;
-    font-weight: 400;
+  .firstfin span {
+    color: #484848;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 158%;
   }
+ 
+
+  
   .firstfin {
     margin: auto;
     background-color: none;
@@ -253,9 +277,12 @@ ul.fee2 li {
     font-weight: 600;
     margin: auto;
   }
-  .feeh {
+  .feeh1 {
     gap: 10px;
     margin-bottom: 20px;
+    /* background-color: red; */
+    display: flex;
+    flex-flow:column ;
   }
   .feeh p {
     color: #F99600;
