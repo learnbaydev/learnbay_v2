@@ -44,7 +44,7 @@ function SecondSection({ SecondSectionData }) {
               priority={true}
               alt="data science course"
             />
-          </div> <p>Globally <br></br>Recognized Degree</p> 
+          </div> <p>Globally Recognized Degree</p> 
     </div>
     </div>
     <div className={styles.boxE}>
@@ -56,7 +56,7 @@ function SecondSection({ SecondSectionData }) {
               height="50"
               priority={true}
               alt="data science course"
-            /></div> <p>Immigration <br></br>Opportunities</p>
+            /></div> <p>Immigration Opportunities</p>
     </div>
     </div>
     <div className={styles.boxE}>
@@ -68,7 +68,7 @@ function SecondSection({ SecondSectionData }) {
               height="50"
               priority={true}
               alt="data science course"
-            /></div> <p>Transferable<br></br> ECTS Credits</p>
+            /></div> <p>Transferable ECTS Credits</p>
     </div>
     </div>
     <div className={styles.boxD}>
@@ -80,7 +80,7 @@ function SecondSection({ SecondSectionData }) {
               height="50"
               priority={true}
               alt="data science course"
-            /></div> <p>Curriculum inclusive <br></br>of Generative AI</p>
+            /></div> <p>Curriculum inclusive of Generative AI</p>
     </div>
     </div>
   </div>
