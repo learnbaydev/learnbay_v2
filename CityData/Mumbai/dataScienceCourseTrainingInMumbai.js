@@ -71,7 +71,7 @@ export const DataScienceMumbaiCourseData = [
         name: "Learnbay",
         logo: {
           "@type": "ImageObject",
-          url: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/ALight/learnbay-logo.png",
+          url: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/learnbay-logo.png",
         },
       },
       datePublished: "2021-10-01",
@@ -274,7 +274,7 @@ export const DataScienceMumbaiCourseData = [
       description:
         "Data science course in Delhi. Learnbay is Advanced Data Science Course Training Institute in Delhi. Data science course in Delhi will enhance your career",
       image:
-        "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/ALight/learnbay-logo.png",
+        "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/learnbay-logo.png",
       performer: "Learnbay",
       offers: {
         "@type": "AggregateOffer",
@@ -465,7 +465,8 @@ export const DataScienceMumbaiCourseData = [
             ques: "What are Data Science Courses available at Learnbay in Mumbai?",
             linkText1: "Foundational Data Science Training Course, ",
             linkText2: "Advance Data Science Certification Course, ",
-            linkText3: "Data Science Certification Course for Managers and Leaders, ",
+            linkText3:
+              "Data Science Certification Course for Managers and Leaders, ",
             linkText4: "Data Science Training with Placement Assistance",
             link1: "/data-science-certification-courses",
             link2: "/advance-data-science-certification-courses",
@@ -672,7 +673,7 @@ export const DataScienceMumbaiCourseData = [
           {
             id: 0,
             ques: "What's the eligibility for a job assistance Program in Learnbay Data science training courses in Mumbai?",
-        
+
             ans: `You should have completed the course with :
             A minimum score of 70% in assessments
            Should have completed the assignments and case studies
@@ -716,7 +717,7 @@ export const DataScienceMumbaiCourseData = [
           {
             id: 0,
             ques: "Until when do the students get the facility of mentorship?",
-        
+
             ans: "Our mentors will provide data science training to the students until the completion of the course. ",
             open: true,
           },
@@ -735,7 +736,7 @@ export const DataScienceMumbaiCourseData = [
           {
             id: 0,
             ques: "When is the job assistance provided at Learnbay and how long will I get it?",
-        
+
             ans: "Job assistance is provided after the completion of the course. It includes build-up sessions, mock interviews, and referrals from top MNC’s/startups. This assistance is provided unless one gets placed in a company. ",
             open: true,
           },
@@ -1396,21 +1397,21 @@ export const DataScienceMumbaiCourseData = [
     DomainBot12: "• Offers better",
     DomainBot3:
       "At Learnbay, you can opt for your desired domain and specialize in the same during your data science training. The domain specialization provided by Learnbay are given below:-",
-      DomainList1: "• BFSI",
-      DomainList2: "• Manufacturing",
-      DomainList3: "• Energy, Oil and Gas",
-      DomainList4: "• Healthcare",
-      DomainList5: "• Supply Chain, E-Commerce & Retail",
-      Domainlink1:
-        "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Banking%2C+Finance+and+Insurance+Domain.pdf",
-      Domainlink2:
-        "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Manufacturing%2C+Mechanical+and+Telecom+Domain.pdf",
-      Domainlink3:
-        "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Energy%2C+Oil+and+Gas+Domain.pdf",
-      Domainlink4:
-        "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Healthcare%2C+Pharma+and+Clinical+Research+Domain.pdf",
-      Domainlink5:
-        "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Retail%2C+Ecommerce+and+Supply+chain+Domain.pdf",
+    DomainList1: "• BFSI",
+    DomainList2: "• Manufacturing",
+    DomainList3: "• Energy, Oil and Gas",
+    DomainList4: "• Healthcare",
+    DomainList5: "• Supply Chain, E-Commerce & Retail",
+    Domainlink1:
+      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Banking%2C+Finance+and+Insurance+Domain.pdf",
+    Domainlink2:
+      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Manufacturing%2C+Mechanical+and+Telecom+Domain.pdf",
+    Domainlink3:
+      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Energy%2C+Oil+and+Gas+Domain.pdf",
+    Domainlink4:
+      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Healthcare%2C+Pharma+and+Clinical+Research+Domain.pdf",
+    Domainlink5:
+      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Retail%2C+Ecommerce+and+Supply+chain+Domain.pdf",
     CertificationHead1: "IBM Certification for data science course in Mumbai",
     CertificationBot1:
       "Having a well-recognized certification in a specific field is important when it comes to data science courses. Learnbay provides IBM certification upon course completion, which is globally recognized and can help you stand out.",
@@ -1429,7 +1430,7 @@ export const DataScienceMumbaiCourseData = [
     CertificationHead3: "Are certifications in data science worthwhile?",
     CertificationBot7:
       "The answer is yes if you pursue the right course. Having a data science certification gives you an advantage over other applicants during interviews and enables you to highlight your skills in various data science technologies.",
-      src33:
+    src33:
       "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Microsoft-certificate-data.png",
     src: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Certificate-blue.png",
     src22:
@@ -1465,39 +1466,40 @@ export const DataScienceMumbaiCourseData = [
       "4. It also provides a basic understanding of various coding platforms and editors, such as Jupyter notebooks, Githubs, Git, and Anaconda.",
     ModuleBot45:
       "5. This module (0) deals with a few terminologies in statistics such as (Mean, Median, Mode Standard Deviation, Average, Probability, permutations, combinations and Introduction to Linear Algebra)",
-      syllabush1:" Preparatory Classes (Programming + Maths)",
-      syllabusb1:"6 Hours",
-      SyllabusBotlist11:" Cohort Orientation",
-      SyllabusBotlist12:"A brief introduction to tools related to data",
-      SyllabusBotlist13:" Fundamentals of Programming",
-      SyllabusBotlist14:"Introduction to Anaconda & Jupyter notebook",
-      SyllabusBotlist15:"Fundamentals of Statistics",
-      SyllabusBotlist16:"Mean, Median, Mode",
-      syllabush2:"Python for Data Science",
-      syllabusb2:"40 Hours",
-      SyllabusBotlist21:"Python Programming",
-      SyllabusBotlist22:"Data Analysis Using Numpy",
-      SyllabusBotlist23:"Python Programming Overview",
-      SyllabusBotlist24:"Python Data Types",
-      SyllabusBotlist25:"Strings, Decisions & Loop Control",
-      SyllabusBotlist26:"Data Analysis Using Pandas",
-      syllabush3:"Statistics and Machine Learning",
-      syllabusb3:"70 Hours",
-      SyllabusBotlist31:"Statistics",
-      SyllabusBotlist32:"Fundamentals of Math and Probability",
-      SyllabusBotlist33:"Descriptive Statistics",
-      SyllabusBotlist34:" Machine Learning",
-      SyllabusBotlist35:"Linear Regression Model",
-      SyllabusBotlist36:"Data Preprocessing",
-      syllabush4:" Data Science Tools",
-      syllabusb4:"12+ Classes",
-      SyllabusBotlist41:" SQL",
-      SyllabusBotlist42:"MongoDB",
-      SyllabusBotlist43:"Tableau",
-      SyllabusBotlist44:" PowerBI",
-      SyllabusBotlist45:" Big Data & Spark Analytics",
-      SyllabusBotlist46:"Big Data & Spark Analytics",
-      syllabussrc:"https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Advance+Data+Science+and+AI+Certification+Program+Learnbay.pdf",
+    syllabush1: " Preparatory Classes (Programming + Maths)",
+    syllabusb1: "6 Hours",
+    SyllabusBotlist11: " Cohort Orientation",
+    SyllabusBotlist12: "A brief introduction to tools related to data",
+    SyllabusBotlist13: " Fundamentals of Programming",
+    SyllabusBotlist14: "Introduction to Anaconda & Jupyter notebook",
+    SyllabusBotlist15: "Fundamentals of Statistics",
+    SyllabusBotlist16: "Mean, Median, Mode",
+    syllabush2: "Python for Data Science",
+    syllabusb2: "40 Hours",
+    SyllabusBotlist21: "Python Programming",
+    SyllabusBotlist22: "Data Analysis Using Numpy",
+    SyllabusBotlist23: "Python Programming Overview",
+    SyllabusBotlist24: "Python Data Types",
+    SyllabusBotlist25: "Strings, Decisions & Loop Control",
+    SyllabusBotlist26: "Data Analysis Using Pandas",
+    syllabush3: "Statistics and Machine Learning",
+    syllabusb3: "70 Hours",
+    SyllabusBotlist31: "Statistics",
+    SyllabusBotlist32: "Fundamentals of Math and Probability",
+    SyllabusBotlist33: "Descriptive Statistics",
+    SyllabusBotlist34: " Machine Learning",
+    SyllabusBotlist35: "Linear Regression Model",
+    SyllabusBotlist36: "Data Preprocessing",
+    syllabush4: " Data Science Tools",
+    syllabusb4: "12+ Classes",
+    SyllabusBotlist41: " SQL",
+    SyllabusBotlist42: "MongoDB",
+    SyllabusBotlist43: "Tableau",
+    SyllabusBotlist44: " PowerBI",
+    SyllabusBotlist45: " Big Data & Spark Analytics",
+    SyllabusBotlist46: "Big Data & Spark Analytics",
+    syllabussrc:
+      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Advance+Data+Science+and+AI+Certification+Program+Learnbay.pdf",
     JobHead1: "What is a job assistance program?",
     JobBot1:
       "While enrolling in any course or program, there is always thought persisting in learners about the jobs and placement after the course completion. So, here the job assistance program comes to play.",

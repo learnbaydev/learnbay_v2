@@ -71,7 +71,7 @@ export const DSDubaiCourseData = [
         name: "Learnbay",
         logo: {
           "@type": "ImageObject",
-          url: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/ALight/learnbay-logo.png",
+          url: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/learnbay-logo.png",
         },
       },
       datePublished: "2021-10-01",
@@ -314,7 +314,7 @@ export const DSDubaiCourseData = [
       description:
         "Data science course in Dubai. Learnbay is Advanced Data Science Course Training Institute in Dubai. Data science course in Dubai will enhance your career",
       image:
-        "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/ALight/learnbay-logo.png",
+        "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/learnbay-logo.png",
       performer: "Learnbay",
       offers: {
         "@type": "AggregateOffer",
@@ -505,7 +505,8 @@ export const DSDubaiCourseData = [
             ques: "What are Data Science Training courses available at Learnbay in Dubai?",
             linkText1: "Foundational Data Science Training Course, ",
             linkText2: "Advance Data Science Certification Course, ",
-            linkText3: "Data Science Certification Course for Managers and Leaders, ",
+            linkText3:
+              "Data Science Certification Course for Managers and Leaders, ",
             linkText4: "Data Science Training with Placement Assistance",
             link1: "/data-science-certification-courses",
             link2: "/advance-data-science-certification-courses",
@@ -577,7 +578,7 @@ export const DSDubaiCourseData = [
             linkText1: " +917795687988 ",
             link1: "tel:+917795687988",
             link: true,
-        
+
             open: false,
           },
           {
@@ -713,7 +714,7 @@ export const DSDubaiCourseData = [
           {
             id: 0,
             ques: "What's the eligibility for a job assistance Program in Learnbay Data science training courses in Dubai?",
-        
+
             ans: `You should have completed the course with :
             A minimum score of 70% in assessments
            Should have completed the assignments and case studies
@@ -757,7 +758,7 @@ export const DSDubaiCourseData = [
           {
             id: 0,
             ques: "Until when do the students get the facility of mentorship?",
-        
+
             ans: "Our mentors will provide data science training to the students until the completion of the course. ",
             open: true,
           },
@@ -776,7 +777,7 @@ export const DSDubaiCourseData = [
           {
             id: 0,
             ques: "When is the job assistance provided at Learnbay and how long will I get it?",
-        
+
             ans: "Job assistance is provided after the completion of the course. It includes build-up sessions, mock interviews, and referrals from top MNC’s/startups. This assistance is provided unless one gets placed in a company. ",
             open: true,
           },
@@ -789,127 +790,158 @@ export const DSDubaiCourseData = [
         ],
       },
     ],
-    ProgramHead1:"What Data science course in Dubai - In association with IBM?",
-              ProgramBot1:"Learnbay offers interactive instructed-led data science course training in Dubai. Industry experts design these comprehensive domain-specific data science courses for professionals wanting to become successful data scientists. In these courses, participants will be provided with various data science projects to work on. A joint partnership with Learnbay and IBM provides students with integrated applied training, making them become expert Data scientists. Even the advanced data science courses offer multiple certifications and domain electives too.",
-              ProgramHead3:"What can I expect from Learnbay’s data science certification courses?",
-              ProgramBot3:"Learnbay is considered a global pioneer in the online data science course training. As a part of this data science course in Dubai, you will receive the following benefits:" ,
-              ProgramBot66:"Lifetime access to Learnbay LMS for seamless learning progress. 1 to 8 number of globally recognized IBM certifications in advanced data science training courses. Premium Cloud Lab Feature, via which you can leverage hands-on exposure to industrial problems. Live interactive classes plus Extra Doubt Clearance Sessions. Special Programming classes for non-technical learners. Learnbay Faculties possess extensive industry knowledge and experience. Participants will be provided with end-to-end placement support. Modules are tailored according to the industry's needs and are understandable to learners. Flexi pass, you can attend unlimited batches for the duration of 1-3 years. You will also be able to attend limitless classes of your choice.",
-              ProgramBot4:"There are four available Data Science and AI Certification Courses by Learnbay in Dubai:",
-              Courselink1:"/data-science-certification-courses",
-              Courselink2:"/advance-data-science-certification-courses",
-              Courselink4:"/data-science-ai-for-managers",
-              Courselink5:"/data-science-ai-masters-program",
-              Course1:"Foundational Data Science and AI Program",
-              Course2:"Advanced-Data Science and AI Program with Domain Specialization",
-              Course4:"Data Science and AI Program for Managers and Leaders",
-              Course5:"Data Science and AI master program",
-              DomainHead1:"Why Domain Specialization?",
-              DomainBot1:"While the majority of entry-level data science professionals can manage their jobs without domain expertise, mid-level and senior-level data scientists who lack industry understanding face job insecurity in Dubai.",
-              DomainBot2:"Generally, Data scientists are expected to possess industry knowledge to provide an accurate solution to the problems at hand. This is why we have created our data science course modules based on industry to equip our learners with domain-focused knowledge.",
-              DomainBot3:"At Learnbay, you are free to choose multiple domain electives associated with your selected advanced Data science course. You can take the help of a Learnbay data science career counselor if you are unsure which domain is right for you. Based on your experience, you can choose from the following domain(s):",
-              DomainList1: "• BFSI",
-              DomainList2: "• Manufacturing",
-              DomainList3: "• Energy, Oil and Gas",
-              DomainList4: "• Healthcare",
-              DomainList5: "• Supply Chain, E-Commerce & Retail",
-              Domainlink1:
-                "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Banking%2C+Finance+and+Insurance+Domain.pdf",
-              Domainlink2:
-                "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Manufacturing%2C+Mechanical+and+Telecom+Domain.pdf",
-              Domainlink3:
-                "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Energy%2C+Oil+and+Gas+Domain.pdf",
-              Domainlink4:
-                "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Healthcare%2C+Pharma+and+Clinical+Research+Domain.pdf",
-              Domainlink5:
-                "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Retail%2C+Ecommerce+and+Supply+chain+Domain.pdf",
-              CertificationHead1:"Data Science Certification process at Learnbay",
-              CertificationBot1:"Once you complete your data science course from Learnbay, you will be awarded multiple certificates from IBM for completing distinct micro-data science modules. These certifications will demonstrate your data science expertise and help you stay ahead in the data science job market.",
-              CertificationBot2:"In addition, you will receive an IBM project certificate upon completion of capstone projects which you can add to your portfolio. It assists in grabbing genuine and interesting job roles. To learn more about micro-skills certificates, refer to the respective course brochures.",
-              src33:
-              "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Microsoft-certificate-data.png",
-            src: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Certificate-blue.png",
-            src22:
-              "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Certificate-Yellow.png",
-              ModuleHead1:"Coding classes:",
-              ModuleBot1:"Learnbay supports learners from all backgrounds. For this reason, we have integrated module 0 of programming classes in all of our data science courses in Dubai.",
-              ModuleHead2:"Data science modules:",
-              ModuleBot3:"Learnbay’s instructor-led online data science course teaches students fundamental data science principles and how to apply them in real industry. Our trainers illustrate each concept with real-life examples. The modules of the data science certification cover topics such as data visualization, machine learning, SQL, and time series analysis.",
-              ModuleBot4:"Moreover, Our LMS is continually updated to incorporate the most up-to-date versions of courses and to ensure compliance with industry standards.",
-              ModuleBot41:"Our IBM data science course will prepare students industry-ready for data science job roles.",
-              syllabush1:" Preparatory Classes (Programming + Maths)",
-              syllabusb1:"6 Hours",
-              SyllabusBotlist11:" Cohort Orientation",
-              SyllabusBotlist12:"A brief introduction to tools related to data",
-              SyllabusBotlist13:" Fundamentals of Programming",
-              SyllabusBotlist14:"Introduction to Anaconda & Jupyter notebook",
-              SyllabusBotlist15:"Fundamentals of Statistics",
-              SyllabusBotlist16:"Mean, Median, Mode",
-              syllabush2:"Python for Data Science",
-              syllabusb2:"40 Hours",
-              SyllabusBotlist21:"Python Programming",
-              SyllabusBotlist22:"Data Analysis Using Numpy",
-              SyllabusBotlist23:"Python Programming Overview",
-              SyllabusBotlist24:"Python Data Types",
-              SyllabusBotlist25:"Strings, Decisions & Loop Control",
-              SyllabusBotlist26:"Data Analysis Using Pandas",
-              syllabush3:"Statistics and Machine Learning",
-              syllabusb3:"70 Hours",
-              SyllabusBotlist31:"Statistics",
-              SyllabusBotlist32:"Fundamentals of Math and Probability",
-              SyllabusBotlist33:"Descriptive Statistics",
-              SyllabusBotlist34:" Machine Learning",
-              SyllabusBotlist35:"Linear Regression Model",
-              SyllabusBotlist36:"Data Preprocessing",
-              syllabush4:" Data Science Tools",
-              syllabusb4:"12+ Classes",
-              SyllabusBotlist41:" SQL",
-              SyllabusBotlist42:"MongoDB",
-              SyllabusBotlist43:"Tableau",
-              SyllabusBotlist44:" PowerBI",
-              SyllabusBotlist45:" Big Data & Spark Analytics",
-              SyllabusBotlist46:"Big Data & Spark Analytics",
-              syllabussrc:"https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Advance+Data+Science+and+AI+Certification+Program+Learnbay.pdf",
-              JobHead1:"Interview preparation sessions at Learnbay",
-              JobBot1:"As part of our data science training in Dubai, students will undergo several practice interviews for a thorough interview preparation process on data science. Our dedicated career coaches will guide you with resume building, conducting mock interviews, and evaluate their competencies, and providing feedback. They ensure that every learner is professionally trained to crack a potential data science job in Dubai.",
-              JobBot2:"Learnbay also provides a 100% job assistanced data science course that offers a complete refund of course fees in case of an unsuccessful placement.",
-              JobHead2:"Is data science a good career option in Dubai?",
-              JobBot3:"Data science has developed into a booming career in Dubai, with enormous potential for progression in the future. Data Science is the process of uncovering hidden insights in data pertaining to patterns, behavior, interpretation, and inferences in order to make informed business decisions.",
-              JobBot4:"Since Dubai has great plans to transform itself into a smart hub, specialized skill sets such as coding and analytics will be in high demand. In Dubai, a typical data scientist earns around AED 20,000 per month. Hence this is the right time to begin your data science career with Learnbay’s data science training. In addition, Learnbay offers the domain elective of energy, oil, and Gas in their advanced data science courses. Being the remarkable hub of crude oil extraction and petrochemical industry, Dubai is experiencing growing demand for data scientists specializing in energy, oil & gas domain knowledge. From that perspective, Laeabay data science is becoming the one-stop choice here.",
-              ProjectsBot1:"As part of the Learnbay data science curriculum, students will be mentored to develop high-quality data science projects solving real-time problems. The IBM data science course in Dubai offers 8 to 15 real industry projects in a variety of domains. You may also work on 2-3 capstone projects for which an IBM project experience certificate will be awarded.",
-              ProjectsBot2:"Students can also explore various data science tools via live projects in our Cloud lab feature. This hands-on training will help you practice the skills and data science techniques learned throughout the training. Additionally, You can also select the domain or industry dataset you wish to work on. Our students have completed the following domain-based  data science projects:",
-              src1:"https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/SAMSUNG.png",
-              ProjectsH1:"Samsung Health Monitor App",
-              Projectsp1:"Samsung will launch a new healthcare app soon. The key goal of this app is the accurate human activity tracking and providing relevant health-related recommendations. Continuous analysis of a massive amount of mobile data is required for such an app.",
-              src2:"https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/IBM.png",
-              ProjectsH2:"IBM HR Analytics",
-              Projectsp2:"IBM intends to boost its HR department by identifying employees' masked inconsistency. They need models to identify the graphical variations in their 14000+ employees' performances. Help them build models with your regressions and other ML abilities.",
-              src3:"https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/amazon1.png",
-              ProjectsH3:"Amazon Customer Review Analysis",
-              Projectsp3:"Amazon has made a goal to identify the most successful consumer electronic products. For these, they require live customer review analysis. You can take part in the assisting project of customer insight regeneration from the ongoing and existing reviews via a suitable data visualization approach.",
-              src4:"https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/BMW.png",
-              ProjectsH4:"BMW Used Car Price Optimization",
-              Projectsp4:" BMW allows existing customers to sell used cars  but many competitors are now offering better resale values. A data science-powered statistical app from BMW will provide the best market value for used cars based on parameters like Km driven, daily pricing up and down, manufacturing dates, and so on. Develop your analytical skills through such projects.",
-              AlumniBot1:"Learnbay believes in building and nurturing future data scientists through its data science training. We make sure our quality education reaches all corners of the world, including Dubai. Numerous students immediately landed desired data science jobs in Dubai firms while completing 70% of our IBM data science course. Read some of the testimonies of our alumni:",
-              Asrc1:"https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/devraj.jpg",
-              AlumniH1:"Deveraj",
-              Alumnip1:"The quality of the content is very nice. What I liked the most was mainly the instructor concentrating on the practical part, live project sessions make you feel confident to attend interviews. Multiple batch options, access for any instructor class videos or materials. The totally positive environment around.",
-              Asrc2:"https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/shezan.png",
-              AlumniH2:"Shezan Baig",
-              Alumnip2:"Learnbay is one of the most remarkable data science institutes I've come across. Compared to other institutes in India, it offers a data science course at a low cost. Excellent value for money. Finally, I achieved job satisfaction. I would strongly advise everyone to attend this institute.",
-              Asrc3:"https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/viraj.png",
-              AlumniH3:"Viraj Ghodke",
-              Alumnip3:"For me, learning using the Learnbay platform has been a great experience. The teaching and management team are very helpful. They are constantly willing to clarify each individual's doubts and meet the needs of working professionals. The practice interview sessions were simply like a clone of MNC interviews.",
-              Asrc4:"https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/shubhangi.png",
-              AlumniH4:"Shubhangi J. Waghmare ",
-              Alumnip4:"The best in Industry offerings from both cost and curriculum wise. One advantage of joining here is you can access their resources for a lifetime, unlike others where you have accessibility only for a year or so. Most importantly, there is continuous assistance for recruitment.",
-              alt1:"data science course training in dubai",
-              alt2:"data science course training in dubai",
-              alt3:"data science course training in dubai",
-              alt4:"data science course training in dubai",
-              alt5:"data science course training in dubai",
-              alt6:"data science course training in dubai",
-              alt7:"data science course training in dubai",
-              alt8:"data science course training in dubai",
-              alt9:"data science course training in dubai",
+    ProgramHead1:
+      "What Data science course in Dubai - In association with IBM?",
+    ProgramBot1:
+      "Learnbay offers interactive instructed-led data science course training in Dubai. Industry experts design these comprehensive domain-specific data science courses for professionals wanting to become successful data scientists. In these courses, participants will be provided with various data science projects to work on. A joint partnership with Learnbay and IBM provides students with integrated applied training, making them become expert Data scientists. Even the advanced data science courses offer multiple certifications and domain electives too.",
+    ProgramHead3:
+      "What can I expect from Learnbay’s data science certification courses?",
+    ProgramBot3:
+      "Learnbay is considered a global pioneer in the online data science course training. As a part of this data science course in Dubai, you will receive the following benefits:",
+    ProgramBot66:
+      "Lifetime access to Learnbay LMS for seamless learning progress. 1 to 8 number of globally recognized IBM certifications in advanced data science training courses. Premium Cloud Lab Feature, via which you can leverage hands-on exposure to industrial problems. Live interactive classes plus Extra Doubt Clearance Sessions. Special Programming classes for non-technical learners. Learnbay Faculties possess extensive industry knowledge and experience. Participants will be provided with end-to-end placement support. Modules are tailored according to the industry's needs and are understandable to learners. Flexi pass, you can attend unlimited batches for the duration of 1-3 years. You will also be able to attend limitless classes of your choice.",
+    ProgramBot4:
+      "There are four available Data Science and AI Certification Courses by Learnbay in Dubai:",
+    Courselink1: "/data-science-certification-courses",
+    Courselink2: "/advance-data-science-certification-courses",
+    Courselink4: "/data-science-ai-for-managers",
+    Courselink5: "/data-science-ai-masters-program",
+    Course1: "Foundational Data Science and AI Program",
+    Course2: "Advanced-Data Science and AI Program with Domain Specialization",
+    Course4: "Data Science and AI Program for Managers and Leaders",
+    Course5: "Data Science and AI master program",
+    DomainHead1: "Why Domain Specialization?",
+    DomainBot1:
+      "While the majority of entry-level data science professionals can manage their jobs without domain expertise, mid-level and senior-level data scientists who lack industry understanding face job insecurity in Dubai.",
+    DomainBot2:
+      "Generally, Data scientists are expected to possess industry knowledge to provide an accurate solution to the problems at hand. This is why we have created our data science course modules based on industry to equip our learners with domain-focused knowledge.",
+    DomainBot3:
+      "At Learnbay, you are free to choose multiple domain electives associated with your selected advanced Data science course. You can take the help of a Learnbay data science career counselor if you are unsure which domain is right for you. Based on your experience, you can choose from the following domain(s):",
+    DomainList1: "• BFSI",
+    DomainList2: "• Manufacturing",
+    DomainList3: "• Energy, Oil and Gas",
+    DomainList4: "• Healthcare",
+    DomainList5: "• Supply Chain, E-Commerce & Retail",
+    Domainlink1:
+      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Banking%2C+Finance+and+Insurance+Domain.pdf",
+    Domainlink2:
+      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Manufacturing%2C+Mechanical+and+Telecom+Domain.pdf",
+    Domainlink3:
+      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Energy%2C+Oil+and+Gas+Domain.pdf",
+    Domainlink4:
+      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Healthcare%2C+Pharma+and+Clinical+Research+Domain.pdf",
+    Domainlink5:
+      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Retail%2C+Ecommerce+and+Supply+chain+Domain.pdf",
+    CertificationHead1: "Data Science Certification process at Learnbay",
+    CertificationBot1:
+      "Once you complete your data science course from Learnbay, you will be awarded multiple certificates from IBM for completing distinct micro-data science modules. These certifications will demonstrate your data science expertise and help you stay ahead in the data science job market.",
+    CertificationBot2:
+      "In addition, you will receive an IBM project certificate upon completion of capstone projects which you can add to your portfolio. It assists in grabbing genuine and interesting job roles. To learn more about micro-skills certificates, refer to the respective course brochures.",
+    src33:
+      "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Microsoft-certificate-data.png",
+    src: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Certificate-blue.png",
+    src22:
+      "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Certificate-Yellow.png",
+    ModuleHead1: "Coding classes:",
+    ModuleBot1:
+      "Learnbay supports learners from all backgrounds. For this reason, we have integrated module 0 of programming classes in all of our data science courses in Dubai.",
+    ModuleHead2: "Data science modules:",
+    ModuleBot3:
+      "Learnbay’s instructor-led online data science course teaches students fundamental data science principles and how to apply them in real industry. Our trainers illustrate each concept with real-life examples. The modules of the data science certification cover topics such as data visualization, machine learning, SQL, and time series analysis.",
+    ModuleBot4:
+      "Moreover, Our LMS is continually updated to incorporate the most up-to-date versions of courses and to ensure compliance with industry standards.",
+    ModuleBot41:
+      "Our IBM data science course will prepare students industry-ready for data science job roles.",
+    syllabush1: " Preparatory Classes (Programming + Maths)",
+    syllabusb1: "6 Hours",
+    SyllabusBotlist11: " Cohort Orientation",
+    SyllabusBotlist12: "A brief introduction to tools related to data",
+    SyllabusBotlist13: " Fundamentals of Programming",
+    SyllabusBotlist14: "Introduction to Anaconda & Jupyter notebook",
+    SyllabusBotlist15: "Fundamentals of Statistics",
+    SyllabusBotlist16: "Mean, Median, Mode",
+    syllabush2: "Python for Data Science",
+    syllabusb2: "40 Hours",
+    SyllabusBotlist21: "Python Programming",
+    SyllabusBotlist22: "Data Analysis Using Numpy",
+    SyllabusBotlist23: "Python Programming Overview",
+    SyllabusBotlist24: "Python Data Types",
+    SyllabusBotlist25: "Strings, Decisions & Loop Control",
+    SyllabusBotlist26: "Data Analysis Using Pandas",
+    syllabush3: "Statistics and Machine Learning",
+    syllabusb3: "70 Hours",
+    SyllabusBotlist31: "Statistics",
+    SyllabusBotlist32: "Fundamentals of Math and Probability",
+    SyllabusBotlist33: "Descriptive Statistics",
+    SyllabusBotlist34: " Machine Learning",
+    SyllabusBotlist35: "Linear Regression Model",
+    SyllabusBotlist36: "Data Preprocessing",
+    syllabush4: " Data Science Tools",
+    syllabusb4: "12+ Classes",
+    SyllabusBotlist41: " SQL",
+    SyllabusBotlist42: "MongoDB",
+    SyllabusBotlist43: "Tableau",
+    SyllabusBotlist44: " PowerBI",
+    SyllabusBotlist45: " Big Data & Spark Analytics",
+    SyllabusBotlist46: "Big Data & Spark Analytics",
+    syllabussrc:
+      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Advance+Data+Science+and+AI+Certification+Program+Learnbay.pdf",
+    JobHead1: "Interview preparation sessions at Learnbay",
+    JobBot1:
+      "As part of our data science training in Dubai, students will undergo several practice interviews for a thorough interview preparation process on data science. Our dedicated career coaches will guide you with resume building, conducting mock interviews, and evaluate their competencies, and providing feedback. They ensure that every learner is professionally trained to crack a potential data science job in Dubai.",
+    JobBot2:
+      "Learnbay also provides a 100% job assistanced data science course that offers a complete refund of course fees in case of an unsuccessful placement.",
+    JobHead2: "Is data science a good career option in Dubai?",
+    JobBot3:
+      "Data science has developed into a booming career in Dubai, with enormous potential for progression in the future. Data Science is the process of uncovering hidden insights in data pertaining to patterns, behavior, interpretation, and inferences in order to make informed business decisions.",
+    JobBot4:
+      "Since Dubai has great plans to transform itself into a smart hub, specialized skill sets such as coding and analytics will be in high demand. In Dubai, a typical data scientist earns around AED 20,000 per month. Hence this is the right time to begin your data science career with Learnbay’s data science training. In addition, Learnbay offers the domain elective of energy, oil, and Gas in their advanced data science courses. Being the remarkable hub of crude oil extraction and petrochemical industry, Dubai is experiencing growing demand for data scientists specializing in energy, oil & gas domain knowledge. From that perspective, Laeabay data science is becoming the one-stop choice here.",
+    ProjectsBot1:
+      "As part of the Learnbay data science curriculum, students will be mentored to develop high-quality data science projects solving real-time problems. The IBM data science course in Dubai offers 8 to 15 real industry projects in a variety of domains. You may also work on 2-3 capstone projects for which an IBM project experience certificate will be awarded.",
+    ProjectsBot2:
+      "Students can also explore various data science tools via live projects in our Cloud lab feature. This hands-on training will help you practice the skills and data science techniques learned throughout the training. Additionally, You can also select the domain or industry dataset you wish to work on. Our students have completed the following domain-based  data science projects:",
+    src1: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/SAMSUNG.png",
+    ProjectsH1: "Samsung Health Monitor App",
+    Projectsp1:
+      "Samsung will launch a new healthcare app soon. The key goal of this app is the accurate human activity tracking and providing relevant health-related recommendations. Continuous analysis of a massive amount of mobile data is required for such an app.",
+    src2: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/IBM.png",
+    ProjectsH2: "IBM HR Analytics",
+    Projectsp2:
+      "IBM intends to boost its HR department by identifying employees' masked inconsistency. They need models to identify the graphical variations in their 14000+ employees' performances. Help them build models with your regressions and other ML abilities.",
+    src3: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/amazon1.png",
+    ProjectsH3: "Amazon Customer Review Analysis",
+    Projectsp3:
+      "Amazon has made a goal to identify the most successful consumer electronic products. For these, they require live customer review analysis. You can take part in the assisting project of customer insight regeneration from the ongoing and existing reviews via a suitable data visualization approach.",
+    src4: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/BMW.png",
+    ProjectsH4: "BMW Used Car Price Optimization",
+    Projectsp4:
+      " BMW allows existing customers to sell used cars  but many competitors are now offering better resale values. A data science-powered statistical app from BMW will provide the best market value for used cars based on parameters like Km driven, daily pricing up and down, manufacturing dates, and so on. Develop your analytical skills through such projects.",
+    AlumniBot1:
+      "Learnbay believes in building and nurturing future data scientists through its data science training. We make sure our quality education reaches all corners of the world, including Dubai. Numerous students immediately landed desired data science jobs in Dubai firms while completing 70% of our IBM data science course. Read some of the testimonies of our alumni:",
+    Asrc1: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/devraj.jpg",
+    AlumniH1: "Deveraj",
+    Alumnip1:
+      "The quality of the content is very nice. What I liked the most was mainly the instructor concentrating on the practical part, live project sessions make you feel confident to attend interviews. Multiple batch options, access for any instructor class videos or materials. The totally positive environment around.",
+    Asrc2: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/shezan.png",
+    AlumniH2: "Shezan Baig",
+    Alumnip2:
+      "Learnbay is one of the most remarkable data science institutes I've come across. Compared to other institutes in India, it offers a data science course at a low cost. Excellent value for money. Finally, I achieved job satisfaction. I would strongly advise everyone to attend this institute.",
+    Asrc3: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/viraj.png",
+    AlumniH3: "Viraj Ghodke",
+    Alumnip3:
+      "For me, learning using the Learnbay platform has been a great experience. The teaching and management team are very helpful. They are constantly willing to clarify each individual's doubts and meet the needs of working professionals. The practice interview sessions were simply like a clone of MNC interviews.",
+    Asrc4: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/shubhangi.png",
+    AlumniH4: "Shubhangi J. Waghmare ",
+    Alumnip4:
+      "The best in Industry offerings from both cost and curriculum wise. One advantage of joining here is you can access their resources for a lifetime, unlike others where you have accessibility only for a year or so. Most importantly, there is continuous assistance for recruitment.",
+    alt1: "data science course training in dubai",
+    alt2: "data science course training in dubai",
+    alt3: "data science course training in dubai",
+    alt4: "data science course training in dubai",
+    alt5: "data science course training in dubai",
+    alt6: "data science course training in dubai",
+    alt7: "data science course training in dubai",
+    alt8: "data science course training in dubai",
+    alt9: "data science course training in dubai",
   },
 ];

@@ -3,263 +3,301 @@ export const DataAnalyticsChennaiCourseData = [
     script1: {
       "@context": "https://schema.org",
       "@type": "NewsArticle",
-      "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id": "https://www.learnbay.co/"
+      mainEntityOfPage: {
+        "@type": "WebPage",
+        "@id": "https://www.learnbay.co/",
       },
-      "headline": "Data Analytics Course Training In Chennai",
-      "description": "Data Analytics Course in Chennai. Learnbay is Advanced Data Analytics Course Training Institute in Chennai. Data Analytics course in Chennai will enhance your career.",
-      "image": "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/home-page-header.webp", 
-      "author": {
-      "@type": "Organization",
-      "name": "Learnbay",
-      "url": "https://www.learnbay.co/"
-      }, 
-      "publisher": {
-      "@type": "Organization",
-      "name": "Learnbay",
-      "logo": {
-      "@type": "ImageObject",
-      "url": "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/ALight/learnbay-logo.png"
-      }
+      headline: "Data Analytics Course Training In Chennai",
+      description:
+        "Data Analytics Course in Chennai. Learnbay is Advanced Data Analytics Course Training Institute in Chennai. Data Analytics course in Chennai will enhance your career.",
+      image:
+        "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/home-page-header.webp",
+      author: {
+        "@type": "Organization",
+        name: "Learnbay",
+        url: "https://www.learnbay.co/",
       },
-      "datePublished": "2021-10-01",
-      "dateModified": "2022-04-21"
-     },
+      publisher: {
+        "@type": "Organization",
+        name: "Learnbay",
+        logo: {
+          "@type": "ImageObject",
+          url: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/learnbay-logo.png",
+        },
+      },
+      datePublished: "2021-10-01",
+      dateModified: "2022-04-21",
+    },
     script2: {
       "@context": "https://schema.org",
       "@type": "FAQPage",
-      "mainEntity": [{
-      "@type": "Question",
-      "name": "What are the prerequisites for the Data Analytics Training Course in Chennai?",
-      "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "There are no prerequisites for this Data Analytics certification course in Chennai as all modules are beginner-friendly and are taught from scratch. We provide special classes and assistance for Non-IT/Non-programmers. However, basic knowledge of applied Mathematics/Statistics is a must."
-      }
-      },{
-      "@type": "Question",
-      "name": "What if I miss a few classes due to an emergency?",
-      "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "In case you miss a few classes, you will be provided with backup classes in other batches. But if you could not attend more classes, you can opt for batch change and join the next batch."
-      }
-      },{
-      "@type": "Question",
-      "name": "What’s the duration of the Data Analytics Course in Chennai?",
-      "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "The duration of this Data Analytics Course is about 6 months ( 180 hours) which includes live lectures, hands-on practical training on live projects, and interview preparations. Classes will be conducted on weekdays and weekend batches. Weekday batch - 4.5 months Monday to Friday - 2 hours/day Weekend batch - 6 months Saturday & Sunday - 3.5 hours/day."
-      }
-      },{
-      "@type": "Question",
-      "name": "What is the mode of Data Analytics training at Learnbay, Chennai?",
-      "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "We provide both classroom and online Data Analytics training modes. Based on your requirement, you can choose your preferred mode."
-     
-      }
-      },{
-      "@type": "Question",
-      "name": "How can I opt for a Hybrid mode of learning in Chennai?",
-      "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Simply, you can choose an online mode of study for the theoretical classes and a classroom mode for all the real-time projects and interview preparation sessions."
-      }
-      },{
-      "@type": "Question",
-      "name": "What is the total fee for the Data Analytics Program in Chennai?",
-      "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "The total program fee for the Data Analytics Program is INR 93,220/- inclusive of GST."
-      }
-      },{
-      "@type": "Question",
-      "name": "Can I pay in installments for INR 93,220/-?",
-      "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Yes, you can pay the installments using a credit card with a no-cost EMI option for INR 7,768/month up to 12 months. You can also choose an interest-free loan by submitting an Aadhar card, Pan Card, and 3-month salary slip."
-      }
-      },{
-      "@type": "Question",
-      "name": "Is there any scholarship/discount available for the Data Analytics Certification in Chennai? What is Group Discount?",
-      "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Learnbay offers a 15 - 20% scholarship for early birds occasionally. Please check our websites or contact our sales team to know more about the applicable discounts. Group Discount : Group Discount is applicable only if you’re joining with your friends. 5% extra discount: Group of 2 8% extra discount: Group of 3 Max 10% discount: Groupe of 4+."
-      }
-      },{
-      "@type": "Question",
-      "name": "What is the refund policy for the Data Analytics Course at Learnbay?",
-      "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Candidates are advised to read Learnbay’s Refund/Cancellation Policy before enrolling in the course."
-      }
-      },{
-      "@type": "Question",
-      "name": "How many real-time projects/case studies will be there?",
-      "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "We have a set of 5 Real-time projects from multiple industries like Healthcare, Banking, Finance, Insurance, Retail, etc. Click here to download the list of the projects."
-      }
-      },{
-      "@type": "Question",
-      "name": "How will the project be executed?",
-      "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "At Learnbay, you will be required to work in a group where your project group will be assigned a specific project mentor with complete assistance and guidance."
-      }
-      },{
-      "@type": "Question",
-      "name": "Is there any accredited certification after course completion?",
-      "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Yes, you will be awarded IBM accredited Data Analytics Certificate on successful course completion."
-      }
-      },{
-      "@type": "Question",
-      "name": "What's the eligibility for a job assistance program in Learnbay?",
-      "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "You should have completed the course with : A minimum score of 70% in assessments Should have completed the assignments and case studies Worked and successfully completed the minimum recommended number of real-time projects."
-      }
-      },{
-      "@type": "Question",
-      "name": "How many interview calls will I get at Learnbay?",
-      "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "At Learnbay, you’ll be provided with job assistance after the completion of the course for a period of 1 year."
-      }
-      },{
-      "@type": "Question",
-      "name": "What is a job-readiness program?",
-      "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Job readiness program helps you prepare for interviews which include: Resume preparation sessions, Preparing projects for a strong portfolio, Interview guidance and prep sessions, 1:1 Mock interviews based on targeted companies and roles."
-      }
-      },{
-      "@type": "Question",
-      "name": "Will I get job referrals at Learnbay?",
-      "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Yes, we offer dedicated placement assistance by referring to your profile through our partnered consultancies and companies."
-      }
-      },{
-      "@type": "Question",
-      "name": "Until when will the students get the facility of mentorship?",
-      "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Our mentors will provide Data Analytics training to the students until the completion of the course."
-      }
-      },{
-      "@type": "Question",
-      "name": "Can a Learnbay student choose to study from their desired mentor?",
-      "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Every batch has its respective mentor, but if a student is not satisfied with its mentor’s teaching method, they can raise the issue to management and resolve the issues by replacing them with other mentors."
-      }
-      },{
-      "@type": "Question",
-      "name": "When is the job assistance provided at Learnbay?",
-      "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Job assistance is provided after the completion of the course. It includes build-up sessions, mock interviews, and referrals from top MNC’s/startups. This assistance is provided unless one gets placed in a company."
-      }
-      },{
-      "@type": "Question",
-      "name": "How long will I get Job referrals?",
-      "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "You’ll be provided with job assistance after the completion of the course for a period of 1 year."
-     }
-     }]
-                       },
-                
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "What are the prerequisites for the Data Analytics Training Course in Chennai?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "There are no prerequisites for this Data Analytics certification course in Chennai as all modules are beginner-friendly and are taught from scratch. We provide special classes and assistance for Non-IT/Non-programmers. However, basic knowledge of applied Mathematics/Statistics is a must.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What if I miss a few classes due to an emergency?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "In case you miss a few classes, you will be provided with backup classes in other batches. But if you could not attend more classes, you can opt for batch change and join the next batch.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What’s the duration of the Data Analytics Course in Chennai?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "The duration of this Data Analytics Course is about 6 months ( 180 hours) which includes live lectures, hands-on practical training on live projects, and interview preparations. Classes will be conducted on weekdays and weekend batches. Weekday batch - 4.5 months Monday to Friday - 2 hours/day Weekend batch - 6 months Saturday & Sunday - 3.5 hours/day.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What is the mode of Data Analytics training at Learnbay, Chennai?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "We provide both classroom and online Data Analytics training modes. Based on your requirement, you can choose your preferred mode.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "How can I opt for a Hybrid mode of learning in Chennai?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Simply, you can choose an online mode of study for the theoretical classes and a classroom mode for all the real-time projects and interview preparation sessions.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What is the total fee for the Data Analytics Program in Chennai?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "The total program fee for the Data Analytics Program is INR 93,220/- inclusive of GST.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Can I pay in installments for INR 93,220/-?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes, you can pay the installments using a credit card with a no-cost EMI option for INR 7,768/month up to 12 months. You can also choose an interest-free loan by submitting an Aadhar card, Pan Card, and 3-month salary slip.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Is there any scholarship/discount available for the Data Analytics Certification in Chennai? What is Group Discount?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Learnbay offers a 15 - 20% scholarship for early birds occasionally. Please check our websites or contact our sales team to know more about the applicable discounts. Group Discount : Group Discount is applicable only if you’re joining with your friends. 5% extra discount: Group of 2 8% extra discount: Group of 3 Max 10% discount: Groupe of 4+.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What is the refund policy for the Data Analytics Course at Learnbay?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Candidates are advised to read Learnbay’s Refund/Cancellation Policy before enrolling in the course.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "How many real-time projects/case studies will be there?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "We have a set of 5 Real-time projects from multiple industries like Healthcare, Banking, Finance, Insurance, Retail, etc. Click here to download the list of the projects.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "How will the project be executed?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "At Learnbay, you will be required to work in a group where your project group will be assigned a specific project mentor with complete assistance and guidance.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Is there any accredited certification after course completion?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes, you will be awarded IBM accredited Data Analytics Certificate on successful course completion.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What's the eligibility for a job assistance program in Learnbay?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "You should have completed the course with : A minimum score of 70% in assessments Should have completed the assignments and case studies Worked and successfully completed the minimum recommended number of real-time projects.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "How many interview calls will I get at Learnbay?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "At Learnbay, you’ll be provided with job assistance after the completion of the course for a period of 1 year.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What is a job-readiness program?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Job readiness program helps you prepare for interviews which include: Resume preparation sessions, Preparing projects for a strong portfolio, Interview guidance and prep sessions, 1:1 Mock interviews based on targeted companies and roles.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Will I get job referrals at Learnbay?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes, we offer dedicated placement assistance by referring to your profile through our partnered consultancies and companies.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Until when will the students get the facility of mentorship?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Our mentors will provide Data Analytics training to the students until the completion of the course.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Can a Learnbay student choose to study from their desired mentor?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Every batch has its respective mentor, but if a student is not satisfied with its mentor’s teaching method, they can raise the issue to management and resolve the issues by replacing them with other mentors.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "When is the job assistance provided at Learnbay?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Job assistance is provided after the completion of the course. It includes build-up sessions, mock interviews, and referrals from top MNC’s/startups. This assistance is provided unless one gets placed in a company.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "How long will I get Job referrals?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "You’ll be provided with job assistance after the completion of the course for a period of 1 year.",
+          },
+        },
+      ],
+    },
+
     script3: {
       "@context": "http://schema.org",
       "@type": "EducationEvent",
-      "name": "Artificial Intelligence Course Training in Chennai",
-      "description": "Artificial Intelligence Course in Chennai. Learnbay is Advanced Artificial Intelligence Course Training Institute in Chennai. Artificial Intelligence course in Chennai will enhance your career.",
-      "image" : "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/ALight/learnbay-logo.png",
-      "performer":"Learnbay", 
-      "offers":{
-      "@type": "AggregateOffer",
-      "lowPrice": "39999",
-      "highPrice": "110000",
-      "url" : "https://www.learnbay.co/",
-      "availability" : "https://schema.org/InStock",
-      "price": "1,10,000",
-      "priceCurrency": "INR",
-      "validFrom": "2022-05-01"},
-      "startDate":"2022-05-01",
-      "endDate": "2022-10-31",
-      "url" : "https://www.learnbay.co/","duration":"80", 
-      "eventAttendanceMode":"https://schema.org/MixedEventAttendanceMode",
-      "eventStatus":"http://schema.org/EventScheduled",
-       "location": [{
-       "@type": "VirtualLocation",
-       "url" : "https://www.learnbay.co/"
-       },{
-       "@type": "Place",
-       "name": "Learnbay - Data Science, Machine Learning Course Training In Chennai",
-       "address": {
-        "@type": "PostalAddress",
-        "streetAddress": " #1090 , 1st Floor, 18th Cross Road HSR Layout Sector 3, Bangalore - 560102 (Above Sangam Sweets)",
-        "addressLocality": "HSR Sector 3",
-        "postalCode": "560102",
-        "addressCountry": "Bengaluru, Karnataka,INDIA"
-        } 
-        ,"geo": {
-        "@type": "GeoCoordinates",
-        "latitude": "12.911762714349765,",
-        "longitude": "77.64127379352328"
-        } 
-        }], 
-       "organizer": {
+      name: "Artificial Intelligence Course Training in Chennai",
+      description:
+        "Artificial Intelligence Course in Chennai. Learnbay is Advanced Artificial Intelligence Course Training Institute in Chennai. Artificial Intelligence course in Chennai will enhance your career.",
+      image:
+        "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/learnbay-logo.png",
+      performer: "Learnbay",
+      offers: {
+        "@type": "AggregateOffer",
+        lowPrice: "39999",
+        highPrice: "110000",
+        url: "https://www.learnbay.co/",
+        availability: "https://schema.org/InStock",
+        price: "1,10,000",
+        priceCurrency: "INR",
+        validFrom: "2022-05-01",
+      },
+      startDate: "2022-05-01",
+      endDate: "2022-10-31",
+      url: "https://www.learnbay.co/",
+      duration: "80",
+      eventAttendanceMode: "https://schema.org/MixedEventAttendanceMode",
+      eventStatus: "http://schema.org/EventScheduled",
+      location: [
+        {
+          "@type": "VirtualLocation",
+          url: "https://www.learnbay.co/",
+        },
+        {
+          "@type": "Place",
+          name: "Learnbay - Data Science, Machine Learning Course Training In Chennai",
+          address: {
+            "@type": "PostalAddress",
+            streetAddress:
+              " #1090 , 1st Floor, 18th Cross Road HSR Layout Sector 3, Bangalore - 560102 (Above Sangam Sweets)",
+            addressLocality: "HSR Sector 3",
+            postalCode: "560102",
+            addressCountry: "Bengaluru, Karnataka,INDIA",
+          },
+          geo: {
+            "@type": "GeoCoordinates",
+            latitude: "12.911762714349765,",
+            longitude: "77.64127379352328",
+          },
+        },
+      ],
+      organizer: {
         "@type": "Organization",
-        "name": "Learnbay",
-        "url": "https://www.learnbay.co"
-      }
+        name: "Learnbay",
+        url: "https://www.learnbay.co",
       },
+    },
     script4: {
-      "@context": "https://schema.org/", 
-      "@type": "HowTo", 
-      "name": "How to apply for data science course?",
-      "description": "You just have to follow 3 easy steps to enroll in our advanced data science course",
-      "image": "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/home-page-header.webp",
-      "totalTime": "PT6M",
-      "estimatedCost": {
-      "@type": "MonetaryAmount",
-      "currency": "INR",
-      "value": "6"
+      "@context": "https://schema.org/",
+      "@type": "HowTo",
+      name: "How to apply for data science course?",
+      description:
+        "You just have to follow 3 easy steps to enroll in our advanced data science course",
+      image:
+        "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/home-page-header.webp",
+      totalTime: "PT6M",
+      estimatedCost: {
+        "@type": "MonetaryAmount",
+        currency: "INR",
+        value: "6",
       },
-      "supply": {
-      "@type": "HowToSupply",
-      "name": "We provide data analytics course training in chennai"
+      supply: {
+        "@type": "HowToSupply",
+        name: "We provide data analytics course training in chennai",
       },
-      "tool": {
-      "@type": "HowToTool",
-      "name": "Data science, machine learning, artificial intelligence, data analytics"
+      tool: {
+        "@type": "HowToTool",
+        name: "Data science, machine learning, artificial intelligence, data analytics",
       },
-      "step": [{
-      "@type": "HowToStep",
-      "text": "Visit our website and fill the enquiry form",
-      "image": "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/home-page-header.webp",
-      "name": "Fill Enquiry Form",
-      "url": "https://www.learnbay.co/data-science-course/"
-      },{
-      "@type": "HowToStep",
-      "text": "Talk to our experts for career counseling",
-      "image": "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/course.learnbay.co/NImages/data-science-ai-for-managers.png",
-      "name": "Talk to Expert",
-      "url": "https://www.learnbay.co/data-science-course/"
-      },{
-      "@type": "HowToStep",
-      "text": "Get enrollment in our data science course",
-      "image": "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/home-page-header.webp",
-      "name": "Get enrollment",
-      "url": "https://www.learnbay.co/"
-     }] 
-     
-     },
+      step: [
+        {
+          "@type": "HowToStep",
+          text: "Visit our website and fill the enquiry form",
+          image:
+            "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/home-page-header.webp",
+          name: "Fill Enquiry Form",
+          url: "https://www.learnbay.co/data-science-course/",
+        },
+        {
+          "@type": "HowToStep",
+          text: "Talk to our experts for career counseling",
+          image:
+            "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/course.learnbay.co/NImages/data-science-ai-for-managers.png",
+          name: "Talk to Expert",
+          url: "https://www.learnbay.co/data-science-course/",
+        },
+        {
+          "@type": "HowToStep",
+          text: "Get enrollment in our data science course",
+          image:
+            "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/home-page-header.webp",
+          name: "Get enrollment",
+          url: "https://www.learnbay.co/",
+        },
+      ],
+    },
 
     secondSection: [
       {
@@ -679,48 +717,50 @@ export const DataAnalyticsChennaiCourseData = [
     CertificationHead1: "IBM Data Analytics Certification in Learnbay",
     CertificationBot1:
       "We have already achieved the IBM collaboration for our data analytics industrial program in Chennai. The course offers IBM Data Analytics Course Completion certification at the end of the training. ",
-      src: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Certificate-blue.png",
+    src: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Certificate-blue.png",
     CertificationBot2:
       "This IBM data analytics course will certainly strengthen your resume to make you stand out from the crowd and get noticed by the recruiters.  Also, We have collaborated with global tech companies in order to showcase the talents of our data analytics students.",
-      src22: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Certificate-Yellow.png",
+    src22:
+      "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Certificate-Yellow.png",
     ModuleHead1: "What does the IBM data analytics course in Chennai include? ",
     ModuleBot1:
       "Learnbay is committed to providing the best data analytics course in Chennai.  This Data Analytics course with placement has been designed to meet the ever-changing demands of the industry. This customized data analytics course in Chennai delivers basic to advanced levels of training in data analytics. Additionally, they also offer special classes of coding for non-programmers to excel at programming skills.",
     ModuleBot2:
       "Our data analytics course training in Chennai has helped countless working professionals boost their technical skills and gain experience in multiple domains. The modules of the IBM data analytics course cover all the essential topics in data analytics tools and techniques, including data preprocessing, data exploration, statistical analysis, dashboarding, PowerBI and SQL, etc.",
-      syllabush1:"Preparatory Classes (Programming + Maths)",
-      syllabusb1:"6 Hours",
-      SyllabusBotlist11:"Cohort Orientation",
-      SyllabusBotlist12:"A brief introduction to tools related to data",
-      SyllabusBotlist13:" Fundamentals of programming",
-      SyllabusBotlist14:"Introduction to Anaconda & Jupyter notebook",
-      SyllabusBotlist15:"Fundamentals of Statistics",
-      SyllabusBotlist16:"Mean, Median, Mode .",
-      syllabush2:"Python Programming (Basic + Advance)",
-      syllabusb2:"40 Hours",
-      SyllabusBotlist21:"Python Programming Overview",
-      SyllabusBotlist22:"Python Data Types",
-      SyllabusBotlist23:"Data Analysis Using Numpy",
-      SyllabusBotlist24:"Data Analysis Using Pandas",
-      SyllabusBotlist25:"Data Visualization using Matplotlib",
-      SyllabusBotlist26:"Functions And Modules ,Class hands-on:",
-      syllabush3:" Statistics & Basic Machine Learning",
-      syllabusb3:"50 Hours",
-      SyllabusBotlist31:" Statistics",
-      SyllabusBotlist32:"Fundamentals of Math and Probability",
-      SyllabusBotlist33:"Regression and Classification Models",
-      SyllabusBotlist34:" Machine Learning",
-      SyllabusBotlist35:"Introduction to Machine Learning",
-      SyllabusBotlist36:"Encoding the Data",
-      syllabush4:"Data Analytics Tools",
-      syllabusb4:"6+ Classes",
-      SyllabusBotlist41:" SQL",
-      SyllabusBotlist42:"JSON Data & CRUD",
-      SyllabusBotlist43:" PowerBI",
-      SyllabusBotlist44:"Big Data & Spark Analytics",
-      SyllabusBotlist45:" Time Series",
-      SyllabusBotlist46:"Introduction to Time Series Forecasting",
-      syllabussrc:"https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Data+Analytics+Certification+Program+Learnbay.pdf",
+    syllabush1: "Preparatory Classes (Programming + Maths)",
+    syllabusb1: "6 Hours",
+    SyllabusBotlist11: "Cohort Orientation",
+    SyllabusBotlist12: "A brief introduction to tools related to data",
+    SyllabusBotlist13: " Fundamentals of programming",
+    SyllabusBotlist14: "Introduction to Anaconda & Jupyter notebook",
+    SyllabusBotlist15: "Fundamentals of Statistics",
+    SyllabusBotlist16: "Mean, Median, Mode .",
+    syllabush2: "Python Programming (Basic + Advance)",
+    syllabusb2: "40 Hours",
+    SyllabusBotlist21: "Python Programming Overview",
+    SyllabusBotlist22: "Python Data Types",
+    SyllabusBotlist23: "Data Analysis Using Numpy",
+    SyllabusBotlist24: "Data Analysis Using Pandas",
+    SyllabusBotlist25: "Data Visualization using Matplotlib",
+    SyllabusBotlist26: "Functions And Modules ,Class hands-on:",
+    syllabush3: " Statistics & Basic Machine Learning",
+    syllabusb3: "50 Hours",
+    SyllabusBotlist31: " Statistics",
+    SyllabusBotlist32: "Fundamentals of Math and Probability",
+    SyllabusBotlist33: "Regression and Classification Models",
+    SyllabusBotlist34: " Machine Learning",
+    SyllabusBotlist35: "Introduction to Machine Learning",
+    SyllabusBotlist36: "Encoding the Data",
+    syllabush4: "Data Analytics Tools",
+    syllabusb4: "6+ Classes",
+    SyllabusBotlist41: " SQL",
+    SyllabusBotlist42: "JSON Data & CRUD",
+    SyllabusBotlist43: " PowerBI",
+    SyllabusBotlist44: "Big Data & Spark Analytics",
+    SyllabusBotlist45: " Time Series",
+    SyllabusBotlist46: "Introduction to Time Series Forecasting",
+    syllabussrc:
+      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Data+Analytics+Certification+Program+Learnbay.pdf",
     JobBot1:
       "Learnbay aims to produce high-quality data analysts across Chennai. Our job assistance program includes mock interviews for candidates seeking jobs in data analytics roles. We also guide students with resume preparation, technical skills, and soft skill grooming sessions. ",
     JobBot2:
@@ -785,8 +825,10 @@ export const DataAnalyticsChennaiCourseData = [
     alt9: "data analytics course training in chennai",
     CityTextB:
       "Data Analytics Course Certification Training locations in Chennai ",
-    CityText: " Anna Nagar [600040],Thousand Lights [600006], Adyar [600020],Nungambakkam [600034], Perambur [600011], OMR [600119], Guindy [600032], Thiruvanmiyur [600041],Perungudi [600096], Thoraipakkam [600097],Sholinganallur [600119], Siruseri [603103], Tambaram [600045], Velachery [600042], Meenambakkam [600027], Chrompet [600044], T nagar [600017],Chennai central [600020],Erukkancheri [600118],World University Centre [600031],Madras University [600005],Indian Institute Of Technology [600036]",
+    CityText:
+      " Anna Nagar [600040],Thousand Lights [600006], Adyar [600020],Nungambakkam [600034], Perambur [600011], OMR [600119], Guindy [600032], Thiruvanmiyur [600041],Perungudi [600096], Thoraipakkam [600097],Sholinganallur [600119], Siruseri [603103], Tambaram [600045], Velachery [600042], Meenambakkam [600027], Chrompet [600044], T nagar [600017],Chennai central [600020],Erukkancheri [600118],World University Centre [600031],Madras University [600005],Indian Institute Of Technology [600036]",
     CityTextLB: "Locations Offered",
-    CityTextL: " :  Data Analytics Training in Chennai, Data Analytics Course in Chennai, Data Analytics Training in Anna Nagar, Data Analytics Training in Guindy, Data Analytics Institute in Chennai, Data Analytics Training in Siruseri, Data Analytics Training in Perungudi, Data Analytics Training in OMR, Data Analytics Training Institute in Adyar, Data Analytics Course in Anna Nagar, Data Analytics Course in chrompet, Data Analytics Course in Velchery, Data Analytics Course Nungambakkam, Data Analytics Training in Thoraipakkam, Data Analytics Course in OMR, Data Analytics Training in Madras university, Data Analytics Training in Tambaram, Data Analytics Online Classes in Anna Nagar, Data Analytics Course in Indian Institute Of Technology , Data Analytics Training in Chennai, Data Analytics Certification in Chennai, Data Analytics Certification Training in Chennai, Data Analytics Certification in Anna Nagar, Data Analytics Certification in Adyar, Best Data Analytics Training, Best Data Analytics Course."
+    CityTextL:
+      " :  Data Analytics Training in Chennai, Data Analytics Course in Chennai, Data Analytics Training in Anna Nagar, Data Analytics Training in Guindy, Data Analytics Institute in Chennai, Data Analytics Training in Siruseri, Data Analytics Training in Perungudi, Data Analytics Training in OMR, Data Analytics Training Institute in Adyar, Data Analytics Course in Anna Nagar, Data Analytics Course in chrompet, Data Analytics Course in Velchery, Data Analytics Course Nungambakkam, Data Analytics Training in Thoraipakkam, Data Analytics Course in OMR, Data Analytics Training in Madras university, Data Analytics Training in Tambaram, Data Analytics Online Classes in Anna Nagar, Data Analytics Course in Indian Institute Of Technology , Data Analytics Training in Chennai, Data Analytics Certification in Chennai, Data Analytics Certification Training in Chennai, Data Analytics Certification in Anna Nagar, Data Analytics Certification in Adyar, Best Data Analytics Training, Best Data Analytics Course.",
   },
 ];
