@@ -146,39 +146,119 @@
 .boxP {
     
   display: flex;
-  gap: 30px;
-
-  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.08);
-  margin: 80px 100px;
-  padding: 20px 10px 20px 10px;
-  align-items: center;
+  flex-wrap: wrap;
+  box-shadow: none;
+  margin: 83px 0px;
+  padding: 0px;
+  grid-gap: 10px;
+  gap: 35px;
   justify-content: center;
 }
 
 .boxC{
   display: flex;
-  gap: 5px;
+    gap: 5px;
+    border-radius: 3px;
+    /* border-bottom: 4px solid #0072BC; */
+    /* background: #FFF; */
+    box-shadow: 0px 0px 5.78px 0px rgba(0, 0, 0, 0.15);
+    padding: 3px 16px;
 }
 
 .boxC p{
-  color: #5F5F5F;
-  font-size: 16px;
+  color: #434343;
+  /* font-family: Open Sans; */
+  font-size: 14px;
   font-style: normal;
+  font-weight: 650;
+  line-height: 143.5%;
+  text-align: center;
+  padding: 4px;
   margin: auto 0px auto 0px;
+}
+
+.boxD {
+  border-bottom: 2px solid #0072BC;
+}
+
+.boxE  {
+  border-bottom: 2px solid #F99600;
+
 }
 
 @media (max-width: 641px) {
   .boxP {
     display: grid;
+    grid-template-columns: 45% 45%;
+    flex-wrap: wrap;
     box-shadow: none;
-    margin: 50px 20px;
-    padding: 0px;
-    gap: 10px;
+    margin: 36px 4px;
+    padding: 2px 0px;
+    grid-gap: 16px;
+    /* gap: 87px; */
+    justify-content: center;
+    align-items: center;
   }
   .boxC{
     border-radius: 0.928px;
-    background: #FFF;
     box-shadow: 0px 0px 1.78873px 0px rgba(0, 0, 0, 0.15);
-    padding: 0px 10px;
+    padding: 25px 3px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+      color: black;
+  
+   
+  }
+
+  .boxC p{
+    color: #000000;
+    font-size: 22px;
+    font-style: normal;
+    margin: auto 0px auto 0px;
+    text-align: center;
+    font-weight: 700;
+  
+    word-break: break-all;
+
+  }
+  .boxD {
+    border-radius: 3px;
+    border: none;
+   
+    background: #eaf5fb;
+background: #0072BC20;
+    
+  
+     /* opacity: 0.20;  */
+  }
+
+  .boxE {
+    border-radius: 3px;
+/* opacity: 0.08; */
+background: #FFF7EB;
+border: none;
   }
 }
+
+
+
+@media (max-width: 481px) {
+  
+  
+
+  .boxC p{
+    color: #000000;
+    font-size: 16px;
+    font-style: normal;
+    margin: auto 0px auto 0px;
+    text-align: center;
+    font-weight: 700;
+  
+    word-break: break-all;
+
+  }
+ 
+}
+

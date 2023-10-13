@@ -63,6 +63,13 @@ const BatchDetails = dynamic(() =>
 const SecondNavbar = dynamic(()=>
   import("../../../components/CoursePage/SecondNavbar/SecondNavbar")
 );
+const ContactConsellor = dynamic ( ()=>
+import ("../../../components/CoursePage/ContactConsellor/ContactConsellor")
+
+)
+const feesbatch = dynamic ( ()=>
+import ('../../../components/CoursePage/FeeSection/FeeSection')
+)
 
 import OfferPopup from "../../../components/OfferPopup/OfferPopup";
 import BottomBar from "../../../components/WebPage/BottomBar/BottomBar";
@@ -180,7 +187,7 @@ function Blockchain() {
           leftImage="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/whoIsProgram.webp"
           ThirdSectionData={DataScienceCourseData[0].thirdSection}
         />
-        <Switch />
+        {/* <Switch /> */}
         <FourthSection
           placementData={DataScienceCourseData[0].fourthSection}
           redirectDS={true}
@@ -188,7 +195,7 @@ function Blockchain() {
           titleCourse="Data Science Placement Report"
           brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Placement+Report.pdf"
         />
-        <FifthSection />
+        {/* <FifthSection /> */}
         {/* <SixthSectionCTA dataScienceCounselling={true} /> */}
         {/* <SyllabusNew
           dataScienceCounselling={true}
@@ -199,7 +206,8 @@ function Blockchain() {
           syllabusDesc={DataScienceCourseData[0].syllabusDesc}
           popupHead={DataScienceCourseData[0].popupHead}
         /> */}
-        <ContactUs dataScienceCounselling={true} />
+        {/* <ContactUs dataScienceCounselling={true} /> */}
+        <ContactConsellor/>
 
         <SyllabusNew
           syllabusHead={DataScienceCourseData[0].syllabusHead}
@@ -228,7 +236,7 @@ function Blockchain() {
           threeCertificate={true}
           data={DataScienceCourseData[0].Certificate}
         />
-        <FeeSection
+         <FeeSection
           Fee="₹ 99,000"
           FeeEmi="₹ 9,735/"
           FeeHeading="Program Fee and Financing"
