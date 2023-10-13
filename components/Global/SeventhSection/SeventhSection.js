@@ -15,13 +15,13 @@ function SeventhSection({ fullStackCont }) {
   }, []);
   return (
     <div className={styles.Section2}>
-      <p className={styles.infop}>24X7 Learner’s Support</p>
+      {/* <p className={styles.infop}>24X7 Learner’s Support</p> */}
 
       <div className={styles.LearnSupport}>
         <div className="bgWrap">
           {mobile ? (
             <Image
-              src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/learner's-support.png"
+              src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/learner's+support.webp"
               fill={true}
               className={styles.deskImage}
               alt="Learners support"
@@ -35,11 +35,10 @@ function SeventhSection({ fullStackCont }) {
           )}
         </div>
         <div className={styles.learnInner}>
-          <p className={styles.pTop}>Have any questions in mind?</p>
+          <p className={styles.pTop}>Got more questions?</p>
           <h5>Talk to our team directly</h5>
           <p className={styles.pBot}>
-            Reach out to us and your career guide will get in touch with you
-            shortly
+          Reach us and a learning consultant will get in touch with you shortly
           </p>
           {fullStackCont ? (
             <div className={styles.btnWrap}>
@@ -85,10 +84,11 @@ function SeventhSection({ fullStackCont }) {
         <div className={styles.rightPart}>
           <div className="imgWrapper">
             <Image
-              src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/learners-support-guy.png"
-              width={681}
-              height={515}
+              src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/newBottomImage.webp"
+              width={400}
+              height={400}
               alt="data science course"
+              style={{ 'borderRadius': '5px' }}
             />
           </div>
         </div>

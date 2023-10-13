@@ -1,10 +1,11 @@
+
+
 import React, { useState, useEffect } from "react";
 import Form from "../../Form/Form";
 import Image from "next/image";
 import dynamic from "next/dynamic";
 const Popup = dynamic(() => import("../../Popup/Popup"));
 import styles from "../FourthSection/FourthSection.module.css";
-
 const FifthSection = ({
   dataScience,
   dataScienceCounselling,
@@ -16,7 +17,6 @@ const FifthSection = ({
 }) => {
   const [popups, setPopups] = useState(false);
   const [popupsB, setPopupsB] = useState(false);
-
   const popupShow = () => {
     setPopups(true);
   };
@@ -34,14 +34,13 @@ const FifthSection = ({
     <div className={styles.First}>
       <div className="bgWrap">
         <Image
-          src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Alumni-Map-BG.png "
+          src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Alumni-Map-BG.png"
           className={styles.desktopImage}
           alt="bg-image"
           fill={true}
           style={{ objectFit: "contain" }}
         />
       </div>
-
       <Popup
         trigger={popups}
         setTrigger={setPopups}
@@ -60,15 +59,32 @@ const FifthSection = ({
             dataScience={dataScience}
             dataScienceCounselling={dataScienceCounselling}
             titleCourse={titleCourse}
+            upSkillingHide={true}
             brochureLink={brochureLink}
           />
         </div>
       </Popup>
       <div className={styles.FirstLeft}>
-        <p className={styles.ptopBox}>Invest in yourself!</p>
+        {/* <p className={styles.ptopBox}>Invest in yourself!</p> */}
+        {/* <div className="imgWrapper">
+                <Image
+                  src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/newtwork.png"
+                  width="50"
+                  height="50"
+                  alt="Learnbay placement partners"
+                />
+              </div> */}
+         <div className={styles.Nimg}>
+                <Image
+                  src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/network.png"
+                  width="20"
+                  height="20"
+                  alt="Learnbay placement partners"
+                />
+              </div>
         <h4 className={styles.h1}>
-          Stay Ahead Of The Curve With Support Of Our
-          <span className={styles.h1Span}> Alumni Community</span>
+          We are enlightened to pave path for 35k+, and continue do so
+          {/* <span className={styles.h1Span}> Alumni Community</span> */}
         </h4>
       </div>
       <div className={styles.secondLeft}>

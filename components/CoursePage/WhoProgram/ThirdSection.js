@@ -4,8 +4,8 @@ import Image from "next/image";
 
 function ThirdSection({ leftImage, ThirdSectionData }) {
   return (
-    <div className={`${styles.program} wrapper`}>
-      <h4>Who Is This Program For?</h4>
+    <div className={`${styles.program} wrapper`} id="eligibility">
+      <h4>Who's Is This Program For?</h4>
       <div className={styles.programWrap}>
         <div className={styles.left}>
           <Image src={leftImage} width={373} height={406} alt="who" />

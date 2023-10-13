@@ -3,20 +3,27 @@ import styles from "./FormInline.module.css";
 import "react-phone-number-input/style.css";
 import PhoneInput from "react-phone-number-input";
 import { useRouter } from "next/router";
-import Button from "../Global/Button/Button";
 
-const FormInline = ({ popup, setTrigger, radio, dataScience }) => {
+const FormInline = ({
+  popup,
+  setTrigger,
+  upSkillingHide,
+  radio,
+  dataScience,
+  dataScienceCounselling,
+  dataScienceGeneric,
+}) => {
   const router = useRouter();
 
   //offset to maintain time zone difference
   const [value, setValue] = useState();
+  const [error, setError] = useState();
   const [query, setQuery] = useState({
     name: "",
     email: "",
     phone: "",
-    workExperience: "",
-    Brief: "",
-    dateTime: "",
+    upskillPlanning: "",
+    upskillingObjective: "",
     url: router.asPath,
   });
   useEffect(() => {
@@ -33,10 +40,76 @@ const FormInline = ({ popup, setTrigger, radio, dataScience }) => {
     }));
   };
 
-  let endPoint = "https://getform.io/f/0b5b1a8f-bce0-445a-967f-f56103e73f3d";
+  const redirection = async () => {
+    console.log("redirect");
+    const myTimeout = setTimeout(() => {
+      router.push("https://course.learnbay.co/Thank-you");
+    }, 500);
+  };
+
+  let endPoint = "https://getform.io/f/85e92281-63f9-4d2f-b946-31d1098532f4";
+
+  if (router.pathname === "/resume-builder") {
+    endPoint = "https://getform.io/f/fd9da107-864c-4617-a52a-7e112297efa6";
+  }
 
   // Form Submit function
   const formSubmit = (e) => {
+    e.preventDefault();
+    if (
+      query.upskillingObjective === "Tell us about your upskilling objective?"
+    ) {
+      setError(true);
+    } else if (
+      query.upskillPlanning === "How soon are you planning to upskill?"
+    ) {
+      setError(true);
+    } else if (query.upskillPlanning === "Select an option") {
+      setError(true);
+    } else if (query.upskillingObjective === "Select an option") {
+      setError(true);
+    } else if (query.upskillPlanning === "") {
+      setError(true);
+    } else if (query.upskillingObjective === "") {
+      setError(true);
+    } else {
+      setError(false);
+      const formData = new FormData();
+      Object.entries(query).forEach(([key, value]) => {
+        formData.append(key, value);
+      });
+      fetch(`${endPoint}`, {
+        method: "POST",
+        body: formData,
+      }).then(() =>
+        setQuery({
+          name: "",
+          email: "",
+          phone: "",
+          upskillPlanning: "",
+          upskillingObjective: "",
+          url: router.asPath,
+        })
+      );
+      if (popup) {
+        const off = () => {
+          setTrigger(false);
+        };
+        off();
+      }
+      if (dataScience) {
+        router.push("/Thank-you");
+      }
+      if (dataScienceCounselling) {
+        router.push("/Thank-you-counselling");
+      }
+      if (dataScienceGeneric) {
+        redirection();
+      }
+    }
+  };
+
+  const formSubmitDownload = (e) => {
     e.preventDefault();
     const formData = new FormData();
     Object.entries(query).forEach(([key, value]) => {
@@ -50,9 +123,9 @@ const FormInline = ({ popup, setTrigger, radio, dataScience }) => {
         name: "",
         email: "",
         phone: "",
-        workExperience: "",
-        scheduleTime: "",
-        url: "",
+        upskillPlanning: "",
+        upskillingObjective: "",
+        url: router.asPath,
       })
     );
     if (popup) {
@@ -63,6 +136,12 @@ const FormInline = ({ popup, setTrigger, radio, dataScience }) => {
     }
     if (dataScience) {
       router.push("/Thank-you");
+    }
+    if (dataScienceCounselling) {
+      router.push("/Thank-you-counselling");
+    }
+    if (dataScienceGeneric) {
+      redirection();
     }
   };
 
@@ -81,7 +160,7 @@ const FormInline = ({ popup, setTrigger, radio, dataScience }) => {
 
   return (
     <div className={styles.App}>
-      <form onSubmit={formSubmit}>
+      <form onSubmit={upSkillingHide ? formSubmitDownload : formSubmit}>
         <div className={styles.formGrid}>
           <div className={styles.formWrapper}>
             <input
@@ -134,20 +213,119 @@ const FormInline = ({ popup, setTrigger, radio, dataScience }) => {
               required
             />
           </div>
-          <div className={popup ? styles.formWrappers : styles.formWrapper}>
-            <select
-              name="workExperience"
-              required
-              value={query.workExperience}
-              onChange={handleParam()}
-            >
-              <option value="Work Experience">Work Experience</option>
-              <option value="1 to 3 year">1 to 3 years</option>
-              <option value="3 to 7 year">3 to 7 years</option>
-              <option value="7 to 12 year">7 to 12 years</option>
-              <option value="12+ year">12+ years</option>
-            </select>
-          </div>
+          {upSkillingHide ? (
+            ""
+          ) : (
+            <div className={popup ? styles.formWrapper : styles.formWrapper}>
+              <select
+                name="upskillPlanning"
+                required
+                value={query.upskillPlanning}
+                onChange={handleParam()}
+              >
+                <option
+                  value="How soon are you planning to upskill?"
+                  selected
+                  hidden
+                >
+                  How soon are you planning to upskill?
+                </option>
+                <option value="Select an option" disabled>
+                  Select an option
+                </option>
+                <option value="Immediately">Immediately</option>
+                <option
+                  value="Within 1 to 2 weeks
+"
+                >
+                  Within 1 to 2 weeks
+                </option>
+                <option value="Within a Month ">Within a Month</option>
+                <option value="Not yet decided">Not yet decided</option>
+              </select>
+            </div>
+          )}
+
+          {upSkillingHide ? (
+            ""
+          ) : (
+            <div className={popup ? styles.formWrapper : styles.formWrapper}>
+              <select
+                name="upskillingObjective"
+                required
+                value={query.upskillingObjective}
+                onChange={handleParam()}
+              >
+                <option
+                  value="Tell us about your upskilling objective?"
+                  selected
+                  hidden
+                >
+                  Tell us about your upskilling objective?
+                </option>
+                <option value="Select an option" disabled>
+                  Select an option
+                </option>
+                <option value="Upskilling">Upskilling</option>
+                <option value="Salary hike">Salary hike</option>
+                <option value="Career switch">Career switch</option>
+              </select>
+            </div>
+          )}
+          {radio ? (
+            <div className={popup ? styles.formWrapper : styles.formWrapper}>
+              {mobile ? (
+                <div>
+                  <input
+                    id="Data Science & AI Courses"
+                    value="Data Science & AI Courses"
+                    name="platform"
+                    required
+                    type="radio"
+                    onChange={handleParam()}
+                  />
+                  Data Science & AI Courses&nbsp;
+                  {mobile ? <br /> : ""}
+                  <input
+                    id="Software (DSA & System Design)"
+                    value="Software (DSA & System Design)"
+                    name="platform"
+                    required
+                    type="radio"
+                    onChange={handleParam()}
+                  />
+                  Software (DSA & System Design)
+                </div>
+              ) : (
+                <>
+                  <div className={styles.dsCourseInp}>
+                    <input
+                      id="Data Science & AI Courses"
+                      value="Data Science & AI Courses"
+                      name="platform"
+                      required
+                      type="radio"
+                      onChange={handleParam()}
+                    />
+                    Data Science & AI Courses&nbsp;
+                  </div>
+                  <div className={styles.fsdCourseInp}>
+                    <input
+                      id="Software (DSA & System Design)"
+                      value="Software (DSA & System Design)"
+                      name="platform"
+                      required
+                      type="radio"
+                      onChange={handleParam()}
+                    />
+                    Software (DSA & System Design)
+                  </div>
+                </>
+              )}
+            </div>
+          ) : (
+            ""
+          )}
           {popup ? (
             <div className={popup ? styles.formWrappers : styles.formWrapper}>
               <input
@@ -161,62 +339,20 @@ const FormInline = ({ popup, setTrigger, radio, dataScience }) => {
             ""
           )}
         </div>
-        {radio ? (
-          <div className={popup ? styles.formWrappers : styles.formWrapper}>
-            {mobile ? (
-              <div>
-                <input
-                  id="Data Science & AI Courses"
-                  value="Data Science & AI Courses"
-                  name="platform"
-                  required
-                  type="radio"
-                  onChange={handleParam()}
-                />
-                Data Science & AI Courses&nbsp;
-                {mobile ? <br /> : ""}
-                <input
-                  id="Software/Web Development (DSA & System Design)"
-                  value="Software/Web Development (DSA & System Design)"
-                  name="platform"
-                  required
-                  type="radio"
-                  onChange={handleParam()}
-                />
-                Software/Web Development <br />
-                &nbsp;&nbsp;&nbsp;&nbsp;(DSA & System Design)
-              </div>
-            ) : (
-              <>
-                <div className={styles.dsCourseInp}>
-                  <input
-                    id="Data Science & AI Courses"
-                    value="Data Science & AI Courses"
-                    name="platform"
-                    required
-                    type="radio"
-                    onChange={handleParam()}
-                  />
-                  Data Science & AI Courses&nbsp;
-                </div>
-                <div className={styles.fsdCourseInp}>
-                  <input
-                    id="Software/Web Development (DSA & System Design)"
-                    value="Software/Web Development (DSA & System Design)"
-                    name="platform"
-                    required
-                    type="radio"
-                    onChange={handleParam()}
-                  />
-                  Software/Web Development (DSA & System Design)
-                </div>
-              </>
-            )}
-          </div>
+        <input type="hidden" id="zc_gad" name="zc_gad" value="" />
+        {error ? (
+          <p
+            style={{
+              margin: "0px 0px 5px 0px",
+              color: "#0072bc",
+              fontSize: "18px",
+            }}
+          >
+            Please select a valid option
+          </p>
         ) : (
           ""
         )}
-        <input type="hidden" id="zc_gad" name="zc_gad" value="" />
         <p className={styles.FormText} style={{ fontSize: "10px" }}>
           By submitting the form, you agree to our Terms and Conditions and our
           Privacy Policy.

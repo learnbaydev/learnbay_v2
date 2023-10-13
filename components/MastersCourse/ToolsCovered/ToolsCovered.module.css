@@ -1,0 +1,60 @@
+.infop {
+  color: black;
+  margin: 80px 0px 0px 0px;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+}
+/* FiveColumnSlider.module.css */
+.sliderContainer {
+  width: 100%;
+  margin-top: 100px;
+  padding: 0px 50px 0px 50px;
+  margin: 50px 0px 10px 0px;
+}
+
+.column img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.column {
+  width: 100%; /* Set the width for each column (adjust as needed) */
+  padding: 5px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  border: 1px solid #d6d6d6;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 1.47556px 0px rgba(0, 0, 0, 0.25);
+}
+@media (max-width: 1025px) {
+  .toolscoverd {
+    padding: 50px 20px;
+  }
+}
+@media (max-width: 961px) {
+}
+@media (max-width: 961px) {
+}
+@media (max-width: 641px) {
+  .toolscoverd {
+    padding: 50px 20px;
+  }
+  .infop {
+    font-size: 24px;
+    margin: 20px;
+  }
+.column {
+  margin:10px 0px 35px 0px;
+}
+  .sliderContainer {
+    padding: 0px 5px;
+    margin: 20px 0px;
+  }
+}
+
+@media(max-width:481px){
+  
+
+}

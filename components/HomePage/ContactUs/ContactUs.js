@@ -1,8 +1,10 @@
 import React from "react";
 import styles from "./ContactUs.module.css";
 import FormInline from "../../FormSection/FormInline";
+import { AiOutlineRise } from "react-icons/ai";
+import { BiBriefcase } from "react-icons/bi";
 
-function ContactUs({ dataScience, dataScienceCounselling }) {
+function ContactUs({ dataScience, dataScienceCounselling, radio }) {
   return (
     <section className={styles.ContactUs}>
       <div className={styles.LeftSide}>
@@ -16,10 +18,12 @@ function ContactUs({ dataScience, dataScienceCounselling }) {
         </h2>
         <div className={styles.boxSection}>
           <div className={styles.box}>
+            <AiOutlineRise style={{ color: "#2DB621", fontSize: "25px", float:"right" }} />
             <p className={styles.BoldP}>9k+</p>
             <p className={styles.NormalP}>Successful transition</p>
           </div>
           <div className={styles.box}>
+            <BiBriefcase style={{ color: "#2DB621", fontSize: "25px", float:"right" }} />
             <p className={styles.BoldP}>30k+ </p>
             <p className={styles.NormalP}>Trusted learners</p>
           </div>
@@ -27,12 +31,12 @@ function ContactUs({ dataScience, dataScienceCounselling }) {
       </div>
       <div className={styles.RightSide}>
         <p className={styles.NormalPForm}>
-          Apply for Career <span className={styles.span}>Counselling</span>
+          Apply for <span className={styles.span}>Career Counselling</span>
         </p>
         <FormInline
           dataScience={dataScience}
           dataScienceCounselling={dataScienceCounselling}
-          radio={true}
+          radio={radio}
         />
       </div>
     </section>

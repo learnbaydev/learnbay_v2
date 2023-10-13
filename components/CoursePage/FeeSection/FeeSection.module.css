@@ -1,316 +1,308 @@
-.feeWrapper {
-  display: flex;
-  flex-flow: column;
-}
-.feeWrapper h4 {
-  color: black;
-  margin: 0px 0px 10px 0px;
-  text-align: center;
-  font-size: 32px;
-  font-weight: 700;
-}
-.swiperSlide {
-  display: flex;
-  width: fit-content;
+.feesmain h2  {
+  display:  flex;
+  justify-content: center;
   align-items: center;
+  font-size: 27px;
+}
+.feesmain p {
+  display:  flex;
   justify-content: center;
-}
-.priceWrap {
-  display: grid;
-  grid-template-columns: 45% 50%;
-  gap: 30px;
-}
-.price p {
-  font-weight: 700;
-}
-.leftSide {
-  display: flex;
-  flex-flow: column;
-  gap: 40px;
-  justify-content: center;
-  border: 1px solid rgb(194, 194, 194);
-  border-radius: 10px;
-  padding: 30px 40px;
-}
-
-.leftSide p {
-  color: #676767;
+  align-items: center;
+  color: #484848;
   margin: 0;
-  font-size: 18px;
+  line-height: 40px;
 }
-.leftSide h5 {
-  font-size: 30px;
-  color: #f99600;
-  margin: 20px 0;
+.feesbatch {
+display:  flex;
+justify-content:  center;
+border-radius: 5.358px 0px 0px 5.358px;
+background: rgba(0, 0, 0, 0.03);
+width: 100%;
+height: 67.201px;
+flex-shrink: 0;
+gap: 92px;
+left: 200px;
+margin :1px;
+border-bottom: 0.1px solid #D5D5D5;
 }
-.list {
+.feesbatch li {
   display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-.list div {
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  gap: 30px;
-}
-.list div p {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  gap: 10px;
-}
-.check {
-  color: green;
-}
-
-.leftSide button {
-  font-size: 18px;
-  border-radius: 4px;
-  background-color: #0072bc;
-  font-weight: 700;
-  color: white;
-  width: fit-content;
-}
-
-.leftSide button:hover {
-  background: #fff;
-  color: #0072bc;
-  border: 1px solid #0072bc;
-}
-
-.rightSide {
-  display: flex;
-  flex-flow: column;
-  gap: 30px;
-}
-
-.top,
-.middle {
-  display: flex;
-  align-items: center;
-  gap: 30px;
-  border-radius: 10px;
-  padding: 10px 30px;
-  background-color: #def2ff;
-}
-.money {
-  font-size: 47px;
-  background-color: white;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #0072bc;
-}
-.top {
   justify-content: space-between;
+  gap: 43px;
+  padding: 7px;
+  align-items: center;
+  color: #484848;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 158%;
 }
-.top p {
-  margin: 0;
+.feesbatch span {
+  color: #484848;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 158%;
+}
+.fee2 {
+  width: 164px;
+  flex-shrink: 0;
   color: #000;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 158%;
+  margin: 27px;
+font-style: none;
+list-style-type: none;
+padding: 0;
 }
-.top h3 {
-  margin: 10px 0;
-  color: #0072bc;
-}
-.top .left button {
-  background-color: transparent;
-  color: #0072bc;
-  padding: 8px 10px;
-}
-.top .left button:hover {
-  background-color: #0072bc;
-  color: white;
-}
-.middle {
-  background-color: #fffaf0 !important;
-}
-.middle .right {
+.batch {
   display: flex;
-  width: 100%;
+  flex-flow: row;
   justify-content: center;
-
-  flex-flow: column;
+  width: fit-content;
+  margin-top: 25px;
+  box-shadow: 0px 0px 1px 0px grey;
+  border-radius: 10px;
+  border-bottom: 1.5px solid transparent;
+  border-image: linear-gradient(0.14turn, #0072BC, #2DB621, rgba(56,2,155,0));
+  border-image-slice: 1;
+  border-radius: 5px;
 }
-
-.middle .right p {
-  display: block;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-}
-.sliderHeading {
-  margin-bottom: 10px !important;
-}
-.middle .right div {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  justify-content: space-between;
-}
-.middle .right span {
+.firstfin {
   display: flex;
   flex-flow: column;
-
-  font-weight: 600;
   align-items: center;
+  justify-content: center;
+  padding: 25px 10px 10px 10px;
+  border-radius: 0px 0px 5.358px 0px;
+background: #FFF;
+box-shadow: 0px 0px 3.57213px 0px rgba(0, 0, 0, 0.15);
 }
-
-.icon {
-  font-size: 37px;
-  color: #ecbb53;
+.firstfin h2 {
+  color: #484848;
 }
-.slider {
-  width: 100%;
+.fingst {
+  background-color: #FFF9F1;
+    padding: 37px 25px;
+    /* box-shadow: 0px 0px 1px 0px grey; */
+    border-radius: 0px 0px 3px 0px;
+    text-align: center;
+    border-top: 0.1px solid #e9e9e9;
 }
-.ptop {
+.fingst  h3 {
+  color: #484848;
   font-size: 20px;
-  margin: 0px 100px 50px 100px;
-  color: #767676;
-  line-height: 26px;
+}
+.montspan {
+color: #484848;
+font-size: 12px;
+font-style: normal;
+font-weight: 700;
+line-height: 158%;
+}
+.fin button {
+  border-radius: 4px;
+  background: #0072BC;
+  position: relative;
+  width: 152px;
+  height: 33px;
+  flex-shrink: 0;
+  color: #FFF;
   text-align: center;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 155%;
+  border:  none;
+  margin: 20px;
+  cursor: pointer;
+}
+.fin button:hover {
+  background: #fff;
+  color: #0072BC;
+}
+.mainbatch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fill {
+  background: #DD4D56;
+  width: 136px;
+height: 33px;
+flex-shrink: 0;
+color: #FFF;
+text-align: center;
+font-size: 15px;
+font-style: normal;
+font-weight: 600;
+line-height: 158%; /* 23.7px */
+}
+/* Styles for the fee details */
+ul.feesbatch, ul.fee2 {
+  list-style-type: none; /* Remove bullet points */
+  padding: 0;
+}
+ul.fee2 li {
+  margin-bottom: 5px; /* Add space below each list item */
+}
+.botttomDiv {
+  display: grid;
+  grid-template-columns: 30% 65%;
+  gap: 30px;
+  align-items: center;
 }
 
-@media (max-width: 1281px) {
-  .priceWrap {
-    display: grid;
-    grid-template-columns: 50% 50%;
-  }
+.feeh p{
+  color: #F99600;
+  text-align: left;
+  display: block;
+  line-height: 20px;
+  font-weight: 500;
+
+}
+.feeh1  {
+  display:none;
 }
 
-@media (max-width: 1024px) {
-  .top h3 {
-    font-size: 15px;
-  }
-  .top p {
-    font-size: 13px;
-  }
-  .leftSide h5 {
-    font-size: 24px;
-  }
-  .leftSide p {
-    font-size: 15px;
-  }
-
-  .leftSide {
-    gap: 26px;
-  }
-
-  .priceWrap {
-    grid-template-columns: 54% 46%;
-  }
+.feeh{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
-@media (max-width: 961px) {
-  .top .left button {
-    font-size: 13px;
-  }
-
-  .leftSide h5 {
-    font-size: 20px;
-    margin: 10px 0px 0px;
-  }
-
-  .leftSide p {
-    font-size: 15px;
-  }
-
-  .priceWrap {
-    grid-template-columns: 40% 60%;
-  }
-
-  .list div {
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    width: 100%;
-    gap: 10px;
-  }
-
-  .list {
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    width: 100%;
-    gap: 10px;
-  }
+.feesmain {
+  padding-top: 100px;
 }
-
-@media (max-width: 800px) {
-  .top .left button {
-    font-size: 13px;
-  }
-
-  .leftSide h5 {
-    font-size: 20px;
-  }
-
-  .leftSide p {
-    font-size: 15px;
-  }
-
-  .list div {
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    gap: 10px;
-  }
-
-  .list {
-    display: flex;
-    flex-flow: column;
-    gap: 10px;
-  }
-
-  .leftSide {
-    gap: 15px;
-  }
-
-  .priceWrap {
-    grid-template-columns: 50% 50%;
-    gap: 30px;
-  }
+.gstspan {
+  color: #484848;
+font-size: 12px;
+font-style: normal;
+font-weight: 350;
+line-height: 158%; /* 31.6px */
 }
 
 @media (max-width: 641px) {
-  .priceWrap {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
+  .feesmain p {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 350;
   }
-  .leftSide {
-    display: flex;
-    flex-flow: column;
-    gap: 20px;
-    justify-content: center;
-    border: 1px solid rgb(194, 194, 194);
-    border-radius: 10px;
-    padding: 30px 20px;
+  .feeshead p {
+    color: #484848;
+    text-align: center;
+    /* font-family: Open Sans; */
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 152%;
+    /* margin: 12px 10px 0px 7px; */
+    padding: 0px 31px;}
+    
+
+  .feesmain {
+    padding-top: 50px;
   }
-  .list {
-    display: grid;
-    justify-content: left;
+  .feesmain h2 {
+    font-size: 22px;
+  }
+
+  .batch {
+    display: block;
+    margin: 30px 10px;
+  border-image: none;
+  border: none;
+  }
+
+  .feesbatch {
     gap: 10px;
+    height: fit-content;
+    padding: 10px 0px !important;
   }
-  .list div {
+  .botttomDiv {
+    display: none;
+  }
+  .fin {
     display: flex;
-    flex-flow: column;
+    flex-direction: column-reverse;
+  }
+  .fingst {
+    padding: 26px 0px;
+  }
+  .gstspan {
+    color: #484848;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 350;
+line-height: 158%; /* 31.6px */
+  }
+  .fingst h3 {
+    font-size: 22px;
+    font-weight: 650;
+  }
+  .firstfin span {
+    color: #484848;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 158%;
+  }
+ 
+
+  
+  .firstfin {
+    margin: auto;
+    background-color: none;
+    border: 0;
+    box-shadow: none;
+    margin-top: 2px;
+    height: fit-content;
+    padding: 0px;
     align-items: center;
-    justify-content: center;
-    width: 100%;
-    gap: 10px;
   }
-  .feeWrapper h4 {
+
+  .firstfin p {
+    font-size: 22px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    font-weight: 400;
+  }
+
+  .firstfin h2 {
+    font-size: 22px;
+    margin-bottom: 14px;
+  }
+
+  .firstfin span {
     font-size: 24px;
+    font-weight: 600;
   }
-  .ptop {
-    font-size: 18px;
-    margin: 0px 20px 20px 20px;
+  .firstfin button {
+    font-size: 15px;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: 23px 32px;
+    font-weight: 600;
+    margin: auto;
+  }
+  .feeh1 {
+    gap: 10px;
+    margin-bottom: 20px;
+    /* background-color: red; */
+    display: flex;
+    flex-flow:column ;
+  }
+  .feeh1 p {
+    color: #F99600;
+text-align: center;
+font-size: 14.298px;
+font-style: normal;
+font-weight: 700;
+line-height: 158%; /* 22.591px */
   }
 }

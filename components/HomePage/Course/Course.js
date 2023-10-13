@@ -16,16 +16,16 @@ import Form from "../../Form/Form";
 import { FaDownload } from "react-icons/fa";
 import { courseDetails } from "./courseDetails";
 
-const Course = ({ dataScience, radio, dataScienceCounselling }) => {
+const Course = ({ dataScience, radio, dataScienceCounselling, Green }) => {
   const [mobile, setMobile] = useState(false);
-  const [value, setValue] = useState(3.2);
+  const [value, setValue] = useState(3.68);
   const [popups, setPopups] = useState(false);
 
   const [CourseLoop, setCourseLoop] = useState([
     { title: "Popular Courses", value: true },
-    { title: "Data Science & AI", value: false },
-    { title: "Software Development", value: false },
-    { title: "Master Program", value: false },
+    { title: "Certification Courses", value: false },
+    // { title: "Software Development", value: false },
+    { title: "Master Degree Program", value: false },
     { title: "View All", value: false },
   ]);
 
@@ -71,7 +71,6 @@ const Course = ({ dataScience, radio, dataScienceCounselling }) => {
       setValue(2.4);
     }
   }, []);
-
   return (
     <div className={styles.Course} id="course">
       <Popup
@@ -95,10 +94,11 @@ const Course = ({ dataScience, radio, dataScienceCounselling }) => {
             dataScienceCounselling={dataScienceCounselling}
             radio={radio}
             downloadBrochure
+            upSkillingHide={true}
           />
         </div>
       </Popup>
-      <h2>Industry Accredited Certification For Professionals</h2>
+      <h2>Our Courses</h2>
 
       <div className={styles.courses}>
         <div className={styles.listPanel}>
@@ -125,7 +125,7 @@ const Course = ({ dataScience, radio, dataScienceCounselling }) => {
               <div key={index}>
                 {courses.map((courseDetail, index) => {
                   return (
-                    <div key={index}>
+                    <div key={index} className={styles.divBox}>
                       <h5 className={styles.h5font}>
                         {courseDetail.courseName} (
                         {courseDetail.courseDetails.length})
@@ -133,7 +133,7 @@ const Course = ({ dataScience, radio, dataScienceCounselling }) => {
                       <div className={styles.gridPanel}>
                         <Swiper
                           slidesPerView={value}
-                          spaceBetween={mobile ? 20 : 20}
+                          spaceBetween={mobile ? 20 : 60}
                           pagination={{
                             clickable: true,
                           }}
@@ -152,6 +152,7 @@ const Course = ({ dataScience, radio, dataScienceCounselling }) => {
                               titleCourse,
                               brochureLinks,
                               courseTime,
+                              Green,
                             } = viewAllData;
                             return (
                               <SwiperSlide className={styles.leftSide} key={id}>
@@ -169,62 +170,80 @@ const Course = ({ dataScience, radio, dataScienceCounselling }) => {
                                       />
                                     </div>
                                   </a>
-                                  <div className={styles.contentBox}>
-                                    <div className={styles.headWrapper}>
-                                      <h6 className={styles.mainHead}>
-                                        {title}
-                                      </h6>
-                                      <h6>{title1}</h6>
-                                    </div>
-                                    <hr className={styles.hr} />
-                                    <div className={styles.paraDiv}>
-                                      <p>
-                                        <BiTimeFive
-                                          className={styles.checkCircle}
-                                        />
-                                        {para[0]} | {courseTime}
-                                      </p>
-                                      <p>
+                                  <div className={styles.contButton}>
+                                    <div className={styles.contentBox}>
+                                      <div className={styles.headWrapper}>
+                                        <h6
+                                          className={
+                                            Green
+                                              ? styles.mainHeadGreen
+                                              : styles.mainHead
+                                          }
+                                        >
+                                          {title}
+                                        </h6>
+                                        <h6 className={
+                                            Green
+                                              ? styles.mainHeadGreen
+                                              : styles.mainHead
+                                          }>{title1}</h6>
+                                      </div>
+                                      <hr className={styles.hr} />
+                                      <div className={styles.paraDiv}>
+                                        <p>
+                                          {/* <BiTimeFive
+                                            className={styles.checkCircle}
+                                          /> */}
+                                          {para[0]} | {courseTime}
+                                        </p>
+                                        {/* <p>
                                         <AiOutlineFundProjectionScreen
                                           className={styles.checkCircle}
                                           style={{ color: "#edb552" }}
                                         />
                                         {para[1]}
-                                      </p>
-                                      <p className={styles.singleP}>
-                                        <TbCurrencyRupee
-                                          className={styles.checkCircle}
-                                        />
-                                        {para[2]}
-                                      </p>
+                                      </p> */}
+                                        <p className={styles.singleP}>
+                                          {/* <TbCurrencyRupee
+                                            className={styles.checkCircle}
+                                          /> */}
+                                          {para[2]}
+                                        </p>
+                                      </div>
+                                      <hr className={styles.hr1} />
                                     </div>
-                                    <hr className={styles.hr1} />
-                                  </div>
-                                  <div className={styles.btnWrapper}>
-                                    <a
-                                      onClick={() => {
-                                        setTitleCourse(titleCourse);
-                                        setBrochureLinks(brochureLinks);
-                                        popupShow();
-                                      }}
-                                    >
-                                      <button className="outLineBtn1">
-                                        Brochure
-                                        <FaDownload
-                                          className="bIcon"
-                                          style={{ color: "#2979AD" }}
-                                        />
-                                      </button>
-                                    </a>
-                                    <hr className={styles.btnLine} />
-                                    <a href={link1} className={styles.link1}>
-                                      <button className={styles.fillBtn}>
-                                        View Details{" "}
-                                        <TbListDetails
-                                          className={styles.bellIcon}
-                                        />
-                                      </button>
-                                    </a>
+                                    <div className={styles.btnWrapper}>
+                                      <a
+                                        onClick={() => {
+                                          setTitleCourse(titleCourse);
+                                          setBrochureLinks(brochureLinks);
+                                          popupShow();
+                                        }}
+                                      >
+                                        <button className="outLineBtn1">
+                                          Brochure
+                                          <FaDownload
+                                            className="bIcon"
+                                            style={{ color: "#2979AD" }}
+                                          />
+                                        </button>
+                                      </a>
+                                      <hr className={styles.btnLine} />
+                                      <a href={link1} className={styles.link1}>
+                                        <button
+                                          className={
+                                            Green
+                                              ? styles.green
+                                              : styles.fillBtn
+                                          }
+                                        >
+                                          View Details{" "}
+                                          <TbListDetails
+                                            className={styles.bellIcon}
+                                          />
+                                        </button>
+                                      </a>
+                                    </div>
                                   </div>
                                 </div>
                               </SwiperSlide>

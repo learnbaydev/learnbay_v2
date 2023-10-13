@@ -8,11 +8,15 @@ import "swiper/css/scrollbar";
 import { AiOutlineRise } from "react-icons/ai";
 import dynamic from "next/dynamic";
 const ReviewPopup = dynamic(() => import("../ReviewPopup/ReviewPopup"));
+import VideoPopup from "../../Global/VideoPopup/VideoPopup";
 
 import { Pagination, Navigation } from "swiper";
+import "swiper/css/scrollbar";
+import { Scrollbar } from "swiper";
 
 function Testimonial({ redirectDS, para, heading, Testimonial }) {
   const [mobile, setMobile] = useState(false);
+  const [vId, setVId] = useState("");
   const [img, setImg] = useState({
     cLogo: "",
     pLogo: "",
@@ -22,6 +26,11 @@ function Testimonial({ redirectDS, para, heading, Testimonial }) {
     hike: "",
     position: "",
   });
+  const videoShow = (id) => {
+    setVideo(true);
+    setVId(id);
+  };
+  const [video, setVideo] = useState(false);
   const [desc, setDesc] = useState("");
   const [popups, setPopups] = useState(false);
   const popupShow = () => {
@@ -34,7 +43,8 @@ function Testimonial({ redirectDS, para, heading, Testimonial }) {
     }
   }, []);
   return (
-    <div className={styles.testimonial}>
+    <div className={styles.testimonial} id="alumni">
+       <VideoPopup triggers={video} setTriggers={setVideo} ids={vId} />
       <ReviewPopup
         trigger={popups}
         setTrigger={setPopups}
@@ -58,7 +68,7 @@ function Testimonial({ redirectDS, para, heading, Testimonial }) {
               <Swiper
                 loop={true}
                 breakpoints={{
-                  1281: { slidesPerView: 3.1, spaceBetween: 60 },
+                  1281: { slidesPerView: 4.3, spaceBetween: 50 },
                   1024: { slidesPerView: 3, spaceBetween: 55 },
                   961: { slidesPerView: 3, spaceBetween: 20 },
                   801: { slidesPerView: 2.5, spaceBetween: 20 },
@@ -70,9 +80,13 @@ function Testimonial({ redirectDS, para, heading, Testimonial }) {
                   dynamicBullets: true,
                   clickable: true,
                 }}
-                style={{ width: "100%" }}
+                // scrollbar={{ draggable: true }}
                 grabCursor={true}
-                modules={[Pagination, Navigation]}
+                
+        
+                style={{ width: "100%" }}
+                
+                modules={[Pagination, Navigation, Scrollbar]}
                 className="mySwiper"
               >
                 {Testimonial.map((data) => {
@@ -89,21 +103,31 @@ function Testimonial({ redirectDS, para, heading, Testimonial }) {
 
                   return (
                     <SwiperSlide className={styles.slide} key={id}>
+                      <div className={styles.nameHike}>
+                              <p>
+                                <AiOutlineRise />
+                                {statLogo}
+                              </p>
+                            </div>
+                      <div className={styles.proImgWrap}>
+                        <div className="imgWrapper">
+                            <Image
+                              src={proImg}
+                              loading="lazy"
+                              width="358"
+                              height="212"
+                              alt="profile-Img"
+                              onClick={() => videoShow(data.link)}
+                            />
+                            </div>
+                          </div>
                       <div className={styles.mainSlider}>
                         <div className={styles.imgP}>
                           <div className={styles.name}>
                             <h3>{name}</h3>
                             <p>{working}</p>
                           </div>
-                          <div className={styles.proImgWrap}>
-                            <Image
-                              src={proImg}
-                              loading="lazy"
-                              width="100"
-                              height="100"
-                              alt="profile-Img"
-                            />
-                          </div>
+                          
                         </div>
 
                         <div className={styles.paraDiv}>
@@ -154,12 +178,36 @@ function Testimonial({ redirectDS, para, heading, Testimonial }) {
                                 />
                               </div>
                             </div>
-                            <div className={styles.nameHike}>
-                              <p>
-                                <AiOutlineRise />
-                                {statLogo}
-                              </p>
+                            <div>
+                            <div>
+                                <Image
+                                  src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/Arrow+6.png"
+                                  loading="lazy"
+                                  width="30"
+                                  height="15"
+                                  alt="company-logo"
+                                />
+                              </div>
                             </div>
+                            <div
+                              className={styles.imgWrap}
+                              style={
+                                id === "tcs"
+                                  ? { width: "20%" }
+                                  : { width: "auto" }
+                              }
+                            >
+                              <div className="imgWrapper">
+                                <Image
+                                  src={complogo}
+                                  loading="lazy"
+                                  width={90}
+                                  height={25}
+                                  alt="company-logo"
+                                />
+                              </div>
+                            </div>
+                            
                           </div>
                         ) : (
                           ""

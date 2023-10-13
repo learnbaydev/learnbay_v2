@@ -1,10 +1,11 @@
-import React, { useState } from "react";
 import Head from "next/head";
-import Navbar from "../../../components/Navbar/Navbar";
+import { useState } from "react";
 import Footer from "../../../components/Footer/Footer";
+import Navbar from "../../../components/Navbar/Navbar";
 
 import dynamic from "next/dynamic";
 import { FSSPDataScienceCourseData } from "../../../Data/FullStackSoftwareProgram";
+import BottomBar from "../../../components/WebPage/BottomBar/BottomBar";
 
 const FirstSection = dynamic(() =>
   import("../../../components/CoursePage/FirstSection/FirstSection")
@@ -57,9 +58,6 @@ const Certificate = dynamic(() =>
 const FAQNew = dynamic(() =>
   import("../../../components/CoursePage/FAQNew/FAQNew")
 );
-import OfferPopup from "../../../components/OfferPopup/OfferPopup";
-import BottomBar from "../../../components/WebPage/BottomBar/BottomBar";
-import BatchDetails from "../../../components/CoursePage/BatchDetails/BatchDetails";
 
 function Blockchain() {
   const [popups, setPopups] = useState(false);

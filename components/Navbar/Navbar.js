@@ -171,9 +171,8 @@ const Navbar = ({
           })}
           <div onClick={popupShow}>
             <Button
-              text="Apply For Counselling"
+              text="APPLY FOR COUNSELLING"
               outline={true}
-              passIcon={<FaArrowRight className="icon" />}
             />
           </div>
         </div>

@@ -1,0 +1,79 @@
+.container {
+  margin-top: 80px;
+}
+
+.topSpan {
+  color: #fff;
+  padding: 5px 14px 5px 14px;
+  font-size: 16px;
+  border-radius: 0px 3px 3px 0px;
+background: #242424;
+} 
+
+.DivContent {
+  margin: 14px 14px;
+}
+
+.h1 {
+  color: #000;
+font-size: 32px;
+font-style: normal;
+font-weight: 800;
+}
+
+.paraCollab {
+  border: 1px solid #f9960040;
+  width: fit-content;
+  padding: 5px 12px 5px 15px;
+  margin: 15px 0px 40px 0px;
+  border-radius: 4px;
+}
+
+.paraCollab p {
+  margin: 0px 0px 10px 0px;
+  color: #656464;
+  font-size: 12px;
+}
+
+.HeadImage, .ButtonDiv {
+  display: flex;
+  justify-content: center;
+}
+
+.ButtonDiv {
+  background: radial-gradient(1145.57% 49.93% at 49.87% 59.76%, #CAC8C8 0%, rgba(221, 221, 221, 0.00) 100%);
+  padding: 20px 0px;
+}
+
+.ButtonDiv Button {
+  color: #FFF;
+font-size: 14px !important;
+font-style: normal;
+font-weight: 500;
+letter-spacing: 0.975px;
+padding: 15px 26px;
+}
+
+.FormDiv {
+  background: #fff;
+  padding: 24px 20px 30px 20px;
+  border-radius: 10px;
+  margin: 20px;
+  border-radius: 6.26px;
+border-bottom: 5px solid #F99600;
+box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.45);
+}
+
+.NormalPForm {
+  color: #555;
+font-size: 20px;
+font-weight: 500;
+margin: 0;
+margin-bottom: 30px;
+}
+
+.span {
+  color: #0072BC;
+font-weight: 700;
+}
+

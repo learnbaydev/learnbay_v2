@@ -5,16 +5,14 @@
   font-size: 32px;
   font-weight: 700;
 }
-
 /* .infopP {
-  color: #0072bc;
+  color: #0072BC;
   text-transform: uppercase;
   font-weight: 600;
   font-size: 20px;
   margin: 10px 0px 30px 0px;
   text-align: center;
 } */
-
 /* .boxGrey {
   text-align: center;
   background: linear-gradient(
@@ -28,18 +26,15 @@
   display: grid;
   margin-top: 30px;
 } */
-
 /* .check {
   color: green;
 } */
-
 /* .checkP {
   display: flex;
   gap: 10px;
   align-items: center;
   font-size: 20px;
 } */
-
 /* .boxText {
   display: flex;
   align-items: center;
@@ -48,35 +43,30 @@
   margin: 50px 0px;
   gap: 80px;
 } */
-
 /* .Htop {
-  color: #0072bc;
+  color: #0072BC;
   font-size: 26px;
   font-weight: bold;
   margin: 0;
 } */
-
 .ptop {
   color: #636363;
   font-size: 16px;
   margin: 0;
 }
-
 .ptopBox {
   color: #000;
   font-size: 18px;
   margin: 0;
   font-weight: 700;
-  border: 2px solid #edb552;
+  border: 2px solid #EDB552;
   width: fit-content;
   padding: 5px 10px;
   border-radius: 20px;
 }
-
 .map {
   text-align: center;
 }
-
 .boxH2 {
   color: #000;
   margin: 0;
@@ -86,47 +76,40 @@
   width: 50%;
   margin-bottom: 10px;
 }
-
 .boxP {
   color: #000;
   width: 50%;
 }
-
 .boxBlue button {
   background-color: #fff;
-  color: #0072bc;
+  color: #0072BC;
   font-size: 18px;
   font-weight: 700;
   margin-top: 30px;
 }
-
 .batch {
   padding: 100px 0px;
   text-align: center;
 }
-
 .batchP {
   color: #767676;
   margin: 0;
   padding: 0px 200px;
 }
-
 /* .batchImage {
   display: flex;
   margin-top: 50px;
   padding: 50px 100px 20px 100px;
-  background-color: #f8f8f8;
+  background-color: #F8F8F8;
   box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.08);
 } */
-/* 
+/*
 .imgPlacement {
   width: 400px;
 }  */
-
 .map {
   display: none;
 }
-
 .First {
   margin-top: 20px;
   padding: 50px 100px 30px 100px;
@@ -135,11 +118,9 @@
   height: 700px;
   position: relative;
 }
-
 .FirstLeft button {
   margin-top: 30px;
 }
-
 .ptop {
   font-size: 20px;
   margin: 0px 100px;
@@ -147,11 +128,9 @@
   line-height: 26px;
   text-align: center;
 }
-
 /* .hrDesing {
-  border: 1px solid #cdcdcd;
+  border: 1px solid #CDCDCD;
 } */
-
 .ptopB {
   color: #767676;
   font-size: 18px;
@@ -159,54 +138,45 @@
   text-align: left;
   width: fit-content;
 }
-
 .h1Span {
-  color: #f99600;
+  color: #F99600;
 }
-
 .h1 {
-  color: #0072bc;
+  color: #0072BC;
   margin: 5px 0px 30px 0px;
-  text-align: left;
+  text-align: center;
+  font-size: 37px;
 }
-
 .FirstLeft p {
   margin: 20px 0px;
 }
-
 .logos {
   display: none;
 }
-
 /* .IBMlogoPlay {
   display: none;
 } */
-
 /* .logosD {
   display: flex;
   justify-content: space-evenly;
 } */
-
 /* .PlayImg {
   text-align: center;
   margin: 50px 0px 30px 0px;
 } */
-
 .CTA {
   padding: 70px 300px;
   position: relative;
   margin: 0px 0px 100px 0px;
 }
-
 .secondLeft {
   display: none;
 }
-
 .Features {
   display: flex;
   flex-flow: column;
   justify-content: center;
-  padding: 50px 100px 0px 100px;
+  padding: 50px 150px 0px 150px;
 }
 .Features .btnWrap {
   display: flex;
@@ -222,9 +192,9 @@
 } */
 .FeatureWrap {
   margin-top: 50px;
-  display: grid;
+  /* display: grid;
   grid-template-columns: 49% 49%;
-  gap: 20px;
+  gap: 20px; */
   justify-content: center;
   align-items: center;
 }
@@ -240,16 +210,15 @@
   font-size: 25px;
   margin: 0;
   font-weight: 500;
-  color: #28557a;
+  color: #28557A;
   margin-top: 30px;
   margin-bottom: 20px;
 }
 .LeftWrap h6 span {
-  border-bottom: 3px solid #edb552;
+  border-bottom: 3px solid #EDB552;
 }
-
 /* .tickIcon {
-  color: #3c59a8;
+  color: #3C59A8;
   margin-right: 10px;
   font-size: 20px;
 } */
@@ -258,20 +227,18 @@
   height: 100%;
 }
 .RightWrap {
-  background: #ffffff;
+  background: #FFFFFF;
   margin-top: 0px;
   border-radius: 4px;
-
   height: max-content;
   padding: 0px 0px 50px 0px;
 }
 .ParaWrap span {
   font-size: 20px;
   margin-bottom: 10px;
-  color: #0072bc;
+  color: #0072BC;
   font-weight: 600;
 }
-
 .ParaWrap,
 .ParaWrap1,
 .ParaWrap2,
@@ -294,16 +261,16 @@
   grid-template-columns: 10% 89%;
   gap: 20px;
   height: 95px;
-  border-left: 3px solid #516c82;
+  border-left: 3px solid #516C82;
 }
 .ParaWrap:nth-child(1) {
   grid-template-columns: 8% 89%;
 }
 .ParaWrap1 {
-  border-left: 3px solid #e5c586;
+  border-left: 3px solid #E5C586;
 }
 .ParaWrap2 {
-  border-left: 3px solid #516c82;
+  border-left: 3px solid #516C82;
 }
 .ParaWrap span {
   color: #616161;
@@ -318,24 +285,23 @@
   color: #616161 !important;
 }
 .ParaWrap3 {
-  border-left: 3px solid #e5c586;
+  border-left: 3px solid #E5C586;
 }
 .ParaWrap3 .number {
-  color: #faecec !important;
+  color: #FAECEC !important;
 }
 .ParaWrap3 span {
   color: #555555 !important;
 }
 .ParaWrap1 .number {
-  color: #eaf9ea !important;
+  color: #EAF9EA !important;
 }
 .ParaWrap2 .number {
-  color: #fdf9f0 !important;
+  color: #FDF9F0 !important;
 }
 .ParaWrap p {
   margin: 0;
 }
-
 /* .numberIcon {
   padding: 0;
   margin: 0;
@@ -345,26 +311,25 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #eaedf2;
+  color: #EAEDF2;
   padding: 5px;
   font-size: 70px;
 }
 .fillBtn {
   font-size: 18px;
   border-radius: 4px;
-  background-color: #0072bc !important;
+  background-color: #0072BC !important;
   font-weight: 700;
   color: white !important;
   width: fit-content;
 }
-
 .fillBtn:hover {
   background: #fff;
-  color: #0072bc;
-  border: 1px solid #0072bc;
+  color: #0072BC;
+  border: 1px solid #0072BC;
 }
 /* .bIcons {
-  color: #28557a;
+  color: #28557A;
   font-size: 45px;
 } */
 .RightWrap {
@@ -372,6 +337,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 50px 60px 30px 60px;
+  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.1);
+}
+.Nimg{
+  display: inline-block;
+  position: relative;
+  top: 20px;
+  left: 8px;
 }
 @media (max-width: 1280px) {
   .ParaWrap span {
@@ -394,7 +367,6 @@
     line-height: 30px;
   }
 }
-
 @media (max-width: 1024px) {
   .LeftWrap {
     display: flex;
@@ -409,7 +381,6 @@
   .Features {
     padding: 50px 20px 0px 20px;
   }
-
   .RightWrap {
     padding: 20px;
   }
@@ -425,7 +396,7 @@
     font-size: 25px;
     margin: 0;
     font-weight: 500;
-    color: #28557a;
+    color: #28557A;
   }
   .FeatureWrap {
     grid-template-columns: 44% 54%;
@@ -434,7 +405,6 @@
     height: 600px;
   } */
 }
-
 @media (max-width: 961px) {
   .boxBlue {
     padding-top: 13px;
@@ -444,7 +414,6 @@
     line-height: 18px;
   }
 }
-
 @media (max-width: 801px) {
   .FeatureWrap {
     flex-flow: column;
@@ -454,7 +423,6 @@
     padding: 0px 120px;
     position: relative;
     margin: 80px 0;
-
     background: linear-gradient(
       90deg,
       rgba(237, 233, 233, 0) 0%,
@@ -489,7 +457,6 @@
     font-size: 15px;
   }
 }
-
 @media (max-width: 641px) {
   .FeatureWrap {
     display: flex;
@@ -500,7 +467,6 @@
     font-size: 24px;
     font-weight: 600;
   }
-
   .boxP {
     color: #000;
     width: 100%;
@@ -510,7 +476,6 @@
     font-size: 15px;
   }
 }
-
 @media (max-width: 600px) {
   .Features {
     display: block;
@@ -528,12 +493,17 @@
     flex-flow: column;
     padding: 0px;
   }
+.Nimg{
+  display: none;
+}
   .RightWrap {
-    background-repeat: no-repeat;
-    background-size: cover;
     width: 100%;
     margin-top: 20px;
-    padding: 0px;
+    padding: 20px;
+    border-radius: 2.07px;
+border: 0.345px solid rgba(0, 0, 0, 0.20);
+background: #FFF;
+box-shadow: 0px 0px 1.38003px 0px rgba(0, 0, 0, 0.15);
   }
   .topHead {
     font-size: 26px;
@@ -545,7 +515,6 @@
     margin-left: 0px;
   }
 }
-
 @media (max-width: 641px) {
   /* .boxGrey {
     text-align: center;
@@ -567,7 +536,6 @@
     background-size: contain;
     padding: 10px;
   } */
-
   .boxText {
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
@@ -577,18 +545,16 @@
     margin: 50px 20px;
     gap: 10px;
   }
-
   .desktopImage{
     display: none;
   }
-
   .ptop {
     color: #636363;
     font-size: 16px;
     margin: 0;
   }
   .Htop {
-    color: #0072bc;
+    color: #0072BC;
     font-size: 20px;
     font-weight: bold;
     margin: 0;
@@ -619,11 +585,9 @@
   .infopP {
     font-size: 16px;
   }
-
   .infop {
     font-size: 24px;
   }
-
   .ParaWrap,
   .ParaWrap1,
   .ParaWrap2,
@@ -685,7 +649,6 @@
     margin-top: 20px;
   }
 }
-
 @media (max-width: 481px) {
   .boxH2 {
     line-height: 30px;

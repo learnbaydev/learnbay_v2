@@ -4,8 +4,9 @@ import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/free-mode";
-import "swiper/css/scrollbar";
-import { Autoplay, Scrollbar } from "swiper";
+// import "swiper/css/scrollbar";
+import "swiper/css/pagination";
+import { Autoplay, Pagination } from "swiper";
 import { FaDownload } from "react-icons/fa";
 // import Link from "next/link";
 import Form from "../../Form/Form";
@@ -57,6 +58,7 @@ function DomainSection({ dataScience, domainSectionData }) {
           <Form
             dataScience={dataScience}
             downloadBrochure
+            upSkillingHide={true}
             titleCourse={titleCourse}
             brochureLink={brochureLink}
           />
@@ -111,16 +113,17 @@ function DomainSection({ dataScience, domainSectionData }) {
                         spaceBetween: 15,
                       },
                       1280: {
-                        slidesPerView: 2.1,
+                        slidesPerView: 2.2,
                         spaceBetween: 30,
                       },
                     }}
-                    scrollbar={{ draggable: true }}
+                    // scrollbar={{ draggable: true }}
+                    pagination={true}
                     autoplay={{
                       delay: 2500,
                     }}
                     grabCursor={true}
-                    modules={[Autoplay, Scrollbar]}
+                    modules={[Autoplay, Pagination]}
                     autoPlay={true}
                     className="mySwiper"
                   >
