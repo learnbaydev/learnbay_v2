@@ -331,7 +331,7 @@ line-height: 126.5%;
   }
 
   .ASlide {
-    padding: 10px 0px !important;
+    padding: 10px 0px 10px 30px !important;
   }
 
   .slide {
@@ -441,5 +441,9 @@ line-height: 126.5%;
 
   .syllabusRight {
     margin: 0px;
+  }
+  .wrapSpan {
+    font-size: 13px;
+    
   }
 }

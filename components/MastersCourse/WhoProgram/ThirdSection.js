@@ -8,7 +8,7 @@ function ThirdSection({ leftImage, ThirdSectionData }) {
       <h4>Who's Is This Program For?</h4>
       <div className={styles.programWrap}>
         <div className={styles.left}>
-          <Image src={leftImage} width={373} height={406} alt="who" />
+          <Image src={leftImage} width={500} height={500} alt="who" />
         </div>
         <div>
           <div className={styles.boxWrap}>
