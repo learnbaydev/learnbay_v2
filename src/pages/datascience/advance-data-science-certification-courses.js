@@ -164,13 +164,13 @@ function Blockchain() {
           // SecondTyped="Capstone Project Certificate"
           ThirdTyped="Live Interactive Classes"
           dataScience={true}
-          titleCourse="Advanced Data Science and AI Program with domain specialization"
+          titleCourse="Advance Data Science & AI Program with Domain Specialization"
           cityParaCont="Elevate your tech career with our Master's programs"
           brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Advance+Data+Science+and+AI+Certification+Program+Learnbay.pdf"
-          FirstRightImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/coursepageB.webp"
-          firstToparaImg="with domain specialization"
-          firstHeading="Advanced Data Science and AI Program"
-          // firstTopPara="Specialization over generalization"
+          FirstRightImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/coursePage/course-head-image.webp"
+          firstToparaImg="with Domain Specialization"
+          firstHeading="Advance Data Science & AI Program"
+          firstTopPara="Curriculum Inclusive of Gen-AI"
           idss="bfl64ANfSV0"
         />
         <SecondSection

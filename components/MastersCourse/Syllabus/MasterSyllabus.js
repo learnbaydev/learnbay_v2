@@ -263,14 +263,6 @@ function SyllabusNew({
                   <FaRegUser className={styles.iconUser} /> 7,568 people filled
                 </div>
               </div>
-              {/* <div className="imgWrapper">
-              <Image
-                src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Form-Girl.png"
-                width={535}
-                height={239}
-                alt="girl"
-              />
-            </div> */}
               <h4>
                 Interested in <span>Master’s Degree?</span>
               </h4>
