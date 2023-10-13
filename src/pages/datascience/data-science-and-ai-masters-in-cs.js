@@ -179,7 +179,7 @@ function Blockchain() {
           para="Discover the impact of our programs on career growth"
         />
         <WhoProgram
-          leftImage="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/whoIsProgram.webp"
+          leftImage="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/masterPage/who-program.webp"
           ThirdSectionData={DataScienceMastersinCS[0].thirdSection}
         />
         <WhyLearnbay />

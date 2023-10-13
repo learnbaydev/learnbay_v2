@@ -85,9 +85,10 @@ function SeventhSection({ fullStackCont }) {
           <div className="imgWrapper">
             <Image
               src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/newBottomImage.webp"
-              width={681}
-              height={515}
+              width={400}
+              height={400}
               alt="data science course"
+              style={{ 'borderRadius': '5px' }}
             />
           </div>
         </div>

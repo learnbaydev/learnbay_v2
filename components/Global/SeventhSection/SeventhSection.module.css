@@ -87,6 +87,11 @@ line-height: normal;
   margin-left: 10px;
 }
 
+.rightPart {
+  width: 400px;
+  height: 390px;
+}
+
 @media (max-width: 1024px) {
   .LearnSupport {
     padding: 30px 30px 30px 180px;

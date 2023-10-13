@@ -78,7 +78,7 @@ function DomainSection({ dataScience, domainSectionData }) {
                     spaceBetween={mobile ? 10 : 15}
                     breakpoints={{
                       1280: {
-                        slidesPerView: 2.2,
+                        slidesPerView: 3.2,
                         spaceBetween: 30,
                       },
                       1024: {
@@ -104,9 +104,9 @@ function DomainSection({ dataScience, domainSectionData }) {
                     }}
                     // scrollbar={{ draggable: true }}
                     pagination={true}
-                    autoplay={{
-                      delay: 2500,
-                    }}
+                    // autoplay={{
+                    //   delay: 2500,
+                    // }}
                     grabCursor={true}
                     modules={[Autoplay, Pagination]}
                     // autoPlay={true}
@@ -142,9 +142,7 @@ function DomainSection({ dataScience, domainSectionData }) {
                             </div>
                           </div>
                           <div className={styles.mainSliderYellow}>
-                            {/* <div className={styles.imgP}>
-                              <p></p>
-                            </div> */}
+                            
                             <div key={index}>
                               <p
                                 style={{

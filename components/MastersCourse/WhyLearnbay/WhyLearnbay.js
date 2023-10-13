@@ -34,7 +34,7 @@ function WhyLearnbay() {
               spaceBetween: 45,
             },
             1280: {
-              slidesPerView: 4.8,
+              slidesPerView: 3,
               spaceBetween: 25,
             },
           }}
@@ -76,7 +76,122 @@ function WhyLearnbay() {
           <SwiperSlide className={styles.slide}>
             <div className={styles.InnerDiv}>
               <div className={styles.boxinner}>
-                <p>Project Innovation Lab</p>
+                <div>
+                  <div className={`imgWrapper ${styles.proIcon}`}>
+                    <Image
+                      src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/pro-1.png"
+                      width={80}
+                      height={100}
+                    />
+                  </div>
+                </div>
+                <div>
+                  <p>Project Innovation Lab</p>
+                </div>
+              </div>
+              <div className={styles.ParaBox}>
+                <p className={styles.para}>
+                  Enhance your learning experience with hybrid model. Attend
+                  offline sessions in our project innovation labs across in
+                  several cities :{" "}
+                  <span>Bengaluru, Pune, Hyderabad, Delhi.</span>
+                </p>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide className={styles.slide}>
+            <div className={styles.InnerDiv}>
+              <div className={styles.boxinner}>
+                <div>
+                  <div className={`imgWrapper ${styles.proIcon}`}>
+                    <Image
+                      src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/pro-1.png"
+                      width={80}
+                      height={100}
+                    />
+                  </div>
+                </div>
+                <div>
+                  <p>Project Innovation Lab</p>
+                </div>
+              </div>
+              <div className={styles.ParaBox}>
+                <p className={styles.para}>
+                  Enhance your learning experience with hybrid model. Attend
+                  offline sessions in our project innovation labs across in
+                  several cities :{" "}
+                  <span>Bengaluru, Pune, Hyderabad, Delhi.</span>
+                </p>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide className={styles.slide}>
+            <div className={styles.InnerDiv}>
+              <div className={styles.boxinner}>
+                <div>
+                  <div className={`imgWrapper ${styles.proIcon}`}>
+                    <Image
+                      src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/pro-1.png"
+                      width={80}
+                      height={100}
+                    />
+                  </div>
+                </div>
+                <div>
+                  <p>Project Innovation Lab</p>
+                </div>
+              </div>
+              <div className={styles.ParaBox}>
+                <p className={styles.para}>
+                  Enhance your learning experience with hybrid model. Attend
+                  offline sessions in our project innovation labs across in
+                  several cities :{" "}
+                  <span>Bengaluru, Pune, Hyderabad, Delhi.</span>
+                </p>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide className={styles.slide}>
+            <div className={styles.InnerDiv}>
+              <div className={styles.boxinner}>
+                <div>
+                  <div className={`imgWrapper ${styles.proIcon}`}>
+                    <Image
+                      src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/pro-1.png"
+                      width={80}
+                      height={100}
+                    />
+                  </div>
+                </div>
+                <div>
+                  <p>Project Innovation Lab</p>
+                </div>
+              </div>
+              <div className={styles.ParaBox}>
+                <p className={styles.para}>
+                  Enhance your learning experience with hybrid model. Attend
+                  offline sessions in our project innovation labs across in
+                  several cities :{" "}
+                  <span>Bengaluru, Pune, Hyderabad, Delhi.</span>
+                </p>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide className={styles.slide}>
+            <div className={styles.InnerDiv}>
+              <div className={styles.boxinner}>
+                <div>
+                  <div className={`imgWrapper ${styles.proIcon}`}>
+                    <Image
+                      src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/pro-1.png"
+                      width={80}
+                      height={100}
+                    />
+                  </div>
+                </div>
+                <div>
+                  <p>Project Innovation Lab</p>
+                </div>
               </div>
               <div className={styles.ParaBox}>
                 <p className={styles.para}>
