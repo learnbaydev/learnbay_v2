@@ -106,10 +106,10 @@ const FeeSection = ({
             <div className={styles.firstfin}>
               <p>Financing as low as</p>
               <h2>
-                {FeeEmi} <span>month</span>
+                {FeeEmi} <span className={styles.montspan}>month</span>
               </h2>
                  <Button  onClick={() => popupShow(false, true)} className={styles.Btn} text="Request a Callback" />
-               <div className={styles.feeh}>
+               <div className={styles.feeh1}>
                 <div>
                   <p>Payment Partners</p>
                 </div>
@@ -127,7 +127,7 @@ const FeeSection = ({
             </div>
             <div className={styles.fingst}>
               <h3>
-              {Fee} <span>+ 18% GST</span>
+              {Fee} <span className={styles.gstspan}>+ 18% GST</span>
               </h3>
             </div>
           </div>
