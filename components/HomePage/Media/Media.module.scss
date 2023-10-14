@@ -886,7 +886,7 @@
         background-position: center center;
         background-size: cover;
         background-repeat: no-repeat;
-        border-radius: 30px;
+        border-radius: 4px;
         background-color: white;
         position: relative;
 
@@ -942,9 +942,10 @@
           }
           p {
             font-size: 14px;
-            color: rgb(115, 115, 115);
-            margin-top: 10px;
-            text-align: center;
+            color: rgb(99 96 96);
+            margin-top: 80px;
+            text-align: left;
+            font-weight: 600;
           }
         }
       }
