@@ -19,6 +19,7 @@
   color: #0072BC;
 }
 .outLineBtn,
+.ButtonWhiteBg,
 .outLineBtn1 {
   padding: 12px 20px;
   border: 1px solid #0072BC;
@@ -33,9 +34,15 @@
   font-size: 16px;
   font-weight: 800;
 }
-.outLineBtn:hover {
+.outLineBtn:hover, .ButtonWhiteBg:hover {
   background-color: #0072BC;
   color: white;
+}
+
+.ButtonWhiteBg {
+  color: #0072BC;
+  background-color: #fff;
+  font-weight: 400;
 }
 .nobannerButton, .whiteBgButton
   {
