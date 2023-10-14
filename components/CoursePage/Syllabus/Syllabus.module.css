@@ -331,7 +331,7 @@ line-height: 126.5%;
   }
 
   .ASlide {
-    padding: 10px 0px !important;
+    padding: 10px 0px 10px 30px !important;
   }
 
   .slide {
@@ -376,7 +376,7 @@ line-height: 126.5%;
   }
 
   .ptop {
-    font-size: 18px;
+    font-size: 16px;
     margin: 0;
     color: #767676;
     line-height: 26px;
@@ -394,12 +394,21 @@ line-height: 126.5%;
     gap: 0px;
   }
 
+  .containerDiv {
+    margin-top: 50px;
+  }
+
   .buttonDiv {
-    display: block;
+    display: grid;
+    gap: 20px;
+  }
+
+  .buttonDiv button {
+    margin: auto;
   }
 
   .syllabusLeft {
-    margin: 0px 0px 30px 0px;
+    margin: 0px 0px 0px 0px;
     position: inherit;
   }
 
@@ -432,5 +441,9 @@ line-height: 126.5%;
 
   .syllabusRight {
     margin: 0px;
+  }
+  .wrapSpan {
+    font-size: 13px;
+    
   }
 }

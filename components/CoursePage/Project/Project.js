@@ -8,9 +8,11 @@ import Image from "next/image";
 import { BsCheck2 } from "react-icons/bs";
 import { FaDownload, FaTools, FaLaptopCode } from "react-icons/fa";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination } from "swiper";
+import { Navigation, Pagination, Scrollbar } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
+import "swiper/css/scrollbar";
+
 import Button from "../../Global/Button/Button";
 
 const Project = ({
@@ -126,7 +128,8 @@ const Project = ({
           // pagination={{
           //   clickable: true,
           // }}
-          navigation={true}
+          // navigation={true}
+          scrollbar={{ draggable: true }}
           grabCursor={true}
           breakpoints={{
             300: {
@@ -150,7 +153,7 @@ const Project = ({
               spaceBetween: 25,
             },
           }}
-          modules={[Pagination, Navigation]}
+          modules={[Pagination, Navigation, Scrollbar]}
           className="mySwiper"
         >
           {projectArray.map((data, index) => {

@@ -75,6 +75,9 @@ import OfferPopup from "../../../components/OfferPopup/OfferPopup";
 import BottomBar from "../../../components/WebPage/BottomBar/BottomBar";
 import ContactUs from "../../../components/HomePage/ContactUs/ContactUs";
 // import SecondNavbar from "../../../components/CoursePage/SecondNavbar/SecondNavbar";
+const WhyLearnbay = dynamic(() =>
+  import("../../../components/MastersCourse/WhyLearnbay/WhyLearnbay")
+);
 
 function Blockchain() {
   // POPUP GET METHOD
@@ -184,9 +187,10 @@ function Blockchain() {
           para="Discover the impact of our programs on career growth"
         />
         <WhoProgram
-          leftImage="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/whoIsProgram.webp"
+          leftImage="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/masterPage/who-program.webp"
           ThirdSectionData={DataScienceCourseData[0].thirdSection}
         />
+         <WhyLearnbay />
         {/* <Switch /> */}
         <FourthSection
           placementData={DataScienceCourseData[0].fourthSection}

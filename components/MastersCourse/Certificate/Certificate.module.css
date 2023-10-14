@@ -271,7 +271,7 @@
 .pWrap {
   display: flex;
   gap: 20px;
-  padding: 8px 100px;
+  padding: 8px 100px 0 100px;
   position: relative;
   border-radius: 4px;
 }
@@ -309,7 +309,7 @@
   justify-content: flex-start;
   align-items: flex-start;
   flex-flow: column;
-  margin-top: 30px;
+
 }
 .certificate h2 {
   text-align: center;
@@ -340,7 +340,7 @@
   margin-bottom: 15px;
   border-bottom: 2px solid #ECBB53;
   color: #fff;
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 600;
   line-height: 24px;
 }
