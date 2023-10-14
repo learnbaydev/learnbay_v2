@@ -16,6 +16,7 @@ import { KeyFeaturesSwiper } from "./KeyFeatureSwiperData";
 import VideoTestimonial from "../../VideoTestimonial/VideoTestimonial";
 import { switchData } from "./switchData";
 import { AiFillStar } from "react-icons/ai";
+import WhyLearnbay from "../../MastersCourse/WhyLearnbay/WhyLearnbay";
 
 const KeyFeatures = ({
   dataScience,
@@ -65,98 +66,7 @@ const KeyFeatures = ({
           </div>
         </Popup>
         <VideoPopup triggers={video} setTriggers={setVideo} ids={idss} />
-        <div>
-          <h6 className={styles.topHead}>Why Learnbay?</h6>
-          <div className={styles.FeatureWrap}>
-            <div className={styles.LeftWrap}>
-              <div className="imgWrapper">
-                <Image
-                  onClick={videoSHow}
-                  src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/whylearnbay-left-image.png"
-                  width={686}
-                  height={393}
-                  alt="whylearnbay"
-                  className={styles.LeftWrapImg}
-                />
-              </div>
-              <div className={styles.switch}>
-                {switchData.map((data) => {
-                  const { img, height, url, width, text, alt, id } = data;
-                  return (
-                    <a href={url} target="_blank" key={id}>
-                      <div className={styles.switchInner}>
-                        <div className="imgWrapper">
-                          <Image
-                            src={img}
-                            width={width}
-                            height={height}
-                            alt={alt}
-                          />
-                        </div>
-                        <div className={styles.rating}>
-                          {text} <AiFillStar className={styles.star} />
-                        </div>
-                      </div>
-                    </a>
-                  );
-                })}
-              </div>
-            </div>
-            <div className={styles.rightSide}>
-              {/* <Swiper
-                direction={"vertical"}
-                slidesPerView={3}
-                // slidesPerColumn={1}
-                spaceBetween={30}
-                grabCursor={true}
-                loop={true}
-                loopfillgroupwithblank="true"
-                autoplay={{
-                  delay: 1500,
-                  disableOnInteraction: false,
-                }}
-                modules={[Autoplay]}
-                className="mySwiper"
-              >
-                {KeyFeaturesSwiper.map((data, index) => {
-                  return (
-                    <SwiperSlide className={styles.slide} key={index}>
-                      <div className={styles.slideWrap}>
-                        <div className={styles.number}>{data.icon}</div>
-                        <p>{data.para}</p>
-                      </div>
-                    </SwiperSlide>
-                  );
-                })}
-              </Swiper> */}
-              <div className={styles.firstBox}>
-                <div className={styles.box}>
-                  <FaUser className={styles.number} />
-                  <h5>50K+</h5>
-                  <p>Learners</p>
-                </div>
-                <div className={styles.box}>
-                  <FaRupeeSign className={styles.number} />
-                  <h5>5-25 LPA</h5>
-                  <p>Salary Range</p>
-                </div>
-              </div>
-              <div className={styles.secondBox}>
-                <div className={styles.box}>
-                  <FaClock className={styles.number} />
-                  <h5>100%</h5>
-                  <p>Placement Assistance</p>
-                </div>
-                <div className={styles.box}>
-                  <FaChartLine className={styles.number} />
-                  <h5>₹10 LPA</h5>
-                  <p>Avg Salary</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        {/* <VideoTestimonial /> */}
+        <WhyLearnbay />
       </section>
 
       <div className={styles.RightWrap}>

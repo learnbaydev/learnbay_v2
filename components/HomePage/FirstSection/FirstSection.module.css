@@ -11,16 +11,16 @@
 
 .box {
   display: flex;
-  gap: 45px;
+  gap: 35px;
   background: #fff;
-  padding: 30px 24px;
+  padding: 27px 0px;
   justify-content: center;
   box-shadow: 0px 0px 5.77562px 0px rgba(0, 0, 0, 0.15);
   border-radius: 6px;
 }
 
 .box p {
-  font-size: 18px;
+  font-size: 16px;
   color: #636363;
   margin: 0;
 }
@@ -164,6 +164,10 @@
   color: #0072bc;
 }
 
+.blinkMobile, .ibmLogoMobile {
+  display: none;
+}
+
 @media (max-width: 1281px) {
   .h1 {
     font-size: 30px;
@@ -178,6 +182,9 @@
   }
   .ImageBlock {
     width: 250px;
+  }
+  .blinkMobile, .ibmLogoMobile {
+    display: none;
   }
 }
 @media (max-width: 1024px) {
@@ -195,6 +202,9 @@
   }
   .ImageBlock {
     width: 200px;
+  }
+  .blinkMobile, .ibmLogoMobile {
+    display: none;
   }
 }
 
@@ -215,6 +225,9 @@
   }
   .ImageBlock {
     width: 180px;
+  }
+  .blinkMobile, .ibmLogoMobile {
+    display: none;
   }
 }
 
@@ -258,12 +271,21 @@
   .ImageBlock {
     margin: auto;
   }
+  .blinkMobile, .ibmLogoMobile {
+    display: none;
+  }
 }
 
 @media (max-width: 641px) {
   .First {
     padding: 30px 20px;
     display: block;
+    margin-top: 47px;
+    background-color: #fff;
+  }
+
+  .box {
+    display: none;
   }
 
   .FirstLeft {
@@ -299,11 +321,12 @@
   }
 
   .FirstLeft .h1 {
-    color: #0072bc;
-    margin: 10px 0px 20px 0px;
+    color: #000;
+    margin: 10px 0px 10px 0px;
     font-size: 24px;
     text-align: center;
     line-height: normal;
+    padding: 0px;
   }
 
   .logos {
@@ -343,14 +366,25 @@
     margin: 0;
   }
   .blink {
-    line-height: 30px;
-    text-align: center;
+    display: none;
+  }
+  .blinkMobile {
+    display: block;
+    color: #767676;
+    font-size: 15px;
+    margin-bottom: 30px;
   }
   .line {
     top: 82%;
     left: 80%;
   }
   .btnWrapper {
+    justify-content: center;
+  }
+  .ibmLogoMobile {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
     justify-content: center;
   }
 }

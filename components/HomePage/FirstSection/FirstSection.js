@@ -95,13 +95,29 @@ const FirstSection = ({
               <h1 className={styles.h1}>
                 India’s #1 Upskilling Platform for Working Professionals
               </h1>
+              <p className={styles.blinkMobile}>
+                Elevate your tech career with our Master's programs, where
+                practical skills meet excellence.
+              </p>
               <div className={styles.imgWrapperMobile}>
                 <Image
-                  src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Home-Page-Header.png"
+                  src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/newHeaderOne.webp"
                   width="580"
                   height="450"
                   alt="data science course"
                 />
+              </div>
+              <div className={styles.ibmLogoMobile}>
+              <p className={styles.ptop}>In Collaboration With</p>
+                <div className={styles.ImageBlock}>
+                  <Image
+                    src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/ibm%26microsoft.webp"
+                    width="283"
+                    height="51"
+                    loading="lazy"
+                    alt="data science course"
+                  />
+                </div>
               </div>
               <p className={styles.blink}>
                 Elevate your tech career with our Master's programs, where
@@ -111,7 +127,7 @@ const FirstSection = ({
                 <a href="#course">
                   <Button
                     className={styles.outLineBtn}
-                    outline
+                    ButtonWhiteBg
                     text="Courses"
                     passIcon={<FaChevronDown className="bIconS" />}
                   />
@@ -149,7 +165,7 @@ const FirstSection = ({
             </div>
           </div>
         </SwiperSlide>
-        <SwiperSlide className={styles.slide}>
+        {/* <SwiperSlide className={styles.slide}>
           <div className={styles.First}>
             <div className="bgWrap">
               <Image
@@ -164,9 +180,6 @@ const FirstSection = ({
               <div className={styles.animationTextWrap}>
                 <span ref={el} className={styles.animationText}></span>
               </div>
-              {/* <p className={styles.ptop}>
-            Take the first step in your blockchain development journey with our
-          </p> */}
               <h1>
                 Domain Specialized Certification Program{" "}
                 <span className={styles.h1Span}>For Working Professionals</span>
@@ -347,7 +360,7 @@ const FirstSection = ({
               </div>
             </div>
           </div>
-        </SwiperSlide>
+        </SwiperSlide> */}
       </Swiper>
     </>
   );
