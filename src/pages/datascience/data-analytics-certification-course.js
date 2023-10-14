@@ -49,7 +49,7 @@ const Project = dynamic(() =>
   import("../../../components/CoursePage/Project/Project")
 );
 const SyllabusNew = dynamic(() =>
-  import("../../../components/CoursePage/Syllabus/Syllabus")
+import("../../../components/MastersCourse/Syllabus/MasterSyllabus")
 );
 const DomainSection = dynamic(() =>
   import("../../../components/CoursePage//DomainSection/DomainSection")
@@ -195,14 +195,14 @@ function Blockchain() {
         <FifthSection />
         <SixthSectionCTA dataScienceCounselling={true} />
         <SyllabusNew
+          syllabusHead={DADataScienceCourseData[0].syllabusHead}
+          masterSyllabus={DADataScienceCourseData[0].masterSyllabus}
+          MasterSyllabusDefault={DADataScienceCourseData[0].MasterSyllabusDefault}
           dataScienceCounselling={true}
-          serviceBasic={true}
-          careerH1="Career Service"
-          careerSpan="Basic"
           dataScience={true}
-          titleCourse="Data Analytics Program"
-          brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Data+Analytics+Certification+Program+Learnbay.pdf"
-          syllabus={DADataScienceCourseData[0].syllabus}
+          titleCourse="Advanced Data Science and AI Program with domain specialization"
+          brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Advance+Data+Science+and+AI+Certification+Program+Learnbay.pdf"
+          // syllabus={DADataScienceCourseData[0].syllabus}
           syllabusDesc={DADataScienceCourseData[0].syllabusDesc}
           popupHead={DADataScienceCourseData[0].popupHead}
         />

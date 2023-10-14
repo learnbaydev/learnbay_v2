@@ -103,7 +103,7 @@ function SyllabusNew({
 
   return (
     <>
-      <div id="curriculum">
+      <div id="curriculum" className={styles.containerDiv}>
         <Popup
           trigger={popups}
           setTrigger={setPopups}
@@ -137,7 +137,7 @@ function SyllabusNew({
         <div className={styles.topBar}>
           <Swiper
             modules={[Navigation]}
-            slidesPerView={mobile ? 3 : 2.7}
+            slidesPerView={mobile ? 1.19 : 2.7}
             spaceBetween={mobile ? 0 : 0}
             navigation
             grabCursor={true}
@@ -159,7 +159,7 @@ function SyllabusNew({
                         className={styles.wrapSpan}
                         style={
                           active[i].value
-                            ? { color: "#0072bc", fontWeight: "700" }
+                            ? { color: "#0072bc" }
                             : { color: "#646464" }
                         }
                       >
@@ -263,14 +263,6 @@ function SyllabusNew({
                   <FaRegUser className={styles.iconUser} /> 7,568 people filled
                 </div>
               </div>
-              {/* <div className="imgWrapper">
-              <Image
-                src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Form-Girl.png"
-                width={535}
-                height={239}
-                alt="girl"
-              />
-            </div> */}
               <h4>
                 Interested in <span>Master’s Degree?</span>
               </h4>
@@ -285,14 +277,14 @@ function SyllabusNew({
           </div>
         </section>
         <div className={styles.buttonDiv}>
-          <div onClick={popupShow} style={{ margin: "30px 0" }}>
+          <div onClick={popupShow}>
             <Button
               bannerButton={true}
               text="START YOUR APPLICATION"
               // passIcon={<FaDownload style={{ marginLeft: "10px" }} />}
             />
           </div>
-          <div onClick={popupShow} style={{ margin: "30px 0" }}>
+          <div onClick={popupShow}>
             <Button
               nobannerButton={true}
               text="DOWNLOAD BROCHURE"

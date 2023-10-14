@@ -24,7 +24,7 @@ function CertificateTab({
               }}
               className={IActive ? styles.activeP : styles.inactiveP}
             >
-              IBM Certificate
+              Degree
             </p>
             {/* <hr className={styles.line} /> */}
             <p
@@ -35,19 +35,10 @@ function CertificateTab({
               }}
               className={MActive ? styles.activeP : styles.inactiveP}
             >
-              Microsoft Certification
+              IBM Project Certification
             </p>
             {/* <hr className={styles.line} /> */}
-            <p
-              onClick={() => {
-                setIActive(false);
-                setMActive(false);
-                setIBCActive(true);
-              }}
-              className={IBCActive ? styles.activeP : styles.inactiveP}
-            >
-              IBM (Capstone)
-            </p>
+            
           </div>
         ) : (
           ""

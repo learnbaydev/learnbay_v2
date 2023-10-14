@@ -1,12 +1,16 @@
-.sliderBox {
-  /* background: url("https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Domain-Electives-BG.png"); */
-  background-size: contain;
-  background-position: left;
-  background-repeat: no-repeat;
-  display: grid;
-  grid-template-columns: 30% 65%;
-  padding: 100px 0px 50px 0px;
-  gap: 100px;
+.Section1{
+  padding: 0px 200px;
+}
+.imgDiv{
+  display: flex;
+  align-items: center;
+}
+.butonDiv{
+  padding-top: 25px;
+}
+
+.bgPDiv{
+  width: 100%;
 }
 
 .bulb {
@@ -15,12 +19,12 @@
 }
 
 .Testimonial {
-  padding: 0px 100px 30px 0px;
+
   margin-top: 30px;
 }
 
 .slide {
-  height: 370px;
+  height: 340px;
   margin-left: 10px;
   margin-top: 20px;
 }
@@ -36,9 +40,7 @@
   border-radius: 5px;
 }
 
-.mainSliderYellow {
-  border-bottom: 5px solid #f99600;
-}
+
 
 .mainSliderRed {
   border-bottom: 5px solid #edb552;
@@ -85,7 +87,7 @@
   color: #00000020;
 }
 
-.bgP {
+/* .bgP {
   background: #0072bc;
   color: #fff;
   padding: 10px 70px 10px 150px;
@@ -98,22 +100,36 @@
   border-radius: 0px 10px 10px 0px;
   z-index: 11;
   position: relative;
+} */
+
+.bgP {
+  background: #01436E;
+  color: #fff;
+  padding: 10px;
+  width: fit-content;
+  font-size: 14px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  border-radius: 4px;
+  z-index: 11;
+  position: relative;
+  width: 100%;
+  align-items: center;
 }
 
-.img {
-  position: relative;
-  padding-left: 50px;
-  z-index: 11;
-}
 
 .h1Span {
-  color: #000;
-  font-size: 30
-  px;
+  color: #333333;
+  font-size: 28px;
   font-style: normal;
   font-weight: 700;
-  line-height: 126.5%; /* 44.275px */
+  line-height: 126.5%; 
+  text-align: center;
+  padding-top: 60px;
 }
+
 
 .h1 {
   color: #0072bc;
@@ -125,13 +141,7 @@
   text-align: left;
 }
 
-.para {
-  color: #767676;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 158.5%; /* 31.7px */
-}
+
 
 .btnOutline {
   margin-top: 30px;
@@ -164,7 +174,7 @@
     position: relative;
   }
   .h1 {
-    margin: 50px 20px 0px 20px;
+    margin: 0px 20px 0px 20px;
   }
   .Testimonial {
     padding: 0px 20px 0px 0px;
@@ -189,17 +199,72 @@
   }
 }
 
-/* .fillBtn{
-  padding: 12px 24px;
-  border-radius: 8px;
-  margin: auto;
-  color: #fff;
-  background-color: #0072bc;
-  font-size: 16px;
-  font-weight: 400;
-  margin-top: 20px;
-  border: 1px solid #0072bc;
-  justify-content: center;
-  cursor: pointer;
+@media (max-width: 481px){
 
-} */
+  
+ 
+  .imgDiv {
+    display: flex; 
+    /* padding: 40px 10px 0px 10px; */
+    gap: 10px;
+  }
+  .bgPDiv{
+    padding-top: 10px;
+    width: 100%;
+
+  }
+  .butonDiv {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .bgP {
+    background: #01436E;
+    color: #fff;
+    padding: 10px;
+    width: fit-content;
+    font-size: 14px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    border-radius: 4px;
+    z-index: 11;
+    position: relative;
+    width: 100%;
+  }
+  .mainSliderYellow {
+    border-bottom: none;
+  }
+
+  .mainSliderOrange,
+  .mainSlidergreen,
+  .mainSliderRed,
+  .mainSliderYellow {
+    height: 235px;
+  }
+
+  .para {
+    color: #444444;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 158.5%; /* 31.7px */
+  }
+  .slide {
+    height: 350px;
+  }
+  .bulb{
+    padding-bottom: 10px;
+  }
+
+  .Section1{
+    padding: 0px;
+  }
+
+  .butonDiv{
+    padding: 0px;
+  }
+ 
+  
+}

@@ -35,7 +35,7 @@ function WhyLearnbay() {
             },
             1280: {
               slidesPerView: 3,
-              spaceBetween: 25,
+              spaceBetween: 60,
             },
           }}
           pagination={{

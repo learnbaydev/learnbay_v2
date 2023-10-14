@@ -261,17 +261,17 @@
   text-align: center;
 }
 .header {
-  padding: 30px 0 0;
+  padding: 40px 0 0;
   display: flex;
   gap: 40px;
   width: 100%;
-  background-color: #262626;
+  background: linear-gradient(90deg, #262626 0%, #393939 99.02%);
   margin-top: 50px;
 }
 .pWrap {
   display: flex;
-  gap: 20px;
-  padding: 8px 100px;
+  gap: 60px;
+  padding: 8px 100px 0 100px;
   position: relative;
   border-radius: 4px;
 }
@@ -282,15 +282,15 @@
   height: 100%;
 }
 .header p {
-  font-size: 16px;
+  font-size: 22px;
   margin: 0;
-  padding: 8px 10px;
+  padding: 8px 0px;
   cursor: pointer;
   color: #fff;
 }
 .activeP {
   color: #F99600 !important;
-  border-bottom: 1px solid #F99600;
+  border-bottom: 2px solid #F99600;
   font-weight: 600 !important;
   font-size: 16px;
 }
@@ -302,14 +302,14 @@
   padding: 0px 0 70px 100px;
   align-items: center;
   justify-content: space-between;
-  background-color: #262626;
+  background: linear-gradient(90deg, #262626 0%, #393939 99.02%);
 }
 .rightSide {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
   flex-flow: column;
-  margin-top: 30px;
+
 }
 .certificate h2 {
   text-align: center;
@@ -324,7 +324,7 @@
 }
 .leftSide {
   display: flex;
-  background-color: #262626;
+ 
   padding: 0px 80 0 0;
 }
 .leftSideP {
@@ -336,11 +336,12 @@
 .leftSide h6,
 .rightSide h6 {
   margin: 0;
+  margin-top: 60px;
   padding-bottom: 15px;
-  margin-bottom: 15px;
-  border-bottom: 2px solid #ECBB53;
+  margin-bottom: 26px;
+  border-bottom: 2px solid #F99600;
   color: #fff;
-  font-size: 20px;
+  font-size: 28px;
   font-weight: 600;
   line-height: 24px;
 }
@@ -348,7 +349,7 @@
 .rightSide p {
   display: flex;
   align-items: center;
-  font-size: 15px;
+  font-size: 18px;
   margin: 10px 0;
   font-weight: 400;
   line-height: 24px;
@@ -395,6 +396,7 @@
   .certificate {
     padding: 0px 14px;
     margin-top: 30px;
+    
   }
   .leftSideP {
     padding: 0px;
@@ -403,7 +405,7 @@
 }
 @media (max-width: 641px) {
   .header {
-    padding: 30px 20px 0px 20px;
+    padding: 10px 20px 0px 20px;
     display: flex;
     gap: 40px;
     width: 100%;
@@ -455,13 +457,13 @@
     margin-bottom: 0 !important;
   }
   .header p {
-    font-size: 14px;
-    font-weight: 600;
+    font-size: 18px;
     width: max-content;
-    padding: 5px 8px;
+    padding: 5px 0px;
+    font-weight: 400;
   }
   .activeP {
-    font-size: 14px !important;
+    font-size: 16px;
   }
   .gridPanel {
     width: 100%;
@@ -493,5 +495,37 @@
   .rightSide p {
     display: grid;
     grid-template-columns: 10% 90%;
+  }
+}
+
+@media (max-width: 481px){
+  .checkCircle{
+    font-size: 15px;
+  }
+  .pWrap {
+    
+    display: grid;
+    width: 100%;
+    grid-template-columns: 20% 70%;
+    gap: 10px;
+    padding: 0px;
+    overflow:hidden;
+  }
+
+  .infop{
+    color: #fff;
+    padding-top: 40px;
+  }
+  .ptop{
+    color: #D6D6D6;
+    font-size: 16px;
+  }
+
+  .Certificate{
+    background: linear-gradient(90deg, #262626 0%, #393939 99.02%);
+  }
+  .Certificate img {
+    background: linear-gradient(90deg, #262626 0%, #393939 99.02%);
+
   }
 }

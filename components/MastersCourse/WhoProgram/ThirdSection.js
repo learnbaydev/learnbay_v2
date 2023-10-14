@@ -16,7 +16,7 @@ function ThirdSection({ leftImage, ThirdSectionData }) {
               const { icon, heading, para } = data;
               return (
                 <div className={styles.leftSide} key={index}>
-                  <div className={styles.boxIcon}>
+                  <div className={styles.boxIcon} >
                     <div>{icon}</div>
                   </div>
                   <h5 className={styles.heading}>{heading}</h5>

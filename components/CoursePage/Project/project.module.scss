@@ -289,6 +289,7 @@ line-height: 158%;
 }
 .btn button {
   margin: auto;
+  margin-top: 20px;
   margin-bottom: 50px;
 }
 
@@ -1208,8 +1209,13 @@ line-height: 158%;
 
 @media (max-width: 641px) {
   .ptop {
-    font-size: 18px;
     margin: 0px 20px;
+    color: #484848;
+text-align: center;
+font-size: 15px;
+font-style: normal;
+font-weight: 350;
+line-height: 158%; /* 23.7px */
   }
   .left {
     display: flex;
@@ -1433,6 +1439,7 @@ line-height: 158%;
       align-items: center;
       justify-content: center;
       gap: 10px;
+      
 
       .left {
         display: flex;
@@ -1528,7 +1535,7 @@ line-height: 158%;
         display: flex;
         flex-flow: column;
         align-items: center;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
         .sub {
           color: #2d9cd7;
           padding: 0;

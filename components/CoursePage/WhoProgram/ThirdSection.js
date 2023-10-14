@@ -8,7 +8,7 @@ function ThirdSection({ leftImage, ThirdSectionData }) {
       <h4>Who's Is This Program For?</h4>
       <div className={styles.programWrap}>
         <div className={styles.left}>
-          <Image src={leftImage} width={373} height={406} alt="who" />
+          <Image src={leftImage} width={500} height={500} alt="who" />
         </div>
         <div>
           <div className={styles.boxWrap}>
@@ -16,7 +16,7 @@ function ThirdSection({ leftImage, ThirdSectionData }) {
               const { icon, heading, para } = data;
               return (
                 <div className={styles.leftSide} key={index}>
-                  <div className={styles.boxIcon}>
+                  <div className={styles.boxIcon} >
                     <div>{icon}</div>
                   </div>
                   <h5 className={styles.heading}>{heading}</h5>

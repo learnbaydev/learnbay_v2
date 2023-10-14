@@ -1,5 +1,5 @@
 .container {
-  padding: 60px 200px;
+  padding: 60px 100px;
   background: linear-gradient(90deg, #262626 0%, #393939 99.02%);
 }
 
@@ -11,7 +11,7 @@
 }
 
 .proIcon {
-  padding: 25px 0px 0px 15px;
+  padding: 10px 0px 10px 15px;
   width: 66px;
   height: 74px;
 }
@@ -39,7 +39,7 @@
 .ParaBox {
   border-radius: 3px;
   background: #f3f3f3;
-  padding: 30px 32px;
+  padding: 44px 34px;
   margin-top: 10px;
 }
 
@@ -49,7 +49,7 @@
 
 .para {
   color: #444;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 600;
   line-height: 28px;
 }

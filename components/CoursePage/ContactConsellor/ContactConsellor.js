@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from '../../CoursePage/ContactConsellor/ContactConsellor.module.css'
+import styles from './ContactConsellor.module.css'
 import {MdOutlineWhatsapp} from 'react-icons/md'
 import {AiOutlineMail} from 'react-icons/ai'
 import Image from 'next/image'
