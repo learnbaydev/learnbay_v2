@@ -63,6 +63,17 @@ const HomeLine = ({ Emi }) => {
             />
           </div>
         </div>
+        <div className={styles.containerMobile}>
+          <div className="imgWrapper">
+            <Image
+              src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/MobileSecond.webp"
+              width="450"
+              height="152"
+              priority={true}
+              alt="data science course"
+            />
+          </div>
+        </div>
       </div>
     </div>
   );

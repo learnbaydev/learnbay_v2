@@ -58,6 +58,12 @@
   color: #0072bc;
 }
 
+.ButtonDiv {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
 @media (max-width: 481px) {
   .container {
     background: linear-gradient(90deg, #262626 0%, #393939 99.02%);

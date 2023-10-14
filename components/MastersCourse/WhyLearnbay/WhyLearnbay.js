@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./WhyLearnbay.module.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -8,10 +8,45 @@ import { Pagination, Navigation } from "swiper";
 import "swiper/css/scrollbar";
 import { Scrollbar } from "swiper";
 import Image from "next/image";
+import Popup from "../../Popup/Popup";
+import Form from "../../Form/Form";
+import { FaChair, FaChartLine, FaClock, FaDownload, FaPlay, FaRupeeSign, FaUser } from "react-icons/fa";
+import Button from "../../Global/Button/Button";
 
-function WhyLearnbay() {
+function WhyLearnbay(  dataScience,
+  radio,
+  idss,
+  titleCourse,
+  brochureLink,
+  dataScienceCounselling,) {
+  const [popups, setPopups] = useState(false);
+  const popupShow = () => {
+    setPopups(true);
+  };
   return (
     <section className={styles.container}>
+      <Popup
+          trigger={popups}
+          setTrigger={setPopups}
+          className="popupModal"
+          downloadBrochure
+        >
+          <div className="leftPopup">
+            <div
+              className="whiteP"
+              style={{ width: "340px", height: "400px" }}
+            ></div>
+          </div>
+          <div className="RightPopup">
+            <h5>Download Brochure</h5>
+            <Form
+              dataScience={dataScience}
+              dataScienceCounselling={dataScienceCounselling}
+              downloadBrochure
+              upSkillingHide={true}
+            />
+          </div>
+        </Popup>
       <p className={styles.heading}>Why Learnbay?</p>
       <div className={styles.SliderContainer}>
         <Swiper
@@ -204,6 +239,9 @@ function WhyLearnbay() {
             </div>
           </SwiperSlide>
         </Swiper>
+        <div className={styles.ButtonDiv}>
+        <Button bannerButton={true}  text="Watch Video to Learn More" passIcon={<FaPlay className="bIcons"/>} />
+        </div>
       </div>
     </section>
   );
