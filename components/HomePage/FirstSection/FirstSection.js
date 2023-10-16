@@ -111,7 +111,7 @@ const FirstSection = ({
               <p className={styles.ptop}>In Collaboration With</p>
                 <div className={styles.ImageBlock}>
                   <Image
-                    src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/ibm%26microsoft.webp"
+                    src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/FirstSection.png"
                     width="283"
                     height="51"
                     loading="lazy"
