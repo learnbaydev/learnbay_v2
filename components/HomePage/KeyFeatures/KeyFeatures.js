@@ -72,7 +72,7 @@ const KeyFeatures = ({
       <div className={styles.RightWrap}>
         <h2>The Network Reach of Our Bay</h2>
         <div className={styles.imgWrap}>
-          <div className={`${styles.imgShowD} imgWrapper`}>
+          <div className={`${styles.imgShow} imgWrapper`}>
             <Image
               src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Network-reach-company-logos.png"
               width={1148}

@@ -343,7 +343,7 @@
 @media (max-width: 481px) {
   .Course {
     padding: 0 20px;
-    margin-top: 30px;
+    margin-top: 50px;
     width: 100%;
   }
 
@@ -356,25 +356,26 @@
   .span {
     border: 0;
     width: 100%;
-    padding: 10px 0px;
     width: max-content;
     font-size: 17px;
     font-weight: 600;
     cursor: pointer;
     justify-content: start;
+    padding: 14px 0px 0px 0px;
+
   }
   .leftSide {
     height: 340px !important;
   }
   .ActiveSpan {
-    padding: 10px 8px;
+    padding: 14px 0px 0px 0px;
     width: max-content;
     font-size: 17px;
     font-weight: 600;
     cursor: pointer;
+    line-height: normal;
     border: 0;
-    background: aliceblue;
-    border-bottom: 4px solid #0072bc;
+    border-bottom: 2px solid #0072bc;
     color: #0072bc;
     justify-content: start;
   }
@@ -386,6 +387,7 @@
   .courses {
     padding: 0px;
     box-shadow: none;
+    margin-top: 0px;
   }
   .gridPanel {
     gap: 0px;
@@ -394,18 +396,23 @@
     display: grid;
     width: 100%;
     gap: 0;
-    grid-template-columns: 45% 55% 70% 55% 50%;
+    grid-template-columns: 42% 53% 60% 30%;
     height: max-content;
     overflow-x: scroll;
     overflow-y: hidden;
+    margin-bottom: 0px;
+  }
+
+  .divBox {
+    margin-top: 30px;
   }
 
   .gridPanel {
     grid-template-columns: 85% 85%;
     /* overflow: scroll; */
     padding: 0;
-    max-height: 650px;
     margin-top: 0px;
+    height: 420px;
   }
 
   .leftSide {
@@ -415,7 +422,7 @@
   }
 
   .hr {
-    top: 27%;
+    top: 46%;
     margin-left: -15px;
     width: 100%;
   }
@@ -446,7 +453,7 @@
     margin-left: 10px;
     justify-content: center;
     position: relative;
-    height: 425px;
+    height: 370px;
     width: 100%;
     background-color: white;
   }
@@ -478,6 +485,10 @@
     display: flex;
     align-items: center;
     width: 100%;
+  }
+  .btnWrapper .outLineBtn1 {
+    background-color: #fff;
+    color: #0072BC;
   }
   .btnLine {
     border: 0px;

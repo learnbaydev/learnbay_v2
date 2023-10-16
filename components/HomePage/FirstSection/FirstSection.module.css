@@ -304,6 +304,7 @@
     font-size: 16px;
     margin: 0;
     text-align: center;
+    margin-top: 0px;
   }
 
   .FirstLeft .ptopC {
@@ -364,6 +365,9 @@
     height: fit-content;
     padding: 12px 15px;
     margin: 0;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
   }
   .blink {
     display: none;
@@ -380,12 +384,21 @@
   }
   .btnWrapper {
     justify-content: center;
+    margin: 30px auto 0px auto;
+    flex-direction: column;
+align-items: center;
+width: 80%;
+  }
+  .btnWrapper a, .btnWrapper div {
+    width: 100%;
+    text-align: center;
   }
   .ibmLogoMobile {
     display: flex;
     flex-direction: column;
     margin-top: 30px;
     justify-content: center;
+    align-items: center;
   }
 }
 
@@ -398,10 +411,6 @@
   }
 
   .FirstLeft p {
-    text-align: left;
-  }
-
-  .FirstLeft .ptop {
     text-align: left;
   }
 
@@ -430,11 +439,10 @@
     text-align: left;
   }
 
-  .btnWrapper {
-    justify-content: left;
-  }
   .ImageBlock {
     margin: 0px;
+    width: fit-content;
+    margin-top: 10px;
   }
   .animationTextWrap {
     text-align: left;
