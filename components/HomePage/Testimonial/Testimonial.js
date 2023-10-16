@@ -68,7 +68,7 @@ function Testimonial({ redirectDS, para, heading, Testimonial }) {
               <Swiper
                 loop={true}
                 breakpoints={{
-                  1281: { slidesPerView: 4.3, spaceBetween: 50 },
+                  1281: { slidesPerView: 4.1, spaceBetween: 50 },
                   1024: { slidesPerView: 3, spaceBetween: 55 },
                   961: { slidesPerView: 3, spaceBetween: 20 },
                   801: { slidesPerView: 2.5, spaceBetween: 20 },
@@ -105,8 +105,9 @@ function Testimonial({ redirectDS, para, heading, Testimonial }) {
                     <SwiperSlide className={styles.slide} key={id}>
                       <div className={styles.nameHike}>
                               <p>
+                                 {statLogo}
                                 <AiOutlineRise />
-                                {statLogo}
+                               
                               </p>
                             </div>
                       <div className={styles.proImgWrap}>

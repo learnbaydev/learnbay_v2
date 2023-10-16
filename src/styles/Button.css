@@ -69,7 +69,7 @@
 }
 
   .bannerButton {
-    padding: 14px 60px;
+    padding: 14px 20px;
     outline: none;
     background-color: #0072BC;
     color: white;
@@ -80,7 +80,7 @@
     outline: none;
     align-items: center;
     border-radius: 4px;
-    font-size: 14px;
+    font-size: 18px;
     border: 1px solid #0072BC;
   }
   .bannerButton:hover {
