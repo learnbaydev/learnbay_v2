@@ -48,7 +48,7 @@ const Project = dynamic(() =>
   import("../../../components/CoursePage/Project/Project")
 );
 const SyllabusNew = dynamic(() =>
-  import("../../../components/CoursePage/Syllabus/Syllabus")
+  import("../../../components/MastersCourse/Syllabus/MasterSyllabus")
 );
 const DomainSection = dynamic(() =>
   import("../../../components/CoursePage//DomainSection/DomainSection")
@@ -177,6 +177,9 @@ function Blockchain() {
         <FifthSection />
         <SixthSectionCTA dataScienceCounselling={true} />
         <SyllabusNew
+           syllabusHead={DsBFSIScienceCourseData[0].syllabusHead}
+           masterSyllabus={DsBFSIScienceCourseData[0].masterSyllabus}
+           MasterSyllabusDefault={DsBFSIScienceCourseData[0].MasterSyllabusDefault}
           dataScienceCounselling={true}
           dataScience={true}
           titleCourse="Banking & Finance Analytics Program "
@@ -197,7 +200,7 @@ function Blockchain() {
           mobImage="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Mobile-Tools-Covered.png"
         />
         <Certificate
-          twoCertificate={true}
+          twoCertificate={false}
           data={DsBFSIScienceCourseData[0].Certificate}
         />
         <FeeSection
