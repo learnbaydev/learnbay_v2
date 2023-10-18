@@ -47,7 +47,7 @@ const Project = dynamic(() =>
   import("../../../components/CoursePage/Project/Project")
 );
 const SyllabusNew = dynamic(() =>
-  import("../../../components/CoursePage/Syllabus/Syllabus")
+  import("../../../components/MastersCourse/Syllabus/MasterSyllabus")
 );
 const DomainSection = dynamic(() =>
   import("../../../components/CoursePage//DomainSection/DomainSection")
@@ -119,6 +119,9 @@ function Blockchain() {
         <FifthSection />
         <SixthSectionCTA />
         <SyllabusNew
+           syllabusHead={FSSPDataScienceCourseData[0].syllabusHead}
+           masterSyllabus={FSSPDataScienceCourseData[0].masterSyllabus}
+           MasterSyllabusDefault={FSSPDataScienceCourseData[0].MasterSyllabusDefault}
           software={true}
           dataScienceCounselling={true}
           dataScience={true}
@@ -141,10 +144,10 @@ function Blockchain() {
           deskImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Tools-Logo-SDE.png"
           mobImage="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/TOOLS-SDE-mobile.png"
         />
-        <Certificate
+        {/* <Certificate
           twoCertificate={true}
           data={FSSPDataScienceCourseData[0].Certificate}
-        />
+        /> */}
         <FeeSection
           Fee="₹ 1,10,000+ 18% GST"
           FeeEmi="₹ 10,817/month"

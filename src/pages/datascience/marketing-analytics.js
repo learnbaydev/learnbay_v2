@@ -48,7 +48,7 @@ const Project = dynamic(() =>
   import("../../../components/CoursePage/Project/Project")
 );
 const SyllabusNew = dynamic(() =>
-  import("../../../components/CoursePage/Syllabus/Syllabus")
+  import("../../../components/MastersCourse/Syllabus/MasterSyllabus")
 );
 const DomainSection = dynamic(() =>
   import("../../../components/CoursePage//DomainSection/DomainSection")
@@ -173,6 +173,9 @@ function Blockchain() {
         <FifthSection />
         <SixthSectionCTA dataScienceCounselling={true} />
         <SyllabusNew
+           syllabusHead={MACourseData[0].syllabusHead}
+           masterSyllabus={MACourseData[0].masterSyllabus}
+           MasterSyllabusDefault={MACourseData[0].MasterSyllabusDefault}
           dataScienceCounselling={true}
           dataScience={true}
           titleCourse="Marketing Analytics Program "
@@ -192,7 +195,7 @@ function Blockchain() {
           deskImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/BA+Family+Tools+Covered.png"
           mobImage="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/BA-Family-Tools-Covered-mobile.png"
         />
-        <Certificate twoCertificate={true} data={MACourseData[0].Certificate} />
+        <Certificate twoCertificate={false} data={MACourseData[0].Certificate} />
         <FeeSection
           Fee="₹ 89,000 + 18% GST"
           FeeEmi="₹ 8,752/month"

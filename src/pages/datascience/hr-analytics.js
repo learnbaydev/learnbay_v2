@@ -48,7 +48,7 @@ const Project = dynamic(() =>
   import("../../../components/CoursePage/Project/Project")
 );
 const SyllabusNew = dynamic(() =>
-  import("../../../components/CoursePage/Syllabus/Syllabus")
+  import("../../../components/MastersCourse/Syllabus/MasterSyllabus")
 );
 const DomainSection = dynamic(() =>
   import("../../../components/CoursePage//DomainSection/DomainSection")
@@ -173,6 +173,9 @@ function Blockchain() {
         <FifthSection />
         <SixthSectionCTA dataScienceCounselling={true} />
         <SyllabusNew
+           syllabusHead={HRCourseData[0].syllabusHead}
+           masterSyllabus={HRCourseData[0].masterSyllabus}
+           MasterSyllabusDefault={HRCourseData[0].MasterSyllabusDefault}
           dataScienceCounselling={true}
           dataScience={true}
           titleCourse="HR Analytics Program "
@@ -192,7 +195,7 @@ function Blockchain() {
           deskImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/BA+Family+Tools+Covered.png"
           mobImage="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/BA-Family-Tools-Covered-mobile.png"
         />
-        <Certificate twoCertificate={true} data={HRCourseData[0].Certificate} />
+        <Certificate twoCertificate={false} data={HRCourseData[0].Certificate} />
         <FeeSection
           Fee="₹ 89,000 + 18% GST"
           FeeEmi="₹ 8,752/month"

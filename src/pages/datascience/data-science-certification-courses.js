@@ -48,7 +48,7 @@ const Project = dynamic(() =>
   import("../../../components/CoursePage/Project/Project")
 );
 const SyllabusNew = dynamic(() =>
-  import("../../../components/CoursePage/Syllabus/Syllabus")
+  import("../../../components/MastersCourse/Syllabus/MasterSyllabus")
 );
 const FAQNew = dynamic(() =>
   import("../../../components/CoursePage/FAQNew/FAQNew")
@@ -169,6 +169,9 @@ function Blockchain() {
         <FifthSection />
         <SixthSectionCTA dataScienceCounselling={true} />
         <SyllabusNew
+           syllabusHead={FoundationDataScienceCourseData[0].syllabusHead}
+           masterSyllabus={FoundationDataScienceCourseData[0].masterSyllabus}
+           MasterSyllabusDefault={FoundationDataScienceCourseData[0].MasterSyllabusDefault}
           dataScienceCounselling={true}
           dataScience={true}
           titleCourse="Advanced Data Science and AI Program with domain specialization"
