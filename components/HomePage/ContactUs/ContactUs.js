@@ -16,24 +16,21 @@ function ContactUs({ dataScience, dataScienceCounselling, radio }) {
         <div className={styles.conpara}>
           <p>
           <span className={styles.paraspan}>“</span><br/>
-            I had a great learning experience at Learnbay. The faculties here
-            are top notch. Right from enrollment to getting a good job, they
-            keep putting enormous efforts for each and every candidate. Thanks
-            to all the trainers, backend team.
+          I had a great learning experience at Learnbay. The faculties here are top notch. Right from enrollment to getting a good job, they keep putting enormous efforts for each and every candidate. Thanks to all the trainers, backend team, the HR team and to the directors for making this journey smooth.
           </p>
           </div>
 
 <div className={styles.leftpaerson}>
   <Image
-  src={false}
+  src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/preksha-home.png"
   width={60}
   height={60}
   />
   
 
 
-  <p>Shravanthi A.<br/>
-  <span>Data Scientist @TCS</span>
+  <p>Preksha Mishra<br/>
+  <span>Working at HCL</span>
   </p>
 </div>
 

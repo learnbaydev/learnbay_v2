@@ -1,6 +1,7 @@
 .ContactUs {
-  background: url("https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Form-Faded-BG.png");
   background-position: center;
+  background: linear-gradient(94deg, #0D0D0D -0.37%, #00294A 100%);
+box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
   background-repeat: no-repeat;
   padding: 50px 100px;
   display: grid;
@@ -24,7 +25,7 @@
 
 .h1 {
   margin: 0px 2px 50px 10px;
-  color: #000;
+  color: #F99600;
   /* font-family: Inter; */
   font-size: 24px;
   font-style: normal;
@@ -88,7 +89,7 @@
 }
 
 .paraspan {
-  color: #454545;
+  color: #fff;
   font-family: Montserrat;
   font-size: 44px;
   font-style: normal;
@@ -99,7 +100,7 @@
 
 
 .conpara p {
-  color: #454545;
+  color: #fff;
   /* font-family: Inter; */
   font-size: 20px;
   font-style: normal;
@@ -126,18 +127,16 @@ font-family: Inter;
 font-size: 15px;
 font-style: normal;
 font-weight: 500;
-line-height: 153%; /* 26.01px */
 }
 .leftpaerson  img {
   border-radius: 50%;
 }
 .leftpaerson  p{
 color: #000;
-font-family: Inter;
 font-size: 15.87px;
 font-style: normal;
 font-weight: 500;
-line-height: 153%; /* 30.401px */
+
 
 }
 
@@ -253,17 +252,15 @@ font-weight: 800;
   }
   .leftpaerson span {
   color: #0072BC;
-    font-family: Inter;
-    font-size: 9.946px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 500;
     line-height: 153%;
   }
 
   .leftpaerson p {
-    color: #000;
-font-family: Inter;
-font-size: 11.626px;
+    color: #fff;
+font-size: 16px;
 font-style: normal;
 font-weight: 500;
 line-height: 153%; /* 17.787px */
