@@ -1,7 +1,7 @@
 .Syllabus {
   display: grid;
   grid-template-columns: 57% 34%;
-  margin: 30px 110px 50px 140px;
+  margin: 30px 140px 50px 140px;
   gap: 110px;
 }
 
@@ -19,6 +19,9 @@
 .syllabusLeft {
   margin: 0px 0px;
   position: relative;
+  height: 496px;
+  overflow: scroll;
+  padding: 10px;
 }
 .syllabusLeft p {
   font-size: 18px;
@@ -228,20 +231,20 @@ padding: 10px 20px;
 }
 .slide {
   padding-bottom: 35px;
-  border-bottom: 2px solid rgba(0, 0, 0, 0.25);
+  /* border-bottom: 2px solid rgba(0, 0, 0, 0.25); */
   width: fit-content !important;
-  padding-right: 30px;
-  padding-left: 50px;
+  padding-right: 40px;
+  padding-left: 0px;
 }
 .ASlide {
   padding-bottom: 35px;
-  border-bottom: 2px solid #0072BC;
+  /* border-bottom: 2px solid #0072BC; */
   width: fit-content !important;
-  padding-right: 30px;
-  padding-left: 50px;
+  padding-right: 40px;
+  padding-left: 0px;
 }
 .topBar {
-  padding: 50px 100px 20px 100px;
+  padding: 50px 140px 0px 140px;
   text-align: left;
   display: flex;
   align-items: baseline;
@@ -253,6 +256,7 @@ padding: 10px 20px;
   font-style: normal;
   font-weight: 500;
   line-height: 126.5%; 
+  cursor: pointer;
 }
 .colorHeading {
   color: #edb552;
@@ -267,6 +271,38 @@ line-height: 126.5%;
   margin-bottom: 50px;
   gap: 30px;
 }
+
+.pNavg {
+  display: flex;
+  padding: 0px 0px 0px 100px;
+
+}
+
+.customArrow1 {
+  display: flex;
+  align-items: center;
+  color: #8d8d8d;
+  font-size: 24px;
+  height: fit-content;
+  cursor: pointer; 
+  position: relative;
+  top: 90px;
+  /* right: 30px; */
+}
+
+.customArrow2 {
+  display: flex;
+  align-items: center;
+  color: #8d8d8d;
+  font-size: 24px;
+  height: fit-content;
+  cursor: pointer;
+  position: relative;
+  left: 1200px;
+  top: 90px;
+}
+
+
 
 @media (max-width: 1281px) {
   .Syllabus {
@@ -335,7 +371,7 @@ line-height: 126.5%;
   }
 
   .slide {
-    padding: 10px 10px !important;
+    padding: 10px 0px 35px 10px !important;
   }
 
   .careerPro {
@@ -445,5 +481,13 @@ line-height: 126.5%;
   .wrapSpan {
     font-size: 13px;
     
+  }
+
+  .customArrow1{
+    display: none;
+  }
+  .customArrow2{
+    display: none;
+
   }
 }
