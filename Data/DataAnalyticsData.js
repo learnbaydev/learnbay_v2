@@ -521,10 +521,10 @@ import {
           content: [
             {
               chap: {
-                title: "Topic 1 :- Cohort Orientation ",
+                title: "Topic 1 :- Cohort Orientation",
                 desc: [
                   "A brief introduction to tools related to data ",
-                  "Learn about particular real-time projects and Capstone projects",
+                  "Learn about particular real-time projects and Capstone projects ",
                   "Data and its impact on career opportunities",
                   "Utilizing data, to enhance industrial operations and management",
                 ],
@@ -533,11 +533,12 @@ import {
 
             {
               chap: {
-                title: "Topic 2 :- Fundamentals of Programming",
+                title: "Topic 2 :- Fundamentals of programming ",
                 desc: [
-                  "Introduction to Anaconda & Jupyter notebook",
-                  "Flavors of python Introduction to Git, GitHub",
-                  "Python Fundamentals",
+                  "Introduction to Anaconda & Jupyter notebook ",
+
+                  "Flavors of python Introduction to Git, GitHub ",
+                  "Python Fundamentals ",
                 ],
               },
             },
@@ -545,8 +546,8 @@ import {
               chap: {
                 title: "Topic 3 :- Fundamentals of Statistics",
                 desc: [
-                  "Mean, Median, Mode",
-                  "Standard Deviation, Average. Probability, Permutations, and Combinations",
+                  "Mean, Median, Mode .",
+                  "Standard Deviation, Average. Probability, permutations, and combinations ",
                   "Introduction to Linear Algebra",
                 ],
               },
@@ -558,25 +559,22 @@ import {
       },
       {
         Module0: {
-          title: "Term 1 :- Python for Data Science",
+          title: "Term 1 :- Python Programming",
           content: [
             {
               chap: {
-                title: "Module 1 :- Python Programming",
+                title: "Module 1 :- Python Programming ",
                 desc: [
-                  "Programming Basics & Environment Setup",
-                  "Python Programming Overview",
-                  "Strings, Decisions & Loop Control",
-                  "Python Data Types",
-                  "Functions And Modules",
-                  "Class hands-on: 8+ Programs to be covered in the functions, Lambda, modules, Generators, and Packages class",
-                  "File I/O And Exceptional Handling and Regular Expression",
-                  "Class hands-on: 10+ Programs to be covered in class from File IO, Reg-ex and exception handling",
+                  " Programming Basics & Environment Setup.",
+                  " Python Programming Overview",
+                  "  Python Data Types",
+                  "  Functions And Modules ,Class hands-on: 8+ Programs to be covered in the functions, Lambda, modules, Generators, and Packages class",
+
+                  " File I/O And Exceptional Handling and Regular Expression,Class hands-on: 10+ Programs to be covered in class from File IO, Reg-ex and exception handling.",
                   "Data Analysis Using Numpy",
-                  "Data Analysis Using Pandas",
+                  " Data Analysis Using Pandas",
                   "Data Visualization using Matplotlib",
-                  "Data Visualization using Seaborn",
-                  "Case Study on Numpy, Pandas, Matplotlib 1 Case Study on Pandas And Seaborn",
+                  ". Data Visualization using Seaborn,3 Case Study on Numpy, Pandas, Matplotlib 1 Case Study on Pandas And Seaborn",
                 ],
               },
             },
@@ -585,6 +583,126 @@ import {
           open: false,
         },
       },
+      {
+        Module0: {
+          title: "Term 2 :- Statistics & Basic Machine Learning",
+          content: [
+            {
+              chap: {
+                title: "Module 1 :- Statistics",
+                desc: [
+                  "Fundamentals of Math and Probability",
+                  "All about Population & Sample",
+                  "Discrete Probability Distributions - Binomial, Poisson etc",
+                  "Introduction to Statistics, Statistical Thinking",
+                  " Descriptive Statistics",
+                  " Inferential Statistics",
+                  " Hypothesis Testing",
+                  "Linear Algebra",
+                  "Data Processing & Exploratory Data Analysis",
+                  "EDA,Statistics Assignments: Total 4 practice sets and Assignments from Statistics",
+                ],
+              },
+            },
+            {
+              chap: {
+                title: "Module 2 :- Machine Learning",
+                desc: [
+                  "Introduction to Machine Learning",
+                  "Regression and Classification Models",
+                  "Linear Regression Model",
+                  "Data Preprocessing",
+                  "Encoding the Data",
+                  "Logistic Regression Model",
+                  "Evaluation Metrics for Classification model",
+                  "K Nearest Neighbours Model",
+                  "Decision Tree Model",
+                  "Random Forest Model",
+                  "Hyperparameter Tuning",
+                  "Naive Baye’s Model,Case Study on Kart Model Business & Random Forest",
+                ],
+              },
+            },
+          ],
+          id: 2,
+          open: false,
+        },
+      },
+      {
+        Module0: {
+          title: "Term 3 :- Data Analytics Tools",
+          content: [
+            {
+              chap: {
+                title: "Module 1 :- SQL",
+                desc: [
+                  "SQL and RDBMS",
+                  "Advance SQL",
+                  "NoSQL, HBase & MongoDB",
+                  "JSON Data & CRUD",
+                  "Programming with SQL",
+                ],
+              },
+            },
+            {
+              chap: {
+                title: "Module 2 :- PowerBI",
+                desc: [
+                  "Getting Started With Power BI",
+                  " Programming with Power BI",
+                ],
+              },
+            },
+            {
+              chap: {
+                title: "Module 3 :- Big Data & Spark Analytics",
+                desc: [
+                  " Introduction To Hadoop & Big Data",
+                  "What is Spark",
+                  " Getting to know PySpark Hands-on: Map reduce Use Case : Youtube data analysis & Spark RDD       programming",
+                ],
+              },
+            },
+            {
+              chap: {
+                title: "Module 4 :- Time Series",
+                desc: [
+                  " Introduction to Time Series Forecasting",
+                  "Introduction to ARIMA Models,Case Study on Time series classification of smartphone data to predict user behavior, Performing Time Series Analysis on Stock Prices & Time series forecasting of sales data",
+                ],
+              },
+            },
+          ],
+          id: 3,
+          open: false,
+        },
+      },
+      {
+        Module0: {
+          title: "Term 4 :- Excel",
+          content: [
+            {
+              chap: {
+                title: "",
+                desc: [
+                  "Getting started with Excel",
+                  "Using Excel Toolbars: Hiding, Displaying, and Moving Toolbars",
+                  "Switching Between Sheets in a Workbook",
+                  "Entering Date Values and using AutoComplete",
+                  "Inserting and Deleting Cells, Rows, and Columns",
+                  "Working with the Forms Menu",
+                  "Creating & Working with Charts",
+                  "Changing a Chart Type and Working with Pie Charts",
+                  "Data Analysis & Pivot Tables",
+                ],
+              },
+            },
+          ],
+          id: 4,
+          open: false,
+        },
+      },
+
     ],
     masterSyllabus: {
       "Term 1 Foundation Track(30 ECTS Credits)": [

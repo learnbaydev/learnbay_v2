@@ -48,7 +48,7 @@ const Project = dynamic(() =>
   import("../../../components/CoursePage/Project/Project")
 );
 const SyllabusNew = dynamic(() =>
-  import("../../../components/CoursePage/Syllabus/Syllabus")
+  import("../../../components/MastersCourse/Syllabus/MasterSyllabus")
 );
 const DomainSection = dynamic(() =>
   import("../../../components/CoursePage//DomainSection/DomainSection")
@@ -181,6 +181,9 @@ function Blockchain() {
         <FifthSection />
         <SixthSectionCTA dataScienceCounselling={true} />
         <SyllabusNew
+           syllabusHead={AIMLDataScienceCourseData[0].syllabusHead}
+           masterSyllabus={AIMLDataScienceCourseData[0].masterSyllabus}
+           MasterSyllabusDefault={AIMLDataScienceCourseData[0].MasterSyllabusDefault}
           dataScienceCounselling={true}
           serviceBasic={true}
           dataScience={true}
@@ -208,7 +211,7 @@ function Blockchain() {
         <FeeSection
           AIMLCertificate={true}
           Fee="₹ 1,10,000 + 18% GST"
-          FeeEmi="₹ 10,817/month"
+          FeeEmi="₹ 10,817/"
           FeeHeading="Program Fee & Financing"
           FeeContent2="No cost EMI"
           FeeContent3="Flexible payment"

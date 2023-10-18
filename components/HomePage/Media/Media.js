@@ -28,13 +28,16 @@ const Media = ({ projectData }) => {
         </div>
       </div>
       <div className={styles.container}>
+
+   
         <Swiper
           slidesPerView={1}
           spaceBetween={30}
           grabCursor={true}
+          pagination={{ clickable: true }}
           breakpoints={{
             300: {
-              slidesPerView: 1.3,
+              slidesPerView: 1,
               spaceBetween: 35,
             },
             761: {

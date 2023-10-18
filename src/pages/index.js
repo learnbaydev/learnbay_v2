@@ -37,6 +37,7 @@ const NewsSection = dynamic(() =>
 );
 
 import { DADataScienceCourseData } from "../../Data/DataAnalyticsData";
+import WhyLearnbay from "../../components/HomePage/WhyLearnbay/WhyLearnbay";
 
 
 
@@ -71,20 +72,21 @@ export default function Home() {
       {/* <BoxShape /> */}
       <Course dataScience={true} radio={true} />
       {/* <Switch /> */}
-      <KeyFeatures
+      {/* <KeyFeatures
         titleCourse="Data Science Placement Report"
         brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Placement+Report.pdf"
         popup={true}
         idss="wSB-phYhG10"
         dataScience={true}
         radio={true}
-      />
+      /> */}
+      <WhyLearnbay />
+      <TrainerSection link="D-gcPaK_-x4" />
       <Testimonial
         redirectDS={true}
         heading="Our Alumni Spotlight"
         Testimonial={DataScienceCourseData[0].testimonial}
       />
-      <TrainerSection />
       <ContactUs dataScienceCounselling={true} radio={true} />
       <Media
           projectData={DataScienceCourseData[0].newsData}
