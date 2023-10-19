@@ -1,6 +1,6 @@
 .Container {
     display: grid;
-    grid-template-columns: 50% 36%;
+    grid-template-columns: 55% 31%;
     margin-bottom: 100px;
     padding: 0px 100px;
     justify-content: space-between;
@@ -11,7 +11,7 @@
 .heading {
     margin: 0;
     color: #414141;
-font-size: 34px;
+font-size: 36px;
 font-weight: 700;
 }
 
@@ -20,29 +20,54 @@ font-weight: 700;
 font-size: 20px;
 margin-right: 170px;
 font-weight: 400;
+margin-top: 20px;
+}
+
+.contBlue {
+    color: #0072BC;
 }
 
 .OrangeText {
     color: #F99600;
 font-size: 22px;
 font-weight: 700;
+margin-top: 30px;
 }
 
 .botPara {
     margin: 0;
 }
 
+.boxSecond {
+    margin: auto;
+}
+
+.imgBox {
+    padding: 30px;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    border-radius: 6.956px;
+border: 1.159px solid #FFF;
+background: rgba(41, 41, 41, 0.80);
+box-shadow: 0px 0px 4.63743px 0px rgba(0, 0, 0, 0.25);
+}
+
+.imgBox img {
+    border-radius: 6px;
+}
+
 .boxDiv {
     display: flex;
-    gap: 100px;
-    margin-top: 60px;
+    gap: 80px;
+    margin-top: 80px;
 }
 
 .imgShow {
     display: flex;
     justify-content: flex-end;
-    width: 300px; /* Adjust the size as needed */
-    height: 310px; /* Adjust the size as needed */
+    width: 340px; /* Adjust the size as needed */
+    height: 340px; /* Adjust the size as needed */
     overflow: hidden;
 }
 
@@ -68,7 +93,7 @@ font-weight: 700;
 }
 
 .imgBoy img {
-    margin-bottom: -315px;
+    margin-bottom: -345px;
     z-index: 1;
     margin-left: -25px;
 }
