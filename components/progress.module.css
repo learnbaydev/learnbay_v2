@@ -1,0 +1,34 @@
+/* components/progress.module.css */
+
+.progressBarContainer {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-right: 12px;
+    background-color: rgba(0, 0, 0, 0.25);
+
+  }
+  
+  .filler {
+    height: 2px;
+    background-color: #0072BC;
+    transition: width 0.2s ease-in;
+    position: relative;
+    width: 100%;
+  }
+
+  .iconContainer {
+    position: absolute;
+    top: 0;
+    right: -12px;
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .icon {
+    font-size: 24px;
+    color: #0072BC;
+    padding-bottom: 20px;
+  }
+  

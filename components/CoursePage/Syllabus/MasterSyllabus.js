@@ -9,11 +9,16 @@ import "swiper/css/free-mode";
 import "swiper/css/scrollbar";
 import Popup from "../../Popup/Popup";
 import Button from "../../Global/Button/Button";
-import { Navigation } from "swiper";
+import SwiperCore, { Navigation } from "swiper";
 import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/navigation";
 import { Swiper, SwiperSlide } from "swiper/react";
+import ProgressBar from "../../../components/ProgresBar";
+import { IoIosArrowBack } from "react-icons/io";
+import { IoIosArrowForward } from "react-icons/io";
+
+SwiperCore.use([Navigation]);
 
 function SyllabusNew({
   syllabus,
@@ -28,6 +33,8 @@ function SyllabusNew({
   syllabusHead,
   masterSyllabus,
   MasterSyllabusDefault,
+  progress,
+  setProgress,
 }) {
   const [popups, setPopups] = useState(false);
   const [active, setActive] = useState([]);
@@ -101,6 +108,18 @@ function SyllabusNew({
     );
   };
 
+  const handleClick = (data) => {
+    setProgress(data);
+  };
+
+  // useEffect(() => {
+  //   const currentIndex = syllabusHead.indexOf(progress);
+  //   const progressBar = (currentIndex / (syllabusHead.length - 1)) * 100;
+  //   setProgress(progressBar);
+  // }, [progress]);
+
+  // const [progress, setProgress] = useState(0);
+
   return (
     <>
       <div id="curriculum" className={styles.containerDiv}>
@@ -134,14 +153,27 @@ function SyllabusNew({
             leading tech companies.
           </p>
         </div>{" "}
+        <div className={styles.pNavg}>
+          <div className={`${styles.customArrow1} custom-prev`}>
+            <IoIosArrowBack />
+          </div>
+          <div className={`${styles.customArrow2} custom-next`}>
+            <IoIosArrowForward />
+          </div>
+        </div>
+       
         <div className={styles.topBar}>
+        
           <Swiper
             modules={[Navigation]}
             slidesPerView={mobile ? 1.19 : 2.7}
             spaceBetween={mobile ? 0 : 0}
-            navigation
             grabCursor={true}
             className="mySwiper"
+            navigation={{
+              nextEl: ".custom-next",
+              prevEl: ".custom-prev",
+            }}
           >
             {active.length > 0
               ? syllabusHead.map((data, i) => {
@@ -151,10 +183,34 @@ function SyllabusNew({
                       className={active[i].value ? styles.ASlide : styles.slide}
                     >
                       <span
-                        key={i}
                         onClick={() => {
                           changeActive(i);
                           changeSyllabus(data);
+                          if (i === 0) {
+                            setProgress(20); // Set progress to 25% when the first item is clicked
+                          }
+                          else if(i ==1 ){
+                            setProgress(50);
+
+                          } 
+                          else if(i ==2 ){
+                            setProgress(90);
+
+                          } 
+                          else if(i ==3 ){
+                            setProgress(50);
+
+                          } 
+                          else {
+                            setProgress(100);
+
+                          } 
+                          // else {
+                          //   // Calculate and set progress for other items based on the total number of items
+                          //   const progressBar =
+                          //     (i / (syllabusHead.length - 1)) * 90 + 40;
+                          //   setProgress(progressBar);
+                          // }
                         }}
                         className={styles.wrapSpan}
                         style={
@@ -176,8 +232,10 @@ function SyllabusNew({
                   );
                 })
               : ""}
+              <ProgressBar progress={progress} />
           </Swiper>
         </div>
+        
         <section className={styles.Syllabus}>
           <div className={styles.syllabusLeft}>
             {cSyllabus.map((data, i) => {

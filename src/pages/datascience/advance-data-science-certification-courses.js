@@ -79,7 +79,7 @@ const WhyLearnbay = dynamic(() =>
   import("../../../components/MastersCourse/WhyLearnbay/WhyLearnbay")
 );
 
-function Blockchain() {
+function Blockchain({ }) {
   // POPUP GET METHOD
   const [popupData, setPopupData] = useState([]);
   // console.log(popupData);
@@ -135,6 +135,8 @@ function Blockchain() {
     };
     fetchBatch();
   }, []);
+
+  const [progress, setProgress] = useState(20);
 
   return (
     <>
@@ -224,6 +226,8 @@ function Blockchain() {
           syllabus={DataScienceCourseData[0].syllabus}
           syllabusDesc={DataScienceCourseData[0].syllabusDesc}
           popupHead={DataScienceCourseData[0].popupHead}
+          progress={progress}
+          setProgress={setProgress}
         />
         {/* <GrowthStats
           img1="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Scope+of+DS+left+image.png"
