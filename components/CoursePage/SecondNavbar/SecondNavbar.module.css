@@ -10,12 +10,13 @@
   width: 100vw;
   justify-content: space-between;
   display:flex;
-  justify-content: flex-end;
+  justify-content: center;
+  
 }
 
 .innerP {
   display: flex;
-  gap: 100px;
+  gap: 70px;
   justify-content: center;
 }
 
@@ -34,6 +35,17 @@
   border-bottom: 2px solid #0072BC;
   color: #0072BC !important;
 }
+
+
+.buttonBlock{
+  display: block;
+}
+
+.buttonNoBlock{
+  display: none;
+}
+
+
 
 @media (max-width: 1024px){
   .upperDiv {
@@ -105,5 +117,17 @@
   color: #0072BC;
   border-bottom: 2px solid;
 }
+
+.buttonBlock{
+  display: none;
+}
+.buttonNoBlock{
+  display: none;
+
+}
+
+/* .btnHide{
+  display: none;
+} */
 
 }
