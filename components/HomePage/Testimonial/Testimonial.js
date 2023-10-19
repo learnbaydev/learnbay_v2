@@ -100,12 +100,6 @@ function Testimonial({ redirectDS, para, heading, Testimonial }) {
 
                   return (
                     <SwiperSlide className={styles.slide} key={id}>
-                      <div className={styles.nameHike}>
-                        <p>
-                          {statLogo}
-                          <AiOutlineRise />
-                        </p>
-                      </div>
                       <div className={styles.proImgWrap}>
                         <div className="imgWrapper">
                           <Image
@@ -123,6 +117,13 @@ function Testimonial({ redirectDS, para, heading, Testimonial }) {
                           <div className={styles.name}>
                             <h3>{name}</h3>
                             <p>{working}</p>
+                          </div>
+
+                          <div className={styles.nameHike}>
+                            <p>
+                              {statLogo}
+                              <AiOutlineRise />
+                            </p>
                           </div>
                         </div>
 

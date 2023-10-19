@@ -302,7 +302,12 @@ line-height: 126.5%;
   top: 90px;
 }
 
+@media (min-width: 1281px) {
+.customArrow2 {
 
+  left: 1264px;
+}
+}
 
 @media (max-width: 1281px) {
   .Syllabus {
@@ -446,6 +451,7 @@ line-height: 126.5%;
   .syllabusLeft {
     margin: 0px 0px 0px 0px;
     position: inherit;
+    height: fit-content;
   }
 
   .line {
