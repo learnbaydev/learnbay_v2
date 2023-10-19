@@ -48,7 +48,7 @@ const Project = dynamic(() =>
   import("../../../components/CoursePage/Project/Project")
 );
 const SyllabusNew = dynamic(() =>
-  import("../../../components/CoursePage/Syllabus/Syllabus")
+  import("../../../components/MastersCourse/Syllabus/MasterSyllabus")
 );
 const DomainSection = dynamic(() =>
   import("../../../components/CoursePage//DomainSection/DomainSection")
@@ -174,6 +174,9 @@ function Blockchain() {
         <FifthSection />
         <SixthSectionCTA dataScienceCounselling={true} />
         <SyllabusNew
+           syllabusHead={BADataScienceCourseData[0].syllabusHead}
+           masterSyllabus={BADataScienceCourseData[0].masterSyllabus}
+           MasterSyllabusDefault={BADataScienceCourseData[0].MasterSyllabusDefault}
           dataScienceCounselling={true}
           dataScience={true}
           titleCourse="Business Analytics Master Program"

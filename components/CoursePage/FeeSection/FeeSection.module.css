@@ -2,13 +2,21 @@
   display:  flex;
   justify-content: center;
   align-items: center;
+  font-size: 32px;
 }
 .feesmain p {
-  display:  flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   color: #484848;
   margin: 0;
+  line-height: 45px;
+  color: #484848;
+  text-align: center;
+  font-size: 17.65px;
+  font-style: normal;
+  font-weight: 300;
+
 }
 .feesbatch {
 display:  flex;
@@ -18,11 +26,12 @@ background: rgba(0, 0, 0, 0.03);
 width: 100%;
 height: 67.201px;
 flex-shrink: 0;
-gap: 92px;
+gap: 95px;
 left: 200px;
 margin :1px;
 border-bottom: 0.1px solid #D5D5D5;
 }
+
 .feesbatch li {
   display: flex;
   justify-content: space-between;
@@ -30,14 +39,14 @@ border-bottom: 0.1px solid #D5D5D5;
   padding: 7px;
   align-items: center;
   color: #484848;
-  font-size: 12px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 700;
   line-height: 158%;
 }
 .feesbatch span {
   color: #484848;
-font-size: 12px;
+font-size: 14px;
 font-style: normal;
 font-weight: 400;
 line-height: 158%;
@@ -69,32 +78,50 @@ padding: 0;
   border-radius: 5px;
 }
 .firstfin {
-  background-color: white;
-  height: 200px;
-  padding: 19px;
-  box-shadow: 0px 0px 1px 0px grey;
-  line-height: 44px;
-  border-radius: 0px 6px 0px 0px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 10px 0px 10px;
+  border-radius: 0px 0px 5.358px 0px;
+background: #FFF;
+box-shadow: 0px 0px 3.57213px 0px rgba(0, 0, 0, 0.15);
 }
 .firstfin h2 {
   color: #484848;
 }
+
+.fillimg {
+  position: absolute;
+  left: 295px;
+}
+  
+.firstfin p {
+  color: #484848;
+  text-align: center;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px;
+  }
 .fingst {
   background-color: #FFF9F1;
-  padding: 37px 25px;
-  box-shadow: 0px 0px 1px 0px grey;
-  border-radius: 0px 0px 6px 0px;
-  text-align: center;
+    padding: 37px 25px;
+    /* box-shadow: 0px 0px 1px 0px grey; */
+    border-radius: 0px 0px 3px 0px;
+    text-align: center;
+    border-top: 0.1px solid #e9e9e9;
 }
 .fingst  h3 {
   color: #484848;
-  font-size: 20px;
+  font-size: 26px;
 }
-.fin span {
+.montspan {
 color: #484848;
 font-size: 12px;
 font-style: normal;
-font-weight: 500;
+font-weight: 700;
 line-height: 158%;
 }
 .fin button {
@@ -141,12 +168,12 @@ ul.feesbatch, ul.fee2 {
   padding: 0;
 }
 ul.fee2 li {
-  margin-bottom: 15px; /* Add space below each list item */
+  margin-bottom: 10px; /* Add space below each list item */
 }
 .botttomDiv {
   display: grid;
   grid-template-columns: 30% 65%;
-  gap: 30px;
+  gap: 34px;
   align-items: center;
 }
 
@@ -154,14 +181,160 @@ ul.fee2 li {
   color: #F99600;
   text-align: left;
   display: block;
+  line-height: 20px;
+  font-weight: 500;
+
+}
+.feeh1  {
+  display:none;
 }
 
 .feeh{
   display: flex;
   flex-direction: column;
   gap: 20px;
+  padding-right: 30px;
 }
 
 .feesmain {
-  padding-top: 100px;
+  padding-top: 70px;
+}
+.gstspan {
+  color: #484848;
+font-size: 12px;
+font-style: normal;
+font-weight: 350;
+line-height: 158%; /* 31.6px */
+}
+
+@media (max-width: 641px) {
+  .feesmain p {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 350;
+  }
+  .fillimg {
+    display: none;
+  }
+  .feeshead p {
+    color: #484848;
+    text-align: center;
+    /* font-family: Open Sans; */
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 152%;
+    /* margin: 12px 10px 0px 7px; */
+    padding: 0px 31px;}
+    
+
+  .feesmain {
+    padding-top: 50px;
+  }
+  .feesmain h2 {
+    font-size: 22px;
+  }
+
+  .batch {
+    display: block;
+    margin: 30px 10px;
+  border-image: none;
+  border: none;
+  }
+
+  .feesbatch {
+    gap: 10px;
+    height: fit-content;
+    padding: 10px 0px !important;
+  }
+  .feesbatch span {
+    font-size: 12px;
+  }
+
+  .feesbatch li {
+    font-size: 12px;
+  }
+  .botttomDiv {
+    display: none;
+  }
+  .fin {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .fingst {
+    padding: 26px 0px;
+  }
+  .gstspan {
+    color: #484848;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 350;
+line-height: 158%; /* 31.6px */
+  }
+  .fingst h3 {
+    font-size: 22px;
+    font-weight: 650;
+  }
+  .firstfin span {
+    color: #484848;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 158%;
+  }
+
+  .firstfin {
+    margin: auto;
+    background-color: none;
+    border: 0;
+    box-shadow: none;
+    margin-top: 2px;
+    height: fit-content;
+    padding: 0px;
+    align-items: center;
+  }
+
+  .firstfin p {
+    font-size: 22px;
+    margin-top: 20px;
+    /* margin-bottom: 15px; */
+    font-weight: 300;
+
+  }
+
+  .firstfin h2 {
+    font-size: 22px;
+    margin-bottom: 14px;
+  }
+
+  .firstfin span {
+    font-size: 24px;
+    font-weight: 600;
+  }
+  .firstfin button {
+    font-size: 15px;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: 23px 32px;
+    font-weight: 600;
+    margin: auto;
+  }
+  .feeh1 {
+    gap: 10px;
+    margin-bottom: 20px;
+    /* background-color: red; */
+    display: flex;
+    flex-flow:column ;
+  }
+  .feeh1 p {
+    color: #F99600;
+text-align: center;
+font-size: 14.298px;
+font-style: normal;
+font-weight: 700;
+line-height: 158%; /* 22.591px */
+  }
 }

@@ -71,7 +71,7 @@ export const MachineLearningHyderabadCourseData = [
         name: "Learnbay",
         logo: {
           "@type": "ImageObject",
-          url: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/ALight/learnbay-logo.png",
+          url: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/learnbay-logo.png",
         },
       },
       datePublished: "2021-10-01",
@@ -330,7 +330,7 @@ export const MachineLearningHyderabadCourseData = [
       description:
         "Learnbay offers a Machine Learning course in Hyderabad, the most comprehensive Machine Learning course in the market, covering the complete Machine Learning lifecycle.",
       image:
-        "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/ALight/learnbay-logo.png",
+        "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/learnbay-logo.png",
       performer: "Learnbay",
       offers: {
         "@type": "AggregateOffer",

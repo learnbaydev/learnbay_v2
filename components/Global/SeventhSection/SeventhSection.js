@@ -21,7 +21,7 @@ function SeventhSection({ fullStackCont }) {
         <div className="bgWrap">
           {mobile ? (
             <Image
-              src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/learner's-support.png"
+              src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/learner's+support.webp"
               fill={true}
               className={styles.deskImage}
               alt="Learners support"
@@ -84,10 +84,11 @@ function SeventhSection({ fullStackCont }) {
         <div className={styles.rightPart}>
           <div className="imgWrapper">
             <Image
-              src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/learners-support-guy.png"
-              width={681}
-              height={515}
+              src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/newBottomImage.webp"
+              width={400}
+              height={400}
               alt="data science course"
+              style={{ 'borderRadius': '5px' }}
             />
           </div>
         </div>

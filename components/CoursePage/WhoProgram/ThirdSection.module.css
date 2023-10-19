@@ -28,19 +28,25 @@
 }
 .leftSide {
   width: 42%;
-  padding: 20px 20px;
+  padding: 35px 20px;
   position: relative;
-  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.08);
+  border-radius: 2.517px;
+  border: 1px solid #00000020;
+  background: #fff;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
-  border-top: 6px solid #c0e6ff;
 }
 .leftSide:nth-child(2),
 .leftSide:nth-child(3) {
-  border-top: 6px solid #ffe4bc;
+  border-radius: 2.517px;
+  background: #fff;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
+  border: 1px solid #00000020;
 }
 .leftSide p {
   margin-top: 40px;
-  color: black;
+  color: #444;
+  font-weight: 400;
   text-align: left;
 }
 
@@ -54,13 +60,12 @@
   color: #f99600;
 }
 
+/* Set the base styles for .boxIcon */
 .boxIcon {
   width: 60px;
   height: 60px;
   position: absolute;
   background-color: white;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
-    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   border-radius: 4px;
   display: flex;
   left: -20px;
@@ -68,16 +73,33 @@
   top: -10px;
   align-items: center;
   justify-content: center;
+  padding: 35px 45px;
+  background: #f3fcff;
 }
+
+/* .boxIcon:nth-child(2),
+.boxIcon:nth-child(3) {
+  background: #FFF5E5;
+} */
+
+/* .boxIcon:nth-child(odd) {
+  background: #f3fcff;
+}
+
+.boxIcon:nth-child(even) {
+  background: #fff5e5;
+} */
+
 
 .heading {
   position: absolute;
-  left: 50px;
+  left: 75px;
   top: 10px;
-  padding-bottom: 5px;
+  padding:5px 0px 5px 15px;
   border-radius: 0px;
   text-align: left;
-  font-size: 20px;
+  font-size: 17px;
+
 }
 
 @media (max-width: 1281px) {
@@ -85,7 +107,7 @@
     text-align: left;
   }
   .programWrap {
-    padding: 40px 0px;
+    padding: 38px 0px 40px;
     align-items: center;
   }
 }
@@ -126,7 +148,10 @@
     grid-template-columns: 100%;
   }
   .programWrap h4 {
-    font-size: 18px;
+    font-size: 21px;
+    color: #000;
+    padding: 0;
+    font-weight: 700;
   }
   .left {
     display: none;
@@ -142,15 +167,27 @@
     position: relative;
   }
   .leftSide p {
+    margin-left: 20px;
+    text-align: left;
     margin-top: 52px;
-    font-size: 17px;
-    color: #767676;
+    font-weight: 600;
+    color: #474545;
+    /* font-family: Inter; */
+    font-size: 14px;
+    font-style: normal;
+    line-height: 147.5%;
   }
   .boxIcon {
-    width: 50px;
+    width: 80px;
     height: 50px;
   }
   .heading {
-    left: 40px;
+    left: 70px;
+    color: #0072bc;
+    /* font-family: Inter; */
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 126.5%;
   }
 }

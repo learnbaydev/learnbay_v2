@@ -7,6 +7,7 @@ import Popup from "../../Popup/Popup";
 import Form from "../../Form/Form";
 const Button = dynamic(() => import("../../Global/Button/Button"));
 
+
 const FeeSection = ({
   FeeHeading,
   Fee,
@@ -64,7 +65,14 @@ const FeeSection = ({
             </ul>
             {/* <p className={styles.fill}>Filling Fast!</p> */}
             <ul className={styles.feesbatch}>
-              <li>SEP 27th</li>
+            <img className={styles.fillimg}
+                src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/filling-fast.webp"
+                width={80}
+                height={50}
+                />
+              <li>
+             
+                SEP 27th</li>
               <li>SAT & SUN (8 months)</li>
               <li>
                 <span>08:00 AM - 10:00 AM</span>
@@ -89,16 +97,15 @@ const FeeSection = ({
                 <div>
                   <p>Payment Partners</p>
                 </div>
-                <div className="imgWrapper" style={{paddingRight:"10px"}}>
-                   <Image
-                     src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/coursePage/Finance+partners.webp"
-                     alt="Zest"
-                     width="300"
-                     height="80"
-                   />
-                 </div>
-                <div>
+                <div className="imgWrapper" style={{ paddingRight: "10px" }}>
+                  <Image
+                    src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/coursePage/Finance+partners.webp"
+                    alt="Zest"
+                    width="300"
+                    height="80"
+                  />
                 </div>
+                <div></div>
               </div>
             </div>
           </div>
@@ -106,15 +113,31 @@ const FeeSection = ({
             <div className={styles.firstfin}>
               <p>Financing as low as</p>
               <h2>
-                {FeeEmi} <span>month</span>
+                {FeeEmi} <span className={styles.montspan}>month</span>
               </h2>
-              <div onClick={() => popupShow(false, true)}>
-                 <Button className={styles.Btn} text="Request a Callback" />
-               </div>
+              <Button
+                onClick={() => popupShow(false, true)}
+                className={styles.Btn}
+                text="Request a Callback"
+              />
+              <div className={styles.feeh1}>
+                <div>
+                  <p>Payment Partners</p>
+                </div>
+                <div className="imgWrapper" style={{ paddingRight: "10px" }}>
+                  <Image
+                    src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/coursePage/Finance+partners.webp"
+                    alt="Zest"
+                    width="300"
+                    height="80"
+                  />
+                </div>
+                <div></div>
+              </div>
             </div>
             <div className={styles.fingst}>
               <h3>
-              {Fee} <span>+ 18% GST</span>
+                {Fee} <span className={styles.gstspan}>+ 18% GST</span>
               </h3>
             </div>
           </div>

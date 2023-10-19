@@ -1,12 +1,12 @@
 .Features {
-  background-color: #FAFAFA;
+  background: linear-gradient(90deg, #262626 0%, #393939 99.02%);
   position: relative;
   padding-bottom: 85px;
 }
 .topHead {
   font-size: 32px;
   margin: 0;
-  color: black;
+  color: #F99600;
 
   text-align: center;
   font-weight: 700;
@@ -232,6 +232,8 @@
   .RightWrap h2 {
     font-size: 22px;
     text-align: center;
+    margin-bottom: 20px;
+    color: #0072BC;
   }
 }
 
@@ -256,6 +258,7 @@
     flex-flow: column;
     padding: 30px 20px 100px 20px;
     margin: 0;
+    margin-top: 30px;
   }
   .slide {
     width: fit-content;
@@ -492,6 +495,7 @@
   display: flex;
   align-items: center;
   gap: 5px;
+  color: #0072BC;
 }
 .star {
   color: #f99600;

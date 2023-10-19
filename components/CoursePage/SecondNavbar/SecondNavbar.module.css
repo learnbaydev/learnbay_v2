@@ -1,75 +1,133 @@
 .upperDiv {
     
-    gap: 100px;
-    align-items: center;
-    position: sticky;
-    top: 0px;
-    z-index: 9999;
-    padding: 15px 50px;
-    background: #fff;
-    width: 100vw;
-    justify-content: space-between;
-    display:flex;
-    justify-content: flex-end;
-  }
+  gap: 100px;
+  align-items: center;
+  position: sticky;
+  top: 0px;
+  z-index: 9999;
+  padding: 15px 100px;
+  background: #fff;
+  width: 100vw;
+  justify-content: space-between;
+  display:flex;
+  justify-content: center;
   
+}
+
+.innerP {
+  display: flex;
+  gap: 70px;
+  justify-content: center;
+}
+
+.innerP p {
+  cursor: pointer;
+  font-weight: 600;
+  color: #444444;
+}
+
+.innerP p:hover {
+  color: #0072BC;
+  border-bottom: 1px solid;
+}
+
+.active {
+  border-bottom: 2px solid #0072BC;
+  color: #0072BC !important;
+}
+
+
+.buttonBlock{
+  display: block;
+}
+
+.buttonNoBlock{
+  display: none;
+}
+
+
+
+@media (max-width: 1024px){
+  .upperDiv {
+      gap: 30px;
+      padding: 0px 50px;
+      margin-top: 100px;
+    }
+    .innerP {
+      gap: 30px;
+    }
+    .innerP p {
+        font-size: 11px;
+      font-weight: 700;
+  
+    }
+}
+
+.btnHide button {
+  font-size: 18px;
+  padding: 10px 20px;
+  border-radius: 2.67px;
+  color: #FFF;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0.7px;
+  }
+
+@media (max-width: 961px){
+  .upperDiv {
+      padding: 0px 20px;
+      margin-top: 0px;
+    }
+}
+
+@media (max-width: 641px){
+  .upperDiv {
+      display: grid;
+      grid-template-columns: 100%;
+      gap: 15px;
+      width: 100%;
+      padding: 0px 10px 0px 10px;
+      height: 47px;
+    }
+    .innerP {
+      display: grid;
+      grid-template-columns: 25% 25% 25% 25% 25%;
+      gap: 0px;
+      overflow: scroll;
+    }
+    .btnHide {
+      display: none;
+    }
+}
+
+@media (max-width: 481px){
   .innerP {
-    display: flex;
-    gap: 100px;
-    justify-content: center;
-  }
-  
-  .innerP p {
-    cursor: pointer;
-    font-weight: 600;
-    color: #444444;
-  }
-  
-  .innerP p:hover {
-    color: #0072BC;
-    border-bottom: 1px solid;
-  }
-
-  .active {
-    border-bottom: 2px solid #0072BC;
-    color: #0072BC !important;
-  }
-
-  @media (max-width: 1024px){
-    .upperDiv {
-        gap: 30px;
-        padding: 0px 50px;
-        margin-top: 100px;
-      }
-      .innerP {
-        gap: 30px;
-      }
-      .innerP p {
-           font-size: 11px;
-        font-weight: 700;
+    grid-template-columns:  16% 18% 22% 13% 9%;
+    grid-gap: 10px;
+    justify-content: space-around;
+    text-align: center;
     
-      }
   }
 
-  @media (max-width: 961px){
-    .upperDiv {
-        padding: 0px 20px;
-        margin-top: 0px;
-      }
-  }
+  .innerP p {
+    font-size: 14px;
+    margin: 0;
+}
+.innerP p:hover {
+  color: #0072BC;
+  border-bottom: 2px solid;
+}
 
-  @media (max-width: 641px){
-    .upperDiv {
-        display: grid;
-        grid-template-columns: 56% 30%;
-        gap: 15px;
-        width: 100%;
-        padding: 10px 10px;
-      }
-      .innerP {
-        display: grid;
-        grid-template-columns: 70% 90% 40%;
-        overflow: scroll;
-        gap: 10px;
-      }
-  }
+.buttonBlock{
+  display: none;
+}
+.buttonNoBlock{
+  display: none;
+
+}
+
+/* .btnHide{
+  display: none;
+} */
+
+}

@@ -220,7 +220,7 @@ const Course = ({ dataScience, radio, dataScienceCounselling, Green }) => {
                                           popupShow();
                                         }}
                                       >
-                                        <button className="outLineBtn1">
+                                        <button className="outLineBtn1" style={{ color: "#2979AD", background: "#fff" }}>
                                           Brochure
                                           <FaDownload
                                             className="bIcon"

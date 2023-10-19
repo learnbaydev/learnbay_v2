@@ -11,6 +11,8 @@ const ReviewPopup = dynamic(() => import("../ReviewPopup/ReviewPopup"));
 import VideoPopup from "../../Global/VideoPopup/VideoPopup";
 
 import { Pagination, Navigation } from "swiper";
+import "swiper/css/scrollbar";
+import { Scrollbar } from "swiper";
 
 function Testimonial({ redirectDS, para, heading, Testimonial }) {
   const [mobile, setMobile] = useState(false);
@@ -42,7 +44,7 @@ function Testimonial({ redirectDS, para, heading, Testimonial }) {
   }, []);
   return (
     <div className={styles.testimonial} id="alumni">
-       <VideoPopup triggers={video} setTriggers={setVideo} ids={vId} />
+      <VideoPopup triggers={video} setTriggers={setVideo} ids={vId} />
       <ReviewPopup
         trigger={popups}
         setTrigger={setPopups}
@@ -66,7 +68,7 @@ function Testimonial({ redirectDS, para, heading, Testimonial }) {
               <Swiper
                 loop={true}
                 breakpoints={{
-                  1281: { slidesPerView: 4.3, spaceBetween: 50 },
+                  1281: { slidesPerView: 4.1, spaceBetween: 50 },
                   1024: { slidesPerView: 3, spaceBetween: 55 },
                   961: { slidesPerView: 3, spaceBetween: 20 },
                   801: { slidesPerView: 2.5, spaceBetween: 20 },
@@ -78,9 +80,10 @@ function Testimonial({ redirectDS, para, heading, Testimonial }) {
                   dynamicBullets: true,
                   clickable: true,
                 }}
-                style={{ width: "100%" }}
+                // scrollbar={{ draggable: true }}
                 grabCursor={true}
-                modules={[Pagination, Navigation]}
+                style={{ width: "100%" }}
+                modules={[Pagination, Navigation, Scrollbar]}
                 className="mySwiper"
               >
                 {Testimonial.map((data) => {
@@ -98,30 +101,29 @@ function Testimonial({ redirectDS, para, heading, Testimonial }) {
                   return (
                     <SwiperSlide className={styles.slide} key={id}>
                       <div className={styles.nameHike}>
-                              <p>
-                                <AiOutlineRise />
-                                {statLogo}
-                              </p>
-                            </div>
+                        <p>
+                          {statLogo}
+                          <AiOutlineRise />
+                        </p>
+                      </div>
                       <div className={styles.proImgWrap}>
                         <div className="imgWrapper">
-                            <Image
-                              src={proImg}
-                              loading="lazy"
-                              width="358"
-                              height="212"
-                              alt="profile-Img"
-                              onClick={() => videoShow(data.link)}
-                            />
-                            </div>
-                          </div>
+                          <Image
+                            src={proImg}
+                            loading="lazy"
+                            width="358"
+                            height="212"
+                            alt="profile-Img"
+                            onClick={() => videoShow(data.link)}
+                          />
+                        </div>
+                      </div>
                       <div className={styles.mainSlider}>
                         <div className={styles.imgP}>
                           <div className={styles.name}>
                             <h3>{name}</h3>
                             <p>{working}</p>
                           </div>
-                          
                         </div>
 
                         <div className={styles.paraDiv}>
@@ -173,7 +175,7 @@ function Testimonial({ redirectDS, para, heading, Testimonial }) {
                               </div>
                             </div>
                             <div>
-                            <div>
+                              <div>
                                 <Image
                                   src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/Arrow+6.png"
                                   loading="lazy"
@@ -201,7 +203,6 @@ function Testimonial({ redirectDS, para, heading, Testimonial }) {
                                 />
                               </div>
                             </div>
-                            
                           </div>
                         ) : (
                           ""

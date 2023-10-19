@@ -63,13 +63,23 @@ const BatchDetails = dynamic(() =>
 const SecondNavbar = dynamic(()=>
   import("../../../components/CoursePage/SecondNavbar/SecondNavbar")
 );
+const ContactConsellor = dynamic ( ()=>
+import ("../../../components/CoursePage/ContactConsellor/ContactConsellor")
+
+)
+const feesbatch = dynamic ( ()=>
+import ('../../../components/CoursePage/FeeSection/FeeSection')
+)
 
 import OfferPopup from "../../../components/OfferPopup/OfferPopup";
 import BottomBar from "../../../components/WebPage/BottomBar/BottomBar";
 import ContactUs from "../../../components/HomePage/ContactUs/ContactUs";
 // import SecondNavbar from "../../../components/CoursePage/SecondNavbar/SecondNavbar";
+const WhyLearnbay = dynamic(() =>
+  import("../../../components/MastersCourse/WhyLearnbay/WhyLearnbay")
+);
 
-function Blockchain() {
+function Blockchain({ }) {
   // POPUP GET METHOD
   const [popupData, setPopupData] = useState([]);
   // console.log(popupData);
@@ -126,6 +136,8 @@ function Blockchain() {
     fetchBatch();
   }, []);
 
+  const [progress, setProgress] = useState(20);
+
   return (
     <>
       <Head>
@@ -157,13 +169,13 @@ function Blockchain() {
           // SecondTyped="Capstone Project Certificate"
           ThirdTyped="Live Interactive Classes"
           dataScience={true}
-          titleCourse="Advanced Data Science and AI Program with domain specialization"
+          titleCourse="Advance Data Science & AI Program with Domain Specialization"
           cityParaCont="Elevate your tech career with our Master's programs"
           brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Advance+Data+Science+and+AI+Certification+Program+Learnbay.pdf"
-          FirstRightImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/coursepageB.webp"
-          firstToparaImg="with domain specialization"
-          firstHeading="Advanced Data Science and AI Program"
-          // firstTopPara="Specialization over generalization"
+          FirstRightImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/coursePage/course-head-image.webp"
+          firstToparaImg="with Domain Specialization"
+          firstHeading="Advance Data Science & AI Program"
+          firstTopPara="Curriculum Inclusive of Gen-AI"
           idss="bfl64ANfSV0"
         />
         <SecondSection
@@ -177,10 +189,11 @@ function Blockchain() {
           para="Discover the impact of our programs on career growth"
         />
         <WhoProgram
-          leftImage="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/whoIsProgram.webp"
+          leftImage="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/masterPage/who-program.webp"
           ThirdSectionData={DataScienceCourseData[0].thirdSection}
         />
-        <Switch />
+         <WhyLearnbay />
+        {/* <Switch /> */}
         <FourthSection
           placementData={DataScienceCourseData[0].fourthSection}
           redirectDS={true}
@@ -188,7 +201,7 @@ function Blockchain() {
           titleCourse="Data Science Placement Report"
           brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Placement+Report.pdf"
         />
-        <FifthSection />
+        {/* <FifthSection /> */}
         {/* <SixthSectionCTA dataScienceCounselling={true} /> */}
         {/* <SyllabusNew
           dataScienceCounselling={true}
@@ -199,7 +212,8 @@ function Blockchain() {
           syllabusDesc={DataScienceCourseData[0].syllabusDesc}
           popupHead={DataScienceCourseData[0].popupHead}
         /> */}
-        <ContactUs dataScienceCounselling={true} />
+        {/* <ContactUs dataScienceCounselling={true} /> */}
+        <ContactConsellor/>
 
         <SyllabusNew
           syllabusHead={DataScienceCourseData[0].syllabusHead}
@@ -212,6 +226,8 @@ function Blockchain() {
           syllabus={DataScienceCourseData[0].syllabus}
           syllabusDesc={DataScienceCourseData[0].syllabusDesc}
           popupHead={DataScienceCourseData[0].popupHead}
+          progress={progress}
+          setProgress={setProgress}
         />
         {/* <GrowthStats
           img1="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Scope+of+DS+left+image.png"
@@ -228,7 +244,7 @@ function Blockchain() {
           threeCertificate={true}
           data={DataScienceCourseData[0].Certificate}
         />
-        <FeeSection
+         <FeeSection
           Fee="₹ 99,000"
           FeeEmi="₹ 9,735/"
           FeeHeading="Program Fee and Financing"
