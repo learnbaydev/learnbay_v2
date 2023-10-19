@@ -4,6 +4,7 @@ import styles from "./SecondNavbar.module.css";
 import Button from "../../Global/Button/Button";
 import dynamic from "next/dynamic";
 const Popup = dynamic(() => import("../../Popup/Popup"));
+import Image from "next/image";
 
 function SecondNavbar() {
   const [active, setActive] = useState(false);
@@ -12,7 +13,11 @@ function SecondNavbar() {
   const [active3, setActive3] = useState(false);
   const [active4, setActive4] = useState(false);
 
-  const [activeSection, setActiveSection] = useState(null);
+  const [activeSection, setActiveSection] = useState(null); 
+  const [showApplyButton, setShowApplyButton] = useState(false); // Define showApplyButton here
+  const [showLogo, setShowLogo] = useState(false); // Define showLogo here
+
+
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -45,10 +50,52 @@ function SecondNavbar() {
     setPopups(true);
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollY = window.scrollY || window.pageYOffset;
+
+      // Adjust this value based on when you want to show the button
+      if (scrollY >= 830) {
+        setShowApplyButton(true);
+        setShowLogo(true);
+      } else {
+        setShowApplyButton(false);
+        setShowLogo(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  const [mobile, setMobile] = useState(false);
+  useEffect(() => {
+    let width = window.innerWidth;
+    if (width < 481) {
+      setMobile(true);
+    }
+    if (width > 481) {
+      setMobile(false);
+    }
+  }, []);
   return (
     <>
       <div className={styles.upperDiv}>
+      <Link href="/" className={showApplyButton ? styles.buttonBlock : styles.buttonNoBlock}>
+              <Image
+                src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/learnbay-logo.png"
+                alt="Learnbay"
+                quality={100}
+                style={{ objectFit: "contain" }}
+                width={mobile ? "135" : "230"}
+                height={60}
+              />
+            </Link>
         <div className={styles.innerP}>
+     
           <Link href="#alumni">
             <p className={activeSection === 'alumni' ? styles.active : styles.inactive}>
               Alumni
@@ -75,9 +122,11 @@ function SecondNavbar() {
             </p>
           </Link>
         </div>
-        <div onClick={popupShow} className={styles.btnHide}>
-          <Button text="Apply for Counselling" outline={true} />
-        </div>
+        
+
+        <div className={showApplyButton ? styles.buttonBlock : styles.buttonNoBlock}>
+        <Button text="Apply for Counselling" outline={true} onClick={popupShow} />
+      </div>
       </div>
       <hr />
     </>
