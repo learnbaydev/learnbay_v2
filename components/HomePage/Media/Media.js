@@ -31,12 +31,18 @@ const Media = ({ projectData }) => {
 
    
         <Swiper
+    
           slidesPerView={1}
           spaceBetween={30}
           grabCursor={true}
           pagination={{ clickable: true }}
           breakpoints={{
             300: {
+              slidesPerView: 1.2,
+              spaceBetween: 35,
+            },
+
+            481: {
               slidesPerView: 1,
               spaceBetween: 35,
             },
@@ -53,12 +59,12 @@ const Media = ({ projectData }) => {
               spaceBetween: 45,
             },
             1280: {
-              slidesPerView: 5.1,
-              spaceBetween: 30,
+              slidesPerView: 4.1,
+              spaceBetween: 20,
             },
           }}
           modules={[Pagination, Navigation]}
-          className="mySwiper"
+          className={`mySwiper ${styles.myswiper}`}
           navigation={{
             nextEl: ".custom-next",
             prevEl: ".custom-prev",
