@@ -23,8 +23,10 @@ function WhyLearnbay() {
                 alt="Learnbay"
               />
             </div>
+            <div>
             <p className={styles.OrangeText}>250%</p>
             <p className={styles.botPara}>Highest Salary Hike</p>
+            </div>
           </div>
           <div className={styles.innerDiv}>
             <div className={styles.imgBox}>
@@ -35,9 +37,12 @@ function WhyLearnbay() {
                 alt="Learnbay"
               />
             </div>
+            <div>
+
             <p className={styles.OrangeText}>450+</p>
             <p className={styles.botPara}>Placement Partners</p>
           </div>
+          </div>
           <div className={styles.innerDiv}>
             <div className={styles.imgBox}>
               <Image
@@ -47,8 +52,11 @@ function WhyLearnbay() {
                 alt="Learnbay"
               />
             </div>
+            <div>
+
             <p className={styles.OrangeText}>96%</p>
             <p className={styles.botPara}>Student Satisfaction Rate</p>
+          </div>
           </div>
         </div>
       </div>

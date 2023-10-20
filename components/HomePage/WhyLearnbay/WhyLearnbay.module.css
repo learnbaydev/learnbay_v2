@@ -102,3 +102,36 @@ box-shadow: 0px 0px 4.63743px 0px rgba(0, 0, 0, 0.25);
     animation: rotate 20s linear infinite; /* Adjust the duration as needed */
     margin-top: 175px;
 }
+
+@media (max-width: 641px) {
+    .Container {
+        display: block;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        padding: 20px;
+    }
+
+    .heading {
+        font-size: 25px;
+    }
+
+    .para {
+        margin: 20px 0px 30px 0px;
+    }
+
+    .boxDiv {
+        display: block;
+        margin: 0;
+    }
+
+    .innerDiv {
+        display: flex;
+        gap: 20px;
+    }
+    .boxSecond {
+        margin-top: 30px;
+    }
+.imgBoy img {
+    width: 100vw;
+}
+}
