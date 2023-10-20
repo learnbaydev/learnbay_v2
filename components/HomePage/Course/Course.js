@@ -23,10 +23,10 @@ const Course = ({ dataScience, radio, dataScienceCounselling, Green }) => {
 
   const [CourseLoop, setCourseLoop] = useState([
     { title: "Popular Courses", value: true },
-    { title: "Certification Courses", value: false },
+    { title: "Certification Program", value: false },
     // { title: "Software Development", value: false },
-    { title: "Master Degree Program", value: false },
-    { title: "View All", value: false },
+    { title: "Master's Degree Program", value: false },
+    // { title: "View All", value: false },
   ]);
 
   const menuChange = (title, index) => {
@@ -69,6 +69,10 @@ const Course = ({ dataScience, radio, dataScienceCounselling, Green }) => {
       setValue(3);
     } else if (width <= 1281) {
       setValue(2.4);
+      
+    }
+    else if (width > 1281) {
+      setValue(3.1);
     }
   }, []);
   return (
@@ -127,8 +131,8 @@ const Course = ({ dataScience, radio, dataScienceCounselling, Green }) => {
                   return (
                     <div key={index} className={styles.divBox}>
                       <h5 className={styles.h5font}>
-                        {courseDetail.courseName} (
-                        {courseDetail.courseDetails.length})
+                        {courseDetail.courseName}
+                         {/* ({courseDetail.courseDetails.length}) */}
                       </h5>
                       <div className={styles.gridPanel}>
                         <Swiper
@@ -140,6 +144,7 @@ const Course = ({ dataScience, radio, dataScienceCounselling, Green }) => {
                           grabCursor={true}
                           modules={[Pagination]}
                           className="mySwiper"
+                          
                         >
                           {courseDetail.courseDetails.map((viewAllData) => {
                             const {
