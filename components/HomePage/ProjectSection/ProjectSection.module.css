@@ -117,3 +117,77 @@ font-weight: 700;
     padding: 10px 8px;
 
 }
+
+.iconBoxMobile {
+    display: none;
+}
+
+@media (max-width: 641px) {
+    .container {
+        padding: 30px 20px;
+    }
+
+    .container h4 {
+        font-size: 25px;
+        text-align: left;
+    }
+
+    .box {
+        display: block;
+        margin: 0;
+    }
+
+    .InnerBox1 {
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+
+    .image {
+        display: none;
+    }
+
+    .BlueHed {
+        font-size: 24px;
+    }
+
+    .secondDiv {
+        display: block;
+        padding: 30px 20px;
+    }
+
+    .iconBoxMobile {
+        display: block;
+    }
+
+    .iconBoxDesktop {
+        display: none;
+    }
+
+    .iconBox {
+        display: grid;
+        gap: 10px;
+        grid-template-columns: 48% 48%;
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+    }
+
+    .BoxIconinner {
+        margin: 0;
+    }
+
+    .BoxIconinner p {
+        font-size: 13px;
+    }
+
+    .buttonDiv {
+        display: flex;
+        justify-content: center;
+    }
+
+    .buttonDiv button {
+        padding: 8px 10px;
+        font-size: 16px;
+        display: flex;
+        justify-content: center;
+    }
+}

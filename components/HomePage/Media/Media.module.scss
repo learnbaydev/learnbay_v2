@@ -90,7 +90,7 @@
         background-position: center center;
         background-size: cover;
         background-repeat: no-repeat;
-        border-radius: 15px;
+        border-radius: 6px;
         background-color: white;
         margin-left: 4px;
 
@@ -863,6 +863,7 @@ line-height: 153%; /* 30.6px */
       height: max-content;
       margin-top: 10px;
       width: 100%;
+      padding: 0px 20px;
 
       .project {
         // background: linear-gradient(
@@ -907,8 +908,8 @@ line-height: 153%; /* 30.6px */
         padding: 6px;
         margin-right: 45 !important;
         margin-bottom: 40px;
-        margin-top: 20px;
-        height: 344px;
+        margin-top: 5px;
+        height: fit-content;
         border-radius: 5px;
         box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
         border-image-width: 20px;
@@ -916,6 +917,7 @@ line-height: 153%; /* 30.6px */
         background-size: cover;
         background-repeat: no-repeat;
         border-radius: 4px;
+        margin-left: 5px;
         background-color: white;
         position: relative;
         // margin-left: 30px;

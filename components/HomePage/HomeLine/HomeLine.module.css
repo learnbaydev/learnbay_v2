@@ -109,6 +109,10 @@
   .feature {
     width: 100%;
     left: 20px;
+    border-radius: 16px;
+border: 1px solid #0072BC;
+background: rgba(217, 217, 217, 0.00);
+padding: 10px;
   }
   .containerMobile {
     display: block;

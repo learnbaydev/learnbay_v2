@@ -31,10 +31,10 @@ function ProjectSection() {
           </div>
           <p className={styles.BlueHed}>Project Innovation Lab</p>
           <p className={styles.para}>
-            Our Project Innovation Lab offers <b>real-world project
-                simulations</b>,
-            teaching project execution like leading companies. It's a dynamic
-            platform to apply your learning effectively.
+            Our Project Innovation Lab offers{" "}
+            <b>real-world project simulations</b>, teaching project execution
+            like leading companies. It's a dynamic platform to apply your
+            learning effectively.
           </p>
           <div className={styles.iconPara}>
             <p className={styles.para}>
@@ -98,65 +98,116 @@ function ProjectSection() {
             <div className={styles.firstDiv}>
               <p className={styles.BlueHed}>Domain Specialization</p>
               <p className={styles.para}>
-                Our Project Innovation Lab offers <b>real-world project
-                simulations</b>, teaching project execution like leading companies.
-                It's a dynamic platform to apply your learning effectively.
+                Our Project Innovation Lab offers{" "}
+                <b>real-world project simulations</b>, teaching project
+                execution like leading companies. It's a dynamic platform to
+                apply your learning effectively.
               </p>
-              <div className={styles.iconBox}>
-                <div className={styles.BoxIconinner}>
-                  <Image
-                    src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/bank.gif"
-                    loading="lazy"
-                    width={40}
-                    height={40}
-                  />
-                  <p>BFSI</p>
+              <div className={styles.iconBoxDesktop}>
+                <div className={styles.iconBox}>
+                  <div className={styles.BoxIconinner}>
+                    <Image
+                      src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/bank.gif"
+                      loading="lazy"
+                      width={40}
+                      height={40}
+                    />
+                    <p>BFSI</p>
+                  </div>
+                  <div className={styles.BoxIconinner}>
+                    <Image
+                      src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/heartbeat.gif"
+                      loading="lazy"
+                      width={40}
+                      height={40}
+                    />
+                    <p>HEALTHCARE</p>
+                  </div>
+                  <div className={styles.BoxIconinner}>
+                    <Image
+                      src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/live.gif"
+                      loading="lazy"
+                      width={40}
+                      height={40}
+                    />
+                    <p>MARKETING & HR</p>
+                  </div>
                 </div>
-                <div className={styles.BoxIconinner}>
-                <Image
-                    src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/heartbeat.gif"
-                    loading="lazy"
-                    width={40}
-                    height={40}
+                <div className={styles.iconButton}>
+                  <div className={styles.BoxIconinner}>
+                    <Image
+                      src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/delivery-truck.gif"
+                      loading="lazy"
+                      width={40}
+                      height={40}
+                    />
+                    <p>SUPPLYCHAIN</p>
+                  </div>
+                  <Button
+                    bannerButton={true}
+                    text="Download Domain Brochures"
+                    passIcon={<FaDownload className="bIconS" />}
                   />
-                  <p>HEALTHCARE</p>
-                </div>
-                <div className={styles.BoxIconinner}>
-                <Image
-                    src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/live.gif"
-                    loading="lazy"
-                    width={40}
-                    height={40}
-                  />
-                  <p>MARKETING & HR</p>
                 </div>
               </div>
-              <div className={styles.iconButton}>
-                <div className={styles.BoxIconinner}>
-                <Image
-                    src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/delivery-truck.gif"
-                    loading="lazy"
-                    width={40}
-                    height={40}
-                  />
-                  <p>SUPPLYCHAIN</p>
+              <div className={styles.iconBoxMobile}>
+                <div className={styles.iconBox}>
+                  <div className={styles.BoxIconinner}>
+                    <Image
+                      src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/bank.gif"
+                      loading="lazy"
+                      width={40}
+                      height={40}
+                    />
+                    <p>BFSI</p>
+                  </div>
+                  <div className={styles.BoxIconinner}>
+                    <Image
+                      src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/heartbeat.gif"
+                      loading="lazy"
+                      width={40}
+                      height={40}
+                    />
+                    <p>HEALTHCARE</p>
+                  </div>
+                  <div className={styles.BoxIconinner}>
+                    <Image
+                      src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/live.gif"
+                      loading="lazy"
+                      width={40}
+                      height={40}
+                    />
+                    <p>MARKETING & HR</p>
+                  </div>
+                  <div className={styles.BoxIconinner}>
+                    <Image
+                      src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/delivery-truck.gif"
+                      loading="lazy"
+                      width={40}
+                      height={40}
+                    />
+                    <p>SUPPLYCHAIN</p>
+                  </div>
                 </div>
-                <Button
-                  bannerButton={true}
-                  text="Download Domain Brochures"
-                  passIcon={<FaDownload className="bIconS" />}
-                />
+                <div className={styles.buttonDiv}>
+                  <Button
+                    bannerButton={true}
+                    text="Download Domain Brochures"
+                    passIcon={<FaDownload className="bIconS" />}
+                  />
+                </div>
               </div>
             </div>
-            <div className="imgWrapper">
-              <Image
-                src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/bottom-domaiin.webp"
-                loading="lazy"
-                width="517"
-                height="300"
-                alt="profile-Img"
-                onClick={() => videoShow()}
-              />
+            <div className={styles.image}>
+              <div className="imgWrapper">
+                <Image
+                  src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/bottom-domaiin.webp"
+                  loading="lazy"
+                  width="517"
+                  height="300"
+                  alt="profile-Img"
+                />
+              </div>
             </div>
           </div>
         </SwiperSlide>
@@ -165,65 +216,116 @@ function ProjectSection() {
             <div className={styles.firstDiv}>
               <p className={styles.BlueHed}>Domain Specialization</p>
               <p className={styles.para}>
-                Our Project Innovation Lab offers <b>real-world project
-                simulations</b>, teaching project execution like leading companies.
-                It's a dynamic platform to apply your learning effectively.
+                Our Project Innovation Lab offers{" "}
+                <b>real-world project simulations</b>, teaching project
+                execution like leading companies. It's a dynamic platform to
+                apply your learning effectively.
               </p>
-              <div className={styles.iconBox}>
-                <div className={styles.BoxIconinner}>
-                  <Image
-                    src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/bank.gif"
-                    loading="lazy"
-                    width={40}
-                    height={40}
-                  />
-                  <p>BFSI</p>
+              <div className={styles.iconBoxDesktop}>
+                <div className={styles.iconBox}>
+                  <div className={styles.BoxIconinner}>
+                    <Image
+                      src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/bank.gif"
+                      loading="lazy"
+                      width={40}
+                      height={40}
+                    />
+                    <p>BFSI</p>
+                  </div>
+                  <div className={styles.BoxIconinner}>
+                    <Image
+                      src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/heartbeat.gif"
+                      loading="lazy"
+                      width={40}
+                      height={40}
+                    />
+                    <p>HEALTHCARE</p>
+                  </div>
+                  <div className={styles.BoxIconinner}>
+                    <Image
+                      src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/live.gif"
+                      loading="lazy"
+                      width={40}
+                      height={40}
+                    />
+                    <p>MARKETING & HR</p>
+                  </div>
                 </div>
-                <div className={styles.BoxIconinner}>
-                <Image
-                    src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/heartbeat.gif"
-                    loading="lazy"
-                    width={40}
-                    height={40}
+                <div className={styles.iconButton}>
+                  <div className={styles.BoxIconinner}>
+                    <Image
+                      src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/delivery-truck.gif"
+                      loading="lazy"
+                      width={40}
+                      height={40}
+                    />
+                    <p>SUPPLYCHAIN</p>
+                  </div>
+                  <Button
+                    bannerButton={true}
+                    text="Download Domain Brochures"
+                    passIcon={<FaDownload className="bIconS" />}
                   />
-                  <p>HEALTHCARE</p>
-                </div>
-                <div className={styles.BoxIconinner}>
-                <Image
-                    src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/live.gif"
-                    loading="lazy"
-                    width={40}
-                    height={40}
-                  />
-                  <p>MARKETING & HR</p>
                 </div>
               </div>
-              <div className={styles.iconButton}>
-                <div className={styles.BoxIconinner}>
-                <Image
-                    src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/delivery-truck.gif"
-                    loading="lazy"
-                    width={40}
-                    height={40}
-                  />
-                  <p>SUPPLYCHAIN</p>
+              <div className={styles.iconBoxMobile}>
+                <div className={styles.iconBox}>
+                  <div className={styles.BoxIconinner}>
+                    <Image
+                      src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/bank.gif"
+                      loading="lazy"
+                      width={40}
+                      height={40}
+                    />
+                    <p>BFSI</p>
+                  </div>
+                  <div className={styles.BoxIconinner}>
+                    <Image
+                      src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/heartbeat.gif"
+                      loading="lazy"
+                      width={40}
+                      height={40}
+                    />
+                    <p>HEALTHCARE</p>
+                  </div>
+                  <div className={styles.BoxIconinner}>
+                    <Image
+                      src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/live.gif"
+                      loading="lazy"
+                      width={40}
+                      height={40}
+                    />
+                    <p>MARKETING & HR</p>
+                  </div>
+                  <div className={styles.BoxIconinner}>
+                    <Image
+                      src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/delivery-truck.gif"
+                      loading="lazy"
+                      width={40}
+                      height={40}
+                    />
+                    <p>SUPPLYCHAIN</p>
+                  </div>
                 </div>
-                <Button
-                  bannerButton={true}
-                  text="Download Domain Brochures"
-                  passIcon={<FaDownload className="bIconS" />}
-                />
+                <div className={styles.buttonDiv}>
+                  <Button
+                    bannerButton={true}
+                    text="Download Domain Brochures"
+                    passIcon={<FaDownload className="bIconS" />}
+                  />
+                </div>
               </div>
             </div>
-            <div className="imgWrapper">
-              <Image
-                src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/bottom-domaiin.webp"
-                loading="lazy"
-                width="517"
-                height="300"
-                alt="profile-Img"
-                onClick={() => videoShow()}
-              />
+            <div className={styles.image}>
+              <div className="imgWrapper">
+                <Image
+                  src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/bottom-domaiin.webp"
+                  loading="lazy"
+                  width="517"
+                  height="300"
+                  alt="profile-Img"
+                />
+              </div>
             </div>
           </div>
         </SwiperSlide>
