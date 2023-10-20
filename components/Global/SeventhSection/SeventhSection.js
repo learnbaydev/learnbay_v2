@@ -15,7 +15,7 @@ function SeventhSection({ fullStackCont }) {
   }, []);
   return (
     <div className={styles.Section2}>
-      {/* <p className={styles.infop}>24X7 Learner’s Support</p> */}
+      <p className={styles.infop}>24X7 Learner’s Support</p>
 
       <div className={styles.LearnSupport}>
         <div className="bgWrap">

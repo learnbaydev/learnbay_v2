@@ -39,7 +39,9 @@ function TrainerSection() {
                 <div className={Styles.rating}>
                   {text} <AiFillStar className={Styles.star} />
                 </div>
+               
                 <div className="imgWrapper">
+                
                   <Image src={img} width={120} height={60} alt={alt} />
                 </div>
               </div>
@@ -48,6 +50,7 @@ function TrainerSection() {
         })}
       </div>
       <div className={Styles.proImgWrap}>
+      <h2>Alumni Spotlight</h2>
         <div className="imgWrapper">
           <Image
             src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/learnbay-review.webp"

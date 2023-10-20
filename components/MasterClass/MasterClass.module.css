@@ -106,6 +106,7 @@ background: #444;
     .conteiner {
 /* background-color: red; */
         padding: 0;
+        gap: 20px;
     }
 .slideritem img {
 
@@ -115,5 +116,27 @@ background: #444;
     font-size: 15px;
     padding: 12px 122px;
 }
+
+.freegreen {
+    color: #2DB621;
+    text-align: center;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 126.5%;
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.10);
+    background: #ECEBEB;
+    padding: 0px 10px;
 }
+.conteiner h2 {
+    color: #000;
+    /* font-family: DM Sans; */
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 126.5%;
+}
+}
+
 
