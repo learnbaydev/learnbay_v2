@@ -67,11 +67,11 @@ background: #444;
     font-style: normal;
     font-weight: 700;
     line-height: 122.5%;
-    border-radius: 5.621px;
     background: #444;
     padding: 13px 135px;
     border: none;
     cursor: pointer;
+    width: 100%;
 }
 
 .masterbtn :hover {
