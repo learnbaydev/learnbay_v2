@@ -6,7 +6,8 @@ import { TbListDetails } from "react-icons/tb";
 import Image from "next/image";
 import { TbCurrencyRupee } from "react-icons/tb";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination } from "swiper";
+import { Pagination, Navigation } from "swiper";
+
 import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
@@ -15,6 +16,9 @@ import Popup from "../../Popup/Popup";
 import Form from "../../Form/Form";
 import { FaDownload } from "react-icons/fa";
 import { courseDetails } from "./courseDetails";
+import { IoTimeOutline } from "react-icons/io5";
+
+import { BsCheckLg } from "react-icons/bs";
 
 const Course = ({ dataScience, radio, dataScienceCounselling, Green }) => {
   const [mobile, setMobile] = useState(false);
@@ -23,10 +27,10 @@ const Course = ({ dataScience, radio, dataScienceCounselling, Green }) => {
 
   const [CourseLoop, setCourseLoop] = useState([
     { title: "Popular Courses", value: true },
-    { title: "Certification Courses", value: false },
+    { title: "Certification Program", value: false },
     // { title: "Software Development", value: false },
-    { title: "Master Degree Program", value: false },
-    { title: "View All", value: false },
+    { title: "Master's Degree Program", value: false },
+    // { title: "View All", value: false },
   ]);
 
   const menuChange = (title, index) => {
@@ -69,6 +73,8 @@ const Course = ({ dataScience, radio, dataScienceCounselling, Green }) => {
       setValue(3);
     } else if (width <= 1281) {
       setValue(2.4);
+    } else if (width > 1281) {
+      setValue(3.1);
     }
   }, []);
   return (
@@ -127,18 +133,18 @@ const Course = ({ dataScience, radio, dataScienceCounselling, Green }) => {
                   return (
                     <div key={index} className={styles.divBox}>
                       <h5 className={styles.h5font}>
-                        {courseDetail.courseName} (
-                        {courseDetail.courseDetails.length})
+                        {courseDetail.courseName}
+                        {/* ({courseDetail.courseDetails.length}) */}
                       </h5>
                       <div className={styles.gridPanel}>
                         <Swiper
                           slidesPerView={value}
                           spaceBetween={mobile ? 20 : 60}
-                          pagination={{
+                          navigation={{
                             clickable: true,
                           }}
                           grabCursor={true}
-                          modules={[Pagination]}
+                          modules={[Navigation]}
                           className="mySwiper"
                         >
                           {courseDetail.courseDetails.map((viewAllData) => {
@@ -182,18 +188,25 @@ const Course = ({ dataScience, radio, dataScienceCounselling, Green }) => {
                                         >
                                           {title}
                                         </h6>
-                                        <h6 className={
+                                        <h6
+                                          className={
                                             Green
                                               ? styles.mainHeadGreen
                                               : styles.mainHead
-                                          }>{title1}</h6>
+                                          }
+                                        >
+                                          {title1}
+                                        </h6>
                                       </div>
                                       <hr className={styles.hr} />
                                       <div className={styles.paraDiv}>
-                                        <p>
+                                        <p className={styles.singleP}>
                                           {/* <BiTimeFive
                                             className={styles.checkCircle}
                                           /> */}
+                                          <IoTimeOutline
+                                            className={styles.timeIcon}
+                                          />{" "}
                                           {para[0]} | {courseTime}
                                         </p>
                                         {/* <p>
@@ -207,6 +220,18 @@ const Course = ({ dataScience, radio, dataScienceCounselling, Green }) => {
                                           {/* <TbCurrencyRupee
                                             className={styles.checkCircle}
                                           /> */}
+                                          <BsCheckLg
+                                            className={styles.checkIcon}
+                                          />
+                                          {para[2]}
+                                        </p>
+                                        <p className={styles.singleP}>
+                                          {/* <TbCurrencyRupee
+                                            className={styles.checkCircle}
+                                          /> */}
+                                          <BsCheckLg
+                                            className={styles.checkIcon}
+                                          />
                                           {para[2]}
                                         </p>
                                       </div>
@@ -220,7 +245,13 @@ const Course = ({ dataScience, radio, dataScienceCounselling, Green }) => {
                                           popupShow();
                                         }}
                                       >
-                                        <button className="outLineBtn1" style={{ color: "#2979AD", background: "#fff" }}>
+                                        <button
+                                          className="outLineBtn1"
+                                          style={{
+                                            color: "#2979AD",
+                                            background: "#fff",
+                                          }}
+                                        >
                                           Brochure
                                           <FaDownload
                                             className="bIcon"
