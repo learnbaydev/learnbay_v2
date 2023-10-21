@@ -79,6 +79,10 @@ const WhyLearnbay = dynamic(() =>
   import("../../../components/MastersCourse/WhyLearnbay/WhyLearnbay")
 );
 
+const Gethire = dynamic (() =>
+import ("../../../components/CoursePage/Gethired/Gethire")
+)
+
 function Blockchain({ }) {
   // POPUP GET METHOD
   const [popupData, setPopupData] = useState([]);
@@ -192,7 +196,9 @@ function Blockchain({ }) {
           leftImage="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/masterPage/who-program.webp"
           ThirdSectionData={DataScienceCourseData[0].thirdSection}
         />
+     
          <WhyLearnbay />
+         < Gethire/>
         {/* <Switch /> */}
         <FourthSection
           placementData={DataScienceCourseData[0].fourthSection}
