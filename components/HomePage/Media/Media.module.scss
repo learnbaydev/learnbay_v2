@@ -1,4 +1,9 @@
+
+
+
 @media (min-width: 1281px) {
+
+  
   .projectHeader {
     .headWrapper {
       display: flex;
@@ -78,7 +83,7 @@
       .project {
         margin-top: 10px;
         width: inherit;
-        margin-bottom: 20px;
+        margin-bottom: 40px;
         margin-right: 45px;
         padding: 20px;
         border-image-width: 20px;
@@ -131,6 +136,16 @@
             cursor: pointer;
 
             border-bottom: 2px dotted #0072bc;
+          }
+
+          h5 {
+            color: #444;
+// font-family: Open Sans;
+font-size: 14px;
+font-style: normal;
+font-weight: 450;
+line-height: 153%; /* 30.6px */
+
           }
           h6 {
             font-size: 16px;
@@ -188,6 +203,7 @@
       align-items: center;
       justify-content: center;
     }
+
 
     .sliderArrowLeft {
       width: 40px;
@@ -275,7 +291,7 @@
         background-position: center center;
         background-size: cover;
         background-repeat: no-repeat;
-        border-radius: 15px;
+        border-radius: 6px;
         background-color: white;
 
         position: relative;
@@ -873,23 +889,26 @@
             color: white;
           }
         }
-       
+
+           h5 {
+        color: #444;
+    /* font-family: Open Sans; */
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 153%;
       }
 
+       
+      }
+   
       .project {
         margin-top: 40px;
-
-        padding: 20px;
+        padding: 6px;
         margin-right: 45 !important;
         margin-bottom: 40px;
         margin-top: 20px;
-        height: 320px;
-        // background: linear-gradient(
-        //   90deg,
-        //   rgba(225, 241, 245, 0.5) 0.18%,
-        //   rgba(225, 241, 245, 0) 46.58%,
-        //   rgba(225, 241, 245, 0.5) 99.17%
-        // );
+        height: 344px;
         border-radius: 5px;
         box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
         border-image-width: 20px;
@@ -899,6 +918,7 @@
         border-radius: 4px;
         background-color: white;
         position: relative;
+        // margin-left: 30px;
 
         .header {
           display: flex;

@@ -14,7 +14,10 @@ function TrainerSection() {
     setVId(id);
   };
   return (
-    <section className={Styles.First}>
+    <>
+    <section className={Styles.container}>
+      <h4>Alumni Spotlight</h4>
+      <div className={Styles.First}>
       <VideoPopup triggers={video} setTriggers={setVideo} ids={vId} />
       <div className={Styles.switch}>
         <p>Hear it from our Alumni</p>
@@ -47,7 +50,7 @@ function TrainerSection() {
       <div className={Styles.proImgWrap}>
         <div className="imgWrapper">
           <Image
-            src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/learnbay-main-review.webp"
+            src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/learnbay-review.webp"
             loading="lazy"
             width="358"
             height="212"
@@ -56,7 +59,9 @@ function TrainerSection() {
           />
         </div>
       </div>
+      </div>
     </section>
+    </>
   );
 }
 

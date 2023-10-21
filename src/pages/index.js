@@ -36,8 +36,13 @@ const NewsSection = dynamic(() =>
   import("../../components/HomePage/NewsSection/NewsSection")
 );
 
+const MasterClass = dynamic (() =>
+import ("../../../learnbay_v2/components/MasterClass/MasterClass")
+)
+
 import { DADataScienceCourseData } from "../../Data/DataAnalyticsData";
 import WhyLearnbay from "../../components/HomePage/WhyLearnbay/WhyLearnbay";
+import ProjectSection from "../../components/HomePage/ProjectSection/ProjectSection";
 
 
 
@@ -81,17 +86,22 @@ export default function Home() {
         radio={true}
       /> */}
       <WhyLearnbay />
+      <ProjectSection />
       <TrainerSection link="D-gcPaK_-x4" />
       <Testimonial
         redirectDS={true}
-        heading="Our Alumni Spotlight"
+        heading=""
         Testimonial={DataScienceCourseData[0].testimonial}
       />
       <ContactUs dataScienceCounselling={true} radio={true} />
+
+    
+<MasterClass/>
+
       <Media
           projectData={DataScienceCourseData[0].newsData}
         />
-
+     
       <SeventhSection />
 
       <Footer />
