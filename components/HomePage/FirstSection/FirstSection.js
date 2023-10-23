@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import styles from "./FirstSection.module.css";
-import { FaChevronDown, FaBell, FaDownload } from "react-icons/fa";
+import { FaChevronDown, FaBell, FaDownload, FaCheck } from "react-icons/fa";
 import Popup from "../../Popup/Popup";
 import Form from "../../Form/Form";
 import Image from "next/image";
@@ -108,7 +108,7 @@ const FirstSection = ({
                 />
               </div>
               <div className={styles.ibmLogoMobile}>
-              <p className={styles.ptop}>In Collaboration With</p>
+                <p className={styles.ptop}>In Collaboration With</p>
                 <div className={styles.ImageBlock}>
                   <Image
                     src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/FirstSection.png"
@@ -166,76 +166,120 @@ const FirstSection = ({
           </div>
         </SwiperSlide>
         <SwiperSlide className={styles.slide}>
-          <div className={styles.First}>
-            <div className={styles.FirstLeft}>
-              <p className={styles.pTop}>Learn More</p>
-              <h1 className={styles.h1}>
-                India’s #1 Upskilling Platform for Working Professionals
-              </h1>
-              <p className={styles.blinkMobile}>
-                Elevate your tech career with our Master's programs, where
-                practical skills meet excellence.
+          <div className={styles.Second}>
+            <div className={styles.SecondSectionLeft}>
+              <p className={styles.SecondBlink}>
+                <span className={styles.SecondpTop}>Switch</span> from{" "}
+                <span className={styles.SecondpTop}>
+                  Service based to Product Based
+                </span>{" "}
+                company with our
               </p>
+              <h1 className={styles.h1}>
+                Software Development Certification Program
+              </h1>
+              <div className={styles.reviewBox}>
+                <div>
+                  <Image
+                    src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/preksha-home.png"
+                    width="60"
+                    height="60"
+                    alt="data science course"
+                  />
+                </div>
+                <div>
+                  <p className={styles.authorName}>Shravanthi A.</p>
+                  <p className={styles.authorPostion}>Data Scientist @HCL</p>
+                </div>
+              </div>
               <div className={styles.imgWrapperMobile}>
                 <Image
-                  src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/newHeaderOne.webp"
+                  src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/secondSection.webp"
                   width="580"
                   height="450"
                   alt="data science course"
                 />
               </div>
-              <div className={styles.ibmLogoMobile}>
-              <p className={styles.ptop}>In Collaboration With</p>
-                <div className={styles.ImageBlock}>
-                  <Image
-                    src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/FirstSection.png"
-                    width="283"
-                    height="51"
-                    loading="lazy"
-                    alt="data science course"
-                  />
-                </div>
-              </div>
-              <p className={styles.blink}>
-                Elevate your tech career with our Master's programs, where
-                practical skills meet excellence.
-              </p>
               <div className={styles.btnWrapper}>
-                <a href="#course">
-                  <Button
-                    className={styles.outLineBtn}
-                    ButtonWhiteBg
-                    text="Courses"
-                    passIcon={<FaChevronDown className="bIconS" />}
-                  />
-                </a>
                 <div onClick={popupShow}>
                   <Button
                     className={styles.Btn}
-                    text="Enquire Now"
+                    text="View Program Details"
                     passIcon={<FaBell className="bIconS" />}
                   />
                 </div>
-              </div>
-              <div className={styles.box}>
-                <p>
-                  <span className={styles.blue}>35K+ </span>Trusted Learners
-                </p>
-                <p>
-                  <span className={styles.orange}>8LPA </span>Average Salary
-                </p>
-                <p>
-                  <span className={styles.green}>40LPA </span>Highest Salary
-                </p>
               </div>
             </div>
 
             <div className={styles.secondLeft}>
               <div className={styles.imgWrapperDesktop}>
                 <Image
-                  src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/newHeaderOne.webp"
+                  src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/secondSection.webp"
                   width="580"
                   height="450"
+                  alt="data science course"
+                />
+              </div>
+            </div>
+          </div>
+        </SwiperSlide>
+
+        <SwiperSlide className={styles.slide}>
+          <div className={styles.forth}>
+            <div className={styles.forthFirstLeft}>
+              <p className={styles.SecondBlink}>
+                Get
+                <span className={styles.SecondpTop}> job-ready </span> within 6
+                months
+              </p>
+              <h1 className={styles.h1}>Masters in Computer Science</h1>
+
+              <p className={styles.blinkMobile}>
+                Get equipped with industry standard skills and unlock job abroad
+                opportunities
+              </p>
+              <div className={styles.imgWrapperMobile}>
+                <Image
+                  src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/job-ready.webp"
+                  width="234"
+                  height="300"
+                  alt="data science course"
+                />
+              </div>
+
+              <div className={styles.BoxUpper}>
+                <div className={styles.InnerBox}>
+                  <FaCheck className={styles.iconBoxCheck} />
+                  Data Science & AI
+                </div>
+                <div className={styles.InnerBox}>
+                  <FaCheck className={styles.iconBoxCheck} />
+                  Software Engineering
+                </div>
+              </div>
+              <p className={styles.blink}>
+                Get equipped with industry standard skills and unlock{" "}
+                <span style={{ color: "#F99600", fontWeight: "700" }}>
+                  job abroad opportunities
+                </span>
+              </p>
+              <div className={styles.btnWrapper}>
+                <a href="#course">
+                  <Button
+                    className={styles.Btn}
+                    text="Explore Masters Program"
+                    passIcon={<FaChevronDown className="bIconS" />}
+                  />
+                </a>
+              </div>
+            </div>
+
+            <div className={styles.secondLeft}>
+              <div className={styles.imgWrapperDesktop}>
+                <Image
+                  src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/job-ready.webp"
+                  width="234"
+                  height="300"
                   alt="data science course"
                 />
               </div>
@@ -243,29 +287,29 @@ const FirstSection = ({
           </div>
         </SwiperSlide>
         <SwiperSlide className={styles.slide}>
-          <div className={styles.First}>
-            <div className={styles.FirstLeft}>
-              <p className={styles.pTop}>Learn More</p>
+          <div className={styles.Third}>
+            <div className={styles.ThirdFirstLeft}>
               <h1 className={styles.h1}>
-                India’s #1 Upskilling Platform for Working Professionals
+                All our<span className={styles.h1Span}> top programs</span> just
+                got upgraded with{" "}
+                <span className={styles.h1Span}>Generative AI modules</span>
               </h1>
               <p className={styles.blinkMobile}>
-                Elevate your tech career with our Master's programs, where
-                practical skills meet excellence.
+                Be the first to Change, Adapt and Build in AI with the Advanced
+                Gen-AI add on
               </p>
               <div className={styles.imgWrapperMobile}>
                 <Image
-                  src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/newHeaderOne.webp"
+                  src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/thirdSection.webp"
                   width="580"
-                  height="450"
+                  height="380"
                   alt="data science course"
                 />
               </div>
               <div className={styles.ibmLogoMobile}>
-              <p className={styles.ptop}>In Collaboration With</p>
                 <div className={styles.ImageBlock}>
                   <Image
-                    src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/FirstSection.png"
+                    src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/generativeAi.png"
                     width="283"
                     height="51"
                     loading="lazy"
@@ -274,129 +318,41 @@ const FirstSection = ({
                 </div>
               </div>
               <p className={styles.blink}>
-                Elevate your tech career with our Master's programs, where
-                practical skills meet excellence.
+                Be the first to Change, Adapt and <b>Build in AI</b> with the{" "}
+                <b>Advanced Gen-AI add on</b>
               </p>
+              <div className={styles.ImageBlock}>
+                <Image
+                  src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/generativeAi.png"
+                  width="400"
+                  height="91"
+                  loading="lazy"
+                  alt="data science course"
+                />
+              </div>
               <div className={styles.btnWrapper}>
                 <a href="#course">
                   <Button
-                    className={styles.outLineBtn}
-                    ButtonWhiteBg
-                    text="Courses"
+                    className={styles.Btn}
+                    text="Explore Courses"
                     passIcon={<FaChevronDown className="bIconS" />}
                   />
                 </a>
-                <div onClick={popupShow}>
-                  <Button
-                    className={styles.Btn}
-                    text="Enquire Now"
-                    passIcon={<FaBell className="bIconS" />}
-                  />
-                </div>
-              </div>
-              <div className={styles.box}>
-                <p>
-                  <span className={styles.blue}>35K+ </span>Trusted Learners
-                </p>
-                <p>
-                  <span className={styles.orange}>8LPA </span>Average Salary
-                </p>
-                <p>
-                  <span className={styles.green}>40LPA </span>Highest Salary
-                </p>
               </div>
             </div>
 
             <div className={styles.secondLeft}>
               <div className={styles.imgWrapperDesktop}>
                 <Image
-                  src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/newHeaderOne.webp"
+                  src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/thirdSection.webp"
                   width="580"
-                  height="450"
+                  height="380"
                   alt="data science course"
                 />
               </div>
             </div>
           </div>
         </SwiperSlide>
-        <SwiperSlide className={styles.slide}>
-          <div className={styles.First}>
-            <div className={styles.FirstLeft}>
-              <p className={styles.pTop}>Learn More</p>
-              <h1 className={styles.h1}>
-                India’s #1 Upskilling Platform for Working Professionals
-              </h1>
-              <p className={styles.blinkMobile}>
-                Elevate your tech career with our Master's programs, where
-                practical skills meet excellence.
-              </p>
-              <div className={styles.imgWrapperMobile}>
-                <Image
-                  src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/newHeaderOne.webp"
-                  width="580"
-                  height="450"
-                  alt="data science course"
-                />
-              </div>
-              <div className={styles.ibmLogoMobile}>
-              <p className={styles.ptop}>In Collaboration With</p>
-                <div className={styles.ImageBlock}>
-                  <Image
-                    src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/FirstSection.png"
-                    width="283"
-                    height="51"
-                    loading="lazy"
-                    alt="data science course"
-                  />
-                </div>
-              </div>
-              <p className={styles.blink}>
-                Elevate your tech career with our Master's programs, where
-                practical skills meet excellence.
-              </p>
-              <div className={styles.btnWrapper}>
-                <a href="#course">
-                  <Button
-                    className={styles.outLineBtn}
-                    ButtonWhiteBg
-                    text="Courses"
-                    passIcon={<FaChevronDown className="bIconS" />}
-                  />
-                </a>
-                <div onClick={popupShow}>
-                  <Button
-                    className={styles.Btn}
-                    text="Enquire Now"
-                    passIcon={<FaBell className="bIconS" />}
-                  />
-                </div>
-              </div>
-              <div className={styles.box}>
-                <p>
-                  <span className={styles.blue}>35K+ </span>Trusted Learners
-                </p>
-                <p>
-                  <span className={styles.orange}>8LPA </span>Average Salary
-                </p>
-                <p>
-                  <span className={styles.green}>40LPA </span>Highest Salary
-                </p>
-              </div>
-            </div>
-
-            <div className={styles.secondLeft}>
-              <div className={styles.imgWrapperDesktop}>
-                <Image
-                  src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/newHeaderOne.webp"
-                  width="580"
-                  height="450"
-                  alt="data science course"
-                />
-              </div>
-            </div>
-          </div>
-        </SwiperSlide>
-        
       </Swiper>
     </>
   );

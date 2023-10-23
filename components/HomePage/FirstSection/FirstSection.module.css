@@ -1,12 +1,181 @@
-.First {
-  margin-top: 70px;
-  padding: 70px 100px 70px 100px;
+.First, .Second, .Third, .forth {
+  margin-top: 80px;
+  padding: 70px 100px 76px 100px;
   display: grid;
   position: relative;
   /* align-items: center; */
   grid-template-columns: 53% 43%;
   gap: 50px;
+}
+
+.First {
   background: linear-gradient(180deg, #232323 16.69%, #012F4E 99.97%);
+}
+
+.Second, .Third {
+  background: linear-gradient(180deg, #232323 16.69%, #3C3C3C 99.97%);
+}
+
+.Second {
+  padding: 85px 100px 0px;
+  gap: 0px;
+  grid-template-columns: 50% 50%;
+}
+
+.Second .secondLeft {
+  margin-bottom: -5px;
+}
+
+.forth {
+  background: url("https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/forthSection.webp");
+  background-size: cover;
+  gap: 0px;
+  grid-template-columns: 60% 40%;
+  padding: 100px 100px 36px 100px;
+}
+
+.forth .blink {
+  margin: 50px 0px 30px 0px;
+}
+
+.forth .btnWrapper {
+  margin: 0px 0px 66px 0px;
+}
+
+.forth .SecondBlink {
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 151.5%;
+  letter-spacing: 0.45px;
+  padding: 0px;
+}
+
+.forth .h1 {
+  margin: 20px 0px 30px 0px;
+  font-size: 50px;
+  padding: 0;
+  line-height: 50px;
+}
+
+
+.BoxUpper {
+  display: flex;
+  gap: 20px;
+  grid-template-columns: 50% 50%;
+  color: #fff;
+}
+
+.InnerBox {
+  border-radius: 26.667px;
+  background: #33353C;
+  padding: 5px 24px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.iconBoxCheck {
+  color: #2db621;
+}
+
+.Third {
+  grid-template-columns: 49% 56%;
+  gap: 0;
+  padding: 57px 100px 25px 100px;
+}
+
+.forth .imgWrapperDesktop {
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  height: fit-content;
+}
+
+.forth .secondLeft {
+  display: flex;
+  justify-content: center;
+}
+
+.ThirdFirstLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.Third .h1 {
+font-size: 33px;
+line-height: 151.5%;
+padding: 0px;
+margin: 0;
+}
+
+.Third .blink {
+  padding-right: 230px;
+  margin: 0;
+}
+
+.Third .btnWrapper {
+  margin: 0px 0px 41px 0px;
+}
+
+.Third .ImageBlock {
+  width: fit-content;
+  height: max-content;
+}
+
+.Third .imgWrapperDesktop img {
+  padding: 0px;
+}
+
+.reviewBox {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.SecondBlink {
+  font-size: 22px;
+  font-style: normal;
+  padding-right: 150px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 151.5%; /* 45.45px */
+  letter-spacing: 0.3px;
+}
+
+.SecondpTop {
+  color: #f99600;
+}
+
+.authorName, .authorPostion {
+  font-size: 15px;
+  margin: 0;
+}
+
+.authorName {
+  color: #fff;
+}
+
+.authorPostion {
+  color: #82CEFF;
+}
+
+.SecondSectionLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.SecondSectionLeft .btnWrapper {
+margin: 0px 0px 24px 0px;
+}
+
+.SecondSectionLeft .h1 {
+  font-size: 45px;
+  line-height: 57px;
+  padding-right: 0px;
+  margin: 0;
 }
 
 .box {
