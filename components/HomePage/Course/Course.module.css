@@ -141,6 +141,29 @@
   border-radius: 8px;
   background-color: white;
 }
+
+.newSliderWrap {
+  display: flex !important;
+  flex-flow: column;
+  border-radius: 8px;
+  background: url("https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/Course-home/courseBack.webp");
+  background-size: cover;  /* Ensures the background image covers the entire element */
+  background-position: center;  /* Centers the background image */
+  z-index: 999;
+  position: relative;
+  height: 100%; /* Set the height to 100% to ensure it covers the entire parent */
+}
+
+.newSliderWrap .contentBox {
+  width: 100%;
+  flex-flow: column;
+  align-items: center;
+  padding: 20px 20px 12px 20px;
+  margin-left: 0px;
+  background-color: rgba(255, 255, 255, 0.8); /* Use rgba for background color with transparency */
+}
+
+
 .contentBox {
   width: 100%;
   position: relative;

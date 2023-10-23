@@ -111,6 +111,7 @@ export const courseDetails = [
               "12 Projects",
               "Course Fee : ₹ 1,10,000 ",
             ],
+            newDesign: true,
             link1: "/full-stack-software-development-program",
             link2:
               "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Full+Stack+Software+Development+Program+Learnbay.pdf",
@@ -131,6 +132,7 @@ export const courseDetails = [
               "12 Projects",
               "Course Fee : ₹ 95,000 ",
             ],
+            newDesign: true,
             link1:
               "/software-development-program-with-specialization-in-blockchain",
             link2:
@@ -153,6 +155,7 @@ export const courseDetails = [
               "12 Projects",
               "Course Fee : ₹ 95,000 ",
             ],
+            newDesign: true,
             link1:
               "/software-development-program-with-specialization-in-cloud-computing-&-devops",
             link2:
@@ -479,6 +482,7 @@ export const courseDetails = [
               "12 Advance + 4 Capstone",
               "Course Fee : ₹ 1,29,000 ",
             ],
+            newDesign: true,
             link1: "/data-science-ai-masters-program",
             link2:
               "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Data+Science+and+AI+Master's+Program+%5BWith+Unlimited+Interview+Calls%5D.pdf",
