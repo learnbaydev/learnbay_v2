@@ -20,7 +20,13 @@ import { IoTimeOutline } from "react-icons/io5";
 
 import { BsCheckLg } from "react-icons/bs";
 
-const Course = ({ dataScience, radio, dataScienceCounselling, Green }) => {
+const Course = ({
+  dataScience,
+  radio,
+  dataScienceCounselling,
+  Green,
+  newDesign,
+}) => {
   const [mobile, setMobile] = useState(false);
   const [value, setValue] = useState(3.68);
   const [popups, setPopups] = useState(false);
@@ -159,10 +165,18 @@ const Course = ({ dataScience, radio, dataScienceCounselling, Green }) => {
                               brochureLinks,
                               courseTime,
                               Green,
+                              newDesign,
                             } = viewAllData;
                             return (
                               <SwiperSlide className={styles.leftSide} key={id}>
-                                <div key={id} className={styles.SliderWrap}>
+                                <div
+                                  key={id}
+                                  className={
+                                    newDesign
+                                      ? styles.newSliderWrap
+                                      : styles.SliderWrap
+                                  }
+                                >
                                   <a href={link1} className={styles.imgWrap}>
                                     <div className="imgWrapper">
                                       <Image
