@@ -27,24 +27,27 @@ const FeeSection = ({
 
   return (
     <div className={styles.feesmain} id="fees">
-      <Popup
+       <Popup
         trigger={popups}
         setTrigger={setPopups}
         className="popupModal"
-        downloadBrochure
+        popup={true}
+        // radio={radio}
+        dataScience={dataScience}
+        dataScienceCounselling={dataScienceCounselling}
       >
         <div className="leftPopup">
           <div
             className="whiteP"
-            style={{ width: "350px", height: "400px" }}
+            style={{ width: "340px", height: "400px" }}
           ></div>
         </div>
         <div className="RightPopup">
           <h5>Apply For Counselling</h5>
-
           <Form
             dataScience={dataScience}
             dataScienceCounselling={dataScienceCounselling}
+            // radio={radio}
           />
         </div>
       </Popup>
@@ -115,11 +118,13 @@ const FeeSection = ({
               <h2>
                 {FeeEmi} <span className={styles.montspan}>month</span>
               </h2>
+              <div  onClick={popupShow}>
               <Button
-                onClick={() => popupShow(false, true)}
+               
                 className={styles.Btn}
                 text="Request a Callback"
               />
+              </div>
               <div className={styles.feeh1}>
                 <div>
                   <p>Payment Partners</p>

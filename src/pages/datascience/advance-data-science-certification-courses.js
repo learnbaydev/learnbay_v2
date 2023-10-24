@@ -74,6 +74,7 @@ import ('../../../components/CoursePage/FeeSection/FeeSection')
 import OfferPopup from "../../../components/OfferPopup/OfferPopup";
 import BottomBar from "../../../components/WebPage/BottomBar/BottomBar";
 import ContactUs from "../../../components/HomePage/ContactUs/ContactUs";
+import MentorsSection from "../../../components/MastersCourse/MentorsSection/MentorsSection";
 // import SecondNavbar from "../../../components/CoursePage/SecondNavbar/SecondNavbar";
 const WhyLearnbay = dynamic(() =>
   import("../../../components/MastersCourse/WhyLearnbay/WhyLearnbay")
@@ -262,6 +263,7 @@ function Blockchain({ }) {
           FeeContent6="No additional cost"
           dataScienceCounselling={true}
         />
+        <MentorsSection />
         <DomainSection
           dataScience={true}
           domainSectionData={DataScienceCourseData[0].domainSection}
