@@ -74,7 +74,7 @@ import ('../../../components/CoursePage/FeeSection/FeeSection')
 import OfferPopup from "../../../components/OfferPopup/OfferPopup";
 import BottomBar from "../../../components/WebPage/BottomBar/BottomBar";
 import ContactUs from "../../../components/HomePage/ContactUs/ContactUs";
-import MentorsSection from "../../../components/MastersCourse/MentorsSection/MentorsSection";
+import NewProjectSection from "../../../components/CoursePage/NewProjectSection/NewProjectSection";
 // import SecondNavbar from "../../../components/CoursePage/SecondNavbar/SecondNavbar";
 const WhyLearnbay = dynamic(() =>
   import("../../../components/MastersCourse/WhyLearnbay/WhyLearnbay")
@@ -268,14 +268,15 @@ function Blockchain({ }) {
           dataScience={true}
           domainSectionData={DataScienceCourseData[0].domainSection}
         />
-        <Project
+        {/* <Project
           projectData={DataScienceCourseData[0].project}
           tools="12+"
           dataScience={true}
           titleCourse="Data Science Project Brochure"
           brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Data+Science+and+AI+Projects.pdf"
           project="15+"
-        />
+        /> */}
+        <NewProjectSection />
         {/* {batchDateData === "" ? (
           ""
         ) : (
