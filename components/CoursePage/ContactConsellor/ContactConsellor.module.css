@@ -47,6 +47,7 @@
     font-weight: 500;
     line-height: 119.5%;
     background: none;
+    cursor: pointer;
 
 }
 .consbtn {
@@ -64,6 +65,12 @@
     border: none;
     padding: 10px 44px;
     margin: 25px 0px;
+cursor: pointer;
+}
+.consbtn1 :hover {
+  background-color: #ffffff;
+  color: #0072BC;
+  border: 1px solid  #0072BC;;
 }
 
 .conimg {

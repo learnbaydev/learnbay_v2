@@ -133,17 +133,21 @@ line-height: 158%;
   flex-shrink: 0;
   color: #FFF;
   text-align: center;
-  font-size: 10px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 700;
   line-height: 155%;
   border:  none;
   margin: 20px;
   cursor: pointer;
+  padding: 2px 10px 2px 13px;
 }
 .fin button:hover {
   background: #fff;
   color: #0072BC;
+/* font-size: 8px; */
+font-size: 13px;
+padding: 2px 10px 2px 13px;
 }
 .mainbatch {
   display: flex;
