@@ -75,6 +75,7 @@ import OfferPopup from "../../../components/OfferPopup/OfferPopup";
 import BottomBar from "../../../components/WebPage/BottomBar/BottomBar";
 import ContactUs from "../../../components/HomePage/ContactUs/ContactUs";
 import NewProjectSection from "../../../components/CoursePage/NewProjectSection/NewProjectSection";
+import MentorsSection from "../../../components/MastersCourse/MentorsSection/MentorsSection";
 // import SecondNavbar from "../../../components/CoursePage/SecondNavbar/SecondNavbar";
 const WhyLearnbay = dynamic(() =>
   import("../../../components/MastersCourse/WhyLearnbay/WhyLearnbay")
