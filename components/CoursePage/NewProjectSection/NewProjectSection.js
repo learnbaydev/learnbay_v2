@@ -267,7 +267,6 @@ function NewProjectSection() {
               </div>
             </div>
           </SwiperSlide>
-          
         </Swiper>
       </div>
     </section>
