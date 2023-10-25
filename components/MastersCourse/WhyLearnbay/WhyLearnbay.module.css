@@ -4,9 +4,58 @@
   font-size: 36px;
   font-style: normal;
   font-weight: 700;
-  line-height: 126.5%; 
+  line-height: 126.5%;
 }
 
 .container {
   padding: 50px 100px;
+}
+
+.MainDiv {
+  display: grid;
+  grid-template-columns: 35% 60%;
+  gap: 50px;
+  margin-top: 60px;
+}
+
+.LeftSide {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.InnerBox {
+  padding: 25px 50px;
+  border: 2px solid #0072bc;
+  border-radius: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 5px 0px #2DB621 0%, #2DB621 100%;
+}
+
+.Cont {
+  color: #646464;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 126.5%; /* 31.625px */
+}
+
+.left h6 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.mainCont {
+  display: grid;
+  grid-template-columns: 10% 90%;
+  margin-top: 20px;
+  padding-left: 22px;
+}
+
+.para{
+  font-size: 18px;
+  margin: 0;
+  color: #686565;
 }
