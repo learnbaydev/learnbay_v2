@@ -7,11 +7,11 @@ function SecondSection({ SecondSectionData }) {
     <div className={styles.boxP}>
       <div className={styles.boxD}>
         <div className={styles.boxC}>
-          <div>
+          <div className={styles.imgBox}>
             <Image
-              src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/global.png"
-              width="50"
-              height="50"
+              src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/Mask+group+(4).png"
+              width="35"
+              height="35"
               priority={true}
               alt="data science course"
             />
@@ -21,11 +21,11 @@ function SecondSection({ SecondSectionData }) {
       </div>
       <div className={styles.boxE}>
         <div className={styles.boxC}>
-          <div>
+          <div className={styles.imgBox}>
             <Image
-              src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/immigration.png"
-              width="50"
-              height="50"
+              src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/Mask+group+(5).png"
+              width="35"
+              height="35"
               priority={true}
               alt="data science course"
             />
@@ -35,30 +35,30 @@ function SecondSection({ SecondSectionData }) {
       </div>
       <div className={styles.boxE}>
         <div className={styles.boxC}>
-          <div>
+          <div className={styles.imgBox}>
             <Image
-              src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/credits.png"
-              width="50"
-              height="50"
+              src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/Mask+group+(6).png"
+              width="35"
+              height="35"
+              priority={true}
+              alt="data science course"
+            />
+          </div>{" "}
+          <p>Integrated Generative AI</p>
+        </div>
+      </div>
+      <div className={styles.boxD}>
+        <div className={styles.boxC}>
+          <div className={styles.imgBox}>
+            <Image
+              src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/Mask+group+(7).png"
+              width="35"
+              height="35"
               priority={true}
               alt="data science course"
             />
           </div>{" "}
           <p>Transferable ECTS Credits</p>
-        </div>
-      </div>
-      <div className={styles.boxD}>
-        <div className={styles.boxC}>
-          <div>
-            <Image
-              src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/generative.png"
-              width="50"
-              height="50"
-              priority={true}
-              alt="data science course"
-            />
-          </div>{" "}
-          <p>Curriculum inclusive of Generative AI</p>
         </div>
       </div>
     </div>

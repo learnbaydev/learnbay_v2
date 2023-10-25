@@ -56,7 +56,7 @@
     outline: none;
     align-items: center;
     border-radius: 4px;
-    font-size: 14px;
+    font-size: 12px;
   }
   .nobannerButton:hover, .whiteBgButton:hover {
     background-color: #0072BC;
@@ -69,7 +69,7 @@
 }
 
   .bannerButton {
-    padding: 14px 20px;
+    padding: 14px 85px;
     outline: none;
     background-color: #0072BC;
     color: white;
@@ -80,7 +80,7 @@
     outline: none;
     align-items: center;
     border-radius: 4px;
-    font-size: 18px;
+    font-size: 12px;
     border: 1px solid #0072BC;
   }
   .bannerButton:hover {

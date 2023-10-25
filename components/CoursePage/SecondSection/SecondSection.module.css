@@ -1,189 +1,41 @@
-/* .second {
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-.h1 {
-  color: black;
-  margin: 0px 0px 10px 0px;
-  text-align: center;
-  font-size: 32px;
-  font-weight: 700;
-}
-
-.ptop {
-  font-size: 20px;
-  margin: 0px 100px;
-  color: #767676;
-  line-height: 26px;
-  text-align: center;
-}
-
-.secondBox {
-  display: grid;
-  gap: 30px;
-  margin-top: 50px;
-  grid-template-columns: 23% 23% 23% 23%;
-  justify-content: center;
-}
-
-.blue {
-  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.08);
-  border-radius: 5px;
-  padding: 10px;
-  display: grid;
-  position: relative;
-  grid-template-columns: 100%;
-  gap: 5px;
-  font-size: 14px;
-  color: #767676;
-  border-top: 6px solid #c0e6ff;
-  padding: 30px 20px;
-}
-
-.blue:nth-child(even)  {
-    border-top: 6px solid #ffe4bc;
-    padding: 30px 20px;
-  }
-
-.heading {
-  font-size: 18px;
-  text-align: left;
-  margin: 5px 0px 10px 0px;
-}
-
-.textBox {
-  width: 100%;
-  font-size: 16px;
-  text-align: left;
-  margin: 0;
-  color: #767676;
-}
-
-.imgWrap {
-  position: absolute;
-  left: -10px;
-  top: -40px;
-  display: flex;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-  align-items: center;
-  justify-content: center;
-  background-color: white;
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
-}
-
-@media (max-width: 801px) {
-  .secondBox {
-    display: grid;
-    grid-template-columns: 46% 46%;
-    gap: 50px;
-  }
-}
-
-@media (max-width: 768px) {
-  .secondBox {
-    display: grid;
-    grid-template-columns: 47% 47%;
-  }
-}
-
-@media (max-width: 641px) {
-  .second {
-    padding: 0px 20px 50px 20px;
-    text-align: center;
-    background: none;
-  }
-  .h1 {
-    color: black;
-    margin: 10px 0px 20px 0px;
-    font-size: 24px;
-  }
-  .ptop {
-    color: #767676;
-    font-size: 18px;
-    padding: 0px 20px;
-    margin: 0;
-  }
-  .secondBox {
-    display: grid;
-    grid-template-columns: 47% 47%;
-    gap: 20px;
-    margin-top: 20px;
-  }
-  .secondBox p {
-    font-size: 17px;
-    width: 100%;
-  }
-  .blue {
-    margin-top: 40px;
-    grid-template-columns: 100%;
-  }
-  .heading {
-    font-size: 18px;
-    margin-top: 0px;
-    margin-bottom: 10px;
-  }
-  .imgWrap {
-    height: 60px;
-    width: 60px;
-    left: -3px;
-  }
-}
-
-@media (max-width: 481px) {
-  .secondBox {
-    display: grid;
-    grid-template-columns: 100%;
-  }
-  .second {
-    margin: 0;
-  }
-} */
-
 
 .boxP {
     
   display: flex;
   flex-wrap: wrap;
-  box-shadow: none;
-  margin: 83px 0px;
+  margin: 32px 80px 55px 80px;
   padding: 0px;
-  grid-gap: 10px;
-  gap: 35px;
-  justify-content: center;
+  justify-content: space-evenly;
+  border-radius: 7.22px;
+background: #FFF;
+box-shadow: 0px 0px 5.77562px 0px rgba(0, 0, 0, 0.15);
+border-image: linear-gradient(to right, rgba(0, 114, 188, 0.4), rgba(45, 182, 33, 0.4), rgba(249, 150, 0, 0.4));
+border-image-slice: 1; 
+border-image-width: 0 0 4px 0; 
+border-image-outset: 0; 
+border-image-repeat: stretch; 
+border-bottom: 4px solid transparent; 
+}
+
+.imgBox {
+  margin-bottom: -5px;
 }
 
 .boxC{
   display: flex;
     gap: 5px;
     border-radius: 3px;
-    /* border-bottom: 4px solid #0072BC; */
-    /* background: #FFF; */
-    box-shadow: 0px 0px 5.78px 0px rgba(0, 0, 0, 0.15);
-    padding: 3px 16px;
+    padding: 25px 0px 20px 0px;
+    align-items: center;
 }
 
 .boxC p{
-  color: #434343;
-  /* font-family: Open Sans; */
-  font-size: 14px;
+  color: #403F3F;
+  font-size: 15px;
   font-style: normal;
-  font-weight: 650;
-  line-height: 143.5%;
-  text-align: center;
-  padding: 4px;
-  margin: auto 0px auto 0px;
-}
-
-.boxD {
-  border-bottom: 2px solid #0072BC;
-}
-
-.boxE  {
-  border-bottom: 2px solid #F99600;
-
+  font-weight: 400;
+  line-height: 126.5%; 
+  margin: 0;
 }
 
 @media (max-width: 641px) {
@@ -195,7 +47,6 @@
     margin: 36px 4px;
     padding: 2px 0px;
     grid-gap: 16px;
-    /* gap: 87px; */
     justify-content: center;
     align-items: center;
   }
@@ -231,12 +82,10 @@
 background: #0072BC20;
     
   
-     /* opacity: 0.20;  */
   }
 
   .boxE {
     border-radius: 3px;
-/* opacity: 0.08; */
 background: #FFF7EB;
 border: none;
   }

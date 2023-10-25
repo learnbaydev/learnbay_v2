@@ -215,7 +215,7 @@ function SyllabusNew({
                         className={styles.wrapSpan}
                         style={
                           active[i].value
-                            ? { color: "#0072bc" }
+                            ? { color: "#0072bc", fontWeight:"700" }
                             : { color: "#646464" }
                         }
                       >

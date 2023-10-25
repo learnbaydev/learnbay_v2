@@ -76,6 +76,7 @@ import BottomBar from "../../../components/WebPage/BottomBar/BottomBar";
 import ContactUs from "../../../components/HomePage/ContactUs/ContactUs";
 import NewProjectSection from "../../../components/CoursePage/NewProjectSection/NewProjectSection";
 import MentorsSection from "../../../components/MastersCourse/MentorsSection/MentorsSection";
+import TrainerSection from "../../../components/HomePage/TrainerSection/TrainerSection";
 // import SecondNavbar from "../../../components/CoursePage/SecondNavbar/SecondNavbar";
 const WhyLearnbay = dynamic(() =>
   import("../../../components/MastersCourse/WhyLearnbay/WhyLearnbay")
@@ -178,7 +179,7 @@ function Blockchain({ }) {
           titleCourse="Advance Data Science & AI Program with Domain Specialization"
           cityParaCont="Elevate your tech career with our Master's programs"
           brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Advance+Data+Science+and+AI+Certification+Program+Learnbay.pdf"
-          FirstRightImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/coursePage/course-head-image.webp"
+          FirstRightImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/advance-header.webp"
           firstToparaImg="with Domain Specialization"
           firstHeading="Advance Data Science & AI Program"
           firstTopPara="Curriculum Inclusive of Gen-AI"
@@ -188,16 +189,17 @@ function Blockchain({ }) {
           SecondSectionData={DataScienceCourseData[0].secondSection}
         />
         <SecondNavbar/>
-        <Testimonial
-          redirectDS={true}
-          Testimonial={DataScienceCourseData[0].testimonial}
-          heading="Our Alumni Speak"
-          para="Discover the impact of our programs on career growth"
-        />
         <WhoProgram
-          leftImage="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/masterPage/who-program.webp"
+          leftImage="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/advance-who.webp"
           ThirdSectionData={DataScienceCourseData[0].thirdSection}
         />
+        <TrainerSection link="D-gcPaK_-x4" />
+      <Testimonial
+        redirectDS={true}
+        heading=""
+        Testimonial={DataScienceCourseData[0].testimonial}
+      />
+        
      
          <WhyLearnbay />
          < Gethire/>

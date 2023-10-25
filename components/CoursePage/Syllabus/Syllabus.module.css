@@ -1,7 +1,7 @@
 .Syllabus {
   display: grid;
   grid-template-columns: 57% 34%;
-  margin: 30px 140px 50px 140px;
+  margin: 50px 140px 70px 140px;
   gap: 110px;
 }
 
@@ -175,10 +175,10 @@ padding: 10px 20px;
 .formWrapper h4 {
   color: #555;
   text-align: center;
-  font-size: 20px;
+  font-size: 22px;
   margin: 20px 0px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 700;
   line-height: 191.682%; 
 }
 
@@ -187,7 +187,7 @@ padding: 10px 20px;
   justify-content: right;
 }
 .ptop {
-  font-size: 16px;
+  font-size: 20px;
   margin: 30px 100px;
   color: #767676;
   line-height: 26px;
@@ -244,7 +244,7 @@ padding: 10px 20px;
   padding-left: 0px;
 }
 .topBar {
-  padding: 50px 140px 0px 140px;
+  padding: 0px 140px 0px 140px;
   text-align: left;
   display: flex;
   align-items: baseline;
@@ -259,7 +259,7 @@ padding: 10px 20px;
   cursor: pointer;
 }
 .colorHeading {
-  color: #edb552;
+  color: #F99600;
 font-style: normal;
 font-weight: 700;
 line-height: 126.5%; 
@@ -286,7 +286,7 @@ line-height: 126.5%;
   height: fit-content;
   cursor: pointer; 
   position: relative;
-  top: 90px;
+  top: 42px;
   /* right: 30px; */
 }
 
@@ -299,7 +299,7 @@ line-height: 126.5%;
   cursor: pointer;
   position: relative;
   left: 1200px;
-  top: 90px;
+  top: 42px;
 }
 
 @media (min-width: 1281px) {

@@ -1,38 +1,41 @@
 .upperDiv {
-    
-  gap: 100px;
   align-items: center;
   position: sticky;
   top: 0px;
   z-index: 9999;
-  padding: 15px 100px;
+  padding: 15px 100px 0px 100px;
   background: #fff;
   width: 100vw;
-  justify-content: space-between;
-  display:flex;
   justify-content: center;
-  
+  display:flex;
+  gap: 60px;
+}
+
+.hr {
+  border: 0.5px solid #bbb;
 }
 
 .innerP {
   display: flex;
-  gap: 70px;
+  gap: 100px;
   justify-content: center;
 }
 
 .innerP p {
   cursor: pointer;
-  font-weight: 600;
+  font-weight: 700;
+  font-size: 20px;
   color: #444444;
+  padding-bottom: 8px;
 }
 
 .innerP p:hover {
   color: #0072BC;
-  border-bottom: 1px solid;
+  border-bottom: 3px solid;
 }
 
 .active {
-  border-bottom: 2px solid #0072BC;
+  border-bottom: 3px solid #0072BC;
   color: #0072BC !important;
 }
 
