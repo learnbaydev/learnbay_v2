@@ -5,10 +5,10 @@ import Image from "next/image";
 function ThirdSection({ leftImage, ThirdSectionData }) {
   return (
     <div className={`${styles.program} wrapper`} id="eligibility">
-      <h4>Who's Is This Program For?</h4>
+      <h4>Who is this program for?</h4>
       <div className={styles.programWrap}>
         <div className={styles.left}>
-          <Image src={leftImage} width={500} height={500} alt="who" />
+          <Image src={leftImage} width={500} height={514} alt="who" />
         </div>
         <div>
           <div className={styles.boxWrap}>

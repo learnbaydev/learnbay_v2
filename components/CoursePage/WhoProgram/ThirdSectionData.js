@@ -13,7 +13,7 @@ export const ThirdSectionData = [
       {
         id: 1,
         icon: <MdOutlineWorkOutline className={styles.oIcon} />,
-        heading: "Work experience",
+        heading: "Work Exp.",
         para: "Minimum 1 year of IT/Non-IT work experience",
       },
       {

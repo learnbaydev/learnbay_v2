@@ -101,16 +101,17 @@ function SecondNavbar() {
               Alumni
             </p>
           </Link>
-          <Link href="#eligibility">
-            <p className={activeSection === 'eligibility' ? styles.active : styles.inactive}>
-              Eligibility
-            </p>
-          </Link>
           <Link href="#curriculum">
             <p className={activeSection === 'curriculum' ? styles.active : styles.inactive}>
               Curriculum
             </p>
           </Link>
+          <Link href="#eligibility">
+            <p className={activeSection === 'eligibility' ? styles.active : styles.inactive}>
+              Degree
+            </p>
+          </Link>
+          
           <Link href="#fees">
             <p className={activeSection === 'fees' ? styles.active : styles.inactive}>
               Fees
@@ -128,7 +129,7 @@ function SecondNavbar() {
         <Button text="Apply for Counselling" outline={true} onClick={popupShow} />
       </div>
       </div>
-      <hr />
+      <hr className={styles.hr}/>
     </>
   );
 }

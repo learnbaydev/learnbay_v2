@@ -116,8 +116,8 @@ function FirstSection({
             ) : (
               <Image
                 src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/ibm%26microsoft.webp"
-                width="283"
-                height="51"
+                width="266"
+                height="48"
                 loading="lazy"
                 alt="data science course"
               />

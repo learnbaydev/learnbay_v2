@@ -1,7 +1,7 @@
 .First {
   background-size: contain;
   margin-top: 80px;
-  padding: 60px 100px 40px 130px;
+  padding: 45px 100px 40px 130px;
   display: grid;
   grid-template-columns: 53% 43%;
   gap: 50px;
@@ -51,7 +51,7 @@
   text-align: center;
 }
 .ptopCiity {
-  font-size: 19px;
+  font-size: 23px;
   margin-bottom: 30px;
   color: #fff;
 }

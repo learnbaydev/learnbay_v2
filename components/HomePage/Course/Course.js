@@ -177,6 +177,15 @@ const Course = ({
                                       : styles.SliderWrap
                                   }
                                 >
+                                  {newDesign ? (
+                                    <>
+                                      {" "}
+                                      <div className={styles.leftBorder}></div>
+                                      <div className={styles.rightBorder}></div>
+                                    </>
+                                  ) : (
+                                    ""
+                                  )}
                                   <a href={link1} className={styles.imgWrap}>
                                     <div className="imgWrapper">
                                       <Image
@@ -264,6 +273,7 @@ const Course = ({
                                           style={{
                                             color: "#2979AD",
                                             background: "#fff",
+                                            borderRadius: "0px 0px 0px 8px"
                                           }}
                                         >
                                           Brochure

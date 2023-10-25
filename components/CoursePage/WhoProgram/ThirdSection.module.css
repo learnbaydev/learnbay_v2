@@ -1,11 +1,12 @@
 .program {
   text-align: center;
+  padding: 70px 100px;
 }
 .programWrap {
   display: grid;
-  grid-template-columns: 40% 52%;
-  gap: 60px;
-  padding: 40px 0;
+  grid-template-columns: 33% 50%;
+  gap: 150px;
+  padding: 40px 0px 0px 0px;
   align-items: center;
 }
 .programWrap h4 {
@@ -20,14 +21,14 @@
   justify-content: center;
 }
 .boxWrap {
-  display: flex;
+  display: grid;
+  grid-template-columns: 40% 40%;
   flex-wrap: wrap;
-  width: 100%;
-  gap: 60px 0px;
+  grid-gap: 80px 130px;
+  gap: 80px 130px;
   justify-content: space-between;
 }
 .leftSide {
-  width: 42%;
   padding: 35px 20px;
   position: relative;
   border-radius: 2.517px;
@@ -44,7 +45,7 @@
   border: 1px solid #00000020;
 }
 .leftSide p {
-  margin-top: 40px;
+  margin-top: -30px;
   color: #444;
   font-weight: 400;
   text-align: left;
@@ -62,18 +63,17 @@
 
 /* Set the base styles for .boxIcon */
 .boxIcon {
-  width: 60px;
-  height: 60px;
-  position: absolute;
+  position: relative;
   background-color: white;
   border-radius: 4px;
   display: flex;
-  left: -20px;
+  left: -48px;
   z-index: 1;
-  top: -10px;
+  width: fit-content;
+  top: -52px;
   align-items: center;
   justify-content: center;
-  padding: 35px 45px;
+  padding: 15px 40px;
   background: #f3fcff;
 }
 
@@ -95,10 +95,10 @@
   position: absolute;
   left: 75px;
   top: 10px;
-  padding:5px 0px 5px 15px;
+  padding:5px 0px 5px 25px;
   border-radius: 0px;
   text-align: left;
-  font-size: 17px;
+  font-size: 20px;
 
 }
 
