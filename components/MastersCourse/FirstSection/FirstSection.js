@@ -1,13 +1,10 @@
-import React, { useState, useEffect } from "react";
-import styles from "./FirstSection.module.css";
-import Image from "next/image";
 import dynamic from "next/dynamic";
+import Image from "next/image";
+import { useEffect, useState } from "react";
+import { FaCheckCircle, FaRegUser } from "react-icons/fa";
 import Form from "../../Form/Form";
-import {
-  FaRegUser,
-  FaCheckCircle,
-} from "react-icons/fa";
 import FormInline from "../../FormSection/FormInline";
+import styles from "./FirstSection.module.css";
 const Button = dynamic(() => import("../../Global/Button/Button"));
 
 function FirstSection({
@@ -33,15 +30,14 @@ function FirstSection({
             <h1 className={styles.h1}>
               Masters in CS:
               <br />
-              <span style={{ color: "#0072BC" }}>Data Science and AI</span>
+              <span style={{ color: "#F99600" }}>Data Science and AI</span>
             </h1>
             <div className={styles.paraCollab}>
-              <p>In Collaboration with</p>
               <Image
-                src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/woolf-university.webp"
+                src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/coursePage/woolf-univer.webp"
                 alt="woolf-university"
-                width="216"
-                height="14"
+                width="306"
+                height="32"
               />
             </div>
           </div>
@@ -71,40 +67,35 @@ function FirstSection({
         <>
           <div className={styles.DivContent}>
             <div className={styles.firstDiv}>
+              <p className={styles.ptopC}>Learnbay Excelvarsity</p>
               <h1 className={styles.h1}>
                 Masters in Computer Science:
                 <br />
-                <span style={{ color: "#0072BC" }}>Data Science and AI</span>
+                <span style={{ color: "#F99600" }}>Data Science and AI</span>
               </h1>
               <div className={styles.paraCollab}>
-                <p>In Collaboration with</p>
                 <Image
-                  src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/woolf-university.webp"
+                  src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/coursePage/woolf-univer.webp"
                   alt="woolf-university"
-                  width="330"
-                  height="20"
+                  width="268"
+                  height="28"
                 />
               </div>
-              <div className={styles.iconPara}>
-                <p>
-                  <FaCheckCircle className={styles.iconCheck} />6 months
-                  part-time program with live online classes
-                </p>
-                <p>
-                  <FaCheckCircle className={styles.iconCheck} />
-                  Re-engineered curriculum for post Chat-GPT era
-                </p>
-                <p>
-                  <FaCheckCircle className={styles.iconCheck} />
-                  No prior coding experience required
-                </p>
+              <div className={styles.boxDivGreen}>
+                <p className={styles.special}>SPECIALIZATION IN</p>
+                <div className={styles.iconPara}>
+                  <p className={styles.boxGreen}>Data Science & Analytics</p>
+                  <p className={styles.boxGreen}>
+                    Artificial Intelligence & ML
+                  </p>
+                </div>
               </div>
               <div className={styles.BtnDiv}>
                 <div>
                   <Button bannerButton={true} text="EXPLORE PROGRAM" />
                 </div>
                 <div>
-                  <Button nobannerButton={true} text="START MY APPLICATION" />
+                  <Button whiteBgButton={true} text="START MY APPLICATION" />
                 </div>
               </div>
             </div>
