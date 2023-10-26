@@ -4,9 +4,138 @@
   font-size: 36px;
   font-style: normal;
   font-weight: 700;
-  line-height: 126.5%; 
+  line-height: 126.5%;
 }
 
 .container {
-  padding: 50px 100px;
+  padding: 50px 150px;
+}
+
+.MainDiv {
+  display: grid;
+  grid-template-columns: 33% 60%;
+  gap: 90px;
+  margin-top: 60px;
+}
+
+.LeftSide {
+  display: flex;
+  flex-direction: column;
+  gap: 43px;
+}
+
+.InnerBox {
+  border-radius: 10px;
+background: linear-gradient(0deg, #2DB62130 0%, #2DB62130 100%), #2DB62130;
+height: 80px;
+position: relative;
+left: 20px;
+flex-shrink: 0;
+}
+
+.RightSide {
+  display: grid;
+  grid-template-columns: 66% 31%;
+  gap: 20px;
+  border-radius: 10px;
+  border: 3px solid rgba(0, 114, 188, 0.32);
+  background: #F5FBFF;
+  padding: 30px 50px;
+  height: fit-content;
+}
+
+.Icon {
+  float: right;
+  font-size: 25px;
+}
+
+.TwoBox {
+  display: flex;
+flex-direction: column;
+gap: 20px;
+}
+
+.head {
+  color: #FFF;
+font-size: 40px;
+font-weight: 800;
+line-height: 126.5%; }
+
+.Para {
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 143%; 
+}
+
+.BlueBox {
+  border-radius: 10px;
+opacity: 0.72;
+background: #0072BC;
+padding: 20px 20px 50px 30px;
+color: #fff;
+}
+
+.OrangeBox {
+  border-radius: 10px;
+padding: 20px;
+opacity: 0.72;
+color: #fff;
+background: #F99600;
+}
+
+.firstBox {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.Cont {
+  color: #646464;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 126.5%; 
+  margin: 0;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.30);
+  background: #FFF;
+  padding: 15px 40px;
+  position: absolute;
+  width: 98.8%;
+  height: 93%;
+}
+
+.icon {
+  color: #00000060;
+  font-size: 35px;
+}
+
+.left h6 {
+  color: #444;
+font-size: 18px;
+font-weight: 700;
+line-height: 151.5%;
+}
+
+.mainCont {
+display: flex;
+flex-direction: column;
+gap: 10px;
+  margin-top: 20px;
+}
+
+.para{
+  font-size: 18px;
+  margin: 0;
+  color: #686565;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.checkCircle {
+  color: #20A898;
 }
