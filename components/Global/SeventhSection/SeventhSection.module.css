@@ -89,8 +89,10 @@ line-height: normal;
 }
 
 .rightPart {
-  width: 400px;
+  width: 500px;
   height: 390px;
+  display: flex;
+  align-items: center;
 }
 
 @media (max-width: 1024px) {
