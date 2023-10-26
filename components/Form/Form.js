@@ -462,7 +462,7 @@ const Form = ({
         <div>{toggle ? "" : <p className={styles.alert}>{alertMSG}</p>}</div>
         {syllabus ? (
           <div className={styles.bottomWrap}>
-            <p className={styles.FormText} style={{ fontSize: "10px" }}>
+            <p className={styles.FormText} style={{ fontSize: "9px" }}>
               By submitting the form, you agree to our Terms and Conditions and
               our Privacy Policy.
             </p>
@@ -472,7 +472,7 @@ const Form = ({
           </div>
         ) : (
           <>
-            <p className={styles.FormText} style={{ fontSize: "10px" }}>
+            <p className={styles.FormText} style={{ fontSize: "9px" }}>
               By submitting the form, you agree to our Terms and Conditions and
               our Privacy Policy.
             </p>
