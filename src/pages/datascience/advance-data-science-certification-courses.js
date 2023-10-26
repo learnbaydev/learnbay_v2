@@ -71,6 +71,10 @@ const feesbatch = dynamic ( ()=>
 import ('../../../components/CoursePage/FeeSection/FeeSection')
 )
 
+const SliderTab = dynamic ( ()=>
+import ('../../../components/CoursePage/SliderTabs/SliderTabs')
+)
+
 import OfferPopup from "../../../components/OfferPopup/OfferPopup";
 import BottomBar from "../../../components/WebPage/BottomBar/BottomBar";
 import ContactUs from "../../../components/HomePage/ContactUs/ContactUs";
@@ -267,25 +271,12 @@ function Blockchain({ }) {
           dataScienceCounselling={true}
         />
         <MentorsSection />
-        <DomainSection
-          dataScience={true}
-          domainSectionData={DataScienceCourseData[0].domainSection}
-        />
-        {/* <Project
-          projectData={DataScienceCourseData[0].project}
-          tools="12+"
-          dataScience={true}
-          titleCourse="Data Science Project Brochure"
-          brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Data+Science+and+AI+Projects.pdf"
-          project="15+"
-        /> */}
-        <NewProjectSection />
-        {/* {batchDateData === "" ? (
-          ""
-        ) : (
-          <BatchDetails batchDetails={batchDateData.batchDetails} />
-        )} */}
 
+        <SliderTab/>
+      
+
+        <NewProjectSection />
+    
         <FAQNew FAQNewData={DataScienceCourseData[0].faq} />
         <SeventhSection />
         <Footer />
