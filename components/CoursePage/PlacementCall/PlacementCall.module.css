@@ -71,7 +71,7 @@ mix-blend-mode: overlay;
     align-items: center;
     margin: 0px 514px;
     padding: 10px 10px;
-    margin-top: 33px;
+    /* margin-top: 33px; */
     text-align: center;
     gap: 3px;
 

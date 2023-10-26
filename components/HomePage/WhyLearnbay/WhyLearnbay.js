@@ -7,11 +7,11 @@ function WhyLearnbay() {
     <section className={styles.Container}>
       <div>
         <p className={styles.heading}>
-          Why choose Learnbay for{" "}
+        Reasons to Elevate Your Skills with Learnbay{" "}
           <span className={styles.contBlue}>Upskilling?</span>
         </p>
         <p className={styles.para}>
-          Globally recognized degree and curriculum inclusive of generative AI.
+        Earn degrees and certifications acknowledged worldwide, inclusive of cutting-edge topics like Generative AI.
         </p>
         <div className={styles.boxDiv}>
           <div className={styles.innerDiv}>
@@ -25,7 +25,7 @@ function WhyLearnbay() {
             </div>
             <div>
             <p className={styles.OrangeText}>250%</p>
-            <p className={styles.botPara}>Highest Salary Hike</p>
+            <p className={styles.botPara}>Experience an average salary boost</p>
             </div>
           </div>
           <div className={styles.innerDiv}>
@@ -40,7 +40,7 @@ function WhyLearnbay() {
             <div>
 
             <p className={styles.OrangeText}>450+</p>
-            <p className={styles.botPara}>Placement Partners</p>
+            <p className={styles.botPara}>Join our network with 450+ industry partners</p>
           </div>
           </div>
           <div className={styles.innerDiv}>
@@ -55,7 +55,7 @@ function WhyLearnbay() {
             <div>
 
             <p className={styles.OrangeText}>96%</p>
-            <p className={styles.botPara}>Student Satisfaction Rate</p>
+            <p className={styles.botPara}>of our students recommend us for upskilling.</p>
           </div>
           </div>
         </div>
