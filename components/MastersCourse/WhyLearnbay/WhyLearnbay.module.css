@@ -31,6 +31,17 @@ height: 80px;
 position: relative;
 left: 20px;
 flex-shrink: 0;
+cursor: pointer;
+}
+
+.ActiveInnerBox {
+  border-radius: 10px;
+background: linear-gradient(0deg, #0c7c01 0%, #0c7c01 100%), #0c7c01;
+height: 80px;
+position: relative;
+left: 20px;
+flex-shrink: 0;
+cursor: pointer;
 }
 
 .RightSide {
@@ -108,8 +119,31 @@ background: #F99600;
   height: 93%;
 }
 
+.ActiveCont {
+  color: #0072bc;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 126.5%; 
+  margin: 0;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 114, 188);
+  background: #FFF;
+  padding: 15px 40px;
+  position: absolute;
+  width: 98.8%;
+  height: 93%;
+}
+
 .icon {
   color: #00000060;
+  font-size: 35px;
+}
+
+.Activeicon {
+  color: #0072bc;
   font-size: 35px;
 }
 
