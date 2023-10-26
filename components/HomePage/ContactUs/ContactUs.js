@@ -23,8 +23,8 @@ function ContactUs({ dataScience, dataScienceCounselling, radio }) {
 <div className={styles.leftpaerson}>
   <Image
   src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/preksha-home.png"
-  width={60}
-  height={60}
+  width={50}
+  height={50}
   />
   
 

@@ -109,13 +109,15 @@
 
 .leftpaerson {
   display: grid;
-  grid-template-columns: 18% 40%;
+  grid-template-columns: 9% 30%;
   margin-top: 40px;
   margin-left: 20px;
+  align-items: center;
   gap: 20px;
 }
 .leftpaerson p {
   font-size: 14.626px;
+  margin: 0;
 }
 
 .leftpaerson span {
@@ -251,10 +253,6 @@
   font-style: normal;
   font-weight: 500;
   line-height: 153%; /* 17.787px */
-}
-.leftpaerson img {
-  width: 100%;
-  height: 100%;
 }
 .leftpaerson {
   padding-bottom: 0px;

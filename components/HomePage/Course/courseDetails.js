@@ -32,7 +32,7 @@ export const courseDetails = [
             img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/NewCourseHome/course-1.webp",
             title: "Data Science & AI ",
             title1: "For Managers",
-            courseTime: "11-13 months",
+            courseTime: "11-13 ",
             tag: "Data science",
             tagHead: "For Sr. Managers/Team Lead",
             brochureLinks:
@@ -239,7 +239,7 @@ export const courseDetails = [
             img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/NewCourseHome/course-1.webp",
             title: "Data Science & AI ",
             title1: "For Managers",
-            courseTime: "11-13 months",
+            courseTime: "11-13 ",
             tag: "Data science",
             tagHead: "For Sr. Managers/Team Lead",
             brochureLinks:
@@ -593,7 +593,7 @@ export const courseDetails = [
   //           img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/NewCourseHome/course-1.webp",
   //           title: "Data Science & AI ",
   //           title1: "For Managers",
-  //           courseTime: "11-13 months",
+  //           courseTime: "11-13 ",
   //           tag: "Data science",
   //           tagHead: "For Sr. Managers/Team Lead",
   //           brochureLinks:
@@ -938,7 +938,7 @@ export const viewAllD = [
     img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/NewCourseHome/course-1.webp",
     title: "Data Science & AI ",
     title1: "For Managers",
-    courseTime: "11-13 months",
+    courseTime: "11-13 ",
     tag: "Data science",
     tagHead: "For Sr. Managers/Team Lead",
     brochureLinks:
@@ -1187,7 +1187,7 @@ export const ForProgrammersD = [
     img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/NewCourseHome/course-1.webp",
     title: "Data Science & AI ",
     title1: "For Managers",
-    courseTime: "11-13 months",
+    courseTime: "11-13 ",
     tag: "Data science",
     tagHead: "For Sr. Managers/Team Lead",
     brochureLinks:
@@ -1352,7 +1352,7 @@ export const ForNonProgrammerD = [
     img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/NewCourseHome/course-1.webp",
     title: "Data Science & AI ",
     title1: "For Managers",
-    courseTime: "11-13 months",
+    courseTime: "11-13 ",
     tag: "Data science",
     tagHead: "For Sr. Managers/Team Lead",
     brochureLinks:
