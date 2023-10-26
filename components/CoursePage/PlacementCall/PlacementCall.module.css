@@ -1,0 +1,93 @@
+.PlacementCallMain{
+opacity: 2;
+background-color: #1e1e1e;
+mix-blend-mode: overlay;
+ padding: 40px 0px;
+}
+
+.title {
+    display:  flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+.title h2 {
+    color: #F99600;
+    text-align: center;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 126.5%;
+}
+.title p {
+    color: #FFF;
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 112.5%;
+
+}
+.course {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin: 30px 0px 0px 0px;
+    
+}
+
+.PlacementCallcourse {
+    border-radius: 6.18px;
+    border: 2.06px solid rgba(255, 255, 255, 0.60);
+    padding: 14px 30px;
+}
+.PlacementCallcourse p {
+    color: #80F7FF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 22.902px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 126.5%; /* 39.091px */ 
+    margin: 0px;
+    
+}
+
+.projectcer p {
+    color: #F99600;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 126.5%; /* 37.95px */
+    margin: 0px;
+}
+.projectcer {
+
+    border-radius: 2.18px;
+    background: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 514px;
+    padding: 10px 10px;
+    margin-top: 33px;
+    text-align: center;
+    gap: 3px;
+
+}
+.PlacementCallIcon {
+    width: 50px;
+    height: 45px;
+color:  #0072BC;
+}
+
+
+.imgsection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+}
+  

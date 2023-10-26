@@ -70,8 +70,8 @@ const FeeSection = ({
             <ul className={styles.feesbatch}>
             <img className={styles.fillimg}
                 src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/filling-fast.webp"
-                width={80}
-                height={50}
+                width={90}
+                height={56}
                 />
               <li>
              
