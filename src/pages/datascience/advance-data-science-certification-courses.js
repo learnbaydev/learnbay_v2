@@ -47,9 +47,7 @@ const Project = dynamic(() =>
 const SyllabusNew = dynamic(() =>
   import("../../../components/CoursePage/Syllabus/MasterSyllabus")
 );
-const DomainSection = dynamic(() =>
-  import("../../../components/CoursePage//DomainSection/DomainSection")
-);
+
 const Certificate = dynamic(() =>
   import("../../../components/CoursePage/Certificate/Certificate")
 );
@@ -88,6 +86,10 @@ const WhyLearnbay = dynamic(() =>
 
 const Gethire = dynamic (() =>
 import ("../../../components/CoursePage/Gethired/Gethire")
+)
+const PlacementCall = dynamic (() =>
+import ("../../../components/CoursePage/PlacementCall/PlacementCall")
+
 )
 
 function Blockchain({ }) {
@@ -271,6 +273,17 @@ function Blockchain({ }) {
           dataScienceCounselling={true}
         />
         <MentorsSection />
+
+        <PlacementCall/>
+    
+
+
+        <NewProjectSection />
+        {/* {batchDateData === "" ? (
+          ""
+        ) : (
+          <BatchDetails batchDetails={batchDateData.batchDetails} />
+        )} */}
 
         <SliderTab/>
       
