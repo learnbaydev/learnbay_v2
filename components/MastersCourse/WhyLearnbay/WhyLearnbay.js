@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { BsCheckCircle } from "react-icons/bs";
-import { FaRocket, FaUserShield } from "react-icons/fa";
+import { FaCheck, FaCheckCircle, FaRocket, FaUserShield } from "react-icons/fa";
 import { GiProgression } from "react-icons/gi";
 import { TbCertificate } from "react-icons/tb";
 import Styles from "./WhyLearnbay.module.css";
@@ -38,29 +38,46 @@ function WhyLearnbay() {
             </p>
           </div>
         </div>
-        <div>
-          <div>
+        <div className={Styles.RightSide}>
+          <div className={Styles.firstBox}>
             <div className="imgWrapper">
               <Image
-                src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/learnbay-review.webp"
+                src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/coursePage/ytThumbnail.webp"
                 loading="lazy"
-                width="358"
+                width="200"
                 height="212"
                 alt="profile-Img"
                 onClick={() => videoShow()}
               />
             </div>
             <div className={Styles.left}>
-              <h6>Specialize in Banking & Finance</h6>
+              <h6>Key Benefits</h6>
               <div className={Styles.mainCont}>
-                <BsCheckCircle className={Styles.checkCircle} />
-                <p className={Styles.para}>
+                
+                <p className={Styles.para}><FaCheckCircle className={Styles.checkCircle} />
+                  Validate your real-work experience
+                </p>
+                <p className={Styles.para}><FaCheckCircle className={Styles.checkCircle} />
                   Validate your real-work experience
                 </p>
               </div>
             </div>
           </div>
-          <div>2</div>
+          <div className={Styles.TwoBox}>
+            <div className={Styles.BlueBox}>
+              <FaRocket className={Styles.Icon}/>
+              <p className={Styles.head}
+              >35K+</p>
+              <p className={Styles.Para}
+              >Mentors help you select the domain & guide you through.</p>
+            </div>
+            <div className={Styles.OrangeBox}>
+              <p className={Styles.head}
+              >450%</p>
+              <p className={Styles.Para}
+              >Average Salary Hike</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
