@@ -11,17 +11,16 @@ import { FaCheckCircle, FaDownload } from "react-icons/fa";
 
 
 const SliderTabs = () => {
-  const [viewAll, setViewAll] = useState(false);
-  const [oneYear, setOneYear] = useState();
-  const [nonTech, setNonTech] = useState(false);
-  const [Guarantee, setGuarantee] = useState(false);
-  const [Retail, setRetail] = useState(false);
-  const [Oil, setOil] = useState(false);
-  const [Stack, setStack] = useState(false);
+
+  const [bfsiButton, setBfsiButton] = useState();
+  const [healthCare, setHealthCare] = useState(false);
+  const [supplyChain, setSupplyChain] = useState(false);
+
+  const [manufacture, setManufacture] = useState(false);
   const [mobile, setMobile] = useState(false);
   const [tab, setTab] = useState(false);
 
-  const [activeIcon, setActiveIcon] = useState(true);
+
 
   useEffect(() => {
     let width = window.innerWidth;
@@ -40,7 +39,7 @@ const SliderTabs = () => {
   useEffect(() => {
     let width = window.innerWidth;
     if (width > 960) {
-      setOneYear(true);
+      setBfsiButton(true);
     }
   }, [0]);
 
@@ -54,17 +53,16 @@ const SliderTabs = () => {
         <div className={styles.listPanel}>
           <div
             onClick={() => {
-              setViewAll(false);
-              setOneYear(true);
-              setNonTech(false);
-              setStack(false);
-              setGuarantee(false);
-              setRetail(false);
+              setManufacture(false);
+              setBfsiButton(true);
 
-              setOil(false);
-              setActiveIcon(true);
+              setHealthCare(false);
+              setSupplyChain(false);
+            
+
+
             }}
-            className={oneYear ? styles.ActiveSpan : styles.span}
+            className={bfsiButton ? styles.ActiveSpan : styles.span}
           >
             <div class={styles.img}>
               <Image
@@ -74,34 +72,30 @@ const SliderTabs = () => {
                 height="25"
                 alt="Bulb"
               />
-            </div>
 
-            <div>
               BFSI
-              {mobile ? oneYear ? <BiUpArrowAlt /> : <BiDownArrowAlt /> : ""}
+              {mobile ? bfsiButton ? <BiUpArrowAlt /> : <BiDownArrowAlt /> : ""}
             </div>
 
-            {activeIcon ? (
+            <div>
+
               <IoIosArrowForward className={styles.rightIcon} />
-            ) : (
-              ""
-            )}
+            </div>
+
+
           </div>
 
 
 
           <div
             onClick={() => {
-              setViewAll(false);
-              setOneYear(false);
-              setNonTech(false);
-              setStack(true);
-              setGuarantee(false);
-              setOil(false);
+              setManufacture(false);
+              setBfsiButton(false);
 
-              setRetail(false);
+              setHealthCare(true);
+              setSupplyChain(false);
             }}
-            className={Stack ? styles.ActiveSpan : styles.span}
+            className={healthCare ? styles.ActiveSpan : styles.span}
           >
             <div class={styles.img}>
               <Image
@@ -111,27 +105,32 @@ const SliderTabs = () => {
                 height="25"
                 alt="Bulb"
               />
-            </div>
 
-            <div>
               Healthcare
-              {mobile ? oneYear ? <BiUpArrowAlt /> : <BiDownArrowAlt /> : ""}
+              {mobile ? bfsiButton ? <BiUpArrowAlt /> : <BiDownArrowAlt /> : ""}
             </div>
+
+            <div>
+
+              <IoIosArrowForward className={styles.rightIcon} />
+
+
+            </div>
+
           </div>
 
 
           <div
             onClick={() => {
-              setViewAll(false);
-              setOneYear(false);
-              setNonTech(false);
-              setStack(false);
-              setGuarantee(true);
+              setManufacture(false);
+              setBfsiButton(false);
 
-              setOil(false);
-              setRetail(false);
+              setHealthCare(false);
+              setSupplyChain(true);
+
+      
             }}
-            className={Guarantee ? styles.ActiveSpan : styles.span}
+            className={supplyChain ? styles.ActiveSpan : styles.span}
           >
             <div class={styles.img}>
               <Image
@@ -141,25 +140,28 @@ const SliderTabs = () => {
                 height="25"
                 alt="Bulb"
               />
-            </div>
-            <div>
+
               Supply Chain
-              {mobile ? Guarantee ? <BiUpArrowAlt /> : <BiDownArrowAlt /> : ""}
+              {mobile ? supplyChain ? <BiUpArrowAlt /> : <BiDownArrowAlt /> : ""}
+            </div>
+            <div>
+
+              <IoIosArrowForward className={styles.rightIcon} />
             </div>
           </div>
 
           <div
             onClick={() => {
-              setOneYear(false);
-              setNonTech(false);
-              setStack(false);
-              setRetail(false);
-              setGuarantee(false);
-              setOil(false);
+              setBfsiButton(false);
 
-              setViewAll(true);
+              setHealthCare(false);
+            
+              setSupplyChain(false);
+     
+
+              setManufacture(true);
             }}
-            className={viewAll ? styles.ActiveSpan : styles.span}
+            className={manufacture ? styles.ActiveSpan : styles.span}
           >
             <div class={styles.img}>
               <Image
@@ -169,14 +171,16 @@ const SliderTabs = () => {
                 height="25"
                 alt="Bulb"
               />
+              Manufacturing
+              {mobile ? manufacture ? <BiUpArrowAlt /> : <BiDownArrowAlt /> : ""}
             </div>
 
+
             <div>
-              Manufacturing
-              {mobile ? viewAll ? <BiUpArrowAlt /> : <BiDownArrowAlt /> : ""}
+              <IoIosArrowForward className={styles.rightIcon} />
             </div>
           </div>
-          {viewAll ? (
+          {manufacture ? (
             <div className={styles.gridPanel}>
               <div className={styles.left}>
                 <h6>
@@ -213,7 +217,7 @@ const SliderTabs = () => {
           )}
         </div>
         <div className={styles.middlePanel}>
-          {oneYear ? (
+          {bfsiButton ? (
             <div className={styles.gridPanel}>
               <div className={styles.left}>
                 <h6>Specialize in Banking & Finance</h6>
@@ -255,7 +259,7 @@ const SliderTabs = () => {
           )}
 
 
-          {Stack ? (
+          {healthCare ? (
             <div className={styles.gridPanel}>
               <div className={styles.left}>
                 <h6>Specialize in Banking & Finance</h6>
@@ -296,7 +300,7 @@ const SliderTabs = () => {
             ""
           )}
 
-          {Guarantee ? (
+          {supplyChain ? (
             <div className={styles.gridPanel}>
               <div className={styles.left}>
                 <h6>Specialize in Banking & Finance</h6>
@@ -337,7 +341,7 @@ const SliderTabs = () => {
           ) : (
             ""
           )}
-          {viewAll ? (
+          {manufacture ? (
             <div className={styles.gridPanel}>
               <div className={styles.left}>
                 <h6>Specialize in Banking & Finance</h6>
