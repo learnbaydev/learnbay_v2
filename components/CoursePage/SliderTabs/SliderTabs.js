@@ -12,7 +12,6 @@ import Popup from "../../Popup/Popup";
 import Form from "../../Form/Form";
 
 
-<<<<<<< HEAD
 const SliderTabs = () => {
 
   const [bfsiButton, setBfsiButton] = useState();
@@ -20,33 +19,6 @@ const SliderTabs = () => {
   const [supplyChain, setSupplyChain] = useState(false);
 
   const [manufacture, setManufacture] = useState(false);
-=======
-
-
-const SliderTabs = ({
-  FeeHeading,
-  Fee,
-  dataScience,
-  FeeContent2,
-  FeeContent3,
-  FeeContent4,
-  FeeContent5,
-  dataScienceCounselling,
-  FeeEmi,
-}) => {
-  const [popups, setPopups] = useState(false);
-
-  const popupShow = () => {
-    setPopups(true);
-  };
-  const [viewAll, setViewAll] = useState(false);
-  const [oneYear, setOneYear] = useState();
-  const [nonTech, setNonTech] = useState(false);
-  const [Guarantee, setGuarantee] = useState(false);
-  const [Retail, setRetail] = useState(false);
-  const [Oil, setOil] = useState(false);
-  const [Stack, setStack] = useState(false);
->>>>>>> baeedd8 (changes placement)
   const [mobile, setMobile] = useState(false);
   const [tab, setTab] = useState(false);
 
