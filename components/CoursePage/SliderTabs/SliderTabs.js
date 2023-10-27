@@ -13,6 +13,7 @@ import Form from "../../Form/Form";
 
 
 const SliderTabs = ({dataScience, dataScienceCounselling}) => {
+const SliderTabs = () => {
 
   const [bfsiButton, setBfsiButton] = useState();
   const [healthCare, setHealthCare] = useState(false);
