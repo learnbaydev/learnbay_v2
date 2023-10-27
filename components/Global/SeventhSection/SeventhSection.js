@@ -28,7 +28,7 @@ function SeventhSection({ fullStackCont }) {
             />
           ) : (
             <Image
-              src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/learners-support-bg.png"
+              src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/coursePage/new-bg-sevventt.webp"
               fill={true}
               alt="Learners support"
             />
@@ -84,9 +84,9 @@ function SeventhSection({ fullStackCont }) {
         <div className={styles.rightPart}>
           <div className="imgWrapper">
             <Image
-              src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/newBottomImage.webp"
-              width={400}
-              height={400}
+              src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/coursePage/girl-seventh.webp"
+              width={600}
+              height={600}
               alt="data science course"
               style={{ 'borderRadius': '5px' }}
             />

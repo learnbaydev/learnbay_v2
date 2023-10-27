@@ -51,7 +51,7 @@ const Slider = () => {
 
 <div className={`slider-item ${styles.slideritem}`}>
             <img src={slide.image} alt={`Card ${index + 1}`}
-            width={362}
+            width="100%"
             height={150} />
             <div className={`slider-content ${styles.slideContent}`}>
                 <div  className={styles.content}>
