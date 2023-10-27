@@ -12,7 +12,7 @@ import Popup from "../../Popup/Popup";
 import Form from "../../Form/Form";
 
 
-const SliderTabs = () => {
+const SliderTabs = ({dataScience, dataScienceCounselling}) => {
 
   const [bfsiButton, setBfsiButton] = useState();
   const [healthCare, setHealthCare] = useState(false);
@@ -44,6 +44,12 @@ const SliderTabs = () => {
       setBfsiButton(true);
     }
   }, [0]);
+
+  const [popups, setPopups] = useState(false);
+
+  const popupShow = () => {
+    setPopups(true);
+  };
 
 
 
@@ -208,41 +214,7 @@ const SliderTabs = () => {
               <IoIosArrowForward className={styles.rightIcon} />
             </div>
           </div>
-          {manufacture ? (
-            <div className={styles.gridPanel}>
-              <div className={styles.left}>
-                <h6>
-                  Study about applications of DS & AI is applicable in
-                  Manufacturing & Automotive.
-                </h6>
-                <p className={styles.para}>
-                  A deeper understanding of the manufacturing and
-                  telecommunication industries, where you learn in-depth about
-                  robotics, novel materials, nanotechnology, computer-aided
-                  design, and geomechanics.
-                </p>
-                <div className={styles.info}>
-                  <div className={styles.left}>
-                    <h4>20+</h4>
-                    <p>Case Studies </p>
-                  </div>
-                  <div className={styles.middle}>
-                    <h4> IBM</h4>
-                    <p> Certification</p>
-                  </div>
-                </div>
-              </div>
-              <div className={styles.right}>
-                <Image
-                  src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/Manufacturing-domain-slider.webp"
-                  width="271"
-                  height="353"
-                />
-              </div>
-            </div>
-          ) : (
-            ""
-          )}
+         
         </div>
         <div className={styles.middlePanel}>
           {bfsiButton ? (
@@ -321,11 +293,11 @@ const SliderTabs = () => {
 
               </div>
 
-              <div className={styles.right}>
+              <div className={`imgWrapper ${styles.right}`}>
                 <Image
                   src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/coursePage/doamain-new.webp"
-                  width="350"
-                  height="350"
+                  width="200"
+                  height="200"
                 />
               </div>
             </div>
@@ -364,11 +336,11 @@ const SliderTabs = () => {
 
               </div>
 
-              <div className={styles.right}>
+              <div className={`imgWrapper ${styles.right}`}>
                 <Image
                   src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/coursePage/doamain-new.webp"
-                  width="350"
-                  height="350"
+                  width="200"
+                  height="200"
                 />
               </div>
             </div>
@@ -407,11 +379,11 @@ const SliderTabs = () => {
 
               </div>
 
-              <div className={styles.right}>
+              <div className={`imgWrapper ${styles.right}`}>
                 <Image
                   src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/coursePage/doamain-new.webp"
-                  width="350"
-                  height="350"
+                  width="200"
+                  height="200"
                 />
               </div>
             </div>

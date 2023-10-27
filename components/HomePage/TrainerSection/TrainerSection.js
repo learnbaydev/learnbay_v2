@@ -31,7 +31,7 @@ function TrainerSection() {
       <div className={Styles.First}>
       <VideoPopup triggers={video} setTriggers={setVideo} ids={vId} />
       <div className={Styles.switch}>
-        <p>Hear Success Stories Directly from Our Alumni</p>
+        <p>Hear it from our Alumni</p>
         {switchData.map((data) => {
           const { img, height, url, width, text, alt, id, bgBlue, bgGreen, bgRed, } = data;
           return (
