@@ -37,14 +37,14 @@ const Project = dynamic(() =>
   import("../../../components/CoursePage/Project/Project")
 );
 const SyllabusNew = dynamic(() =>
-  import("../../../components/MastersCourse/Syllabus/MasterSyllabus")
+  import("../../../components/CoursePage/Syllabus/MasterSyllabus")
 );
 
 const Certificate = dynamic(() =>
-  import("../../../components/MastersCourse/Certificate/Certificate")
+  import("../../../components/CoursePage/Certificate/Certificate")
 );
 const FAQNew = dynamic(() =>
-  import("../../../components/MastersCourse/FAQNew/FAQNew")
+  import("../../../components/CoursePage/FAQNew/FAQNew")
 );
 const BatchDetails = dynamic(() =>
   import("../../../components/CoursePage/BatchDetails/BatchDetails")
@@ -192,8 +192,6 @@ function Blockchain() {
         <Testimonial
           redirectDS={true}
           Testimonial={DataScienceMastersinCS[0].testimonial}
-          heading="Our Alumni Speak"
-          para="Discover the impact of our programs on career growth"
         />
         <WhyLearnbay />
         < Gethire/>
