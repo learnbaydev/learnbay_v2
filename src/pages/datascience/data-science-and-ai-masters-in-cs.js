@@ -12,7 +12,7 @@ const FirstSection = dynamic(() =>
   import("../../../components/MastersCourse/FirstSection/FirstSection")
 );
 const SecondSection = dynamic(() =>
-  import("../../../components/MastersCourse/SecondSection/SecondSection")
+  import("../../../components/CoursePage/SecondSection/SecondSection")
 );
 const SeventhSection = dynamic(() =>
   import("../../../components/Global/SeventhSection/SeventhSection")
@@ -20,27 +20,26 @@ const SeventhSection = dynamic(() =>
 const Testimonial = dynamic(() =>
   import("../../../components/HomePage/Testimonial/Testimonial")
 );
+import TrainerSection from "../../../components/HomePage/TrainerSection/TrainerSection";
 const WhoProgram = dynamic(() =>
-  import("../../../components/MastersCourse/WhoProgram/ThirdSection")
+  import("../../../components/CoursePage/WhoProgram/ThirdSection")
 );
 const ToolsCovered = dynamic(() =>
-  import("../../../components/MastersCourse/ToolsCovered/ToolsCovered")
+  import("../../../components/CoursePage/ToolsCovered/ToolsCovered")
 );
 const FeeSection = dynamic(() =>
-  import("../../../components/MastersCourse/FeeSection/FeeSection")
+  import("../../../components/CoursePage/FeeSection/FeeSection")
 );
 const FourthSection = dynamic(() =>
-  import("../../../components/MastersCourse/FourthSection/FourthSection")
+  import("../../../components/CoursePage/FourthSection/FourthSection")
 );
 const Project = dynamic(() =>
-  import("../../../components/MastersCourse/Project/Project")
+  import("../../../components/CoursePage/Project/Project")
 );
 const SyllabusNew = dynamic(() =>
   import("../../../components/MastersCourse/Syllabus/MasterSyllabus")
 );
-const DomainSection = dynamic(() =>
-  import("../../../components/MastersCourse/DomainSection/DomainSection")
-);
+
 const Certificate = dynamic(() =>
   import("../../../components/MastersCourse/Certificate/Certificate")
 );
@@ -51,12 +50,16 @@ const BatchDetails = dynamic(() =>
   import("../../../components/CoursePage/BatchDetails/BatchDetails")
 );
 
-const SecondNavbar = dynamic(() =>
-  import("../../../components/MastersCourse/SecondNavbar/SecondNavbar")
+const SecondNavbar = dynamic(()=>
+  import("../../../components/CoursePage/SecondNavbar/SecondNavbar")
 );
 
 const WhyLearnbay = dynamic(() =>
   import("../../../components/MastersCourse/WhyLearnbay/WhyLearnbay")
+);
+
+const Gethire = dynamic (() =>
+import ("../../../components/CoursePage/Gethired/Gethire")
 );
 
 const BottomBar = dynamic(() =>
@@ -67,9 +70,16 @@ const ContactCounsellor = dynamic(() =>
   import("../../../components/MastersCourse/ContactCounsellor/ContactCounsellor")
 );
 
-const PlacementCell = dynamic(() =>
-  import("../../../components/MastersCourse/placementCell/PlacementCell")
+const PlacementCall = dynamic (() =>
+import ("../../../components/CoursePage/PlacementCall/PlacementCall")
+
+)
+
+const SliderTab = dynamic ( ()=>
+import ('../../../components/CoursePage/SliderTabs/SliderTabs')
 );
+
+import NewProjectSection from "../../../components/CoursePage/NewProjectSection/NewProjectSection";
 
 function Blockchain() {
   // POPUP GET METHOD
@@ -172,17 +182,21 @@ function Blockchain() {
           SecondSectionData={DataScienceMastersinCS[0].secondSection}
         />
         <SecondNavbar />
+        
+        <WhoProgram
+          leftImage="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/masterPage/who-program.webp"
+          ThirdSectionData={DataScienceMastersinCS[0].thirdSection}
+        />
+
+<TrainerSection link="D-gcPaK_-x4" />
         <Testimonial
           redirectDS={true}
           Testimonial={DataScienceMastersinCS[0].testimonial}
           heading="Our Alumni Speak"
           para="Discover the impact of our programs on career growth"
         />
-        <WhoProgram
-          leftImage="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/masterPage/who-program.webp"
-          ThirdSectionData={DataScienceMastersinCS[0].thirdSection}
-        />
         <WhyLearnbay />
+        < Gethire/>
         <FourthSection
           placementData={DataScienceMastersinCS[0].fourthSection}
           redirectDS={true}
@@ -225,20 +239,24 @@ function Blockchain() {
           FeeContent6="No additional cost"
           dataScienceCounselling={true}
         />
-        <DomainSection
+        {/* <DomainSection
           dataScience={true}
           domainSectionData={DataScienceMastersinCS[0].domainSection}
-        />
-        <PlacementCell />
-        <Project
+        /> */}
+
+<MentorsSection />
+<SliderTab/>
+        <PlacementCall />
+        <NewProjectSection/>
+        {/* <Project
           projectData={DataScienceMastersinCS[0].project}
           tools="12+"
           dataScience={true}
           titleCourse="Data Science Project Brochure"
           brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Data+Science+and+AI+Projects.pdf"
           project="15+"
-        />
-        <MentorsSection />
+        /> */}
+       
         {/* {batchDateData === "" ? (
           ""
         ) : (
