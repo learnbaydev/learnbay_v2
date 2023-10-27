@@ -170,7 +170,7 @@ const Navbar = ({
             );
           })}
           <div onClick={popupShow}>
-            <Button text="Apply for Counselling" outline={true} />
+            <Button text="Apply Now" outline={true} />
           </div>
         </div>
       </nav>

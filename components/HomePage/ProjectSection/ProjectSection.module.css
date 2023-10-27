@@ -102,7 +102,7 @@ font-weight: 700;
 
 .iconButton {
     display: grid;
-    grid-template-columns: 31% 47%;
+    grid-template-columns: 31%  55%;
     gap: 70px;
     align-items: center;
     margin-top: 10px;
@@ -190,4 +190,7 @@ font-weight: 700;
         display: flex;
         justify-content: center;
     }
+    .container{
+    margin-bottom: 10px;
+}
 }

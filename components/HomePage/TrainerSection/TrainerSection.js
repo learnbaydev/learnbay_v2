@@ -6,23 +6,34 @@ import VideoPopup from "../../Global/VideoPopup/VideoPopup";
 import { AiFillStar } from "react-icons/ai";
 import { switchData } from "../../HomePage/KeyFeatures/switchData";
 
+
 function TrainerSection() {
   const [vId, setVId] = useState("");
-  const [video, setVideo] = useState("");
-  const videoShow = (id) => {
+
+
+
+  const [popups, setPopups] = useState(false);
+  const [video, setVideo] = useState(false);
+  const videoSHow = () => {
     setVideo(true);
-    setVId(id);
   };
+  // const el = useRef(null);
+  const popupShow = () => {
+    setPopups(true);
+  };
+
+
+
   return (
     <>
-    <section className={Styles.container}>
+    <section className={Styles.container} >
       <h4>Alumni Spotlight</h4>
       <div className={Styles.First}>
       <VideoPopup triggers={video} setTriggers={setVideo} ids={vId} />
       <div className={Styles.switch}>
         <p>Hear it from our Alumni</p>
         {switchData.map((data) => {
-          const { img, height, url, width, text, alt, id, bgBlue, bgGreen, bgRed } = data;
+          const { img, height, url, width, text, alt, id, bgBlue, bgGreen, bgRed, } = data;
           return (
             <a href={url} target="_blank" key={id}>
               <div
@@ -58,8 +69,11 @@ function TrainerSection() {
             width="358"
             height="212"
             alt="profile-Img"
-            onClick={() => videoShow()}
+            onClick={() => videoSHow()}
+            
           />
+         
+
         </div>
       </div>
       </div>

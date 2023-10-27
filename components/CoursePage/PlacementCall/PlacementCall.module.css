@@ -32,25 +32,27 @@ mix-blend-mode: overlay;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 50px;
-    margin: 30px 0px 0px 0px;
+    gap: 40px;
+    /* margin: 34px 40px 0px 40px; */
+    margin-top: 30px;
     
 }
 
 .PlacementCallcourse {
     border-radius: 6.18px;
     border: 2.06px solid rgba(255, 255, 255, 0.60);
-    padding: 14px 30px;
+    padding: 14px 10px;
+    margin: 10px 30px;
 }
 .PlacementCallcourse p {
     color: #80F7FF;
     text-align: center;
     font-family: Inter;
-    font-size: 22.902px;
+    font-size: 20.902px;
     font-style: normal;
     font-weight: 700;
     line-height: 126.5%; /* 39.091px */ 
-    margin: 0px;
+    margin: 0px 20px;
     
 }
 
@@ -73,7 +75,7 @@ mix-blend-mode: overlay;
     padding: 10px 10px;
     /* margin-top: 33px; */
     text-align: center;
-    gap: 3px;
+    /* gap: 3px; */
 
 }
 .PlacementCallIcon {
@@ -90,4 +92,27 @@ color:  #0072BC;
     padding: 0px;
     margin: 0px;
 }
+
+
+@keyframes scrollAnimation {
+    from {
+      transform: translateX(100%); 
+    }
+   
+    to {
+      transform: translateX(-50%); 
+    }
+  }
   
+
+
+  .course
+{
+
+   animation: scrollAnimation  16s linear infinite;
+   scroll-margin: 20px;
+   scroll-behavior: smooth;
+   white-space: nowrap; 
+  
+
+}

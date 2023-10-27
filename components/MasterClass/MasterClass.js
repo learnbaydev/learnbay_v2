@@ -15,7 +15,7 @@ const Slider = () => {
   return (
 
     <div className={styles.conteiner}>
-        <h2> <span className={styles.freegreen}>Free</span> Master Class</h2>
+        <h2> <span className={styles.freegreen}>Free</span> Masterclasses</h2>
     <Swiper
     className={styles.Swiper}
     pagination={{

@@ -5,6 +5,7 @@ import { GiProgression } from "react-icons/gi";
 import { TbCertificate } from "react-icons/tb";
 import Styles from "./WhyLearnbay.module.css";
 import { useState, useEffect } from "react";
+import VideoPopup from "../../Global/VideoPopup/VideoPopup";
 
 function WhyLearnbay() {
 
@@ -13,16 +14,31 @@ function WhyLearnbay() {
   const [projectInno, setProjectInno] = useState(false);
   const [projectCert, setProjectCert] = useState(false);
 
+  const [vId, setVId] = useState("");
+ 
 
+  const videoShow = (id) => {
+    setVideo(true);
+    setVId(id);
+  };
+  
+  const [video, setVideo] = useState(false);
+
+  const [popups, setPopups] = useState(false);
+  const popupShow = () => {
+    setPopups(true);
+  };
   useEffect(() => {
     let width = window.innerWidth;
     if (width > 960) {
       setCareerService(true);
     }
   }, [0]);
+  
 
   return (
     <section className={Styles.container}>
+            <VideoPopup triggers={video} setTriggers={setVideo} ids={vId} />
       <h4 className={Styles.h4}>
         Learnbay’s <span style={{ color: "#F99600" }}>ProjectLab</span>
       </h4>
@@ -96,7 +112,7 @@ function WhyLearnbay() {
                 width="200"
                 height="212"
                 alt="profile-Img"
-                onClick={() => videoShow()}
+                onClick={() => videoShow(vId)}
               />
             </div>
             <div className={Styles.left}>
@@ -140,7 +156,7 @@ function WhyLearnbay() {
                 width="200"
                 height="212"
                 alt="profile-Img"
-                onClick={() => videoShow()}
+                onClick={() => videoShow(video.vId)}
               />
             </div>
             <div className={Styles.left}>
@@ -184,7 +200,7 @@ function WhyLearnbay() {
                 width="200"
                 height="212"
                 alt="profile-Img"
-                onClick={() => videoShow()}
+                onClick={() => videoShow(video.vId)}
               />
             </div>
             <div className={Styles.left}>
@@ -228,7 +244,7 @@ function WhyLearnbay() {
                 width="200"
                 height="212"
                 alt="profile-Img"
-                onClick={() => videoShow()}
+                onClick={() => videoShow(video.vId)}
               />
             </div>
             <div className={Styles.left}>

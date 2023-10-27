@@ -274,18 +274,19 @@ function Blockchain({ }) {
         />
         <MentorsSection />
 
-        <PlacementCall/>
+        <SliderTab/>
+
+
+       < PlacementCall/>
     
 
 
-        <NewProjectSection />
         {/* {batchDateData === "" ? (
           ""
         ) : (
           <BatchDetails batchDetails={batchDateData.batchDetails} />
         )} */}
 
-        <SliderTab/>
       
 
         <NewProjectSection />
