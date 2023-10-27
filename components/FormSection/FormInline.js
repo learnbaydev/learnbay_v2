@@ -170,7 +170,6 @@ const FormInline = ({
               required
               placeholder="Enter your Full Name"
               value={query.name}
-              style={{ borderBottom: "1px solid grey" }}
               onChange={handleParam()}
             />
           </div>
@@ -190,17 +189,14 @@ const FormInline = ({
               style={
                 popup
                   ? {
-                      height: "50px",
-                      borderRadius: "8px",
-                      border: "1px solid grey",
+                      borderRadius: "6px",
+                      border: "1px solid #D3D3D3",
                       padding: "10px",
                     }
                   : {
-                      border: "0",
-                      height: "50px",
-                      padding: "10px",
-                      borderRadius: "8px",
-                      border: "1px solid grey",
+                    borderRadius: "6px",
+                    border: "1px solid #D3D3D3",
+                    padding: "10px",
                     }
               }
               name="phone"
@@ -222,6 +218,7 @@ const FormInline = ({
                 required
                 value={query.upskillPlanning}
                 onChange={handleParam()}
+                placeholder="dsfghj"
               >
                 <option
                   value="How soon are you planning to upskill?"
@@ -273,59 +270,44 @@ const FormInline = ({
             </div>
           )}
           {radio ? (
-            <div className={popup ? styles.formWrapper : styles.formWrapper}>
-              {mobile ? (
-                <div>
-                  <input
-                    id="Data Science & AI Courses"
-                    value="Data Science & AI Courses"
-                    name="platform"
-                    required
-                    type="radio"
-                    onChange={handleParam()}
-                  />
-                  Data Science & AI Courses&nbsp;
-                  {mobile ? <br /> : ""}
-                  <input
-                    id="Software (DSA & System Design)"
-                    value="Software (DSA & System Design)"
-                    name="platform"
-                    required
-                    type="radio"
-                    onChange={handleParam()}
-                  />
-                  Software (DSA & System Design)
-                </div>
-              ) : (
-                <>
-                  <div className={styles.dsCourseInp}>
-                    <input
-                      id="Data Science & AI Courses"
-                      value="Data Science & AI Courses"
-                      name="platform"
-                      required
-                      type="radio"
-                      onChange={handleParam()}
-                    />
-                    Data Science & AI Courses&nbsp;
-                  </div>
-                  <div className={styles.fsdCourseInp}>
-                    <input
-                      id="Software (DSA & System Design)"
-                      value="Software (DSA & System Design)"
-                      name="platform"
-                      required
-                      type="radio"
-                      onChange={handleParam()}
-                    />
-                    Software (DSA & System Design)
-                  </div>
-                </>
-              )}
-            </div>
-          ) : (
-            ""
-          )}
+          <div className={popup ? styles.formWrappers : styles.formWrapper}>
+            <select
+              id="platform"
+              name="platform"
+              required
+              value={query.platform}
+              onChange={handleParam()}
+            >
+              <option value="Select an option" selected
+                hidden>
+                Select an option
+              </option>
+              <option value="Data Science & AI Courses">Data Science & AI Courses</option>
+              <option value="Software (DSA & System Design)">Software (DSA & System Design)</option>
+            </select>
+            {/* <input
+              id="Data Science Program"
+              value="Data Science & AI Courses "
+              name="platform"
+              required
+              type="radio"
+              onChange={handleParam()}
+            />
+            Data Science & AI Courses &nbsp;
+            <br />
+            <input
+              id="Software (DSA & System Design)"
+              value="Software (DSA & System Design)"
+              name="platform"
+              required
+              type="radio"
+              onChange={handleParam()}
+            />
+            Software (DSA & System Design) */}
+          </div>
+        ) : (
+          ""
+        )}
           {popup ? (
             <div className={popup ? styles.formWrappers : styles.formWrapper}>
               <input

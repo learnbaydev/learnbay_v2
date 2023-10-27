@@ -169,29 +169,30 @@ const Course = ({
                             } = viewAllData;
                             return (
                               <SwiperSlide className={styles.leftSide} key={id}>
-                                <div
-                                  key={id}
-                                  className={
-                                    newDesign
-                                      ? styles.newSliderWrap
-                                      : styles.SliderWrap
-                                  }
-                                >
-                                  {newDesign ? (
-                                    <>
-                                      {" "}
-                                      <div className={styles.leftBorder}></div>
-                                      <div className={styles.rightBorder}></div>
-                                    </>
-                                  ) : (
-                                    ""
-                                  )}
+                              <div
+                                key={id}
+                                className={
+                                  newDesign
+                                    ? styles.newSliderWrap
+                                    : styles.SliderWrap
+                                }
+                              >
+                                {newDesign ? (
+                                  <>
+                                    {" "}
+                                    <div className={styles.leftBorder}></div>
+                                    <div className={styles.rightBorder}></div>
+                                  </>
+                                ) : (
+                                  ""
+                                )}
+
+                                <div className={styles.contButton}>
                                   <a href={link1} className={styles.imgWrap}>
-                                    <div className="imgWrapper">
+                                    <div className="bgWrap">
                                       <Image
                                         src={img}
-                                        width={100}
-                                        height={272}
+                                        fill={true}
                                         quality={100}
                                         unoptimized={true}
                                         style={{ objectFit: "cover" }}
@@ -199,109 +200,108 @@ const Course = ({
                                       />
                                     </div>
                                   </a>
-                                  <div className={styles.contButton}>
-                                    <div className={styles.contentBox}>
-                                      <div className={styles.headWrapper}>
-                                        <h6
-                                          className={
-                                            Green
-                                              ? styles.mainHeadGreen
-                                              : styles.mainHead
-                                          }
-                                        >
-                                          {title}
-                                        </h6>
-                                        <h6
-                                          className={
-                                            Green
-                                              ? styles.mainHeadGreen
-                                              : styles.mainHead
-                                          }
-                                        >
-                                          {title1}
-                                        </h6>
-                                      </div>
-                                      <hr className={styles.hr} />
-                                      <div className={styles.paraDiv}>
-                                        <p className={styles.singleP}>
-                                          {/* <BiTimeFive
-                                            className={styles.checkCircle}
-                                          /> */}
-                                          <IoTimeOutline
-                                            className={styles.timeIcon}
-                                          />{" "}
-                                          {para[0]} | {courseTime}
-                                        </p>
-                                        {/* <p>
-                                        <AiOutlineFundProjectionScreen
-                                          className={styles.checkCircle}
-                                          style={{ color: "#edb552" }}
-                                        />
-                                        {para[1]}
-                                      </p> */}
-                                        <p className={styles.singleP}>
-                                          {/* <TbCurrencyRupee
-                                            className={styles.checkCircle}
-                                          /> */}
-                                          <BsCheckLg
-                                            className={styles.checkIcon}
-                                          />
-                                          {para[2]}
-                                        </p>
-                                        <p className={styles.singleP}>
-                                          {/* <TbCurrencyRupee
-                                            className={styles.checkCircle}
-                                          /> */}
-                                          <BsCheckLg
-                                            className={styles.checkIcon}
-                                          />
-                                          {para[2]}
-                                        </p>
-                                      </div>
-                                      <hr className={styles.hr1} />
+                                  <div className={styles.contentBox}>
+                                    <div className={styles.headWrapper}>
+                                      <h6
+                                        className={
+                                          Green
+                                            ? styles.mainHeadGreen
+                                            : styles.mainHead
+                                        }
+                                      >
+                                        {title}
+                                      </h6>
+                                      <h6
+                                        className={
+                                          Green
+                                            ? styles.mainHeadGreen
+                                            : styles.mainHead
+                                        }
+                                      >
+                                        {title1}
+                                      </h6>
                                     </div>
-                                    <div className={styles.btnWrapper}>
-                                      <a
-                                        onClick={() => {
-                                          setTitleCourse(titleCourse);
-                                          setBrochureLinks(brochureLinks);
-                                          popupShow();
+                                    <hr className={styles.hr} />
+                                    <div className={styles.paraDiv}>
+                                      <p className={styles.singleP}>
+                                        {/* <BiTimeFive
+                                          className={styles.checkCircle}
+                                        /> */}
+                                        <IoTimeOutline
+                                          className={styles.timeIcon}
+                                        />{" "}
+                                        {para[0]} | {courseTime}
+                                      </p>
+                                      {/* <p>
+                                      <AiOutlineFundProjectionScreen
+                                        className={styles.checkCircle}
+                                        style={{ color: "#edb552" }}
+                                      />
+                                      {para[1]}
+                                    </p> */}
+                                      <p className={styles.singleP}>
+                                        {/* <TbCurrencyRupee
+                                          className={styles.checkCircle}
+                                        /> */}
+                                        <BsCheckLg
+                                          className={styles.checkIcon}
+                                        />
+                                        {para[2]}
+                                      </p>
+                                      <p className={styles.singleP}>
+                                        {/* <TbCurrencyRupee
+                                          className={styles.checkCircle}
+                                        /> */}
+                                        <BsCheckLg
+                                          className={styles.checkIcon}
+                                        />
+                                        {para[2]}
+                                      </p>
+                                    </div>
+                                    <hr className={styles.hr1} />
+                                  </div>
+                                  <div className={styles.btnWrapper}>
+                                    <a
+                                      onClick={() => {
+                                        setTitleCourse(titleCourse);
+                                        setBrochureLinks(brochureLinks);
+                                        popupShow();
+                                      }}
+                                    >
+                                      <button
+                                        className="outLineBtn1"
+                                        style={{
+                                          color: "#2979AD",
+                                          background: "#fff",
+                                          borderRadius: "0px 0px 0px 8px",
                                         }}
                                       >
-                                        <button
-                                          className="outLineBtn1"
-                                          style={{
-                                            color: "#2979AD",
-                                            background: "#fff",
-                                            borderRadius: "0px 0px 0px 8px"
-                                          }}
-                                        >
-                                          Brochure
-                                          <FaDownload
-                                            className="bIcon"
-                                            style={{ color: "#2979AD" }}
-                                          />
-                                        </button>
-                                      </a>
-                                      <hr className={styles.btnLine} />
-                                      <a href={link1} className={styles.link1}>
-                                        <button
-                                          className={
-                                            Green
-                                              ? styles.green
-                                              : styles.fillBtn
-                                          }
-                                        >
-                                          View Details{" "}
-                                          <TbListDetails
-                                            className={styles.bellIcon}
-                                          />
-                                        </button>
-                                      </a>
-                                    </div>
+                                        Brochure
+                                        <FaDownload
+                                          className="bIcon"
+                                          style={{ color: "#2979AD" }}
+                                        />
+                                      </button>
+                                    </a>
+                                    <hr className={styles.btnLine} />
+                                    <a href={link1} className={styles.link1}>
+                                      <button
+                                        className={
+                                          Green
+                                            ? styles.green
+                                            : styles.fillBtn
+                                        }
+                                      >
+                                        View Details{" "}
+                                        <TbListDetails
+                                          className={styles.bellIcon}
+                                        />
+                                      </button>
+                                    </a>
                                   </div>
                                 </div>
-                              </SwiperSlide>
+                              </div>
+                            </SwiperSlide>
                             );
                           })}
                         </Swiper>

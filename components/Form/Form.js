@@ -36,6 +36,7 @@ const Form = ({
     phone: "",
     upskillPlanning: "",
     upskillingObjective: "",
+    platform:"",
     workExperience: "",
     Brief: "",
     dateTime: "",
@@ -115,6 +116,10 @@ const Form = ({
       setError(true);
     } else if (query.upskillingObjective === "") {
       setError(true);
+    } else if (query.platform === "Select an option") {
+      setError(true);
+    } else if (query.platform === "") {
+      setError(true);
     } else {
       setError(false);
       const formData = new FormData();
@@ -133,6 +138,7 @@ const Form = ({
           upskillPlanning: "",
           upskillingObjective: "",
           jobDescription: "",
+          platform:"",
           workExperience: "",
           dateTime: "",
           WAdropdown: "",
@@ -264,6 +270,7 @@ const Form = ({
     <div className={styles.App}>
       <form onSubmit={upSkillingHide ? formSubmitDownload : formSubmit}>
         <div className={styles.formWrapper}>
+        <label for="Name">Name<span className={styles.spanLabel}>*</span></label>
           <input
             type="text"
             name="name"
@@ -276,6 +283,7 @@ const Form = ({
           />
         </div>
         <div className={styles.formWrapper}>
+        <label for="Name">E-Mail<span className={styles.spanLabel}>*</span></label>
           <input
             type="email"
             name="email"
@@ -287,20 +295,19 @@ const Form = ({
           />
         </div>
         <div className={styles.formWrapper}>
+        <label for="Name">Phone Number<span className={styles.spanLabel}>*</span></label>
           <PhoneInput
             style={
               popup
                 ? {
-                    border: "0",
-                    padding: "0px",
-                    borderBottom: "1px solid #C4C4C4",
-                    paddingBottom : "10px",
+                    borderRadius: "6px",
+                    border: "1px solid #D3D3D3",
+                    padding: "10px",
                   }
                 : {
-                    border: "0",
-                    padding: "0px",
-                    borderBottom: "1px solid #C4C4C4",
-                    paddingBottom : "10px",
+                  borderRadius: "6px",
+                  border: "1px solid #D3D3D3",
+                  padding: "10px",
                   }
             }
             name="phone"
@@ -317,6 +324,7 @@ const Form = ({
           ""
         ) : (
           <div className={popup ? styles.formWrappers : styles.formWrappers}>
+        <label for="Name">Upskilling Objective<span className={styles.spanLabel}>*</span></label>
             <select
               name="upskillPlanning"
               required
@@ -350,6 +358,7 @@ const Form = ({
           ""
         ) : (
           <div className={popup ? styles.formWrappers : styles.formWrappers}>
+        <label for="Name">Timeline<span className={styles.spanLabel}>*</span></label>
             <select
               name="upskillingObjective"
               required
@@ -409,21 +418,24 @@ const Form = ({
           ""
         )}
 
-        {popup ? (
-          <div className={popup ? styles.formWrappers : styles.formWrapper}>
-            <input
-              type="hidden"
-              id="url"
-              name="url"
-              value={router.asPath}
-            ></input>
-          </div>
-        ) : (
-          ""
-        )}
         {radio ? (
           <div className={popup ? styles.formWrappers : styles.formWrapper}>
-            <input
+                    <label for="Name">Course Preference<span className={styles.spanLabel}>*</span></label>
+            <select
+              id="platform"
+              name="platform"
+              required
+              value={query.platform}
+              onChange={handleParam()}
+            >
+              <option value="Select an option" selected
+                hidden>
+                Select an option
+              </option>
+              <option value="Data Science & AI Courses">Data Science & AI Courses</option>
+              <option value="Software (DSA & System Design)">Software (DSA & System Design)</option>
+            </select>
+            {/* <input
               id="Data Science Program"
               value="Data Science & AI Courses "
               name="platform"
@@ -441,7 +453,7 @@ const Form = ({
               type="radio"
               onChange={handleParam()}
             />
-            Software (DSA & System Design)
+            Software (DSA & System Design) */}
           </div>
         ) : (
           ""
@@ -456,6 +468,17 @@ const Form = ({
           >
             Please select a valid option
           </p>
+        ) : (
+          ""
+        )}
+        {popup ? (
+          
+            <input
+              type="hidden"
+              id="url"
+              name="url"
+              value={router.asPath}
+            ></input>
         ) : (
           ""
         )}

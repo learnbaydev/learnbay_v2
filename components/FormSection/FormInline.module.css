@@ -28,30 +28,31 @@
   justify-content: center;
 }
 .NameInput {
-  border-radius: 8px;
-  padding: 10px;
   width: 100%;
-  border: 1px solid grey;
-  /* border-bottom: 1px solid grey; */
+  border-radius: 6px;
+border: 1px solid #D3D3D3;
   outline: none;
   background-color: rgba(255, 255, 255);
-  height: 50px;
+padding: 10px;
+color: #828282;
 }
 
 .EmailInput {
-  border-radius: 8px;
-  padding: 10px;
+  padding: 0px;
+  border: 0;
   width: 100%;
-  border: 1px solid grey;
+  border-radius: 6px;
+border: 1px solid #D3D3D3;
   outline: none;
   background-color: rgba(255, 255, 255);
-  height: 50px;
+  padding: 10px;
+  color: #828282;
 }
 
 .NameInput::placeholder,
 .EmailInput::placeholder {
-  color: rgb(168, 168, 168);
-  font-size: 16px;
+  color: #828282;
+  font-size: 14px;
 }
 .NameInput:active,
 .EmailInput:active {
@@ -64,33 +65,36 @@
   width: 100%;
   outline: none;
   background-color: rgba(255, 255, 255);
+  color: #828282;
 }
 .Phone input::placeholder,
 .Phones input::placeholder {
-  color: rgb(167, 167, 167);
-  font-size: 16px;
+  color: #828282;
+  font-size: 14px;
 }
 
-.formWrapper select,
-.formWrappers select {
-  height: 50px;
+.formWrapper select {
   width: 100%;
-  border-radius: 8px;
-
-  padding: 10px;
-  border: 1px solid grey;
-  font-size: 16px;
-  padding-left: 10px;
-  color: rgb(167, 167, 167);
+  border-radius: 6px;
+border: 1px solid #D3D3D3;
   outline: none;
+  background-color: rgba(255, 255, 255);
+padding: 10px;
+color: #828282;
 }
+.formWrapper select option {
+  width: 100%;
+  border: 0;
+}
+
 .formWrapper select option,
 .formWrappers select option {
-  color: black;
+  
   width: 100%;
   border: 0;
   background-color: #e7f4ff;
 }
+
 .FormText {
   color: grey;
   font-size: 8px;
@@ -98,7 +102,7 @@
 }
 .formWrapper select::placeholder,
 .formWrappers select::placeholder {
-  color: rgb(167, 167, 167);
+  color: #828282;
   font-size: 12px;
 }
 
