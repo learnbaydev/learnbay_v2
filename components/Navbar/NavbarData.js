@@ -1,7 +1,7 @@
 export const menuItem = [
   {
     id: 1,
-    name: "Home",
+    name: "Career Services",
     url: "/",
   },
   // {
@@ -11,17 +11,17 @@ export const menuItem = [
   // },
   {
     id: 3,
-    name: "Demo",
+    name: "Success Story",
     url: "/demo",
   },
   {
     id: 4,
-    name: "Blog",
-    url: "/blog",
+    name: "ProjectLab",
+    url: "",
   },
   {
     id: 5,
-    name: "Contact Us",
-    url: "/contact-us",
+    name: "Blog",
+    url: "/blog",
   },
 ];

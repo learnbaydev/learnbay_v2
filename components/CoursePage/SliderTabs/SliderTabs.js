@@ -8,8 +8,11 @@ import { IoIosArrowForward } from "react-icons/io";
 import { BsCheckCircle } from "react-icons/bs";
 import Button from "../../Global/Button/Button";
 import { FaCheckCircle, FaDownload } from "react-icons/fa";
+import Popup from "../../Popup/Popup";
+import Form from "../../Form/Form";
 
 
+<<<<<<< HEAD
 const SliderTabs = () => {
 
   const [bfsiButton, setBfsiButton] = useState();
@@ -17,6 +20,33 @@ const SliderTabs = () => {
   const [supplyChain, setSupplyChain] = useState(false);
 
   const [manufacture, setManufacture] = useState(false);
+=======
+
+
+const SliderTabs = ({
+  FeeHeading,
+  Fee,
+  dataScience,
+  FeeContent2,
+  FeeContent3,
+  FeeContent4,
+  FeeContent5,
+  dataScienceCounselling,
+  FeeEmi,
+}) => {
+  const [popups, setPopups] = useState(false);
+
+  const popupShow = () => {
+    setPopups(true);
+  };
+  const [viewAll, setViewAll] = useState(false);
+  const [oneYear, setOneYear] = useState();
+  const [nonTech, setNonTech] = useState(false);
+  const [Guarantee, setGuarantee] = useState(false);
+  const [Retail, setRetail] = useState(false);
+  const [Oil, setOil] = useState(false);
+  const [Stack, setStack] = useState(false);
+>>>>>>> baeedd8 (changes placement)
   const [mobile, setMobile] = useState(false);
   const [tab, setTab] = useState(false);
 
@@ -43,8 +73,34 @@ const SliderTabs = () => {
     }
   }, [0]);
 
+
+
   return (
     <div className={styles.Course} id="course">
+         <Popup
+        trigger={popups}
+        setTrigger={setPopups}
+        className="popupModal"
+        popup={true}
+        // radio={radio}
+        dataScience={dataScience}
+        dataScienceCounselling={dataScienceCounselling}
+      >
+        <div className="leftPopup">
+          <div
+            className="whiteP"
+            style={{ width: "340px", height: "400px" }}
+          ></div>
+        </div>
+        <div className="RightPopup">
+          <h5>Apply For Counselling</h5>
+          <Form
+            dataScience={dataScience}
+            dataScienceCounselling={dataScienceCounselling}
+            // radio={radio}
+          />
+        </div>
+      </Popup>
       <h2>
         Domain <span>Specialization</span>
       </h2>
@@ -236,11 +292,13 @@ const SliderTabs = () => {
                   </p>
                 </div>
 
-                <div className={styles.buttonDiv}>
+                <div className={styles.buttonDiv}
+                onClick={popupShow}>
                   <Button
                     bannerButton={true}
                     text="Download Domain Brochures"
                     passIcon={<FaDownload className="bIconS" />}
+                
                   />
                 </div>
 
@@ -278,11 +336,14 @@ const SliderTabs = () => {
                   </p>
                 </div>
 
-                <div className={styles.buttonDiv}>
+                <div className={styles.buttonDiv}
+                 onClick={popupShow}>
+                  
                   <Button
                     bannerButton={true}
                     text="Download Domain Brochures"
                     passIcon={<FaDownload className="bIconS" />}
+                   
                   />
                 </div>
 
@@ -319,11 +380,13 @@ const SliderTabs = () => {
                   </p>
                 </div>
 
-                <div className={styles.buttonDiv}>
+                <div className={styles.buttonDiv}
+                onClick={popupShow}>
                   <Button
                     bannerButton={true}
                     text="Download Domain Brochures"
                     passIcon={<FaDownload className="bIconS" />}
+                   
                   />
                 </div>
 
@@ -360,11 +423,13 @@ const SliderTabs = () => {
                   </p>
                 </div>
 
-                <div className={styles.buttonDiv}>
+                <div className={styles.buttonDiv}
+                onClick={popupShow}>
                   <Button
                     bannerButton={true}
                     text="Download Domain Brochures"
                     passIcon={<FaDownload className="bIconS" />}
+                    onClick={() => popupShow(true)}
                   />
                 </div>
 

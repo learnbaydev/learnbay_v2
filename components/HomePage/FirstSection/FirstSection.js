@@ -93,7 +93,7 @@ const FirstSection = ({
             <div className={styles.FirstLeft}>
               <p className={styles.pTop}>Learn More</p>
               <h1 className={styles.h1}>
-              Upskill with India's Top Professional Learning Platform
+                India’s #1 Upskilling Platform for Working Professionals
               </h1>
               <p className={styles.blinkMobile}>
                 Elevate your tech career with our Master's programs, where
@@ -120,7 +120,8 @@ const FirstSection = ({
                 </div>
               </div>
               <p className={styles.blink}>
-              Master the latest tech skills with Learnbay and propel your career forward.
+                Elevate your tech career with our Master's programs, where
+                practical skills meet excellence.
               </p>
               <div className={styles.btnWrapper}>
                 <a href="#course">

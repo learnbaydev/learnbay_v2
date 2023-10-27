@@ -274,7 +274,7 @@ function Blockchain({ }) {
         />
         <MentorsSection />
 
-        <PlacementCall/>
+       < PlacementCall/>
     
 
 
