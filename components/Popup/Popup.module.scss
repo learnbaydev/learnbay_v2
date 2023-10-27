@@ -2,8 +2,8 @@
   .popup {
     top: 0;
     left: 0;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     margin: auto;
     background-color: rgba(0, 0, 0, 0.23);
     position: fixed;
@@ -13,21 +13,24 @@
     z-index: 9999;
     overflow: hidden;
     .popupInner {
-      background-image: url("https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Form-Side-Image.png");
+background: #FFF;
+      background-image: url("https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/popup-left.webp");
       background-size: contain;
       background-repeat: no-repeat;
       background-position: left;
+      background-origin: content-box;
       position: relative;
       display: grid;
-      grid-template-columns: 49% 49%;
+      grid-template-columns: 55% 45%;
       align-items: center;
       justify-content: space-evenly;
-      padding: 20px 40px;
-      width: 60%;
-      height: fit-content;
-      border-radius: 10px;
-      background-color: white;
+      padding: 20px 20px;
+      width: 65%;
+    height: fit-content;
       text-align: center;
+      border-radius: 6px;
+border: 3px solid #0089E1;
+box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
 
       .closeBtn {
         position: absolute;
@@ -60,8 +63,6 @@
         background-color: white;
         cursor: pointer;
         border-radius: 50%;
-        border: 1px solid #2d9cd7;
-        border-color: blue;
         color: #2d9cd7;
         top: 5px;
         right: 10px;
@@ -69,30 +70,30 @@
       }
     }
     .popupInners {
-      background-image: url("https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Form-Side-Image.png");
+      background: #FFF;
+      background-image: url("https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/popup-left.webp");
       background-size: contain;
       background-repeat: no-repeat;
       background-position: left;
+      background-origin: content-box;
       position: relative;
       display: grid;
-      grid-template-columns: 49% 49%;
+      grid-template-columns: 50% 50%;
       align-items: center;
       justify-content: space-evenly;
-      padding: 20px 40px;
-      width: 60%;
-      height: fit-content;
-      border-radius: 10px;
-
-      background-color: white;
+      padding: 20px 20px;
+      width: 55%;
+    height: fit-content;
       text-align: center;
+      border-radius: 6px;
+border: 3px solid #0089E1;
+box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
 
       .closeBtn {
         position: absolute;
         background-color: white;
         cursor: pointer;
         border-radius: 50%;
-        border: 1px solid #2d9cd7;
-        border-color: blue;
         color: #2d9cd7;
         top: 5px;
         right: 10px;
@@ -116,28 +117,30 @@
     z-index: 9999;
 
     .popupInner {
-      background-image: url("https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Form-Side-Image.png");
+      background: #FFF;
+      background-image: url("https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/popup-left.webp");
       background-size: contain;
       background-repeat: no-repeat;
       background-position: left;
+      background-origin: content-box;
       position: relative;
-      display: flex;
+      display: grid;
+      grid-template-columns: 55% 45%;
       align-items: center;
       justify-content: space-evenly;
-      padding: 30px 60px;
-      width: 80%;
-      border-radius: 5px;
-
-      height: fit-content;
-      background-color: white;
+      padding: 20px 20px;
+      width: 65%;
+    height: fit-content;
+      text-align: center;
+      border-radius: 6px;
+border: 3px solid #0089E1;
+box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
 
       .closeBtn {
         position: absolute;
         background-color: white;
         cursor: pointer;
         border-radius: 50%;
-        border: 1px solid #2d9cd7;
-        border-color: blue;
         color: #2d9cd7;
         top: 5px;
         right: 10px;
@@ -163,8 +166,6 @@
         background-color: white;
         cursor: pointer;
         border-radius: 50%;
-        border: 1px solid #2d9cd7;
-        border-color: blue;
         color: #2d9cd7;
         top: 5px;
         right: 10px;
@@ -194,8 +195,6 @@
         background-color: white;
         cursor: pointer;
         border-radius: 50%;
-        border: 1px solid #2d9cd7;
-        border-color: blue;
         color: #2d9cd7;
         top: 5px;
         right: 10px;

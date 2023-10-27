@@ -36,6 +36,7 @@
   margin-top: -5px;
   z-index: 1;
   background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
 .green {
@@ -149,14 +150,14 @@
   border-radius: 8px;
   z-index: 10;
   position: relative;
-  height: max-content; 
+  height: max-content;
   background: white;
   box-sizing: border-box;
   border: 5px solid transparent;
   background-clip: padding-box;
   border-radius: 35.141px;
-background: #FFF;
-/* box-shadow: -4.68544px 3.51408px 25.76994px 5.8568px rgba(0, 0, 0, 0.10); */
+  background: #fff;
+  /* box-shadow: -4.68544px 3.51408px 25.76994px 5.8568px rgba(0, 0, 0, 0.10); */
 }
 .newSliderWrap::after,
 .newSliderWrap::before {
@@ -606,7 +607,8 @@ background: #FFF;
   .imgWrapper {
     width: 300px !important;
   }
-}.Course {
+}
+.Course {
   padding: 40px 100px;
 }
 
@@ -642,12 +644,12 @@ background: #FFF;
   border-radius: 0px 0px 8px 8px;
   width: 95%;
   margin-left: 15px;
-  margin-top: -5px;
+  margin-top: -0px;
   z-index: 1;
   background-color: white;
   border-radius: 9.484px;
-background: #FFF;
-box-shadow: 0px 0px 3.79345px 0px rgba(0, 0, 0, 0.25);
+  background: #fff;
+  box-shadow: 0px 0px 3.79345px 0px rgba(0, 0, 0, 0.25);
 }
 
 .green {
@@ -662,7 +664,7 @@ box-shadow: 0px 0px 3.79345px 0px rgba(0, 0, 0, 0.25);
   font-weight: 400;
   cursor: pointer;
   color: #676767;
-font-size: 20px;
+  font-size: 20px;
   justify-content: start;
 }
 .ActiveSpan {
@@ -755,7 +757,9 @@ font-size: 20px;
   border-radius: 8px;
   background-color: white;
 }
-
+.slideWrap {
+  background-color: white;
+}
 .newSliderWrap {
   display: flex !important;
   flex-flow: column;
@@ -790,7 +794,7 @@ font-size: 20px;
   bottom: -5px;
   width: 10%;
   z-index: 0;
-  margin-left: -5px;
+  margin-left: 10px;
   height: 47%;
   background: linear-gradient(to top, #0072bc, white);
   border-radius: 0px 8px 0px 8px;
@@ -809,7 +813,7 @@ font-size: 20px;
 .newSliderWrap::before {
   left: 0;
   bottom: 0;
-  margin-left: 0px;
+  margin-left: 16px;
   margin-bottom: -5px;
   border: 5px;
   border-radius: 0px 0px 0px 8px;
@@ -820,7 +824,7 @@ font-size: 20px;
   width: 100%;
   flex-flow: column;
   align-items: center;
-  padding: 20px 20px 12px 20px;
+  padding: 0px 20px 12px 20px;
   margin-left: 0px;
   background-color: rgba(
     255,
@@ -841,10 +845,14 @@ font-size: 20px;
   /* hello */
 }
 .imgWrap {
+  display: flex;
+
+  height: 150px;
   background-color: white;
   border-radius: 8px;
   position: relative;
   z-index: 1;
+  margin: 8px 8px 8px 0px;
 }
 
 .leftSide h6 {
@@ -863,7 +871,7 @@ font-size: 20px;
   border: 1px solid #efefef;
   background-color: #0072bc;
   height: 1px;
-  top: 45%;
+  top: 39%;
   position: absolute;
   width: 100%;
   right: 0px;
