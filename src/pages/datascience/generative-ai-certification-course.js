@@ -1,18 +1,15 @@
 import dynamic from "next/dynamic";
 import Head from "next/head";
 import { useEffect, useState } from "react";
-import { GenerativeAIData } from "../../../Data/GenerativeAICourseData";
-import MentorsSection from "../../../components/MastersCourse/MentorsSection/MentorsSection";
-
-const Footer = dynamic(() => import("../../../components/Footer/Footer"));
-
-const Navbar = dynamic(() => import("../../../components/Navbar/Navbar"));
+import { DataScienceCourseData } from "../../../Data/AdvanceDataScienceCourse";
+import Footer from "../../../components/Footer/Footer";
+import Navbar from "../../../components/Navbar/Navbar";
 
 const FirstSection = dynamic(() =>
-  import("../../../components/MastersCourse/FirstSection/FirstSection")
+  import("../../../components/CoursePage/FirstSection/FirstSection")
 );
 const SecondSection = dynamic(() =>
-  import("../../../components/MastersCourse/SecondSection/SecondSection")
+  import("../../../components/CoursePage/SecondSection/SecondSection")
 );
 const SeventhSection = dynamic(() =>
   import("../../../components/Global/SeventhSection/SeventhSection")
@@ -21,57 +18,81 @@ const Testimonial = dynamic(() =>
   import("../../../components/HomePage/Testimonial/Testimonial")
 );
 const WhoProgram = dynamic(() =>
-  import("../../../components/MastersCourse/WhoProgram/ThirdSection")
+  import("../../../components/CoursePage/WhoProgram/ThirdSection")
+);
+const Switch = dynamic(() =>
+  import("../../../components/HomePage/switch/switch")
+);
+const GrowthStats = dynamic(() =>
+  import("../../../components/CoursePage/GrowthStat/GrowthStats")
 );
 const ToolsCovered = dynamic(() =>
-  import("../../../components/MastersCourse/ToolsCovered/ToolsCovered")
+  import("../../../components/CoursePage/ToolsCovered/ToolsCovered")
 );
 const FeeSection = dynamic(() =>
-  import("../../../components/MastersCourse/FeeSection/FeeSection")
+  import("../../../components/CoursePage/FeeSection/FeeSection")
 );
 const FourthSection = dynamic(() =>
-  import("../../../components/MastersCourse/FourthSection/FourthSection")
+  import("../../../components/CoursePage/FourthSection/FourthSection")
+);
+const FifthSection = dynamic(() =>
+  import("../../../components/CoursePage/FifthSection/FifthSection")
+);
+const SixthSectionCTA = dynamic(() =>
+  import("../../../components/CoursePage/SixthSectionCTA/Counselling")
 );
 const Project = dynamic(() =>
-  import("../../../components/MastersCourse/Project/Project")
+  import("../../../components/CoursePage/Project/Project")
 );
 const SyllabusNew = dynamic(() =>
-  import("../../../components/MastersCourse/Syllabus/MasterSyllabus")
+  import("../../../components/CoursePage/Syllabus/MasterSyllabus")
 );
-const DomainSection = dynamic(() =>
-  import("../../../components/MastersCourse/DomainSection/DomainSection")
-);
+
 const Certificate = dynamic(() =>
-  import("../../../components/MastersCourse/Certificate/Certificate")
+  import("../../../components/CoursePage/Certificate/Certificate")
 );
 const FAQNew = dynamic(() =>
-  import("../../../components/MastersCourse/FAQNew/FAQNew")
+  import("../../../components/CoursePage/FAQNew/FAQNew")
 );
 const BatchDetails = dynamic(() =>
   import("../../../components/CoursePage/BatchDetails/BatchDetails")
 );
 
-const SecondNavbar = dynamic(() =>
-  import("../../../components/MastersCourse/SecondNavbar/SecondNavbar")
+const SecondNavbar = dynamic(()=>
+  import("../../../components/CoursePage/SecondNavbar/SecondNavbar")
 );
+const ContactConsellor = dynamic ( ()=>
+import ("../../../components/CoursePage/ContactConsellor/ContactConsellor")
 
+)
+const feesbatch = dynamic ( ()=>
+import ('../../../components/CoursePage/FeeSection/FeeSection')
+)
+
+const SliderTab = dynamic ( ()=>
+import ('../../../components/CoursePage/SliderTabs/SliderTabs')
+)
+
+import OfferPopup from "../../../components/OfferPopup/OfferPopup";
+import BottomBar from "../../../components/WebPage/BottomBar/BottomBar";
+import ContactUs from "../../../components/HomePage/ContactUs/ContactUs";
+import NewProjectSection from "../../../components/CoursePage/NewProjectSection/NewProjectSection";
+import MentorsSection from "../../../components/MastersCourse/MentorsSection/MentorsSection";
+import TrainerSection from "../../../components/HomePage/TrainerSection/TrainerSection";
+// import SecondNavbar from "../../../components/CoursePage/SecondNavbar/SecondNavbar";
 const WhyLearnbay = dynamic(() =>
   import("../../../components/MastersCourse/WhyLearnbay/WhyLearnbay")
 );
 
-const BottomBar = dynamic(() =>
-  import("../../../components/WebPage/BottomBar/BottomBar")
-);
+const Gethire = dynamic (() =>
+import ("../../../components/CoursePage/Gethired/Gethire")
+)
+const PlacementCall = dynamic (() =>
+import ("../../../components/CoursePage/PlacementCall/PlacementCall")
 
-const ContactCounsellor = dynamic(() =>
-  import("../../../components/MastersCourse/ContactCounsellor/ContactCounsellor")
-);
+)
 
-const PlacementCell = dynamic(() =>
-  import("../../../components/MastersCourse/placementCell/PlacementCell")
-);
-
-function Blockchain() {
+function Blockchain({ }) {
   // POPUP GET METHOD
   const [popupData, setPopupData] = useState([]);
   // console.log(popupData);
@@ -128,6 +149,8 @@ function Blockchain() {
     fetchBatch();
   }, []);
 
+  const [progress, setProgress] = useState(20);
+
   return (
     <>
       <Head>
@@ -159,61 +182,85 @@ function Blockchain() {
           // SecondTyped="Capstone Project Certificate"
           ThirdTyped="Live Interactive Classes"
           dataScience={true}
-          titleCourse="Advanced Data Science and AI Program with domain specialization"
+          titleCourse="Advance Data Science & AI Program with Domain Specialization"
           cityParaCont="Elevate your tech career with our Master's programs"
           brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Advance+Data+Science+and+AI+Certification+Program+Learnbay.pdf"
-          FirstRightImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/coursepageB.webp"
-          firstToparaImg="with domain specialization"
-          firstHeading="Advanced Data Science and AI Program"
-          // firstTopPara="Specialization over generalization"
+          FirstRightImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/advance-header.webp"
+          firstToparaImg="with Domain Specialization"
+          firstHeading="Advance Data Science & AI Program"
+          firstTopPara="Curriculum Inclusive of Gen-AI"
           idss="bfl64ANfSV0"
         />
         <SecondSection
-          SecondSectionData={GenerativeAIData[0].secondSection}
+          SecondSectionData={DataScienceCourseData[0].secondSection}
         />
-        <SecondNavbar />
-        <Testimonial
-          redirectDS={true}
-          Testimonial={GenerativeAIData[0].testimonial}
-          heading="Our Alumni Speak"
-          para="Discover the impact of our programs on career growth"
-        />
+        <SecondNavbar/>
         <WhoProgram
-          leftImage="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/masterPage/who-program.webp"
-          ThirdSectionData={GenerativeAIData[0].thirdSection}
+          leftImage="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/advance-who.webp"
+          ThirdSectionData={DataScienceCourseData[0].thirdSection}
         />
-        <WhyLearnbay />
+        <TrainerSection link="D-gcPaK_-x4" />
+      <Testimonial
+        redirectDS={true}
+        heading=""
+        Testimonial={DataScienceCourseData[0].testimonial}
+      />
+        
+     
+         <WhyLearnbay />
+         < Gethire/>
+        {/* <Switch /> */}
         <FourthSection
-          placementData={GenerativeAIData[0].fourthSection}
+          placementData={DataScienceCourseData[0].fourthSection}
           redirectDS={true}
           dataScience={true}
           titleCourse="Data Science Placement Report"
           brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Placement+Report.pdf"
         />
-
-        <ContactCounsellor />
-
-        <SyllabusNew
-          syllabusHead={GenerativeAIData[0].syllabusHead}
-          masterSyllabus={GenerativeAIData[0].masterSyllabus}
-          MasterSyllabusDefault={GenerativeAIData[0].MasterSyllabusDefault}
+        {/* <FifthSection /> */}
+        {/* <SixthSectionCTA dataScienceCounselling={true} /> */}
+        {/* <SyllabusNew
           dataScienceCounselling={true}
           dataScience={true}
           titleCourse="Advanced Data Science and AI Program with domain specialization"
           brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Advance+Data+Science+and+AI+Certification+Program+Learnbay.pdf"
-          syllabus={GenerativeAIData[0].syllabus}
-          syllabusDesc={GenerativeAIData[0].syllabusDesc}
-          popupHead={GenerativeAIData[0].popupHead}
+          syllabus={DataScienceCourseData[0].syllabus}
+          syllabusDesc={DataScienceCourseData[0].syllabusDesc}
+          popupHead={DataScienceCourseData[0].popupHead}
+        /> */}
+        {/* <ContactUs dataScienceCounselling={true} /> */}
+        <ContactConsellor/>
+
+        <SyllabusNew
+          syllabusHead={DataScienceCourseData[0].syllabusHead}
+          masterSyllabus={DataScienceCourseData[0].masterSyllabus}
+          MasterSyllabusDefault={DataScienceCourseData[0].MasterSyllabusDefault}
+          dataScienceCounselling={true}
+          dataScience={true}
+          titleCourse="Advanced Data Science and AI Program with domain specialization"
+          brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Advance+Data+Science+and+AI+Certification+Program+Learnbay.pdf"
+          syllabus={DataScienceCourseData[0].syllabus}
+          syllabusDesc={DataScienceCourseData[0].syllabusDesc}
+          popupHead={DataScienceCourseData[0].popupHead}
+          progress={progress}
+          setProgress={setProgress}
         />
+        {/* <GrowthStats
+          img1="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Scope+of+DS+left+image.png"
+          heading="Be the future: Grow your Data Science & AI skills "
+          para1="Data Science market to reach $133 billion by 2026"
+          para2="The global AI market to hit US$ 1,597.1 billion by 2030 "
+          para3="Influences on nearly all sectors of the current industries"
+        /> */}
         <ToolsCovered
           deskImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Tools-Logo.png"
           mobImage="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Mobile-Tools-Covered.png"
         />
         <Certificate
           threeCertificate={true}
-          data={GenerativeAIData[0].Certificate}
+          data={DataScienceCourseData[0].Certificate}
         />
-        <FeeSection
+         <FeeSection
           Fee="₹ 99,000"
           FeeEmi="₹ 9,735/"
           FeeHeading="Program Fee and Financing"
@@ -225,27 +272,26 @@ function Blockchain() {
           FeeContent6="No additional cost"
           dataScienceCounselling={true}
         />
-        <DomainSection
-          dataScience={true}
-          domainSectionData={GenerativeAIData[0].domainSection}
-        />
-        <PlacementCell />
-        <Project
-          projectData={GenerativeAIData[0].project}
-          tools="12+"
-          dataScience={true}
-          titleCourse="Data Science Project Brochure"
-          brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Data+Science+and+AI+Projects.pdf"
-          project="15+"
-        />
         <MentorsSection />
+
+        <SliderTab/>
+
+
+       < PlacementCall/>
+    
+
+
         {/* {batchDateData === "" ? (
           ""
         ) : (
           <BatchDetails batchDetails={batchDateData.batchDetails} />
         )} */}
 
-        <FAQNew FAQNewData={GenerativeAIData[0].faq} />
+      
+
+        <NewProjectSection />
+    
+        <FAQNew FAQNewData={DataScienceCourseData[0].faq} />
         <SeventhSection />
         <Footer />
         <BottomBar />
