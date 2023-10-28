@@ -144,8 +144,13 @@
 }
 
 @media (max-width: 481px) {
+  .program {
+    padding: 50px 20px 0px 10px;
+  }
+
   .programWrap {
     grid-template-columns: 100%;
+    padding: 20px 0px 0px 0px;
   }
   .programWrap h4 {
     font-size: 21px;
@@ -159,7 +164,7 @@
   .boxWrap {
     display: grid;
     grid-template-columns: 100%;
-    gap: 40px;
+    gap: 35px;
   }
   .leftSide {
     width: 100%;
@@ -169,17 +174,19 @@
   .leftSide p {
     margin-left: 20px;
     text-align: left;
-    margin-top: 52px;
+    margin-top: 0px;
     font-weight: 600;
     color: #474545;
     /* font-family: Inter; */
-    font-size: 14px;
+    font-size: 16px;
     font-style: normal;
     line-height: 147.5%;
   }
   .boxIcon {
     width: 80px;
     height: 50px;
+    top: -15px;
+    left: -25px;
   }
   .heading {
     left: 70px;

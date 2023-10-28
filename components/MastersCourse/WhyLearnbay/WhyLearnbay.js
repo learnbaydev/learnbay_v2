@@ -9,7 +9,7 @@ import VideoPopup from "../../Global/VideoPopup/VideoPopup";
 
 function WhyLearnbay() {
 
-  const [careerService, setCareerService] = useState(false);
+  const [careerService, setCareerService] = useState(true);
   const [domainSpec, setDomainSpec] = useState(false);
   const [projectInno, setProjectInno] = useState(false);
   const [projectCert, setProjectCert] = useState(false);
