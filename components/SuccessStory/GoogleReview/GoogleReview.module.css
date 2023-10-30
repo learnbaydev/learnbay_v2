@@ -1,8 +1,8 @@
 .GoogleReviewMain {
-    background: rgba(210, 210, 210, 0.17);
+    background: linear-gradient(91deg, rgba(20, 210, 4, 0.08) 0.79%, rgba(255, 220, 0, 0.08) 48.64%, rgba(243, 7, 7, 0.08) 99.25%);
 
 
-margin: 113px 0px;
+margin: 40px 0px;
     padding: 42px 0px;
 
    
@@ -51,4 +51,7 @@ border-radius: 24px;
     margin: 10px;
 }
 
+.googlebox img {
+    margin-top:4px;
+}
 

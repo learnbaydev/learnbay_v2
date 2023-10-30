@@ -6,6 +6,7 @@ import dynamic from "next/dynamic";
 import BottomBar from "../../components/WebPage/BottomBar/BottomBar";
 const Button = dynamic(() => import("../../components/Global/Button/Button"));
 import GoogleReview from "../../components/SuccessStory/GoogleReview/GoogleReview";
+import LinkedinReview from "../../components/SuccessStory/LinkedinReview/LinkedinReview";
 
 export default function Home() {
   return (
@@ -28,7 +29,9 @@ export default function Home() {
       <main>
         {" "}
         <Navbar popup={true} dataScienceCounselling={true} radio={true} />
+        < LinkedinReview/>
        < GoogleReview />
+    
         <Footer />
         <BottomBar radio={true} />
       </main>
