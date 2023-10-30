@@ -12,7 +12,7 @@ import Popup from "../../Popup/Popup";
 import Form from "../../Form/Form";
 
 
-const SliderTabs = ({dataScience, dataScienceCounselling}) => {
+const SliderTabs = ({ dataScience, dataScienceCounselling }) => {
 
   const [bfsiButton, setBfsiButton] = useState();
   const [healthCare, setHealthCare] = useState(false);
@@ -55,7 +55,7 @@ const SliderTabs = ({dataScience, dataScienceCounselling}) => {
 
   return (
     <div className={styles.Course} id="course">
-         <Popup
+      <Popup
         trigger={popups}
         setTrigger={setPopups}
         className="popupModal"
@@ -75,12 +75,12 @@ const SliderTabs = ({dataScience, dataScienceCounselling}) => {
           <Form
             dataScience={dataScience}
             dataScienceCounselling={dataScienceCounselling}
-            // radio={radio}
+          // radio={radio}
           />
         </div>
       </Popup>
       <h2>
-        Domain <span>Specialization</span>
+        Career Services Pro
       </h2>
 
       <div className={styles.courses}>
@@ -92,7 +92,7 @@ const SliderTabs = ({dataScience, dataScienceCounselling}) => {
 
               setHealthCare(false);
               setSupplyChain(false);
-            
+
 
 
             }}
@@ -107,7 +107,7 @@ const SliderTabs = ({dataScience, dataScienceCounselling}) => {
                 alt="Bulb"
               />
 
-              BFSI
+              Placement Support
               {mobile ? bfsiButton ? <BiUpArrowAlt /> : <BiDownArrowAlt /> : ""}
             </div>
 
@@ -140,7 +140,7 @@ const SliderTabs = ({dataScience, dataScienceCounselling}) => {
                 alt="Bulb"
               />
 
-              Healthcare
+              Mock Interviews
               {mobile ? bfsiButton ? <BiUpArrowAlt /> : <BiDownArrowAlt /> : ""}
             </div>
 
@@ -162,7 +162,7 @@ const SliderTabs = ({dataScience, dataScienceCounselling}) => {
               setHealthCare(false);
               setSupplyChain(true);
 
-      
+
             }}
             className={supplyChain ? styles.ActiveSpan : styles.span}
           >
@@ -175,7 +175,7 @@ const SliderTabs = ({dataScience, dataScienceCounselling}) => {
                 alt="Bulb"
               />
 
-              Supply Chain
+              Resume BuildUp
               {mobile ? supplyChain ? <BiUpArrowAlt /> : <BiDownArrowAlt /> : ""}
             </div>
             <div>
@@ -189,9 +189,9 @@ const SliderTabs = ({dataScience, dataScienceCounselling}) => {
               setBfsiButton(false);
 
               setHealthCare(false);
-            
+
               setSupplyChain(false);
-     
+
 
               setManufacture(true);
             }}
@@ -205,7 +205,7 @@ const SliderTabs = ({dataScience, dataScienceCounselling}) => {
                 height="25"
                 alt="Bulb"
               />
-              Manufacturing
+              Unlimited Interview Calls
               {mobile ? manufacture ? <BiUpArrowAlt /> : <BiDownArrowAlt /> : ""}
             </div>
 
@@ -214,19 +214,18 @@ const SliderTabs = ({dataScience, dataScienceCounselling}) => {
               <IoIosArrowForward className={styles.rightIcon} />
             </div>
           </div>
-         
+
         </div>
         <div className={styles.middlePanel}>
           {bfsiButton ? (
             <div className={styles.gridPanel}>
               <div className={styles.left}>
-                <h6>Specialize in Banking & Finance</h6>
+                <h6>Placement Support</h6>
 
                 <div className={styles.mainCont}>
                   <BsCheckCircle className={styles.checkCircle} />
                   <p className={styles.para}>
-                    Elevate Your Profile: Boost your career prospects with IBM's
-                    Course Completion Certificate.
+                  Elevate Your Profile: Boost your career prospects with IBM's Course Completion Certificate.
                   </p>
                 </div>
                 <div className={styles.mainCont}>
@@ -236,7 +235,14 @@ const SliderTabs = ({dataScience, dataScienceCounselling}) => {
                   </p>
                 </div>
 
-                <div className={styles.buttonDiv}
+                <div className={styles.mainCont}>
+                  <BsCheckCircle className={styles.checkCircle} />
+                  <p className={styles.para}>
+                    Globally Recognised: Secure your future with an internationally acclaimed IBM certification.
+                  </p>
+                </div>
+
+                {/* <div className={styles.buttonDiv}
                 onClick={popupShow}>
                   <Button
                     bannerButton={true}
@@ -244,7 +250,7 @@ const SliderTabs = ({dataScience, dataScienceCounselling}) => {
                     passIcon={<FaDownload className="bIconS" />}
                 
                   />
-                </div>
+                </div> */}
 
               </div>
 
@@ -262,102 +268,112 @@ const SliderTabs = ({dataScience, dataScienceCounselling}) => {
 
 
           {healthCare ? (
-            <div className={styles.gridPanel}>
-              <div className={styles.left}>
-                <h6>Specialize in Banking & Finance</h6>
+             <div className={styles.gridPanel}>
+             <div className={styles.left}>
+               <h6>Placement Support</h6>
 
-                <div className={styles.mainCont}>
-                  <BsCheckCircle className={styles.checkCircle} />
-                  <p className={styles.para}>
-                    Elevate Your Profile: Boost your career prospects with IBM's
-                    Course Completion Certificate.
-                  </p>
-                </div>
-                <div className={styles.mainCont}>
-                  <BsCheckCircle className={styles.checkCircle} />
-                  <p className={styles.para}>
-                    Globally Recognised: Secure your future with an internationally acclaimed IBM certification.
-                  </p>
-                </div>
+               <div className={styles.mainCont}>
+                 <BsCheckCircle className={styles.checkCircle} />
+                 <p className={styles.para}>
+                 Elevate Your Profile: Boost your career prospects with IBM's Course Completion Certificate.
+                 </p>
+               </div>
+               <div className={styles.mainCont}>
+                 <BsCheckCircle className={styles.checkCircle} />
+                 <p className={styles.para}>
+                   Globally Recognised: Secure your future with an internationally acclaimed IBM certification.
+                 </p>
+               </div>
 
-                <div className={styles.buttonDiv}
-                 onClick={popupShow}>
-                  
-                  <Button
-                    bannerButton={true}
-                    text="Download Domain Brochures"
-                    passIcon={<FaDownload className="bIconS" />}
-                   
-                  />
-                </div>
+               <div className={styles.mainCont}>
+                 <BsCheckCircle className={styles.checkCircle} />
+                 <p className={styles.para}>
+                   Globally Recognised: Secure your future with an internationally acclaimed IBM certification.
+                 </p>
+               </div>
 
-              </div>
+               {/* <div className={styles.buttonDiv}
+               onClick={popupShow}>
+                 <Button
+                   bannerButton={true}
+                   text="Download Domain Brochures"
+                   passIcon={<FaDownload className="bIconS" />}
+               
+                 />
+               </div> */}
 
-              <div className={`imgWrapper ${styles.right}`}>
-                <Image
-                  src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/coursePage/doamain-new.webp"
-                  width="200"
-                  height="200"
-                />
-              </div>
-            </div>
+             </div>
+
+             <div className={`imgWrapper ${styles.right}`}>
+               <Image
+                 src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/coursePage/doamain-new.webp"
+                 width="200"
+                 height="200"
+               />
+             </div>
+           </div>
           ) : (
             ""
           )}
 
           {supplyChain ? (
-            <div className={styles.gridPanel}>
-              <div className={styles.left}>
-                <h6>Specialize in Banking & Finance</h6>
+           <div className={styles.gridPanel}>
+           <div className={styles.left}>
+             <h6>Placement Support</h6>
 
-                <div className={styles.mainCont}>
-                  <BsCheckCircle className={styles.checkCircle} />
-                  <p className={styles.para}>
-                    Elevate Your Profile: Boost your career prospects with IBM's
-                    Course Completion Certificate.
-                  </p>
-                </div>
-                <div className={styles.mainCont}>
-                  <BsCheckCircle className={styles.checkCircle} />
-                  <p className={styles.para}>
-                    Globally Recognised: Secure your future with an internationally acclaimed IBM certification.
-                  </p>
-                </div>
+             <div className={styles.mainCont}>
+               <BsCheckCircle className={styles.checkCircle} />
+               <p className={styles.para}>
+               Elevate Your Profile: Boost your career prospects with IBM's Course Completion Certificate.
+               </p>
+             </div>
+             <div className={styles.mainCont}>
+               <BsCheckCircle className={styles.checkCircle} />
+               <p className={styles.para}>
+                 Globally Recognised: Secure your future with an internationally acclaimed IBM certification.
+               </p>
+             </div>
 
-                <div className={styles.buttonDiv}
-                onClick={popupShow}>
-                  <Button
-                    bannerButton={true}
-                    text="Download Domain Brochures"
-                    passIcon={<FaDownload className="bIconS" />}
-                   
-                  />
-                </div>
+             <div className={styles.mainCont}>
+               <BsCheckCircle className={styles.checkCircle} />
+               <p className={styles.para}>
+                 Globally Recognised: Secure your future with an internationally acclaimed IBM certification.
+               </p>
+             </div>
 
-              </div>
+             {/* <div className={styles.buttonDiv}
+             onClick={popupShow}>
+               <Button
+                 bannerButton={true}
+                 text="Download Domain Brochures"
+                 passIcon={<FaDownload className="bIconS" />}
+             
+               />
+             </div> */}
 
-              <div className={`imgWrapper ${styles.right}`}>
-                <Image
-                  src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/coursePage/doamain-new.webp"
-                  width="200"
-                  height="200"
-                />
-              </div>
-            </div>
+           </div>
+
+           <div className={`imgWrapper ${styles.right}`}>
+             <Image
+               src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/coursePage/doamain-new.webp"
+               width="200"
+               height="200"
+             />
+           </div>
+         </div>
 
           ) : (
             ""
           )}
           {manufacture ? (
-            <div className={styles.gridPanel}>
+              <div className={styles.gridPanel}>
               <div className={styles.left}>
-                <h6>Specialize in Banking & Finance</h6>
+                <h6>Placement Support</h6>
 
                 <div className={styles.mainCont}>
                   <BsCheckCircle className={styles.checkCircle} />
                   <p className={styles.para}>
-                    Elevate Your Profile: Boost your career prospects with IBM's
-                    Course Completion Certificate.
+                  Elevate Your Profile: Boost your career prospects with IBM's Course Completion Certificate.
                   </p>
                 </div>
                 <div className={styles.mainCont}>
@@ -367,15 +383,22 @@ const SliderTabs = ({dataScience, dataScienceCounselling}) => {
                   </p>
                 </div>
 
-                <div className={styles.buttonDiv}
+                <div className={styles.mainCont}>
+                  <BsCheckCircle className={styles.checkCircle} />
+                  <p className={styles.para}>
+                    Globally Recognised: Secure your future with an internationally acclaimed IBM certification.
+                  </p>
+                </div>
+
+                {/* <div className={styles.buttonDiv}
                 onClick={popupShow}>
                   <Button
                     bannerButton={true}
                     text="Download Domain Brochures"
                     passIcon={<FaDownload className="bIconS" />}
-                    onClick={() => popupShow(true)}
+                
                   />
-                </div>
+                </div> */}
 
               </div>
 

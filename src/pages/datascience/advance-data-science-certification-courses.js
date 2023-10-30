@@ -73,6 +73,10 @@ const SliderTab = dynamic ( ()=>
 import ('../../../components/CoursePage/SliderTabs/SliderTabs')
 )
 
+const WhoIsProgram = dynamic ( ()=>
+import ('../../../components/CoursePage/WhoIsProgram/WhoIsProgram')
+)
+
 import OfferPopup from "../../../components/OfferPopup/OfferPopup";
 import BottomBar from "../../../components/WebPage/BottomBar/BottomBar";
 import ContactUs from "../../../components/HomePage/ContactUs/ContactUs";
@@ -206,7 +210,7 @@ function Blockchain({ }) {
         Testimonial={DataScienceCourseData[0].testimonial}
       />
         
-     
+     <WhoIsProgram />
          <WhyLearnbay />
          < Gethire/>
         {/* <Switch /> */}
