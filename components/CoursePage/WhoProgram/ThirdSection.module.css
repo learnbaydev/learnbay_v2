@@ -29,7 +29,7 @@
   justify-content: space-between;
 }
 .leftSide {
-  padding: 35px 20px;
+  padding: 35px 0px 0px 20px;
   position: relative;
   border-radius: 2.517px;
   border: 1px solid #00000020;
@@ -56,10 +56,10 @@
   color: #0072bc;
 }
 
-.oIcon {
+/* .oIcon {
   font-size: 32px;
   color: #f99600;
-}
+} */
 
 /* Set the base styles for .boxIcon */
 .boxIcon {
@@ -74,7 +74,7 @@
   align-items: center;
   justify-content: center;
   padding: 15px 40px;
-  background: #f3fcff;
+  background: #FFF5E5;
 }
 
 /* .boxIcon:nth-child(2),
@@ -99,7 +99,19 @@
   border-radius: 0px;
   text-align: left;
   font-size: 20px;
+  color: #0072BC;
 
+}
+
+
+.buttonDiv{
+  float: right;
+  padding-top: 20px;
+
+}
+
+.buttonDiv button{
+  padding: 5px 15px;
 }
 
 @media (max-width: 1281px) {
