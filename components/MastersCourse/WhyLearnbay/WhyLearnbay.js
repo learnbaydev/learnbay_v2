@@ -1,11 +1,20 @@
 import Image from "next/image";
 import { BsCheckCircle } from "react-icons/bs";
-import { FaCheck, FaCheckCircle, FaRocket, FaUserShield } from "react-icons/fa";
+import { FaCheck, FaCheckCircle, FaRocket, FaUserShield, FaDownload  } from "react-icons/fa";
 import { GiProgression } from "react-icons/gi";
 import { TbCertificate } from "react-icons/tb";
 import Styles from "./WhyLearnbay.module.css";
 import { useState, useEffect } from "react";
 import VideoPopup from "../../Global/VideoPopup/VideoPopup";
+
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/free-mode";
+import "swiper/css/scrollbar";
+import { Pagination, Navigation } from "swiper";
+import { Scrollbar } from "swiper";
+import Button from "../../Global/Button/Button";
+
 
 function WhyLearnbay() {
 
@@ -147,46 +156,102 @@ function WhyLearnbay() {
         ):('')}
 
 {domainSpec ? (
-          <div className={Styles.RightSide}>
-          <div className={Styles.firstBox}>
-            <div className="imgWrapper">
-              <Image
-                src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/coursePage/ytThumbnail.webp"
-                loading="lazy"
-                width="200"
-                height="212"
-                alt="profile-Img"
-                onClick={() => videoShow(video.vId)}
-              />
-            </div>
-            <div className={Styles.left}>
-              <h6>Key Benefits</h6>
-              <div className={Styles.mainCont}>
+          <div className={Styles.RightSideDomain}>
+              <Swiper
+        loop={true}
+        slidesPerView={1}
+        spaceBetween={0}
+        pagination={{
+          dynamicBullets: true,
+          clickable: true,
+        }}
+        // scrollbar={{ draggable: true }}
+        grabCursor={true}
+        style={{ width: "100%" }}
+        modules={[Pagination, Navigation, Scrollbar]}
+        className="mySwiper"
+      >
+        <SwiperSlide>
+          <div className={Styles.secondDiv}>
+            <div className={Styles.firstDiv}>
+          
+              <div className={Styles.iconBoxDesktop}>
+                <div className={Styles.iconBox}>
+                  <div className={Styles.BoxIconinner}>
+                    <Image
+                      src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/bank.gif"
+                      loading="lazy"
+                      width={40}
+                      height={40}
+                    />
+                    <p>BFSI</p>
+                  </div>
+                  <div className={Styles.BoxIconinner}>
+                    <Image
+                      src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/heartbeat.gif"
+                      loading="lazy"
+                      width={40}
+                      height={40}
+                    />
+                    <p>HEALTHCARE</p>
+                  </div>
+                  <div className={Styles.BoxIconinner}>
+                    <Image
+                      src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/live.gif"
+                      loading="lazy"
+                      width={40}
+                      height={40}
+                    />
+                    <p>MARKETING & HR</p>
+                  </div>
+
+                  <div className={Styles.BoxIconinner}>
+                    <Image
+                      src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/live.gif"
+                      loading="lazy"
+                      width={40}
+                      height={40}
+                    />
+                    <p>MARKETING & HR</p>
+                  </div>
+                  <div className={Styles.BoxIconinner}>
+                    <Image
+                      src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/live.gif"
+                      loading="lazy"
+                      width={40}
+                      height={40}
+                    />
+                    <p>MARKETING & HR</p>
+                  </div>
+                  <div className={Styles.BoxIconinner}>
+                    <Image
+                      src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/live.gif"
+                      loading="lazy"
+                      width={40}
+                      height={40}
+                    />
+                    <p>MARKETING & HR</p>
+                  </div>
+
+                </div>
                 
-                <p className={Styles.para}><FaCheckCircle className={Styles.checkCircle} />
-                  Validate your real-work experience
-                </p>
-                {/* <p className={Styles.para}><FaCheckCircle className={Styles.checkCircle} />
-                  Validate your real-work experience
-                </p> */}
+         
+                
               </div>
+              <div className={Styles.iconButton}>
+                  <Button
+           
+                    text="Download Domain Brochures"
+                    passIcon={<FaDownload className="bIconS" />}
+                  />
+                </div>
             </div>
+         
           </div>
-          <div className={Styles.TwoBox}>
-            <div className={Styles.BlueBox}>
-              <FaRocket className={Styles.Icon}/>
-              <p className={Styles.head}
-              >35K+</p>
-              <p className={Styles.Para}
-              >Mentors help you select the domain & guide you through.</p>
-            </div>
-            <div className={Styles.OrangeBox}>
-              <p className={Styles.head}
-              >450%</p>
-              <p className={Styles.Para}
-              >Average Salary Hike</p>
-            </div>
-          </div>
+        </SwiperSlide>
+       
+      </Swiper>
+          
         </div>
         ):('')}
 
