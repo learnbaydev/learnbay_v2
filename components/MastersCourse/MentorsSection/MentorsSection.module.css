@@ -17,15 +17,25 @@
     margin: 40px 10px 40px 10px;
   }
 
-  .box p {
+.Name {
     color: #000;
     font-size: 19px;
     margin: 0px 0px 10px 0px;
     font-weight: 700;
   }
 
+  .cont {
+    font-size: 16px ;
+    color: #686565 ;
+    margin: 0;
+font-size: 16px;
+font-weight: 400;
+width: 250px;
+line-height: 148%; /* 29.6px */
+  }
 
-@media (max-width: 481px) {
+
+@media (max-width: 641px) {
   .container {
     margin: 50px 20px;
     text-align: center;
@@ -52,7 +62,7 @@
     margin: 0px;
   }
 
-  .box p {
+.Name {
     text-align: left;
     font-size: 13px;
     font-weight: 700;

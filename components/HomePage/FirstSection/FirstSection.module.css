@@ -22,6 +22,28 @@
   grid-template-columns: 50% 50%;
 }
 
+.GenAiBox {
+  display: flex;
+  gap: 10px;
+  background: linear-gradient(90deg, #00406A 0.08%, rgba(0, 0, 0, 0.00) 99.89%);
+  margin-top: 30px;
+  align-items: center;
+}
+
+.TextGreen {
+  color: #35D028;
+font-size: 18px;
+font-weight: 700;
+line-height: 153%; 
+margin: 0;
+}
+
+.GenImageBlock {
+  border-radius: 12px 12px 0px 12px;
+background: #0072BC;
+padding: 5px 5px 0px 5px;
+}
+
 .Second .secondLeft {
   margin-bottom: -5px;
 }
@@ -213,7 +235,7 @@ margin: 0px 0px 24px 0px;
 
 .pTop {
   color: #f99600;
-  font-size: 20px;
+  font-size: 26px;
   font-weight: 600;
   margin: 0;
 }
@@ -249,11 +271,10 @@ margin: 0px 0px 24px 0px;
 .h1 {
   color: #fff;
   font-weight: 700;
-  line-height: 46px;
-  margin: 5px 0px 0px 0px;
+  line-height: normal;
+  margin: 10px 0px 0px 0px;
   text-align: left;
-  padding-right: 120px;
-  font-size: 36px;
+  font-size: 46px;
 }
 
 .FirstLeft {
@@ -269,8 +290,7 @@ margin: 0px 0px 24px 0px;
 .blink {
  
   font-size: 20px;
-  padding-right: 195px;
-  color: #fff;
+  color: #dfdfdf;
   margin-top: 15px;
 }
 
@@ -307,7 +327,7 @@ margin: 0px 0px 24px 0px;
 .btnWrapper {
   display: flex;
   gap: 20px;
-  margin: 45px 0px;
+  margin: 30px 0px 0px;
 }
 
 .outLineBtn {
