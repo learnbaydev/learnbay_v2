@@ -1,0 +1,54 @@
+.GoogleReviewMain {
+    background: rgba(210, 210, 210, 0.17);
+
+
+margin: 113px 0px;
+    padding: 42px 0px;
+
+   
+}
+
+.GoogleReviewMain  h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+font-size: 30px;
+font-style: normal;
+font-weight: 600;
+line-height: 153%; /* 68.85px */
+}
+.googleboxMain {
+    display: inline-grid;
+    grid-template-columns: 31% 31% 31%;
+    flex-direction: row;
+    margin: 100px 100px;
+    gap: 43px;
+    margin-top: 20px;
+
+    
+}
+
+.googlebox {
+    display:  flex;
+    flex-direction: column;
+    border-radius: 28px;
+background: #202124;
+height: fit-content;
+border-image: linear-gradient(to right, #D0503A, #5A85F1, #EDBE41, #63A657);
+border-image-slice: 1; 
+border-image-width: 4px 0 0 0; 
+border-image-outset: 0; 
+border-image-repeat: stretch; 
+border-radius: 24px;
+}
+.googlebox  p {
+    color: #FFF;
+    font-size:9px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 162%;
+    margin: 10px;
+}
+
+
