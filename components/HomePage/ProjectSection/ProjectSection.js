@@ -201,7 +201,7 @@ function ProjectSection() {
             <div className={styles.image}>
               <div className="imgWrapper">
                 <Image
-                  src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/bottom-domaiin.webp"
+                  src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/domainSlider.png"
                   loading="lazy"
                   width="517"
                   height="300"
@@ -319,7 +319,7 @@ function ProjectSection() {
             <div className={styles.image}>
               <div className="imgWrapper">
                 <Image
-                  src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/bottom-domaiin.webp"
+                  src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/domainSlider.png"
                   loading="lazy"
                   width="517"
                   height="300"

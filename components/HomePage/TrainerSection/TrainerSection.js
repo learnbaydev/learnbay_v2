@@ -27,11 +27,21 @@ function TrainerSection() {
   return (
     <>
     <section className={Styles.container} >
-      <h4>Alumni Spotlight</h4>
+      <h4>Hear it from our Alumni</h4>
       <div className={Styles.First}>
       <VideoPopup triggers={video} setTriggers={setVideo} ids={vId} />
       <div className={Styles.switch}>
-        <p>Hear it from our Alumni</p>
+        <div className={Styles.switchInnerBlue}>
+        <div >
+                
+                  <Image src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/topRated.png" width={50} height={60} alt="topRated" />
+                </div>
+               
+                <div className="imgWrapper">
+                
+                  <Image src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/linkedin.png" width={120} height={60} alt="LinkedIn" />
+                </div>
+        </div>
         {switchData.map((data) => {
           const { img, height, url, width, text, alt, id, bgBlue, bgGreen, bgRed, } = data;
           return (

@@ -1,18 +1,16 @@
-import React, { useState, useEffect, useRef } from "react";
-import styles from "./FirstSection.module.css";
-import { FaChevronDown, FaBell, FaDownload, FaCheck } from "react-icons/fa";
-import Popup from "../../Popup/Popup";
-import Form from "../../Form/Form";
-import Image from "next/image";
-import Typed from "typed.js";
 import dynamic from "next/dynamic";
-import { Content } from "next/font/google";
-import { Swiper, SwiperSlide } from "swiper/react";
+import Image from "next/image";
+import { useRef, useState } from "react";
+import { FaBell, FaCheck, FaChevronDown } from "react-icons/fa";
 import { Pagination } from "swiper";
 import "swiper/css";
 import "swiper/css/free-mode";
-import "swiper/css/pagination";
 import "swiper/css/navigation";
+import "swiper/css/pagination";
+import { Swiper, SwiperSlide } from "swiper/react";
+import Form from "../../Form/Form";
+import Popup from "../../Popup/Popup";
+import styles from "./FirstSection.module.css";
 const Button = dynamic(() => import("../../Global/Button/Button"));
 
 const FirstSection = ({
@@ -91,13 +89,13 @@ const FirstSection = ({
         <SwiperSlide className={styles.slide}>
           <div className={styles.First}>
             <div className={styles.FirstLeft}>
-              <p className={styles.pTop}>Learn More</p>
+              <p className={styles.pTop}>Advance your tech career with</p>
               <h1 className={styles.h1}>
                 India’s #1 Upskilling Platform for Working Professionals
               </h1>
               <p className={styles.blinkMobile}>
-                Elevate your tech career with our Master's programs, where
-                practical skills meet excellence.
+                Master real world skills with our domain specialised
+                certification and Degree programs
               </p>
               <div className={styles.imgWrapperMobile}>
                 <Image
@@ -107,7 +105,7 @@ const FirstSection = ({
                   alt="data science course"
                 />
               </div>
-              <div className={styles.ibmLogoMobile}>
+              {/* <div className={styles.ibmLogoMobile}>
                 <p className={styles.ptop}>In Collaboration With</p>
                 <div className={styles.ImageBlock}>
                   <Image
@@ -118,11 +116,23 @@ const FirstSection = ({
                     alt="data science course"
                   />
                 </div>
-              </div>
+              </div> */}
               <p className={styles.blink}>
-                Elevate your tech career with our Master's programs, where
-                practical skills meet excellence.
+                Master real world skills with our domain specialised
+                certification and Degree programs
               </p>
+              <div className={styles.GenAiBox}>
+                <div className={styles.GenImageBlock}>
+                  <Image
+                    src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/genAi.png"
+                    width="32"
+                    height="32"
+                    loading="lazy"
+                    alt="data science course"
+                  />
+                </div>
+                <p className={styles.TextGreen}>Curricullum inclusive of GenAI and ChatGPT</p>
+              </div>
               <div className={styles.btnWrapper}>
                 <a href="#course">
                   <Button
@@ -140,7 +150,7 @@ const FirstSection = ({
                   />
                 </div>
               </div>
-              <div className={styles.box}>
+              {/* <div className={styles.box}>
                 <p>
                   <span className={styles.blue}>35K+ </span>Trusted Learners
                 </p>
@@ -150,7 +160,7 @@ const FirstSection = ({
                 <p>
                   <span className={styles.green}>40LPA </span>Highest Salary
                 </p>
-              </div>
+              </div> */}
             </div>
 
             <div className={styles.secondLeft}>
@@ -286,7 +296,7 @@ const FirstSection = ({
             </div>
           </div>
         </SwiperSlide>
-        <SwiperSlide className={styles.slide}>
+        {/* <SwiperSlide className={styles.slide}>
           <div className={styles.Third}>
             <div className={styles.ThirdFirstLeft}>
               <h1 className={styles.h1}>
@@ -352,7 +362,7 @@ const FirstSection = ({
               </div>
             </div>
           </div>
-        </SwiperSlide>
+        </SwiperSlide> */}
       </Swiper>
     </>
   );

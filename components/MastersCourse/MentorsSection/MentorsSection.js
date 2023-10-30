@@ -64,7 +64,7 @@ function MentorsSection() {
                       />
                     </div>
                     <div>
-                      <p>Priya Vajpeyi</p>
+                      <p className={styles.Name}>Priya Vajpeyi</p>
                       <Image
                         src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/microsoft.webp"
                         width="70"
@@ -85,7 +85,7 @@ function MentorsSection() {
                       />
                     </div>
                     <div>
-                      <p>Priya Vajpeyi</p>
+                      <p className={styles.Name}>Priya Vajpeyi</p>
                       <Image
                         src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/microsoft.webp"
                         width="70"
@@ -106,7 +106,7 @@ function MentorsSection() {
                       />
                     </div>
                     <div>
-                      <p>Priya Vajpeyi</p>
+                      <p className={styles.Name}>Priya Vajpeyi</p>
                       <Image
                         src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/microsoft.webp"
                         width="70"
@@ -127,95 +127,7 @@ function MentorsSection() {
                       />
                     </div>
                     <div>
-                      <p>Priya Vajpeyi</p>
-                      <Image
-                        src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/microsoft.webp"
-                        width="70"
-                        height="14"
-                        priority={true}
-                        alt="data science course"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide className={styles.slide}>
-                <div className={styles.mainDiv}>
-                  <div className={styles.box}>
-                    <div>
-                      <Image
-                        src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/Mentor.png"
-                        width="50"
-                        height="60"
-                        priority={true}
-                        alt="data science course"
-                      />
-                    </div>
-                    <div>
-                      <p>Priya Vajpeyi</p>
-                      <Image
-                        src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/microsoft.webp"
-                        width="70"
-                        height="14"
-                        priority={true}
-                        alt="data science course"
-                      />
-                    </div>
-                  </div>
-                  <div className={styles.box}>
-                    <div>
-                      <Image
-                        src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/Mentor.png"
-                        width="50"
-                        height="60"
-                        priority={true}
-                        alt="data science course"
-                      />
-                    </div>
-                    <div>
-                      <p>Priya Vajpeyi</p>
-                      <Image
-                        src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/microsoft.webp"
-                        width="70"
-                        height="14"
-                        priority={true}
-                        alt="data science course"
-                      />
-                    </div>
-                  </div>
-                  <div className={styles.box}>
-                    <div>
-                      <Image
-                        src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/Mentor.png"
-                        width="50"
-                        height="60"
-                        priority={true}
-                        alt="data science course"
-                      />
-                    </div>
-                    <div>
-                      <p>Priya Vajpeyi</p>
-                      <Image
-                        src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/microsoft.webp"
-                        width="70"
-                        height="14"
-                        priority={true}
-                        alt="data science course"
-                      />
-                    </div>
-                  </div>
-                  <div className={styles.box}>
-                    <div>
-                      <Image
-                        src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/Mentor.png"
-                        width="50"
-                        height="60"
-                        priority={true}
-                        alt="data science course"
-                      />
-                    </div>
-                    <div>
-                      <p>Priya Vajpeyi</p>
+                      <p className={styles.Name}>Priya Vajpeyi</p>
                       <Image
                         src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/microsoft.webp"
                         width="70"
@@ -240,7 +152,7 @@ function MentorsSection() {
                       />
                     </div>
                     <div>
-                      <p>Priya Vajpeyi</p>
+                      <p className={styles.Name}>Priya Vajpeyi</p>
                       <Image
                         src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/microsoft.webp"
                         width="70"
@@ -261,7 +173,7 @@ function MentorsSection() {
                       />
                     </div>
                     <div>
-                      <p>Priya Vajpeyi</p>
+                      <p className={styles.Name}>Priya Vajpeyi</p>
                       <Image
                         src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/microsoft.webp"
                         width="70"
@@ -282,7 +194,7 @@ function MentorsSection() {
                       />
                     </div>
                     <div>
-                      <p>Priya Vajpeyi</p>
+                      <p className={styles.Name}>Priya Vajpeyi</p>
                       <Image
                         src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/microsoft.webp"
                         width="70"
@@ -303,7 +215,7 @@ function MentorsSection() {
                       />
                     </div>
                     <div>
-                      <p>Priya Vajpeyi</p>
+                      <p className={styles.Name}>Priya Vajpeyi</p>
                       <Image
                         src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/microsoft.webp"
                         width="70"
@@ -328,7 +240,7 @@ function MentorsSection() {
                       />
                     </div>
                     <div>
-                      <p>Priya Vajpeyi</p>
+                      <p className={styles.Name}>Priya Vajpeyi</p>
                       <Image
                         src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/microsoft.webp"
                         width="70"
@@ -349,7 +261,7 @@ function MentorsSection() {
                       />
                     </div>
                     <div>
-                      <p>Priya Vajpeyi</p>
+                      <p className={styles.Name}>Priya Vajpeyi</p>
                       <Image
                         src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/microsoft.webp"
                         width="70"
@@ -370,7 +282,7 @@ function MentorsSection() {
                       />
                     </div>
                     <div>
-                      <p>Priya Vajpeyi</p>
+                      <p className={styles.Name}>Priya Vajpeyi</p>
                       <Image
                         src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/microsoft.webp"
                         width="70"
@@ -391,7 +303,95 @@ function MentorsSection() {
                       />
                     </div>
                     <div>
-                      <p>Priya Vajpeyi</p>
+                      <p className={styles.Name}>Priya Vajpeyi</p>
+                      <Image
+                        src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/microsoft.webp"
+                        width="70"
+                        height="14"
+                        priority={true}
+                        alt="data science course"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide className={styles.slide}>
+                <div className={styles.mainDiv}>
+                  <div className={styles.box}>
+                    <div>
+                      <Image
+                        src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/Mentor.png"
+                        width="50"
+                        height="60"
+                        priority={true}
+                        alt="data science course"
+                      />
+                    </div>
+                    <div>
+                      <p className={styles.Name}>Priya Vajpeyi</p>
+                      <Image
+                        src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/microsoft.webp"
+                        width="70"
+                        height="14"
+                        priority={true}
+                        alt="data science course"
+                      />
+                    </div>
+                  </div>
+                  <div className={styles.box}>
+                    <div>
+                      <Image
+                        src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/Mentor.png"
+                        width="50"
+                        height="60"
+                        priority={true}
+                        alt="data science course"
+                      />
+                    </div>
+                    <div>
+                      <p className={styles.Name}>Priya Vajpeyi</p>
+                      <Image
+                        src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/microsoft.webp"
+                        width="70"
+                        height="14"
+                        priority={true}
+                        alt="data science course"
+                      />
+                    </div>
+                  </div>
+                  <div className={styles.box}>
+                    <div>
+                      <Image
+                        src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/Mentor.png"
+                        width="50"
+                        height="60"
+                        priority={true}
+                        alt="data science course"
+                      />
+                    </div>
+                    <div>
+                      <p className={styles.Name}>Priya Vajpeyi</p>
+                      <Image
+                        src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/microsoft.webp"
+                        width="70"
+                        height="14"
+                        priority={true}
+                        alt="data science course"
+                      />
+                    </div>
+                  </div>
+                  <div className={styles.box}>
+                    <div>
+                      <Image
+                        src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/Mentor.png"
+                        width="50"
+                        height="60"
+                        priority={true}
+                        alt="data science course"
+                      />
+                    </div>
+                    <div>
+                      <p className={styles.Name}>Priya Vajpeyi</p>
                       <Image
                         src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/microsoft.webp"
                         width="70"
@@ -418,7 +418,7 @@ function MentorsSection() {
                     />
                   </div>
                   <div>
-                    <p>Priya Vajpeyi</p>
+                    <p className={styles.Name}>Priya Vajpeyi</p>
                     <Image
                       src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/microsoft.webp"
                       width="100"
@@ -427,6 +427,7 @@ function MentorsSection() {
                       alt="data science course"
                     />
                   </div>
+                  <p className={styles.cont}>Elevate Your Profile: Boost your career prospects </p>
                 </div>
               </SwiperSlide>
               <SwiperSlide className={styles.slide}>
@@ -441,7 +442,7 @@ function MentorsSection() {
                     />
                   </div>
                   <div>
-                    <p>Priya Vajpeyi</p>
+                    <p className={styles.Name}>Priya Vajpeyi</p>
                     <Image
                       src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/microsoft.webp"
                       width="100"
@@ -450,6 +451,7 @@ function MentorsSection() {
                       alt="data science course"
                     />
                   </div>
+                  <p className={styles.cont}>Elevate Your Profile: Boost your career prospects </p>
                 </div>
               </SwiperSlide>
               <SwiperSlide className={styles.slide}>
@@ -464,7 +466,7 @@ function MentorsSection() {
                     />
                   </div>
                   <div>
-                    <p>Priya Vajpeyi</p>
+                    <p className={styles.Name}>Priya Vajpeyi</p>
                     <Image
                       src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/microsoft.webp"
                       width="100"
@@ -473,6 +475,7 @@ function MentorsSection() {
                       alt="data science course"
                     />
                   </div>
+                  <p className={styles.cont}>Elevate Your Profile: Boost your career prospects </p>
                 </div>
               </SwiperSlide>
               <SwiperSlide className={styles.slide}>
@@ -487,7 +490,7 @@ function MentorsSection() {
                     />
                   </div>
                   <div>
-                    <p>Priya Vajpeyi</p>
+                    <p className={styles.Name}>Priya Vajpeyi</p>
                     <Image
                       src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/microsoft.webp"
                       width="100"
@@ -496,6 +499,7 @@ function MentorsSection() {
                       alt="data science course"
                     />
                   </div>
+                  <p className={styles.cont}>Elevate Your Profile: Boost your career prospects </p>
                 </div>
               </SwiperSlide>
               <SwiperSlide className={styles.slide}>
@@ -510,7 +514,7 @@ function MentorsSection() {
                     />
                   </div>
                   <div>
-                    <p>Priya Vajpeyi</p>
+                    <p className={styles.Name}>Priya Vajpeyi</p>
                     <Image
                       src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/microsoft.webp"
                       width="100"
@@ -519,6 +523,7 @@ function MentorsSection() {
                       alt="data science course"
                     />
                   </div>
+                  <p className={styles.cont}>Elevate Your Profile: Boost your career prospects </p>
                 </div>
               </SwiperSlide>
               <SwiperSlide className={styles.slide}>
@@ -533,7 +538,7 @@ function MentorsSection() {
                     />
                   </div>
                   <div>
-                    <p>Priya Vajpeyi</p>
+                    <p className={styles.Name}>Priya Vajpeyi</p>
                     <Image
                       src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/microsoft.webp"
                       width="100"
@@ -542,6 +547,7 @@ function MentorsSection() {
                       alt="data science course"
                     />
                   </div>
+                  <p className={styles.cont}>Elevate Your Profile: Boost your career prospects </p>
                 </div>
               </SwiperSlide>
               <SwiperSlide className={styles.slide}>
@@ -556,7 +562,7 @@ function MentorsSection() {
                     />
                   </div>
                   <div>
-                    <p>Priya Vajpeyi</p>
+                    <p className={styles.Name}>Priya Vajpeyi</p>
                     <Image
                       src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/microsoft.webp"
                       width="100"
@@ -565,6 +571,7 @@ function MentorsSection() {
                       alt="data science course"
                     />
                   </div>
+                  <p className={styles.cont}>Elevate Your Profile: Boost your career prospects </p>
                 </div>
               </SwiperSlide>
             </>
