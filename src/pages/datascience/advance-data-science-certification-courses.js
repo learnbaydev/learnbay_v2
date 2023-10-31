@@ -203,7 +203,7 @@ function Blockchain({ }) {
           leftImage="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/advance-who.webp"
           ThirdSectionData={DataScienceCourseData[0].thirdSection}
         />
-        <TrainerSection link="D-gcPaK_-x4" />
+        <TrainerSection  idss="bfl64ANfSV0"/>
       <Testimonial
         redirectDS={true}
         heading=""
@@ -211,7 +211,7 @@ function Blockchain({ }) {
       />
         
      <WhoIsProgram />
-         <WhyLearnbay />
+         <WhyLearnbay idss="bfl64ANfSV0"/>
          < Gethire/>
         {/* <Switch /> */}
         <FourthSection

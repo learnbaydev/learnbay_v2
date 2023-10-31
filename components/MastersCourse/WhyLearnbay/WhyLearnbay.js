@@ -16,27 +16,24 @@ import { Scrollbar } from "swiper";
 import Button from "../../Global/Button/Button";
 
 
-function WhyLearnbay() {
+function WhyLearnbay({idss}) {
 
   const [careerService, setCareerService] = useState(true);
   const [domainSpec, setDomainSpec] = useState(false);
   const [projectInno, setProjectInno] = useState(false);
   const [projectCert, setProjectCert] = useState(false);
 
-  const [vId, setVId] = useState("");
-
-
-  const videoShow = (id) => {
-    setVideo(true);
-    setVId(id);
-  };
-
+  const [popups, setPopups] = useState(false);
   const [video, setVideo] = useState(false);
 
-  const [popups, setPopups] = useState(false);
+  const videoSHow = () => {
+    setVideo(true);
+  };
+  // const el = useRef(null);
   const popupShow = () => {
     setPopups(true);
   };
+
   useEffect(() => {
     let width = window.innerWidth;
     if (width > 960) {
@@ -47,7 +44,7 @@ function WhyLearnbay() {
 
   return (
     <section className={Styles.container}>
-      <VideoPopup triggers={video} setTriggers={setVideo} ids={vId} />
+      <VideoPopup triggers={video} setTriggers={setVideo} ids={idss} />
       <h4 className={Styles.h4}>
         Learnbay’s <span style={{ color: "#F99600" }}>ProjectLab</span>
       </h4>
@@ -121,7 +118,7 @@ function WhyLearnbay() {
                   width="200"
                   height="212"
                   alt="profile-Img"
-                  onClick={() => videoShow(vId)}
+                  onClick={() => videoSHow()}
                 />
               </div>
               <div className={Styles.left}>
@@ -479,7 +476,7 @@ function WhyLearnbay() {
                   width="200"
                   height="212"
                   alt="profile-Img"
-                  onClick={() => videoShow(video.vId)}
+                  onClick={() => videoSHow()}
                 />
               </div>
               <div className={Styles.left}>
@@ -523,7 +520,7 @@ function WhyLearnbay() {
                   width="200"
                   height="212"
                   alt="profile-Img"
-                  onClick={() => videoShow(video.vId)}
+                  onClick={() => videoSHow()}
                 />
               </div>
               <div className={Styles.left}>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./ProjectSection.module.css";
 import Image from "next/image";
 import { FaCheckCircle, FaDownload } from "react-icons/fa";
@@ -10,14 +10,28 @@ import "swiper/css/scrollbar";
 import { Pagination, Navigation } from "swiper";
 import "swiper/css/scrollbar";
 import { Scrollbar } from "swiper";
+import VideoPopup from "../../VideoPopup/VideoPopup";
 
-function ProjectSection() {
+function ProjectSection({idss}) {
+
+  const [popups, setPopups] = useState(false);
+  const [video, setVideo] = useState(false);
+  const videoSHow = () => {
+    setVideo(true);
+  };
+  // const el = useRef(null);
+  const popupShow = () => {
+    setPopups(true);
+  };
+
+
   return (
     <section className={styles.container}>
       <h4 className={styles.h4}>
         Learnbay’s <span className={styles.span}>ProjectLab</span>
       </h4>
       <div className={styles.box}>
+      <VideoPopup triggers={video} setTriggers={setVideo} ids={idss} />
         <div className={styles.InnerBox1}>
           <div className="imgWrapper">
             <Image
@@ -26,7 +40,7 @@ function ProjectSection() {
               width="358"
               height="212"
               alt="profile-Img"
-              onClick={() => videoShow()}
+              onClick={() => videoSHow()}
             />
           </div>
           <p className={styles.BlueHed}>Project Innovation Lab</p>
@@ -59,7 +73,7 @@ function ProjectSection() {
               width="358"
               height="212"
               alt="profile-Img"
-              onClick={() => videoShow()}
+              onClick={() => videoSHow()}
             />
           </div>
           <p className={styles.BlueHed}>Project Certification from IBM</p>

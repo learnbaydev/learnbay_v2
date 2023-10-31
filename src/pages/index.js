@@ -85,9 +85,9 @@ export default function Home() {
         dataScience={true}
         radio={true}
       /> */}
-      <WhyLearnbay />
-      <ProjectSection />
-      <TrainerSection link="D-gcPaK_-x4" />
+      <WhyLearnbay idss="bfl64ANfSV0" />
+      <ProjectSection idss="bfl64ANfSV0" />
+      <TrainerSection idss="bfl64ANfSV0" />
       <Testimonial
         redirectDS={true}
         heading=""
