@@ -9,7 +9,7 @@ export const courseDetails = [
         courseDetails: [
           {
             id: 1,
-            img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/NewCourseHome/course-1.webp",
+            img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/CourseCard/course-demo.webp",
             title: "Advanced Data Science",
             courseTime: "7-9 months",
             title1: "& AI Program",
@@ -29,7 +29,7 @@ export const courseDetails = [
           },
           {
             id: 3,
-            img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/NewCourseHome/course-1.webp",
+            img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/CourseCard/course-demo.webp",
             title: "Data Science & AI ",
             title1: "For Managers",
             courseTime: "11-13 ",
@@ -49,7 +49,7 @@ export const courseDetails = [
           },
           {
             id: 4,
-            img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/NewCourseHome/course-1.webp",
+            img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/CourseCard/course-demo.webp",
             title: "Advance AI & ML Program",
             courseTime: "9-11 months",
             title1: "for Tech Professionals",
@@ -69,7 +69,7 @@ export const courseDetails = [
           },
           {
             id: 6,
-            img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/NewCourseHome/course-1.webp",
+            img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/CourseCard/course-demo.webp",
             title: "Data Science & AI ",
             title1: "Master Program",
             courseTime: "13-15 months",
@@ -96,7 +96,7 @@ export const courseDetails = [
         courseDetails: [
           {
             id: 2,
-            img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/NewCourseHome/course-1.webp",
+            img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/CourseCard/course-demo.webp",
             title: "Software Development ",
             courseTime: "9-11 months",
             title1: "Master Program",
@@ -118,7 +118,7 @@ export const courseDetails = [
           },
           {
             id: 5,
-            img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/NewCourseHome/course-1.webp",
+            img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/CourseCard/course-demo.webp",
             title: "Software Development ",
             courseTime: "8-10 months",
             title1: "Program in Blockchain",
@@ -132,6 +132,7 @@ export const courseDetails = [
               "12 Projects",
               "Course Fee : ₹ 95,000 ",
             ],
+            Green: true,
             newDesign: true,
             link1:
               "/software-development-program-with-specialization-in-blockchain",
@@ -140,7 +141,7 @@ export const courseDetails = [
           },
           {
             id: 7,
-            img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/NewCourseHome/course-1.webp",
+            img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/CourseCard/course-demo.webp",
             title: "Software Development Program ",
             courseTime: "8-10 months",
             title1: "in Cloud Computing & DevOps",
@@ -156,6 +157,7 @@ export const courseDetails = [
               "Course Fee : ₹ 95,000 ",
             ],
             newDesign: true,
+            newDesignOrange: true,
             link1:
               "/software-development-program-with-specialization-in-cloud-computing-&-devops",
             link2:
@@ -196,7 +198,7 @@ export const courseDetails = [
           },
           {
             id: 2,
-            img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/NewCourseHome/course-1.webp",
+            img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/CourseCard/course-demo.webp",
             title: "Advanced Data Science",
             courseTime: "7-9 months",
             title1: "& AI Program",
@@ -216,7 +218,7 @@ export const courseDetails = [
           },
           {
             id: 3,
-            img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/NewCourseHome/course-1.webp",
+            img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/CourseCard/course-demo.webp",
             title: "Advance AI & ML Program",
             courseTime: "9-11 months",
             title1: "for Tech Professionals",
@@ -236,7 +238,7 @@ export const courseDetails = [
           },
           {
             id: 4,
-            img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/NewCourseHome/course-1.webp",
+            img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/CourseCard/course-demo.webp",
             title: "Data Science & AI ",
             title1: "For Managers",
             courseTime: "11-13 ",
@@ -256,7 +258,7 @@ export const courseDetails = [
           },
           {
             id: 5,
-            img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/NewCourseHome/course-1.webp",
+            img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/CourseCard/course-demo.webp",
             title: "Data Science & AI ",
             title1: "Master Program",
             Green: true,
@@ -391,7 +393,7 @@ export const courseDetails = [
   //       courseDetails: [
   //         {
   //           id: 1,
-  //           img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/NewCourseHome/course-1.webp",
+  //           img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/CourseCard/course-demo.webp",
   //           title: "Software Development ",
   //           courseTime: "8-10 months",
   //           title1: "Program in Blockchain",
@@ -411,7 +413,7 @@ export const courseDetails = [
   //             "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Software+Development+with+Specialization+in+Blockchain.pdf",
   //         },
   //         {
-  //           img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/NewCourseHome/course-1.webp",
+  //           img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/CourseCard/course-demo.webp",
   //           title: "Software Development ",
   //           courseTime: "9-11 months",
   //           title1: "Master Program",
@@ -432,7 +434,7 @@ export const courseDetails = [
   //         },
   //         {
   //           id: 3,
-  //           img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/NewCourseHome/course-1.webp",
+  //           img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/CourseCard/course-demo.webp",
   //           title: "Software Development Program ",
   //           courseTime: "8-10 months",
   //           title1: "in Cloud Computing & DevOps",
@@ -467,7 +469,7 @@ export const courseDetails = [
         courseDetails: [
           {
             id: 1,
-            img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/NewCourseHome/course-1.webp",
+            img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/CourseCard/course-demo.webp",
             title: "Data Science & AI ",
             title1: "Master Program",
             Green: true,
@@ -495,7 +497,7 @@ export const courseDetails = [
         courseDetails: [
           {
             id: 2,
-            img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/NewCourseHome/course-1.webp",
+            img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/CourseCard/course-demo.webp",
             title: "Software Development ",
             courseTime: "9-11 months",
             title1: "Master Program",
@@ -550,7 +552,7 @@ export const courseDetails = [
   //         },
   //         {
   //           id: 2,
-  //           img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/NewCourseHome/course-1.webp",
+  //           img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/CourseCard/course-demo.webp",
   //           title: "Advanced Data Science",
   //           courseTime: "7-9 months",
   //           title1: "& AI Program",
@@ -570,7 +572,7 @@ export const courseDetails = [
   //         },
   //         {
   //           id: 3,
-  //           img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/NewCourseHome/course-1.webp",
+  //           img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/CourseCard/course-demo.webp",
   //           title: "Advance AI & ML Program",
   //           courseTime: "9-11 months",
   //           title1: "for Tech Professionals",
@@ -590,7 +592,7 @@ export const courseDetails = [
   //         },
   //         {
   //           id: 4,
-  //           img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/NewCourseHome/course-1.webp",
+  //           img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/CourseCard/course-demo.webp",
   //           title: "Data Science & AI ",
   //           title1: "For Managers",
   //           courseTime: "11-13 ",
@@ -610,7 +612,7 @@ export const courseDetails = [
   //         },
   //         {
   //           id: 5,
-  //           img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/NewCourseHome/course-1.webp",
+  //           img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/CourseCard/course-demo.webp",
   //           title: "Data Science & AI ",
   //           title1: "Master Program",
   //           Green: true,
@@ -739,7 +741,7 @@ export const courseDetails = [
   //       courseDetails: [
   //         {
   //           id: 8,
-  //           img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/NewCourseHome/course-1.webp",
+  //           img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/CourseCard/course-demo.webp",
   //           title: "Software Development ",
   //           courseTime: "8-10 months",
   //           title1: "Program in Blockchain",
@@ -760,7 +762,7 @@ export const courseDetails = [
   //         },
   //         {
   //           id: 9,
-  //           img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/NewCourseHome/course-1.webp",
+  //           img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/CourseCard/course-demo.webp",
   //           title: "Software Development ",
   //           courseTime: "9-11 months",
   //           title1: "Master Program",
@@ -781,7 +783,7 @@ export const courseDetails = [
   //         },
   //         {
   //           id: 10,
-  //           img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/NewCourseHome/course-1.webp",
+  //           img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/CourseCard/course-demo.webp",
   //           title: "Software Development Program ",
   //           courseTime: "8-10 months",
   //           title1: "in Cloud Computing & DevOps",
@@ -810,7 +812,7 @@ export const courseDetails = [
 export const StackD = [
   {
     id: 1,
-    img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/NewCourseHome/course-1.webp",
+    img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/CourseCard/course-demo.webp",
     title: "Software Development ",
     courseTime: "8-10 months",
     title1: "Program in Blockchain",
@@ -829,7 +831,7 @@ export const StackD = [
       "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Software+Development+with+Specialization+in+Blockchain.pdf",
   },
   {
-    img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/NewCourseHome/course-1.webp",
+    img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/CourseCard/course-demo.webp",
     title: "Software Development ",
     courseTime: "9-11 months",
     title1: "Master Program",
@@ -850,7 +852,7 @@ export const StackD = [
   },
   {
     id: 3,
-    img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/NewCourseHome/course-1.webp",
+    img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/CourseCard/course-demo.webp",
     title: "Software Development Program ",
     courseTime: "8-10 months",
     title1: "in Cloud Computing & DevOps",
@@ -895,7 +897,7 @@ export const viewAllD = [
   },
   {
     id: 2,
-    img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/NewCourseHome/course-1.webp",
+    img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/CourseCard/course-demo.webp",
     title: "Advanced Data Science",
     courseTime: "7-9 months",
     title1: "& AI Program",
@@ -915,7 +917,7 @@ export const viewAllD = [
   },
   {
     id: 3,
-    img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/NewCourseHome/course-1.webp",
+    img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/CourseCard/course-demo.webp",
     title: "Advance AI & ML Program",
     courseTime: "9-11 months",
     title1: "for Tech Professionals",
@@ -935,7 +937,7 @@ export const viewAllD = [
   },
   {
     id: 4,
-    img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/NewCourseHome/course-1.webp",
+    img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/CourseCard/course-demo.webp",
     title: "Data Science & AI ",
     title1: "For Managers",
     courseTime: "11-13 ",
@@ -955,7 +957,7 @@ export const viewAllD = [
   },
   {
     id: 5,
-    img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/NewCourseHome/course-1.webp",
+    img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/CourseCard/course-demo.webp",
     title: "Data Science & AI ",
     title1: "Master Program",
     Green: true,
@@ -1018,7 +1020,7 @@ export const viewAllD = [
   },
   {
     id: 8,
-    img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/NewCourseHome/course-1.webp",
+    img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/CourseCard/course-demo.webp",
     title: "Software Development ",
     courseTime: "8-10 months",
     title1: "Program in Blockchain",
@@ -1038,7 +1040,7 @@ export const viewAllD = [
   },
   {
     id: 9,
-    img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/NewCourseHome/course-1.webp",
+    img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/CourseCard/course-demo.webp",
     title: "Software Development ",
     courseTime: "9-11 months",
     title1: "Master Program",
@@ -1059,7 +1061,7 @@ export const viewAllD = [
   },
   {
     id: 10,
-    img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/NewCourseHome/course-1.webp",
+    img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/CourseCard/course-demo.webp",
     title: "Software Development Program ",
     courseTime: "8-10 months",
     title1: "in Cloud Computing & DevOps",
@@ -1143,7 +1145,7 @@ export const viewAllD = [
 export const ForProgrammersD = [
   {
     id: 1,
-    img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/NewCourseHome/course-1.webp",
+    img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/CourseCard/course-demo.webp",
     title: "Advanced Data Science",
     courseTime: "7-9 months",
     title1: "& AI Program",
@@ -1163,7 +1165,7 @@ export const ForProgrammersD = [
   },
   {
     id: 2,
-    img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/NewCourseHome/course-1.webp",
+    img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/CourseCard/course-demo.webp",
     title: "Software Development ",
     courseTime: "9-11 months",
     title1: "Master Program",
@@ -1184,7 +1186,7 @@ export const ForProgrammersD = [
   },
   {
     id: 3,
-    img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/NewCourseHome/course-1.webp",
+    img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/CourseCard/course-demo.webp",
     title: "Data Science & AI ",
     title1: "For Managers",
     courseTime: "11-13 ",
@@ -1204,7 +1206,7 @@ export const ForProgrammersD = [
   },
   {
     id: 4,
-    img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/NewCourseHome/course-1.webp",
+    img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/CourseCard/course-demo.webp",
     title: "Advance AI & ML Program",
     courseTime: "9-11 months",
     title1: "for Tech Professionals",
@@ -1224,7 +1226,7 @@ export const ForProgrammersD = [
   },
   {
     id: 5,
-    img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/NewCourseHome/course-1.webp",
+    img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/CourseCard/course-demo.webp",
     title: "Software Development ",
     courseTime: "8-10 months",
     title1: "Program in Blockchain",
@@ -1244,7 +1246,7 @@ export const ForProgrammersD = [
   },
   {
     id: 6,
-    img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/NewCourseHome/course-1.webp",
+    img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/CourseCard/course-demo.webp",
     title: "Data Science & AI ",
     title1: "Master Program",
     Green: true,
@@ -1265,7 +1267,7 @@ export const ForProgrammersD = [
   },
   {
     id: 7,
-    img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/NewCourseHome/course-1.webp",
+    img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/CourseCard/course-demo.webp",
     title: "Software Development Program ",
     courseTime: "8-10 months",
     title1: "in Cloud Computing & DevOps",
@@ -1309,7 +1311,7 @@ export const ForNonProgrammerD = [
   },
   {
     id: 2,
-    img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/NewCourseHome/course-1.webp",
+    img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/CourseCard/course-demo.webp",
     title: "Advanced Data Science",
     courseTime: "7-9 months",
     title1: "& AI Program",
@@ -1329,7 +1331,7 @@ export const ForNonProgrammerD = [
   },
   {
     id: 3,
-    img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/NewCourseHome/course-1.webp",
+    img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/CourseCard/course-demo.webp",
     title: "Advance AI & ML Program",
     courseTime: "9-11 months",
     title1: "for Tech Professionals",
@@ -1349,7 +1351,7 @@ export const ForNonProgrammerD = [
   },
   {
     id: 4,
-    img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/NewCourseHome/course-1.webp",
+    img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/CourseCard/course-demo.webp",
     title: "Data Science & AI ",
     title1: "For Managers",
     courseTime: "11-13 ",
@@ -1369,7 +1371,7 @@ export const ForNonProgrammerD = [
   },
   {
     id: 5,
-    img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/NewCourseHome/course-1.webp",
+    img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/CourseCard/course-demo.webp",
     title: "Data Science & AI ",
     title1: "Master Program",
     Green: true,
@@ -1494,7 +1496,7 @@ export const ForNonProgrammerD = [
 export const JobGuaranteeD = [
   {
     id: 1,
-    img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/NewCourseHome/course-1.webp",
+    img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/CourseCard/course-demo.webp",
     title: "Data Science & AI ",
     title1: "Master Program",
     Green: true,
@@ -1515,7 +1517,7 @@ export const JobGuaranteeD = [
   },
   {
     id: 2,
-    img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/NewCourseHome/course-1.webp",
+    img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/CourseCard/course-demo.webp",
     title: "Software Development ",
     courseTime: "9-11 months",
     title1: "Master Program",
