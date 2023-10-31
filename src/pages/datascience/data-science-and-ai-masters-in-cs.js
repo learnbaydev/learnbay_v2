@@ -50,7 +50,8 @@ const BatchDetails = dynamic(() =>
   import("../../../components/CoursePage/BatchDetails/BatchDetails")
 );
 
-const SecondNavbar = dynamic(()=>
+
+const SecondNavbar = dynamic(() =>
   import("../../../components/CoursePage/SecondNavbar/SecondNavbar")
 );
 
@@ -58,8 +59,8 @@ const WhyLearnbay = dynamic(() =>
   import("../../../components/MastersCourse/WhyLearnbay/WhyLearnbay")
 );
 
-const Gethire = dynamic (() =>
-import ("../../../components/CoursePage/Gethired/Gethire")
+const Gethire = dynamic(() =>
+  import("../../../components/CoursePage/Gethired/Gethire")
 );
 
 const BottomBar = dynamic(() =>
@@ -67,16 +68,17 @@ const BottomBar = dynamic(() =>
 );
 
 const ContactCounsellor = dynamic(() =>
-  import("../../../components/MastersCourse/ContactCounsellor/ContactCounsellor")
+  import(
+    "../../../components/MastersCourse/ContactCounsellor/ContactCounsellor"
+  )
 );
 
-const PlacementCall = dynamic (() =>
-import ("../../../components/CoursePage/PlacementCall/PlacementCall")
+const PlacementCall = dynamic(() =>
+  import("../../../components/CoursePage/PlacementCall/PlacementCall")
+);
 
-)
-
-const SliderTab = dynamic ( ()=>
-import ('../../../components/CoursePage/SliderTabs/SliderTabs')
+const SliderTab = dynamic(() =>
+  import("../../../components/CoursePage/SliderTabs/SliderTabs")
 );
 
 import NewProjectSection from "../../../components/CoursePage/NewProjectSection/NewProjectSection";
@@ -104,7 +106,7 @@ function Blockchain() {
             // console.log(popData);
             if (popupData === "Adv Data Science and AI") {
               setPopupData(data);
-              // console.log(popupData);
+
               return;
             }
           });
@@ -137,6 +139,7 @@ function Blockchain() {
     };
     fetchBatch();
   }, []);
+  const [progress, setProgress] = useState(20);
 
   return (
     <>
@@ -182,19 +185,19 @@ function Blockchain() {
           SecondSectionData={DataScienceMastersinCS[0].secondSection}
         />
         <SecondNavbar />
-        
+
         <WhoProgram
           leftImage="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/masterPage/who-program.webp"
           ThirdSectionData={DataScienceMastersinCS[0].thirdSection}
         />
 
-<TrainerSection link="D-gcPaK_-x4" />
+        <TrainerSection link="D-gcPaK_-x4" />
         <Testimonial
           redirectDS={true}
           Testimonial={DataScienceMastersinCS[0].testimonial}
         />
         <WhyLearnbay />
-        < Gethire/>
+        <Gethire />
         <FourthSection
           placementData={DataScienceMastersinCS[0].fourthSection}
           redirectDS={true}
@@ -208,7 +211,9 @@ function Blockchain() {
         <SyllabusNew
           syllabusHead={DataScienceMastersinCS[0].syllabusHead}
           masterSyllabus={DataScienceMastersinCS[0].masterSyllabus}
-          MasterSyllabusDefault={DataScienceMastersinCS[0].MasterSyllabusDefault}
+          MasterSyllabusDefault={
+            DataScienceMastersinCS[0].MasterSyllabusDefault
+          }
           dataScienceCounselling={true}
           dataScience={true}
           titleCourse="Advanced Data Science and AI Program with domain specialization"
@@ -216,6 +221,8 @@ function Blockchain() {
           syllabus={DataScienceMastersinCS[0].syllabus}
           syllabusDesc={DataScienceMastersinCS[0].syllabusDesc}
           popupHead={DataScienceMastersinCS[0].popupHead}
+          progress={progress}
+          setProgress={setProgress}
         />
         <ToolsCovered
           deskImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Tools-Logo.png"
@@ -242,10 +249,10 @@ function Blockchain() {
           domainSectionData={DataScienceMastersinCS[0].domainSection}
         /> */}
 
-<MentorsSection />
-<SliderTab/>
+        <MentorsSection />
+        <SliderTab />
         <PlacementCall />
-        <NewProjectSection/>
+        <NewProjectSection />
         {/* <Project
           projectData={DataScienceMastersinCS[0].project}
           tools="12+"
@@ -254,7 +261,7 @@ function Blockchain() {
           brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Data+Science+and+AI+Projects.pdf"
           project="15+"
         /> */}
-       
+
         {/* {batchDateData === "" ? (
           ""
         ) : (

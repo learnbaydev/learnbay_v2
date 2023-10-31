@@ -257,9 +257,9 @@ line-height: 158%; /* 31.6px */
 
   .batch {
     display: block;
-    margin: 30px 10px 0px 10px;
-  border-image: none;
-  border: none;
+    margin: 10px 10px 0px 10px;
+    border-image: none;
+    border: none;
   }
 
   .feesbatch {
@@ -272,8 +272,8 @@ line-height: 158%; /* 31.6px */
   }
 
   .feesbatch li {
-    font-size: 12px;
-    padding: 0px 8px;
+    font-size: 11px;
+    padding: 8px 8px;
   }
   .botttomDiv {
     display: none;
