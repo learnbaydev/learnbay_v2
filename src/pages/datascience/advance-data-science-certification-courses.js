@@ -58,23 +58,23 @@ const BatchDetails = dynamic(() =>
   import("../../../components/CoursePage/BatchDetails/BatchDetails")
 );
 
-const SecondNavbar = dynamic(()=>
+const SecondNavbar = dynamic(() =>
   import("../../../components/CoursePage/SecondNavbar/SecondNavbar")
 );
-const ContactConsellor = dynamic ( ()=>
-import ("../../../components/CoursePage/ContactConsellor/ContactConsellor")
+const ContactConsellor = dynamic(() =>
+  import("../../../components/CoursePage/ContactConsellor/ContactConsellor")
 
 )
-const feesbatch = dynamic ( ()=>
-import ('../../../components/CoursePage/FeeSection/FeeSection')
+const feesbatch = dynamic(() =>
+  import('../../../components/CoursePage/FeeSection/FeeSection')
 )
 
-const SliderTab = dynamic ( ()=>
-import ('../../../components/CoursePage/SliderTabs/SliderTabs')
+const SliderTab = dynamic(() =>
+  import('../../../components/CoursePage/SliderTabs/SliderTabs')
 )
 
-const WhoIsProgram = dynamic ( ()=>
-import ('../../../components/CoursePage/WhoIsProgram/WhoIsProgram')
+const WhoIsProgram = dynamic(() =>
+  import('../../../components/CoursePage/WhoIsProgram/WhoIsProgram')
 )
 
 import OfferPopup from "../../../components/OfferPopup/OfferPopup";
@@ -88,11 +88,11 @@ const WhyLearnbay = dynamic(() =>
   import("../../../components/MastersCourse/WhyLearnbay/WhyLearnbay")
 );
 
-const Gethire = dynamic (() =>
-import ("../../../components/CoursePage/Gethired/Gethire")
+const Gethire = dynamic(() =>
+  import("../../../components/CoursePage/Gethired/Gethire")
 )
-const PlacementCall = dynamic (() =>
-import ("../../../components/CoursePage/PlacementCall/PlacementCall")
+const PlacementCall = dynamic(() =>
+  import("../../../components/CoursePage/PlacementCall/PlacementCall")
 
 )
 
@@ -198,21 +198,21 @@ function Blockchain({ }) {
         <SecondSection
           SecondSectionData={DataScienceCourseData[0].secondSection}
         />
-        <SecondNavbar/>
+        <SecondNavbar />
         <WhoProgram
           leftImage="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/advance-who.webp"
           ThirdSectionData={DataScienceCourseData[0].thirdSection}
         />
-        <TrainerSection  idss="bfl64ANfSV0"/>
-      <Testimonial
-        redirectDS={true}
-        heading=""
-        Testimonial={DataScienceCourseData[0].testimonial}
-      />
-        
-     <WhoIsProgram />
-         <WhyLearnbay idss="bfl64ANfSV0"/>
-         < Gethire/>
+        <TrainerSection idss="bfl64ANfSV0" />
+        <Testimonial
+          redirectDS={true}
+          heading=""
+          Testimonial={DataScienceCourseData[0].testimonial}
+        />
+
+        <WhoIsProgram />
+        <WhyLearnbay idss="bfl64ANfSV0" />
+        < Gethire />
         {/* <Switch /> */}
         <FourthSection
           placementData={DataScienceCourseData[0].fourthSection}
@@ -233,7 +233,7 @@ function Blockchain({ }) {
           popupHead={DataScienceCourseData[0].popupHead}
         /> */}
         {/* <ContactUs dataScienceCounselling={true} /> */}
-        <ContactConsellor/>
+        <ContactConsellor />
 
         <SyllabusNew
           syllabusHead={DataScienceCourseData[0].syllabusHead}
@@ -264,7 +264,7 @@ function Blockchain({ }) {
           threeCertificate={true}
           data={DataScienceCourseData[0].Certificate}
         />
-         <FeeSection
+        <FeeSection
           Fee="₹ 99,000"
           FeeEmi="₹ 9,735/"
           FeeHeading="Program Fee and Financing"
@@ -278,11 +278,11 @@ function Blockchain({ }) {
         />
         <MentorsSection />
 
-        <SliderTab/>
+        <SliderTab />
 
 
-       < PlacementCall/>
-    
+        < PlacementCall />
+
 
 
         {/* {batchDateData === "" ? (
@@ -291,10 +291,10 @@ function Blockchain({ }) {
           <BatchDetails batchDetails={batchDateData.batchDetails} />
         )} */}
 
-      
+
 
         <NewProjectSection />
-    
+
         <FAQNew FAQNewData={DataScienceCourseData[0].faq} />
         <SeventhSection />
         <Footer />

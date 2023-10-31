@@ -1,5 +1,4 @@
 import Head from "next/head";
-import styles from "../styles/Home.module.css";
 import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
 import { DataScienceCourseData } from "../../Data/AdvanceDataScienceCourse";
@@ -11,6 +10,8 @@ import LinkedinReview from "../../components/SuccessStory/LinkedinReview/Linkedi
 import TrainerSection from "../../components/SuccessStory/TrainerSection/TrainerSection";
 import ReviewCourse from "../../components/SuccessStory/ReviewCourse/ReviewCourse";
 import ReviewSwitch from "../../components/SuccessStory/ReviewSwitch/ReviewSwitch";
+import VideoReview from "../../components/SuccessStory/VideoReview/VideoReview";
+
 const Testimonial = dynamic(() =>
   import("../../components/HomePage/Testimonial/Testimonial")
 );
@@ -20,7 +21,7 @@ export default function Home() {
     <div>
       <Head>
         <title>
-         Success Story
+          Success Story
         </title>
         <meta name="robots" content="index, follow" />
         <meta
@@ -37,15 +38,16 @@ export default function Home() {
         {" "}
         <Navbar popup={true} dataScienceCounselling={true} radio={true} />
         <TrainerSection link="D-gcPaK_-x4" />
-        < LinkedinReview/>
-       < GoogleReview />
-       <ReviewCourse />
-    <ReviewSwitch />
-    <Testimonial
-        redirectDS={true}
-        heading="Alumni Review"
-        Testimonial={DataScienceCourseData[0].testimonial}
-      />
+        < LinkedinReview />
+        < GoogleReview />
+        <VideoReview idss="bfl64ANfSV0" />
+        <ReviewCourse />
+        <ReviewSwitch />
+        <Testimonial
+          redirectDS={true}
+          heading="Alumni Review"
+          Testimonial={DataScienceCourseData[0].testimonial}
+        />
         <Footer />
         <BottomBar radio={true} />
       </main>
