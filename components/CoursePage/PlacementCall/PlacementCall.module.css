@@ -173,6 +173,8 @@
     .PlacementCallMain {
         overflow: hidden;
     }
+
+    
     .course {
 
         animation: scrollAnimation 16s linear infinite;
@@ -194,4 +196,15 @@
     }
 
 
+}
+
+@media only screen and (max-width: 600px) {
+
+    .PlacementCallMain {
+        overflow: hidden;
+    }
+.imgsection img {
+    width: 300px;
+
+}
 }

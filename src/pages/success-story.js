@@ -2,10 +2,18 @@ import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
+import { DataScienceCourseData } from "../../Data/AdvanceDataScienceCourse";
 import dynamic from "next/dynamic";
 import BottomBar from "../../components/WebPage/BottomBar/BottomBar";
 const Button = dynamic(() => import("../../components/Global/Button/Button"));
 import GoogleReview from "../../components/SuccessStory/GoogleReview/GoogleReview";
+import LinkedinReview from "../../components/SuccessStory/LinkedinReview/LinkedinReview";
+import TrainerSection from "../../components/SuccessStory/TrainerSection/TrainerSection";
+import ReviewCourse from "../../components/SuccessStory/ReviewCourse/ReviewCourse";
+import ReviewSwitch from "../../components/SuccessStory/ReviewSwitch/ReviewSwitch";
+const Testimonial = dynamic(() =>
+  import("../../components/HomePage/Testimonial/Testimonial")
+);
 
 export default function Home() {
   return (
@@ -28,7 +36,16 @@ export default function Home() {
       <main>
         {" "}
         <Navbar popup={true} dataScienceCounselling={true} radio={true} />
+        <TrainerSection link="D-gcPaK_-x4" />
+        < LinkedinReview/>
        < GoogleReview />
+       <ReviewCourse />
+    <ReviewSwitch />
+    <Testimonial
+        redirectDS={true}
+        heading="Alumni Review"
+        Testimonial={DataScienceCourseData[0].testimonial}
+      />
         <Footer />
         <BottomBar radio={true} />
       </main>

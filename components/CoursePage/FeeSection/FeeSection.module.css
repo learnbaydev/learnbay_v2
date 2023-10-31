@@ -219,6 +219,11 @@ line-height: 158%; /* 31.6px */
     left: 290px;
   }
 }
+@media (min-width:1200px) {
+  .fillimg{
+  left: 247px;
+}
+}
 
 @media (max-width: 641px) {
   .feesmain p {
