@@ -1,57 +1,19 @@
-.GoogleReviewMain {
+.container {
+    padding: 50px;
     background: linear-gradient(91deg, rgba(20, 210, 4, 0.08) 0.79%, rgba(255, 220, 0, 0.08) 48.64%, rgba(243, 7, 7, 0.08) 99.25%);
-
-
-margin: 40px 0px;
-    padding: 42px 0px;
-
-   
 }
 
-.GoogleReviewMain  h2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #000;
-font-size: 30px;
-font-style: normal;
-font-weight: 600;
-line-height: 153%; /* 68.85px */
-}
-.googleboxMain {
-    display: inline-grid;
-    grid-template-columns: 31% 31% 31%;
-    flex-direction: row;
-    margin: 100px 100px;
-    gap: 43px;
-    margin-top: 20px;
-
-    
+.container h4 {
+    text-align: center;
+    background: linear-gradient(89deg, #0072BC 3.01%, #63A657 34.31%, #EDBE41 65.62%, #D0503A 96.92%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
 }
 
-.googlebox {
-    display:  flex;
-    flex-direction: column;
-    border-radius: 28px;
-background: #202124;
-height: fit-content;
-border-image: linear-gradient(to right, #D0503A, #5A85F1, #EDBE41, #63A657);
-border-image-slice: 1; 
-border-image-width: 4px 0 0 0; 
-border-image-outset: 0; 
-border-image-repeat: stretch; 
-border-radius: 24px;
+.BoxDiv {
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+    gap: 25px;
+    margin-top: 50px;
 }
-.googlebox  p {
-    color: #FFF;
-    font-size:9px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 162%;
-    margin: 10px;
-}
-
-.googlebox img {
-    margin-top:4px;
-}
-

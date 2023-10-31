@@ -2,8 +2,8 @@
   padding: 50px 100px;
   display: grid;
   background: linear-gradient(274deg, rgba(0, 114, 188, 0.08) 3.17%, rgba(0, 114, 188, 0.04) 99.8%);
-  grid-template-columns: 42% 48%;
-  gap: 130px;
+  grid-template-columns: 45% 47%;
+  gap: 100px;
   align-items: center;
   margin-top: 80px;
 }
