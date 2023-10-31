@@ -7,8 +7,8 @@ import { AiFillStar } from "react-icons/ai";
 import { switchData } from "../../HomePage/KeyFeatures/switchData";
 
 
-function TrainerSection() {
-  const [vId, setVId] = useState("");
+function TrainerSection({idss}) {
+  // const [vId, setVId] = useState("");
 
 
 
@@ -29,7 +29,7 @@ function TrainerSection() {
     <section className={Styles.container} >
       <h4>Hear it from our Alumni</h4>
       <div className={Styles.First}>
-      <VideoPopup triggers={video} setTriggers={setVideo} ids={vId} />
+      <VideoPopup triggers={video} setTriggers={setVideo} ids={idss} />
       <div className={Styles.switch}>
         <div className={Styles.switchInnerBlue}>
         <div >
