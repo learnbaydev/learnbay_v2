@@ -46,6 +46,18 @@ font-weight: 700;
 line-height: 126.5%; 
 }
 
+/* .BgCont:nth-child(n+1) {
+  background: #FFF5E5;
+} */
+
+/* .BgCont:nth-child(1) {
+  background: rgba(0, 114, 188, 0.10);
+}
+
+.BgCont:nth-child(even) {
+  background: #fff5e5;
+} */
+
 
 .BoxCont {
     padding: 30px 20px;

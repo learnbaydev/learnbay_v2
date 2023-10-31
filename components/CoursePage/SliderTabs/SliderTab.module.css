@@ -1,7 +1,10 @@
 .Course {
   margin-top: 70px;
-  padding: 0px 130px;
+  padding-bottom: 70px;
+  padding: 0px 130px 50px;
   margin-bottom: 0px;
+  background: #FAFAFA;
+
 }
 .Course h2 {
   text-align: center;
@@ -9,6 +12,8 @@
   margin: 0;
   margin-bottom: 10px;
   font-weight: 700;
+  padding-top: 50px;
+  padding-bottom: 20px;
 }
 
 .Course h2 span {
@@ -33,9 +38,9 @@
   color: #0072bc;
 }
 .courses {
-  background: #ffffff;
+  background: #FAFAFA;
   display: grid;
-  grid-template-columns: 22% 77%;
+  grid-template-columns: 30% 70%;
   gap: 10px;
   margin-top: 30px;
 }
@@ -46,6 +51,7 @@
   flex-flow: column;
   border-radius: 16px;
   height: fit-content;
+  background: #FAFAFA;
 }
 .listPanel .gridPanel {
   display: none;
@@ -55,7 +61,7 @@
 }
 
 .ActiveSpan {
-  padding: 10px 20px 5px 20px;
+  padding: 15px 20px 15px 20px;
   width: 100%;
   font-weight: 600;
   cursor: pointer;
@@ -68,12 +74,12 @@
   color: #0072bc;
   display: flex;
   gap: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 35px;
 }
 .span {
   padding: 10px 20px;
   width: 100%;
-  font-weight: 400;
+  font-weight: 350;
   font-size: 20px;
   cursor: pointer;
   color: black;
@@ -81,7 +87,7 @@
   border-radius: 6px 6px 6px 6px;
   display: flex;
   gap: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 35px;
 }
 
 .img{
@@ -99,10 +105,11 @@
   display: grid;
   grid-template-columns: 55% 45%;
   flex-wrap: wrap;
-  padding-left: 120px;
+  padding-left: 30px;
 
   gap: 40px;
-  
+  background: #FAFAFA;
+
 }
 .gridPanel .left {
   display: flex;
@@ -134,7 +141,8 @@
 .mainCont{
   display: grid;
   grid-template-columns: 10% 90%;
-  margin-top: 20px;
+  margin-top: 15px;
+  margin-bottom: 15px;
   padding-left: 22px;
 
   
@@ -158,7 +166,7 @@
   margin-top: -10px;
 }
 .gridPanel .left h6 {
-  margin-top: 10px;
+  margin: 10px 0px 10px 0px;
   display: flex;
   padding-left: 25px;
   

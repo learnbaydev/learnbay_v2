@@ -188,12 +188,12 @@ function Blockchain() {
           ThirdSectionData={DataScienceMastersinCS[0].thirdSection}
         />
 
-<TrainerSection link="D-gcPaK_-x4" />
+<TrainerSection idss="bfl64ANfSV0" />
         <Testimonial
           redirectDS={true}
           Testimonial={DataScienceMastersinCS[0].testimonial}
         />
-        <WhyLearnbay />
+        <WhyLearnbay idss="bfl64ANfSV0" />
         < Gethire/>
         <FourthSection
           placementData={DataScienceMastersinCS[0].fourthSection}
