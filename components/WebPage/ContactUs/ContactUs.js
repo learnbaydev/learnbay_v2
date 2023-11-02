@@ -20,7 +20,7 @@ function ContactUs() {
             src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/contact-us.png"
             width="400"
             height="300"
-            layout="intrinsic"
+             
             alt="data science course"
           />
         </div>

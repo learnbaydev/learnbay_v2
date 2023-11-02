@@ -36,7 +36,7 @@ const Survey = ({ topPara, para, header }) => {
             src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Line-with-dots.webp"
             width={1493}
             height={752}
-            layout="intrinsic"
+             
             alt="lines"
           />
         </div>
@@ -54,7 +54,7 @@ const Survey = ({ topPara, para, header }) => {
               src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/thank-you-no-1.png"
               width={56}
               height={86}
-              layout="intrinsic"
+               
               alt="lines"
             />
           </div>
@@ -71,7 +71,7 @@ const Survey = ({ topPara, para, header }) => {
                 src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/thank-you-no-2.png"
                 width={65}
                 height={88}
-                layout="intrinsic"
+                 
                 alt="lines"
               />
             </div>
@@ -88,7 +88,7 @@ const Survey = ({ topPara, para, header }) => {
                 src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/thank-you-no-3.png"
                 width={61}
                 height={88}
-                layout="intrinsic"
+                 
                 alt="lines"
               />
             </div>

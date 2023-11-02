@@ -20,7 +20,7 @@ const FormInline = ({ popup, setTrigger, downloadBrochure, radio, dataScience, d
   const [startDate, setStartDate] = useState();
   const [value, setValue] = useState();
   const [query, setQuery] = useState({
-    name: "",
+    name: "Enter Name",
     email: "",
     phone: "",
     workExperience: "",
@@ -56,12 +56,12 @@ const FormInline = ({ popup, setTrigger, downloadBrochure, radio, dataScience, d
       body: formData,
     }).then(() =>
       setQuery({
-        name: "",
-        email: "",
-        phone: "",
-        workExperience: "",
-        scheduleTime: "",
-        url: "",
+        name: "Enter name",
+        email: "Enter email",
+        phone: "Enter phone",
+        workExperience: "Enter work experience",
+        scheduleTime: "Enter your time schedule",
+        url: "hvchgsvghvcs",
       })
     );
     if (popup) {

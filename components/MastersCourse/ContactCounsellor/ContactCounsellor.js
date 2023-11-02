@@ -95,6 +95,7 @@ const sendEmailViaApi = () => {
           <Form
             dataScience={dataScience}
             dataScienceCounselling={dataScienceCounselling}
+            upSkillingHide={true}
             // radio={radio}
           />
         </div>

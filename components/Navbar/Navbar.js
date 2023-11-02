@@ -66,6 +66,7 @@ const Navbar = ({
               fullStack={fullStack}
               dataScience={dataScience}
               dataScienceCounselling={dataScienceCounselling}
+              upSkillingHide={true}
             />
           )}
         </div>

@@ -26,7 +26,7 @@ function FirstSection() {
                     src={img}
                     width="355"
                     height="480"
-                    layout="intrinsic"
+                     
                     alt="data science course"
                   />
                 </div>

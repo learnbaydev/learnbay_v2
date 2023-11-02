@@ -374,6 +374,7 @@ function SyllabusNew({
               brochureLink={brochureLink}
               fullStack={fullStack}
               syllabus={true}
+              upSkillingHide={true}
             />
           </div>
         </div>

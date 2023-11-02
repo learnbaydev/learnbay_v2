@@ -80,6 +80,7 @@ const sendEmailViaApi = () => {
         // radio={radio}
         dataScience={dataScience}
         dataScienceCounselling={dataScienceCounselling}
+      
       >
         <div className="leftPopup">
           <div
@@ -93,6 +94,7 @@ const sendEmailViaApi = () => {
             dataScience={dataScience}
             dataScienceCounselling={dataScienceCounselling}
             // radio={radio}
+            upSkillingHide={true}
           />
         </div>
       </Popup>

@@ -23,9 +23,11 @@ function CareerHome() {
         <div className={styles.right}>
           <Image
             src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/course.learnbay.co/Career-Portal.png"
+      
             width="522"
             height="380"
             alt="data science course"
+            loading="lazy"
           />
         </div>
         </div>

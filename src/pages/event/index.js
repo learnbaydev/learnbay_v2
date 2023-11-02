@@ -34,7 +34,7 @@ export default function index({ eventData }) {
             src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/about-us.png"
             width="522"
             height="380"
-            layout="intrinsic"
+             
           />
         </div>
       </div>

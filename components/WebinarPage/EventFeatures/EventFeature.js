@@ -62,7 +62,7 @@ const EventFeature = ({ data, eventDateInfo, eventDataD, domainDataD, reviewsDat
         <p className={styles.paragramTitle}>{data.heading1}</p>
         <Image
           src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/tutorial/domain/Line+48.png"
-          layout="intrinsic"
+           
           width="90"
           height="5"
           loading="lazy"
@@ -77,7 +77,7 @@ const EventFeature = ({ data, eventDateInfo, eventDataD, domainDataD, reviewsDat
         <p className={styles.paragramTitle}>{data.heading2}</p>
         <Image
           src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/tutorial/domain/Line+48.png"
-          layout="intrinsic"
+           
           width="90"
           height="5"
           loading="lazy"
@@ -115,7 +115,7 @@ const EventFeature = ({ data, eventDateInfo, eventDataD, domainDataD, reviewsDat
             <div className={styles.spanTrainerImg}>
               <Image
                 src={data.img4}
-                layout="intrinsic"
+                 
                 objectFit="cover"
                 quality={100}
                 width="100"
@@ -201,7 +201,7 @@ const EventFeature = ({ data, eventDateInfo, eventDataD, domainDataD, reviewsDat
 
         <Image
           src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/tutorial/domain/Line+48.png"
-          layout="intrinsic"
+           
           width="90"
           height="5"
           loading="lazy"
@@ -216,7 +216,7 @@ const EventFeature = ({ data, eventDateInfo, eventDataD, domainDataD, reviewsDat
         </p>
         <Image
           src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/tutorial/domain/Line+51.png"
-          layout="intrinsic"
+           
           width="90"
           height="5"
           loading="lazy"
