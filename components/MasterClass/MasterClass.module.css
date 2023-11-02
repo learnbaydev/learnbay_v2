@@ -4,6 +4,7 @@
     /* display: flex;
     flex-flow: row; */
     cursor: grab;
+    margin-bottom: 40px;
 }
 
 .slideritem {

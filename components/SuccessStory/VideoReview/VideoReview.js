@@ -4,12 +4,13 @@ import Image from 'next/image'
 import VideoPopup from '../../VideoPopup/VideoPopup'
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper";
+import 'swiper/swiper-bundle.css';
 
 const VideoReview = ({ idss }) => {
 
     const [popups, setPopups] = useState(false);
     const [video, setVideo] = useState(false);
-    const videoSHow = () => {
+    const videoSHow = () => {z
         setVideo(true);
     };
     // const el = useRef(null);
@@ -58,7 +59,7 @@ const VideoReview = ({ idss }) => {
         >
             {images.map((image, index) => (
                 <SwiperSlide key={index}>
-                  <div className="imgWrapper">
+                  <div className={`imgWrapper ${styles.imgwrapper}`}>
                   <Image
                       src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/coursePage/video-review.webp"
                       width={548}

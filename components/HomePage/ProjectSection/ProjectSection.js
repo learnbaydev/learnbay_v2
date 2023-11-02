@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useRef, useState } from "react";
 import styles from "./ProjectSection.module.css";
 import Image from "next/image";
 import { FaCheckCircle, FaDownload } from "react-icons/fa";
@@ -11,22 +11,55 @@ import { Pagination, Navigation } from "swiper";
 import "swiper/css/scrollbar";
 import { Scrollbar } from "swiper";
 import VideoPopup from "../../VideoPopup/VideoPopup";
+import Form from "../../Form/Form";
+import Popup from "../../Popup/Popup";
 
-function ProjectSection({idss}) {
+const ProjectSection=({
+idss,
+  dataScience,
+  radio,
+
+  dataScienceCounselling,
+})=> {
 
   const [popups, setPopups] = useState(false);
   const [video, setVideo] = useState(false);
-  const videoSHow = () => {
-    setVideo(true);
-  };
-  // const el = useRef(null);
+  
+
+  const el = useRef(null);
+
   const popupShow = () => {
     setPopups(true);
   };
+ 
 
 
   return (
     <section className={styles.container}>
+       <Popup
+        trigger={popups}
+        setTrigger={setPopups}
+        className="popupModal"
+        popup={true}
+        radio={radio}
+        dataScience={dataScience}
+        dataScienceCounselling={dataScienceCounselling}
+      >
+        <div className="leftPopup">
+          <div
+            className="whiteP"
+            style={{ width: "340px", height: "400px" }}
+          ></div>
+        </div>
+        <div className="RightPopup">
+          <h5>Apply For Counselling</h5>
+          <Form
+            dataScience={dataScience}
+            dataScienceCounselling={dataScienceCounselling}
+            radio={radio}
+          />
+        </div>
+      </Popup>
       <h4 className={styles.h4}>
         Learnbay’s <span className={styles.span}>ProjectLab</span>
       </h4>
@@ -157,11 +190,13 @@ function ProjectSection({idss}) {
                     />
                     <p>SUPPLYCHAIN</p>
                   </div>
+                  <div onClick={popupShow}>
                   <Button
                     bannerButton={true}
                     text="Download Domain Brochures"
                     passIcon={<FaDownload className="bIconS" />}
                   />
+                  </div>
                 </div>
               </div>
               <div className={styles.iconBoxMobile}>
@@ -203,8 +238,9 @@ function ProjectSection({idss}) {
                     <p>SUPPLYCHAIN</p>
                   </div>
                 </div>
-                <div className={styles.buttonDiv}>
+                <div className={styles.buttonDiv} >
                   <Button
+                  
                     bannerButton={true}
                     text="Download Domain Brochures"
                     passIcon={<FaDownload className="bIconS" />}
@@ -275,11 +311,13 @@ function ProjectSection({idss}) {
                     />
                     <p>SUPPLYCHAIN</p>
                   </div>
+                  <div onClick={popupShow}>
                   <Button
                     bannerButton={true}
                     text="Download Domain Brochures"
                     passIcon={<FaDownload className="bIconS" />}
                   />
+                  </div>
                 </div>
               </div>
               <div className={styles.iconBoxMobile}>

@@ -63,26 +63,37 @@ const SecondNavbar = dynamic(() =>
 );
 const ContactConsellor = dynamic(() =>
   import("../../../components/CoursePage/ContactConsellor/ContactConsellor")
-
-)
+);
 const feesbatch = dynamic(() =>
-  import('../../../components/CoursePage/FeeSection/FeeSection')
-)
+  import("../../../components/CoursePage/FeeSection/FeeSection")
+);
 
 const SliderTab = dynamic(() =>
-  import('../../../components/CoursePage/SliderTabs/SliderTabs')
-)
+  import("../../../components/CoursePage/SliderTabs/SliderTabs")
+);
 
 const WhoIsProgram = dynamic(() =>
-  import('../../../components/CoursePage/WhoIsProgram/WhoIsProgram')
-)
+  import("../../../components/CoursePage/WhoIsProgram/WhoIsProgram")
+);
 
-import OfferPopup from "../../../components/OfferPopup/OfferPopup";
-import BottomBar from "../../../components/WebPage/BottomBar/BottomBar";
-import ContactUs from "../../../components/HomePage/ContactUs/ContactUs";
-import NewProjectSection from "../../../components/CoursePage/NewProjectSection/NewProjectSection";
-import MentorsSection from "../../../components/MastersCourse/MentorsSection/MentorsSection";
-import TrainerSection from "../../../components/HomePage/TrainerSection/TrainerSection";
+const OfferPopup = dynamic(() =>
+  import("../../../components/OfferPopup/OfferPopup")
+);
+const BottomBar = dynamic(() =>
+  import("../../../components/WebPage/BottomBar/BottomBar")
+);
+const ContactUs = dynamic(() =>
+  import("../../../components/HomePage/ContactUs/ContactUs")
+);
+const NewProjectSection = dynamic(() =>
+  import("../../../components/CoursePage/NewProjectSection/NewProjectSection")
+);
+const MentorsSection = dynamic(() =>
+  import("../../../components/MastersCourse/MentorsSection/MentorsSection")
+);
+const TrainerSection = dynamic(() =>
+  import("../../../components/HomePage/TrainerSection/TrainerSection")
+);
 // import SecondNavbar from "../../../components/CoursePage/SecondNavbar/SecondNavbar";
 const WhyLearnbay = dynamic(() =>
   import("../../../components/MastersCourse/WhyLearnbay/WhyLearnbay")
@@ -90,13 +101,12 @@ const WhyLearnbay = dynamic(() =>
 
 const Gethire = dynamic(() =>
   import("../../../components/CoursePage/Gethired/Gethire")
-)
+);
 const PlacementCall = dynamic(() =>
   import("../../../components/CoursePage/PlacementCall/PlacementCall")
+);
 
-)
-
-function Blockchain({ }) {
+function Blockchain({}) {
   // POPUP GET METHOD
   const [popupData, setPopupData] = useState([]);
   // console.log(popupData);
@@ -212,7 +222,7 @@ function Blockchain({ }) {
 
         <WhoIsProgram />
         <WhyLearnbay idss="bfl64ANfSV0" />
-        < Gethire />
+        <Gethire />
         {/* <Switch /> */}
         <FourthSection
           placementData={DataScienceCourseData[0].fourthSection}
@@ -280,18 +290,13 @@ function Blockchain({ }) {
 
         <SliderTab />
 
-
-        < PlacementCall />
-
-
+        <PlacementCall />
 
         {/* {batchDateData === "" ? (
           ""
         ) : (
           <BatchDetails batchDetails={batchDateData.batchDetails} />
         )} */}
-
-
 
         <NewProjectSection />
 

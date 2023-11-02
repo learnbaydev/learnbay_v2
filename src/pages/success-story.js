@@ -1,16 +1,30 @@
 import Head from "next/head";
 import Navbar from "../../components/Navbar/Navbar";
-import Footer from "../../components/Footer/Footer";
-import { DataScienceCourseData } from "../../Data/AdvanceDataScienceCourse";
-import dynamic from "next/dynamic";
-import BottomBar from "../../components/WebPage/BottomBar/BottomBar";
+ import Footer from "../../components/Event/EventFooter/Footer";
+  import { DataScienceCourseData } from "../../Data/AdvanceDataScienceCourse";
+ import dynamic from "next/dynamic";
+const BottomBar = dynamic(() =>
+  import("../../components/WebPage/BottomBar/BottomBar")
+);
 const Button = dynamic(() => import("../../components/Global/Button/Button"));
-import GoogleReview from "../../components/SuccessStory/GoogleReview/GoogleReview";
-import LinkedinReview from "../../components/SuccessStory/LinkedinReview/LinkedinReview";
-import TrainerSection from "../../components/SuccessStory/TrainerSection/TrainerSection";
-import ReviewCourse from "../../components/SuccessStory/ReviewCourse/ReviewCourse";
-import ReviewSwitch from "../../components/SuccessStory/ReviewSwitch/ReviewSwitch";
-import VideoReview from "../../components/SuccessStory/VideoReview/VideoReview";
+const GoogleReview = dynamic(() =>
+  import("../../components/SuccessStory/GoogleReview/GoogleReview")
+);
+const LinkedinReview = dynamic(() =>
+  import("../../components/SuccessStory/LinkedinReview/LinkedinReview")
+);
+const TrainerSection = dynamic(() =>
+  import("../../components/SuccessStory/TrainerSection/TrainerSection")
+);
+const ReviewCourse = dynamic(() =>
+  import("../../components/SuccessStory/ReviewCourse/ReviewCourse")
+);
+const ReviewSwitch = dynamic(() =>
+  import("../../components/SuccessStory/ReviewSwitch/ReviewSwitch")
+);
+const VideoReview = dynamic(() =>
+  import("../../components/SuccessStory/VideoReview/VideoReview")
+);
 
 const Testimonial = dynamic(() =>
   import("../../components/HomePage/Testimonial/Testimonial")
@@ -20,9 +34,7 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>
-          Success Story
-        </title>
+        <title>Success Story</title>
         <meta name="robots" content="index, follow" />
         <meta
           name="description"
@@ -38,8 +50,8 @@ export default function Home() {
         {" "}
         <Navbar popup={true} dataScienceCounselling={true} radio={true} />
         <TrainerSection link="D-gcPaK_-x4" />
-        < LinkedinReview />
-        < GoogleReview />
+        <LinkedinReview />
+        <GoogleReview />
         <VideoReview idss="bfl64ANfSV0" />
         <ReviewCourse />
         <ReviewSwitch />
