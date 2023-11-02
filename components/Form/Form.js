@@ -36,7 +36,7 @@ const Form = ({
     phone: "",
     upskillPlanning: "",
     upskillingObjective: "",
-    platform:"",
+    platform: "",
     workExperience: "",
     Brief: "",
     dateTime: "",
@@ -46,7 +46,7 @@ const Form = ({
     url: router.asPath,
   });
   useEffect(() => {
-    setQuery({ ...query, phone: value, });
+    setQuery({ ...query, phone: value });
   }, [value]);
 
   // Update inputs value
@@ -138,7 +138,7 @@ const Form = ({
           upskillPlanning: "",
           upskillingObjective: "",
           jobDescription: "",
-          platform:"",
+          platform: "",
           workExperience: "",
           dateTime: "",
           WAdropdown: "",
@@ -270,7 +270,9 @@ const Form = ({
     <div className={styles.App}>
       <form onSubmit={upSkillingHide ? formSubmitDownload : formSubmit}>
         <div className={styles.formWrapper}>
-        <label for="Name">Name<span className={styles.spanLabel}>*</span></label>
+          <label for="Name">
+            Name<span className={styles.spanLabel}>*</span>
+          </label>
           <input
             type="text"
             name="name"
@@ -283,7 +285,9 @@ const Form = ({
           />
         </div>
         <div className={styles.formWrapper}>
-        <label for="Name">E-Mail<span className={styles.spanLabel}>*</span></label>
+          <label for="Name">
+            E-Mail<span className={styles.spanLabel}>*</span>
+          </label>
           <input
             type="email"
             name="email"
@@ -295,7 +299,9 @@ const Form = ({
           />
         </div>
         <div className={styles.formWrapper}>
-        <label for="Name">Phone Number<span className={styles.spanLabel}>*</span></label>
+          <label for="Name">
+            Phone Number<span className={styles.spanLabel}>*</span>
+          </label>
           <PhoneInput
             style={
               popup
@@ -305,9 +311,9 @@ const Form = ({
                     padding: "10px",
                   }
                 : {
-                  borderRadius: "6px",
-                  border: "1px solid #D3D3D3",
-                  padding: "10px",
+                    borderRadius: "6px",
+                    border: "1px solid #D3D3D3",
+                    padding: "10px",
                   }
             }
             name="phone"
@@ -320,11 +326,13 @@ const Form = ({
             required
           />
         </div>
-        {upSkillingHide ? (
+        {/* {upSkillingHide ? (
           ""
         ) : (
           <div className={popup ? styles.formWrappers : styles.formWrappers}>
-        <label for="Name">Upskilling Objective<span className={styles.spanLabel}>*</span></label>
+            <label for="Name">
+              Upskilling Objective<span className={styles.spanLabel}>*</span>
+            </label>
             <select
               name="upskillPlanning"
               required
@@ -358,7 +366,9 @@ const Form = ({
           ""
         ) : (
           <div className={popup ? styles.formWrappers : styles.formWrappers}>
-        <label for="Name">Timeline<span className={styles.spanLabel}>*</span></label>
+            <label for="Name">
+              Timeline<span className={styles.spanLabel}>*</span>
+            </label>
             <select
               name="upskillingObjective"
               required
@@ -380,7 +390,7 @@ const Form = ({
               <option value="Career switch">Career switch</option>
             </select>
           </div>
-        )}
+        )} */}
 
         {google ? (
           <div className={popup ? styles.formWrappers : styles.formWrapper}>
@@ -420,7 +430,9 @@ const Form = ({
 
         {radio ? (
           <div className={popup ? styles.formWrappers : styles.formWrapper}>
-                    <label for="Name">Course Preference<span className={styles.spanLabel}>*</span></label>
+            <label for="Name">
+              Course Preference<span className={styles.spanLabel}>*</span>
+            </label>
             <select
               id="platform"
               name="platform"
@@ -428,12 +440,15 @@ const Form = ({
               value={query.platform}
               onChange={handleParam()}
             >
-              <option value="Select an option" selected
-                hidden>
+              <option value="Select an option" selected hidden>
                 Select an option
               </option>
-              <option value="Data Science & AI Courses">Data Science & AI Courses</option>
-              <option value="Software (DSA & System Design)">Software (DSA & System Design)</option>
+              <option value="Data Science & AI Courses">
+                Data Science & AI Courses
+              </option>
+              <option value="Software (DSA & System Design)">
+                Software (DSA & System Design)
+              </option>
             </select>
             {/* <input
               id="Data Science Program"
@@ -472,13 +487,12 @@ const Form = ({
           ""
         )}
         {popup ? (
-          
-            <input
-              type="hidden"
-              id="url"
-              name="url"
-              value={router.asPath}
-            ></input>
+          <input
+            type="hidden"
+            id="url"
+            name="url"
+            value={router.asPath}
+          ></input>
         ) : (
           ""
         )}
