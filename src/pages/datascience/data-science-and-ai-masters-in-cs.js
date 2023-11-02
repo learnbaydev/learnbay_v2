@@ -2,7 +2,8 @@ import dynamic from "next/dynamic";
 import Head from "next/head";
 import { useEffect, useState } from "react";
 import { DataScienceMastersinCS } from "../../../Data/DataScienceAiMastersinCS";
-import MentorsSection from "../../../components/MastersCourse/MentorsSection/MentorsSection";
+const MentorsSection = dynamic (()=>
+import ("../../../components/MastersCourse/MentorsSection/MentorsSection")) ;
 
 const Footer = dynamic(() => import("../../../components/Footer/Footer"));
 
@@ -50,7 +51,6 @@ const BatchDetails = dynamic(() =>
   import("../../../components/CoursePage/BatchDetails/BatchDetails")
 );
 
-
 const SecondNavbar = dynamic(() =>
   import("../../../components/CoursePage/SecondNavbar/SecondNavbar")
 );
@@ -81,9 +81,11 @@ const SliderTab = dynamic(() =>
   import("../../../components/CoursePage/SliderTabs/SliderTabs")
 );
 
-import NewProjectSection from "../../../components/CoursePage/NewProjectSection/NewProjectSection";
+const NewProjectSection = dynamic(() =>
+  import("../../../components/CoursePage/NewProjectSection/NewProjectSection")
+);
 
-function Blockchain() {
+const Blockchain = () => {
   // POPUP GET METHOD
   const [popupData, setPopupData] = useState([]);
   // console.log(popupData);
@@ -191,7 +193,7 @@ function Blockchain() {
           ThirdSectionData={DataScienceMastersinCS[0].thirdSection}
         />
 
-<TrainerSection idss="bfl64ANfSV0" />
+        <TrainerSection idss="bfl64ANfSV0" />
 
         <Testimonial
           redirectDS={true}
@@ -199,7 +201,7 @@ function Blockchain() {
         />
 
         <WhyLearnbay idss="bfl64ANfSV0" />
-        < Gethire/>
+        <Gethire />
 
         <FourthSection
           placementData={DataScienceMastersinCS[0].fourthSection}
@@ -279,5 +281,5 @@ function Blockchain() {
       </main>
     </>
   );
-}
+};
 export default Blockchain;
