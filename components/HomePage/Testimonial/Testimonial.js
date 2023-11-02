@@ -86,7 +86,7 @@ function Testimonial({ redirectDS, para, heading, Testimonial }) {
                 modules={[Pagination, Navigation, Scrollbar]}
                 className="mySwiper"
               >
-                {Testimonial.map((data) => {
+                {Testimonial.map((data, index) => {
                   const {
                     id,
                     name,
@@ -99,7 +99,7 @@ function Testimonial({ redirectDS, para, heading, Testimonial }) {
                   } = data;
 
                   return (
-                    <SwiperSlide className={styles.slide} key={id}>
+                    <SwiperSlide className={styles.slide} key={index}>
                       <div className={styles.proImgWrap}>
                         <div className="imgWrapper">
                           <Image

@@ -181,6 +181,7 @@ function SyllabusNew({
                   return (
                     <SwiperSlide
                       className={active[i].value ? styles.ASlide : styles.slide}
+                      key={i}
                     >
                       <span
                         onClick={() => {

@@ -48,7 +48,7 @@ const EventTab = ({ data }) => {
                   className="mySwiper"
                 >
               <div className={styles.gridPanel}>
-                {FullStackDetails.map((data) => {
+                {FullStackDetails.map((data, index) => {
                   const {
                     id,
                     title,
@@ -62,7 +62,7 @@ const EventTab = ({ data }) => {
                   let eventDateInfo = new Date(eventDate);
                   const url = `/event/${id}`;
                   return (
-                    <SwiperSlide className={styles.leftSide} key={id}>
+                    <SwiperSlide className={styles.leftSide} key={index}>
                       <Link href={url} passHref>
                         <div className={styles.contentBox}>
                           <div className={styles.headImg}>
@@ -148,7 +148,7 @@ const EventTab = ({ data }) => {
               <div className={styles.gridPanel}>
                 {dataScience ? (
                   <div className={styles.gridPanel}>
-                    {dataScienceDetails.map((data) => {
+                    {dataScienceDetails.map((data, index) => {
                       const {
                         id,
                         title,
@@ -162,7 +162,7 @@ const EventTab = ({ data }) => {
                       let eventDateInfo = new Date(eventDate);
                       const url = `/event/${id}`;
                       return (
-                        <SwiperSlide className={styles.leftSide} key={id}>
+                        <SwiperSlide className={styles.leftSide} key={index}>
                           <Link href={url} passHref>
                             <div className={styles.contentBox}>
                               <div className={styles.headImg}>
@@ -252,7 +252,7 @@ const EventTab = ({ data }) => {
                   className="mySwiper"
                 >
               <div className={styles.gridPanel}>
-                {data.map((data) => {
+                {data.map((data, index) => {
                   const {
                     id,
                     title,
@@ -266,7 +266,7 @@ const EventTab = ({ data }) => {
                   let eventDateInfo = new Date(eventDate);
                   const url = `/event/${id}`;
                   return (
-                    <SwiperSlide className={styles.leftSide} key={id}>
+                    <SwiperSlide className={styles.leftSide} key={index}>
                       <Link href={url} passHref>
                         <div className={styles.contentBox}>
                           <div className={styles.headImg}>
