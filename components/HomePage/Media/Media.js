@@ -3,12 +3,19 @@ import React, { useState } from "react";
 import Image from "next/image";
 import { Pagination } from "swiper";
 import "swiper/css";
+
+import { BsArrowLeft } from "react-icons/bs";
+import { BsArrowRight } from "react-icons/bs";
+
+
 import SwiperCore, { Navigation } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.min.css";
-import { BsArrowLeft } from "react-icons/bs";
-import { BsArrowRight } from "react-icons/bs";
+
+
+
 SwiperCore.use([Navigation]);
+
 const Media = ({ projectData }) => {
   const [projectArray, setProjectArray] = useState(projectData);
   return (
@@ -69,12 +76,13 @@ const Media = ({ projectData }) => {
             nextEl: ".custom-next",
             prevEl: ".custom-prev",
           }}
+        
         >
           {projectArray.map((data, index) => {
-            const { id, domain, CLogo, SDesc } = data;
+            const { id, domain, CLogo, SDesc, i} = data;
             return (
               <>
-                <SwiperSlide className={styles.project} key={index}>
+                <SwiperSlide className={styles.project} key={i}>
                   <div className={styles.header}>
                     <div className={styles.left}></div>
                     <div

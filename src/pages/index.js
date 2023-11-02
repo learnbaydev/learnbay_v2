@@ -6,7 +6,12 @@ import BottomBar from "../../components/WebPage/BottomBar/BottomBar";
 import OfferPopup from "../../components/OfferPopup/OfferPopup";
 import WhatsappFloat from "../../components/WhatappsFloat/WhatsappFloat";
 import TrainerSection from "../../components/HomePage/TrainerSection/TrainerSection";
-import Media from "../../components/HomePage/Media/Media";
+
+
+const Media = dynamic(() =>
+  import("../../components/HomePage/Media/Media")
+);
+
 const BoxShape = dynamic(() =>
   import("../../components/HomePage/BoxShape/BoxShape")
 );
