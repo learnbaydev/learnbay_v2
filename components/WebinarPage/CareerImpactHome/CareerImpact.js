@@ -40,7 +40,7 @@ const CareerImpact = () => {
               <div className={styles.imgP}>
                 <Image
                   src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/preksha-home.png"
-                  layout="intrinsic"
+                   
                   width="100"
                   height="100"
                   alt="akanksha-home"
@@ -70,7 +70,7 @@ const CareerImpact = () => {
               <div className={styles.imgP}>
                 <Image
                   src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/asrar-home.png"
-                  layout="intrinsic"
+                   
                   width="100"
                   height="100"
                   alt="akanksha-home"
@@ -100,7 +100,7 @@ const CareerImpact = () => {
               <div className={styles.imgP}>
                 <Image
                   src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/aravind-home.png"
-                  layout="intrinsic"
+                   
                   width="100"
                   height="100"
                   alt="akanksha-home"
@@ -129,7 +129,7 @@ const CareerImpact = () => {
               <div className={styles.imgP}>
                 <Image
                   src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/ritesh-home.png"
-                  layout="intrinsic"
+                   
                   width="100"
                   height="100"
                   alt="akanksha-home"
@@ -159,7 +159,7 @@ const CareerImpact = () => {
               <div className={styles.imgP}>
                 <Image
                   src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/saurabh-home.png"
-                  layout="intrinsic"
+                   
                   width="100"
                   height="100"
                   alt="akanksha-home"
@@ -193,7 +193,7 @@ const CareerImpact = () => {
               <div className={styles.imgP}>
                 <Image
                   src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/abhishek-home.png"
-                  layout="intrinsic"
+                   
                   width="100"
                   height="100"
                   alt="akanksha-home"
@@ -223,7 +223,7 @@ const CareerImpact = () => {
               <div className={styles.imgP}>
                 <Image
                   src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/vishal-home.png"
-                  layout="intrinsic"
+                   
                   width="100"
                   height="100"
                   alt="akanksha-home"

@@ -192,6 +192,7 @@ function FourthSection({
             upSkillingHide={true}
             titleCourse={titleCourse}
             brochureLink={brochureLink}
+            
           />
         </div>
       </Popup>

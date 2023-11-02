@@ -60,6 +60,7 @@ function FirstSection({
             <FormInline
               dataScience={dataScience}
               dataScienceCounselling={dataScienceCounselling}
+              upSkillingHide={true}
             />
           </div>
         </>
@@ -115,6 +116,7 @@ function FirstSection({
                 brochureLink={brochureLink}
                 fullStack={fullStack}
                 syllabus={true}
+                upSkillingHide={true}
               />
             </div>
           </div>

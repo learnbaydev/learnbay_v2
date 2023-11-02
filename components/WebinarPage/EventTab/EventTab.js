@@ -69,7 +69,7 @@ const EventTab = ({ data }) => {
                             <Image
                               alt={title}
                               src={img}
-                              layout="intrinsic"
+                               
                               width="641"
                               height="241"
                             />
@@ -169,7 +169,7 @@ const EventTab = ({ data }) => {
                                 <Image
                                   alt={title}
                                   src={img}
-                                  layout="intrinsic"
+                                   
                                   width="641"
                                   height="241"
                                 />
@@ -273,7 +273,7 @@ const EventTab = ({ data }) => {
                             <Image
                               alt={title}
                               src={img}
-                              layout="intrinsic"
+                               
                               width="641"
                               height="241"
                             />
@@ -351,7 +351,7 @@ const EventTab = ({ data }) => {
                             <Image
                               alt={title}
                               src={img}
-                              layout="intrinsic"
+                               
                               width="641"
                               height="241"
                             />
@@ -425,7 +425,7 @@ const EventTab = ({ data }) => {
                             <Image
                               alt={title}
                               src={img}
-                              layout="intrinsic"
+                               
                               width="641"
                               height="241"
                             />
@@ -500,7 +500,7 @@ const EventTab = ({ data }) => {
                             <Image
                               alt={title}
                               src={img}
-                              layout="intrinsic"
+                               
                               width="641"
                               height="241"
                             />

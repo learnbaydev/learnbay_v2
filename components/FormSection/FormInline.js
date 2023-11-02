@@ -278,7 +278,7 @@ const FormInline = ({
                 value={query.platform}
                 onChange={handleParam()}
               >
-                <option value="Select an option" selected hidden>
+                <option value=" " selected hidden>
                   Select an option
                 </option>
                 <option value="Data Science & AI Courses">

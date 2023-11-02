@@ -74,7 +74,7 @@ const ThankStats = ({
       <div className={styles.imgWrapper}>
         <Image
           src={img1}
-          layout="intrinsic"
+          
           width={600}
           height={563}
           loading="lazy"

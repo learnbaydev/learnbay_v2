@@ -42,6 +42,7 @@ function Counselling({
             dataScienceCounselling={dataScienceCounselling}
             titleCourse={titleCourse}
             brochureLink={brochureLink}
+            upSkillingHide={true}
           />
         </div>
       </Popup>

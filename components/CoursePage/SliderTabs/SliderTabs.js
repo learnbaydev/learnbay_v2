@@ -76,6 +76,7 @@ const SliderTabs = ({ dataScience, dataScienceCounselling }) => {
             dataScience={dataScience}
             dataScienceCounselling={dataScienceCounselling}
           // radio={radio}
+            upSkillingHide={true}
           />
         </div>
       </Popup>

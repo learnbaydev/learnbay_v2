@@ -37,7 +37,7 @@ const CareerImpact = () => {
               <div className={styles.imgP}>
                 <Image
                   src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/akanksha.jpg"
-                  layout="intrinsic"
+                   
                   width="100"
                   height="100"
                   alt="akanksha-home"
@@ -65,7 +65,7 @@ const CareerImpact = () => {
               <div className={styles.imgP}>
                 <Image
                   src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/rahul.jpg"
-                  layout="intrinsic"
+                   
                   width="100"
                   height="100"
                   alt="akanksha-home"
@@ -93,7 +93,7 @@ const CareerImpact = () => {
               <div className={styles.imgP}>
                 <Image
                   src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/kamlesh.jpg"
-                  layout="intrinsic"
+                   
                   width="100"
                   height="100"
                   alt="akanksha-home"
@@ -121,7 +121,7 @@ const CareerImpact = () => {
               <div className={styles.imgP}>
                 <Image
                   src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/Manav.jpg"
-                  layout="intrinsic"
+                   
                   width="100"
                   height="100"
                   alt="akanksha-home"
@@ -149,7 +149,7 @@ const CareerImpact = () => {
               <div className={styles.imgP}>
                 <Image
                   src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/Manish.jpg"
-                  layout="intrinsic"
+                   
                   width="100"
                   height="100"
                   alt="akanksha-home"

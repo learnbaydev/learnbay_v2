@@ -54,7 +54,7 @@ function ThirdSection({idss}) {
               src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/Counsellors-min.webp"
               width="400"
               height="71"
-              layout="intrinsic"
+               
               alt="data science course"
             />
           </div>

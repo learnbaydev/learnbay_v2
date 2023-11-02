@@ -47,6 +47,7 @@ const FeeSection = ({
           <Form
             dataScience={dataScience}
             dataScienceCounselling={dataScienceCounselling}
+            upSkillingHide={true}
             // radio={radio}
           />
         </div>
