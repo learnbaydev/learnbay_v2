@@ -2,15 +2,21 @@ import Head from "next/head";
 import Navbar from "../../components/Navbar/Navbar";
 import dynamic from "next/dynamic";
 import { DataScienceCourseData } from "../../Data/AdvanceDataScienceCourse";
-import BottomBar from "../../components/WebPage/BottomBar/BottomBar";
-import OfferPopup from "../../components/OfferPopup/OfferPopup";
-import WhatsappFloat from "../../components/WhatappsFloat/WhatsappFloat";
-import TrainerSection from "../../components/HomePage/TrainerSection/TrainerSection";
 
-
-const Media = dynamic(() =>
-  import("../../components/HomePage/Media/Media")
+const BottomBar = dynamic(() =>
+  import("../../components/WebPage/BottomBar/BottomBar")
 );
+const OfferPopup = dynamic(() =>
+  import("../../components/OfferPopup/OfferPopup")
+);
+const WhatsappFloat = dynamic(() =>
+  import("../../components/WhatappsFloat/WhatsappFloat")
+);
+const TrainerSection = dynamic(() =>
+  import("../../components/HomePage/TrainerSection/TrainerSection")
+);
+
+const Media = dynamic(() => import("../../components/HomePage/Media/Media"));
 
 const BoxShape = dynamic(() =>
   import("../../components/HomePage/BoxShape/BoxShape")
@@ -41,15 +47,17 @@ const NewsSection = dynamic(() =>
   import("../../components/HomePage/NewsSection/NewsSection")
 );
 
-const MasterClass = dynamic (() =>
-import ("../../../learnbay_v2/components/MasterClass/MasterClass")
-)
+const MasterClass = dynamic(() =>
+  import("../../../learnbay_v2/components/MasterClass/MasterClass")
+);
 
 import { DADataScienceCourseData } from "../../Data/DataAnalyticsData";
-import WhyLearnbay from "../../components/HomePage/WhyLearnbay/WhyLearnbay";
-import ProjectSection from "../../components/HomePage/ProjectSection/ProjectSection";
-
-
+const WhyLearnbay = dynamic(() =>
+  import("../../components/HomePage/WhyLearnbay/WhyLearnbay")
+);
+const ProjectSection = dynamic(() =>
+  import("../../components/HomePage/ProjectSection/ProjectSection")
+);
 
 // const ArticleSection = dynamic(() =>
 //   import("../../components/HomePage/Project/ArticleSection")
@@ -100,13 +108,10 @@ export default function Home() {
       />
       <ContactUs dataScienceCounselling={true} radio={true} />
 
-    
-<MasterClass/>
+      <MasterClass />
 
-      <Media
-          projectData={DataScienceCourseData[0].newsData}
-        />
-     
+      <Media projectData={DataScienceCourseData[0].newsData} />
+
       <SeventhSection />
 
       <Footer />
