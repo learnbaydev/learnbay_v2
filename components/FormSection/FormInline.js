@@ -194,9 +194,9 @@ const FormInline = ({
                       padding: "10px",
                     }
                   : {
-                    borderRadius: "6px",
-                    border: "1px solid #D3D3D3",
-                    padding: "10px",
+                      borderRadius: "6px",
+                      border: "1px solid #D3D3D3",
+                      padding: "10px",
                     }
               }
               name="phone"
@@ -209,7 +209,7 @@ const FormInline = ({
               required
             />
           </div>
-          {upSkillingHide ? (
+          {/* {upSkillingHide ? (
             ""
           ) : (
             <div className={popup ? styles.formWrapper : styles.formWrapper}>
@@ -241,9 +241,9 @@ const FormInline = ({
                 <option value="Not yet decided">Not yet decided</option>
               </select>
             </div>
-          )}
+          )} */}
 
-          {upSkillingHide ? (
+          {/* {upSkillingHide ? (
             ""
           ) : (
             <div className={popup ? styles.formWrapper : styles.formWrapper}>
@@ -268,24 +268,27 @@ const FormInline = ({
                 <option value="Career switch">Career switch</option>
               </select>
             </div>
-          )}
+          )} */}
           {radio ? (
-          <div className={popup ? styles.formWrappers : styles.formWrapper}>
-            <select
-              id="platform"
-              name="platform"
-              required
-              value={query.platform}
-              onChange={handleParam()}
-            >
-              <option value="Select an option" selected
-                hidden>
-                Select an option
-              </option>
-              <option value="Data Science & AI Courses">Data Science & AI Courses</option>
-              <option value="Software (DSA & System Design)">Software (DSA & System Design)</option>
-            </select>
-            {/* <input
+            <div className={popup ? styles.formWrappers : styles.formWrapper}>
+              <select
+                id="platform"
+                name="platform"
+                required
+                value={query.platform}
+                onChange={handleParam()}
+              >
+                <option value="Select an option" selected hidden>
+                  Select an option
+                </option>
+                <option value="Data Science & AI Courses">
+                  Data Science & AI Courses
+                </option>
+                <option value="Software (DSA & System Design)">
+                  Software (DSA & System Design)
+                </option>
+              </select>
+              {/* <input
               id="Data Science Program"
               value="Data Science & AI Courses "
               name="platform"
@@ -304,10 +307,10 @@ const FormInline = ({
               onChange={handleParam()}
             />
             Software (DSA & System Design) */}
-          </div>
-        ) : (
-          ""
-        )}
+            </div>
+          ) : (
+            ""
+          )}
           {popup ? (
             <div className={popup ? styles.formWrappers : styles.formWrapper}>
               <input
