@@ -148,7 +148,7 @@ function SyllabusNew({
                   const splitString = data.split("(");
                   return (
                     <SwiperSlide
-                      className={active[i].value ? styles.ASlide : styles.slide}
+                      className={active[i].value ? styles.ASlide : styles.slide} key={i}
                     >
                       <span
                         key={i}

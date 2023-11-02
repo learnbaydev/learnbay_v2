@@ -1,12 +1,14 @@
-import React, { useState } from 'react'
-import styles from './VideoReview.module.css'
-import Image from 'next/image'
-import VideoPopup from '../../VideoPopup/VideoPopup'
+import React, { useState } from "react";
+import styles from "./VideoReview.module.css";
+import Image from "next/image";
+import VideoPopup from "../../VideoPopup/VideoPopup";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper";
 import 'swiper/swiper-bundle.css';
 
 const VideoReview = ({ idss }) => {
+
+
 
     const [popups, setPopups] = useState(false);
     const [video, setVideo] = useState(false);
@@ -18,25 +20,21 @@ const VideoReview = ({ idss }) => {
         setPopups(true);
     };
 
-    const images = [
-        "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/coursePage/video-review.webp",
-        "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/coursePage/video-review.webp",
-        "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/coursePage/video-review.webp",
-        "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/coursePage/video-review.webp"
+  const images = [
+    "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/coursePage/video-review.webp",
+    "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/coursePage/video-review.webp",
+    "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/coursePage/video-review.webp",
+    "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/coursePage/video-review.webp",
+  ];
 
 
-    ];
+  return (
+    <section className={styles.container}>
+      <VideoPopup triggers={video} setTriggers={setVideo} ids={idss} />
 
-    return (
-
-        <section className={styles.container}>
-
-            <VideoPopup triggers={video} setTriggers={setVideo} ids={idss} />
-
-            <h4>Career Stories & Reviews</h4>
-            <div className={styles.BoxDiv}>
-
-            <Swiper
+      <h4>Career Stories & Reviews</h4>
+      <div className={styles.BoxDiv}>
+        <Swiper
           pagination={{
             dynamicBullets: true,
             clickable: true,
@@ -55,8 +53,8 @@ const VideoReview = ({ idss }) => {
           }}
           modules={[Pagination]}
           className="mySwiper"
-         
         >
+
             {images.map((image, index) => (
                 <SwiperSlide key={index}>
                   <div className={`imgWrapper ${styles.imgwrapper}`}>
@@ -67,21 +65,14 @@ const VideoReview = ({ idss }) => {
                       style={{ height: "fit-content" }}
                       onClick={() => videoSHow()}
                   />
+
               </div>
-              </SwiperSlide>
-
-            ))}
-              
-
+            </SwiperSlide>
+          ))}
         </Swiper>
-          
+      </div>
+    </section>
+  );
+};
 
-
-
-            </div>
-
-        </section>
-    )
-}
-
-export default VideoReview
+export default VideoReview;

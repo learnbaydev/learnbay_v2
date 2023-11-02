@@ -98,7 +98,7 @@ const SliderTabs = ({ dataScience, dataScienceCounselling }) => {
             }}
             className={bfsiButton ? styles.ActiveSpan : styles.span}
           >
-            <div class={styles.img}>
+            <div className={styles.img}>
               <Image
                 src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/bfsi.png"
                 loading="lazy"
@@ -131,7 +131,7 @@ const SliderTabs = ({ dataScience, dataScienceCounselling }) => {
             }}
             className={healthCare ? styles.ActiveSpan : styles.span}
           >
-            <div class={styles.img}>
+            <div className={styles.img}>
               <Image
                 src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/bfsi.png"
                 loading="lazy"
@@ -166,7 +166,7 @@ const SliderTabs = ({ dataScience, dataScienceCounselling }) => {
             }}
             className={supplyChain ? styles.ActiveSpan : styles.span}
           >
-            <div class={styles.img}>
+            <div className={styles.img}>
               <Image
                 src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/bfsi.png"
                 loading="lazy"
@@ -197,7 +197,7 @@ const SliderTabs = ({ dataScience, dataScienceCounselling }) => {
             }}
             className={manufacture ? styles.ActiveSpan : styles.span}
           >
-            <div class={styles.img}>
+            <div className={styles.img}>
               <Image
                 src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/bfsi.png"
                 loading="lazy"

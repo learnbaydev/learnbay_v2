@@ -151,7 +151,7 @@ const Course = ({
                           modules={[Pagination]}
                           className="mySwiper"
                         >
-                          {courseDetail.courseDetails.map((viewAllData) => {
+                          {courseDetail.courseDetails.map((viewAllData, index) => {
                             const {
                               id,
                               title,
@@ -167,7 +167,7 @@ const Course = ({
                               newDesignOrange,
                             } = viewAllData;
                             return (
-                              <SwiperSlide className={styles.leftSide} key={id}>
+                              <SwiperSlide className={styles.leftSide} key={index}>
                                 <div
                                   key={id}
                                   className={

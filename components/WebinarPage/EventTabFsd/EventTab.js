@@ -47,7 +47,7 @@ const EventTab = ({ data }) => {
                 className="mySwiper"
               >
                 <div className={styles.gridPanel}>
-                  {FullStackDetails.map((data) => {
+                  {FullStackDetails.map((data, index) => {
                     const {
                       id,
                       title,
@@ -61,7 +61,7 @@ const EventTab = ({ data }) => {
                     let eventDateInfo = new Date(eventDate);
                     const url = `/event-fsd/${id}`;
                     return (
-                      <SwiperSlide className={styles.leftSide} key={id}>
+                      <SwiperSlide className={styles.leftSide} key={index}>
                         <Link href={url} passHref>
                           <div className={styles.contentBox}>
                             <div className={styles.headImg}>
