@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { BsCheckCircle } from "react-icons/bs";
 import { FaCheck, FaCheckCircle, FaRocket, FaUserShield, FaDownload } from "react-icons/fa";
 import { GiProgression } from "react-icons/gi";
 import { TbCertificate } from "react-icons/tb";
@@ -154,21 +153,8 @@ function WhyLearnbay({idss}) {
 
         {domainSpec ? (
           <div className={Styles.RightSideDomain}>
-            <Swiper
-              loop={true}
-              slidesPerView={1}
-              spaceBetween={0}
-              pagination={{
-                dynamicBullets: true,
-                clickable: true,
-              }}
-              // scrollbar={{ draggable: true }}
-              grabCursor={true}
-              style={{ width: "100%" }}
-              modules={[Pagination, Navigation, Scrollbar]}
-              className="mySwiper"
-            >
-              <SwiperSlide>
+      
+              
                 <div className={Styles.secondDiv}>
                   <div className={Styles.firstDiv}>
 
@@ -311,156 +297,7 @@ function WhyLearnbay({idss}) {
                   </div>
 
                 </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div className={Styles.secondDiv}>
-                  <div className={Styles.firstDiv}>
-
-                    <div className={Styles.iconBoxDesktop}>
-                      <div className={Styles.iconBox}>
-                        <div className={Styles.BoxIconinner}>
-                          <Image
-                            src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/bank.gif"
-                            loading="lazy"
-                            width={40}
-                            height={40}
-                          />
-                          <p>BFSI</p>
-                        </div>
-                        <div className={Styles.BoxIconinner}>
-                          <Image
-                            src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/heartbeat.gif"
-                            loading="lazy"
-                            width={40}
-                            height={40}
-                          />
-                          <p>HEALTHCARE</p>
-                        </div>
-                        <div className={Styles.BoxIconinner}>
-                          <Image
-                            src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/live.gif"
-                            loading="lazy"
-                            width={40}
-                            height={40}
-                          />
-                          <p>MARKETING & HR</p>
-                        </div>
-
-                        <div className={Styles.BoxIconinner}>
-                          <Image
-                            src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/live.gif"
-                            loading="lazy"
-                            width={40}
-                            height={40}
-                          />
-                          <p>MARKETING & HR</p>
-                        </div>
-                        <div className={Styles.BoxIconinner}>
-                          <Image
-                            src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/live.gif"
-                            loading="lazy"
-                            width={40}
-                            height={40}
-                          />
-                          <p>MARKETING & HR</p>
-                        </div>
-                        <div className={Styles.BoxIconinner}>
-                          <Image
-                            src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/live.gif"
-                            loading="lazy"
-                            width={40}
-                            height={40}
-                          />
-                          <p>MARKETING & HR</p>
-                        </div>
-
-
-                        <div className={Styles.iconButton}>
-                          <Button
-
-                            text="Download Domain Brochures"
-                            passIcon={<FaDownload className="bIconS" />}
-                          />
-                        </div>
-
-                      </div>
-
-
-
-                    </div>
-
-                    <div className={Styles.iconBoxMobile}>
-                      <div className={Styles.iconBox}>
-                        <div className={Styles.BoxIconinner}>
-                          <Image
-                            src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/bank.gif"
-                            loading="lazy"
-                            width={40}
-                            height={40}
-                          />
-                          <p>BFSI</p>
-                        </div>
-                        <div className={Styles.BoxIconinner}>
-                          <Image
-                            src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/heartbeat.gif"
-                            loading="lazy"
-                            width={40}
-                            height={40}
-                          />
-                          <p>HEALTHCARE</p>
-                        </div>
-                        <div className={Styles.BoxIconinner}>
-                          <Image
-                            src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/live.gif"
-                            loading="lazy"
-                            width={40}
-                            height={40}
-                          />
-                          <p>MARKETING & HR</p>
-                        </div>
-                        <div className={Styles.BoxIconinner}>
-                          <Image
-                            src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/delivery-truck.gif"
-                            loading="lazy"
-                            width={40}
-                            height={40}
-                          />
-                          <p>SUPPLYCHAIN</p>
-                        </div>
-                        <div className={Styles.BoxIconinner}>
-                          <Image
-                            src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/delivery-truck.gif"
-                            loading="lazy"
-                            width={40}
-                            height={40}
-                          />
-                          <p>SUPPLYCHAIN</p>
-                        </div>
-                        <div className={Styles.BoxIconinner}>
-                          <Image
-                            src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/delivery-truck.gif"
-                            loading="lazy"
-                            width={40}
-                            height={40}
-                          />
-                          <p>SUPPLYCHAIN</p>
-                        </div>
-                      </div>
-                      <div className={Styles.buttonDiv}>
-                        <Button
-                          bannerButton={true}
-                          text="Download Domain Brochures"
-                          passIcon={<FaDownload className="bIconS" />}
-                        />
-                      </div>
-                    </div>
-
-                  </div>
-
-                </div>
-              </SwiperSlide>
-
-            </Swiper>
+         
 
           </div>
 

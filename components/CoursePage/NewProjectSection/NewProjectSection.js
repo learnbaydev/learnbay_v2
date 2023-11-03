@@ -8,7 +8,7 @@ import "swiper/css/free-mode";
 import "swiper/css/scrollbar";
 import { Swiper, SwiperSlide } from "swiper/react";
 
-function NewProjectSection() {
+function NewProjectSection({ projectSection }) {
   const [mobile, setMobile] = useState(false);
   useEffect(() => {
     let width = window.innerWidth;
@@ -52,221 +52,68 @@ function NewProjectSection() {
           modules={[Pagination]}
           className="mySwiper"
         >
-          <SwiperSlide>
-            <div className={Styles.Box}>
-              <div className={Styles.boxGreen}>26 Hours</div>
-              <div className={Styles.content}>
-                <div>
-                  <Image
-                    src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/image+170.png"
-                    loading="lazy"
-                    width="215"
-                    height="79"
-                    alt="microsoft"
-                  />
+          {projectSection.map((data, index) => {
+            const {
+              id,
+              duration,
+              logo,
+              heading,
+              img,
+              para,
+              toolImg,
+              learnMore
+
+            } = data;
+
+            return (
+              <SwiperSlide key={index}>
+                <div className={Styles.Box}>
+                  <div className={Styles.boxGreen}>{data.duration}</div>
+                  <div className={Styles.content}>
+                    <div>
+                      <Image
+                        src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/image+170.png"
+                        loading="lazy"
+                        width="215"
+                        height="79"
+                        alt="microsoft"
+                      />
+                    </div>
+                    <p className={Styles.heading}>
+                      Career progression planning of employees with workforce
+                      defections & efficiency
+                    </p>
+                    <div className={Styles.strip}>
+                      <Image
+                        src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/Group+502.png"
+                        loading="lazy"
+                        width="370"
+                        height="41"
+                        alt="microsoft"
+                      />
+                    </div>
+                    <p className={Styles.para}>
+                      BMW allows existing customers to sell used cars but many
+                      competitors are now offering better resale values...
+                    </p>
+                    <div className={Styles.ImgBox}>
+                      <Image
+                        src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/iconProject.webp"
+                        loading="lazy"
+                        width="420"
+                        height="50"
+                        alt="microsoft"
+                      />
+                    </div>
+                    <p className={Styles.blue}>Learn more</p>
+                  </div>
                 </div>
-                <p className={Styles.heading}>
-                  Career progression planning of employees with workforce
-                  defections & efficiency
-                </p>
-                <div className={Styles.strip}>
-                  <Image
-                    src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/Group+502.png"
-                    loading="lazy"
-                    width="370"
-                    height="41"
-                    alt="microsoft"
-                  />
-                </div>
-                <p className={Styles.para}>
-                  BMW allows existing customers to sell used cars but many
-                  competitors are now offering better resale values...
-                </p>
-                <div className={Styles.ImgBox}>
-                  <Image
-                    src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/iconProject.webp"
-                    loading="lazy"
-                    width="420"
-                    height="50"
-                    alt="microsoft"
-                  />
-                </div>
-                <p className={Styles.blue}>Learn more</p>
-              </div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className={Styles.Box}>
-              <div className={Styles.boxGreen}>26 Hours</div>
-              <div className={Styles.content}>
-                <div>
-                  <Image
-                    src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/image+170.png"
-                    loading="lazy"
-                    width="215"
-                    height="79"
-                    alt="microsoft"
-                  />
-                </div>
-                <p className={Styles.heading}>
-                  Career progression planning of employees with workforce
-                  defections & efficiency
-                </p>
-                <div className={Styles.strip}>
-                  <Image
-                    src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/Group+502.png"
-                    loading="lazy"
-                    width="370"
-                    height="41"
-                    alt="microsoft"
-                  />
-                </div>
-                <p className={Styles.para}>
-                  BMW allows existing customers to sell used cars but many
-                  competitors are now offering better resale values...
-                </p>
-                <div className={Styles.ImgBox}>
-                  <Image
-                    src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/iconProject.webp"
-                    loading="lazy"
-                    width="420"
-                    height="50"
-                    alt="microsoft"
-                  />
-                </div>
-                <p className={Styles.blue}>Learn more</p>
-              </div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className={Styles.Box}>
-              <div className={Styles.boxGreen}>26 Hours</div>
-              <div className={Styles.content}>
-                <div>
-                  <Image
-                    src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/image+170.png"
-                    loading="lazy"
-                    width="215"
-                    height="79"
-                    alt="microsoft"
-                  />
-                </div>
-                <p className={Styles.heading}>
-                  Career progression planning of employees with workforce
-                  defections & efficiency
-                </p>
-                <div className={Styles.strip}>
-                  <Image
-                    src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/Group+502.png"
-                    loading="lazy"
-                    width="370"
-                    height="41"
-                    alt="microsoft"
-                  />
-                </div>
-                <p className={Styles.para}>
-                  BMW allows existing customers to sell used cars but many
-                  competitors are now offering better resale values...
-                </p>
-                <div className={Styles.ImgBox}>
-                  <Image
-                    src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/iconProject.webp"
-                    loading="lazy"
-                    width="420"
-                    height="50"
-                    alt="microsoft"
-                  />
-                </div>
-                <p className={Styles.blue}>Learn more</p>
-              </div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className={Styles.Box}>
-              <div className={Styles.boxGreen}>26 Hours</div>
-              <div className={Styles.content}>
-                <div>
-                  <Image
-                    src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/image+170.png"
-                    loading="lazy"
-                    width="215"
-                    height="79"
-                    alt="microsoft"
-                  />
-                </div>
-                <p className={Styles.heading}>
-                  Career progression planning of employees with workforce
-                  defections & efficiency
-                </p>
-                <div className={Styles.strip}>
-                  <Image
-                    src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/Group+502.png"
-                    loading="lazy"
-                    width="370"
-                    height="41"
-                    alt="microsoft"
-                  />
-                </div>
-                <p className={Styles.para}>
-                  BMW allows existing customers to sell used cars but many
-                  competitors are now offering better resale values...
-                </p>
-                <div className={Styles.ImgBox}>
-                  <Image
-                    src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/iconProject.webp"
-                    loading="lazy"
-                    width="420"
-                    height="50"
-                    alt="microsoft"
-                  />
-                </div>
-                <p className={Styles.blue}>Learn more</p>
-              </div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className={Styles.Box}>
-              <div className={Styles.boxGreen}>26 Hours</div>
-              <div className={Styles.content}>
-                <div>
-                  <Image
-                    src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/image+170.png"
-                    loading="lazy"
-                    width="215"
-                    height="79"
-                    alt="microsoft"
-                  />
-                </div>
-                <p className={Styles.heading}>
-                  Career progression planning of employees with workforce
-                  defections & efficiency
-                </p>
-                <div className={Styles.strip}>
-                  <Image
-                    src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/Group+502.png"
-                    loading="lazy"
-                    width="370"
-                    height="41"
-                    alt="microsoft"
-                  />
-                </div>
-                <p className={Styles.para}>
-                  BMW allows existing customers to sell used cars but many
-                  competitors are now offering better resale values...
-                </p>
-                <div className={Styles.ImgBox}>
-                  <Image
-                    src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/iconProject.webp"
-                    loading="lazy"
-                    width="420"
-                    height="50"
-                    alt="microsoft"
-                  />
-                </div>
-                <p className={Styles.blue}>Learn more</p>
-              </div>
-            </div>
-          </SwiperSlide>
+              </SwiperSlide>
+            );
+
+          })}
+
+
         </Swiper>
       </div>
     </section>
