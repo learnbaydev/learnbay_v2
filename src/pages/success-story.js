@@ -49,7 +49,7 @@ export default function Home() {
       <main>
         {" "}
         <Navbar popup={true} dataScienceCounselling={true} radio={true} />
-        <TrainerSection link="D-gcPaK_-x4" />
+        <TrainerSection idss="bfl64ANfSV0" />
         <LinkedinReview />
         <GoogleReview />
         <VideoReview idss="bfl64ANfSV0" />

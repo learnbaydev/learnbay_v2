@@ -12,7 +12,7 @@ const VideoReview = ({ idss }) => {
 
     const [popups, setPopups] = useState(false);
     const [video, setVideo] = useState(false);
-    const videoSHow = () => {z
+    const videoSHow = () => {
         setVideo(true);
     };
     // const el = useRef(null);

@@ -767,7 +767,7 @@
   height: max-content; /* Set the height to 100% to ensure it covers the entire parent */
   background: white;
   box-sizing: border-box;
-  border: 5px solid transparent;
+  border: 2px solid transparent;
   background-clip: padding-box;
 }
 .newSliderWrap::after,
