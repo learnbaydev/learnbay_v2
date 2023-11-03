@@ -2,6 +2,7 @@ import dynamic from "next/dynamic";
 import Head from "next/head";
 import { useEffect, useState } from "react";
 import { DataScienceMastersinCS } from "../../../Data/DataScienceAiMastersinCS";
+
 const MentorsSection = dynamic (()=>
 import ("../../../components/MastersCourse/MentorsSection/MentorsSection")) ;
 
@@ -257,7 +258,7 @@ const Blockchain = () => {
         <MentorsSection />
         <SliderTab />
         <PlacementCall />
-        <NewProjectSection />
+        <NewProjectSection projectSection={DataScienceMastersinCS[0].projectSection} />
         {/* <Project
           projectData={DataScienceMastersinCS[0].project}
           tools="12+"
