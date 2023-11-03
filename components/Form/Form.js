@@ -270,7 +270,7 @@ const Form = ({
     <div className={styles.App}>
       <form onSubmit={upSkillingHide ? formSubmitDownload : formSubmit}>
         <div className={styles.formWrapper}>
-          <label for="Name">
+          <label htmlFor="Name">
             Name<span className={styles.spanLabel}>*</span>
           </label>
           <input
@@ -285,7 +285,7 @@ const Form = ({
           />
         </div>
         <div className={styles.formWrapper}>
-          <label for="Name">
+          <label htmlFor="E-Mail">
             E-Mail<span className={styles.spanLabel}>*</span>
           </label>
           <input
@@ -299,7 +299,7 @@ const Form = ({
           />
         </div>
         <div className={styles.formWrapper}>
-          <label for="Name">
+          <label htmlFor="Phone">
             Phone Number<span className={styles.spanLabel}>*</span>
           </label>
           <PhoneInput
@@ -330,7 +330,7 @@ const Form = ({
           ""
         ) : (
           <div className={popup ? styles.formWrappers : styles.formWrappers}>
-            <label for="Name">
+            <label htmlFor="Name">
               Upskilling Objective<span className={styles.spanLabel}>*</span>
             </label>
             <select
@@ -366,7 +366,7 @@ const Form = ({
           ""
         ) : (
           <div className={popup ? styles.formWrappers : styles.formWrappers}>
-            <label for="Name">
+            <label htmlFor="Name">
               Timeline<span className={styles.spanLabel}>*</span>
             </label>
             <select
@@ -430,7 +430,7 @@ const Form = ({
 
         {radio ? (
           <div className={popup ? styles.formWrappers : styles.formWrapper}>
-            <label for="Name">
+            <label htmlFor="Name">
               Course Preference<span className={styles.spanLabel}>*</span>
             </label>
             <select
@@ -438,9 +438,10 @@ const Form = ({
               name="platform"
               required
               value={query.platform}
+              defaultValue
               onChange={handleParam()}
             >
-              <option value="Select an option" selected hidden>
+              <option value="Select an option" defaultValue hidden>
                 Select an option
               </option>
               <option value="Data Science & AI Courses">
