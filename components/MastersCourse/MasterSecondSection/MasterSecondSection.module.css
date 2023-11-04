@@ -19,8 +19,12 @@
   width: 150px;
   height: 8px;
   margin: auto;
-  background: radial-gradient(circle at 50% -450%, rgba(255, 255, 255, 0) 0%, rgba(0, 114, 188, 0.41) 51.42%, rgba(255, 255, 255, 0) 100%)
-
+  background: radial-gradient(
+    circle at 50% -450%,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(0, 114, 188, 0.41) 51.42%,
+    rgba(255, 255, 255, 0) 100%
+  );
 }
 
 .BoldP {
@@ -50,5 +54,46 @@
   padding: 35px 10px 35px 25px;
 }
 
-.imgbox {
+.imgMobile {
+  display: none;
+}
+
+@media (max-width: 641px) {
+  .mainBox {
+    margin: 32px 20px 55px 20px;
+  }
+
+  .firstbox {
+    display: block;
+  }
+  .secondbox {
+    display: block;
+  }
+
+  .NormalP {
+    font-size: 11px;
+    padding-top: 0;
+  }
+  .firstbox {
+    padding: 0px 15px;
+  }
+  .BoldP {
+    font-weight: 600;
+    font-size: 30px;
+    padding-top: 10px;
+  }
+
+  .secondbox {
+    padding: 10px 5px;
+  }
+
+  .imgDesc {
+    display: none;
+  }
+
+  .imgMobile{
+    display: block;
+    margin-top: 10px;
+  }
+
 }

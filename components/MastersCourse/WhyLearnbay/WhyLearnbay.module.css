@@ -46,8 +46,8 @@
 }
 
 .RightSide {
-  display: grid;
-  grid-template-columns: 66% 31%;
+  display: flex;
+  flex-direction: column;
   gap: 20px;
   border-radius: 10px;
   border: 3px solid rgba(0, 114, 188, 0.32);
@@ -106,8 +106,8 @@
 }
 
 .firstBox {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 66% 31%;
   gap: 20px;
 }
 
@@ -225,6 +225,12 @@
   display: none;
 }
 @media (max-width: 641px) {
+
+  .firstBox {
+
+    grid-template-columns: 100%;
+
+  }
   .container {
     padding: 10px;
   }

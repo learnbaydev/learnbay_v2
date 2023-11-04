@@ -14,22 +14,17 @@ import Form from "../../Form/Form";
 import Popup from "../../Popup/Popup";
 import styles from "./FirstSection.module.css";
 const Button = dynamic(() => import("../../Global/Button/Button"));
-
 const FirstSection = ({
   dataScience,
   radio,
-
   dataScienceCounselling,
 }) => {
   const [popups, setPopups] = useState(false);
   const [mobile, setMobile] = useState(false);
- 
   const el = useRef(null);
-
   const popupShow = () => {
     setPopups(true);
   };
-
   // useEffect(() => {
   //   const typed = new Typed(el.current, {
   //     strings: [
@@ -45,13 +40,11 @@ const FirstSection = ({
   //     loop: true,
   //     showCursor: false,
   //   });
-
   //   // Destropying
   //   return () => {
   //     typed.destroy();
   //   };
   // }, []);
-
   return (
     <>
       <Popup
@@ -167,7 +160,6 @@ const FirstSection = ({
                 </p>
               </div> */}
             </div>
-
             <div className={styles.secondLeft}>
               <div className={styles.imgWrapperDesktop}>
                 <Image
@@ -214,7 +206,6 @@ const FirstSection = ({
                 </div>
               </div>
             </div>
-
             <div className={styles.secondLeft}>
               <div className={styles.imgWrapperDesktop}>
                 <Image
@@ -227,17 +218,15 @@ const FirstSection = ({
             </div>
           </div>
         </SwiperSlide>
-
         <SwiperSlide className={styles.slide}>
           <div className={styles.forth}>
             <div className={styles.forthFirstLeft}>
               <p className={styles.SecondBlink}>
-              Real project Real Impact 
+              Real project Real Impact
               </p>
               <h1 className={styles.h1}>Work on Real time Project and Gain Practical experience</h1>
-
               <p className={styles.blinkMobile}>
-              Work on industry project like a data scientist and SDE with our dedicated <span>#ProjectLab</span>  
+              Work on industry project like a data scientist and SDE with our dedicated <span>#ProjectLab</span>
               </p>
               <div className={styles.imgWrapperMobile}>
                 <Image
@@ -248,7 +237,7 @@ const FirstSection = ({
                 />
               </div>
               <p className={styles.blink}>
-              Work on industry project like a data scientist and SDE with our dedicated <span>#ProjectLab</span>  
+              Work on industry project like a data scientist and SDE with our dedicated <span>#ProjectLab</span>
               </p>
               <p className={styles.iconText}><PiCertificate className={styles.iconYellow} />Domain Electives and Project certification from industry</p>
               <div className={styles.btnWrapper}>
@@ -261,7 +250,6 @@ const FirstSection = ({
                 </a>
               </div>
             </div>
-
             <div className={styles.secondLeft}>
               <div className={styles.imgWrapperDesktop}>
                 <Image
@@ -278,5 +266,4 @@ const FirstSection = ({
     </>
   );
 };
-
 export default FirstSection;

@@ -39,13 +39,13 @@ const SyllabusNew = dynamic(() =>
 );
 
 const Certificate = dynamic(() =>
-  import("../../../components/CoursePage/Certificate/Certificate")
+  import("../../../components/MastersCourse/Certificate/Certificate")
 );
 const FAQNew = dynamic(() =>
   import("../../../components/CoursePage/FAQNew/FAQNew")
 );
 const SecondNavbar = dynamic(() =>
-  import("../../../components/CoursePage/SecondNavbar/SecondNavbar")
+  import("../../../components/MastersCourse/SecondNavbar/SecondNavbar")
 );
 
 const WhyLearnbay = dynamic(() =>
@@ -75,6 +75,8 @@ const NewProjectSection = dynamic(() =>
 );
 const JobAbroad = dynamic (()=>
 import ("../../../components/MastersCourse/JobAbroad/JobAbroad"))
+
+import GetHire from "../../../components/MastersCourse/GetHire/GetHire";
 
 const Blockchain = () => {
   // POPUP GET METHOD
@@ -184,15 +186,10 @@ const Blockchain = () => {
         />
 
         <WhyLearnbay idss="bfl64ANfSV0" />
-        <Gethire />
 
-        <FourthSection
-          placementData={DataScienceMastersinCS[0].fourthSection}
-          redirectDS={true}
-          dataScience={true}
-          titleCourse="Data Science Placement Report"
-          brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Placement+Report.pdf"
-        />
+        <GetHire/>
+       
+     
 
         <ContactCounsellor />
 
@@ -236,7 +233,7 @@ const Blockchain = () => {
         <MentorsSection />
         <PlacementCall />
         <NewProjectSection projectSection={DataScienceMastersinCS[0].projectSection} />
-
+\
         <FAQNew FAQNewData={DataScienceMastersinCS[0].faq} />
         <SeventhSection />
         <Footer />
