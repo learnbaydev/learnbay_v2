@@ -84,6 +84,8 @@ const SliderTab = dynamic(() =>
 const NewProjectSection = dynamic(() =>
   import("../../../components/CoursePage/NewProjectSection/NewProjectSection")
 );
+const JobAbroad = dynamic (()=>
+import ("../../../components/MastersCourse/JobAbroad/JobAbroad"))
 
 const Blockchain = () => {
   // POPUP GET METHOD
@@ -186,7 +188,9 @@ const Blockchain = () => {
         <SecondSection
           SecondSectionData={DataScienceMastersinCS[0].secondSection}
         />
+        <JobAbroad/>
         <SecondNavbar />
+
 
         <WhoProgram
           leftImage="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/masterPage/who-program.webp"
