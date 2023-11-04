@@ -12,12 +12,12 @@ const Certificate = ({
     ""
   ) : (
     <div className={`${styles.Certificate}`}>
-      <h4 className={styles.infop}>Globally Recognized Program</h4>
-      <p className={styles.ptop}>Sponsored by IBM and Microsoft</p>
+      <h4 className={styles.infop}>Globally Recognized Degree</h4>
+
       <CertificateTabAdvance
         threeCertificate={threeCertificate}
         oneCertificate={oneCertificate}
-        twoCertificate={twoCertificate}
+   
         data={data}
       />
     </div>
