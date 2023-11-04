@@ -34,9 +34,6 @@ const FeeSection = dynamic(() =>
 const FourthSection = dynamic(() =>
   import("../../../components/CoursePage/FourthSection/FourthSection")
 );
-const Project = dynamic(() =>
-  import("../../../components/CoursePage/Project/Project")
-);
 const SyllabusNew = dynamic(() =>
   import("../../../components/CoursePage/Syllabus/MasterSyllabus")
 );
@@ -47,10 +44,6 @@ const Certificate = dynamic(() =>
 const FAQNew = dynamic(() =>
   import("../../../components/CoursePage/FAQNew/FAQNew")
 );
-const BatchDetails = dynamic(() =>
-  import("../../../components/CoursePage/BatchDetails/BatchDetails")
-);
-
 const SecondNavbar = dynamic(() =>
   import("../../../components/MastersCourse/SecondNavbar/SecondNavbar")
 );
@@ -60,7 +53,7 @@ const WhyLearnbay = dynamic(() =>
 );
 
 const Gethire = dynamic(() =>
-  import("../../../components/CoursePage/Gethired/Gethire")
+  import("../../../components/MastersCourse/GetHire/GetHire")
 );
 
 const BottomBar = dynamic(() =>
@@ -75,10 +68,6 @@ const ContactCounsellor = dynamic(() =>
 
 const PlacementCall = dynamic(() =>
   import("../../../components/CoursePage/PlacementCall/PlacementCall")
-);
-
-const SliderTab = dynamic(() =>
-  import("../../../components/CoursePage/SliderTabs/SliderTabs")
 );
 
 const NewProjectSection = dynamic(() =>
@@ -172,8 +161,6 @@ const Blockchain = () => {
       <main>
         <Navbar popup={true} dataScienceCounselling={true} />
         <FirstSection
-          // FirstTyped="Guaranteed Interview Calls"
-          // SecondTyped="Capstone Project Certificate"
           ThirdTyped="Live Interactive Classes"
           dataScience={true}
           titleCourse="Advanced Data Science and AI Program with domain specialization"
@@ -182,7 +169,6 @@ const Blockchain = () => {
           FirstRightImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/coursepageB.webp"
           firstToparaImg="with domain specialization"
           firstHeading="Advanced Data Science and AI Program"
-          // firstTopPara="Specialization over generalization"
           idss="bfl64ANfSV0"
         />
         <MasterSecondSection/>
@@ -239,29 +225,10 @@ const Blockchain = () => {
           FeeContent6="No additional cost"
           dataScienceCounselling={true}
         />
-        {/* <DomainSection
-          dataScience={true}
-          domainSectionData={DataScienceMastersinCS[0].domainSection}
-        /> */}
 
         <MentorsSection />
-        <SliderTab />
         <PlacementCall />
         <NewProjectSection projectSection={DataScienceMastersinCS[0].projectSection} />
-        {/* <Project
-          projectData={DataScienceMastersinCS[0].project}
-          tools="12+"
-          dataScience={true}
-          titleCourse="Data Science Project Brochure"
-          brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Data+Science+and+AI+Projects.pdf"
-          project="15+"
-        /> */}
-
-        {/* {batchDateData === "" ? (
-          ""
-        ) : (
-          <BatchDetails batchDetails={batchDateData.batchDetails} />
-        )} */}
 
         <FAQNew FAQNewData={DataScienceMastersinCS[0].faq} />
         <SeventhSection />

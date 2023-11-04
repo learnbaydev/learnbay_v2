@@ -1,22 +1,20 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { TbListDetails } from "react-icons/tb";
-import { Navigation, Pagination } from "swiper";
+import { Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import styles from "./Course.module.css";
 
 import { FaDownload } from "react-icons/fa";
 import "swiper/css";
 import "swiper/css/free-mode";
-import "swiper/css/navigation";
 import "swiper/css/pagination";
 import Form from "../../Form/Form";
 import Popup from "../../Popup/Popup";
 import { courseDetails } from "./courseDetails";
 
-import { BsCheckLg } from "react-icons/bs";
+import { BsCheckLg, BsFire } from "react-icons/bs";
 import { BiTimeFive } from "react-icons/bi";
-import { IoTimeOutline } from "react-icons/io5";
 
 const Course = ({
   dataScience,
@@ -32,9 +30,7 @@ const Course = ({
   const [CourseLoop, setCourseLoop] = useState([
     { title: "Popular Courses", value: true },
     { title: "Certification Program", value: false },
-    // { title: "Software Development", value: false },
     { title: "Master's Degree Program", value: false },
-    // { title: "View All", value: false },
   ]);
 
   const menuChange = (title, index) => {
@@ -123,6 +119,11 @@ const Course = ({
                   CourseLoop[index].value ? styles.ActiveSpan : styles.span
                 }
               >
+                {CourseData.title === "Master's Degree Program" ? (
+                  <BsFire style={{ color: "red", marginRight: "5px" }} />
+                ) : (
+                  ""
+                )}
                 {CourseData.title}
               </span>
             );
@@ -138,12 +139,11 @@ const Course = ({
                     <div key={index} className={styles.divBox}>
                       <h5 className={styles.h5font}>
                         {courseDetail.courseName}
-                        {/* ({courseDetail.courseDetails.length}) */}
                       </h5>
                       <div className={styles.gridPanel}>
                         <Swiper
                           slidesPerView={value}
-                          spaceBetween={mobile ? 20 : 30}
+                          spaceBetween={mobile ? 10 : 30}
                           pagination={{
                             clickable: true,
                           }}
@@ -151,75 +151,61 @@ const Course = ({
                           modules={[Pagination]}
                           className="mySwiper"
                         >
-                          {courseDetail.courseDetails.map((viewAllData, index) => {
-                            const {
-                              id,
-                              title,
-                              title1,
-                              img,
-                              para,
-                              link1,
-                              titleCourse,
-                              brochureLinks,
-                              courseTime,
-                              Green,
-                              newDesign,
-                              newDesignOrange,
-                            } = viewAllData;
-                            return (
-                              <SwiperSlide className={styles.leftSide} key={index}>
-                                <div
-                                  key={id}
-                                  className={
-                                    newDesignOrange
-                                      ? styles.newSliderWrapOrange
-                                      :
-                                    newDesign
-                                      ? styles.newSliderWrap
-                                      : styles.SliderWrap
-                                  }
+                          {courseDetail.courseDetails.map(
+                            (viewAllData, index) => {
+                              const {
+                                id,
+                                title,
+                                title1,
+                                img,
+                                para,
+                                link1,
+                                titleCourse,
+                                brochureLinks,
+                                courseTime,
+                                Green,
+                                newDesign,
+                                newDesignOrange,
+                              } = viewAllData;
+                              return (
+                                <SwiperSlide
+                                  className={styles.leftSide}
+                                  key={index}
                                 >
-                                  {newDesign ? (
-                                    <>
-                                      {" "}
-                                      <div className={ newDesignOrange ? styles.OrangeLeftBorder : styles.leftBorder}></div>
-                                      <div className={ newDesignOrange ? styles.OrangeRightBorder : styles.rightBorder}></div>
-                                    </>
-                                  ) : (
-                                    ""
-                                  )}
-                                  {newDesign ? (
-                                    ""
-                                  ) : (
-                                    <a href={link1} className={styles.imgWrap}>
-                                      <div className="bgWrap">
-                                        <Image
-                                          src={img}
-                                          fill={true}
-                                          quality={100}
-                                          unoptimized={true}
-                                          style={{ objectFit: "cover" }}
-                                          alt="data science course"
-                                        />
-                                      </div>
-                                    </a>
-                                  )}
                                   <div
-                                    className={styles.contButton}
-                                    style={
-                                      newDesign
-                                        ? { borderRadius: "20px" }
-                                        : {
-                                            borderRadius: "8px",
-                                            width: "92%",
-                                            marginTop: "-12px",
-                                            zIndex: "0",
-                                            boxShadow:
-                                              "rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px",
-                                          }
+                                    key={id}
+                                    className={
+                                      newDesignOrange
+                                        ? styles.newSliderWrapOrange
+                                        : newDesign
+                                        ? styles.newSliderWrap
+                                        : styles.SliderWrap
                                     }
                                   >
                                     {newDesign ? (
+                                      <>
+                                        {" "}
+                                        <div
+                                          className={
+                                            newDesignOrange
+                                              ? styles.OrangeLeftBorder
+                                              : styles.leftBorder
+                                          }
+                                        ></div>
+                                        <div
+                                          className={
+                                            newDesignOrange
+                                              ? styles.OrangeRightBorder
+                                              : styles.rightBorder
+                                          }
+                                        ></div>
+                                      </>
+                                    ) : (
+                                      ""
+                                    )}
+                                    {newDesign ? (
+                                      ""
+                                    ) : (
                                       <a
                                         href={link1}
                                         className={styles.imgWrap}
@@ -235,118 +221,140 @@ const Course = ({
                                           />
                                         </div>
                                       </a>
-                                    ) : (
-                                      ""
                                     )}
-                                    <div className={styles.contentBox}>
-                                      <div className={styles.headWrapper}>
-                                        <h6
-                                          className={
-                                            Green
-                                              ? styles.mainHeadGreen
-                                              : styles.mainHead
-                                          }
+                                    <div
+                                      className={styles.contButton}
+                                      style={
+                                        newDesign
+                                          ? { borderRadius: "20px" }
+                                          : {
+                                              borderRadius: "8px",
+                                              width: "92%",
+                                              marginTop: "-12px",
+                                              zIndex: "0",
+                                              boxShadow:
+                                                "rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px",
+                                            }
+                                      }
+                                    >
+                                      {newDesign ? (
+                                        <a
+                                          href={link1}
+                                          className={styles.imgWrap}
                                         >
-                                          {title}
-                                        </h6>
-                                        <h6
-                                          className={
-                                            Green
-                                              ? styles.mainHeadGreen
-                                              : styles.mainHead
-                                          }
-                                        >
-                                          {title1}
-                                        </h6>
+                                          <div className="bgWrap">
+                                            <Image
+                                              src={img}
+                                              fill={true}
+                                              quality={100}
+                                              unoptimized={true}
+                                              style={{ objectFit: "cover" }}
+                                              alt="data science course"
+                                            />
+                                          </div>
+                                        </a>
+                                      ) : (
+                                        ""
+                                      )}
+                                      <div className={styles.contentBox}>
+                                        <div className={styles.headWrapper}>
+                                          <h6
+                                            className={
+                                              Green
+                                                ? styles.mainHeadGreen
+                                                : styles.mainHead
+                                            }
+                                          >
+                                            {title}
+                                          </h6>
+                                          <h6
+                                            className={
+                                              Green
+                                                ? styles.mainHeadGreen
+                                                : styles.mainHead
+                                            }
+                                          >
+                                            {title1}
+                                          </h6>
+                                        </div>
+                                        <hr className={styles.hr} />
+                                        <div className={styles.paraDiv}>
+                                          <p className={styles.singleP}>
+                                            <BiTimeFive
+                                              className={styles.checkCircle}
+                                            />
+                                            {para[0]}
+                                          </p>
+                                          <p className={styles.singleP}>
+                                            <BsCheckLg
+                                              className={styles.checkIcon}
+                                            />
+                                            {para[1]}
+                                          </p>
+                                          <p className={styles.singleP}>
+                                            <BsCheckLg
+                                              className={styles.checkIcon}
+                                            />
+                                            {para[2]}
+                                          </p>
+                                        </div>
+                                        <hr className={styles.hr1} />
                                       </div>
-                                      <hr className={styles.hr} />
-                                      <div className={styles.paraDiv}>
-                                        <p className={styles.singleP}>
-                                          <BiTimeFive
-                                            className={styles.checkCircle}
-                                          />
-                                          {/* <IoTimeOutline
-                                            className={styles.timeIcon}
-                                          />{" "} */}
-                                          {para[0]} | {courseTime}
-                                        </p>
-                                        {/* <p>
-                                        <AiOutlineFundProjectionScreen
-                                          className={styles.checkCircle}
-                                          style={{ color: "#edb552" }}
-                                        />
-                                        {para[1]}
-                                      </p> */}
-                                        <p className={styles.singleP}>
-                                          {/* <TbCurrencyRupee
-                                            className={styles.checkCircle}
-                                          /> */}
-                                          <BsCheckLg
-                                            className={styles.checkIcon}
-                                          />
-                                          {para[2]}
-                                        </p>
-                                        <p className={styles.singleP}>
-                                          {/* <TbCurrencyRupee
-                                            className={styles.checkCircle}
-                                          /> */}
-                                          <BsCheckLg
-                                            className={styles.checkIcon}
-                                          />
-                                          {para[2]}
-                                        </p>
-                                      </div>
-                                      <hr className={styles.hr1} />
-                                    </div>
-                                    <div className={styles.btnWrapper}>
-                                      <a
-                                        onClick={() => {
-                                          setTitleCourse(titleCourse);
-                                          setBrochureLinks(brochureLinks);
-                                          popupShow();
-                                        }}
-                                      >
-                                        <button
-                                          className="outLineBtn1"
-                                          style={{
-                                            color: "#2979AD",
-                                            background: "#fff",
-                                            borderRadius: "0px 0px 0px 20px",
+                                      <div className={styles.btnWrapper}>
+                                        <a
+                                          onClick={() => {
+                                            setTitleCourse(titleCourse);
+                                            setBrochureLinks(brochureLinks);
+                                            popupShow();
                                           }}
                                         >
-                                          Brochure
-                                          <FaDownload
-                                            className="bIcon"
-                                            style={{ color: "#2979AD" }}
-                                          />
-                                        </button>
-                                      </a>
-                                      <hr className={styles.btnLine} />
-                                      <a href={link1} className={styles.link1}>
-                                        <button
-                                          className={
-                                            Green
-                                              ? styles.green
-                                              : styles.fillBtn
-                                          }
-                                          style={
-                                            newDesign
-                                              ? { borderRadius: "0 0 20px 0" }
-                                              : { borderRadius: "0 0 8px 0px" }
-                                          }
+                                          <button
+                                            className="outLineBtn1"
+                                            style={{
+                                              color: "#2979AD",
+                                              background: "#fff",
+                                              borderRadius: "0px 0px 0px 20px",
+                                            }}
+                                          >
+                                            Brochure
+                                            <FaDownload
+                                              className="bIcon"
+                                              style={{ color: "#2979AD" }}
+                                            />
+                                          </button>
+                                        </a>
+                                        <hr className={styles.btnLine} />
+                                        <a
+                                          href={link1}
+                                          className={styles.link1}
                                         >
-                                          View Details
-                                          <TbListDetails
-                                            className={styles.bellIcon}
-                                          />
-                                        </button>
-                                      </a>
+                                          <button
+                                            className={
+                                              Green
+                                                ? styles.green
+                                                : styles.fillBtn
+                                            }
+                                            style={
+                                              newDesign
+                                                ? { borderRadius: "0 0 20px 0" }
+                                                : {
+                                                    borderRadius: "0 0 8px 0px",
+                                                  }
+                                            }
+                                          >
+                                            View Details
+                                            <TbListDetails
+                                              className={styles.bellIcon}
+                                            />
+                                          </button>
+                                        </a>
+                                      </div>
                                     </div>
                                   </div>
-                                </div>
-                              </SwiperSlide>
-                            );
-                          })}
+                                </SwiperSlide>
+                              );
+                            }
+                          )}
                         </Swiper>
                       </div>
                     </div>

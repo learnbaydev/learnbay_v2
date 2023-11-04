@@ -46,10 +46,10 @@ export const DataScienceCourseData = [
       {
         id: 1,
         name: "Preksha Mishra",
-        working: "Working at HCL",
-        link: "D-gcPaK_-x4",
+        working: "HCL",
+        link: "vSjfKdIzUjY",
         proImg:
-          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/reviewNew.webp",
+          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/preksha-testimonial.webp",
         sDesc:
           "I had a great learning experience at Learnbay. The faculties here are top notch. Right from enrollment to getting a good job ...",
         lDesc:
@@ -60,11 +60,11 @@ export const DataScienceCourseData = [
       },
       {
         id: 2,
-        name: "Mohammad Israr",
-        working: "Working at TCS",
-        link: "D-gcPaK_-x4",
+        name: "Shubham Kumar",
+        working: "Cendrol Technology",
+        link: "JoKquvfAhZU",
         proImg:
-          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/reviewNew.webp",
+          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/Shubham-kumar-thumb+.webp",
         sDesc:
           "Thanks to the Learnbay data science course and outstanding assistance, I could ace the TCS interview and secure a job...",
         lDesc:
@@ -75,11 +75,11 @@ export const DataScienceCourseData = [
       },
       {
         id: 4,
-        name: "Ritish Kumar",
-        working: "Working at Capgemini",
-        link: "D-gcPaK_-x4",
+        name: "Arvind Kumar",
+        working: "The Math Company",
+        link: "hewBtR_WoDM",
         proImg:
-          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/reviewNew.webp",
+          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/aravind-k-thumb.webp",
         sDesc:
           "I always had a dilemma about how to switch to the IT field until I stumbled upon the foundation data science course offered by Learnbay...",
         lDesc:
@@ -90,11 +90,11 @@ export const DataScienceCourseData = [
       },
       {
         id: 5,
-        name: "Sourabh Mourya",
-        working: "Working at HCL",
-        link: "D-gcPaK_-x4",
+        name: "Jaya sinha",
+        working: "Amazon",
+        link: "A-BkcEM0rQM",
         proImg:
-          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/reviewNew.webp",
+          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/jaya-sinha-thumb.webp",
         sDesc:
           "Flexible classes have helped me to manage my job  schedule. Learning Data Science directly from MNC experts provided the chance ...",
         lDesc:
@@ -103,51 +103,51 @@ export const DataScienceCourseData = [
           "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/microsoft.webp",
         statLogo: " 150% Hike",
       },
-      {
-        id: 6,
-        name: "Abhishek Singh",
-        working: "Working at AGS",
-        link: "D-gcPaK_-x4",
-        proImg:
-          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/reviewNew.webp",
-        sDesc:
-          "I got placed at AGS within 9 months of joining Learnbay institute. Live interaction sessions are the best part here since ...",
-        lDesc:
-          "I got placed at AGS within 9 months of joining Learnbay institute. Live interaction sessions are  the best part here since we could clear all queries. The projects are excellent. Overall I had a great  experience and I urge everyone to enroll in this institute.",
-        complogo:
-          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/microsoft.webp",
-        statLogo: "  132% Hike",
-      },
-      {
-        id: 7,
-        name: "Vishal",
-        working: "Working at Bridge i2i",
-        link: "D-gcPaK_-x4",
-        proImg:
-          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/reviewNew.webp",
-        sDesc:
-          "One on One counseling from experts has guided me to  make the right decision. The Learnbay team was amazing in assisting me with ...",
-        lDesc:
-          "One on One counseling from experts has guided me to make the right decision. The Learnbay team was amazing in assisting me with live projects and preparing for the placements. Thank you! Learnbay for your tremendous support in excelling in my Data Science Career.",
-        complogo:
-          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/microsoft.webp",
-        statLogo: "  127% Hike",
-      },
-      {
-        id: "math",
-        name: "Aravind Kumar",
-        working: "SA - Data Scientist",
-        link: "D-gcPaK_-x4",
-        proImg:
-          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/reviewNew.webp",
-        sDesc:
-          "Choosing Learnbay was my best decision ever. The instructors were encouraging and glad to answer questions. The best feature is that ...",
-        lDesc:
-          "Choosing Learnbay was my best decision ever. The instructors were encouraging and glad to answer questions. The best feature is that their flexible modules & small size batches. I was able to manage  my time and learn while working. Thanks to Learnbay for my lucrative placement.",
-        complogo:
-          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/microsoft.webp",
-        statLogo: "142% Hike",
-      },
+      // {
+      //   id: 6,
+      //   name: "Abhishek Singh",
+      //   working: "Working at AGS",
+      //   link: "D-gcPaK_-x4",
+      //   proImg:
+      //     "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/reviewNew.webp",
+      //   sDesc:
+      //     "I got placed at AGS within 9 months of joining Learnbay institute. Live interaction sessions are the best part here since ...",
+      //   lDesc:
+      //     "I got placed at AGS within 9 months of joining Learnbay institute. Live interaction sessions are  the best part here since we could clear all queries. The projects are excellent. Overall I had a great  experience and I urge everyone to enroll in this institute.",
+      //   complogo:
+      //     "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/microsoft.webp",
+      //   statLogo: "  132% Hike",
+      // },
+      // {
+      //   id: 7,
+      //   name: "Vishal",
+      //   working: "Working at Bridge i2i",
+      //   link: "D-gcPaK_-x4",
+      //   proImg:
+      //     "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/reviewNew.webp",
+      //   sDesc:
+      //     "One on One counseling from experts has guided me to  make the right decision. The Learnbay team was amazing in assisting me with ...",
+      //   lDesc:
+      //     "One on One counseling from experts has guided me to make the right decision. The Learnbay team was amazing in assisting me with live projects and preparing for the placements. Thank you! Learnbay for your tremendous support in excelling in my Data Science Career.",
+      //   complogo:
+      //     "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/microsoft.webp",
+      //   statLogo: "  127% Hike",
+      // },
+      // {
+      //   id: "math",
+      //   name: "Aravind Kumar",
+      //   working: "SA - Data Scientist",
+      //   link: "D-gcPaK_-x4",
+      //   proImg:
+      //     "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/reviewNew.webp",
+      //   sDesc:
+      //     "Choosing Learnbay was my best decision ever. The instructors were encouraging and glad to answer questions. The best feature is that ...",
+      //   lDesc:
+      //     "Choosing Learnbay was my best decision ever. The instructors were encouraging and glad to answer questions. The best feature is that their flexible modules & small size batches. I was able to manage  my time and learn while working. Thanks to Learnbay for my lucrative placement.",
+      //   complogo:
+      //     "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/microsoft.webp",
+      //   statLogo: "142% Hike",
+      // },
     ],
 
     projectSection:[

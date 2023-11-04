@@ -34,7 +34,6 @@ const FourthSection = dynamic(() =>
   import("../../../components/CoursePage/FourthSection/FourthSection")
 );
 
-
 const Project = dynamic(() =>
   import("../../../components/CoursePage/Project/Project")
 );
@@ -56,7 +55,9 @@ const SecondNavbar = dynamic(() =>
   import("../../../components/CoursePage/SecondNavbar/SecondNavbar")
 );
 const ContactConsellor = dynamic(() =>
-  import("../../../components/MastersCourse/ContactCounsellor/ContactCounsellor")
+  import(
+    "../../../components/MastersCourse/ContactCounsellor/ContactCounsellor"
+  )
 );
 const feesbatch = dynamic(() =>
   import("../../../components/CoursePage/FeeSection/FeeSection")
@@ -93,14 +94,15 @@ const WhyLearnbay = dynamic(() =>
   import("../../../components/MastersCourse/WhyLearnbay/WhyLearnbay")
 );
 
-const Gethire = dynamic(() =>
-  import("../../../components/CoursePage/Gethired/Gethire")
-);
+// const Gethire = dynamic(() =>
+//   import("../../../components/CoursePage/Gethired/Gethire")
+// );
+const GetHire = dynamic(() => import("../../../components/HomePage/GetHire/GetHire"));
 const PlacementCall = dynamic(() =>
   import("../../../components/CoursePage/PlacementCall/PlacementCall")
 );
 
-function Blockchain({ }) {
+function Blockchain({}) {
   // POPUP GET METHOD
   const [popupData, setPopupData] = useState([]);
   // console.log(popupData);
@@ -216,16 +218,16 @@ function Blockchain({ }) {
 
         <WhoIsProgram />
         <WhyLearnbay idss="bfl64ANfSV0" />
-        <Gethire />
+        <GetHire />
         {/* <Switch /> */}
-        <FourthSection
+        {/* <FourthSection
           placementData={DataScienceCourseData[0].fourthSection}
           redirectDS={true}
           dataScience={true}
           titleCourse="Data Science Placement Report"
           brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Placement+Report.pdf"
-        />
-      
+        /> */}
+
         <ContactConsellor />
 
         <SyllabusNew
@@ -242,7 +244,7 @@ function Blockchain({ }) {
           progress={progress}
           setProgress={setProgress}
         />
-    
+
         <ToolsCovered
           deskImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Tools-Logo.png"
           mobImage="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Mobile-Tools-Covered.png"
@@ -275,7 +277,9 @@ function Blockchain({ }) {
           <BatchDetails batchDetails={batchDateData.batchDetails} />
         )} */}
 
-        <NewProjectSection projectSection={DataScienceCourseData[0].projectSection} />
+        <NewProjectSection
+          projectSection={DataScienceCourseData[0].projectSection}
+        />
 
         <FAQNew FAQNewData={DataScienceCourseData[0].faq} />
         <SeventhSection />

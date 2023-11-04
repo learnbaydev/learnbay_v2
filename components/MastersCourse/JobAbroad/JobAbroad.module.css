@@ -13,16 +13,16 @@
 
 .JobAbroadHead {
     display: grid;
-    grid-template-columns: 50% 30%;
+    grid-template-columns: 58% 30%;
     margin: 50px 80px;
     padding: 20px;
-    gap :20px;
+    gap :0px;
 }
 
 .leftpoints {
     display: grid;
     flex-direction: column;
-    grid-template-columns: 20% 80%;
+    grid-template-columns: 15% 80%;
     margin-bottom: 32px;
     align-items: center;
     justify-content: center;
@@ -30,7 +30,6 @@
 }
 .leftpoints  h3{
 color: #0072BC;
-font-family: Inter;
 font-size: 18px;
 font-style: normal;
 font-weight: 700;
@@ -39,10 +38,10 @@ line-height: 146.5%; /* 36.625px */
 
 .leftpoints p {
     color: #414141;
-    font-family: Inter;
+
     font-size: 18px;
     font-style: normal;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 146.5%; /* 36.625px */
 
 }
@@ -58,7 +57,7 @@ line-height: 146.5%; /* 36.625px */
     color: #F99600;
     margin-left: 10px;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 641px) {
     .JobAbroadMain{
 margin: 0px;
     padding: 0px;
@@ -72,10 +71,10 @@ margin: 0px;
     flex-flow: column;
 }
 
-.JobAbroadHead h2 {
+.JobAbroadMain h2 {
+    margin-bottom: 25px;
     font-size: 17px;
-    margin: 14px 0px;
-    padding: 12px 14px 10px 15px;
+    /* padding: 12px 14px 10px 15px; */
 }
 .JobAbroadRight {
     justify-content: center;

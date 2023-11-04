@@ -11,7 +11,7 @@ function WhyLearnbay() {
           <span className={styles.contBlue}>Upskilling?</span>
         </p>
         <p className={styles.para}>
-          Globally recognized degree and curriculum inclusive of generative AI.
+        We have upskilled thousands of professionals from various domains to land their dream tech job.
         </p>
         <div className={styles.boxDiv}>
           <div className={styles.innerDiv}>
@@ -39,14 +39,14 @@ function WhyLearnbay() {
             </div>
             <div>
 
-            <p className={styles.OrangeText}>450+</p>
-            <p className={styles.botPara}>Placement Partners</p>
+            <p className={styles.OrangeText}>Dedicated</p>
+            <p className={styles.botPara}>Placement Cell</p>
           </div>
           </div>
           <div className={styles.innerDiv}>
             <div className={styles.imgBox}>
               <Image
-                src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/building.gif"
+                src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/Live-online.gif"
                 width={60}
                 height={60}
                 alt="Learnbay"
@@ -54,8 +54,8 @@ function WhyLearnbay() {
             </div>
             <div>
 
-            <p className={styles.OrangeText}>96%</p>
-            <p className={styles.botPara}>Student Satisfaction Rate</p>
+            <p className={styles.OrangeText}>Live online</p>
+            <p className={styles.botPara}>Interactive Session</p>
           </div>
           </div>
         </div>

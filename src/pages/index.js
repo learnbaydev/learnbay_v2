@@ -111,9 +111,9 @@ export default function Home() {
       />
       <ContactUs dataScienceCounselling={true} radio={true} />
 
-      <MasterClass />
+      {/* <MasterClass /> */}
 
-      <Media projectData={DataScienceCourseData[0].newsData} />
+      {/* <Media projectData={DataScienceCourseData[0].newsData} /> */}
 
       <SeventhSection />
 
