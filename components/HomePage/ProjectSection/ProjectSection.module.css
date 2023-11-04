@@ -1,7 +1,6 @@
 .container {
-    padding: 50px 100px;
+    padding: 50px 100px 30px 100px;
     background: linear-gradient(270deg, #FFF -5.52%, #EAE9E9 50.41%, #FFF 102.11%);
-    margin-bottom: 100px;
 }
 
 .h4 {
@@ -54,7 +53,8 @@ height: fit-content;
 }
 
 .iconPara p {
-    display: flex;
+    display: grid;
+    grid-template-columns: 5% 92%;
     gap: 10px;
     align-items: center;
 }

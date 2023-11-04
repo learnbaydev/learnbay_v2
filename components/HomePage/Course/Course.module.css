@@ -640,7 +640,7 @@
 }
 
 .contButton {
-  width: 95%;
+  width: 96%;
   margin-left: 15px;
   margin-top: -0px;
   z-index: 1;
@@ -724,7 +724,7 @@
   width: 100%;
   max-height: 700px;
   gap: 20px;
-  padding: 0px 70px;
+  padding: 0px;
   overflow: auto;
   position: relative;
   scroll-behavior: smooth;
@@ -758,7 +758,8 @@
 .slideWrap {
   background-color: white;
 }
-.newSliderWrap, .newSliderWrapOrange {
+.newSliderWrap,
+.newSliderWrapOrange {
   display: flex !important;
   flex-flow: column;
   border-radius: 8px;
@@ -771,14 +772,16 @@
   background-clip: padding-box;
 }
 .newSliderWrap::after,
-.newSliderWrap::before, .newSliderWrapOrange::after,
+.newSliderWrap::before,
+.newSliderWrapOrange::after,
 .newSliderWrapOrange::before {
   position: absolute;
   width: 60%;
   height: 60%;
   content: "";
 }
-.newSliderWrap::after, .newSliderWrapOrange::after {
+.newSliderWrap::after,
+.newSliderWrapOrange::after {
   right: 2px;
   top: 0px;
   border: 0;
@@ -786,13 +789,13 @@
   margin-top: -5px;
   border-radius: 0px 20px 0px 0px;
   z-index: -1;
-  background: linear-gradient(to right, white, #0798F6);
+  background: linear-gradient(to right, white, #0798f6);
 }
 .newSliderWrapOrange::after {
-  background: linear-gradient(to right, white, #F99600);
-
+  background: linear-gradient(to right, white, #f99600);
 }
-.leftBorder, .OrangeLeftBorder {
+.leftBorder,
+.OrangeLeftBorder {
   position: absolute;
   bottom: -5px;
   width: 10%;
@@ -803,14 +806,15 @@
 }
 
 .leftBorder {
-  background: linear-gradient(to top, #0798F6, white);
+  background: linear-gradient(to top, #0798f6, white);
 }
 
 .OrangeLeftBorder {
-  background: linear-gradient(to top, #F99600, white);
+  background: linear-gradient(to top, #f99600, white);
 }
 
-.rightBorder, .OrangeRightBorder {
+.rightBorder,
+.OrangeRightBorder {
   position: absolute;
   height: 47%;
   top: -5px;
@@ -821,13 +825,14 @@
 }
 
 .rightBorder {
-  background: linear-gradient(to bottom, #0798F6, white);
+  background: linear-gradient(to bottom, #0798f6, white);
 }
 
 .OrangeRightBorder {
-  background: linear-gradient(to bottom, #F99600, white);
+  background: linear-gradient(to bottom, #f99600, white);
 }
-.newSliderWrap::before, .newSliderWrapOrange::before {
+.newSliderWrap::before,
+.newSliderWrapOrange::before {
   left: 0;
   bottom: 0;
   margin-left: 16px;
@@ -835,11 +840,10 @@
   border: 5px;
   border-radius: 0px 0px 0px 20px;
   z-index: -1;
-  background: linear-gradient(to right, #0798F6, white);
+  background: linear-gradient(to right, #0798f6, white);
 }
 .newSliderWrapOrange::before {
-  background: linear-gradient(to right, #F99600, white);
-
+  background: linear-gradient(to right, #f99600, white);
 }
 .newSliderWrap .contentBox {
   width: 100%;
@@ -1100,7 +1104,7 @@
     padding: 14px 0px 0px 0px;
   }
   .leftSide {
-    height: 340px !important;
+    height: 440px !important;
   }
   .ActiveSpan {
     padding: 14px 0px 0px 0px;
@@ -1147,7 +1151,7 @@
     /* overflow: scroll; */
     padding: 0;
     margin-top: 0px;
-    height: 420px;
+    height: 490px;
   }
 
   .leftSide {
@@ -1155,9 +1159,11 @@
     margin: 10px 10px;
     padding: 0px;
   }
-
+  .imgWrap {
+    height: 155px;
+  }
   .hr {
-    top: 46%;
+    top: 36%;
     margin-left: -15px;
     width: 100%;
   }
@@ -1189,7 +1195,7 @@
     margin-left: 10px;
     justify-content: center;
     position: relative;
-    height: 370px;
+    height: 470px;
     width: 100%;
     background-color: white;
   }
