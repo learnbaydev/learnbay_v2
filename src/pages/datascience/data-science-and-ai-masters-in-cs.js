@@ -84,6 +84,8 @@ const SliderTab = dynamic(() =>
 const NewProjectSection = dynamic(() =>
   import("../../../components/CoursePage/NewProjectSection/NewProjectSection")
 );
+const JobAbroad = dynamic (()=>
+import ("../../../components/MastersCourse/JobAbroad/JobAbroad"))
 
 const Blockchain = () => {
   // POPUP GET METHOD
@@ -183,11 +185,10 @@ const Blockchain = () => {
           // firstTopPara="Specialization over generalization"
           idss="bfl64ANfSV0"
         />
-
         <MasterSecondSection/>
+        <JobAbroad/>
        
         <SecondNavbar />
-
 
         <TrainerSection idss="bfl64ANfSV0" />
 
