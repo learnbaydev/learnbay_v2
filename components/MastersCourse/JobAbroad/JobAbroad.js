@@ -21,8 +21,8 @@ height={90}
 />
 </div>
 <div>
-<h3>Dedicated Placement Cell</h3>
-<p>Interview prep an resume building from industry expert for</p>
+<h3>Earn a Degree Without Pausing Your Career</h3>
+<p>Flexible online degrees from LearnBay's ExcelVarsity for working pros.</p>
 </div>
 </div>
 
@@ -35,8 +35,8 @@ height={90}
 />
 </div>
 <div>
-<h3>Dedicated Placement Cell</h3>
-<p>Interview prep an resume building from industry expert for</p>
+<h3>Skill Up for Swift Promotions</h3>
+<p>Curriculum designed for rapid career advancement and leadership roles.</p>
 </div>
 </div>
 
@@ -49,8 +49,8 @@ height={90}
 />
 </div>
 <div>
-<h3>Dedicated Placement Cell</h3>
-<p>Interview prep an resume building from industry expert for</p>
+<h3>Step into High-Value Research Careers</h3>
+<p>Degrees for prestigious research jobs and institutional collaborations.</p>
 </div>
 </div>
 
