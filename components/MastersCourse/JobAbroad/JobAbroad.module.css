@@ -58,7 +58,7 @@ line-height: 146.5%; /* 36.625px */
     color: #F99600;
     margin-left: 10px;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 641px) {
     .JobAbroadMain{
 margin: 0px;
     padding: 0px;
@@ -72,10 +72,10 @@ margin: 0px;
     flex-flow: column;
 }
 
-.JobAbroadHead h2 {
+.JobAbroadMain h2 {
+    margin-bottom: 25px;
     font-size: 17px;
-    margin: 14px 0px;
-    padding: 12px 14px 10px 15px;
+    /* padding: 12px 14px 10px 15px; */
 }
 .JobAbroadRight {
     justify-content: center;

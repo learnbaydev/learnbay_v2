@@ -34,9 +34,6 @@ const FeeSection = dynamic(() =>
 const FourthSection = dynamic(() =>
   import("../../../components/CoursePage/FourthSection/FourthSection")
 );
-const Project = dynamic(() =>
-  import("../../../components/CoursePage/Project/Project")
-);
 const SyllabusNew = dynamic(() =>
   import("../../../components/CoursePage/Syllabus/MasterSyllabus")
 );
@@ -46,9 +43,6 @@ const Certificate = dynamic(() =>
 );
 const FAQNew = dynamic(() =>
   import("../../../components/CoursePage/FAQNew/FAQNew")
-);
-const BatchDetails = dynamic(() =>
-  import("../../../components/CoursePage/BatchDetails/BatchDetails")
 );
 
 const SecondNavbar = dynamic(() =>
@@ -246,29 +240,12 @@ const Blockchain = () => {
           FeeContent6="No additional cost"
           dataScienceCounselling={true}
         />
-        {/* <DomainSection
-          dataScience={true}
-          domainSectionData={DataScienceMastersinCS[0].domainSection}
-        /> */}
 
         <MentorsSection />
         <SliderTab />
         <PlacementCall />
         <NewProjectSection projectSection={DataScienceMastersinCS[0].projectSection} />
-        {/* <Project
-          projectData={DataScienceMastersinCS[0].project}
-          tools="12+"
-          dataScience={true}
-          titleCourse="Data Science Project Brochure"
-          brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Data+Science+and+AI+Projects.pdf"
-          project="15+"
-        /> */}
 
-        {/* {batchDateData === "" ? (
-          ""
-        ) : (
-          <BatchDetails batchDetails={batchDateData.batchDetails} />
-        )} */}
 
         <FAQNew FAQNewData={DataScienceMastersinCS[0].faq} />
         <SeventhSection />
