@@ -23,7 +23,7 @@ const FirstSection = ({
 }) => {
   const [popups, setPopups] = useState(false);
   const [mobile, setMobile] = useState(false);
-
+ 
   const el = useRef(null);
 
   const popupShow = () => {
