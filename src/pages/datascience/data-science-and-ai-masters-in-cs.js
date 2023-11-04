@@ -52,7 +52,7 @@ const BatchDetails = dynamic(() =>
 );
 
 const SecondNavbar = dynamic(() =>
-  import("../../../components/CoursePage/SecondNavbar/SecondNavbar")
+  import("../../../components/MastersCourse/SecondNavbar/SecondNavbar")
 );
 
 const WhyLearnbay = dynamic(() =>
@@ -84,6 +84,8 @@ const SliderTab = dynamic(() =>
 const NewProjectSection = dynamic(() =>
   import("../../../components/CoursePage/NewProjectSection/NewProjectSection")
 );
+const JobAbroad = dynamic (()=>
+import ("../../../components/MastersCourse/JobAbroad/JobAbroad"))
 
 const Blockchain = () => {
   // POPUP GET METHOD
@@ -183,11 +185,10 @@ const Blockchain = () => {
           // firstTopPara="Specialization over generalization"
           idss="bfl64ANfSV0"
         />
-
         <MasterSecondSection/>
+        <JobAbroad/>
        
         <SecondNavbar />
-
 
         <TrainerSection idss="bfl64ANfSV0" />
 
@@ -197,15 +198,8 @@ const Blockchain = () => {
         />
 
         <WhyLearnbay idss="bfl64ANfSV0" />
-        <Gethire />
-
-        <FourthSection
-          placementData={DataScienceMastersinCS[0].fourthSection}
-          redirectDS={true}
-          dataScience={true}
-          titleCourse="Data Science Placement Report"
-          brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Placement+Report.pdf"
-        />
+       
+     
 
         <ContactCounsellor />
 
