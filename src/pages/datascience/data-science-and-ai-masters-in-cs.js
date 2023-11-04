@@ -13,8 +13,9 @@ const Navbar = dynamic(() => import("../../../components/Navbar/Navbar"));
 const FirstSection = dynamic(() =>
   import("../../../components/MastersCourse/FirstSection/FirstSection")
 );
-const SecondSection = dynamic(() =>
-  import("../../../components/CoursePage/SecondSection/SecondSection")
+
+const MasterSecondSection = dynamic(() =>
+  import("../../../components/MastersCourse/MasterSecondSection/MasterSecondSection")
 );
 const SeventhSection = dynamic(() =>
   import("../../../components/Global/SeventhSection/SeventhSection")
@@ -23,9 +24,7 @@ const Testimonial = dynamic(() =>
   import("../../../components/HomePage/Testimonial/Testimonial")
 );
 import TrainerSection from "../../../components/HomePage/TrainerSection/TrainerSection";
-const WhoProgram = dynamic(() =>
-  import("../../../components/CoursePage/WhoProgram/ThirdSection")
-);
+
 const ToolsCovered = dynamic(() =>
   import("../../../components/CoursePage/ToolsCovered/ToolsCovered")
 );
@@ -184,15 +183,11 @@ const Blockchain = () => {
           // firstTopPara="Specialization over generalization"
           idss="bfl64ANfSV0"
         />
-        <SecondSection
-          SecondSectionData={DataScienceMastersinCS[0].secondSection}
-        />
+
+        <MasterSecondSection/>
+       
         <SecondNavbar />
 
-        <WhoProgram
-          leftImage="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/masterPage/who-program.webp"
-          ThirdSectionData={DataScienceMastersinCS[0].thirdSection}
-        />
 
         <TrainerSection idss="bfl64ANfSV0" />
 
