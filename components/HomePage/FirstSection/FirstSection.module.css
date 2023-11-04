@@ -5,6 +5,7 @@
   position: relative;
   /* align-items: center; */
   grid-template-columns: 53% 43%;
+  height: 580px;
   gap: 50px;
 }
 
@@ -17,9 +18,11 @@
 }
 
 .Second {
-  padding: 85px 100px 0px;
+  padding: 85px 50px 0px 100px;
+  background: url("https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/forthSection.webp");
+  background-size: cover;
   gap: 0px;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 57% 43%;
 }
 
 .GenAiBox {
@@ -49,35 +52,51 @@ padding: 5px 5px 0px 5px;
 }
 
 .forth {
-  background: url("https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/forthSection.webp");
-  background-size: cover;
   gap: 0px;
   grid-template-columns: 60% 40%;
-  padding: 100px 100px 36px 100px;
+  padding: 0px 100px 0px 100px;
+  align-items: center;
+  background: linear-gradient(180deg, #232323 16.69%, #3C3C3C 99.97%);
+}
+
+.forthFirstLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
 .forth .blink {
-  margin: 50px 0px 30px 0px;
+  margin: 0px;
+  color: #dfdfdf;
+font-size: 25px;
+font-weight: 400;
+padding-right: 160px;
+margin: 10px 0px;
+}
+
+.forthFirstLeft span {
+  color: #F99600;
+font-size: 25px;
+font-weight: bold;
 }
 
 .forth .btnWrapper {
-  margin: 0px 0px 66px 0px;
+  margin: 50px 0px 0px;
 }
 
 .forth .SecondBlink {
-  font-size: 36px;
-  font-style: normal;
+  font-size: 25px;
   font-weight: 700;
-  line-height: 151.5%;
   letter-spacing: 0.45px;
+  color: #F99600;
   padding: 0px;
 }
 
 .forth .h1 {
-  margin: 20px 0px 30px 0px;
+  margin: 0px;
   font-size: 50px;
+  line-height: 60px;
   padding: 0;
-  line-height: 50px;
 }
 
 
@@ -150,20 +169,48 @@ margin: 0;
   padding: 0px;
 }
 
-.reviewBox {
+.divgreen {
   display: flex;
-  gap: 10px;
+  gap: 30px;
   align-items: center;
 }
 
-.SecondBlink {
-  font-size: 22px;
-  font-style: normal;
-  padding-right: 150px;
+.greenBox {
+  border-radius: 7px;
+border: 2px solid rgba(255, 255, 255, 0.40);
+background: #043600; 
+padding: 10px 20px;
+}
+
+.iconYellow {
+  color: rgba(249, 150, 0, 1);
+  font-size: 24px;
+}
+
+.iconText {
+  margin: 0;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  color: #2DB621;
+font-size: 17px;
+font-weight: 700;
+line-height: 155%; /* 33.99px */
+}
+
+.greenBox p {
   font-weight: 700;
-  color: #fff;
-  line-height: 151.5%; /* 45.45px */
-  letter-spacing: 0.3px;
+  font-size: 17px;
+color: #fff;
+  margin: 0;
+}
+
+.SecondBlink {
+  font-size: 30px;
+  color: #F99600;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  margin: 0;
 }
 
 .SecondpTop {
@@ -194,8 +241,7 @@ margin: 0px 0px 24px 0px;
 }
 
 .SecondSectionLeft .h1 {
-  font-size: 45px;
-  line-height: 57px;
+  font-size: 42px;
   padding-right: 0px;
   margin: 0;
 }
@@ -467,12 +513,49 @@ margin: 0px 0px 24px 0px;
 }
 
 @media (max-width: 641px) {
+
+.Second {
+  padding: 30px 20px 40px 20px;
+  margin-top: 47px;
+  display: block;
+  height: 840px;
+}
+
+.divgreen {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+.iconText {
+  font-size: 14px;
+  margin: 10px 0px;
+}
+
+.SecondBlink {
+  font-size: 22px;
+}
+
+
+.SecondSectionLeft {
+  gap: 15px;
+}
   .First {
     padding: 30px 20px 40px 20px;
     display: block;
     margin-top: 47px;
     background-color: #fff;
+    height: 840px;
   }
+
+.SecondSectionLeft .h1 {
+  text-align: left;
+  margin: 0px 0px 10px 0px;
+  font-size: 26px;
+  padding: 0px;
+}
 
   .box {
     display: none;
@@ -481,6 +564,10 @@ margin: 0px 0px 24px 0px;
   .FirstLeft {
     gap: 0;
   }
+
+.pTop {
+  font-size: 22px;
+}
 
   /* .FirstLeft {
     margin: 10px 0px 20px 0px;
@@ -513,7 +600,7 @@ margin: 0px 0px 24px 0px;
 
   .FirstLeft .h1 {
     margin: 10px 0px 10px 0px;
-    font-size: 24px;
+    font-size: 26px;
     text-align: center;
     line-height: normal;
     padding: 0px;
@@ -564,12 +651,31 @@ margin: 0px 0px 24px 0px;
   .blinkMobile {
     display: block;
     color: #ffffff90;
-    font-size: 15px;
+    font-size: 16px;
     margin-bottom: 30px;
   }
   .line {
     top: 82%;
     left: 80%;
+  }
+
+  .forth .btnWrapper {
+    width: 100%;
+    padding: 20px;
+    margin-top: 0px;
+  }
+
+  .forth {
+    padding: 20px;
+    margin-top: 47px;
+    display: block;
+    height: 840px;
+  }
+  .forth .SecondBlink {
+    font-size: 22px;
+  }
+  .forth .imgWrapperDesktop {
+    display: none;
   }
   .btnWrapper {
     justify-content: center;
@@ -589,6 +695,11 @@ width: 80%;
     justify-content: center;
     align-items: center;
   }
+.forth .h1 {
+    font-size: 26px;
+    line-height: normal;
+    text-align: left;
+}
 }
 
 @media (max-width: 481px) {
@@ -602,6 +713,10 @@ width: 80%;
   .FirstLeft p {
     text-align: left;
   }
+
+.TextGreen {
+  font-size: 14px;
+}
 
   .FirstLeft .ptopC {
     text-align: left;

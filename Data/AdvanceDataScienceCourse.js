@@ -149,6 +149,60 @@ export const DataScienceCourseData = [
         statLogo: "142% Hike",
       },
     ],
+
+    projectSection:[
+      {
+        id: 1,
+        duration: "26 Hours",
+        logo:"",
+        heading:"Career progression planning of employees with workforce defections & efficiency",
+        img:"https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/Group+502.png",
+        para:"BMW allows existing customers to sell used cars but many competitors are now offering better resale values...",
+        toolImg:"https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/iconProject.webp",
+        learnMore:"Learn more",
+    },
+    {
+        id: 2,
+        duration: "26 Hours",
+        logo:"",
+        heading:"Career progression planning of employees with workforce defections & efficiency",
+        img:"https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/Group+502.png",
+        para:"BMW allows existing customers to sell used cars but many competitors are now offering better resale values...",
+        toolImg:"https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/iconProject.webp",
+        learnMore:"Learn more",
+    },
+    {
+        id: 3,
+        duration: "26 Hours",
+        logo:"",
+        heading:"Career progression planning of employees with workforce defections & efficiency",
+        img:"https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/Group+502.png",
+        para:"BMW allows existing customers to sell used cars but many competitors are now offering better resale values...",
+        toolImg:"https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/iconProject.webp",
+        learnMore:"Learn more",
+    },
+    {
+      id: 3,
+      duration: "26 Hours",
+      logo:"",
+      heading:"Career progression planning of employees with workforce defections & efficiency",
+      img:"https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/Group+502.png",
+      para:"BMW allows existing customers to sell used cars but many competitors are now offering better resale values...",
+      toolImg:"https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/iconProject.webp",
+      learnMore:"Learn more",
+  },
+  {
+    id: 4,
+    duration: "26 Hours",
+    logo:"",
+    heading:"Career progression planning of employees with workforce defections & efficiency",
+    img:"https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/Group+502.png",
+    para:"BMW allows existing customers to sell used cars but many competitors are now offering better resale values...",
+    toolImg:"https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/iconProject.webp",
+    learnMore:"Learn more",
+}
+    ],
+   
     thirdSection: [
       {
         id: 1,

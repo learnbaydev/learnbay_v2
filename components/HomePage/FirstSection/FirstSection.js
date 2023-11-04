@@ -2,6 +2,8 @@ import dynamic from "next/dynamic";
 import Image from "next/image";
 import { useRef, useState } from "react";
 import { FaBell, FaCheck, FaChevronDown } from "react-icons/fa";
+import { FaEarthAmericas } from "react-icons/fa6";
+import { PiCertificate } from "react-icons/pi";
 import { Pagination } from "swiper";
 import "swiper/css";
 import "swiper/css/free-mode";
@@ -132,7 +134,9 @@ const FirstSection = ({
                     alt="data science course"
                   />
                 </div>
-                <p className={styles.TextGreen}>Curricullum inclusive of GenAI and ChatGPT</p>
+                <p className={styles.TextGreen}>
+                  Curricullum inclusive of GenAI and ChatGPT
+                </p>
               </div>
               <div className={styles.btnWrapper}>
                 <a href="#course">
@@ -179,28 +183,16 @@ const FirstSection = ({
         <SwiperSlide className={styles.slide}>
           <div className={styles.Second}>
             <div className={styles.SecondSectionLeft}>
-              <p className={styles.SecondBlink}>
-                <span className={styles.SecondpTop}>Switch</span> from{" "}
-                <span className={styles.SecondpTop}>
-                  Service based to Product Based
-                </span>{" "}
-                company with our
-              </p>
               <h1 className={styles.h1}>
-                Software Development Certification Program
+                Unlock Your Future: Master's Degree with Global Opportunities
               </h1>
-              <div className={styles.reviewBox}>
-                <div>
-                  <Image
-                    src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/preksha-home.png"
-                    width="60"
-                    height="60"
-                    alt="data science course"
-                  />
+              <p className={styles.SecondBlink}>Masters in Computer Science</p>
+              <div className={styles.divgreen}>
+                <div className={styles.greenBox}>
+                  <p>Data Science & AI </p>
                 </div>
-                <div>
-                  <p className={styles.authorName}>Shravanthi A.</p>
-                  <p className={styles.authorPostion}>Data Scientist @HCL</p>
+                <div className={styles.greenBox}>
+                  <p>Software Engineering</p>
                 </div>
               </div>
               <div className={styles.imgWrapperMobile}>
@@ -211,11 +203,12 @@ const FirstSection = ({
                   alt="data science course"
                 />
               </div>
+                <p className={styles.iconText}><FaEarthAmericas className={styles.iconYellow} />Globally recognised in EU, US and 60+ countries</p>
               <div className={styles.btnWrapper}>
                 <div onClick={popupShow}>
                   <Button
                     className={styles.Btn}
-                    text="View Program Details"
+                    text="Explore Masters Degree"
                     passIcon={<FaBell className="bIconS" />}
                   />
                 </div>
@@ -239,41 +232,25 @@ const FirstSection = ({
           <div className={styles.forth}>
             <div className={styles.forthFirstLeft}>
               <p className={styles.SecondBlink}>
-                Get
-                <span className={styles.SecondpTop}> job-ready </span> within 6
-                months
+              Real project Real Impact 
               </p>
-              <h1 className={styles.h1}>Masters in Computer Science</h1>
+              <h1 className={styles.h1}>Work on Real time Project and Gain Practical experience</h1>
 
               <p className={styles.blinkMobile}>
-                Get equipped with industry standard skills and unlock job abroad
-                opportunities
+              Work on industry project like a data scientist and SDE with our dedicated <span>#ProjectLab</span>  
               </p>
               <div className={styles.imgWrapperMobile}>
                 <Image
-                  src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/job-ready.webp"
-                  width="234"
+                  src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/ThirdSection1.webp"
+                  width="806"
                   height="300"
                   alt="data science course"
                 />
               </div>
-
-              <div className={styles.BoxUpper}>
-                <div className={styles.InnerBox}>
-                  <FaCheck className={styles.iconBoxCheck} />
-                  Data Science & AI
-                </div>
-                <div className={styles.InnerBox}>
-                  <FaCheck className={styles.iconBoxCheck} />
-                  Software Engineering
-                </div>
-              </div>
               <p className={styles.blink}>
-                Get equipped with industry standard skills and unlock{" "}
-                <span style={{ color: "#F99600", fontWeight: "700" }}>
-                  job abroad opportunities
-                </span>
+              Work on industry project like a data scientist and SDE with our dedicated <span>#ProjectLab</span>  
               </p>
+              <p className={styles.iconText}><PiCertificate className={styles.iconYellow} />Globally recognised in EU, US and 60+ countries</p>
               <div className={styles.btnWrapper}>
                 <a href="#course">
                   <Button
@@ -288,9 +265,9 @@ const FirstSection = ({
             <div className={styles.secondLeft}>
               <div className={styles.imgWrapperDesktop}>
                 <Image
-                  src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/job-ready.webp"
-                  width="234"
-                  height="300"
+                  src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/ThirdSection1.webp"
+                  width="806"
+                  height="663"
                   alt="data science course"
                 />
               </div>
