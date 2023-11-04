@@ -14,7 +14,7 @@ function Switch() {
             <a href={url} target="_blank" key={id}>
               <div className={styles.switchInner}>
                 <div className="imgWrapper">
-                  <Image src={img} width={width} height={height} alt={alt} />
+                  <Image src={img} width={120} height={60} alt={alt} />
                 </div>
                 <div className={styles.rating}>
                   {text} <AiFillStar className={styles.star} />

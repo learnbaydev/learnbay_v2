@@ -367,6 +367,109 @@ import {
             "Netflix is a global entertainment video streaming site. They offer content in various regional languages. Build a local recommendation engine for Netflix customers residing in south Bangalore on their weekend and weekdays activities, utilizing NLP.",
         },
       ],
+      newsdata: [
+        {
+          id: 1,
+          domain: "HR Domain HR Domain HR Domain",
+          CLogo: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/1-1.png",
+          SDesc:
+            "  27 Aug 2023",
+          PopupImg:
+            "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/Hr-domain-img.png",
+          ProjectTitle: "HR Domain",
+          Title:
+            "Career progression planning of employees with workforce defections & efficiency",
+          LDesc:
+            "IBM intends to boost its HR department by identifying employees' masked inconsistency. They need models to identify the graphical variations in their 14000+ employees' performances. Help them build models with your regressions and other ML abilities.",
+        },
+        {
+          id: 2,
+          domain: "Marketing Domain",
+          CLogo:
+            "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Project+company+logos/swiggy.png",
+          SDesc:
+            "  27 Aug 2023",
+          PopupImg:
+            "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/Marketing-domain-img.png",
+          ProjectTitle: "Marketing Domain",
+          Title:
+            "Descriptive study of trends and irregularities with prediction analysis for conversion.",
+          LDesc:
+            "Swiggy seeks a broad marketing campaign. But they need automated keyword generation tools. They also require proper message preparation and delivery of the same to the right audience at the right time. You can help them with text analytics and NLP-based keyword research solutions",
+        },
+        {
+          id: 3,
+          domain: "Manufacturing Domain",
+          CLogo:
+            "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/Untitled-design-3.png",
+          SDesc:
+            "  27 Aug 2023",
+          PopupImg:
+            "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/supplyChain.png",
+          ProjectTitle: "Manufacturing Domain",
+          Title:
+            "Condition-based preventative maintenance and fault prediction in depth",
+          LDesc:
+            "An automated inventory management system will keep track of stock levels and upcoming orders. In addition, you can contribute to DataCo's intelligent supply chain software generation project by using ML algorithms and R programming skills.",
+        },
+        {
+          id: "BMW",
+          domain: "Sales Domain",
+          CLogo:
+            "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/Untitled-design-2.png",
+          SDesc:
+            " 27 Aug 2023",
+          PopupImg:
+            "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/Sales-domain.png",
+          ProjectTitle: "Sales Domain",
+          Title: "Forecasting future sales with trends and price maximization",
+          LDesc:
+            "BMW allows existing customers to sell used cars  but many competitors are now offering better resale values. A data science-powered statistical app from BMW will provide the best market value for used cars based on parameters like Km driven, daily pricing up and down, manufacturing dates, and so on. Develop your analytical skills through such projects.",
+        },
+        {
+          id: 5,
+          domain: "Healthcare Domain",
+          CLogo: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/5(2).png",
+          SDesc:
+            "  27 Aug 2023",
+          PopupImg:
+            "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/supplyChain.png",
+          ProjectTitle: "Healthcare Domain",
+          Title:
+            "Understanding covid-19 cases and fatality rate by time series forecasting",
+          LDesc:
+            "Samsung will launch a new healthcare app soon. The key goal of this app is accurate human activity tracking and providing relevant health-related recommendations. Continuous analysis of a massive amount of mobile data is required for such an app.",
+        },
+        {
+          id: 6,
+          domain: "E-Commerce Domain",
+          CLogo: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/4(2).png",
+          SDesc:
+            " 27 Aug 2023",
+          PopupImg:
+            "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/supplyChain.png",
+          ProjectTitle: "E-Commerce Domain",
+          Title:
+            "Recommendation system with customer lifetime value analysis (CLV)",
+          LDesc:
+            "Amazon has made a goal to identify the most successful consumer electronic products. For these, they require live customer review analysis. You can take part in the assisting project of customer insight regeneration from the ongoing and existing reviews via a suitable data visualization approach.",
+        },
+        {
+          id: 7,
+          domain: "Entertainment Domain",
+          CLogo: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/9-1.png",
+          SDesc:
+            " 27 Aug 2023",
+          PopupImg:
+            "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/supplyChain.png",
+          Title:
+            "Building a content recommendation model on the basis of regional viewer categorization",
+          ProjectTitle: "Media Domain",
+  
+          LDesc:
+            "Netflix is a global entertainment video streaming site. They offer content in various regional languages. Build a local recommendation engine for Netflix customers residing in south Bangalore on their weekend and weekdays activities, utilizing NLP.",
+        },
+      ],
       Certificate: {
         twoCertificate: [
           {
@@ -404,7 +507,14 @@ import {
       syllabusDesc:
       "Learnbay provides Live, Interactive Online Sessions guided by Professionals working in top MNCs. All sessions are covered practically with real-time industrial projects and case studies.",
     popupHead: "Download Data science Course Brochure",
-    syllabus: [
+    syllabusHead: [
+      "Term 1 Foundation Track(30 ECTS Credits)",
+      "Term 2 Statistics & Machine Learning( 25 ECTS Credits) ",
+      "Term 3 Artificial Intelligence Tools( 25 ECTS Credits)",
+      "Term 4 :- Artificial Intelligence Tools( 25 ECTS Credits) ",
+      "Term 5 :- Deployment (AWS+Azure)( 25 ECTS Credits) ",
+    ],
+    MasterSyllabusDefault: [
       {
         Module0: {
           title: "Module 0 :- Preparatory Classes (Programming + Maths)",
@@ -592,7 +702,422 @@ import {
           open: false,
         },
       },
+
     ],
+    masterSyllabus: {
+      "Term 1 Foundation Track(30 ECTS Credits)": [
+        {
+          Module0: {
+            title: "Module 0 :- Preparatory Classes (Programming + Maths)",
+            content: [
+              {
+                chap: {
+                  title: "Topic 1 :- Cohort Orientation",
+                  desc: [
+                    "A brief introduction to tools related to data ",
+                    "Learn about particular real-time projects and Capstone projects ",
+                    "Data and its impact on career opportunities",
+                    "Utilizing data, to enhance industrial operations and management",
+                  ],
+                },
+              },
+  
+              {
+                chap: {
+                  title: "Topic 2 :- Fundamentals of programming ",
+                  desc: [
+                    "Introduction to Anaconda & Jupyter notebook ",
+  
+                    "Flavors of python Introduction to Git, GitHub ",
+                    "Python Fundamentals ",
+                  ],
+                },
+              },
+              {
+                chap: {
+                  title: "Topic 3 :- Fundamentals of Statistics",
+                  desc: [
+                    "Mean, Median, Mode .",
+                    "Standard Deviation, Average. Probability, permutations, and combinations ",
+                    "Introduction to Linear Algebra",
+                  ],
+                },
+              },
+            ],
+            id: 0,
+            open: true,
+          },
+        },
+        {
+          Module0: {
+            title: "Term 1 :- Python Programming",
+            content: [
+              {
+                chap: {
+                  title: "Module 1 :- Python Programming ",
+                  desc: [
+                    " Programming Basics & Environment Setup.",
+                    " Python Programming Overview",
+                    "  Python Data Types",
+                    "  Functions And Modules ,Class hands-on: 8+ Programs to be covered in the functions, Lambda, modules, Generators, and Packages class",
+  
+                    " File I/O And Exceptional Handling and Regular Expression,Class hands-on: 10+ Programs to be covered in class from File IO, Reg-ex and exception handling.",
+                    "Data Analysis Using Numpy",
+                    " Data Analysis Using Pandas",
+                    "Data Visualization using Matplotlib",
+                    ". Data Visualization using Seaborn,3 Case Study on Numpy, Pandas, Matplotlib 1 Case Study on Pandas And Seaborn",
+                  ],
+                },
+              },
+            ],
+            id: 1,
+            open: false,
+          },
+        },
+      ],
+      "Term 2 Statistics & Machine Learning( 25 ECTS Credits) ": [
+        {
+          Module0: {
+            title: "Term 1 :- Python Programming",
+            content: [
+              {
+                chap: {
+                  title: "Module 1 :- Python Programming ",
+                  desc: [
+                    " Programming Basics & Environment Setup.",
+                    " Python Programming Overview",
+                    "  Python Data Types",
+                    "  Functions And Modules ,Class hands-on: 8+ Programs to be covered in the functions, Lambda, modules, Generators, and Packages class",
+  
+                    " File I/O And Exceptional Handling and Regular Expression,Class hands-on: 10+ Programs to be covered in class from File IO, Reg-ex and exception handling.",
+                    "Data Analysis Using Numpy",
+                    " Data Analysis Using Pandas",
+                    "Data Visualization using Matplotlib",
+                    ". Data Visualization using Seaborn,3 Case Study on Numpy, Pandas, Matplotlib 1 Case Study on Pandas And Seaborn",
+                  ],
+                },
+              },
+            ],
+            id: 1,
+            open: false,
+          },
+        },
+      ],
+      "Term 3 Artificial Intelligence Tools( 25 ECTS Credits)": [
+        {
+          Module0: {
+            title: "Term 2 :- Statistics & Basic Machine Learning",
+            content: [
+              {
+                chap: {
+                  title: "Module 1 :- Statistics",
+                  desc: [
+                    "Fundamentals of Math and Probability",
+                    "All about Population & Sample",
+                    "Discrete Probability Distributions - Binomial, Poisson etc",
+                    "Introduction to Statistics, Statistical Thinking",
+                    " Descriptive Statistics",
+                    " Inferential Statistics",
+                    " Hypothesis Testing",
+                    "Linear Algebra",
+                    "Data Processing & Exploratory Data Analysis",
+                    "EDA,Statistics Assignments: Total 4 practice sets and Assignments from Statistics",
+                  ],
+                },
+              },
+              {
+                chap: {
+                  title: "Module 2 :- Machine Learning",
+                  desc: [
+                    "Introduction to Machine Learning",
+                    "Regression and Classification Models",
+                    "Linear Regression Model",
+                    "Data Preprocessing",
+                    "Encoding the Data",
+                    "Logistic Regression Model",
+                    "Evaluation Metrics for Classification model",
+                    "K Nearest Neighbours Model",
+                    "Decision Tree Model",
+                    "Random Forest Model",
+                    "Hyperparameter Tuning",
+                    "Naive Baye’s Model,Case Study on Kart Model Business & Random Forest",
+                  ],
+                },
+              },
+            ],
+            id: 2,
+            open: false,
+          },
+        },
+      ],
+      "Term 4 :- Artificial Intelligence Tools( 25 ECTS Credits) ": [
+        {
+          Module0: {
+            title: "Term 3 :- Data Analytics Tools",
+            content: [
+              {
+                chap: {
+                  title: "Module 1 :- SQL",
+                  desc: [
+                    "SQL and RDBMS",
+                    "Advance SQL",
+                    "NoSQL, HBase & MongoDB",
+                    "JSON Data & CRUD",
+                    "Programming with SQL",
+                  ],
+                },
+              },
+              {
+                chap: {
+                  title: "Module 2 :- PowerBI",
+                  desc: [
+                    "Getting Started With Power BI",
+                    " Programming with Power BI",
+                  ],
+                },
+              },
+              {
+                chap: {
+                  title: "Module 3 :- Big Data & Spark Analytics",
+                  desc: [
+                    " Introduction To Hadoop & Big Data",
+                    "What is Spark",
+                    " Getting to know PySpark Hands-on: Map reduce Use Case : Youtube data analysis & Spark RDD       programming",
+                  ],
+                },
+              },
+              {
+                chap: {
+                  title: "Module 4 :- Time Series",
+                  desc: [
+                    " Introduction to Time Series Forecasting",
+                    "Introduction to ARIMA Models,Case Study on Time series classification of smartphone data to predict user behavior, Performing Time Series Analysis on Stock Prices & Time series forecasting of sales data",
+                  ],
+                },
+              },
+            ],
+            id: 3,
+            open: false,
+          },
+        },
+      ],
+      "Term 5 :- Deployment (AWS+Azure)( 25 ECTS Credits) ": [
+        {
+          Module0: {
+            title: "Term 4 :- Excel",
+            content: [
+              {
+                chap: {
+                  title: "",
+                  desc: [
+                    "Getting started with Excel",
+                    "Using Excel Toolbars: Hiding, Displaying, and Moving Toolbars",
+                    "Switching Between Sheets in a Workbook",
+                    "Entering Date Values and using AutoComplete",
+                    "Inserting and Deleting Cells, Rows, and Columns",
+                    "Working with the Forms Menu",
+                    "Creating & Working with Charts",
+                    "Changing a Chart Type and Working with Pie Charts",
+                    "Data Analysis & Pivot Tables",
+                  ],
+                },
+              },
+            ],
+            id: 4,
+            open: false,
+          },
+        },
+      ],
+    },
+    // syllabus: [
+    //   {
+    //     Module0: {
+    //       title: "Module 0 :- Preparatory Classes (Programming + Maths)",
+    //       content: [
+    //         {
+    //           chap: {
+    //             title: "Topic 1 :- Cohort Orientation",
+    //             desc: [
+    //               "A brief introduction to tools related to data ",
+    //               "Learn about particular real-time projects and Capstone projects ",
+    //               "Data and its impact on career opportunities",
+    //               "Utilizing data, to enhance industrial operations and management",
+    //             ],
+    //           },
+    //         },
+
+    //         {
+    //           chap: {
+    //             title: "Topic 2 :- Fundamentals of programming ",
+    //             desc: [
+    //               "Introduction to Anaconda & Jupyter notebook ",
+
+    //               "Flavors of python Introduction to Git, GitHub ",
+    //               "Python Fundamentals ",
+    //             ],
+    //           },
+    //         },
+    //         {
+    //           chap: {
+    //             title: "Topic 3 :- Fundamentals of Statistics",
+    //             desc: [
+    //               "Mean, Median, Mode .",
+    //               "Standard Deviation, Average. Probability, permutations, and combinations ",
+    //               "Introduction to Linear Algebra",
+    //             ],
+    //           },
+    //         },
+    //       ],
+    //       id: 0,
+    //       open: true,
+    //     },
+    //   },
+    //   {
+    //     Module0: {
+    //       title: "Term 1 :- Python Programming",
+    //       content: [
+    //         {
+    //           chap: {
+    //             title: "Module 1 :- Python Programming ",
+    //             desc: [
+    //               " Programming Basics & Environment Setup.",
+    //               " Python Programming Overview",
+    //               "  Python Data Types",
+    //               "  Functions And Modules ,Class hands-on: 8+ Programs to be covered in the functions, Lambda, modules, Generators, and Packages class",
+
+    //               " File I/O And Exceptional Handling and Regular Expression,Class hands-on: 10+ Programs to be covered in class from File IO, Reg-ex and exception handling.",
+    //               "Data Analysis Using Numpy",
+    //               " Data Analysis Using Pandas",
+    //               "Data Visualization using Matplotlib",
+    //               ". Data Visualization using Seaborn,3 Case Study on Numpy, Pandas, Matplotlib 1 Case Study on Pandas And Seaborn",
+    //             ],
+    //           },
+    //         },
+    //       ],
+    //       id: 1,
+    //       open: false,
+    //     },
+    //   },
+    //   {
+    //     Module0: {
+    //       title: "Term 2 :- Statistics & Basic Machine Learning",
+    //       content: [
+    //         {
+    //           chap: {
+    //             title: "Module 1 :- Statistics",
+    //             desc: [
+    //               "Fundamentals of Math and Probability",
+    //               "All about Population & Sample",
+    //               "Discrete Probability Distributions - Binomial, Poisson etc",
+    //               "Introduction to Statistics, Statistical Thinking",
+    //               " Descriptive Statistics",
+    //               " Inferential Statistics",
+    //               " Hypothesis Testing",
+    //               "Linear Algebra",
+    //               "Data Processing & Exploratory Data Analysis",
+    //               "EDA,Statistics Assignments: Total 4 practice sets and Assignments from Statistics",
+    //             ],
+    //           },
+    //         },
+    //         {
+    //           chap: {
+    //             title: "Module 2 :- Machine Learning",
+    //             desc: [
+    //               "Introduction to Machine Learning",
+    //               "Regression and Classification Models",
+    //               "Linear Regression Model",
+    //               "Data Preprocessing",
+    //               "Encoding the Data",
+    //               "Logistic Regression Model",
+    //               "Evaluation Metrics for Classification model",
+    //               "K Nearest Neighbours Model",
+    //               "Decision Tree Model",
+    //               "Random Forest Model",
+    //               "Hyperparameter Tuning",
+    //               "Naive Baye’s Model,Case Study on Kart Model Business & Random Forest",
+    //             ],
+    //           },
+    //         },
+    //       ],
+    //       id: 2,
+    //       open: false,
+    //     },
+    //   },
+    //   {
+    //     Module0: {
+    //       title: "Term 3 :- Data Analytics Tools",
+    //       content: [
+    //         {
+    //           chap: {
+    //             title: "Module 1 :- SQL",
+    //             desc: [
+    //               "SQL and RDBMS",
+    //               "Advance SQL",
+    //               "NoSQL, HBase & MongoDB",
+    //               "JSON Data & CRUD",
+    //               "Programming with SQL",
+    //             ],
+    //           },
+    //         },
+    //         {
+    //           chap: {
+    //             title: "Module 2 :- PowerBI",
+    //             desc: [
+    //               "Getting Started With Power BI",
+    //               " Programming with Power BI",
+    //             ],
+    //           },
+    //         },
+    //         {
+    //           chap: {
+    //             title: "Module 3 :- Big Data & Spark Analytics",
+    //             desc: [
+    //               " Introduction To Hadoop & Big Data",
+    //               "What is Spark",
+    //               " Getting to know PySpark Hands-on: Map reduce Use Case : Youtube data analysis & Spark RDD       programming",
+    //             ],
+    //           },
+    //         },
+    //         {
+    //           chap: {
+    //             title: "Module 4 :- Time Series",
+    //             desc: [
+    //               " Introduction to Time Series Forecasting",
+    //               "Introduction to ARIMA Models,Case Study on Time series classification of smartphone data to predict user behavior, Performing Time Series Analysis on Stock Prices & Time series forecasting of sales data",
+    //             ],
+    //           },
+    //         },
+    //       ],
+    //       id: 3,
+    //       open: false,
+    //     },
+    //   },
+    //   {
+    //     Module0: {
+    //       title: "Term 4 :- Excel",
+    //       content: [
+    //         {
+    //           chap: {
+    //             title: "",
+    //             desc: [
+    //               "Getting started with Excel",
+    //               "Using Excel Toolbars: Hiding, Displaying, and Moving Toolbars",
+    //               "Switching Between Sheets in a Workbook",
+    //               "Entering Date Values and using AutoComplete",
+    //               "Inserting and Deleting Cells, Rows, and Columns",
+    //               "Working with the Forms Menu",
+    //               "Creating & Working with Charts",
+    //               "Changing a Chart Type and Working with Pie Charts",
+    //               "Data Analysis & Pivot Tables",
+    //             ],
+    //           },
+    //         },
+    //       ],
+    //       id: 4,
+    //       open: false,
+    //     },
+    //   },
+    // ],
       faq: [
         {
           id: 1,

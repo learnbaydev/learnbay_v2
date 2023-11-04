@@ -193,17 +193,24 @@ export const FoundationDataScienceCourseData = [
     syllabusDesc:
       "Learnbay provides Live, Interactive Online Sessions guided by Professionals working in top MNCs. All sessions are covered practically with real-time industrial projects and case studies.",
     popupHead: "Download Data science Course Brochure",
-    syllabus: [
+    syllabusHead: [
+      "Term 1 Foundation Track(30 ECTS Credits)",
+      "Term 2 Statistics & Machine Learning( 25 ECTS Credits) ",
+      "Term 3 Artificial Intelligence Tools( 25 ECTS Credits)",
+      "Term 4 :- Artificial Intelligence Tools( 25 ECTS Credits) ",
+      "Term 5 :- Deployment (AWS+Azure)( 25 ECTS Credits) ",
+    ],
+    MasterSyllabusDefault: [
       {
         Module0: {
           title: "Module 0 :- Preparatory Classes (Programming + Maths)",
           content: [
             {
               chap: {
-                title: "Topic 1 :- Cohort Orientation",
+                title: "Topic 1 :- Cohort Orientation ",
                 desc: [
-                  "A brief introduction to tools related to data",
-                  "Learn about particular real-time projects and Capstone projects ",
+                  "A brief introduction to tools related to data ",
+                  "Learn about particular real-time projects and Capstone projects",
                   "Data and its impact on career opportunities",
                   "Utilizing data, to enhance industrial operations and management",
                 ],
@@ -215,7 +222,7 @@ export const FoundationDataScienceCourseData = [
                 title: "Topic 2 :- Fundamentals of Programming",
                 desc: [
                   "Introduction to Anaconda & Jupyter notebook",
-                  "Flavours of python Introduction to Git, GitHub",
+                  "Flavors of python Introduction to Git, GitHub",
                   "Python Fundamentals",
                 ],
               },
@@ -241,17 +248,18 @@ export const FoundationDataScienceCourseData = [
           content: [
             {
               chap: {
-                title: "Module 1 :- Python Programming ",
+                title: "Module 1 :- Python Programming",
                 desc: [
-                  " Programming Basics & Environment Setup",
+                  "Programming Basics & Environment Setup",
                   "Python Programming Overview",
                   "Strings, Decisions & Loop Control",
                   "Python Data Types",
-                  "Functions And Modules Class hands-on: 8+ Programs to be covered in the functions, Lambda, modules, Generators, and Packages class.",
-                  ,
-                  " File I/O And Exceptional Handling and Regular Expression Class hands-on: 10+ Programs to be covered in class from File IO, Reg-ex and exception handling.",
+                  "Functions And Modules",
+                  "Class hands-on: 8+ Programs to be covered in the functions, Lambda, modules, Generators, and Packages class",
+                  "File I/O And Exceptional Handling and Regular Expression",
+                  "Class hands-on: 10+ Programs to be covered in class from File IO, Reg-ex and exception handling",
                   "Data Analysis Using Numpy",
-                  " Data Analysis Using Pandas",
+                  "Data Analysis Using Pandas",
                   "Data Visualization using Matplotlib",
                   "Data Visualization using Seaborn",
                   "Case Study on Numpy, Pandas, Matplotlib 1 Case Study on Pandas And Seaborn",
@@ -263,121 +271,232 @@ export const FoundationDataScienceCourseData = [
           open: false,
         },
       },
-      {
-        Module0: {
-          title: "Term 2 :- Statistics and Machine Learning",
-          content: [
-            {
-              chap: {
-                title: "Module 1 :- Statistics",
-                desc: [
-                  " Fundamentals of Math and Probability",
-                  "All about Population & Sample",
-                  "Introduction to Statistics, Statistical Thinking",
-                  "Descriptive Statistics",
-                  " Inferential Statistics",
-                  "Hypothesis Testing",
-                  " Linear Algebra",
-                  "Data Processing & Exploratory Data Analysis",
-                  "EDA Statistics Assignments: Total 4 practice sets and Assignments from Statistics",
-                ],
-              },
-            },
-            {
-              chap: {
-                title: "Module 2 :- Machine Learning",
-                desc: [
-                  "Introduction to Machine Learning",
-                  "Regression and Classification Models",
-                  "Linear Regression Model",
-                  "Data Preprocessing",
-                  "Encoding the Data",
-                  "Logistic Regression Model",
-                  "Evaluation Metrics for Classification model",
-                  "K Nearest Neighbours Model",
-                  "Decision Tree Model",
-                  "Random Forest Model",
-                  "Hyperparameter Tuning",
-                  "Naive Baye’s Model Case Study on Kart Model Business & Random Forest",
-                  "K Means and Hierarchical Clustering",
-                  "Hierarchical Clustering",
-                  "Principal Component Analysis (PCA):",
-                  " Support Vector Machine (SVM) Case Study on Recommendation Engine for e-commerce/retail chain & Twitter data analysis using NLP",
-                ],
-              },
-            },
-          ],
-          id: 2,
-          open: false,
-        },
-      },
-      {
-        Module0: {
-          title: "Term 3 :- Data Science Tools",
-          content: [
-            {
-              chap: {
-                title: "Module 1 :- SQL",
-                desc: [
-                  "SQL and RDBMS",
-                  "Advance SQL",
-                  " NoSQL, HBase & MongoDB",
-                  "JSON Data & CRUD",
-                  "Programming with SQL",
-                ],
-              },
-            },
-            {
-              chap: {
-                title: "Module 2 :- MongoDB",
-                desc: [" Introduction to MongoDB", "MongoDB (Advance)"],
-              },
-            },
-            {
-              chap: {
-                title: "Module 3 :- Tableau",
-                desc: [
-                  " Introduction to Tableau",
-                  "Visual Analytics",
-                  "Dashboard and Stories",
-                  "Tableau (Advance) Hands-on: Connecting data source and data cleansing, Working with various charts, Deployment of Predictive model in visualization",
-                ],
-              },
-            },
-            {
-              chap: {
-                title: "Module 4 :- PowerBI",
-                desc: [
-                  "Getting Started With Power BI",
-                  "Programming with Power BI",
-                ],
-              },
-            },
-            {
-              chap: {
-                title: "Module 5 :- Big Data & Spark Analytics",
-                desc: [
-                  "Introduction To Hadoop & Big Data",
-                  "What is Spark",
-                  "Getting to know PySpark Hands-on: Map reduce Use Case: Youtube data analysis & Spark RDD programming",
-                ],
-              },
-            },
-            {
-              chap: {
-                title: "Module 6 :- Time Series",
-                desc: [
-                  " Introduction to Time Series Forecasting",
-                  "Introduction to ARIMA Models Case Study on Time series classification of smartphone data to predict user behavior, Performing Time Series Analysis on Stock Prices & Time series forecasting of sales data",
-                ],
-              },
-            },
-          ],
-          id: 3,
-          open: false,
-        },
-      },
     ],
+    masterSyllabus: {
+      "Term 1 Foundation Track(30 ECTS Credits)": [
+        {
+          Module0: {
+            title: "Module 0 :- Preparatory Classes (Programming + Maths)",
+            content: [
+              {
+                chap: {
+                  title: "Topic 1 :- Cohort Orientation",
+                  desc: [
+                    "A brief introduction to tools related to data ",
+                    "Learn about particular real-time projects and Capstone projects ",
+                    "Data and its impact on career opportunities",
+                    "Utilizing data, to enhance industrial operations and management",
+                  ],
+                },
+              },
+  
+              {
+                chap: {
+                  title: "Topic 2 :- Fundamentals of programming ",
+                  desc: [
+                    "Introduction to Anaconda & Jupyter notebook ",
+  
+                    "Flavors of python Introduction to Git, GitHub ",
+                    "Python Fundamentals ",
+                  ],
+                },
+              },
+              {
+                chap: {
+                  title: "Topic 3 :- Fundamentals of Statistics",
+                  desc: [
+                    "Mean, Median, Mode .",
+                    "Standard Deviation, Average. Probability, permutations, and combinations ",
+                    "Introduction to Linear Algebra",
+                  ],
+                },
+              },
+            ],
+            id: 0,
+            open: true,
+          },
+        },
+        {
+          Module0: {
+            title: "Term 1 :- Python Programming",
+            content: [
+              {
+                chap: {
+                  title: "Module 1 :- Python Programming ",
+                  desc: [
+                    " Programming Basics & Environment Setup.",
+                    " Python Programming Overview",
+                    "  Python Data Types",
+                    "  Functions And Modules ,Class hands-on: 8+ Programs to be covered in the functions, Lambda, modules, Generators, and Packages class",
+  
+                    " File I/O And Exceptional Handling and Regular Expression,Class hands-on: 10+ Programs to be covered in class from File IO, Reg-ex and exception handling.",
+                    "Data Analysis Using Numpy",
+                    " Data Analysis Using Pandas",
+                    "Data Visualization using Matplotlib",
+                    ". Data Visualization using Seaborn,3 Case Study on Numpy, Pandas, Matplotlib 1 Case Study on Pandas And Seaborn",
+                  ],
+                },
+              },
+            ],
+            id: 1,
+            open: false,
+          },
+        },
+      ],
+      "Term 2 Statistics & Machine Learning( 25 ECTS Credits) ": [
+        {
+          Module0: {
+            title: "Term 1 :- Python Programming",
+            content: [
+              {
+                chap: {
+                  title: "Module 1 :- Python Programming ",
+                  desc: [
+                    " Programming Basics & Environment Setup.",
+                    " Python Programming Overview",
+                    "  Python Data Types",
+                    "  Functions And Modules ,Class hands-on: 8+ Programs to be covered in the functions, Lambda, modules, Generators, and Packages class",
+  
+                    " File I/O And Exceptional Handling and Regular Expression,Class hands-on: 10+ Programs to be covered in class from File IO, Reg-ex and exception handling.",
+                    "Data Analysis Using Numpy",
+                    " Data Analysis Using Pandas",
+                    "Data Visualization using Matplotlib",
+                    ". Data Visualization using Seaborn,3 Case Study on Numpy, Pandas, Matplotlib 1 Case Study on Pandas And Seaborn",
+                  ],
+                },
+              },
+            ],
+            id: 1,
+            open: false,
+          },
+        },
+      ],
+      "Term 3 Artificial Intelligence Tools( 25 ECTS Credits)": [
+        {
+          Module0: {
+            title: "Term 2 :- Statistics & Basic Machine Learning",
+            content: [
+              {
+                chap: {
+                  title: "Module 1 :- Statistics",
+                  desc: [
+                    "Fundamentals of Math and Probability",
+                    "All about Population & Sample",
+                    "Discrete Probability Distributions - Binomial, Poisson etc",
+                    "Introduction to Statistics, Statistical Thinking",
+                    " Descriptive Statistics",
+                    " Inferential Statistics",
+                    " Hypothesis Testing",
+                    "Linear Algebra",
+                    "Data Processing & Exploratory Data Analysis",
+                    "EDA,Statistics Assignments: Total 4 practice sets and Assignments from Statistics",
+                  ],
+                },
+              },
+              {
+                chap: {
+                  title: "Module 2 :- Machine Learning",
+                  desc: [
+                    "Introduction to Machine Learning",
+                    "Regression and Classification Models",
+                    "Linear Regression Model",
+                    "Data Preprocessing",
+                    "Encoding the Data",
+                    "Logistic Regression Model",
+                    "Evaluation Metrics for Classification model",
+                    "K Nearest Neighbours Model",
+                    "Decision Tree Model",
+                    "Random Forest Model",
+                    "Hyperparameter Tuning",
+                    "Naive Baye’s Model,Case Study on Kart Model Business & Random Forest",
+                  ],
+                },
+              },
+            ],
+            id: 2,
+            open: false,
+          },
+        },
+      ],
+      "Term 4 :- Artificial Intelligence Tools( 25 ECTS Credits) ": [
+        {
+          Module0: {
+            title: "Term 3 :- Data Analytics Tools",
+            content: [
+              {
+                chap: {
+                  title: "Module 1 :- SQL",
+                  desc: [
+                    "SQL and RDBMS",
+                    "Advance SQL",
+                    "NoSQL, HBase & MongoDB",
+                    "JSON Data & CRUD",
+                    "Programming with SQL",
+                  ],
+                },
+              },
+              {
+                chap: {
+                  title: "Module 2 :- PowerBI",
+                  desc: [
+                    "Getting Started With Power BI",
+                    " Programming with Power BI",
+                  ],
+                },
+              },
+              {
+                chap: {
+                  title: "Module 3 :- Big Data & Spark Analytics",
+                  desc: [
+                    " Introduction To Hadoop & Big Data",
+                    "What is Spark",
+                    " Getting to know PySpark Hands-on: Map reduce Use Case : Youtube data analysis & Spark RDD       programming",
+                  ],
+                },
+              },
+              {
+                chap: {
+                  title: "Module 4 :- Time Series",
+                  desc: [
+                    " Introduction to Time Series Forecasting",
+                    "Introduction to ARIMA Models,Case Study on Time series classification of smartphone data to predict user behavior, Performing Time Series Analysis on Stock Prices & Time series forecasting of sales data",
+                  ],
+                },
+              },
+            ],
+            id: 3,
+            open: false,
+          },
+        },
+      ],
+      "Term 5 :- Deployment (AWS+Azure)( 25 ECTS Credits) ": [
+        {
+          Module0: {
+            title: "Term 4 :- Excel",
+            content: [
+              {
+                chap: {
+                  title: "",
+                  desc: [
+                    "Getting started with Excel",
+                    "Using Excel Toolbars: Hiding, Displaying, and Moving Toolbars",
+                    "Switching Between Sheets in a Workbook",
+                    "Entering Date Values and using AutoComplete",
+                    "Inserting and Deleting Cells, Rows, and Columns",
+                    "Working with the Forms Menu",
+                    "Creating & Working with Charts",
+                    "Changing a Chart Type and Working with Pie Charts",
+                    "Data Analysis & Pivot Tables",
+                  ],
+                },
+              },
+            ],
+            id: 4,
+            open: false,
+          },
+        },
+      ],
+    },
     project: [
         {
           id: 1,
@@ -483,7 +602,7 @@ export const FoundationDataScienceCourseData = [
       ],
     faq: [
       {
-        id: 1,
+        id: 0,
         sectionName: "Course Related",
         data: [
           {
@@ -525,7 +644,7 @@ export const FoundationDataScienceCourseData = [
         ],
       },
       {
-        id: 2,
+        id: 1,
         sectionName: "Domain Electives",
         data: [
           {
@@ -573,7 +692,7 @@ export const FoundationDataScienceCourseData = [
         ],
       },
       {
-        id: 3,
+        id: 2,
         sectionName: "Payments and Scholarships",
         data: [
           {
@@ -616,7 +735,7 @@ export const FoundationDataScienceCourseData = [
         ],
       },
       {
-        id: 4,
+        id: 3,
         sectionName: "Capstone and Real-Time Projects",
         data: [
           {
@@ -644,7 +763,7 @@ export const FoundationDataScienceCourseData = [
         ],
       },
       {
-        id: 5,
+        id: 4,
         sectionName: "Certification",
         data: [
           {
@@ -656,7 +775,7 @@ export const FoundationDataScienceCourseData = [
         ],
       },
       {
-        id: 6,
+        id: 5,
         sectionName: "Job Assistance",
         data: [
           {
@@ -691,7 +810,7 @@ export const FoundationDataScienceCourseData = [
         ],
       },
       {
-        id: 7,
+        id: 6,
         sectionName: "Mentorship",
         data: [
           {
@@ -710,7 +829,7 @@ export const FoundationDataScienceCourseData = [
         ],
       },
       {
-        id: 8,
+        id: 7,
         sectionName: "Support",
         data: [
           {

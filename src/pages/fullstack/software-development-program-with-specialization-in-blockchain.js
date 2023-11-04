@@ -1,10 +1,11 @@
-import React, { useState } from "react";
 import Head from "next/head";
-import Navbar from "../../../components/Navbar/Navbar";
+import { useState } from "react";
 import Footer from "../../../components/Footer/Footer";
+import Navbar from "../../../components/Navbar/Navbar";
 
 import dynamic from "next/dynamic";
 import { BlockchainFSDData } from "../../../Data/BlockchainFSDCourse";
+import BottomBar from "../../../components/WebPage/BottomBar/BottomBar";
 
 const FirstSection = dynamic(() =>
   import("../../../components/CoursePage/FirstSection/FirstSection")
@@ -54,7 +55,6 @@ const Certificate = dynamic(() =>
 const FAQNew = dynamic(() =>
   import("../../../components/CoursePage/FAQNew/FAQNew")
 );
-import BottomBar from "../../../components/WebPage/BottomBar/BottomBar";
 
 function Blockchain() {
   const [popups, setPopups] = useState(false);
@@ -80,7 +80,7 @@ function Blockchain() {
         />
         <link
           rel="canonical"
-          href="https://www.learnbay.co/software-development-program-with-specialization-in-blockchain"
+          href="https://www.learnbay.co/fullstack/software-development-program-with-specialization-in-blockchain"
         />
       </Head>
       <main>

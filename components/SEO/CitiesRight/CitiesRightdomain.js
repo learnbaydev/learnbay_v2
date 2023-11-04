@@ -2,6 +2,8 @@ import React from "react";
 import styles from "./CitiesRight.module.css";
 import { BsClock } from "react-icons/bs";
 import { FiCheck } from "react-icons/fi";
+import Button from "../../Global/Button/Button";
+import YoutubeVideo from "../../YoutubeVideo/YoutubeVideo";
 
 const CitiesRight = ({
   ProgramHead1,
@@ -15,7 +17,14 @@ const CitiesRight = ({
   ProgramHead7,
   ProgramBot8,
   ProgramBot9,
+  ProgramBot7,
   ProgramBot10,
+  ProgramBot11,
+  ProgramBot12,
+  ProgramBot13,
+  ProgramBot14,
+  ProgramBot15,
+  ProgramBot16,
   ProgramBot1,
   ProgramBot2,
   ProgramBot3,
@@ -125,6 +134,8 @@ const CitiesRight = ({
   alt9,
   cityTextDAbangalore,
   cityTextDAhyderabad,
+  src22,
+  src33,
 }) => {
   return (
     <section className={styles.CitiesRightHead}>
@@ -514,7 +525,7 @@ const CitiesRight = ({
               every concept from basics to advanced by industry experts. For
               non-technical aspirants, Learnbay also offers special programming
               classes to help them get in line with their batchmates and grasp
-              the concepts better..
+              the concepts better.
             </p>
             <p>
               <b>Phase 2 - </b>Assessments
@@ -660,12 +671,21 @@ const CitiesRight = ({
             <h2 className={styles.pHead}>{ProgramHead6}</h2>
             <p className={styles.pp}>{ProgramBot6}</p>
             <h2 className={styles.pHead}>{ProgramHead7}</h2>
+            <p className={styles.pp}>{ProgramBot7}</p>
             <p className={styles.pp}>{ProgramBot8}</p>
             <p className={styles.pp}>{ProgramBot9}</p>
             <h2 className={styles.pHead}>{ProgramHead8}</h2>
             <p className={styles.pp}>{ProgramBot10}</p>
+            <p className={styles.pp}>{ProgramBot11}</p>
+            <p className={styles.pp}>{ProgramBot12}</p>
+            <p className={styles.pp}>{ProgramBot13}</p>
+            <p className={styles.pp}>{ProgramBot14}</p>
+            <p className={styles.pp}>{ProgramBot15}</p>
+            <p className={styles.pp}>{ProgramBot16}</p>
           </div>
         )}
+
+      
       </div>
       <div id="Certification">
         <div className={styles.CitiesRightSpan}>
@@ -675,7 +695,11 @@ const CitiesRight = ({
           <h2 className={styles.pHead}>{CertificationHead1}</h2>
           <p className={styles.pp}>{CertificationBot1}</p>
           <p className={styles.pp}>{CertificationBot2}</p>
-          <img src={src} alt={alt1}></img>
+          <div className={styles.certNew}>
+            <img src={src}></img>
+            <img src={src22}></img>
+            <img src={src33}></img>
+          </div>
         </div>
       </div>
       <div id="Module">
@@ -851,7 +875,7 @@ const CitiesRight = ({
         </div>
         <div className={styles.Button}>
           <a href={syllabussrc} target="_blank">
-            <button style={{ margin: "auto" }}>View Detailed Brochure</button>
+            <Button className={styles.btn} text="View Detailed Brochure" />
           </a>
         </div>
       </div>
@@ -926,7 +950,7 @@ const CitiesRight = ({
             href="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Data+Science+and+AI+Projects.pdf"
             target="_blank"
           >
-            <button style={{ margin: "auto" }}>View All Projects</button>
+            <Button className={styles.btn} text="View All Projects" />
           </a>
         </div>
       </div>
@@ -963,7 +987,7 @@ const CitiesRight = ({
         </div>
         <div className={styles.Button}>
           <a href="/reviews" target="_blank">
-            <button style={{ margin: "auto" }}>View All Reviews</button>
+            <Button className={styles.btn} text="View All Reviews" />
           </a>
         </div>
       </div>

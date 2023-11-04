@@ -19,7 +19,7 @@ function Review() {
                     <div className={styles.imgDiv}>
                   <img
                     src={img}
-                    layout="intrinsic"
+                     
                     className={styles.ReviewImg}
               alt="Learnbay"
                   />

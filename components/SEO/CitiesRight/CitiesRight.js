@@ -20,6 +20,7 @@ const CitiesRight = ({
   ProgramBot16,
   ProgramBot17,
   ProgramBot18,
+  ProgramBot32,
   ProgramHead3,
   ProgramHead4,
   ProgramHead5,
@@ -48,7 +49,8 @@ const CitiesRight = ({
   ProgramBot2,
   ProgramBot3,
   ProgramBot31,
-  ProgramBot32,
+  ProgramBot66,
+  ProgramBot67,
   ProgramBot4,
   ProgramBot5,
   ProgramBot51,
@@ -255,8 +257,28 @@ const CitiesRight = ({
   cityTextDSPune,
   cityTextDSHyderabad,
   cityTextDSDelhi,
-
   cityTextDSmumbai,
+  ProgramBot22,
+  ProgramBot23,
+  ProgramBot24,
+  ProgramBot25,
+  ProgramBot26,
+  ProgramBot27,
+  ProgramBot28,
+  ProgramBot29,
+  ProgramBot42,
+  ProgramBot30,
+  ProgramBot33,
+  ProgramBot34,
+  ProgramBot35,
+  ProgramBot36,
+  ProgramBot37,
+  ProgramBot38,
+  ProgramBot39,
+  ProgramBot40,
+  ProgramBot41,
+  certificate2,
+  certificate1,
 }) => {
   const [read, setRead] = useState(false);
   const handler = () => {
@@ -369,7 +391,7 @@ const CitiesRight = ({
               those working in the non-IT Sector. Some tools covered in Module 0
               are Anaconda, Jupyter, Git, and GitHub.
             </p>
-            <h2>Term 1 - Python for Data Science </h2>
+            <h2 className={styles.pHead}>Term 1 - Python for Data Science </h2>
             <b>Module (1) - Python Programming </b>
             <p>
               This module, which includes full-time, focused training sessions
@@ -385,7 +407,9 @@ const CitiesRight = ({
               giving you the knowledge and abilities needed to start working as
               a data scientist.
             </p>
-            <h2>Term 2 - Statistics and Machine Learning </h2>
+            <h2 className={styles.pHead}>
+              Term 2 - Statistics and Machine Learning{" "}
+            </h2>
             <b>Module (1) - Statistics </b>
             <p>
               The next lesson, vital for data science, focuses on teaching
@@ -411,7 +435,7 @@ const CitiesRight = ({
               use cutting-edge machine-learning techniques to build solid models
               and analyze difficult data sets.{" "}
             </p>
-            <h2>
+            <h2 className={styles.pHead}>
               <b>Term 3 - Data Science Tools</b>
             </h2>
             <p>
@@ -432,7 +456,7 @@ const CitiesRight = ({
             <p>
               <b>Module 6 - Time Series</b>
             </p>
-            <h2>
+            <h2 className={styles.pHead}>
               <b>Term 4: Artificial Intelligence Tools</b>
             </h2>
             <p>
@@ -444,7 +468,9 @@ const CitiesRight = ({
             <p>
               <b>Module 3 - Model Training and Deployment using ( AWS GCP) </b>
             </p>
-            <h2>Premium Features of Data Science Training in Mumbai </h2>
+            <h2 className={styles.pHead}>
+              Premium Features of Data Science Training in Mumbai{" "}
+            </h2>
             <p>
               Some of the premium features of online data science training in
               Mumbai are
@@ -484,7 +510,7 @@ const CitiesRight = ({
                 your interview success rate and accelerating the hiring process.
               </li>
             </ol>
-            <h2>
+            <h2 className={styles.pHead}>
               Data Science Foundation Program in Mumbai with Placement
               Assistance{" "}
             </h2>
@@ -500,7 +526,7 @@ const CitiesRight = ({
                 for you.{" "}
               </li>
               <li>This program’s fee is INR 1,10,000, excluding GST.</li>
-              <h3>
+              <h3 className={styles.pHead}>
                 Highlights of the Data Science Foundation Program in Mumbai{" "}
               </h3>
               <li>
@@ -528,7 +554,7 @@ const CitiesRight = ({
                 significant job experience.
               </li>
             </ul>
-            <h2>
+            <h2 className={styles.pHead}>
               Advance Data Science and AI Course in Mumbai with Placement
               Assistance{" "}
             </h2>
@@ -551,7 +577,7 @@ const CitiesRight = ({
                 data science, costing only INR 95,000 + 18% GST.
               </li>
 
-              <h3>
+              <h3 className={styles.pHead}>
                 Highlights of Advance Data Science and AI Course in Mumbai
               </h3>
               <li>250+ hours of rigorous training</li>
@@ -560,7 +586,7 @@ const CitiesRight = ({
               <li>2 years flexible subscription of learning materials</li>
               <li>12+ real-time industrial projects</li>
             </ul>
-            <h2>
+            <h2 className={styles.pHead}>
               Data Science and AI program for Managers and Leaders in Mumbai
               with Placement Assistance{" "}
             </h2>
@@ -577,7 +603,7 @@ const CitiesRight = ({
               </li>
               <li>The course fee is INR 1,10,000, excluding GST.</li>
 
-              <h3>
+              <h3 className={styles.pHead}>
                 Highlights of Data Science and AI Program for Managers and
                 Leaders in Mumbai
               </h3>
@@ -591,7 +617,7 @@ const CitiesRight = ({
                 economical
               </li>
             </ul>
-            <h2>
+            <h2 className={styles.pHead}>
               Data Science and AI Master Program in Mumbai with Placement
               Assistance{" "}
             </h2>
@@ -619,7 +645,7 @@ const CitiesRight = ({
                 field.
               </li>
 
-              <h3>
+              <h3 className={styles.pHead}>
                 Highlights of Data Science and AI Master Program in Mumbai with
                 Placement Assistance
               </h3>
@@ -633,7 +659,7 @@ const CitiesRight = ({
             </ul>
             <b>Note:</b> All data science courses at Learnbay come with the
             option of no-cost EMI.
-            <h2>Data Science Trends in Mumbai </h2>
+            <h2 className={styles.pHead}>Data Science Trends in Mumbai </h2>
             <p>
               In Mumbai, the subject of data science is expanding quickly and
               has recently seen several trends. Artificial intelligence (AI) and
@@ -654,7 +680,9 @@ const CitiesRight = ({
               businesses rely on data-driven insights, making it a viable career
               choice for anyone wishing to enter the area.
             </p>
-            <h2>Best Data Science Training Institute in Mumbai</h2>
+            <h2 className={styles.pHead}>
+              Best Data Science Training Institute in Mumbai
+            </h2>
             <p>
               The <b>best data science training institute in Mumbai</b> is{" "}
               <a
@@ -700,7 +728,7 @@ const CitiesRight = ({
               best <b>data science institutes in Mumbai</b> with the help of all
               these qualities.
             </p>
-            <h2>
+            <h2 className={styles.pHead}>
               Why Choose Learnbay Data Science Training Institute in Mumbai?
             </h2>
             <ol type="1">
@@ -750,7 +778,7 @@ const CitiesRight = ({
                 additional basic coding classes.
               </li>
             </ol>
-            <h2>Did You Know? </h2>
+            <h2 className={styles.pHead}>Did You Know? </h2>
             <p>
               In Mumbai, data science is assuming greater importance. Companies
               now rely more on data science to help them make wise decisions due
@@ -894,7 +922,7 @@ const CitiesRight = ({
               are Anaconda, Jupyter, Git, and GitHub.
             </p>
 
-            <h2>Term 1 - Python Programming </h2>
+            <h2 className={styles.pHead}>Term 1 - Python Programming </h2>
             <b>Module 1- Basics and Advanced Python</b>
 
             <p>
@@ -919,7 +947,9 @@ const CitiesRight = ({
               exercises on functions, Lambda, etc.
             </p>
 
-            <h2>Term 2 - Statistics and Machine Learning</h2>
+            <h2 className={styles.pHead}>
+              Term 2 - Statistics and Machine Learning
+            </h2>
             <b>Module 1 - Statistics </b>
 
             <p>
@@ -971,7 +1001,7 @@ const CitiesRight = ({
               each algorithm help hone learners’ knowledge.{" "}
             </p>
 
-            <h2>
+            <h2 className={styles.pHead}>
               <b>Term 3: Data Science Tools</b>
             </h2>
             <p>
@@ -992,7 +1022,7 @@ const CitiesRight = ({
             <p>
               <b>Module 6 - Time Series</b>
             </p>
-            <h2>
+            <h2 className={styles.pHead}>
               <b>Term 4: Artificial Intelligence Tools</b>
             </h2>
             <p>
@@ -1005,7 +1035,9 @@ const CitiesRight = ({
               <b>Module 3 - Model Training and Deployment using ( AWS GCP) </b>
             </p>
 
-            <h2>Premium Features of Data Scientist Course in Hyderabad</h2>
+            <h2 className={styles.pHead}>
+              Premium Features of Data Scientist Course in Hyderabad
+            </h2>
             <p>
               <b>100% Live Online Classes:</b> You can take live classes while
               sitting at the comforts of your home. You can ask any doubts in
@@ -1052,7 +1084,9 @@ const CitiesRight = ({
               added advantage.{" "}
             </p>
 
-            <h2>Other Courses We Offer in Data Science</h2>
+            <h2 className={styles.pHead}>
+              Other Courses We Offer in Data Science
+            </h2>
             <p>
               <b>Data Science Foundation Program:</b> : The basic program is
               designed for beginners with a non-IT background. The program
@@ -1086,7 +1120,7 @@ const CitiesRight = ({
               at just ₹1,29,000 + 18% GST.
             </p>
 
-            <h2>
+            <h2 className={styles.pHead}>
               Available Domains at Learnbay Data Science Course in Hyderabad
             </h2>
             <p>
@@ -1151,7 +1185,7 @@ const CitiesRight = ({
               ₹10,00,000 per annum. Wondering which is the{" "}
               <b>best Data Training Institute in Hyderabad</b>? Well, look no
               further. Learnbay’s customized and domain-specialized courses give
-              you an edge over the others. <br />, <br />, Choose{" "}
+              you an edge over the others. <br /> <br /> Choose{" "}
               <a
                 href="https://www.learnbay.co/data-science-course-training-in-hyderabad"
                 target="_blank"
@@ -1290,7 +1324,7 @@ const CitiesRight = ({
               deviation, average, probability, and introduction to linear
               algebra.
             </p>
-            <h2>
+            <h2 className={styles.pHead}>
               <b>Term 1 - Python Programming (Basic and Advanced)</b>
             </h2>
             <p>
@@ -1307,7 +1341,7 @@ const CitiesRight = ({
               Visualization using Matplotlib, and Data Visualization using
               Seaborn.
             </p>
-            <h2>
+            <h2 className={styles.pHead}>
               <b>Term 2: Statistics and Machine Learning</b>
             </h2>
             <p>
@@ -1333,7 +1367,7 @@ const CitiesRight = ({
               knowledge about K means and Hierarchical Clustering, Principal
               Component Analysis, and Support Vector Machine.
             </p>
-            <h2>
+            <h2 className={styles.pHead}>
               <b>Term 3: Data Science Tools</b>
             </h2>
             <p>
@@ -1354,7 +1388,7 @@ const CitiesRight = ({
             <p>
               <b>Module 6 - Time Series</b>
             </p>
-            <h2>
+            <h2 className={styles.pHead}>
               <b>Term 4: Artificial Intelligence Tools</b>
             </h2>
             <p>
@@ -1366,7 +1400,7 @@ const CitiesRight = ({
             <p>
               <b>Module 3 - Model Training and Deployment using ( AWS GCP) </b>
             </p>
-            <h2>
+            <h2 className={styles.pHead}>
               <b>Premium Features of Data Scientist Training in Pune</b>
             </h2>
             <ol type="1">
@@ -1401,7 +1435,7 @@ const CitiesRight = ({
                 confidence to ace the interviews in your dream company.
               </li>
             </ol>
-            <h2>
+            <h2 className={styles.pHead}>
               <b>
                 Data Science Foundation Program in Pune with Placement
                 Assistance
@@ -1431,7 +1465,9 @@ const CitiesRight = ({
               </li>
             </ul>
 
-            <h3>Highlights of the Data Science Foundation Program in Pune</h3>
+            <h3 className={styles.pHead}>
+              Highlights of the Data Science Foundation Program in Pune
+            </h3>
             <ul>
               <li>Consists of 200+ hours of live sessions</li>
               <li>Lifetime accessibility of recorded live classroom videos</li>
@@ -1441,7 +1477,7 @@ const CitiesRight = ({
               <li>8+ real-time industrial projects</li>
             </ul>
 
-            <h2>
+            <h2 className={styles.pHead}>
               Advance Data Science and AI Program in Pune with Placement
               Assistance
             </h2>
@@ -1462,7 +1498,7 @@ const CitiesRight = ({
               </li>
             </ul>
 
-            <h3>
+            <h3 className={styles.pHead}>
               Highlights of Advance Data Science Course and AI Program in Pune
             </h3>
 
@@ -1474,7 +1510,7 @@ const CitiesRight = ({
               <li>12+ real-time industrial projects. </li>
             </ul>
 
-            <h2>
+            <h2 className={styles.pHead}>
               Data Science and AI program for Managers and Leaders in Pune with
               Placement Assistance
             </h2>
@@ -1503,7 +1539,7 @@ const CitiesRight = ({
               </li>
             </ul>
 
-            <h3>
+            <h3 className={styles.pHead}>
               Highlights of Data Science and AI Program for Managers and Leaders
               in Pune
             </h3>
@@ -1519,7 +1555,7 @@ const CitiesRight = ({
               </li>
             </ul>
 
-            <h2>
+            <h2 className={styles.pHead}>
               Data Science and AI Master Program in Pune with Placement
               Assistance
             </h2>
@@ -1546,14 +1582,18 @@ const CitiesRight = ({
               </li>
               <li>The course comes at just ₹1,29,000 + 18% GST. </li>
 
-              <h3>Highlights of Data Science and AI Master Program in Pune</h3>
+              <h3 className={styles.pHead}>
+                Highlights of Data Science and AI Master Program in Pune
+              </h3>
               <li>You can opt for either a weekday or a weekend batch</li>
               <li>Consists of 500+ hours of live sessions</li>
               <li>Practical covering for real-time industrial projects</li>
               <li>20+ real-time industrial projects</li>
             </ul>
 
-            <h2>Learnbay’s Domain-Specific Data Science Course in Pune</h2>
+            <h2 className={styles.pHead}>
+              Learnbay’s Domain-Specific Data Science Course in Pune
+            </h2>
             <p>Some available domains are </p>
 
             <ol type="1">
@@ -1606,7 +1646,7 @@ const CitiesRight = ({
               </li>
             </ol>
 
-            <h2>Data Science Trends in Pune </h2>
+            <h2 className={styles.pHead}>Data Science Trends in Pune </h2>
 
             <p>
               The experts have predicted that by 2026, the industry will have
@@ -1618,7 +1658,9 @@ const CitiesRight = ({
               lecture videos to learn anytime you want.
             </p>
 
-            <h2>Best Data Science Training Institute in Pune</h2>
+            <h2 className={styles.pHead}>
+              Best Data Science Training Institute in Pune
+            </h2>
 
             <p>
               Ever found yourself wondering about the{" "}
@@ -1643,7 +1685,7 @@ const CitiesRight = ({
               partner, has global recognition.
             </p>
 
-            <h2>
+            <h2 className={styles.pHead}>
               Why Choose Learnbay Data Science Training Institute in Pune?
             </h2>
             <ul>
@@ -1659,7 +1701,7 @@ const CitiesRight = ({
               <li>Industry-targeted syllabus</li>
             </ul>
 
-            <h2>Did You Know? </h2>
+            <h2 className={styles.pHead}>Did You Know? </h2>
 
             <p>
               The average <b>data scientist salary in Pune</b> is ₹8,20,000 per
@@ -1778,7 +1820,9 @@ const CitiesRight = ({
               the basic topics. Some tools covered in this are Anaconda,
               Jupyter, Git, and GitHub.
             </p>
-            <h3>Term 1 - Python Programming (Basic and Advanced)</h3>
+            <h3 className={styles.pHead}>
+              Term 1 - Python Programming (Basic and Advanced)
+            </h3>
             <p>
               <b>Module 1: Basic Python Programming</b>
             </p>
@@ -1801,7 +1845,9 @@ const CitiesRight = ({
               exercises on subjects like functions and Lambda and questions on
               Python programming.
             </p>
-            <h3>Term 2 - Statistics and Machine Learning</h3>
+            <h3 className={styles.pHead}>
+              Term 2 - Statistics and Machine Learning
+            </h3>
             <p>
               <b>Module 1: Statistics </b>
             </p>
@@ -1844,7 +1890,7 @@ const CitiesRight = ({
               further their understanding, real-world case studies will be
               offered for each method.
             </p>
-            <h3>Term 3 - Data Science Tools</h3>
+            <h3 className={styles.pHead}>Term 3 - Data Science Tools</h3>
             <p>
               <b>Module (1) - SQL</b>
             </p>
@@ -1863,7 +1909,9 @@ const CitiesRight = ({
             <p>
               <b>Module (6) - Time Series</b>
             </p>
-            <h3>Term 4 - Artificial Intelligence Tools</h3>
+            <h3 className={styles.pHead}>
+              Term 4 - Artificial Intelligence Tools
+            </h3>
             <p>
               <b>Module (1) - Deep learning using TensorFlow</b>
             </p>
@@ -1883,7 +1931,9 @@ const CitiesRight = ({
               your ability to perform your "SuperHero duty" as a Data Scientist
               in leading firms.
             </p>
-            <h2>Premium Features of Data Scientist Training in Delhi</h2>
+            <h2 className={styles.pHead}>
+              Premium Features of Data Scientist Training in Delhi
+            </h2>
             <p>
               <b>100% Live Online Classes:</b> You can attend Learnbay's 100%
               live online classes from the convenience of your home. During the
@@ -1929,7 +1979,7 @@ const CitiesRight = ({
               and strengthen your abilities.
             </p>
 
-            <h2>
+            <h2 className={styles.pHead}>
               Data Science Foundation Program in Delhi with Placement Assistance{" "}
             </h2>
             <p>
@@ -1945,7 +1995,7 @@ const CitiesRight = ({
                 The program will teach you the fundamentals of Python, Anaconda,
                 and Jupyter Notebook for just 1,10,000 + 18% GST.
               </li>
-              <h3>
+              <h3 className={styles.pHead}>
                 Highlights of the Data Science Foundation Program in Bangalore
               </h3>
               <li>200+ hours of rigorous training</li>
@@ -1954,7 +2004,7 @@ const CitiesRight = ({
               <li>Hands-on experience with real-world projects</li>
               <li>8+ real-time industrial projects</li>
             </ul>
-            <h2>
+            <h2 className={styles.pHead}>
               Advance Data Science and AI Program in Delhi with Placement
               Assistance
             </h2>
@@ -1972,7 +2022,7 @@ const CitiesRight = ({
                 It's great for people wishing to swap domains, all at just ₹
                 99,000 + 18% GST.
               </li>
-              <h3>
+              <h3 className={styles.pHead}>
                 Highlights of the Advance Data Science and AI Program in Delhi
               </h3>
               <li>250+ hours of rigorous training</li>
@@ -1982,7 +2032,7 @@ const CitiesRight = ({
               <li>12+ real-time industrial projects</li>
             </ul>
 
-            <h2>
+            <h2 className={styles.pHead}>
               Data Science and AI program for Managers and Leaders in Delhi with
               Placement Assistance{" "}
             </h2>
@@ -1997,7 +2047,7 @@ const CitiesRight = ({
                 domain-specific projects offer you an edge over others.{" "}
               </li>
               <li>It only costs INR 1,10,000 plus 18% GST for the program.</li>
-              <h3>
+              <h3 className={styles.pHead}>
                 Highlights of Data Science and AI Program for Managers and
                 Leaders in Delhi
               </h3>
@@ -2010,7 +2060,7 @@ const CitiesRight = ({
               </li>
             </ul>
 
-            <h2>
+            <h2 className={styles.pHead}>
               Data Science and AI Master Program in Delhi with Placement
               Assistance{" "}
             </h2>
@@ -2030,14 +2080,18 @@ const CitiesRight = ({
                 With Learnbay's professional programs, you may begin your Data
                 Science path right away!
               </li>
-              <h3>Highlights of Data Science and AI Master Program in Delhi</h3>
+              <h3 className={styles.pHead}>
+                Highlights of Data Science and AI Master Program in Delhi
+              </h3>
               <li>500+ hours of rigorous training</li>
               <li>IBM certification </li>
               <li>Project Innovation lab</li>
               <li>20+ real-time industrial projects</li>
             </ul>
 
-            <h2>Learnbay’s Domain-Specific Data Science Course in Delhi</h2>
+            <h2 className={styles.pHead}>
+              Learnbay’s Domain-Specific Data Science Course in Delhi
+            </h2>
 
             <ol type="1">
               <li>
@@ -2095,7 +2149,7 @@ const CitiesRight = ({
               </li>
             </ol>
 
-            <h2>Data Science Trends in Delhi</h2>
+            <h2 className={styles.pHead}>Data Science Trends in Delhi</h2>
             <p>
               From banking, cyber security, and financial institutions to the
               education and healthcare sectors, there is a huge scope for the
@@ -2111,7 +2165,9 @@ const CitiesRight = ({
               alter the scheduling and number of sessions.
             </p>
 
-            <h2>Best Data Science Training Institute in Delhi</h2>
+            <h2 className={styles.pHead}>
+              Best Data Science Training Institute in Delhi
+            </h2>
             <p>
               Learnbay is the <b>best data training institute in Delhi</b>{" "}
               thanks to its individualized and industry-specific courses, which
@@ -2134,7 +2190,7 @@ const CitiesRight = ({
               will make to kickstart your career as a data scientist.
             </p>
 
-            <h2>Did you know?</h2>
+            <h2 className={styles.pHead}>Did you know?</h2>
 
             <p>
               Data science is a lucrative area because the{" "}
@@ -2173,7 +2229,7 @@ const CitiesRight = ({
 
         {cityTextDSChennai ? (
           <div className={styles.CitiesRightInner}>
-            <h2>
+            <h2 className={styles.pHead}>
               <b>Data Science Certification from Learnbay</b>
             </h2>
             <p>
@@ -2188,7 +2244,7 @@ const CitiesRight = ({
               one will be awarded the IBM certification and a proud Learnbay
               Alumni.{" "}
             </p>
-            <h2>
+            <h2 className={styles.pHead}>
               <b>What is the certification process?</b>
             </h2>
             <p>
@@ -2200,7 +2256,7 @@ const CitiesRight = ({
               addition, once the Capstone project is completed, you will be
               given an IBM Project experience certificate.
             </p>
-            <h2>
+            <h2 className={styles.pHead}>
               <b>Data Science Course Training In Chennai</b>
             </h2>
             <p>
@@ -2244,7 +2300,7 @@ const CitiesRight = ({
             </p>
             {read ? (
               <>
-                <h2>
+                <h2 className={styles.pHead}>
                   Why Choose Learnbay For A Data Science Course In{" "}
                   <b>Chennai</b>?
                 </h2>
@@ -2283,7 +2339,9 @@ const CitiesRight = ({
                   aspirants wanting to upgrade their Data Science concepts and
                   secure a lucrative position.
                 </p>
-                <h2>Overview of Data Science and Data scientist</h2>
+                <h2 className={styles.pHead}>
+                  Overview of Data Science and Data scientist
+                </h2>
                 <p>
                   Data science is all about uncovering hidden patterns in data
                   that relate to trends, patterns, behaviour, and interpretation
@@ -2292,8 +2350,10 @@ const CitiesRight = ({
                   termed "superheroes." As reported by Harvard, a data scientist
                   is the most in-demand career worldwide.
                 </p>
-                <h2>Why Enrol in the Data Science Course?</h2>
-                <h3>
+                <h2 className={styles.pHead}>
+                  Why Enrol in the Data Science Course?
+                </h2>
+                <h3 className={styles.pHead}>
                   <b>Is Data Science certification worth it?</b>
                 </h3>
                 <p>
@@ -2326,7 +2386,7 @@ const CitiesRight = ({
                     best job to pursue in the coming years.
                   </li>
                 </ul>
-                <h2>
+                <h2 className={styles.pHead}>
                   You May Wonder If Data Science Certification Is Worth It?
                 </h2>
                 <p>
@@ -2344,7 +2404,7 @@ const CitiesRight = ({
                   collection, the career path for data scientists is extensive
                   and rewarding.
                 </p>
-                <h2>
+                <h2 className={styles.pHead}>
                   Why Learnbay Is The Best Data Science Training Institute In
                   <b>Chennai</b>
                 </h2>
@@ -2357,7 +2417,9 @@ const CitiesRight = ({
                   <b>Data Science courses in Chennai</b> are available in the
                   course brochure.{" "}
                 </p>
-                <h2>Who Should Enrol in the Data Science Course?</h2>
+                <h2 className={styles.pHead}>
+                  Who Should Enrol in the Data Science Course?
+                </h2>
                 <p>
                   These professionals might consider taking a{" "}
                   <b>Data Science course in Chennai</b> as the next genuine move
@@ -2381,7 +2443,7 @@ const CitiesRight = ({
                     learn
                   </li>
                 </ul>
-                <h2>Interview Preparation Sessions</h2>
+                <h2 className={styles.pHead}>Interview Preparation Sessions</h2>
                 <p>
                   Candidates will be kept under Learnbay's Placement Assistance
                   Program once they have successfully completed the Data Science
@@ -2532,7 +2594,7 @@ const CitiesRight = ({
               to Anaconda, Jupyter notebook, Git and Github for data science,
               and other practical materials.
             </p>
-            <h3>Term 1 - Python For Data Science</h3>
+            <h3 className={styles.pHead}>Term 1 - Python For Data Science</h3>
             <p>
               <b>Module (1) Python Programming</b>
             </p>
@@ -2546,7 +2608,9 @@ const CitiesRight = ({
               including Numpy and Pandas, and case studies using Python
               libraries.
             </p>
-            <h3>Term 2 - Statistics and Machine Learning</h3>
+            <h3 className={styles.pHead}>
+              Term 2 - Statistics and Machine Learning
+            </h3>
             <p>
               <b>Module (1) - Statistics</b>
             </p>
@@ -2569,7 +2633,7 @@ const CitiesRight = ({
               and classification models, KNN-model, Clustering techniques, PCA,
               and Support Vector Machine (SVM).
             </p>
-            <h3>Term 3 - Data Science Tools</h3>
+            <h3 className={styles.pHead}>Term 3 - Data Science Tools</h3>
             <p>
               <b>Module (1) - SQL</b>
             </p>
@@ -2588,7 +2652,9 @@ const CitiesRight = ({
             <p>
               <b>Module (6) - Time Series</b>
             </p>
-            <h3>Term 4 - Artificial Intelligence Tools</h3>
+            <h3 className={styles.pHead}>
+              Term 4 - Artificial Intelligence Tools
+            </h3>
             <p>
               <b>Module (1) - Deep learning using TensorFlow</b>
             </p>
@@ -2608,7 +2674,9 @@ const CitiesRight = ({
               your ability to perform your "SuperHero duty" as a Data Scientist
               in leading firms.
             </p>
-            <h2>Premium Features of Data Scientist Training in Bangalore</h2>
+            <h2 className={styles.pHead}>
+              Premium Features of Data Scientist Training in Bangalore
+            </h2>
             <p>
               <b>Live Interactive Classes:</b> The classes are hassle-free and
               completely online, where you can interact with trainers and other
@@ -2645,7 +2713,7 @@ const CitiesRight = ({
               interviews, our professionals will assist you in improving your
               interview success rate and accelerating the hiring process.
             </p>
-            <h2>
+            <h2 className={styles.pHead}>
               Data Science Foundation Program in Bangalore with Placement
               Assistance{" "}
             </h2>
@@ -2666,30 +2734,9 @@ const CitiesRight = ({
                 This program’s data science course fee is INR 1,10,000,
                 excluding GST.<br></br>
               </li>
-              {/* <p>
-                    The course fee for this manager course is INR 105,000,
-                    exclusive of GST.
-                  </p> */}
-              {/* <li>
-                    <b>Data Science and AI Master Program - </b>This
-                    domain-specialised data science course is a complete boot
-                    camp covering everything a data scientist must possess. The
-                    duration of this master's program is 15 to 17 months,
-                    depending on your preferred batch (week and weekend). After
-                    completing this course, you will become an expert data
-                    scientist and be able to manage teams in leading firms.
-                  </li> */}
-              {/* <p>
-                    The course fee for this master's program is 125,000,
-                    Exclusive of GST.
-                  </p>
-                  <p>
-                    Note: All data science courses at Learnbay come with the
-                    option of no-cost EMI.
-                  </p> */}
             </ol>
 
-            <h3>
+            <h3 className={styles.pHead}>
               Highlights of the Data Science Foundation Program in Bangalore
             </h3>
 
@@ -2702,7 +2749,7 @@ const CitiesRight = ({
               <li>8+ real-time industrial projects</li>
             </ol>
 
-            <h2>
+            <h2 className={styles.pHead}>
               Advance Data Science and AI Course in Bangalore with Placement
               Assistance
             </h2>
@@ -2722,7 +2769,7 @@ const CitiesRight = ({
               </li>
             </ol>
 
-            <h3>
+            <h3 className={styles.pHead}>
               Highlights of Advance Data Science and AI Course in Bangalore
             </h3>
             <ol type="1">
@@ -2733,7 +2780,7 @@ const CitiesRight = ({
               <li>12+ real-time industrial projects. </li>
             </ol>
 
-            <h2>
+            <h2 className={styles.pHead}>
               Data Science and AI for Managers & Leaders in Bangalore with
               Placement Assistance
             </h2>
@@ -2755,7 +2802,7 @@ const CitiesRight = ({
               </li>
             </ol>
 
-            <h3>
+            <h3 className={styles.pHead}>
               Highlights of Data Science and AI program for Managers and Leaders
               in Bangalore
             </h3>
@@ -2771,7 +2818,7 @@ const CitiesRight = ({
               </li>
             </ol>
 
-            <h2>
+            <h2 className={styles.pHead}>
               Data Science and AI Master Program in Bangalore with Placement
               Assistance{" "}
             </h2>
@@ -2794,7 +2841,7 @@ const CitiesRight = ({
               </li>
             </ol>
 
-            <h3>
+            <h3 className={styles.pHead}>
               Highlights of Data Science and AI Master Program in Bangalore
             </h3>
             <ol type="1">
@@ -2811,7 +2858,9 @@ const CitiesRight = ({
               option of no-cost EMI.
             </p>
 
-            <h2>Learnbay’s Domain-Specific Data Science Course in Bangalore</h2>
+            <h2 className={styles.pHead}>
+              Learnbay’s Domain-Specific Data Science Course in Bangalore
+            </h2>
             <ol type="1">
               <li>
                 <b>Finance Domain</b> - Finance-related investments in data
@@ -2876,7 +2925,7 @@ const CitiesRight = ({
               </li>
             </ol>
 
-            <h2>Data Science Trends in Bangalore</h2>
+            <h2 className={styles.pHead}>Data Science Trends in Bangalore</h2>
             <p>
               Bangalore is home to a youthful generation of technological
               natives with the business acumen and creativity to fuel the global
@@ -2906,7 +2955,9 @@ const CitiesRight = ({
               course page for other <b>data science course fees</b>.
             </p>
 
-            <h2>Best Data Science Training Institute in Bangalore</h2>
+            <h2 className={styles.pHead}>
+              Best Data Science Training Institute in Bangalore
+            </h2>
 
             <p>
               Are you looking for the{" "}
@@ -2942,7 +2993,7 @@ const CitiesRight = ({
               become a multifaceted field.
             </p>
 
-            <h2>
+            <h2 className={styles.pHead}>
               Why Choose Learnbay Data Science Training Institute in Bangalore?
             </h2>
 
@@ -2981,7 +3032,7 @@ const CitiesRight = ({
               skills to secure a lucrative career!
             </p>
 
-            <h2>Did You Know?</h2>
+            <h2 className={styles.pHead}>Did You Know?</h2>
 
             <p>
               <b>
@@ -3027,6 +3078,8 @@ const CitiesRight = ({
             <h2 className={styles.pHead}>{ProgramHead3}</h2>
             <p className={styles.pp}>{ProgramBot3}</p>
             <p className={styles.pp}>{ProgramBot31}</p>
+            <p className={styles.pp}>{ProgramBot66}</p>
+            <p className={styles.pp}>{ProgramBot67}</p>
             <p className={styles.pp}>
               <i>{ProgramBotItaliic31}</i>
             </p>
@@ -3161,6 +3214,27 @@ const CitiesRight = ({
               </span>
             </a>
             <span className={styles.pp}>{ProgramBot21}</span>
+            <p className={styles.pp}>{ProgramBot22}</p>
+            <p className={styles.pp}>{ProgramBot23}</p>
+            <p className={styles.pp}>{ProgramBot24}</p>
+            <p className={styles.pp}>{ProgramBot25}</p>
+            <p className={styles.pp}>{ProgramBot26}</p>
+            <p className={styles.pp}>{ProgramBot27}</p>
+            <p className={styles.pp}>{ProgramBot28}</p>
+            <p className={styles.pp}>{ProgramBot29}</p>
+            <p className={styles.pp}>{ProgramBot30}</p>
+            <p className={styles.pp}>{ProgramBot31}</p>
+            <p className={styles.pp}>{ProgramBot32}</p>
+            <p className={styles.pp}>{ProgramBot33}</p>
+            <p className={styles.pp}>{ProgramBot34}</p>
+            <p className={styles.pp}>{ProgramBot35}</p>
+            <p className={styles.pp}>{ProgramBot36}</p>
+            <p className={styles.pp}>{ProgramBot37}</p>
+            <p className={styles.pp}>{ProgramBot38}</p>
+            <p className={styles.pp}>{ProgramBot39}</p>
+            <p className={styles.pp}>{ProgramBot40}</p>
+            <p className={styles.pp}>{ProgramBot41}</p>
+            <p className={styles.pp}>{ProgramBot42}</p>
           </div>
         )}
       </div>
@@ -3186,7 +3260,6 @@ const CitiesRight = ({
           <p className={styles.pp}>{DomainBot3}</p>
           {fullStackCity ? (
             <>
-              <h2 className={styles.pHead}>{DomainHead2}</h2>
               <h2 className={styles.pHead}>{DomainHead3}</h2>
               <h2 className={styles.pHead}>{DomainHead4}</h2>
               <h2 className={styles.pHead}>{DomainHead5}</h2>
@@ -3255,32 +3328,47 @@ const CitiesRight = ({
       {fullStackCity ? (
         <></>
       ) : (
-        <>
-          {" "}
-          <div id="Certification">
-            <div className={styles.CitiesRightSpan}>
-              <span>Certification Details</span>
-            </div>
-            <div className={styles.CitiesRightInner}>
+        <div id="Certification">
+          <div className={styles.CitiesRightSpan}>
+            <span>Certification Details</span>
+          </div>
+          <div className={styles.CitiesRightInner}>
+            <div>
               <h2 className={styles.pHead}>{CertificationHead1}</h2>
               <p className={styles.pp}>{CertificationBot1}</p>
               <p className={styles.pp}>{CertificationBot2}</p>
               <p className={styles.pp}>{CertificationBot3}</p>
+            </div>
+            <div>
               <h2 className={styles.pHead}>{CertificationHead2}</h2>
               <p className={styles.pp}>{CertificationBot4}</p>
               <p className={styles.pp}>{CertificationBot5}</p>
               <p className={styles.pp}>{CertificationBot6}</p>
+            </div>
+            <div>
               <h2 className={styles.pHead}>{CertificationHead3}</h2>
               <p className={styles.pp}>{CertificationBot7}</p>
               <div className={styles.certNew}>
-                <img src={src} alt={alt1}></img>
-                <img src={src22} alt={alt1}></img>
-                <img src={src33} alt={alt1}></img>
+                {certificate1 ? <img src={src} alt={alt1} /> : null}
+                {certificate2 ? (
+                  <>
+                    <img src={src} alt={alt1} />
+                    <img src={src22} alt={alt1} />
+                  </>
+                ) : null}
+                {!certificate1 && !certificate2 ? (
+                  <>
+                    <img src={src} alt={alt1} />
+                    <img src={src22} alt={alt1} />
+                    <img src={src33} alt={alt1} />
+                  </>
+                ) : null}
               </div>
             </div>
           </div>
-        </>
+        </div>
       )}
+
       <div id="Module">
         <div className={styles.CitiesRightSpan}>
           <span>Module-Details</span>

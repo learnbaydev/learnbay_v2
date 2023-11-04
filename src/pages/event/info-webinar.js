@@ -1,10 +1,10 @@
 import React from "react";
-import styles from "../styles/InfoWebinar.module.css";
+import styles from "../../styles/InfoWebinar.module.css";
 import Head from "next/head";
 import Image from "next/image";
-import Navbar from "../../../../adlearnbay/Components/CoursePage/Navbar/NavbarThankYou";
-import Footer from "../../../../adlearnbay/Components/CoursePage/Footer/Footer";
-import FormOtp from "../../../../adlearnbay/Components/WebinarPage/FormOtp/FormOtp";
+import Navbar from "../../../components/Navbar/Navbar";
+import Footer from "../../../components/Footer/Footer";
+import FormOtp from "../../../components/WebinarPage/FormOtp/FormOtp";
 import cookies from "next-cookies";
 
 const ThankYouFsd = ({ initialName }) => {
@@ -71,7 +71,7 @@ const ThankYouFsd = ({ initialName }) => {
                 src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/course.learnbay.co/unleashMobile.png"
                 width="300"
                 height="300"
-                layout="intrinsic"
+                 
               />
               <a
                 href="https://zoom.us/rec/share/yERjU1QAx-4wCOhItNMagOxzcTuZSmna6OyXPtQyx6fliwnPxk1-Ph2WLtPYVD3S.14CcnJRWJURkxbqE"
@@ -90,7 +90,7 @@ const ThankYouFsd = ({ initialName }) => {
                 src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/course.learnbay.co/upskill-mobile.jpg"
                 width="300"
                 height="300"
-                layout="intrinsic"
+                 
               />
               <a
                 href="https://zoom.us/rec/share/ympBsWqJETq9NLDVmEOXJFt3e7AErLd2RNve2AYRXiJb1H7M3C96UsIqBWTBpYcY.owFUE_RaEjyeEmdh"
@@ -104,7 +104,7 @@ const ThankYouFsd = ({ initialName }) => {
                 src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/course.learnbay.co/LLDMobile.jpg"
                 width="300"
                 height="300"
-                layout="intrinsic"
+                 
               />
               <a
                 href="https://zoom.us/rec/share/6WkP9ttRb_VQTH8udGi1BUX9u7x607MoBZKoEFM9YFIN3_RYGV7ch_zivswIzuM9.EjDNUJan9wikYIZC"
@@ -118,7 +118,7 @@ const ThankYouFsd = ({ initialName }) => {
                 src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/course.learnbay.co/upMobile.jpg"
                 width="300"
                 height="300"
-                layout="intrinsic"
+                 
               />
               <a
                 href="https://zoom.us/rec/share/K9jHY0HrZk98gtgckq97T1_BjPrG_nXjdwPcut5vJwijseZ7NT9Tlgio2krODvH7.Y3QOhLgTEubTpYnr"
@@ -132,7 +132,7 @@ const ThankYouFsd = ({ initialName }) => {
                 src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/course.learnbay.co/TimeMobile.jpg"
                 width="300"
                 height="300"
-                layout="intrinsic"
+                 
               />
               <a
                 href="https://zoom.us/rec/share/G71UJ9rcICwpSk0_Kt47TAjC4L0q8RJZF7pgwBKUHtrXy1g7k0e49flnQIqE9OGz.609jPfewXBb_HFU6"
@@ -151,7 +151,7 @@ const ThankYouFsd = ({ initialName }) => {
                 src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/course.learnbay.co/upskill-mobile.jpg"
                 width="300"
                 height="300"
-                layout="intrinsic"
+                 
               />
               <button>Register Now</button>
             </div>

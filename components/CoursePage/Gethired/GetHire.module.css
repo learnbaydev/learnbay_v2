@@ -1,0 +1,232 @@
+.hiremain {
+    display:  flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    /* margin :40px 0px; */
+    gap :40px;
+    margin-top: 80px;
+}
+
+
+.boxmain {
+    display: flex;
+    align-items: center;
+    gap: 17px;
+    margin: 20px 140px;
+
+
+}
+
+.boxdec {
+    color: #363636;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 168.5%;
+    padding: 20px 45px 28px 23px;
+}
+
+.head {
+    display: flex;
+    grid-template-columns: 19% 64%;
+    grid-gap: 37px;
+    grid-gap: 5px;
+    /* gap: 20px; */
+    align-items: center;
+    height: 80px;
+}
+
+.head h2 {
+
+   text-align: center;
+   font-size: 120px;
+
+
+
+
+}
+
+
+
+
+
+.head p {
+padding-top: 60px;
+
+}
+
+/* GetHire.module.css */
+
+  
+  .boxmain {
+    /* Your styles for the container of all the boxes */
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+  }
+  
+  .box {
+    /* Common styles for all boxes */
+    background-color: pink; /* Set your desired color here */
+    /* padding: 20px; */
+    /* border: 1px solid #000; */
+    border-radius: 6px;
+    flex: 1;
+  }
+  
+  /* Define unique colors for each box */
+  .box:nth-child(1) {
+    border-radius: 10px;
+    background: rgba(0, 114, 188, 0.06); 
+  }
+  
+  .box:nth-child(2) {
+    border-radius: 10px;
+    background: rgba(249, 150, 0, 0.06); 
+  }
+  
+  .box:nth-child(3) {
+    border-radius: 10px;
+    background: rgba(45, 182, 33, 0.06); 
+  }
+
+  
+
+
+  .box {
+   
+    background-color: pink;
+    border-radius: 6px;
+    flex: 1;
+  }
+
+
+  
+  
+
+
+ .number {
+    /* color: rgba(0, 114, 188, 0.10); */
+text-align: center;
+/* font-family: Open Sans; */
+font-size: 180px;
+font-style: normal;
+font-weight: 800;
+line-height: 126.5%; /* 227.7px */
+opacity: 55;
+ }
+.title {
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 126.5%;
+}
+  /* mobile VIEW */
+
+@media only screen and (max-width: 641px) {
+  .boxmain{
+display: flex;
+    flex-flow: column;
+    padding: 0px;
+    margin: 0px 20px;
+    gap: 25px;
+
+}
+
+
+.mainTitle{
+
+  color: #2E2E2E;
+  text-align: center;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 126.5%;
+}
+.hiremain{
+margin-top: 40px;
+}
+}
+
+
+/* .body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.mainTitle {
+  font-size: 50px;
+  position: relative;
+  background-color: rgb(248, 251, 251);
+}
+
+.mainTitle::before {
+  width: 100%;
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #0072BC;
+  -webkit-text-stroke: 0.1vw white;
+  border-right: 4px solid #0072BC;
+  overflow: hidden;
+  animation: animate 6s linear infinite;
+  background-color: #0072BC;
+}
+
+@keyframes animate {
+  0%, 10%, 100% {
+      width: 0;
+  }
+  10% {
+    width: 60%;
+  }
+  100% {
+    width:100%;
+  }
+
+
+  70%, 90% {
+      width: 100%;
+  }
+}  */
+
+
+
+
+/* Apply the animations and transition to the title */
+
+
+
+
+
+
+/* Create a class for text animation */
+/* @keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+} */
+
+/* Create a class for background color transition */
+/* .mainTitleWithBackground {
+  background-color: transparent;
+  transition: background-color 1s ease-in-out; 
+} */
+
+/* Apply the animations and transition to the title */
+/* .mainTitle {
+  animation: slideInFromLeft 1s ease-in-out; 
+}
+
+.mainTitle.mainTitleWithBackground {
+  background-color: #0072BC; 
+} */

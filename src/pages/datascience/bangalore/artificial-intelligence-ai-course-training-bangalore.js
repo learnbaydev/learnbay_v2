@@ -25,7 +25,7 @@ const CitiesLeft = dynamic(() =>
 const CitiesRight = dynamic(() =>
   import("../../../../components/SEO/CitiesRight/CitiesRight")
 );
-import { DataScienceCourseData } from "../../../../CityData/Bangalore/artificialIntelligenceAiCourseTrainingBangaloreData";
+import { DataScienceCourseData } from "../../../../CityData/Bangalore/AICourseTrainingBangaloreData";
 const FAQNew = dynamic(() =>
   import("../../../../components/CoursePage/FAQNew/FAQNew")
 );
@@ -58,9 +58,49 @@ export default function Home() {
           name="keywords"
           content="Artificial Intelligence course in Bangalore, Artificial Intelligence training in Bangalore, Artificial Intelligence institute in Bangalore, best Artificial Intelligence institute in Bangalore, Artificial Intelligence course in Bangalore, Artificial Intelligence certification in Bangalore, Artificial Intelligence training institute in Bangalore, advanced Artificial Intelligence course in Bangalore, Artificial Intelligence course with Placement Assistance, Artificial Intelligence course"
         />
+
+        <meta
+          property="og:url"
+          content="https://www.learnbay.co/datascience/bangalore/artificial-intelligence-ai-course-training-bangalore"
+        />
+        <meta
+          property="og:title"
+          content="Artificial intelligence course Training In Bangalore with Placement Assistance"
+        />
+        <meta property="og:site_name" content="learnbay.co" />
+        <meta property="og:type" content="article" />
+        <meta
+          property="og:description"
+          content="Artificial intelligence course in Bangalore. We are Advanced Artificial intelligence course Certification Training Institute in Bangalore. Artificial intelligence course will enhance your career."
+        />
+        <meta
+          property="og:image"
+          content="https://www.learnbay.co/_next/image?url=https%3A%2F%2Flearnbay-wb.s3.ap-south-1.amazonaws.com%2Fmain%2FLearnbay-Logo.webp&w=256&q=100"
+        />
+        <meta property="og:image:height" content="100" />
+        <meta property="og:image:width" content="256" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@Learnbay" />
+        <meta
+          name="twitter:title"
+          content="Artificial intelligence course Training In Bangalore with Placement Assistance"
+        />
+        <meta name="twitter:creator" content="@Learnbay" />
+        <meta
+          itemProp="description"
+          content="Artificial intelligence course Bangalore. We are Advanced Artificial intelligence course Certification Training Institute in Bangalore. Artificial intelligence course will enhance your career."
+        />
+        <meta
+          name="twitter:description"
+          content="Artificial intelligence course Bangalore. We are Advanced Artificial intelligence course Certification Training Institute in Bangalore. Artificial intelligence course will enhance your career."
+        />
+        <meta
+          name="twitter:image"
+          content="https://www.learnbay.co/_next/image?url=https%3A%2F%2Flearnbay-wb.s3.ap-south-1.amazonaws.com%2Fmain%2FLearnbay-Logo.webp&w=256&q=100"
+        />
         <link
           rel="canonical"
-          href="https://www.learnbay.co/artificial-intelligence-ai-course-training-bangalore"
+          href="https://www.learnbay.co/datascience/bangalore/artificial-intelligence-ai-course-training-bangalore"
         />
         <meta
           name="copyright"
@@ -118,14 +158,14 @@ export default function Home() {
           SecondTyped="Capstone Project Certificate"
           ThirdTyped="Live Interactive Classes"
           dataScience={true}
-          titleCourse="AI & ML Program for tech professionals"
-          brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Advance+AI+%26+ML+Certification+Program+Learnbay.pdf"
-          idss="Jn2puEQC8yk"
-          FirstRightImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/AIML-Header.png"
+          titleCourse="Data Science and AI Program For Manager & Leaders"
+          brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Data+Science+%26+AI+Certification+Program+For+Managers+%26+Leaders+Learnbay.pdf"
+          idss="osYNvuuI1_8"
+          FirstRightImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Business-Analytics-Masters-Header.png"
           firstToparaImg="Training in Bangalore"
           firstHeading="Artificial Intelligence (AI)"
-          firstTopPara="Job-oriented Data Science Training for working professionals"
-          cityParaCont=" Become a successful data science manager/leader within 11 months. Learn the secret data scientific tricks of managing data science projects. Learn directly from industry leaders via live classes and live projects."
+          firstTopPara="Industry Curated Artificial Intelligence Program"
+          cityParaCont="Become a successful data science manager/leader within 11 months. Learn the secret data scientific tricks of managing data science projects. Learn directly from industry leaders via live classes and live projects."
         />
         <SecondSection SecondSectionData={DataScienceCourseData[0].secondSection} />
         <Testimonial
@@ -135,17 +175,18 @@ export default function Home() {
           para="Discover the impact of our programs on career growth"
         />
         <div className={styles.cityFee}>
-          <FeeSection
-            AIMLCertificate={true}
-            Fee="₹ 1,10,000 + 18% GST"
-            FeeEmi="₹ 10,817/month"
-            FeeHeading="Program Fee & Financing"
-            FeeContent2="No cost EMI"
-            FeeContent3="Flexible payment"
-            FeeContent4="Easy loan procedure"
-            FeeContent5="15 days refund policy"
-            dataScienceCounselling={true}
-          />
+        <FeeSection
+          Fee="₹ 1,10,000 + 18% GST"
+          FeeEmi="₹ 10,817/month"
+          FeeHeading="Program Fee & Financing"
+          FeeContent1="0% interest rate"
+          FeeContent2="No cost EMI"
+          FeeContent3="Flexible payment"
+          FeeContent4="Easy loan procedure"
+          FeeContent5="15 days refund policy"
+          FeeContent6="No additional cost"
+          dataScienceCounselling={true}
+        />
         </div>
         <div className="MainCities">
           <div className="CitiesLeft">
@@ -155,8 +196,9 @@ export default function Home() {
             <CitiesRight
               ProgramBot1={DataScienceCourseData[0].ProgramBot1}
               ProgramHead3={DataScienceCourseData[0].ProgramHead3}
+              ProgramHead4={DataScienceCourseData[0].ProgramHead4}
               ProgramBot3={DataScienceCourseData[0].ProgramBot3}
-              ProgramBot31={DataScienceCourseData[0].ProgramBot31}
+              ProgramBot66={DataScienceCourseData[0].ProgramBot66}
               ProgramBot4={DataScienceCourseData[0].ProgramBot4}
               ProgramBot5={DataScienceCourseData[0].ProgramBot5}
               ProgramBot6={DataScienceCourseData[0].ProgramBot6}

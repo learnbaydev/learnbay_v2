@@ -1,10 +1,12 @@
-import React, { useState } from "react";
 import Head from "next/head";
-import Navbar from "../../../components/Navbar/Navbar";
+import { useEffect, useState } from "react";
 import Footer from "../../../components/Footer/Footer";
+import Navbar from "../../../components/Navbar/Navbar";
 
 import dynamic from "next/dynamic";
 import { AIMLDataScienceCourseData } from "../../../Data/AIMLDataScienceCourse";
+import BatchDetails from "../../../components/CoursePage/BatchDetails/BatchDetails";
+import BottomBar from "../../../components/WebPage/BottomBar/BottomBar";
 
 const FirstSection = dynamic(() =>
   import("../../../components/CoursePage/FirstSection/FirstSection")
@@ -46,7 +48,7 @@ const Project = dynamic(() =>
   import("../../../components/CoursePage/Project/Project")
 );
 const SyllabusNew = dynamic(() =>
-  import("../../../components/CoursePage/Syllabus/Syllabus")
+  import("../../../components/MastersCourse/Syllabus/MasterSyllabus")
 );
 const DomainSection = dynamic(() =>
   import("../../../components/CoursePage//DomainSection/DomainSection")
@@ -57,11 +59,63 @@ const Certificate = dynamic(() =>
 const FAQNew = dynamic(() =>
   import("../../../components/CoursePage/FAQNew/FAQNew")
 );
-import OfferPopup from "../../../components/OfferPopup/OfferPopup";
-import BottomBar from "../../../components/WebPage/BottomBar/BottomBar";
 
 function Blockchain() {
-  const [popups, setPopups] = useState(false);
+  // POPUP GET METHOD
+  const [popupData, setPopupData] = useState([]);
+
+  useEffect(() => {
+    // console.log("inside UseEFFect");
+    const fetchPopup = async () => {
+      const data = await fetch("/api/Popup/popupGenerate", {
+        method: "GET",
+      });
+      if (data.status === 200) {
+        const { popData } = await data.json();
+        // console.log(popData, "get data");
+        if (popData == []) {
+          setPopupData([]);
+        }
+
+        popData.map((data, i) => {
+          // console.log(data);
+          data.page.map((popupData, i) => {
+            // console.log(popData);
+            if (popupData === "Adv Data Science and AI") {
+              setPopupData(data);
+              // console.log(popupData);
+              return;
+            }
+          });
+        });
+      }
+    };
+    fetchPopup();
+  }, []);
+
+  const [batchDateData, setBatchDateData] = useState("");
+
+  useEffect(() => {
+    const fetchBatch = async () => {
+      const data = await fetch("/api/BatchDetails/getBatchDetails", {
+        method: "POST",
+        body: JSON.stringify("Data Science and AI"),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
+
+      console.log(data.status);
+      if (data.status === 200) {
+        const { batchDate } = await data.json();
+
+        setBatchDateData(batchDate);
+
+        console.log("Batch Date Response:", batchDate);
+      }
+    };
+    fetchBatch();
+  }, []);
 
   return (
     <>
@@ -85,7 +139,7 @@ function Blockchain() {
         />
         <link
           rel="canonical"
-          href="https://www.learnbay.co/artificial-intelligence-certification-course"
+          href="https://www.learnbay.co/datascience/artificial-intelligence-certification-course"
         />
       </Head>
       <main>
@@ -127,6 +181,9 @@ function Blockchain() {
         <FifthSection />
         <SixthSectionCTA dataScienceCounselling={true} />
         <SyllabusNew
+           syllabusHead={AIMLDataScienceCourseData[0].syllabusHead}
+           masterSyllabus={AIMLDataScienceCourseData[0].masterSyllabus}
+           MasterSyllabusDefault={AIMLDataScienceCourseData[0].MasterSyllabusDefault}
           dataScienceCounselling={true}
           serviceBasic={true}
           dataScience={true}
@@ -154,7 +211,7 @@ function Blockchain() {
         <FeeSection
           AIMLCertificate={true}
           Fee="₹ 1,10,000 + 18% GST"
-          FeeEmi="₹ 10,817/month"
+          FeeEmi="₹ 10,817/"
           FeeHeading="Program Fee & Financing"
           FeeContent2="No cost EMI"
           FeeContent3="Flexible payment"
@@ -174,14 +231,15 @@ function Blockchain() {
           dataScience={true}
           brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Data+Science+and+AI+Projects.pdf"
         />
-        <BatchDetails
-          CourseFeeHead="Artificial Intelligence & Machine Learning Program:Batch Details"
-          BAFamily
-        />
+        {batchDateData === "" ? (
+          ""
+        ) : (
+          <BatchDetails batchDetails={batchDateData.batchDetails} />
+        )}
         <FAQNew FAQNewData={AIMLDataScienceCourseData[0].faq} />
         <SeventhSection />
         <Footer />
-        <OfferPopup />
+
         <BottomBar />
       </main>
     </>

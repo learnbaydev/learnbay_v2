@@ -25,7 +25,7 @@ const CitiesLeft = dynamic(() =>
 const CitiesRight = dynamic(() =>
   import("../../../../components/SEO/CitiesRight/CitiesRight")
 );
-import { AIDubaiCourseData } from "../../../../CityData/Dubai/artificialIntelligenceAiCourseTrainingDubaiData";
+import { AIDubaiCourseData } from "../../../../CityData/Dubai/AITrainingDubaiData";
 const FAQNew = dynamic(() =>
   import("../../../../components/CoursePage/FAQNew/FAQNew")
 );
@@ -52,13 +52,53 @@ export default function Home() {
           name="description"
           content="Learnbay offers the best Artificial Intelligence Training in Dubai. Get mentorship from the industry experts with best career assistance. Enroll Now."
         />
+<meta
+          property="og:url"
+          content="https://www.learnbay.co/datascience/dubai/artificial-intelligence-ai-course-training-dubai"
+        />
+        <meta
+          property="og:title"
+          content="Artificial Intelligence in Dubai | Data Science Training in Dubai"
+        />
+        <meta property="og:site_name" content="learnbay.co" />
+        <meta property="og:type" content="Learnbay_co:course" />
+        <meta
+          property="og:description"
+          content="Artificial Intelligence in Dubai. Learnbay is Advanced Artificial Intelligence Training Institute in Dubai. Artificial Intelligence in Dubai will enhance your career"
+        />
+        <meta
+          property="og:image"
+          content="https://www.learnbay.co/_next/image?url=https%3A%2F%2Flearnbay-wb.s3.ap-south-1.amazonaws.com%2Fmain%2FLearnbay-Logo.webp&w=256&q=100"
+        />
+        <meta property="og:image:height" content="100" />
+        <meta property="og:image:width" content="256" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@Learnbay" />
+        <meta
+          name="twitter:title"
+          content="Artificial Intelligence in Dubai | Data Science Training in Dubai"
+        />
+        <meta name="twitter:creator" content="@Learnbay" />
+        <meta
+          itemProp="description"
+          content="Artificial Intelligence in Dubai. Learnbay is Advanced Artificial Intelligence Training Institute in Dubai. Artificial Intelligence in Dubai will enhance your career"
+        />
+        <meta
+          name="twitter:description"
+          content="Artificial Intelligence in Dubai. Learnbay is Advanced Artificial Intelligence Training Institute in Dubai. Artificial Intelligence in Dubai will enhance your career"
+        />
+        <meta
+          name="twitter:image"
+          content="https://www.learnbay.co/_next/image?url=https%3A%2F%2Flearnbay-wb.s3.ap-south-1.amazonaws.com%2Fmain%2FLearnbay-Logo.webp&w=256&q=100"
+        />
+
         <meta
           name="keywords"
           content="Artificial Intelligence course in Dubai, Artificial Intelligence training in Dubai, Artificial Intelligence institute in Dubai, best Artificial Intelligence institute in Dubai, Artificial Intelligence course in Dubai, Artificial Intelligence certification in Dubai, Artificial Intelligence training institute in Dubai, advanced Artificial Intelligence course in Dubai, Artificial Intelligence course with Placement Assistance, Artificial Intelligence course"
         />
         <link
           rel="canonical"
-          href="https://www.learnbay.co/artificial-intelligence-ai-course-training-dubai"
+          href="https://www.learnbay.co/datascience/dubai/artificial-intelligence-ai-course-training-dubai"
         />
         <meta
           name="copyright"
@@ -116,10 +156,10 @@ export default function Home() {
           SecondTyped="Capstone Project Certificate"
           ThirdTyped="Live Interactive Classes"
           dataScience={true}
-          titleCourse="AI & ML Program for tech professionals"
-          brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Advance+AI+%26+ML+Certification+Program+Learnbay.pdf"
-          idss="Jn2puEQC8yk"
-          FirstRightImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/AIML-Header.png"
+          titleCourse="Data Science and AI Program For Manager & Leaders"
+          brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Data+Science+%26+AI+Certification+Program+For+Managers+%26+Leaders+Learnbay.pdf"
+          idss="osYNvuuI1_8"
+          FirstRightImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Business-Analytics-Masters-Header.png"
           firstToparaImg="For Managers and Leaders"
           firstHeading="Artificial Intelligence (AI) Course Training in Dubai"
           firstTopPara="Job-oriented Data Science Training for working professionals"
@@ -133,17 +173,18 @@ export default function Home() {
           para="Discover the impact of our programs on career growth"
         />
         <div className={styles.cityFee}>
-          <FeeSection
-            AIMLCertificate={true}
-            Fee="₹ 1,10,000 + 18% GST"
-            FeeEmi="₹ 10,817/month"
-            FeeHeading="Program Fee & Financing"
-            FeeContent2="No cost EMI"
-            FeeContent3="Flexible payment"
-            FeeContent4="Easy loan procedure"
-            FeeContent5="15 days refund policy"
-            dataScienceCounselling={true}
-          />
+        <FeeSection
+          Fee="₹ 1,10,000 + 18% GST"
+          FeeEmi="₹ 10,817/month"
+          FeeHeading="Program Fee & Financing"
+          FeeContent1="0% interest rate"
+          FeeContent2="No cost EMI"
+          FeeContent3="Flexible payment"
+          FeeContent4="Easy loan procedure"
+          FeeContent5="15 days refund policy"
+          FeeContent6="No additional cost"
+          dataScienceCounselling={true}
+        />
         </div>
         <div className="MainCities">
           <div className="CitiesLeft">
@@ -154,7 +195,8 @@ export default function Home() {
               ProgramBot1={AIDubaiCourseData[0].ProgramBot1}
               ProgramHead3={AIDubaiCourseData[0].ProgramHead3}
               ProgramBot3={AIDubaiCourseData[0].ProgramBot3}
-              ProgramBot31={AIDubaiCourseData[0].ProgramBot31}
+              ProgramBot66={AIDubaiCourseData[0].ProgramBot66}
+              ProgramBot67={AIDubaiCourseData[0].ProgramBot67}
               ProgramBot4={AIDubaiCourseData[0].ProgramBot4}
               ProgramBot5={AIDubaiCourseData[0].ProgramBot5}
               ProgramBot6={AIDubaiCourseData[0].ProgramBot6}
@@ -193,11 +235,15 @@ export default function Home() {
               Domainlink9={AIDubaiCourseData[0].Domainlink9}
               Domainlink10={AIDubaiCourseData[0].Domainlink10}
               CertificationBot1={AIDubaiCourseData[0].CertificationBot1}
+              CertificationHead1={AIDubaiCourseData[0].CertificationHead1}
+              CertificationBot2={AIDubaiCourseData[0].CertificationBot2}
               src={AIDubaiCourseData[0].src}
               src22={AIDubaiCourseData[0].src22}
               src33={AIDubaiCourseData[0].src33}
               ModuleBot1={AIDubaiCourseData[0].ModuleBot1}
               ModuleBot2={AIDubaiCourseData[0].ModuleBot2}
+              ModuleBot3={AIDubaiCourseData[0].ModuleBot3}
+              ModuleBot4={AIDubaiCourseData[0].ModuleBot4}
               syllabush1={AIDubaiCourseData[0].syllabush1}
               syllabusb1={AIDubaiCourseData[0].syllabusb1}
               SyllabusBotlist11={AIDubaiCourseData[0].SyllabusBotlist11}
@@ -232,10 +278,14 @@ export default function Home() {
               SyllabusBotlist46={AIDubaiCourseData[0].SyllabusBotlist46}
               syllabussrc={AIDubaiCourseData[0].syllabussrc}
               JobBot1={AIDubaiCourseData[0].JobBot1}
+              JobBot2={AIDubaiCourseData[0].JobBot2}
               JobHead2={AIDubaiCourseData[0].JobHead2}
+              JobHead1={AIDubaiCourseData[0].JobHead1}
               JobBot3={AIDubaiCourseData[0].JobBot3}
               JobBot4={AIDubaiCourseData[0].JobBot4}
-              ProjectsBot1={AIDubaiCourseData[0].ProgramBot1}
+              JobBot5={AIDubaiCourseData[0].JobBot5}
+              ProjectsHead1={AIDubaiCourseData[0].ProjectsHead1}
+              ProjectsBot1={AIDubaiCourseData[0].ProjectsBot1}
               src1={AIDubaiCourseData[0].src1}
               ProjectsH1={AIDubaiCourseData[0].ProjectsH1}
               Projectsp1={AIDubaiCourseData[0].Projectsp1}

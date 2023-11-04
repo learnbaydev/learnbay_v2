@@ -51,7 +51,7 @@ const ProgramFee = ({ Fee, Emi, fullStack, dataScience }) => {
               src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/programFeeIcon.png"
               width="225"
               height="111"
-              layout="intrinsic"
+               
               alt="programFeeIcon"
             />
             <div className={styles.bottom}>

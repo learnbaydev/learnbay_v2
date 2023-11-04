@@ -27,7 +27,7 @@ const ThankYou = () => {
               src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/thank-header.png"
               width="522"
               height="380"
-              layout="intrinsic"
+               
             />
           </div>
         </div>

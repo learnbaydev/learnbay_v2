@@ -1,158 +1,115 @@
-.second {
-  text-align: center;
-  margin-bottom: 40px;
+
+.boxP {
+    
+  display: flex;
+  flex-wrap: wrap;
+  margin: 32px 80px 55px 80px;
+  padding: 0px;
+  justify-content: space-evenly;
+  border-radius: 7.22px;
+background: #FFF;
+box-shadow: 0px 0px 5.77562px 0px rgba(0, 0, 0, 0.15);
+border-image: linear-gradient(to right, rgba(0, 114, 188, 0.4), rgba(45, 182, 33, 0.4), rgba(249, 150, 0, 0.4));
+border-image-slice: 1; 
+border-image-width: 0 0 4px 0; 
+border-image-outset: 0; 
+border-image-repeat: stretch; 
+border-bottom: 4px solid transparent; 
 }
 
-.h1 {
-  color: black;
-  margin: 0px 0px 10px 0px;
-  text-align: center;
-  font-size: 32px;
-  font-weight: 700;
+.imgBox {
+  margin-bottom: -5px;
 }
 
-.ptop {
-  font-size: 20px;
-  margin: 0px 100px;
-  color: #767676;
-  line-height: 26px;
-  text-align: center;
+.boxC{
+  display: flex;
+    gap: 5px;
+    border-radius: 3px;
+    padding: 25px 0px 20px 0px;
+    align-items: center;
 }
 
-.secondBox {
-  display: grid;
-  gap: 30px;
-  margin-top: 50px;
-  grid-template-columns: 23% 23% 23% 23%;
-  justify-content: center;
-}
-
-.blue {
-  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.08);
-  border-radius: 5px;
-  padding: 10px;
-  display: grid;
-  position: relative;
-  grid-template-columns: 100%;
-  gap: 5px;
-  font-size: 14px;
-  color: #767676;
-  border-top: 6px solid #c0e6ff;
-  padding: 30px 20px;
-}
-
-.blue:nth-child(even)  {
-    border-top: 6px solid #ffe4bc;
-    padding: 30px 20px;
-  }
-
-.heading {
-  font-size: 18px;
-  text-align: left;
-  margin: 5px 0px 10px 0px;
-}
-
-.textBox {
-  width: 100%;
-  font-size: 16px;
-  text-align: left;
+.boxC p{
+  color: #403F3F;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 126.5%; 
   margin: 0;
 }
 
-.imgWrap {
-  position: absolute;
-  left: -10px;
-  top: -40px;
-  display: flex;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-  align-items: center;
-  justify-content: center;
-  background-color: white;
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
-}
-
-@media (max-width: 801px) {
-  .secondBox {
-    display: grid;
-    grid-template-columns: 46% 46%;
-    gap: 50px;
-  }
-}
-
-@media (max-width: 768px) {
-  .secondBox {
-    display: grid;
-    grid-template-columns: 47% 47%;
-  }
-}
-
 @media (max-width: 641px) {
-  .second {
-    padding: 0px 20px 50px 20px;
-    text-align: center;
-    background: none;
-  }
-  .h1 {
-    color: black;
-    margin: 10px 0px 20px 0px;
-    font-size: 24px;
-  }
-  .ptop {
-    color: #767676;
-    font-size: 18px;
-    padding: 0px 20px;
-    margin: 0;
-  }
-  .secondBox {
+  .boxP {
     display: grid;
-    grid-template-columns: 47% 47%;
-    gap: 20px;
-    margin-top: 20px;
+    grid-template-columns: 45% 45%;
+    flex-wrap: wrap;
+    box-shadow: none;
+    margin: 36px 4px;
+    padding: 2px 0px;
+    grid-gap: 16px;
+    justify-content: center;
+    align-items: center;
+    border: none;
   }
-  .secondBox p {
-    font-size: 17px;
-    width: 100%;
+  .boxC{
+    border-radius: 0.928px;
+    box-shadow: 0px 0px 1.78873px 0px rgba(0, 0, 0, 0.15);
+    padding: 25px 3px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+      color: black;
+border-bottom: 3px solid #2DB621;
+
+  
+   
   }
-  .blue {
-    margin-top: 40px;
-    grid-template-columns: 100%;
+
+  .boxC p{
+    color: #000000;
+    font-size: 22px;
+    font-style: normal;
+    margin: auto 0px auto 0px;
+    text-align: center;
+    font-weight: 700;
+  
+    
+
   }
-  .heading {
-    font-size: 18px;
-    margin-top: 0px;
-    margin-bottom: 10px;
+  .boxD {
+    border: none;    
+    border-radius: 3px;
+background: #FFF;
+box-shadow: 3px -4px 3px 0px rgba(0, 0, 0, 0.30);
+  
   }
-  .imgWrap {
-    height: 60px;
-    width: 60px;
-    left: -3px;
+
+  .boxE {
+    border-radius: 3px;
+background: #FFF;
+box-shadow: 3px -4px 3px 0px rgba(0, 0, 0, 0.30);
+border: none;
   }
 }
+
+
 
 @media (max-width: 481px) {
-  .secondBox {
-    display: grid;
-    grid-template-columns: 100%;
-  }
-  .second {
-    margin: 0;
-  }
-}
-
-/* @media (max-width: 1281px) {
   
-}
-
-@media (max-width: 1024px) {
-
-}
-
-@media (max-width: 961px) {
-
-}
-
-@media (max-width: 768px) {
   
-} */
+
+  .boxC p{
+    color: #000000;
+    font-size: 16px;
+    font-style: normal;
+    margin: auto 0px auto 0px;
+    text-align: center;
+    font-weight: 700;
+  
+    
+
+  }
+ 
+}
+

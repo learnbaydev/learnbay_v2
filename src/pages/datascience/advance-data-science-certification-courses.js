@@ -1,10 +1,9 @@
-import React, { useState } from "react";
-import Head from "next/head";
-import Navbar from "../../../components/Navbar/Navbar";
-import Footer from "../../../components/Footer/Footer";
-
 import dynamic from "next/dynamic";
+import Head from "next/head";
+import { useEffect, useState } from "react";
 import { DataScienceCourseData } from "../../../Data/AdvanceDataScienceCourse";
+import Footer from "../../../components/Footer/Footer";
+import Navbar from "../../../components/Navbar/Navbar";
 
 const FirstSection = dynamic(() =>
   import("../../../components/CoursePage/FirstSection/FirstSection")
@@ -24,9 +23,7 @@ const WhoProgram = dynamic(() =>
 const Switch = dynamic(() =>
   import("../../../components/HomePage/switch/switch")
 );
-const GrowthStats = dynamic(() =>
-  import("../../../components/CoursePage/GrowthStat/GrowthStats")
-);
+
 const ToolsCovered = dynamic(() =>
   import("../../../components/CoursePage/ToolsCovered/ToolsCovered")
 );
@@ -36,21 +33,15 @@ const FeeSection = dynamic(() =>
 const FourthSection = dynamic(() =>
   import("../../../components/CoursePage/FourthSection/FourthSection")
 );
-const FifthSection = dynamic(() =>
-  import("../../../components/CoursePage/FifthSection/FifthSection")
-);
-const SixthSectionCTA = dynamic(() =>
-  import("../../../components/CoursePage/SixthSectionCTA/Counselling")
-);
+
+
 const Project = dynamic(() =>
   import("../../../components/CoursePage/Project/Project")
 );
 const SyllabusNew = dynamic(() =>
-  import("../../../components/CoursePage/Syllabus/Syllabus")
+  import("../../../components/CoursePage/Syllabus/MasterSyllabus")
 );
-const DomainSection = dynamic(() =>
-  import("../../../components/CoursePage//DomainSection/DomainSection")
-);
+
 const Certificate = dynamic(() =>
   import("../../../components/CoursePage/Certificate/Certificate")
 );
@@ -61,10 +52,112 @@ const BatchDetails = dynamic(() =>
   import("../../../components/CoursePage/BatchDetails/BatchDetails")
 );
 
-import BottomBar from "../../../components/WebPage/BottomBar/BottomBar";
+const SecondNavbar = dynamic(() =>
+  import("../../../components/CoursePage/SecondNavbar/SecondNavbar")
+);
+const ContactConsellor = dynamic(() =>
+  import("../../../components/MastersCourse/ContactCounsellor/ContactCounsellor")
+);
+const feesbatch = dynamic(() =>
+  import("../../../components/CoursePage/FeeSection/FeeSection")
+);
 
-function Blockchain() {
-  const [popups, setPopups] = useState(false);
+const SliderTab = dynamic(() =>
+  import("../../../components/CoursePage/SliderTabs/SliderTabs")
+);
+
+const WhoIsProgram = dynamic(() =>
+  import("../../../components/CoursePage/WhoIsProgram/WhoIsProgram")
+);
+
+const OfferPopup = dynamic(() =>
+  import("../../../components/OfferPopup/OfferPopup")
+);
+const BottomBar = dynamic(() =>
+  import("../../../components/WebPage/BottomBar/BottomBar")
+);
+const ContactUs = dynamic(() =>
+  import("../../../components/HomePage/ContactUs/ContactUs")
+);
+const NewProjectSection = dynamic(() =>
+  import("../../../components/CoursePage/NewProjectSection/NewProjectSection")
+);
+const MentorsSection = dynamic(() =>
+  import("../../../components/MastersCourse/MentorsSection/MentorsSection")
+);
+const TrainerSection = dynamic(() =>
+  import("../../../components/HomePage/TrainerSection/TrainerSection")
+);
+// import SecondNavbar from "../../../components/CoursePage/SecondNavbar/SecondNavbar";
+const WhyLearnbay = dynamic(() =>
+  import("../../../components/MastersCourse/WhyLearnbay/WhyLearnbay")
+);
+
+const Gethire = dynamic(() =>
+  import("../../../components/CoursePage/Gethired/Gethire")
+);
+const PlacementCall = dynamic(() =>
+  import("../../../components/CoursePage/PlacementCall/PlacementCall")
+);
+
+function Blockchain({ }) {
+  // POPUP GET METHOD
+  const [popupData, setPopupData] = useState([]);
+  // console.log(popupData);
+  useEffect(() => {
+    // console.log("inside UseEFFect");
+    const fetchPopup = async () => {
+      const data = await fetch("/api/Popup/popupGenerate", {
+        method: "GET",
+      });
+      if (data.status === 200) {
+        const { popData } = await data.json();
+        // console.log(popData, "get data");
+        if (popData == []) {
+          setPopupData([]);
+        }
+
+        popData.map((data, i) => {
+          // console.log(data);
+          data.page.map((popupData, i) => {
+            // console.log(popData);
+            if (popupData === "Adv Data Science and AI") {
+              setPopupData(data);
+              // console.log(popupData);
+              return;
+            }
+          });
+        });
+      }
+    };
+    fetchPopup();
+  }, []);
+
+  const [batchDateData, setBatchDateData] = useState("");
+
+  useEffect(() => {
+    const fetchBatch = async () => {
+      const data = await fetch("/api/BatchDetails/getBatchDetails", {
+        method: "POST",
+        body: JSON.stringify("Data Science and AI"),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
+
+      console.log(data.status);
+      if (data.status === 200) {
+        const { batchDate } = await data.json();
+
+        setBatchDateData(batchDate);
+
+        console.log("Batch Date Response:", batchDate);
+      }
+    };
+    fetchBatch();
+  }, []);
+
+  const [progress, setProgress] = useState(20);
 
   return (
     <>
@@ -93,32 +186,38 @@ function Blockchain() {
       <main>
         <Navbar popup={true} dataScienceCounselling={true} />
         <FirstSection
-          FirstTyped="Guaranteed Interview Calls"
-          SecondTyped="Capstone Project Certificate"
+          // FirstTyped="Guaranteed Interview Calls"
+          // SecondTyped="Capstone Project Certificate"
           ThirdTyped="Live Interactive Classes"
           dataScience={true}
-          titleCourse="Advanced Data Science and AI Program with domain specialization"
+          titleCourse="Advance Data Science & AI Program with Domain Specialization"
+          cityParaCont="Elevate your tech career with our Master's programs"
           brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Advance+Data+Science+and+AI+Certification+Program+Learnbay.pdf"
-          FirstRightImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/advance+DS+header+image.webp"
-          firstToparaImg="with domain specialization"
-          firstHeading="Advanced Data Science and AI Program"
-          firstTopPara="Specialization over generalization"
+          FirstRightImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/advance-header.webp"
+          firstToparaImg="with Domain Specialization"
+          firstHeading="Advance Data Science & AI Program"
+          firstTopPara="Curriculum Inclusive of Gen-AI"
           idss="bfl64ANfSV0"
         />
         <SecondSection
           SecondSectionData={DataScienceCourseData[0].secondSection}
         />
-        <Testimonial
-          redirectDS={true}
-          Testimonial={DataScienceCourseData[0].testimonial}
-          heading="Our Alumni Speak"
-          para="Discover the impact of our programs on career growth"
-        />
+        <SecondNavbar />
         <WhoProgram
-          leftImage="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/whoIsProgram.webp"
+          leftImage="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/advance-who.webp"
           ThirdSectionData={DataScienceCourseData[0].thirdSection}
         />
-        <Switch />
+        <TrainerSection idss="bfl64ANfSV0" />
+        <Testimonial
+          redirectDS={true}
+          heading=""
+          Testimonial={DataScienceCourseData[0].testimonial}
+        />
+
+        <WhoIsProgram />
+        <WhyLearnbay idss="bfl64ANfSV0" />
+        <Gethire />
+        {/* <Switch /> */}
         <FourthSection
           placementData={DataScienceCourseData[0].fourthSection}
           redirectDS={true}
@@ -126,9 +225,13 @@ function Blockchain() {
           titleCourse="Data Science Placement Report"
           brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Placement+Report.pdf"
         />
-        <FifthSection />
-        <SixthSectionCTA dataScienceCounselling={true} />
+      
+        <ContactConsellor />
+
         <SyllabusNew
+          syllabusHead={DataScienceCourseData[0].syllabusHead}
+          masterSyllabus={DataScienceCourseData[0].masterSyllabus}
+          MasterSyllabusDefault={DataScienceCourseData[0].MasterSyllabusDefault}
           dataScienceCounselling={true}
           dataScience={true}
           titleCourse="Advanced Data Science and AI Program with domain specialization"
@@ -136,14 +239,10 @@ function Blockchain() {
           syllabus={DataScienceCourseData[0].syllabus}
           syllabusDesc={DataScienceCourseData[0].syllabusDesc}
           popupHead={DataScienceCourseData[0].popupHead}
+          progress={progress}
+          setProgress={setProgress}
         />
-        <GrowthStats
-          img1="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Scope+of+DS+left+image.png"
-          heading="Be the future: Grow your Data Science & AI skills "
-          para1="Data Science market to reach $133 billion by 2026"
-          para2="The global AI market to hit US$ 1,597.1 billion by 2030 "
-          para3="Influences on nearly all sectors of the current industries"
-        />
+    
         <ToolsCovered
           deskImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Tools-Logo.png"
           mobImage="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Mobile-Tools-Covered.png"
@@ -153,9 +252,9 @@ function Blockchain() {
           data={DataScienceCourseData[0].Certificate}
         />
         <FeeSection
-          Fee="₹ 99,000 + 18% GST"
-          FeeEmi="₹ 9,735/month"
-          FeeHeading="Program Fee & Financing"
+          Fee="₹ 99,000"
+          FeeEmi="₹ 9,735/"
+          FeeHeading="Program Fee and Financing"
           FeeContent1="0% interest rate"
           FeeContent2="No cost EMI"
           FeeContent3="Flexible payment"
@@ -164,26 +263,25 @@ function Blockchain() {
           FeeContent6="No additional cost"
           dataScienceCounselling={true}
         />
-        <DomainSection
-          dataScience={true}
-          domainSectionData={DataScienceCourseData[0].domainSection}
-        />
-        <Project
-          projectData={DataScienceCourseData[0].project}
-          tools="12+"
-          dataScience={true}
-          titleCourse="Data Science Project Brochure"
-          brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Data+Science+and+AI+Projects.pdf"
-          project="15+"
-        />
-        <BatchDetails
-          CourseFeeHead="Data Science and AI Foundation Program : Batch Details"
-          BAFamily
-        />
+        <MentorsSection />
+
+        <SliderTab />
+
+        <PlacementCall />
+
+        {/* {batchDateData === "" ? (
+          ""
+        ) : (
+          <BatchDetails batchDetails={batchDateData.batchDetails} />
+        )} */}
+
+        <NewProjectSection projectSection={DataScienceCourseData[0].projectSection} />
+
         <FAQNew FAQNewData={DataScienceCourseData[0].faq} />
         <SeventhSection />
         <Footer />
         <BottomBar />
+        {popupData.length == 0 ? "" : <OfferPopup popupData={popupData} />}
       </main>
     </>
   );

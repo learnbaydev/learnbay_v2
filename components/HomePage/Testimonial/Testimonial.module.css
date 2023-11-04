@@ -1,10 +1,10 @@
 .Testimonial {
-  padding: 50px 100px 40px 100px;
+  padding: 50px 100px 40px 60px;
   position: relative;
 }
 
 .slide {
-  margin-left: 10px;
+  margin-left: 5px;
   margin-right: 0px;
   height: max-content;
 }
@@ -14,33 +14,32 @@
 }
 .mainSlider {
   background: #fff;
-  border-radius: 10px;
+  border-radius: 0px 0px 10px 10px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-  margin: 70px 0px;
-  height: 370px;
-
-  position: relative;
+  margin: 30px 0px 70px 0px;
 }
 
 .para {
-  font-size: 17px;
+  font-size: 13px;
   margin: 10px 0;
   color: black;
   display: flex;
   flex-flow: column;
-  line-height: 26px;
+  line-height: 20px;
+  color: #454545;
+  height: 100px;
 }
 .para span {
   color: #0072bc;
   cursor: pointer;
-  border-bottom: 1px dotted #0072bc;
+  border-bottom: 1px solid #0072bc;
   margin-top: 10px;
   width: max-content;
+  line-height: 1;
 }
 
 .name {
   margin-top: 30px;
-  gap: 10px;
   display: grid;
 }
 
@@ -54,12 +53,18 @@
   margin: 0;
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 2px;
+  font-weight: 700;
+    justify-content: center;
+    padding-bottom: 10px;
+    font-size: 14px;
+    margin-top: 30px;
 }
 
 .name h3 {
   margin: 0;
-  font-size: 18px;
+  font-size: 16px;
+    font-weight: 500;
 }
 
 /* .name p {
@@ -70,8 +75,8 @@
 
 .name p {
   margin: 0;
-  font-size: 16px;
-  font-weight: 500 !important;
+  font-size: 14px;
+  font-weight: 400;
 
   color: #0072bc;
 }
@@ -93,7 +98,6 @@
   padding: 10px 20px;
   align-items: center;
   margin-top: -50px;
-  margin-bottom: 20px;
 }
 
 .testimonial {
@@ -108,22 +112,23 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0px 20px 0px 20px;
-  margin-top: 30px;
+  padding: 15px 20px;
+  background-color: rgba(238, 238, 238, 0.30);
+  margin-top: 20px;
+  gap: 20px;
 }
 
 .h1 {
   color: black;
-  margin: 0px 0px 10px 0px;
+  margin: 80px 0px 10px 0px;
   text-align: center;
   font-size: 32px;
   font-weight: 700;
 }
-.proImgWrap {
-  position: absolute;
-  right: 39px;
-  top: -22px !important;
+.icon {
+  width: 20px;
 }
+
 .ptop {
   font-size: 20px;
   margin: 0px 100px;
@@ -178,6 +183,7 @@
     font-size: 18px;
     padding: 0px 20px;
     margin: 0;
+    display: none;
   }
   .h1 {
     color: black;
@@ -189,11 +195,11 @@
   }
 
   .testimonial {
-    margin-top: 0px;
+    margin-top: 50px;
   }
 
   .Testimonial {
-    padding: 0px 20px 30px 20px;
+    padding: 20px 20px 30px 20px;
   }
   .slide {
     height: fit-content;
@@ -213,8 +219,12 @@
   }
 }
 
-@media (max-width: 641px) {
+@media (max-width: 481px) {
   .mainSlider {
-    margin-bottom: 10px;
+    margin-bottom: 35px;
+    height: fit-content;
+  }
+  .imgP {
+    margin-top: -35px;
   }
 }

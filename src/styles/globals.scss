@@ -53,6 +53,10 @@ p {
 .none {
   display: none;
 }
+input:-internal-autofill-selected {
+  background-color: none;
+  color: firebrick;
+}
 a {
   color: inherit;
   text-decoration: none;
@@ -125,13 +129,22 @@ a {
 .MainCities {
   display: grid;
   grid-template-columns: 30% 70%;
-  margin: 0px 100px 70px 100px;
+  margin: 0px 100px 100px 100px;
 }
 
 //swiper css
 .swiper {
   width: 100%;
   height: 100%;
+}
+
+.swiper-button-next, .swiper-button-prev {
+  color: #0072BC !important;
+  --swiper-navigation-size: 20px !important;
+}
+
+.swiper-android .swiper-slide, .swiper-wrapper {
+  padding: 0px 0px 0px 0px;
 }
 
 .swiper-slide {
@@ -162,10 +175,23 @@ a {
 
 .RightPopup h5 {
   font-size: 24px;
-  font-weight: 700;
+  font-weight: 600;
   margin-bottom: 20px;
+  color: #555;
 }
+
 //icon css end home page
+
+.swiper-scrollbar-drag {
+  background-color: #0072bc !important;
+  width: 20% !important;
+}
+
+.swiper-horizontal > .swiper-scrollbar {
+  width: 20% !important;
+  left: 40% !important;
+}
+
 @media (max-width: 1281px) {
   .wrapper {
     padding: 40px 80px;
@@ -217,10 +243,13 @@ a {
 @media (max-width: 801px) {
   .MainCities {
     display: block;
-    margin: 0px 30px;
+    margin: 0px 10px;
   }
   .wrapper {
     padding: 30px 20px;
+  }
+  .faqCity .course  .wrapper {
+    padding: 30px 0px !important;
   }
 }
 @media (max-width: 641px) {
@@ -240,4 +269,9 @@ a {
     font-weight: 700;
     margin: 0 0 20px;
   }
+  .swiper-horizontal > .swiper-scrollbar {
+    width: 80% !important;
+    left: 10% !important;
+  
+}
 }

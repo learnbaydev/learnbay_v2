@@ -1,10 +1,12 @@
-import React, { useState } from "react";
 import Head from "next/head";
-import Navbar from "../../../components/Navbar/Navbar";
+import { useEffect, useState } from "react";
 import Footer from "../../../components/Footer/Footer";
+import Navbar from "../../../components/Navbar/Navbar";
 
 import dynamic from "next/dynamic";
 import { HRCourseData } from "../../../Data/HrAnalyticsData";
+import BatchDetails from "../../../components/CoursePage/BatchDetails/BatchDetails";
+import BottomBar from "../../../components/WebPage/BottomBar/BottomBar";
 
 const FirstSection = dynamic(() =>
   import("../../../components/CoursePage/FirstSection/FirstSection")
@@ -46,7 +48,7 @@ const Project = dynamic(() =>
   import("../../../components/CoursePage/Project/Project")
 );
 const SyllabusNew = dynamic(() =>
-  import("../../../components/CoursePage/Syllabus/Syllabus")
+  import("../../../components/MastersCourse/Syllabus/MasterSyllabus")
 );
 const DomainSection = dynamic(() =>
   import("../../../components/CoursePage//DomainSection/DomainSection")
@@ -57,11 +59,63 @@ const Certificate = dynamic(() =>
 const FAQNew = dynamic(() =>
   import("../../../components/CoursePage/FAQNew/FAQNew")
 );
-import OfferPopup from "../../../components/OfferPopup/OfferPopup";
-import BottomBar from "../../../components/WebPage/BottomBar/BottomBar";
 
 function Blockchain() {
-  const [popups, setPopups] = useState(false);
+  // POPUP GET METHOD
+  const [popupData, setPopupData] = useState([]);
+  // console.log(popupData);
+  useEffect(() => {
+    // console.log("inside UseEFFect");
+    const fetchPopup = async () => {
+      const data = await fetch("/api/Popup/popupGenerate", {
+        method: "GET",
+      });
+      if (data.status === 200) {
+        const { popData } = await data.json();
+        // console.log(popData, "get data");
+        if (popData == []) {
+          setPopupData([]);
+        }
+
+        popData.map((data, i) => {
+          // console.log(data);
+          data.page.map((popupData, i) => {
+            // console.log(popData);
+            if (popupData === "Business Analytics Family") {
+              setPopupData(data);
+              // console.log(popupData);
+              return;
+            }
+          });
+        });
+      }
+    };
+    fetchPopup();
+  }, []);
+
+  const [batchDateData, setBatchDateData] = useState("");
+
+  useEffect(() => {
+    const fetchBatch = async () => {
+      const data = await fetch("/api/BatchDetails/getBatchDetails", {
+        method: "POST",
+        body: JSON.stringify("Business Analytics Family"),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
+
+      console.log(data.status);
+      if (data.status === 200) {
+        const { batchDate } = await data.json();
+
+        setBatchDateData(batchDate);
+
+        console.log("Batch Date Response:", batchDate);
+      }
+    };
+    fetchBatch();
+  }, []);
 
   return (
     <>
@@ -77,7 +131,10 @@ function Blockchain() {
           rel="icon"
           href="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/Learnbay-Favicon-L.png"
         />
-        <link rel="canonical" href="https://www.learnbay.co/hr-analytics" />
+        <link
+          rel="canonical"
+          href="https://www.learnbay.co/datascience/hr-analytics"
+        />
       </Head>
       <main>
         <Navbar popup={true} dataScienceCounselling={true} />
@@ -116,6 +173,9 @@ function Blockchain() {
         <FifthSection />
         <SixthSectionCTA dataScienceCounselling={true} />
         <SyllabusNew
+           syllabusHead={HRCourseData[0].syllabusHead}
+           masterSyllabus={HRCourseData[0].masterSyllabus}
+           MasterSyllabusDefault={HRCourseData[0].MasterSyllabusDefault}
           dataScienceCounselling={true}
           dataScience={true}
           titleCourse="HR Analytics Program "
@@ -135,7 +195,7 @@ function Blockchain() {
           deskImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/BA+Family+Tools+Covered.png"
           mobImage="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/BA-Family-Tools-Covered-mobile.png"
         />
-        <Certificate twoCertificate={true} data={HRCourseData[0].Certificate} />
+        <Certificate twoCertificate={false} data={HRCourseData[0].Certificate} />
         <FeeSection
           Fee="₹ 89,000 + 18% GST"
           FeeEmi="₹ 8,752/month"
@@ -157,14 +217,15 @@ function Blockchain() {
           titleCourse="HR Analytics Project Brochure"
           brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Business+Analytics+Projects.pdf"
         />
-        <BatchDetails
-          BAFamily={true}
-          CourseFeeHead="Hr Analytics : Batch Details"
-        />
+        {batchDateData === "" ? (
+          ""
+        ) : (
+          <BatchDetails batchDetails={batchDateData.batchDetails} />
+        )}
         <FAQNew FAQNewData={HRCourseData[0].faq} />
         <SeventhSection />
         <Footer />
-        <OfferPopup />
+
         <BottomBar />
       </main>
     </>

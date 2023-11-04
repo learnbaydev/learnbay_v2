@@ -1,18 +1,12 @@
-import React, { useState, useEffect } from "react";
-import "swiper/css";
-import "swiper/css/navigation";
-import styles from "./FeeSection.module.css";
+import dynamic from "next/dynamic";
 import Image from "next/image";
-import { BsCheckCircleFill } from "react-icons/bs";
-import { FaMobileAlt, FaBell } from "react-icons/fa";
-import { MdPayment } from "react-icons/md";
-import { AiOutlineBank } from "react-icons/ai";
-import { Autoplay, FreeMode } from "swiper";
-import { Swiper, SwiperSlide } from "swiper/react";
+import { useState } from "react";
+import { FcOk } from "react-icons/fc";
+import styles from "./FeeSection.module.css";
 import Popup from "../../Popup/Popup";
 import Form from "../../Form/Form";
-import dynamic from "next/dynamic";
 const Button = dynamic(() => import("../../Global/Button/Button"));
+
 
 const FeeSection = ({
   FeeHeading,
@@ -32,173 +26,128 @@ const FeeSection = ({
   };
 
   return (
-    <div className={`${styles.feeWrapper} wrapper`}>
-      <Popup
+    <div className={styles.feesmain} id="fees">
+       <Popup
         trigger={popups}
         setTrigger={setPopups}
         className="popupModal"
-        downloadBrochure
+        popup={true}
+        // radio={radio}
+        dataScience={dataScience}
+        dataScienceCounselling={dataScienceCounselling}
       >
         <div className="leftPopup">
           <div
             className="whiteP"
-            style={{ width: "350px", height: "400px" }}
+            style={{ width: "340px", height: "400px" }}
           ></div>
         </div>
         <div className="RightPopup">
           <h5>Apply For Counselling</h5>
-
           <Form
             dataScience={dataScience}
             dataScienceCounselling={dataScienceCounselling}
+            upSkillingHide={true}
+            // radio={radio}
           />
         </div>
       </Popup>
-      <h4>{FeeHeading}</h4>
-      <p className={styles.ptop}>
-        Invest in your future with quality education
+      <h2>Fee & Batch Details</h2>
+      <p>
+        Curriculum is specifically engineered to meet the expectations of
+        leading tech companies
       </p>
-      <div className={styles.priceWrap}>
-        <div className={styles.leftSide}>
-          <div className={styles.price}>
-            <p>Program Fee:</p>
-            <h5>{Fee}</h5>
-          </div>
-
-          <div className={styles.list}>
-            <div className={styles.left}>
-              <p>
-                <BsCheckCircleFill className={styles.check} />
-                {FeeContent2}
-              </p>
-              <p>
-                <BsCheckCircleFill className={styles.check} />
-                {FeeContent5}
-              </p>
+      <div className={styles.mainbatch}>
+        <div className={styles.batch}>
+          <div>
+            <ul className={styles.feesbatch}>
+              <li>SEP 24th</li>
+              <li>MON - FRI (8 months)</li>
+              <li>
+                <span>08:00 AM - 10:00 AM</span>
+              </li>
+            </ul>
+            {/* <p className={styles.fill}>Filling Fast!</p> */}
+            <ul className={styles.feesbatch}>
+            <img className={styles.fillimg}
+                src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/filling-fast.webp"
+                width={90}
+                height={56}
+                />
+              <li>
+             
+                SEP 27th</li>
+              <li>SAT & SUN (8 months)</li>
+              <li>
+                <span>08:00 AM - 10:00 AM</span>
+              </li>
+            </ul>
+            <div className={styles.botttomDiv}>
+              <ul className={styles.fee2}>
+                <li>
+                  {" "}
+                  <FcOk /> No cost EMI
+                </li>
+                <li>
+                  {" "}
+                  <FcOk /> Easy loan procedure
+                </li>
+                <li>
+                  {" "}
+                  <FcOk /> 15 days refund policy
+                </li>
+              </ul>
+              <div className={styles.feeh}>
+                <div>
+                  <p>Payment Partners</p>
+                </div>
+                <div className="imgWrapper" style={{ paddingRight: "10px" }}>
+                  <Image
+                    src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/coursePage/Finance+partners.webp"
+                    alt="Zest"
+                    width="300"
+                    height="80"
+                  />
+                </div>
+                <div></div>
+              </div>
             </div>
-            <div className={styles.right}>
-              <p>
-                <BsCheckCircleFill className={styles.check} />
-                {FeeContent4}
-              </p>
-              <p>
-                <BsCheckCircleFill className={styles.check} />
-                {FeeContent3}
-              </p>
-            </div>
           </div>
-
-          <div onClick={popupShow}>
-            <Button className={styles.Btn} text="Enroll Now" />
-          </div>
-        </div>
-        <div className={styles.rightSide}>
-          <div className={styles.top}>
-            <div className={styles.right}>
+          <div className={styles.fin}>
+            <div className={styles.firstfin}>
               <p>Financing as low as</p>
-              <h3>{FeeEmi}</h3>
-            </div>
-            <div className={styles.left}>
-              <div onClick={() => popupShow(false, true)}>
-                <Button className={styles.Btn} text="Start Learning" />
+              <h2>
+                {FeeEmi} <span className={styles.montspan}>month</span>
+              </h2>
+              <div  onClick={popupShow}>
+              <Button
+               
+                className={styles.Btn}
+                text="Request a Callback"
+              />
+              </div>
+              <div className={styles.feeh1}>
+                <div>
+                  <p>Payment Partners</p>
+                </div>
+                <div className="imgWrapper" style={{ paddingRight: "10px" }}>
+                  <Image
+                    src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/coursePage/Finance+partners.webp"
+                    alt="Zest"
+                    width="300"
+                    height="80"
+                  />
+                </div>
+                <div></div>
               </div>
             </div>
-          </div>
-          <div className={styles.middle}>
-            <div className={styles.right}>
-              <p>Multiple Payment Modes</p>
-              <div>
-                <span>
-                  <MdPayment className={styles.icon} /> <p>Card</p>
-                </span>
-                <span>
-                  <AiOutlineBank className={styles.icon} /> <p>Banking</p>
-                </span>
-                <span>
-                  <FaMobileAlt className={styles.icon} /> <p>UPI</p>
-                </span>
-              </div>
+            <div className={styles.fingst}>
+              <h3>
+                {Fee} <span className={styles.gstspan}>+ 18% GST</span>
+              </h3>
             </div>
           </div>
-          <div className={styles.top}>
-            <div className={styles.slider}>
-              <p className={styles.sliderHeading}>Payment Partner</p>
-              <Swiper
-                slidesPerView={3}
-                spaceBetween={40}
-                breakpoints={{
-                  1024: { slidesPerView: 3, spaceBetween: 40 },
-                  961: { slidesPerView: 2, spaceBetween: 20 },
-                  801: { slidesPerView: 2, spaceBetween: 40 },
-                  641: { slidesPerView: 2, spaceBetween: 10 },
-                  481: { slidesPerView: 3, spaceBetween: 10 },
-                  100: { slidesPerView: 3, spaceBetween: 10 },
-                }}
-                autoplay={{
-                  delay: 1500,
-                  loop: true,
-                  disableOnInteraction: false,
-                }}
-                freeMode={true}
-                grabCursor={true}
-                centeredSlides={true}
-                loop={true}
-                modules={[FreeMode, Autoplay]}
-                className="mySwiper"
-              >
-                <SwiperSlide className={styles.swiperSlide}>
-                  <div className="imgWrapper">
-                    <Image
-                      src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/liquiloans.webp"
-                      alt="liqiLoans"
-                      width="300"
-                      height="120"
-                    />
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide className={styles.swiperSlide}>
-                  <div className="imgWrapper">
-                    <Image
-                      src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/propelld.webp"
-                      alt="propelld"
-                      width="500"
-                      height="200"
-                    />
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide className={styles.swiperSlide}>
-                  <div className="imgWrapper">
-                    <Image
-                      src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/zest-logo.webp"
-                      alt="Zest"
-                      width="200"
-                      height="58"
-                    />
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide className={styles.swiperSlide}>
-                  <div className="imgWrapper">
-                    <Image
-                      src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/zest-logo.webp"
-                      alt="Zest"
-                      width="200"
-                      height="58"
-                    />
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide className={styles.swiperSlide}>
-                  <div className="imgWrapper">
-                    <Image
-                      src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/zest-logo.webp"
-                      alt="Zest"
-                      width="200"
-                      height="58"
-                    />
-                  </div>
-                </SwiperSlide>
-              </Swiper>
-            </div>
-          </div>
+          <div />
         </div>
       </div>
     </div>

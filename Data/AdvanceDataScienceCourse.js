@@ -47,125 +47,186 @@ export const DataScienceCourseData = [
         id: 1,
         name: "Preksha Mishra",
         working: "Working at HCL",
+        link: "D-gcPaK_-x4",
         proImg:
-          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/preksha-home.png",
+          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/reviewNew.webp",
         sDesc:
           "I had a great learning experience at Learnbay. The faculties here are top notch. Right from enrollment to getting a good job ...",
         lDesc:
           "I had a great learning experience at Learnbay. The faculties here are top notch. Right from enrollment to getting a good job, they keep putting enormous efforts for each and every candidate. Thanks to all the trainers, backend team, the HR team and to the directors for making this journey smooth.",
         complogo:
-          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/HCL-logo.png",
+          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/microsoft.webp",
         statLogo: "140% Hike",
       },
       {
-        id: "tcs",
+        id: 2,
         name: "Mohammad Israr",
         working: "Working at TCS",
+        link: "D-gcPaK_-x4",
         proImg:
-          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/asrar-home.png",
+          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/reviewNew.webp",
         sDesc:
           "Thanks to the Learnbay data science course and outstanding assistance, I could ace the TCS interview and secure a job...",
         lDesc:
           "Thanks to the Learnbay data science course and outstanding assistance, I could ace the TCS interview and secure a job with a 400% pay hike. My understanding of the course was greatly improved by the real-time projects and respective IBM project experience certification.",
         complogo:
-          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/TCS.png",
+          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/microsoft.webp",
         statLogo: "  210% Hike",
       },
       {
         id: 4,
         name: "Ritish Kumar",
         working: "Working at Capgemini",
+        link: "D-gcPaK_-x4",
         proImg:
-          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/ritesh-home.png",
+          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/reviewNew.webp",
         sDesc:
           "I always had a dilemma about how to switch to the IT field until I stumbled upon the foundation data science course offered by Learnbay...",
         lDesc:
           "I always had a dilemma about how to switch to  IT field until I stumbled upon the foundation data science course offered by Learnbay. The perfect combination of flexibility, affordability, and supportiveness. They helped me get placed at Capgemini, and I’m delighted with my current career. All Thanks to Learnbay!",
         complogo:
-          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Capgemni-logo.png",
+          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/microsoft.webp",
         statLogo: " 150% Hike",
       },
       {
         id: 5,
         name: "Sourabh Mourya",
         working: "Working at HCL",
+        link: "D-gcPaK_-x4",
         proImg:
-          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/saurabh-home.png",
+          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/reviewNew.webp",
         sDesc:
           "Flexible classes have helped me to manage my job  schedule. Learning Data Science directly from MNC experts provided the chance ...",
         lDesc:
           "Flexible classes have helped me to manage my job schedule. Learning Data Science directly from  experts provided the chance to learn industry-specific tricks and tips. I am grateful to the Learnbay team for providing an excellent  platform that enhanced my professional growth. Thank you very much! Learnbay.",
         complogo:
-          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/HCL-logo.png",
+          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/microsoft.webp",
         statLogo: " 150% Hike",
       },
       {
         id: 6,
         name: "Abhishek Singh",
         working: "Working at AGS",
+        link: "D-gcPaK_-x4",
         proImg:
-          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/abhishek-home.png",
+          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/reviewNew.webp",
         sDesc:
           "I got placed at AGS within 9 months of joining Learnbay institute. Live interaction sessions are the best part here since ...",
         lDesc:
           "I got placed at AGS within 9 months of joining Learnbay institute. Live interaction sessions are  the best part here since we could clear all queries. The projects are excellent. Overall I had a great  experience and I urge everyone to enroll in this institute.",
         complogo:
-          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/AGS-logo.png",
+          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/microsoft.webp",
         statLogo: "  132% Hike",
       },
       {
         id: 7,
         name: "Vishal",
         working: "Working at Bridge i2i",
+        link: "D-gcPaK_-x4",
         proImg:
-          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/vishal-home.png",
+          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/reviewNew.webp",
         sDesc:
           "One on One counseling from experts has guided me to  make the right decision. The Learnbay team was amazing in assisting me with ...",
         lDesc:
           "One on One counseling from experts has guided me to make the right decision. The Learnbay team was amazing in assisting me with live projects and preparing for the placements. Thank you! Learnbay for your tremendous support in excelling in my Data Science Career.",
         complogo:
-          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Bridgei2i-logo.png",
+          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/microsoft.webp",
         statLogo: "  127% Hike",
       },
       {
         id: "math",
         name: "Aravind Kumar",
         working: "SA - Data Scientist",
+        link: "D-gcPaK_-x4",
         proImg:
-          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/aravind-home.png",
+          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/reviewNew.webp",
         sDesc:
           "Choosing Learnbay was my best decision ever. The instructors were encouraging and glad to answer questions. The best feature is that ...",
         lDesc:
           "Choosing Learnbay was my best decision ever. The instructors were encouraging and glad to answer questions. The best feature is that their flexible modules & small size batches. I was able to manage  my time and learn while working. Thanks to Learnbay for my lucrative placement.",
         complogo:
-          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/themathcompany-logo.png",
+          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/microsoft.webp",
         statLogo: "142% Hike",
       },
     ],
+
+    projectSection:[
+      {
+        id: 1,
+        duration: "26 Hours",
+        logo:"",
+        heading:"Career progression planning of employees with workforce defections & efficiency",
+        img:"https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/Group+502.png",
+        para:"BMW allows existing customers to sell used cars but many competitors are now offering better resale values...",
+        toolImg:"https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/iconProject.webp",
+        learnMore:"Learn more",
+    },
+    {
+        id: 2,
+        duration: "26 Hours",
+        logo:"",
+        heading:"Career progression planning of employees with workforce defections & efficiency",
+        img:"https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/Group+502.png",
+        para:"BMW allows existing customers to sell used cars but many competitors are now offering better resale values...",
+        toolImg:"https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/iconProject.webp",
+        learnMore:"Learn more",
+    },
+    {
+        id: 3,
+        duration: "26 Hours",
+        logo:"",
+        heading:"Career progression planning of employees with workforce defections & efficiency",
+        img:"https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/Group+502.png",
+        para:"BMW allows existing customers to sell used cars but many competitors are now offering better resale values...",
+        toolImg:"https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/iconProject.webp",
+        learnMore:"Learn more",
+    },
+    {
+      id: 3,
+      duration: "26 Hours",
+      logo:"",
+      heading:"Career progression planning of employees with workforce defections & efficiency",
+      img:"https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/Group+502.png",
+      para:"BMW allows existing customers to sell used cars but many competitors are now offering better resale values...",
+      toolImg:"https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/iconProject.webp",
+      learnMore:"Learn more",
+  },
+  {
+    id: 4,
+    duration: "26 Hours",
+    logo:"",
+    heading:"Career progression planning of employees with workforce defections & efficiency",
+    img:"https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/Group+502.png",
+    para:"BMW allows existing customers to sell used cars but many competitors are now offering better resale values...",
+    toolImg:"https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/iconProject.webp",
+    learnMore:"Learn more",
+}
+    ],
+   
     thirdSection: [
       {
         id: 1,
-        icon: <MdOutlineCastForEducation className={styles.bIcon} />,
-        heading: "Education",
-        para: "Bachelor's degree with consistent good academics",
+        icon: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/bank.gif",
+        heading: "BFSI",
+        para: "Designed for executive-level BFSI professionals, accountant.",
       },
       {
         id: 1,
-        icon: <MdOutlineWorkOutline className={styles.oIcon} />,
-        heading: "Work experience",
-        para: "Minimum 1 year of IT/Non-IT work experience",
+        icon: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/heartbeat.gif",
+        heading: "Healthcare",
+        para: "For pharmacists, therapists, health administrators, etc.",
       },
       {
         id: 1,
-        icon: <FaUserGraduate className={styles.oIcon} />,
-        heading: "Career stage",
-        para: "Early to mid-career professionals interested in data science",
+        icon: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/live.gif",
+        heading: "HR & Marketing",
+        para: "For recruiter, talent acquisition specialist and marketing pros.",
       },
       {
         id: 1,
-        icon: <GiStairsGoal className={styles.bIcon} />,
-        heading: "Aspirations",
-        para: "To become a data-driven professional & optimise strategies",
+        icon: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/delivery-truck.gif",
+        heading: "Manufacturing",
+        para: "For production manager, quality control inspector and engineers.",
       },
     ],
     fourthSection: [
@@ -197,9 +258,10 @@ export const DataScienceCourseData = [
         p2: "BFSI",
         btn: "Download Brochure",
         desc: [
-          "Work on 20+ real time case studies and assignments",
-          "Designed for executive-level BFSI professionals, accountant, etc.",
-          "Learn finance analysis tools, generate data insights, integrate data-driven methods to future-proof business operations",
+          // "Work on 20+ real time case studies and assignments",
+          // "Designed for executive-level BFSI professionals, accountant, etc.",
+          // "Learn finance analysis tools, generate data insights, integrate data-driven methods to future-proof business operations",
+          "Pursue projects on recording sensors in seismic, manufacturing, and exploration operations to  manufacturing, and exploration operations to ",
         ],
         BrochureLink:
           "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Banking%2C+Finance+and+Insurance+Domain.pdf",
@@ -210,9 +272,10 @@ export const DataScienceCourseData = [
         p1: "#2",
         p2: "Manufacturing",
         desc: [
-          "Work on 20+ real time case studies and assignments",
-          "For production manager, quality control inspector, manufacturing engineer etc.",
-          "Discover cutting-edge tech like AI and data science, and develop strategic skills as a business or data analyst",
+          // "Work on 20+ real time case studies and assignments",
+          // "For production manager, quality control inspector, manufacturing engineer etc.",
+          // "Discover cutting-edge tech like AI and data science, and develop strategic skills as a business or data analyst",
+          "Pursue projects on recording sensors in seismic, manufacturing, and exploration operations to  manufacturing, and exploration operations to ",
         ],
         btn: "Download Brochure",
         BrochureLink:
@@ -225,9 +288,10 @@ export const DataScienceCourseData = [
         p1: "#3",
         p2: "Energy, Oil and Gas",
         desc: [
-          "Work on 20+ real time case studies and assignments",
-          "For petroleum engineers, environmental specialists, operation managers etc.",
-          "Master your data analysis skills and create a dynamic dashboard to describe your insights",
+          // "Work on 20+ real time case studies and assignments",
+          // "For petroleum engineers, environmental specialists, operation managers etc.",
+          // "Master your data analysis skills and create a dynamic dashboard to describe your insights",
+          "Pursue projects on recording sensors in seismic, manufacturing, and exploration operations to  manufacturing, and exploration operations to ",
         ],
         btn: "Download Brochure",
         BrochureLink:
@@ -240,9 +304,10 @@ export const DataScienceCourseData = [
         p1: "#4",
         p2: "Healthcare",
         desc: [
-          "Work on 20+ real time case studies and assignments",
-          "For pharmacists, therapists, health administrators, etc.",
-          "Achieve success in a competitive market by utilizing advanced tools and methodology to leverage technology and gain a competitive edge",
+          // "Work on 20+ real time case studies and assignments",
+          // "For pharmacists, therapists, health administrators, etc.",
+          // "Achieve success in a competitive market by utilizing advanced tools and methodology to leverage technology and gain a competitive edge",
+          "Pursue projects on recording sensors in seismic, manufacturing, and exploration operations to  manufacturing, and exploration operations to ",
         ],
         btn: "Download Brochure",
         BrochureLink:
@@ -255,8 +320,9 @@ export const DataScienceCourseData = [
         p1: "#5",
         p2: "Supply Chain, E-Commerce & Retail",
         desc: [
-          "Work on 20+ real time case studies and assignments",
-          "Learn Supply Chain, E-Commerce & Retail analysis tools, generate data insights, integrate data-driven methods to future-proof business operations",
+          // "Work on 20+ real time case studies and assignments",
+          // "Learn Supply Chain, E-Commerce & Retail analysis tools, generate data insights, integrate data-driven methods to future-proof business operations",
+          "Pursue projects on recording sensors in seismic, manufacturing, and exploration operations to  manufacturing, and exploration operations to ",
         ],
         btn: "Download Brochure",
         BrochureLink:
@@ -404,43 +470,50 @@ export const DataScienceCourseData = [
     syllabusDesc:
       "Learnbay provides Live, Interactive Online Sessions guided by Professionals working in top MNCs. All sessions are covered practically with real-time industrial projects and case studies.",
     popupHead: "Download Data science Course Brochure",
-    syllabus: [
+    syllabusHead: [
+      "Term 1 Foundation Track(30 ECTS Credits)",
+      "Term 2 Statistics & Machine Learning( 25 ECTS Credits) ",
+      "Term 3 Artificial Intelligence Tools( 25 ECTS Credits)",
+      "Term 4 :- Artificial Intelligence Tools( 25 ECTS Credits) ",
+      "Term 5 :- Deployment (AWS+Azure)( 25 ECTS Credits) ",
+    ],
+    MasterSyllabusDefault: [
       {
         Module0: {
           title: "Module 0 :- Preparatory Classes (Programming + Maths)",
           content: [
             {
               chap: {
-                title: "Topic 1 :- Cohort Orientation ",
+                title: "Topic 1 :- Cohort Orientation",
                 desc: [
                   "A brief introduction to tools related to data ",
-                  "Learn about particular real-time projects and Capstone projects",
+                  "Learn about particular real-time projects and Capstone projects ",
                   "Data and its impact on career opportunities",
                   "Utilizing data, to enhance industrial operations and management",
                 ],
               },
             },
 
-            {
-              chap: {
-                title: "Topic 2 :- Fundamentals of Programming",
-                desc: [
-                  "Introduction to Anaconda & Jupyter notebook",
-                  "Flavors of python Introduction to Git, GitHub",
-                  "Python Fundamentals",
-                ],
-              },
-            },
-            {
-              chap: {
-                title: "Topic 3 :- Fundamentals of Statistics",
-                desc: [
-                  "Mean, Median, Mode",
-                  "Standard Deviation, Average. Probability, Permutations, and Combinations",
-                  "Introduction to Linear Algebra",
-                ],
-              },
-            },
+            // {
+            //   chap: {
+            //     title: "Topic 2 :- Fundamentals of Programming",
+            //     desc: [
+            //       "Introduction to Anaconda & Jupyter notebook",
+            //       "Flavors of python Introduction to Git, GitHub",
+            //       "Python Fundamentals",
+            //     ],
+            //   },
+            // },
+            // {
+            //   chap: {
+            //     title: "Topic 3 :-  Fundamentals of Statistics",
+            //     desc: [
+            //       "Mean, Median, Mode",
+            //       "Standard Deviation, Average. Probability, Permutations, and Combinations",
+            //       "Introduction to Linear Algebra",
+            //     ],
+            //   },
+            // },
           ],
           id: 0,
           open: true,
@@ -483,16 +556,15 @@ export const DataScienceCourseData = [
               chap: {
                 title: "Module 1 :- Statistics",
                 desc: [
-                  "Fundamentals of Math and Probability",
+                  " Fundamentals of Math and Probability",
                   "All about Population & Sample",
                   "Introduction to Statistics, Statistical Thinking",
                   "Descriptive Statistics",
                   " Inferential Statistics",
                   "Hypothesis Testing",
-                  "Linear Algebra",
+                  " Linear Algebra",
                   "Data Processing & Exploratory Data Analysis",
-                  "EDA",
-                  "Statistics Assignments: Total 4 practice sets and Assignments from Statistics",
+                  "EDA EDA Statistics Assignments: Total 4 practice sets and Assignments from Statistics",
                 ],
               },
             },
@@ -511,12 +583,11 @@ export const DataScienceCourseData = [
                   "Decision Tree Model",
                   "Random Forest Model",
                   "Hyperparameter Tuning",
-                  "Naive Baye’s Model",
-                  "Case Study on Kart Model Business & Random Forest",
+                  "Naive Baye’s Model Case Study on Kart Model Business & Random Forest",
                   "K Means and Hierarchical Clustering",
                   "Hierarchical Clustering",
                   "Principal Component Analysis (PCA):",
-                  "Support Vector Machine(SVM)",
+                  " Support Vector Machine (SVM) Case Study on Recommendation Engine for e-commerce/retail chain & Twitter data analysis using NLP",
                 ],
               },
             },
@@ -535,7 +606,7 @@ export const DataScienceCourseData = [
                 desc: [
                   "SQL and RDBMS",
                   "Advance SQL",
-                  "NoSQL, HBase & MongoDB",
+                  " NoSQL, HBase & MongoDB",
                   "JSON Data & CRUD",
                   "Programming with SQL",
                 ],
@@ -544,19 +615,17 @@ export const DataScienceCourseData = [
             {
               chap: {
                 title: "Module 2 :- MongoDB",
-                desc: ["Introduction to MongoDB", "MongoDB (Advance)"],
+                desc: [" Introduction to MongoDB", "MongoDB (Advance)"],
               },
             },
-
             {
               chap: {
-                title: "Module 3 :- Tableau ",
+                title: "Module 3 :- Tableau",
                 desc: [
-                  "Introduction to Tableau",
+                  " Introduction to Tableau",
                   "Visual Analytics",
                   "Dashboard and Stories",
-                  "Hands-on: Connecting data source and data cleansing",
-                  "Working with various charts, Deployment of Predictive model in visualization",
+                  "Tableau (Advance) Hands-on: Connecting data source and data cleansing, Working with various charts, Deployment of Predictive model in visualization",
                 ],
               },
             },
@@ -575,8 +644,7 @@ export const DataScienceCourseData = [
                 desc: [
                   "Introduction To Hadoop & Big Data",
                   "What is Spark",
-                  "Getting to know PySpark",
-                  "Hands-on: Map reduce Use Case : Youtube data analysis & Spark RDD programming",
+                  "Getting to know PySpark Hands-on: Map reduce Use Case: Youtube data analysis & Spark RDD programming",
                 ],
               },
             },
@@ -584,9 +652,20 @@ export const DataScienceCourseData = [
               chap: {
                 title: "Module 6 :- Time Series",
                 desc: [
-                  "Introduction to Time Series Forecasting",
-                  "Introduction to ARIMA Models",
-                  "Case Study on Time series classification of smartphone data to predict user behavior, Performing Time Series Analysis on Stock Prices & Time series forecasting of sales data",
+                  " Introduction to Time Series Forecasting",
+                  "Introduction to ARIMA Models Case Study on Time series classification of smartphone data to predict user behavior, Performing Time Series Analysis on Stock Prices & Time series forecasting of sales data",
+                ],
+              },
+            },
+            {
+              chap: {
+                title: "Module 7 :- MLOps",
+                desc: [
+                  "Build and validate well known ML/DL model prototypes",
+                  "Understand the impact of data drift",
+                  "Apply AutoML and collaborative frameworks such as MLflow",
+                  "Perform pre-production testing using A/B patterns, shadow patterns and Canary patterns",
+                  "Apply production-specific software services using Prometheus, grafana cloud, elk stack (AWS), fluentD and cloudwatch (AWS)",
                 ],
               },
             },
@@ -603,11 +682,13 @@ export const DataScienceCourseData = [
               chap: {
                 title: "Module 1 :- Deep Learning Using Tensorflow",
                 desc: [
-                  "Introduction to Deep Learning And TensorFlow",
+                  " Introduction to Deep Learning And TensorFlow",
                   "TensorFlow Classification Examples",
                   "Understanding Neural Networks With TensorFlow",
-                  "Convolutional Neural Network (CNN)",
-                  "Project on Building a CNN for Image Classification",
+                  "Convolutional Neural Network (CNN) Project on Building a CNN for Image Classification",
+                  "Introducing Recurrent Neural Networks skflow: RNNs in skflow",
+                  "Understanding Of TFLearn APIs",
+                  "Understanding Keras API for implementing Neural Networks Real-Time Project on SPAM Prediction using RNN & Image Classifier using PyTorch",
                 ],
               },
             },
@@ -617,17 +698,38 @@ export const DataScienceCourseData = [
                 desc: [
                   "Natural Language Processing",
                   "Text Analysis",
-                  "KNN",
-                  "Use cases on NLP: Sentiment analysis for marketing",
+                  "KNN Use cases on NLP: Sentiment analysis for marketing ",
+                  "Text Pre-Processing Techniques",
+                  "Stemming Projects And Case Study on Sentiment analysis for Twitter, web articles & Advanced Text Analytics & NLP",
+                ],
+              },
+            },
+            {
+              chap: {
+                title: "Module 3 :- Computer Vision",
+                desc: [
+                  "Computer Vision overview",
+                  " Image Filtering",
+                  "Image Processing",
+                  "Image Classification and segmentation Project: The Problem of Scale and Shape Real-Time Use Case:  Single Shot MultiBox Detector & Object Localization",
+                ],
+              },
+            },
+            {
+              chap: {
+                title: "Module 4 :- Reinforcement Learning",
+                desc: [
+                  "What is Reinforcement Learning - Basics",
+                  " Approximation Methods for Reinforcement Learning Projects and Case Studies on Solving Taxi Environment & Solving Frozen Lake",
                 ],
               },
             },
             {
               chap: {
                 title:
-                  "Module 3 :- Model Training & Deployment Using (AWS GCP)",
+                  "Module 5 :- Model Training & Deployment Using (AWS GCP)",
                 desc: [
-                  "AWS (Amazon Web Services)",
+                  " AWS (Amazon Web Services)",
                   "GCP (Google Cloud Platform)",
                   "Introduction to AWS and GCP Cloud ML Engine",
                   "Deploying Machine Learning Model",
@@ -642,7 +744,80 @@ export const DataScienceCourseData = [
       },
       {
         Module0: {
-          title: "Term 5 :- Deployment (AWS+Azure)",
+          title: "Term 5 :- Essential Tools",
+          content: [
+            {
+              chap: {
+                title: "Module 1 :- DSA ",
+                desc: [
+                  "Array Overview",
+                  "String",
+                  "Linked List",
+                  "Queue",
+                  "Stack",
+                  "Heap",
+                  "Trie",
+                  "Tree, Binary Search Tree and AVL Tree",
+                  "Segment Tree",
+                  "Graph & Recursion",
+                  " Introduction to recursion",
+                  "Backtracking Algorithm",
+                  "Searching",
+                  "Sorting",
+                  "Greedy Algorithm",
+                  "Pattern Searching",
+                  "Dynamic Programming",
+                ],
+              },
+            },
+            {
+              chap: {
+                title: "Module 2 :- Business Analytics ",
+                desc: [
+                  "Introduction to Business Analysis",
+                  "Stakeholders in Business Analysis",
+                  "Formulating Requirements",
+                  "Flowchart and Modelling",
+                  "Analysing and Transforming Requirements",
+                  "Finalising Requirements",
+                ],
+              },
+            },
+            {
+              chap: {
+                title: "Module 3 :- Project Management Module",
+                desc: [
+                  "Jira process",
+                  "PM approaches for Technical Projects",
+                  "JIRA Process",
+                  "Agile",
+                ],
+              },
+            },
+            {
+              chap: {
+                title: "Module 4 :- Excel",
+                desc: [
+                  "Getting started with Excel",
+                  "Using Excel Toolbars: Hiding, Displaying, and Moving Toolbars",
+                  "Switching Between Sheets in a Workbook",
+                  "Entering Date Values and using AutoComplete",
+                  "Inserting and Deleting Cells, Rows, and Columns",
+                  "Working with the Forms Menu",
+                  "Creating & Working with Charts",
+                  "Changing a Chart Type and Working with Pie Charts",
+                  "Data Analysis & Pivot Tables",
+                ],
+              },
+            },
+          ],
+          id: 5,
+          open: false,
+        },
+      },
+      {
+        Module0: {
+          title: "Term 6 :- Deployment (AWS+Azure)",
           content: [
             {
               chap: {
@@ -707,7 +882,7 @@ export const DataScienceCourseData = [
               },
             },
           ],
-          id: 5,
+          id: 6,
           open: false,
         },
       },
@@ -970,6 +1145,50 @@ export const DataScienceCourseData = [
             open: false,
           },
         ],
+      },
+    ],
+    newsData: [
+      {
+        id: 1,
+        domain: "I had a great learning experience at Learnbay. The faculties here are top notch. Right from enrollment to getting a good job, they keep putting enormous....",
+        CLogo: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/1-1.png",
+        SDesc: "  27 Aug 2023",
+      },
+      {
+        id: 2,
+        domain: "I had a great learning experience at Learnbay. The faculties here are top notch. Right from enrollment to getting a good job, they keep putting enormous....",
+        CLogo: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/1-1.png",
+        SDesc: "  27 Aug 2023",
+      },
+      {
+        id: 3,
+        domain: "I had a great learning experience at Learnbay. The faculties here are top notch. Right from enrollment to getting a good job, they keep putting enormous....",
+        CLogo: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/1-1.png",
+        SDesc: "  27 Aug 2023",
+      },
+      {
+        id: 4,
+        domain: "I had a great learning experience at Learnbay. The faculties here are top notch. Right from enrollment to getting a good job, they keep putting enormous....",
+        CLogo: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/1-1.png",
+        SDesc: "  27 Aug 2023",
+      },
+      {
+        id: 5,
+        domain: "I had a great learning experience at Learnbay. The faculties here are top notch. Right from enrollment to getting a good job, they keep putting enormous....",
+        CLogo: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/1-1.png",
+        SDesc: "  27 Aug 2023",
+      },
+      {
+        id: 6,
+        domain: "I had a great learning experience at Learnbay. The faculties here are top notch. Right from enrollment to getting a good job, they keep putting enormous....",
+        CLogo: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/1-1.png",
+        SDesc: "  27 Aug 2023",
+      },
+      {
+        id: 7,
+        domain: "I had a great learning experience at Learnbay. The faculties here are top notch. Right from enrollment to getting a good job, they keep putting enormous....",
+        CLogo: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/1-1.png",
+        SDesc: "  27 Aug 2023",
       },
     ],
   },

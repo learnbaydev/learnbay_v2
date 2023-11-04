@@ -3,32 +3,75 @@ import React from "react";
 import { AiOutlineRise } from "react-icons/ai";
 import { BiBriefcase } from "react-icons/bi";
 import { FaAward } from "react-icons/fa";
+import Image from "next/image";
 
 const HomeLine = ({ Emi }) => {
   return (
     <div className="wrapper">
       <div className={styles.feature}>
+        <p>
+          Get Coached by the Industry's Best: <span>Top 1% Tech Mentors</span>
+        </p>
         <div className={styles.container}>
           <div className={styles.left}>
-            <AiOutlineRise
-              className={styles.featureIcons}
-              style={{ color: "#2DB621" }}
+            <Image
+              src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/microsoft.webp"
+              width="170"
+              height="35"
+              priority={true}
+              alt="data science course"
             />
-            <p>68% salary hike</p>
           </div>
-          <hr className={styles.hr} />
+          {/* <hr className={styles.hr} /> */}
           <div className={styles.middle}>
-            <BiBriefcase
-              className={styles.featureIcons}
-              style={{ color: "#0072bc" }}
+            <Image
+              src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/paypal.webp"
+              width="170"
+              height="35"
+              priority={true}
+              alt="data science course"
             />
-
-            <p>300+ hiring partners</p>
           </div>
-          <hr className={styles.hr} />
+          {/* <hr className={styles.hr} /> */}
           <div className={styles.right}>
-            <FaAward className={styles.featureIcons} />
-            <p>100% job calls</p>
+            <Image
+              src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/globallogic.webp"
+              width="170"
+              height="35"
+              priority={true}
+              alt="data science course"
+            />
+          </div>
+          {/* <hr className={styles.hr} /> */}
+          <div className={styles.right}>
+            <Image
+              src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/walmart.webp"
+              width="170"
+              height="35"
+              priority={true}
+              alt="data science course"
+            />
+          </div>
+          {/* <hr className={styles.hr} /> */}
+          <div className={styles.right}>
+            <Image
+              src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/paytm.webp"
+              width="125"
+              height="35"
+              priority={true}
+              alt="data science course"
+            />
+          </div>
+        </div>
+        <div className={styles.containerMobile}>
+          <div className="imgWrapper">
+            <Image
+              src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/MobileSecond.webp"
+              width="450"
+              height="152"
+              priority={true}
+              alt="data science course"
+            />
           </div>
         </div>
       </div>

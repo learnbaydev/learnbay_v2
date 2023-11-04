@@ -21,25 +21,24 @@ function SeventhSection({ fullStackCont }) {
         <div className="bgWrap">
           {mobile ? (
             <Image
-              src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/learner's-support.png"
+              src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/learner's+support.webp"
               fill={true}
               className={styles.deskImage}
               alt="Learners support"
             />
           ) : (
             <Image
-              src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/learners-support-bg.png"
+              src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/coursePage/new-bg-sevventt.webp"
               fill={true}
               alt="Learners support"
             />
           )}
         </div>
         <div className={styles.learnInner}>
-          <p className={styles.pTop}>Have any questions in mind?</p>
+          <p className={styles.pTop}>Got more questions?</p>
           <h5>Talk to our team directly</h5>
           <p className={styles.pBot}>
-            Reach out to us and your career guide will get in touch with you
-            shortly
+          Reach us and a learning consultant will get in touch with you shortly
           </p>
           {fullStackCont ? (
             <div className={styles.btnWrap}>
@@ -85,10 +84,11 @@ function SeventhSection({ fullStackCont }) {
         <div className={styles.rightPart}>
           <div className="imgWrapper">
             <Image
-              src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/learners-support-guy.png"
-              width={681}
-              height={515}
+              src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/coursePage/girl-seventh.webp"
+              width={600}
+              height={600}
               alt="data science course"
+              style={{ 'borderRadius': '5px' }}
             />
           </div>
         </div>

@@ -1,10 +1,11 @@
-import React, { useState } from "react";
 import Head from "next/head";
-import Navbar from "../../../components/Navbar/Navbar";
+import { useState } from "react";
 import Footer from "../../../components/Footer/Footer";
+import Navbar from "../../../components/Navbar/Navbar";
 
 import dynamic from "next/dynamic";
 import { FSSPDataScienceCourseData } from "../../../Data/FullStackSoftwareProgram";
+import BottomBar from "../../../components/WebPage/BottomBar/BottomBar";
 
 const FirstSection = dynamic(() =>
   import("../../../components/CoursePage/FirstSection/FirstSection")
@@ -46,7 +47,7 @@ const Project = dynamic(() =>
   import("../../../components/CoursePage/Project/Project")
 );
 const SyllabusNew = dynamic(() =>
-  import("../../../components/CoursePage/Syllabus/Syllabus")
+  import("../../../components/MastersCourse/Syllabus/MasterSyllabus")
 );
 const DomainSection = dynamic(() =>
   import("../../../components/CoursePage//DomainSection/DomainSection")
@@ -57,8 +58,6 @@ const Certificate = dynamic(() =>
 const FAQNew = dynamic(() =>
   import("../../../components/CoursePage/FAQNew/FAQNew")
 );
-import OfferPopup from "../../../components/OfferPopup/OfferPopup";
-import BottomBar from "../../../components/WebPage/BottomBar/BottomBar";
 
 function Blockchain() {
   const [popups, setPopups] = useState(false);
@@ -81,7 +80,7 @@ function Blockchain() {
         />
         <link
           rel="canonical"
-          href="https://www.learnbay.co/software-development-program-with-specialization-data-science-and-ai"
+          href="https://www.learnbay.co/fullstack/full-stack-software-development-program"
         />
       </Head>
       <main>
@@ -120,6 +119,9 @@ function Blockchain() {
         <FifthSection />
         <SixthSectionCTA />
         <SyllabusNew
+           syllabusHead={FSSPDataScienceCourseData[0].syllabusHead}
+           masterSyllabus={FSSPDataScienceCourseData[0].masterSyllabus}
+           MasterSyllabusDefault={FSSPDataScienceCourseData[0].MasterSyllabusDefault}
           software={true}
           dataScienceCounselling={true}
           dataScience={true}
@@ -142,10 +144,10 @@ function Blockchain() {
           deskImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Tools-Logo-SDE.png"
           mobImage="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/TOOLS-SDE-mobile.png"
         />
-        <Certificate
+        {/* <Certificate
           twoCertificate={true}
           data={FSSPDataScienceCourseData[0].Certificate}
-        />
+        /> */}
         <FeeSection
           Fee="₹ 1,10,000+ 18% GST"
           FeeEmi="₹ 10,817/month"
@@ -174,7 +176,7 @@ function Blockchain() {
         <FAQNew FAQNewData={FSSPDataScienceCourseData[0].faq} />
         <SeventhSection />
         <Footer />
-        <OfferPopup />
+
         <BottomBar />
       </main>
     </>

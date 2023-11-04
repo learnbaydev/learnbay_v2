@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styles from "./KeyFeatures.module.css";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { FaDownload } from "react-icons/fa";
+import { FaChair, FaChartLine, FaClock, FaDownload, FaRupeeSign, FaUser } from "react-icons/fa";
 import VideoPopup from "../../Global/VideoPopup/VideoPopup";
 // Import Swiper styles
 import "swiper/css";
@@ -14,6 +14,10 @@ import Form from "../../Form/Form";
 import Image from "next/image";
 import { KeyFeaturesSwiper } from "./KeyFeatureSwiperData";
 import VideoTestimonial from "../../VideoTestimonial/VideoTestimonial";
+import { switchData } from "./switchData";
+import { AiFillStar } from "react-icons/ai";
+import WhyLearnbay from "../../MastersCourse/WhyLearnbay/WhyLearnbay";
+
 const KeyFeatures = ({
   dataScience,
   radio,
@@ -57,62 +61,18 @@ const KeyFeatures = ({
               dataScience={dataScience}
               dataScienceCounselling={dataScienceCounselling}
               downloadBrochure
+              upSkillingHide={true}
             />
           </div>
         </Popup>
         <VideoPopup triggers={video} setTriggers={setVideo} ids={idss} />
-        <div>
-          <h6 className={styles.topHead}>Why Learnbay?</h6>
-          <div className={styles.FeatureWrap}>
-            <div className={styles.LeftWrap}>
-              <div className="imgWrapper">
-                <Image
-                  onClick={videoSHow}
-                  src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/whylearnbay-left-image.png"
-                  width={686}
-                  height={393}
-                  alt="whylearnbay"
-                  className={styles.LeftWrapImg}
-                />
-              </div>
-            </div>
-            <div className={styles.rightSide}>
-              <Swiper
-                direction={"vertical"}
-                slidesPerView={3}
-                // slidesPerColumn={1}
-                spaceBetween={30}
-                grabCursor={true}
-                loop={true}
-                loopfillgroupwithblank="true"
-                autoplay={{
-                  delay: 1500,
-                  disableOnInteraction: false,
-                }}
-                modules={[Autoplay]}
-                className="mySwiper"
-              >
-                {KeyFeaturesSwiper.map((data, index) => {
-                  return (
-                    <SwiperSlide className={styles.slide} key={index}>
-                      <div className={styles.slideWrap}>
-                        <div className={styles.number}>{data.icon}</div>
-                        <p>{data.para}</p>
-                      </div>
-                    </SwiperSlide>
-                  );
-                })}
-              </Swiper>
-            </div>
-          </div>
-        </div>
-        <VideoTestimonial />
+        <WhyLearnbay />
       </section>
 
       <div className={styles.RightWrap}>
-        <h2>300+ placement and hiring partners</h2>
+        <h2>The Network Reach of Our Bay</h2>
         <div className={styles.imgWrap}>
-          <div className={`${styles.imgShowD} imgWrapper`}>
+          <div className={`${styles.imgShow} imgWrapper`}>
             <Image
               src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Network-reach-company-logos.png"
               width={1148}
@@ -121,7 +81,7 @@ const KeyFeatures = ({
             />
           </div>
           <div className={styles.imgShowM}></div>
-          <button onClick={popupShowD} className={styles.btn}>
+          <button onClick={popupShow} className={styles.btn}>
             Download Placement Report{" "}
             <FaDownload style={{ marginLeft: "10px" }} />
           </button>

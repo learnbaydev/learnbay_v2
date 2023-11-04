@@ -1,38 +1,52 @@
 import React from "react";
 import styles from "./ContactUs.module.css";
 import FormInline from "../../FormSection/FormInline";
+import { AiOutlineRise } from "react-icons/ai";
+import { BiBriefcase } from "react-icons/bi";
+import Image from "next/image";
 
-function ContactUs({ dataScience, dataScienceCounselling }) {
+function ContactUs({ dataScience, dataScienceCounselling, radio }) {
   return (
     <section className={styles.ContactUs}>
       <div className={styles.LeftSide}>
-        <h2 className={styles.h1}>
-          Looking to upskill? <br />
-        </h2>
-        <h2 className={styles.h1}>
-          <span className={styles.h1Span}>Start with India&apos;s #1</span>
-          <br />
-          <span className={styles.h1Span}>professional courses</span>
-        </h2>
-        <div className={styles.boxSection}>
-          <div className={styles.box}>
-            <p className={styles.BoldP}>9k+</p>
-            <p className={styles.NormalP}>Successful transition</p>
+        <h1 className={styles.h1}>
+          Get Ahead with Industry-Leading Courses <br />
+        </h1>
+      
+        <div className={styles.conpara}>
+          <p>
+          <span className={styles.paraspan}>“</span><br/>
+          Learnbay transformed my professional journey. From enrollment to landing an excellent job, the support I received was unmatched. I highly recommend Learnbay for those looking to elevate their tech careers. </p>
           </div>
-          <div className={styles.box}>
-            <p className={styles.BoldP}>30k+ </p>
-            <p className={styles.NormalP}>Trusted learners</p>
-          </div>
-        </div>
+
+<div className={styles.leftpaerson}>
+  <Image
+  src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/preksha-home.png"
+  width={50}
+  height={50}
+  />
+  
+
+
+  <p>Shravanthi A<br/>
+  <span>Data Scientist at TCS</span>
+  </p>
+</div>
+
+
       </div>
+
+
+
       <div className={styles.RightSide}>
         <p className={styles.NormalPForm}>
-          Apply for Career <span className={styles.span}>Counselling</span>
+          Apply for <span className={styles.span}>Career Counselling</span>
         </p>
         <FormInline
           dataScience={dataScience}
           dataScienceCounselling={dataScienceCounselling}
-          radio={true}
+          radio={radio}
+          upSkillingHide={true}
         />
       </div>
     </section>
