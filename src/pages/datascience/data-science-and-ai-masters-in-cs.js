@@ -39,7 +39,7 @@ const SyllabusNew = dynamic(() =>
 );
 
 const Certificate = dynamic(() =>
-  import("../../../components/CoursePage/Certificate/Certificate")
+  import("../../../components/MastersCourse/Certificate/Certificate")
 );
 const FAQNew = dynamic(() =>
   import("../../../components/CoursePage/FAQNew/FAQNew")
@@ -75,6 +75,8 @@ const NewProjectSection = dynamic(() =>
 );
 const JobAbroad = dynamic (()=>
 import ("../../../components/MastersCourse/JobAbroad/JobAbroad"))
+
+import GetHire from "../../../components/MastersCourse/GetHire/GetHire";
 
 const Blockchain = () => {
   // POPUP GET METHOD
@@ -184,6 +186,8 @@ const Blockchain = () => {
         />
 
         <WhyLearnbay idss="bfl64ANfSV0" />
+
+        <GetHire/>
        
      
 
@@ -229,7 +233,7 @@ const Blockchain = () => {
         <MentorsSection />
         <PlacementCall />
         <NewProjectSection projectSection={DataScienceMastersinCS[0].projectSection} />
-
+\
         <FAQNew FAQNewData={DataScienceMastersinCS[0].faq} />
         <SeventhSection />
         <Footer />
