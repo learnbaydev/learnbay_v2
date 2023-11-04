@@ -1,13 +1,82 @@
-import React from "react";
-import styles from "./ThirdSection.module.css";
 import Image from "next/image";
+import { useState } from "react";
+import { FaDownload } from "react-icons/fa";
+import Form from "../../Form/Form";
 import Button from "../../Global/Button/Button";
-import { FaCheckCircle, FaDownload } from "react-icons/fa";
+import Popup from "../../Popup/Popup";
+import styles from "./ThirdSection.module.css";
 
+const ThirdSection = ({
+  leftImage,
+  ThirdSectionData,
 
-function ThirdSection({ leftImage, ThirdSectionData }) {
+  FeeHeading,
+  Fee,
+  dataScience,
+  FeeContent2,
+  FeeContent3,
+  FeeContent4,
+  FeeContent5,
+  dataScienceCounselling,
+  FeeEmi,
+}) => {
+  const [popups, setPopups] = useState(false);
+
+  const popupShow = () => {
+    setPopups(true);
+  };
   return (
     <div className={`${styles.program} wrapper`} id="eligibility">
+      <Popup
+        trigger={popups}
+        setTrigger={setPopups}
+        className="popupModal"
+        popup={true}
+        // radio={radio}
+        dataScience={dataScience}
+        dataScienceCounselling={dataScienceCounselling}
+      >
+        <div className="leftPopup">
+          <div
+            className="whiteP"
+            style={{ width: "340px", height: "400px" }}
+          ></div>
+        </div>
+        <div className="RightPopup">
+          <h5>Apply For Counselling</h5>
+          <Form
+            dataScience={dataScience}
+            dataScienceCounselling={dataScienceCounselling}
+            upSkillingHide={true}
+            // radio={radio}
+          />
+        </div>
+      </Popup>{" "}
+      <Popup
+        trigger={popups}
+        setTrigger={setPopups}
+        className="popupModal"
+        popup={true}
+        // radio={radio}
+        dataScience={dataScience}
+        dataScienceCounselling={dataScienceCounselling}
+      >
+        <div className="leftPopup">
+          <div
+            className="whiteP"
+            style={{ width: "340px", height: "400px" }}
+          ></div>
+        </div>
+        <div className="RightPopup">
+          <h5>Apply For Counselling</h5>
+          <Form
+            dataScience={dataScience}
+            dataScienceCounselling={dataScienceCounselling}
+            upSkillingHide={true}
+            // radio={radio}
+          />
+        </div>
+      </Popup>
       <h4>Choose Your Domain Elective</h4>
       <div className={styles.programWrap}>
         <div className={styles.left}>
@@ -19,24 +88,21 @@ function ThirdSection({ leftImage, ThirdSectionData }) {
               const { icon, heading, para } = data;
               return (
                 <div className={styles.leftSide} key={index}>
-                  <div className={styles.boxIcon} >
-                    <div> <Image
-                      src={icon}
-                      loading="lazy"
-                      width={40}
-                      height={40}
-                    /></div>
+                  <div className={styles.boxIcon}>
+                    <div className={styles.icons}>
+                      {" "}
+                      <Image src={icon} loading="lazy" width={40} height={40} />
+                    </div>
                   </div>
                   <h5 className={styles.heading}>{heading}</h5>
                   <p>{para}</p>
 
-                  <div className={styles.buttonDiv}>
-                  <Button
-                
-                    text="Brochure"
-                    passIcon={<FaDownload className="bIconS" />}
-                  />
-                </div>
+                  <div className={styles.buttonDiv} onClick={popupShow}>
+                    <Button
+                      text="Brochure"
+                      passIcon={<FaDownload className="bIconS" />}
+                    />
+                  </div>
                 </div>
               );
             })}
@@ -45,6 +111,6 @@ function ThirdSection({ leftImage, ThirdSectionData }) {
       </div>
     </div>
   );
-}
+};
 
 export default ThirdSection;

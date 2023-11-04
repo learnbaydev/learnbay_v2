@@ -35,9 +35,9 @@ function GetHire() {
 </div>
 <div>
 <Image
-src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/job-ready.webp"
+src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/masterPage/getHiremasteer.webp"
 width={160}
-height={190}
+height={150}
 
 />
 </div>

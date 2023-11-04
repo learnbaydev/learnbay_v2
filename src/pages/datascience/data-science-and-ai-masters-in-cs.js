@@ -44,7 +44,6 @@ const Certificate = dynamic(() =>
 const FAQNew = dynamic(() =>
   import("../../../components/CoursePage/FAQNew/FAQNew")
 );
-
 const SecondNavbar = dynamic(() =>
   import("../../../components/CoursePage/SecondNavbar/SecondNavbar")
 );
@@ -54,7 +53,7 @@ const WhyLearnbay = dynamic(() =>
 );
 
 const Gethire = dynamic(() =>
-  import("../../../components/CoursePage/Gethired/Gethire")
+  import("../../../components/MastersCourse/GetHire/GetHire")
 );
 
 const BottomBar = dynamic(() =>
@@ -69,10 +68,6 @@ const ContactCounsellor = dynamic(() =>
 
 const PlacementCall = dynamic(() =>
   import("../../../components/CoursePage/PlacementCall/PlacementCall")
-);
-
-const SliderTab = dynamic(() =>
-  import("../../../components/CoursePage/SliderTabs/SliderTabs")
 );
 
 const NewProjectSection = dynamic(() =>
@@ -166,8 +161,6 @@ const Blockchain = () => {
       <main>
         <Navbar popup={true} dataScienceCounselling={true} />
         <FirstSection
-          // FirstTyped="Guaranteed Interview Calls"
-          // SecondTyped="Capstone Project Certificate"
           ThirdTyped="Live Interactive Classes"
           dataScience={true}
           titleCourse="Advanced Data Science and AI Program with domain specialization"
@@ -176,7 +169,6 @@ const Blockchain = () => {
           FirstRightImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/coursepageB.webp"
           firstToparaImg="with domain specialization"
           firstHeading="Advanced Data Science and AI Program"
-          // firstTopPara="Specialization over generalization"
           idss="bfl64ANfSV0"
         />
         <MasterSecondSection/>
@@ -242,10 +234,8 @@ const Blockchain = () => {
         />
 
         <MentorsSection />
-        <SliderTab />
         <PlacementCall />
         <NewProjectSection projectSection={DataScienceMastersinCS[0].projectSection} />
-
 
         <FAQNew FAQNewData={DataScienceMastersinCS[0].faq} />
         <SeventhSection />
