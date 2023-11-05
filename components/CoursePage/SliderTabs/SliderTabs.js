@@ -101,7 +101,7 @@ const SliderTabs = ({ dataScience, dataScienceCounselling }) => {
           >
             <div className={styles.img}>
               <Image
-                src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/bfsi.png"
+                src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/coursePage/career1.webp"
                 loading="lazy"
                 width="25"
                 height="25"
@@ -109,7 +109,7 @@ const SliderTabs = ({ dataScience, dataScienceCounselling }) => {
               />
 
               Placement Support
-              {mobile ? bfsiButton ? <BiUpArrowAlt /> : <BiDownArrowAlt /> : ""}
+              {/* {mobile ? bfsiButton ? <BiUpArrowAlt /> : <BiDownArrowAlt /> : ""} */}
             </div>
 
             <div>
@@ -119,6 +119,48 @@ const SliderTabs = ({ dataScience, dataScienceCounselling }) => {
 
 
           </div>
+
+
+
+
+          {bfsiButton ? (
+            <div className={styles.gridPanel}>
+              <div className={styles.left}>
+             
+
+                <div className={styles.mainCont}>
+                  <BsCheckCircle className={styles.checkCircle} />
+                  <p className={styles.para}>
+                  Elevate Your Profile: Boost your career prospects with IBM's Course Completion Certificate.
+                  </p>
+                </div>
+                <div className={styles.mainCont}>
+                  <BsCheckCircle className={styles.checkCircle} />
+                  <p className={styles.para}>
+                    Globally Recognised: Secure your future with an internationally acclaimed IBM certification.
+                  </p>
+                </div>
+
+                <div className={styles.mainCont}>
+                  <BsCheckCircle className={styles.checkCircle} />
+                  <p className={styles.para}>
+                    Globally Recognised: Secure your future with an internationally acclaimed IBM certification.
+                  </p>
+                </div>
+
+              
+
+              </div>
+
+          
+            </div>
+          ) : (
+            ""
+          )}
+
+
+         
+
 
 
 
@@ -134,7 +176,7 @@ const SliderTabs = ({ dataScience, dataScienceCounselling }) => {
           >
             <div className={styles.img}>
               <Image
-                src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/bfsi.png"
+               src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/coursePage/career2.webp"
                 loading="lazy"
                 width="25"
                 height="25"
@@ -142,7 +184,7 @@ const SliderTabs = ({ dataScience, dataScienceCounselling }) => {
               />
 
               Mock Interviews
-              {mobile ? bfsiButton ? <BiUpArrowAlt /> : <BiDownArrowAlt /> : ""}
+              {/* {mobile ? bfsiButton ? <BiUpArrowAlt /> : <BiDownArrowAlt /> : ""} */}
             </div>
 
             <div>
@@ -153,6 +195,44 @@ const SliderTabs = ({ dataScience, dataScienceCounselling }) => {
             </div>
 
           </div>
+
+          {healthCare ? (
+             <div className={styles.gridPanel}>
+             <div className={styles.left}>
+          
+
+               <div className={styles.mainCont}>
+                 <BsCheckCircle className={styles.checkCircle} />
+                 <p className={styles.para}>
+                 Elevate Your Profile: Boost your career prospects with IBM's Course Completion Certificate.
+                 </p>
+               </div>
+               <div className={styles.mainCont}>
+                 <BsCheckCircle className={styles.checkCircle} />
+                 <p className={styles.para}>
+                   Globally Recognised: Secure your future with an internationally acclaimed IBM certification.
+                 </p>
+               </div>
+
+               <div className={styles.mainCont}>
+                 <BsCheckCircle className={styles.checkCircle} />
+                 <p className={styles.para}>
+                   Globally Recognised: Secure your future with an internationally acclaimed IBM certification.
+                 </p>
+               </div>
+
+            
+
+             </div>
+
+            
+           </div>
+          ) : (
+            ""
+          )}
+
+       
+
 
 
           <div
@@ -169,7 +249,7 @@ const SliderTabs = ({ dataScience, dataScienceCounselling }) => {
           >
             <div className={styles.img}>
               <Image
-                src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/bfsi.png"
+                src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/coursePage/career3.webp"
                 loading="lazy"
                 width="25"
                 height="25"
@@ -177,13 +257,49 @@ const SliderTabs = ({ dataScience, dataScienceCounselling }) => {
               />
 
               Resume BuildUp
-              {mobile ? supplyChain ? <BiUpArrowAlt /> : <BiDownArrowAlt /> : ""}
+              {/* {mobile ? supplyChain ? <BiUpArrowAlt /> : <BiDownArrowAlt /> : ""} */}
             </div>
             <div>
 
               <IoIosArrowForward className={styles.rightIcon} />
             </div>
           </div>
+
+          {supplyChain ? (
+           <div className={styles.gridPanel}>
+           <div className={styles.left}>
+  
+
+             <div className={styles.mainCont}>
+               <BsCheckCircle className={styles.checkCircle} />
+               <p className={styles.para}>
+               Elevate Your Profile: Boost your career prospects with IBM's Course Completion Certificate.
+               </p>
+             </div>
+             <div className={styles.mainCont}>
+               <BsCheckCircle className={styles.checkCircle} />
+               <p className={styles.para}>
+                 Globally Recognised: Secure your future with an internationally acclaimed IBM certification.
+               </p>
+             </div>
+
+             <div className={styles.mainCont}>
+               <BsCheckCircle className={styles.checkCircle} />
+               <p className={styles.para}>
+                 Globally Recognised: Secure your future with an internationally acclaimed IBM certification.
+               </p>
+             </div>
+
+          
+
+           </div>
+
+       
+         </div>
+
+          ) : (
+            ""
+          )}
 
           <div
             onClick={() => {
@@ -200,14 +316,14 @@ const SliderTabs = ({ dataScience, dataScienceCounselling }) => {
           >
             <div className={styles.img}>
               <Image
-                src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/bfsi.png"
+                src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/coursePage/career4.webp"
                 loading="lazy"
                 width="25"
                 height="25"
                 alt="Bulb"
               />
               Unlimited Interview Calls
-              {mobile ? manufacture ? <BiUpArrowAlt /> : <BiDownArrowAlt /> : ""}
+              {/* {mobile ? manufacture ? <BiUpArrowAlt /> : <BiDownArrowAlt /> : ""} */}
             </div>
 
 
@@ -216,8 +332,45 @@ const SliderTabs = ({ dataScience, dataScienceCounselling }) => {
             </div>
           </div>
 
+          {manufacture ? (
+              <div className={styles.gridPanel}>
+              <div className={styles.left}>
+       
+
+                <div className={styles.mainCont}>
+                  <BsCheckCircle className={styles.checkCircle} />
+                  <p className={styles.para}>
+                  Elevate Your Profile: Boost your career prospects with IBM's Course Completion Certificate.
+                  </p>
+                </div>
+                <div className={styles.mainCont}>
+                  <BsCheckCircle className={styles.checkCircle} />
+                  <p className={styles.para}>
+                    Globally Recognised: Secure your future with an internationally acclaimed IBM certification.
+                  </p>
+                </div>
+
+                <div className={styles.mainCont}>
+                  <BsCheckCircle className={styles.checkCircle} />
+                  <p className={styles.para}>
+                    Globally Recognised: Secure your future with an internationally acclaimed IBM certification.
+                  </p>
+                </div>
+
+            
+
+              </div>
+
+        
+            </div>
+          ) : (
+            ""
+          )}
+
         </div>
         <div className={styles.middlePanel}>
+
+
           {bfsiButton ? (
             <div className={styles.gridPanel}>
               <div className={styles.left}>
@@ -243,15 +396,7 @@ const SliderTabs = ({ dataScience, dataScienceCounselling }) => {
                   </p>
                 </div>
 
-                {/* <div className={styles.buttonDiv}
-                onClick={popupShow}>
-                  <Button
-                    bannerButton={true}
-                    text="Download Domain Brochures"
-                    passIcon={<FaDownload className="bIconS" />}
-                
-                  />
-                </div> */}
+              
 
               </div>
 
