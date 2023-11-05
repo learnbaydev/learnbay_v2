@@ -44,6 +44,12 @@
   display: block;
 }
 
+.buttonBlock button{
+  font-size: 18px;
+  padding: 10px 20px;
+  font-weight: 200;
+
+}
 .buttonNoBlock{
   display: none;
 }
