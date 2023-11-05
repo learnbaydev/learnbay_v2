@@ -16,7 +16,7 @@ const MasterSecondSection = () => {
             <div className={styles.radial}></div>
           </div>
           <div className={styles.box}>
-            <p className={styles.BoldP} style={{ color: "#F99600" }}>
+            <p className={styles.BoldP} style={{ color: "#ff8403" }}>
               90+
             </p>
             <p className={styles.NormalP}>Transferrable ECTS Credits</p>
@@ -29,7 +29,7 @@ const MasterSecondSection = () => {
           </div>
         </div>
         <div className={styles.secondbox}>
-          <div className="imgWrapper">
+          <div className={styles.imgBox}>
             <Image
               src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/review1.webp"
               width={280}

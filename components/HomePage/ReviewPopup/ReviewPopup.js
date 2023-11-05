@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from "react";
-import styles from "./ReviewPopup.module.scss";
-import { AiOutlineRise } from "react-icons/ai";
 import Image from "next/image";
+import { useEffect, useState } from "react";
+import { AiOutlineRise } from "react-icons/ai";
 import { IoClose } from "react-icons/io5";
+import styles from "./ReviewPopup.module.scss";
 // import { TestimonialDS, TestimonialFS } from "./TestimonialData";
 
 const ReviewPopup = (props) => {
@@ -52,15 +52,16 @@ const ReviewPopup = (props) => {
                 <h3>{props.title.name}</h3>
                 <p>{props.title.position}</p>
               </div>
-              <div className={styles.imgWrap}>
+              {/* <div className={styles.imgWrap}>
                 <Image
                   src={props.imgSrc.pLogo}
+                  style={{width:"100%"}}
                   loading="lazy"
                   width="100"
                   height="100"
                   alt="preksha-home"
                 />
-              </div>
+              </div> */}
             </div>
             <div className={styles.paraDiv}>
               <p className={styles.para}>{props.desc}</p>

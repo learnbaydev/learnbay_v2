@@ -1,27 +1,30 @@
 .consmain {
-
   display: grid;
-    grid-template-columns: 40% 40%;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(90deg, rgba(228, 245, 255, 0.60) 0.16%, rgba(255, 246, 233, 0.60) 99.84%);
-    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25) inset;
-    padding: 12px 100px 12px 100px;
-    margin: 50px 0px;
-    padding: 10px 100px 0px 180px;
-    gap: 70px;
+  grid-template-columns: 40% 40%;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    90deg,
+    rgba(228, 245, 255, 0.6) 0.16%,
+    rgba(255, 246, 233, 0.6) 99.84%
+  );
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25) inset;
+  padding: 12px 100px 12px 100px;
+  margin: 100px 0px 80px 0px;
+  padding: 10px 100px 0px 180px;
+  gap: 70px;
 }
 .consmain h4 {
-  color: #2E2E2E;
-    font-size: 27.232px;
-    font-style: normal;
-    font-weight: 650;
-    line-height: 126.5%;
-    padding-right: 40px;
-    padding-bottom: 10px;
+  color: #2e2e2e;
+  font-size: 27.232px;
+  font-style: normal;
+  font-weight: 650;
+  line-height: 126.5%;
+  padding-right: 40px;
+  padding-bottom: 10px;
 }
 .consmain p {
-  color: #5E5E5E;
+  color: #5e5e5e;
   font-size: 19.924px;
   font-style: normal;
   font-weight: 350;
@@ -37,68 +40,65 @@
 }
 .conbtn button {
   border-radius: 2.585px;
-    border: 1.862px solid rgba(0, 0, 0, 0.70);
-    padding: 10px 17px;
-    display: flex;
-    gap: 8px;
-    color: #2E2E2E;
-    font-size: 17.339px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 119.5%;
-    background: none;
-    cursor: pointer;
-    align-items: center;
-
+  border: 1.862px solid rgba(0, 0, 0, 0.7);
+  padding: 10px 17px;
+  display: flex;
+  gap: 8px;
+  color: #2e2e2e;
+  font-size: 17.339px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 119.5%;
+  background: none;
+  cursor: pointer;
+  align-items: center;
 }
 .consbtn {
-  color: #FFF;
-    text-align: center;
-    /* font-family: Open Sans; */
-    font-size: 15.713px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 155%;
-    letter-spacing: -0.131px;
-    text-transform: capitalize;
-    border-radius: 2.714px;
-    background: #0072BC;
-    border: none;
-    padding: 10px 44px;
-    margin: 25px 0px;
-    cursor: pointer;
+  color: #fff;
+  text-align: center;
+  /* font-family: Open Sans; */
+  font-size: 15.713px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 155%;
+  letter-spacing: -0.131px;
+  text-transform: capitalize;
+  border-radius: 2.714px;
+  background: #0072bc;
+  border: none;
+  padding: 10px 44px;
+  margin: 25px 0px;
+  cursor: pointer;
 }
 .inf:hover {
- 
-  border: 1px solid #0072BC;
+  border: 1px solid #0072bc;
 }
 .consbtn1 :hover {
   background-color: #fff;
-  color:#0072BC;
-  border: 1px solid #0072BC;;
+  color: #0072bc;
+  border: 1px solid #0072bc;
 }
 
 .conimg {
   /* border: 3px solid orange; */
-    padding: 0px;
-    color: transparent;
-    /* margin-left: 100px; */
-    /* margin-bottom: -47px; */
-    /* background-color: blue; */
-    display:  flex;
-    justify-content:  left;
-    gap :20px;
+  padding: 0px;
+  color: transparent;
+  /* margin-left: 100px; */
+  /* margin-bottom: -47px; */
+  /* background-color: blue; */
+  display: flex;
+  justify-content: left;
+  gap: 20px;
 }
 
 .conimg img {
   color: transparent;
-    width: 100%;
-    height: 100%;
-    left: 120px;
-    gap: 40px;
-    /* margin-bottom: -20px; */
+  width: 100%;
+  height: 100%;
+  left: 120px;
+  gap: 40px;
+  /* margin-bottom: -20px; */
 }
-
 
 @media (max-width: 641px) {
   .consmain {
@@ -126,11 +126,11 @@
     line-height: 135.5%;
   }
   .conbtn {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  gap: 10px;
-  justify-content: center;
-  margin-top: 20px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
   }
 
   .conbtn button {
@@ -154,7 +154,7 @@
     /* width: 80%; */
     color: #fff;
     text-align: center;
-    font-size:18px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 500;
     letter-spacing: 0.654px;
@@ -164,7 +164,7 @@
     cursor: pointer;
   }
   .consbtn1 {
-  display: flex;
+    display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -184,7 +184,6 @@
     display: none;
   }
 }
-
 
 @media (max-width: 381px) {
   .consmain h4 {

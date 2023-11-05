@@ -1,11 +1,11 @@
 import dynamic from "next/dynamic";
 import Image from "next/image";
-import { useEffect, useState } from "react";
-import { FaCheckCircle, FaRegUser } from "react-icons/fa";
-import Form from "../../Form/Form";
+import React, { useState, useEffect, lazy, Suspense } from "react";
 import FormInline from "../../FormSection/FormInline";
 import styles from "./FirstSection.module.css";
 const Button = dynamic(() => import("../../Global/Button/Button"));
+const Popup = dynamic(() => import("../../Popup/Popup"));
+const Form = lazy(() => import("../../Form/Form"));
 
 function FirstSection({
   dataScience,
@@ -21,8 +21,38 @@ function FirstSection({
       setMobile(true);
     }
   }, []);
+  const [popups, setPopups] = useState(false);
+  const popupShow = () => {
+    setPopups(true);
+  };
   return (
     <section className={styles.container}>
+        <Popup
+          trigger={popups}
+          setTrigger={setPopups}
+          className="popupModal"
+          downloadBrochure
+        >
+          <div className="leftPopup">
+            <div
+              className="whiteP"
+              style={{ width: "340px", height: "400px" }}
+            ></div>
+          </div>
+          <div className="RightPopup">
+            <h5>Download Brochure</h5>
+            <Suspense>
+              <Form
+                dataScience={dataScience}
+                dataScienceCounselling={dataScienceCounselling}
+                downloadBrochure
+                upSkillingHide={true}
+                titleCourse={titleCourse}
+                brochureLink={brochureLink}
+              />
+            </Suspense>
+          </div>
+        </Popup>
       {mobile ? (
         <>
           <span className={styles.topSpan}>Learnbay Excelvarsity</span>
@@ -49,7 +79,7 @@ function FirstSection({
               height="214"
             />
           </div>
-          <div className={styles.ButtonDiv}>
+          <div className={styles.ButtonDiv} onClick={popupShow}>
             <Button className={styles.Btn} text="START YOUR APPLICATION" />
           </div>
           <div className={styles.FormDiv}>
@@ -92,21 +122,23 @@ function FirstSection({
                 </div>
               </div>
               <div className={styles.BtnDiv}>
+                <a href="#curriculum">
                 <div>
                   <Button bannerButton={true} text="EXPLORE PROGRAM" />
                 </div>
-                <div>
+                </a>
+                <div onClick={popupShow}>
                   <Button whiteBgButton={true} text="START MY APPLICATION" />
                 </div>
               </div>
             </div>
             <div className={styles.FormDiv}>
-              <div className={styles.boxDiv}>
+              {/* <div className={styles.boxDiv}>
                 <div className={styles.formBox}>
                   {" "}
                   <FaRegUser className={styles.iconUser} /> 7,568 people filled
                 </div>
-              </div>
+              </div> */}
               <h4>
                 Interested in <span>Master’s Degree?</span>
               </h4>
