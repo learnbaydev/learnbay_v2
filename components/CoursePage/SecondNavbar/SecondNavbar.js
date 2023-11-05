@@ -5,13 +5,20 @@ import Button from "../../Global/Button/Button";
 import dynamic from "next/dynamic";
 const Popup = dynamic(() => import("../../Popup/Popup"));
 import Image from "next/image";
+import Form from "../../Form/Form";
 
-function SecondNavbar() {
+function SecondNavbar({careerForm,
+  radio,
+  dataScience,
+  fullStack,
+  dataScienceCounselling}) {
   const [active, setActive] = useState(false);
   const [active1, setActive1] = useState(false);
   const [active2, setActive2] = useState(true);
   const [active3, setActive3] = useState(false);
   const [active4, setActive4] = useState(false);
+  const [popups, setPopups] = useState(false);
+
 
   const [activeSection, setActiveSection] = useState(null); 
   const [showApplyButton, setShowApplyButton] = useState(false); // Define showApplyButton here
@@ -84,6 +91,28 @@ function SecondNavbar() {
   return (
     <>
       <div className={styles.upperDiv}>
+      <Popup trigger={popups} setTrigger={setPopups} className="popupModal">
+        <div className="leftPopup">
+          <div className="whiteP" />
+        </div>
+        <div className="RightPopup">
+          <h5>Apply For Counselling</h5>
+          {/* <p>Fill the below details to get started</p> */}
+          {careerForm ? (
+            <FormCareer />
+          ) : (
+            <Form
+              popup={true}
+              setTrigger={setPopups}
+              radio={radio}
+              fullStack={fullStack}
+              dataScience={dataScience}
+              dataScienceCounselling={dataScienceCounselling}
+              upSkillingHide={true}
+            />
+          )}
+        </div>
+      </Popup>
       <Link href="/" className={showApplyButton ? styles.buttonBlock : styles.buttonNoBlock}>
               <Image
                 src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/learnbay-logo.png"
@@ -125,9 +154,9 @@ function SecondNavbar() {
         </div>
         
 
-        <div className={showApplyButton ? styles.buttonBlock : styles.buttonNoBlock}>
-        <Button text="Apply for Counselling" outline={true} onClick={popupShow} />
-      </div>
+        <div className={showApplyButton ? styles.buttonBlock : styles.buttonNoBlock} onClick={popupShow}>
+            <Button text="Apply Now" outline={true} />
+        </div>
       </div>
       <hr className={styles.hr}/>
     </>
