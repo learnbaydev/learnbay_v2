@@ -3,50 +3,138 @@ import styles from "./Certificate.module.css";
 import Image from "next/image";
 import { BsCheckCircle } from "react-icons/bs";
 function CertificateTab({
-  threeCertificate,
-  oneCertificate,
-  twoCertificate,
+  degreeCertificate,
+  projectCertificate,
   data,
 }) {
-  const [MActive, setMActive] = useState(false);
-  const [IActive, setIActive] = useState(true);
+  const [DCActive, setDCActive] = useState(true);
+  const [PCActive, setPCActive] = useState(false);
 
   return (
     <section className={styles.CertificateTab}>
       <div className={styles.header}>
      
-        {threeCertificate ? (
+
           <div className={styles.pWrap}>
 
             <p
               onClick={() => {
-                setIActive(true);
-                setMActive(false);
+                setDCActive(true);
+                setPCActive(false);
                
               }}
-              className={IActive ? styles.activeP : styles.inactiveP}
+              className={DCActive ? styles.activeP : styles.inactiveP}
             >
               Degree
             </p>
             {/* <hr className={styles.line} /> */}
             <p
               onClick={() => {
-                setIActive(false);
-                setMActive(true);
+                setDCActive(false);
+                setPCActive(true);
          
               }}
-              className={MActive ? styles.activeP : styles.inactiveP}
+              className={PCActive ? styles.activeP : styles.inactiveP}
             >
              Project Certificate
             </p>
-            {/* <hr className={styles.line} /> */}
+        
             
           </div>
-        ) : (
-          ""
-        )}
+     
       </div>
-      {threeCertificate ? (
+      {DCActive ? (
+            <div className={styles.MicroCert}>
+            <div className={styles.rightSide}>
+              <h6>{data.degreeCertificate.title}</h6>
+              {data.degreeCertificate.para.map((data, i) => {
+                return (
+                  <>
+                  <p key={i}>
+                    <BsCheckCircle className={styles.checkCircle} />
+                    {data}
+                  </p>
+                  
+                  </>
+                );
+              })}
+
+          
+                <Image
+                    className={styles.clogo}
+                    src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/certificate/clogo.webp"
+                    alt="Certificate"
+                    quality={100}
+                    width={380}
+                    height={70}
+                  />
+        
+            </div>
+            <div className={styles.leftSide}>
+          
+              <div className={`${styles.CertificateDiv} imgWrapper`}>
+                <Image
+                  src={data.degreeCertificate.img}
+                  alt="Certificate"
+                  quality={100}
+                  width={900}
+                  height={800}
+                />
+              </div>
+            </div>
+          </div>
+          ) : (
+            ""
+          )}
+
+
+{PCActive ? (
+            <div className={styles.MicroCert}>
+            <div className={styles.rightSide}>
+              <h6>{data.projectCertificate.title}</h6>
+              {data.projectCertificate.para.map((data, i) => {
+                return (
+                  <>
+                  <p key={i}>
+                    <BsCheckCircle className={styles.checkCircle} />
+                    {data}
+                  </p>
+                  
+                  </>
+                );
+              })}
+
+          
+                <Image
+                    className={styles.clogo}
+                    src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/certificate/clogo.webp"
+                    alt="Certificate"
+                    quality={100}
+                    width={380}
+                    height={70}
+                  />
+        
+            </div>
+            <div className={styles.leftSide}>
+          
+              <div className={`${styles.CertificateDiv} imgWrapper`}>
+                <Image
+                  src={data.projectCertificate.img}
+                  alt="Certificate"
+                  quality={100}
+                  width={900}
+                  height={800}
+                />
+              </div>
+            </div>
+          </div>
+          ) : (
+            ""
+          )}
+
+
+
+      {/* {threeCertificate ? (
         <div>
           {IActive ? (
             <div className={styles.MicroCert}>
@@ -70,8 +158,8 @@ function CertificateTab({
                     src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/certificate/clogo.webp"
                     alt="Certificate"
                     quality={100}
-                    width={300}
-                    height={50}
+                    width={380}
+                    height={70}
                   />
         
             </div>
@@ -95,8 +183,8 @@ function CertificateTab({
         </div>
       ) : (
         ""
-      )}
-      {oneCertificate || threeCertificate ? (
+      )} */}
+      {/* {oneCertificate || threeCertificate ? (
         <div>
           {oneCertificate ? (
            <div className={styles.MicroCert}>
@@ -179,7 +267,7 @@ function CertificateTab({
         </div>
       ) : (
         ""
-      )}
+      )} */}
     </section>
   );
 }

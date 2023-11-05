@@ -49,10 +49,10 @@ export const DataScienceMastersinCS = [
         logo: "",
         heading:
           "Learn and develop classification techniques for the digital transformation of banking",
-        img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/Group+502.png",
+        img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/image+675+(1)-min.png",
         para: "JPMorgan offers tax-friendly insurance choices. You can help them forecastinsurance premiums. Targeted marketing using your random forest algorithm skills can help obtain better premium values.",
         toolImg:
-          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/iconProject.webp",
+          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/morgan-strip.webp",
         learnMore: "Learn more",
       },
       {
@@ -61,10 +61,10 @@ export const DataScienceMastersinCS = [
         logo: "",
         heading:
           "Building a content recommendation model on the basis of regional viewer categorization",
-        img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/Group+502.png",
+        img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/image+674-min.png",
         para: "Netflix is a global entertainment video streaming site. They offer content in various regional languages. Build a local recommendation engine for Netflix customers residing in south Bangalore on their weekend and weekdays activities, utilizing NLP.",
         toolImg:
-          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/iconProject.webp",
+          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/Netfliix.webp",
         learnMore: "Learn more",
       },
       {
@@ -73,10 +73,10 @@ export const DataScienceMastersinCS = [
         logo: "",
         heading:
           "Understanding in-depth about logging while drilling (LWD) technique",
-        img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/Group+502.png",
+        img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/image+683-min.png",
         para: "Saudi Aramco company is working onthe development of high-efficiency drilling models. Use the bright sides of big data analytics to identify the most cost-effective and highly productive drilling sites.",
         toolImg:
-          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/iconProject.webp",
+          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/saudi-aramco-strip.webp",
         learnMore: "Learn more",
       },
       {
@@ -85,23 +85,24 @@ export const DataScienceMastersinCS = [
         logo: "",
         heading:
           "Career progression planning of employees with workforce defections & efficiency",
-        img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/Group+502.png",
+        img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/image+688-min.png",
         para: "IBM intends to boost its HR department by identifying employees' masked inconsistency. They need models to identify the graphical variations in their 14000+ employees' performances. Help them build models with your regressions and other ML abilities.",
         toolImg:
-          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/iconProject.webp",
+          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/IBM-Strip.webp",
         learnMore: "Learn more",
       },
-    ],projectSection: [
+    ],
+    projectSection: [
       {
         id: 1,
         duration: "12 Hours",
         logo: "",
         heading:
           "Learn and develop classification techniques for the digital transformation of banking",
-        img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/Group+502.png",
+        img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/image+675+(1)-min.png",
         para: "JPMorgan offers tax-friendly insurance choices. You can help them forecastinsurance premiums. Targeted marketing using your random forest algorithm skills can help obtain better premium values.",
         toolImg:
-          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/iconProject.webp",
+          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/morgan-strip.webp",
         learnMore: "Learn more",
       },
       {
@@ -110,10 +111,10 @@ export const DataScienceMastersinCS = [
         logo: "",
         heading:
           "Building a content recommendation model on the basis of regional viewer categorization",
-        img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/Group+502.png",
+        img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/image+674-min.png",
         para: "Netflix is a global entertainment video streaming site. They offer content in various regional languages. Build a local recommendation engine for Netflix customers residing in south Bangalore on their weekend and weekdays activities, utilizing NLP.",
         toolImg:
-          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/iconProject.webp",
+          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/Netfliix.webp",
         learnMore: "Learn more",
       },
       {
@@ -122,10 +123,10 @@ export const DataScienceMastersinCS = [
         logo: "",
         heading:
           "Reduction of waiting time via a highly precise forecasting model",
-        img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/Group+502.png",
+        img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/ola.webp",
         para: "Make a demand forecasting model based on specific time period rider demands. Such a model will help both riders and cab drivers to ensure the least possible waiting time. You can include measures like latitude and longitude identification.",
         toolImg:
-          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/iconProject.webp",
+          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/ola-strip.webp",
         learnMore: "Learn more",
       },
       {
@@ -134,10 +135,10 @@ export const DataScienceMastersinCS = [
         logo: "",
         heading:
           "Understanding in-depth about logging while drilling (LWD) technique",
-        img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/Group+502.png",
+        img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/image+683-min.png",
         para: "Saudi Aramco company is working onthe development of high-efficiency drilling models. Use the bright sides of big data analytics to identify the most cost-effective and highly productive drilling sites.",
         toolImg:
-          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/iconProject.webp",
+          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/saudi-aramco-strip.webp",
         learnMore: "Learn more",
       },
       {
@@ -146,10 +147,10 @@ export const DataScienceMastersinCS = [
         logo: "",
         heading:
           "Career progression planning of employees with workforce defections & efficiency",
-        img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/Group+502.png",
+        img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/image+688-min.png",
         para: "IBM intends to boost its HR department by identifying employees' masked inconsistency. They need models to identify the graphical variations in their 14000+ employees' performances. Help them build models with your regressions and other ML abilities.",
         toolImg:
-          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/iconProject.webp",
+          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/IBM-Strip.webp",
         learnMore: "Learn more",
       },
     ],
@@ -392,7 +393,8 @@ export const DataScienceMastersinCS = [
       {
         id: 1,
         domain: "HR Domain",
-        CLogo: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/1-1.png",
+        CLogo:
+          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/image+688-min.png",
         SDesc:
           "  IBM intends to boost their HR department by identifying employees' masked inconsistency...",
         PopupImg:
@@ -492,32 +494,21 @@ export const DataScienceMastersinCS = [
       },
     ],
     Certificate: {
-      twoCertificate: [
+      degreeCertificate:
         {
-          id: 1,
-          img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Certificate-blue.png",
-          title: "Course Completion Certificate from IBM",
-          para: [
-            "Complete your training with the internationally recognized certificate.",
-            "Validate your Data Science and AI skills with IBM Course Completion Certificate.",
-            "Get acknowledged in IT sector by adding IBM Certificate to your profile.",
-          ],
-        },
-        {
-          id: 2,
-          img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Certificate-Yellow.png",
-          title: "Capstone Project Certificate from IBM",
-          para: [
-            "Globally recognized IBM certification based on industrial-level projects.",
-            "Work on 1 capstone project certified by IBM.",
-            "Individualized project experience with easy access to premium job opportunities.",
-          ],
-        },
-      ],
-      oneCertificate: {
-        id: 3,
+          id: 3,
         img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/certificate/degree-woolf.webp",
         title: "Globally recognized degree",
+        para: [
+          "Complete your training with the internationally recognized certificate.",
+          "Validate your Data Science and AI skills with IBM Course Completion Certificate.",
+          "Get acknowledged in IT sector by adding IBM Certificate to your profile.",
+        ],
+        },
+      projectCertificate: {
+        id: 1,
+        img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Certificate-blue.png",
+        title: "Course Completion Certificate from IBM",
         para: [
           "Complete your training with the internationally recognized certificate.",
           "Validate your Data Science and AI skills with IBM Course Completion Certificate.",
@@ -536,7 +527,6 @@ export const DataScienceMastersinCS = [
       "SPECIALIATION - 2 ( 20 ECTS Credits) ",
       "Deploymnet & Gen-AI ( 20 ECTS Credits) ",
       "Comprehensive Data Structures ( 20 ECTS Credits) ",
-      
     ],
     MasterSyllabusDefault: [
       // {
@@ -592,26 +582,20 @@ export const DataScienceMastersinCS = [
                   "Python Programming Overview",
                   "Strings, Decisions & Loop Control",
                   "Python Data Types",
-                 "Functions And Modules",
+                  "Functions And Modules",
                 ],
               },
             },
-
-        
           ],
           id: 0,
           open: true,
         },
       },
 
-
-
-         {
+      {
         Module0: {
           title: "Module 2 :-Numerical Programming",
           content: [
-           
-
             {
               chap: {
                 // title: "Topic 2 :- Numerical Programming",
@@ -692,14 +676,12 @@ export const DataScienceMastersinCS = [
       //         chap: {
       //           title: "Module 2 :- Relational database - SQL fundamentals",
       //           desc: ["Introduction to SQL, RDBMS & DBMS",
-              
+
       //         "Normalization & Constraints",
       //         "Working with joins & clause",
       //         "Working with functions",
       //         "Transaction, sequence & triggers",
-              
-              
-              
+
       //         ],
       //         },
       //       },
@@ -884,8 +866,7 @@ export const DataScienceMastersinCS = [
       //           ],
       //         },
       //       },
-           
-          
+
       //     ],
       //     id: 5,
       //     open: false,
@@ -906,7 +887,7 @@ export const DataScienceMastersinCS = [
       //             "Introduction to Variational Autoencoders (VAEs)",
       //             "Ethical Implications and Challenges",
       //             "Advanced Topics and Recent Trends",
-                
+
       //           ],
       //         },
       //       },
@@ -939,13 +920,12 @@ export const DataScienceMastersinCS = [
       //           ],
       //         },
       //       },
-          
+
       //     ],
       //     id: 6,
       //     open: true,
       //   },
 
-       
       // },
 
       // {
@@ -963,7 +943,7 @@ export const DataScienceMastersinCS = [
       //             "Applications of Stacks",
       //             "Double-Ended Queue (Deque) Introduction",
       //             "Applications of Queues",
-                
+
       //           ],
       //         },
       //       },
@@ -988,8 +968,7 @@ export const DataScienceMastersinCS = [
       //           ],
       //         },
       //       },
-           
-          
+
       //     ],
       //     id: 6,
       //     open: false,
@@ -1090,10 +1069,6 @@ export const DataScienceMastersinCS = [
                   ],
                 },
               },
-              
-            
-             
-             
             ],
             id: 1,
             open: true,
@@ -1112,22 +1087,17 @@ export const DataScienceMastersinCS = [
                     "Linear Regresssion",
                     "Logistic Regression",
                     "Decision Tree",
-                   "Cross validation",
+                    "Cross validation",
                     "KNN",
                     "Naive Bayes",
                   ],
                 },
               },
-           
-            
-             
-             
             ],
             id: 2,
             open: false,
           },
         },
-
 
         {
           Module0: {
@@ -1136,17 +1106,9 @@ export const DataScienceMastersinCS = [
               {
                 chap: {
                   // title: "Module 1 :- Applied statistics",
-                  desc: [
-                    "Clustering",
-                    "PCA",
-                    "SVM",
-                    "Time Series",
-                  ],
+                  desc: ["Clustering", "PCA", "SVM", "Time Series"],
                 },
               },
-           
-            
-           
             ],
             id: 3,
             open: false,
@@ -1165,17 +1127,13 @@ export const DataScienceMastersinCS = [
                     "Pseudocode and Flowcharts",
                     "Divide and Conquer",
                     "Data Collection and Integration",
-                   "Different Types of Analysis",
+                    "Different Types of Analysis",
                     "Backtracking",
                     "Debugging Techniques",
                     "Machine Learning Pipelines",
                   ],
                 },
               },
-           
-            
-             
-            
             ],
             id: 4,
             open: false,
@@ -1207,22 +1165,21 @@ export const DataScienceMastersinCS = [
               {
                 chap: {
                   title: "Module 2 :- Relational database - SQL fundamentals",
-                  desc: ["Introduction to SQL, RDBMS & DBMS",
-                
-                "Normalization & Constraints",
-                "Working with joins & clause",
-                "Working with functions",
-                "Transaction, sequence & triggers",
-                
-                
-                
-                ],
+                  desc: [
+                    "Introduction to SQL, RDBMS & DBMS",
+
+                    "Normalization & Constraints",
+                    "Working with joins & clause",
+                    "Working with functions",
+                    "Transaction, sequence & triggers",
+                  ],
                 },
               },
 
               {
                 chap: {
-                  title: "Module 3 :- Data visualization tools (Adv. Tableau, PowerBI, Looker) ",
+                  title:
+                    "Module 3 :- Data visualization tools (Adv. Tableau, PowerBI, Looker) ",
                   desc: [
                     "Tableau (Advance)",
                     "Introduction to Tableau",
@@ -1274,9 +1231,6 @@ export const DataScienceMastersinCS = [
             open: true,
           },
         },
-       
-
-        
       ],
       "Deep Learning & Applied Analytics ( 20 ECTS Credits) ": [
         {
@@ -1298,7 +1252,6 @@ export const DataScienceMastersinCS = [
                   ],
                 },
               },
-             
             ],
             id: 4,
             open: true,
@@ -1308,7 +1261,6 @@ export const DataScienceMastersinCS = [
           Module0: {
             title: "Module 2 :- Product Analytics",
             content: [
-            
               {
                 chap: {
                   // title: "Module 2 :- Product Analytics",
@@ -1324,7 +1276,6 @@ export const DataScienceMastersinCS = [
                   ],
                 },
               },
-            
             ],
             id: 4,
             open: false,
@@ -1353,9 +1304,6 @@ export const DataScienceMastersinCS = [
                   ],
                 },
               },
-             
-            
-             
             ],
             id: 4,
             open: false,
@@ -1374,22 +1322,14 @@ export const DataScienceMastersinCS = [
                     "Introduction to Variational Autoencoders (VAEs)",
                     "Introduction to Transformer Models in Generative AI",
                     "Ethical Implications and Challenges",
-                   
                   ],
                 },
               },
-             
-            
-             
             ],
             id: 4,
             open: false,
           },
         },
-
-        
-
-       
       ],
       "SPECIALIATION - 2 ( 20 ECTS Credits) ": [
         {
@@ -1398,8 +1338,7 @@ export const DataScienceMastersinCS = [
             content: [
               {
                 chap: {
-                  title:
-                    "Module 1 :-Introduction to Deep Learning",
+                  title: "Module 1 :-Introduction to Deep Learning",
                   desc: [
                     "Introduction to Deep Learning",
                     "MLP Architecture",
@@ -1450,15 +1389,12 @@ export const DataScienceMastersinCS = [
                   ],
                 },
               },
-             
-            
             ],
             id: 5,
             open: true,
           },
         },
       ],
-
 
       "Deploymnet & Gen-AI ( 20 ECTS Credits) ": [
         {
@@ -1467,7 +1403,6 @@ export const DataScienceMastersinCS = [
             content: [
               {
                 chap: {
-              
                   desc: [
                     "Introduction to Generative AI",
                     "Probabilistic Graphical Models",
@@ -1475,13 +1410,9 @@ export const DataScienceMastersinCS = [
                     "Introduction to Variational Autoencoders (VAEs)",
                     "Ethical Implications and Challenges",
                     "Advanced Topics and Recent Trends",
-                  
                   ],
                 },
               },
-              
-            
-            
             ],
             id: 6,
             open: true,
@@ -1494,7 +1425,6 @@ export const DataScienceMastersinCS = [
             content: [
               {
                 chap: {
-              
                   desc: [
                     "Product Usage Onboarding",
                     "A/B Testing Techniques",
@@ -1502,15 +1432,11 @@ export const DataScienceMastersinCS = [
                     "Customer Experience Mapping",
                     "Marketing Performance Analysis",
                     "Google Analytics for Beginners",
-                  "Google Analytics Reporting Techniques",
-                  "Data Pre-processing with Google Analytics",
-                  
+                    "Google Analytics Reporting Techniques",
+                    "Data Pre-processing with Google Analytics",
                   ],
                 },
               },
-           
-             
-            
             ],
             id: 6,
             open: false,
@@ -1522,7 +1448,6 @@ export const DataScienceMastersinCS = [
             content: [
               {
                 chap: {
-              
                   desc: [
                     "ML Deployment Lifecycle",
                     "Model Serialization",
@@ -1530,13 +1455,9 @@ export const DataScienceMastersinCS = [
                     "Cloud Deployment: Azure ML Service",
                     "Cloud Deployment: GCP AI Platform",
                     "Model Versioning",
-                  
                   ],
                 },
               },
-           
-            
-            
             ],
             id: 6,
             open: false,
@@ -1560,7 +1481,7 @@ export const DataScienceMastersinCS = [
       //               "Applications of Stacks",
       //               "Double-Ended Queue (Deque) Introduction",
       //               "Applications of Queues",
-                  
+
       //             ],
       //           },
       //         },
@@ -1583,12 +1504,11 @@ export const DataScienceMastersinCS = [
       //             "Applications of Hash Tables",
       //             "Advanced Hashing: Consistent Hashing",
       //            "Graphs: Traveling Salesman Problem",
-                 
+
       //             ],
       //           },
       //         },
-             
-            
+
       //       ],
       //       id: 7,
       //       open: true,
@@ -1598,11 +1518,11 @@ export const DataScienceMastersinCS = [
       "Comprehensive Data Structures ( 20 ECTS Credits) ": [
         {
           Module0: {
-            title: "Module 1 :-Essential Data Structures: Lists, Queues, Stacks",
+            title:
+              "Module 1 :-Essential Data Structures: Lists, Queues, Stacks",
             content: [
               {
                 chap: {
-              
                   desc: [
                     "Introduction to Data Structures & Lists",
                     "Array vs. Linked List",
@@ -1610,15 +1530,9 @@ export const DataScienceMastersinCS = [
                     "Applications of Stacks",
                     "Double-Ended Queue (Deque) Introduction",
                     "Applications of Queues",
-                  
                   ],
                 },
               },
-             
-
-              
-             
-            
             ],
             id: 6,
             open: true,
@@ -1627,11 +1541,11 @@ export const DataScienceMastersinCS = [
 
         {
           Module0: {
-            title: "Module 2 :- Advanced Data Structures: Trees, Graphs, Hash Tables",
+            title:
+              "Module 2 :- Advanced Data Structures: Trees, Graphs, Hash Tables",
             content: [
               {
                 chap: {
-              
                   desc: [
                     "Binary Trees",
                     "Binary Tree Traversals",
@@ -1646,15 +1560,9 @@ export const DataScienceMastersinCS = [
                     "Introduction to Hashing",
                     "Advanced Hashing Techniques",
                     "Graphs: Traveling Salesman Problem",
-                  
                   ],
                 },
               },
-           
-
-              
-             
-            
             ],
             id: 6,
             open: false,

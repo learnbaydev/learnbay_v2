@@ -136,7 +136,7 @@ function WhyLearnbay({ idss }) {
 
                     <div className={Styles.BoxIconinner}>
                       <Image
-                        src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/live.gif"
+                        src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/hr.gif"
                         loading="lazy"
                         width={40}
                         height={40}
@@ -145,7 +145,7 @@ function WhyLearnbay({ idss }) {
                     </div>
                     <div className={Styles.BoxIconinner}>
                       <Image
-                        src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/delivery-truck.gif"
+                        src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/supplychain.gif"
                         loading="lazy"
                         width={40}
                         height={40}
@@ -154,7 +154,7 @@ function WhyLearnbay({ idss }) {
                     </div>
                     <div className={Styles.BoxIconinner}>
                       <Image
-                        src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/live.gif"
+                        src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/manufacturing.gif"
                         loading="lazy"
                         width={40}
                         height={40}

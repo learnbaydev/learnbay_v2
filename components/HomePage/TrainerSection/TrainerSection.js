@@ -32,7 +32,7 @@ function TrainerSection({idss}) {
       <VideoPopup triggers={video} setTriggers={setVideo} ids={idss} />
       <div className={Styles.switch}>
         <div className={Styles.switchInnerBlue}>
-        <div >
+        <div className={Styles.topRatedImg}>
                 
                   <Image src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/topRated.png" width={50} height={60} alt="topRated" />
                 </div>

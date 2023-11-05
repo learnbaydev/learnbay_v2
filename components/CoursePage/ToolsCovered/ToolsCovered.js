@@ -44,7 +44,7 @@ const ToolsCovered = () => {
          
         >
           {images.map((image, index) => (
-            <SwiperSlide key={index}>
+            <SwiperSlide key={index} className={styles.margin}>
               <div className={`${styles.column} imgWrapper`}>
                 <Image
                   src={image}

@@ -209,7 +209,6 @@ const Blockchain = () => {
           mobImage="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Mobile-Tools-Covered.png"
         />
         <Certificate
-          twoCertificate={true}
           data={DataScienceMastersinCS[0].Certificate}
         />
         <FeeSection
