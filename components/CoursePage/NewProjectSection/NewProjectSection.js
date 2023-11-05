@@ -80,8 +80,7 @@ function NewProjectSection({ projectSection }) {
                       />
                     </div>
                     <p className={Styles.heading}>
-                      Career progression planning of employees with workforce
-                      defections & efficiency
+                    {data.heading}
                     </p>
                     <div className={Styles.strip}>
                       <Image
@@ -93,8 +92,7 @@ function NewProjectSection({ projectSection }) {
                       />
                     </div>
                     <p className={Styles.para}>
-                      BMW allows existing customers to sell used cars but many
-                      competitors are now offering better resale values...
+                      {data.para}
                     </p>
                     <div className={Styles.ImgBox}>
                       <Image
@@ -105,7 +103,7 @@ function NewProjectSection({ projectSection }) {
                         alt="microsoft"
                       />
                     </div>
-                    <p className={Styles.blue}>Learn more</p>
+                    {/* <p className={Styles.blue}>Learn more</p> */}
                   </div>
                 </div>
               </SwiperSlide>

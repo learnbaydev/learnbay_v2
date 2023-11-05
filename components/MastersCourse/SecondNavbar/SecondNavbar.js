@@ -42,7 +42,7 @@ function SecondNavbar({
     );
 
     // Observe all sections with IDs matching your navigation links
-    const sections = document.querySelectorAll("#alumni, #eligibility, #curriculum, #fees, #faqs");
+    const sections = document.querySelectorAll("#alumni, #Degree, #curriculum, #Fees, #ProjectLab");
     sections.forEach((section) => {
       observer.observe(section);
     });
@@ -136,25 +136,25 @@ function SecondNavbar({
               Alumni
             </p>
           </Link>
+          <Link href="#ProjectLab">
+            <p className={activeSection === 'ProjectLab' ? styles.active : styles.inactive}>
+              Project Lab
+            </p>
+          </Link>
           <Link href="#curriculum">
             <p className={activeSection === 'curriculum' ? styles.active : styles.inactive}>
               Curriculum
             </p>
           </Link>
-          <Link href="#eligibility">
-            <p className={activeSection === 'eligibility' ? styles.active : styles.inactive}>
+          <Link href="#Degree">
+            <p className={activeSection === 'Degree' ? styles.active : styles.inactive}>
               Degree
             </p>
           </Link>
           
-          <Link href="#fees">
-            <p className={activeSection === 'fees' ? styles.active : styles.inactive}>
+          <Link href="#Fees">
+            <p className={activeSection === 'Fees' ? styles.active : styles.inactive}>
               Fees
-            </p>
-          </Link>
-          <Link href="#faqs">
-            <p className={activeSection === 'faqs' ? styles.active : styles.inactive}>
-              FAQs
             </p>
           </Link>
         </div>

@@ -11,13 +11,13 @@ const Certificate = ({
   return NoCertificate ? (
     ""
   ) : (
-    <div className={`${styles.Certificate}`}>
+    <div className={`${styles.Certificate}`} id="Degree">
       <h4 className={styles.infop}>Globally Recognized Degree</h4>
 
       <CertificateTabAdvance
         threeCertificate={threeCertificate}
         oneCertificate={oneCertificate}
-   
+        twoCertificate={twoCertificate}
         data={data}
       />
     </div>

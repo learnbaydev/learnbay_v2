@@ -2,9 +2,11 @@ import dynamic from "next/dynamic";
 import Head from "next/head";
 import { useEffect, useState } from "react";
 import { DataScienceMastersinCS } from "../../../Data/DataScienceAiMastersinCS";
+import TrainerSection from "../../../components/HomePage/TrainerSection/TrainerSection";
 
-const MentorsSection = dynamic (()=>
-import ("../../../components/MastersCourse/MentorsSection/MentorsSection")) ;
+const MentorsSection = dynamic(() =>
+  import("../../../components/MastersCourse/MentorsSection/MentorsSection")
+);
 
 const Footer = dynamic(() => import("../../../components/Footer/Footer"));
 
@@ -15,7 +17,9 @@ const FirstSection = dynamic(() =>
 );
 
 const MasterSecondSection = dynamic(() =>
-  import("../../../components/MastersCourse/MasterSecondSection/MasterSecondSection")
+  import(
+    "../../../components/MastersCourse/MasterSecondSection/MasterSecondSection"
+  )
 );
 const SeventhSection = dynamic(() =>
   import("../../../components/Global/SeventhSection/SeventhSection")
@@ -23,7 +27,6 @@ const SeventhSection = dynamic(() =>
 const Testimonial = dynamic(() =>
   import("../../../components/HomePage/Testimonial/Testimonial")
 );
-import TrainerSection from "../../../components/HomePage/TrainerSection/TrainerSection";
 
 const ToolsCovered = dynamic(() =>
   import("../../../components/CoursePage/ToolsCovered/ToolsCovered")
@@ -73,9 +76,11 @@ const PlacementCall = dynamic(() =>
 const NewProjectSection = dynamic(() =>
   import("../../../components/CoursePage/NewProjectSection/NewProjectSection")
 );
-const JobAbroad = dynamic (()=>
-import ("../../../components/MastersCourse/JobAbroad/JobAbroad"))
+const JobAbroad = dynamic(() =>
+  import("../../../components/MastersCourse/JobAbroad/JobAbroad")
+);
 
+import SliderTabs from "../../../components/CoursePage/SliderTabs/SliderTabs";
 import GetHire from "../../../components/MastersCourse/GetHire/GetHire";
 
 const Blockchain = () => {
@@ -171,28 +176,18 @@ const Blockchain = () => {
           FirstRightImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/coursepageB.webp"
           firstToparaImg="with domain specialization"
           firstHeading="Advanced Data Science and AI Program"
-          idss="bfl64ANfSV0"
         />
-        <MasterSecondSection/>
-        <JobAbroad/>
-       
+        <MasterSecondSection />
+        <JobAbroad />
         <SecondNavbar />
-
-        <TrainerSection idss="bfl64ANfSV0" />
-
+        <TrainerSection idss="eautK0odE7Q" />
         <Testimonial
           redirectDS={true}
           Testimonial={DataScienceMastersinCS[0].testimonial}
         />
-
         <WhyLearnbay idss="bfl64ANfSV0" />
-
-        <GetHire/>
-       
-     
-
+        <GetHire />
         <ContactCounsellor />
-
         <SyllabusNew
           syllabusHead={DataScienceMastersinCS[0].syllabusHead}
           masterSyllabus={DataScienceMastersinCS[0].masterSyllabus}
@@ -214,7 +209,7 @@ const Blockchain = () => {
           mobImage="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Mobile-Tools-Covered.png"
         />
         <Certificate
-          threeCertificate={true}
+          twoCertificate={true}
           data={DataScienceMastersinCS[0].Certificate}
         />
         <FeeSection
@@ -229,12 +224,13 @@ const Blockchain = () => {
           FeeContent6="No additional cost"
           dataScienceCounselling={true}
         />
-
         <MentorsSection />
+        <SliderTabs />
         <PlacementCall />
-        <NewProjectSection projectSection={DataScienceMastersinCS[0].projectSection} />
-\
-        <FAQNew FAQNewData={DataScienceMastersinCS[0].faq} />
+        <NewProjectSection
+          projectSection={DataScienceMastersinCS[0].projectSection}
+        />
+        {/* <FAQNew FAQNewData={DataScienceMastersinCS[0].faq} /> */}
         <SeventhSection />
         <Footer />
         <BottomBar />

@@ -25,7 +25,7 @@ const FeeSection = ({
   };
 
   return (
-    <div className={styles.feesmain} id="fees">
+    <div className={styles.feesmain} id="Fees">
       <Popup
         trigger={popups}
         setTrigger={setPopups}
