@@ -19,8 +19,8 @@ import Button from "../../Global/Button/Button";
 function WhyLearnbay({ idss }) {
 
 
-  const [domainSpec, setDomainSpec] = useState(true);
-  const [projectInno, setProjectInno] = useState(false);
+  const [domainSpec, setDomainSpec] = useState(false);
+  const [projectInno, setProjectInno] = useState(true);
   const [projectCert, setProjectCert] = useState(false);
 
   const [popups, setPopups] = useState(false);
@@ -37,7 +37,7 @@ function WhyLearnbay({ idss }) {
   useEffect(() => {
     let width = window.innerWidth;
     if (width > 960) {
-      setDomainSpec(true);
+      setProjectInno(true);
     }
   }, [0]);
 
@@ -287,38 +287,19 @@ function WhyLearnbay({ idss }) {
         ) : ('')}
 
         {projectCert ? (
-          <div className={Styles.RightSide}>
-          <div className={Styles.firstBox}>
-            <div className="imgWrapper">
+          <div className={`${Styles.RightSideCert} imgWrapper`}>
+      
               <Image
-                src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/coursePage/ytThumbnail.webp"
+                src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/masterPage/why-cert.webp"
                 loading="lazy"
-                width="200"
+                width="350"
                 height="212"
                 alt="profile-Img"
                 onClick={() => videoSHow()}
               />
-            </div>
-            <div className={Styles.BlueBox}>
-              <FaRocket className={Styles.Icon} />
-              <p className={Styles.head}
-              >35K+</p>
-              <p className={Styles.Para}
-              >Mentors help you select the domain & guide you through.</p>
-            </div>
-          </div>
-          <div className={Styles.left}>
-            <h6>Key Benefits</h6>
-            <div className={Styles.mainCont}>
-
-              <p className={Styles.para}><FaCheckCircle className={Styles.checkCircle} />
-                Work in an industry like environment and gain practical hands-on experience
-              </p>
-              <p className={Styles.para}><FaCheckCircle className={Styles.checkCircle} />
-                Gain the work experience of data scientist with dedicated project mentors from industry.
-              </p>
-            </div>
-          </div>
+    
+          
+        
         </div>
         ) : ('')}
 

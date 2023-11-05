@@ -224,6 +224,14 @@
 .iconBoxMobile {
   display: none;
 }
+
+.RightSideCert{
+  border: 3px solid rgba(0, 114, 188, 0.32);
+  background: #f5fbff;
+  padding: 50px 100px;
+  height: 450px;
+
+}
 @media (max-width: 641px) {
 
   .firstBox {
@@ -333,5 +341,10 @@
     font-size: 16px;
     display: flex;
     justify-content: center;
+  }
+
+  .RightSideCert{
+    padding: 10px 10px;
+    height: fit-content;
   }
 }
