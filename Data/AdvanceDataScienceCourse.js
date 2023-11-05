@@ -1,11 +1,3 @@
-import {
-  MdOutlineCastForEducation,
-  MdOutlineWorkOutline,
-} from "react-icons/md";
-import styles from "../components/CoursePage/WhoProgram/ThirdSection.module.css";
-import { FaUserGraduate } from "react-icons/fa";
-import { GiStairsGoal } from "react-icons/gi";
-
 export const DataScienceCourseData = [
   {
     secondSection: [
@@ -150,59 +142,69 @@ export const DataScienceCourseData = [
       // },
     ],
 
-    projectSection:[
+    projectSection: [
       {
         id: 1,
         duration: "26 Hours",
-        logo:"",
-        heading:"Career progression planning of employees with workforce defections & efficiency",
-        img:"https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/Group+502.png",
-        para:"BMW allows existing customers to sell used cars but many competitors are now offering better resale values...",
-        toolImg:"https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/iconProject.webp",
-        learnMore:"Learn more",
-    },
-    {
+        logo: "",
+        heading:
+          "Career progression planning of employees with workforce defections & efficiency",
+        img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/Group+502.png",
+        para: "BMW allows existing customers to sell used cars but many competitors are now offering better resale values...",
+        toolImg:
+          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/iconProject.webp",
+        learnMore: "Learn more",
+      },
+      {
         id: 2,
         duration: "26 Hours",
-        logo:"",
-        heading:"Career progression planning of employees with workforce defections & efficiency",
-        img:"https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/Group+502.png",
-        para:"BMW allows existing customers to sell used cars but many competitors are now offering better resale values...",
-        toolImg:"https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/iconProject.webp",
-        learnMore:"Learn more",
-    },
-    {
+        logo: "",
+        heading:
+          "Career progression planning of employees with workforce defections & efficiency",
+        img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/Group+502.png",
+        para: "BMW allows existing customers to sell used cars but many competitors are now offering better resale values...",
+        toolImg:
+          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/iconProject.webp",
+        learnMore: "Learn more",
+      },
+      {
         id: 3,
         duration: "26 Hours",
-        logo:"",
-        heading:"Career progression planning of employees with workforce defections & efficiency",
-        img:"https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/Group+502.png",
-        para:"BMW allows existing customers to sell used cars but many competitors are now offering better resale values...",
-        toolImg:"https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/iconProject.webp",
-        learnMore:"Learn more",
-    },
-    {
-      id: 3,
-      duration: "26 Hours",
-      logo:"",
-      heading:"Career progression planning of employees with workforce defections & efficiency",
-      img:"https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/Group+502.png",
-      para:"BMW allows existing customers to sell used cars but many competitors are now offering better resale values...",
-      toolImg:"https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/iconProject.webp",
-      learnMore:"Learn more",
-  },
-  {
-    id: 4,
-    duration: "26 Hours",
-    logo:"",
-    heading:"Career progression planning of employees with workforce defections & efficiency",
-    img:"https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/Group+502.png",
-    para:"BMW allows existing customers to sell used cars but many competitors are now offering better resale values...",
-    toolImg:"https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/iconProject.webp",
-    learnMore:"Learn more",
-}
+        logo: "",
+        heading:
+          "Career progression planning of employees with workforce defections & efficiency",
+        img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/Group+502.png",
+        para: "BMW allows existing customers to sell used cars but many competitors are now offering better resale values...",
+        toolImg:
+          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/iconProject.webp",
+        learnMore: "Learn more",
+      },
+      {
+        id: 3,
+        duration: "26 Hours",
+        logo: "",
+        heading:
+          "Career progression planning of employees with workforce defections & efficiency",
+        img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/Group+502.png",
+        para: "BMW allows existing customers to sell used cars but many competitors are now offering better resale values...",
+        toolImg:
+          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/iconProject.webp",
+        learnMore: "Learn more",
+      },
+      {
+        id: 4,
+        duration: "26 Hours",
+        logo: "",
+        heading:
+          "Career progression planning of employees with workforce defections & efficiency",
+        img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/Group+502.png",
+        para: "BMW allows existing customers to sell used cars but many competitors are now offering better resale values...",
+        toolImg:
+          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/iconProject.webp",
+        learnMore: "Learn more",
+      },
     ],
-   
+
     thirdSection: [
       {
         id: 1,
@@ -434,29 +436,24 @@ export const DataScienceCourseData = [
       },
     ],
     Certificate: {
-      twoCertificate: [
-        {
-          id: 1,
-          img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Certificate-blue.png",
-          title: "Course Completion Certificate from IBM",
-          para: [
-            "Complete your training with the internationally recognized certificate.",
-            "Validate your Data Science and AI skills with IBM Course Completion Certificate.",
-            "Get acknowledged in IT sector by adding IBM Certificate to your profile.",
-          ],
-        },
-        {
-          id: 2,
-          img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Certificate-Yellow.png",
-          title: "Capstone Project Certificate from IBM",
-          para: [
-            "Globally recognized IBM certification based on industrial-level projects.",
-            "Work on 1 capstone project certified by IBM.",
-            "Individualized project experience with easy access to premium job opportunities.",
-          ],
-        },
-      ],
-      oneCertificate: {
+      degreeCertificate: {
+        id: 1,
+        img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Certificate-blue.png",
+        title: "Course Completion Certificate from IBM",
+        para: [
+          "Complete your training with the internationally recognized certificate.",
+        ],
+      },
+      microCertificate: {
+        id: 3,
+        img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Microsoft-certificate-data.png",
+        title: "Certification in Collaboration with Microsoft",
+        para: [
+          "Industry-certified Microsoft certificates",
+          "Gain expertise & get recognized worldwide",
+        ],
+      },
+      projectCertificate: {
         id: 3,
         img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Microsoft-certificate-data.png",
         title: "Certification in Collaboration with Microsoft",
@@ -1150,43 +1147,50 @@ export const DataScienceCourseData = [
     newsData: [
       {
         id: 1,
-        domain: "I had a great learning experience at Learnbay. The faculties here are top notch. Right from enrollment to getting a good job, they keep putting enormous....",
+        domain:
+          "I had a great learning experience at Learnbay. The faculties here are top notch. Right from enrollment to getting a good job, they keep putting enormous....",
         CLogo: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/1-1.png",
         SDesc: "  27 Aug 2023",
       },
       {
         id: 2,
-        domain: "I had a great learning experience at Learnbay. The faculties here are top notch. Right from enrollment to getting a good job, they keep putting enormous....",
+        domain:
+          "I had a great learning experience at Learnbay. The faculties here are top notch. Right from enrollment to getting a good job, they keep putting enormous....",
         CLogo: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/1-1.png",
         SDesc: "  27 Aug 2023",
       },
       {
         id: 3,
-        domain: "I had a great learning experience at Learnbay. The faculties here are top notch. Right from enrollment to getting a good job, they keep putting enormous....",
+        domain:
+          "I had a great learning experience at Learnbay. The faculties here are top notch. Right from enrollment to getting a good job, they keep putting enormous....",
         CLogo: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/1-1.png",
         SDesc: "  27 Aug 2023",
       },
       {
         id: 4,
-        domain: "I had a great learning experience at Learnbay. The faculties here are top notch. Right from enrollment to getting a good job, they keep putting enormous....",
+        domain:
+          "I had a great learning experience at Learnbay. The faculties here are top notch. Right from enrollment to getting a good job, they keep putting enormous....",
         CLogo: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/1-1.png",
         SDesc: "  27 Aug 2023",
       },
       {
         id: 5,
-        domain: "I had a great learning experience at Learnbay. The faculties here are top notch. Right from enrollment to getting a good job, they keep putting enormous....",
+        domain:
+          "I had a great learning experience at Learnbay. The faculties here are top notch. Right from enrollment to getting a good job, they keep putting enormous....",
         CLogo: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/1-1.png",
         SDesc: "  27 Aug 2023",
       },
       {
         id: 6,
-        domain: "I had a great learning experience at Learnbay. The faculties here are top notch. Right from enrollment to getting a good job, they keep putting enormous....",
+        domain:
+          "I had a great learning experience at Learnbay. The faculties here are top notch. Right from enrollment to getting a good job, they keep putting enormous....",
         CLogo: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/1-1.png",
         SDesc: "  27 Aug 2023",
       },
       {
         id: 7,
-        domain: "I had a great learning experience at Learnbay. The faculties here are top notch. Right from enrollment to getting a good job, they keep putting enormous....",
+        domain:
+          "I had a great learning experience at Learnbay. The faculties here are top notch. Right from enrollment to getting a good job, they keep putting enormous....",
         CLogo: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/1-1.png",
         SDesc: "  27 Aug 2023",
       },

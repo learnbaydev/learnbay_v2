@@ -3,9 +3,8 @@ import styles from "./Certificate.module.css";
 import CertificateTabAdvance from "./CertificateTabAdvance";
 const Certificate = ({
   NoCertificate,
-  threeCertificate,
-  oneCertificate,
-  twoCertificate,
+  degreeCertificate,
+  projectCertificate,
   data,
 }) => {
   return NoCertificate ? (
@@ -15,9 +14,9 @@ const Certificate = ({
       <h4 className={styles.infop}>Globally Recognized Degree</h4>
 
       <CertificateTabAdvance
-        threeCertificate={threeCertificate}
-        oneCertificate={oneCertificate}
-        twoCertificate={twoCertificate}
+        degreeCertificate={data.degreeCertificate}
+        projectCertificate={data.projectCertificate}
+    
         data={data}
       />
     </div>

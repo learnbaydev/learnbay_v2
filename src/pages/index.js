@@ -103,7 +103,7 @@ export default function Home() {
       <WhyLearnbay idss="bfl64ANfSV0" />
       <ProjectSection idss="bfl64ANfSV0" />
       <GetHire/>
-      <TrainerSection idss="bfl64ANfSV0" />
+      <TrainerSection idss="eautK0odE7Q" />
       <Testimonial
         redirectDS={true}
         heading=""

@@ -69,8 +69,18 @@ const PlacementCall = () => {
       </div>
 
       <div className={styles.projectcer}>
-        <PiCertificate className={styles.PlacementCallIcon} />
-        <p>Project Certification From IBM</p>
+        {/* <PiCertificate className={styles.PlacementCallIcon} /> */}
+        <div class={styles.scroller}>
+        <p>
+        <PiCertificate className={styles.PlacementCallIcon}/>
+        Domain Specialization<br/>
+        <PiCertificate className={styles.PlacementCallIcon}/>
+        100% Job Assistance<br/>
+        <PiCertificate className={styles.PlacementCallIcon}/>
+        200% HIKE <br/>
+         
+        </p>
+      </div>
       </div>
     </div>
   );

@@ -1,3 +1,61 @@
+
+
+
+.scroller {
+  display: flex;
+  justify-content: center;
+  height: 2.2em;
+  line-height: 1.2em;
+  position: relative;
+  overflow: hidden;
+  width: 310px;
+}
+.scroller > p {
+
+  color: #f99600;
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 126.5%;
+  position: absolute;
+  top: 0;
+  animation: slide 7s infinite;
+  font-weight: bold;
+  
+}
+@keyframes slide {
+  0% {
+    top: 0;
+  }
+  25% {
+    top: -1.2em;
+  }
+
+  75% {
+    top: -2.6em;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .PlacementCallMain {
   opacity: 2;
   background-color: #1e1e1e;
@@ -90,8 +148,9 @@
 }
 
 .PlacementCallIcon {
-  width: 50px;
-  height: 45px;
+  
+  width: 40px;
+  /* height: 50px; */
   color: #0072bc;
 }
 
@@ -156,6 +215,8 @@
   .PlacementCallMain {
     overflow: hidden;
   }
+
+  
 
   .course {
     animation: scrollAnimation 16s linear infinite;

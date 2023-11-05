@@ -70,9 +70,9 @@ function NewProjectSection({ projectSection }) {
                 <div className={Styles.Box}>
                   <div className={Styles.boxGreen}>{data.duration}</div>
                   <div className={Styles.content}>
-                    <div>
+                    <div className={Styles.DivImg}>
                       <Image
-                        src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/image+170.png"
+                        src={img}
                         loading="lazy"
                         width="215"
                         height="79"
@@ -96,10 +96,10 @@ function NewProjectSection({ projectSection }) {
                     </p>
                     <div className={Styles.ImgBox}>
                       <Image
-                        src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/iconProject.webp"
+                        src={toolImg}
                         loading="lazy"
                         width="420"
-                        height="50"
+                        height="70"
                         alt="microsoft"
                       />
                     </div>

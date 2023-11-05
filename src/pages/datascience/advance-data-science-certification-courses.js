@@ -209,7 +209,7 @@ function Blockchain({}) {
           leftImage="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/advance-who.webp"
           ThirdSectionData={DataScienceCourseData[0].thirdSection}
         />
-        <TrainerSection idss="bfl64ANfSV0" />
+        <TrainerSection idss="eautK0odE7Q" />
         <Testimonial
           redirectDS={true}
           heading=""
@@ -250,7 +250,6 @@ function Blockchain({}) {
           mobImage="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Mobile-Tools-Covered.png"
         />
         <Certificate
-          threeCertificate={true}
           data={DataScienceCourseData[0].Certificate}
         />
         <FeeSection
