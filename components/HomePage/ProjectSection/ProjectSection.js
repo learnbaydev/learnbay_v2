@@ -28,7 +28,7 @@ idss,
 
 
   return (
-    <section className={styles.container}>
+    <section className={styles.container} id="ProjectLab">
        <Popup
         trigger={popups}
         setTrigger={setPopups}

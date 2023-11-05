@@ -197,13 +197,13 @@ const FirstSection = ({
               </div>
                 <p className={styles.iconText}><FaEarthAmericas className={styles.iconYellow} />Globally recognised in EU, US and 60+ countries</p>
               <div className={styles.btnWrapper}>
-                <div onClick={popupShow}>
+                <a href="#course">
                   <Button
                     className={styles.Btn}
                     text="Explore Masters Degree"
-                    passIcon={<FaBell className="bIconS" />}
+                    passIcon={<FaChevronDown className="bIconS" />}
                   />
-                </div>
+                </a>
               </div>
             </div>
             <div className={styles.secondLeft}>
@@ -241,10 +241,10 @@ const FirstSection = ({
               </p>
               <p className={styles.iconText}><PiCertificate className={styles.iconYellow} />Domain Electives and Project certification from industry</p>
               <div className={styles.btnWrapper}>
-                <a href="#course">
+                <a href="#ProjectLab">
                   <Button
                     className={styles.Btn}
-                    text="Explore Courses"
+                    text="Project Lab"
                     passIcon={<FaChevronDown className="bIconS" />}
                   />
                 </a>

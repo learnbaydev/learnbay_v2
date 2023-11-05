@@ -427,7 +427,7 @@ function MentorsSection() {
                       alt="data science course"
                     />
                   </div>
-                  <p className={styles.cont}>Elevate Your Profile: Boost your career prospects </p>
+                  {/* <p className={styles.cont}>Elevate Your Profile: Boost your career prospects </p> */}
                 </div>
               </SwiperSlide>
               <SwiperSlide className={styles.slide}>
@@ -451,7 +451,7 @@ function MentorsSection() {
                       alt="data science course"
                     />
                   </div>
-                  <p className={styles.cont}>Elevate Your Profile: Boost your career prospects </p>
+                  {/* <p className={styles.cont}>Elevate Your Profile: Boost your career prospects </p> */}
                 </div>
               </SwiperSlide>
               <SwiperSlide className={styles.slide}>
@@ -475,7 +475,7 @@ function MentorsSection() {
                       alt="data science course"
                     />
                   </div>
-                  <p className={styles.cont}>Elevate Your Profile: Boost your career prospects </p>
+                  {/* <p className={styles.cont}>Elevate Your Profile: Boost your career prospects </p> */}
                 </div>
               </SwiperSlide>
               <SwiperSlide className={styles.slide}>
@@ -499,7 +499,7 @@ function MentorsSection() {
                       alt="data science course"
                     />
                   </div>
-                  <p className={styles.cont}>Elevate Your Profile: Boost your career prospects </p>
+                  {/* <p className={styles.cont}>Elevate Your Profile: Boost your career prospects </p> */}
                 </div>
               </SwiperSlide>
               <SwiperSlide className={styles.slide}>
@@ -523,7 +523,7 @@ function MentorsSection() {
                       alt="data science course"
                     />
                   </div>
-                  <p className={styles.cont}>Elevate Your Profile: Boost your career prospects </p>
+                  {/* <p className={styles.cont}>Elevate Your Profile: Boost your career prospects </p> */}
                 </div>
               </SwiperSlide>
               <SwiperSlide className={styles.slide}>
@@ -547,7 +547,7 @@ function MentorsSection() {
                       alt="data science course"
                     />
                   </div>
-                  <p className={styles.cont}>Elevate Your Profile: Boost your career prospects </p>
+                  {/* <p className={styles.cont}>Elevate Your Profile: Boost your career prospects </p> */}
                 </div>
               </SwiperSlide>
               <SwiperSlide className={styles.slide}>
@@ -571,7 +571,7 @@ function MentorsSection() {
                       alt="data science course"
                     />
                   </div>
-                  <p className={styles.cont}>Elevate Your Profile: Boost your career prospects </p>
+                  {/* <p className={styles.cont}>Elevate Your Profile: Boost your career prospects </p> */}
                 </div>
               </SwiperSlide>
             </>

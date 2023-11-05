@@ -5,6 +5,7 @@ import { BsCheckCircle } from "react-icons/bs";
 function CertificateTab({
   threeCertificate,
   oneCertificate,
+  twoCertificate,
   data,
 }) {
   const [MActive, setMActive] = useState(false);
