@@ -195,7 +195,7 @@ function Blockchain({}) {
           FirstRightImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/dahead.webp"
           firstToparaImg=""
           firstHeading="Data Analytics Certification Program"
-          firstTopPara="Upskill yourself to the top within 6 months with curricullum designed by industry expert"
+          firstTopPara="Curriculum Inclusive of Gen-AI"
           idss="bfl64ANfSV0"
         />
         <SecondSection

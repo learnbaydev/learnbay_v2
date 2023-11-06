@@ -1,85 +1,95 @@
 
-
-
-.scroller {
-  display: flex;
-  justify-content: center;
-  height: 2.2em;
-  line-height: 1.2em;
-  position: relative;
-  overflow: hidden;
-  width: 310px;
+.rightSide {
+  width: fit-content;
+  height: 80px;
 }
-.scroller > p {
-
-  color: #f99600;
+.stttt {
+  display: flex;
+  /* background-color: red; */
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+}
+/* .slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid #B8E3FF;
+background-color: #FEFEFF;
+    padding: 30px 20px;
+} */
+.slide p {
+  color: rgb(0, 0, 0);
+}
+.slideWrap {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 30px;
+  grid-template-columns: 15% 80%;
+}
+/* .number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #EAEDF2;
+  padding: 5px;
+  font-size: 70px;
+} */
+.numberIcon{
+  font-size: 40px;
+  color: #0072BC;
+}
+/* .RightWrap {
+  background-color: #fff;
+  border-radius: 20px;
+  background: url("https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Network-reach-BG.png");
+  margin: auto;
+  margin: -250px 100px 100px 100px;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 30px 200px;
+box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+} */
+.slideWrap  p{
+  color: #F99600;
   text-align: center;
-  font-size: 18px;
+  font-size: 24px;
   font-style: normal;
   font-weight: 700;
   line-height: 126.5%;
-  position: absolute;
-  top: 0;
-  animation: slide 7s infinite;
-  font-weight: bold;
-  
 }
-@keyframes slide {
-  0% {
-    top: 0;
-  }
-  25% {
-    top: -1.2em;
-  }
-
-  75% {
-    top: -2.6em;
-  }
+.imgShowM {
+  display: none;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .PlacementCallMain {
   opacity: 2;
-  background-color: #1e1e1e;
+  background-color: #1E1E1E;
   mix-blend-mode: overlay;
   padding: 40px 0px;
   margin-top: 30px;
 }
-
 .title {
   display: flex;
   flex-flow: column;
   justify-content: center;
   align-items: center;
 }
-
 .title h2 {
-  color: #f99600;
+  color: #F99600;
   text-align: center;
   font-size: 30px;
   font-style: normal;
   font-weight: 700;
   line-height: 126.5%;
 }
-
 .title p {
   color: #fff;
   text-align: center;
@@ -88,7 +98,6 @@
   font-weight: 300;
   line-height: 112.5%;
 }
-
 .course {
   display: flex;
   justify-content: center;
@@ -97,22 +106,18 @@
   /* margin: 34px 40px 0px 40px; */
   margin-top: 30px;
 }
-
 .mbldiv {
   display: flex;
-
   overflow: none;
 }
-
 .PlacementCallcourse {
   border-radius: 6.18px;
   border: 2.06px solid rgba(255, 255, 255, 0.6);
   padding: 14px 10px;
   margin: 10px 30px;
 }
-
 .PlacementCallcourse p {
-  color: #80f7ff;
+  color: #80F7FF;
   text-align: center;
   /* font-family: Inter; */
   font-size: 20.902px;
@@ -122,9 +127,8 @@
   /* 39.091px */
   margin: 0px 20px;
 }
-
 .projectcer p {
-  color: #f99600;
+  color: #F99600;
   font-size: 22px;
   font-style: normal;
   font-weight: 600;
@@ -132,7 +136,6 @@
   /* 37.95px */
   margin: 0px;
 }
-
 .projectcer {
   border-radius: 2.18px;
   background: #fff;
@@ -146,14 +149,11 @@
   text-align: center;
   /* gap: 3px; */
 }
-
 .PlacementCallIcon {
-  
   width: 40px;
   /* height: 50px; */
-  color: #0072bc;
+  color: #0072BC;
 }
-
 .imgsection {
   display: flex;
   justify-content: center;
@@ -161,86 +161,72 @@
   padding: 0px;
   margin: 0px;
 }
-
 @keyframes scrollAnimation {
   from {
     transform: translateX(50%);
   }
-
   to {
-    transform: translateX(-50%);
+    transform: translateX(-40%);
   }
 }
-
 .course {
   animation: scrollAnimation 16s linear infinite;
   scroll-margin: 20px;
   scroll-behavior: smooth;
   white-space: nowrap;
 }
-
 /* Rest of your CSS code here for larger screens */
-
 @media only screen and (max-width: 600px) {
   .imgsection img {
     width: 380px;
     height: 180px;
   }
-
   .projectcer {
     margin: 1px 30px;
   }
-
   .projectcer p {
     font-size: 18px;
   }
-
   .title {
     margin: 0px 20px;
   }
-
   .title h2 {
     font-size: 27px;
   }
-
   .PlacementCallcourse {
     display: block;
   }
-
   .mbldiv {
     display: flex;
     /* overflow-x: auto; */
   }
-
   .PlacementCallMain {
     overflow: hidden;
   }
-
-  
-
   .course {
     animation: scrollAnimation 16s linear infinite;
     scroll-margin: 20px;
     scroll-behavior: smooth;
     white-space: nowrap;
   }
-
   @keyframes scrollAnimation {
     from {
       transform: translateX(80%);
     }
-
     to {
       transform: translateX(-100%);
     }
   }
 }
-
 @media only screen and (max-width: 600px) {
   .PlacementCallMain {
     overflow: hidden;
   }
   .imgsection img {
     width: 300px;
+  }
+  .imged img {
+    width: 340px;
+    height: 40px;
   }
 }
