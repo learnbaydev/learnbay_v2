@@ -1,4 +1,7 @@
-.First, .Second, .Third, .forth {
+.First,
+.Second,
+.Third,
+.forth {
   margin-top: 80px;
   padding: 70px 100px 76px 100px;
   display: grid;
@@ -9,10 +12,11 @@
   gap: 50px;
 }
 .First {
-  background: linear-gradient(180deg, #232323 16.69%, #012F4E 99.97%);
+  background: linear-gradient(180deg, #232323 16.69%, #012f4e 99.97%);
 }
-.Second, .Third {
-  background: linear-gradient(180deg, #232323 16.69%, #3C3C3C 99.97%);
+.Second,
+.Third {
+  background: linear-gradient(180deg, #232323 16.69%, #3c3c3c 99.97%);
 }
 .Second {
   padding: 85px 50px 0px 100px;
@@ -24,22 +28,22 @@
 .GenAiBox {
   display: flex;
   gap: 10px;
-  background: linear-gradient(90deg, #00406A 0.08%, rgba(0, 0, 0, 0.00) 99.89%);
+  background: linear-gradient(90deg, #00406a 0.08%, rgba(0, 0, 0, 0) 99.89%);
   margin-top: 20px;
   border-radius: 10px 0px 0px 10px;
   align-items: center;
 }
 .TextGreen {
-  color: #35D028;
-font-size: 18px;
-font-weight: 700;
-line-height: 153%;
-margin: 0;
+  color: #35d028;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 153%;
+  margin: 0;
 }
 .GenImageBlock {
   border-radius: 12px 12px 0px 12px;
-background: #0072BC;
-padding: 5px 5px 0px 5px;
+  background: #0072bc;
+  padding: 5px 5px 0px 5px;
 }
 .Second .secondLeft {
   margin-bottom: -5px;
@@ -49,7 +53,7 @@ padding: 5px 5px 0px 5px;
   grid-template-columns: 60% 40%;
   padding: 0px 100px 0px 100px;
   align-items: center;
-  background: linear-gradient(180deg, #232323 16.69%, #3C3C3C 99.97%);
+  background: linear-gradient(180deg, #232323 16.69%, #3c3c3c 99.97%);
 }
 .forthFirstLeft {
   display: flex;
@@ -58,25 +62,25 @@ padding: 5px 5px 0px 5px;
 }
 .forth .blink {
   margin: 0px;
-  color: #DFDFDF;
-font-size: 22px;
-font-weight: 400;
-padding-right: 160px;
-margin: 10px 0px;
+  color: #dfdfdf;
+  font-size: 22px;
+  font-weight: 400;
+  padding-right: 160px;
+  margin: 10px 0px;
 }
 .forthFirstLeft span {
-  color: #F99600;
-font-size: 22px;
-font-weight: bold;
+  color: #f99600;
+  font-size: 22px;
+  font-weight: bold;
 }
 .forth .btnWrapper {
   margin: 40px 0px 0px;
 }
 .forth .SecondBlink {
   font-size: 23px;
-    font-weight: 600;
+  font-weight: 600;
   letter-spacing: 0.45px;
-  color: #F99600;
+  color: #f99600;
   padding: 0px;
 }
 .forth .h1 {
@@ -93,14 +97,14 @@ font-weight: bold;
 }
 .InnerBox {
   border-radius: 26.667px;
-  background: #33353C;
+  background: #33353c;
   padding: 5px 24px;
   display: flex;
   gap: 10px;
   align-items: center;
 }
 .iconBoxCheck {
-  color: #2DB621;
+  color: #2db621;
 }
 .Third {
   grid-template-columns: 49% 56%;
@@ -123,10 +127,10 @@ font-weight: bold;
   gap: 30px;
 }
 .Third .h1 {
-font-size: 33px;
-line-height: 151.5%;
-padding: 0px;
-margin: 0;
+  font-size: 33px;
+  line-height: 151.5%;
+  padding: 0px;
+  margin: 0;
 }
 .Third .blink {
   padding-right: 230px;
@@ -150,9 +154,9 @@ margin: 0;
 }
 .greenBox {
   border-radius: 7px;
-border: 2px solid rgba(255, 255, 255, 0.40);
-background: #043600;
-padding: 6px 16px;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  background: #043600;
+  padding: 6px 16px;
 }
 .iconYellow {
   color: rgba(249, 150, 0, 1);
@@ -163,28 +167,29 @@ padding: 6px 16px;
   display: flex;
   gap: 10px;
   align-items: center;
-  color: #2DB621;
-font-size: 17px;
-font-weight: 700;
-margin: 15px 0px;
-line-height: 155%; /* 33.99px */
+  color: #2db621;
+  font-size: 17px;
+  font-weight: 700;
+  margin: 15px 0px;
+  line-height: 155%; /* 33.99px */
 }
 .greenBox p {
   font-weight: 700;
   font-size: 15px;
-color: #fff;
+  color: #fff;
   margin: 0;
 }
 .SecondBlink {
   font-size: 30px;
-  color: #F99600;
+  color: #f99600;
   font-weight: 700;
   margin: 0;
 }
 .SecondpTop {
-  color: #F99600;
+  color: #f99600;
 }
-.authorName, .authorPostion {
+.authorName,
+.authorPostion {
   font-size: 15px;
   margin: 0;
 }
@@ -192,7 +197,7 @@ color: #fff;
   color: #fff;
 }
 .authorPostion {
-  color: #82CEFF;
+  color: #82ceff;
 }
 .SecondSectionLeft {
   display: flex;
@@ -200,7 +205,7 @@ color: #fff;
   gap: 15px;
 }
 .SecondSectionLeft .btnWrapper {
-margin: 10px 0px 0px 0px;
+  margin: 10px 0px 0px 0px;
 }
 .SecondSectionLeft .h1 {
   font-size: 45px;
@@ -226,16 +231,16 @@ margin: 10px 0px 0px 0px;
   font-weight: 700;
 }
 .box .blue {
-  color: #0072BC;
+  color: #0072bc;
 }
 .box .orange {
-  color: #F99600;
+  color: #f99600;
 }
 .box .green {
-  color: #2DB621;
+  color: #2db621;
 }
 .pTop {
-  color: #F99600;
+  color: #f99600;
   font-size: 23px;
   font-weight: 600;
   margin: 0;
@@ -266,7 +271,7 @@ margin: 10px 0px 0px 0px;
   text-align: left;
 }
 .h1Span {
-  color: #F99600;
+  color: #f99600;
 }
 .h1 {
   color: #fff;
@@ -287,7 +292,7 @@ margin: 10px 0px 0px 0px;
 }
 .blink {
   font-size: 21px;
-  color: #DFDFDF;
+  color: #dfdfdf;
   margin-top: 15px;
   padding-right: 120px;
   line-height: 31px;
@@ -324,23 +329,24 @@ margin: 10px 0px 0px 0px;
   padding: 10px 14px;
   font-size: 18px;
   background: #fff;
-  color: #0072BC;
+  color: #0072bc;
 }
 .outLineBtn:hover {
-  background: #0072BC;
+  background: #0072bc;
   color: #fff;
 }
 .Btn {
-  background: #0072BC;
+  background: #0072bc;
   color: #fff;
   padding: 10px 14px;
   font-size: 18px;
 }
 .Btn:hover {
   background: #fff;
-  color: #0072BC;
+  color: #0072bc;
 }
-.blinkMobile, .ibmLogoMobile {
+.blinkMobile,
+.ibmLogoMobile {
   display: none;
 }
 @media (max-width: 1281px) {
@@ -358,7 +364,8 @@ margin: 10px 0px 0px 0px;
   .ImageBlock {
     width: 250px;
   }
-  .blinkMobile, .ibmLogoMobile {
+  .blinkMobile,
+  .ibmLogoMobile {
     display: none;
   }
 }
@@ -378,7 +385,8 @@ margin: 10px 0px 0px 0px;
   .ImageBlock {
     width: 200px;
   }
-  .blinkMobile, .ibmLogoMobile {
+  .blinkMobile,
+  .ibmLogoMobile {
     display: none;
   }
 }
@@ -400,7 +408,8 @@ margin: 10px 0px 0px 0px;
   .ImageBlock {
     width: 180px;
   }
-  .blinkMobile, .ibmLogoMobile {
+  .blinkMobile,
+  .ibmLogoMobile {
     display: none;
   }
 }
@@ -444,33 +453,34 @@ margin: 10px 0px 0px 0px;
   .ImageBlock {
     margin: auto;
   }
-  .blinkMobile, .ibmLogoMobile {
+  .blinkMobile,
+  .ibmLogoMobile {
     display: none;
   }
 }
 @media (max-width: 641px) {
-.Second {
-  padding: 30px 20px 40px 20px;
-  margin-top: 47px;
-  display: block;
-  height: 800px;
-}
-.divgreen {
-  display: flex;
-  gap: 10px;
-  align-items: flex-start;
-  margin-top: 20px;
-}
-.iconText {
-  font-size: 14px;
-  margin: 10px 0px;
-}
-.SecondBlink {
-  font-size: 22px;
-}
-.SecondSectionLeft {
-  gap: 15px;
-}
+  .Second {
+    padding: 30px 20px 40px 20px;
+    margin-top: 47px;
+    display: block;
+    height: 800px;
+  }
+  .divgreen {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    margin-top: 20px;
+  }
+  .iconText {
+    font-size: 14px;
+    margin: 10px 0px;
+  }
+  .SecondBlink {
+    font-size: 22px;
+  }
+  .SecondSectionLeft {
+    gap: 15px;
+  }
   .First {
     padding: 30px 20px 40px 20px;
     display: block;
@@ -478,21 +488,21 @@ margin: 10px 0px 0px 0px;
     background-color: #fff;
     height: 800px;
   }
-.SecondSectionLeft .h1 {
-  text-align: left;
-  margin: 0px 0px 10px 0px;
-  font-size: 26px;
-  padding: 0px;
-}
+  .SecondSectionLeft .h1 {
+    text-align: left;
+    margin: 0px 0px 10px 0px;
+    font-size: 26px;
+    padding: 0px;
+  }
   .box {
     display: none;
   }
   .FirstLeft {
     gap: 0;
   }
-.pTop {
-  font-size: 22px;
-}
+  .pTop {
+    font-size: 22px;
+  }
   /* .FirstLeft {
     margin: 10px 0px 20px 0px;
     text-align: center;
@@ -513,7 +523,7 @@ margin: 10px 0px 0px 0px;
     text-align: center;
   }
   .FirstLeft .h1Span {
-    background: linear-gradient(90deg, #F99600 50%, #EDB552 103.64%);
+    background: linear-gradient(90deg, #f99600 50%, #edb552 103.64%);
     background-clip: text;
     -webkit-text-fill-color: transparent;
     text-align: center;
@@ -593,10 +603,11 @@ margin: 10px 0px 0px 0px;
     justify-content: center;
     margin: 30px auto 0px auto;
     flex-direction: column;
-align-items: center;
-width: 80%;
+    align-items: center;
+    width: 80%;
   }
-  .btnWrapper a, .btnWrapper div {
+  .btnWrapper a,
+  .btnWrapper div {
     width: 100%;
     text-align: center;
     display: flex;
@@ -609,11 +620,11 @@ width: 80%;
     justify-content: center;
     align-items: center;
   }
-.forth .h1 {
+  .forth .h1 {
     font-size: 26px;
     line-height: normal;
     text-align: left;
-}
+  }
 }
 @media (max-width: 481px) {
   .imgWrapperMobile img {
@@ -625,9 +636,15 @@ width: 80%;
   .FirstLeft p {
     text-align: left;
   }
-.TextGreen {
-  font-size: 14px;
-}
+  .greenBox {
+    padding: 5px 10px;
+  }
+  .greenBox p {
+    font-size: 12px;
+  }
+  .TextGreen {
+    font-size: 14px;
+  }
   .FirstLeft .ptopC {
     text-align: left;
   }

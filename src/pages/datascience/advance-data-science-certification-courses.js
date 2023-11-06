@@ -166,9 +166,7 @@ function Blockchain({}) {
   return (
     <>
       <Head>
-        <title>
-          Advance Data Science and AI Certification - Learnbay
-        </title>
+        <title>Advance Data Science and AI Certification - Learnbay</title>
         <meta
           name="description"
           content="Upskill yourself with cutting edge Artificial Intelligence and Data Science Skills, Techniques by enrolling into the Learnbay's Advanced Data Science Course."
@@ -239,6 +237,7 @@ function Blockchain({}) {
         <ContactConsellor />
 
         <SyllabusNew
+          masterSyllabusMobile={DataScienceCourseData[0].masterSyllabusMobile}
           syllabusHead={DataScienceCourseData[0].syllabusHead}
           masterSyllabus={DataScienceCourseData[0].masterSyllabus}
           MasterSyllabusDefault={DataScienceCourseData[0].MasterSyllabusDefault}
