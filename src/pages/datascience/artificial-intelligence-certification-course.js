@@ -104,7 +104,7 @@ const PlacementCall = dynamic(() =>
   import("../../../components/CoursePage/PlacementCall/PlacementCall")
 );
 
-function Blockchain({ }) {
+function Blockchain({}) {
   // POPUP GET METHOD
   const [popupData, setPopupData] = useState([]);
   // console.log(popupData);
@@ -239,9 +239,14 @@ function Blockchain({ }) {
         <ContactConsellor />
 
         <SyllabusNew
+          masterSyllabusMobile={
+            AIMLDataScienceCourseData[0].masterSyllabusMobile
+          }
           syllabusHead={AIMLDataScienceCourseData[0].syllabusHead}
           masterSyllabus={AIMLDataScienceCourseData[0].masterSyllabus}
-          MasterSyllabusDefault={AIMLDataScienceCourseData[0].MasterSyllabusDefault}
+          MasterSyllabusDefault={
+            AIMLDataScienceCourseData[0].MasterSyllabusDefault
+          }
           dataScienceCounselling={true}
           dataScience={true}
           titleCourse="Advanced Data Science and AI Program with domain specialization"
