@@ -6,7 +6,7 @@ import BottomBar from "../../components/WebPage/BottomBar/BottomBar";
 import OfferPopup from "../../components/OfferPopup/OfferPopup";
 export default function Home() {
   return (
-    <div>
+    <div> 
       <Head>
         <title>Learnbay - About Us</title>
         <meta name="robots" content="index, follow" />
