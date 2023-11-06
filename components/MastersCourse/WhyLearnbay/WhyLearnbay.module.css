@@ -88,8 +88,8 @@
 
 .Para {
   color: #fff;
-  font-size: 16px;
-  font-weight: 600;
+  font-size: 18px;
+  font-weight: 700;
   line-height: 143%;
 }
 
@@ -109,9 +109,13 @@
   background: #f99600;
 }
 
+.topImg img {
+box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
 .firstBox {
   display: grid;
-  grid-template-columns: 66% 31%;
+  grid-template-columns: 55% 42%;
   gap: 20px;
 }
 
@@ -319,7 +323,7 @@
   }
 
   .Para {
-    font-size: 14px;
+    font-size: 24px;
   }
 
   .iconBoxMobile {

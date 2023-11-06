@@ -155,13 +155,13 @@ idss,
                     />
                     <p>SUPPLYCHAIN</p>
                   </div>
-                  <div onClick={popupShow}>
+                  <a href="/domain">
                   <Button
                     bannerButton={true}
                     text="Download Domain Brochures"
                     passIcon={<FaDownload className="bIconS" />}
                   />
-                  </div>
+                  </a>
                 </div>
               </div>
               <div className={styles.iconBoxMobile}>
