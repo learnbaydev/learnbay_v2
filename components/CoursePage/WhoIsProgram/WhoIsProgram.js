@@ -6,7 +6,7 @@ import {
 } from "react-icons/md";
 import Styles from "./WhoIsProgram.module.css";
 
-function WhoIsProgram() {
+function WhoIsProgram({first, second, third, forth}) {
   return (
     
     <section className={Styles.container}>
@@ -18,7 +18,7 @@ function WhoIsProgram() {
             <p className={Styles.BgCont1}>Education</p>
           </div>
           <p className={Styles.BoxCont}>
-            Non-tech professionals with 6 months experience
+            {first}
           </p>
         </div>
         <div className={Styles.InnerBox}>
@@ -26,7 +26,7 @@ function WhoIsProgram() {
             <MdOutlineWorkOutline className={Styles.icon} />
             <p className={Styles.BgCont2}>Work Exp.</p>
           </div>
-          <p className={Styles.BoxCont}>Minimum 1 year of IT work experience</p>
+          <p className={Styles.BoxCont}>{second}</p>
         </div>
         <div className={Styles.InnerBox}>
           <div className={Styles.imgBox}>
@@ -34,7 +34,7 @@ function WhoIsProgram() {
             <p className={Styles.BgCont1}>Career Stage</p>
           </div>
           <p className={Styles.BoxCont}>
-            Mid-career professionals interested in data science & AI
+          {third}
           </p>
         </div>
         <div className={Styles.InnerBox}>
@@ -43,7 +43,7 @@ function WhoIsProgram() {
             <p className={Styles.BgCont2}>Aspirations</p>
           </div>
           <p className={Styles.BoxCont}>
-            Achieving higher career growth in data science and AI
+          {forth}
           </p>
         </div>
       </div>
