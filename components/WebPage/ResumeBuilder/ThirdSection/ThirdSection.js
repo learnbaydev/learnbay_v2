@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import styles from "./ection.module.css";
+import styles from "./ThirdSection.module.css";
 import FormInline from "../../FormSection/FormInline";
 import Image from "next/image";
 import VideoPopup from "../../VideoPopup/VideoPopup";
