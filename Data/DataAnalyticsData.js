@@ -778,22 +778,43 @@ import {
       "Term 2 Statistics & Machine Learning( 25 ECTS Credits) ": [
         {
           Module0: {
-            title: "Term 1 :- Python Programming",
+            title: "Term 1 :- Statistics",
             content: [
               {
                 chap: {
-                  title: "Module 1 :- Python Programming ",
+                  title: "Module 1 :- Statistics",
                   desc: [
-                    " Programming Basics & Environment Setup.",
-                    " Python Programming Overview",
-                    "  Python Data Types",
-                    "  Functions And Modules ,Class hands-on: 8+ Programs to be covered in the functions, Lambda, modules, Generators, and Packages class",
+                    " Fundamentals of Math and Probability.",
+                    " All about Population & Sample",
+                    "  Discrete Probability Distributions - Binomial, Poisson etc",
+                    "  Introduction to Statistics, Statistical Thinking",
   
-                    " File I/O And Exceptional Handling and Regular Expression,Class hands-on: 10+ Programs to be covered in class from File IO, Reg-ex and exception handling.",
-                    "Data Analysis Using Numpy",
-                    " Data Analysis Using Pandas",
-                    "Data Visualization using Matplotlib",
-                    ". Data Visualization using Seaborn,3 Case Study on Numpy, Pandas, Matplotlib 1 Case Study on Pandas And Seaborn",
+                    " Descriptive Statistics",
+                    "Inferential Statistics",
+                    " Hypothesis Testing",
+                    "Linear Algebra",
+                    "Data Processing & Exploratory Data Analysis Matplotlib ",
+                    "EDA,Statistics Assignments: Total 4 practice sets and Assignments from Statistics.."
+                  ],
+                },
+              },
+              {
+                chap: {
+                  title: "Module 2 :- Machine Learning",
+                  desc: [
+                    "Introduction to Machine Learning",
+                    "Regression and Classification Models",
+                    "Linear Regression Model",
+                    "Data Preprocessing",
+  
+                    " Encoding the Data",
+                    "Logistic Regression Model",
+                    " Evaluation Metrics for Classification model",
+                    "K Nearest Neighbours Model",
+                    "Decision Tree Model",
+                    "Random Forest Model.",
+                    "Hyperparameter Tuning",
+                    "Naive Baye’s Model,Case Study on Kart Model Business & Random Forest.",
                   ],
                 },
               },
@@ -803,10 +824,10 @@ import {
           },
         },
       ],
-      "Term 3 Artificial Intelligence Tools( 25 ECTS Credits)": [
+      "Term 3 Data Analytics Tools": [
         {
           Module0: {
-            title: "Term 2 :- Statistics & Basic Machine Learning",
+            title: "Term 3 :- Data Analytics Tools",
             content: [
               {
                 chap: {
