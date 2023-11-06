@@ -59,7 +59,7 @@ const Course = ({
       setMobile(true);
     }
     if (width < 600) {
-      setValue(1.2);
+      setValue(1);
       setMobile(true);
     } else if (width <= 641) {
       setValue(1.6);

@@ -217,6 +217,7 @@ const Blockchain = () => {
           FeeEmi="12,292/month."
           WeekdayDate="DEC 14th"
           WeekendDate="NOV 5th"
+          WeekendTime="09:30 AM - 1:00 PM"
           WeekdayTime="08:00 PM - 10:00 PM"
           CutFee="₹ 3,25,000/-"
           FeeContent3="Flexible payment"

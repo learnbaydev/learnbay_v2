@@ -1,24 +1,19 @@
 import Image from "next/image";
+import { useEffect, useState } from "react";
 import {
-  FaCheck,
   FaCheckCircle,
+  FaDownload,
   FaRocket,
   FaUserShield,
-  FaDownload,
 } from "react-icons/fa";
 import { IoRocketOutline } from "react-icons/io5";
-import { GiProgression } from "react-icons/gi";
 import { TbCertificate } from "react-icons/tb";
-import Styles from "./WhyLearnbay.module.css";
-import { useState, useEffect } from "react";
 import VideoPopup from "../../Global/VideoPopup/VideoPopup";
+import Styles from "./WhyLearnbay.module.css";
 
-import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/scrollbar";
-import { Pagination, Navigation } from "swiper";
-import { Scrollbar } from "swiper";
 import Button from "../../Global/Button/Button";
 
 function WhyLearnbay({ idss }) {
@@ -97,8 +92,6 @@ function WhyLearnbay({ idss }) {
               Domain Specialization
             </p>
           </div>
-
-          
         </div>
 
         {domainSpec ? (
@@ -258,10 +251,11 @@ function WhyLearnbay({ idss }) {
               <div className={Styles.BlueBox}>
                 <FaRocket className={Styles.Icon} />
                 <p className={Styles.head}>35K+</p>
-                <p className={Styles.Para}>
-                Highest Salary Hike
+                <p className={Styles.Para}>Highest Salary Hike</p>
+                <p style={{ color: "#fff", margin: "10px 0px 0px" }}>
+                  Get read to crack highest paying jobs with mokcup interviews
+                  led by industry experst
                 </p>
-                <p style={{color:"#fff", margin:"10px 0px 0px"}}>Get read to crack highest paying jobs with mokcup interviews led by industry experst</p>
               </div>
             </div>
             <div className={Styles.left}>
@@ -269,7 +263,7 @@ function WhyLearnbay({ idss }) {
               <div className={Styles.mainCont}>
                 <p className={Styles.para}>
                   <FaCheckCircle className={Styles.checkCircle} />
-                  ECTS accreditation recognized  across more than 60 countries.
+                  ECTS accreditation recognized across more than 60 countries.
                 </p>
                 <p className={Styles.para}>
                   <FaCheckCircle className={Styles.checkCircle} />
@@ -285,7 +279,7 @@ function WhyLearnbay({ idss }) {
         {projectCert ? (
           <div className={`${Styles.RightSideCert} imgWrapper`}>
             <Image
-              src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/masters-certificate.webp"
+              src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/Certification-min.webp"
               loading="lazy"
               width="350"
               height="212"

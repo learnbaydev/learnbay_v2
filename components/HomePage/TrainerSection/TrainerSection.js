@@ -79,7 +79,7 @@ function TrainerSection({idss}) {
             width="358"
             height="212"
             alt="profile-Img"
-            onClick={() => videoSHow()}
+            onClick={() => videoSHow(popupShow)}
             
           />
          
