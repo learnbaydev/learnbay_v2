@@ -137,6 +137,10 @@
 }
 
 @media (max-width: 481px) {
+  .iconPara {
+    flex-flow: column;
+    width: max-content;
+  }
   .container {
     margin-top: 47px;
     padding: 20px 0px;
