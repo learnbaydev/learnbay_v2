@@ -1,15 +1,13 @@
-import React, { useState, useEffect } from "react";
+import Image from "next/image";
+import { useEffect, useState } from "react";
+import { BsCheckCircle } from "react-icons/bs";
+import { IoIosArrowForward } from "react-icons/io";
 import "swiper/css";
 import "swiper/css/pagination";
-import styles from "./SliderTab.module.css";
-import Image from "next/image";
-import { BiDownArrowAlt, BiUpArrowAlt } from "react-icons/bi";
-import { IoIosArrowForward } from "react-icons/io";
-import { BsCheckCircle } from "react-icons/bs";
-import Button from "../../Global/Button/Button";
-import { FaCheckCircle, FaDownload } from "react-icons/fa";
-import Popup from "../../Popup/Popup";
 import Form from "../../Form/Form";
+import Popup from "../../Popup/Popup";
+import styles from "./SliderTab.module.css";
+
 
 const SliderTabs = ({ dataScience, dataScienceCounselling }) => {
   const [bfsiButton, setBfsiButton] = useState();
@@ -48,7 +46,7 @@ const SliderTabs = ({ dataScience, dataScienceCounselling }) => {
   };
 
   return (
-    <div className={styles.Course} id="course">
+    <div className={styles.Course} id="servicePro">
       <Popup
         trigger={popups}
         setTrigger={setPopups}
@@ -74,7 +72,10 @@ const SliderTabs = ({ dataScience, dataScienceCounselling }) => {
           />
         </div>
       </Popup>
-      <h2>Get job ready within 6 months with Career Services <span style={{color:"#f99600"}}>PRO</span></h2>
+      <h2>
+        Get job ready within 6 months with Career Services{" "}
+        <span style={{ color: "#f99600" }}>PRO</span>
+      </h2>
 
       <div className={styles.courses}>
         <div className={styles.listPanel}>
@@ -169,23 +170,23 @@ const SliderTabs = ({ dataScience, dataScienceCounselling }) => {
                 <div className={styles.mainCont}>
                   <BsCheckCircle className={styles.checkCircle} />
                   <p className={styles.para}>
-                    Elevate Your Profile: Boost your career prospects with IBM's
-                    Course Completion Certificate.
+                    LearnBay's targeted mock interviews sessions to ready you
+                    for your dream role.
                   </p>
                 </div>
                 <div className={styles.mainCont}>
                   <BsCheckCircle className={styles.checkCircle} />
                   <p className={styles.para}>
-                    Globally Recognised: Secure your future with an
-                    internationally acclaimed IBM certification.
+                    Actionable feedback for skill enhancement that keeps you in
+                    pace with interview trends.
                   </p>
                 </div>
 
                 <div className={styles.mainCont}>
                   <BsCheckCircle className={styles.checkCircle} />
                   <p className={styles.para}>
-                    Globally Recognised: Secure your future with an
-                    internationally acclaimed IBM certification.
+                    Industry-specific interview practice so you can crack your
+                    dream job.
                   </p>
                 </div>
               </div>
@@ -226,23 +227,20 @@ const SliderTabs = ({ dataScience, dataScienceCounselling }) => {
                 <div className={styles.mainCont}>
                   <BsCheckCircle className={styles.checkCircle} />
                   <p className={styles.para}>
-                    Elevate Your Profile: Boost your career prospects with IBM's
-                    Course Completion Certificate.
+                    LearnBay's tailored resume-building guidance.
                   </p>
                 </div>
                 <div className={styles.mainCont}>
                   <BsCheckCircle className={styles.checkCircle} />
                   <p className={styles.para}>
-                    Globally Recognised: Secure your future with an
-                    internationally acclaimed IBM certification.
+                    Strategic advice for impactful resumes.
                   </p>
                 </div>
 
                 <div className={styles.mainCont}>
                   <BsCheckCircle className={styles.checkCircle} />
                   <p className={styles.para}>
-                    Globally Recognised: Secure your future with an
-                    internationally acclaimed IBM certification.
+                    Tools and tips for resume optimization.
                   </p>
                 </div>
               </div>
@@ -286,23 +284,20 @@ const SliderTabs = ({ dataScience, dataScienceCounselling }) => {
                 <div className={styles.mainCont}>
                   <BsCheckCircle className={styles.checkCircle} />
                   <p className={styles.para}>
-                    Elevate Your Profile: Boost your career prospects with IBM's
-                    Course Completion Certificate.
+                    LearnBay's promise of unlimited interview calls.
                   </p>
                 </div>
                 <div className={styles.mainCont}>
                   <BsCheckCircle className={styles.checkCircle} />
                   <p className={styles.para}>
-                    Globally Recognised: Secure your future with an
-                    internationally acclaimed IBM certification.
+                    Continuous interview opportunities.
                   </p>
                 </div>
 
                 <div className={styles.mainCont}>
                   <BsCheckCircle className={styles.checkCircle} />
                   <p className={styles.para}>
-                    Globally Recognised: Secure your future with an
-                    internationally acclaimed IBM certification.
+                    Open-ended access to potential employers.
                   </p>
                 </div>
               </div>
@@ -361,20 +356,23 @@ const SliderTabs = ({ dataScience, dataScienceCounselling }) => {
                 <div className={styles.mainCont}>
                   <BsCheckCircle className={styles.checkCircle} />
                   <p className={styles.para}>
-                  LearnBay's targeted mock interviews sessions to ready you for your dream role.
+                    LearnBay's targeted mock interviews sessions to ready you
+                    for your dream role.
                   </p>
                 </div>
                 <div className={styles.mainCont}>
                   <BsCheckCircle className={styles.checkCircle} />
                   <p className={styles.para}>
-                  Actionable feedback for skill enhancement that keeps you in pace with interview trends.
+                    Actionable feedback for skill enhancement that keeps you in
+                    pace with interview trends.
                   </p>
                 </div>
 
                 <div className={styles.mainCont}>
                   <BsCheckCircle className={styles.checkCircle} />
                   <p className={styles.para}>
-                  Industry-specific interview practice so you can crack your dream job.
+                    Industry-specific interview practice so you can crack your
+                    dream job.
                   </p>
                 </div>
 
@@ -409,20 +407,20 @@ const SliderTabs = ({ dataScience, dataScienceCounselling }) => {
                 <div className={styles.mainCont}>
                   <BsCheckCircle className={styles.checkCircle} />
                   <p className={styles.para}>
-                  LearnBay's tailored resume-building guidance.
+                    LearnBay's tailored resume-building guidance.
                   </p>
                 </div>
                 <div className={styles.mainCont}>
                   <BsCheckCircle className={styles.checkCircle} />
                   <p className={styles.para}>
-                  Strategic advice for impactful resumes.
+                    Strategic advice for impactful resumes.
                   </p>
                 </div>
 
                 <div className={styles.mainCont}>
                   <BsCheckCircle className={styles.checkCircle} />
                   <p className={styles.para}>
-                  Tools and tips for resume optimization.
+                    Tools and tips for resume optimization.
                   </p>
                 </div>
 
@@ -456,20 +454,20 @@ const SliderTabs = ({ dataScience, dataScienceCounselling }) => {
                 <div className={styles.mainCont}>
                   <BsCheckCircle className={styles.checkCircle} />
                   <p className={styles.para}>
-                  LearnBay's promise of unlimited interview calls.
+                    LearnBay's promise of unlimited interview calls.
                   </p>
                 </div>
                 <div className={styles.mainCont}>
                   <BsCheckCircle className={styles.checkCircle} />
                   <p className={styles.para}>
-                  Continuous interview opportunities.
+                    Continuous interview opportunities.
                   </p>
                 </div>
 
                 <div className={styles.mainCont}>
                   <BsCheckCircle className={styles.checkCircle} />
                   <p className={styles.para}>
-                  Open-ended access to potential employers.
+                    Open-ended access to potential employers.
                   </p>
                 </div>
 

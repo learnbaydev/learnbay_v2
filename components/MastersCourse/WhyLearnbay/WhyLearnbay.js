@@ -69,6 +69,21 @@ function WhyLearnbay({ idss }) {
           </div>
           <div
             onClick={() => {
+              setDomainSpec(false);
+              setProjectInno(false);
+              setProjectCert(true);
+            }}
+            className={projectCert ? Styles.ActiveInnerBox : Styles.InnerBox}
+          >
+            <p className={projectCert ? Styles.ActiveCont : Styles.Cont}>
+              <FaUserShield
+                className={projectCert ? Styles.Activeicon : Styles.icon}
+              />
+              Project Innovation Lab
+            </p>
+          </div>
+          <div
+            onClick={() => {
               setDomainSpec(true);
               setProjectInno(false);
               setProjectCert(false);
@@ -83,21 +98,7 @@ function WhyLearnbay({ idss }) {
             </p>
           </div>
 
-          <div
-            onClick={() => {
-              setDomainSpec(false);
-              setProjectInno(false);
-              setProjectCert(true);
-            }}
-            className={projectCert ? Styles.ActiveInnerBox : Styles.InnerBox}
-          >
-            <p className={projectCert ? Styles.ActiveCont : Styles.Cont}>
-              <FaUserShield
-                className={projectCert ? Styles.Activeicon : Styles.icon}
-              />
-              Project Certification
-            </p>
-          </div>
+          
         </div>
 
         {domainSpec ? (

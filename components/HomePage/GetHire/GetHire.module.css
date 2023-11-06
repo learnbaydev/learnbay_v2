@@ -99,6 +99,14 @@ display: flex;
 margin-top: 20px;
 }
 
+.showDesktop {
+  display: block;
+}
+
+.showMobile {
+  display: none;
+}
+
 
 @media only screen and (max-width: 600px) {
 
@@ -106,6 +114,13 @@ margin-top: 20px;
        
         padding: 0px;
         margin: 0px;
+    }
+    .showDesktop {
+      display: none;
+    }
+    
+    .showMobile {
+      display: block;
     }
 .GetHireHead {
     margin: 0px;
@@ -139,6 +154,7 @@ height: 200px;
   
     .GetHireHead {
       flex-direction: column; /* For stacking content vertically in mobile view */
+      align-items: center;
     }
   
     .GetHireMain img {

@@ -42,11 +42,43 @@
   padding: 30px;
 }
 
+.cutText {
+  color: #484848bf !important;
+text-align: center;
+font-size: 26.153px;
+font-weight: 300;
+text-decoration: line-through;
+margin: 20px 0px 0px 0px;
+}
+
+.divContent {
+  text-align: center;
+  margin: 20px 0px;
+}
+
+.divContent p {
+  margin: 5px;
+}
+
+.divContent .boxSpan {
+  color: #2db621;
+font-size: 20px;
+font-weight: 700;
+}
+
+.spanText {
+  color: #484848;
+text-align: center;
+font-size: 14.814px;
+font-weight: 400;
+}
+
 .pTop {
   color: #484848;
   text-align: center;
   font-size: 16px;
   font-weight: 400;
+  font-weight: bold;
 }
 
 .price {
@@ -55,7 +87,7 @@
   font-size: 40px;
   font-style: normal;
   font-weight: 700;
-  margin: 20px 0px;
+  margin: 0px 0px 20px 0px;
 }
 
 .second p {

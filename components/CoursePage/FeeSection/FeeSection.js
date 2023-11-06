@@ -11,10 +11,10 @@ const FeeSection = ({
   FeeHeading,
   Fee,
   dataScience,
-  FeeContent2,
-  FeeContent3,
-  FeeContent4,
-  FeeContent5,
+  WeekdayDate,
+  WeekendDate,
+  WeekdayTime,
+  CutFee,
   dataScienceCounselling,
   FeeEmi,
 }) => {
@@ -171,24 +171,20 @@ const FeeSection = ({
           </div>
         </div>
         <div className={styles.second}>
-          <p className={styles.pTop}>Financing as low as</p>
-          <p className={styles.price}>₹ 8,570/ month</p>
+          <p className={styles.pTop}>Program Fee</p>
+          <p className={styles.cutText}>{CutFee}</p>
+          <p className={styles.price}>{Fee} <span className={styles.spanText}>+ 18% GST</span></p>
           <div className={styles.divButton} onClick={popupShow}>
             <Button className={styles.Btn} text="Check EMI Options" />
           </div>
-          <hr style={{ color: "rgba(0, 0, 0, 0.20)", margin: "30px 0px" }} />
+          <hr style={{ color: "rgba(0, 0, 0, 0.20)", margin: "30px 20px", border:"0.9px solid" }} />
           <p style={{ textAlign: "center", margin: "0" }}>
-            <b>No Cost EMI</b>
+            <b>EMI Options</b>
           </p>
-          <div className={styles.box}>
-            <p className={styles.boxP}>
-              6 months <span className={styles.boxSpan}> ₹8,570</span>
-              <span className={styles.boxSpanP}> (Monthly Payments)</span>
-            </p>
-            <p className={styles.boxP}>
-              12 months <span className={styles.boxSpan}> ₹5,860</span>
-              <span className={styles.boxSpanP}> (Monthly Payments)</span>
-            </p>
+          <div className={styles.divContent}>
+          <p>Pay in easy EMIs starting as low as</p>
+          <p className={styles.boxSpan}> {FeeEmi} </p>
+          <p>For <b>No Cost EMI options</b> <span onClick={popupShow} style={{color:"#0072BC", cursor:"pointer"}}>click here.</span></p>
           </div>
           <p className={styles.orangeText}>Payment Partners</p>
           <div className={styles.iconImage}>
@@ -205,26 +201,20 @@ const FeeSection = ({
           <div className={styles.boxOrange}>
             <p>Weekday Batch</p>
             <div className={styles.batches}>
-              <p className={styles.date}>SEP 24th</p>
+              <p className={styles.date}>{WeekdayDate}</p>
               <div className={styles.Time}>
                 <p className={styles.day}>MON - FRI</p>
-                <p className={styles.paraBot}>08:00 AM - 10:00 AM</p>
+                <p className={styles.paraBot}>{WeekdayTime}</p>
               </div>
             </div>
           </div>
-          <hr style={{ color: "rgba(0, 0, 0, 0.20)" }} />
+          <hr style={{ color: "rgba(0, 0, 0, 0.20)", margin: "30px", border:"0.9px solid" }} />
           <div className={styles.boxOrange}>
             <div className={styles.batchImg}>
               <p>Weekend Batch</p>
-              {/* <Image
-                src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/filling-fast.png"
-                width="136"
-                height="50"
-                alt="Zest"
-              /> */}
             </div>
             <div className={styles.batches}>
-              <p className={styles.date}>SEP 24th</p>
+              <p className={styles.date}>{WeekendDate}</p>
               <div className={styles.Time}>
                 <p className={styles.day}>SAT - SUN</p>
                 <p className={styles.paraBot}>08:00 AM - 10:00 AM</p>

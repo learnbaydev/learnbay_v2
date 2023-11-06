@@ -507,12 +507,12 @@ export const DataScienceMastersinCS = [
         },
       projectCertificate: {
         id: 1,
-        img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Certificate-blue.png",
-        title: "Course Completion Certificate from IBM",
+        img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/masters-certificate.webp",
+        title: "Capstone Project Certificate from IBM",
         para: [
-          "Complete your training with the internationally recognized certificate.",
-          "Validate your Data Science and AI skills with IBM Course Completion Certificate.",
-          "Get acknowledged in IT sector by adding IBM Certificate to your profile.",
+          "Globally recognized IBM certification based on industrial-level projects.",
+          "Work on 1 capstone project certified by IBM.",
+          "Individualized project experience with easy access to premium job opportunities.",
         ],
       },
     },
@@ -529,54 +529,12 @@ export const DataScienceMastersinCS = [
       "Comprehensive Data Structures ( 20 ECTS Credits) ",
     ],
     MasterSyllabusDefault: [
-      // {
-      //   Module0: {
-      //     title: "Module 0 :- Special Programming Class",
-      //     content: [
-      //       {
-      //         chap: {
-      //           title: "Topic 1 :- Cohort Orientation",
-      //           desc: [
-      //             "A brief introduction to tools related to data",
-      //             "Learn about particular real-time projects and Capstone projects",
-      //             "Data and its impact on career opportunities",
-      //             "Utilizing data, to enhance industrial operations and management",
-      //           ],
-      //         },
-      //       },
-
-      //       {
-      //         chap: {
-      //           title: "Topic 2 :- Fundamentals of Programming",
-      //           desc: [
-      //             "Introduction to Anaconda & Jupyter notebook",
-      //             "Flavors of python Introduction to Git, GitHub",
-      //             "Python Fundamentals",
-      //           ],
-      //         },
-      //       },
-      //       {
-      //         chap: {
-      //           title: "Topic 3 :-  Fundamentals of Mathematics",
-      //           desc: [
-      //             "Mean, Median, Mode",
-      //             "Standard Deviation, Average. Probability, Permutations, and Combinations",
-      //             "Introduction to Linear Algebra",
-      //           ],
-      //         },
-      //       },
-      //     ],
-      //     id: 0,
-      //     open: true,
-      //   },
-      // },
       {
         Module0: {
           title: "Module 1 :- Python Fundamentals",
           content: [
             {
               chap: {
-                // title: "Topic 1 :- Python Fundamentals",
                 desc: [
                   "Programming Basics & Environment Setup",
                   "Python Programming Overview",
@@ -598,7 +556,6 @@ export const DataScienceMastersinCS = [
           content: [
             {
               chap: {
-                // title: "Topic 2 :- Numerical Programming",
                 desc: [
                   "Data Analysis Using Numpy",
                   "Data Analysis Using Pandas",
@@ -612,368 +569,6 @@ export const DataScienceMastersinCS = [
           open: false,
         },
       },
-      // {
-      //   Module0: {
-      //     title: ":- Statistics and Machine Learning",
-      //     content: [
-      //       {
-      //         chap: {
-      //           title: "Module 1 :- Applied statistics",
-      //           desc: [
-      //             " Data Visualization Basics",
-      //             "Descriptive Statistics",
-      //             "Z- Score Method",
-      //             "Sampling",
-      //             " Probability and Distribution",
-      //             "Bayes Theorem",
-      //             " Hypothesis Testing",
-      //             "Error and ANOVA",
-      //             "Linear Algebra",
-      //           ],
-      //         },
-      //       },
-      //       {
-      //         chap: {
-      //           title: "Module 2 :-Introduction to Machine Learning",
-      //           desc: [
-      //             "Introduction to Machine Learning",
-      //             "Linear Regresssion",
-      //             "Logistic Regression",
-      //             "Decision Tree",
-      //             "Cross validation",
-      //             "KNN",
-      //             "Naive Bayes",
-      //           ],
-      //         },
-      //       },
-      //     ],
-      //     id: 2,
-      //     open: false,
-      //   },
-      // },
-      // {
-      //   Module0: {
-      //     title: "Data Analytics & Visualization",
-      //     content: [
-      //       {
-      //         chap: {
-      //           title: "Module 1 :-Spreadsheets for Data Understanding",
-      //           desc: [
-      //             "Basics of Excel",
-      //             "Formatting a worksheet",
-      //             "Adjusting row height & column width ,changing cell alignment",
-      //             "Managing your workbooks",
-      //             "Advanced Printing options",
-      //             "Formulas",
-      //             "Conditional Formatting",
-      //             "Data analysis and pivot tables",
-      //             "Automating tasks with macros",
-      //             "Using excel events to triggers macros",
-      //           ],
-      //         },
-      //       },
-      //       {
-      //         chap: {
-      //           title: "Module 2 :- Relational database - SQL fundamentals",
-      //           desc: ["Introduction to SQL, RDBMS & DBMS",
-
-      //         "Normalization & Constraints",
-      //         "Working with joins & clause",
-      //         "Working with functions",
-      //         "Transaction, sequence & triggers",
-
-      //         ],
-      //         },
-      //       },
-
-      //       {
-      //         chap: {
-      //           title: "Module 3 :- Data visualization tools (Adv. Tableau, PowerBI, Looker) ",
-      //           desc: [
-      //             "Tableau (Advance)",
-      //             "Introduction to Tableau",
-      //             "Adding Parameters",
-      //             "Manipulating Graph Size",
-      //             "Dashboard actions",
-      //             "Story point",
-      //             "Connecting to SQL server",
-      //           ],
-      //         },
-      //       },
-      //       {
-      //         chap: {
-      //           title: "Module 4 :- Getting Started With Power BI",
-      //           desc: [
-      //             "Introduction & Installation",
-      //             "Creating visuals",
-      //             "Advanced charts",
-      //             "PowerBI services",
-      //             "Data modelling",
-      //           ],
-      //         },
-      //       },
-      //       {
-      //         chap: {
-      //           title: "Module 5 :- Google Looker",
-      //           desc: [
-      //             "Introduction to Looker",
-      //             "Data Modelling",
-      //             "Data exploration with LookML",
-      //             "Advanced data modelling techniques",
-      //           ],
-      //         },
-      //       },
-      //       {
-      //         chap: {
-      //           title: "Module 6 :- Business case studies",
-      //           desc: [
-      //             "Transportation safety domain",
-      //             "HR domain",
-      //             "Medical survey",
-      //             "Sales",
-      //             "Sports Analytics",
-      //           ],
-      //         },
-      //       },
-      //     ],
-      //     id: 3,
-      //     open: true,
-      //   },
-      // },
-      // {
-      //   Module0: {
-      //     title: "Deep Learning & Applied Analytics",
-      //     content: [
-      //       {
-      //         chap: {
-      //           title: "Module 1 :- Deep Learning Using Tensorflow",
-      //           desc: [
-      //             " Introduction to Deep Learning And TensorFlow",
-      //             "TensorFlow Classification Examples",
-      //             "Understanding Neural Networks With TensorFlow",
-      //             "Convolutional Neural Network (CNN) Project on Building a CNN for Image Classification",
-      //             "Introducing Recurrent Neural Networks skflow: RNNs in skflow",
-      //             "Understanding Of TFLearn APIs",
-      //             "Understanding Keras API for implementing Neural Networks Real-Time Project on SPAM Prediction using RNN & Image Classifier using PyTorch",
-      //           ],
-      //         },
-      //       },
-      //       {
-      //         chap: {
-      //           title: "Module 2 :- Natural Language Processing (NLP)",
-      //           desc: [
-      //             "Natural Language Processing",
-      //             "Text Analysis",
-      //             "KNN Use cases on NLP: Sentiment analysis for marketing ",
-      //             "Text Pre-Processing Techniques",
-      //             "Stemming Projects And Case Study on Sentiment analysis for Twitter, web articles & Advanced Text Analytics & NLP",
-      //           ],
-      //         },
-      //       },
-      //       {
-      //         chap: {
-      //           title: "Module 3 :- Computer Vision",
-      //           desc: [
-      //             "Computer Vision overview",
-      //             " Image Filtering",
-      //             "Image Processing",
-      //             "Image Classification and segmentation Project: The Problem of Scale and Shape Real-Time Use Case:  Single Shot MultiBox Detector & Object Localization",
-      //           ],
-      //         },
-      //       },
-      //       {
-      //         chap: {
-      //           title: "Module 4 :- Reinforcement Learning",
-      //           desc: [
-      //             "What is Reinforcement Learning - Basics",
-      //             " Approximation Methods for Reinforcement Learning Projects and Case Studies on Solving Taxi Environment & Solving Frozen Lake",
-      //           ],
-      //         },
-      //       },
-      //       {
-      //         chap: {
-      //           title:
-      //             "Module 5 :- Model Training & Deployment Using (AWS GCP)",
-      //           desc: [
-      //             " AWS (Amazon Web Services)",
-      //             "GCP (Google Cloud Platform)",
-      //             "Introduction to AWS and GCP Cloud ML Engine",
-      //             "Deploying Machine Learning Model",
-      //             "Training Machine Learning Model",
-      //           ],
-      //         },
-      //       },
-      //     ],
-      //     id: 4,
-      //     open: false,
-      //   },
-      // },
-      // {
-      //   Module0: {
-      //     title: "Deep Learning & Advanced Data Analysis",
-      //     content: [
-      //       {
-      //         chap: {
-      //           title:
-      //             "Module 1 :-Introduction to Deep Learning",
-      //           desc: [
-      //             "Introduction to Deep Learning",
-      //             "MLP Architecture",
-      //             "Weight Initialization",
-      //             "Deep learning algorithms",
-      //             "Exponentially Weighted Moving Average (EWMA)",
-      //             "Padding",
-      //             "Pooling",
-      //             "Sequential API",
-      //           ],
-      //         },
-      //       },
-      //       {
-      //         chap: {
-      //           title: "Module 2 :- Deep learning for computer vision",
-      //           desc: [
-      //             "Introduction to Computer Vision",
-      //             "Image Filtering and Enhancement",
-      //             "Image Recognition",
-      //             "Semantic Segmentation",
-      //           ],
-      //         },
-      //       },
-      //       {
-      //         chap: {
-      //           title:
-      //             "Module 3 :- Deep learning for natural language processing",
-      //           desc: [
-      //             "Natural Language Toolkit",
-      //             "Stemming",
-      //             "N-GRAMS",
-      //             "Spacy",
-      //             "Word2Vec",
-      //             "NLP Spacy",
-      //           ],
-      //         },
-      //       },
-      //       {
-      //         chap: {
-      //           title: "Module 4 :- High Dimensional Data Analysis",
-      //           desc: [
-      //             "Introduction to Big Data",
-      //             "Data Locality",
-      //             "SQOOP (SQL in HADOOP)",
-      //             "Map Reduce",
-      //             "Spark",
-      //             "Persisting RDD",
-      //           ],
-      //         },
-      //       },
-
-      //     ],
-      //     id: 5,
-      //     open: false,
-      //   },
-      // },
-      // {
-      //   Module0: {
-      //     title: "Deploymnet & Gen-AI",
-      //     content: [
-      //       {
-      //         chap: {
-      //           title:
-      //             "Module 1 :-Generative AI",
-      //           desc: [
-      //             "Introduction to Generative AI",
-      //             "Probabilistic Graphical Models",
-      //             "Introduction to Generative Adversarial Networks (GANs)",
-      //             "Introduction to Variational Autoencoders (VAEs)",
-      //             "Ethical Implications and Challenges",
-      //             "Advanced Topics and Recent Trends",
-
-      //           ],
-      //         },
-      //       },
-      //       {
-      //         chap: {
-      //           title: "Module 2 :- Product Analytics",
-      //           desc: [
-      //             "Product Usage Onboarding",
-      //             "A/B Testing Techniques",
-      //             "Online Platform Metrics",
-      //             "Customer Experience Mapping",
-      //             "Marketing Performance Analysis",
-      //             "Google Analytics for Beginners",
-      //           "Google Analytics Reporting Techniques",
-      //           "Data Pre-processing with Google Analytics",
-      //           ],
-      //         },
-      //       },
-      //       {
-      //         chap: {
-      //           title:
-      //             "Module 3 :- Productionization of ML systems",
-      //           desc: [
-      //             "ML Deployment Lifecycle",
-      //             "Model Serialization",
-      //             "Cloud Deployment: AWS SageMaker",
-      //             "Cloud Deployment: Azure ML Service",
-      //             "Cloud Deployment: GCP AI Platform",
-      //             "Model Versioning",
-      //           ],
-      //         },
-      //       },
-
-      //     ],
-      //     id: 6,
-      //     open: true,
-      //   },
-
-      // },
-
-      // {
-      //   Module0: {
-      //     title: "Term 7 :-Comprehensive Data Structures",
-      //     content: [
-      //       {
-      //         chap: {
-      //           title:
-      //             "Module 1 :-Essential Data Structures: Lists, Queues, Stacks",
-      //           desc: [
-      //             "Introduction to Data Structures & Lists",
-      //             "Array vs. Linked List",
-      //             "Introduction to Stacks",
-      //             "Applications of Stacks",
-      //             "Double-Ended Queue (Deque) Introduction",
-      //             "Applications of Queues",
-
-      //           ],
-      //         },
-      //       },
-      //       {
-      //         chap: {
-      //           title: "Module 2 :- Advanced Data Structures: Trees, Graphs, Hash Tables",
-      //           desc: [
-      //             "Binary Trees",
-      //             "Binary Tree Traversals",
-      //             "B-Trees & B+ Trees",
-      //             "Depth First Search (DFS)",
-      //             "Breadth First Search (BFS)",
-      //             "Shortest Path Algorithms - Dijkstra's Algorithm",
-      //             "Shortest Path Algorithms - Bellman-Ford Algorithm",
-      //             "Minimum Spanning Trees - Prim's Algorithm",
-      //             "Minimum Spanning Trees - Kruskal's Algorithm",
-      //             "Graphs: Strongly Connected Components",
-      //             "Introduction to Hashing",
-      //             "Advanced Hashing Techniques",
-      //             "Graphs: Traveling Salesman Problem",
-      //             ,
-      //           ],
-      //         },
-      //       },
-
-      //     ],
-      //     id: 6,
-      //     open: false,
-      //   },
-      // },
     ],
     masterSyllabus: {
       "Foundation Track (30 ECTS Credits)": [
@@ -1719,7 +1314,7 @@ export const DataScienceMastersinCS = [
             ans: "We have a set of 12 Real-time projects from multiple domains such as Healthcare, Banking, Finance, Insurance, Retail, and others. Based on your interest you can choose your project to work on.",
             linkText1: " Click here to download the list of the projects.",
             link1:
-              "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Data+Science+and+AI+Projects.pdf",
+              "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Masters+in+CS+Data+Science+%26+AI.pdf",
             link: true,
             open: false,
           },
