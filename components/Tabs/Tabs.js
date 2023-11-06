@@ -7,8 +7,10 @@ const Tabs = ({ handleIcon }) => {
 
   const [dataLoop, setDataLoop] = useState([
     { title: "Popular Courses", value: true },
-    { title: "Certification Program", value: false },
-    { title: "Master's Degree Program", value: false },
+    { title: "Data Science & AI", value: false },
+    { title: "Software Development", value: false },
+    { title: "Master Program", value: false },
+    { title: "View All", value: false },
   ]);
 
   const menuChange = (title, index) => {

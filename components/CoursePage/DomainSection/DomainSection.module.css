@@ -5,7 +5,7 @@
   background-repeat: no-repeat;
   display: grid;
   grid-template-columns: 35% 65%;
-  padding: 70px 0px 70px 0px;
+  padding: 100px 0px 100px 0px;
   margin-top: 80px;
 }
 
@@ -19,24 +19,7 @@
 
 .slide {
   height: 500px;
-  margin: 20px 10px 20px 10px;
-}
-
-.Btn {
-  color: #fff;
-    text-align: center;
-    font-size: 15.713px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 155%;
-    letter-spacing: -0.131px;
-    text-transform: capitalize;
-    border-radius: 2.714px;
-    background: #0072bc;
-    border: none;
-    padding: 10px 44px;
-    margin: 25px 0px;
-    cursor: pointer;
+  margin-left: 10px;
 }
 
 .mainSliderOrange,
@@ -83,7 +66,6 @@
 .imgP {
   display: flex;
   gap: 10px;
-  margin: 10px 0px;
 }
 
 .hr {
