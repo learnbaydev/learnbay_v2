@@ -91,13 +91,15 @@ const TrainerSection = dynamic(() =>
 );
 // import SecondNavbar from "../../../components/CoursePage/SecondNavbar/SecondNavbar";
 const WhyLearnbay = dynamic(() =>
-  import("../../../components/MastersCourse/WhyLearnbay/WhyLearnbay")
+  import("../../../components/CoursePage/WhyLearnbay/WhyLearnbay")
 );
 
 // const Gethire = dynamic(() =>
 //   import("../../../components/CoursePage/Gethired/Gethire")
 // );
-const GetHire = dynamic(() => import("../../../components/HomePage/GetHire/GetHire"));
+const GetHire = dynamic(() =>
+  import("../../../components/HomePage/GetHire/GetHire")
+);
 const PlacementCall = dynamic(() =>
   import("../../../components/CoursePage/PlacementCall/PlacementCall")
 );
@@ -206,10 +208,11 @@ function Blockchain({}) {
         />
         <SecondNavbar />
         <WhoProgram
+          dataScience={true}
           leftImage="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/advance-who.webp"
           ThirdSectionData={DataScienceCourseData[0].thirdSection}
         />
-        <TrainerSection idss="bfl64ANfSV0" />
+        <TrainerSection idss="eautK0odE7Q" />
         <Testimonial
           redirectDS={true}
           heading=""
@@ -249,16 +252,13 @@ function Blockchain({}) {
           deskImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Tools-Logo.png"
           mobImage="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Mobile-Tools-Covered.png"
         />
-        <Certificate
-          threeCertificate={true}
-          data={DataScienceCourseData[0].Certificate}
-        />
+        <Certificate data={DataScienceCourseData[0].Certificate} />
         <FeeSection
           Fee="₹ 99,000"
-          FeeEmi="₹ 9,735/"
-          FeeHeading="Program Fee and Financing"
-          FeeContent1="0% interest rate"
-          FeeContent2="No cost EMI"
+          FeeEmi="₹ 9,735/month"
+          WeekdayDate="DEC 14th"
+          WeekendDate="NOV 5th"
+          WeekdayTime="08:00 PM - 10:00 PM"
           FeeContent3="Flexible payment"
           FeeContent4="Easy loan procedure"
           FeeContent5="15 days refund policy"
@@ -278,6 +278,9 @@ function Blockchain({}) {
         )} */}
 
         <NewProjectSection
+          dataScience={true}
+          titleCourse="Advanced Data Science and AI Program with domain specialization"
+          brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Masters+in+CS+Data+Science+%26+AI.pdf"
           projectSection={DataScienceCourseData[0].projectSection}
         />
 

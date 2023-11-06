@@ -64,7 +64,7 @@ function WhyLearnbay({ idss }) {
               <IoRocketOutline
                 className={projectInno ? Styles.Activeicon : Styles.icon}
               />
-              Globally Recognised Degree
+              Project Innovation Lab
             </p>
           </div>
           <div
@@ -79,7 +79,7 @@ function WhyLearnbay({ idss }) {
               <FaUserShield
                 className={projectCert ? Styles.Activeicon : Styles.icon}
               />
-              Project Innovation Lab
+             Project Certification
             </p>
           </div>
           <div
@@ -268,11 +268,11 @@ function WhyLearnbay({ idss }) {
               <div className={Styles.mainCont}>
                 <p className={Styles.para}>
                   <FaCheckCircle className={Styles.checkCircle} />
-                  ECTS accreditation recognized  across more than 60 countries.
+                  Work in an industry like environment and gain practical hands-on experience
                 </p>
                 <p className={Styles.para}>
                   <FaCheckCircle className={Styles.checkCircle} />
-                  Equivalent to a Master's Degree in the US
+                  Gain the work experience of data scientist with dedicated project mentors from industry.
                 </p>
               </div>
             </div>
@@ -284,7 +284,7 @@ function WhyLearnbay({ idss }) {
         {projectCert ? (
           <div className={`${Styles.RightSideCert} imgWrapper`}>
             <Image
-              src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/masters-certificate.webp"
+              src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/Certification-min.webp"
               loading="lazy"
               width="350"
               height="212"

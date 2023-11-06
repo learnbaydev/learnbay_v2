@@ -58,30 +58,28 @@ function FirstSection({
           <span className={styles.topSpan}>Learnbay Excelvarsity</span>
           <div className={styles.DivContent}>
             <h1 className={styles.h1}>
-              Masters in CS:
+            Masters in Computer Science:
               <br />
               <span style={{ color: "#F99600" }}>Data Science and AI</span>
             </h1>
-            <div className={styles.paraCollab}>
-              <Image
-                src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/coursePage/woolf-univer.webp"
-                alt="woolf-university"
-                width="306"
-                height="32"
-              />
-            </div>
           </div>
-          <div className={styles.HeadImage}>
-            <Image
-              src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/DSMasterHeader.webp"
-              alt="woolf-university"
-              width="367"
-              height="214"
-            />
-          </div>
-          <div className={styles.ButtonDiv} onClick={popupShow}>
-            <Button className={styles.Btn} text="START YOUR APPLICATION" />
-          </div>
+          <div className={styles.paraCollab}>
+                <Image
+                  src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/coursePage/woolf-univer.webp"
+                  alt="woolf-university"
+                  width="180"
+                  height="20"
+                />
+              </div>
+              <div className={styles.boxDivGreen}>
+                <p className={styles.special}>SPECIALIZATION IN</p>
+                <div className={styles.iconPara}>
+                  <p className={styles.boxGreen}>Data Science & Analytics</p>
+                  <p className={styles.boxGreen}>
+                    Artificial Intelligence & ML
+                  </p>
+                </div>
+              </div>
           <div className={styles.FormDiv}>
             <p className={styles.NormalPForm}>
               Interested in{" "}

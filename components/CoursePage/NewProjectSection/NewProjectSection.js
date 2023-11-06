@@ -1,14 +1,17 @@
-import React from "react";
 import Styles from "./NewProjectSection.module.css";
 import Image from "next/image";
-import { useEffect, useState } from "react";
+import React, { useState, useEffect, lazy, Suspense } from "react";
+import dynamic from "next/dynamic";
 import { Pagination } from "swiper";
 import "swiper/css";
 import "swiper/css/free-mode";
+const Button = dynamic(() => import("../../Global/Button/Button"));
 import "swiper/css/scrollbar";
 import { Swiper, SwiperSlide } from "swiper/react";
+const Popup = dynamic(() => import("../../Popup/Popup"));
+const Form = lazy(() => import("../../Form/Form"));
 
-function NewProjectSection({ projectSection }) {
+function NewProjectSection({ projectSection, dataScience, titleCourse, brochureLink }) {
   const [mobile, setMobile] = useState(false);
   useEffect(() => {
     let width = window.innerWidth;
@@ -16,8 +19,37 @@ function NewProjectSection({ projectSection }) {
       setMobile(true);
     }
   }, []);
+  const [popups, setPopups] = useState(false);
+  const popupShow = () => {
+    setPopups(true);
+  };
   return (
     <section className={Styles.container}>
+      <Popup
+          trigger={popups}
+          setTrigger={setPopups}
+          className="popupModal"
+          downloadBrochure
+        >
+          <div className="leftPopup">
+            <div
+              className="whiteP"
+              style={{ width: "340px", height: "400px" }}
+            ></div>
+          </div>
+          <div className="RightPopup">
+            <h5>Download Brochure</h5>
+            <Suspense>
+              <Form
+                dataScience={dataScience}
+                downloadBrochure
+                upSkillingHide={true}
+                titleCourse={titleCourse}
+                brochureLink={brochureLink}
+              />
+            </Suspense>
+          </div>
+        </Popup>
       <h4>Industry Projects</h4>
       <p>
         Curriculum is specifically engineered to meet the expectations of
@@ -70,9 +102,9 @@ function NewProjectSection({ projectSection }) {
                 <div className={Styles.Box}>
                   <div className={Styles.boxGreen}>{data.duration}</div>
                   <div className={Styles.content}>
-                    <div>
+                    <div className={Styles.DivImg}>
                       <Image
-                        src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/image+170.png"
+                        src={img}
                         loading="lazy"
                         width="215"
                         height="79"
@@ -96,10 +128,10 @@ function NewProjectSection({ projectSection }) {
                     </p>
                     <div className={Styles.ImgBox}>
                       <Image
-                        src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/iconProject.webp"
+                        src={toolImg}
                         loading="lazy"
                         width="420"
-                        height="50"
+                        height="70"
                         alt="microsoft"
                       />
                     </div>
@@ -114,6 +146,9 @@ function NewProjectSection({ projectSection }) {
 
         </Swiper>
       </div>
+      <div onClick={popupShow} className={Styles.buttonDiv}>
+                  <Button bannerButton={true} text="DOWNLOAD BROCHURE" />
+                </div>
     </section>
   );
 }

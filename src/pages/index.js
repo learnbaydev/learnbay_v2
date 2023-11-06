@@ -59,7 +59,7 @@ const ProjectSection = dynamic(() =>
   import("../../components/HomePage/ProjectSection/ProjectSection")
 );
 const GetHire = dynamic (()=>
-import ("../../components/HomePage/GetHire/GetHire"))
+import ("../../components/MastersCourse/GetHire/GetHire"))
 
 // const ArticleSection = dynamic(() =>
 //   import("../../components/HomePage/Project/ArticleSection")
@@ -103,7 +103,7 @@ export default function Home() {
       <WhyLearnbay idss="bfl64ANfSV0" />
       <ProjectSection idss="bfl64ANfSV0" />
       <GetHire/>
-      <TrainerSection idss="bfl64ANfSV0" />
+      <TrainerSection idss="eautK0odE7Q" />
       <Testimonial
         redirectDS={true}
         heading=""

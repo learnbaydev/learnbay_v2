@@ -145,16 +145,16 @@ const Blockchain = () => {
     <>
       <Head>
         <title>
-          Artificial Intelligence and Data Science Course - Learnbay
+        Masters in Computer Science: Data Science and AI
         </title>
         <meta
           name="description"
-          content="Upskill yourself with cutting edge Artificial Intelligence and Data Science Skills, Techniques by enrolling into the Learnbay's Advanced Data Science Course."
+          content="Upskill yourself with cutting edge Masters in Computer Science: Data Science and AI Skills, Techniques by enrolling into the Learnbay's Advanced Data Science Course."
         />
         <meta name="robots" content="index, follow" />
         <meta
           name="keywords"
-          content="Advanced Data Science and AI Program with domain specialization"
+          content="Masters in Computer Science: Data Science and AI"
         />
         <link
           rel="icon"
@@ -162,7 +162,7 @@ const Blockchain = () => {
         />
         <link
           rel="canonical"
-          href="https://www.learnbay.co/datascience/advance-data-science-certification-courses"
+          href="https://www.learnbay.co/datascience/data-science-and-ai-masters-in-cs"
         />
       </Head>
       <main>
@@ -170,16 +170,17 @@ const Blockchain = () => {
         <FirstSection
           ThirdTyped="Live Interactive Classes"
           dataScience={true}
-          titleCourse="Advanced Data Science and AI Program with domain specialization"
+          dataScienceCounselling={true}
+          titleCourse="Masters in Computer Science: Data Science and AI"
           cityParaCont="Elevate your tech career with our Master's programs"
-          brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Advance+Data+Science+and+AI+Certification+Program+Learnbay.pdf"
+          brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Masters+in+CS+Data+Science+%26+AI.pdf"
           FirstRightImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/coursepageB.webp"
           firstToparaImg="with domain specialization"
           firstHeading="Advanced Data Science and AI Program"
         />
         <MasterSecondSection />
         <JobAbroad />
-        <SecondNavbar />
+        <SecondNavbar dataScienceCounselling={true}/>
         <TrainerSection idss="eautK0odE7Q" />
         <Testimonial
           redirectDS={true}
@@ -187,7 +188,7 @@ const Blockchain = () => {
         />
         <WhyLearnbay idss="bfl64ANfSV0" />
         <GetHire />
-        <ContactCounsellor />
+        <ContactCounsellor dataScienceCounselling={true}/>
         <SyllabusNew
           syllabusHead={DataScienceMastersinCS[0].syllabusHead}
           masterSyllabus={DataScienceMastersinCS[0].masterSyllabus}
@@ -197,7 +198,7 @@ const Blockchain = () => {
           dataScienceCounselling={true}
           dataScience={true}
           titleCourse="Advanced Data Science and AI Program with domain specialization"
-          brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Advance+Data+Science+and+AI+Certification+Program+Learnbay.pdf"
+          brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Masters+in+CS+Data+Science+%26+AI.pdf"
           syllabus={DataScienceMastersinCS[0].syllabus}
           syllabusDesc={DataScienceMastersinCS[0].syllabusDesc}
           popupHead={DataScienceMastersinCS[0].popupHead}
@@ -209,15 +210,15 @@ const Blockchain = () => {
           mobImage="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Mobile-Tools-Covered.png"
         />
         <Certificate
-          twoCertificate={true}
           data={DataScienceMastersinCS[0].Certificate}
         />
         <FeeSection
-          Fee="₹ 99,000"
-          FeeEmi="₹ 9,735/"
-          FeeHeading="Program Fee and Financing"
-          FeeContent1="0% interest rate"
-          FeeContent2="No cost EMI"
+          Fee="₹ 2,50,000"
+          FeeEmi="12,292/month."
+          WeekdayDate="DEC 14th"
+          WeekendDate="NOV 5th"
+          WeekdayTime="08:00 PM - 10:00 PM"
+          CutFee="₹ 3,25,000/-"
           FeeContent3="Flexible payment"
           FeeContent4="Easy loan procedure"
           FeeContent5="15 days refund policy"
@@ -228,6 +229,9 @@ const Blockchain = () => {
         <SliderTabs />
         <PlacementCall />
         <NewProjectSection
+      dataScience={true}
+      titleCourse="Advanced Data Science and AI Program with domain specialization"
+          brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Masters+in+CS+Data+Science+%26+AI.pdf"
           projectSection={DataScienceMastersinCS[0].projectSection}
         />
         {/* <FAQNew FAQNewData={DataScienceMastersinCS[0].faq} /> */}

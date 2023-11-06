@@ -138,7 +138,7 @@ function FirstSection({
               ""
             ) : (
               <div onClick={videoSHow}>
-                <Button whiteBgButton={true} text="ENQUIRE NOW" />
+                <Button whiteBgButton={true} text="INTRO VIDEO" />
               </div>
             )}
           </div>
@@ -186,7 +186,7 @@ function FirstSection({
           ""
         ) : (
           <div onClick={videoSHow}>
-            <Button whiteBgButton={true} text="ENQUIRE NOW" />
+            <Button whiteBgButton={true} text="INTRO VIDEO" />
           </div>
         )}
       </div>

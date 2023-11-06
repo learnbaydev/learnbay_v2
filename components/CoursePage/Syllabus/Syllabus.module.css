@@ -370,7 +370,7 @@ line-height: 126.5%;
   }
 
   .ASlide {
-    padding: 10px 0px 10px 30px !important;
+    padding: 10px 0px 10px 10px !important;
   }
 
   .slide {
@@ -422,14 +422,14 @@ line-height: 126.5%;
     text-align: center;
   }
   .topBar {
-    padding: 40px 10px 20px 10px;
+    padding: 20px 10px 20px 10px;
   }
 }
 @media (max-width: 481px) {
   .Syllabus {
     display: grid;
     grid-template-columns: auto;
-    margin: 40px 20px 0px 20px;
+    margin: 20px 20px 0px 20px;
     gap: 0px;
   }
 

@@ -9,10 +9,7 @@ import styles from "./ThirdSection.module.css";
 const ThirdSection = ({
   leftImage,
   ThirdSectionData,
-
-
   dataScience,
- 
   dataScienceCounselling,
 }) => {
   const [popups, setPopups] = useState(false);
@@ -43,7 +40,7 @@ const ThirdSection = ({
         <div className="RightPopup">
           <h5>Apply For Counselling</h5>
           <Form
-            dataScience={dataScience}
+            dataScience={true}
             dataScienceCounselling={dataScienceCounselling}
             upSkillingHide={true}
             titleCourse={titleCourse}
@@ -63,8 +60,6 @@ const ThirdSection = ({
         <div className={styles.boxWrap}>
             {ThirdSectionData.map((data, index) => {
               const { icon, heading, para, brochureLink } = data;
-
-              console.log("@@@",brochureLink)
               return (
                 <div className={styles.leftSide} key={index}>
                   <div className={styles.boxIcon}>
@@ -88,6 +83,8 @@ const ThirdSection = ({
                         passIcon={<FaDownload className="bIconS" />}
                       />
                     </a>
+
+          
                   </div>
                 </div>
               );

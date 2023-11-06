@@ -53,7 +53,7 @@
   border: 3px solid rgba(0, 114, 188, 0.32);
   background: #f5fbff;
   padding: 30px 50px;
-  height: 430px;
+  height: 470px;
   justify-content: center;
 }
 
@@ -179,13 +179,14 @@
   font-size: 18px;
   margin: 0;
   color: #686565;
-  display: flex;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 3% 95%;
   gap: 10px;
 }
 
 .checkCircle {
   color: #20a898;
+  margin-top: 6px;
 }
 
 .secondDiv {
@@ -255,6 +256,11 @@
   .container {
     padding: 10px;
     margin-bottom: 40px;
+  }
+
+  .para {
+    font-size: 16px;
+    grid-template-columns: 4% 92%;
   }
   .h4 {
     font-size: 24px;

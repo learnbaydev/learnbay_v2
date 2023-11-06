@@ -91,6 +91,11 @@
     box-shadow: 0px 0px 2.80102px 0px rgba(0, 0, 0, 0.15) inset;
     align-items: center;
     text-align: center;
+    display: none;
+  }
+
+  .innerBoxHide {
+    display: none;
   }
 
   .switch p {
@@ -109,6 +114,12 @@
     /* padding: 17px 20px 0px 36px; */
     padding-bottom: 4px;
     padding-top: 10px;
+    padding: 10px;
+  }
+
+  .topRatedImg img {
+    width: 30px;
+    height: auto;
   }
 
   .container {

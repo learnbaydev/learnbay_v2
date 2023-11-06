@@ -14,13 +14,12 @@
 }
 
 .special {
-  color: #FFF;
+  color: #fff;
   font-size: 17px;
   font-weight: 700;
   line-height: 127.182%;
   margin: 0;
 }
-
 
 .FormDiv span {
   color: #0072bc;
@@ -61,19 +60,19 @@
 
 .formBox {
   border-radius: 0px 5.329px 0px 7.528px;
-background: rgba(237, 187, 82, 0.08);
-padding: 10px 20px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    color: #DCA227;
-    width: fit-content;
-    justify-content:right;
-    font-size: 10px;
+  background: rgba(237, 187, 82, 0.08);
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #dca227;
+  width: fit-content;
+  justify-content: right;
+  font-size: 10px;
 }
 
 .iconUser {
-  background: #EDBB52;
+  background: #edbb52;
   border-radius: 50px;
   font-size: 21px;
   padding: 5px;
@@ -87,10 +86,10 @@ padding: 10px 20px;
 
 .h1 {
   color: #fff;
-font-size: 40px;
-font-style: normal;
-font-weight: 800;
-margin: 16px 0px 45px 0px;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 800;
+  margin: 16px 0px 45px 0px;
 }
 
 .paraCollab p {
@@ -101,7 +100,7 @@ margin: 16px 0px 45px 0px;
 
 .FormDiv {
   border-radius: 4.674px;
-  background: #FFF;
+  background: #fff;
   box-shadow: 0px 0px 3.73957px 0px rgba(0, 0, 0, 0.25);
 }
 
@@ -117,19 +116,19 @@ margin: 16px 0px 45px 0px;
 
 .iconPara p {
   border-radius: 7px;
-  border: 2px solid rgba(255, 255, 255, 0.40);
-  background: #0C8F00;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  background: #0c8f00;
   padding: 8px 20px;
   font-size: 16px;
-  color: #FFF;
-font-weight: 600;
-line-height: 127.182%; 
-margin-top: 15px;
+  color: #fff;
+  font-weight: 600;
+  line-height: 127.182%;
+  margin-top: 15px;
 }
 
 .iconCheck {
-  color: #20A898;;
-} 
+  color: #20a898;
+}
 
 .BtnDiv {
   display: flex;
@@ -137,22 +136,33 @@ margin-top: 15px;
   margin-top: 50px;
 }
 
-
 @media (max-width: 481px) {
   .container {
-    margin-top: 80px;
-    background-color: #fff;
-    padding: 0px;
-    background-image: none;
+    margin-top: 47px;
+    padding: 20px 0px;
+    background-image: url("https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/Masters+header+BG+Mobile+View+(1).webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
   }
-  
+
   .topSpan {
     color: #fff;
-    padding: 5px 14px 5px 14px;
+    font-weight: 500;
     font-size: 16px;
-    border-radius: 0px 3px 3px 0px;
-  background: #242424;
-  } 
+    margin: 0;
+    text-align: left;
+    margin: 10px 0px 10px 0px;
+    line-height: 30px;
+    margin: 0;
+    width: fit-content;
+    padding-left: 20px;
+    background: linear-gradient(
+      90deg,
+      #0072bc 3.52%,
+      rgba(52, 52, 52, 0) 103.89%
+    );
+  }
 
   .ptopC {
     justify-content: center;
@@ -162,73 +172,91 @@ margin-top: 15px;
     margin: 0;
     padding: 0px 20px;
   }
-  
+
   .DivContent {
-    margin: 14px 14px;
+    margin: 14px 20px;
     display: block;
   }
-  
+
+  .DivContent span {
+    font-size: 30px;
+  }
+
   .h1 {
-    color: #000;
-  font-size: 32px;
-  font-style: normal;
-  font-weight: 800;
+    /* color: #000; */
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 800;
+    margin: 16px 0px 26px 0px;
   }
-  
+
   .paraCollab {
-    border: 1px solid #f9960040;
-    width: fit-content;
-    padding: 5px 12px 5px 15px;
-    margin: 15px 0px 40px 0px;
-    border-radius: 4px;
+    margin: 0px 0px 30px 20px;
   }
-  
+
+  .iconPara p {
+    padding: 8px 14px;
+    font-size: 12px;
+  }
+
+  .boxDivGreen {
+    margin: 0px 20px;
+  }
+
+  .special {
+    font-size: 14px;
+  }
+
   .paraCollab p {
     margin: 0px 0px 10px 0px;
     color: #656464;
     font-size: 12px;
   }
-  
-  .HeadImage, .ButtonDiv {
+
+  .HeadImage,
+  .ButtonDiv {
     display: flex;
     justify-content: center;
   }
-  
+
   .ButtonDiv {
-    background: radial-gradient(1145.57% 49.93% at 49.87% 59.76%, #CAC8C8 0%, rgba(221, 221, 221, 0.00) 100%);
+    background: radial-gradient(
+      1145.57% 49.93% at 49.87% 59.76%,
+      #cac8c8 0%,
+      rgba(221, 221, 221, 0) 100%
+    );
     padding: 20px 0px;
   }
-  
+
   .ButtonDiv Button {
-    color: #FFF;
-  font-size: 14px !important;
-  font-style: normal;
-  font-weight: 500;
-  letter-spacing: 0.975px;
-  padding: 15px 26px;
+    color: #fff;
+    font-size: 14px !important;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 0.975px;
+    padding: 15px 26px;
   }
-  
+
   .FormDiv {
     background: #fff;
     padding: 24px 20px 30px 20px;
     border-radius: 10px;
-    margin: 20px;
+    margin: 40px 20px 20px 20px;
     border-radius: 6.26px;
-  border-bottom: 5px solid #F99600;
-  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.45);
+    border-bottom: 5px solid #f99600;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.45);
   }
-  
+
   .NormalPForm {
     color: #555;
-  font-size: 20px;
-  font-weight: 500;
-  margin: 0;
-  margin-bottom: 30px;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0;
+    margin-bottom: 30px;
   }
-  
+
   .span {
-    color: #0072BC;
-  font-weight: 700;
+    color: #0072bc;
+    font-weight: 700;
   }
 }
-
