@@ -195,7 +195,7 @@ function Blockchain({}) {
           FirstRightImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/dahead.webp"
           firstToparaImg=""
           firstHeading="Data Analytics Certification Program"
-          firstTopPara="Upskill yourself to the top within 6 months with curricullum designed by industry expert"
+          firstTopPara="Curriculum Inclusive of Gen-AI"
           idss="bfl64ANfSV0"
         />
         <SecondSection
@@ -257,10 +257,11 @@ function Blockchain({}) {
         <Certificate data={DADataScienceCourseData[0].Certificate} />
         <FeeSection
           Fee="₹ 80,000"
-          FeeEmi="₹ 7,866/month"
-          WeekdayDate="DEC 14th"
-          WeekendDate="NOV 5th"
-          WeekdayTime="08:00 PM - 10:00 PM"
+          FeeEmi="₹ 5,244/month"
+          WeekdayDate="NOV 17th"
+          WeekendDate="NOV 26th"
+          WeekendTime="09:30 AM - 1:00 PM"
+          WeekdayTime="08:00 AM - 10:00 AM"
           FeeContent3="Flexible payment"
           FeeContent4="Easy loan procedure"
           FeeContent5="15 days refund policy"

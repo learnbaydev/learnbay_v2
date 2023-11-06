@@ -1,11 +1,10 @@
 import React from 'react'
 import Styles from './ReviewSwitch.module.css'
 import Image from "next/image";
-
 function ReviewSwitch() {
   return (
    <section className={Styles.container}>
-    <h4>Course Report review</h4>
+    <h4>Switchup review</h4>
     <div className={Styles.BoxDiv}>
         <div className="imgWrapper">
         <Image
@@ -32,5 +31,4 @@ function ReviewSwitch() {
    </section>
   )
 }
-
 export default ReviewSwitch

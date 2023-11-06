@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef, lazy, Suspense } from "react";
 const Form = lazy(() => import("../../Form/Form"));
 import styles from "./FirstSection.module.css";
-import { FaDownload, FaPlayCircle } from "react-icons/fa";
+import { FaDownload, FaPlay, FaPlayCircle } from "react-icons/fa";
 // import Form from "../../Form/Form";
 import Image from "next/image";
 // import Typed from "typed.js";
@@ -138,7 +138,7 @@ function FirstSection({
               ""
             ) : (
               <div onClick={videoSHow}>
-                <Button whiteBgButton={true} text="INTRO VIDEO" />
+                <Button whiteBgButton={true} text="INTRO VIDEO" passIcon={<FaPlay className="bIconS" fontSize="14px" /> } />
               </div>
             )}
           </div>
@@ -186,7 +186,7 @@ function FirstSection({
           ""
         ) : (
           <div onClick={videoSHow}>
-            <Button whiteBgButton={true} text="INTRO VIDEO" />
+            <Button whiteBgButton={true} text="INTRO VIDEO"  passIcon={<FaPlay className="bIconS" fontSize="14px" /> } />
           </div>
         )}
       </div>

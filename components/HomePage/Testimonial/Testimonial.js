@@ -9,11 +9,9 @@ import { AiOutlineRise } from "react-icons/ai";
 import dynamic from "next/dynamic";
 const ReviewPopup = dynamic(() => import("../ReviewPopup/ReviewPopup"));
 import VideoPopup from "../../Global/VideoPopup/VideoPopup";
-
 import { Pagination, Navigation } from "swiper";
 import "swiper/css/scrollbar";
 import { Scrollbar } from "swiper";
-
 function Testimonial({ redirectDS, para, heading, Testimonial }) {
   const [mobile, setMobile] = useState(false);
   const [vId, setVId] = useState("");
@@ -54,7 +52,6 @@ function Testimonial({ redirectDS, para, heading, Testimonial }) {
       />
       <h4 className={styles.h1}>{heading}</h4>
       {para === undefined ? "" : <p className={styles.ptop}>{para}</p>}
-
       {/* <div className={styles.line}>
         <img
           src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/alumni-arrow.png"
@@ -97,7 +94,6 @@ function Testimonial({ redirectDS, para, heading, Testimonial }) {
                     complogo,
                     statLogo,
                   } = data;
-
                   return (
                     <SwiperSlide className={styles.slide} key={index}>
                       <div className={styles.proImgWrap}>
@@ -118,7 +114,6 @@ function Testimonial({ redirectDS, para, heading, Testimonial }) {
                             <h3>{name}</h3>
                             <p>{working}</p>
                           </div>
-
                           <div className={styles.nameHike}>
                             <p>
                               {statLogo}
@@ -126,7 +121,6 @@ function Testimonial({ redirectDS, para, heading, Testimonial }) {
                             </p>
                           </div>
                         </div>
-
                         <div className={styles.paraDiv}>
                           <p className={styles.para}>
                             {sDesc}
@@ -154,7 +148,6 @@ function Testimonial({ redirectDS, para, heading, Testimonial }) {
                             )}
                           </p>
                         </div>
-
                         {/* {redirectDS ? (
                           <div className={styles.imgHike} id={id}>
                             <div
@@ -220,5 +213,4 @@ function Testimonial({ redirectDS, para, heading, Testimonial }) {
     </div>
   );
 }
-
 export default Testimonial;

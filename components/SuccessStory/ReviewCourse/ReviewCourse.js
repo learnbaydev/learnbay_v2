@@ -1,7 +1,6 @@
 import React from 'react'
 import Styles from './ReviewCourse.module.css'
 import Image from "next/image";
-
 function ReviewCourse() {
   return (
    <section className={Styles.container}>
@@ -25,5 +24,4 @@ function ReviewCourse() {
    </section>
   )
 }
-
-export default ReviewCourse
+export default ReviewCourse;

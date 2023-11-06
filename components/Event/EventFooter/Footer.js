@@ -24,12 +24,12 @@ const Footerfsd = () => {
       <div className={styles.FooterDiv1}>
         <div className={styles.FooterDivInner}>
           <Image
-            src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/logo-light.png"
+            src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/white-logo.webp"
             alt="Learnbay"
             quality={100}
             objectFit="contain"
             width="230"
-            height="60"
+            height="100"
           />
           <p className={styles.FooterInnerli}>
             Enroll now on DSA and System Design Webinars led by top Industry

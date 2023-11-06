@@ -1,10 +1,10 @@
+import { FaUserGraduate } from "react-icons/fa";
+import { GiStairsGoal } from "react-icons/gi";
 import {
   MdOutlineCastForEducation,
   MdOutlineWorkOutline,
 } from "react-icons/md";
 import styles from "../components/CoursePage/WhoProgram/ThirdSection.module.css";
-import { FaUserGraduate } from "react-icons/fa";
-import { GiStairsGoal } from "react-icons/gi";
 
 export const DataScienceMastersinCS = [
   {
@@ -494,9 +494,8 @@ export const DataScienceMastersinCS = [
       },
     ],
     Certificate: {
-      degreeCertificate:
-        {
-          id: 3,
+      degreeCertificate: {
+        id: 3,
         img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/certificate/degree-woolf.webp",
         title: "Globally recognized degree",
         para: [
@@ -504,10 +503,10 @@ export const DataScienceMastersinCS = [
           "Validate your Data Science and AI skills with IBM Course Completion Certificate.",
           "Get acknowledged in IT sector by adding IBM Certificate to your profile.",
         ],
-        },
+      },
       projectCertificate: {
         id: 1,
-        img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/masters-certificate.webp",
+        img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/Certification-min.webp",
         title: "Capstone Project Certificate from IBM",
         para: [
           "Globally recognized IBM certification based on industrial-level projects.",
