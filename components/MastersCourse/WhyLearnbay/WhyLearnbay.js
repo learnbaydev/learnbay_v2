@@ -245,9 +245,9 @@ function WhyLearnbay({ idss }) {
         {projectInno ? (
           <div className={Styles.RightSide}>
             <div className={Styles.firstBox}>
-              <div className="imgWrapper">
+              <div className={`${Styles.topImg} imgWrapper`}>
                 <Image
-                  src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/masterPage/whylearn1.webp"
+                  src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/certificate/degree-woolf.webp"
                   loading="lazy"
                   width="200"
                   height="212"
@@ -259,8 +259,9 @@ function WhyLearnbay({ idss }) {
                 <FaRocket className={Styles.Icon} />
                 <p className={Styles.head}>35K+</p>
                 <p className={Styles.Para}>
-                  Mentors help you select the domain & guide you through.
+                Highest Salary Hike
                 </p>
+                <p style={{color:"#fff", margin:"10px 0px 0px"}}>Get read to crack highest paying jobs with mokcup interviews led by industry experst</p>
               </div>
             </div>
             <div className={Styles.left}>
