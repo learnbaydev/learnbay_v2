@@ -21,7 +21,7 @@ const Course = ({
   radio,
   dataScienceCounselling,
   organicADS,
-  newDesign,
+  dataScienceGeneric,
 }) => {
   const [mobile, setMobile] = useState(false);
   const [value, setValue] = useState(3.68);
@@ -98,6 +98,7 @@ const Course = ({
             brochureLink={brochureLinks}
             dataScience={dataScience}
             dataScienceCounselling={dataScienceCounselling}
+            dataScienceGeneric={dataScienceGeneric}
             radio={radio}
             downloadBrochure
             upSkillingHide={true}

@@ -20,7 +20,7 @@ const Navbar = ({
   careerForm,
   dataScienceCounselling,
   adPage,
-  organicADS,
+  dataScienceGeneric,
 }) => {
   const [icon, setIcon] = useState(false);
   const [show, setShow] = useState(false);
@@ -66,6 +66,7 @@ const Navbar = ({
               radio={radio}
               fullStack={fullStack}
               dataScience={dataScience}
+              dataScienceGeneric={dataScienceGeneric}
               dataScienceCounselling={dataScienceCounselling}
               upSkillingHide={true}
             />

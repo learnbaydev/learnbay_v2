@@ -70,6 +70,7 @@ export default function Home() {
         radio={true}
         organicADS={true}
         newDesign={true}
+        dataScienceGeneric={true}
       />
       <Switch organicADS={true} />
       <Testimonial />
