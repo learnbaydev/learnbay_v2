@@ -2,7 +2,7 @@
 
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination } from "swiper";
+import { Pagination, Autoplay } from "swiper";
 import "swiper/css";
 import styles from "./ToolsCovered.module.css";
 import Image from "next/image";
@@ -23,6 +23,11 @@ const ToolsCovered = () => {
       <p className={styles.infop}>Programming Languages & Tools Covered</p>
       <div className={styles.sliderContainer}>
         <Swiper
+        loop={true}
+        autoplay={{
+          delay: 1500,
+          disableOnInteraction: false,
+        }}
           pagination={{
             dynamicBullets: true,
             clickable: true,
@@ -39,7 +44,7 @@ const ToolsCovered = () => {
               spaceBetween: 10,
             },
           }}
-          modules={[Pagination]}
+          modules={[ Pagination, Autoplay]}
           className="mySwiper"
          
         >

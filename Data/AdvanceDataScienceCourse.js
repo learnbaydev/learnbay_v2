@@ -214,7 +214,7 @@ export const DataScienceCourseData = [
       },
       {
         id: 1,
-        icon: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/delivery-truck.gif",
+        icon: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/manufacturing.gif",
         heading: "Manufacturing",
         para: "For production manager, quality control inspector and engineers.",
       },
@@ -426,29 +426,32 @@ export const DataScienceCourseData = [
     Certificate: {
       degreeCertificate: {
         id: 1,
-        img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Certificate-blue.png",
+        img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/ibm-min.webp",
         title: "Course Completion Certificate from IBM",
         para: [
           "Complete your training with the internationally recognized certificate.",
+          "Validate your Data Science and AI skills with IBM Course Completion Certificate.",
+          "Get acknowledged in IT sector by adding IBM Certificate to your profile.",
         ],
       },
       microCertificate: {
-        id: 3,
-        img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Microsoft-certificate-data.png",
-        title: "Certification in Collaboration with Microsoft",
-        para: [
-          "Industry-certified Microsoft certificates",
-          "Gain expertise & get recognized worldwide",
-        ],
-      },
-      projectCertificate: {
-        id: 3,
-        img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Microsoft-certificate-data.png",
+        id: 2,
+        img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/Azure%2BAI%2BFundamentals.png",
         title: "Certification in Collaboration with Microsoft",
         para: [
           "Industry-certified Microsoft certificates",
           "Gain expertise & get recognized worldwide",
           "Boost job opportunities and earnings with Microsoft’s certification",
+        ],
+      },
+      projectCertificate: {
+        id: 3,
+        img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/Certification-min.webp",
+        title: "Capstone Project Certificate from IBM",
+        para: [
+          "Globally recognized IBM certification based on industrial-level projects.",
+          "Work on 1 capstone project certified by IBM.",
+          "Individualized project experience with easy access to premium job opportunities.",
         ],
       },
     },

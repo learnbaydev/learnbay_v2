@@ -91,7 +91,7 @@ const TrainerSection = dynamic(() =>
 );
 // import SecondNavbar from "../../../components/CoursePage/SecondNavbar/SecondNavbar";
 const WhyLearnbay = dynamic(() =>
-  import("../../../components/MastersCourse/WhyLearnbay/WhyLearnbay")
+  import("../../../components/CoursePage/WhyLearnbay/WhyLearnbay")
 );
 
 // const Gethire = dynamic(() =>

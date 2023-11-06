@@ -16,6 +16,7 @@ const Certificate = ({
       <CertificateTabAdvance
         degreeCertificate={data.degreeCertificate}
         projectCertificate={data.projectCertificate}
+        microCertificate={data.microCertificate}
     
         data={data}
       />

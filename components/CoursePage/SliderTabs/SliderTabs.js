@@ -112,23 +112,20 @@ const SliderTabs = ({ dataScience, dataScienceCounselling }) => {
                 <div className={styles.mainCont}>
                   <BsCheckCircle className={styles.checkCircle} />
                   <p className={styles.para}>
-                    Elevate Your Profile: Boost your career prospects with IBM's
-                    Course Completion Certificate.
+                  Unleash your career potential with unlimited job access, interview support, and profile review.
                   </p>
                 </div>
                 <div className={styles.mainCont}>
                   <BsCheckCircle className={styles.checkCircle} />
                   <p className={styles.para}>
-                    Globally Recognised: Secure your future with an
-                    internationally acclaimed IBM certification.
+                  Receive unlimited interview calls from a diverse pool of interested employers/recruiters until you successfully secure a job.
                   </p>
                 </div>
 
                 <div className={styles.mainCont}>
                   <BsCheckCircle className={styles.checkCircle} />
                   <p className={styles.para}>
-                    Globally Recognised: Secure your future with an
-                    internationally acclaimed IBM certification.
+                  Find the best suited job role that meets your career and salary expectations.
                   </p>
                 </div>
               </div>
@@ -315,23 +312,20 @@ const SliderTabs = ({ dataScience, dataScienceCounselling }) => {
                 <div className={styles.mainCont}>
                   <BsCheckCircle className={styles.checkCircle} />
                   <p className={styles.para}>
-                    Elevate Your Profile: Boost your career prospects with IBM's
-                    Course Completion Certificate.
+                  Unleash your career potential with unlimited job access, interview support, and profile review.
                   </p>
                 </div>
                 <div className={styles.mainCont}>
                   <BsCheckCircle className={styles.checkCircle} />
                   <p className={styles.para}>
-                    Globally Recognised: Secure your future with an
-                    internationally acclaimed IBM certification.
+                  Receive unlimited interview calls from a diverse pool of interested employers/recruiters until you successfully secure a job.
                   </p>
                 </div>
 
                 <div className={styles.mainCont}>
                   <BsCheckCircle className={styles.checkCircle} />
                   <p className={styles.para}>
-                    Globally Recognised: Secure your future with an
-                    internationally acclaimed IBM certification.
+                  Find the best suited job role that meets your career and salary expectations.
                   </p>
                 </div>
               </div>
