@@ -1242,6 +1242,78 @@ const nextConfig = {
         destination: "/datascience/data-science-ai-masters-program",
         permanent: true,
       },
+      {
+        source:
+          "/datascience/best-data-science-courses-in-india",
+        destination: "/datascience/advance-data-science-certification-courses",
+        permanent: true,
+      },
+      {
+        source:
+          "/datascience/data-science-ai-for-managers",
+        destination: "/datascience/advance-data-science-certification-courses",
+        permanent: true,
+      },
+      {
+        source:
+          "/datascience/data-science-ai-masters-program",
+        destination: "/datascience/data-science-and-ai-masters-in-cs",
+        permanent: true,
+      },
+      {
+        source:
+          "/datascience/data-science-certification-courses",
+        destination: "/datascience/data-analytics-certification-course",
+        permanent: true,
+      },
+      {
+        source:
+          "/datascience/data-science-for-bfsi-professional",
+        destination: "/datascience/advance-data-science-certification-courses",
+        permanent: true,
+      },
+      {
+        source:
+          "/datascience/hr-analytics",
+        destination: "/datascience/business-analytics-certification-course",
+        permanent: true,
+      },
+      {
+        source:
+          "/datascience/marketing-analytics",
+        destination: "/datascience/business-analytics-certification-course",
+        permanent: true,
+      },
+      {
+        source:
+          "/fullstack/dsa-system-design",
+        destination: "/fullstack/full-stack-software-development-program",
+        permanent: true,
+      },
+      {
+        source:
+          "/fullstack/dsa-system-design",
+        destination: "/fullstack/full-stack-software-development-program",
+        permanent: true,
+      },
+      {
+        source:
+          "/fullstack/software-development-program-for-freshers",
+        destination: "/fullstack/full-stack-software-development-program",
+        permanent: true,
+      },
+      {
+        source:
+          "/fullstack/software-development-program-with-specialization-in-blockchain",
+        destination: "/fullstack/full-stack-software-development-program",
+        permanent: true,
+      },
+      {
+        source:
+          "/fullstack/software-development-program-with-specialization-in-cloud-computing-and-devops",
+        destination: "/fullstack/full-stack-software-development-program",
+        permanent: true,
+      },
     ];
   },
 };

@@ -20,7 +20,7 @@ const Course = ({
   dataScience,
   radio,
   dataScienceCounselling,
-  Green,
+  organicADS,
   newDesign,
 }) => {
   const [mobile, setMobile] = useState(false);
@@ -169,75 +169,116 @@ const Course = ({
                               } = viewAllData;
                               return (
                                 <SwiperSlide
-                                  className={styles.leftSide}
-                                  key={index}
+                                className={styles.leftSide}
+                                key={index}
+                              >
+                                <div
+                                  key={id}
+                                  className={
+                                    newDesignOrange
+                                      ? styles.newSliderWrapOrange
+                                      : newDesign
+                                      ? styles.newSliderWrap
+                                      : styles.SliderWrap
+                                  }
                                 >
+                                  {newDesign ? (
+                                    <>
+                                      {" "}
+                                      <div
+                                        className={
+                                          newDesignOrange
+                                            ? styles.OrangeLeftBorder
+                                            : styles.leftBorder
+                                        }
+                                      ></div>
+                                      <div
+                                        className={
+                                          newDesignOrange
+                                            ? styles.OrangeRightBorder
+                                            : styles.rightBorder
+                                        }
+                                      ></div>
+                                    </>
+                                  ) : (
+                                    ""
+                                  )}
+                                  {newDesign ? (
+                                    ""
+                                  ) : organicADS ? (
+                                    <a
+                                      onClick={() => {
+                                        setTitleCourse(titleCourse);
+                                        setBrochureLinks(brochureLinks);
+                                        popupShow();
+                                      }}
+                                      className={styles.imgWrap}
+                                    >
+                                      <div className="bgWrap">
+                                        <Image
+                                          src={img}
+                                          fill={true}
+                                          quality={100}
+                                          unoptimized={true}
+                                          style={{ objectFit: "cover" }}
+                                          alt="data science course"
+                                        />
+                                      </div>
+                                    </a>
+                                  ) : (
+                                    <a
+                                      href={link1}
+                                      className={styles.imgWrap}
+                                    >
+                                      <div className="bgWrap">
+                                        <Image
+                                          src={img}
+                                          fill={true}
+                                          quality={100}
+                                          unoptimized={true}
+                                          style={{ objectFit: "cover" }}
+                                          alt="data science course"
+                                        />
+                                      </div>
+                                    </a>
+                                  )}
                                   <div
-                                    key={id}
-                                    className={
-                                      newDesignOrange
-                                        ? styles.newSliderWrapOrange
-                                        : newDesign
-                                        ? styles.newSliderWrap
-                                        : styles.SliderWrap
+                                    className={styles.contButton}
+                                    style={
+                                      newDesign
+                                        ? { borderRadius: "20px" }
+                                        : {
+                                            borderRadius: "8px",
+                                            width: "92%",
+                                            marginTop: "-12px",
+                                            zIndex: "0",
+                                            boxShadow:
+                                              "rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px",
+                                          }
                                     }
                                   >
                                     {newDesign ? (
-                                      <>
-                                        {" "}
-                                        <div
-                                          className={
-                                            newDesignOrange
-                                              ? styles.OrangeLeftBorder
-                                              : styles.leftBorder
-                                          }
-                                        ></div>
-                                        <div
-                                          className={
-                                            newDesignOrange
-                                              ? styles.OrangeRightBorder
-                                              : styles.rightBorder
-                                          }
-                                        ></div>
-                                      </>
-                                    ) : (
-                                      ""
-                                    )}
-                                    {newDesign ? (
-                                      ""
-                                    ) : (
-                                      <a
-                                        href={link1}
-                                        className={styles.imgWrap}
-                                      >
-                                        <div className="bgWrap">
-                                          <Image
-                                            src={img}
-                                            fill={true}
-                                            quality={100}
-                                            unoptimized={true}
-                                            style={{ objectFit: "cover" }}
-                                            alt="data science course"
-                                          />
-                                        </div>
-                                      </a>
-                                    )}
-                                    <div
-                                      className={styles.contButton}
-                                      style={
-                                        newDesign
-                                          ? { borderRadius: "20px" }
-                                          : {
-                                              borderRadius: "8px",
-                                              width: "92%",
-                                              marginTop: "-12px",
-                                              zIndex: "0",
-                                              boxShadow:
-                                                "rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px",
-                                            }
-                                      }
-                                    >
-                                      {newDesign ? (
+                                      organicADS ? (
+                                        <a
+                                          onClick={() => {
+                                            setTitleCourse(titleCourse);
+                                            setBrochureLinks(brochureLinks);
+                                            popupShow();
+                                          }}
+                                          className={styles.imgWrap}
+                                        >
+                                          <div className="bgWrap">
+                                            <Image
+                                              src={img}
+                                              fill={true}
+                                              quality={100}
+                                              unoptimized={true}
+                                              style={{ objectFit: "cover" }}
+                                              alt="data science course"
+                                            />
+                                          </div>
+                                        </a>
+                                      ) : (
                                         <a
                                           href={link1}
                                           className={styles.imgWrap}
@@ -253,70 +294,95 @@ const Course = ({
                                             />
                                           </div>
                                         </a>
-                                      ) : (
-                                        ""
-                                      )}
-                                      <div className={styles.contentBox}>
-                                        <div className={styles.headWrapper}>
-                                          <h6
-                                            className={
-                                              Green
-                                                ? styles.mainHeadGreen
-                                                : styles.mainHead
-                                            }
-                                          >
-                                            {title}
-                                          </h6>
-                                          <h6
-                                            className={
-                                              Green
-                                                ? styles.mainHeadGreen
-                                                : styles.mainHead
-                                            }
-                                          >
-                                            {title1}
-                                          </h6>
-                                        </div>
-                                        <hr className={styles.hr} />
-                                        <div className={styles.paraDiv}>
-                                          <p className={styles.singleP}>
-                                            <BiTimeFive
-                                              className={styles.checkCircle}
-                                            />
-                                            {/* <IoTimeOutline
-                                            className={styles.timeIcon}
-                                          />{" "} */}
-                                            {para[0]} | {courseTime}
-                                          </p>
-                                          {/* <p>
-                                        <AiOutlineFundProjectionScreen
-                                          className={styles.checkCircle}
-                                          style={{ color: "#edb552" }}
-                                        />
-                                        {para[1]}
-                                      </p> */}
-                                          <p className={styles.singleP}>
-                                            {/* <TbCurrencyRupee
-                                            className={styles.checkCircle}
-                                          /> */}
-                                            <BsCheckLg
-                                              className={styles.checkIcon}
-                                            />
-                                            {para[2]}
-                                          </p>
-                                          <p className={styles.singleP}>
-                                            {/* <TbCurrencyRupee
-                                            className={styles.checkCircle}
-                                          /> */}
-                                            <BsCheckLg
-                                              className={styles.checkIcon}
-                                            />
-                                            {para[2]}
-                                          </p>
-                                        </div>
-                                        <hr className={styles.hr1} />
+                                      )
+                                    ) : (
+                                      ""
+                                    )}
+                                    <div className={styles.contentBox}>
+                                      <div className={styles.headWrapper}>
+                                        <h6
+                                          className={
+                                            Green
+                                              ? styles.mainHeadGreen
+                                              : styles.mainHead
+                                          }
+                                        >
+                                          {title}
+                                        </h6>
+                                        <h6
+                                          className={
+                                            Green
+                                              ? styles.mainHeadGreen
+                                              : styles.mainHead
+                                          }
+                                        >
+                                          {title1}
+                                        </h6>
                                       </div>
-                                      <div className={styles.btnWrapper}>
+                                      <hr className={styles.hr} />
+                                      <div className={styles.paraDiv}>
+                                        <p className={styles.singleP}>
+                                          <BiTimeFive
+                                            className={styles.checkCircle}
+                                          />
+                                          {/* <IoTimeOutline
+                                          className={styles.timeIcon}
+                                        />{" "} */}
+                                          {para[0]} | {courseTime}
+                                        </p>
+                                        {/* <p>
+                                      <AiOutlineFundProjectionScreen
+                                        className={styles.checkCircle}
+                                        style={{ color: "#edb552" }}
+                                      />
+                                      {para[1]}
+                                    </p> */}
+                                        <p className={styles.singleP}>
+                                          {/* <TbCurrencyRupee
+                                          className={styles.checkCircle}
+                                        /> */}
+                                          <BsCheckLg
+                                            className={styles.checkIcon}
+                                          />
+                                          {para[2]}
+                                        </p>
+                                        <p className={styles.singleP}>
+                                          {/* <TbCurrencyRupee
+                                          className={styles.checkCircle}
+                                        /> */}
+                                          <BsCheckLg
+                                            className={styles.checkIcon}
+                                          />
+                                          {para[2]}
+                                        </p>
+                                      </div>
+                                      <hr className={styles.hr1} />
+                                    </div>
+                                    <div className={styles.btnWrapper}>
+                                      <a
+                                        onClick={() => {
+                                          setTitleCourse(titleCourse);
+                                          setBrochureLinks(brochureLinks);
+                                          popupShow();
+                                        }}
+                                      >
+                                        <button
+                                          className="outLineBtn1"
+                                          style={{
+                                            color: "#2979AD",
+                                            background: "#fff",
+                                            borderRadius: "0px 0px 0px 20px",
+                                          }}
+                                        >
+                                          Brochure
+                                          <FaDownload
+                                            className="bIcon"
+                                            style={{ color: "#2979AD" }}
+                                          />
+                                        </button>
+                                      </a>
+                                      <hr className={styles.btnLine} />
+                                      {organicADS ? (
                                         <a
                                           onClick={() => {
                                             setTitleCourse(titleCourse);
@@ -325,21 +391,30 @@ const Course = ({
                                           }}
                                         >
                                           <button
-                                            className="outLineBtn1"
-                                            style={{
-                                              color: "#2979AD",
-                                              background: "#fff",
-                                              borderRadius: "0px 0px 0px 20px",
-                                            }}
+                                            className={
+                                              Green
+                                                ? styles.green
+                                                : styles.fillBtn
+                                            }
+                                            style={
+                                              newDesign
+                                                ? {
+                                                    borderRadius:
+                                                      "0 0 20px 0",
+                                                  }
+                                                : {
+                                                    borderRadius:
+                                                      "0 0 8px 0px",
+                                                  }
+                                            }
                                           >
-                                            Brochure
-                                            <FaDownload
-                                              className="bIcon"
-                                              style={{ color: "#2979AD" }}
+                                            View Details
+                                            <TbListDetails
+                                              className={styles.bellIcon}
                                             />
                                           </button>
                                         </a>
-                                        <hr className={styles.btnLine} />
+                                      ) : (
                                         <a
                                           href={link1}
                                           className={styles.link1}
@@ -352,9 +427,13 @@ const Course = ({
                                             }
                                             style={
                                               newDesign
-                                                ? { borderRadius: "0 0 20px 0" }
+                                                ? {
+                                                    borderRadius:
+                                                      "0 0 20px 0",
+                                                  }
                                                 : {
-                                                    borderRadius: "0 0 8px 0px",
+                                                    borderRadius:
+                                                      "0 0 8px 0px",
                                                   }
                                             }
                                           >
@@ -364,10 +443,11 @@ const Course = ({
                                             />
                                           </button>
                                         </a>
-                                      </div>
+                                      )}
                                     </div>
                                   </div>
-                                </SwiperSlide>
+                                </div>
+                              </SwiperSlide>
                               );
                             }
                           )}
