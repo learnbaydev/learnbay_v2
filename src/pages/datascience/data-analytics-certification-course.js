@@ -215,10 +215,10 @@ function Blockchain({}) {
         />
 
         <WhoIsProgram
-      first="Bachelor's degree with consistent good academic"
-      second="Minimum 1 year of IT/Non-IT work experience"
-      third="Early to mid-career professionals interested in data analytics"
-      forth="Developing skills in data analytics for future opportunities"
+          first="Bachelor's degree with consistent good academic"
+          second="Minimum 1 year of IT/Non-IT work experience"
+          third="Early to mid-career professionals interested in data analytics"
+          forth="Developing skills in data analytics for future opportunities"
         />
         <WhyLearnbay idss="bfl64ANfSV0" />
         <GetHire />
@@ -234,6 +234,7 @@ function Blockchain({}) {
         <ContactConsellor />
 
         <SyllabusNew
+          masterSyllabusMobile={DADataScienceCourseData[0].masterSyllabusMobile}
           syllabusHead={DADataScienceCourseData[0].syllabusHead}
           masterSyllabus={DADataScienceCourseData[0].masterSyllabus}
           MasterSyllabusDefault={

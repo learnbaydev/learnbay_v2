@@ -22,6 +22,7 @@ SwiperCore.use([Navigation]);
 
 function SyllabusNew({
   syllabus,
+  masterSyllabusMobile,
   dataScience,
   fullStack,
   titleCourse,
@@ -59,6 +60,7 @@ function SyllabusNew({
       ]);
     });
   }, []);
+  const [mSyllabus, setMSyllabus] = useState(masterSyllabusMobile);
   const [cSyllabus, setCSyllabus] = useState(MasterSyllabusDefault);
   const changeSyllabus = (data) => {
     console.log("hello");
@@ -98,6 +100,19 @@ function SyllabusNew({
     console.log(index, "handelChange");
     setCSyllabus(
       cSyllabus.map((faq, i) => {
+        if (i === index) {
+          faq.Module0.open = !faq.Module0.open;
+        } else {
+          faq.Module0.open = false;
+        }
+        return faq;
+      })
+    );
+  };
+  const handleChangeMobile = (index) => {
+    console.log(index, "handelChange");
+    setMSyllabus(
+      mSyllabus.map((faq, i) => {
         if (i === index) {
           faq.Module0.open = !faq.Module0.open;
         } else {
@@ -161,9 +176,7 @@ function SyllabusNew({
             <IoIosArrowForward />
           </div>
         </div>
-       
         <div className={styles.topBar}>
-        
           <Swiper
             modules={[Navigation]}
             slidesPerView={mobile ? 1.19 : 2.7}
@@ -189,23 +202,15 @@ function SyllabusNew({
                           changeSyllabus(data);
                           if (i === 0) {
                             setProgress(20); // Set progress to 25% when the first item is clicked
-                          }
-                          else if(i ==1 ){
+                          } else if (i == 1) {
                             setProgress(50);
-
-                          } 
-                          else if(i ==2 ){
+                          } else if (i == 2) {
                             setProgress(90);
-
-                          } 
-                          else if(i ==3 ){
+                          } else if (i == 3) {
                             setProgress(50);
-
-                          } 
-                          else {
+                          } else {
                             setProgress(100);
-
-                          } 
+                          }
                           // else {
                           //   // Calculate and set progress for other items based on the total number of items
                           //   const progressBar =
@@ -216,7 +221,7 @@ function SyllabusNew({
                         className={styles.wrapSpan}
                         style={
                           active[i].value
-                            ? { color: "#0072bc", fontWeight:"700" }
+                            ? { color: "#0072bc", fontWeight: "700" }
                             : { color: "#646464" }
                         }
                       >
@@ -233,86 +238,163 @@ function SyllabusNew({
                   );
                 })
               : ""}
-              <ProgressBar progress={progress} />
+            <ProgressBar progress={progress} />
           </Swiper>
         </div>
-        
         <section className={styles.Syllabus}>
           <div className={styles.syllabusLeft}>
-            {cSyllabus.map((data, i) => {
-              const { Module0 } = data;
+            <div className={styles.mobileSyllabus}>
+              {mSyllabus.map((data, i) => {
+                const { Module0 } = data;
 
-              return (
-                <div key={Module0.title}>
-                  <div className={styles.QOuter}>
-                    <div className={styles.QInner}>
-                      <div className={styles.line}>
-                        {/* <BsFillCircleFill className={styles.bIcons} /> */}
-                      </div>
-                      <div
-                        className={styles.FaqWrapper}
-                        onClick={() => {
-                          let id = i;
-                          handleChange(id);
-                        }}
-                        key={Module0.title}
-                      >
-                        {Module0.open ? (
-                          <div className={styles.quesO}>
-                            <h2>{Module0.title}</h2>
+                return (
+                  <div key={Module0.title}>
+                    <div className={styles.QOuter}>
+                      <div className={styles.QInner}>
+                        <div className={styles.line}>
+                          {/* <BsFillCircleFill className={styles.bIcons} /> */}
+                        </div>
+                        <div
+                          className={styles.FaqWrapper}
+                          onClick={() => {
+                            let id = i;
+                            handleChangeMobile(id);
+                          }}
+                          key={Module0.title}
+                        >
+                          {Module0.open ? (
+                            <div className={styles.quesO}>
+                              <h2>{Module0.title}</h2>
 
-                            <span>
-                              {Module0.open ? (
-                                <FaChevronUp className="icon" />
-                              ) : (
-                                <FaChevronDown className="icon" />
-                              )}
-                            </span>
-                          </div>
-                        ) : (
-                          <div className={styles.ques}>
-                            <h2>{Module0.title}</h2>
-                            <span>
-                              {Module0.open ? (
-                                <FaChevronUp className="icon" />
-                              ) : (
-                                <FaChevronDown className="icon" />
-                              )}
-                            </span>
-                          </div>
-                        )}
+                              <span>
+                                {Module0.open ? (
+                                  <FaChevronUp className="icon" />
+                                ) : (
+                                  <FaChevronDown className="icon" />
+                                )}
+                              </span>
+                            </div>
+                          ) : (
+                            <div className={styles.ques}>
+                              <h2>{Module0.title}</h2>
+                              <span>
+                                {Module0.open ? (
+                                  <FaChevronUp className="icon" />
+                                ) : (
+                                  <FaChevronDown className="icon" />
+                                )}
+                              </span>
+                            </div>
+                          )}
 
-                        {Module0.open ? (
-                          <div className={styles.ans}>
-                            <p>{Module0.desc}</p>
-                            {Module0.content.map((content, i) => {
-                              return (
-                                <div key={content.chap.title}>
-                                  <h5>{content.chap.title}</h5>
-                                  {content.chap.desc.map((desc, i) => {
-                                    return (
-                                      <div key={i}>
-                                        {desc === "" ? (
-                                          ""
-                                        ) : (
-                                          <li key={desc}>{desc}</li>
-                                        )}
-                                      </div>
-                                    );
-                                  })}
-                                </div>
-                              );
-                            })}
-                          </div>
-                        ) : (
-                          ""
-                        )}
+                          {Module0.open ? (
+                            <div className={styles.ans}>
+                              <p>{Module0.desc}</p>
+                              {Module0.content.map((content, i) => {
+                                return (
+                                  <div key={content.chap.title}>
+                                    <h5>{content.chap.title}</h5>
+                                    {content.chap.desc.map((desc, i) => {
+                                      return (
+                                        <div key={i}>
+                                          {desc === "" ? (
+                                            ""
+                                          ) : (
+                                            <li key={desc}>{desc}</li>
+                                          )}
+                                        </div>
+                                      );
+                                    })}
+                                  </div>
+                                );
+                              })}
+                            </div>
+                          ) : (
+                            ""
+                          )}
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              );
-            })}
+                );
+              })}
+            </div>
+            <div className={styles.desktopSyllabus}>
+              {cSyllabus.map((data, i) => {
+                const { Module0 } = data;
+
+                return (
+                  <div key={Module0.title}>
+                    <div className={styles.QOuter}>
+                      <div className={styles.QInner}>
+                        <div className={styles.line}>
+                          {/* <BsFillCircleFill className={styles.bIcons} /> */}
+                        </div>
+                        <div
+                          className={styles.FaqWrapper}
+                          onClick={() => {
+                            let id = i;
+                            handleChange(id);
+                          }}
+                          key={Module0.title}
+                        >
+                          {Module0.open ? (
+                            <div className={styles.quesO}>
+                              <h2>{Module0.title}</h2>
+
+                              <span>
+                                {Module0.open ? (
+                                  <FaChevronUp className="icon" />
+                                ) : (
+                                  <FaChevronDown className="icon" />
+                                )}
+                              </span>
+                            </div>
+                          ) : (
+                            <div className={styles.ques}>
+                              <h2>{Module0.title}</h2>
+                              <span>
+                                {Module0.open ? (
+                                  <FaChevronUp className="icon" />
+                                ) : (
+                                  <FaChevronDown className="icon" />
+                                )}
+                              </span>
+                            </div>
+                          )}
+
+                          {Module0.open ? (
+                            <div className={styles.ans}>
+                              <p>{Module0.desc}</p>
+                              {Module0.content.map((content, i) => {
+                                return (
+                                  <div key={content.chap.title}>
+                                    <h5>{content.chap.title}</h5>
+                                    {content.chap.desc.map((desc, i) => {
+                                      return (
+                                        <div key={i}>
+                                          {desc === "" ? (
+                                            ""
+                                          ) : (
+                                            <li key={desc}>{desc}</li>
+                                          )}
+                                        </div>
+                                      );
+                                    })}
+                                  </div>
+                                );
+                              })}
+                            </div>
+                          ) : (
+                            ""
+                          )}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
           </div>
           <div className={styles.button}>
             <div className={styles.formWrapper}>
