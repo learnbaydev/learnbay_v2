@@ -1,12 +1,9 @@
 import dynamic from "next/dynamic";
 import Head from "next/head";
 import { useEffect, useState } from "react";
-import { BADataScienceCourseData } from "../../../Data/BusinessAnalyticsData";
-import BatchDetails from "../../../components/CoursePage/BatchDetails/BatchDetails";
+import { DataScienceCourseData } from "../../../Data/AdvanceDataScienceCourse";
 import Footer from "../../../components/Footer/Footer";
 import Navbar from "../../../components/Navbar/Navbar";
-import OfferPopup from "../../../components/OfferPopup/OfferPopup";
-import BottomBar from "../../../components/WebPage/BottomBar/BottomBar";
 
 const FirstSection = dynamic(() =>
   import("../../../components/CoursePage/FirstSection/FirstSection")
@@ -26,6 +23,7 @@ const WhoProgram = dynamic(() =>
 const Switch = dynamic(() =>
   import("../../../components/HomePage/switch/switch")
 );
+
 const ToolsCovered = dynamic(() =>
   import("../../../components/CoursePage/ToolsCovered/ToolsCovered")
 );
@@ -35,23 +33,78 @@ const FeeSection = dynamic(() =>
 const FourthSection = dynamic(() =>
   import("../../../components/CoursePage/FourthSection/FourthSection")
 );
+
 const Project = dynamic(() =>
   import("../../../components/CoursePage/Project/Project")
 );
 const SyllabusNew = dynamic(() =>
-  import("../../../components/MastersCourse/Syllabus/MasterSyllabus")
+  import("../../../components/CoursePage/Syllabus/MasterSyllabus")
 );
-const DomainSection = dynamic(() =>
-  import("../../../components/CoursePage//DomainSection/DomainSection")
-);
+
 const Certificate = dynamic(() =>
   import("../../../components/CoursePage/Certificate/Certificate")
 );
 const FAQNew = dynamic(() =>
   import("../../../components/CoursePage/FAQNew/FAQNew")
 );
+const BatchDetails = dynamic(() =>
+  import("../../../components/CoursePage/BatchDetails/BatchDetails")
+);
 
-function Blockchain() {
+const SecondNavbar = dynamic(() =>
+  import("../../../components/CoursePage/SecondNavbar/SecondNavbar")
+);
+const ContactConsellor = dynamic(() =>
+  import(
+    "../../../components/MastersCourse/ContactCounsellor/ContactCounsellor"
+  )
+);
+const feesbatch = dynamic(() =>
+  import("../../../components/CoursePage/FeeSection/FeeSection")
+);
+
+const SliderTab = dynamic(() =>
+  import("../../../components/CoursePage/SliderTabs/SliderTabs")
+);
+
+const WhoIsProgram = dynamic(() =>
+  import("../../../components/CoursePage/WhoIsProgram/WhoIsProgram")
+);
+
+const OfferPopup = dynamic(() =>
+  import("../../../components/OfferPopup/OfferPopup")
+);
+const BottomBar = dynamic(() =>
+  import("../../../components/WebPage/BottomBar/BottomBar")
+);
+const ContactUs = dynamic(() =>
+  import("../../../components/HomePage/ContactUs/ContactUs")
+);
+const NewProjectSection = dynamic(() =>
+  import("../../../components/CoursePage/NewProjectSection/NewProjectSection")
+);
+const MentorsSection = dynamic(() =>
+  import("../../../components/MastersCourse/MentorsSection/MentorsSection")
+);
+const TrainerSection = dynamic(() =>
+  import("../../../components/HomePage/TrainerSection/TrainerSection")
+);
+// import SecondNavbar from "../../../components/CoursePage/SecondNavbar/SecondNavbar";
+const WhyLearnbay = dynamic(() =>
+  import("../../../components/CoursePage/WhyLearnbay/WhyLearnbay")
+);
+
+// const Gethire = dynamic(() =>
+//   import("../../../components/CoursePage/Gethired/Gethire")
+// );
+const GetHire = dynamic(() =>
+  import("../../../components/HomePage/GetHire/GetHire")
+);
+const PlacementCall = dynamic(() =>
+  import("../../../components/CoursePage/PlacementCall/PlacementCall")
+);
+
+function Blockchain({}) {
   // POPUP GET METHOD
   const [popupData, setPopupData] = useState([]);
   // console.log(popupData);
@@ -72,7 +125,7 @@ function Blockchain() {
           // console.log(data);
           data.page.map((popupData, i) => {
             // console.log(popData);
-            if (popupData === "Business Analytics Family") {
+            if (popupData === "Adv Data Science and AI") {
               setPopupData(data);
               // console.log(popupData);
               return;
@@ -90,7 +143,7 @@ function Blockchain() {
     const fetchBatch = async () => {
       const data = await fetch("/api/BatchDetails/getBatchDetails", {
         method: "POST",
-        body: JSON.stringify("Business Analytics Family"),
+        body: JSON.stringify("Data Science and AI"),
         headers: {
           "Content-Type": "application/json",
         },
@@ -108,113 +161,135 @@ function Blockchain() {
     fetchBatch();
   }, []);
 
+  const [progress, setProgress] = useState(20);
+
   return (
     <>
       <Head>
-        <title>Business Analytics Certification Course - Learnbay</title>
-        <meta name="robots" content="index, follow" />
+        <title>Businesss Analytics Certification Program - Learnbay</title>
         <meta
           name="description"
-          content="Enroll Now in Learnbay's professional business analytics course. Master the business analytics techniques and gain valuable insights to advance your career."
+          content="Get real-world experience with capstone projects"
         />
-        <meta name="keywords" content="Business Analytics Master Program" />
+        <meta name="robots" content="index, follow" />
+        <meta
+          name="keywords"
+          content="Businesss Analytics Certification Program"
+        />
         <link
           rel="icon"
           href="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/Learnbay-Favicon-L.png"
         />
         <link
           rel="canonical"
-          href="https://www.learnbay.co/datascience/business-analytics-certification-course"
+          href="https://www.learnbay.co/datascience/advance-data-science-certification-courses"
         />
       </Head>
       <main>
         <Navbar popup={true} dataScienceCounselling={true} />
         <FirstSection
-          FirstTyped="Guaranteed Interview Calls"
-          SecondTyped="Capstone Project Certificate"
+          // FirstTyped="Guaranteed Interview Calls"
+          // SecondTyped="Capstone Project Certificate"
           ThirdTyped="Live Interactive Classes"
           dataScience={true}
-          titleCourse="Business Analytics Master Program"
-          brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Business+Analytics+Certification+Program+Learnbay.pdf"
-          idss="4j80WXLTvGE"
-          FirstRightImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/manager+header+image.webp"
-          firstToparaImg=" Business Analytics Master Program"
-          firstHeading="Elevate your expertise with"
+          titleCourse="Businesss Analytics Certification Program"
+          cityParaCont="Elevate your tech career with our programs"
+          brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Advance+Data+Science+and+AI+Certification+Program+Learnbay.pdf"
+          FirstRightImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/advance-header.webp"
+          firstToparaImg=""
+          firstHeading="Businesss Analytics Certification Program"
+          firstTopPara="Get real-world experience with capstone projects"
+          idss="bfl64ANfSV0"
         />
         <SecondSection
-          SecondSectionData={BADataScienceCourseData[0].secondSection}
+          SecondSectionData={DataScienceCourseData[0].secondSection}
         />
+        <SecondNavbar />
+        <WhoProgram
+          dataScience={true}
+          leftImage="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/advance-who.webp"
+          ThirdSectionData={DataScienceCourseData[0].thirdSection}
+        />
+        <TrainerSection idss="eautK0odE7Q" />
         <Testimonial
           redirectDS={true}
-          Testimonial={BADataScienceCourseData[0].testimonial}
-          heading="Our Alumni Speak"
-          para="Discover the impact of our programs on career growth"
+          heading=""
+          Testimonial={DataScienceCourseData[0].testimonial}
         />
-        <WhoProgram
-          leftImage="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/BA-Masters-who.png"
-          ThirdSectionData={BADataScienceCourseData[0].thirdSection}
+
+        <WhoIsProgram
+          first="Non-tech professionals with 6 months experience"
+          second="Minimum 1 year of IT work experience"
+          third="Mid-career professionals interested in data science & AI"
+          forth="Achieving higher career growth in data science and AI"
         />
-        <Switch />
-        <FourthSection
-          placementData={BADataScienceCourseData[0].fourthSection}
+        <WhyLearnbay idss="bfl64ANfSV0" />
+        <GetHire />
+        {/* <Switch /> */}
+        {/* <FourthSection
+          placementData={DataScienceCourseData[0].fourthSection}
           redirectDS={true}
           dataScience={true}
           titleCourse="Data Science Placement Report"
           brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Placement+Report.pdf"
-        />
+        /> */}
+
+        <ContactConsellor />
+
         <SyllabusNew
-           syllabusHead={BADataScienceCourseData[0].syllabusHead}
-           masterSyllabus={BADataScienceCourseData[0].masterSyllabus}
-           MasterSyllabusDefault={BADataScienceCourseData[0].MasterSyllabusDefault}
+          syllabusHead={DataScienceCourseData[0].syllabusHead}
+          masterSyllabus={DataScienceCourseData[0].masterSyllabus}
+          MasterSyllabusDefault={DataScienceCourseData[0].MasterSyllabusDefault}
           dataScienceCounselling={true}
           dataScience={true}
-          titleCourse="Business Analytics Master Program"
-          brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Business+Analytics+Certification+Program+Learnbay.pdf"
-          syllabus={BADataScienceCourseData[0].syllabus}
-          syllabusDesc={BADataScienceCourseData[0].syllabusDesc}
-          popupHead={BADataScienceCourseData[0].popupHead}
+          titleCourse="Advanced Data Science and AI Program with domain specialization"
+          brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Advance+Data+Science+and+AI+Certification+Program+Learnbay.pdf"
+          syllabus={DataScienceCourseData[0].syllabus}
+          syllabusDesc={DataScienceCourseData[0].syllabusDesc}
+          popupHead={DataScienceCourseData[0].popupHead}
+          progress={progress}
+          setProgress={setProgress}
         />
+
         <ToolsCovered
-          deskImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/BA+Family+Tools+Covered.png"
-          mobImage="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/BA-Family-Tools-Covered-mobile.png"
+          deskImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Tools-Logo.png"
+          mobImage="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Mobile-Tools-Covered.png"
         />
-        <Certificate
-          threeCertificate={true}
-          data={BADataScienceCourseData[0].Certificate}
-        />
+        <Certificate data={DataScienceCourseData[0].Certificate} />
         <FeeSection
-          Fee="₹ 1,10,000 + 18% GST"
-          FeeEmi="₹ 10,816/month"
-          FeeHeading="Program Fee & Financing"
-          FeeContent1="0% interest rate"
-          FeeContent2="No cost EMI"
+          Fee="₹ 90,000"
+          FeeEmi="₹ 8,850/month"
+          WeekdayDate="DEC 14th"
+          WeekendDate="NOV 5th"
+          WeekdayTime="08:00 PM - 10:00 PM"
           FeeContent3="Flexible payment"
           FeeContent4="Easy loan procedure"
           FeeContent5="15 days refund policy"
           FeeContent6="No additional cost"
           dataScienceCounselling={true}
         />
-        <DomainSection
-          dataScience={true}
-          domainSectionData={BADataScienceCourseData[0].domainSection}
-        />
-        <Project
-          projectData={BADataScienceCourseData[0].project}
-          tools="16+ Tools"
-          project="15+ Projects"
-          dataScience={true}
-          titleCourse="Business Analytics Project Brochure"
-          brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Business+Analytics+Projects.pdf"
-        />
-        {batchDateData === "" ? (
+        <MentorsSection />
+
+        <SliderTab />
+
+        <PlacementCall />
+
+        {/* {batchDateData === "" ? (
           ""
         ) : (
           <BatchDetails batchDetails={batchDateData.batchDetails} />
-        )}
-        <FAQNew FAQNewData={BADataScienceCourseData[0].faq} />
+        )} */}
+
+        <NewProjectSection
+          dataScience={true}
+          titleCourse="Advanced Data Science and AI Program with domain specialization"
+          brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Masters+in+CS+Data+Science+%26+AI.pdf"
+          projectSection={DataScienceCourseData[0].projectSection}
+        />
+
+        <FAQNew FAQNewData={DataScienceCourseData[0].faq} />
         <SeventhSection />
         <Footer />
-
         <BottomBar />
         {popupData.length == 0 ? "" : <OfferPopup popupData={popupData} />}
       </main>
