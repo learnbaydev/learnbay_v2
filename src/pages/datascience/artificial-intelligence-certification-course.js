@@ -1,12 +1,9 @@
+import dynamic from "next/dynamic";
 import Head from "next/head";
 import { useEffect, useState } from "react";
+import { AIMLDataScienceCourseData } from "../../../Data/AIMLDataScienceCourse";
 import Footer from "../../../components/Footer/Footer";
 import Navbar from "../../../components/Navbar/Navbar";
-
-import dynamic from "next/dynamic";
-import { AIMLDataScienceCourseData } from "../../../Data/AIMLDataScienceCourse";
-import BatchDetails from "../../../components/CoursePage/BatchDetails/BatchDetails";
-import BottomBar from "../../../components/WebPage/BottomBar/BottomBar";
 
 const FirstSection = dynamic(() =>
   import("../../../components/CoursePage/FirstSection/FirstSection")
@@ -26,6 +23,7 @@ const WhoProgram = dynamic(() =>
 const Switch = dynamic(() =>
   import("../../../components/HomePage/switch/switch")
 );
+
 const ToolsCovered = dynamic(() =>
   import("../../../components/CoursePage/ToolsCovered/ToolsCovered")
 );
@@ -35,26 +33,81 @@ const FeeSection = dynamic(() =>
 const FourthSection = dynamic(() =>
   import("../../../components/CoursePage/FourthSection/FourthSection")
 );
+
 const Project = dynamic(() =>
   import("../../../components/CoursePage/Project/Project")
 );
 const SyllabusNew = dynamic(() =>
-  import("../../../components/MastersCourse/Syllabus/MasterSyllabus")
+  import("../../../components/CoursePage/Syllabus/MasterSyllabus")
 );
-const DomainSection = dynamic(() =>
-  import("../../../components/CoursePage//DomainSection/DomainSection")
-);
+
 const Certificate = dynamic(() =>
   import("../../../components/CoursePage/Certificate/Certificate")
 );
 const FAQNew = dynamic(() =>
   import("../../../components/CoursePage/FAQNew/FAQNew")
 );
+const BatchDetails = dynamic(() =>
+  import("../../../components/CoursePage/BatchDetails/BatchDetails")
+);
 
-function Blockchain() {
+const SecondNavbar = dynamic(() =>
+  import("../../../components/CoursePage/SecondNavbar/SecondNavbar")
+);
+const ContactConsellor = dynamic(() =>
+  import(
+    "../../../components/MastersCourse/ContactCounsellor/ContactCounsellor"
+  )
+);
+const feesbatch = dynamic(() =>
+  import("../../../components/CoursePage/FeeSection/FeeSection")
+);
+
+const SliderTab = dynamic(() =>
+  import("../../../components/CoursePage/SliderTabs/SliderTabs")
+);
+
+const WhoIsProgram = dynamic(() =>
+  import("../../../components/CoursePage/WhoIsProgram/WhoIsProgram")
+);
+
+const OfferPopup = dynamic(() =>
+  import("../../../components/OfferPopup/OfferPopup")
+);
+const BottomBar = dynamic(() =>
+  import("../../../components/WebPage/BottomBar/BottomBar")
+);
+const ContactUs = dynamic(() =>
+  import("../../../components/HomePage/ContactUs/ContactUs")
+);
+const NewProjectSection = dynamic(() =>
+  import("../../../components/CoursePage/NewProjectSection/NewProjectSection")
+);
+const MentorsSection = dynamic(() =>
+  import("../../../components/MastersCourse/MentorsSection/MentorsSection")
+);
+const TrainerSection = dynamic(() =>
+  import("../../../components/HomePage/TrainerSection/TrainerSection")
+);
+// import SecondNavbar from "../../../components/CoursePage/SecondNavbar/SecondNavbar";
+const WhyLearnbay = dynamic(() =>
+  import("../../../components/CoursePage/WhyLearnbay/WhyLearnbay")
+);
+
+// const Gethire = dynamic(() =>
+//   import("../../../components/CoursePage/Gethired/Gethire")
+// );
+const GetHire = dynamic(() =>
+  import("../../../components/HomePage/GetHire/GetHire")
+);
+const PlacementCall = dynamic(() =>
+  import("../../../components/CoursePage/PlacementCall/PlacementCall")
+);
+
+function Blockchain({ }) {
   // POPUP GET METHOD
   const [popupData, setPopupData] = useState([]);
-
+  // console.log(popupData);
   useEffect(() => {
     // console.log("inside UseEFFect");
     const fetchPopup = async () => {
@@ -108,21 +161,22 @@ function Blockchain() {
     fetchBatch();
   }, []);
 
+  const [progress, setProgress] = useState(20);
+
   return (
     <>
       <Head>
         <title>
-          Artificial Intelligence and Machine Learning Course - Learnbay
+          Artificial Intelligence and Data Science Course - Learnbay
         </title>
-        <meta name="robots" content="index, follow" />
-
         <meta
           name="description"
-          content="Enroll in Learnbay&rsquo;s Comprehensive Artificial Intelligence and Machine Learning Course to improve your AI and Machine Learning skills."
+          content="Upskill yourself with cutting edge Artificial Intelligence and Data Science Skills, Techniques by enrolling into the Learnbay's Advanced Data Science Course."
         />
+        <meta name="robots" content="index, follow" />
         <meta
           name="keywords"
-          content="Artificial Intelligence and Machine Learning Program"
+          content="Advanced Data Science and AI Program with domain specialization"
         />
         <link
           rel="icon"
@@ -130,99 +184,117 @@ function Blockchain() {
         />
         <link
           rel="canonical"
-          href="https://www.learnbay.co/datascience/artificial-intelligence-certification-course"
+          href="https://www.learnbay.co/datascience/advance-data-science-certification-courses"
         />
       </Head>
       <main>
         <Navbar popup={true} dataScienceCounselling={true} />
         <FirstSection
-          FirstTyped="Guaranteed Interview Calls"
-          SecondTyped="Capstone Project Certificate"
+          // FirstTyped="Guaranteed Interview Calls"
+          // SecondTyped="Capstone Project Certificate"
           ThirdTyped="Live Interactive Classes"
           dataScience={true}
-          titleCourse="AI & ML Program for tech professionals"
-          brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Advance+AI+%26+ML+Certification+Program+Learnbay.pdf"
-          idss="Jn2puEQC8yk"
-          FirstRightImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/AIML-Header.png"
-          firstToparaImg="AI & ML Program for tech professionals"
-          firstHeading="Transform your future with our certified"
-          firstTopPara="Expand beyond technology"
+          titleCourse="Advanced Artificial Intelligence and Machine Learning Program"
+          cityParaCont="Get globally recognised with dual certification"
+          brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Advance+Data+Science+and+AI+Certification+Program+Learnbay.pdf"
+          FirstRightImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/art-header1.webp"
+          firstToparaImg=""
+          firstHeading="Advanced Artificial Intelligence and Machine Learning Program"
+          firstTopPara="Curriculum Inclusive of Gen-AI"
+          idss="bfl64ANfSV0"
         />
         <SecondSection
           SecondSectionData={AIMLDataScienceCourseData[0].secondSection}
         />
-        <Testimonial
-          redirectDS={true}
-          Testimonial={AIMLDataScienceCourseData[0].testimonial}
-          heading="Our Alumni Speak"
-          para="Discover the impact of our programs on career growth"
-        />
+        <SecondNavbar />
         <WhoProgram
-          leftImage="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/AIML-Who.png"
+          dataScience={true}
+          leftImage="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/advance-who.webp"
           ThirdSectionData={AIMLDataScienceCourseData[0].thirdSection}
         />
-        <Switch />
-        <FourthSection
+        <TrainerSection idss="eautK0odE7Q" />
+        <Testimonial
+          redirectDS={true}
+          heading=""
+          Testimonial={AIMLDataScienceCourseData[0].testimonial}
+        />
+
+        <WhoIsProgram
+          first="Bachelor's degree with good academic performance"
+          second="Minimum 1 year of IT work experience"
+          third="Early to mid-career professionals interested in AI & ML"
+          forth="Preparing for future leadership opportunities in AI & ML"
+        />
+        <WhyLearnbay idss="bfl64ANfSV0" />
+        <GetHire />
+        {/* <Switch /> */}
+        {/* <FourthSection
           placementData={AIMLDataScienceCourseData[0].fourthSection}
           redirectDS={true}
           dataScience={true}
           titleCourse="Data Science Placement Report"
           brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Placement+Report.pdf"
-        />
+        /> */}
+
+        <ContactConsellor />
+
         <SyllabusNew
-           syllabusHead={AIMLDataScienceCourseData[0].syllabusHead}
-           masterSyllabus={AIMLDataScienceCourseData[0].masterSyllabus}
-           MasterSyllabusDefault={AIMLDataScienceCourseData[0].MasterSyllabusDefault}
+          syllabusHead={AIMLDataScienceCourseData[0].syllabusHead}
+          masterSyllabus={AIMLDataScienceCourseData[0].masterSyllabus}
+          MasterSyllabusDefault={AIMLDataScienceCourseData[0].MasterSyllabusDefault}
           dataScienceCounselling={true}
-          serviceBasic={true}
           dataScience={true}
           titleCourse="Advanced Data Science and AI Program with domain specialization"
-          brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Advance+AI+%26+ML+Certification+Program+Learnbay.pdf"
+          brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Advance+Data+Science+and+AI+Certification+Program+Learnbay.pdf"
           syllabus={AIMLDataScienceCourseData[0].syllabus}
           syllabusDesc={AIMLDataScienceCourseData[0].syllabusDesc}
           popupHead={AIMLDataScienceCourseData[0].popupHead}
+          progress={progress}
+          setProgress={setProgress}
         />
+
         <ToolsCovered
           deskImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Tools-Logo.png"
           mobImage="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Mobile-Tools-Covered.png"
         />
-        <Certificate
-          threeCertificate={true}
-          data={AIMLDataScienceCourseData[0].Certificate}
-        />
+        <Certificate data={AIMLDataScienceCourseData[0].Certificate} />
         <FeeSection
-          AIMLCertificate={true}
-          Fee="₹ 1,10,000 + 18% GST"
-          FeeEmi="₹ 10,817/"
-          FeeHeading="Program Fee & Financing"
-          FeeContent2="No cost EMI"
+          Fee="₹ 1,10,000"
+          FeeEmi="₹ 7,211/month"
+          WeekdayDate="NOV 17th"
+          WeekendDate="NOV 26th"
+          WeekendTime="09:30 AM - 1:00 PM"
+          WeekdayTime="08:00 AM - 10:00 AM"
           FeeContent3="Flexible payment"
           FeeContent4="Easy loan procedure"
           FeeContent5="15 days refund policy"
+          FeeContent6="No additional cost"
           dataScienceCounselling={true}
         />
-        <DomainSection
-          dataScience={true}
-          domainSectionData={AIMLDataScienceCourseData[0].domainSection}
-        />
-        <Project
-          projectData={AIMLDataScienceCourseData[0].project}
-          tools="16+ Tools"
-          project="12+ Projects"
-          titleCourse="Data Science Project Brochure"
-          dataScience={true}
-          brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Data+Science+and+AI+Projects.pdf"
-        />
-        {batchDateData === "" ? (
+        <MentorsSection />
+
+        <SliderTab />
+
+        <PlacementCall />
+
+        {/* {batchDateData === "" ? (
           ""
         ) : (
           <BatchDetails batchDetails={batchDateData.batchDetails} />
-        )}
+        )} */}
+
+        <NewProjectSection
+          dataScience={true}
+          titleCourse="Advanced Data Science and AI Program with domain specialization"
+          brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Masters+in+CS+Data+Science+%26+AI.pdf"
+          projectSection={AIMLDataScienceCourseData[0].projectSection}
+        />
+
         <FAQNew FAQNewData={AIMLDataScienceCourseData[0].faq} />
         <SeventhSection />
         <Footer />
-
         <BottomBar />
+        {popupData.length == 0 ? "" : <OfferPopup popupData={popupData} />}
       </main>
     </>
   );

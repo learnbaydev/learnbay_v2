@@ -20,7 +20,6 @@ const Course = ({
   dataScience,
   radio,
   dataScienceCounselling,
-  Green,
   organicADS,
   newDesign,
 }) => {
@@ -327,21 +326,21 @@ const Course = ({
                                               className={styles.checkCircle}
                                             />
                                             {/* <IoTimeOutline
-                                            className={styles.timeIcon}
-                                          />{" "} */}
-                                            {para[0]} | {courseTime}
+                                          className={styles.timeIcon}
+                                        />{" "} */}
+                                            {para[0]} {courseTime}
                                           </p>
                                           {/* <p>
-                                        <AiOutlineFundProjectionScreen
-                                          className={styles.checkCircle}
-                                          style={{ color: "#edb552" }}
-                                        />
-                                        {para[1]}
-                                      </p> */}
+                                      <AiOutlineFundProjectionScreen
+                                        className={styles.checkCircle}
+                                        style={{ color: "#edb552" }}
+                                      />
+                                      {para[1]}
+                                    </p> */}
                                           <p className={styles.singleP}>
                                             {/* <TbCurrencyRupee
-                                            className={styles.checkCircle}
-                                          /> */}
+                                          className={styles.checkCircle}
+                                        /> */}
                                             <BsCheckLg
                                               className={styles.checkIcon}
                                             />
@@ -349,8 +348,8 @@ const Course = ({
                                           </p>
                                           <p className={styles.singleP}>
                                             {/* <TbCurrencyRupee
-                                            className={styles.checkCircle}
-                                          /> */}
+                                          className={styles.checkCircle}
+                                        /> */}
                                             <BsCheckLg
                                               className={styles.checkIcon}
                                             />

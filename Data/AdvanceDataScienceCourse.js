@@ -199,24 +199,31 @@ export const DataScienceCourseData = [
         icon: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/bank.gif",
         heading: "BFSI",
         para: "Designed for executive-level BFSI professionals, accountant.",
+        brochureLink: "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Banking%2C+Finance+and+Insurance+Domain.pdf"
       },
       {
         id: 1,
         icon: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/heartbeat.gif",
         heading: "Healthcare",
         para: "For pharmacists, therapists, health administrators, etc.",
+        brochureLink: "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Banking%2C+Finance+and+Insurance+Domain.pdf"
+
       },
       {
         id: 1,
         icon: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/live.gif",
         heading: "HR & Marketing",
         para: "For recruiter, talent acquisition specialist and marketing pros.",
+        brochureLink: "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Banking%2C+Finance+and+Insurance+Domain.pdf"
+
       },
       {
         id: 1,
         icon: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/manufacturing.gif",
         heading: "Manufacturing",
         para: "For production manager, quality control inspector and engineers.",
+        brochureLink: "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Banking%2C+Finance+and+Insurance+Domain.pdf"
+
       },
     ],
     fourthSection: [

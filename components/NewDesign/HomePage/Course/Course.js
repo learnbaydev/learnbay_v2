@@ -178,8 +178,8 @@ const Course = ({
                               <Image
                                 src={img}
                                 layout="intrinsic"
-                                width="423"
-                                height="252"
+                                width="423px"
+                                height="252px"
                                 className={styles.courseImg}
                                 alt="data science course"
                               />
@@ -189,8 +189,8 @@ const Course = ({
                               <Image
                                 src={img}
                                 layout="intrinsic"
-                                width="423"
-                                height="252"
+                                width="423px"
+                                height="252px"
                                 className={styles.courseImg}
                                 alt="data science course"
                               />
@@ -327,8 +327,8 @@ const Course = ({
                               <Image
                                 src={img}
                                 layout="intrinsic"
-                                width="423"
-                                height="252"
+                                width="423px"
+                                height="252px"
                                 className={styles.courseImg}
                                 alt="data science course"
                               />
@@ -338,8 +338,8 @@ const Course = ({
                               <Image
                                 src={img}
                                 layout="intrinsic"
-                                width="423"
-                                height="252"
+                                width="423px"
+                                height="252px"
                                 className={styles.courseImg}
                                 alt="data science course"
                               />
@@ -494,8 +494,8 @@ const Course = ({
                               <Image
                                 src={img}
                                 layout="intrinsic"
-                                width="423"
-                                height="252"
+                                width="423px"
+                                height="252px"
                                 className={styles.courseImg}
                                 alt="data science course"
                               />
@@ -505,8 +505,8 @@ const Course = ({
                               <Image
                                 src={img}
                                 layout="intrinsic"
-                                width="423"
-                                height="252"
+                                width="423px"
+                                height="252px"
                                 className={styles.courseImg}
                                 alt="data science course"
                               />
@@ -661,8 +661,8 @@ const Course = ({
                               <Image
                                 src={img}
                                 layout="intrinsic"
-                                width="423"
-                                height="252"
+                                width="423px"
+                                height="252px"
                                 className={styles.courseImg}
                                 alt="data science course"
                               />
@@ -672,8 +672,8 @@ const Course = ({
                               <Image
                                 src={img}
                                 layout="intrinsic"
-                                width="423"
-                                height="252"
+                                width="423px"
+                                height="252px"
                                 className={styles.courseImg}
                                 alt="data science course"
                               />
@@ -828,8 +828,8 @@ const Course = ({
                               <Image
                                 src={img}
                                 layout="intrinsic"
-                                width="423"
-                                height="252"
+                                width="423px"
+                                height="252px"
                                 alt="data science course"
                                 className={styles.courseImg}
                               />
@@ -839,8 +839,8 @@ const Course = ({
                               <Image
                                 src={img}
                                 layout="intrinsic"
-                                width="423"
-                                height="252"
+                                width="423px"
+                                height="252px"
                                 alt="data science course"
                                 className={styles.courseImg}
                               />
@@ -983,8 +983,8 @@ const Course = ({
                               <Image
                                 src={img}
                                 layout="intrinsic"
-                                width="423"
-                                height="252"
+                                width="423px"
+                                height="252px"
                                 className={styles.courseImg}
                                 alt="data science course"
                               />
@@ -994,8 +994,8 @@ const Course = ({
                               <Image
                                 src={img}
                                 layout="intrinsic"
-                                width="423"
-                                height="252"
+                                width="423px"
+                                height="252px"
                                 className={styles.courseImg}
                                 alt="data science course"
                               />
@@ -1150,8 +1150,8 @@ const Course = ({
                               <Image
                                 src={img}
                                 layout="intrinsic"
-                                width="423"
-                                height="252"
+                                width="423px"
+                                height="252px"
                                 className={styles.courseImg}
                                 alt="data science course"
                               />
@@ -1161,8 +1161,8 @@ const Course = ({
                               <Image
                                 src={img}
                                 layout="intrinsic"
-                                width="423"
-                                height="252"
+                                width="423px"
+                                height="252px"
                                 className={styles.courseImg}
                                 alt="data science course"
                               />
@@ -1299,8 +1299,8 @@ const Course = ({
                               <Image
                                 src={img}
                                 layout="intrinsic"
-                                width="423"
-                                height="252"
+                                width="423px"
+                                height="252px"
                                 className={styles.courseImg}
                                 alt="data science course"
                               />
@@ -1310,8 +1310,8 @@ const Course = ({
                               <Image
                                 src={img}
                                 layout="intrinsic"
-                                width="423"
-                                height="252"
+                                width="423px"
+                                height="252px"
                                 className={styles.courseImg}
                                 alt="data science course"
                               />
@@ -1456,8 +1456,8 @@ const Course = ({
                               <Image
                                 src={img}
                                 layout="intrinsic"
-                                width="423"
-                                height="252"
+                                width="423px"
+                                height="252px"
                                 alt="data science course"
                                 className={styles.courseImg}
                               />
@@ -1467,8 +1467,8 @@ const Course = ({
                               <Image
                                 src={img}
                                 layout="intrinsic"
-                                width="423"
-                                height="252"
+                                width="423px"
+                                height="252px"
                                 alt="data science course"
                                 className={styles.courseImg}
                               />
@@ -1611,8 +1611,8 @@ const Course = ({
                               <Image
                                 src={img}
                                 layout="intrinsic"
-                                width="423"
-                                height="252"
+                                width="423px"
+                                height="252px"
                                 alt="data science course"
                                 className={styles.courseImg}
                               />
@@ -1622,8 +1622,8 @@ const Course = ({
                               <Image
                                 src={img}
                                 layout="intrinsic"
-                                width="423"
-                                height="252"
+                                width="423px"
+                                height="252px"
                                 alt="data science course"
                                 className={styles.courseImg}
                               />
@@ -1772,8 +1772,8 @@ const Course = ({
                               <Image
                                 src={img}
                                 layout="intrinsic"
-                                width="423"
-                                height="252"
+                                width="423px"
+                                height="252px"
                                 alt="data science course"
                                 className={styles.courseImg}
                               />
@@ -1783,8 +1783,8 @@ const Course = ({
                               <Image
                                 src={img}
                                 layout="intrinsic"
-                                width="423"
-                                height="252"
+                                width="423px"
+                                height="252px"
                                 alt="data science course"
                                 className={styles.courseImg}
                               />
@@ -1927,8 +1927,8 @@ const Course = ({
                               <Image
                                 src={img}
                                 layout="intrinsic"
-                                width="423"
-                                height="252"
+                                width="423px"
+                                height="252px"
                                 alt="data science course"
                                 className={styles.courseImg}
                               />
@@ -1938,8 +1938,8 @@ const Course = ({
                               <Image
                                 src={img}
                                 layout="intrinsic"
-                                width="423"
-                                height="252"
+                                width="423px"
+                                height="252px"
                                 alt="data science course"
                                 className={styles.courseImg}
                               />
@@ -2088,8 +2088,8 @@ const Course = ({
                               <Image
                                 src={img}
                                 layout="intrinsic"
-                                width="423"
-                                height="252"
+                                width="423px"
+                                height="252px"
                                 alt="data science course"
                                 className={styles.courseImg}
                               />
@@ -2099,8 +2099,8 @@ const Course = ({
                               <Image
                                 src={img}
                                 layout="intrinsic"
-                                width="423"
-                                height="252"
+                                width="423px"
+                                height="252px"
                                 alt="data science course"
                                 className={styles.courseImg}
                               />
@@ -2249,8 +2249,8 @@ const Course = ({
                               <Image
                                 src={img}
                                 layout="intrinsic"
-                                width="423"
-                                height="252"
+                                width="423px"
+                                height="252px"
                                 alt="data science course"
                                 className={styles.courseImg}
                               />
@@ -2260,8 +2260,8 @@ const Course = ({
                               <Image
                                 src={img}
                                 layout="intrinsic"
-                                width="423"
-                                height="252"
+                                width="423px"
+                                height="252px"
                                 alt="data science course"
                                 className={styles.courseImg}
                               />
@@ -2404,8 +2404,8 @@ const Course = ({
                               <Image
                                 src={img}
                                 layout="intrinsic"
-                                width="423"
-                                height="252"
+                                width="423px"
+                                height="252px"
                                 alt="data science course"
                                 className={styles.courseImg}
                               />
@@ -2415,8 +2415,8 @@ const Course = ({
                               <Image
                                 src={img}
                                 layout="intrinsic"
-                                width="423"
-                                height="252"
+                                width="423px"
+                                height="252px"
                                 alt="data science course"
                                 className={styles.courseImg}
                               />
@@ -2554,8 +2554,8 @@ const Course = ({
                               <Image
                                 src={img}
                                 layout="intrinsic"
-                                width="423"
-                                height="252"
+                                width="423px"
+                                height="252px"
                                 alt="data science course"
                                 className={styles.courseImg}
                               />
@@ -2565,8 +2565,8 @@ const Course = ({
                               <Image
                                 src={img}
                                 layout="intrinsic"
-                                width="423"
-                                height="252"
+                                width="423px"
+                                height="252px"
                                 alt="data science course"
                                 className={styles.courseImg}
                               />

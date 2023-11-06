@@ -1,11 +1,11 @@
 import React, { useState, useEffect, useRef } from "react";
+import dynamic from "next/dynamic";
 import styles from "./FirstSection.module.css";
 import { FaChevronDown, FaBell, FaDownload } from "react-icons/fa";
 import Popup from "../../../Popup/Popup";
 import Form from "../../../Form/Form";
 import Image from "next/image";
 import Typed from "typed.js";
-import dynamic from "next/dynamic";
 const Button = dynamic(() => import("../../../Global/Button/Button"));
 
 const FirstSection = ({ dataScience, radio, btnHide, second, third, dataScienceGeneric, dataScienceCounselling, organicADS}) => {
@@ -128,7 +128,7 @@ const FirstSection = ({ dataScience, radio, btnHide, second, third, dataScienceG
             </a>
             )}
             <div onClick={popupShow}>
-              <Button Button={true} text="Enquire Now" />
+              <Button outline={true} text="Enquire Now" />
             </div>
           </div>
         </div>

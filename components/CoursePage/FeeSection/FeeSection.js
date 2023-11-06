@@ -14,9 +14,11 @@ const FeeSection = ({
   WeekdayDate,
   WeekendDate,
   WeekdayTime,
+  WeekendTime,
   CutFee,
   dataScienceCounselling,
   FeeEmi,
+  
 }) => {
   const [popups, setPopups] = useState(false);
 
@@ -199,7 +201,7 @@ const FeeSection = ({
         <div className={styles.third}>
           <p>Batch Details</p>
           <div className={styles.boxOrange}>
-            <p>Weekday Batch</p>
+            <p> Weekday Batch </p>
             <div className={styles.batches}>
               <p className={styles.date}>{WeekdayDate}</p>
               <div className={styles.Time}>
@@ -217,7 +219,7 @@ const FeeSection = ({
               <p className={styles.date}>{WeekendDate}</p>
               <div className={styles.Time}>
                 <p className={styles.day}>SAT - SUN</p>
-                <p className={styles.paraBot}>08:00 AM - 10:00 AM</p>
+                <p className={styles.paraBot}>{WeekendTime}</p>
               </div>
             </div>
           </div>

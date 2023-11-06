@@ -9,11 +9,13 @@ import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import SwiperCore, { Autoplay } from 'swiper/core';
 import { Swiper, SwiperSlide } from "swiper/react";
 import Form from "../../Form/Form";
 import Popup from "../../Popup/Popup";
 import styles from "./FirstSection.module.css";
 const Button = dynamic(() => import("../../Global/Button/Button"));
+SwiperCore.use([Autoplay]);
 const FirstSection = ({
   dataScience,
   radio,
@@ -74,6 +76,10 @@ const FirstSection = ({
       </Popup>
       <Swiper
         slidesPerView={1}
+        autoplay={{
+          delay: 5000, // Set the delay in milliseconds (3 seconds in this example)
+          disableOnInteraction: false, // Autoplay will not be disabled after user interactions
+      }}
         spaceBetween={mobile ? 0 : 0}
         pagination={{
           clickable: true,

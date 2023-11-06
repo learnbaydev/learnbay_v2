@@ -167,7 +167,7 @@ function Blockchain({}) {
     <>
       <Head>
         <title>
-          Artificial Intelligence and Data Science Course - Learnbay
+          Advance Data Science and AI Certification - Learnbay
         </title>
         <meta
           name="description"
@@ -259,11 +259,12 @@ function Blockchain({}) {
         />
         <Certificate data={DataScienceCourseData[0].Certificate} />
         <FeeSection
-          Fee="₹ 99,000"
-          FeeEmi="₹ 9,735/month"
-          WeekdayDate="DEC 14th"
-          WeekendDate="NOV 5th"
-          WeekdayTime="08:00 PM - 10:00 PM"
+          Fee="₹ 1,25,000"
+          FeeEmi="₹ 12,291/month"
+          WeekdayDate="NOV 17th"
+          WeekendDate="NOV 26th"
+          WeekendTime="09:30 AM - 1:00 PM"
+          WeekdayTime="08:00 AM - 10:00 AM"
           FeeContent3="Flexible payment"
           FeeContent4="Easy loan procedure"
           FeeContent5="15 days refund policy"

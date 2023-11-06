@@ -118,7 +118,6 @@ function FirstSection({
                   src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/ibm-single-home.png"
                   width="127"
                   height="51"
-                  layout="intrinsic"
                   alt="data science course"
                 />
               ) : (
@@ -126,7 +125,6 @@ function FirstSection({
                   src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/FirstSection.png"
                   width="283"
                   height="51"
-                  layout="intrinsic"
                   alt="data science course"
                 />
               )}

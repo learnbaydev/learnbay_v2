@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Navbar from "../../components/Navbar/Navbar";
- import Footer from "../../components/Event/EventFooter/Footer";
+const Footer = dynamic(() => import("../../components/Footer/Footer"));
   import { DataScienceCourseData } from "../../Data/AdvanceDataScienceCourse";
  import dynamic from "next/dynamic";
 const BottomBar = dynamic(() =>
@@ -25,11 +25,9 @@ const ReviewSwitch = dynamic(() =>
 const VideoReview = dynamic(() =>
   import("../../components/SuccessStory/VideoReview/VideoReview")
 );
-
 const Testimonial = dynamic(() =>
   import("../../components/HomePage/Testimonial/Testimonial")
 );
-
 export default function Home() {
   return (
     <div>
