@@ -5,7 +5,7 @@ import { FcCheckmark } from "react-icons/fc";
 
 function GetHire() {
   return (
-    <div>
+    <div id="servicePro">
       <div className={Styles.GetHireMain}>
         <div className={Styles.GetHireHead}>
           <div className={Styles.HireLeft}>

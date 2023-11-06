@@ -225,7 +225,7 @@ function Blockchain({}) {
           third="Mid-career professionals interested in data science & AI"
           forth="Achieving higher career growth in data science and AI"
         />
-        <WhyLearnbay idss="bfl64ANfSV0" />
+        <WhyLearnbay idss="RYWiuHmO2Z4" />
         <GetHire />
         {/* <Switch /> */}
         {/* <FourthSection
@@ -260,7 +260,7 @@ function Blockchain({}) {
         <Certificate data={DataScienceCourseData[0].Certificate} />
         <FeeSection
           Fee="₹ 1,25,000"
-          FeeEmi="₹ 12,291/month"
+          FeeEmi="₹ 8,194/month"
           WeekdayDate="NOV 17th"
           WeekendDate="NOV 26th"
           WeekendTime="09:30 AM - 1:00 PM"

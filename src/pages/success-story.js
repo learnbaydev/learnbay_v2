@@ -50,7 +50,7 @@ export default function Home() {
         <TrainerSection idss="bfl64ANfSV0" />
         <LinkedinReview />
         <GoogleReview />
-        <VideoReview idss="bfl64ANfSV0" />
+        {/* <VideoReview idss="bfl64ANfSV0" /> */}
         <ReviewCourse />
         <ReviewSwitch />
         <Testimonial

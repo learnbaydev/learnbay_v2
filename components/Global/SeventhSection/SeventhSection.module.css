@@ -20,7 +20,7 @@
   margin-top: 30px;
   margin-bottom: 0px;
   display: grid;
-    grid-template-columns: 50% 50%;
+  grid-template-columns: 50% 50%;
 }
 
 .pBot {
@@ -30,8 +30,8 @@
   margin: 0;
   margin-bottom: 30px;
   padding-right: 180px;
-font-size: 20px;
-line-height: normal;
+  font-size: 20px;
+  line-height: normal;
 }
 
 .LearnSupport .pTop {
@@ -40,17 +40,17 @@ line-height: normal;
   margin-bottom: 10px;
   font-size: 20px;
   margin-bottom: 30px;
-font-weight: 600;
-line-height: normal;
+  font-weight: 600;
+  line-height: normal;
 }
 .LearnSupport h5 {
   color: #0072bc;
   margin: 0;
   margin-bottom: 20px;
-font-size: 26px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 
 .btnWrap {
@@ -153,12 +153,8 @@ line-height: normal;
   .LearnSupport h5 {
     font-size: 23px;
     line-height: 35px;
-    color: #0072BC;
-    font-family: Inter;
-    /* font-size: 20.489px; */
-    font-style: normal;
+    color: #0072bc;
     font-weight: 700;
-   
   }
 
   .pBot {

@@ -126,7 +126,7 @@ function FirstSection({
                 </div>
                 </a>
                 <div onClick={popupShow}>
-                  <Button whiteBgButton={true} text="START MY APPLICATION" />
+                  <Button whiteBgButton={true} text="DOWNLOAD BROCHURE" />
                 </div>
               </div>
             </div>
