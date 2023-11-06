@@ -167,7 +167,7 @@ function Blockchain({}) {
     <>
       <Head>
         <title>
-          Artificial Intelligence and Data Science Course - Learnbay
+          Advance Data Science and AI Certification - Learnbay
         </title>
         <meta
           name="description"

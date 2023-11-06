@@ -93,6 +93,56 @@ import {
           "I recently finished Learnbay's Basic DSA Course online. The course is well-structured, taught by knowledgeable trainers with a focus on interview preparation and data structure concepts. It benefits both novices and experts.",
         },
       ],
+      projectSection: [
+        {
+          id: 1,
+          duration: "12 Hours",
+          logo: "",
+          heading:
+            "Learn and develop classification techniques for the digital transformation of banking",
+          img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/image+675+(1)-min.png",
+          para: "JPMorgan offers tax-friendly insurance choices. You can help them forecastinsurance premiums. Targeted marketing using your random forest algorithm skills can help obtain better premium values.",
+          toolImg:
+            "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/morgan-strip.webp",
+          learnMore: "Learn more",
+        },
+        {
+          id: 2,
+          duration: "17 Hours",
+          logo: "",
+          heading:
+            "Building a content recommendation model on the basis of regional viewer categorization",
+          img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/image+674-min.png",
+          para: "Netflix is a global entertainment video streaming site. They offer content in various regional languages. Build a local recommendation engine for Netflix customers residing in south Bangalore on their weekend and weekdays activities, utilizing NLP.",
+          toolImg:
+            "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/Netfliix.webp",
+          learnMore: "Learn more",
+        },
+        {
+          id: 3,
+          duration: "14 Hours",
+          logo: "",
+          heading:
+            "Understanding in-depth about logging while drilling (LWD) technique",
+          img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/image+683-min.png",
+          para: "Saudi Aramco company is working onthe development of high-efficiency drilling models. Use the bright sides of big data analytics to identify the most cost-effective and highly productive drilling sites.",
+          toolImg:
+            "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/saudi-aramco-strip.webp",
+          learnMore: "Learn more",
+        },
+        {
+          id: 4,
+          duration: "19 Hours",
+          logo: "",
+          heading:
+            "Career progression planning of employees with workforce defections & efficiency",
+          img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/image+688-min.png",
+          para: "IBM intends to boost its HR department by identifying employees' masked inconsistency. They need models to identify the graphical variations in their 14000+ employees' performances. Help them build models with your regressions and other ML abilities.",
+          toolImg:
+            "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/IBM-Strip.webp",
+          learnMore: "Learn more",
+        },
+      ],
       thirdSection: [
         {
           id: 1,
@@ -490,28 +540,36 @@ import {
         },
       ],
       Certificate: {
-        twoCertificate: [
-          {
-            id: 1,
-            img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Certificate-blue.png",
-            title: "Course Completion Certificate from IBM",
-            para: [
-              "Complete your training with the internationally recognized certificate",
-              "Validate your software development skills with IBM Couse Completion Certificate",
-              "Get acknowledged in IT sector by adding IBM Certificate to your profile",
-            ],
-          },
-          {
-            id: 2,
-            img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Azure+Fundamentals.png",
-            title: "Certification in Collaboration with Microsoft",
-            para: [
-              "Industry-certified Microsoft certificates",
-              "Gain expertise & get recognized worldwide",
-              "Boost job opportunities and earnings with Microsoft’s certification",
-            ],
-          },
-        ],
+        degreeCertificate: {
+          id: 1,
+          img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/ibm-min.webp",
+          title: "Course Completion Certificate from IBM",
+          para: [
+            "Complete your training with the internationally recognized certificate.",
+            "Validate your Data Science and AI skills with IBM Course Completion Certificate.",
+            "Get acknowledged in IT sector by adding IBM Certificate to your profile.",
+          ],
+        },
+        microCertificate: {
+          id: 2,
+          img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/Azure%2BAI%2BFundamentals.png",
+          title: "Certification in Collaboration with Microsoft",
+          para: [
+            "Industry-certified Microsoft certificates",
+            "Gain expertise & get recognized worldwide",
+            "Boost job opportunities and earnings with Microsoft’s certification",
+          ],
+        },
+        projectCertificate: {
+          id: 3,
+          img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/Certification-min.webp",
+          title: "Capstone Project Certificate from IBM",
+          para: [
+            "Globally recognized IBM certification based on industrial-level projects.",
+            "Work on 1 capstone project certified by IBM.",
+            "Individualized project experience with easy access to premium job opportunities.",
+          ],
+        },
       },
       syllabusDesc:
       "Learnbay provides Live, Interactive Online Sessions guided by Professionals working in top MNCs. All sessions are covered practically with real-time industrial projects and case studies.",

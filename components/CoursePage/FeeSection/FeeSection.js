@@ -14,6 +14,7 @@ const FeeSection = ({
   WeekdayDate,
   WeekendDate,
   WeekdayTime,
+  WeekendTime,
   CutFee,
   dataScienceCounselling,
   FeeEmi,
@@ -217,7 +218,7 @@ const FeeSection = ({
               <p className={styles.date}>{WeekendDate}</p>
               <div className={styles.Time}>
                 <p className={styles.day}>SAT - SUN</p>
-                <p className={styles.paraBot}>08:00 AM - 10:00 AM</p>
+                <p className={styles.paraBot}>{WeekendTime}</p>
               </div>
             </div>
           </div>
