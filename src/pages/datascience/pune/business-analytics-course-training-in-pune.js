@@ -1,6 +1,14 @@
-import Head from "next/head";
-import styles from "../../../styles/Home.module.css";
 import dynamic from "next/dynamic";
+import Head from "next/head";
+import { useState } from "react";
+import { BAPuneCourseData } from "../../../../CityData/Pune/businessAnalyticsCourseTrainingPuneData";
+import FeeSection from "../../../../components/CoursePage/FeeSection/FeeSection";
+import Footer from "../../../../components/Footer/Footer";
+import Form from "../../../../components/Form/Form";
+import Testimonial from "../../../../components/HomePage/Testimonial/Testimonial";
+import Navbar from "../../../../components/Navbar/Navbar";
+import Popup from "../../../../components/Popup/Popup";
+import styles from "../../../styles/Home.module.css";
 const FirstSection = dynamic(() =>
   import("../../../../components/CoursePage/FirstSection/FirstSection")
 );
@@ -25,17 +33,9 @@ const CitiesLeft = dynamic(() =>
 const CitiesRight = dynamic(() =>
   import("../../../../components/SEO/CitiesRight/CitiesRightdomain")
 );
-import { BAPuneCourseData } from "../../../../CityData/Pune/businessAnalyticsCourseTrainingPuneData";
 const FAQNew = dynamic(() =>
   import("../../../../components/CoursePage/FAQNew/FAQNew")
 );
-import Popup from "../../../../components/Popup/Popup";
-import Navbar from "../../../../components/Navbar/Navbar";
-import Footer from "../../../../components/Footer/Footer";
-import Form from "../../../../components/Form/Form";
-import React, { useState } from "react";
-import Testimonial from "../../../../components/HomePage/Testimonial/Testimonial";
-import FeeSection from "../../../../components/CoursePage/FeeSection/FeeSection";
 
 export default function Home() {
   const [popups, setPopups] = useState(false);
@@ -46,7 +46,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-      <title>Business Analyst Certification Course in Pune - Learnbay</title>
+        <title>Business Analyst Certification Course in Pune - Learnbay</title>
         <meta name="robots" content="index, follow" />
         <meta
           name="description"
@@ -56,7 +56,7 @@ export default function Home() {
           name="keywords"
           content="Business Analytics course in Pune, Business Analytics training in Pune, Business Analytics institute in Pune, best Business Analytics institute in Pune, Business Analytics course in Pune, Business Analytics certification in Pune, Business Analytics training institute in Pune, advanced Business Analytics course in Pune, Business Analytics course with Placement Assistance, Business Analytics course"
         />
-<meta
+        <meta
           property="og:url"
           content="https://www.learnbay.co/datascience/pune/business-analytics-course-training-in-pune"
         />
@@ -95,7 +95,6 @@ export default function Home() {
           name="twitter:image"
           content="https://www.learnbay.co/_next/image?url=https%3A%2F%2Flearnbay-wb.s3.ap-south-1.amazonaws.com%2Fmain%2FLearnbay-Logo.webp&w=256&q=100"
         />
-
         <link
           rel="canonical"
           href="https://www.learnbay.co/datascience/pune/business-analytics-course-training-in-pune"
@@ -174,14 +173,16 @@ export default function Home() {
         />
         <div className={styles.cityFee}>
           <FeeSection
-            AIMLCertificate={true}
-            Fee="₹ 1,10,000 + 18% GST"
-            FeeEmi="₹ 10,817/month"
-            FeeHeading="Program Fee & Financing"
-            FeeContent2="No cost EMI"
+            Fee="₹ 90,000"
+            FeeEmi="₹ 5,900/month"
+            WeekdayDate="NOV 17th"
+            WeekendDate="NOV 26th"
+            WeekendTime="09:30 AM - 1:00 PM"
+            WeekdayTime="08:00 AM - 10:00 AM"
             FeeContent3="Flexible payment"
             FeeContent4="Easy loan procedure"
             FeeContent5="15 days refund policy"
+            FeeContent6="No additional cost"
             dataScienceCounselling={true}
           />
         </div>

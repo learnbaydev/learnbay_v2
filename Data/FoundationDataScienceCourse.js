@@ -1,10 +1,10 @@
+import { FaUserGraduate } from "react-icons/fa";
+import { GiStairsGoal } from "react-icons/gi";
 import {
   MdOutlineCastForEducation,
   MdOutlineWorkOutline,
 } from "react-icons/md";
 import styles from "../components/CoursePage/WhoProgram/ThirdSection.module.css";
-import { FaUserGraduate } from "react-icons/fa";
-import { GiStairsGoal } from "react-icons/gi";
 
 export const FoundationDataScienceCourseData = [
   {
@@ -46,101 +46,108 @@ export const FoundationDataScienceCourseData = [
       {
         id: 1,
         name: "Preksha Mishra",
-        working: "Working at HCL",
+        working: "HCL",
+        link: "vSjfKdIzUjY",
         proImg:
-          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/preksha-home.png",
+          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/preksha-testimonial.webp",
         sDesc:
           "I had a great learning experience at Learnbay. The faculties here are top notch. Right from enrollment to getting a good job ...",
         lDesc:
           "I had a great learning experience at Learnbay. The faculties here are top notch. Right from enrollment to getting a good job, they keep putting enormous efforts for each and every candidate. Thanks to all the trainers, backend team, the HR team and to the directors for making this journey smooth.",
         complogo:
-          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/HCL-logo.png",
+          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/microsoft.webp",
         statLogo: "140% Hike",
       },
       {
-        id: "tcs",
-        name: "Mohammad Israr",
-        working: "Working at TCS",
+        id: 2,
+        name: "Shubham Kumar",
+        working: "Cendrol Technology",
+        link: "JoKquvfAhZU",
         proImg:
-          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/asrar-home.png",
+          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/Shubham-kumar-thumb+.webp",
         sDesc:
-          "Thanks to the Learnbay data science course and outstanding assistance, I could ace the TCS interview and secure a job...",
+          "I moved from teaching to data science with Learnbay's help. Their course was easy to follow, even for someone like me without a tech...",
         lDesc:
-          "Thanks to the Learnbay data science course and outstanding assistance, I could ace the TCS interview and secure a job with a 400% pay hike. My understanding of the course was greatly improved by the real-time projects and respective IBM project experience certification.",
+          "I moved from teaching to data science with Learnbay's help. Their course was easy to follow, even for someone like me without a tech background. In six months, I got to learn how data science is used in the real world. Their mock interviews also prepared me for job interviews, and I got a data analyst job at Cendrol. This course really helped me change my career.",
         complogo:
-          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/TCS.png",
+          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/microsoft.webp",
         statLogo: "  210% Hike",
       },
       {
         id: 4,
-        name: "Ritish Kumar",
-        working: "Working at Capgemini",
+        name: "Arvind Kumar",
+        working: "The Math Company",
+        link: "hewBtR_WoDM",
         proImg:
-          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/ritesh-home.png",
+          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/aravind-k-thumb.webp",
         sDesc:
-          "I always had a dilemma about how to switch to the IT field until I stumbled upon the foundation data science course offered by Learnbay...",
+          "Choosing Learnbay was my best decision ever. The instructors were encouraging and glad to answer questions. The best feature is that...",
         lDesc:
-          "I always had a dilemma about how to switch to  IT field until I stumbled upon the foundation data science course offered by Learnbay. The perfect combination of flexibility, affordability, and supportiveness. They helped me get placed at Capgemini, and I’m delighted with my current career. All Thanks to Learnbay!",
+          "Choosing Learnbay was my best decision ever. The instructors were encouraging and glad to answer questions. The best feature is that their flexible modules & small size batches. I was able to manage my time and learn while working. Thanks to Learnbay for my lucrative placement.",
         complogo:
-          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Capgemni-logo.png",
+          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/microsoft.webp",
         statLogo: " 150% Hike",
       },
       {
         id: 5,
-        name: "Sourabh Mourya",
-        working: "Working at HCL",
+        name: "Jaya sinha",
+        working: "Amazon",
+        link: "A-BkcEM0rQM",
         proImg:
-          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/saurabh-home.png",
+          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/jaya-sinha-thumb.webp",
         sDesc:
-          "Flexible classes have helped me to manage my job  schedule. Learning Data Science directly from MNC experts provided the chance ...",
+          "Transitioning from a non-tech role, LearnBay's IBM data science certification equipped me with the skills needed in today's...",
         lDesc:
-          "Flexible classes have helped me to manage my job schedule. Learning Data Science directly from  experts provided the chance to learn industry-specific tricks and tips. I am grateful to the Learnbay team for providing an excellent  platform that enhanced my professional growth. Thank you very much! Learnbay.",
+          "Transitioning from a non-tech role, LearnBay's IBM data science certification equipped me with the skills needed in today's market. The course's interactive sessions and personalized guidance from Abhishek sir were invaluable. Post-completion, I had received two offers, one from Amazon and other from Infosys for the role of senior data analyst. Highly recommend for anyone stepping into data science.",
         complogo:
-          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/HCL-logo.png",
+          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/amazon.webp",
         statLogo: " 150% Hike",
       },
-      {
-        id: 6,
-        name: "Abhishek Singh",
-        working: "Working at AGS",
-        proImg:
-          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/abhishek-home.png",
-        sDesc:
-          "I got placed at AGS within 9 months of joining Learnbay institute. Live interaction sessions are the best part here since ...",
-        lDesc:
-          "I got placed at AGS within 9 months of joining Learnbay institute. Live interaction sessions are  the best part here since we could clear all queries. The projects are excellent. Overall I had a great  experience and I urge everyone to enroll in this institute.",
-        complogo:
-          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/AGS-logo.png",
-        statLogo: "  132% Hike",
-      },
-      {
-        id: 7,
-        name: "Vishal",
-        working: "Working at Bridge i2i",
-        proImg:
-          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/vishal-home.png",
-        sDesc:
-          "One on One counseling from experts has guided me to  make the right decision. The Learnbay team was amazing in assisting me with ...",
-        lDesc:
-          "One on One counseling from experts has guided me to make the right decision. The Learnbay team was amazing in assisting me with live projects and preparing for the placements. Thank you! Learnbay for your tremendous support in excelling in my Data Science Career.",
-        complogo:
-          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Bridgei2i-logo.png",
-        statLogo: "  127% Hike",
-      },
-      {
-        id: "math",
-        name: "Aravind Kumar",
-        working: "SA - Data Scientist",
-        proImg:
-          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/aravind-home.png",
-        sDesc:
-          "Choosing Learnbay was my best decision ever. The instructors were encouraging and glad to answer questions. The best feature is that ...",
-        lDesc:
-          "Choosing Learnbay was my best decision ever. The instructors were encouraging and glad to answer questions. The best feature is that their flexible modules & small size batches. I was able to manage  my time and learn while working. Thanks to Learnbay for my lucrative placement.",
-        complogo:
-          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/themathcompany-logo.png",
-        statLogo: "142% Hike",
-      },
+      // {
+      //   id: 6,
+      //   name: "Abhishek Singh",
+      //   working: "Working at AGS",
+      //   link: "D-gcPaK_-x4",
+      //   proImg:
+      //     "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/reviewNew.webp",
+      //   sDesc:
+      //     "I got placed at AGS within 9 months of joining Learnbay institute. Live interaction sessions are the best part here since ...",
+      //   lDesc:
+      //     "I got placed at AGS within 9 months of joining Learnbay institute. Live interaction sessions are  the best part here since we could clear all queries. The projects are excellent. Overall I had a great  experience and I urge everyone to enroll in this institute.",
+      //   complogo:
+      //     "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/microsoft.webp",
+      //   statLogo: "  132% Hike",
+      // },
+      // {
+      //   id: 7,
+      //   name: "Vishal",
+      //   working: "Working at Bridge i2i",
+      //   link: "D-gcPaK_-x4",
+      //   proImg:
+      //     "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/reviewNew.webp",
+      //   sDesc:
+      //     "One on One counseling from experts has guided me to  make the right decision. The Learnbay team was amazing in assisting me with ...",
+      //   lDesc:
+      //     "One on One counseling from experts has guided me to make the right decision. The Learnbay team was amazing in assisting me with live projects and preparing for the placements. Thank you! Learnbay for your tremendous support in excelling in my Data Science Career.",
+      //   complogo:
+      //     "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/microsoft.webp",
+      //   statLogo: "  127% Hike",
+      // },
+      // {
+      //   id: "math",
+      //   name: "Aravind Kumar",
+      //   working: "SA - Data Scientist",
+      //   link: "D-gcPaK_-x4",
+      //   proImg:
+      //     "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/reviewNew.webp",
+      //   sDesc:
+      //     "Choosing Learnbay was my best decision ever. The instructors were encouraging and glad to answer questions. The best feature is that ...",
+      //   lDesc:
+      //     "Choosing Learnbay was my best decision ever. The instructors were encouraging and glad to answer questions. The best feature is that their flexible modules & small size batches. I was able to manage  my time and learn while working. Thanks to Learnbay for my lucrative placement.",
+      //   complogo:
+      //     "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/microsoft.webp",
+      //   statLogo: "142% Hike",
+      // },
     ],
     thirdSection: [
       {
@@ -289,13 +296,13 @@ export const FoundationDataScienceCourseData = [
                   ],
                 },
               },
-  
+
               {
                 chap: {
                   title: "Topic 2 :- Fundamentals of programming ",
                   desc: [
                     "Introduction to Anaconda & Jupyter notebook ",
-  
+
                     "Flavors of python Introduction to Git, GitHub ",
                     "Python Fundamentals ",
                   ],
@@ -328,7 +335,7 @@ export const FoundationDataScienceCourseData = [
                     " Python Programming Overview",
                     "  Python Data Types",
                     "  Functions And Modules ,Class hands-on: 8+ Programs to be covered in the functions, Lambda, modules, Generators, and Packages class",
-  
+
                     " File I/O And Exceptional Handling and Regular Expression,Class hands-on: 10+ Programs to be covered in class from File IO, Reg-ex and exception handling.",
                     "Data Analysis Using Numpy",
                     " Data Analysis Using Pandas",
@@ -356,7 +363,7 @@ export const FoundationDataScienceCourseData = [
                     " Python Programming Overview",
                     "  Python Data Types",
                     "  Functions And Modules ,Class hands-on: 8+ Programs to be covered in the functions, Lambda, modules, Generators, and Packages class",
-  
+
                     " File I/O And Exceptional Handling and Regular Expression,Class hands-on: 10+ Programs to be covered in class from File IO, Reg-ex and exception handling.",
                     "Data Analysis Using Numpy",
                     " Data Analysis Using Pandas",
@@ -498,108 +505,108 @@ export const FoundationDataScienceCourseData = [
       ],
     },
     project: [
-        {
-          id: 1,
-          domain: "HR Domain",
-          CLogo: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/1-1.png",
-          SDesc:
-            "  IBM intends to boost their HR department by identifying employees' masked inconsistency...",
-          PopupImg:
-            "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/Hr-domain-img.png",
-          ProjectTitle: "HR Domain",
-          Title:
-            "Career progression planning of employees with workforce defections & efficiency",
-          LDesc:
-            "IBM intends to boost its HR department by identifying employees' masked inconsistency. They need models to identify the graphical variations in their 14000+ employees' performances. Help them build models with your regressions and other ML abilities.",
-        },
-        {
-          id: 2,
-          domain: "Marketing Domain",
-          CLogo:
-            "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Project+company+logos/swiggy.png",
-          SDesc:
-            "  Swiggy seeks a broad marketing campaign. But they need automated keyword generation tools...",
-          PopupImg:
-            "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/Marketing-domain-img.png",
-          ProjectTitle: "Marketing Domain",
-          Title:
-            "Descriptive study of trends and irregularities with prediction analysis for conversion.",
-          LDesc:
-            "Swiggy seeks a broad marketing campaign. But they need automated keyword generation tools. They also require proper message preparation and delivery of the same to the right audience at the right time. You can help them with text analytics and NLP-based keyword research solutions",
-        },
-        {
-          id: 3,
-          domain: "Manufacturing Domain",
-          CLogo:
-            "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/Untitled-design-3.png",
-          SDesc:
-            "  This project helped BOSCH to predict their internal failures  by production line dataset analysis...",
-          PopupImg:
-            "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/supplyChain.png",
-          ProjectTitle: "Manufacturing Domain",
-          Title:
-            "Condition-based preventative maintenance and fault prediction in depth",
-          LDesc:
-            "An automated inventory management system will keep track of stock levels and upcoming orders. In addition, you can contribute to DataCo's intelligent supply chain software generation project by using ML algorithms and R programming skills.",
-        },
-        {
-          id: "BMW",
-          domain: "Sales Domain",
-          CLogo:
-            "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/Untitled-design-2.png",
-          SDesc:
-            "      BMW allows existing customers to sell used cars but many competitors are now offering better resale values...",
-          PopupImg:
-            "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/Sales-domain.png",
-          ProjectTitle: "Sales Domain",
-          Title: "Forecasting future sales with trends and price maximization",
-          LDesc:
-            "BMW allows existing customers to sell used cars  but many competitors are now offering better resale values. A data science-powered statistical app from BMW will provide the best market value for used cars based on parameters like Km driven, daily pricing up and down, manufacturing dates, and so on. Develop your analytical skills through such projects.",
-        },
-        {
-          id: 5,
-          domain: "Healthcare Domain",
-          CLogo: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/5(2).png",
-          SDesc:
-            "  Samsung will launch a new healthcare app soon. The key goal of this app is accurate human activity...",
-          PopupImg:
-            "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/supplyChain.png",
-          ProjectTitle: "Healthcare Domain",
-          Title:
-            "Understanding covid-19 cases and fatality rate by time series forecasting",
-          LDesc:
-            "Samsung will launch a new healthcare app soon. The key goal of this app is accurate human activity tracking and providing relevant health-related recommendations. Continuous analysis of a massive amount of mobile data is required for such an app.",
-        },
-        {
-          id: 6,
-          domain: "E-Commerce Domain",
-          CLogo: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/4(2).png",
-          SDesc:
-            "   Amazon has made a goal to identify the most successful consumer electronic products...",
-          PopupImg:
-            "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/supplyChain.png",
-          ProjectTitle: "E-Commerce Domain",
-          Title:
-            "Recommendation system with customer lifetime value analysis (CLV)",
-          LDesc:
-            "Amazon has made a goal to identify the most successful consumer electronic products. For these, they require live customer review analysis. You can take part in the assisting project of customer insight regeneration from the ongoing and existing reviews via a suitable data visualization approach.",
-        },
-        {
-          id: 7,
-          domain: "Entertainment Domain",
-          CLogo: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/9-1.png",
-          SDesc:
-            "  Netflix is a global entertainment video streaming site. They offer content in various regional languages...",
-          PopupImg:
-            "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/supplyChain.png",
-          Title:
-            "Building a content recommendation model on the basis of regional viewer categorization",
-          ProjectTitle: "Media Domain",
-  
-          LDesc:
-            "Netflix is a global entertainment video streaming site. They offer content in various regional languages. Build a local recommendation engine for Netflix customers residing in south Bangalore on their weekend and weekdays activities, utilizing NLP.",
-        },
-      ],
+      {
+        id: 1,
+        domain: "HR Domain",
+        CLogo: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/1-1.png",
+        SDesc:
+          "  IBM intends to boost their HR department by identifying employees' masked inconsistency...",
+        PopupImg:
+          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/Hr-domain-img.png",
+        ProjectTitle: "HR Domain",
+        Title:
+          "Career progression planning of employees with workforce defections & efficiency",
+        LDesc:
+          "IBM intends to boost its HR department by identifying employees' masked inconsistency. They need models to identify the graphical variations in their 14000+ employees' performances. Help them build models with your regressions and other ML abilities.",
+      },
+      {
+        id: 2,
+        domain: "Marketing Domain",
+        CLogo:
+          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Project+company+logos/swiggy.png",
+        SDesc:
+          "  Swiggy seeks a broad marketing campaign. But they need automated keyword generation tools...",
+        PopupImg:
+          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/Marketing-domain-img.png",
+        ProjectTitle: "Marketing Domain",
+        Title:
+          "Descriptive study of trends and irregularities with prediction analysis for conversion.",
+        LDesc:
+          "Swiggy seeks a broad marketing campaign. But they need automated keyword generation tools. They also require proper message preparation and delivery of the same to the right audience at the right time. You can help them with text analytics and NLP-based keyword research solutions",
+      },
+      {
+        id: 3,
+        domain: "Manufacturing Domain",
+        CLogo:
+          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/Untitled-design-3.png",
+        SDesc:
+          "  This project helped BOSCH to predict their internal failures  by production line dataset analysis...",
+        PopupImg:
+          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/supplyChain.png",
+        ProjectTitle: "Manufacturing Domain",
+        Title:
+          "Condition-based preventative maintenance and fault prediction in depth",
+        LDesc:
+          "An automated inventory management system will keep track of stock levels and upcoming orders. In addition, you can contribute to DataCo's intelligent supply chain software generation project by using ML algorithms and R programming skills.",
+      },
+      {
+        id: "BMW",
+        domain: "Sales Domain",
+        CLogo:
+          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/Untitled-design-2.png",
+        SDesc:
+          "      BMW allows existing customers to sell used cars but many competitors are now offering better resale values...",
+        PopupImg:
+          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/Sales-domain.png",
+        ProjectTitle: "Sales Domain",
+        Title: "Forecasting future sales with trends and price maximization",
+        LDesc:
+          "BMW allows existing customers to sell used cars  but many competitors are now offering better resale values. A data science-powered statistical app from BMW will provide the best market value for used cars based on parameters like Km driven, daily pricing up and down, manufacturing dates, and so on. Develop your analytical skills through such projects.",
+      },
+      {
+        id: 5,
+        domain: "Healthcare Domain",
+        CLogo: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/5(2).png",
+        SDesc:
+          "  Samsung will launch a new healthcare app soon. The key goal of this app is accurate human activity...",
+        PopupImg:
+          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/supplyChain.png",
+        ProjectTitle: "Healthcare Domain",
+        Title:
+          "Understanding covid-19 cases and fatality rate by time series forecasting",
+        LDesc:
+          "Samsung will launch a new healthcare app soon. The key goal of this app is accurate human activity tracking and providing relevant health-related recommendations. Continuous analysis of a massive amount of mobile data is required for such an app.",
+      },
+      {
+        id: 6,
+        domain: "E-Commerce Domain",
+        CLogo: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/4(2).png",
+        SDesc:
+          "   Amazon has made a goal to identify the most successful consumer electronic products...",
+        PopupImg:
+          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/supplyChain.png",
+        ProjectTitle: "E-Commerce Domain",
+        Title:
+          "Recommendation system with customer lifetime value analysis (CLV)",
+        LDesc:
+          "Amazon has made a goal to identify the most successful consumer electronic products. For these, they require live customer review analysis. You can take part in the assisting project of customer insight regeneration from the ongoing and existing reviews via a suitable data visualization approach.",
+      },
+      {
+        id: 7,
+        domain: "Entertainment Domain",
+        CLogo: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/9-1.png",
+        SDesc:
+          "  Netflix is a global entertainment video streaming site. They offer content in various regional languages...",
+        PopupImg:
+          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/supplyChain.png",
+        Title:
+          "Building a content recommendation model on the basis of regional viewer categorization",
+        ProjectTitle: "Media Domain",
+
+        LDesc:
+          "Netflix is a global entertainment video streaming site. They offer content in various regional languages. Build a local recommendation engine for Netflix customers residing in south Bangalore on their weekend and weekdays activities, utilizing NLP.",
+      },
+    ],
     faq: [
       {
         id: 0,

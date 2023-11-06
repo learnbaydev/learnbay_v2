@@ -166,9 +166,7 @@ function Blockchain({}) {
   return (
     <>
       <Head>
-        <title>
-        Full-Stack Software Development Program - Learnbay
-        </title>
+        <title>Full-Stack Software Development Program - Learnbay</title>
         <meta
           name="description"
           content="Upskill yourself with cutting edge Artificial Intelligence and Data Science Skills, Techniques by enrolling into the Learnbay's Advanced Data Science Course."
@@ -239,9 +237,14 @@ function Blockchain({}) {
         <ContactConsellor />
 
         <SyllabusNew
+          masterSyllabusMobile={
+            FSSPDataScienceCourseData[0].masterSyllabusMobile
+          }
           syllabusHead={FSSPDataScienceCourseData[0].syllabusHead}
           masterSyllabus={FSSPDataScienceCourseData[0].masterSyllabus}
-          MasterSyllabusDefault={FSSPDataScienceCourseData[0].MasterSyllabusDefault}
+          MasterSyllabusDefault={
+            FSSPDataScienceCourseData[0].MasterSyllabusDefault
+          }
           dataScienceCounselling={true}
           dataScience={true}
           titleCourse="Advanced Data Science and AI Program with domain specialization"
@@ -259,7 +262,6 @@ function Blockchain({}) {
         />
         {/* <Certificate data={FSSPDataScienceCourseData[0].Certificate} /> */}
         <FeeSection
-   
           Fee="₹ 1,15,000"
           FeeEmi="₹ 7,538/month"
           WeekdayDate="Nov 10th"

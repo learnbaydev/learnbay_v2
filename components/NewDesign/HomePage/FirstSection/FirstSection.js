@@ -60,6 +60,7 @@ const FirstSection = ({ dataScience, radio, btnHide, second, third, dataScienceG
           popup={true}
           radio={radio}
           dataScience={dataScience}
+          dataScienceGeneric={dataScienceGeneric}
           dataScienceCounselling={dataScienceCounselling}
         >
           <div className="leftPopup">

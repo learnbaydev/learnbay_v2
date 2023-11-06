@@ -1,6 +1,14 @@
-import Head from "next/head";
-import styles from "../../../styles/Home.module.css";
 import dynamic from "next/dynamic";
+import Head from "next/head";
+import { useState } from "react";
+import { DAcanadaCourseData } from "../../../../CityData/Canada/DataAnalyticsCourseTrainingCanada";
+import FeeSection from "../../../../components/CoursePage/FeeSection/FeeSection";
+import Footer from "../../../../components/Footer/Footer";
+import Form from "../../../../components/Form/Form";
+import Testimonial from "../../../../components/HomePage/Testimonial/Testimonial";
+import Navbar from "../../../../components/Navbar/Navbar";
+import Popup from "../../../../components/Popup/Popup";
+import styles from "../../../styles/Home.module.css";
 const FirstSection = dynamic(() =>
   import("../../../../components/CoursePage/FirstSection/FirstSection")
 );
@@ -25,17 +33,9 @@ const CitiesLeft = dynamic(() =>
 const CitiesRight = dynamic(() =>
   import("../../../../components/SEO/CitiesRight/CitiesRightdomain")
 );
-import { DAcanadaCourseData } from "../../../../CityData/Canada/DataAnalyticsCourseTrainingCanada";
 const FAQNew = dynamic(() =>
   import("../../../../components/CoursePage/FAQNew/FAQNew")
 );
-import Popup from "../../../../components/Popup/Popup";
-import Navbar from "../../../../components/Navbar/Navbar";
-import Footer from "../../../../components/Footer/Footer";
-import Form from "../../../../components/Form/Form";
-import React, { useState } from "react";
-import Testimonial from "../../../../components/HomePage/Testimonial/Testimonial";
-import FeeSection from "../../../../components/CoursePage/FeeSection/FeeSection";
 
 export default function Home() {
   const [popups, setPopups] = useState(false);
@@ -45,7 +45,7 @@ export default function Home() {
   };
   return (
     <div className={styles.container}>
-    <Head>
+      <Head>
         <title>Data Analytics Certification Course in Canada - Learnbay</title>
         <meta name="robots" content="index, follow" />
         <meta
@@ -56,7 +56,7 @@ export default function Home() {
           name="keywords"
           content="Data Analytics course in Canada, Data Analytics training in Canada, Data Analytics institute in Canada, best Data Analytics institute in Canada, Data Analytics course in Canada, Data Analytics certification in Canada, Data Analytics training institute in Canada, advanced Data Analytics course in Canada, Data Analytics course with Placement Assistance, Data Analytics course"
         />
-<meta
+        <meta
           property="og:url"
           content="https://www.learnbay.co/datascience/canada/data-analytics-course-training-in-canada"
         />
@@ -95,7 +95,6 @@ export default function Home() {
           name="twitter:image"
           content="https://www.learnbay.co/_next/image?url=https%3A%2F%2Flearnbay-wb.s3.ap-south-1.amazonaws.com%2Fmain%2FLearnbay-Logo.webp&w=256&q=100"
         />
-
         <link
           rel="canonical"
           href="https://www.learnbay.co/datascience/canada/data-analytics-course-training-in-canada"
@@ -176,7 +175,9 @@ export default function Home() {
           firstTopPara="A Fast Track Career Upgradation Training Program For Early Professionals"
           cityParaCont="Working professionals with less than a year of experience who are hoping for a prosperous or even developing career path should take this course."
         />
-        <SecondSection SecondSectionData={DAcanadaCourseData[0].secondSection} />
+        <SecondSection
+          SecondSectionData={DAcanadaCourseData[0].secondSection}
+        />
         <Testimonial
           redirectDS={true}
           Testimonial={DAcanadaCourseData[0].testimonial}
@@ -185,14 +186,16 @@ export default function Home() {
         />
         <div className={styles.cityFee}>
           <FeeSection
-            AIMLCertificate={true}
-            Fee="₹ 79,000 + 18% GST"
-            FeeEmi="₹ 7,768/month"
-            FeeHeading="Program Fee & Financing"
-            FeeContent2="No cost EMI"
+            Fee="₹ 80,000"
+            FeeEmi="₹ 5,244/month"
+            WeekdayDate="NOV 17th"
+            WeekendDate="NOV 26th"
+            WeekendTime="09:30 AM - 1:00 PM"
+            WeekdayTime="08:00 AM - 10:00 AM"
             FeeContent3="Flexible payment"
             FeeContent4="Easy loan procedure"
             FeeContent5="15 days refund policy"
+            FeeContent6="No additional cost"
             dataScienceCounselling={true}
           />
         </div>
@@ -202,7 +205,7 @@ export default function Home() {
           </div>
           <div className="CitiesRight">
             <CitiesRight
-             ProgramHead1={DAcanadaCourseData[0].ProgramHead1}
+              ProgramHead1={DAcanadaCourseData[0].ProgramHead1}
               ProgramBot1={DAcanadaCourseData[0].ProgramBot1}
               ProgramBot2={DAcanadaCourseData[0].ProgramBot2}
               ProgramHead3={DAcanadaCourseData[0].ProgramHead3}
@@ -254,7 +257,7 @@ export default function Home() {
               src={DAcanadaCourseData[0].src}
               src22={DAcanadaCourseData[0].src22}
               src33={DAcanadaCourseData[0].src33}
-             ModuleHead1={DAcanadaCourseData[0].ModuleHead1}
+              ModuleHead1={DAcanadaCourseData[0].ModuleHead1}
               ModuleBot1={DAcanadaCourseData[0].ModuleBot1}
               ModuleBot2={DAcanadaCourseData[0].ModuleBot2}
               ModuleHead2={DAcanadaCourseData[0].ModuleHead2}

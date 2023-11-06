@@ -138,24 +138,26 @@ export default function Home() {
         <SecondSection
           SecondSectionData={FScanadaCourseData[0].secondSection}
         />
-        <Testimonial
+        {/* <Testimonial
           redirectDS={false}
           Testimonial={FScanadaCourseData[0].testimonial}
           heading="Our Alumni Speak"
           para="Discover the impact of our programs on career growth"
-        />
+        /> */}
         <div className={styles.cityFee}>
-          <FeeSection
-            AIMLCertificate={true}
-            Fee="₹  1,10,000 + 18% GST"
-            FeeEmi="₹  10,816/month"
-            FeeHeading="Program Fee & Financing"
-            FeeContent2="No cost EMI"
-            FeeContent3="Flexible payment"
-            FeeContent4="Easy loan procedure"
-            FeeContent5="15 days refund policy"
-            dataScienceCounselling={true}
-          />
+        <FeeSection
+          Fee="₹ 1,15,000"
+          FeeEmi="₹ 7,538/month"
+          WeekdayDate="Nov 10th"
+          WeekendDate="Nov 17th"
+          WeekendTime="7:30 AM to 9:30 AM"
+          WeekdayTime="8:00 PM to 10:00 PM"
+          FeeContent3="Flexible payment"
+          FeeContent4="Easy loan procedure"
+          FeeContent5="15 days refund policy"
+          FeeContent6="No additional cost"
+          dataScienceCounselling={true}
+        />
         </div>
         <div className="MainCities">
           <div className="CitiesLeft">

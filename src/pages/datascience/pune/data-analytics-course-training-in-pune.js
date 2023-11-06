@@ -1,6 +1,14 @@
-import Head from "next/head";
-import styles from "../../../styles/Home.module.css";
 import dynamic from "next/dynamic";
+import Head from "next/head";
+import { useState } from "react";
+import { DAPuneCourseData } from "../../../../CityData/Pune/dataAnalyticsCourseTrainingInPune";
+import FeeSection from "../../../../components/CoursePage/FeeSection/FeeSection";
+import Footer from "../../../../components/Footer/Footer";
+import Form from "../../../../components/Form/Form";
+import Testimonial from "../../../../components/HomePage/Testimonial/Testimonial";
+import Navbar from "../../../../components/Navbar/Navbar";
+import Popup from "../../../../components/Popup/Popup";
+import styles from "../../../styles/Home.module.css";
 const FirstSection = dynamic(() =>
   import("../../../../components/CoursePage/FirstSection/FirstSection")
 );
@@ -25,17 +33,9 @@ const CitiesLeft = dynamic(() =>
 const CitiesRight = dynamic(() =>
   import("../../../../components/SEO/CitiesRight/CitiesRightdomain")
 );
-import { DAPuneCourseData } from "../../../../CityData/Pune/dataAnalyticsCourseTrainingInPune";
 const FAQNew = dynamic(() =>
   import("../../../../components/CoursePage/FAQNew/FAQNew")
 );
-import Popup from "../../../../components/Popup/Popup";
-import Navbar from "../../../../components/Navbar/Navbar";
-import Footer from "../../../../components/Footer/Footer";
-import Form from "../../../../components/Form/Form";
-import React, { useState } from "react";
-import Testimonial from "../../../../components/HomePage/Testimonial/Testimonial";
-import FeeSection from "../../../../components/CoursePage/FeeSection/FeeSection";
 
 export default function Home() {
   const [popups, setPopups] = useState(false);
@@ -46,8 +46,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-     
-      <title>
+        <title>
           Best IBM Certified Data Analytics Course in Pune - Learnbay
         </title>
         <meta name="robots" content="index, follow" />
@@ -59,7 +58,7 @@ export default function Home() {
           name="keywords"
           content="Data Analytics course in Pune, Data Analytics training in Pune, Data Analytics institute in Pune, best Data Analytics institute in Pune, Data Analytics course in Pune, Data Analytics certification in Pune, Data Analytics training institute in Pune, advanced Data Analytics course in Pune, Data Analytics course with Placement Assistance, Data Analytics course"
         />
-<meta
+        <meta
           property="og:url"
           content="https://www.learnbay.co/datascience/pune/data-analytics-course-training-in-pune"
         />
@@ -98,24 +97,18 @@ export default function Home() {
           name="twitter:image"
           content="https://www.learnbay.co/_next/image?url=https%3A%2F%2Flearnbay-wb.s3.ap-south-1.amazonaws.com%2Fmain%2FLearnbay-Logo.webp&w=256&q=100"
         />
-
         <link
           rel="canonical"
           href="https://www.learnbay.co/datascience/pune/data-analytics-course-training-in-pune"
         />
-    
         <meta
           name="copyright"
           content="Learnbay: Data Analytics Courses Certification Training India"
         />
-      
         <link
           rel="icon"
           href="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/Learnbay-Favicon-L.png"
         />
-
-
-
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -163,7 +156,7 @@ export default function Home() {
           FirstTyped="Guaranteed Interview Calls"
           SecondTyped="Capstone Project Certificate"
           ThirdTyped="Live Interactive Classes"
-          dataScience={true}  
+          dataScience={true}
           titleCourse="Data Analytics Course Training in Pune"
           brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Data+Analytics+Certification+Program+Learnbay.pdf"
           idss="y_0IdhFKJKM"
@@ -182,14 +175,16 @@ export default function Home() {
         />
         <div className={styles.cityFee}>
           <FeeSection
-            AIMLCertificate={true}
-            Fee="₹ 79,000 + 18% GST"
-            FeeEmi="₹ 7,768/month"
-            FeeHeading="Program Fee & Financing"
-            FeeContent2="No cost EMI"
+            Fee="₹ 80,000"
+            FeeEmi="₹ 5,244/month"
+            WeekdayDate="NOV 17th"
+            WeekendDate="NOV 26th"
+            WeekendTime="09:30 AM - 1:00 PM"
+            WeekdayTime="08:00 AM - 10:00 AM"
             FeeContent3="Flexible payment"
             FeeContent4="Easy loan procedure"
             FeeContent5="15 days refund policy"
+            FeeContent6="No additional cost"
             dataScienceCounselling={true}
           />
         </div>
@@ -199,13 +194,11 @@ export default function Home() {
           </div>
           <div className="CitiesRight">
             <CitiesRight
-            
               ProgramHead1={DAPuneCourseData[0].ProgramHead1}
               ProgramBot1={DAPuneCourseData[0].ProgramBot1}
               ProgramBot2={DAPuneCourseData[0].ProgramBot2}
               ProgramBot3={DAPuneCourseData[0].ProgramBot3}
               ProgramHead3={DAPuneCourseData[0].ProgramHead3}
-            
               ProgramBot31={DAPuneCourseData[0].ProgramBot31}
               ProgramHead4={DAPuneCourseData[0].ProgramHead4}
               ProgramHead5={DAPuneCourseData[0].ProgramHead5}
@@ -298,9 +291,7 @@ export default function Home() {
               JobBot3={DAPuneCourseData[0].JobBot3}
               JobBot6={DAPuneCourseData[0].JobBot6}
               ProjectsBot1={DAPuneCourseData[0].ProjectsBot1}
-              ProjectsBot2= {DAPuneCourseData[0].ProjectsBot2}
-  
-        
+              ProjectsBot2={DAPuneCourseData[0].ProjectsBot2}
               src1={DAPuneCourseData[0].src1}
               ProjectsH1={DAPuneCourseData[0].ProjectsH1}
               Projectsp1={DAPuneCourseData[0].Projectsp1}
@@ -326,7 +317,6 @@ export default function Home() {
               Asrc4={DAPuneCourseData[0].Asrc4}
               AlumniH4={DAPuneCourseData[0].AlumniH4}
               Alumnip4={DAPuneCourseData[0].Alumnip4}
-          
             />
             <div className={styles.faqCity}>
               <FAQNew FAQNewData={DAPuneCourseData[0].faq} />

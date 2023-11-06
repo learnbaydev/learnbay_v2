@@ -1,7 +1,7 @@
 import dynamic from "next/dynamic";
 import Head from "next/head";
 import { useEffect, useState } from "react";
-import { DataScienceCourseData } from "../../../Data/AdvanceDataScienceCourse";
+import { BADataScienceCourseData } from "../../../Data/BusinessAnalyticsData";
 import Footer from "../../../components/Footer/Footer";
 import Navbar from "../../../components/Navbar/Navbar";
 
@@ -202,19 +202,19 @@ function Blockchain({}) {
           idss="bfl64ANfSV0"
         />
         <SecondSection
-          SecondSectionData={DataScienceCourseData[0].secondSection}
+          SecondSectionData={BADataScienceCourseData[0].secondSection}
         />
         <SecondNavbar />
         <WhoProgram
           dataScience={true}
           leftImage="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/advance-who.webp"
-          ThirdSectionData={DataScienceCourseData[0].thirdSection}
+          ThirdSectionData={BADataScienceCourseData[0].thirdSection}
         />
         <TrainerSection idss="eautK0odE7Q" />
         <Testimonial
           redirectDS={true}
           heading=""
-          Testimonial={DataScienceCourseData[0].testimonial}
+          Testimonial={BADataScienceCourseData[0].testimonial}
         />
 
         <WhoIsProgram
@@ -227,7 +227,7 @@ function Blockchain({}) {
         <GetHire />
         {/* <Switch /> */}
         {/* <FourthSection
-          placementData={DataScienceCourseData[0].fourthSection}
+          placementData={BADataScienceCourseData[0].fourthSection}
           redirectDS={true}
           dataScience={true}
           titleCourse="Data Science Placement Report"
@@ -237,16 +237,19 @@ function Blockchain({}) {
         <ContactConsellor />
 
         <SyllabusNew
-          syllabusHead={DataScienceCourseData[0].syllabusHead}
-          masterSyllabus={DataScienceCourseData[0].masterSyllabus}
-          MasterSyllabusDefault={DataScienceCourseData[0].MasterSyllabusDefault}
+          masterSyllabusMobile={BADataScienceCourseData[0].masterSyllabusMobile}
+          syllabusHead={BADataScienceCourseData[0].syllabusHead}
+          masterSyllabus={BADataScienceCourseData[0].masterSyllabus}
+          MasterSyllabusDefault={
+            BADataScienceCourseData[0].MasterSyllabusDefault
+          }
           dataScienceCounselling={true}
           dataScience={true}
           titleCourse="Advanced Data Science and AI Program with domain specialization"
           brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Advance+Data+Science+and+AI+Certification+Program+Learnbay.pdf"
-          syllabus={DataScienceCourseData[0].syllabus}
-          syllabusDesc={DataScienceCourseData[0].syllabusDesc}
-          popupHead={DataScienceCourseData[0].popupHead}
+          syllabus={BADataScienceCourseData[0].syllabus}
+          syllabusDesc={BADataScienceCourseData[0].syllabusDesc}
+          popupHead={BADataScienceCourseData[0].popupHead}
           progress={progress}
           setProgress={setProgress}
         />
@@ -255,10 +258,10 @@ function Blockchain({}) {
           deskImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Tools-Logo.png"
           mobImage="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Mobile-Tools-Covered.png"
         />
-        <Certificate data={DataScienceCourseData[0].Certificate} />
+       <Certificate data={BADataScienceCourseData[0].Certificate} />
         <FeeSection
           Fee="₹ 90,000"
-          FeeEmi="₹ 5,9009/month"
+          FeeEmi="₹ 5,900/month"
           WeekdayDate="NOV 17th"
           WeekendDate="NOV 26th"
           WeekendTime="09:30 AM - 1:00 PM"
@@ -285,10 +288,10 @@ function Blockchain({}) {
           dataScience={true}
           titleCourse="Advanced Data Science and AI Program with domain specialization"
           brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Masters+in+CS+Data+Science+%26+AI.pdf"
-          projectSection={DataScienceCourseData[0].projectSection}
+          projectSection={BADataScienceCourseData[0].projectSection}
         />
 
-        <FAQNew FAQNewData={DataScienceCourseData[0].faq} />
+        <FAQNew FAQNewData={BADataScienceCourseData[0].faq} />
         <SeventhSection />
         <Footer />
         <BottomBar />

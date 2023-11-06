@@ -185,15 +185,17 @@ export default function Home() {
           para="Discover the impact of our programs on career growth"
         />
         <div className={styles.cityFee}>
-          <FeeSection
-            AIMLCertificate={true}
-            Fee="₹  1,10,000 + 18% GST"
-            FeeEmi="₹  10,817/month"
-            FeeHeading="Program Fee & Financing"
-            FeeContent2="No cost EMI"
+        <FeeSection
+            Fee="₹ 90,000"
+            FeeEmi="₹ 5,900/month"
+            WeekdayDate="NOV 17th"
+            WeekendDate="NOV 26th"
+            WeekendTime="09:30 AM - 1:00 PM"
+            WeekdayTime="08:00 AM - 10:00 AM"
             FeeContent3="Flexible payment"
             FeeContent4="Easy loan procedure"
             FeeContent5="15 days refund policy"
+            FeeContent6="No additional cost"
             dataScienceCounselling={true}
           />
         </div>

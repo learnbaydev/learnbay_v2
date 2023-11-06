@@ -438,10 +438,9 @@ const Form = ({
               name="platform"
               required
               value={query.platform}
-              defaultValue
               onChange={handleParam()}
             >
-              <option value="Select an option" defaultValue hidden>
+              <option value="Select an option" hidden>
                 Select an option
               </option>
               <option value="Data Science & AI Courses">
