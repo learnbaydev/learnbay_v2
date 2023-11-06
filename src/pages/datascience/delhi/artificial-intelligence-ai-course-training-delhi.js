@@ -1,6 +1,14 @@
-import Head from "next/head";
-import styles from "../../../styles/Home.module.css";
 import dynamic from "next/dynamic";
+import Head from "next/head";
+import { useState } from "react";
+import { AIelhiCourseData } from "../../../../CityData/Delhi/ArtificialIntelligenceCourseTrainingDelhiData";
+import FeeSection from "../../../../components/CoursePage/FeeSection/FeeSection";
+import Footer from "../../../../components/Footer/Footer";
+import Form from "../../../../components/Form/Form";
+import Testimonial from "../../../../components/HomePage/Testimonial/Testimonial";
+import Navbar from "../../../../components/Navbar/Navbar";
+import Popup from "../../../../components/Popup/Popup";
+import styles from "../../../styles/Home.module.css";
 const FirstSection = dynamic(() =>
   import("../../../../components/CoursePage/FirstSection/FirstSection")
 );
@@ -25,17 +33,9 @@ const CitiesLeft = dynamic(() =>
 const CitiesRight = dynamic(() =>
   import("../../../../components/SEO/CitiesRight/CitiesRight")
 );
-import { AIelhiCourseData } from "../../../../CityData/Delhi/ArtificialIntelligenceCourseTrainingDelhiData";
 const FAQNew = dynamic(() =>
   import("../../../../components/CoursePage/FAQNew/FAQNew")
 );
-import Popup from "../../../../components/Popup/Popup";
-import Navbar from "../../../../components/Navbar/Navbar";
-import Footer from "../../../../components/Footer/Footer";
-import Form from "../../../../components/Form/Form";
-import React, { useState } from "react";
-import Testimonial from "../../../../components/HomePage/Testimonial/Testimonial";
-import FeeSection from "../../../../components/CoursePage/FeeSection/FeeSection";
 
 export default function Home() {
   const [popups, setPopups] = useState(false);
@@ -56,7 +56,7 @@ export default function Home() {
           name="keywords"
           content="Artificial Intelligence course in Delhi, Artificial Intelligence training in Delhi, Artificial Intelligence institute in Delhi, best Artificial Intelligence institute in Delhi, Artificial Intelligence course in Delhi, Artificial Intelligence certification in Delhi, Artificial Intelligence training institute in Delhi, advanced Artificial Intelligence course in Delhi, Artificial Intelligence course with Placement Assistance, Artificial Intelligence course"
         />
- <meta
+        <meta
           property="og:url"
           content="https://www.learnbay.co/datascience/delhi/artificial-intelligence-ai-course-training-delhi"
         />
@@ -95,13 +95,10 @@ export default function Home() {
           name="twitter:image"
           content="https://www.learnbay.co/_next/image?url=https%3A%2F%2Flearnbay-wb.s3.ap-south-1.amazonaws.com%2Fmain%2FLearnbay-Logo.webp&w=256&q=100"
         />
-
-
         <link
           rel="canonical"
           href="https://www.learnbay.co/datascience/delhi/artificial-intelligence-ai-course-training-delhi"
         />
-
         {/* <meta name="HandheldFriendly" content="true" /> */}
         {/* <meta name="distribution" content="global" /> */}
         <meta
@@ -177,7 +174,6 @@ export default function Home() {
           firstHeading="Artificial Intelligence (AI) Training in Delhi"
           firstTopPara="Becomes an AI Expertise In Product Based MNCs"
           cityParaCont="Become a successful data science manager/leader within 11 months. Learn the secret data scientific tricks of managing data science projects. Learn directly from industry leaders via live classes and live projects. "
-
         />
         <SecondSection SecondSectionData={AIelhiCourseData[0].secondSection} />
         <Testimonial
@@ -187,18 +183,19 @@ export default function Home() {
           para="Discover the impact of our programs on career growth"
         />
         <div className={styles.cityFee}>
-        <FeeSection
-          Fee="₹ 1,10,000 + 18% GST"
-          FeeEmi="₹ 10,817/month"
-          FeeHeading="Program Fee & Financing"
-          FeeContent1="0% interest rate"
-          FeeContent2="No cost EMI"
-          FeeContent3="Flexible payment"
-          FeeContent4="Easy loan procedure"
-          FeeContent5="15 days refund policy"
-          FeeContent6="No additional cost"
-          dataScienceCounselling={true}
-        />
+          <FeeSection
+            Fee="₹ 1,10,000"
+            FeeEmi="₹ 7,211/month"
+            WeekdayDate="NOV 17th"
+            WeekendDate="NOV 26th"
+            WeekendTime="09:30 AM - 1:00 PM"
+            WeekdayTime="08:00 AM - 10:00 AM"
+            FeeContent3="Flexible payment"
+            FeeContent4="Easy loan procedure"
+            FeeContent5="15 days refund policy"
+            FeeContent6="No additional cost"
+            dataScienceCounselling={true}
+          />
         </div>
         <div className="MainCities">
           <div className="CitiesLeft">

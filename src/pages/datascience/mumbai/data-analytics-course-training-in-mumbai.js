@@ -1,6 +1,14 @@
-  import Head from "next/head";
-import styles from "../../../styles/Home.module.css";
 import dynamic from "next/dynamic";
+import Head from "next/head";
+import { useState } from "react";
+import { DAMumbaiCourseData } from "../../../../CityData/Mumbai/DataAnalyticsCourseTrainingMumbaiData";
+import FeeSection from "../../../../components/CoursePage/FeeSection/FeeSection";
+import Footer from "../../../../components/Footer/Footer";
+import Form from "../../../../components/Form/Form";
+import Testimonial from "../../../../components/HomePage/Testimonial/Testimonial";
+import Navbar from "../../../../components/Navbar/Navbar";
+import Popup from "../../../../components/Popup/Popup";
+import styles from "../../../styles/Home.module.css";
 const FirstSection = dynamic(() =>
   import("../../../../components/CoursePage/FirstSection/FirstSection")
 );
@@ -25,17 +33,9 @@ const CitiesLeft = dynamic(() =>
 const CitiesRight = dynamic(() =>
   import("../../../../components/SEO/CitiesRight/CitiesRightdomain")
 );
-import { DAMumbaiCourseData } from "../../../../CityData/Mumbai/DataAnalyticsCourseTrainingMumbaiData";
 const FAQNew = dynamic(() =>
   import("../../../../components/CoursePage/FAQNew/FAQNew")
 );
-import Popup from "../../../../components/Popup/Popup";
-import Navbar from "../../../../components/Navbar/Navbar";
-import Footer from "../../../../components/Footer/Footer";
-import Form from "../../../../components/Form/Form";
-import React, { useState } from "react";
-import Testimonial from "../../../../components/HomePage/Testimonial/Testimonial";
-import FeeSection from "../../../../components/CoursePage/FeeSection/FeeSection";
 
 export default function Home() {
   const [popups, setPopups] = useState(false);
@@ -58,7 +58,7 @@ export default function Home() {
           name="keywords"
           content="Data Analytics course in Mumbai, Data Analytics training in Mumbai, Data Analytics institute in Mumbai, best Data Analytics institute in Mumbai, Data Analytics course in Mumbai, Data Analytics certification in Mumbai, Data Analytics training institute in Mumbai, advanced Data Analytics course in Mumbai, Data Analytics course with Placement Assistance, Data Analytics course"
         />
- <meta
+        <meta
           property="og:url"
           content="https://www.learnbay.co/datascience/mumbai/data-analytics-course-training-in-mumbai"
         />
@@ -97,7 +97,6 @@ export default function Home() {
           name="twitter:image"
           content="https://www.learnbay.co/_next/image?url=https%3A%2F%2Flearnbay-wb.s3.ap-south-1.amazonaws.com%2Fmain%2FLearnbay-Logo.webp&w=256&q=100"
         />
-
         <link
           rel="canonical"
           href="https://www.learnbay.co/datascience/mumbai/data-analytics-course-training-in-mumbai"
@@ -178,14 +177,16 @@ export default function Home() {
         />
         <div className={styles.cityFee}>
           <FeeSection
-            AIMLCertificate={true}
-            Fee="₹ 79,000 + 18% GST"
-            FeeEmi="₹ 7,768/month"
-            FeeHeading="Program Fee & Financing"
-            FeeContent2="No cost EMI"
+            Fee="₹ 80,000"
+            FeeEmi="₹ 5,244/month"
+            WeekdayDate="NOV 17th"
+            WeekendDate="NOV 26th"
+            WeekendTime="09:30 AM - 1:00 PM"
+            WeekdayTime="08:00 AM - 10:00 AM"
             FeeContent3="Flexible payment"
             FeeContent4="Easy loan procedure"
             FeeContent5="15 days refund policy"
+            FeeContent6="No additional cost"
             dataScienceCounselling={true}
           />
         </div>
@@ -195,8 +196,8 @@ export default function Home() {
           </div>
           <div className="CitiesRight">
             <CitiesRight
-            ProgramHead1={DAMumbaiCourseData[0].ProgramHead1}
-            ProgramHead2={DAMumbaiCourseData[0].ProgramHead2}
+              ProgramHead1={DAMumbaiCourseData[0].ProgramHead1}
+              ProgramHead2={DAMumbaiCourseData[0].ProgramHead2}
               ProgramBot1={DAMumbaiCourseData[0].ProgramBot1}
               ProgramBot2={DAMumbaiCourseData[0].ProgramBot2}
               ProgramHead3={DAMumbaiCourseData[0].ProgramHead3}

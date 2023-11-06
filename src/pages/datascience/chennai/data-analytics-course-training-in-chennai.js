@@ -1,6 +1,14 @@
-import Head from "next/head";
-import styles from "../../../styles/Home.module.css";
 import dynamic from "next/dynamic";
+import Head from "next/head";
+import { useState } from "react";
+import { DataAnalyticsChennaiCourseData } from "../../../../CityData/Chennai/dataAnalyticsCourseTrainingInChennai";
+import FeeSection from "../../../../components/CoursePage/FeeSection/FeeSection";
+import Footer from "../../../../components/Footer/Footer";
+import Form from "../../../../components/Form/Form";
+import Testimonial from "../../../../components/HomePage/Testimonial/Testimonial";
+import Navbar from "../../../../components/Navbar/Navbar";
+import Popup from "../../../../components/Popup/Popup";
+import styles from "../../../styles/Home.module.css";
 const FirstSection = dynamic(() =>
   import("../../../../components/CoursePage/FirstSection/FirstSection")
 );
@@ -25,17 +33,9 @@ const CitiesLeft = dynamic(() =>
 const CitiesRight = dynamic(() =>
   import("../../../../components/SEO/CitiesRight/CitiesRightdomain")
 );
-import { DataAnalyticsChennaiCourseData } from "../../../../CityData/Chennai/dataAnalyticsCourseTrainingInChennai";
 const FAQNew = dynamic(() =>
   import("../../../../components/CoursePage/FAQNew/FAQNew")
 );
-import Popup from "../../../../components/Popup/Popup";
-import Navbar from "../../../../components/Navbar/Navbar";
-import Footer from "../../../../components/Footer/Footer";
-import Form from "../../../../components/Form/Form";
-import React, { useState } from "react";
-import Testimonial from "../../../../components/HomePage/Testimonial/Testimonial";
-import FeeSection from "../../../../components/CoursePage/FeeSection/FeeSection";
 
 export default function Home() {
   const [popups, setPopups] = useState(false);
@@ -171,14 +171,16 @@ export default function Home() {
         />
         <div className={styles.cityFee}>
           <FeeSection
-            AIMLCertificate={true}
-            Fee="₹ 79,000 + 18% GST"
-            FeeEmi="₹ 7,768/month"
-            FeeHeading="Program Fee & Financing"
-            FeeContent2="No cost EMI"
+            Fee="₹ 80,000"
+            FeeEmi="₹ 5,244/month"
+            WeekdayDate="NOV 17th"
+            WeekendDate="NOV 26th"
+            WeekendTime="09:30 AM - 1:00 PM"
+            WeekdayTime="08:00 AM - 10:00 AM"
             FeeContent3="Flexible payment"
             FeeContent4="Easy loan procedure"
             FeeContent5="15 days refund policy"
+            FeeContent6="No additional cost"
             dataScienceCounselling={true}
           />
         </div>
@@ -193,7 +195,6 @@ export default function Home() {
               ProgramBot1={DataAnalyticsChennaiCourseData[0].ProgramBot1}
               ProgramBot2={DataAnalyticsChennaiCourseData[0].ProgramBot2}
               ProgramHead3={DataAnalyticsChennaiCourseData[0].ProgramHead3}
-            
               ProgramBot3={DataAnalyticsChennaiCourseData[0].ProgramBot3}
               ProgramBot31={DataAnalyticsChennaiCourseData[0].ProgramBot31}
               ProgramBot32={DataAnalyticsChennaiCourseData[0].ProgramBot32}
@@ -362,7 +363,6 @@ export default function Home() {
               Asrc4={DataAnalyticsChennaiCourseData[0].Asrc4}
               AlumniH4={DataAnalyticsChennaiCourseData[0].AlumniH4}
               Alumnip4={DataAnalyticsChennaiCourseData[0].Alumnip4}
-          
             />
             <div className={styles.faqCity}>
               <FAQNew FAQNewData={DataAnalyticsChennaiCourseData[0].faq} />

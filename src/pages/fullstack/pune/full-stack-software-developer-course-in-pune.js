@@ -1,6 +1,14 @@
-import Head from "next/head";
-import styles from "../../../styles/Home.module.css";
 import dynamic from "next/dynamic";
+import Head from "next/head";
+import { useState } from "react";
+import { FSDPuneCourseData } from "../../../../CityData/Pune/FSDCourseInPune";
+import FeeSection from "../../../../components/CoursePage/FeeSection/FeeSection";
+import Footer from "../../../../components/Footer/Footer";
+import Form from "../../../../components/Form/Form";
+import Testimonial from "../../../../components/HomePage/Testimonial/Testimonial";
+import Navbar from "../../../../components/Navbar/Navbar";
+import Popup from "../../../../components/Popup/Popup";
+import styles from "../../../styles/Home.module.css";
 const FirstSection = dynamic(() =>
   import("../../../../components/CoursePage/FirstSection/FirstSection")
 );
@@ -25,17 +33,9 @@ const CitiesLeft = dynamic(() =>
 const CitiesRight = dynamic(() =>
   import("../../../../components/SEO/CitiesRight/CitiesRight")
 );
-import { FSDPuneCourseData } from "../../../../CityData/Pune/FSDCourseInPune";
 const FAQNew = dynamic(() =>
   import("../../../../components/CoursePage/FAQNew/FAQNew")
 );
-import Popup from "../../../../components/Popup/Popup";
-import Navbar from "../../../../components/Navbar/Navbar";
-import Footer from "../../../../components/Footer/Footer";
-import Form from "../../../../components/Form/Form";
-import React, { useState } from "react";
-import Testimonial from "../../../../components/HomePage/Testimonial/Testimonial";
-import FeeSection from "../../../../components/CoursePage/FeeSection/FeeSection";
 
 export default function Home() {
   const [popups, setPopups] = useState(false);
@@ -59,7 +59,7 @@ export default function Home() {
           content="Full-Stack Software Developer Course in Pune, Full-Stack Software Developer Course training in Pune, Full-Stack Software Developer Course institute in Pune, best Full-Stack Software Developer Course institute in Pune, data scientist course in Pune,data scientist certification in Pune, Full-Stack Software Developer Course training institute in Pune, advanced Full-Stack Software Developer Course in Pune, Full-Stack Software Developer Course with Placement Assistance, Full-Stack Software Developer Course"
         />
 
-<meta
+        <meta
           property="og:url"
           content="https://www.learnbay.co/fullstack/pune/full-stack-software-developer-course-in-pune"
         />
@@ -139,24 +139,26 @@ export default function Home() {
           cityParaCont="Enroll in the best Job-ready full-stack software development course in Pune. Take a 10-step step ahead of others towards the most lucrative salary package of product-based MNCs, which you deserve."
         />
         <SecondSection SecondSectionData={FSDPuneCourseData[0].secondSection} />
-        <Testimonial
+        {/* <Testimonial
           redirectDS={false}
           Testimonial={FSDPuneCourseData[0].testimonial}
           heading="Our Alumni Speak"
           para="Discover the impact of our programs on career growth"
-        />
+        /> */}
         <div className={styles.cityFee}>
-          <FeeSection
-            AIMLCertificate={true}
-            Fee="₹ 1,10,000 + 18% GST"
-            FeeEmi="₹10,816"
-            FeeHeading="Program Fee & Financing"
-            FeeContent2="No cost EMI"
-            FeeContent3="Flexible payment"
-            FeeContent4="Easy loan procedure"
-            FeeContent5="15 days refund policy"
-            dataScienceCounselling={true}
-          />
+        <FeeSection
+          Fee="₹ 1,15,000"
+          FeeEmi="₹ 7,538/month"
+          WeekdayDate="Nov 10th"
+          WeekendDate="Nov 17th"
+          WeekendTime="7:30 AM to 9:30 AM"
+          WeekdayTime="8:00 PM to 10:00 PM"
+          FeeContent3="Flexible payment"
+          FeeContent4="Easy loan procedure"
+          FeeContent5="15 days refund policy"
+          FeeContent6="No additional cost"
+          dataScienceCounselling={true}
+        />
         </div>
         <div className="MainCities">
           <div className="CitiesLeft">

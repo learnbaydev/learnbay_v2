@@ -34,7 +34,7 @@ export const CityFooterData = [
           {
             id: 6,
             name: "Full stack software developer course in Pune",
-            url: "/datascience/pune/full-stack-software-developer-course-in-pune",
+            url: "/fullstack/pune/full-stack-software-developer-course-in-pune",
           },
         ],
       },
@@ -70,7 +70,7 @@ export const CityFooterData = [
           {
             id: 6,
             name: "Full stack software developer course in Mumbai",
-            url: "/datascience/mumbai/full-stack-software-developer-course-in-mumbai",
+            url: "/fullstack/mumbai/full-stack-software-developer-course-in-mumbai",
           },
         ],
       },
@@ -106,7 +106,7 @@ export const CityFooterData = [
           {
             id: 6,
             name: "Full stack software developer course in Chennai",
-            url: "/datascience/chennai/full-stack-software-developer-course-in-chennai",
+            url: "/fullstack/chennai/full-stack-software-developer-course-in-chennai",
           },
         ],
       },
@@ -142,7 +142,7 @@ export const CityFooterData = [
           {
             id: 6,
             name: "Full stack software developer course in Canada",
-            url: "/datascience/canada/full-stack-software-developer-course-in-canada",
+            url: "/fullstack/canada/full-stack-software-developer-course-in-canada",
           },
         ],
       },
@@ -183,7 +183,7 @@ export const CityFooterData = [
           {
             id: 6,
             name: "Full stack software developer course in Bangalore",
-            url: "/datascience/bangalore/full-stack-software-developer-course-in-bangalore",
+            url: "/fullstack/bangalore/full-stack-software-developer-course-in-bangalore",
           },
         ],
       },
@@ -219,7 +219,7 @@ export const CityFooterData = [
           {
             id: 6,
             name: "Full stack software developer course in Hyderabad",
-            url: "/datascience/hyderabad/full-stack-software-developer-course-in-hyderabad",
+            url: "/fullstack/hyderabad/full-stack-software-developer-course-in-hyderabad",
           },
         ],
       },
@@ -255,7 +255,7 @@ export const CityFooterData = [
           {
             id: 6,
             name: "Full stack software developer course in Dubai",
-            url: "/datascience/dubai/full-stack-software-developer-course-in-dubai",
+            url: "/fullstack/dubai/full-stack-software-developer-course-in-dubai",
           },
         ],
       },
@@ -291,7 +291,7 @@ export const CityFooterData = [
           {
             id: 6,
             name: "Full stack software developer course in Delhi",
-            url: "/datascience/delhi/full-stack-software-developer-course-in-delhi",
+            url: "/fullstack/delhi/full-stack-software-developer-course-in-delhi",
           },
         ],
       },

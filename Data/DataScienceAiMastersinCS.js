@@ -1207,7 +1207,7 @@ export const DataScienceMastersinCS = [
             },
           ],
           id: 1,
-          open: true,
+          open: false,
         },
       },
 
@@ -1362,7 +1362,7 @@ export const DataScienceMastersinCS = [
               },
             ],
             id: 3,
-            open: true,
+            open: false,
           },
         },
       {
@@ -1386,7 +1386,7 @@ export const DataScienceMastersinCS = [
             },
           ],
           id: 4,
-          open: true,
+          open: false,
         },
       },
       {
@@ -1521,7 +1521,7 @@ export const DataScienceMastersinCS = [
             },
           ],
           id: 5,
-          open: true,
+          open: false,
         },
       },
       {
@@ -1542,7 +1542,7 @@ export const DataScienceMastersinCS = [
             },
           ],
           id: 6,
-          open: true,
+          open: false,
         },
       },
       {
@@ -1608,7 +1608,7 @@ export const DataScienceMastersinCS = [
             },
           ],
           id: 6,
-          open: true,
+          open: false,
         },
       },
 

@@ -385,101 +385,108 @@ export const DataScienceChennaiCourseData = [
       {
         id: 1,
         name: "Preksha Mishra",
-        working: "Working at HCL",
+        working: "HCL",
+        link: "vSjfKdIzUjY",
         proImg:
-          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/preksha-home.png",
+          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/preksha-testimonial.webp",
         sDesc:
           "I had a great learning experience at Learnbay. The faculties here are top notch. Right from enrollment to getting a good job ...",
         lDesc:
           "I had a great learning experience at Learnbay. The faculties here are top notch. Right from enrollment to getting a good job, they keep putting enormous efforts for each and every candidate. Thanks to all the trainers, backend team, the HR team and to the directors for making this journey smooth.",
         complogo:
-          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/HCL-logo.png",
+          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/microsoft.webp",
         statLogo: "140% Hike",
       },
       {
-        id: "tcs",
-        name: "Mohammad Israr",
-        working: "Working at TCS",
+        id: 2,
+        name: "Shubham Kumar",
+        working: "Cendrol Technology",
+        link: "JoKquvfAhZU",
         proImg:
-          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/asrar-home.png",
+          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/Shubham-kumar-thumb+.webp",
         sDesc:
-          "Thanks to the Learnbay data science course and outstanding assistance, I could ace the TCS interview and secure a job...",
+          "I moved from teaching to data science with Learnbay's help. Their course was easy to follow, even for someone like me without a tech...",
         lDesc:
-          "Thanks to the Learnbay data science course and outstanding assistance, I could ace the TCS interview and secure a job with a 400% pay hike. My understanding of the course was greatly improved by the real-time projects and respective IBM project experience certification.",
+          "I moved from teaching to data science with Learnbay's help. Their course was easy to follow, even for someone like me without a tech background. In six months, I got to learn how data science is used in the real world. Their mock interviews also prepared me for job interviews, and I got a data analyst job at Cendrol. This course really helped me change my career.",
         complogo:
-          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/TCS.png",
+          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/microsoft.webp",
         statLogo: "  210% Hike",
       },
       {
         id: 4,
-        name: "Ritish Kumar",
-        working: "Working at Capgemini",
+        name: "Arvind Kumar",
+        working: "The Math Company",
+        link: "hewBtR_WoDM",
         proImg:
-          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/ritesh-home.png",
+          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/aravind-k-thumb.webp",
         sDesc:
-          "I always had a dilemma about how to switch to the IT field until I stumbled upon the foundation data science course offered by Learnbay...",
+          "Choosing Learnbay was my best decision ever. The instructors were encouraging and glad to answer questions. The best feature is that...",
         lDesc:
-          "I always had a dilemma about how to switch to  IT field until I stumbled upon the foundation data science course offered by Learnbay. The perfect combination of flexibility, affordability, and supportiveness. They helped me get placed at Capgemini, and I’m delighted with my current career. All Thanks to Learnbay!",
+          "Choosing Learnbay was my best decision ever. The instructors were encouraging and glad to answer questions. The best feature is that their flexible modules & small size batches. I was able to manage my time and learn while working. Thanks to Learnbay for my lucrative placement.",
         complogo:
-          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Capgemni-logo.png",
+          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/microsoft.webp",
         statLogo: " 150% Hike",
       },
       {
         id: 5,
-        name: "Sourabh Mourya",
-        working: "Working at HCL",
+        name: "Jaya sinha",
+        working: "Amazon",
+        link: "A-BkcEM0rQM",
         proImg:
-          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/saurabh-home.png",
+          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/jaya-sinha-thumb.webp",
         sDesc:
-          "Flexible classes have helped me to manage my job  schedule. Learning Data Science directly from MNC experts provided the chance ...",
+          "Transitioning from a non-tech role, LearnBay's IBM data science certification equipped me with the skills needed in today's...",
         lDesc:
-          "Flexible classes have helped me to manage my job schedule. Learning Data Science directly from  experts provided the chance to learn industry-specific tricks and tips. I am grateful to the Learnbay team for providing an excellent  platform that enhanced my professional growth. Thank you very much! Learnbay.",
+          "Transitioning from a non-tech role, LearnBay's IBM data science certification equipped me with the skills needed in today's market. The course's interactive sessions and personalized guidance from Abhishek sir were invaluable. Post-completion, I had received two offers, one from Amazon and other from Infosys for the role of senior data analyst. Highly recommend for anyone stepping into data science.",
         complogo:
-          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/HCL-logo.png",
+          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/amazon.webp",
         statLogo: " 150% Hike",
       },
-      {
-        id: 6,
-        name: "Abhishek Singh",
-        working: "Working at AGS",
-        proImg:
-          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/abhishek-home.png",
-        sDesc:
-          "I got placed at AGS within 9 months of joining Learnbay institute. Live interaction sessions are the best part here since ...",
-        lDesc:
-          "I got placed at AGS within 9 months of joining Learnbay institute. Live interaction sessions are  the best part here since we could clear all queries. The projects are excellent. Overall I had a great  experience and I urge everyone to enroll in this institute.",
-        complogo:
-          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/AGS-logo.png",
-        statLogo: "  132% Hike",
-      },
-      {
-        id: 7,
-        name: "Vishal",
-        working: "Working at Bridge i2i",
-        proImg:
-          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/vishal-home.png",
-        sDesc:
-          "One on One counseling from experts has guided me to  make the right decision. The Learnbay team was amazing in assisting me with ...",
-        lDesc:
-          "One on One counseling from experts has guided me to make the right decision. The Learnbay team was amazing in assisting me with live projects and preparing for the placements. Thank you! Learnbay for your tremendous support in excelling in my Data Science Career.",
-        complogo:
-          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Bridgei2i-logo.png",
-        statLogo: "  127% Hike",
-      },
-      {
-        id: "math",
-        name: "Aravind Kumar",
-        working: "SA - Data Scientist",
-        proImg:
-          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/aravind-home.png",
-        sDesc:
-          "Choosing Learnbay was my best decision ever. The instructors were encouraging and glad to answer questions. The best feature is that ...",
-        lDesc:
-          "Choosing Learnbay was my best decision ever. The instructors were encouraging and glad to answer questions. The best feature is that their flexible modules & small size batches. I was able to manage  my time and learn while working. Thanks to Learnbay for my lucrative placement.",
-        complogo:
-          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/themathcompany-logo.png",
-        statLogo: "142% Hike",
-      },
+      // {
+      //   id: 6,
+      //   name: "Abhishek Singh",
+      //   working: "Working at AGS",
+      //   link: "D-gcPaK_-x4",
+      //   proImg:
+      //     "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/reviewNew.webp",
+      //   sDesc:
+      //     "I got placed at AGS within 9 months of joining Learnbay institute. Live interaction sessions are the best part here since ...",
+      //   lDesc:
+      //     "I got placed at AGS within 9 months of joining Learnbay institute. Live interaction sessions are  the best part here since we could clear all queries. The projects are excellent. Overall I had a great  experience and I urge everyone to enroll in this institute.",
+      //   complogo:
+      //     "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/microsoft.webp",
+      //   statLogo: "  132% Hike",
+      // },
+      // {
+      //   id: 7,
+      //   name: "Vishal",
+      //   working: "Working at Bridge i2i",
+      //   link: "D-gcPaK_-x4",
+      //   proImg:
+      //     "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/reviewNew.webp",
+      //   sDesc:
+      //     "One on One counseling from experts has guided me to  make the right decision. The Learnbay team was amazing in assisting me with ...",
+      //   lDesc:
+      //     "One on One counseling from experts has guided me to make the right decision. The Learnbay team was amazing in assisting me with live projects and preparing for the placements. Thank you! Learnbay for your tremendous support in excelling in my Data Science Career.",
+      //   complogo:
+      //     "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/microsoft.webp",
+      //   statLogo: "  127% Hike",
+      // },
+      // {
+      //   id: "math",
+      //   name: "Aravind Kumar",
+      //   working: "SA - Data Scientist",
+      //   link: "D-gcPaK_-x4",
+      //   proImg:
+      //     "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/reviewNew.webp",
+      //   sDesc:
+      //     "Choosing Learnbay was my best decision ever. The instructors were encouraging and glad to answer questions. The best feature is that ...",
+      //   lDesc:
+      //     "Choosing Learnbay was my best decision ever. The instructors were encouraging and glad to answer questions. The best feature is that their flexible modules & small size batches. I was able to manage  my time and learn while working. Thanks to Learnbay for my lucrative placement.",
+      //   complogo:
+      //     "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/microsoft.webp",
+      //   statLogo: "142% Hike",
+      // },
     ],
     faq: [
       {
@@ -740,7 +747,7 @@ export const DataScienceChennaiCourseData = [
           {
             id: 0,
             ques: "Until when do the students get the facility of mentorship?",
-        
+
             ans: "Our mentors will provide data science training to the students until the completion of the course. ",
             open: true,
           },
@@ -760,7 +767,7 @@ export const DataScienceChennaiCourseData = [
           {
             id: 0,
             ques: "When is the job assistance provided at Learnbay and how long will I get it?",
-        
+
             ans: "Job assistance is provided after the completion of the course. It includes build-up sessions, mock interviews, and referrals from top MNC’s/startups. This assistance is provided unless one gets placed in a company. ",
             open: true,
           },
@@ -780,21 +787,21 @@ export const DataScienceChennaiCourseData = [
       "A domain-specific data scientist will have a far deeper understanding of the domain and its nuances, as well as the critical business problems that must be handled. Today, recruiters are on the lookout for domain-specific data scientists. Without domain knowledge, one can’t provide the exact analytical insights. Hence, it’s important to choose courses that offer domain electives options.",
     DomainBot3:
       "Learnbay offers full-stack domain-specialized Data Science Training in Chennai. Based on your experience, you can select the following domains:",
-      DomainList1: "• BFSI",
-      DomainList2: "• Manufacturing",
-      DomainList3: "• Energy, Oil and Gas",
-      DomainList4: "• Healthcare",
-      DomainList5: "• Supply Chain, E-Commerce & Retail",
-      Domainlink1:
-        "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Banking%2C+Finance+and+Insurance+Domain.pdf",
-      Domainlink2:
-        "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Manufacturing%2C+Mechanical+and+Telecom+Domain.pdf",
-      Domainlink3:
-        "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Energy%2C+Oil+and+Gas+Domain.pdf",
-      Domainlink4:
-        "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Healthcare%2C+Pharma+and+Clinical+Research+Domain.pdf",
-      Domainlink5:
-        "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Retail%2C+Ecommerce+and+Supply+chain+Domain.pdf",
+    DomainList1: "• BFSI",
+    DomainList2: "• Manufacturing",
+    DomainList3: "• Energy, Oil and Gas",
+    DomainList4: "• Healthcare",
+    DomainList5: "• Supply Chain, E-Commerce & Retail",
+    Domainlink1:
+      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Banking%2C+Finance+and+Insurance+Domain.pdf",
+    Domainlink2:
+      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Manufacturing%2C+Mechanical+and+Telecom+Domain.pdf",
+    Domainlink3:
+      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Energy%2C+Oil+and+Gas+Domain.pdf",
+    Domainlink4:
+      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Healthcare%2C+Pharma+and+Clinical+Research+Domain.pdf",
+    Domainlink5:
+      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Retail%2C+Ecommerce+and+Supply+chain+Domain.pdf",
 
     CertificationBot1:
       "Using the Learnbay IBM data scientist course, you get hassle-free classes from multiple expert trainers. Additionally, you will get multiple IBM certifications for various data science and artificial intelligence micro-skills. Apart from this, you will receive an IBM Project Experience Certificate upon completion of the capstone project included in the Data Science and AI course in Chennai. You will obtain 1 to 8 certificates depending on the course you choose.",
@@ -911,186 +918,187 @@ export const DataScienceChennaiCourseData = [
     alt9: "data science course training in chennai",
     CityTextB:
       "Data Science Course Certification Training locations in Chennai ",
-    CityText:
+    CityText: (
       <span>
         :{" "}
-            <a
-              href="https://www.learnbay.co/data-science-course-training-in-chennai"
-              style={{ color: "#2D9CD7", fontWeight: "600" }}
-              target="_blank"
-            >
-              Anna Nagar
-            </a>{" "}
-            [600040],{" "}
-            <a
-              href="https://www.learnbay.co/data-science-course-training-in-chennai"
-              style={{ color: "#2D9CD7", fontWeight: "600" }}
-              target="_blank"
-            >
-              Thousand Lights
-            </a>{" "}
-            [600006],{" "}
-            <a
-              href="https://www.learnbay.co/data-science-course-training-in-chennai"
-              style={{ color: "#2D9CD7", fontWeight: "600" }}
-              target="_blank"
-            >
-              Adyar
-            </a>{" "}
-            [600020],{" "}
-            <a
-              href="https://www.learnbay.co/data-science-course-training-in-chennai"
-              style={{ color: "#2D9CD7", fontWeight: "600" }}
-              target="_blank"
-            >
-              Nungambakkam
-            </a>{" "}
-            [600034],{" "}
-            <a
-              href="https://www.learnbay.co/data-science-course-training-in-chennai"
-              style={{ color: "#2D9CD7", fontWeight: "600" }}
-              target="_blank"
-            >
-              Perambur
-            </a>{" "}
-            [600011],{" "}
-            <a
-              href="https://www.learnbay.co/data-science-course-training-in-chennai"
-              style={{ color: "#2D9CD7", fontWeight: "600" }}
-              target="_blank"
-            >
-              OMR
-            </a>{" "}
-            [600119],{" "}
-            <a
-              href="https://www.learnbay.co/data-science-course-training-in-chennai"
-              style={{ color: "#2D9CD7", fontWeight: "600" }}
-              target="_blank"
-            >
-              Guindy
-            </a>{" "}
-            [600032],{" "}
-            <a
-              href="https://www.learnbay.co/data-science-course-training-in-chennai"
-              style={{ color: "#2D9CD7", fontWeight: "600" }}
-              target="_blank"
-            >
-              Thiruvanmiyur
-            </a>{" "}
-            [600041],{" "}
-            <a
-              href="https://www.learnbay.co/data-science-course-training-in-chennai"
-              style={{ color: "#2D9CD7", fontWeight: "600" }}
-              target="_blank"
-            >
-              Perungudi
-            </a>{" "}
-            [600096],{" "}
-            <a
-              href="https://www.learnbay.co/data-science-course-training-in-chennai"
-              style={{ color: "#2D9CD7", fontWeight: "600" }}
-              target="_blank"
-            >
-              Thoraipakkam
-            </a>{" "}
-            [600097],{" "}
-            <a
-              href="https://www.learnbay.co/data-science-course-training-in-chennai"
-              style={{ color: "#2D9CD7", fontWeight: "600" }}
-              target="_blank"
-            >
-              Sholinganallur
-            </a>{" "}
-            [600119],{" "}
-            <a
-              href="https://www.learnbay.co/data-science-course-training-in-chennai"
-              style={{ color: "#2D9CD7", fontWeight: "600" }}
-              target="_blank"
-            >
-              Siruseri
-            </a>{" "}
-            [603103],{" "}
-            <a
-              href="https://www.learnbay.co/data-science-course-training-in-chennai"
-              style={{ color: "#2D9CD7", fontWeight: "600" }}
-              target="_blank"
-            >
-              Tambaram{" "}
-            </a>
-            [600045],{" "}
-            <a
-              href="https://www.learnbay.co/data-science-course-training-in-chennai"
-              style={{ color: "#2D9CD7", fontWeight: "600" }}
-              target="_blank"
-            >
-              Velachery{" "}
-            </a>
-            [600042],{" "}
-            <a
-              href="https://www.learnbay.co/data-science-course-training-in-chennai"
-              style={{ color: "#2D9CD7", fontWeight: "600" }}
-              target="_blank"
-            >
-              Meenambakkam{" "}
-            </a>
-            [600027],{" "}
-            <a
-              href="https://www.learnbay.co/data-science-course-training-in-chennai"
-              style={{ color: "#2D9CD7", fontWeight: "600" }}
-              target="_blank"
-            >
-              Chrompet{" "}
-            </a>
-            [600044],{" "}
-            <a
-              href="https://www.learnbay.co/data-science-course-training-in-chennai"
-              style={{ color: "#2D9CD7", fontWeight: "600" }}
-              target="_blank"
-            >
-              T nagar
-            </a>{" "}
-            [600017],{" "}
-            <a
-              href="https://www.learnbay.co/data-science-course-training-in-chennai"
-              style={{ color: "#2D9CD7", fontWeight: "600" }}
-              target="_blank"
-            >
-              Chennai central
-            </a>{" "}
-            [600020],{" "}
-            <a
-              href="https://www.learnbay.co/data-science-course-training-in-chennai"
-              style={{ color: "#2D9CD7", fontWeight: "600" }}
-              target="_blank"
-            >
-              Erukkancheri{" "}
-            </a>
-            [600118],{" "}
-            <a
-              href="https://www.learnbay.co/data-science-course-training-in-chennai"
-              style={{ color: "#2D9CD7", fontWeight: "600" }}
-              target="_blank"
-            >
-              World University Centre
-            </a>{" "}
-            [600031],{" "}
-            <a
-              href="https://www.learnbay.co/data-science-course-training-in-chennai"
-              style={{ color: "#2D9CD7", fontWeight: "600" }}
-              target="_blank"
-            >
-              Madras University{" "}
-            </a>
-            [600005],{" "}
-            <a
-              href="https://www.learnbay.co/data-science-course-training-in-chennai"
-              style={{ color: "#2D9CD7", fontWeight: "600" }}
-              target="_blank"
-            >
-              Indian Institute Of Technology
-            </a>{" "}
-            [600036].
-      </span>,
+        <a
+          href="https://www.learnbay.co/data-science-course-training-in-chennai"
+          style={{ color: "#2D9CD7", fontWeight: "600" }}
+          target="_blank"
+        >
+          Anna Nagar
+        </a>{" "}
+        [600040],{" "}
+        <a
+          href="https://www.learnbay.co/data-science-course-training-in-chennai"
+          style={{ color: "#2D9CD7", fontWeight: "600" }}
+          target="_blank"
+        >
+          Thousand Lights
+        </a>{" "}
+        [600006],{" "}
+        <a
+          href="https://www.learnbay.co/data-science-course-training-in-chennai"
+          style={{ color: "#2D9CD7", fontWeight: "600" }}
+          target="_blank"
+        >
+          Adyar
+        </a>{" "}
+        [600020],{" "}
+        <a
+          href="https://www.learnbay.co/data-science-course-training-in-chennai"
+          style={{ color: "#2D9CD7", fontWeight: "600" }}
+          target="_blank"
+        >
+          Nungambakkam
+        </a>{" "}
+        [600034],{" "}
+        <a
+          href="https://www.learnbay.co/data-science-course-training-in-chennai"
+          style={{ color: "#2D9CD7", fontWeight: "600" }}
+          target="_blank"
+        >
+          Perambur
+        </a>{" "}
+        [600011],{" "}
+        <a
+          href="https://www.learnbay.co/data-science-course-training-in-chennai"
+          style={{ color: "#2D9CD7", fontWeight: "600" }}
+          target="_blank"
+        >
+          OMR
+        </a>{" "}
+        [600119],{" "}
+        <a
+          href="https://www.learnbay.co/data-science-course-training-in-chennai"
+          style={{ color: "#2D9CD7", fontWeight: "600" }}
+          target="_blank"
+        >
+          Guindy
+        </a>{" "}
+        [600032],{" "}
+        <a
+          href="https://www.learnbay.co/data-science-course-training-in-chennai"
+          style={{ color: "#2D9CD7", fontWeight: "600" }}
+          target="_blank"
+        >
+          Thiruvanmiyur
+        </a>{" "}
+        [600041],{" "}
+        <a
+          href="https://www.learnbay.co/data-science-course-training-in-chennai"
+          style={{ color: "#2D9CD7", fontWeight: "600" }}
+          target="_blank"
+        >
+          Perungudi
+        </a>{" "}
+        [600096],{" "}
+        <a
+          href="https://www.learnbay.co/data-science-course-training-in-chennai"
+          style={{ color: "#2D9CD7", fontWeight: "600" }}
+          target="_blank"
+        >
+          Thoraipakkam
+        </a>{" "}
+        [600097],{" "}
+        <a
+          href="https://www.learnbay.co/data-science-course-training-in-chennai"
+          style={{ color: "#2D9CD7", fontWeight: "600" }}
+          target="_blank"
+        >
+          Sholinganallur
+        </a>{" "}
+        [600119],{" "}
+        <a
+          href="https://www.learnbay.co/data-science-course-training-in-chennai"
+          style={{ color: "#2D9CD7", fontWeight: "600" }}
+          target="_blank"
+        >
+          Siruseri
+        </a>{" "}
+        [603103],{" "}
+        <a
+          href="https://www.learnbay.co/data-science-course-training-in-chennai"
+          style={{ color: "#2D9CD7", fontWeight: "600" }}
+          target="_blank"
+        >
+          Tambaram{" "}
+        </a>
+        [600045],{" "}
+        <a
+          href="https://www.learnbay.co/data-science-course-training-in-chennai"
+          style={{ color: "#2D9CD7", fontWeight: "600" }}
+          target="_blank"
+        >
+          Velachery{" "}
+        </a>
+        [600042],{" "}
+        <a
+          href="https://www.learnbay.co/data-science-course-training-in-chennai"
+          style={{ color: "#2D9CD7", fontWeight: "600" }}
+          target="_blank"
+        >
+          Meenambakkam{" "}
+        </a>
+        [600027],{" "}
+        <a
+          href="https://www.learnbay.co/data-science-course-training-in-chennai"
+          style={{ color: "#2D9CD7", fontWeight: "600" }}
+          target="_blank"
+        >
+          Chrompet{" "}
+        </a>
+        [600044],{" "}
+        <a
+          href="https://www.learnbay.co/data-science-course-training-in-chennai"
+          style={{ color: "#2D9CD7", fontWeight: "600" }}
+          target="_blank"
+        >
+          T nagar
+        </a>{" "}
+        [600017],{" "}
+        <a
+          href="https://www.learnbay.co/data-science-course-training-in-chennai"
+          style={{ color: "#2D9CD7", fontWeight: "600" }}
+          target="_blank"
+        >
+          Chennai central
+        </a>{" "}
+        [600020],{" "}
+        <a
+          href="https://www.learnbay.co/data-science-course-training-in-chennai"
+          style={{ color: "#2D9CD7", fontWeight: "600" }}
+          target="_blank"
+        >
+          Erukkancheri{" "}
+        </a>
+        [600118],{" "}
+        <a
+          href="https://www.learnbay.co/data-science-course-training-in-chennai"
+          style={{ color: "#2D9CD7", fontWeight: "600" }}
+          target="_blank"
+        >
+          World University Centre
+        </a>{" "}
+        [600031],{" "}
+        <a
+          href="https://www.learnbay.co/data-science-course-training-in-chennai"
+          style={{ color: "#2D9CD7", fontWeight: "600" }}
+          target="_blank"
+        >
+          Madras University{" "}
+        </a>
+        [600005],{" "}
+        <a
+          href="https://www.learnbay.co/data-science-course-training-in-chennai"
+          style={{ color: "#2D9CD7", fontWeight: "600" }}
+          target="_blank"
+        >
+          Indian Institute Of Technology
+        </a>{" "}
+        [600036].
+      </span>
+    ),
     CityTextLB: "Locations Offered",
     CityTextL:
       " : Data Science Training in Chennai, Data Science Course in Chennai, Data Science Training in Anna Nagar, Data Science Training in Guindy, Data Science Institute in Chennai, Data Science Training in Siruseri, Data Science Training in Perungudi, Data Science Training in OMR, Data Science Training Institute in Adyar, Data Science Course in Anna Nagar, Data Science Course in chrompet, Data Science Course in Velchery, Data Science Course Nungambakkam, Data Science Training in Thoraipakkam, Data Science Course in OMR, Data Science Training in Madras university, Data Science Training in Tambaram, Data Science Online Classes in Anna Nagar, Data Science Course in Indian Institute Of Technology , Data Science Training in Chennai, Data Science Certification in Chennai, Data Science Certification Training in Chennai, Data Science Certification in Anna Nagar, Data Science Certification in Adyar, Best Data Science Training, Best Data Science Course.",

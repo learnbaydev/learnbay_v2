@@ -1,6 +1,14 @@
-import Head from "next/head";
-import styles from "../../../styles/Home.module.css";
 import dynamic from "next/dynamic";
+import Head from "next/head";
+import { useState } from "react";
+import { DataScienceCourseData } from "../../../../CityData/Bangalore/AICourseTrainingBangaloreData";
+import FeeSection from "../../../../components/CoursePage/FeeSection/FeeSection";
+import Footer from "../../../../components/Footer/Footer";
+import Form from "../../../../components/Form/Form";
+import Testimonial from "../../../../components/HomePage/Testimonial/Testimonial";
+import Navbar from "../../../../components/Navbar/Navbar";
+import Popup from "../../../../components/Popup/Popup";
+import styles from "../../../styles/Home.module.css";
 const FirstSection = dynamic(() =>
   import("../../../../components/CoursePage/FirstSection/FirstSection")
 );
@@ -25,17 +33,9 @@ const CitiesLeft = dynamic(() =>
 const CitiesRight = dynamic(() =>
   import("../../../../components/SEO/CitiesRight/CitiesRight")
 );
-import { DataScienceCourseData } from "../../../../CityData/Bangalore/AICourseTrainingBangaloreData";
 const FAQNew = dynamic(() =>
   import("../../../../components/CoursePage/FAQNew/FAQNew")
 );
-import Popup from "../../../../components/Popup/Popup";
-import Navbar from "../../../../components/Navbar/Navbar";
-import Footer from "../../../../components/Footer/Footer";
-import Form from "../../../../components/Form/Form";
-import React, { useState } from "react";
-import Testimonial from "../../../../components/HomePage/Testimonial/Testimonial";
-import FeeSection from "../../../../components/CoursePage/FeeSection/FeeSection";
 
 export default function Home() {
   const [popups, setPopups] = useState(false);
@@ -46,7 +46,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-      <title>
+        <title>
           Best Artificial Intelligence Course in Bangalore - Learnbay
         </title>
         <meta name="robots" content="index, follow" />
@@ -58,7 +58,6 @@ export default function Home() {
           name="keywords"
           content="Artificial Intelligence course in Bangalore, Artificial Intelligence training in Bangalore, Artificial Intelligence institute in Bangalore, best Artificial Intelligence institute in Bangalore, Artificial Intelligence course in Bangalore, Artificial Intelligence certification in Bangalore, Artificial Intelligence training institute in Bangalore, advanced Artificial Intelligence course in Bangalore, Artificial Intelligence course with Placement Assistance, Artificial Intelligence course"
         />
-
         <meta
           property="og:url"
           content="https://www.learnbay.co/datascience/bangalore/artificial-intelligence-ai-course-training-bangalore"
@@ -167,7 +166,9 @@ export default function Home() {
           firstTopPara="Industry Curated Artificial Intelligence Program"
           cityParaCont="Become a successful data science manager/leader within 11 months. Learn the secret data scientific tricks of managing data science projects. Learn directly from industry leaders via live classes and live projects."
         />
-        <SecondSection SecondSectionData={DataScienceCourseData[0].secondSection} />
+        <SecondSection
+          SecondSectionData={DataScienceCourseData[0].secondSection}
+        />
         <Testimonial
           redirectDS={true}
           Testimonial={DataScienceCourseData[0].testimonial}
@@ -175,18 +176,19 @@ export default function Home() {
           para="Discover the impact of our programs on career growth"
         />
         <div className={styles.cityFee}>
-        <FeeSection
-          Fee="₹ 1,10,000 + 18% GST"
-          FeeEmi="₹ 10,817/month"
-          FeeHeading="Program Fee & Financing"
-          FeeContent1="0% interest rate"
-          FeeContent2="No cost EMI"
-          FeeContent3="Flexible payment"
-          FeeContent4="Easy loan procedure"
-          FeeContent5="15 days refund policy"
-          FeeContent6="No additional cost"
-          dataScienceCounselling={true}
-        />
+          <FeeSection
+            Fee="₹ 1,10,000"
+            FeeEmi="₹ 7,211/month"
+            WeekdayDate="NOV 17th"
+            WeekendDate="NOV 26th"
+            WeekendTime="09:30 AM - 1:00 PM"
+            WeekdayTime="08:00 AM - 10:00 AM"
+            FeeContent3="Flexible payment"
+            FeeContent4="Easy loan procedure"
+            FeeContent5="15 days refund policy"
+            FeeContent6="No additional cost"
+            dataScienceCounselling={true}
+          />
         </div>
         <div className="MainCities">
           <div className="CitiesLeft">

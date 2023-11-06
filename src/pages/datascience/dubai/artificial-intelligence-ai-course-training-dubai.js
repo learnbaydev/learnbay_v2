@@ -1,6 +1,14 @@
-import Head from "next/head";
-import styles from "../../../styles/Home.module.css";
 import dynamic from "next/dynamic";
+import Head from "next/head";
+import { useState } from "react";
+import { AIDubaiCourseData } from "../../../../CityData/Dubai/AITrainingDubaiData";
+import FeeSection from "../../../../components/CoursePage/FeeSection/FeeSection";
+import Footer from "../../../../components/Footer/Footer";
+import Form from "../../../../components/Form/Form";
+import Testimonial from "../../../../components/HomePage/Testimonial/Testimonial";
+import Navbar from "../../../../components/Navbar/Navbar";
+import Popup from "../../../../components/Popup/Popup";
+import styles from "../../../styles/Home.module.css";
 const FirstSection = dynamic(() =>
   import("../../../../components/CoursePage/FirstSection/FirstSection")
 );
@@ -25,17 +33,9 @@ const CitiesLeft = dynamic(() =>
 const CitiesRight = dynamic(() =>
   import("../../../../components/SEO/CitiesRight/CitiesRight")
 );
-import { AIDubaiCourseData } from "../../../../CityData/Dubai/AITrainingDubaiData";
 const FAQNew = dynamic(() =>
   import("../../../../components/CoursePage/FAQNew/FAQNew")
 );
-import Popup from "../../../../components/Popup/Popup";
-import Navbar from "../../../../components/Navbar/Navbar";
-import Footer from "../../../../components/Footer/Footer";
-import Form from "../../../../components/Form/Form";
-import React, { useState } from "react";
-import Testimonial from "../../../../components/HomePage/Testimonial/Testimonial";
-import FeeSection from "../../../../components/CoursePage/FeeSection/FeeSection";
 
 export default function Home() {
   const [popups, setPopups] = useState(false);
@@ -52,7 +52,7 @@ export default function Home() {
           name="description"
           content="Learnbay offers the best Artificial Intelligence Training in Dubai. Get mentorship from the industry experts with best career assistance. Enroll Now."
         />
-<meta
+        <meta
           property="og:url"
           content="https://www.learnbay.co/datascience/dubai/artificial-intelligence-ai-course-training-dubai"
         />
@@ -91,7 +91,6 @@ export default function Home() {
           name="twitter:image"
           content="https://www.learnbay.co/_next/image?url=https%3A%2F%2Flearnbay-wb.s3.ap-south-1.amazonaws.com%2Fmain%2FLearnbay-Logo.webp&w=256&q=100"
         />
-
         <meta
           name="keywords"
           content="Artificial Intelligence course in Dubai, Artificial Intelligence training in Dubai, Artificial Intelligence institute in Dubai, best Artificial Intelligence institute in Dubai, Artificial Intelligence course in Dubai, Artificial Intelligence certification in Dubai, Artificial Intelligence training institute in Dubai, advanced Artificial Intelligence course in Dubai, Artificial Intelligence course with Placement Assistance, Artificial Intelligence course"
@@ -173,18 +172,19 @@ export default function Home() {
           para="Discover the impact of our programs on career growth"
         />
         <div className={styles.cityFee}>
-        <FeeSection
-          Fee="₹ 1,10,000 + 18% GST"
-          FeeEmi="₹ 10,817/month"
-          FeeHeading="Program Fee & Financing"
-          FeeContent1="0% interest rate"
-          FeeContent2="No cost EMI"
-          FeeContent3="Flexible payment"
-          FeeContent4="Easy loan procedure"
-          FeeContent5="15 days refund policy"
-          FeeContent6="No additional cost"
-          dataScienceCounselling={true}
-        />
+          <FeeSection
+            Fee="₹ 1,10,000"
+            FeeEmi="₹ 7,211/month"
+            WeekdayDate="NOV 17th"
+            WeekendDate="NOV 26th"
+            WeekendTime="09:30 AM - 1:00 PM"
+            WeekdayTime="08:00 AM - 10:00 AM"
+            FeeContent3="Flexible payment"
+            FeeContent4="Easy loan procedure"
+            FeeContent5="15 days refund policy"
+            FeeContent6="No additional cost"
+            dataScienceCounselling={true}
+          />
         </div>
         <div className="MainCities">
           <div className="CitiesLeft">
