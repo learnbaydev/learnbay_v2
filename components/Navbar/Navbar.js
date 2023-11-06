@@ -1,17 +1,17 @@
-import React, { useState, useEffect } from "react";
-import Image from "next/image";
-import { FaArrowRight, FaChevronDown, FaChevronUp } from "react-icons/fa";
-import styles from "./Navbar.module.css";
-import Link from "next/link";
-import { GiHamburgerMenu } from "react-icons/gi";
 import dynamic from "next/dynamic";
+import Image from "next/image";
+import Link from "next/link";
+import { useEffect, useState } from "react";
+import { FaChevronDown, FaChevronUp } from "react-icons/fa";
+import { GiHamburgerMenu } from "react-icons/gi";
+import styles from "./Navbar.module.css";
 const Popup = dynamic(() => import("../Popup/Popup"));
 // import Popup from "../Popup/Popup";
-import Form from "../Form/Form";
-import Tabs from "../Tabs/Tabs";
 import FormCareer from "../CareerPortal/Form/Form";
-import { menuItem } from "./NavbarData";
+import Form from "../Form/Form";
 import Button from "../Global/Button/Button";
+import Tabs from "../Tabs/Tabs";
+import { menuItem } from "./NavbarData";
 
 const Navbar = ({
   radio,
@@ -66,6 +66,7 @@ const Navbar = ({
               fullStack={fullStack}
               dataScience={dataScience}
               dataScienceCounselling={dataScienceCounselling}
+              upSkillingHide={true}
             />
           )}
         </div>
@@ -104,7 +105,7 @@ const Navbar = ({
 
           {adPage ? (
             <Image
-              src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/ALight/learnbay-logo.png"
+              src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/learnbay-logo.png"
               alt="Learnbay"
               quality={100}
               style={{ objectFit: "contain" }}
@@ -114,7 +115,7 @@ const Navbar = ({
           ) : (
             <Link href="/">
               <Image
-                src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/ALight/learnbay-logo.png"
+                src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/learnbay-logo.png"
                 alt="Learnbay"
                 quality={100}
                 style={{ objectFit: "contain" }}
@@ -139,7 +140,7 @@ const Navbar = ({
                 className="flexBox"
               >
                 <Button
-                  text="Course"
+                  text="Courses"
                   passIcon={icon ? <FaChevronUp /> : <FaChevronDown />}
                 />
               </div>
@@ -170,10 +171,7 @@ const Navbar = ({
             );
           })}
           <div onClick={popupShow}>
-            <Button
-              text="APPLY FOR COUNSELLING"
-              outline={true}
-            />
+            <Button text="Apply Now" outline={true} />
           </div>
         </div>
       </nav>

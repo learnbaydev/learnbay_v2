@@ -148,7 +148,7 @@ function SyllabusNew({
                   const splitString = data.split("(");
                   return (
                     <SwiperSlide
-                      className={active[i].value ? styles.ASlide : styles.slide}
+                      className={active[i].value ? styles.ASlide : styles.slide} key={i}
                     >
                       <span
                         key={i}
@@ -263,14 +263,6 @@ function SyllabusNew({
                   <FaRegUser className={styles.iconUser} /> 7,568 people filled
                 </div>
               </div>
-              {/* <div className="imgWrapper">
-              <Image
-                src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Form-Girl.png"
-                width={535}
-                height={239}
-                alt="girl"
-              />
-            </div> */}
               <h4>
                 Interested in <span>Master’s Degree?</span>
               </h4>
@@ -280,6 +272,7 @@ function SyllabusNew({
                 brochureLink={brochureLink}
                 fullStack={fullStack}
                 syllabus={true}
+                upSkillingHide={true}
               />
             </div>
           </div>

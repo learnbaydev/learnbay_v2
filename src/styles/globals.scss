@@ -53,6 +53,10 @@ p {
 .none {
   display: none;
 }
+input:-internal-autofill-selected {
+  background-color: none;
+  color: firebrick;
+}
 a {
   color: inherit;
   text-decoration: none;
@@ -171,9 +175,11 @@ a {
 
 .RightPopup h5 {
   font-size: 24px;
-  font-weight: 700;
+  font-weight: 600;
   margin-bottom: 20px;
+  color: #555;
 }
+
 //icon css end home page
 
 .swiper-scrollbar-drag {

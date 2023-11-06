@@ -1,16 +1,14 @@
 import styles from "./Media.module.scss";
-import React, { useState } from "react";
+import React from "react";
 import Image from "next/image";
-import { Pagination } from "swiper";
-import "swiper/css";
-import SwiperCore, { Navigation } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.min.css";
-import { BsArrowLeft } from "react-icons/bs";
-import { BsArrowRight } from "react-icons/bs";
-SwiperCore.use([Navigation]);
+import { BsArrowLeft, BsArrowRight } from "react-icons/bs";
+
+import SwiperCore, { Navigation, Pagination } from "swiper";
+SwiperCore.use([Navigation, Pagination]);
+
 const Media = ({ projectData }) => {
-  const [projectArray, setProjectArray] = useState(projectData);
   return (
     <div className={styles.projectHeader}>
       <div className={styles.headWrapper}>
@@ -32,9 +30,14 @@ const Media = ({ projectData }) => {
           slidesPerView={1}
           spaceBetween={30}
           grabCursor={true}
+          pagination={{ clickable: true }}
           breakpoints={{
             300: {
-              slidesPerView: 1.3,
+              slidesPerView: 1.2,
+              spaceBetween: 35,
+            },
+            481: {
+              slidesPerView: 1,
               spaceBetween: 35,
             },
             761: {
@@ -50,56 +53,47 @@ const Media = ({ projectData }) => {
               spaceBetween: 45,
             },
             1280: {
-              slidesPerView: 5.1,
-              spaceBetween: 30,
+              slidesPerView: 4.1,
+              spaceBetween: 20,
             },
           }}
-          modules={[Pagination, Navigation]}
-          className="mySwiper"
+          className={`mySwiper ${styles.myswiper}`}
           navigation={{
             nextEl: ".custom-next",
             prevEl: ".custom-prev",
           }}
         >
-          {projectArray.map((data, index) => {
-            const { id, domain, CLogo, SDesc } = data;
-            return (
-              <>
-                <SwiperSlide className={styles.project} key={index}>
-                  <div className={styles.header}>
-                    <div className={styles.left}></div>
-                    <div
-                      className={styles.imgWrap}
-                      style={
-                        id === "BMW" ? { width: "35px" } : { width: "auto" }
-                      }
-                    >
-                      <div className="imgWrapper">
-                        <Image
-                          src={CLogo}
-                          alt="Learnbay"
-                          quality={100}
-                          width="80"
-                          height="40"
-                        />
-                      </div>
-                    </div>
+          {projectData.map((data, index) => (
+            <SwiperSlide className={styles.project} key={index}>
+              <div className={styles.header}>
+                <div className={styles.left}></div>
+                <div
+                  className={styles.imgWrap}
+                  style={
+                    data.id === "BMW" ? { width: "35px" } : { width: "auto" }
+                  }
+                >
+                  <div className="imgWrapper">
+                    <Image
+                      src={data.CLogo}
+                      alt="Learnbay"
+                      quality={100}
+                      width="80"
+                      height="40"
+                    />
                   </div>
-                  <div className={styles.body}>
-                    <h5>{domain}</h5>
-                    <p>{SDesc}</p>
-                  </div>
-                </SwiperSlide>
-                <div>
-                  <div className="custom-prev">Previous</div>
-                  <div className="custom-next">Next</div>
                 </div>
-              </>
-            );
-          })}
+              </div>
+              <div className={styles.body}>
+                <h5>{data.domain}</h5>
+                <p>{data.SDesc}</p>
+              </div>
+            </SwiperSlide>
+          ))}
         </Swiper>
       </div>
     </div>
   );
 };
+
 export default Media;

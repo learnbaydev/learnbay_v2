@@ -2,11 +2,22 @@ import Head from "next/head";
 import Navbar from "../../components/Navbar/Navbar";
 import dynamic from "next/dynamic";
 import { DataScienceCourseData } from "../../Data/AdvanceDataScienceCourse";
-import BottomBar from "../../components/WebPage/BottomBar/BottomBar";
-import OfferPopup from "../../components/OfferPopup/OfferPopup";
-import WhatsappFloat from "../../components/WhatappsFloat/WhatsappFloat";
-import TrainerSection from "../../components/HomePage/TrainerSection/TrainerSection";
-import Media from "../../components/HomePage/Media/Media";
+
+const BottomBar = dynamic(() =>
+  import("../../components/WebPage/BottomBar/BottomBar")
+);
+const OfferPopup = dynamic(() =>
+  import("../../components/OfferPopup/OfferPopup")
+);
+const WhatsappFloat = dynamic(() =>
+  import("../../components/WhatappsFloat/WhatsappFloat")
+);
+const TrainerSection = dynamic(() =>
+  import("../../components/HomePage/TrainerSection/TrainerSection")
+);
+
+const Media = dynamic(() => import("../../components/HomePage/Media/Media"));
+
 const BoxShape = dynamic(() =>
   import("../../components/HomePage/BoxShape/BoxShape")
 );
@@ -36,9 +47,19 @@ const NewsSection = dynamic(() =>
   import("../../components/HomePage/NewsSection/NewsSection")
 );
 
+const MasterClass = dynamic(() =>
+  import("../../../learnbay_v2/components/MasterClass/MasterClass")
+);
+
 import { DADataScienceCourseData } from "../../Data/DataAnalyticsData";
-
-
+const WhyLearnbay = dynamic(() =>
+  import("../../components/HomePage/WhyLearnbay/WhyLearnbay")
+);
+const ProjectSection = dynamic(() =>
+  import("../../components/HomePage/ProjectSection/ProjectSection")
+);
+const GetHire = dynamic (()=>
+import ("../../components/MastersCourse/GetHire/GetHire"))
 
 // const ArticleSection = dynamic(() =>
 //   import("../../components/HomePage/Project/ArticleSection")
@@ -71,24 +92,28 @@ export default function Home() {
       {/* <BoxShape /> */}
       <Course dataScience={true} radio={true} />
       {/* <Switch /> */}
-      <KeyFeatures
+      {/* <KeyFeatures
         titleCourse="Data Science Placement Report"
         brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Placement+Report.pdf"
         popup={true}
         idss="wSB-phYhG10"
         dataScience={true}
         radio={true}
-      />
+      /> */}
+      <WhyLearnbay idss="bfl64ANfSV0" />
+      <ProjectSection idss="bfl64ANfSV0" />
+      <GetHire/>
+      <TrainerSection idss="eautK0odE7Q" />
       <Testimonial
         redirectDS={true}
-        heading="Our Alumni Spotlight"
+        heading=""
         Testimonial={DataScienceCourseData[0].testimonial}
       />
-      <TrainerSection />
       <ContactUs dataScienceCounselling={true} radio={true} />
-      <Media
-          projectData={DataScienceCourseData[0].newsData}
-        />
+
+      {/* <MasterClass /> */}
+
+      {/* <Media projectData={DataScienceCourseData[0].newsData} /> */}
 
       <SeventhSection />
 

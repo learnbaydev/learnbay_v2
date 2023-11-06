@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@next/bundle-analyzer": "^13.4.12",
+    "@react-icons/all-files": "^4.1.0",
     "@typeform/embed-react": "^2.24.0",
     "date-fns": "^2.30.0",
     "eslint-config-next": "^12.1.6",
@@ -23,7 +24,7 @@
     "marked": "^5.1.0",
     "marked-mangle": "^1.1.0",
     "mongodb": "^5.7.0",
-    "next": "13.4.5",
+    "next": "^13.5.4",
     "next-cookies": "^2.0.3",
     "next-seo": "^6.1.0",
     "next-share": "^0.21.0",
@@ -36,6 +37,7 @@
     "rss": "^1.2.2",
     "sass": "^1.63.4",
     "swiper": "^9.4.1",
+    "three": "^0.157.0",
     "typed.js": "^2.0.12"
   },
   "devDependencies": {

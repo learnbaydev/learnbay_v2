@@ -516,7 +516,14 @@ import {
       syllabusDesc:
       "Learnbay provides Live, Interactive Online Sessions guided by Professionals working in top MNCs. All sessions are covered practically with real-time industrial projects and case studies.",
     popupHead: "Download Data science Course Brochure",
-    syllabus: [
+    syllabusHead: [
+      "Term 1 Foundation Track(30 ECTS Credits)",
+      "Term 2 Statistics & Machine Learning( 25 ECTS Credits) ",
+      "Term 3 Artificial Intelligence Tools( 25 ECTS Credits)",
+      "Term 4 :- Artificial Intelligence Tools( 25 ECTS Credits) ",
+      "Term 5 :- Deployment (AWS+Azure)( 25 ECTS Credits) ",
+    ],
+    MasterSyllabusDefault: [
       {
         Module0: {
           title: "Term 1 :- Programming Fundamentals",
@@ -602,7 +609,7 @@ import {
       },
       {
         Module0: {
-          title: "Term 2 :- Basic DSA",
+          title: "Term 2 :- DSA",
           content: [
             {
               chap: {
@@ -762,6 +769,47 @@ import {
                   "Implementation using Array",
                   "Implementation using Linked list",
                   "Queue as a library",
+                ],
+              },
+            },
+            {
+              chap: {
+                title: "Module 17 :- Maths",
+                desc: [
+                  "Modular Arithmetic, Modular Exponentiation, GCD, Modular Multiplicative Inverse",
+                  " GCD, Primality Testing, Seive of Eratosthenes",
+                ],
+              },
+            },
+            {
+              chap: {
+                title: "Module 18 :- Analysis of Algorithm - Advance",
+                desc: ["Greedy"],
+              },
+            },
+            {
+              chap: {
+                title: "Module 19 :- Advance Data Structure",
+                desc: [
+                  "Tree -1 (Traversals)",
+                  "Tree - 2 (Construction of tree from traversals, height of tree, mirror of tree)",
+                  "Tree - 3 (LCA, Diameter)",
+                  "BST",
+                  "Heaps",
+                  "Graph - 1 (BFS, DFS)",
+                  "Graph - 2 (Cycles in Graph)",
+                  "Graph - 3 (DFS, BFS on matrix)",
+                  "Graph - 4 ([Dijkstra Algorithm, Flood Fill Algorithm])",
+                  "Heaps",
+                ],
+              },
+            },
+            {
+              chap: {
+                title: "Module 20 :- Analysis of Algorithm - Advance",
+                desc: [
+                  "Dynamic Programming",
+                  "Graph - 5 [Minimum Spanning Tree, Floyd Warshall, Topological Sorting]",
                 ],
               },
             },
@@ -769,52 +817,69 @@ import {
           id: 1,
           open: false,
         },
-      },
+      },   
       {
         Module0: {
-          title: "Term 2 :- Advanced DSA",
+          title: "Term 3 :- CS Fundamentals & DBMS",
           content: [
             {
               chap: {
-                title: "Module 1 :- Maths",
+                title: "Module 1 :- DBMS",
                 desc: [
-                  "Modular Arithmetic, Modular Exponentiation, GCD, Modular Multiplicative Inverse",
-                  " GCD, Primality Testing, Seive of Eratosthenes",
+                  "Introduction to Databases",
+                  "The Relational Model",
+                  "Entity-Relationship Model",
+                  "Database Design",
+                  "Structured Query Language (SQL)",
+                  "Database Indexing and Optimization",
+                  "Transaction Management",
+                  "Database Security and Authorisation",
+                  "Backup, Recovery, and Integrity",
+                  "Emerging Trends in Database Management"
                 ],
               },
             },
             {
               chap: {
-                title: "Module 2 :- Analysis of Algorithm - Advance",
-                desc: ["Greedy"],
-              },
-            },
-            {
-              chap: {
-                title: "Module 3 :- Advance Data Structure",
+                title: "Module 2 :- Networking Fundamentals",
                 desc: [
-                  "Tree -1 (Traversals)",
-                  "Tree - 2 (Construction of tree from traversals, height of tree, mirror of tree)",
-                  "Tree - 3 (LCA, Diameter)",
-                  "BST",
-                  "Heaps",
-                  "Graph - 1 (BFS, DFS)",
-                  "Graph - 2 (Cycles in Graph)",
-                  "Graph - 3 (DFS, BFS on matrix)",
-                  "Graph - 4 ([Dijkstra Algorithm, Flood Fill Algorithm])",
-                  "Heaps",
+                  "Introduction to Computer Networking",
+                  "Network Topologies and Technologies",
+                  "OSI Model and Protocol Stack",
+                  "IP Addressing and Subnetting",
+                  "Routing and Switching",
+                  "Local Area Networks (LANs)",
+                  "Wide Area Networks (WANs)",
+                  "Wireless Networking",
+                  "Network Security",
+                  "Domain Name System (DNS)",
+                  "Cloud Networking",
+                  "Emerging Trends in Computer Networking",
+                
                 ],
               },
             },
             {
               chap: {
-                title: "Module 4 :- Analysis of Algorithm - Advance",
+                title: "Module 3 :- Operating System",
                 desc: [
-                  "Dynamic Programming",
-                  "Graph - 5 [Minimum Spanning Tree, Floyd Warshall, Topological Sorting]",
+                  "Introduction to Operating Systems",
+                  "Computer System Architecture",
+                  "Process Management",
+                  "Memory Management",
+                  "File System Management",
+                  "Input/Output (I/O) Systems",
+                  "User Interface and Command-Line Interaction",
+                  "System Security and Authentication",
+                  "Virtualization and Cloud Computing",
+                  "Distributed Operating Systems",
+                  "Real-Time Operating Systems (RTOS)",
+                  
+                
                 ],
               },
             },
+           
           ],
           id: 2,
           open: false,
@@ -822,7 +887,7 @@ import {
       },
       {
         Module0: {
-          title: "Term 3 :- System Design",
+          title: "Term 4 :- System Design",
           content: [
             {
               chap: {
@@ -925,673 +990,452 @@ import {
               },
             },
           ],
-          id: 2,
+          id: 3,
           open: false,
         },
       },
+      {
+        Module0: {
+          title: "Term 5 :- Specialization",
+          content: [
+            {
+              chap: {
+                title: "MERN (Full-Stack Specialization)",
+                desc: [
+                  "Programming Basics, Data Types and Code Flow",
+                  "Project work on HTML5 and CSS3",
+                  "JavaScript",
+                  "Package Managers",
+                  "HTML and CSS3",
+                  "Bootstrap",
+                  "jQuery",
+                  "ReactJS",
+                  "Application Programming Interface",
+                  "Deploying WEB Application using AWS and Azure",
+                  "Final Project Work",
+                  "Node.js and Express.js",
+                  "Database",
+                  "Authentication and Security",
+
+                ],
+              },
+            },
+            {
+              chap: {
+                title: "SPRING (Backend Specialization)",
+                desc: [
+                  "Framework Introduction",
+                  "Spring JDBC / DAO Module",
+                  "Spring AOP Module",
+                  "Spring Core Module",
+                  "Spring ORM Module",
+                  "Spring WEB & WEB MVC Module",
+                  "Spring Security Module",
+                  "Maven",
+                  "Springboot",
+                  "Advance Java (Servlet + JSP)",
+                  "Other Technologies",
+                  
+                 
+                ],
+              },
+            }
+          ],
+          id: 4,
+          open: false,
+        },
+      },
+      {
+        Module0: {
+          title: "Term 6 :- Deployment",
+          content: [
+            {
+              chap: {
+                title: "Module 1 :- Building a Spring Boot Application",
+                desc: [
+                  "Creating a new Spring Boot project",
+                  "Dependency management with Maven or Gradle",
+                  "Defining application properties (e.g., database configuration, logging)",   
+                ],
+              },
+            },
+            {
+              chap: {
+                title: "Module 2 :- Working with Databases",
+                desc: [
+                  "Integrating Spring Boot with relational databases (e.g., MySQL, PostgreSQL)",
+                  "Using Spring Data JPA for database interactions",
+                  "Implementing CRUD operations with JPA repositories", 
+                ],
+              },
+            },
+
+            {
+              chap: {
+                title: "Module 3 :- Securing a Spring Boot Application",
+                desc: [
+                  "Implementing authentication and authorization",
+                  "Securing REST APIs with Spring Security",
+                  "Handling CSRF attacks and other security considerations",
+                ],
+              },
+            },
+
+            {
+              chap: {
+                title: "Module 4 :- Building and Packaging Spring Boot Applications",
+                desc: [
+                  "Creating executable JARs or WARs",
+                  "Deploying Spring Boot applications to local and remote servers",
+                  
+                ],
+              },
+            },
+
+            {
+              chap: {
+                title: "Module 5 :- Developing a Basic Spring Boot Application",
+                desc: [
+                  "Creating and configuring Spring Beans",
+                  "Implementing RESTful APIs with Spring Web",
+                  "Handling HTTP requests and responses",
+                  "Data validation and error handling",
+
+                  
+                ],
+              },
+            },
+            {
+              chap: {
+                title: "Module 6 :- Testing Spring Boot Applications",
+                desc: [
+
+                  "Writing unit tests for Spring components (e.g., controllers, services)",
+                  "Using JUnit and Mockito for testing",
+                  "Understanding test best practices and test coverage"
+                 
+
+                  
+                ],
+              },
+            },
+            {
+              chap: {
+                title: "Module 7 :- Spring Boot Actuator",
+                desc: [
+
+                  "Monitoring and managing Spring Boot applications using Actuator endpoints",
+                  "Customizing Actuator endpoints and security configurations",
+                 
+
+                  
+                ],
+              },
+            },
+            {
+              chap: {
+                title: "Module 8 :- Containerization and Deployment",
+                desc: [
+
+                  "Introduction to Docker and containerization",
+                  "Dockerizing a Spring Boot application",
+                  "Deploying Spring Boot apps to cloud platforms (e.g., AWS, Azure, Google Cloud)",  
+                ],
+              },
+            },
+            {
+              chap: {
+                title: "Module 9 :- Containerization and Deployment",
+                desc: [
+
+                  "Setting up CI/CD pipelines with tools like Jenkins or GitLab CI",
+                  "Automating the deployment process",
+                  
+                ],
+              },
+            },
+            {
+              chap: {
+                title: "Module 10 :- Monitoring and Scaling",
+                desc: [
+
+                  "Utilizing monitoring tools (e.g., Spring Boot Admin, Prometheus, Grafana)",
+                  "Scaling Spring Boot applications in different deployment environments",
+                  
+                ],
+              },
+            },
+            {
+              chap: {
+                title: "Module 11 :- Troubleshooting and Best Practices",
+                desc: [
+
+                  "Identifying and resolving common issues",
+                  "Adopting best practices for Spring Boot application development and deployment",
+                  
+                ],
+              },
+            }
+          ],
+          id: 5,
+          open: false,
+        },
+      },
+      // {
+      //   Module0: {
+      //     title: "Term 1 :- Python for Data Science",
+      //     content: [
+      //       {
+      //         chap: {
+      //           title: "Module 1 :- Python Programming",
+      //           desc: [
+      //             "Programming Basics & Environment Setup",
+      //             "Python Programming Overview",
+      //             "Strings, Decisions & Loop Control",
+      //             "Python Data Types",
+      //             "Functions And Modules",
+      //             "Class hands-on: 8+ Programs to be covered in the functions, Lambda, modules, Generators, and Packages class",
+      //             "File I/O And Exceptional Handling and Regular Expression",
+      //             "Class hands-on: 10+ Programs to be covered in class from File IO, Reg-ex and exception handling",
+      //             "Data Analysis Using Numpy",
+      //             "Data Analysis Using Pandas",
+      //             "Data Visualization using Matplotlib",
+      //             "Data Visualization using Seaborn",
+      //             "Case Study on Numpy, Pandas, Matplotlib 1 Case Study on Pandas And Seaborn",
+      //           ],
+      //         },
+      //       },
+      //     ],
+      //     id: 1,
+      //     open: false,
+      //   },
+      // },
     ],
-    advSyllabus: [
-      {
-        Module0: {
-          title: "Term 2 :- Basic DSA",
-          content: [
-            {
-              chap: {
-                title: "Module 1 :- Functions & Recursion",
-                desc: [
-                  "Significance",
-                  " Defining",
-                  "Function return type",
-                  "Passing arguments",
-                ],
+    masterSyllabus: {
+      "Term 1 Foundation Track(30 ECTS Credits)": [
+        {
+          Module0: {
+            title: "Module 0 :- Preparatory Classes (Programming + Maths)",
+            content: [
+              {
+                chap: {
+                  title: "Topic 1 :- Cohort Orientation",
+                  desc: [
+                    "A brief introduction to tools related to data ",
+                    "Learn about particular real-time projects and Capstone projects ",
+                    "Data and its impact on career opportunities",
+                    "Utilizing data, to enhance industrial operations and management",
+                  ],
+                },
               },
-            },
-            {
-              chap: {
-                title: "Module 2 :- Recursion",
-                desc: ["Recursion", "Divide and Conquer"],
+  
+              {
+                chap: {
+                  title: "Topic 2 :- Fundamentals of programming ",
+                  desc: [
+                    "Introduction to Anaconda & Jupyter notebook ",
+  
+                    "Flavors of python Introduction to Git, GitHub ",
+                    "Python Fundamentals ",
+                  ],
+                },
               },
-            },
-            {
-              chap: {
-                title: "Module 3 :- Linear Search and Binary Search",
-                desc: ["Linear Search", "Binary Search", "Ternary Search"],
+              {
+                chap: {
+                  title: "Topic 3 :- Fundamentals of Statistics",
+                  desc: [
+                    "Mean, Median, Mode .",
+                    "Standard Deviation, Average. Probability, permutations, and combinations ",
+                    "Introduction to Linear Algebra",
+                  ],
+                },
               },
-            },
-            {
-              chap: {
-                title: "Module 4 :- Time and space Complexity",
-                desc: ["Best, worst & average case"],
-              },
-            },
-            {
-              chap: {
-                title: "Module 5 :- Bit Manipulation",
-                desc: [],
-              },
-            },
-            {
-              chap: {
-                title: "Module 6 :- Two Pointers",
-                desc: [],
-              },
-            },
-            {
-              chap: {
-                title:
-                  "Module 7 :- Sorting using Divide and Conquer and implementation",
-                desc: [
-                  "Sortings",
-                  "Divide and Conquer",
-                  "Merge Sort",
-                  "Quick Sort",
-                  "Comparator Sort",
-                ],
-              },
-            },
-            {
-              chap: {
-                title:
-                  "Module 8 :- Simple Array Sorting and its implementation",
-                desc: ["Sortings", "Bubble sort", "Insertion Sort"],
-              },
-            },
-            {
-              chap: {
-                title: "Module 9 :- Strings",
-                desc: [
-                  "Pattern matching",
-                  "Z Algorithm",
-                  "KMP",
-                  "String Hashing",
-                  "Aho corasick",
-                ],
-              },
-            },
-            // {
-            //   chap: {
-            //     title: "Module 10 :- STL - 1",
-            //     desc: [
-            //       "Collections (Standard Template Library)",
-            //       "Vector",
-            //       "Set",
-            //       "Iterator",
-            //     ],
-            //   },
-            // },
-            // {
-            //   chap: {
-            //     title: "Module 11 :- STL - 2",
-            //     desc: [
-            //       "Collections (Standard Template Library)",
-            //       "Map",
-            //       "Iterator",
-            //     ],
-            //   },
-            // },
-            // {
-            //   chap: {
-            //     title: "Module 12 :- STL - 3",
-            //     desc: [
-            //       "Collections (Standard Template Library)",
-            //       "STL functions - Lower Bound",
-            //       "STL functions upperbound",
-            //       "Sort",
-            //     ],
-            //   },
-            // },
-            {
-              chap: {
-                title: "Module 10 :- ArrayList and Linked List - 1",
-                desc: [
-                  "Single Linked List (Insertion at positions in Linked List, iteration in Linked List, Deletion at position in Linked List, Linked List loops)",
-                ],
-              },
-            },
-            {
-              chap: {
-                title: "Module 11 :- Linked List - 2",
-                desc: [
-                  "Double Linked List (Double Linked list creation (prev pointer), iteration in Double Linked List, insertion at positions in Linked List, Deletion in Double Linked List)",
-                ],
-              },
-            },
-            {
-              chap: {
-                title: "Module 12 :- Linked List - 3",
-                desc: [
-                  "Circular Linked list (Circular Linked list creation,iteration in Circular Linked List, insertion at positions in Circular Linked List, Deletion in Circular Linked List",
-                ],
-              },
-            },
-            {
-              chap: {
-                title: "Module 13 :- Stack",
-                desc: ["Intro", "Application and Implementation using Array"],
-              },
-            },
-            {
-              chap: {
-                title: "Module 14 :- Applications of Stack",
-                desc: ["Implementation using Linked list", "Stack as library"],
-              },
-            },
-            {
-              chap: {
-                title: "Module 15 :- Queue",
-                desc: [
-                  "Implementation using Array",
-                  "Implementation using Linked list",
-                  "Queue as a library",
-                ],
-              },
-            },
-            {
-              chap: {
-                title: "Module 16 :- Applications of Queue",
-                desc: [
-                  "Implementation using Array",
-                  "Implementation using Linked list",
-                  "Queue as a library",
-                ],
-              },
-            },
-          ],
-          id: 0,
-          open: true,
+            ],
+            id: 0,
+            open: true,
+          },
         },
-      },
-      {
-        Module0: {
-          title: "Term 2 :- Advanced DSA",
-          content: [
-            {
-              chap: {
-                title: "Module 1 :- Maths",
-                desc: [
-                  "Modular Arithmetic, Modular Exponentiation, GCD, Modular Multiplicative Inverse",
-                  " GCD, Primality Testing, Seive of Eratosthenes",
-                ],
+        {
+          Module0: {
+            title: "Term 1 :- Python Programming",
+            content: [
+              {
+                chap: {
+                  title: "Module 1 :- Python Programming ",
+                  desc: [
+                    " Programming Basics & Environment Setup.",
+                    " Python Programming Overview",
+                    "  Python Data Types",
+                    "  Functions And Modules ,Class hands-on: 8+ Programs to be covered in the functions, Lambda, modules, Generators, and Packages class",
+  
+                    " File I/O And Exceptional Handling and Regular Expression,Class hands-on: 10+ Programs to be covered in class from File IO, Reg-ex and exception handling.",
+                    "Data Analysis Using Numpy",
+                    " Data Analysis Using Pandas",
+                    "Data Visualization using Matplotlib",
+                    ". Data Visualization using Seaborn,3 Case Study on Numpy, Pandas, Matplotlib 1 Case Study on Pandas And Seaborn",
+                  ],
+                },
               },
-            },
-            {
-              chap: {
-                title: "Module 2 :- Analysis of Algorithm - Advance",
-                desc: ["Greedy"],
-              },
-            },
-            {
-              chap: {
-                title: "Module 3 :- Advance Data Structure",
-                desc: [
-                  "Tree -1 (Traversals)",
-                  "Tree - 2 (Construction of tree from traversals, height of tree, mirror of tree)",
-                  "Tree - 3 (LCA, Diameter)",
-                  "BST",
-                  "Heaps",
-                  "Graph - 1 (BFS, DFS)",
-                  "Graph - 2 (Cycles in Graph)",
-                  "Graph - 3 (DFS, BFS on matrix)",
-                  "Graph - 4 ([Dijkstra Algorithm, Flood Fill Algorithm])",
-                  "Heaps",
-                ],
-              },
-            },
-            {
-              chap: {
-                title: "Module 4 :- Analysis of Algorithm - Advance",
-                desc: [
-                  "Dynamic Programming",
-                  "Graph - 5 [Minimum Spanning Tree, Floyd Warshall, Topological Sorting]",
-                ],
-              },
-            },
-          ],
-          id: 2,
-          open: false,
+            ],
+            id: 1,
+            open: false,
+          },
         },
-      },
-      {
-        Module0: {
-          title: "Term 3 :- System Design",
-          content: [
-            {
-              chap: {
-                title: "Module 1 :- Introduction to System Design",
-                desc: [
-                  "What is System Design?",
-                  "Goals of System Design",
-                  "Components of a System Design",
-                  "System Design Process",
-                  "Importance of System Design",
-                  "Types of Systems",
-                  "Architecture of a System",
-                ],
+      ],
+      "Term 2 Statistics & Machine Learning( 25 ECTS Credits) ": [
+        {
+          Module0: {
+            title: "Term 1 :- Python Programming",
+            content: [
+              {
+                chap: {
+                  title: "Module 1 :- Python Programming ",
+                  desc: [
+                    " Programming Basics & Environment Setup.",
+                    " Python Programming Overview",
+                    "  Python Data Types",
+                    "  Functions And Modules ,Class hands-on: 8+ Programs to be covered in the functions, Lambda, modules, Generators, and Packages class",
+  
+                    " File I/O And Exceptional Handling and Regular Expression,Class hands-on: 10+ Programs to be covered in class from File IO, Reg-ex and exception handling.",
+                    "Data Analysis Using Numpy",
+                    " Data Analysis Using Pandas",
+                    "Data Visualization using Matplotlib",
+                    ". Data Visualization using Seaborn,3 Case Study on Numpy, Pandas, Matplotlib 1 Case Study on Pandas And Seaborn",
+                  ],
+                },
               },
-            },
-            {
-              chap: {
-                title: "Module 2 :- Design Principles",
-                desc: [
-                  "SOLID Principles",
-                  "KISS Principle",
-                  "DRY Principle",
-                  "YAGNI Principle",
-                  "Separation of Concerns",
-                  "Law of Demeter",
-                ],
-              },
-            },
-            {
-              chap: {
-                title: "Module 3 :- Design Patterns",
-                desc: [
-                  "Creational Patterns",
-                  "Structural Patterns",
-                  "Behavioral Patterns",
-                  "Singleton Pattern",
-                  "Factory Pattern",
-                  "Adapter Pattern",
-                  "Observer Pattern",
-                  "Command Pattern",
-                ],
-              },
-            },
-            {
-              chap: {
-                title: "Module 4 :- Low-Level Design (HLD)",
-                desc: [
-                  "Understanding the Purpose and Scope of LLD",
-                  "LLD Design Process",
-                  "Types of LLD",
-                  "Creating a Low-Level Design Document",
-                ],
-              },
-            },
-            {
-              chap: {
-                title: "Module 5 :- High-Level Design (HLD)",
-                desc: [
-                  "Understanding the Purpose and Scope of HLD",
-                  "HLD Design Process",
-                  "Types of HLD",
-                  "Creating a High-Level Design Document",
-                ],
-              },
-            },
-            {
-              chap: {
-                title: "Module 6 :- Scalability and Performance",
-                desc: [
-                  "Scalability",
-                  "Performance",
-                  "Load Balancing",
-                  "Caching",
-                  "Database Scaling",
-                ],
-              },
-            },
-            {
-              chap: {
-                title: "Module 7 :- Security and Reliability",
-                desc: [
-                  "Security",
-                  "Reliability",
-                  "Fault Tolerance",
-                  "Disaster Recovery",
-                  "Backup and Restore",
-                ],
-              },
-            },
-            {
-              chap: {
-                title: "Module 8 :- Integration and Deployment",
-                desc: [
-                  "Continuous Integration",
-                  "Continuous Deployment",
-                  "DevOps",
-                  "Microservices",
-                  "Containers",
-                ],
-              },
-            },
-          ],
-          id: 2,
-          open: false,
+            ],
+            id: 1,
+            open: false,
+          },
         },
-      },
-    ],
-    advSyllabus: [
-      {
-        Module0: {
-          title: "Term 2 :- Basic DSA",
-          content: [
-            {
-              chap: {
-                title: "Module 1 :- Functions & Recursion",
-                desc: [
-                  "Significance",
-                  " Defining",
-                  "Function return type",
-                  "Passing arguments",
-                ],
+      ],
+      "Term 3 Artificial Intelligence Tools( 25 ECTS Credits)": [
+        {
+          Module0: {
+            title: "Term 2 :- Statistics & Basic Machine Learning",
+            content: [
+              {
+                chap: {
+                  title: "Module 1 :- Statistics",
+                  desc: [
+                    "Fundamentals of Math and Probability",
+                    "All about Population & Sample",
+                    "Discrete Probability Distributions - Binomial, Poisson etc",
+                    "Introduction to Statistics, Statistical Thinking",
+                    " Descriptive Statistics",
+                    " Inferential Statistics",
+                    " Hypothesis Testing",
+                    "Linear Algebra",
+                    "Data Processing & Exploratory Data Analysis",
+                    "EDA,Statistics Assignments: Total 4 practice sets and Assignments from Statistics",
+                  ],
+                },
               },
-            },
-            {
-              chap: {
-                title: "Module 2 :- Recursion",
-                desc: ["Recursion", "Divide and Conquer"],
+              {
+                chap: {
+                  title: "Module 2 :- Machine Learning",
+                  desc: [
+                    "Introduction to Machine Learning",
+                    "Regression and Classification Models",
+                    "Linear Regression Model",
+                    "Data Preprocessing",
+                    "Encoding the Data",
+                    "Logistic Regression Model",
+                    "Evaluation Metrics for Classification model",
+                    "K Nearest Neighbours Model",
+                    "Decision Tree Model",
+                    "Random Forest Model",
+                    "Hyperparameter Tuning",
+                    "Naive Baye’s Model,Case Study on Kart Model Business & Random Forest",
+                  ],
+                },
               },
-            },
-            {
-              chap: {
-                title: "Module 3 :- Linear Search and Binary Search",
-                desc: ["Linear Search", "Binary Search", "Ternary Search"],
-              },
-            },
-            {
-              chap: {
-                title: "Module 4 :- Time and space Complexity",
-                desc: ["Best, worst & average case"],
-              },
-            },
-            {
-              chap: {
-                title: "Module 5 :- Bit Manipulation",
-                desc: [],
-              },
-            },
-            {
-              chap: {
-                title: "Module 6 :- Two Pointers",
-                desc: [],
-              },
-            },
-            {
-              chap: {
-                title:
-                  "Module 7 :- Sorting using Divide and Conquer and implementation",
-                desc: [
-                  "Sortings",
-                  "Divide and Conquer",
-                  "Merge Sort",
-                  "Quick Sort",
-                  "Comparator Sort",
-                ],
-              },
-            },
-            {
-              chap: {
-                title:
-                  "Module 8 :- Simple Array Sorting and its implementation",
-                desc: ["Sortings", "Bubble sort", "Insertion Sort"],
-              },
-            },
-            {
-              chap: {
-                title: "Module 9 :- Strings",
-                desc: [
-                  "Pattern matching",
-                  "Z Algorithm",
-                  "KMP",
-                  "String Hashing",
-                  "Aho corasick",
-                ],
-              },
-            },
-            // {
-            //   chap: {
-            //     title: "Module 10 :- STL - 1",
-            //     desc: [
-            //       "Collections (Standard Template Library)",
-            //       "Vector",
-            //       "Set",
-            //       "Iterator",
-            //     ],
-            //   },
-            // },
-            // {
-            //   chap: {
-            //     title: "Module 11 :- STL - 2",
-            //     desc: [
-            //       "Collections (Standard Template Library)",
-            //       "Map",
-            //       "Iterator",
-            //     ],
-            //   },
-            // },
-            // {
-            //   chap: {
-            //     title: "Module 12 :- STL - 3",
-            //     desc: [
-            //       "Collections (Standard Template Library)",
-            //       "STL functions - Lower Bound",
-            //       "STL functions upperbound",
-            //       "Sort",
-            //     ],
-            //   },
-            // },
-            {
-              chap: {
-                title: "Module 10 :- ArrayList and Linked List - 1",
-                desc: [
-                  "Single Linked List (Insertion at positions in Linked List, iteration in Linked List, Deletion at position in Linked List, Linked List loops)",
-                ],
-              },
-            },
-            {
-              chap: {
-                title: "Module 11 :- Linked List - 2",
-                desc: [
-                  "Double Linked List (Double Linked list creation (prev pointer), iteration in Double Linked List, insertion at positions in Linked List, Deletion in Double Linked List)",
-                ],
-              },
-            },
-            {
-              chap: {
-                title: "Module 12 :- Linked List - 3",
-                desc: [
-                  "Circular Linked list (Circular Linked list creation,iteration in Circular Linked List, insertion at positions in Circular Linked List, Deletion in Circular Linked List",
-                ],
-              },
-            },
-            {
-              chap: {
-                title: "Module 13 :- Stack",
-                desc: ["Intro", "Application and Implementation using Array"],
-              },
-            },
-            {
-              chap: {
-                title: "Module 14 :- Applications of Stack",
-                desc: ["Implementation using Linked list", "Stack as library"],
-              },
-            },
-            {
-              chap: {
-                title: "Module 15 :- Queue",
-                desc: [
-                  "Implementation using Array",
-                  "Implementation using Linked list",
-                  "Queue as a library",
-                ],
-              },
-            },
-            {
-              chap: {
-                title: "Module 16 :- Applications of Queue",
-                desc: [
-                  "Implementation using Array",
-                  "Implementation using Linked list",
-                  "Queue as a library",
-                ],
-              },
-            },
-          ],
-          id: 0,
-          open: true,
+            ],
+            id: 2,
+            open: false,
+          },
         },
-      },
-      {
-        Module0: {
-          title: "Term 2 :- Advanced DSA",
-          content: [
-            {
-              chap: {
-                title: "Module 1 :- Maths",
-                desc: [
-                  "Modular Arithmetic, Modular Exponentiation, GCD, Modular Multiplicative Inverse",
-                  " GCD, Primality Testing, Seive of Eratosthenes",
-                ],
+      ],
+      "Term 4 :- Artificial Intelligence Tools( 25 ECTS Credits) ": [
+        {
+          Module0: {
+            title: "Term 3 :- Data Analytics Tools",
+            content: [
+              {
+                chap: {
+                  title: "Module 1 :- SQL",
+                  desc: [
+                    "SQL and RDBMS",
+                    "Advance SQL",
+                    "NoSQL, HBase & MongoDB",
+                    "JSON Data & CRUD",
+                    "Programming with SQL",
+                  ],
+                },
               },
-            },
-            {
-              chap: {
-                title: "Module 2 :- Analysis of Algorithm - Advance",
-                desc: ["Greedy"],
+              {
+                chap: {
+                  title: "Module 2 :- PowerBI",
+                  desc: [
+                    "Getting Started With Power BI",
+                    " Programming with Power BI",
+                  ],
+                },
               },
-            },
-            {
-              chap: {
-                title: "Module 3 :- Advance Data Structure",
-                desc: [
-                  "Tree -1 (Traversals)",
-                  "Tree - 2 (Construction of tree from traversals, height of tree, mirror of tree)",
-                  "Tree - 3 (LCA, Diameter)",
-                  "BST",
-                  "Heaps",
-                  "Graph - 1 (BFS, DFS)",
-                  "Graph - 2 (Cycles in Graph)",
-                  "Graph - 3 (DFS, BFS on matrix)",
-                  "Graph - 4 ([Dijkstra Algorithm, Flood Fill Algorithm])",
-                  "Heaps",
-                ],
+              {
+                chap: {
+                  title: "Module 3 :- Big Data & Spark Analytics",
+                  desc: [
+                    " Introduction To Hadoop & Big Data",
+                    "What is Spark",
+                    " Getting to know PySpark Hands-on: Map reduce Use Case : Youtube data analysis & Spark RDD       programming",
+                  ],
+                },
               },
-            },
-            {
-              chap: {
-                title: "Module 4 :- Analysis of Algorithm - Advance",
-                desc: [
-                  "Dynamic Programming",
-                  "Graph - 5 [Minimum Spanning Tree, Floyd Warshall, Topological Sorting]",
-                ],
+              {
+                chap: {
+                  title: "Module 4 :- Time Series",
+                  desc: [
+                    " Introduction to Time Series Forecasting",
+                    "Introduction to ARIMA Models,Case Study on Time series classification of smartphone data to predict user behavior, Performing Time Series Analysis on Stock Prices & Time series forecasting of sales data",
+                  ],
+                },
               },
-            },
-          ],
-          id: 2,
-          open: false,
+            ],
+            id: 3,
+            open: false,
+          },
         },
-      },
-      {
-        Module0: {
-          title: "Term 3 :- System Design",
-          content: [
-            {
-              chap: {
-                title: "Module 1 :- Introduction to System Design",
-                desc: [
-                  "What is System Design?",
-                  "Goals of System Design",
-                  "Components of a System Design",
-                  "System Design Process",
-                  "Importance of System Design",
-                  "Types of Systems",
-                  "Architecture of a System",
-                ],
+      ],
+      "Term 5 :- Deployment (AWS+Azure)( 25 ECTS Credits) ": [
+        {
+          Module0: {
+            title: "Term 4 :- Excel",
+            content: [
+              {
+                chap: {
+                  title: "",
+                  desc: [
+                    "Getting started with Excel",
+                    "Using Excel Toolbars: Hiding, Displaying, and Moving Toolbars",
+                    "Switching Between Sheets in a Workbook",
+                    "Entering Date Values and using AutoComplete",
+                    "Inserting and Deleting Cells, Rows, and Columns",
+                    "Working with the Forms Menu",
+                    "Creating & Working with Charts",
+                    "Changing a Chart Type and Working with Pie Charts",
+                    "Data Analysis & Pivot Tables",
+                  ],
+                },
               },
-            },
-            {
-              chap: {
-                title: "Module 2 :- Design Principles",
-                desc: [
-                  "SOLID Principles",
-                  "KISS Principle",
-                  "DRY Principle",
-                  "YAGNI Principle",
-                  "Separation of Concerns",
-                  "Law of Demeter",
-                ],
-              },
-            },
-            {
-              chap: {
-                title: "Module 3 :- Design Patterns",
-                desc: [
-                  "Creational Patterns",
-                  "Structural Patterns",
-                  "Behavioral Patterns",
-                  "Singleton Pattern",
-                  "Factory Pattern",
-                  "Adapter Pattern",
-                  "Observer Pattern",
-                  "Command Pattern",
-                ],
-              },
-            },
-            {
-              chap: {
-                title: "Module 4 :- Low-Level Design (HLD)",
-                desc: [
-                  "Understanding the Purpose and Scope of LLD",
-                  "LLD Design Process",
-                  "Types of LLD",
-                  "Creating a Low-Level Design Document",
-                ],
-              },
-            },
-            {
-              chap: {
-                title: "Module 5 :- High-Level Design (HLD)",
-                desc: [
-                  "Understanding the Purpose and Scope of HLD",
-                  "HLD Design Process",
-                  "Types of HLD",
-                  "Creating a High-Level Design Document",
-                ],
-              },
-            },
-            {
-              chap: {
-                title: "Module 6 :- Scalability and Performance",
-                desc: [
-                  "Scalability",
-                  "Performance",
-                  "Load Balancing",
-                  "Caching",
-                  "Database Scaling",
-                ],
-              },
-            },
-            {
-              chap: {
-                title: "Module 7 :- Security and Reliability",
-                desc: [
-                  "Security",
-                  "Reliability",
-                  "Fault Tolerance",
-                  "Disaster Recovery",
-                  "Backup and Restore",
-                ],
-              },
-            },
-            {
-              chap: {
-                title: "Module 8 :- Integration and Deployment",
-                desc: [
-                  "Continuous Integration",
-                  "Continuous Deployment",
-                  "DevOps",
-                  "Microservices",
-                  "Containers",
-                ],
-              },
-            },
-          ],
-          id: 2,
-          open: false,
+            ],
+            id: 4,
+            open: false,
+          },
         },
-      },
-    ],
+      ],
+    },
       faq: [
         {
           id: 1,

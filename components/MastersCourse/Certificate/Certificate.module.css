@@ -1,258 +1,15 @@
-/* .infop {
-  color: black;
-  margin: 50px 0px 10px 0px;
-  text-align: center;
-  font-size: 32px;
-  font-weight: 700;
+
+
+.Certificate{
+  background: linear-gradient(90deg, #262626 0%, #002C48 99.02%);
 }
-.ptop {
-  font-size: 20px;
-
-  color: #767676;
-  line-height: 26px;
-  text-align: center;
-}
-.header {
-  padding: 30px 0;
-  display: flex;
-  gap: 40px;
-  width: 100%;
-}
-.pWrap {
-  display: flex;
-  gap: 20px;
-  padding: 8px 10px;
-  position: relative;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-  border-radius: 4px;
-}
-.line {
-  margin: 0;
-  padding: 0;
-
-  border-left: 1px solid #0072bc;
-  height: 100%;
-}
-.header p {
-  font-size: 18px;
-  font-weight: 500;
-  margin: 0;
-  padding: 8px 10px;
-
-  cursor: pointer;
-}
-.activeP {
-  background-color: #d3f0ff;
-  color: #0072bc;
-  font-size: 20px !important;
-  font-weight: 600 !important;
-  border-radius: 4px;
-}
-.MicroCert {
-  display: grid;
-  grid-template-columns: 55% 44%;
-  width: 100%;
-  height: 100%;
-  padding: 20px 70px 0px 70px;
-  align-items: center;
-  justify-content: space-between;
-}
-.rightSide {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  flex-flow: column;
-  margin-top: 30px;
-}
-.certificate h2 {
-  text-align: center;
-  font-size: 30px;
-  font-weight: 500;
-}
-
-.gridPanel {
-  display: grid;
-  grid-template-columns: 47% 49%;
-  gap: 30px;
-  padding: 0px;
-}
-
-.leftSide {
-  display: flex;
-}
-
-.leftSideP {
-  padding: 0px;
-  width: 100%;
-  border-radius: 8px;
-  margin: 20px;
-}
-
-.leftSide h6,
-.rightSide h6 {
-  margin: 0;
-  padding-bottom: 15px;
-  margin-bottom: 15px;
-  border-bottom: 2px solid #ecbb53;
-  color: #0072bc;
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 24px;
-}
-
-.leftSide p,
-.rightSide p {
-  display: flex;
-  align-items: center;
-  font-size: 16px;
-  margin: 10px 0;
-  font-weight: 400;
-  line-height: 24px;
-  color: #000;
-}
-
-.checkCircle {
-  margin-right: 15px;
-  font-size: 20px;
-}
-
-@media (max-width: 1281px) {
-  .certificate {
-    padding: 0px 40px;
-    margin-top: 10px;
-    display: grid;
-    grid-template-columns: 49% 49%;
-  }
-  .leftSideP {
-    padding: 20px;
-  }
-  .MicroCert {
-    padding: 30px 0px;
-  }
-}
-
-@media (max-width: 1025px) {
-  .leftSideP {
-    padding: 0px 10px;
-  }
-  .rightSide h6 {
-    margin-top: 0 !important;
-    font-size: 22px !important;
-    line-height: 30px !important;
-    margin-bottom: 10px !important;
-  }
-  .rightSide p {
-    margin: 10px 0;
-  }
-}
-
-@media (min-width: 641px) and (max-width: 960px) {
-  .certificate {
-    padding: 0px 14px;
-    margin-top: 30px;
-  }
-  .leftSideP {
-    padding: 0px;
-    margin: 5px;
-  }
-}
-
-@media (max-width: 641px) {
-  .header {
-    padding: 30px 20px 0px 20px;
-    display: flex;
-    gap: 40px;
-    width: 100%;
-  }
-  .infop {
-    font-size: 24px;
-  }
-  .pWrap {
-    display: grid;
-    grid-template-columns: 45% 2% 49%;
-    gap: 5px;
-    width: 100%;
-  }
-  .line {
-    width: 1px;
-  }
-  .gridPanel {
-    margin-top: 40px;
-    display: flex;
-    flex-flow: column;
-    gap: 0px;
-    box-shadow: rgba(133, 222, 255, 0.634) 0px 3px 8px;
-  }
-  .MicroCert {
-    display: flex;
-    flex-flow: column;
-    padding: 20px;
-    box-shadow: rgba(133, 222, 255, 0.634) 0px 3px 8px;
-    padding: 20px;
-    width: 100%;
-    border-radius: 8px;
-    margin: 20px 0px 10px 0px;
-  }
-  .rightSide p {
-    display: grid;
-    grid-template-columns: 10% 90%;
-  }
-  .rightSide h6 {
-    font-size: 18px !important;
-    line-height: 24px !important;
-    margin-bottom: 0 !important;
-  }
-  .header p {
-    font-size: 14px;
-    font-weight: 600;
-    width: max-content;
-    padding: 5px 8px;
-  }
-  .activeP {
-    font-size: 14px !important;
-  }
-
-  .gridPanel {
-    width: 100%;
-  }
-
-  .leftSide,
-  .rightSide {
-    width: 100%;
-    margin-bottom: 10px;
-    display: block;
-  }
-
-  .leftSideP {
-    padding: 20px 20px 0 20px;
-    width: 100%;
-    border-radius: 8px;
-    margin: 0;
-  }
-
-  .leftSide h6,
-  .rightSide h6 {
-    margin: 0;
-  }
-
-  .checkCircle {
-    margin-right: 5px;
-  }
-
-  .leftSide p,
-  .rightSide p {
-    display: grid;
-    grid-template-columns: 10% 90%;
-  }
-} */
-
-
 .infop {
-  color: black;
+  color: #fff;
   margin: 100px 0px 10px 0px;
   text-align: center;
-  font-size: 32px;
+  font-size: 35px;
   font-weight: 700;
+  padding-top: 55px;
 }
 .ptop {
   font-size: 20px;
@@ -261,17 +18,16 @@
   text-align: center;
 }
 .header {
-  padding: 30px 0 0;
+  padding: 20px 0 0;
   display: flex;
   gap: 40px;
   width: 100%;
-  background: linear-gradient(90deg, #262626 0%, #393939 99.02%);
-  margin-top: 50px;
+
 }
 .pWrap {
   display: flex;
-  gap: 20px;
-  padding: 8px 100px;
+  gap: 60px;
+  padding: 8px 100px 0 100px;
   position: relative;
   border-radius: 4px;
 }
@@ -282,15 +38,15 @@
   height: 100%;
 }
 .header p {
-  font-size: 16px;
+  font-size: 22px;
   margin: 0;
-  padding: 8px 10px;
+  padding: 8px 0px;
   cursor: pointer;
   color: #fff;
 }
 .activeP {
   color: #F99600 !important;
-  border-bottom: 1px solid #F99600;
+  border-bottom: 2px solid #F99600;
   font-weight: 600 !important;
   font-size: 16px;
 }
@@ -299,17 +55,19 @@
   grid-template-columns: 46% 54%;
   width: 100%;
   height: 100%;
-  padding: 0px 0 70px 100px;
-  align-items: center;
+  padding: 0px 0 0px 100px;
+
   justify-content: space-between;
-  background: linear-gradient(90deg, #262626 0%, #393939 99.02%);
+  background: linear-gradient(90deg, #262626 0%, #002C48 99.02%);
 }
 .rightSide {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
   flex-flow: column;
-  margin-top: 30px;
+  margin-top: 50px;
+
+
 }
 .certificate h2 {
   text-align: center;
@@ -336,11 +94,12 @@
 .leftSide h6,
 .rightSide h6 {
   margin: 0;
+
   padding-bottom: 15px;
-  margin-bottom: 15px;
-  border-bottom: 2px solid #ECBB53;
+  margin-bottom: 26px;
+  border-bottom: 2px solid #F99600;
   color: #fff;
-  font-size: 20px;
+  font-size: 28px;
   font-weight: 600;
   line-height: 24px;
 }
@@ -348,7 +107,7 @@
 .rightSide p {
   display: flex;
   align-items: center;
-  font-size: 15px;
+  font-size: 16px;
   margin: 10px 0;
   font-weight: 400;
   line-height: 24px;
@@ -357,11 +116,18 @@
 .checkCircle {
   margin-right: 15px;
   font-size: 20px;
-  background: green;
+  background: #20A898;
   border-radius: 50%;
+  color: #000;
 }
 .CertificateDiv {
-  padding: 0px 80px;
+  padding: 0px 120px 70px 120px;
+
+
+}
+
+.clogo{
+  margin-top: 20px ;
 }
 @media (max-width: 1281px) {
   .certificate {
@@ -391,7 +157,7 @@
     margin: 10px 0;
   }
 }
-@media (min-width: 641px) and (max-width: 960px) {
+/* @media (min-width: 641px) and (max-width: 960px) {
   .certificate {
     padding: 0px 14px;
     margin-top: 30px;
@@ -401,7 +167,7 @@
     padding: 0px;
     margin: 5px;
   }
-}
+} */
 @media (max-width: 641px) {
   .header {
     padding: 10px 20px 0px 20px;
@@ -514,6 +280,7 @@
   .infop{
     color: #fff;
     padding-top: 40px;
+    background: linear-gradient(90deg, #262626 0%, #002C48 99.02%);
   }
   .ptop{
     color: #D6D6D6;
@@ -521,10 +288,10 @@
   }
 
   .Certificate{
-    background: linear-gradient(90deg, #262626 0%, #393939 99.02%);
+    background: linear-gradient(90deg, #262626 0%, #002C48 99.02%);
   }
   .Certificate img {
-    background: linear-gradient(90deg, #262626 0%, #393939 99.02%);
+    background: linear-gradient(90deg, #262626 0%, #002C48 99.02%);
 
   }
 }

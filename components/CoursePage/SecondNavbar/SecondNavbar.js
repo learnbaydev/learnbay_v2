@@ -4,15 +4,27 @@ import styles from "./SecondNavbar.module.css";
 import Button from "../../Global/Button/Button";
 import dynamic from "next/dynamic";
 const Popup = dynamic(() => import("../../Popup/Popup"));
+import Image from "next/image";
+import Form from "../../Form/Form";
 
-function SecondNavbar() {
+function SecondNavbar({careerForm,
+  radio,
+  dataScience,
+  fullStack,
+  dataScienceCounselling}) {
   const [active, setActive] = useState(false);
   const [active1, setActive1] = useState(false);
   const [active2, setActive2] = useState(true);
   const [active3, setActive3] = useState(false);
   const [active4, setActive4] = useState(false);
+  const [popups, setPopups] = useState(false);
 
-  const [activeSection, setActiveSection] = useState(null);
+
+  const [activeSection, setActiveSection] = useState(null); 
+  const [showApplyButton, setShowApplyButton] = useState(false); // Define showApplyButton here
+  const [showLogo, setShowLogo] = useState(false); // Define showLogo here
+
+
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -29,7 +41,7 @@ function SecondNavbar() {
     );
 
     // Observe all sections with IDs matching your navigation links
-    const sections = document.querySelectorAll("#alumni, #eligibility, #curriculum, #fees, #faqs");
+    const sections = document.querySelectorAll("#alumni, #ProjectLab, #curriculum, #Fees, #faqs");
     sections.forEach((section) => {
       observer.observe(section);
     });
@@ -45,18 +57,82 @@ function SecondNavbar() {
     setPopups(true);
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollY = window.scrollY || window.pageYOffset;
+
+      // Adjust this value based on when you want to show the button
+      if (scrollY >= 830) {
+        setShowApplyButton(true);
+        setShowLogo(true);
+      } else {
+        setShowApplyButton(false);
+        setShowLogo(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  const [mobile, setMobile] = useState(false);
+  useEffect(() => {
+    let width = window.innerWidth;
+    if (width < 481) {
+      setMobile(true);
+    }
+    if (width > 481) {
+      setMobile(false);
+    }
+  }, []);
   return (
     <>
       <div className={styles.upperDiv}>
+      <Popup trigger={popups} setTrigger={setPopups} className="popupModal">
+        <div className="leftPopup">
+          <div className="whiteP" />
+        </div>
+        <div className="RightPopup">
+          <h5>Apply For Counselling</h5>
+          {/* <p>Fill the below details to get started</p> */}
+          {careerForm ? (
+            <FormCareer />
+          ) : (
+            <Form
+              popup={true}
+              setTrigger={setPopups}
+              radio={radio}
+              fullStack={fullStack}
+              dataScience={dataScience}
+              dataScienceCounselling={dataScienceCounselling}
+              upSkillingHide={true}
+            />
+          )}
+        </div>
+      </Popup>
+      <Link href="/" className={showApplyButton ? styles.buttonBlock : styles.buttonNoBlock}>
+              <Image
+                src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/learnbay-logo.png"
+                alt="Learnbay"
+                quality={100}
+                style={{ objectFit: "contain" }}
+                width={mobile ? "135" : "230"}
+                height={60}
+              />
+            </Link>
         <div className={styles.innerP}>
+     
           <Link href="#alumni">
             <p className={activeSection === 'alumni' ? styles.active : styles.inactive}>
               Alumni
             </p>
           </Link>
-          <Link href="#eligibility">
-            <p className={activeSection === 'eligibility' ? styles.active : styles.inactive}>
-              Eligibility
+          <Link href="#ProjectLab">
+            <p className={activeSection === 'ProjectLab' ? styles.active : styles.inactive}>
+              Project Lab
             </p>
           </Link>
           <Link href="#curriculum">
@@ -64,8 +140,8 @@ function SecondNavbar() {
               Curriculum
             </p>
           </Link>
-          <Link href="#fees">
-            <p className={activeSection === 'fees' ? styles.active : styles.inactive}>
+          <Link href="#Fees">
+            <p className={activeSection === 'Fees' ? styles.active : styles.inactive}>
               Fees
             </p>
           </Link>
@@ -75,11 +151,13 @@ function SecondNavbar() {
             </p>
           </Link>
         </div>
-        <div onClick={popupShow} className={styles.btnHide}>
-          <Button text="APPLY FOR COUNSELLING" outline={true} />
+        
+
+        <div className={showApplyButton ? styles.buttonBlock : styles.buttonNoBlock} onClick={popupShow}>
+            <Button text="Apply Now" outline={true} />
         </div>
       </div>
-      <hr />
+      <hr className={styles.hr}/>
     </>
   );
 }

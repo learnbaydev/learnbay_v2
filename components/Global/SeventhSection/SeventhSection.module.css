@@ -3,6 +3,7 @@
 }
 
 .infop {
+  display: none;
   color: black;
   margin: 0px 0px 10px 0px;
   text-align: center;
@@ -88,8 +89,10 @@ line-height: normal;
 }
 
 .rightPart {
-  width: 400px;
+  width: 500px;
   height: 390px;
+  display: flex;
+  align-items: center;
 }
 
 @media (max-width: 1024px) {
@@ -148,8 +151,14 @@ line-height: normal;
     margin-bottom: 18px;
   }
   .LearnSupport h5 {
-    font-size: 22px;
+    font-size: 23px;
     line-height: 35px;
+    color: #0072BC;
+    font-family: Inter;
+    /* font-size: 20.489px; */
+    font-style: normal;
+    font-weight: 700;
+   
   }
 
   .pBot {
@@ -173,6 +182,9 @@ line-height: normal;
     margin-top: 50px;
   }
   .infop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 24px;
   }
   .rightPart {

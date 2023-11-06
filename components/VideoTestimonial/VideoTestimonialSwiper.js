@@ -48,9 +48,9 @@ const VideoTestimonialSwiper = ({ review }) => {
         modules={[FreeMode, Pagination]}
         className="mySwiper"
       >
-        {review.map((data) => {
+        {review.map((data, index) => {
           return (
-            <SwiperSlide key={data.id} id="1" className={styles.ReviewBox}>
+            <SwiperSlide key={index} id="1" className={styles.ReviewBox}>
               <div className="bgWrap">
                 <Image
                   src={data.img}

@@ -1,7 +1,7 @@
 .Syllabus {
   display: grid;
   grid-template-columns: 57% 34%;
-  margin: 30px 110px 50px 140px;
+  margin: 50px 140px 50px 140px;
   gap: 110px;
 }
 
@@ -19,6 +19,9 @@
 .syllabusLeft {
   margin: 0px 0px;
   position: relative;
+  height: 450px;
+  overflow: scroll;
+  padding: 10px;
 }
 .syllabusLeft p {
   font-size: 18px;
@@ -141,8 +144,7 @@ text-transform: uppercase;
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
 }
 .formWrapper {
-  border-top: 8px solid #0072bc;
-  border-bottom: 6px solid #0072bc;
+  border: none;
 }
 
 .formWrapper span {
@@ -172,19 +174,18 @@ padding: 10px 20px;
 .formWrapper h4 {
   color: #555;
   text-align: center;
-  font-size: 20px;
+  font-size: 22px;
   margin: 20px 0px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 700;
   line-height: 191.682%; 
 }
 
 .boxDiv {
-  display: flex;
-  justify-content: right;
+  display: none;
 }
 .ptop {
-  font-size: 16px;
+  font-size: 20px;
   margin: 30px 100px;
   color: #767676;
   line-height: 26px;
@@ -228,20 +229,20 @@ padding: 10px 20px;
 }
 .slide {
   padding-bottom: 35px;
-  border-bottom: 2px solid rgba(0, 0, 0, 0.25);
+  /* border-bottom: 2px solid rgba(0, 0, 0, 0.25); */
   width: fit-content !important;
-  padding-right: 30px;
-  padding-left: 50px;
+  padding-right: 40px;
+  padding-left: 0px;
 }
 .ASlide {
   padding-bottom: 35px;
-  border-bottom: 2px solid #0072BC;
+  /* border-bottom: 2px solid #0072BC; */
   width: fit-content !important;
-  padding-right: 30px;
-  padding-left: 50px;
+  padding-right: 40px;
+  padding-left: 0px;
 }
 .topBar {
-  padding: 50px 100px 20px 100px;
+  padding: 0px 140px 0px 140px;
   text-align: left;
   display: flex;
   align-items: baseline;
@@ -253,9 +254,10 @@ padding: 10px 20px;
   font-style: normal;
   font-weight: 500;
   line-height: 126.5%; 
+  cursor: pointer;
 }
 .colorHeading {
-  color: #edb552;
+  color: #F99600;
 font-style: normal;
 font-weight: 700;
 line-height: 126.5%; 
@@ -266,6 +268,43 @@ line-height: 126.5%;
   justify-content: center;
   margin-bottom: 50px;
   gap: 30px;
+}
+
+.pNavg {
+  display: flex;
+  padding: 0px 0px 0px 100px;
+
+}
+
+.customArrow1 {
+  display: flex;
+  align-items: center;
+  color: #8d8d8d;
+  font-size: 24px;
+  height: fit-content;
+  cursor: pointer; 
+  position: relative;
+  top: 42px;
+  /* right: 30px; */
+}
+
+.customArrow2 {
+  display: flex;
+  align-items: center;
+  color: #8d8d8d;
+  font-size: 24px;
+  height: fit-content;
+  cursor: pointer;
+  position: relative;
+  left: 1200px;
+  top: 42px;
+}
+
+@media (min-width: 1281px) {
+.customArrow2 {
+
+  left: 1264px;
+}
 }
 
 @media (max-width: 1281px) {
@@ -331,11 +370,11 @@ line-height: 126.5%;
   }
 
   .ASlide {
-    padding: 10px 0px !important;
+    padding: 10px 0px 10px 10px !important;
   }
 
   .slide {
-    padding: 10px 10px !important;
+    padding: 10px 0px 35px 10px !important;
   }
 
   .careerPro {
@@ -376,31 +415,41 @@ line-height: 126.5%;
   }
 
   .ptop {
-    font-size: 18px;
+    font-size: 16px;
     margin: 0;
     color: #767676;
     line-height: 26px;
     text-align: center;
   }
   .topBar {
-    padding: 40px 10px 20px 10px;
+    padding: 20px 10px 20px 10px;
   }
 }
 @media (max-width: 481px) {
   .Syllabus {
     display: grid;
     grid-template-columns: auto;
-    margin: 40px 20px 0px 20px;
+    margin: 20px 20px 0px 20px;
     gap: 0px;
   }
 
+  .containerDiv {
+    margin-top: 50px;
+  }
+
   .buttonDiv {
-    display: block;
+    display: grid;
+    gap: 20px;
+  }
+
+  .buttonDiv button {
+    margin: auto;
   }
 
   .syllabusLeft {
-    margin: 0px 0px 30px 0px;
+    margin: 0px 0px 0px 0px;
     position: inherit;
+    height: fit-content;
   }
 
   .line {
@@ -432,5 +481,17 @@ line-height: 126.5%;
 
   .syllabusRight {
     margin: 0px;
+  }
+  .wrapSpan {
+    font-size: 13px;
+    
+  }
+
+  .customArrow1{
+    display: none;
+  }
+  .customArrow2{
+    display: none;
+
   }
 }

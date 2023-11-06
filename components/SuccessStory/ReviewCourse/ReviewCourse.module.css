@@ -1,0 +1,14 @@
+.container {
+    padding: 50px 100px;
+}
+
+.container h4 {
+    text-align: center;
+}
+
+.BoxDiv {
+    display: grid;
+    grid-template-columns: 47% 47%;
+    gap: 70px;
+    margin-top: 50px;
+}

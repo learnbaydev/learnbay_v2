@@ -5,15 +5,30 @@
   position: fixed;
   top: 0;
   z-index: 999;
-  background-color: rgba(255, 255, 255);
   right: 0;
   left: 0;
-  height: 70px;
-  padding: 0px 50px;
-  border-bottom: 1px solid #2d9cd710;
+  height: 80px;
+  padding: 0px 100px 0px 90px;
+  background: #FFF;
+  box-shadow: 0px 1px 3px 0px #E8F1F5;
 }
 .left {
-  gap: 30px;
+  gap: 50px;
+}
+
+.left button, .right button {
+  border-radius: 2.67px;
+  color: #FFF;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+padding: 8px 15px;
+letter-spacing: 0.7px;
+}
+
+.right button {
+font-size: 18px;
+padding: 10px 20px;
 }
 .icon {
   margin-left: 10px;
@@ -31,13 +46,13 @@
 }
 
 .right span {
-  margin-right: 30px;
+  margin-right: 50px;
   cursor: pointer;
   font-weight: 400;
 }
 .right a {
-  font-weight: 600;
-  font-size: 16px;
+  font-weight: 500;
+  font-size: 18px;
 }
 .right span:hover {
   color: #0072bc;
@@ -105,7 +120,7 @@
   color: #ff9562;
   border: 1px solid #ff9562;
 }
-.megaMenu{
+.megaMenu {
   position: absolute;
 }
 @media (max-width: 1281px) {
@@ -118,7 +133,6 @@
     cursor: pointer;
     font-weight: 400;
   }
-
 }
 @media (max-width: 1070px) {
   .right span {
@@ -128,16 +142,16 @@
     padding: 0px 20px;
     width: 100%;
     height: 47px;
-    background: #FFF;
-box-shadow: 0px 2px 4px 0px rgba(0, 114, 188, 0.15);
+    background: #fff;
+    box-shadow: 0px 2px 4px 0px rgba(0, 114, 188, 0.15);
   }
   .left button {
     padding: 8px 15px;
-    color: #FFF;
-font-size: 14px;
-font-style: normal;
-font-weight: 700;
-border-radius: 2px;
+    color: #fff;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    border-radius: 2px;
   }
   .left {
     gap: 15px;

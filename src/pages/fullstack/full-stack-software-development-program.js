@@ -25,9 +25,6 @@ const WhoProgram = dynamic(() =>
 const Switch = dynamic(() =>
   import("../../../components/HomePage/switch/switch")
 );
-const GrowthStats = dynamic(() =>
-  import("../../../components/CoursePage/GrowthStat/GrowthStats")
-);
 const ToolsCovered = dynamic(() =>
   import("../../../components/CoursePage/ToolsCovered/ToolsCovered")
 );
@@ -37,17 +34,11 @@ const FeeSection = dynamic(() =>
 const FourthSection = dynamic(() =>
   import("../../../components/CoursePage/FourthSection/FourthSection")
 );
-const FifthSection = dynamic(() =>
-  import("../../../components/CoursePage/FifthSection/FifthSection")
-);
-const SixthSectionCTA = dynamic(() =>
-  import("../../../components/CoursePage/SixthSectionCTA/Counselling")
-);
 const Project = dynamic(() =>
   import("../../../components/CoursePage/Project/Project")
 );
 const SyllabusNew = dynamic(() =>
-  import("../../../components/CoursePage/Syllabus/Syllabus")
+  import("../../../components/MastersCourse/Syllabus/MasterSyllabus")
 );
 const DomainSection = dynamic(() =>
   import("../../../components/CoursePage//DomainSection/DomainSection")
@@ -116,9 +107,10 @@ function Blockchain() {
           placementData={FSSPDataScienceCourseData[0].fourthSection}
           redirectDS={true}
         />
-        <FifthSection />
-        <SixthSectionCTA />
         <SyllabusNew
+           syllabusHead={FSSPDataScienceCourseData[0].syllabusHead}
+           masterSyllabus={FSSPDataScienceCourseData[0].masterSyllabus}
+           MasterSyllabusDefault={FSSPDataScienceCourseData[0].MasterSyllabusDefault}
           software={true}
           dataScienceCounselling={true}
           dataScience={true}
@@ -129,22 +121,14 @@ function Blockchain() {
           syllabusDesc={FSSPDataScienceCourseData[0].syllabusDesc}
           popupHead={FSSPDataScienceCourseData[0].popupHead}
         />
-        <GrowthStats
-          img1="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/SW+Dev+Masters+Scope+Image-min.png"
-          heading="Embrace the future of technology & unlock endless career opportunities"
-          para1="Higher Growth: Compound annual growth rate of CAGR of 11.9% in 2023"
-          para2="Maximize Cloud Opportunities: Unleash your potential & earn 8 LPA"
-          para3="Strong Demand: Growing need for tech wizards across various industries"
-        />
-
         <ToolsCovered
           deskImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Tools-Logo-SDE.png"
           mobImage="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/TOOLS-SDE-mobile.png"
         />
-        <Certificate
+        {/* <Certificate
           twoCertificate={true}
           data={FSSPDataScienceCourseData[0].Certificate}
-        />
+        /> */}
         <FeeSection
           Fee="₹ 1,10,000+ 18% GST"
           FeeEmi="₹ 10,817/month"

@@ -1,39 +1,10 @@
-// import React from "react";
-// import styles from "./Certificate.module.css";
-// import CertificateTabAdvance from "./CertificateTabAdvance";
-// const Certificate = ({
-//   NoCertificate,
-//   threeCertificate,
-//   oneCertificate,
-//   twoCertificate,
-//   data,
-// }) => {
-//   return NoCertificate ? (
-//     ""
-//   ) : (
-//     <div className={`${styles.Certificate} wrapper`}>
-//       <h4 className={styles.infop}>Globally Recognized Program</h4>
-//       <p className={styles.ptop}>Sponsored by IBM and Microsoft</p>
-//       <CertificateTabAdvance
-//         threeCertificate={threeCertificate}
-//         oneCertificate={oneCertificate}
-//         twoCertificate={twoCertificate}
-//         data={data}
-//       />
-//     </div>
-//   );
-// };
-
-// export default Certificate;
-
-import React from "react";
 import styles from "./Certificate.module.css";
 import CertificateTabAdvance from "./CertificateTabAdvance";
 const Certificate = ({
   NoCertificate,
-  threeCertificate,
-  oneCertificate,
-  twoCertificate,
+  degreeCertificate,
+  projectCertificate,
+  microCertificate,
   data,
 }) => {
   return NoCertificate ? (
@@ -41,11 +12,11 @@ const Certificate = ({
   ) : (
     <div className={`${styles.Certificate}`}>
       <h4 className={styles.infop}>Globally Recognized Program</h4>
-      <p className={styles.ptop}>Sponsored by IBM and Microsoft</p>
+      {/* <p className={styles.ptop}>Sponsored by IBM and Microsoft</p> */}
       <CertificateTabAdvance
-        threeCertificate={threeCertificate}
-        oneCertificate={oneCertificate}
-        twoCertificate={twoCertificate}
+        degreeCertificate={data.degreeCertificate}
+        projectCertificate={data.projectCertificate}
+        microCertificate={data.microCertificate}
         data={data}
       />
     </div>

@@ -1,8 +1,13 @@
+
+
+
 @media (min-width: 1281px) {
+
+  
   .projectHeader {
     .headWrapper {
       display: flex;
-      margin-top: 60px;
+      margin-top: 50px;
       justify-content: space-between;
       padding: 0px 100px;
       align-items: center;
@@ -78,14 +83,14 @@
       .project {
         margin-top: 10px;
         width: inherit;
-        margin-bottom: 20px;
+        margin-bottom: 40px;
         margin-right: 45px;
         padding: 20px;
         border-image-width: 20px;
         background-position: center center;
         background-size: cover;
         background-repeat: no-repeat;
-        border-radius: 15px;
+        border-radius: 6px;
         background-color: white;
         margin-left: 4px;
 
@@ -132,6 +137,16 @@
 
             border-bottom: 2px dotted #0072bc;
           }
+
+          h5 {
+            color: #444;
+// font-family: Open Sans;
+font-size: 16px;
+font-style: normal;
+font-weight: 450;
+line-height: 153%; /* 30.6px */
+
+          }
           h6 {
             font-size: 16px;
             font-weight: 600;
@@ -140,7 +155,7 @@
             padding: 0;
           }
           p {
-            font-size: 12px;
+            font-size: 16px;
             color: rgb(115, 115, 115);
             margin: 0;
           }
@@ -189,6 +204,7 @@
       justify-content: center;
     }
 
+
     .sliderArrowLeft {
       width: 40px;
       padding: 10px;
@@ -230,12 +246,12 @@
       margin-top: 10px;
 
       .project {
-        background: linear-gradient(
-          90deg,
-          rgba(225, 241, 245, 0.5) 0.18%,
-          rgba(225, 241, 245, 0) 46.58%,
-          rgba(225, 241, 245, 0.5) 99.17%
-        );
+        // background: linear-gradient(
+        //   90deg,
+        //   rgba(225, 241, 245, 0.5) 0.18%,
+        //   rgba(225, 241, 245, 0) 46.58%,
+        //   rgba(225, 241, 245, 0.5) 99.17%
+        // );
         border-radius: 5px;
         box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
         .header {
@@ -263,19 +279,19 @@
         margin-right: 45px;
         padding: 20px;
         height: 280px;
-        background: linear-gradient(
-          90deg,
-          rgba(225, 241, 245, 0.5) 0.18%,
-          rgba(225, 241, 245, 0) 46.58%,
-          rgba(225, 241, 245, 0.5) 99.17%
-        );
+        // background: linear-gradient(
+        //   90deg,
+        //   rgba(225, 241, 245, 0.5) 0.18%,
+        //   rgba(225, 241, 245, 0) 46.58%,
+        //   rgba(225, 241, 245, 0.5) 99.17%
+        // );
         border-radius: 5px;
         box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
         border-image-width: 20px;
         background-position: center center;
         background-size: cover;
         background-repeat: no-repeat;
-        border-radius: 15px;
+        border-radius: 6px;
         background-color: white;
 
         position: relative;
@@ -393,12 +409,12 @@
       margin-top: 10px;
 
       .project {
-        background: linear-gradient(
-          90deg,
-          rgba(225, 241, 245, 0.5) 0.18%,
-          rgba(225, 241, 245, 0) 46.58%,
-          rgba(225, 241, 245, 0.5) 99.17%
-        );
+        // background: linear-gradient(
+        //   90deg,
+        //   rgba(225, 241, 245, 0.5) 0.18%,
+        //   rgba(225, 241, 245, 0) 46.58%,
+        //   rgba(225, 241, 245, 0.5) 99.17%
+        // );
         border-radius: 5px;
         box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
         .header {
@@ -426,12 +442,12 @@
         margin-right: 45px;
         padding: 20px;
         height: 280px;
-        background: linear-gradient(
-          90deg,
-          rgba(225, 241, 245, 0.5) 0.18%,
-          rgba(225, 241, 245, 0) 46.58%,
-          rgba(225, 241, 245, 0.5) 99.17%
-        );
+        // background: linear-gradient(
+        //   90deg,
+        //   rgba(225, 241, 245, 0.5) 0.18%,
+        //   rgba(225, 241, 245, 0) 46.58%,
+        //   rgba(225, 241, 245, 0.5) 99.17%
+        // );
         border-radius: 5px;
         box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
         border-image-width: 20px;
@@ -551,12 +567,12 @@
       margin-top: 10px;
 
       .project {
-        background: linear-gradient(
-          90deg,
-          rgba(225, 241, 245, 0.5) 0.18%,
-          rgba(225, 241, 245, 0) 46.58%,
-          rgba(225, 241, 245, 0.5) 99.17%
-        );
+        // background: linear-gradient(
+        //   90deg,
+        //   rgba(225, 241, 245, 0.5) 0.18%,
+        //   rgba(225, 241, 245, 0) 46.58%,
+        //   rgba(225, 241, 245, 0.5) 99.17%
+        // );
         border-radius: 5px;
         box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
         .header {
@@ -584,12 +600,12 @@
         margin-right: 45px;
         padding: 20px;
         height: 280px;
-        background: linear-gradient(
-          90deg,
-          rgba(225, 241, 245, 0.5) 0.18%,
-          rgba(225, 241, 245, 0) 46.58%,
-          rgba(225, 241, 245, 0.5) 99.17%
-        );
+        // background: linear-gradient(
+        //   90deg,
+        //   rgba(225, 241, 245, 0.5) 0.18%,
+        //   rgba(225, 241, 245, 0) 46.58%,
+        //   rgba(225, 241, 245, 0.5) 99.17%
+        // );
         border-radius: 5px;
         box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
         border-image-width: 20px;
@@ -662,6 +678,15 @@
   .ptop {
     font-size: 18px;
     margin: 20px;
+    padding: 0px 30px;
+    font-weight: 400;
+  }
+
+  .body  h5 {
+    // background-color: yellow;
+    font-size: 18px;
+    
+
   }
 }
 
@@ -785,8 +810,17 @@
     }
   }
 }
+@media (max-width: 767px) {
+  /* Add your mobile styles here */
+  .swiperpagination {
+    display: block; /* Show the pagination dots on mobile devices */
+  }
+}
 
 @media (max-width: 481px) {
+  .pNavg{
+    display: none;
+  }
   .projectHeader {
     margin-bottom: 30px;
     .headWrapper {
@@ -834,18 +868,19 @@
     }
     .container {
       display: flex;
-      padding: 0px 25px;
+      // padding: 0px 25px;
       height: max-content;
       margin-top: 10px;
       width: 100%;
+      padding: 0px 20px;
 
       .project {
-        background: linear-gradient(
-          90deg,
-          rgba(225, 241, 245, 0.5) 0.18%,
-          rgba(225, 241, 245, 0) 46.58%,
-          rgba(225, 241, 245, 0.5) 99.17%
-        );
+        // background: linear-gradient(
+        //   90deg,
+        //   rgba(225, 241, 245, 0.5) 0.18%,
+        //   rgba(225, 241, 245, 0) 46.58%,
+        //   rgba(225, 241, 245, 0.5) 99.17%
+        // );
         border-radius: 5px;
         box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
         .header {
@@ -864,37 +899,43 @@
             color: white;
           }
         }
+
+           h5 {
+        color: #444;
+    /* font-family: Open Sans; */
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 153%;
       }
 
+       
+      }
+   
       .project {
         margin-top: 40px;
-
-        padding: 20px;
+        padding: 6px;
         margin-right: 45 !important;
         margin-bottom: 40px;
-        margin-top: 20px;
-        height: 320px;
-        background: linear-gradient(
-          90deg,
-          rgba(225, 241, 245, 0.5) 0.18%,
-          rgba(225, 241, 245, 0) 46.58%,
-          rgba(225, 241, 245, 0.5) 99.17%
-        );
+        margin-top: 5px;
+        height: fit-content;
         border-radius: 5px;
         box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
         border-image-width: 20px;
         background-position: center center;
         background-size: cover;
         background-repeat: no-repeat;
-        border-radius: 30px;
+        border-radius: 4px;
+        margin-left: 5px;
         background-color: white;
         position: relative;
+        // margin-left: 30px;
 
         .header {
           display: flex;
           flex-flow: column-reverse;
 
-          align-items: center;
+          align-items: baseline;
           // justify-content: space-between;
           margin: 0px 0px;
           background-color: transparent;
@@ -914,6 +955,7 @@
             padding: 0;
             padding-bottom: 10px;
             border-bottom: 3px solid #edb552;
+        
           }
           .icon {
             color: #2d9cd7;
@@ -942,10 +984,12 @@
           }
           p {
             font-size: 14px;
-            color: rgb(115, 115, 115);
-            margin-top: 10px;
-            text-align: center;
+            color: rgb(99 96 96);
+            margin-top: 80px;
+            text-align: left;
+            font-weight: 600;
           }
+         
         }
       }
     }

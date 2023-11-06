@@ -1,8 +1,8 @@
 export const menuItem = [
   {
     id: 1,
-    name: "Home",
-    url: "/",
+    name: "Career Services",
+    url: "#servicePro",
   },
   // {
   //   id: 2,
@@ -11,17 +11,17 @@ export const menuItem = [
   // },
   {
     id: 3,
-    name: "Demo",
-    url: "/demo",
+    name: "Success Story",
+    url: "/success-story",
   },
   {
     id: 4,
-    name: "Blog",
-    url: "/blog",
+    name: "ProjectLab",
+    url: "#ProjectLab",
   },
   {
     id: 5,
-    name: "Contact Us",
-    url: "/contact-us",
+    name: "Blog",
+    url: "https://blog.learnbay.co/",
   },
 ];

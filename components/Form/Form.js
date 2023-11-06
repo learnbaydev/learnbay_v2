@@ -36,6 +36,7 @@ const Form = ({
     phone: "",
     upskillPlanning: "",
     upskillingObjective: "",
+    platform: "",
     workExperience: "",
     Brief: "",
     dateTime: "",
@@ -45,7 +46,7 @@ const Form = ({
     url: router.asPath,
   });
   useEffect(() => {
-    setQuery({ ...query, phone: value, });
+    setQuery({ ...query, phone: value });
   }, [value]);
 
   // Update inputs value
@@ -115,6 +116,10 @@ const Form = ({
       setError(true);
     } else if (query.upskillingObjective === "") {
       setError(true);
+    } else if (query.platform === "Select an option") {
+      setError(true);
+    } else if (query.platform === "") {
+      setError(true);
     } else {
       setError(false);
       const formData = new FormData();
@@ -133,6 +138,7 @@ const Form = ({
           upskillPlanning: "",
           upskillingObjective: "",
           jobDescription: "",
+          platform: "",
           workExperience: "",
           dateTime: "",
           WAdropdown: "",
@@ -264,6 +270,9 @@ const Form = ({
     <div className={styles.App}>
       <form onSubmit={upSkillingHide ? formSubmitDownload : formSubmit}>
         <div className={styles.formWrapper}>
+          <label htmlFor="Name">
+            Name<span className={styles.spanLabel}>*</span>
+          </label>
           <input
             type="text"
             name="name"
@@ -276,6 +285,9 @@ const Form = ({
           />
         </div>
         <div className={styles.formWrapper}>
+          <label htmlFor="E-Mail">
+            E-Mail<span className={styles.spanLabel}>*</span>
+          </label>
           <input
             type="email"
             name="email"
@@ -287,20 +299,21 @@ const Form = ({
           />
         </div>
         <div className={styles.formWrapper}>
+          <label htmlFor="Phone">
+            Phone Number<span className={styles.spanLabel}>*</span>
+          </label>
           <PhoneInput
             style={
               popup
                 ? {
-                    border: "0",
-                    padding: "0px",
-                    borderBottom: "1px solid #C4C4C4",
-                    paddingBottom : "10px",
+                    borderRadius: "6px",
+                    border: "1px solid #D3D3D3",
+                    padding: "10px",
                   }
                 : {
-                    border: "0",
-                    padding: "0px",
-                    borderBottom: "1px solid #C4C4C4",
-                    paddingBottom : "10px",
+                    borderRadius: "6px",
+                    border: "1px solid #D3D3D3",
+                    padding: "10px",
                   }
             }
             name="phone"
@@ -313,10 +326,13 @@ const Form = ({
             required
           />
         </div>
-        {upSkillingHide ? (
+        {/* {upSkillingHide ? (
           ""
         ) : (
           <div className={popup ? styles.formWrappers : styles.formWrappers}>
+            <label htmlFor="Name">
+              Upskilling Objective<span className={styles.spanLabel}>*</span>
+            </label>
             <select
               name="upskillPlanning"
               required
@@ -350,6 +366,9 @@ const Form = ({
           ""
         ) : (
           <div className={popup ? styles.formWrappers : styles.formWrappers}>
+            <label htmlFor="Name">
+              Timeline<span className={styles.spanLabel}>*</span>
+            </label>
             <select
               name="upskillingObjective"
               required
@@ -371,7 +390,7 @@ const Form = ({
               <option value="Career switch">Career switch</option>
             </select>
           </div>
-        )}
+        )} */}
 
         {google ? (
           <div className={popup ? styles.formWrappers : styles.formWrapper}>
@@ -409,21 +428,30 @@ const Form = ({
           ""
         )}
 
-        {popup ? (
-          <div className={popup ? styles.formWrappers : styles.formWrapper}>
-            <input
-              type="hidden"
-              id="url"
-              name="url"
-              value={router.asPath}
-            ></input>
-          </div>
-        ) : (
-          ""
-        )}
         {radio ? (
           <div className={popup ? styles.formWrappers : styles.formWrapper}>
-            <input
+            <label htmlFor="Name">
+              Course Preference<span className={styles.spanLabel}>*</span>
+            </label>
+            <select
+              id="platform"
+              name="platform"
+              required
+              value={query.platform}
+              defaultValue
+              onChange={handleParam()}
+            >
+              <option value="Select an option" defaultValue hidden>
+                Select an option
+              </option>
+              <option value="Data Science & AI Courses">
+                Data Science & AI Courses
+              </option>
+              <option value="Software (DSA & System Design)">
+                Software (DSA & System Design)
+              </option>
+            </select>
+            {/* <input
               id="Data Science Program"
               value="Data Science & AI Courses "
               name="platform"
@@ -441,7 +469,7 @@ const Form = ({
               type="radio"
               onChange={handleParam()}
             />
-            Software (DSA & System Design)
+            Software (DSA & System Design) */}
           </div>
         ) : (
           ""
@@ -459,10 +487,20 @@ const Form = ({
         ) : (
           ""
         )}
+        {popup ? (
+          <input
+            type="hidden"
+            id="url"
+            name="url"
+            value={router.asPath}
+          ></input>
+        ) : (
+          ""
+        )}
         <div>{toggle ? "" : <p className={styles.alert}>{alertMSG}</p>}</div>
         {syllabus ? (
           <div className={styles.bottomWrap}>
-            <p className={styles.FormText} style={{ fontSize: "10px" }}>
+            <p className={styles.FormText} style={{ fontSize: "9px" }}>
               By submitting the form, you agree to our Terms and Conditions and
               our Privacy Policy.
             </p>
@@ -472,7 +510,7 @@ const Form = ({
           </div>
         ) : (
           <>
-            <p className={styles.FormText} style={{ fontSize: "10px" }}>
+            <p className={styles.FormText} style={{ fontSize: "9px" }}>
               By submitting the form, you agree to our Terms and Conditions and
               our Privacy Policy.
             </p>

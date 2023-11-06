@@ -192,7 +192,7 @@ function FourthSection({
       </Popup>
       <section className={styles.Features}>
         <div>
-          <h4 className={styles.infop}>Our Students Work in</h4>
+          <h4 className={styles.infop}>Get Hired At</h4>
           <div className={styles.FeatureWrap}>
             {/* <div className={styles.LeftWrap}>
               {placementArray.map((data, index) => {

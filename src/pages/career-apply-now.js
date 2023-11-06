@@ -26,7 +26,7 @@ const applyNow = () => {
           src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/Submit-info.png"
           width="441"
           height="600"
-          layout="intrinsic"
+           
         />
       </div>
       </div>

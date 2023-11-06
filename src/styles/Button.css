@@ -19,6 +19,7 @@
   color: #0072BC;
 }
 .outLineBtn,
+.ButtonWhiteBg,
 .outLineBtn1 {
   padding: 12px 20px;
   border: 1px solid #0072BC;
@@ -33,11 +34,17 @@
   font-size: 16px;
   font-weight: 800;
 }
-.outLineBtn:hover {
+.outLineBtn:hover, .ButtonWhiteBg:hover {
   background-color: #0072BC;
   color: white;
 }
-.nobannerButton
+
+.ButtonWhiteBg {
+  color: #0072BC;
+  background-color: #fff;
+  font-weight: 400;
+}
+.nobannerButton, .whiteBgButton
   {
     padding: 14px 85px;
     border: 1px solid #0072BC;
@@ -49,12 +56,18 @@
     outline: none;
     align-items: center;
     border-radius: 4px;
-    font-size: 14px;
+    font-size: 12px;
   }
-  .nobannerButton:hover {
+  .nobannerButton:hover, .whiteBgButton:hover {
     background-color: #0072BC;
     color: white;
   }
+
+.whiteBgButton {
+  background-color: #fff;
+  color: #0072BC;
+}
+
   .bannerButton {
     padding: 14px 85px;
     outline: none;
@@ -67,7 +80,7 @@
     outline: none;
     align-items: center;
     border-radius: 4px;
-    font-size: 14px;
+    font-size: 12px;
     border: 1px solid #0072BC;
   }
   .bannerButton:hover {

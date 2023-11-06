@@ -26,9 +26,6 @@ const WhoProgram = dynamic(() =>
 const Switch = dynamic(() =>
   import("../../../components/HomePage/switch/switch")
 );
-const GrowthStats = dynamic(() =>
-  import("../../../components/CoursePage/GrowthStat/GrowthStats")
-);
 const ToolsCovered = dynamic(() =>
   import("../../../components/CoursePage/ToolsCovered/ToolsCovered")
 );
@@ -38,17 +35,11 @@ const FeeSection = dynamic(() =>
 const FourthSection = dynamic(() =>
   import("../../../components/CoursePage/FourthSection/FourthSection")
 );
-const FifthSection = dynamic(() =>
-  import("../../../components/CoursePage/FifthSection/FifthSection")
-);
-const SixthSectionCTA = dynamic(() =>
-  import("../../../components/CoursePage/SixthSectionCTA/Counselling")
-);
 const Project = dynamic(() =>
   import("../../../components/CoursePage/Project/Project")
 );
 const SyllabusNew = dynamic(() =>
-  import("../../../components/CoursePage/Syllabus/Syllabus")
+  import("../../../components/MastersCourse/Syllabus/MasterSyllabus")
 );
 const DomainSection = dynamic(() =>
   import("../../../components/CoursePage//DomainSection/DomainSection")
@@ -178,9 +169,10 @@ function Blockchain() {
           titleCourse="Data Science Placement Report"
           brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Placement+Report.pdf"
         />
-        <FifthSection />
-        <SixthSectionCTA dataScienceCounselling={true} />
         <SyllabusNew
+           syllabusHead={AIMLDataScienceCourseData[0].syllabusHead}
+           masterSyllabus={AIMLDataScienceCourseData[0].masterSyllabus}
+           MasterSyllabusDefault={AIMLDataScienceCourseData[0].MasterSyllabusDefault}
           dataScienceCounselling={true}
           serviceBasic={true}
           dataScience={true}
@@ -189,13 +181,6 @@ function Blockchain() {
           syllabus={AIMLDataScienceCourseData[0].syllabus}
           syllabusDesc={AIMLDataScienceCourseData[0].syllabusDesc}
           popupHead={AIMLDataScienceCourseData[0].popupHead}
-        />
-        <GrowthStats
-          img1="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/AIML-Scope.png"
-          heading="Dive into the advanced tech industry & unlock limitless career potential "
-          para1="Higher Growth: Compound annual growth rate (CAGR) of 8.2% in 2023"
-          para2="Big Earning Potential: Earn an average salary of INR 20 LPA"
-          para3="Strong Demand: Booming requirement across various industries and domains"
         />
         <ToolsCovered
           deskImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Tools-Logo.png"
@@ -208,7 +193,7 @@ function Blockchain() {
         <FeeSection
           AIMLCertificate={true}
           Fee="₹ 1,10,000 + 18% GST"
-          FeeEmi="₹ 10,817/month"
+          FeeEmi="₹ 10,817/"
           FeeHeading="Program Fee & Financing"
           FeeContent2="No cost EMI"
           FeeContent3="Flexible payment"

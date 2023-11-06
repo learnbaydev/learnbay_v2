@@ -129,6 +129,7 @@
     width: 100vw;
     flex-flow: column;
     padding: 20px 20px 120px 20px;
+    top: 47px;
   }
   .leftPanel {
     margin-right: 0px;
@@ -144,6 +145,7 @@
     flex-direction: column;
     width: 100%;
     overflow: scroll;
+    gap: 0px;
   }
   .Program {
     width: auto;
