@@ -21,7 +21,8 @@ const ThirdSection = ({
   FeeEmi,
 }) => {
   const [popups, setPopups] = useState(false);
-
+  const [titleCourse, setTitleCourse] = useState();
+  const [brochureLinks, setBrochureLinks] = useState();
   const popupShow = () => {
     setPopups(true);
   };
@@ -45,9 +46,12 @@ const ThirdSection = ({
         <div className="RightPopup">
           <h5>Apply For Counselling</h5>
           <Form
-            dataScience={dataScience}
+            dataScience={true}
             dataScienceCounselling={dataScienceCounselling}
             upSkillingHide={true}
+            downloadBrochure
+            titleCourse={titleCourse}
+            brochureLink={brochureLinks}
             // radio={radio}
           />
         </div>
@@ -73,6 +77,9 @@ const ThirdSection = ({
             dataScience={dataScience}
             dataScienceCounselling={dataScienceCounselling}
             upSkillingHide={true}
+            downloadBrochure
+            titleCourse={titleCourse}
+            brochureLink={brochureLinks}
             // radio={radio}
           />
         </div>
@@ -85,7 +92,7 @@ const ThirdSection = ({
         <div>
           <div className={styles.boxWrap}>
             {ThirdSectionData.map((data, index) => {
-              const { icon, heading, para } = data;
+              const { icon, heading, para, brochureLink } = data;
               return (
                 <div className={styles.leftSide} key={index}>
                   <div className={styles.boxIcon}>
@@ -97,7 +104,14 @@ const ThirdSection = ({
                   <h5 className={styles.heading}>{heading}</h5>
                   <p>{para}</p>
 
-                  <div className={styles.buttonDiv} onClick={popupShow}>
+                  <div
+                    className={styles.buttonDiv}
+                    onClick={() => {
+                      setTitleCourse(heading);
+                      setBrochureLinks(brochureLink);
+                      popupShow();
+                    }}
+                  >
                     <Button
                       text="Brochure"
                       passIcon={<FaDownload className="bIconS" />}

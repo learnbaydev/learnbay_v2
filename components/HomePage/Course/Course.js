@@ -283,15 +283,31 @@ const Course = ({
                                             <BiTimeFive
                                               className={styles.checkCircle}
                                             />
-                                            {para[0]}
+                                            {/* <IoTimeOutline
+                                            className={styles.timeIcon}
+                                          />{" "} */}
+                                            {para[0]} | {courseTime}
                                           </p>
+                                          {/* <p>
+                                        <AiOutlineFundProjectionScreen
+                                          className={styles.checkCircle}
+                                          style={{ color: "#edb552" }}
+                                        />
+                                        {para[1]}
+                                      </p> */}
                                           <p className={styles.singleP}>
+                                            {/* <TbCurrencyRupee
+                                            className={styles.checkCircle}
+                                          /> */}
                                             <BsCheckLg
                                               className={styles.checkIcon}
                                             />
-                                            {para[1]}
+                                            {para[2]}
                                           </p>
                                           <p className={styles.singleP}>
+                                            {/* <TbCurrencyRupee
+                                            className={styles.checkCircle}
+                                          /> */}
                                             <BsCheckLg
                                               className={styles.checkIcon}
                                             />

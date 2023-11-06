@@ -208,6 +208,7 @@ function Blockchain({}) {
         />
         <SecondNavbar />
         <WhoProgram
+          dataScience={true}
           leftImage="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/advance-who.webp"
           ThirdSectionData={DataScienceCourseData[0].thirdSection}
         />

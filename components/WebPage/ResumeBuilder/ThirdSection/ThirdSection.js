@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import styles from "./ThirdSection.module.css";
+import styles from "./ection.module.css";
 import FormInline from "../../FormSection/FormInline";
 import Image from "next/image";
 import VideoPopup from "../../VideoPopup/VideoPopup";
@@ -9,7 +9,7 @@ import Form from "../../Form/Form";
 import dynamic from "next/dynamic";
 const Button = dynamic(() => import("../../../Global/Button/Button"));
 
-function ThirdSection({idss}) {
+function ection({ idss }) {
   const [video, setVideo] = useState(false);
   const [popups, setPopups] = useState(false);
   const videoSHow = () => {
@@ -21,7 +21,7 @@ function ThirdSection({idss}) {
   return (
     <>
       <section className={styles.main}>
-      <Popup
+        <Popup
           trigger={popups}
           setTrigger={setPopups}
           className="popupModal"
@@ -35,8 +35,7 @@ function ThirdSection({idss}) {
           </div>
           <div className="RightPopup">
             <h5>Apply For Counselling</h5>
-            <Form radio={true} dataScienceCounselling={true}
-            />
+            <Form radio={true} dataScienceCounselling={true} />
           </div>
         </Popup>
         <div className={styles.cont}>
@@ -54,7 +53,6 @@ function ThirdSection({idss}) {
               src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/Counsellors-min.webp"
               width="400"
               height="71"
-               
               alt="data science course"
             />
           </div>
@@ -72,30 +70,29 @@ function ThirdSection({idss}) {
           <p className={styles.greenButton}>FREE</p>
           <h4>PROFILE REVIEW & CONSULTATION</h4>
           <p>from Industry Expert</p>
-        
-           <div onClick={popupShow} className={styles.centerButton}>
+
+          <div onClick={popupShow} className={styles.centerButton}>
             <Button
-     
               className={styles.Btndiv}
               text="Book Now"
               passIcon={<FaBell className="bIconS" />}
             />
-            </div>
+          </div>
         </div>
         <div className={styles.left}>
           <div className="imgWrapper">
-          <Image
-            onClick={videoSHow}
-            src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/whylearnbay-left-image.png"
-            width={686}
-            height={393}
-            className={styles.LeftWrapImg}
-          />
-        </div>
+            <Image
+              onClick={videoSHow}
+              src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/whylearnbay-left-image.png"
+              width={686}
+              height={393}
+              className={styles.LeftWrapImg}
+            />
+          </div>
         </div>
       </section>
     </>
   );
 }
 
-export default ThirdSection;
+export default ection;
