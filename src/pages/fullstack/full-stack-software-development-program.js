@@ -167,7 +167,7 @@ function Blockchain({}) {
     <>
       <Head>
         <title>
-          Artificial Intelligence and Data Science Course - Learnbay
+        Full-Stack Software Development Program - Learnbay
         </title>
         <meta
           name="description"
@@ -194,12 +194,12 @@ function Blockchain({}) {
           // SecondTyped="Capstone Project Certificate"
           ThirdTyped="Live Interactive Classes"
           dataScience={true}
-          titleCourse="Advance Data Science & AI Program with Domain Specialization"
-          cityParaCont="Elevate your tech career with our Master's programs"
+          titleCourse="Software Development Certification Program"
+          cityParaCont="Upskill and switch from service-based to product based companies"
           brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Advance+Data+Science+and+AI+Certification+Program+Learnbay.pdf"
-          FirstRightImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/advance-header.webp"
-          firstToparaImg="with Domain Specialization"
-          firstHeading="Advance Data Science & AI Program"
+          FirstRightImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/fullhead.webp"
+          firstToparaImg=""
+          firstHeading="Software Development Certification Program"
           firstTopPara="Curriculum Inclusive of Gen-AI"
           idss="bfl64ANfSV0"
         />
@@ -219,7 +219,12 @@ function Blockchain({}) {
           Testimonial={FSSPDataScienceCourseData[0].testimonial}
         />
 
-        <WhoIsProgram />
+        <WhoIsProgram
+          first="Bachelor's degree with consistent good academics"
+          second="1+ year(s) experience in IT domain"
+          third="Students pursuing B.Tech and B.Sc. in computer science"
+          forth="For individuals seeking software development skills"
+        />
         <WhyLearnbay idss="bfl64ANfSV0" />
         <GetHire />
         {/* <Switch /> */}
@@ -252,13 +257,15 @@ function Blockchain({}) {
           deskImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Tools-Logo.png"
           mobImage="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Mobile-Tools-Covered.png"
         />
-        <Certificate data={FSSPDataScienceCourseData[0].Certificate} />
+        {/* <Certificate data={FSSPDataScienceCourseData[0].Certificate} /> */}
         <FeeSection
-          Fee="₹ 99,000"
-          FeeEmi="₹ 9,735/month"
-          WeekdayDate="DEC 14th"
-          WeekendDate="NOV 5th"
-          WeekdayTime="08:00 PM - 10:00 PM"
+   
+          Fee="₹ 1,15,000"
+          FeeEmi="₹ 7,538/month"
+          WeekdayDate="Nov 10th"
+          WeekendDate="Nov 17th"
+          WeekendTime="7:30 AM to 9:30 AM"
+          WeekdayTime="8:00 PM to 10:00 PM"
           FeeContent3="Flexible payment"
           FeeContent4="Easy loan procedure"
           FeeContent5="15 days refund policy"

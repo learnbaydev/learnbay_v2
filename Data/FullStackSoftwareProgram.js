@@ -46,52 +46,109 @@ import {
       testimonial: [
         {
           id: 1,
-          name: "Qudsia Tahniyath",
+          name: "Preksha Mishra",
+          working: "HCL",
+          link: "vSjfKdIzUjY",
           proImg:
-            "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Alumni+Images/Qudsia.png",
+            "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/preksha-testimonial.webp",
           sDesc:
-            "Learnbay has helped me a lot to learn data science applications in the e-commerce industry. The live class concept was really helpful in receiving proper DS training. Thanks to all my mentors and the placement team.",
+            "I had a great learning experience at Learnbay. The faculties here are top notch. Right from enrollment to getting a good job ...",
+          lDesc:
+            "I had a great learning experience at Learnbay. The faculties here are top notch. Right from enrollment to getting a good job, they keep putting enormous efforts for each and every candidate. Thanks to all the trainers, backend team, the HR team and to the directors for making this journey smooth.",
+          complogo:
+            "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/microsoft.webp",
+          statLogo: "140% Hike",
         },
         {
           id: 2,
-          name: "Binit Kumar Swalsingh",
+          name: "Shubham Kumar",
+          working: "Cendrol Technology",
+          link: "JoKquvfAhZU",
           proImg:
-            "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Alumni+Images/binit.png",
+            "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/Shubham-kumar-thumb+.webp",
           sDesc:
-            "I've been with this org since Jan 4, 2023, studying Full Stack Software Development. If you have ambition and need a mentor to show you the right path to success with the right knowledge, I highly recommend this org.",
-        },
-        {
-          id: 3,
-          name: "Swarup Halder",
-          proImg:
-            "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Alumni+Images/swarup.png",
-          sDesc:
-          "I have enrolled in Software Development course. I had basic knowledge of DSA and since then it has been a wonderful learning experience. The teacher does an excellent job of explaining the concepts in a way that is easy to understand.",
+            "I moved from teaching to data science with Learnbay's help. Their course was easy to follow, even for someone like me without a tech...",
+          lDesc:
+            "I moved from teaching to data science with Learnbay's help. Their course was easy to follow, even for someone like me without a tech background. In six months, I got to learn how data science is used in the real world. Their mock interviews also prepared me for job interviews, and I got a data analyst job at Cendrol. This course really helped me change my career.",
+          complogo:
+            "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/microsoft.webp",
+          statLogo: "  210% Hike",
         },
         {
           id: 4,
-          name: "Karanveer Bansal",
+          name: "Arvind Kumar",
+          working: "The Math Company",
+          link: "hewBtR_WoDM",
           proImg:
-            "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Alumni+Images/karanveer.png",
+            "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/aravind-k-thumb.webp",
           sDesc:
-            "I enrolled in Learnbay's full stack program. I already completed basic DSA and the live sessions were clear, with good teaching pace. They offer an easy and simple EMI option for course fees.",
+            "Choosing Learnbay was my best decision ever. The instructors were encouraging and glad to answer questions. The best feature is that...",
+          lDesc:
+            "Choosing Learnbay was my best decision ever. The instructors were encouraging and glad to answer questions. The best feature is that their flexible modules & small size batches. I was able to manage my time and learn while working. Thanks to Learnbay for my lucrative placement.",
+          complogo:
+            "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/microsoft.webp",
+          statLogo: " 150% Hike",
         },
         {
           id: 5,
-          name: "Gowthaman Jeganathan",
+          name: "Jaya sinha",
+          working: "Amazon",
+          link: "A-BkcEM0rQM",
           proImg:
-            "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Alumni+Images/Gowthaman.png",
+            "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/jaya-sinha-thumb.webp",
           sDesc:
-          "I'm currently enrolled in the Full Stack course and have completed the DSA and System Design modules. The trainers' teaching method has been enlightening for me as a beginner. Highly recommend Learnbay for upskilling.",
+            "Transitioning from a non-tech role, LearnBay's IBM data science certification equipped me with the skills needed in today's...",
+          lDesc:
+            "Transitioning from a non-tech role, LearnBay's IBM data science certification equipped me with the skills needed in today's market. The course's interactive sessions and personalized guidance from Abhishek sir were invaluable. Post-completion, I had received two offers, one from Amazon and other from Infosys for the role of senior data analyst. Highly recommend for anyone stepping into data science.",
+          complogo:
+            "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/amazon.webp",
+          statLogo: " 150% Hike",
         },
-        {
-          id: 6,
-          name: "Abhishek Pakhide",
-          proImg:
-            "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Alumni+Images/Gowthaman.png",
-          sDesc:
-          "I recently finished Learnbay's Basic DSA Course online. The course is well-structured, taught by knowledgeable trainers with a focus on interview preparation and data structure concepts. It benefits both novices and experts.",
-        },
+        // {
+        //   id: 6,
+        //   name: "Abhishek Singh",
+        //   working: "Working at AGS",
+        //   link: "D-gcPaK_-x4",
+        //   proImg:
+        //     "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/reviewNew.webp",
+        //   sDesc:
+        //     "I got placed at AGS within 9 months of joining Learnbay institute. Live interaction sessions are the best part here since ...",
+        //   lDesc:
+        //     "I got placed at AGS within 9 months of joining Learnbay institute. Live interaction sessions are  the best part here since we could clear all queries. The projects are excellent. Overall I had a great  experience and I urge everyone to enroll in this institute.",
+        //   complogo:
+        //     "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/microsoft.webp",
+        //   statLogo: "  132% Hike",
+        // },
+        // {
+        //   id: 7,
+        //   name: "Vishal",
+        //   working: "Working at Bridge i2i",
+        //   link: "D-gcPaK_-x4",
+        //   proImg:
+        //     "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/reviewNew.webp",
+        //   sDesc:
+        //     "One on One counseling from experts has guided me to  make the right decision. The Learnbay team was amazing in assisting me with ...",
+        //   lDesc:
+        //     "One on One counseling from experts has guided me to make the right decision. The Learnbay team was amazing in assisting me with live projects and preparing for the placements. Thank you! Learnbay for your tremendous support in excelling in my Data Science Career.",
+        //   complogo:
+        //     "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/microsoft.webp",
+        //   statLogo: "  127% Hike",
+        // },
+        // {
+        //   id: "math",
+        //   name: "Aravind Kumar",
+        //   working: "SA - Data Scientist",
+        //   link: "D-gcPaK_-x4",
+        //   proImg:
+        //     "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/reviewNew.webp",
+        //   sDesc:
+        //     "Choosing Learnbay was my best decision ever. The instructors were encouraging and glad to answer questions. The best feature is that ...",
+        //   lDesc:
+        //     "Choosing Learnbay was my best decision ever. The instructors were encouraging and glad to answer questions. The best feature is that their flexible modules & small size batches. I was able to manage  my time and learn while working. Thanks to Learnbay for my lucrative placement.",
+        //   complogo:
+        //     "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/microsoft.webp",
+        //   statLogo: "142% Hike",
+        // },
       ],
       projectSection: [
         {
@@ -146,27 +203,34 @@ import {
       thirdSection: [
         {
           id: 1,
-          icon: <MdOutlineCastForEducation className={styles.bIcon} />,
-          heading: "Education",
-          para: "Bachelor's degree with consistent good academics",
+          icon: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/bank.gif",
+          heading: "BFSI",
+          para: "Designed for executive-level BFSI professionals, accountant.",
+          brochureLink: "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Banking%2C+Finance+and+Insurance+Domain.pdf"
         },
         {
           id: 1,
-          icon: <MdOutlineWorkOutline className={styles.oIcon} />,
-          heading: "Work experience",
-          para: "Minimum 6 months of experience in IT/Non-IT domain",
+          icon: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/heartbeat.gif",
+          heading: "Healthcare",
+          para: "For pharmacists, therapists, health administrators, etc.",
+          brochureLink: "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Banking%2C+Finance+and+Insurance+Domain.pdf"
+  
         },
         {
           id: 1,
-          icon: <FaUserGraduate className={styles.oIcon} />,
-          heading: "Career stage",
-          para: "Computer Science, B.Tech, B.Sc. pursuing students",
+          icon: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/live.gif",
+          heading: "HR & Marketing",
+          para: "For recruiter, talent acquisition specialist and marketing pros.",
+          brochureLink: "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Banking%2C+Finance+and+Insurance+Domain.pdf"
+  
         },
         {
           id: 1,
-          icon: <GiStairsGoal className={styles.bIcon} />,
-          heading: "Aspirations",
-          para: "Designed for individuals seeking software development skills",
+          icon: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/manufacturing.gif",
+          heading: "Manufacturing",
+          para: "For production manager, quality control inspector and engineers.",
+          brochureLink: "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Banking%2C+Finance+and+Insurance+Domain.pdf"
+  
         },
       ],
       fourthSection: [

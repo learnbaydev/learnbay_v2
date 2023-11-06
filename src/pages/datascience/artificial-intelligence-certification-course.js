@@ -104,7 +104,7 @@ const PlacementCall = dynamic(() =>
   import("../../../components/CoursePage/PlacementCall/PlacementCall")
 );
 
-function Blockchain({}) {
+function Blockchain({ }) {
   // POPUP GET METHOD
   const [popupData, setPopupData] = useState([]);
   // console.log(popupData);
@@ -219,7 +219,12 @@ function Blockchain({}) {
           Testimonial={AIMLDataScienceCourseData[0].testimonial}
         />
 
-        <WhoIsProgram />
+        <WhoIsProgram
+          first="Bachelor's degree with good academic performance"
+          second="Minimum 1 year of IT work experience"
+          third="Early to mid-career professionals interested in AI & ML"
+          forth="Preparing for future leadership opportunities in AI & ML"
+        />
         <WhyLearnbay idss="bfl64ANfSV0" />
         <GetHire />
         {/* <Switch /> */}
