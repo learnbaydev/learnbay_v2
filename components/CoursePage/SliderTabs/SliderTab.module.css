@@ -216,6 +216,15 @@
     margin-top: 50px;
     margin-bottom: 0px;
   }
+
+.mainCont{
+  margin-top: 0px;
+  padding: 0px 10px;
+}
+
+  .ActiveSpan {
+    margin: 0;
+  }
   .Course h2 {
     font-size: 24px;
   }

@@ -59,7 +59,7 @@ const ProjectSection = dynamic(() =>
   import("../../components/HomePage/ProjectSection/ProjectSection")
 );
 const GetHire = dynamic (()=>
-import ("../../components/HomePage/GetHire/GetHire"))
+import ("../../components/MastersCourse/GetHire/GetHire"))
 
 // const ArticleSection = dynamic(() =>
 //   import("../../components/HomePage/Project/ArticleSection")

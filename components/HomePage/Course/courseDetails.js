@@ -13,18 +13,17 @@ export const courseDetails = [
             title: "Advance Data Science",
             title1: "and AI Certification",
             tag: "Data science",
-            tagHead: "Become A Domain Specialist",
             brochureLinks:
-              "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Advance+Data+Science+and+AI+Certification+Program+Learnbay.pdf",
+              "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Advanced+Data+Science+%26+AI++Certification+Program.pdf",
             titleCourse: "Advance Data Science and AI Certification",
             para: [
               "11 months | 4 capstone projects",
               "Project certification form IBM",
               "3+ domain specialization",
             ],
-            link1: "/advance-data-science-certification-courses",
+            link1: "/datascience/advance-data-science-certification-courses",
             link2:
-              "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Advance+Data+Science+and+AI+Certification+Program+Learnbay.pdf",
+              "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Advanced+Data+Science+%26+AI++Certification+Program.pdf",
           },
           {
             id: 2,
@@ -41,7 +40,7 @@ export const courseDetails = [
               "Dual certification",
               "Inclusive of Generative-AI",
             ],
-            link1: "/data-science-ai-for-managers",
+            link1: "/datascience/artificial-intelligence-certification-course",
             link2:
               "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Data+Science+%26+AI+Certification+Program+For+Managers+%26+Leaders+Learnbay.pdf",
           },
@@ -60,7 +59,7 @@ export const courseDetails = [
               "Project certification form IBM",
               "2 domain electives",
             ],
-            link1: "/artificial-intelligence-certification-course",
+            link1: "/datascience/business-analytics-certification-course",
             link2:
               "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Advance+AI+%26+ML+Certification+Program+Learnbay.pdf",
           },
@@ -79,7 +78,7 @@ export const courseDetails = [
               "Get certified by IBM",
               "Designed for professionals",
             ],
-            link1: "/data-science-ai-masters-program",
+            link1: "/datascience/data-analytics-certification-course",
             link2:
               "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Data+Science+and+AI+Master's+Program+%5BWith+Unlimited+Interview+Calls%5D.pdf",
           },
@@ -98,7 +97,7 @@ export const courseDetails = [
               "Get job ready in 6 months",
               "Designed for professionals",
             ],
-            link1: "/data-science-ai-masters-program",
+            link1: "/fullstack/full-stack-software-development-program",
             link2:
               "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Data+Science+and+AI+Master's+Program+%5BWith+Unlimited+Interview+Calls%5D.pdf",
           },
@@ -117,7 +116,7 @@ export const courseDetails = [
             tag: "Full stack",
             Green: true,
             brochureLinks:
-              "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Full+Stack+Software+Development+Program+Learnbay.pdf",
+              "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Masters+in+CS+Data+Science+%26+AI.pdf",
             titleCourse: "Master in CS: Data Science and AI",
             para: [
               "18 months | 3 capstone projects",
@@ -125,32 +124,32 @@ export const courseDetails = [
               "Immigration opportunities",
             ],
             newDesign: true,
-            link1: "/full-stack-software-development-program",
+            link1: "datascience/data-science-and-ai-masters-in-cs",
             link2:
-              "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Full+Stack+Software+Development+Program+Learnbay.pdf",
+              "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Masters+in+CS+Data+Science+%26+AI.pdf",
           },
-          {
-            id: 2,
-            img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/masters-2.webp",
-            title: "Master in CS:",
-            title1: "Software Engineering",
-            tag: "Full stack",
-            tagHead: "For Non-Tech Professionals",
-            brochureLinks:
-              "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Software+Development+with+Specialization+in+Blockchain.pdf",
-            titleCourse: "Master in CS: Software Engineering",
-            para: [
-              "18 months | 3 capstone projects",
-              "Transferrable ECTS credits",
-              "Integrated generative - AI",
-            ],
-            Green: true,
-            newDesign: true,
-            link1:
-              "/software-development-program-with-specialization-in-blockchain",
-            link2:
-              "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Software+Development+with+Specialization+in+Blockchain.pdf",
-          },
+          // {
+          //   id: 2,
+          //   img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/masters-2.webp",
+          //   title: "Master in CS:",
+          //   title1: "Software Engineering",
+          //   tag: "Full stack",
+          //   tagHead: "For Non-Tech Professionals",
+          //   brochureLinks:
+          //     "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Software+Development+with+Specialization+in+Blockchain.pdf",
+          //   titleCourse: "Master in CS: Software Engineering",
+          //   para: [
+          //     "18 months | 3 capstone projects",
+          //     "Transferrable ECTS credits",
+          //     "Integrated generative - AI",
+          //   ],
+          //   Green: true,
+          //   newDesign: true,
+          //   link1:
+          //     "/software-development-program-with-specialization-in-blockchain",
+          //   link2:
+          //     "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Software+Development+with+Specialization+in+Blockchain.pdf",
+          // },
           {
             id: 3,
             img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/Add-on-3.webp",
@@ -169,7 +168,7 @@ export const courseDetails = [
             newDesign: true,
             newDesignOrange: true,
             link1:
-              "/software-development-program-with-specialization-in-cloud-computing-&-devops",
+              "/datascience/software-development-program-with-specialization-in-cloud-computing-&-devops",
             link2:
               "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Software+Development+with+Specialization+in+Cloud+and+DevOps.pdf",
           },
@@ -192,18 +191,17 @@ export const courseDetails = [
             title: "Advance Data Science",
             title1: "and AI Certification",
             tag: "Data science",
-            tagHead: "Become A Domain Specialist",
             brochureLinks:
-              "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Advance+Data+Science+and+AI+Certification+Program+Learnbay.pdf",
+              "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Advanced+Data+Science+%26+AI++Certification+Program.pdf",
             titleCourse: "Advance Data Science and AI Certification",
             para: [
               "11 months | 4 capstone projects",
               "Project certification form IBM",
               "3+ domain specialization",
             ],
-            link1: "/advance-data-science-certification-courses",
+            link1: "/datascience/advance-data-science-certification-courses",
             link2:
-              "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Advance+Data+Science+and+AI+Certification+Program+Learnbay.pdf",
+              "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Advanced+Data+Science+%26+AI++Certification+Program.pdf",
           },
           {
             id: 2,
@@ -220,7 +218,7 @@ export const courseDetails = [
               "Dual certification",
               "Inclusive of Generative-AI",
             ],
-            link1: "/data-science-ai-for-managers",
+            link1: "/datascience/artificial-intelligence-certification-course",
             link2:
               "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Data+Science+%26+AI+Certification+Program+For+Managers+%26+Leaders+Learnbay.pdf",
           },
@@ -239,7 +237,7 @@ export const courseDetails = [
               "Project certification form IBM",
               "2 domain electives",
             ],
-            link1: "/artificial-intelligence-certification-course",
+            link1: "/datascience/business-analytics-certification-course",
             link2:
               "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Advance+AI+%26+ML+Certification+Program+Learnbay.pdf",
           },
@@ -259,7 +257,7 @@ export const courseDetails = [
               "Get certified by IBM",
               "Designed for professionals",
             ],
-            link1: "/data-science-ai-masters-program",
+            link1: "/datascience/data-analytics-certification-course",
             link2:
               "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Data+Science+and+AI+Master's+Program+%5BWith+Unlimited+Interview+Calls%5D.pdf",
           },
@@ -279,7 +277,7 @@ export const courseDetails = [
               "Get job ready in 6 months",
               "Designed for professionals",
             ],
-            link1: "/data-science-ai-masters-program",
+            link1: "/fullstack/full-stack-software-development-program",
             link2:
               "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Data+Science+and+AI+Master's+Program+%5BWith+Unlimited+Interview+Calls%5D.pdf",
           },
@@ -305,7 +303,7 @@ export const courseDetails = [
             tag: "Full stack",
             Green: true,
             brochureLinks:
-              "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Full+Stack+Software+Development+Program+Learnbay.pdf",
+              "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Masters+in+CS+Data+Science+%26+AI.pdf",
             titleCourse: "Master in CS: Data Science and AI",
             para: [
               "18 months | 3 Capstone Projects",
@@ -313,32 +311,32 @@ export const courseDetails = [
               "Course Fee : ₹ 1,10,000 ",
             ],
             newDesign: true,
-            link1: "/full-stack-software-development-program",
+            link1: "/datascience/data-science-and-ai-masters-in-cs",
             link2:
-              "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Full+Stack+Software+Development+Program+Learnbay.pdf",
+              "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Masters+in+CS+Data+Science+%26+AI.pdf",
           },
-          {
-            id: 2,
-            img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/masters-2.webp",
-            title: "Master in CS:",
-            title1: "Software Engineering",
-            tag: "Full stack",
-            tagHead: "For Non-Tech Professionals",
-            brochureLinks:
-              "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Software+Development+with+Specialization+in+Blockchain.pdf",
-            titleCourse: "Master in CS: Software Engineering",
-            para: [
-              "18 months | 3 Capstone Projects",
-              "Transferrable ECTS Credits",
-              "Course Fee : ₹ 95,000 ",
-            ],
-            Green: true,
-            newDesign: true,
-            link1:
-              "/software-development-program-with-specialization-in-blockchain",
-            link2:
-              "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Software+Development+with+Specialization+in+Blockchain.pdf",
-          },
+          // {
+          //   id: 2,
+          //   img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/masters-2.webp",
+          //   title: "Master in CS:",
+          //   title1: "Software Engineering",
+          //   tag: "Full stack",
+          //   tagHead: "For Non-Tech Professionals",
+          //   brochureLinks:
+          //     "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Software+Development+with+Specialization+in+Blockchain.pdf",
+          //   titleCourse: "Master in CS: Software Engineering",
+          //   para: [
+          //     "18 months | 3 Capstone Projects",
+          //     "Transferrable ECTS Credits",
+          //     "Course Fee : ₹ 95,000 ",
+          //   ],
+          //   Green: true,
+          //   newDesign: true,
+          //   link1:
+          //     "/software-development-program-with-specialization-in-blockchain",
+          //   link2:
+          //     "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Software+Development+with+Specialization+in+Blockchain.pdf",
+          // },
           {
             id: 3,
             img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/Add-on-3.webp",
@@ -357,7 +355,7 @@ export const courseDetails = [
             newDesign: true,
             newDesignOrange: true,
             link1:
-              "/software-development-program-with-specialization-in-cloud-computing-&-devops",
+              "/datascience/software-development-program-with-specialization-in-cloud-computing-&-devops",
             link2:
               "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Software+Development+with+Specialization+in+Cloud+and+DevOps.pdf",
           },

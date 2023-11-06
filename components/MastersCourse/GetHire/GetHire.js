@@ -51,11 +51,20 @@ function GetHire() {
               {" "}
               <span>Get</span>Hired At
             </p>
+            <div className={Styles.showDesktop}>
             <Image
               src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/company-logos.webp"
               width={550}
               height={260}
             />
+            </div>
+            <div className={Styles.showMobile}>
+            <Image
+              src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/Group+683-min.webp"
+              width={550}
+              height={260}
+            />
+            </div>
           </div>
         </div>
       </div>
