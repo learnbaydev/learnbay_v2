@@ -258,10 +258,10 @@ function Blockchain({}) {
           deskImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Tools-Logo.png"
           mobImage="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Mobile-Tools-Covered.png"
         />
-        <Certificate data={BADataScienceCourseData[0].Certificate} />
+       <Certificate data={BADataScienceCourseData[0].Certificate} />
         <FeeSection
           Fee="₹ 90,000"
-          FeeEmi="₹ 5,9009/month"
+          FeeEmi="₹ 5,900/month"
           WeekdayDate="NOV 17th"
           WeekendDate="NOV 26th"
           WeekendTime="09:30 AM - 1:00 PM"
