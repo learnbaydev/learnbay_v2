@@ -24,6 +24,7 @@
   margin: 0;
   font-size: 18px;
 }
+
 .rightContent h4 {
   font-size: 35px;
   color: #28557a;
@@ -99,6 +100,10 @@ gap: 10px;
     line-height: 25px;
     color: #28557a;
     margin-bottom: 5px;
+  }
+  .imgWrapper img {
+    width: 100%;
+    height: auto;
   }
   .check {
     font-size: 30px;

@@ -49,10 +49,12 @@
   .headerWrap {
     border-radius: 0 0 10% 10%;
     padding: 20px;
+  margin-top: 47px;
   }
   .headerWrap h1 {
     font-size: 22px;
   }
+  
   .btnFlex {
     display: block;
   }.headerWrap button {

@@ -27,9 +27,6 @@ const WhoProgram = dynamic(() =>
 const Switch = dynamic(() =>
   import("../../../components/HomePage/switch/switch")
 );
-const GrowthStats = dynamic(() =>
-  import("../../../components/CoursePage/GrowthStat/GrowthStats")
-);
 const ToolsCovered = dynamic(() =>
   import("../../../components/CoursePage/ToolsCovered/ToolsCovered")
 );
@@ -38,12 +35,6 @@ const FeeSection = dynamic(() =>
 );
 const FourthSection = dynamic(() =>
   import("../../../components/CoursePage/FourthSection/FourthSection")
-);
-const FifthSection = dynamic(() =>
-  import("../../../components/CoursePage/FifthSection/FifthSection")
-);
-const SixthSectionCTA = dynamic(() =>
-  import("../../../components/CoursePage/SixthSectionCTA/Counselling")
 );
 const Project = dynamic(() =>
   import("../../../components/CoursePage/Project/Project")
@@ -192,8 +183,6 @@ function Blockchain() {
           titleCourse="Data Science Placement Report"
           brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Placement+Report.pdf"
         />
-        <FifthSection />
-        <SixthSectionCTA dataScienceCounselling={true} />
         <SyllabusNew
           syllabusHead={DADataScienceCourseData[0].syllabusHead}
           masterSyllabus={DADataScienceCourseData[0].masterSyllabus}
@@ -205,13 +194,6 @@ function Blockchain() {
           // syllabus={DADataScienceCourseData[0].syllabus}
           syllabusDesc={DADataScienceCourseData[0].syllabusDesc}
           popupHead={DADataScienceCourseData[0].popupHead}
-        />
-        <GrowthStats
-          img1="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/DA-Scope.webp"
-          heading="Move forward with Data Analysis "
-          para1="Huge requirement across various industries and domains"
-          para2="Earn an average annual salary of 8 LPA"
-          para3="Abundance of positions with Data Analysis"
         />
         <ToolsCovered
           deskImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Tools-Logo.png"
