@@ -1,7 +1,6 @@
 import React from "react";
 import Styles from "./GoogleReview.module.css";
 import Image from "next/image";
-
 function GoogleReview() {
   return (
     <section className={Styles.container}>
@@ -35,5 +34,4 @@ function GoogleReview() {
    </section>
   );
 }
-
 export default GoogleReview;

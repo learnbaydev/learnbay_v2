@@ -146,7 +146,7 @@ export const courseDetails = [
             newDesign: true,
             newDesignOrange: true,
             link1:
-              "/datascience/software-development-program-with-specialization-in-cloud-computing-&-devops",
+              "/",
             link2:
               "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Generative+AI+Certification+Course.pdf",
           },
@@ -309,7 +309,7 @@ export const courseDetails = [
             newDesign: true,
             newDesignOrange: true,
             link1:
-              "/datascience/software-development-program-with-specialization-in-cloud-computing-&-devops",
+              "/",
             link2:
               "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Generative+AI+Certification+Course.pdf",
           },

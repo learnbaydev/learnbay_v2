@@ -28,10 +28,10 @@ const Footer = ({ adPage, adPageCity }) => {
         <div className={styles.FooterDivInner}>
           <a href="/">
             <Image
-              src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/logo-light.png"
+              src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/white-logo.webp"
               alt="Learnbay"
               width="230"
-              height="50"
+              height="100"
             />
           </a>
           <p className={styles.FooterInnerli}>
