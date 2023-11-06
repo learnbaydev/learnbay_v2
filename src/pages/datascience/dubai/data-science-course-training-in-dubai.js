@@ -175,16 +175,17 @@ export default function Home() {
         />
         <div className={styles.cityFee}>
         <FeeSection
-          Fee="₹ 99,000 + 18% GST"
-          FeeEmi="₹ 9,735/month"
-          FeeHeading="Program Fee & Financing"
-          FeeContent1="0% interest rate"
-          FeeContent2="No cost EMI"
-          FeeContent3="Flexible payment"
-          FeeContent4="Easy loan procedure"
-          FeeContent5="15 days refund policy"
-          FeeContent6="No additional cost"
-          dataScienceCounselling={true}
+ Fee="₹ 1,25,000"
+ FeeEmi="₹ 8,194/month"
+ WeekdayDate="NOV 17th"
+ WeekendDate="NOV 26th"
+ WeekendTime="09:30 AM - 1:00 PM"
+ WeekdayTime="08:00 AM - 10:00 AM"
+ FeeContent3="Flexible payment"
+ FeeContent4="Easy loan procedure"
+ FeeContent5="15 days refund policy"
+ FeeContent6="No additional cost"
+ dataScienceCounselling={true}
         />
         </div>
         <div className="MainCities">

@@ -1,6 +1,14 @@
-import Head from "next/head";
-import styles from "../../../styles/Home.module.css";
 import dynamic from "next/dynamic";
+import Head from "next/head";
+import { useState } from "react";
+import { DABangaloreCourseData } from "../../../../CityData/Bangalore/DataAnalyticsCourseTrainingBangaloreData";
+import FeeSection from "../../../../components/CoursePage/FeeSection/FeeSection";
+import Footer from "../../../../components/Footer/Footer";
+import Form from "../../../../components/Form/Form";
+import Testimonial from "../../../../components/HomePage/Testimonial/Testimonial";
+import Navbar from "../../../../components/Navbar/Navbar";
+import Popup from "../../../../components/Popup/Popup";
+import styles from "../../../styles/Home.module.css";
 const FirstSection = dynamic(() =>
   import("../../../../components/CoursePage/FirstSection/FirstSection")
 );
@@ -25,17 +33,9 @@ const CitiesLeft = dynamic(() =>
 const CitiesRight = dynamic(() =>
   import("../../../../components/SEO/CitiesRight/CitiesRightdomain")
 );
-import { DABangaloreCourseData } from "../../../../CityData/Bangalore/DataAnalyticsCourseTrainingBangaloreData";
 const FAQNew = dynamic(() =>
   import("../../../../components/CoursePage/FAQNew/FAQNew")
 );
-import Popup from "../../../../components/Popup/Popup";
-import Navbar from "../../../../components/Navbar/Navbar";
-import Footer from "../../../../components/Footer/Footer";
-import Form from "../../../../components/Form/Form";
-import React, { useState } from "react";
-import Testimonial from "../../../../components/HomePage/Testimonial/Testimonial";
-import FeeSection from "../../../../components/CoursePage/FeeSection/FeeSection";
 
 export default function Home() {
   const [popups, setPopups] = useState(false);
@@ -46,7 +46,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-      <title>Best Data Analytics Course in Bangalore - Learnbay</title>
+        <title>Best Data Analytics Course in Bangalore - Learnbay</title>
         <meta name="robots" content="index, follow" />
         <meta
           name="description"
@@ -56,8 +56,7 @@ export default function Home() {
           name="keywords"
           content="Data Analytics course in Bangalore, Data Analytics training in Bangalore, Data Analytics institute in Bangalore, best Data Analytics institute in Bangalore, Data Analytics course in Bangalore, Data Analytics certification in Bangalore, Data Analytics training institute in Bangalore, advanced Data Analytics course in Bangalore, Data Analytics course with Placement Assistance, Data Analytics course"
         />
-
-<meta
+        <meta
           property="og:url"
           content="https://www.learnbay.co/datascience/bangalore/data-analytics-course-training-in-bangalore"
         />
@@ -165,7 +164,9 @@ export default function Home() {
           firstTopPara="IBM Certified Industry-paced Training"
           cityParaCont="Enhance your Data Analyst career with our comprehensive Data Analytics course in Bangalore with IBM Certification. Our advanced Data Analytics training in Bangalore will help you to make experts in Python, Power BI, etc. You will get training from industry leaders and masters to gain the most in-demand data analytics and AI skills."
         />
-        <SecondSection SecondSectionData={DABangaloreCourseData[0].secondSection} />
+        <SecondSection
+          SecondSectionData={DABangaloreCourseData[0].secondSection}
+        />
         <Testimonial
           redirectDS={true}
           Testimonial={DABangaloreCourseData[0].testimonial}
@@ -174,14 +175,16 @@ export default function Home() {
         />
         <div className={styles.cityFee}>
           <FeeSection
-            AIMLCertificate={true}
-            Fee="₹ 79,000 + 18% GST"
-            FeeEmi="₹ 7,768/month"
-            FeeHeading="Program Fee & Financing"
-            FeeContent2="No cost EMI"
+            Fee="₹ 80,000"
+            FeeEmi="₹ 5,244/month"
+            WeekdayDate="NOV 17th"
+            WeekendDate="NOV 26th"
+            WeekendTime="09:30 AM - 1:00 PM"
+            WeekdayTime="08:00 AM - 10:00 AM"
             FeeContent3="Flexible payment"
             FeeContent4="Easy loan procedure"
             FeeContent5="15 days refund policy"
+            FeeContent6="No additional cost"
             dataScienceCounselling={true}
           />
         </div>

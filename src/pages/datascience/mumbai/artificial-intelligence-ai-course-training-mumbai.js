@@ -1,6 +1,14 @@
-import Head from "next/head";
-import styles from "../../../styles/Home.module.css";
 import dynamic from "next/dynamic";
+import Head from "next/head";
+import { useState } from "react";
+import { AIMumbaiCourseData } from "../../../../CityData/Mumbai/artificialIntelligenceAiCourseTrainingMumbaiData";
+import FeeSection from "../../../../components/CoursePage/FeeSection/FeeSection";
+import Footer from "../../../../components/Footer/Footer";
+import Form from "../../../../components/Form/Form";
+import Testimonial from "../../../../components/HomePage/Testimonial/Testimonial";
+import Navbar from "../../../../components/Navbar/Navbar";
+import Popup from "../../../../components/Popup/Popup";
+import styles from "../../../styles/Home.module.css";
 const FirstSection = dynamic(() =>
   import("../../../../components/CoursePage/FirstSection/FirstSection")
 );
@@ -25,17 +33,9 @@ const CitiesLeft = dynamic(() =>
 const CitiesRight = dynamic(() =>
   import("../../../../components/SEO/CitiesRight/CitiesRight")
 );
-import { AIMumbaiCourseData } from "../../../../CityData/Mumbai/artificialIntelligenceAiCourseTrainingMumbaiData";
 const FAQNew = dynamic(() =>
   import("../../../../components/CoursePage/FAQNew/FAQNew")
 );
-import Popup from "../../../../components/Popup/Popup";
-import Navbar from "../../../../components/Navbar/Navbar";
-import Footer from "../../../../components/Footer/Footer";
-import Form from "../../../../components/Form/Form";
-import React, { useState } from "react";
-import Testimonial from "../../../../components/HomePage/Testimonial/Testimonial";
-import FeeSection from "../../../../components/CoursePage/FeeSection/FeeSection";
 
 export default function Home() {
   const [popups, setPopups] = useState(false);
@@ -54,8 +54,7 @@ export default function Home() {
           name="description"
           content="Learnbay provides Artificial Intelligence Training in Mumbai For Managers and Leaders. Our courses are affordable and flexible. Enroll Now."
         />
-
-<meta
+        <meta
           property="og:url"
           content="https://www.learnbay.co/datascience/mumbai/artificial-intelligence-ai-course-training-mumbai"
         />
@@ -177,18 +176,19 @@ export default function Home() {
           para="Discover the impact of our programs on career growth"
         />
         <div className={styles.cityFee}>
-        <FeeSection
-          Fee="₹ 1,10,000 + 18% GST"
-          FeeEmi="₹ 10,817/month"
-          FeeHeading="Program Fee & Financing"
-          FeeContent1="0% interest rate"
-          FeeContent2="No cost EMI"
-          FeeContent3="Flexible payment"
-          FeeContent4="Easy loan procedure"
-          FeeContent5="15 days refund policy"
-          FeeContent6="No additional cost"
-          dataScienceCounselling={true}
-        />
+          <FeeSection
+            Fee="₹ 1,10,000"
+            FeeEmi="₹ 7,211/month"
+            WeekdayDate="NOV 17th"
+            WeekendDate="NOV 26th"
+            WeekendTime="09:30 AM - 1:00 PM"
+            WeekdayTime="08:00 AM - 10:00 AM"
+            FeeContent3="Flexible payment"
+            FeeContent4="Easy loan procedure"
+            FeeContent5="15 days refund policy"
+            FeeContent6="No additional cost"
+            dataScienceCounselling={true}
+          />
         </div>
         <div className="MainCities">
           <div className="CitiesLeft">

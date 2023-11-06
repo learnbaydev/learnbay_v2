@@ -1,6 +1,14 @@
-import Head from "next/head";
-import styles from "../../../styles/Home.module.css";
 import dynamic from "next/dynamic";
+import Head from "next/head";
+import { useState } from "react";
+import { AIHyderabadCourseData } from "../../../../CityData/Hyderabad/artificialIntelligenceAICourseTrainingHyderabad";
+import FeeSection from "../../../../components/CoursePage/FeeSection/FeeSection";
+import Footer from "../../../../components/Footer/Footer";
+import Form from "../../../../components/Form/Form";
+import Testimonial from "../../../../components/HomePage/Testimonial/Testimonial";
+import Navbar from "../../../../components/Navbar/Navbar";
+import Popup from "../../../../components/Popup/Popup";
+import styles from "../../../styles/Home.module.css";
 const FirstSection = dynamic(() =>
   import("../../../../components/CoursePage/FirstSection/FirstSection")
 );
@@ -25,17 +33,9 @@ const CitiesLeft = dynamic(() =>
 const CitiesRight = dynamic(() =>
   import("../../../../components/SEO/CitiesRight/CitiesRight")
 );
-import { AIHyderabadCourseData } from "../../../../CityData/Hyderabad/artificialIntelligenceAICourseTrainingHyderabad";
 const FAQNew = dynamic(() =>
   import("../../../../components/CoursePage/FAQNew/FAQNew")
 );
-import Popup from "../../../../components/Popup/Popup";
-import Navbar from "../../../../components/Navbar/Navbar";
-import Footer from "../../../../components/Footer/Footer";
-import Form from "../../../../components/Form/Form";
-import React, { useState } from "react";
-import Testimonial from "../../../../components/HomePage/Testimonial/Testimonial";
-import FeeSection from "../../../../components/CoursePage/FeeSection/FeeSection";
 
 export default function Home() {
   const [popups, setPopups] = useState(false);
@@ -58,7 +58,7 @@ export default function Home() {
           name="keywords"
           content="Artificial Intelligence course in Hyderabad, Artificial Intelligence training in Hyderabad, Artificial Intelligence institute in Hyderabad, best Artificial Intelligence institute in Hyderabad, Artificial Intelligence course in Hyderabad, Artificial Intelligence certification in Hyderabad, Artificial Intelligence training institute in Hyderabad, advanced Artificial Intelligence course in Hyderabad, Artificial Intelligence course with Placement Assistance, Artificial Intelligence course"
         />
-         <meta
+        <meta
           property="og:url"
           content="https://www.learnbay.co/datascience/hyderabad/artificial-intelligence-ai-course-training-hyderabad"
         />
@@ -177,11 +177,12 @@ export default function Home() {
         />
         <div className={styles.cityFee}>
           <FeeSection
-            Fee="₹ 1,10,000 + 18% GST"
-            FeeEmi="₹ 10,817/month"
-            FeeHeading="Program Fee & Financing"
-            FeeContent1="0% interest rate"
-            FeeContent2="No cost EMI"
+            Fee="₹ 1,10,000"
+            FeeEmi="₹ 7,211/month"
+            WeekdayDate="NOV 17th"
+            WeekendDate="NOV 26th"
+            WeekendTime="09:30 AM - 1:00 PM"
+            WeekdayTime="08:00 AM - 10:00 AM"
             FeeContent3="Flexible payment"
             FeeContent4="Easy loan procedure"
             FeeContent5="15 days refund policy"
