@@ -20,6 +20,7 @@ const Navbar = ({
   careerForm,
   dataScienceCounselling,
   adPage,
+  organicADS,
 }) => {
   const [icon, setIcon] = useState(false);
   const [show, setShow] = useState(false);
@@ -162,14 +163,16 @@ const Navbar = ({
         <div
           className={`${styles.right} flexBox flexAlignCenter flexJustSpaceBetween`}
         >
-          {menuItem.map((data) => {
-            const { id, name, url } = data;
-            return (
-              <span key={id}>
-                <Link href={url}>{name}</Link>
-              </span>
-            );
-          })}
+          {adPage
+            ? ""
+            : menuItem.map((data) => {
+                const { id, name, url } = data;
+                return (
+                  <span key={id}>
+                    <Link href={url}>{name}</Link>
+                  </span>
+                );
+              })}
           <div onClick={popupShow}>
             <Button text="Apply Now" outline={true} />
           </div>

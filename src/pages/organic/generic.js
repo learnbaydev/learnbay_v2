@@ -11,7 +11,9 @@ import Testimonial from "../../../components/NewDesign/HomePage/Testimonial/Test
 const SeventhSection = dynamic(() =>
   import("../../../components/Global/SeventhSection/SeventhSection")
 );
-const Course = dynamic(() => import("../../../components/HomePage/Course/Course"));
+const Course = dynamic(() =>
+  import("../../../components/HomePage/Course/Course")
+);
 import ContactUs from "../../../components/NewDesign/HomePage/ContactUs/ContactUs";
 import BoxShape from "../../../components/NewDesign/HomePage/BoxShape/BoxShape";
 
@@ -40,7 +42,7 @@ export default function Home() {
         dataScienceGeneric={true}
         radio={true}
         event={true}
-        organicADS={true}
+        adPage={true}
       />
 
       <FirstSection
@@ -63,10 +65,12 @@ export default function Home() {
           <BoxShape />
         </div>
       </div>
-      <Course dataScience={true} radio={true} 
+      <Course
+        dataScience={true}
+        radio={true}
         organicADS={true}
         newDesign={true}
-        />
+      />
       <Switch organicADS={true} />
       <Testimonial />
       <ContactUs popup={true} dataScienceGeneric={true} radio={true} />

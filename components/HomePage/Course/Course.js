@@ -206,6 +206,26 @@ const Course = ({
                                     )}
                                     {newDesign ? (
                                       ""
+                                    ) : organicADS ? (
+                                      <a
+                                        onClick={() => {
+                                          setTitleCourse(titleCourse);
+                                          setBrochureLinks(brochureLinks);
+                                          popupShow();
+                                        }}
+                                        className={styles.imgWrap}
+                                      >
+                                        <div className="bgWrap">
+                                          <Image
+                                            src={img}
+                                            fill={true}
+                                            quality={100}
+                                            unoptimized={true}
+                                            style={{ objectFit: "cover" }}
+                                            alt="data science course"
+                                          />
+                                        </div>
+                                      </a>
                                     ) : (
                                       <a
                                         href={link1}
@@ -239,21 +259,43 @@ const Course = ({
                                       }
                                     >
                                       {newDesign ? (
-                                        <a
-                                          href={link1}
-                                          className={styles.imgWrap}
-                                        >
-                                          <div className="bgWrap">
-                                            <Image
-                                              src={img}
-                                              fill={true}
-                                              quality={100}
-                                              unoptimized={true}
-                                              style={{ objectFit: "cover" }}
-                                              alt="data science course"
-                                            />
-                                          </div>
-                                        </a>
+                                        organicADS ? (
+                                          <a
+                                            onClick={() => {
+                                              setTitleCourse(titleCourse);
+                                              setBrochureLinks(brochureLinks);
+                                              popupShow();
+                                            }}
+                                            className={styles.imgWrap}
+                                          >
+                                            <div className="bgWrap">
+                                              <Image
+                                                src={img}
+                                                fill={true}
+                                                quality={100}
+                                                unoptimized={true}
+                                                style={{ objectFit: "cover" }}
+                                                alt="data science course"
+                                              />
+                                            </div>
+                                          </a>
+                                        ) : (
+                                          <a
+                                            href={link1}
+                                            className={styles.imgWrap}
+                                          >
+                                            <div className="bgWrap">
+                                              <Image
+                                                src={img}
+                                                fill={true}
+                                                quality={100}
+                                                unoptimized={true}
+                                                style={{ objectFit: "cover" }}
+                                                alt="data science course"
+                                              />
+                                            </div>
+                                          </a>
+                                        )
                                       ) : (
                                         ""
                                       )}
