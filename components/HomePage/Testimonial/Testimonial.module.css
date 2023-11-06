@@ -129,6 +129,10 @@
   width: 20px;
 }
 
+.proImgWrap img {
+  border-radius: 6px;
+}
+
 .ptop {
   font-size: 20px;
   margin: 0px 100px;

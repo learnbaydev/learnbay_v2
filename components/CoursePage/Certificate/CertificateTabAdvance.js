@@ -24,7 +24,7 @@ function CertificateTab({
               }}
               className={IActive ? styles.activeP : styles.inactiveP}
             >
-              Degree
+              IBM
             </p>
            
             <p
@@ -35,7 +35,7 @@ function CertificateTab({
               }}
               className={MActive ? styles.activeP : styles.inactiveP}
             >
-              IBM 
+              Microsoft 
             </p>
       
 
@@ -58,8 +58,8 @@ function CertificateTab({
       {IActive ? (
             <div className={styles.MicroCert}>
             <div className={styles.rightSide}>
-              <h6>{data.projectCertificate.title}</h6>
-              {data.projectCertificate.para.map((data, i) => {
+              <h6>{data.degreeCertificate.title}</h6>
+              {data.degreeCertificate.para.map((data, i) => {
                 return (
                   <p key={i}>
                     <BsCheckCircle className={styles.checkCircle} />
@@ -80,7 +80,7 @@ function CertificateTab({
                 />
               <div className={`${styles.CertificateDiv} imgWrapper`}>
                 <Image
-                  src={data.projectCertificate.img}
+                  src={data.degreeCertificate.img}
                   alt="Certificate"
                   quality={100}
                   width={1150}
