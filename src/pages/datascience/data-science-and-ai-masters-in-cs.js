@@ -144,9 +144,7 @@ const Blockchain = () => {
   return (
     <>
       <Head>
-        <title>
-        Masters in Computer Science: Data Science and AI
-        </title>
+        <title>Masters in Computer Science: Data Science and AI</title>
         <meta
           name="description"
           content="Upskill yourself with cutting edge Masters in Computer Science: Data Science and AI Skills, Techniques by enrolling into the Learnbay's Advanced Data Science Course."
@@ -180,7 +178,7 @@ const Blockchain = () => {
         />
         <MasterSecondSection />
         <JobAbroad />
-        <SecondNavbar dataScienceCounselling={true}/>
+        <SecondNavbar dataScienceCounselling={true} />
         <TrainerSection idss="eautK0odE7Q" />
         <Testimonial
           redirectDS={true}
@@ -188,8 +186,9 @@ const Blockchain = () => {
         />
         <WhyLearnbay idss="bfl64ANfSV0" />
         <GetHire />
-        <ContactCounsellor dataScienceCounselling={true}/>
+        <ContactCounsellor dataScienceCounselling={true} />
         <SyllabusNew
+          masterSyllabusMobile={DataScienceMastersinCS[0].masterSyllabusMobile}
           syllabusHead={DataScienceMastersinCS[0].syllabusHead}
           masterSyllabus={DataScienceMastersinCS[0].masterSyllabus}
           MasterSyllabusDefault={
@@ -209,9 +208,7 @@ const Blockchain = () => {
           deskImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Tools-Logo.png"
           mobImage="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Mobile-Tools-Covered.png"
         />
-        <Certificate
-          data={DataScienceMastersinCS[0].Certificate}
-        />
+        <Certificate data={DataScienceMastersinCS[0].Certificate} />
         <FeeSection
           Fee="₹ 2,50,000"
           FeeEmi="12,292/month."
@@ -230,8 +227,8 @@ const Blockchain = () => {
         <SliderTabs />
         <PlacementCall />
         <NewProjectSection
-      dataScience={true}
-      titleCourse="Advanced Data Science and AI Program with domain specialization"
+          dataScience={true}
+          titleCourse="Advanced Data Science and AI Program with domain specialization"
           brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Masters+in+CS+Data+Science+%26+AI.pdf"
           projectSection={DataScienceMastersinCS[0].projectSection}
         />
