@@ -219,7 +219,12 @@ function Blockchain({}) {
           Testimonial={DataScienceCourseData[0].testimonial}
         />
 
-        <WhoIsProgram />
+        <WhoIsProgram
+          first="Non-tech professionals with 6 months experience"
+          second="Minimum 1 year of IT work experience"
+          third="Mid-career professionals interested in data science & AI"
+          forth="Achieving higher career growth in data science and AI"
+        />
         <WhyLearnbay idss="bfl64ANfSV0" />
         <GetHire />
         {/* <Switch /> */}
