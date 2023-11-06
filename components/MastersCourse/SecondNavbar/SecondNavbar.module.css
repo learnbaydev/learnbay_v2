@@ -42,6 +42,7 @@
 
 .buttonBlock{
   display: block;
+ 
 }
 
 .buttonBlock button{
@@ -50,10 +51,11 @@
   font-weight: 200;
 
 }
+
 .buttonNoBlock{
   display: none;
-}
 
+}
 
 
 @media (max-width: 1024px){
@@ -111,7 +113,7 @@
 
 @media (max-width: 481px){
   .innerP {
-    grid-template-columns:  16% 18% 22% 13% 9%;
+    grid-template-columns:  16% 24% 22% 13% 9%;
     grid-gap: 10px;
     justify-content: space-around;
     text-align: center;
@@ -130,6 +132,9 @@
 .buttonBlock{
   display: none;
 }
+
+
+
 .buttonNoBlock{
   display: none;
 

@@ -9,14 +9,14 @@ import Image from "next/image";
 const ToolsCovered = () => {
   // Sample image URLs, replace these with your own image URLs
   const images = [
-    "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/tool1.png",
-    "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/tool1.png",
-    "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/tool1.png",
-    "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/tool1.png",
-    "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/tool1.png",
-    "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/tool1.png",
-    "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/tool1.png",
-    "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/tool1.png",
+    "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/masterPage/tool1.webp",
+    "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/masterPage/tool2.webp",
+    "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/masterPage/tool3.webp",
+    "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/masterPage/tool4.webp",
+    "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/masterPage/tool5.webp",
+    "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/masterPage/tool1.webp",
+    "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/masterPage/tool2.webp",
+    "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/masterPage/tool3.webp",
   ];
   return (
     <>
@@ -44,15 +44,14 @@ const ToolsCovered = () => {
          
         >
           {images.map((image, index) => (
-            <SwiperSlide key={index}>
-              <div className={styles.column}>
+            <SwiperSlide key={index} className={styles.margin}>
+              <div className={`${styles.column} imgWrapper`}>
                 <Image
                   src={image}
+                  loading="lazy"
                   width={80}
                   height={60}
-                  style={{
-                    margin: "auto",
-                  }}
+                 
                 />
               </div>
             </SwiperSlide>

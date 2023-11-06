@@ -155,7 +155,7 @@ function Testimonial({ redirectDS, para, heading, Testimonial }) {
                           </p>
                         </div>
 
-                        {redirectDS ? (
+                        {/* {redirectDS ? (
                           <div className={styles.imgHike} id={id}>
                             <div
                               className={styles.imgWrap}
@@ -207,7 +207,7 @@ function Testimonial({ redirectDS, para, heading, Testimonial }) {
                           </div>
                         ) : (
                           ""
-                        )}
+                        )} */}
                       </div>
                     </SwiperSlide>
                   );

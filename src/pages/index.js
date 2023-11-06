@@ -58,6 +58,8 @@ const WhyLearnbay = dynamic(() =>
 const ProjectSection = dynamic(() =>
   import("../../components/HomePage/ProjectSection/ProjectSection")
 );
+const GetHire = dynamic (()=>
+import ("../../components/HomePage/GetHire/GetHire"))
 
 // const ArticleSection = dynamic(() =>
 //   import("../../components/HomePage/Project/ArticleSection")
@@ -100,7 +102,8 @@ export default function Home() {
       /> */}
       <WhyLearnbay idss="bfl64ANfSV0" />
       <ProjectSection idss="bfl64ANfSV0" />
-      <TrainerSection idss="bfl64ANfSV0" />
+      <GetHire/>
+      <TrainerSection idss="eautK0odE7Q" />
       <Testimonial
         redirectDS={true}
         heading=""
@@ -108,9 +111,9 @@ export default function Home() {
       />
       <ContactUs dataScienceCounselling={true} radio={true} />
 
-      <MasterClass />
+      {/* <MasterClass /> */}
 
-      <Media projectData={DataScienceCourseData[0].newsData} />
+      {/* <Media projectData={DataScienceCourseData[0].newsData} /> */}
 
       <SeventhSection />
 

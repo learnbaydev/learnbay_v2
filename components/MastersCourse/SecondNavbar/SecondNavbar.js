@@ -7,7 +7,9 @@ const Popup = dynamic(() => import("../../Popup/Popup"));
 import Image from "next/image";
 import Form from "../../Form/Form";
 
-function SecondNavbar({careerForm,
+
+function SecondNavbar({  
+  careerForm,
   radio,
   dataScience,
   fullStack,
@@ -18,7 +20,6 @@ function SecondNavbar({careerForm,
   const [active3, setActive3] = useState(false);
   const [active4, setActive4] = useState(false);
   const [popups, setPopups] = useState(false);
-
 
   const [activeSection, setActiveSection] = useState(null); 
   const [showApplyButton, setShowApplyButton] = useState(false); // Define showApplyButton here
@@ -41,7 +42,7 @@ function SecondNavbar({careerForm,
     );
 
     // Observe all sections with IDs matching your navigation links
-    const sections = document.querySelectorAll("#alumni, #eligibility, #curriculum, #fees, #faqs");
+    const sections = document.querySelectorAll("#alumni, #Degree, #curriculum, #Fees, #ProjectLab");
     sections.forEach((section) => {
       observer.observe(section);
     });
@@ -62,7 +63,7 @@ function SecondNavbar({careerForm,
       const scrollY = window.scrollY || window.pageYOffset;
 
       // Adjust this value based on when you want to show the button
-      if (scrollY >= 830) {
+      if (scrollY >= 1500) {
         setShowApplyButton(true);
         setShowLogo(true);
       } else {
@@ -90,7 +91,12 @@ function SecondNavbar({careerForm,
   }, []);
   return (
     <>
+
+
+
+
       <div className={styles.upperDiv}>
+
       <Popup trigger={popups} setTrigger={setPopups} className="popupModal">
         <div className="leftPopup">
           <div className="whiteP" />
@@ -130,33 +136,35 @@ function SecondNavbar({careerForm,
               Alumni
             </p>
           </Link>
+          <Link href="#ProjectLab">
+            <p className={activeSection === 'ProjectLab' ? styles.active : styles.inactive}>
+              Project Lab
+            </p>
+          </Link>
           <Link href="#curriculum">
             <p className={activeSection === 'curriculum' ? styles.active : styles.inactive}>
               Curriculum
             </p>
           </Link>
-          <Link href="#eligibility">
-            <p className={activeSection === 'eligibility' ? styles.active : styles.inactive}>
+          <Link href="#Degree">
+            <p className={activeSection === 'Degree' ? styles.active : styles.inactive}>
               Degree
             </p>
           </Link>
           
-          <Link href="#fees">
-            <p className={activeSection === 'fees' ? styles.active : styles.inactive}>
+          <Link href="#Fees">
+            <p className={activeSection === 'Fees' ? styles.active : styles.inactive}>
               Fees
-            </p>
-          </Link>
-          <Link href="#faqs">
-            <p className={activeSection === 'faqs' ? styles.active : styles.inactive}>
-              FAQs
             </p>
           </Link>
         </div>
         
 
-        <div className={showApplyButton ? styles.buttonBlock : styles.buttonNoBlock} onClick={popupShow}>
+       
+
+      <div className={showApplyButton ? styles.buttonBlock : styles.buttonNoBlock} onClick={popupShow}>
             <Button text="Apply Now" outline={true} />
-        </div>
+          </div>
       </div>
       <hr className={styles.hr}/>
     </>

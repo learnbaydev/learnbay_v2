@@ -70,9 +70,9 @@ function NewProjectSection({ projectSection }) {
                 <div className={Styles.Box}>
                   <div className={Styles.boxGreen}>{data.duration}</div>
                   <div className={Styles.content}>
-                    <div>
+                    <div className={Styles.DivImg}>
                       <Image
-                        src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/image+170.png"
+                        src={img}
                         loading="lazy"
                         width="215"
                         height="79"
@@ -80,8 +80,7 @@ function NewProjectSection({ projectSection }) {
                       />
                     </div>
                     <p className={Styles.heading}>
-                      Career progression planning of employees with workforce
-                      defections & efficiency
+                    {data.heading}
                     </p>
                     <div className={Styles.strip}>
                       <Image
@@ -93,19 +92,18 @@ function NewProjectSection({ projectSection }) {
                       />
                     </div>
                     <p className={Styles.para}>
-                      BMW allows existing customers to sell used cars but many
-                      competitors are now offering better resale values...
+                      {data.para}
                     </p>
                     <div className={Styles.ImgBox}>
                       <Image
-                        src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/iconProject.webp"
+                        src={toolImg}
                         loading="lazy"
                         width="420"
-                        height="50"
+                        height="70"
                         alt="microsoft"
                       />
                     </div>
-                    <p className={Styles.blue}>Learn more</p>
+                    {/* <p className={Styles.blue}>Learn more</p> */}
                   </div>
                 </div>
               </SwiperSlide>

@@ -1,22 +1,20 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { TbListDetails } from "react-icons/tb";
-import { Navigation, Pagination } from "swiper";
+import { Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import styles from "./Course.module.css";
 
 import { FaDownload } from "react-icons/fa";
 import "swiper/css";
 import "swiper/css/free-mode";
-import "swiper/css/navigation";
 import "swiper/css/pagination";
 import Form from "../../Form/Form";
 import Popup from "../../Popup/Popup";
 import { courseDetails } from "./courseDetails";
 
-import { BsCheckLg } from "react-icons/bs";
+import { BsCheckLg, BsFire } from "react-icons/bs";
 import { BiTimeFive } from "react-icons/bi";
-import { IoTimeOutline } from "react-icons/io5";
 
 const Course = ({
   dataScience,
@@ -32,9 +30,7 @@ const Course = ({
   const [CourseLoop, setCourseLoop] = useState([
     { title: "Popular Courses", value: true },
     { title: "Certification Program", value: false },
-    // { title: "Software Development", value: false },
     { title: "Master's Degree Program", value: false },
-    // { title: "View All", value: false },
   ]);
 
   const menuChange = (title, index) => {
@@ -123,6 +119,11 @@ const Course = ({
                   CourseLoop[index].value ? styles.ActiveSpan : styles.span
                 }
               >
+                {CourseData.title === "Master's Degree Program" ? (
+                  <BsFire style={{ color: "red", marginRight: "5px" }} />
+                ) : (
+                  ""
+                )}
                 {CourseData.title}
               </span>
             );
@@ -138,7 +139,6 @@ const Course = ({
                     <div key={index} className={styles.divBox}>
                       <h5 className={styles.h5font}>
                         {courseDetail.courseName}
-                        {/* ({courseDetail.courseDetails.length}) */}
                       </h5>
                       <div className={styles.gridPanel}>
                         <Swiper

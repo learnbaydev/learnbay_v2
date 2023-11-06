@@ -2,6 +2,9 @@
   text-align: center;
   padding: 70px 100px;
 }
+.icons{
+  mix-blend-mode: multiply;
+}
 .programWrap {
   display: grid;
   grid-template-columns: 33% 50%;
@@ -36,6 +39,7 @@
   background: #fff;
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
+  margin: 10px -22px;
 }
 .leftSide:nth-child(2),
 .leftSide:nth-child(3) {
@@ -47,8 +51,10 @@
 .leftSide p {
   margin-top: -30px;
   color: #444;
-  font-weight: 400;
+  font-weight: 500;
   text-align: left;
+  line-height: 28px;
+  font-size: 17px;
 }
 
 .bIcon {
@@ -74,7 +80,7 @@
   align-items: center;
   justify-content: center;
   padding: 15px 40px;
-  background: #FFF5E5;
+  background: #fff5e5;
 }
 
 /* .boxIcon:nth-child(2),
@@ -90,27 +96,24 @@
   background: #fff5e5;
 } */
 
-
 .heading {
   position: absolute;
   left: 75px;
   top: 10px;
-  padding:5px 0px 5px 25px;
+  padding: 5px 0px 5px 25px;
   border-radius: 0px;
   text-align: left;
   font-size: 20px;
-  color: #0072BC;
-
+  color: #0072bc;
+  margin-left: 7px;
 }
 
-
-.buttonDiv{
+.buttonDiv {
   float: right;
   padding-top: 20px;
-
 }
 
-.buttonDiv button{
+.buttonDiv button {
   padding: 5px 15px;
 }
 
@@ -157,7 +160,7 @@
 
 @media (max-width: 481px) {
   .program {
-    padding: 50px 20px 0px 10px;
+    padding: 50px 10px 0px 25px;
   }
 
   .programWrap {
@@ -180,7 +183,7 @@
   }
   .leftSide {
     width: 100%;
-    padding: 0px 10px 20px 10px;
+    padding: 0px 0px 0px 10px;
     position: relative;
   }
   .leftSide p {
@@ -198,7 +201,10 @@
     width: 80px;
     height: 50px;
     top: -15px;
-    left: -25px;
+    left: -18px;
+  }
+  .leftSide img {
+    mix-blend-mode: multiply;
   }
   .heading {
     left: 70px;

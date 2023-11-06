@@ -14,22 +14,17 @@ import Form from "../../Form/Form";
 import Popup from "../../Popup/Popup";
 import styles from "./FirstSection.module.css";
 const Button = dynamic(() => import("../../Global/Button/Button"));
-
 const FirstSection = ({
   dataScience,
   radio,
-
   dataScienceCounselling,
 }) => {
   const [popups, setPopups] = useState(false);
   const [mobile, setMobile] = useState(false);
-
   const el = useRef(null);
-
   const popupShow = () => {
     setPopups(true);
   };
-
   // useEffect(() => {
   //   const typed = new Typed(el.current, {
   //     strings: [
@@ -45,13 +40,11 @@ const FirstSection = ({
   //     loop: true,
   //     showCursor: false,
   //   });
-
   //   // Destropying
   //   return () => {
   //     typed.destroy();
   //   };
   // }, []);
-
   return (
     <>
       <Popup
@@ -167,7 +160,6 @@ const FirstSection = ({
                 </p>
               </div> */}
             </div>
-
             <div className={styles.secondLeft}>
               <div className={styles.imgWrapperDesktop}>
                 <Image
@@ -205,16 +197,15 @@ const FirstSection = ({
               </div>
                 <p className={styles.iconText}><FaEarthAmericas className={styles.iconYellow} />Globally recognised in EU, US and 60+ countries</p>
               <div className={styles.btnWrapper}>
-                <div onClick={popupShow}>
+                <a href="#course">
                   <Button
                     className={styles.Btn}
                     text="Explore Masters Degree"
-                    passIcon={<FaBell className="bIconS" />}
+                    passIcon={<FaChevronDown className="bIconS" />}
                   />
-                </div>
+                </a>
               </div>
             </div>
-
             <div className={styles.secondLeft}>
               <div className={styles.imgWrapperDesktop}>
                 <Image
@@ -227,17 +218,15 @@ const FirstSection = ({
             </div>
           </div>
         </SwiperSlide>
-
         <SwiperSlide className={styles.slide}>
           <div className={styles.forth}>
             <div className={styles.forthFirstLeft}>
               <p className={styles.SecondBlink}>
-              Real project Real Impact 
+              Real project Real Impact
               </p>
               <h1 className={styles.h1}>Work on Real time Project and Gain Practical experience</h1>
-
               <p className={styles.blinkMobile}>
-              Work on industry project like a data scientist and SDE with our dedicated <span>#ProjectLab</span>  
+              Work on industry project like a data scientist and SDE with our dedicated <span>#ProjectLab</span>
               </p>
               <div className={styles.imgWrapperMobile}>
                 <Image
@@ -248,20 +237,19 @@ const FirstSection = ({
                 />
               </div>
               <p className={styles.blink}>
-              Work on industry project like a data scientist and SDE with our dedicated <span>#ProjectLab</span>  
+              Work on industry project like a data scientist and SDE with our dedicated <span>#ProjectLab</span>
               </p>
-              <p className={styles.iconText}><PiCertificate className={styles.iconYellow} />Globally recognised in EU, US and 60+ countries</p>
+              <p className={styles.iconText}><PiCertificate className={styles.iconYellow} />Domain Electives and Project certification from industry</p>
               <div className={styles.btnWrapper}>
-                <a href="#course">
+                <a href="#ProjectLab">
                   <Button
                     className={styles.Btn}
-                    text="Explore Masters Program"
+                    text="Project Lab"
                     passIcon={<FaChevronDown className="bIconS" />}
                   />
                 </a>
               </div>
             </div>
-
             <div className={styles.secondLeft}>
               <div className={styles.imgWrapperDesktop}>
                 <Image
@@ -274,76 +262,8 @@ const FirstSection = ({
             </div>
           </div>
         </SwiperSlide>
-        {/* <SwiperSlide className={styles.slide}>
-          <div className={styles.Third}>
-            <div className={styles.ThirdFirstLeft}>
-              <h1 className={styles.h1}>
-                All our<span className={styles.h1Span}> top programs</span> just
-                got upgraded with{" "}
-                <span className={styles.h1Span}>Generative AI modules</span>
-              </h1>
-              <p className={styles.blinkMobile}>
-                Be the first to Change, Adapt and Build in AI with the Advanced
-                Gen-AI add on
-              </p>
-              <div className={styles.imgWrapperMobile}>
-                <Image
-                  src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/thirdSection.webp"
-                  width="580"
-                  height="380"
-                  alt="data science course"
-                />
-              </div>
-              <div className={styles.ibmLogoMobile}>
-                <div className={styles.ImageBlock}>
-                  <Image
-                    src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/generativeAi.png"
-                    width="283"
-                    height="51"
-                    loading="lazy"
-                    alt="data science course"
-                  />
-                </div>
-              </div>
-              <p className={styles.blink}>
-                Be the first to Change, Adapt and <b>Build in AI</b> with the{" "}
-                <b>Advanced Gen-AI add on</b>
-              </p>
-              <div className={styles.ImageBlock}>
-                <Image
-                  src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/generativeAi.png"
-                  width="400"
-                  height="91"
-                  loading="lazy"
-                  alt="data science course"
-                />
-              </div>
-              <div className={styles.btnWrapper}>
-                <a href="#course">
-                  <Button
-                    className={styles.Btn}
-                    text="Explore Courses"
-                    passIcon={<FaChevronDown className="bIconS" />}
-                  />
-                </a>
-              </div>
-            </div>
-
-            <div className={styles.secondLeft}>
-              <div className={styles.imgWrapperDesktop}>
-                <Image
-                  src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/thirdSection.webp"
-                  width="580"
-                  height="380"
-                  alt="data science course"
-                />
-              </div>
-            </div>
-          </div>
-        </SwiperSlide> */}
       </Swiper>
     </>
   );
 };
-
 export default FirstSection;

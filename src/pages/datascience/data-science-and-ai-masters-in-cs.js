@@ -2,9 +2,11 @@ import dynamic from "next/dynamic";
 import Head from "next/head";
 import { useEffect, useState } from "react";
 import { DataScienceMastersinCS } from "../../../Data/DataScienceAiMastersinCS";
+import TrainerSection from "../../../components/HomePage/TrainerSection/TrainerSection";
 
-const MentorsSection = dynamic (()=>
-import ("../../../components/MastersCourse/MentorsSection/MentorsSection")) ;
+const MentorsSection = dynamic(() =>
+  import("../../../components/MastersCourse/MentorsSection/MentorsSection")
+);
 
 const Footer = dynamic(() => import("../../../components/Footer/Footer"));
 
@@ -15,7 +17,9 @@ const FirstSection = dynamic(() =>
 );
 
 const MasterSecondSection = dynamic(() =>
-  import("../../../components/MastersCourse/MasterSecondSection/MasterSecondSection")
+  import(
+    "../../../components/MastersCourse/MasterSecondSection/MasterSecondSection"
+  )
 );
 const SeventhSection = dynamic(() =>
   import("../../../components/Global/SeventhSection/SeventhSection")
@@ -23,7 +27,6 @@ const SeventhSection = dynamic(() =>
 const Testimonial = dynamic(() =>
   import("../../../components/HomePage/Testimonial/Testimonial")
 );
-import TrainerSection from "../../../components/HomePage/TrainerSection/TrainerSection";
 
 const ToolsCovered = dynamic(() =>
   import("../../../components/CoursePage/ToolsCovered/ToolsCovered")
@@ -34,25 +37,18 @@ const FeeSection = dynamic(() =>
 const FourthSection = dynamic(() =>
   import("../../../components/CoursePage/FourthSection/FourthSection")
 );
-const Project = dynamic(() =>
-  import("../../../components/CoursePage/Project/Project")
-);
 const SyllabusNew = dynamic(() =>
   import("../../../components/CoursePage/Syllabus/MasterSyllabus")
 );
 
 const Certificate = dynamic(() =>
-  import("../../../components/CoursePage/Certificate/Certificate")
+  import("../../../components/MastersCourse/Certificate/Certificate")
 );
 const FAQNew = dynamic(() =>
   import("../../../components/CoursePage/FAQNew/FAQNew")
 );
-const BatchDetails = dynamic(() =>
-  import("../../../components/CoursePage/BatchDetails/BatchDetails")
-);
-
 const SecondNavbar = dynamic(() =>
-  import("../../../components/CoursePage/SecondNavbar/SecondNavbar")
+  import("../../../components/MastersCourse/SecondNavbar/SecondNavbar")
 );
 
 const WhyLearnbay = dynamic(() =>
@@ -60,7 +56,7 @@ const WhyLearnbay = dynamic(() =>
 );
 
 const Gethire = dynamic(() =>
-  import("../../../components/CoursePage/Gethired/Gethire")
+  import("../../../components/MastersCourse/GetHire/GetHire")
 );
 
 const BottomBar = dynamic(() =>
@@ -77,13 +73,15 @@ const PlacementCall = dynamic(() =>
   import("../../../components/CoursePage/PlacementCall/PlacementCall")
 );
 
-const SliderTab = dynamic(() =>
-  import("../../../components/CoursePage/SliderTabs/SliderTabs")
-);
-
 const NewProjectSection = dynamic(() =>
   import("../../../components/CoursePage/NewProjectSection/NewProjectSection")
 );
+const JobAbroad = dynamic(() =>
+  import("../../../components/MastersCourse/JobAbroad/JobAbroad")
+);
+
+import SliderTabs from "../../../components/CoursePage/SliderTabs/SliderTabs";
+import GetHire from "../../../components/MastersCourse/GetHire/GetHire";
 
 const Blockchain = () => {
   // POPUP GET METHOD
@@ -170,8 +168,6 @@ const Blockchain = () => {
       <main>
         <Navbar popup={true} dataScienceCounselling={true} />
         <FirstSection
-          // FirstTyped="Guaranteed Interview Calls"
-          // SecondTyped="Capstone Project Certificate"
           ThirdTyped="Live Interactive Classes"
           dataScience={true}
           titleCourse="Advanced Data Science and AI Program with domain specialization"
@@ -180,35 +176,18 @@ const Blockchain = () => {
           FirstRightImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/coursepageB.webp"
           firstToparaImg="with domain specialization"
           firstHeading="Advanced Data Science and AI Program"
-          // firstTopPara="Specialization over generalization"
-          idss="bfl64ANfSV0"
         />
-
-        <MasterSecondSection/>
-       
+        <MasterSecondSection />
+        <JobAbroad />
         <SecondNavbar />
-
-
-        <TrainerSection idss="bfl64ANfSV0" />
-
+        <TrainerSection idss="eautK0odE7Q" />
         <Testimonial
           redirectDS={true}
           Testimonial={DataScienceMastersinCS[0].testimonial}
         />
-
         <WhyLearnbay idss="bfl64ANfSV0" />
-        <Gethire />
-
-        <FourthSection
-          placementData={DataScienceMastersinCS[0].fourthSection}
-          redirectDS={true}
-          dataScience={true}
-          titleCourse="Data Science Placement Report"
-          brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Placement+Report.pdf"
-        />
-
+        <GetHire />
         <ContactCounsellor />
-
         <SyllabusNew
           syllabusHead={DataScienceMastersinCS[0].syllabusHead}
           masterSyllabus={DataScienceMastersinCS[0].masterSyllabus}
@@ -230,7 +209,6 @@ const Blockchain = () => {
           mobImage="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Mobile-Tools-Covered.png"
         />
         <Certificate
-          threeCertificate={true}
           data={DataScienceMastersinCS[0].Certificate}
         />
         <FeeSection
@@ -245,31 +223,13 @@ const Blockchain = () => {
           FeeContent6="No additional cost"
           dataScienceCounselling={true}
         />
-        {/* <DomainSection
-          dataScience={true}
-          domainSectionData={DataScienceMastersinCS[0].domainSection}
-        /> */}
-
         <MentorsSection />
-        <SliderTab />
+        <SliderTabs />
         <PlacementCall />
-        <NewProjectSection projectSection={DataScienceMastersinCS[0].projectSection} />
-        {/* <Project
-          projectData={DataScienceMastersinCS[0].project}
-          tools="12+"
-          dataScience={true}
-          titleCourse="Data Science Project Brochure"
-          brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Data+Science+and+AI+Projects.pdf"
-          project="15+"
-        /> */}
-
-        {/* {batchDateData === "" ? (
-          ""
-        ) : (
-          <BatchDetails batchDetails={batchDateData.batchDetails} />
-        )} */}
-
-        <FAQNew FAQNewData={DataScienceMastersinCS[0].faq} />
+        <NewProjectSection
+          projectSection={DataScienceMastersinCS[0].projectSection}
+        />
+        {/* <FAQNew FAQNewData={DataScienceMastersinCS[0].faq} /> */}
         <SeventhSection />
         <Footer />
         <BottomBar />

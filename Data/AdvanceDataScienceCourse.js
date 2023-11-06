@@ -1,11 +1,3 @@
-import {
-  MdOutlineCastForEducation,
-  MdOutlineWorkOutline,
-} from "react-icons/md";
-import styles from "../components/CoursePage/WhoProgram/ThirdSection.module.css";
-import { FaUserGraduate } from "react-icons/fa";
-import { GiStairsGoal } from "react-icons/gi";
-
 export const DataScienceCourseData = [
   {
     secondSection: [
@@ -46,10 +38,10 @@ export const DataScienceCourseData = [
       {
         id: 1,
         name: "Preksha Mishra",
-        working: "Working at HCL",
-        link: "D-gcPaK_-x4",
+        working: "HCL",
+        link: "vSjfKdIzUjY",
         proImg:
-          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/reviewNew.webp",
+          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/preksha-testimonial.webp",
         sDesc:
           "I had a great learning experience at Learnbay. The faculties here are top notch. Right from enrollment to getting a good job ...",
         lDesc:
@@ -60,149 +52,159 @@ export const DataScienceCourseData = [
       },
       {
         id: 2,
-        name: "Mohammad Israr",
-        working: "Working at TCS",
-        link: "D-gcPaK_-x4",
+        name: "Shubham Kumar",
+        working: "Cendrol Technology",
+        link: "JoKquvfAhZU",
         proImg:
-          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/reviewNew.webp",
+          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/Shubham-kumar-thumb+.webp",
         sDesc:
-          "Thanks to the Learnbay data science course and outstanding assistance, I could ace the TCS interview and secure a job...",
+          "I moved from teaching to data science with Learnbay's help. Their course was easy to follow, even for someone like me without a tech...",
         lDesc:
-          "Thanks to the Learnbay data science course and outstanding assistance, I could ace the TCS interview and secure a job with a 400% pay hike. My understanding of the course was greatly improved by the real-time projects and respective IBM project experience certification.",
+          "I moved from teaching to data science with Learnbay's help. Their course was easy to follow, even for someone like me without a tech background. In six months, I got to learn how data science is used in the real world. Their mock interviews also prepared me for job interviews, and I got a data analyst job at Cendrol. This course really helped me change my career.",
         complogo:
           "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/microsoft.webp",
         statLogo: "  210% Hike",
       },
       {
         id: 4,
-        name: "Ritish Kumar",
-        working: "Working at Capgemini",
-        link: "D-gcPaK_-x4",
+        name: "Arvind Kumar",
+        working: "The Math Company",
+        link: "hewBtR_WoDM",
         proImg:
-          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/reviewNew.webp",
+          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/aravind-k-thumb.webp",
         sDesc:
-          "I always had a dilemma about how to switch to the IT field until I stumbled upon the foundation data science course offered by Learnbay...",
+          "Choosing Learnbay was my best decision ever. The instructors were encouraging and glad to answer questions. The best feature is that...",
         lDesc:
-          "I always had a dilemma about how to switch to  IT field until I stumbled upon the foundation data science course offered by Learnbay. The perfect combination of flexibility, affordability, and supportiveness. They helped me get placed at Capgemini, and I’m delighted with my current career. All Thanks to Learnbay!",
+          "Choosing Learnbay was my best decision ever. The instructors were encouraging and glad to answer questions. The best feature is that their flexible modules & small size batches. I was able to manage my time and learn while working. Thanks to Learnbay for my lucrative placement.",
         complogo:
           "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/microsoft.webp",
         statLogo: " 150% Hike",
       },
       {
         id: 5,
-        name: "Sourabh Mourya",
-        working: "Working at HCL",
-        link: "D-gcPaK_-x4",
+        name: "Jaya sinha",
+        working: "Amazon",
+        link: "A-BkcEM0rQM",
         proImg:
-          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/reviewNew.webp",
+          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/jaya-sinha-thumb.webp",
         sDesc:
-          "Flexible classes have helped me to manage my job  schedule. Learning Data Science directly from MNC experts provided the chance ...",
+          "Transitioning from a non-tech role, LearnBay's IBM data science certification equipped me with the skills needed in today's...",
         lDesc:
-          "Flexible classes have helped me to manage my job schedule. Learning Data Science directly from  experts provided the chance to learn industry-specific tricks and tips. I am grateful to the Learnbay team for providing an excellent  platform that enhanced my professional growth. Thank you very much! Learnbay.",
+          "Transitioning from a non-tech role, LearnBay's IBM data science certification equipped me with the skills needed in today's market. The course's interactive sessions and personalized guidance from Abhishek sir were invaluable. Post-completion, I had received two offers, one from Amazon and other from Infosys for the role of senior data analyst. Highly recommend for anyone stepping into data science.",
         complogo:
-          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/microsoft.webp",
+          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/amazon.webp",
         statLogo: " 150% Hike",
       },
-      {
-        id: 6,
-        name: "Abhishek Singh",
-        working: "Working at AGS",
-        link: "D-gcPaK_-x4",
-        proImg:
-          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/reviewNew.webp",
-        sDesc:
-          "I got placed at AGS within 9 months of joining Learnbay institute. Live interaction sessions are the best part here since ...",
-        lDesc:
-          "I got placed at AGS within 9 months of joining Learnbay institute. Live interaction sessions are  the best part here since we could clear all queries. The projects are excellent. Overall I had a great  experience and I urge everyone to enroll in this institute.",
-        complogo:
-          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/microsoft.webp",
-        statLogo: "  132% Hike",
-      },
-      {
-        id: 7,
-        name: "Vishal",
-        working: "Working at Bridge i2i",
-        link: "D-gcPaK_-x4",
-        proImg:
-          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/reviewNew.webp",
-        sDesc:
-          "One on One counseling from experts has guided me to  make the right decision. The Learnbay team was amazing in assisting me with ...",
-        lDesc:
-          "One on One counseling from experts has guided me to make the right decision. The Learnbay team was amazing in assisting me with live projects and preparing for the placements. Thank you! Learnbay for your tremendous support in excelling in my Data Science Career.",
-        complogo:
-          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/microsoft.webp",
-        statLogo: "  127% Hike",
-      },
-      {
-        id: "math",
-        name: "Aravind Kumar",
-        working: "SA - Data Scientist",
-        link: "D-gcPaK_-x4",
-        proImg:
-          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/reviewNew.webp",
-        sDesc:
-          "Choosing Learnbay was my best decision ever. The instructors were encouraging and glad to answer questions. The best feature is that ...",
-        lDesc:
-          "Choosing Learnbay was my best decision ever. The instructors were encouraging and glad to answer questions. The best feature is that their flexible modules & small size batches. I was able to manage  my time and learn while working. Thanks to Learnbay for my lucrative placement.",
-        complogo:
-          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/microsoft.webp",
-        statLogo: "142% Hike",
-      },
+      // {
+      //   id: 6,
+      //   name: "Abhishek Singh",
+      //   working: "Working at AGS",
+      //   link: "D-gcPaK_-x4",
+      //   proImg:
+      //     "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/reviewNew.webp",
+      //   sDesc:
+      //     "I got placed at AGS within 9 months of joining Learnbay institute. Live interaction sessions are the best part here since ...",
+      //   lDesc:
+      //     "I got placed at AGS within 9 months of joining Learnbay institute. Live interaction sessions are  the best part here since we could clear all queries. The projects are excellent. Overall I had a great  experience and I urge everyone to enroll in this institute.",
+      //   complogo:
+      //     "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/microsoft.webp",
+      //   statLogo: "  132% Hike",
+      // },
+      // {
+      //   id: 7,
+      //   name: "Vishal",
+      //   working: "Working at Bridge i2i",
+      //   link: "D-gcPaK_-x4",
+      //   proImg:
+      //     "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/reviewNew.webp",
+      //   sDesc:
+      //     "One on One counseling from experts has guided me to  make the right decision. The Learnbay team was amazing in assisting me with ...",
+      //   lDesc:
+      //     "One on One counseling from experts has guided me to make the right decision. The Learnbay team was amazing in assisting me with live projects and preparing for the placements. Thank you! Learnbay for your tremendous support in excelling in my Data Science Career.",
+      //   complogo:
+      //     "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/microsoft.webp",
+      //   statLogo: "  127% Hike",
+      // },
+      // {
+      //   id: "math",
+      //   name: "Aravind Kumar",
+      //   working: "SA - Data Scientist",
+      //   link: "D-gcPaK_-x4",
+      //   proImg:
+      //     "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/reviewNew.webp",
+      //   sDesc:
+      //     "Choosing Learnbay was my best decision ever. The instructors were encouraging and glad to answer questions. The best feature is that ...",
+      //   lDesc:
+      //     "Choosing Learnbay was my best decision ever. The instructors were encouraging and glad to answer questions. The best feature is that their flexible modules & small size batches. I was able to manage  my time and learn while working. Thanks to Learnbay for my lucrative placement.",
+      //   complogo:
+      //     "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/microsoft.webp",
+      //   statLogo: "142% Hike",
+      // },
     ],
 
-    projectSection:[
+    projectSection: [
       {
         id: 1,
         duration: "26 Hours",
-        logo:"",
-        heading:"Career progression planning of employees with workforce defections & efficiency",
-        img:"https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/Group+502.png",
-        para:"BMW allows existing customers to sell used cars but many competitors are now offering better resale values...",
-        toolImg:"https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/iconProject.webp",
-        learnMore:"Learn more",
-    },
-    {
+        logo: "",
+        heading:
+          "Career progression planning of employees with workforce defections & efficiency",
+        img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/Group+502.png",
+        para: "BMW allows existing customers to sell used cars but many competitors are now offering better resale values...",
+        toolImg:
+          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/iconProject.webp",
+        learnMore: "Learn more",
+      },
+      {
         id: 2,
         duration: "26 Hours",
-        logo:"",
-        heading:"Career progression planning of employees with workforce defections & efficiency",
-        img:"https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/Group+502.png",
-        para:"BMW allows existing customers to sell used cars but many competitors are now offering better resale values...",
-        toolImg:"https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/iconProject.webp",
-        learnMore:"Learn more",
-    },
-    {
+        logo: "",
+        heading:
+          "Career progression planning of employees with workforce defections & efficiency",
+        img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/Group+502.png",
+        para: "BMW allows existing customers to sell used cars but many competitors are now offering better resale values...",
+        toolImg:
+          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/iconProject.webp",
+        learnMore: "Learn more",
+      },
+      {
         id: 3,
         duration: "26 Hours",
-        logo:"",
-        heading:"Career progression planning of employees with workforce defections & efficiency",
-        img:"https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/Group+502.png",
-        para:"BMW allows existing customers to sell used cars but many competitors are now offering better resale values...",
-        toolImg:"https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/iconProject.webp",
-        learnMore:"Learn more",
-    },
-    {
-      id: 3,
-      duration: "26 Hours",
-      logo:"",
-      heading:"Career progression planning of employees with workforce defections & efficiency",
-      img:"https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/Group+502.png",
-      para:"BMW allows existing customers to sell used cars but many competitors are now offering better resale values...",
-      toolImg:"https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/iconProject.webp",
-      learnMore:"Learn more",
-  },
-  {
-    id: 4,
-    duration: "26 Hours",
-    logo:"",
-    heading:"Career progression planning of employees with workforce defections & efficiency",
-    img:"https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/Group+502.png",
-    para:"BMW allows existing customers to sell used cars but many competitors are now offering better resale values...",
-    toolImg:"https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/iconProject.webp",
-    learnMore:"Learn more",
-}
+        logo: "",
+        heading:
+          "Career progression planning of employees with workforce defections & efficiency",
+        img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/Group+502.png",
+        para: "BMW allows existing customers to sell used cars but many competitors are now offering better resale values...",
+        toolImg:
+          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/iconProject.webp",
+        learnMore: "Learn more",
+      },
+      {
+        id: 3,
+        duration: "26 Hours",
+        logo: "",
+        heading:
+          "Career progression planning of employees with workforce defections & efficiency",
+        img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/Group+502.png",
+        para: "BMW allows existing customers to sell used cars but many competitors are now offering better resale values...",
+        toolImg:
+          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/iconProject.webp",
+        learnMore: "Learn more",
+      },
+      {
+        id: 4,
+        duration: "26 Hours",
+        logo: "",
+        heading:
+          "Career progression planning of employees with workforce defections & efficiency",
+        img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/Group+502.png",
+        para: "BMW allows existing customers to sell used cars but many competitors are now offering better resale values...",
+        toolImg:
+          "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/iconProject.webp",
+        learnMore: "Learn more",
+      },
     ],
-   
+
     thirdSection: [
       {
         id: 1,
@@ -434,29 +436,24 @@ export const DataScienceCourseData = [
       },
     ],
     Certificate: {
-      twoCertificate: [
-        {
-          id: 1,
-          img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Certificate-blue.png",
-          title: "Course Completion Certificate from IBM",
-          para: [
-            "Complete your training with the internationally recognized certificate.",
-            "Validate your Data Science and AI skills with IBM Course Completion Certificate.",
-            "Get acknowledged in IT sector by adding IBM Certificate to your profile.",
-          ],
-        },
-        {
-          id: 2,
-          img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Certificate-Yellow.png",
-          title: "Capstone Project Certificate from IBM",
-          para: [
-            "Globally recognized IBM certification based on industrial-level projects.",
-            "Work on 1 capstone project certified by IBM.",
-            "Individualized project experience with easy access to premium job opportunities.",
-          ],
-        },
-      ],
-      oneCertificate: {
+      degreeCertificate: {
+        id: 1,
+        img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Certificate-blue.png",
+        title: "Course Completion Certificate from IBM",
+        para: [
+          "Complete your training with the internationally recognized certificate.",
+        ],
+      },
+      microCertificate: {
+        id: 3,
+        img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Microsoft-certificate-data.png",
+        title: "Certification in Collaboration with Microsoft",
+        para: [
+          "Industry-certified Microsoft certificates",
+          "Gain expertise & get recognized worldwide",
+        ],
+      },
+      projectCertificate: {
         id: 3,
         img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Microsoft-certificate-data.png",
         title: "Certification in Collaboration with Microsoft",
@@ -1150,43 +1147,50 @@ export const DataScienceCourseData = [
     newsData: [
       {
         id: 1,
-        domain: "I had a great learning experience at Learnbay. The faculties here are top notch. Right from enrollment to getting a good job, they keep putting enormous....",
+        domain:
+          "I had a great learning experience at Learnbay. The faculties here are top notch. Right from enrollment to getting a good job, they keep putting enormous....",
         CLogo: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/1-1.png",
         SDesc: "  27 Aug 2023",
       },
       {
         id: 2,
-        domain: "I had a great learning experience at Learnbay. The faculties here are top notch. Right from enrollment to getting a good job, they keep putting enormous....",
+        domain:
+          "I had a great learning experience at Learnbay. The faculties here are top notch. Right from enrollment to getting a good job, they keep putting enormous....",
         CLogo: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/1-1.png",
         SDesc: "  27 Aug 2023",
       },
       {
         id: 3,
-        domain: "I had a great learning experience at Learnbay. The faculties here are top notch. Right from enrollment to getting a good job, they keep putting enormous....",
+        domain:
+          "I had a great learning experience at Learnbay. The faculties here are top notch. Right from enrollment to getting a good job, they keep putting enormous....",
         CLogo: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/1-1.png",
         SDesc: "  27 Aug 2023",
       },
       {
         id: 4,
-        domain: "I had a great learning experience at Learnbay. The faculties here are top notch. Right from enrollment to getting a good job, they keep putting enormous....",
+        domain:
+          "I had a great learning experience at Learnbay. The faculties here are top notch. Right from enrollment to getting a good job, they keep putting enormous....",
         CLogo: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/1-1.png",
         SDesc: "  27 Aug 2023",
       },
       {
         id: 5,
-        domain: "I had a great learning experience at Learnbay. The faculties here are top notch. Right from enrollment to getting a good job, they keep putting enormous....",
+        domain:
+          "I had a great learning experience at Learnbay. The faculties here are top notch. Right from enrollment to getting a good job, they keep putting enormous....",
         CLogo: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/1-1.png",
         SDesc: "  27 Aug 2023",
       },
       {
         id: 6,
-        domain: "I had a great learning experience at Learnbay. The faculties here are top notch. Right from enrollment to getting a good job, they keep putting enormous....",
+        domain:
+          "I had a great learning experience at Learnbay. The faculties here are top notch. Right from enrollment to getting a good job, they keep putting enormous....",
         CLogo: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/1-1.png",
         SDesc: "  27 Aug 2023",
       },
       {
         id: 7,
-        domain: "I had a great learning experience at Learnbay. The faculties here are top notch. Right from enrollment to getting a good job, they keep putting enormous....",
+        domain:
+          "I had a great learning experience at Learnbay. The faculties here are top notch. Right from enrollment to getting a good job, they keep putting enormous....",
         CLogo: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/1-1.png",
         SDesc: "  27 Aug 2023",
       },
