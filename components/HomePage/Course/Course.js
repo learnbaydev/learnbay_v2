@@ -21,6 +21,7 @@ const Course = ({
   radio,
   dataScienceCounselling,
   Green,
+  organicADS,
   newDesign,
 }) => {
   const [mobile, setMobile] = useState(false);
@@ -340,30 +341,68 @@ const Course = ({
                                           </button>
                                         </a>
                                         <hr className={styles.btnLine} />
-                                        <a
-                                          href={link1}
-                                          className={styles.link1}
-                                        >
-                                          <button
-                                            className={
-                                              Green
-                                                ? styles.green
-                                                : styles.fillBtn
-                                            }
-                                            style={
-                                              newDesign
-                                                ? { borderRadius: "0 0 20px 0" }
-                                                : {
-                                                    borderRadius: "0 0 8px 0px",
-                                                  }
-                                            }
+                                        {organicADS ? (
+                                          <a
+                                            onClick={() => {
+                                              setTitleCourse(titleCourse);
+                                              setBrochureLinks(brochureLinks);
+                                              popupShow();
+                                            }}
                                           >
-                                            View Details
-                                            <TbListDetails
-                                              className={styles.bellIcon}
-                                            />
-                                          </button>
-                                        </a>
+                                            <button
+                                              className={
+                                                Green
+                                                  ? styles.green
+                                                  : styles.fillBtn
+                                              }
+                                              style={
+                                                newDesign
+                                                  ? {
+                                                      borderRadius:
+                                                        "0 0 20px 0",
+                                                    }
+                                                  : {
+                                                      borderRadius:
+                                                        "0 0 8px 0px",
+                                                    }
+                                              }
+                                            >
+                                              View Details
+                                              <TbListDetails
+                                                className={styles.bellIcon}
+                                              />
+                                            </button>
+                                          </a>
+                                        ) : (
+                                          <a
+                                            href={link1}
+                                            className={styles.link1}
+                                          >
+                                            <button
+                                              className={
+                                                Green
+                                                  ? styles.green
+                                                  : styles.fillBtn
+                                              }
+                                              style={
+                                                newDesign
+                                                  ? {
+                                                      borderRadius:
+                                                        "0 0 20px 0",
+                                                    }
+                                                  : {
+                                                      borderRadius:
+                                                        "0 0 8px 0px",
+                                                    }
+                                              }
+                                            >
+                                              View Details
+                                              <TbListDetails
+                                                className={styles.bellIcon}
+                                              />
+                                            </button>
+                                          </a>
+                                        )}
                                       </div>
                                     </div>
                                   </div>
