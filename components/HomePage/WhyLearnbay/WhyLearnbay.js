@@ -3,6 +3,7 @@ import styles from "./WhyLearnbay.module.css";
 import Image from "next/image";
 
 function WhyLearnbay() {
+  console.log("why learnbays");
   return (
     <section className={styles.Container}>
       <div>
@@ -11,7 +12,8 @@ function WhyLearnbay() {
           <span className={styles.contBlue}>Upskilling?</span>
         </p>
         <p className={styles.para}>
-        We have upskilled thousands of professionals from various domains to land their dream tech job.
+          We have upskilled thousands of professionals from various domains to
+          land their dream tech job.
         </p>
         <div className={styles.boxDiv}>
           <div className={styles.innerDiv}>
@@ -24,8 +26,8 @@ function WhyLearnbay() {
               />
             </div>
             <div>
-            <p className={styles.OrangeText}>250%</p>
-            <p className={styles.botPara}>Highest Salary Hike</p>
+              <p className={styles.OrangeText}>250%</p>
+              <p className={styles.botPara}>Highest Salary Hike</p>
             </div>
           </div>
           <div className={styles.innerDiv}>
@@ -38,10 +40,9 @@ function WhyLearnbay() {
               />
             </div>
             <div>
-
-            <p className={styles.OrangeText}>Dedicated</p>
-            <p className={styles.botPara}>Placement Cell</p>
-          </div>
+              <p className={styles.OrangeText}>Dedicated</p>
+              <p className={styles.botPara}>Placement Cell</p>
+            </div>
           </div>
           <div className={styles.innerDiv}>
             <div className={styles.imgBox}>
@@ -53,10 +54,9 @@ function WhyLearnbay() {
               />
             </div>
             <div>
-
-            <p className={styles.OrangeText}>Live online</p>
-            <p className={styles.botPara}>Interactive Session</p>
-          </div>
+              <p className={styles.OrangeText}>Live online</p>
+              <p className={styles.botPara}>Interactive Session</p>
+            </div>
           </div>
         </div>
       </div>

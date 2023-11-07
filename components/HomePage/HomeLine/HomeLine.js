@@ -1,11 +1,9 @@
 import styles from "./HomeLine.module.css";
 import React from "react";
-import { AiOutlineRise } from "react-icons/ai";
-import { BiBriefcase } from "react-icons/bi";
-import { FaAward } from "react-icons/fa";
 import Image from "next/image";
 
 const HomeLine = ({ Emi }) => {
+  console.log("Home Line");
   return (
     <div className="wrapper">
       <div className={styles.feature}>
@@ -79,4 +77,4 @@ const HomeLine = ({ Emi }) => {
   );
 };
 
-export default HomeLine;
+export default React.memo(HomeLine);
