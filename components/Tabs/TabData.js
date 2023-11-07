@@ -5,32 +5,32 @@ export const TabData = [
     courseName: [
       {
         CName: "Advance Data Science and AI Certification",
-        hours: "11 months",
+        hours: "11 Months",
         url: "/datascience/advance-data-science-certification-courses",
       },
       {
         CName: "Advance AI and ML Certification Program",
-        hours: "11 months",
+        hours: "11 Months",
         url: "/datascience/artificial-intelligence-certification-course",
       },
       {
         CName: "Master in CS: Data Science and AI",
-        hours: "18 months",
+        hours: "18 Months",
         url: "/datascience/data-science-and-ai-masters-in-cs",
       },
       {
-        CName: "Software Developer Certification",
-        hours: "11 months | 7 & 9 Months",
+        CName: "Software Development Certification Program",
+        hours: "11 Months",
         url: "/fullstack/full-stack-software-development-program",
       },
       {
         CName: "Business Analytics Program",
-        hours: "9 months",
+        hours: "9 Months",
         url: "/datascience/business-analytics-certification-course",
       },
       {
         CName: "Data Analytics Program",
-        hours: "5 months | 7 & 9 Months",
+        hours: "5 Months",
         url: "/datascience/data-analytics-certification-course",
       },
      
@@ -42,28 +42,28 @@ export const TabData = [
     courseName: [
       {
         CName: "Advance Data Science and AI Certification",
-        hours: "11 months",
+        hours: "11 Months",
         url: "/datascience/advance-data-science-certification-courses",
       },
       {
         CName: "Advance AI and ML Certification Program",
-        hours: "11 months",
+        hours: "11 Months",
         url: "/datascience/artificial-intelligence-certification-course",
       },
       {
-        CName: "Software Developer Certification",
-        hours: "11 months | 7 & 9 Months",
+        CName: "Software Development Certification Program",
+        hours: "11 Months",
         url: "/fullstack/full-stack-software-development-program",
       },
 
       {
         CName: "Business Analytics Program",
-        hours: "9 months",
+        hours: "9 Months",
         url: "/datascience/business-analytics-certification-course",
       },
       {
         CName: "Data Analytics Program",
-        hours: "5 months | 7 & 9 Months",
+        hours: "5 Months",
         url: "/datascience/data-analytics-certification-course",
       },
     ],
@@ -74,7 +74,7 @@ export const TabData = [
     courseName: [
       {
         CName: "Master in CS: Data Science and AI",
-        hours: "18 months",
+        hours: "18 Months",
         url: "/datascience/data-science-and-ai-masters-in-cs",
       },
     ],

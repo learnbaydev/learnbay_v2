@@ -47,7 +47,7 @@ export default function Home() {
       <main>
         {" "}
         <Navbar popup={true} dataScienceCounselling={true} radio={true} />
-        <TrainerSection idss="bfl64ANfSV0" />
+        <TrainerSection idss="eautK0odE7Q" />
         <LinkedinReview />
         <GoogleReview />
         {/* <VideoReview idss="bfl64ANfSV0" /> */}

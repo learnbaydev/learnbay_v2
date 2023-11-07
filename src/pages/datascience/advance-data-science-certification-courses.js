@@ -8,6 +8,9 @@ import Navbar from "../../../components/Navbar/Navbar";
 const FirstSection = dynamic(() =>
   import("../../../components/CoursePage/FirstSection/FirstSection")
 );
+const WhatsappFloat = dynamic(() =>
+  import("../../../components/WhatappsFloat/WhatsappFloat")
+);
 const SecondSection = dynamic(() =>
   import("../../../components/CoursePage/SecondSection/SecondSection")
 );
@@ -193,8 +196,8 @@ function Blockchain({}) {
           ThirdTyped="Live Interactive Classes"
           dataScience={true}
           titleCourse="Advance Data Science & AI Program with Domain Specialization"
-          cityParaCont="Elevate your tech career with our Master's programs"
-          brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Advance+Data+Science+and+AI+Certification+Program+Learnbay.pdf"
+          cityParaCont="Gain work experience of data scientist with real projects"
+          brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Advanced+Data+Science+%26+AI++Certification+Program.pdf"
           FirstRightImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/advance-header.webp"
           firstToparaImg="with Domain Specialization"
           firstHeading="Advance Data Science & AI Program"
@@ -218,12 +221,12 @@ function Blockchain({}) {
         />
 
         <WhoIsProgram
-          first="Non-tech professionals with 6 months experience"
-          second="Minimum 1 year of IT work experience"
+          first="B.tech, M.tech, BCA, B.com, M.com, MBA, MCA, M.sc"
+          second="Minimum 6 year of  work experience (tech/non-tech)"
           third="Mid-career professionals interested in data science & AI"
           forth="Achieving higher career growth in data science and AI"
         />
-        <WhyLearnbay idss="RYWiuHmO2Z4" />
+        <WhyLearnbay idss="fzXzUSvMPv0" />
         <GetHire />
         {/* <Switch /> */}
         {/* <FourthSection
@@ -244,12 +247,13 @@ function Blockchain({}) {
           dataScienceCounselling={true}
           dataScience={true}
           titleCourse="Advanced Data Science and AI Program with domain specialization"
-          brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Advance+Data+Science+and+AI+Certification+Program+Learnbay.pdf"
+          brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Advanced+Data+Science+%26+AI++Certification+Program.pdf"
           syllabus={DataScienceCourseData[0].syllabus}
           syllabusDesc={DataScienceCourseData[0].syllabusDesc}
           popupHead={DataScienceCourseData[0].popupHead}
           progress={progress}
           setProgress={setProgress}
+          buttonHide={true}
         />
 
         <ToolsCovered
@@ -285,7 +289,7 @@ function Blockchain({}) {
         <NewProjectSection
           dataScience={true}
           titleCourse="Advanced Data Science and AI Program with domain specialization"
-          brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Masters+in+CS+Data+Science+%26+AI.pdf"
+          brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Advanced+Data+Science+%26+AI++Certification+Program.pdf"
           projectSection={DataScienceCourseData[0].projectSection}
         />
 
@@ -293,6 +297,7 @@ function Blockchain({}) {
         <SeventhSection />
         <Footer />
         <BottomBar />
+      <WhatsappFloat />
         {popupData.length == 0 ? "" : <OfferPopup popupData={popupData} />}
       </main>
     </>

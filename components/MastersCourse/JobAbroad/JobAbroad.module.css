@@ -21,6 +21,21 @@
   height: auto;
 }
 
+.woolfText {
+  color: #000;
+font-style: italic;
+font-weight: 500;
+line-height: 153%;
+font-size: 13px;
+text-align: center;
+margin-top: 70px;
+}
+
+.spanWoolf {
+  text-decoration-line: underline;
+  cursor: pointer;
+}
+
 .leftpoints {
   display: grid;
   flex-direction: column;
@@ -63,6 +78,11 @@
     padding: 0px;
     display: flex;
     flex-flow: column;
+  }
+  .woolfText {
+
+  font-size: 11px;
+  margin:70px 70px 30px 70px;
   }
   .JobAbroadHead {
     display: flex;

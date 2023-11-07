@@ -169,7 +169,7 @@ export const BADataScienceCourseData = [
         heading: "Healthcare",
         para: "For pharmacists, therapists, health administrators, etc.",
         brochureLink:
-          "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Banking%2C+Finance+and+Insurance+Domain.pdf",
+          "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Healthcare%2C+Pharma+and+Clinical+Research+Domain.pdf",
       },
       {
         id: 1,
@@ -177,7 +177,7 @@ export const BADataScienceCourseData = [
         heading: "HR & Marketing",
         para: "For recruiter, talent acquisition specialist and marketing pros.",
         brochureLink:
-          "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Banking%2C+Finance+and+Insurance+Domain.pdf",
+          "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Sales%2C+Marketing+and+HR+Domain.pdf",
       },
       {
         id: 1,
@@ -185,7 +185,7 @@ export const BADataScienceCourseData = [
         heading: "Manufacturing",
         para: "For production manager, quality control inspector and engineers.",
         brochureLink:
-          "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Banking%2C+Finance+and+Insurance+Domain.pdf",
+          "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Manufacturing%2C+Mechanical+and+Telecom+Domain.pdf",
       },
     ],
     fourthSection: [
@@ -411,238 +411,605 @@ export const BADataScienceCourseData = [
     popupHead: "Download Data science Course Brochure",
 
     syllabusHead: [
-      "Term 1 Foundation Track(30 ECTS Credits)",
-      "Term 2 Statistics & Machine Learning( 25 ECTS Credits) ",
-      "Term 3 Artificial Intelligence Tools( 25 ECTS Credits)",
-      "Term 4 :- Artificial Intelligence Tools( 25 ECTS Credits) ",
-      "Term 5 :- Deployment (AWS+Azure)( 25 ECTS Credits) ",
+      "Intro to Business Analytics  (L1)",
+      "Excel & Business Statistics  (L2)",
+      "Data Science & AI (L3)",
+      "Big Data Analytics and Visualization  (L4)",
+      "AI Generative Tools and Feature Trends (L5)",
     ],
     MasterSyllabusDefault: [
       {
         Module0: {
-          title: "Module 0 :- Preparatory Classes (Programming + Maths)",
-          content: [
-            {
-              chap: {
-                title: "Topic 1 :- Cohort Orientation",
-                desc: [
-                  "A brief introduction to tools related to data ",
-                  "Learn about particular real-time projects and Capstone projects ",
-                  "Data and its impact on career opportunities",
-                  "Utilizing data, to enhance industrial operations and management",
-                ],
-              },
-            },
-
-            {
-              chap: {
-                title: "Topic 2 :- Fundamentals of programming ",
-                desc: [
-                  "Introduction to Anaconda & Jupyter notebook ",
-
-                  "Flavors of python Introduction to Git, GitHub ",
-                  "Python Fundamentals ",
-                ],
-              },
-            },
-            {
-              chap: {
-                title: "Topic 3 :- Fundamentals of Statistics",
-                desc: [
-                  "Mean, Median, Mode .",
-                  "Standard Deviation, Average. Probability, permutations, and combinations ",
-                  "Introduction to Linear Algebra",
-                ],
-              },
-            },
-          ],
-          id: 0,
-          open: true,
-        },
-      },
-      {
-        Module0: {
-          title: "Term 1 :- Python Programming",
-          content: [
-            {
-              chap: {
-                title: "Module 1 :- Python Programming ",
-                desc: [
-                  " Programming Basics & Environment Setup.",
-                  " Python Programming Overview",
-                  "  Python Data Types",
-                  "  Functions And Modules ,Class hands-on: 8+ Programs to be covered in the functions, Lambda, modules, Generators, and Packages class",
-
-                  " File I/O And Exceptional Handling and Regular Expression,Class hands-on: 10+ Programs to be covered in class from File IO, Reg-ex and exception handling.",
-                  "Data Analysis Using Numpy",
-                  " Data Analysis Using Pandas",
-                  "Data Visualization using Matplotlib",
-                  ". Data Visualization using Seaborn,3 Case Study on Numpy, Pandas, Matplotlib 1 Case Study on Pandas And Seaborn",
-                ],
-              },
-            },
-          ],
-          id: 1,
-          open: false,
-        },
-      },
-      {
-        Module0: {
-          title: "Term 2 :- Statistics & Basic Machine Learning",
-          content: [
-            {
-              chap: {
-                title: "Module 1 :- Statistics",
-                desc: [
-                  "Fundamentals of Math and Probability",
-                  "All about Population & Sample",
-                  "Discrete Probability Distributions - Binomial, Poisson etc",
-                  "Introduction to Statistics, Statistical Thinking",
-                  " Descriptive Statistics",
-                  " Inferential Statistics",
-                  " Hypothesis Testing",
-                  "Linear Algebra",
-                  "Data Processing & Exploratory Data Analysis",
-                  "EDA,Statistics Assignments: Total 4 practice sets and Assignments from Statistics",
-                ],
-              },
-            },
-            {
-              chap: {
-                title: "Module 2 :- Machine Learning",
-                desc: [
-                  "Introduction to Machine Learning",
-                  "Regression and Classification Models",
-                  "Linear Regression Model",
-                  "Data Preprocessing",
-                  "Encoding the Data",
-                  "Logistic Regression Model",
-                  "Evaluation Metrics for Classification model",
-                  "K Nearest Neighbours Model",
-                  "Decision Tree Model",
-                  "Random Forest Model",
-                  "Hyperparameter Tuning",
-                  "Naive Baye’s Model,Case Study on Kart Model Business & Random Forest",
-                ],
-              },
-            },
-          ],
-          id: 2,
-          open: false,
-        },
-      },
-      {
-        Module0: {
-          title: "Term 3 :- Data Analytics Tools",
-          content: [
-            {
-              chap: {
-                title: "Module 1 :- SQL",
-                desc: [
-                  "SQL and RDBMS",
-                  "Advance SQL",
-                  "NoSQL, HBase & MongoDB",
-                  "JSON Data & CRUD",
-                  "Programming with SQL",
-                ],
-              },
-            },
-            {
-              chap: {
-                title: "Module 2 :- PowerBI",
-                desc: [
-                  "Getting Started With Power BI",
-                  " Programming with Power BI",
-                ],
-              },
-            },
-            {
-              chap: {
-                title: "Module 3 :- Big Data & Spark Analytics",
-                desc: [
-                  " Introduction To Hadoop & Big Data",
-                  "What is Spark",
-                  " Getting to know PySpark Hands-on: Map reduce Use Case : Youtube data analysis & Spark RDD       programming",
-                ],
-              },
-            },
-            {
-              chap: {
-                title: "Module 4 :- Time Series",
-                desc: [
-                  " Introduction to Time Series Forecasting",
-                  "Introduction to ARIMA Models,Case Study on Time series classification of smartphone data to predict user behavior, Performing Time Series Analysis on Stock Prices & Time series forecasting of sales data",
-                ],
-              },
-            },
-          ],
-          id: 3,
-          open: false,
-        },
-      },
-      {
-        Module0: {
-          title: "Term 4 :- Excel",
+          title: "Introduction to Business Analysis",
           content: [
             {
               chap: {
                 title: "",
                 desc: [
-                  "Getting started with Excel",
-                  "Using Excel Toolbars: Hiding, Displaying, and Moving Toolbars",
-                  "Switching Between Sheets in a Workbook",
-                  "Entering Date Values and using AutoComplete",
-                  "Inserting and Deleting Cells, Rows, and Columns",
-                  "Working with the Forms Menu",
-                  "Creating & Working with Charts",
-                  "Changing a Chart Type and Working with Pie Charts",
-                  "Data Analysis & Pivot Tables",
+                  "Introduction to Business Analysis",
+                  "Stakeholders in Business Analysis",
+                  "Formulating Requirements",
+                  "Flowchart and Modelling",
+                  "Analyzing and Transforming Requirements",
+                  "Finalising Requirements",
+               
                 ],
               },
             },
           ],
           id: 4,
-          open: false,
+          open: true,
         },
       },
     ],
+   
+    masterSyllabus: {
+      "Intro to Business Analytics  (L1)": [
+        {
+          Module0: {
+            title: "Introduction to Business Analysis",
+            content: [
+              {
+                chap: {
+                  title: "",
+                  desc: [
+                    "Introduction to Business Analysis",
+                    "Stakeholders in Business Analysis",
+                    "Formulating Requirements",
+                    "Flowchart and Modelling",
+                    "Analyzing and Transforming Requirements",
+                    "Finalising Requirements",
+                 
+                  ],
+                },
+              },
+            ],
+            id: 4,
+            open: true,
+          },
+        },
+      ],
+      "Excel & Business Statistics  (L2)": [
+        {
+          Module0: {
+            title: "Excel",
+            content: [
+              {
+                chap: {
+                  // title: "Topic 1 :- Cohort Orientation",
+                  desc: [
+                    "Introduction to Excel",
+                    "Basic Formulas and Functions ",
+                    "Data Formatting and Cell Styles",
+                    "Data Sorting and Filtering",
+                    "Data Validation and Protection",
+                    "PivotTables and PivotCharts",
+                    "Advanced Formulas and Functions",
+                    "Data Analysis Tools",
+                    "Excel Macros and Automation",
+                  ],
+                },
+              },
+
+            
+            ],
+            id: 0,
+            open: true,
+          },
+        },
+
+        {
+          Module0: {
+            title: "Statistics",
+            content: [
+              {
+                chap: {
+                  // title: "Topic 1 :- Cohort Orientation",
+                  desc: [
+                    "Fundamentals of Math and Probability",
+                    "All about Population & Sample ",
+                    "Statistical Thinking",
+                    "Descriptive & Inferential Statistics",
+                    "Hypothesis Testing",
+                    "Linear Algebra",
+                    "Data Processing & Exploratory Data Analysis",
+                 
+                  ],
+                },
+              },
+
+            
+            ],
+            id: 0,
+            open: false,
+          },
+        },
+
+
+
+
+
+      ],
+      "Data Science & AI (L3)": [
+        {
+          Module0: {
+            title: "Intro",
+            content: [
+              {
+                chap: {
+                  desc: [ 
+                    "Key components of Data Science and AI (data, algorithms, computing power).",
+                    "Popular programming language (R) and development tools (Jupyter     Notebook, Spyder)",
+                  
+                   
+                  ],
+                },
+              },
+            ],
+            id: 1,
+            open: true,
+          },
+        },
+        {
+          Module0: {
+            title: "ML",
+            content: [
+              {
+                chap: {
+                  desc: [
+                    "Supervised, unsupervised, and reinforcement learning.",
+                    "Bias-variance tradeoff, overfitting, and underfitting.",
+                    "Model selection and evaluation metrics (accuracy, precision, recall, F1 score, ROC curve, AUC).",
+                 
+                  ],
+                },
+              },
+            ],
+            id: 1,
+            open: false,
+          },
+        },
+
+        {
+          Module0: {
+            title: "NLP",
+            content: [
+              {
+                chap: {
+                  desc: [
+                    "Named Entity Recognition (NER), Topic Modeling, Text Generation.",
+                    "Pre-trained language models (BERT, GPT, XLNet) and Transfer Learning in NLP",
+                    "Model selection and evaluation metrics (accuracy, precision, recall, F1 score, ROC curve, AUC).",
+                 
+                  ],
+                },
+              },
+            ],
+            id: 1,
+            open: false,
+          },
+        },
+
+      ],
+
+      "Big Data Analytics and Visualization  (L4)": [
+        {
+          Module0: {
+            title: "SQL",
+            content: [
+              {
+                chap: {
+                  desc: [
+                    "SQL and RDBMS",
+                    "NoSQL, HBase & MongoDB",
+                    "JSON Data & CRUD",
+                    "Programming with SQL",
+                  ],
+                },
+              },
+            ],
+            id: 6,
+            open: true,
+          },
+        },
+        {
+          Module0: {
+            title: "MongoDB",
+            content: [
+              {
+                chap: {
+                  desc: [
+                    "MongoDB Ecosystem",
+                    "MongoDB Structures",
+                    "MongoDB Shell vs MongoDB Server",
+                    "Data Formats in MongoDB",
+                    "Working with MongoDB Compass",
+                    "Working with Numeric Data",
+                    "Working on Scheme Designing",
+                  ],
+                },
+              },
+            ],
+            id: 6,
+            open: false,
+          },
+        },
+        {
+          Module0: {
+            title: "Tableau",
+            content: [
+              {
+                chap: {
+                  desc: [
+                    "Dashboard and Stories",
+                    "Visual Analytics",
+                    "Custom Geocoding",
+                    "Polygon Maps",
+                    "WMS and Background Image",
+                  ],
+                },
+              },
+            ],
+            id: 6,
+            open: false,
+          },
+        },
+        {
+          Module0: {
+            title: "PowerBI",
+            content: [
+              {
+                chap: {
+                  desc: [
+                    "Overview of the Workflow in",
+                    "Power BI Desktop",
+                    "Introducing the Different",
+                    "Views of the Data Mode",
+                    "Working with Time Series",
+                    "Scatterplots and BI Reports",
+                    "Connecting Dataset with  Power BI",
+                  ],
+                },
+              },
+            ],
+            id: 6,
+            open: false,
+          },
+        },
+        
+      
+      ],
+      "AI Generative Tools and Feature Trends (L5)": [
+
+        {
+          Module0: {
+            title: "Emerging Trends in AI and Generative Modeling",
+            content: [
+              {
+                chap: {
+                  desc: [
+                    " Exploring other AI generative tools beyond ChatGPT and DALL·E",
+                    "Overview of Midjourney",
+                    "Discussion on future trends and advancements in AI generative tools",
+                    "Open-ended project and/or presentation on a selected topic, incorporating learned concepts",
+               
+                  
+                  ],
+                },
+              },
+            ],
+            id: 2,
+            open: true,
+          },
+        },
+
+
+
+
+
+
+        {
+          Module0: {
+            title: "Natural Language Processing and ChatGPT",
+            content: [
+              {
+                chap: {
+                  desc: [
+                    "Introduction to natural language processing techniques",
+                    "Understanding ChatGPT and its architecture",
+                    "Hands-on exercises using ChatGPT for text generation",
+                 
+                    "Fine-tuning ChatGPT for specific applications",
+                    
+         
+                  
+                  ],
+                },
+              },
+            ],
+            id: 2,
+            open: false,
+          },
+        },
+
+        {
+          Module0: {
+            title: "DALL·E: Image Generation with AI",
+            content: [
+              {
+                chap: {
+                  desc: [
+                    "Exploring image generation using DALL·E",
+                    "Hands-on exercises for creating unique images with DALL·E",
+                    "Ethical considerations and limitations of AI-generated images",
+                    "Polygon Maps",
+                    " WMS and Background Image",
+                  
+                  ],
+                },
+              },
+            ],
+            id: 2,
+            open: false,
+          },
+        },
+
+
+
+
+
+
+
+
+
+        {
+          Module0: {
+            title: "Graph Neural Networks (GNN) for Data Analysis",
+            content: [
+              {
+                chap: {
+                  desc: [
+                    "Overview of Graph Neural Networks (GNN) and their applications",
+                    "Hands-on exercises using GNN for tasks such as node classification and link prediction",
+                    "Case studies on real-world applications of GNN in data science",
+                    "Scatterplots and BI Reports",
+                    " Connecting Dataset with Power BI",
+                  
+                  ],
+                },
+              },
+            ],
+            id: 2,
+            open: false,
+          },
+        },
+      
+      ],
+     
+      // "Data Management and Deployment (L5)": [
+      //   {
+      //     Module0: {
+      //       title: "Module 1 :-Excel",
+      //       content: [
+      //         {
+      //           chap: {
+      //             desc: [
+      //               "Introduction to Excel",
+      //               "Basic Formulas and Functions",
+      //               "Data Formatting and Cell Styles",
+      //               "Data Sorting and Filtering",
+      //               "Charts and Graphs",
+      //               "Data Validation and Protection",
+      //               "PivotTables and PivotCharts",
+      //               "Advanced Formulas and Functions",
+      //               "Data Analysis Tools",
+      //               "Excel Macros and Automation",
+      //             ],
+      //           },
+      //         },
+      //       ],
+      //       id: 6,
+      //       open: true,
+      //     },
+      //   },
+      //   {
+      //     Module0: {
+      //       title: "Module 2 :- MLops",
+      //       content: [
+      //         {
+      //           chap: {
+      //             desc: [
+      //               "Introduction to MLOps",
+      //               "Version Control for ML",
+      //               "Containerization and Docker",
+      //               "Orchestration with Kubernetes",
+      //               "Continuous Integration (CI) for ML",
+      //             ],
+      //           },
+      //         },
+      //       ],
+      //       id: 6,
+      //       open: false,
+      //     },
+      //   },
+      //   {
+      //     Module0: {
+      //       title: "Module 3 :- Deep Learning",
+      //       content: [
+      //         {
+      //           chap: {
+      //             desc: [
+      //               "Neural Network",
+      //               "Simple Computation, Constants, and Variables",
+      //               "Feature selection and engineering techniques (e.g. PCA, feature importance)",
+      //               "Back-propagation",
+      //               "TensorBoard",
+      //             ],
+      //           },
+      //         },
+      //       ],
+      //       id: 6,
+      //       open: false,
+      //     },
+      //   },
+      //   {
+      //     Module0: {
+      //       title: "Module 4 :- Deployment AWS+Azure",
+      //       content: [
+      //         {
+      //           chap: {
+      //             desc: [
+      //               "Data Preparation and Feature Engineering",
+      //               "Model Training and Evaluation",
+      //               "Model Deployment and Management",
+      //               "Advanced Topics in Machine Learning on AWS and Azure",
+      //             ],
+      //           },
+      //         },
+      //       ],
+      //       id: 6,
+      //       open: false,
+      //     },
+      //   },
+      // ],
+      // "AI Generative Tools and Feature Trends (L6)": [
+      //   {
+      //     Module0: {
+      //       title: "Module 1 :- Emerging Trends in AI and Generative Modeling",
+      //       content: [
+      //         {
+      //           chap: {
+      //             desc: [
+      //               "Exploring other AI generative tools beyond ChatGPT and DALL·E",
+      //               "Overview of Midjourney",
+      //               "Discussion on future trends and advancements in AI generative tools",
+      //               "Open-ended project and/or presentation on a selected topic, incorporating learned concepts",
+      //             ],
+      //           },
+      //         },
+      //       ],
+      //       id: 6,
+      //       open: true,
+      //     },
+      //   },
+      //   {
+      //     Module0: {
+      //       title: "Module 2 :- Natural Language Processing and ChatGPT",
+      //       content: [
+      //         {
+      //           chap: {
+      //             desc: [
+      //               "Introduction to natural language processing techniques",
+      //               "Understanding ChatGPT and its architecture",
+      //               "Hands-on exercises using ChatGPT for text generation",
+      //               "Fine-tuning ChatGPT for specific applications",
+      //             ],
+      //           },
+      //         },
+      //       ],
+      //       id: 6,
+      //       open: false,
+      //     },
+      //   },
+      //   {
+      //     Module0: {
+      //       title: "Module 3 :- DALL·E: Image Generation with AI",
+      //       content: [
+      //         {
+      //           chap: {
+      //             desc: [
+      //               "Exploring image generation using DALL·E",
+      //               "Hands-on exercises for creating unique images with DALL·E",
+      //               "Ethical considerations and limitations of AI-generated images",
+      //             ],
+      //           },
+      //         },
+      //       ],
+      //       id: 6,
+      //       open: false,
+      //     },
+      //   },
+      //   {
+      //     Module0: {
+      //       title: "Module 4 :- Graph Neural Networks (GNN) for Data Analysis",
+      //       content: [
+      //         {
+      //           chap: {
+      //             desc: [
+      //               "Overview of Graph Neural Networks (GNN) and their applications",
+      //               "Hands-on exercises using GNN for tasks such as node classification and link prediction",
+      //               "Case studies on real-world applications of GNN in data science",
+      //             ],
+      //           },
+      //         },
+      //       ],
+      //       id: 6,
+      //       open: false,
+      //     },
+      //   },
+      //   {
+      //     Module0: {
+      //       title: "Term 5 :- AI Generative Tools and Future Trends ",
+
+      //       content: [
+      //         {
+      //           chap: {
+      //             desc: [
+      //               "Overview of Graph Neural Networks (GNN) and their applications",
+      //               "Hands-on exercises using GNN for tasks such as node classification and link prediction",
+      //               "Case studies on real-world applications of GNN in data science",
+      //             ],
+      //           },
+      //         },
+      //       ],
+      //       id: 6,
+      //       open: false,
+      //     },
+      //   },
+      // ],
+    },
     masterSyllabusMobile: [
       {
         Module0: {
-          title: "Module 0 :- Preparatory Classes (Programming + Maths)",
+          title: "L1 :- Introduction to Business Analysis ",
           content: [
             {
               chap: {
-                title: "Topic 1 :- Cohort Orientation",
+                // title: "Topic 1 :-Excel",
                 desc: [
-                  "A brief introduction to tools related to data ",
-                  "Learn about particular real-time projects and Capstone projects ",
-                  "Data and its impact on career opportunities",
-                  "Utilizing data, to enhance industrial operations and management",
+                  "Introduction to Excel",
+                    "Basic Formulas and Functions ",
+                    "Data Formatting and Cell Styles",
+                    "Data Sorting and Filtering",
+                    "Data Validation and Protection",
+                    "PivotTables and PivotCharts",
+                    "Advanced Formulas and Functions",
+                    "Data Analysis Tools",
+                    "Excel Macros and Automation",
                 ],
               },
             },
 
-            {
-              chap: {
-                title: "Topic 2 :- Fundamentals of Programming",
-                desc: [
-                  "Introduction to Anaconda & Jupyter notebook",
-                  "Flavors of python Introduction to Git, GitHub",
-                  "Python Fundamentals",
-                ],
-              },
-            },
-            {
-              chap: {
-                title: "Topic 3 :-  Fundamentals of Statistics",
-                desc: [
-                  "Mean, Median, Mode",
-                  "Standard Deviation, Average. Probability, Permutations, and Combinations",
-                  "Introduction to Linear Algebra",
-                ],
-              },
-            },
+            // {
+            //   chap: {
+            //     title: "Topic 2 :- Fundamentals of Programming",
+            //     desc: [
+            //       "Introduction to Anaconda & Jupyter notebook",
+            //       "Flavors of python Introduction to Git, GitHub",
+            //       "Python Fundamentals",
+            //     ],
+            //   },
+            // },
+            // {
+            //   chap: {
+            //     title: "Topic 3 :-  Fundamentals of Statistics",
+            //     desc: [
+            //       "Mean, Median, Mode",
+            //       "Standard Deviation, Average. Probability, Permutations, and Combinations",
+            //       "Introduction to Linear Algebra",
+            //     ],
+            //   },
+            // },
           ],
           id: 0,
           open: true,
@@ -650,25 +1017,83 @@ export const BADataScienceCourseData = [
       },
       {
         Module0: {
-          title: "Term 1 :- Python for Data Science",
+          title: "L2 :- Excel & Business Statistics",
           content: [
             {
               chap: {
-                title: "Module 1 :- Python Programming",
+            title: "Topic 1 :-Excel",
                 desc: [
-                  "Programming Basics & Environment Setup",
-                  "Python Programming Overview",
-                  "Strings, Decisions & Loop Control",
-                  "Python Data Types",
-                  "Functions And Modules",
-                  "Class hands-on: 8+ Programs to be covered in the functions, Lambda, modules, Generators, and Packages class",
-                  "File I/O And Exceptional Handling and Regular Expression",
-                  "Class hands-on: 10+ Programs to be covered in class from File IO, Reg-ex and exception handling",
-                  "Data Analysis Using Numpy",
-                  "Data Analysis Using Pandas",
-                  "Data Visualization using Matplotlib",
-                  "Data Visualization using Seaborn",
-                  "Case Study on Numpy, Pandas, Matplotlib 1 Case Study on Pandas And Seaborn",
+                  "Introduction to Excel",
+                  "Basic Formulas and Functions ",
+                  "Data Formatting and Cell Styles",
+                  "Data Sorting and Filtering",
+                  "Data Validation and Protection",
+                  "PivotTables and PivotCharts",
+                  "Advanced Formulas and Functions",
+                  "Data Analysis Tools",
+                  "Excel Macros and Automation",
+                ],
+              },
+
+
+              
+            },
+
+            {
+              chap: {
+            title: "Topic 2 :-Statistics",
+                desc: [
+                  "Fundamentals of Math and Probability",
+                  "All about Population & Sample ",
+                  "Statistical Thinking",
+                  "Descriptive & Inferential Statistics",
+                  "Hypothesis Testing",
+                  "Linear Algebra",
+                  "Data Processing & Exploratory Data Analysis",
+                ],
+              },
+
+
+              
+            },
+          ],
+          id: 1,
+          open: false,
+        },
+      },
+      {
+        Module0: {
+          title: "L3 :- Data Science & AI ",
+          content: [
+            {
+              chap: {
+                title: "Topic 1:- Intro",
+                desc: [
+                  "Key components of Data Science and AI (data, algorithms, computing power).",
+                  "Popular programming language (R) and development tools (Jupyter     Notebook, Spyder)",
+                ],
+              },
+            },
+
+
+            {
+              chap: {
+                title: "Topic 2:- ML",
+                desc: [
+                  "Supervised, unsupervised, and reinforcement learning.",
+                    "Bias-variance tradeoff, overfitting, and underfitting.",
+                    "Model selection and evaluation metrics (accuracy, precision, recall, F1 score, ROC curve, AUC).",
+                ],
+              },
+            },
+
+            {
+              chap: {
+                title:  "Topic 3:- NLP",
+                desc: [
+                  "Named Entity Recognition (NER), Topic Modeling, Text Generation.",
+                  "Pre-trained language models (BERT, GPT, XLNet) and Transfer Learning in NLP",
+                  "Model selection and evaluation metrics (accuracy, precision, recall, F1 score, ROC curve, AUC).",
                 ],
               },
             },
@@ -679,149 +1104,45 @@ export const BADataScienceCourseData = [
       },
       {
         Module0: {
-          title: "Term 2 :- Statistics",
+          title: "L4 :- Big Data Analytics and Visualization",
           content: [
             {
               chap: {
-                title: "Module 1 :- Statistics",
-                desc: [
-                  " Fundamentals of Math and Probability",
-                  "All about Population & Sample",
-                  "Introduction to Statistics, Statistical Thinking",
-                  "Descriptive Statistics",
-                  " Inferential Statistics",
-                  "Hypothesis Testing",
-                  " Linear Algebra",
-                  "Data Processing & Exploratory Data Analysis",
-                  "EDA EDA Statistics Assignments: Total 4 practice sets and Assignments from Statistics",
-                ],
-              },
-            },
-            {
-              chap: {
-                title: "Module 2 :- Machine Learning",
-                desc: [
-                  "Introduction to Machine Learning",
-                  "Regression and Classification Models",
-                  "Linear Regression Model",
-                  "Data Preprocessing",
-                  "Encoding the Data",
-                  "Logistic Regression Model",
-                  "Evaluation Metrics for Classification model",
-                  "K Nearest Neighbours Model",
-                  "Decision Tree Model",
-                  "Random Forest Model",
-                  "Hyperparameter Tuning",
-                  "Naive Baye’s Model Case Study on Kart Model Business & Random Forest",
-                  "K Means and Hierarchical Clustering",
-                  "Hierarchical Clustering",
-                  "Principal Component Analysis (PCA):",
-                  " Support Vector Machine (SVM) Case Study on Recommendation Engine for e-commerce/retail chain & Twitter data analysis using NLP",
-                ],
-              },
-            },
-          ],
-          id: 2,
-          open: false,
-        },
-      },
-
-      {
-        Module0: {
-          title: "Module 2 :- Introduction to Machine Learning",
-          content: [
-            {
-              chap: {
-                // title: "Module 1 :- Applied statistics",
-                desc: [
-                  "Introduction to Machine Learning",
-                  "Linear Regresssion",
-                  "Logistic Regression",
-                  "Decision Tree",
-                  "Cross validation",
-                  "KNN",
-                  "Naive Bayes",
-                ],
-              },
-            },
-          ],
-          id: 3,
-          open: false,
-        },
-      },
-
-      {
-        Module0: {
-          title: "Module 3 :- Advance machine learning",
-          content: [
-            {
-              chap: {
-                // title: "Module 1 :- Applied statistics",
-                desc: ["Clustering", "PCA", "SVM", "Time Series"],
-              },
-            },
-          ],
-          id: 4,
-          open: false,
-        },
-      },
-
-      {
-        Module0: {
-          title: "Module 4 :- Problem-Solving Techniques",
-          content: [
-            {
-              chap: {
-                // title: "Module 1 :- Applied statistics",
-                desc: [
-                  "Understanding the Problem",
-                  "Pseudocode and Flowcharts",
-                  "Divide and Conquer",
-                  "Data Collection and Integration",
-                  "Different Types of Analysis",
-                  "Backtracking",
-                  "Debugging Techniques",
-                  "Machine Learning Pipelines",
-                ],
-              },
-            },
-          ],
-          id: 5,
-          open: false,
-        },
-      },
-      {
-        Module0: {
-          title: "Term 3 :-Big Data Analytics and Visualization 86 Hours",
-          content: [
-            {
-              chap: {
-                title: "Module 1 :- SQL",
+            title: "Topic 1 :-SQL",
                 desc: [
                   "SQL and RDBMS",
-                  "NoSQL, HBase & MongoDB",
-                  "JSON Data & CRUD",
-                  "Programming with SQL",
+                    "NoSQL, HBase & MongoDB",
+                    "JSON Data & CRUD",
+                    "Programming with SQL",
                 ],
               },
+
+
+              
             },
+
+
             {
               chap: {
-                title: "Module 2 :- MongoDB",
+            title: "Topic 2 :-MongoDB",
                 desc: [
                   "MongoDB Ecosystem",
-                  "MongoDB Structures",
-                  "MongoDB Shell vs MongoDB Server",
-                  "Data Formats in MongoDB",
-                  "Working with MongoDB Compass",
-                  "Working with Numeric Data",
-                  "Working on Scheme Designing",
+                    "MongoDB Structures",
+                    "MongoDB Shell vs MongoDB Server",
+                    "Data Formats in MongoDB",
+                    "Working with MongoDB Compass",
+                    "Working with Numeric Data",
+                    "Working on Scheme Designing",
                 ],
               },
+
+
+              
             },
+
             {
               chap: {
-                title: "Module 3 :- Tableau",
+            title: "Topic 3 :-Tableau",
                 desc: [
                   "Dashboard and Stories",
                   "Visual Analytics",
@@ -830,10 +1151,15 @@ export const BADataScienceCourseData = [
                   "WMS and Background Image",
                 ],
               },
+
+
+              
             },
+
+
             {
               chap: {
-                title: "Module 4 :-PowerBI",
+            title: "Topic 4 :-Power BI",
                 desc: [
                   "Overview of the Workflow in",
                   "Power BI Desktop",
@@ -844,379 +1170,82 @@ export const BADataScienceCourseData = [
                   "Connecting Dataset with  Power BI",
                 ],
               },
-            },
-            {
-              chap: {
-                title: "Module 5 :- Sparks Analytics",
-                desc: [
-                  "Introduction To Hadoop & Big Data",
-                  "Hadoop Master: Slave Architecture",
-                  "MapReduce Architecture",
-                  "Introduction to Spark SQL and Data frames",
-                  "Using R-Spark for machine learning",
-                ],
-              },
-            },
-            {
-              chap: {
-                title: "Module 6 :- Time Series",
-                desc: [
-                  "Basics of Time Series Analysis and Forecasting",
-                  "Method Selection in Forecasting",
-                  " Moving Average (MA) Forecast",
-                  "Different Components of Time Series Data",
-                  "Log Based Differencing, Linear Regression for Detrending",
-                  "ARIMA Model Calculations, Manual ARIMA Parameter Selection",
-                  "ARIMA with Explanatory Variables",
-                  "Understanding Multivariate Time Series and their Structure",
-                ],
-              },
+
+
+              
             },
           ],
-          id: 6,
+          id: 2,
           open: false,
         },
       },
+
       {
         Module0: {
-          title: "Term 4 :- Data Management and Deployment",
+          title: "L5 :- AI Generative Tools and Feature Trends",
           content: [
             {
               chap: {
-                title: "Module 1 :-Excel",
+                title: "Topic 1:-Emerging Trends in AI and Generative Modeling",
                 desc: [
-                  "Introduction to Excel",
-                  "Basic Formulas and Functions",
-                  "Data Formatting and Cell Styles",
-                  "Data Sorting and Filtering",
-                  "Charts and Graphs",
-                  "Data Validation and Protection",
-                  "PivotTables and PivotCharts",
-                  "Advanced Formulas and Functions",
-                  "Data Analysis Tools",
-                  "Excel Macros and Automation",
-                ],
-              },
-            },
-            {
-              chap: {
-                title: "Module 2 :- MLops",
-                desc: [
-                  "Introduction to MLOps",
-                  "Version Control for ML",
-                  "Containerization and Docker",
-                  "Orchestration with Kubernetes",
-                  "Continuous Integration (CI) for ML",
-                ],
-              },
-            },
-            {
-              chap: {
-                title: "Module 3 :- Deep Learning",
-                desc: [
-                  "Neural Network",
-                  "Simple Computation, Constants, and Variables",
-                  "Feature selection and engineering techniques (e.g. PCA, feature importance)",
-                  "Back-propagation",
-                  "TensorBoard",
-                ],
-              },
-            },
-            {
-              chap: {
-                title: "Module 4 :- Deployment AWS+Azure",
-                desc: [
-                  "Data Preparation and Feature Engineering",
-                  "Model Training and Evaluation",
-                  "Model Deployment and Management",
-                  "Advanced Topics in Machine Learning on AWS and Azure",
-                ],
-              },
-            },
-          ],
-          id: 7,
-          open: false,
-        },
-      },
-      {
-        Module0: {
-          title: "Term 5 :- AI Generative Tools and Future Trends ",
-          content: [
-            {
-              chap: {
-                title:
-                  "Module 1 :- Emerging Trends in AI and Generative Modeling",
-                desc: [
-                  "Exploring other AI generative tools beyond ChatGPT and DALL·E",
+                  " Exploring other AI generative tools beyond ChatGPT and DALL·E",
                   "Overview of Midjourney",
                   "Discussion on future trends and advancements in AI generative tools",
                   "Open-ended project and/or presentation on a selected topic, incorporating learned concepts",
+                
                 ],
               },
             },
+
             {
               chap: {
-                title: "Module 2 :- Natural Language Processing and ChatGPT",
+                title: "Topic 2:-Natural Language Processing and ChatGPT",
                 desc: [
                   "Introduction to natural language processing techniques",
                   "Understanding ChatGPT and its architecture",
                   "Hands-on exercises using ChatGPT for text generation",
+               
                   "Fine-tuning ChatGPT for specific applications",
+                
                 ],
               },
             },
+
             {
               chap: {
-                title: "Module 3 :- DALL·E: Image Generation with AI",
+                title: "Topic 3:-DALL·E: Image Generation with AI",
                 desc: [
                   "Exploring image generation using DALL·E",
                   "Hands-on exercises for creating unique images with DALL·E",
                   "Ethical considerations and limitations of AI-generated images",
+                  "Polygon Maps",
+                  " WMS and Background Image",
+                
                 ],
               },
             },
+
             {
               chap: {
-                title:
-                  "Module 4 :- Graph Neural Networks (GNN) for Data Analysis",
+                title: "Topic 4:- Graph Neural Networks (GNN) for Data Analysis",
                 desc: [
                   "Overview of Graph Neural Networks (GNN) and their applications",
                   "Hands-on exercises using GNN for tasks such as node classification and link prediction",
                   "Case studies on real-world applications of GNN in data science",
+                  "Scatterplots and BI Reports",
+                  " Connecting Dataset with Power BI",
+                
                 ],
               },
             },
+
           ],
-          id: 8,
+          id: 2,
           open: false,
         },
       },
+
     ],
-    masterSyllabus: {
-      "Term 1 Foundation Track(30 ECTS Credits)": [
-        {
-          Module0: {
-            title: "Module 0 :- Preparatory Classes (Programming + Maths)",
-            content: [
-              {
-                chap: {
-                  title: "Topic 1 :- Cohort Orientation",
-                  desc: [
-                    "A brief introduction to tools related to data ",
-                    "Learn about particular real-time projects and Capstone projects ",
-                    "Data and its impact on career opportunities",
-                    "Utilizing data, to enhance industrial operations and management",
-                  ],
-                },
-              },
-
-              {
-                chap: {
-                  title: "Topic 2 :- Fundamentals of programming ",
-                  desc: [
-                    "Introduction to Anaconda & Jupyter notebook ",
-
-                    "Flavors of python Introduction to Git, GitHub ",
-                    "Python Fundamentals ",
-                  ],
-                },
-              },
-              {
-                chap: {
-                  title: "Topic 3 :- Fundamentals of Statistics",
-                  desc: [
-                    "Mean, Median, Mode .",
-                    "Standard Deviation, Average. Probability, permutations, and combinations ",
-                    "Introduction to Linear Algebra",
-                  ],
-                },
-              },
-            ],
-            id: 0,
-            open: true,
-          },
-        },
-        {
-          Module0: {
-            title: "Term 1 :- Python Programming",
-            content: [
-              {
-                chap: {
-                  title: "Module 1 :- Python Programming ",
-                  desc: [
-                    " Programming Basics & Environment Setup.",
-                    " Python Programming Overview",
-                    "  Python Data Types",
-                    "  Functions And Modules ,Class hands-on: 8+ Programs to be covered in the functions, Lambda, modules, Generators, and Packages class",
-
-                    " File I/O And Exceptional Handling and Regular Expression,Class hands-on: 10+ Programs to be covered in class from File IO, Reg-ex and exception handling.",
-                    "Data Analysis Using Numpy",
-                    " Data Analysis Using Pandas",
-                    "Data Visualization using Matplotlib",
-                    ". Data Visualization using Seaborn,3 Case Study on Numpy, Pandas, Matplotlib 1 Case Study on Pandas And Seaborn",
-                  ],
-                },
-              },
-            ],
-            id: 1,
-            open: false,
-          },
-        },
-      ],
-      "Term 2 Statistics & Machine Learning( 25 ECTS Credits) ": [
-        {
-          Module0: {
-            title: "Term 1 :- Python Programming",
-            content: [
-              {
-                chap: {
-                  title: "Module 1 :- Python Programming ",
-                  desc: [
-                    " Programming Basics & Environment Setup.",
-                    " Python Programming Overview",
-                    "  Python Data Types",
-                    "  Functions And Modules ,Class hands-on: 8+ Programs to be covered in the functions, Lambda, modules, Generators, and Packages class",
-
-                    " File I/O And Exceptional Handling and Regular Expression,Class hands-on: 10+ Programs to be covered in class from File IO, Reg-ex and exception handling.",
-                    "Data Analysis Using Numpy",
-                    " Data Analysis Using Pandas",
-                    "Data Visualization using Matplotlib",
-                    ". Data Visualization using Seaborn,3 Case Study on Numpy, Pandas, Matplotlib 1 Case Study on Pandas And Seaborn",
-                  ],
-                },
-              },
-            ],
-            id: 1,
-            open: false,
-          },
-        },
-      ],
-      "Term 3 Artificial Intelligence Tools( 25 ECTS Credits)": [
-        {
-          Module0: {
-            title: "Term 2 :- Statistics & Basic Machine Learning",
-            content: [
-              {
-                chap: {
-                  title: "Module 1 :- Statistics",
-                  desc: [
-                    "Fundamentals of Math and Probability",
-                    "All about Population & Sample",
-                    "Discrete Probability Distributions - Binomial, Poisson etc",
-                    "Introduction to Statistics, Statistical Thinking",
-                    " Descriptive Statistics",
-                    " Inferential Statistics",
-                    " Hypothesis Testing",
-                    "Linear Algebra",
-                    "Data Processing & Exploratory Data Analysis",
-                    "EDA,Statistics Assignments: Total 4 practice sets and Assignments from Statistics",
-                  ],
-                },
-              },
-              {
-                chap: {
-                  title: "Module 2 :- Machine Learning",
-                  desc: [
-                    "Introduction to Machine Learning",
-                    "Regression and Classification Models",
-                    "Linear Regression Model",
-                    "Data Preprocessing",
-                    "Encoding the Data",
-                    "Logistic Regression Model",
-                    "Evaluation Metrics for Classification model",
-                    "K Nearest Neighbours Model",
-                    "Decision Tree Model",
-                    "Random Forest Model",
-                    "Hyperparameter Tuning",
-                    "Naive Baye’s Model,Case Study on Kart Model Business & Random Forest",
-                  ],
-                },
-              },
-            ],
-            id: 2,
-            open: false,
-          },
-        },
-      ],
-      "Term 4 :- Artificial Intelligence Tools( 25 ECTS Credits) ": [
-        {
-          Module0: {
-            title: "Term 3 :- Data Analytics Tools",
-            content: [
-              {
-                chap: {
-                  title: "Module 1 :- SQL",
-                  desc: [
-                    "SQL and RDBMS",
-                    "Advance SQL",
-                    "NoSQL, HBase & MongoDB",
-                    "JSON Data & CRUD",
-                    "Programming with SQL",
-                  ],
-                },
-              },
-              {
-                chap: {
-                  title: "Module 2 :- PowerBI",
-                  desc: [
-                    "Getting Started With Power BI",
-                    " Programming with Power BI",
-                  ],
-                },
-              },
-              {
-                chap: {
-                  title: "Module 3 :- Big Data & Spark Analytics",
-                  desc: [
-                    " Introduction To Hadoop & Big Data",
-                    "What is Spark",
-                    " Getting to know PySpark Hands-on: Map reduce Use Case : Youtube data analysis & Spark RDD       programming",
-                  ],
-                },
-              },
-              {
-                chap: {
-                  title: "Module 4 :- Time Series",
-                  desc: [
-                    " Introduction to Time Series Forecasting",
-                    "Introduction to ARIMA Models,Case Study on Time series classification of smartphone data to predict user behavior, Performing Time Series Analysis on Stock Prices & Time series forecasting of sales data",
-                  ],
-                },
-              },
-            ],
-            id: 3,
-            open: false,
-          },
-        },
-      ],
-      "Term 5 :- Deployment (AWS+Azure)( 25 ECTS Credits) ": [
-        {
-          Module0: {
-            title: "Term 4 :- Excel",
-            content: [
-              {
-                chap: {
-                  title: "",
-                  desc: [
-                    "Getting started with Excel",
-                    "Using Excel Toolbars: Hiding, Displaying, and Moving Toolbars",
-                    "Switching Between Sheets in a Workbook",
-                    "Entering Date Values and using AutoComplete",
-                    "Inserting and Deleting Cells, Rows, and Columns",
-                    "Working with the Forms Menu",
-                    "Creating & Working with Charts",
-                    "Changing a Chart Type and Working with Pie Charts",
-                    "Data Analysis & Pivot Tables",
-                  ],
-                },
-              },
-            ],
-            id: 4,
-            open: false,
-          },
-        },
-      ],
-    },
     faq: [
       {
         id: 1,
