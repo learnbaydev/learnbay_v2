@@ -96,6 +96,7 @@ const SliderTabs = ({ dataScience, dataScienceCounselling }) => {
                 width="25"
                 height="25"
                 alt="Bulb"
+                quality={40}
               />
               Placement Support
               {/* {mobile ? bfsiButton ? <BiUpArrowAlt /> : <BiDownArrowAlt /> : ""} */}
@@ -151,6 +152,7 @@ const SliderTabs = ({ dataScience, dataScienceCounselling }) => {
                 width="25"
                 height="25"
                 alt="Bulb"
+                quality={40}
               />
               Mock Interviews
               {/* {mobile ? bfsiButton ? <BiUpArrowAlt /> : <BiDownArrowAlt /> : ""} */}
@@ -209,6 +211,7 @@ const SliderTabs = ({ dataScience, dataScienceCounselling }) => {
                 width="25"
                 height="25"
                 alt="Bulb"
+                quality={40}
               />
               Resume BuildUp
               {/* {mobile ? supplyChain ? <BiUpArrowAlt /> : <BiDownArrowAlt /> : ""} */}
@@ -265,6 +268,7 @@ const SliderTabs = ({ dataScience, dataScienceCounselling }) => {
                 width="25"
                 height="25"
                 alt="Bulb"
+                quality={40}
               />
               Unlimited Interview Calls
               {/* {mobile ? manufacture ? <BiUpArrowAlt /> : <BiDownArrowAlt /> : ""} */}
@@ -335,6 +339,7 @@ const SliderTabs = ({ dataScience, dataScienceCounselling }) => {
                   src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/coursePage/doamain-new.webp"
                   width="200"
                   height="200"
+                  quality={40}
                 />
               </div>
             </div>
@@ -386,6 +391,7 @@ const SliderTabs = ({ dataScience, dataScienceCounselling }) => {
                   src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/coursePage/doamain-new.webp"
                   width="200"
                   height="200"
+                  quality={40}
                 />
               </div>
             </div>
@@ -434,6 +440,7 @@ const SliderTabs = ({ dataScience, dataScienceCounselling }) => {
                   src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/coursePage/doamain-new.webp"
                   width="200"
                   height="200"
+                  quality={40}
                 />
               </div>
             </div>
@@ -481,6 +488,7 @@ const SliderTabs = ({ dataScience, dataScienceCounselling }) => {
                   src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/coursePage/doamain-new.webp"
                   width="200"
                   height="200"
+                  quality={40}
                 />
               </div>
             </div>

@@ -14,15 +14,13 @@
 .First {
   background: linear-gradient(180deg, #232323 16.69%, #012f4e 99.97%);
 }
-.Second,
+
 .Third {
   background: linear-gradient(180deg, #232323 16.69%, #3c3c3c 99.97%);
 }
 .Second {
   padding: 85px 50px 0px 100px;
-  background: url("https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/forthSection.webp");
-  background-size: cover;
-  gap: 0px;
+
   grid-template-columns: 65% 37%;
 }
 .GenAiBox {

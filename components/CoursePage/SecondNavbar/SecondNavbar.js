@@ -7,24 +7,18 @@ const Popup = dynamic(() => import("../../Popup/Popup"));
 import Image from "next/image";
 import Form from "../../Form/Form";
 
-function SecondNavbar({careerForm,
+function SecondNavbar({
+  careerForm,
   radio,
   dataScience,
   fullStack,
-  dataScienceCounselling}) {
-  const [active, setActive] = useState(false);
-  const [active1, setActive1] = useState(false);
-  const [active2, setActive2] = useState(true);
-  const [active3, setActive3] = useState(false);
-  const [active4, setActive4] = useState(false);
+  dataScienceCounselling,
+}) {
   const [popups, setPopups] = useState(false);
 
-
-  const [activeSection, setActiveSection] = useState(null); 
+  const [activeSection, setActiveSection] = useState(null);
   const [showApplyButton, setShowApplyButton] = useState(false); // Define showApplyButton here
   const [showLogo, setShowLogo] = useState(false); // Define showLogo here
-
-
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -32,7 +26,7 @@ function SecondNavbar({careerForm,
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             // Get the ID of the section that is currently in the viewport
-            const sectionId = entry.target.getAttribute('id');
+            const sectionId = entry.target.getAttribute("id");
             setActiveSection(sectionId);
           }
         });
@@ -41,7 +35,9 @@ function SecondNavbar({careerForm,
     );
 
     // Observe all sections with IDs matching your navigation links
-    const sections = document.querySelectorAll("#alumni, #ProjectLab, #curriculum, #Fees, #faqs");
+    const sections = document.querySelectorAll(
+      "#alumni, #ProjectLab, #curriculum, #Fees, #faqs"
+    );
     sections.forEach((section) => {
       observer.observe(section);
     });
@@ -91,75 +87,103 @@ function SecondNavbar({careerForm,
   return (
     <>
       <div className={styles.upperDiv}>
-      <Popup trigger={popups} setTrigger={setPopups} className="popupModal">
-        <div className="leftPopup">
-          <div className="whiteP" />
-        </div>
-        <div className="RightPopup">
-          <h5>Apply For Counselling</h5>
-          {/* <p>Fill the below details to get started</p> */}
-          {careerForm ? (
-            <FormCareer />
-          ) : (
-            <Form
-              popup={true}
-              setTrigger={setPopups}
-              radio={radio}
-              fullStack={fullStack}
-              dataScience={dataScience}
-              dataScienceCounselling={dataScienceCounselling}
-              upSkillingHide={true}
-            />
-          )}
-        </div>
-      </Popup>
-      <Link href="/" className={showApplyButton ? styles.buttonBlock : styles.buttonNoBlock}>
-              <Image
-                src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/learnbay-logo.png"
-                alt="Learnbay"
-                quality={100}
-                style={{ objectFit: "contain" }}
-                width={mobile ? "135" : "230"}
-                height={60}
+        <Popup trigger={popups} setTrigger={setPopups} className="popupModal">
+          <div className="leftPopup">
+            <div className="whiteP" />
+          </div>
+          <div className="RightPopup">
+            <h5>Apply For Counselling</h5>
+            {/* <p>Fill the below details to get started</p> */}
+            {careerForm ? (
+              <FormCareer />
+            ) : (
+              <Form
+                popup={true}
+                setTrigger={setPopups}
+                radio={radio}
+                fullStack={fullStack}
+                dataScience={dataScience}
+                dataScienceCounselling={dataScienceCounselling}
+                upSkillingHide={true}
               />
-            </Link>
+            )}
+          </div>
+        </Popup>
+        <Link
+          href="/"
+          className={
+            showApplyButton ? styles.buttonBlock : styles.buttonNoBlock
+          }
+        >
+          <Image
+            src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/learnbay-logo.png"
+            alt="Learnbay"
+            quality={100}
+            style={{ objectFit: "contain" }}
+            width={mobile ? "135" : "230"}
+            height={60}
+          />
+        </Link>
         <div className={styles.innerP}>
-     
           <Link href="#alumni">
-            <p className={activeSection === 'alumni' ? styles.active : styles.inactive}>
+            <p
+              className={
+                activeSection === "alumni" ? styles.active : styles.inactive
+              }
+            >
               Alumni
             </p>
           </Link>
           <Link href="#ProjectLab">
-            <p className={activeSection === 'ProjectLab' ? styles.active : styles.inactive}>
+            <p
+              className={
+                activeSection === "ProjectLab" ? styles.active : styles.inactive
+              }
+            >
               Project Lab
             </p>
           </Link>
           <Link href="#curriculum">
-            <p className={activeSection === 'curriculum' ? styles.active : styles.inactive}>
+            <p
+              className={
+                activeSection === "curriculum" ? styles.active : styles.inactive
+              }
+            >
               Curriculum
             </p>
           </Link>
           <Link href="#Fees">
-            <p className={activeSection === 'Fees' ? styles.active : styles.inactive}>
+            <p
+              className={
+                activeSection === "Fees" ? styles.active : styles.inactive
+              }
+            >
               Fees
             </p>
           </Link>
           <Link href="#faqs">
-            <p className={activeSection === 'faqs' ? styles.active : styles.inactive}>
+            <p
+              className={
+                activeSection === "faqs" ? styles.active : styles.inactive
+              }
+            >
               FAQs
             </p>
           </Link>
         </div>
-        
 
-        <div className={showApplyButton ? styles.buttonBlock : styles.buttonNoBlock} onClick={popupShow}>
-            <Button text="Apply Now" outline={true} />
+        <div
+          className={
+            showApplyButton ? styles.buttonBlock : styles.buttonNoBlock
+          }
+          onClick={popupShow}
+        >
+          <Button text="Apply Now" outline={true} />
         </div>
       </div>
-      <hr className={styles.hr}/>
+      <hr className={styles.hr} />
     </>
   );
 }
 
-export default SecondNavbar;
+export default React.memo(SecondNavbar);

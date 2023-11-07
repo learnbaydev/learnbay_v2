@@ -6,11 +6,16 @@ import Button from "../../Global/Button/Button";
 import VideoPopup from "../../VideoPopup/VideoPopup";
 import Form from "../../Form/Form";
 import Popup from "../../Popup/Popup";
+import {BsBank} from 'react-icons/bs'
+import {FaClinicMedical} from 'react-icons/fa'
+import {AiOutlineFundProjectionScreen} from 'react-icons/ai'
+import {PiTruck} from 'react-icons/pi'
 
 const ProjectSection=({
 idss,
   dataScience,
   radio,
+
 
   dataScienceCounselling,
 })=> {
@@ -118,41 +123,46 @@ idss,
               <div className={styles.iconBoxDesktop}>
                 <div className={styles.iconBox}>
                   <div className={styles.BoxIconinner}>
-                    <Image
+                    {/* <Image
                       src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/bank.gif"
                       loading="lazy"
                       width={40}
                       height={40}
-                    />
+                    /> */}
+                 <BsBank className={styles.icon} />
+                  
                     <p>BFSI</p>
                   </div>
                   <div className={styles.BoxIconinner}>
-                    <Image
+                    {/* <Image
                       src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/heartbeat.gif"
                       loading="lazy"
                       width={40}
                       height={40}
-                    />
+                    /> */}
+                   < FaClinicMedical className={styles.icon1}/>
                     <p>HEALTHCARE</p>
                   </div>
                   <div className={styles.BoxIconinner}>
-                    <Image
+                    {/* <Image
                       src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/live.gif"
                       loading="lazy"
                       width={40}
                       height={40}
-                    />
+                    /> */}
+                   < AiOutlineFundProjectionScreen className={styles.icon1}/>
                     <p>MARKETING & HR</p>
                   </div>
                 </div>
                 <div className={styles.iconButton}>
                   <div className={styles.BoxIconinner}>
-                    <Image
+                    {/* <Image
                       src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/delivery-truck.gif"
                       loading="lazy"
                       width={40}
                       height={40}
-                    />
+                    /> */}
+                   < PiTruck  className={styles.icon1}/>
                     <p>SUPPLYCHAIN</p>
                   </div>
                   <a href="/domain">
@@ -167,39 +177,43 @@ idss,
               <div className={styles.iconBoxMobile}>
                 <div className={styles.iconBox}>
                   <div className={styles.BoxIconinner}>
-                    <Image
+                    {/* <Image
                       src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/bank.gif"
                       loading="lazy"
                       width={40}
                       height={40}
-                    />
+                    /> */}
+                     <BsBank className={styles.icon} />
                     <p>BFSI</p>
                   </div>
                   <div className={styles.BoxIconinner}>
-                    <Image
+                    {/* <Image
                       src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/heartbeat.gif"
                       loading="lazy"
                       width={40}
                       height={40}
-                    />
+                    /> */}
+                      < FaClinicMedical className={styles.icon1}/>
                     <p>HEALTHCARE</p>
                   </div>
                   <div className={styles.BoxIconinner}>
-                    <Image
+                    {/* <Image
                       src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/live.gif"
                       loading="lazy"
                       width={40}
                       height={40}
-                    />
+                    /> */}
+                      < AiOutlineFundProjectionScreen className={styles.icon1}/>
                     <p>MARKETING & HR</p>
                   </div>
                   <div className={styles.BoxIconinner}>
-                    <Image
+                    {/* <Image
                       src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/delivery-truck.gif"
                       loading="lazy"
                       width={40}
                       height={40}
-                    />
+                    /> */}
+                       < PiTruck  className={styles.icon1}/>
                     <p>SUPPLYCHAIN</p>
                   </div>
                 </div>

@@ -11,6 +11,9 @@ const FirstSection = dynamic(() =>
 const SecondSection = dynamic(() =>
   import("../../../components/CoursePage/SecondSection/SecondSection")
 );
+const WhatsappFloat = dynamic(() =>
+  import("../../../components/WhatappsFloat/WhatsappFloat")
+);
 const SeventhSection = dynamic(() =>
   import("../../../components/Global/SeventhSection/SeventhSection")
 );
@@ -176,7 +179,7 @@ function Blockchain({}) {
         <meta name="robots" content="index, follow" />
         <meta
           name="keywords"
-          content="Advanced Data Science and AI Program with domain specialization"
+          content="Advanced Artificial Intelligence and Machine Learning Program"
         />
         <link
           rel="icon"
@@ -195,13 +198,13 @@ function Blockchain({}) {
           ThirdTyped="Live Interactive Classes"
           dataScience={true}
           titleCourse="Advanced Artificial Intelligence and Machine Learning Program"
-          cityParaCont="Get globally recognised with dual certification"
-          brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Advance+Data+Science+and+AI+Certification+Program+Learnbay.pdf"
+          cityParaCont="Crack data scientist and ML engineer role in top tech MNCs"
+          brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Advance+Artifical+Intelligence+%26+ML+Certification+Program.pdf"
           FirstRightImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/art-header1.webp"
           firstToparaImg=""
-          firstHeading="Advanced Artificial Intelligence and Machine Learning Program"
+          firstHeading="Advance Artificial Intelligence and ML Program"
           firstTopPara="Curriculum Inclusive of Gen-AI"
-          idss="bfl64ANfSV0"
+          idss="Jn2puEQC8yk"
         />
         <SecondSection
           SecondSectionData={AIMLDataScienceCourseData[0].secondSection}
@@ -219,13 +222,13 @@ function Blockchain({}) {
           Testimonial={AIMLDataScienceCourseData[0].testimonial}
         />
 
-        <WhoIsProgram
-          first="Bachelor's degree with good academic performance"
-          second="Minimum 1 year of IT work experience"
-          third="Early to mid-career professionals interested in AI & ML"
-          forth="Preparing for future leadership opportunities in AI & ML"
+<WhoIsProgram
+          first="B.tech, M.tech, BCA, B.com, M.com, MBA, MCA, M.sc"
+          second="Minimum 6 year of  work experience (tech/non-tech)"
+          third="Mid-career professionals interested in data science & AI"
+          forth="Achieving higher career growth in data science and AI"
         />
-        <WhyLearnbay idss="bfl64ANfSV0" />
+        <WhyLearnbay idss="fzXzUSvMPv0" />
         <GetHire />
         {/* <Switch /> */}
         {/* <FourthSection
@@ -249,13 +252,14 @@ function Blockchain({}) {
           }
           dataScienceCounselling={true}
           dataScience={true}
-          titleCourse="Advanced Data Science and AI Program with domain specialization"
-          brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Advance+Data+Science+and+AI+Certification+Program+Learnbay.pdf"
+          titleCourse="Advanced Artificial Intelligence and Machine Learning Program"
+          brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Advance+Artifical+Intelligence+%26+ML+Certification+Program.pdf"
           syllabus={AIMLDataScienceCourseData[0].syllabus}
           syllabusDesc={AIMLDataScienceCourseData[0].syllabusDesc}
           popupHead={AIMLDataScienceCourseData[0].popupHead}
           progress={progress}
           setProgress={setProgress}
+          buttonHide={true}
         />
 
         <ToolsCovered
@@ -290,8 +294,8 @@ function Blockchain({}) {
 
         <NewProjectSection
           dataScience={true}
-          titleCourse="Advanced Data Science and AI Program with domain specialization"
-          brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Masters+in+CS+Data+Science+%26+AI.pdf"
+          titleCourse="Advanced Artificial Intelligence and Machine Learning Program"
+          brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Advance+Artifical+Intelligence+%26+ML+Certification+Program.pdf"
           projectSection={AIMLDataScienceCourseData[0].projectSection}
         />
 
@@ -299,6 +303,7 @@ function Blockchain({}) {
         <SeventhSection />
         <Footer />
         <BottomBar />
+        <WhatsappFloat />
         {popupData.length == 0 ? "" : <OfferPopup popupData={popupData} />}
       </main>
     </>

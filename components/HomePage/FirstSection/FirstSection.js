@@ -1,7 +1,7 @@
 import dynamic from "next/dynamic";
 import Image from "next/image";
-import { useRef, useState } from "react";
-import { FaBell, FaCheck, FaChevronDown } from "react-icons/fa";
+import React, { useRef, useState } from "react";
+import { FaBell, FaChevronDown } from "react-icons/fa";
 import { FaEarthAmericas } from "react-icons/fa6";
 import { PiCertificate } from "react-icons/pi";
 import { Pagination } from "swiper";
@@ -9,44 +9,22 @@ import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import SwiperCore, { Autoplay } from 'swiper/core';
+import SwiperCore, { Autoplay } from "swiper/core";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Form from "../../Form/Form";
 import Popup from "../../Popup/Popup";
 import styles from "./FirstSection.module.css";
 const Button = dynamic(() => import("../../Global/Button/Button"));
 SwiperCore.use([Autoplay]);
-const FirstSection = ({
-  dataScience,
-  radio,
-  dataScienceCounselling,
-}) => {
+const FirstSection = ({ dataScience, radio, dataScienceCounselling }) => {
+  console.log("first section");
   const [popups, setPopups] = useState(false);
   const [mobile, setMobile] = useState(false);
   const el = useRef(null);
   const popupShow = () => {
     setPopups(true);
   };
-  // useEffect(() => {
-  //   const typed = new Typed(el.current, {
-  //     strings: [
-  //       "Are you looking to upskill ?",
-  //       "Gain a competitive edge",
-  //       "Land your dream job",
-  //     ],
-  //     startDelay: 100,
-  //     typeSpeed: 80,
-  //     backSpeed: 50,
-  //     backDelay: 200,
-  //     smartBackspace: true,
-  //     loop: true,
-  //     showCursor: false,
-  //   });
-  //   // Destropying
-  //   return () => {
-  //     typed.destroy();
-  //   };
-  // }, []);
+
   return (
     <>
       <Popup
@@ -76,10 +54,10 @@ const FirstSection = ({
       </Popup>
       <Swiper
         slidesPerView={1}
-        autoplay={{
-          delay: 5000, // Set the delay in milliseconds (3 seconds in this example)
-          disableOnInteraction: false, // Autoplay will not be disabled after user interactions
-      }}
+        // autoplay={{
+        //   delay: 5000, // Set the delay in milliseconds (3 seconds in this example)
+        //   disableOnInteraction: false, // Autoplay will not be disabled after user interactions
+        // }}
         spaceBetween={mobile ? 0 : 0}
         pagination={{
           clickable: true,
@@ -100,12 +78,16 @@ const FirstSection = ({
                 certification and Degree programs
               </p>
               <div className={styles.imgWrapperMobile}>
-                <Image
-                  src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/newHeaderOne.webp"
-                  width="580"
-                  height="450"
-                  alt="data science course"
-                />
+                <div className="imgWrapper">
+                  <Image
+                    src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/newHeaderOne.webp"
+                    width="580"
+                    height="450"
+                    priority
+                    quality={40}
+                    alt="data science course"
+                  />
+                </div>
               </div>
               {/* <div className={styles.ibmLogoMobile}>
                 <p className={styles.ptop}>In Collaboration With</p>
@@ -172,6 +154,8 @@ const FirstSection = ({
                   src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/newHeaderOne.webp"
                   width="580"
                   height="450"
+                  priority
+                  quality={40}
                   alt="data science course"
                 />
               </div>
@@ -180,6 +164,13 @@ const FirstSection = ({
         </SwiperSlide>
         <SwiperSlide className={styles.slide}>
           <div className={styles.Second}>
+            <div className="bgWrap">
+              <Image
+                src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/forthSection.webp"
+                fill={true}
+                alt="Header background"
+              />
+            </div>
             <div className={styles.SecondSectionLeft}>
               <h1 className={styles.h1}>
                 Unlock Your Future: Master's Degree with Global Opportunities
@@ -194,14 +185,21 @@ const FirstSection = ({
                 </div>
               </div>
               <div className={styles.imgWrapperMobile}>
-                <Image
-                  src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/secondSection.webp"
-                  width="580"
-                  height="450"
-                  alt="data science course"
-                />
+                <div className="imgWrapper">
+                  <Image
+                    src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/secondSection.webp"
+                    width="580"
+                    height="450"
+                    priority
+                    quality={40}
+                    alt="data science course"
+                  />
+                </div>
               </div>
-                <p className={styles.iconText}><FaEarthAmericas className={styles.iconYellow} />Globally recognised in EU, US and 60+ countries</p>
+              <p className={styles.iconText}>
+                <FaEarthAmericas className={styles.iconYellow} />
+                Globally recognised in EU, US and 60+ countries
+              </p>
               <div className={styles.btnWrapper}>
                 <a href="#course">
                   <Button
@@ -218,6 +216,8 @@ const FirstSection = ({
                   src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/secondSection.webp"
                   width="580"
                   height="450"
+                  priority
+                  quality={40}
                   alt="data science course"
                 />
               </div>
@@ -227,25 +227,32 @@ const FirstSection = ({
         <SwiperSlide className={styles.slide}>
           <div className={styles.forth}>
             <div className={styles.forthFirstLeft}>
-              <p className={styles.SecondBlink}>
-              Real project Real Impact
-              </p>
-              <h1 className={styles.h1}>Work on Real time Project and Gain Practical experience</h1>
+              <p className={styles.SecondBlink}>Real project Real Impact</p>
+              <h1 className={styles.h1}>
+                Work on Real time Project and Gain Practical experience
+              </h1>
               <p className={styles.blinkMobile}>
-              Work on industry project like a data scientist and SDE with our dedicated <span>#ProjectLab</span>
+                Work on industry project like a data scientist and SDE with our
+                dedicated <span>#ProjectLab</span>
               </p>
               <div className={styles.imgWrapperMobile}>
                 <Image
                   src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/ThirdSection1.webp"
                   width="806"
                   height="300"
+                  priority
+                  quality={40}
                   alt="data science course"
                 />
               </div>
               <p className={styles.blink}>
-              Work on industry project like a data scientist and SDE with our dedicated <span>#ProjectLab</span>
+                Work on industry project like a data scientist and SDE with our
+                dedicated <span>#ProjectLab</span>
               </p>
-              <p className={styles.iconText}><PiCertificate className={styles.iconYellow} />Domain Electives and Project certification from industry</p>
+              <p className={styles.iconText}>
+                <PiCertificate className={styles.iconYellow} />
+                Domain Electives and Project certification from industry
+              </p>
               <div className={styles.btnWrapper}>
                 <a href="#ProjectLab">
                   <Button
@@ -262,6 +269,8 @@ const FirstSection = ({
                   src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/ThirdSection1.webp"
                   width="806"
                   height="663"
+                  priority
+                  quality={40}
                   alt="data science course"
                 />
               </div>
@@ -272,4 +281,4 @@ const FirstSection = ({
     </>
   );
 };
-export default FirstSection;
+export default React.memo(FirstSection);

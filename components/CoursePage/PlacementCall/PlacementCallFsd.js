@@ -1,4 +1,3 @@
-
 import React from "react";
 import styles from "./PlacementCall.module.css";
 import { PiCertificate } from "react-icons/pi";
@@ -9,18 +8,16 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/effect-fade";
 import Image from "next/image";
-
+// import required modules
 import { EffectFade, Autoplay } from "swiper";
 const courseData = [
-  { title: "Sr. Data Scientist" },
-  { title: "ML Engineer" },
-  { title: "AI Engineer" },
-  { title: "BI Engineer" },
-  { title: "BI Developer" },
-  { title: "Sr. Data Analyst" },
-  { title: "Business Analyst" },
-  { title: "DataBase Admin" },
-  { title: "Data Science Manger" },
+  { title: "Software Developer" },
+  { title: "Systems Architech" },
+  { title: "Web Developer" },
+  { title: "Front-end Developer" },
+  { title: "Product Manager" },
+  { title: "Software Tester" },
+  { title: "Quality Assurance" },
 ];
 const PlacementCall = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -62,8 +59,6 @@ const PlacementCall = () => {
           src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/coursePage/Dedicated-Placement-Cell.gif"
           width={600}
           height={200}
-          loading="lazy"
-          quality={40}
         />
       </div>
       <div className={styles.stttt}>
@@ -87,18 +82,16 @@ const PlacementCall = () => {
               <div className={styles.slideWrap}>
                 <div className={styles.number}>
                   {/* <Image
-                        src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/1.png"
-                        width={30}
-                        height={49}
+                        src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/2.png"
+                        width={37}
+                        height={50}
                         layout="intrinsic"
                       /> */}
-        <div className={styles.imged}>
+                  <div className={styles.imged}>
                     <Image
-                      src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/firstimg.webp"
+                      src="      https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/secondimg.png"
                       height={60}
                       width={450}
-                      loading="lazy"
-                      quality={40}
                     />
                   </div>
                 </div>
@@ -115,32 +108,9 @@ const PlacementCall = () => {
                       /> */}
                   <div className={styles.imged}>
                     <Image
-                      src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/secondimg.webp"
-                      height={60}
-                      width={450}
-                      loading="lazy"
-                      quality={40}
-                    />
-                  </div>
-                </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide className={styles.slide}>
-              <div className={styles.slideWrap}>
-                <div className={styles.number}>
-                  {/* <Image
-                        src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/2.png"
-                        width={37}
-                        height={50}
-                        layout="intrinsic"
-                      /> */}
-                  <div className={styles.imged}>
-                    <Image
-                      src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/thirdimg.webp"
+                      src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/thirdimg.png"
                       height={60}
                       width={400}
-                      loading="lazy"
-                      quality={40}
                     />
                   </div>
                 </div>

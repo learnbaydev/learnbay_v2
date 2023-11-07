@@ -7,7 +7,9 @@ import TrainerSection from "../../../components/HomePage/TrainerSection/TrainerS
 const MentorsSection = dynamic(() =>
   import("../../../components/MastersCourse/MentorsSection/MentorsSection")
 );
-
+const WhatsappFloat = dynamic(() =>
+  import("../../../components/WhatappsFloat/WhatsappFloat")
+);
 const Footer = dynamic(() => import("../../../components/Footer/Footer"));
 
 const Navbar = dynamic(() => import("../../../components/Navbar/Navbar"));
@@ -184,7 +186,7 @@ const Blockchain = () => {
           redirectDS={true}
           Testimonial={DataScienceMastersinCS[0].testimonial}
         />
-        <WhyLearnbay idss="bfl64ANfSV0" />
+        <WhyLearnbay idss="fzXzUSvMPv0" />
         <GetHire />
         <ContactCounsellor dataScienceCounselling={true} />
         <SyllabusNew
@@ -196,7 +198,7 @@ const Blockchain = () => {
           }
           dataScienceCounselling={true}
           dataScience={true}
-          titleCourse="Advanced Data Science and AI Program with domain specialization"
+          titleCourse="Masters in Computer Science: Data Science and AI"
           brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Masters+in+CS+Data+Science+%26+AI.pdf"
           syllabus={DataScienceMastersinCS[0].syllabus}
           syllabusDesc={DataScienceMastersinCS[0].syllabusDesc}
@@ -228,7 +230,7 @@ const Blockchain = () => {
         <PlacementCall />
         <NewProjectSection
           dataScience={true}
-          titleCourse="Advanced Data Science and AI Program with domain specialization"
+          titleCourse="Masters in Computer Science: Data Science and AI"
           brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Masters+in+CS+Data+Science+%26+AI.pdf"
           projectSection={DataScienceMastersinCS[0].projectSection}
         />
@@ -236,6 +238,7 @@ const Blockchain = () => {
         <SeventhSection />
         <Footer />
         <BottomBar />
+        <WhatsappFloat />
         {popupData.length == 0 ? "" : <OfferPopup popupData={popupData} />}
       </main>
     </>

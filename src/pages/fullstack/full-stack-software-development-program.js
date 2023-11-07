@@ -8,6 +8,12 @@ import Navbar from "../../../components/Navbar/Navbar";
 const FirstSection = dynamic(() =>
   import("../../../components/CoursePage/FirstSection/FirstSection")
 );
+const SecondSection1 = dynamic(() =>
+  import("../../../components/SecondSection/SecondSection")
+);
+const WhatsappFloat = dynamic(() =>
+  import("../../../components/WhatappsFloat/WhatsappFloat")
+);
 const SecondSection = dynamic(() =>
   import("../../../components/CoursePage/SecondSection/SecondSection")
 );
@@ -101,7 +107,7 @@ const GetHire = dynamic(() =>
   import("../../../components/HomePage/GetHire/GetHire")
 );
 const PlacementCall = dynamic(() =>
-  import("../../../components/CoursePage/PlacementCall/PlacementCall")
+  import("../../../components/CoursePage/PlacementCall/PlacementCallFsd")
 );
 
 function Blockchain({}) {
@@ -174,7 +180,7 @@ function Blockchain({}) {
         <meta name="robots" content="index, follow" />
         <meta
           name="keywords"
-          content="Advanced Data Science and AI Program with domain specialization"
+          content="Software Development Certification Program"
         />
         <link
           rel="icon"
@@ -193,29 +199,25 @@ function Blockchain({}) {
           ThirdTyped="Live Interactive Classes"
           dataScience={true}
           titleCourse="Software Development Certification Program"
-          cityParaCont="Upskill and switch from service-based to product based companies"
-          brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Advance+Data+Science+and+AI+Certification+Program+Learnbay.pdf"
+          cityParaCont="Upskill and switch from service-based to product-based companies"
+          brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Software+Developer+Certification.pdf"
           FirstRightImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/fullhead.webp"
           firstToparaImg=""
           firstHeading="Software Development Certification Program"
           firstTopPara="Curriculum Inclusive of Gen-AI"
           idss="bfl64ANfSV0"
+          softwareBtnHide={true}
         />
         <SecondSection
           SecondSectionData={FSSPDataScienceCourseData[0].secondSection}
         />
-        <SecondNavbar />
-        <WhoProgram
+        {/* <WhoProgram
           dataScience={true}
           leftImage="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/advance-who.webp"
           ThirdSectionData={FSSPDataScienceCourseData[0].thirdSection}
-        />
+        /> */}
         <TrainerSection idss="eautK0odE7Q" />
-        <Testimonial
-          redirectDS={true}
-          heading=""
-          Testimonial={FSSPDataScienceCourseData[0].testimonial}
-        />
+        <SecondSection1 />
 
         <WhoIsProgram
           first="Bachelor's degree with consistent good academics"
@@ -223,7 +225,6 @@ function Blockchain({}) {
           third="Students pursuing B.Tech and B.Sc. in computer science"
           forth="For individuals seeking software development skills"
         />
-        <WhyLearnbay idss="bfl64ANfSV0" />
         <GetHire />
         {/* <Switch /> */}
         {/* <FourthSection
@@ -247,19 +248,16 @@ function Blockchain({}) {
           }
           dataScienceCounselling={true}
           dataScience={true}
-          titleCourse="Advanced Data Science and AI Program with domain specialization"
-          brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Advance+Data+Science+and+AI+Certification+Program+Learnbay.pdf"
+          titleCourse="Software Development Certification Program"
+          brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Software+Developer+Certification.pdf"
           syllabus={FSSPDataScienceCourseData[0].syllabus}
           syllabusDesc={FSSPDataScienceCourseData[0].syllabusDesc}
           popupHead={FSSPDataScienceCourseData[0].popupHead}
           progress={progress}
           setProgress={setProgress}
+          buttonHide={true}
         />
 
-        <ToolsCovered
-          deskImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Tools-Logo.png"
-          mobImage="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Mobile-Tools-Covered.png"
-        />
         {/* <Certificate data={FSSPDataScienceCourseData[0].Certificate} /> */}
         <FeeSection
           Fee="₹ 1,15,000"
@@ -286,17 +284,18 @@ function Blockchain({}) {
           <BatchDetails batchDetails={batchDateData.batchDetails} />
         )} */}
 
-        <NewProjectSection
+        {/* <NewProjectSection
           dataScience={true}
-          titleCourse="Advanced Data Science and AI Program with domain specialization"
-          brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Masters+in+CS+Data+Science+%26+AI.pdf"
+          titleCourse="Software Development Certification Program"
+          brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Software+Developer+Certification.pdf"
           projectSection={FSSPDataScienceCourseData[0].projectSection}
-        />
+        /> */}
 
         <FAQNew FAQNewData={FSSPDataScienceCourseData[0].faq} />
         <SeventhSection />
         <Footer />
         <BottomBar />
+        <WhatsappFloat />
         {popupData.length == 0 ? "" : <OfferPopup popupData={popupData} />}
       </main>
     </>
