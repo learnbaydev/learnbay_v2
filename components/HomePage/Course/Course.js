@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { TbListDetails } from "react-icons/tb";
 import { Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -23,6 +23,7 @@ const Course = ({
   organicADS,
   dataScienceGeneric,
 }) => {
+  console.log("course component");
   const [mobile, setMobile] = useState(false);
   const [value, setValue] = useState(3.68);
   const [popups, setPopups] = useState(false);
@@ -220,6 +221,7 @@ const Course = ({
                                             src={img}
                                             fill={true}
                                             quality={100}
+                                            loading="lazy"
                                             unoptimized={true}
                                             style={{ objectFit: "cover" }}
                                             alt="data science course"
@@ -236,6 +238,7 @@ const Course = ({
                                             src={img}
                                             fill={true}
                                             quality={100}
+                                            loading="lazy"
                                             unoptimized={true}
                                             style={{ objectFit: "cover" }}
                                             alt="data science course"
@@ -274,6 +277,7 @@ const Course = ({
                                                 fill={true}
                                                 quality={100}
                                                 unoptimized={true}
+                                                loading="lazy"
                                                 style={{ objectFit: "cover" }}
                                                 alt="data science course"
                                               />
@@ -290,6 +294,7 @@ const Course = ({
                                                 fill={true}
                                                 quality={100}
                                                 unoptimized={true}
+                                                loading="lazy"
                                                 style={{ objectFit: "cover" }}
                                                 alt="data science course"
                                               />
@@ -468,4 +473,4 @@ const Course = ({
   );
 };
 
-export default Course;
+export default React.memo(Course);

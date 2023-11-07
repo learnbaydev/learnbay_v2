@@ -53,9 +53,11 @@ const ToolsCovered = () => {
               <div className={`${styles.column} imgWrapper`}>
                 <Image
                   src={image}
-                  loading="lazy"
+                 
                   width={80}
                   height={60}
+                  loading="lazy"
+                  quality={40}
                  
                 />
               </div>

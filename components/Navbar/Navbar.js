@@ -1,7 +1,7 @@
 import dynamic from "next/dynamic";
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 import { GiHamburgerMenu } from "react-icons/gi";
 import styles from "./Navbar.module.css";
@@ -22,6 +22,7 @@ const Navbar = ({
   adPage,
   dataScienceGeneric,
 }) => {
+  console.log("navbar");
   const [icon, setIcon] = useState(false);
   const [show, setShow] = useState(false);
   const [popups, setPopups] = useState(false);
@@ -110,6 +111,7 @@ const Navbar = ({
               src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/learnbay-logo.png"
               alt="Learnbay"
               quality={100}
+              priority
               style={{ objectFit: "contain" }}
               width={mobile ? "135" : "230"}
               height={60}
@@ -120,6 +122,7 @@ const Navbar = ({
                 src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/learnbay-logo.png"
                 alt="Learnbay"
                 quality={100}
+                priority
                 style={{ objectFit: "contain" }}
                 width={mobile ? "135" : "230"}
                 height={60}
@@ -183,4 +186,4 @@ const Navbar = ({
   );
 };
 
-export default Navbar;
+export default React.memo(Navbar);

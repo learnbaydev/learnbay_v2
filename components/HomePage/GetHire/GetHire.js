@@ -48,6 +48,8 @@ function GetHire() {
                   src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/job-ready.webp"
                   width={160}
                   height={190}
+                  loading="lazy"
+                   quality={40}
                 />
               </div>
             </div>
@@ -63,6 +65,8 @@ function GetHire() {
               src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/company-logos.webp"
               width={550}
               height={260}
+              loading="lazy"
+              quality={40}
             />
             </div>
             <div className={Styles.showMobile}>
@@ -70,6 +74,8 @@ function GetHire() {
               src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/Group+683-min.webp"
               width={550}
               height={260}
+              loading="lazy"
+              quality={40}
             />
             </div>
           </div>
