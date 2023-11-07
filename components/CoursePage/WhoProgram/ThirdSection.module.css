@@ -3,7 +3,9 @@
   padding: 70px 100px;
 }
 .icons{
-  mix-blend-mode: multiply;
+  font-size: 30px;
+  color: #0272bb;
+
 }
 .programWrap {
   display: grid;
