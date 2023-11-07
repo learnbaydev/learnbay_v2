@@ -24,10 +24,9 @@ function TrainerSection({ idss }) {
   return (
     <>
       <section className={Styles.container}>
-      <VideoPopup triggers={video} setTriggers={setVideo} ids={idss} />
         <h4>Hear it from our Alumni</h4>
         <div className={Styles.First}>
-        
+          <VideoPopup triggers={video} setTriggers={setVideo} ids={idss} />
           <div className={Styles.switch}>
             <div className={Styles.switchInnerBlue}>
               <div className={Styles.topRatedImg}>
