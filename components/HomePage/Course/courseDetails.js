@@ -18,12 +18,31 @@ export const courseDetails = [
             titleCourse: "Advance Data Science and AI Certification",
             para: [
               "11 months | 4 projects",
-              "Project certification form IBM",
+              "Project Certification form IBM",
               "3+ domain specialization",
             ],
             link1: "/datascience/advance-data-science-certification-courses",
             link2:
               "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Advanced+Data+Science+%26+AI++Certification+Program.pdf",
+          },
+          {
+            id: 5,
+            img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/course-5.webp",
+            title: "Software Developer",
+            title1: "Certification",
+            tagHead: "Guaranteed Interview Call",
+            tag: "Data science",
+            brochureLinks:
+              "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Software+Developer+Certification.pdf",
+            titleCourse: "Software Developer Certification",
+            para: [
+              "11 months | 4 projects",
+              "Crack interview in top MNCs",
+              "3+ Domain Specialization",
+            ],
+            link1: "/fullstack/full-stack-software-development-program",
+            link2:
+              "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Software+Developer+Certification.pdf",
           },
           {
             id: 2,
@@ -57,7 +76,7 @@ export const courseDetails = [
             para: [
               "9 months | 2 projects",
               "Project certification form IBM",
-              "2 domain electives",
+              "3 domain electives",
             ],
             link1: "/datascience/business-analytics-certification-course",
             link2:
@@ -74,32 +93,13 @@ export const courseDetails = [
               "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Data+Analytics+Certification+Program.pdf",
             titleCourse: "Data Analytics Program",
             para: [
-              "5 months | 4 projects",
-              "Get certified by IBM",
-              "Designed for professionals",
+              "11 months | 3 Projects",
+              "Dual Certification",
+              "Inclusive of Generative-AI",
             ],
             link1: "/datascience/data-analytics-certification-course",
             link2:
               "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Data+Analytics+Certification+Program.pdf",
-          },
-          {
-            id: 5,
-            img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/course-5.webp",
-            title: "Software Developer",
-            title1: "Certification",
-            tagHead: "Guaranteed Interview Call",
-            tag: "Data science",
-            brochureLinks:
-              "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Software+Developer+Certification.pdf",
-            titleCourse: "Software Developer Certification",
-            para: [
-              "11 months | 4 projects",
-              "Get job ready in 6 months",
-              "Designed for professionals",
-            ],
-            link1: "/fullstack/full-stack-software-development-program",
-            link2:
-              "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Software+Developer+Certification.pdf",
           },
         ],
       },
@@ -118,11 +118,7 @@ export const courseDetails = [
             brochureLinks:
               "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Masters+in+CS+Data+Science+%26+AI.pdf",
             titleCourse: "Master in CS: Data Science and AI",
-            para: [
-              "18 months | 3 projects",
-              "Globally recognized degree",
-              "Immigration opportunities",
-            ],
+            para: ["18 months | 3 Projects", "Globally recognized degree"],
             newDesign: true,
             link1: "datascience/data-science-and-ai-masters-in-cs",
             link2:
@@ -138,11 +134,7 @@ export const courseDetails = [
             brochureLinks:
               "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Generative+AI+Certification+Course.pdf",
             titleCourse: "Advance Certification Program in generative AI",
-            para: [
-              "26 Weeks | 2 Projects",
-              "AI project-based learning",
-              "Complimentary python prep",
-            ],
+            para: ["26 Weeks | 2 Projects", "AI project-based learning"],
             newDesign: true,
             newDesignOrange: true,
             link1: "/",
@@ -173,7 +165,7 @@ export const courseDetails = [
             titleCourse: "Advance Data Science and AI Certification",
             para: [
               "11 months | 4 projects",
-              "Project certification form IBM",
+              "Project Certification form IBM",
               "3+ domain specialization",
             ],
             link1: "/datascience/advance-data-science-certification-courses",
@@ -212,7 +204,7 @@ export const courseDetails = [
             para: [
               "9 months | 2 projects",
               "Project certification form IBM",
-              "2 domain electives",
+              "3 domain electives",
             ],
             link1: "/datascience/business-analytics-certification-course",
             link2:
@@ -229,9 +221,9 @@ export const courseDetails = [
               "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Data+Analytics+Certification+Program.pdf",
             titleCourse: "Data Analytics Program",
             para: [
-              "5 months | 4 projects",
-              "Get certified by IBM",
-              "Designed for professionals",
+              "11 months | 3 Projects",
+              "Dual Certification",
+              "Inclusive of Generative-AI",
             ],
             link1: "/datascience/data-analytics-certification-course",
             link2:
@@ -249,8 +241,8 @@ export const courseDetails = [
             titleCourse: "Software Developer Certification",
             para: [
               "11 months | 4 projects",
-              "Get job ready in 6 months",
-              "Designed for professionals",
+              "Crack interview in top MNCs",
+              "3+ Domain Specialization",
             ],
             link1: "/fullstack/full-stack-software-development-program",
             link2:
@@ -280,11 +272,7 @@ export const courseDetails = [
             brochureLinks:
               "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Masters+in+CS+Data+Science+%26+AI.pdf",
             titleCourse: "Master in CS: Data Science and AI",
-            para: [
-              "18 months | 3 projects",
-              "Globally recognized degree",
-              "Immigration opportunities",
-            ],
+            para: ["18 months | 3 Projects", "Globally recognized degree"],
             newDesign: true,
             link1: "datascience/data-science-and-ai-masters-in-cs",
             link2:
@@ -300,11 +288,7 @@ export const courseDetails = [
             brochureLinks:
               "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Generative+AI+Certification+Course.pdf",
             titleCourse: "Advance Certification Program in generative AI",
-            para: [
-              "26 Weeks | 2 Projects",
-              "AI project-based learning",
-              "Complimentary python prep",
-            ],
+            para: ["26 Weeks | 2 Projects", "AI project-based learning"],
             newDesign: true,
             newDesignOrange: true,
             link1: "/",

@@ -1,7 +1,7 @@
-import React, { useState, useEffect, useRef, lazy, Suspense } from "react";
+import React, { useState, useRef, lazy, Suspense } from "react";
 const Form = lazy(() => import("../../Form/Form"));
 import styles from "./FirstSection.module.css";
-import { FaDownload, FaPlay, FaPlayCircle } from "react-icons/fa";
+import { FaPlay } from "react-icons/fa";
 // import Form from "../../Form/Form";
 import Image from "next/image";
 // import Typed from "typed.js";
@@ -99,30 +99,30 @@ function FirstSection({
               width="508"
               height="327"
               alt="data science course"
-              loading="lazy"
+              priority
             />
           </div>
           <div className={styles.Desktop}>
-          <p className={styles.ptop}>In Collaboration With</p>
-          <div className={styles.ImageBlock}>
-            {ibmOnly ? (
-              <Image
-                src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/ibm-single-home.png"
-                width="127"
-                height="51"
-                loading="lazy"
-                alt="data science course"
-              />
-            ) : (
-              <Image
-                src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/ibm%26microsoft.webp"
-                width="266"
-                height="48"
-                loading="lazy"
-                alt="data science course"
-              />
-            )}
-          </div>
+            <p className={styles.ptop}>In Collaboration With</p>
+            <div className={styles.ImageBlock}>
+              {ibmOnly ? (
+                <Image
+                  src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/ibm-single-home.png"
+                  width="127"
+                  height="51"
+                  priority
+                  alt="data science course"
+                />
+              ) : (
+                <Image
+                  src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/ibm%26microsoft.webp"
+                  width="266"
+                  height="48"
+                  priority
+                  alt="data science course"
+                />
+              )}
+            </div>
           </div>
           <div className={styles.animationTextWrap}>
             <span className={styles.animationText}>
@@ -138,7 +138,11 @@ function FirstSection({
               ""
             ) : (
               <div onClick={videoSHow}>
-                <Button whiteBgButton={true} text="INTRO VIDEO" passIcon={<FaPlay className="bIconS" fontSize="14px" /> } />
+                <Button
+                  whiteBgButton={true}
+                  text="INTRO VIDEO"
+                  passIcon={<FaPlay className="bIconS" fontSize="14px" />}
+                />
               </div>
             )}
           </div>
@@ -151,7 +155,7 @@ function FirstSection({
               width="806"
               height="560"
               alt="data science course"
-              loading="lazy"
+              priority
             />
           </div>
         </div>
@@ -163,7 +167,7 @@ function FirstSection({
                 src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/ibm-single-home.png"
                 width="127"
                 height="51"
-                loading="lazy"
+                priority
                 alt="data science course"
               />
             ) : (
@@ -171,7 +175,7 @@ function FirstSection({
                 src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/ibm%26microsoft.webp"
                 width="283"
                 height="51"
-                loading="lazy"
+                priority
                 alt="data science course"
               />
             )}
@@ -186,11 +190,15 @@ function FirstSection({
           ""
         ) : (
           <div onClick={videoSHow}>
-            <Button whiteBgButton={true} text="INTRO VIDEO"  passIcon={<FaPlay className="bIconS" fontSize="14px" /> } />
+            <Button
+              whiteBgButton={true}
+              text="INTRO VIDEO"
+              passIcon={<FaPlay className="bIconS" fontSize="14px" />}
+            />
           </div>
         )}
       </div>
     </>
   );
 }
-export default FirstSection;
+export default React.memo(FirstSection);

@@ -148,7 +148,8 @@ function SyllabusNew({
                   const splitString = data.split("(");
                   return (
                     <SwiperSlide
-                      className={active[i].value ? styles.ASlide : styles.slide} key={i}
+                      className={active[i].value ? styles.ASlide : styles.slide}
+                      key={i}
                     >
                       <span
                         key={i}
@@ -278,13 +279,13 @@ function SyllabusNew({
           </div>
         </section>
         <div className={styles.buttonDiv}>
-          <div onClick={popupShow}>
+          <a href="/master-application">
             <Button
               bannerButton={true}
               text="START YOUR APPLICATION"
               // passIcon={<FaDownload style={{ marginLeft: "10px" }} />}
             />
-          </div>
+          </a>
           <div onClick={popupShow}>
             <Button
               nobannerButton={true}

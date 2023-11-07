@@ -44,6 +44,7 @@ function FirstSection({
           <Suspense>
             <Form
               dataScience={dataScience}
+              dataScienceCounselling={dataScienceCounselling}
               downloadBrochure
               upSkillingHide={true}
               titleCourse={titleCourse}
@@ -68,6 +69,25 @@ function FirstSection({
               alt="woolf-university"
               width="180"
               height="20"
+
+            />
+          </div>
+          <div className={styles.boxDivGreen}>
+            <p className={styles.special}>SPECIALIZATION IN</p>
+            <div className={styles.iconPara}>
+              <p className={styles.boxGreen}>Data Science & Analytics</p>
+              <p className={styles.boxGreen}>Artificial Intelligence & ML</p>
+            </div>
+          </div>
+          <div className={styles.FormDiv}>
+            <p className={styles.NormalPForm}>
+              Interested in{" "}
+              <span className={styles.span}>Master’s Degree?</span>
+            </p>
+            <FormInline
+              dataScience={dataScience}
+              dataScienceCounselling={dataScienceCounselling}
+              upSkillingHide={true}
             />
           </div>
           <div className={styles.boxDivGreen}>
@@ -127,6 +147,12 @@ function FirstSection({
                   <div>
                     <Button bannerButton={true} text="EXPLORE PROGRAM" />
                   </div>
+
+                </a>
+                <a href="/master-application">
+                  <Button whiteBgButton={true} text="START YOUR APPLICATION" />
+                </a>
+
                 </a>
                 <div
                   onClick={() => {

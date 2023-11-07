@@ -54,10 +54,10 @@ const FirstSection = ({ dataScience, radio, dataScienceCounselling }) => {
       </Popup>
       <Swiper
         slidesPerView={1}
-        autoplay={{
-          delay: 5000, // Set the delay in milliseconds (3 seconds in this example)
-          disableOnInteraction: false, // Autoplay will not be disabled after user interactions
-        }}
+        // autoplay={{
+        //   delay: 5000, // Set the delay in milliseconds (3 seconds in this example)
+        //   disableOnInteraction: false, // Autoplay will not be disabled after user interactions
+        // }}
         spaceBetween={mobile ? 0 : 0}
         pagination={{
           clickable: true,
@@ -164,6 +164,13 @@ const FirstSection = ({ dataScience, radio, dataScienceCounselling }) => {
         </SwiperSlide>
         <SwiperSlide className={styles.slide}>
           <div className={styles.Second}>
+            <div className="bgWrap">
+              <Image
+                src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/forthSection.webp"
+                fill={true}
+                alt="Header background"
+              />
+            </div>
             <div className={styles.SecondSectionLeft}>
               <h1 className={styles.h1}>
                 Unlock Your Future: Master's Degree with Global Opportunities

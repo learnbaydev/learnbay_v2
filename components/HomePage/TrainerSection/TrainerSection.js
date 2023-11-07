@@ -3,7 +3,7 @@ import Styles from "./TrainerSection.module.css";
 import Button from "../../Global/Button/Button";
 import Image from "next/image";
 import VideoPopup from "../../Global/VideoPopup/VideoPopup";
-import { AiFillStar } from "react-icons/ai"
+import { AiFillStar } from "react-icons/ai";
 
 function TrainerSection({ idss }) {
   // const [vId, setVId] = useState("");
@@ -19,14 +19,11 @@ function TrainerSection({ idss }) {
   };
 
   const images = [
-
     "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/alu1.webp",
     "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/alu2.webp",
     "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/alu3.webp",
     "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/alu4.webp",
-
-  ]
-
+  ];
 
   return (
     <>
@@ -34,21 +31,18 @@ function TrainerSection({ idss }) {
         <VideoPopup triggers={video} setTriggers={setVideo} ids={idss} />
         <h4>Hear it from our Alumni</h4>
         <div className={Styles.First}>
-
           <div className={Styles.reviewMain}>
-
             {images.map((image, index) => (
-              <div>
+              <div key={index}>
                 <Image
                   src={image}
                   width={300}
                   height={100}
                   quality={40}
                   loading="lazy"
-
+                  alt="trainer data"
                 />
               </div>
-
             ))}
           </div>
 
@@ -58,8 +52,8 @@ function TrainerSection({ idss }) {
               loading="lazy"
               width="350"
               height="100"
+              alt="trainer mobile"
             />
-
           </div>
 
           <div className={Styles.proImgWrap}>
