@@ -9,13 +9,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/effect-fade";
 import Image from "next/image";
-import { BsBriefcase } from "react-icons/bs";
-import { AiOutlinePieChart } from "react-icons/ai";
-import { GiTeacher } from "react-icons/gi";
-import { TbCertificate } from "react-icons/tb";
-import { FiVideo } from "react-icons/fi";
-import { BsCodeSquare } from "react-icons/bs";
-// import required modules
+
 import { EffectFade, Autoplay } from "swiper";
 const courseData = [
   { title: "Sr. Data Scientist" },
@@ -68,6 +62,8 @@ const PlacementCall = () => {
           src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/coursePage/Dedicated-Placement-Cell.gif"
           width={600}
           height={200}
+          loading="lazy"
+          quality={40}
         />
       </div>
       <div className={styles.stttt}>
@@ -98,9 +94,11 @@ const PlacementCall = () => {
                       /> */}
         <div className={styles.imged}>
                     <Image
-                      src="           https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/firstimg.png"
+                      src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/firstimg.webp"
                       height={60}
                       width={450}
+                      loading="lazy"
+                      quality={40}
                     />
                   </div>
                 </div>
@@ -117,9 +115,11 @@ const PlacementCall = () => {
                       /> */}
                   <div className={styles.imged}>
                     <Image
-                      src="      https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/secondimg.png"
+                      src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/secondimg.webp"
                       height={60}
                       width={450}
+                      loading="lazy"
+                      quality={40}
                     />
                   </div>
                 </div>
@@ -136,9 +136,11 @@ const PlacementCall = () => {
                       /> */}
                   <div className={styles.imged}>
                     <Image
-                      src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/thirdimg.png"
+                      src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/thirdimg.webp"
                       height={60}
                       width={400}
+                      loading="lazy"
+                      quality={40}
                     />
                   </div>
                 </div>

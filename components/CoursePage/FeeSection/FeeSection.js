@@ -158,6 +158,7 @@ const FeeSection = ({
               height="221"
               alt="data science course"
               loading="lazy"
+              quality={40}
             />
           </div>
           <p style={{ marginTop: "10px" }}>
@@ -195,6 +196,7 @@ const FeeSection = ({
               alt="Zest"
               width="370"
               height="36"
+              quality={40}
             />
           </div>
         </div>
