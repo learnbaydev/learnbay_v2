@@ -6,6 +6,12 @@ import styles from "../components/CoursePage/WhoProgram/ThirdSection.module.css"
 import { FaUserGraduate } from "react-icons/fa";
 import { GiStairsGoal } from "react-icons/gi";
 
+
+import {MdOutlinePrecisionManufacturing} from 'react-icons/md'
+import {FaClinicMedical} from 'react-icons/fa'
+import {AiOutlineFundProjectionScreen} from 'react-icons/ai'
+import {BsBank} from 'react-icons/bs'
+
 export const DADataScienceCourseData = [
   {
     secondSection: [
@@ -152,7 +158,7 @@ export const DADataScienceCourseData = [
     thirdSection: [
       {
         id: 1,
-        icon: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/bank.gif",
+        icon: <BsBank/>,
         heading: "BFSI",
         para: "Designed for executive-level BFSI professionals, accountant.",
         brochureLink:
@@ -160,7 +166,7 @@ export const DADataScienceCourseData = [
       },
       {
         id: 1,
-        icon: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/heartbeat.gif",
+        icon: < FaClinicMedical/>,
         heading: "Healthcare",
         para: "For pharmacists, therapists, health administrators, etc.",
         brochureLink:
@@ -168,7 +174,7 @@ export const DADataScienceCourseData = [
       },
       {
         id: 1,
-        icon: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/live.gif",
+        icon: <AiOutlineFundProjectionScreen/>,
         heading: "HR & Marketing",
         para: "For recruiter, talent acquisition specialist and marketing pros.",
         brochureLink:
@@ -176,7 +182,7 @@ export const DADataScienceCourseData = [
       },
       {
         id: 1,
-        icon: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/manufacturing.gif",
+        icon: <MdOutlinePrecisionManufacturing/>,
         heading: "Manufacturing",
         para: "For production manager, quality control inspector and engineers.",
         brochureLink:

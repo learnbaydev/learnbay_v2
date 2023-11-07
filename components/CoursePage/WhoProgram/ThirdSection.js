@@ -64,7 +64,7 @@ const ThirdSection = ({
                 <div className={styles.leftSide} key={index}>
                   <div className={styles.boxIcon}>
                     <div className={styles.icons}>
-                      <Image src={icon} loading="lazy" width={40} height={40} />
+                      {icon}
                     </div>
                   </div>
                   <h5 className={styles.heading}>{heading}</h5>
