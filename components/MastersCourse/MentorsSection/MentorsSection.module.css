@@ -54,7 +54,7 @@ line-height: 148%; /* 29.6px */
 
   .box {
     display: grid;
-    grid-template-columns: 33% 62%;
+    grid-template-columns: 40% 57%;
     gap: 10px;
     border-radius: 1.361px;
     background: #fff;

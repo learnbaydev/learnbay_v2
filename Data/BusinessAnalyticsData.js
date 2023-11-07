@@ -164,7 +164,7 @@ export const BADataScienceCourseData = [
         heading: "Healthcare",
         para: "For pharmacists, therapists, health administrators, etc.",
         brochureLink:
-          "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Banking%2C+Finance+and+Insurance+Domain.pdf",
+          "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Healthcare%2C+Pharma+and+Clinical+Research+Domain.pdf",
       },
       {
         id: 1,
@@ -172,7 +172,7 @@ export const BADataScienceCourseData = [
         heading: "HR & Marketing",
         para: "For recruiter, talent acquisition specialist and marketing pros.",
         brochureLink:
-          "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Banking%2C+Finance+and+Insurance+Domain.pdf",
+          "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Sales%2C+Marketing+and+HR+Domain.pdf",
       },
       {
         id: 1,
@@ -180,7 +180,7 @@ export const BADataScienceCourseData = [
         heading: "Manufacturing",
         para: "For production manager, quality control inspector and engineers.",
         brochureLink:
-          "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Banking%2C+Finance+and+Insurance+Domain.pdf",
+          "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Manufacturing%2C+Mechanical+and+Telecom+Domain.pdf",
       },
     ],
     fourthSection: [

@@ -70,7 +70,7 @@
 
   .radial {
     width: 150px;
-    height: 8px;
+    height: 5px;
     margin: auto;
     display: block;
     background: radial-gradient(
@@ -89,7 +89,7 @@
     padding: 0px 15px;
   }
   .BoldP {
-    font-weight: 600;
+    font-weight: 700;
     font-size: 30px;
     padding-top: 10px;
   }
