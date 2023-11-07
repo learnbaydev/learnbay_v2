@@ -37,12 +37,12 @@ const FeeSection = dynamic(() =>
 const FourthSection = dynamic(() =>
   import("../../../components/CoursePage/FourthSection/FourthSection")
 );
-const FifthSection = dynamic(() =>
-  import("../../../components/CoursePage/FifthSection/FifthSection")
-);
-const SixthSectionCTA = dynamic(() =>
-  import("../../../components/CoursePage/SixthSectionCTA/Counselling")
-);
+// const FifthSection = dynamic(() =>
+//   import("../../../components/CoursePage/FifthSection/FifthSection")
+// );
+// const SixthSectionCTA = dynamic(() =>
+//   import("../../../components/CoursePage/SixthSectionCTA/Counselling")
+// );
 const Project = dynamic(() =>
   import("../../../components/CoursePage/Project/Project")
 );
@@ -121,8 +121,8 @@ function Blockchain() {
           titleCourse="Full Stack Placement Report"
           brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Placement+Report+(1).pdf"
         />
-        <FifthSection />
-        <SixthSectionCTA dataScienceCounselling={true} />
+        {/* <FifthSection /> */}
+        {/* <SixthSectionCTA dataScienceCounselling={true} /> */}
         <SyllabusNew
           dataScienceCounselling={true}
           dataScience={true}
