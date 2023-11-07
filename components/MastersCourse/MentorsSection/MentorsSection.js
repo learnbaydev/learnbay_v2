@@ -67,21 +67,26 @@ function MentorsSection() {
                 <div className={styles.box}>
                   <div>
                     <Image
-                      src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/mentor-desktop.png"
+                      src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/mentor-desktop.webp"
                       width="100"
                       height="100"
-                      priority={true}
+                      //  
                       alt="data science course"
+                      //  quality={80}
+                      // loading="lazy"
+
                     />
                   </div>
                   <div>
                     <p className={styles.Name}>Mohit S.</p>
                     <Image
-                      src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/kryndal.png"
+                      src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/kryndal.webp"
                       width="100"
                       height="25"
-                      priority={true}
+                       
                       alt="data science course"
+                       quality={80}
+                      loading="lazy"
                     />
                   </div>
                   {/* <p className={styles.cont}>Elevate Your Profile: Boost your career prospects </p> */}
@@ -91,21 +96,25 @@ function MentorsSection() {
                 <div className={styles.box}>
                   <div>
                     <Image
-                      src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/puulkit.png"
+                      src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/puulkit.webp"
                       width="100"
                       height="100"
-                      priority={true}
+                       
                       alt="data science course"
+                       quality={80}
+                      loading="lazy"
                     />
                   </div>
                   <div>
                     <p className={styles.Name}>Pulkit Jain</p>
                     <Image
-                      src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/paypal+(1).png"
+                      src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/paypal.webp"
                       width="100"
                       height="30"
-                      priority={true}
+                       
                       alt="data science course"
+                       quality={80}
+                      loading="lazy"
                     />
                   </div>
                   {/* <p className={styles.cont}>Elevate Your Profile: Boost your career prospects </p> */}
@@ -115,21 +124,25 @@ function MentorsSection() {
                 <div className={styles.box}>
                   <div>
                     <Image
-                      src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/tripti.png"
+                      src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/tripti.webp"
                       width="100"
                       height="100"
-                      priority={true}
+                       
                       alt="data science course"
+                       quality={80}
+                      loading="lazy"
                     />
                   </div>
                   <div>
                     <p className={styles.Name}>Tripti Jain</p>
                     <Image
-                      src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/image+658.png"
+                      src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/paytm.webp"
                       width="100"
                       height="30"
-                      priority={true}
+                       
                       alt="data science course"
+                       quality={80}
+                      loading="lazy"
                     />
                   </div>
                   {/* <p className={styles.cont}>Elevate Your Profile: Boost your career prospects </p> */}
@@ -139,21 +152,25 @@ function MentorsSection() {
                 <div className={styles.box}>
                   <div>
                     <Image
-                      src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/AnkurK.png"
+                      src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/AnkurK.webp"
                       width="100"
                       height="100"
-                      priority={true}
+                       
                       alt="data science course"
+                       quality={80}
+                      loading="lazy"
                     />
                   </div>
                   <div>
                     <p className={styles.Name}>Ankur K.</p>
                     <Image
-                      src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/image+383.png"
+                      src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/walmart.webp"
                       width="100"
                       height="20"
-                      priority={true}
+                       
                       alt="data science course"
+                       quality={80}
+                      loading="lazy"
                     />
                   </div>
                   {/* <p className={styles.cont}>Elevate Your Profile: Boost your career prospects </p> */}

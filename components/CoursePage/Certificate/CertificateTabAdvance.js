@@ -70,18 +70,21 @@ function CertificateTab({
             </div>
             <div className={styles.leftSide}>
             <Image
-                  src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/cert-arrow.png"
+                  src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/cert-arrow.webp"
                   alt="arrow"
-                  quality={100}
+                 
                   width={100}
                   height={50}
                   className={styles.arrowImg}
                   style={{position:"relative",top:"160px"}}
+                  loading="lazy"
+                  quality={40}
                 />
               <div className={`${styles.CertificateDiv} imgWrapper`}>
                 <Image
                   src={data.degreeCertificate.img}
                   alt="Certificate"
+                  loading="lazy"
                   quality={100}
                   width={1150}
                   height={800}
@@ -123,9 +126,11 @@ function CertificateTab({
                 <Image
                   src={data.microCertificate.img}
                   alt="Certificate"
-                  quality={100}
+            
                   width={1150}
                   height={800}
+                  loading="lazy"
+                  quality={100}
                 />
               </div>
             </div>
@@ -149,21 +154,24 @@ function CertificateTab({
             </div>
             <div className={styles.leftSide}>
             <Image
-                  src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/cert-arrow.png"
+                  src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/cert-arrow.webp"
                   alt="arrow"
-                  quality={100}
+             
                   width={100}
                   height={50}
                   className={styles.arrowImg}
                   style={{position:"relative",top:"160px"}}
+                  loading="lazy"
+                  quality={60}
                 />
               <div className={`${styles.CertificateDiv} imgWrapper`}>
                 <Image
                   src={data.projectCertificate.img}
                   alt="Certificate"
-                  quality={100}
                   width={1150}
                   height={800}
+                  loading="lazy"
+                  quality={100}
                 />
               </div>
             </div>
