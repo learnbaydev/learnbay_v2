@@ -27,59 +27,57 @@ function FirstSection({
   };
   return (
     <section className={styles.container}>
-        <Popup
-          trigger={popups}
-          setTrigger={setPopups}
-          className="popupModal"
-          downloadBrochure
-        >
-          <div className="leftPopup">
-            <div
-              className="whiteP"
-              style={{ width: "340px", height: "400px" }}
-            ></div>
-          </div>
-          <div className="RightPopup">
-            <h5>Download Brochure</h5>
-            <Suspense>
-              <Form
-                dataScience={dataScience}
-                dataScienceCounselling={dataScienceCounselling}
-                downloadBrochure
-                upSkillingHide={true}
-                titleCourse={titleCourse}
-                brochureLink={brochureLink}
-              />
-            </Suspense>
-          </div>
-        </Popup>
+      <Popup
+        trigger={popups}
+        setTrigger={setPopups}
+        className="popupModal"
+        downloadBrochure
+      >
+        <div className="leftPopup">
+          <div
+            className="whiteP"
+            style={{ width: "340px", height: "400px" }}
+          ></div>
+        </div>
+        <div className="RightPopup">
+          <h5>Download Brochure</h5>
+          <Suspense>
+            <Form
+              dataScience={dataScience}
+              dataScienceCounselling={dataScienceCounselling}
+              downloadBrochure
+              upSkillingHide={true}
+              titleCourse={titleCourse}
+              brochureLink={brochureLink}
+            />
+          </Suspense>
+        </div>
+      </Popup>
       {mobile ? (
         <>
           <span className={styles.topSpan}>Learnbay Excelvarsity</span>
           <div className={styles.DivContent}>
             <h1 className={styles.h1}>
-            Masters in Computer Science:
+              Masters in Computer Science:
               <br />
               <span style={{ color: "#F99600" }}>Data Science and AI</span>
             </h1>
           </div>
           <div className={styles.paraCollab}>
-                <Image
-                  src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/coursePage/woolf-univer.webp"
-                  alt="woolf-university"
-                  width="180"
-                  height="20"
-                />
-              </div>
-              <div className={styles.boxDivGreen}>
-                <p className={styles.special}>SPECIALIZATION IN</p>
-                <div className={styles.iconPara}>
-                  <p className={styles.boxGreen}>Data Science & Analytics</p>
-                  <p className={styles.boxGreen}>
-                    Artificial Intelligence & ML
-                  </p>
-                </div>
-              </div>
+            <Image
+              src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/coursePage/woolf-univer.webp"
+              alt="woolf-university"
+              width="180"
+              height="20"
+            />
+          </div>
+          <div className={styles.boxDivGreen}>
+            <p className={styles.special}>SPECIALIZATION IN</p>
+            <div className={styles.iconPara}>
+              <p className={styles.boxGreen}>Data Science & Analytics</p>
+              <p className={styles.boxGreen}>Artificial Intelligence & ML</p>
+            </div>
+          </div>
           <div className={styles.FormDiv}>
             <p className={styles.NormalPForm}>
               Interested in{" "}
@@ -121,13 +119,13 @@ function FirstSection({
               </div>
               <div className={styles.BtnDiv}>
                 <a href="#curriculum">
-                <div>
-                  <Button bannerButton={true} text="EXPLORE PROGRAM" />
-                </div>
+                  <div>
+                    <Button bannerButton={true} text="EXPLORE PROGRAM" />
+                  </div>
                 </a>
-                <div onClick={popupShow}>
-                  <Button whiteBgButton={true} text="DOWNLOAD BROCHURE" />
-                </div>
+                <a href="/master-application">
+                  <Button whiteBgButton={true} text="START YOUR APPLICATION" />
+                </a>
               </div>
             </div>
             <div className={styles.FormDiv}>
