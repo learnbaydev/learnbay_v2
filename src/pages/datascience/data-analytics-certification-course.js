@@ -199,7 +199,7 @@ function Blockchain({}) {
           firstToparaImg=""
           firstHeading="Data Analytics Certification Program"
           firstTopPara="Curriculum Inclusive of Gen-AI"
-          idss="bfl64ANfSV0"
+          idss="y_0IdhFKJKM"
         />
         <SecondSection
           SecondSectionData={DADataScienceCourseData[0].secondSection}
@@ -210,7 +210,7 @@ function Blockchain({}) {
           leftImage="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/advance-who.webp"
           ThirdSectionData={DADataScienceCourseData[0].thirdSection}
         />
-        <TrainerSection idss="eautK0odE7Q" />
+        <TrainerSection idss="y_0IdhFKJKM" />
         <Testimonial
           redirectDS={true}
           heading=""
@@ -245,7 +245,7 @@ function Blockchain({}) {
           }
           dataScienceCounselling={true}
           dataScience={true}
-          titleCourse="Advanced Data Science and AI Program with domain specialization"
+          titleCourse="Data Analytics Certification Program"
           brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Data+Analytics+Certification+Program.pdf"
           syllabus={DADataScienceCourseData[0].syllabus}
           syllabusDesc={DADataScienceCourseData[0].syllabusDesc}
@@ -287,8 +287,8 @@ function Blockchain({}) {
 
         <NewProjectSection
           dataScience={true}
-          titleCourse="Advanced Data Science and AI Program with domain specialization"
-          brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Masters+in+CS+Data+Science+%26+AI.pdf"
+          titleCourse="Data Analytics Certification Program"
+          brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Data+Analytics+Certification+Program.pdf"
           projectSection={DADataScienceCourseData[0].projectSection}
         />
 
