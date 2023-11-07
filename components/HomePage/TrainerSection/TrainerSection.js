@@ -34,6 +34,7 @@ function TrainerSection({ idss }) {
                   src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/topRated.png"
                   width={50}
                   height={60}
+                  loading="lazy"
                   alt="topRated"
                 />
               </div>
@@ -43,6 +44,7 @@ function TrainerSection({ idss }) {
                   src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/linkedin.png"
                   width={120}
                   height={60}
+                  loading="lazy"
                   alt="LinkedIn"
                 />
               </div>
@@ -78,7 +80,13 @@ function TrainerSection({ idss }) {
                     </div>
 
                     <div className="imgWrapper">
-                      <Image src={img} width={120} height={60} alt={alt} />
+                      <Image
+                        src={img}
+                        width={120}
+                        height={60}
+                        alt={alt}
+                        loading="lazy"
+                      />
                     </div>
                   </div>
                 </a>
