@@ -250,11 +250,10 @@ function WhyLearnbay({ idss }) {
               </div>
               <div className={Styles.BlueBox}>
                 <FaRocket className={Styles.Icon} />
-                <p className={Styles.head}>35K+</p>
+                <p className={Styles.head}>250%</p>
                 <p className={Styles.Para}>Highest Salary Hike</p>
                 <p style={{ color: "#fff", margin: "10px 0px 0px" }}>
-                  Get read to crack highest paying jobs with mokcup interviews
-                  led by industry experst
+                Get read to crack highest paying jobs with mokcup interviews led by industry experst
                 </p>
               </div>
             </div>
@@ -277,16 +276,40 @@ function WhyLearnbay({ idss }) {
         )}
 
         {projectCert ? (
-          <div className={`${Styles.RightSideCert} imgWrapper`}>
-            <Image
-              src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/Certification-min.webp"
-              loading="lazy"
-              width="350"
-              height="212"
-              alt="profile-Img"
-              onClick={() => videoSHow()}
-            />
-          </div>
+                    <div className={Styles.RightSide}>
+                    <div className={Styles.firstBox}>
+                      <div className="imgWrapper">
+                        <Image
+                          src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/masterPage/whylearn1.webp"
+                          loading="lazy"
+                          width="200"
+                          height="212"
+                          alt="profile-Img"
+                          onClick={() => videoSHow()}
+                        />
+                      </div>
+                      <div className={Styles.BlueBox}>
+                        <FaRocket className={Styles.Icon} />
+                        <p className={Styles.head}>35K+</p>
+                        <p className={Styles.Para}>
+                          Mentors help you select the domain & guide you through.
+                        </p>
+                      </div>
+                    </div>
+                    <div className={Styles.left}>
+                      <h6>Key Benefits</h6>
+                      <div className={Styles.mainCont}>
+                        <p className={Styles.para}>
+                          <FaCheckCircle className={Styles.checkCircle} />
+                          Work in an industry like environment and gain practical hands-on experience
+                        </p>
+                        <p className={Styles.para}>
+                          <FaCheckCircle className={Styles.checkCircle} />
+                          Gain the work experience of data scientist with dedicated project mentors from industry.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
         ) : (
           ""
         )}

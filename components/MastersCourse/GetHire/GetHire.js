@@ -36,6 +36,12 @@ function GetHire() {
                   </span>
                   <p>Resume BuildUp</p>
                 </div>
+                <div className={Styles.Points}>
+                  <span>
+                    <FcCheckmark />
+                  </span>
+                  <p>3 Years Flexible Sub.</p>
+                </div>
               </div>
               <div>
                 <Image

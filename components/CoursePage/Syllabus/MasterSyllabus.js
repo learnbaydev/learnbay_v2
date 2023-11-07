@@ -27,7 +27,7 @@ function SyllabusNew({
   fullStack,
   titleCourse,
   brochureLink,
-  software,
+  buttonHide,
   advSyllabus,
   dataScienceCounselling,
   pop,
@@ -419,6 +419,7 @@ function SyllabusNew({
           </div>
         </section>
         <div className={styles.buttonDiv}>
+          {buttonHide ? ("") : (
           <div onClick={popupShow}>
             <Button
               bannerButton={true}
@@ -426,6 +427,7 @@ function SyllabusNew({
               // passIcon={<FaDownload style={{ marginLeft: "10px" }} />}
             />
           </div>
+          )}
           <div onClick={popupShow}>
             <Button
               nobannerButton={true}

@@ -8,6 +8,9 @@ import Navbar from "../../../components/Navbar/Navbar";
 const FirstSection = dynamic(() =>
   import("../../../components/CoursePage/FirstSection/FirstSection")
 );
+const WhatsappFloat = dynamic(() =>
+  import("../../../components/WhatappsFloat/WhatsappFloat")
+);
 const SecondSection = dynamic(() =>
   import("../../../components/CoursePage/SecondSection/SecondSection")
 );
@@ -194,12 +197,12 @@ function Blockchain({}) {
           dataScience={true}
           titleCourse="Businesss Analytics Certification Program"
           cityParaCont="Get real-world experience with capstone projects"
-          brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Advance+Data+Science+and+AI+Certification+Program+Learnbay.pdf"
+          brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Business+Analytics+Program.pdf"
           FirstRightImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/busihead1.webp"
           firstToparaImg=""
           firstHeading="Businesss Analytics Certification Program"
           firstTopPara="Get real-world experience with capstone projects"
-          idss="bfl64ANfSV0"
+          idss="4j80WXLTvGE"
         />
         <SecondSection
           SecondSectionData={BADataScienceCourseData[0].secondSection}
@@ -217,13 +220,13 @@ function Blockchain({}) {
           Testimonial={BADataScienceCourseData[0].testimonial}
         />
 
-        <WhoIsProgram
-          first="Bachelor's degree with consistent good academic"
-          second="Minimum 6 months of Non-IT work experience"
-          third="Early to mid-career professionals interested in business analytics"
-          forth="Preparing for future leadership in business analytics"
+<WhoIsProgram
+          first="B.tech, M.tech, BCA, B.com, M.com, MBA, MCA, M.sc"
+          second="Minimum 6 year of  work experience (tech/non-tech)"
+          third="Mid-career professionals interested in data science & AI"
+          forth="Achieving higher career growth in data science and AI"
         />
-        <WhyLearnbay idss="bfl64ANfSV0" />
+        <WhyLearnbay idss="fzXzUSvMPv0" />
         <GetHire />
         {/* <Switch /> */}
         {/* <FourthSection
@@ -245,13 +248,14 @@ function Blockchain({}) {
           }
           dataScienceCounselling={true}
           dataScience={true}
-          titleCourse="Advanced Data Science and AI Program with domain specialization"
-          brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Advance+Data+Science+and+AI+Certification+Program+Learnbay.pdf"
+          titleCourse="Businesss Analytics Certification Program"
+          brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Business+Analytics+Program.pdf"
           syllabus={BADataScienceCourseData[0].syllabus}
           syllabusDesc={BADataScienceCourseData[0].syllabusDesc}
           popupHead={BADataScienceCourseData[0].popupHead}
           progress={progress}
           setProgress={setProgress}
+          buttonHide={true}
         />
 
         <ToolsCovered
@@ -286,8 +290,8 @@ function Blockchain({}) {
 
         <NewProjectSection
           dataScience={true}
-          titleCourse="Advanced Data Science and AI Program with domain specialization"
-          brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Masters+in+CS+Data+Science+%26+AI.pdf"
+          titleCourse="Businesss Analytics Certification Program"
+          brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Business+Analytics+Program.pdf"
           projectSection={BADataScienceCourseData[0].projectSection}
         />
 
@@ -295,6 +299,7 @@ function Blockchain({}) {
         <SeventhSection />
         <Footer />
         <BottomBar />
+        <WhatsappFloat />
         {popupData.length == 0 ? "" : <OfferPopup popupData={popupData} />}
       </main>
     </>

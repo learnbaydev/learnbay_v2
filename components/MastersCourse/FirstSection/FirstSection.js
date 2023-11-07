@@ -10,9 +10,9 @@ const Form = lazy(() => import("../../Form/Form"));
 function FirstSection({
   dataScience,
   fullStack,
+  dataScienceCounselling,
   titleCourse,
   brochureLink,
-  dataScienceCounselling,
 }) {
   const [mobile, setMobile] = useState(false);
   useEffect(() => {
@@ -69,6 +69,7 @@ function FirstSection({
               alt="woolf-university"
               width="180"
               height="20"
+
             />
           </div>
           <div className={styles.boxDivGreen}>
@@ -89,6 +90,30 @@ function FirstSection({
               upSkillingHide={true}
             />
           </div>
+          <div className={styles.boxDivGreen}>
+            <p className={styles.special}>SPECIALIZATION IN</p>
+            <div className={styles.iconPara}>
+              <p className={styles.boxGreen}>Data Science & Analytics</p>
+              <p className={styles.boxGreen}>Artificial Intelligence & ML</p>
+            </div>
+          </div>
+          <div className={styles.FormDiv}>
+              {/* <div className={styles.boxDiv}>
+                <div className={styles.formBox}>
+                  {" "}
+                  <FaRegUser className={styles.iconUser} /> 7,568 people filled
+                </div>
+              </div> */}
+              <h4>
+                Interested in <span>Master’s Degree?</span>
+              </h4>
+              <Form
+                dataScienceCounselling={dataScienceCounselling}
+                fullStack={fullStack}
+                syllabus={true}
+                upSkillingHide={true}
+              />
+            </div>
         </>
       ) : (
         <>
@@ -122,10 +147,20 @@ function FirstSection({
                   <div>
                     <Button bannerButton={true} text="EXPLORE PROGRAM" />
                   </div>
+
                 </a>
                 <a href="/master-application">
                   <Button whiteBgButton={true} text="START YOUR APPLICATION" />
                 </a>
+
+                </a>
+                <div
+                  onClick={() => {
+                    popupShow();
+                  }}
+                >
+                  <Button whiteBgButton={true} text="DOWNLOAD BROCHURE" />
+                </div>
               </div>
             </div>
             <div className={styles.FormDiv}>
@@ -140,8 +175,6 @@ function FirstSection({
               </h4>
               <Form
                 dataScienceCounselling={dataScienceCounselling}
-                titleCourse={titleCourse}
-                brochureLink={brochureLink}
                 fullStack={fullStack}
                 syllabus={true}
                 upSkillingHide={true}

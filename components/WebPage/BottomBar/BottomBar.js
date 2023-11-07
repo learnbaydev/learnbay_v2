@@ -2,19 +2,17 @@ import React, { useState } from "react";
 import { FaArrowRight } from "react-icons/fa";
 import { IoLogoWhatsapp } from "react-icons/io";
 import Link from "next/dist/client/link";
-import Popup from "../../Popup/Popup";
-import Form from "../../Form/Form";
-import styles from "./BottomBar.module.css";
+import Popup from "../Popup/Popup";
+import Form from "../Form/Form";
 
-const BottomBar = ({ radio }) => {
-  console.log("bottom bar");
+const BottomBar = ({ whatsappShow }) => {
   const [popups, setPopups] = useState(false);
 
   const popupShow = () => {
     setPopups(true);
   };
   return (
-    <div className={styles.divWrapper}>
+    <div className="divWrapper">
       <Popup trigger={popups} setTrigger={setPopups} className="popupModal">
         <div className="leftPopup">
           <div className="whiteP" />
@@ -22,18 +20,22 @@ const BottomBar = ({ radio }) => {
         <div className="RightPopup">
           <h5>Apply For Counselling</h5>
           {/* <p>Fill the below details to get started</p> */}
-          <Form popup={true} radio={radio} setTrigger={setPopups} />
+          <Form popup={true} setTrigger={setPopups} />
         </div>
       </Popup>
-      <div className={styles.FlDiv}>
-        <div className={styles.flDivLeft} onClick={popupShow}>
+      <div className="FlDiv">
+        <div className="flDivLeft" onClick={popupShow}>
           Apply For Couselling
-          <FaArrowRight className={styles.bIcon} />
+          <FaArrowRight className="bIcon" />
         </div>
-        <div className="flDivRight">
-          <Link href="https://wa.me/+917349222263">Chat with us</Link>
-          <IoLogoWhatsapp className={styles.bIcon} style={{ color: "Green" }} />
-        </div>
+        {whatsappShow ? (
+          <div className="flDivRight">
+            <Link href="https://wa.me/+917349222263">Chat with us</Link>
+            <IoLogoWhatsapp className="bIcon" style={{ color: "Green" }} />
+          </div>
+        ) : (
+          ""
+        )}
       </div>
     </div>
   );

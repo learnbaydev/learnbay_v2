@@ -502,6 +502,7 @@ export const DataScienceMastersinCS = [
           "Complete your training with the internationally recognized certificate.",
           "Validate your Data Science and AI skills with IBM Course Completion Certificate.",
           "Get acknowledged in IT sector by adding IBM Certificate to your profile.",
+          "ECE.org evaluated credits making it equivalent to a master’s degree from the United States. To Know More: https://legal.woolf.university/accreditation",
         ],
       },
       projectCertificate: {
@@ -520,17 +521,14 @@ export const DataScienceMastersinCS = [
     popupHead: "Download Data science Course Brochure",
     syllabusHead: [
       "Foundation Track (10 ECTS Credits)",
-      "Statistics & Machine Learning ( 25 ECTS Credits) ",
-      "SPECIALIZATON - I ( 20 ECTS Credits)",
-      "Deep Learning & Applied Analytics ( 20 ECTS Credits) ",
-      "SPECIALIATION - 2 ( 20 ECTS Credits) ",
-      "Deploymnet & Gen-AI ( 20 ECTS Credits) ",
-      "Comprehensive Data Structures ( 20 ECTS Credits) ",
+      "Statistics & Machine Learning (20 ECTS Credits)",
+      "SPECIALIZATON - I (60 ECTS Credits)",
+      "SPECIALIZATON - 2 (65 ECTS Credits)",
     ],
     MasterSyllabusDefault: [
       {
         Module0: {
-          title: "Module 1 :- Python Fundamentals",
+          title: "MODULE 1: Python Fundamentals",
           content: [
             {
               chap: {
@@ -551,7 +549,7 @@ export const DataScienceMastersinCS = [
 
       {
         Module0: {
-          title: "Module 2 :-Numerical Programming",
+          title: "MODULE 2: Numerical Programming",
           content: [
             {
               chap: {
@@ -570,40 +568,19 @@ export const DataScienceMastersinCS = [
       },
     ],
     masterSyllabus: {
-      "Foundation Track (30 ECTS Credits)": [
+      "Foundation Track (10 ECTS Credits)": [
         {
           Module0: {
-            title: "Module 0 :- Preparatory Classes (Programming + Maths)",
+            title: "MODULE 1: Python Fundamentals",
             content: [
               {
                 chap: {
-                  title: "Topic 1 :- Cohort Orientation ",
                   desc: [
-                    "A brief introduction to tools related to data ",
-                    "Learn about particular real-time projects and Capstone projects",
-                    "Data and its impact on career opportunities",
-                    "Utilizing data, to enhance industrial operations and management",
-                  ],
-                },
-              },
-
-              {
-                chap: {
-                  title: "Topic 2 :- Fundamentals of Programming",
-                  desc: [
-                    "Introduction to Anaconda & Jupyter notebook",
-                    "Flavors of python Introduction to Git, GitHub",
-                    "Python Fundamentals",
-                  ],
-                },
-              },
-              {
-                chap: {
-                  title: "Topic 3 :- Fundamentals of Statistics",
-                  desc: [
-                    "Mean, Median, Mode",
-                    "Standard Deviation, Average. Probability, Permutations, and Combinations",
-                    "Introduction to Linear Algebra",
+                    "Programming Basics & Environment Setup",
+                    "Python Programming Overview",
+                    "Strings, Decisions & Loop Control",
+                    "Python Data Types",
+                    "Functions And Modules",
                   ],
                 },
               },
@@ -612,40 +589,31 @@ export const DataScienceMastersinCS = [
             open: true,
           },
         },
+
         {
           Module0: {
-            title: "Term 1 :- Python for Data Science",
+            title: "MODULE 2: Numerical Programming",
             content: [
               {
                 chap: {
-                  title: "Module 1 :- Python Programming",
                   desc: [
-                    "Programming Basics & Environment Setup",
-                    "Python Programming Overview",
-                    "Strings, Decisions & Loop Control",
-                    "Python Data Types",
-                    "Functions And Modules",
-                    "Class hands-on: 8+ Programs to be covered in the functions, Lambda, modules, Generators, and Packages class",
-                    "File I/O And Exceptional Handling and Regular Expression",
-                    "Class hands-on: 10+ Programs to be covered in class from File IO, Reg-ex and exception handling",
                     "Data Analysis Using Numpy",
                     "Data Analysis Using Pandas",
                     "Data Visualization using Matplotlib",
                     "Data Visualization using Seaborn",
-                    "Case Study on Numpy, Pandas, Matplotlib 1 Case Study on Pandas And Seaborn",
                   ],
                 },
               },
             ],
-            id: 1,
+            id: 0,
             open: false,
           },
         },
       ],
-      "Statistics & Machine Learning ( 25 ECTS Credits) ": [
+      "Statistics & Machine Learning (20 ECTS Credits)": [
         {
           Module0: {
-            title: "Module 1 :- Applied statistics",
+            title: "Module 1: Applied statistics",
             content: [
               {
                 chap: {
@@ -671,7 +639,7 @@ export const DataScienceMastersinCS = [
 
         {
           Module0: {
-            title: "Module 2 :- Introduction to Machine Learning",
+            title: "Module 2: Introduction to Machine Learning",
             content: [
               {
                 chap: {
@@ -695,7 +663,7 @@ export const DataScienceMastersinCS = [
 
         {
           Module0: {
-            title: "Module 3 :- Advance machine learning",
+            title: "Module 3: Advance machine learning",
             content: [
               {
                 chap: {
@@ -711,7 +679,7 @@ export const DataScienceMastersinCS = [
 
         {
           Module0: {
-            title: "Module 4 :- Problem-Solving Techniques",
+            title: "Module 4: Problem-Solving Techniques",
             content: [
               {
                 chap: {
@@ -734,14 +702,14 @@ export const DataScienceMastersinCS = [
           },
         },
       ],
-      "SPECIALIZATON - I ( 20 ECTS Credits)": [
+      "SPECIALIZATON - I (60 ECTS Credits)": [
         {
           Module0: {
-            title: "Data Analytics & Visualization",
+            title: "Data Analytics & Visualization (20 ECTS Credits)",
             content: [
               {
                 chap: {
-                  title: "Module 1 :-Spreadsheets for Data Understanding",
+                  title: "Module 1: Spreadsheets for Data Understanding",
                   desc: [
                     "Basics of Excel",
                     "Formatting a worksheet",
@@ -758,10 +726,9 @@ export const DataScienceMastersinCS = [
               },
               {
                 chap: {
-                  title: "Module 2 :- Relational database - SQL fundamentals",
+                  title: "Module 2: Relational database - SQL fundamentals",
                   desc: [
                     "Introduction to SQL, RDBMS & DBMS",
-
                     "Normalization & Constraints",
                     "Working with joins & clause",
                     "Working with functions",
@@ -773,7 +740,7 @@ export const DataScienceMastersinCS = [
               {
                 chap: {
                   title:
-                    "Module 3 :- Data visualization tools (Adv. Tableau, PowerBI, Looker) ",
+                    "Module 3: Data visualization tools (Adv. Tableau, PowerBI, Looker) ",
                   desc: [
                     "Tableau (Advance)",
                     "Introduction to Tableau",
@@ -787,7 +754,7 @@ export const DataScienceMastersinCS = [
               },
               {
                 chap: {
-                  title: "Module 4 :- Getting Started With Power BI",
+                  title: "Module 4: Getting Started With Power BI",
                   desc: [
                     "Introduction & Installation",
                     "Creating visuals",
@@ -799,7 +766,7 @@ export const DataScienceMastersinCS = [
               },
               {
                 chap: {
-                  title: "Module 5 :- Google Looker",
+                  title: "Module 5: Google Looker",
                   desc: [
                     "Introduction to Looker",
                     "Data Modelling",
@@ -810,7 +777,7 @@ export const DataScienceMastersinCS = [
               },
               {
                 chap: {
-                  title: "Module 6 :- Business case studies",
+                  title: "Module 6: Business case studies",
                   desc: [
                     "Transportation safety domain",
                     "HR domain",
@@ -825,15 +792,13 @@ export const DataScienceMastersinCS = [
             open: true,
           },
         },
-      ],
-      "Deep Learning & Applied Analytics ( 20 ECTS Credits) ": [
         {
           Module0: {
-            title: "Module 1 :-Introduction to deep learning",
+            title: "Deep Learning & Applied Analytics (20 ECTS Credits)",
             content: [
               {
                 chap: {
-                  // title: "Module 1 :-Introduction to deep learning",
+                  title: "Module 1: Introduction to deep learning",
                   desc: [
                     "Introduction to Deep Learning",
                     "MLP Architecture",
@@ -846,18 +811,9 @@ export const DataScienceMastersinCS = [
                   ],
                 },
               },
-            ],
-            id: 4,
-            open: true,
-          },
-        },
-        {
-          Module0: {
-            title: "Module 2 :- Product Analytics",
-            content: [
               {
                 chap: {
-                  // title: "Module 2 :- Product Analytics",
+                  title: "Module 2: Product Analytics",
                   desc: [
                     "Product Usage Onboarding",
                     "A/B Testing Techniques",
@@ -870,19 +826,10 @@ export const DataScienceMastersinCS = [
                   ],
                 },
               },
-            ],
-            id: 4,
-            open: false,
-          },
-        },
 
-        {
-          Module0: {
-            title: "Module 3 :- Productionization of ML systems",
-            content: [
               {
                 chap: {
-                  // title: "Module 1 :-Introduction to deep learning",
+                  title: "Module 3: Productionization of ML systems",
                   desc: [
                     "Introduction to ML Deployment",
                     "Model Serialization",
@@ -898,18 +845,9 @@ export const DataScienceMastersinCS = [
                   ],
                 },
               },
-            ],
-            id: 4,
-            open: false,
-          },
-        },
-        {
-          Module0: {
-            title: "Module 3 :- Generative AI",
-            content: [
               {
                 chap: {
-                  // title: "Module 1 :-Introduction to deep learning",
+                  title: "Module 4: Generative AI",
                   desc: [
                     "Introduction to Generative AI",
                     "Introduction to Generative Adversarial Networks (GANs)",
@@ -919,20 +857,62 @@ export const DataScienceMastersinCS = [
                   ],
                 },
               },
+              {
+                chap: {
+                  title: "Module 5: Google Looker",
+                  desc: [
+                    "Introduction to Looker",
+                    "Data Modelling",
+                    "Data exploration with LookML",
+                    "Advanced data modelling techniques",
+                  ],
+                },
+              },
+              {
+                chap: {
+                  title: "Module 6: Business case studies",
+                  desc: [
+                    "Transportation safety domain",
+                    "HR domain",
+                    "Medical survey",
+                    "Sales",
+                    "Sports Analytics",
+                  ],
+                },
+              },
+            ],
+            id: 3,
+            open: false,
+          },
+        },
+        {
+          Module0: {
+            title: "Industry-Specific DA & Professional Development (20 ECTS Credits)",
+            content: [
+              {
+                chap: {
+                  // title: "Module 1: Introduction to deep learning",
+                  desc: [
+                    "Domain electives (BFSI, Healthcare, E-Commerce, Supplychain, etc)",
+                    "Real time industrial  capstone projects (3 projects)",
+                    "Professional Development & Industry Readiness",
+                  ],
+                },
+              },
             ],
             id: 4,
             open: false,
           },
         },
       ],
-      "SPECIALIATION - 2 ( 20 ECTS Credits) ": [
+      "SPECIALIZATON - 2 (65 ECTS Credits)": [
         {
           Module0: {
-            title: "Deep Learning & Advanced Data Analysis",
+            title: "Deep Learning & Advanced Data Analysis (20 ECTS Credits)",
             content: [
               {
                 chap: {
-                  title: "Module 1 :-Introduction to Deep Learning",
+                  title: "Module 1: Introduction to Deep Learning",
                   desc: [
                     "Introduction to Deep Learning",
                     "MLP Architecture",
@@ -947,7 +927,7 @@ export const DataScienceMastersinCS = [
               },
               {
                 chap: {
-                  title: "Module 2 :- Deep learning for computer vision",
+                  title: "Module 2: Deep learning for computer vision",
                   desc: [
                     "Introduction to Computer Vision",
                     "Image Filtering and Enhancement",
@@ -959,7 +939,7 @@ export const DataScienceMastersinCS = [
               {
                 chap: {
                   title:
-                    "Module 3 :- Deep learning for natural language processing",
+                    "Module 3: Deep learning for natural language processing",
                   desc: [
                     "Natural Language Toolkit",
                     "Stemming",
@@ -972,7 +952,7 @@ export const DataScienceMastersinCS = [
               },
               {
                 chap: {
-                  title: "Module 4 :- High Dimensional Data Analysis",
+                  title: "Module 4: High Dimensional Data Analysis",
                   desc: [
                     "Introduction to Big Data",
                     "Data Locality",
@@ -988,84 +968,77 @@ export const DataScienceMastersinCS = [
             open: true,
           },
         },
-      ],
-
-      "Deploymnet & Gen-AI ( 20 ECTS Credits) ": [
+        
         {
           Module0: {
-            title: "Module 1 :-Generative AI",
+            title: "Deploymnet & Gen-AI (15 ECTS Credits)",
             content: [
               {
                 chap: {
+                  title: "Module 1: Introduction to Deep Learning",
                   desc: [
-                    "Introduction to Generative AI",
-                    "Probabilistic Graphical Models",
-                    "Introduction to Generative Adversarial Networks (GANs)",
-                    "Introduction to Variational Autoencoders (VAEs)",
-                    "Ethical Implications and Challenges",
-                    "Advanced Topics and Recent Trends",
+                    "Introduction to Deep Learning",
+                    "MLP Architecture",
+                    "Weight Initialization",
+                    "Deep learning algorithms",
+                    "Exponentially Weighted Moving Average (EWMA)",
+                    "Padding",
+                    "Pooling",
+                    "Sequential API",
+                  ],
+                },
+              },
+              {
+                chap: {
+                  title: "Module 2: Deep learning for computer vision",
+                  desc: [
+                    "Introduction to Computer Vision",
+                    "Image Filtering and Enhancement",
+                    "Image Recognition",
+                    "Semantic Segmentation",
+                  ],
+                },
+              },
+              {
+                chap: {
+                  title:
+                    "Module 3: Deep learning for natural language processing",
+                  desc: [
+                    "Natural Language Toolkit",
+                    "Stemming",
+                    "N-GRAMS",
+                    "Spacy",
+                    "Word2Vec",
+                    "NLP Spacy",
+                  ],
+                },
+              },
+              {
+                chap: {
+                  title: "Module 4: High Dimensional Data Analysis",
+                  desc: [
+                    "Introduction to Big Data",
+                    "Data Locality",
+                    "SQOOP (SQL in HADOOP)",
+                    "Map Reduce",
+                    "Spark",
+                    "Persisting RDD",
                   ],
                 },
               },
             ],
-            id: 6,
-            open: true,
-          },
-        },
-
-        {
-          Module0: {
-            title: "Module 2 :- Product Analytics",
-            content: [
-              {
-                chap: {
-                  desc: [
-                    "Product Usage Onboarding",
-                    "A/B Testing Techniques",
-                    "Online Platform Metrics",
-                    "Customer Experience Mapping",
-                    "Marketing Performance Analysis",
-                    "Google Analytics for Beginners",
-                    "Google Analytics Reporting Techniques",
-                    "Data Pre-processing with Google Analytics",
-                  ],
-                },
-              },
-            ],
-            id: 6,
+            id: 5,
             open: false,
           },
         },
         {
           Module0: {
-            title: "Module 3 :- Productionization of ML systems",
+            title: "Comprehensive Data Structures (10 ECTS Credits)",
             content: [
               {
                 chap: {
-                  desc: [
-                    "ML Deployment Lifecycle",
-                    "Model Serialization",
-                    "Cloud Deployment: AWS SageMaker",
-                    "Cloud Deployment: Azure ML Service",
-                    "Cloud Deployment: GCP AI Platform",
-                    "Model Versioning",
-                  ],
-                },
-              },
-            ],
-            id: 6,
-            open: false,
-          },
-        },
-      ],
-      "Comprehensive Data Structures ( 20 ECTS Credits) ": [
-        {
-          Module0: {
-            title:
-              "Module 1 :-Essential Data Structures: Lists, Queues, Stacks",
-            content: [
-              {
-                chap: {
+                  title:
+                    "Module 1: Essential Data Structures: Lists, Queues, Stacks",
                   desc: [
                     "Introduction to Data Structures & Lists",
                     "Array vs. Linked List",
@@ -1076,19 +1049,10 @@ export const DataScienceMastersinCS = [
                   ],
                 },
               },
-            ],
-            id: 6,
-            open: true,
-          },
-        },
-
-        {
-          Module0: {
-            title:
-              "Module 2 :- Advanced Data Structures: Trees, Graphs, Hash Tables",
-            content: [
               {
                 chap: {
+                  title:
+              "Module 2: Advanced Data Structures: Trees, Graphs, Hash Tables",
                   desc: [
                     "Binary Trees",
                     "Binary Tree Traversals",
@@ -1107,47 +1071,59 @@ export const DataScienceMastersinCS = [
                 },
               },
             ],
-            id: 6,
+            id: 5,
             open: false,
           },
         },
+        {
+          Module0: {
+            title: "Industry-Specific DA & Professional Development (20 ECTS Credits)",
+            content: [
+              {
+                chap: {
+                  // title: "Module 1: Introduction to deep learning",
+                  desc: [
+                    "Domain electives (BFSI, Healthcare, E-Commerce, Supplychain, etc)",
+                    "Real time industrial  capstone projects (3 projects)",
+                    "Professional Development & Industry Readiness",
+                  ],
+                },
+              },
+            ],
+            id: 4,
+            open: false,
+          },
+        },
+        
       ],
     },
 
     masterSyllabusMobile: [
       {
         Module0: {
-          title: "Module 0 :- Preparatory Classes (Programming + Maths)",
+          title: "Foundation Track (10 ECTS Credits)",
           content: [
             {
               chap: {
-                title: "Topic 1 :- Cohort Orientation ",
+          title: "MODULE 1: Python Fundamentals",
                 desc: [
-                  "A brief introduction to tools related to data ",
-                  "Learn about particular real-time projects and Capstone projects",
-                  "Data and its impact on career opportunities",
-                  "Utilizing data, to enhance industrial operations and management",
-                ],
-              },
-            },
-
-            {
-              chap: {
-                title: "Topic 2 :- Fundamentals of Programming",
-                desc: [
-                  "Introduction to Anaconda & Jupyter notebook",
-                  "Flavors of python Introduction to Git, GitHub",
-                  "Python Fundamentals",
+                  "Programming Basics & Environment Setup",
+                  "Python Programming Overview",
+                  "Strings, Decisions & Loop Control",
+                  "Python Data Types",
+                  "Functions And Modules",
                 ],
               },
             },
             {
               chap: {
-                title: "Topic 3 :- Fundamentals of Statistics",
+          title: "MODULE 2: Numerical Programming",
                 desc: [
-                  "Mean, Median, Mode",
-                  "Standard Deviation, Average. Probability, Permutations, and Combinations",
-                  "Introduction to Linear Algebra",
+                  "Programming Basics & Environment Setup",
+                  "Python Programming Overview",
+                  "Strings, Decisions & Loop Control",
+                  "Python Data Types",
+                  "Functions And Modules",
                 ],
               },
             },
@@ -1156,42 +1132,14 @@ export const DataScienceMastersinCS = [
           open: true,
         },
       },
+
       {
         Module0: {
-          title: "Term 1 :- Python for Data Science",
+          title: "Statistics & Machine Learning (20 ECTS Credits)",
           content: [
             {
               chap: {
-                title: "Module 1 :- Python Programming",
-                desc: [
-                  "Programming Basics & Environment Setup",
-                  "Python Programming Overview",
-                  "Strings, Decisions & Loop Control",
-                  "Python Data Types",
-                  "Functions And Modules",
-                  "Class hands-on: 8+ Programs to be covered in the functions, Lambda, modules, Generators, and Packages class",
-                  "File I/O And Exceptional Handling and Regular Expression",
-                  "Class hands-on: 10+ Programs to be covered in class from File IO, Reg-ex and exception handling",
-                  "Data Analysis Using Numpy",
-                  "Data Analysis Using Pandas",
-                  "Data Visualization using Matplotlib",
-                  "Data Visualization using Seaborn",
-                  "Case Study on Numpy, Pandas, Matplotlib 1 Case Study on Pandas And Seaborn",
-                ],
-              },
-            },
-          ],
-          id: 1,
-          open: false,
-        },
-      },
-      {
-        Module0: {
-          title: "Module 1 :- Applied statistics",
-          content: [
-            {
-              chap: {
-                // title: "Module 1 :- Applied statistics",
+                title: "Module 1: Applied statistics",
                 desc: [
                   "Data Visualization Basics",
                   "Descriptive Statistics",
@@ -1205,19 +1153,9 @@ export const DataScienceMastersinCS = [
                 ],
               },
             },
-          ],
-          id: 1,
-          open: false,
-        },
-      },
-
-      {
-        Module0: {
-          title: "Module 2 :- Introduction to Machine Learning",
-          content: [
             {
               chap: {
-                // title: "Module 1 :- Applied statistics",
+                title: "Module 2: Introduction to Machine Learning",
                 desc: [
                   "Introduction to Machine Learning",
                   "Linear Regresssion",
@@ -1229,35 +1167,16 @@ export const DataScienceMastersinCS = [
                 ],
               },
             },
-          ],
-          id: 2,
-          open: false,
-        },
-      },
-
-      {
-        Module0: {
-          title: "Module 3 :- Advance machine learning",
-          content: [
             {
               chap: {
-                // title: "Module 1 :- Applied statistics",
+                title: "Module 3: Advance machine learning",
                 desc: ["Clustering", "PCA", "SVM", "Time Series"],
               },
             },
-          ],
-          id: 3,
-          open: false,
-        },
-      },
-
-      {
-        Module0: {
-          title: "Module 4 :- Problem-Solving Techniques",
-          content: [
             {
               chap: {
-                // title: "Module 1 :- Applied statistics",
+                title: "Module 4: Problem-Solving Techniques",
+
                 desc: [
                   "Understanding the Problem",
                   "Pseudocode and Flowcharts",
@@ -1271,107 +1190,107 @@ export const DataScienceMastersinCS = [
               },
             },
           ],
-          id: 4,
+          id: 1,
           open: false,
         },
       },
-              {
-          Module0: {
-            title: "Data Analytics & Visualization",
-            content: [
-              {
-                chap: {
-                  title: "Module 1 :-Spreadsheets for Data Understanding",
-                  desc: [
-                    "Basics of Excel",
-                    "Formatting a worksheet",
-                    "Adjusting row height & column width ,changing cell alignment",
-                    "Managing your workbooks",
-                    "Advanced Printing options",
-                    "Formulas",
-                    "Conditional Formatting",
-                    "Data analysis and pivot tables",
-                    "Automating tasks with macros",
-                    "Using excel events to triggers macros",
-                  ],
-                },
-              },
-              {
-                chap: {
-                  title: "Module 2 :- Relational database - SQL fundamentals",
-                  desc: [
-                    "Introduction to SQL, RDBMS & DBMS",
 
-                    "Normalization & Constraints",
-                    "Working with joins & clause",
-                    "Working with functions",
-                    "Transaction, sequence & triggers",
-                  ],
-                },
-              },
-
-              {
-                chap: {
-                  title:
-                    "Module 3 :- Data visualization tools (Adv. Tableau, PowerBI, Looker) ",
-                  desc: [
-                    "Tableau (Advance)",
-                    "Introduction to Tableau",
-                    "Adding Parameters",
-                    "Manipulating Graph Size",
-                    "Dashboard actions",
-                    "Story point",
-                    "Connecting to SQL server",
-                  ],
-                },
-              },
-              {
-                chap: {
-                  title: "Module 4 :- Getting Started With Power BI",
-                  desc: [
-                    "Introduction & Installation",
-                    "Creating visuals",
-                    "Advanced charts",
-                    "PowerBI services",
-                    "Data modelling",
-                  ],
-                },
-              },
-              {
-                chap: {
-                  title: "Module 5 :- Google Looker",
-                  desc: [
-                    "Introduction to Looker",
-                    "Data Modelling",
-                    "Data exploration with LookML",
-                    "Advanced data modelling techniques",
-                  ],
-                },
-              },
-              {
-                chap: {
-                  title: "Module 6 :- Business case studies",
-                  desc: [
-                    "Transportation safety domain",
-                    "HR domain",
-                    "Medical survey",
-                    "Sales",
-                    "Sports Analytics",
-                  ],
-                },
-              },
-            ],
-            id: 3,
-            open: false,
-          },
-        },
       {
         Module0: {
-          title: "Module 1 :-Introduction to deep learning",
+          title: "S1 :- Data Analytics & Visualization (20 ECTS Credits)",
           content: [
             {
               chap: {
-                // title: "Module 1 :-Introduction to deep learning",
+                title: "Module 1: Spreadsheets for Data Understanding",
+                desc: [
+                  "Basics of Excel",
+                  "Formatting a worksheet",
+                  "Adjusting row height & column width ,changing cell alignment",
+                  "Managing your workbooks",
+                  "Advanced Printing options",
+                  "Formulas",
+                  "Conditional Formatting",
+                  "Data analysis and pivot tables",
+                  "Automating tasks with macros",
+                  "Using excel events to triggers macros",
+                ],
+              },
+            },
+            {
+              chap: {
+                title: "Module 2: Relational database - SQL fundamentals",
+                desc: [
+                  "Introduction to SQL, RDBMS & DBMS",
+                  "Normalization & Constraints",
+                  "Working with joins & clause",
+                  "Working with functions",
+                  "Transaction, sequence & triggers",
+                ],
+              },
+            },
+
+            {
+              chap: {
+                title:
+                  "Module 3: Data visualization tools (Adv. Tableau, PowerBI, Looker) ",
+                desc: [
+                  "Tableau (Advance)",
+                  "Introduction to Tableau",
+                  "Adding Parameters",
+                  "Manipulating Graph Size",
+                  "Dashboard actions",
+                  "Story point",
+                  "Connecting to SQL server",
+                ],
+              },
+            },
+            {
+              chap: {
+                title: "Module 4: Getting Started With Power BI",
+                desc: [
+                  "Introduction & Installation",
+                  "Creating visuals",
+                  "Advanced charts",
+                  "PowerBI services",
+                  "Data modelling",
+                ],
+              },
+            },
+            {
+              chap: {
+                title: "Module 5: Google Looker",
+                desc: [
+                  "Introduction to Looker",
+                  "Data Modelling",
+                  "Data exploration with LookML",
+                  "Advanced data modelling techniques",
+                ],
+              },
+            },
+            {
+              chap: {
+                title: "Module 6: Business case studies",
+                desc: [
+                  "Transportation safety domain",
+                  "HR domain",
+                  "Medical survey",
+                  "Sales",
+                  "Sports Analytics",
+                ],
+              },
+            },
+          ],
+          id: 3,
+          open: false,
+        },
+      },
+      {
+        Module0: {
+          title: "S1 :- Deep Learning & Applied Analytics (20 ECTS Credits)",
+          content: [
+            {
+              chap: {
+                title: "Module 1: Introduction to deep learning",
                 desc: [
                   "Introduction to Deep Learning",
                   "MLP Architecture",
@@ -1384,18 +1303,9 @@ export const DataScienceMastersinCS = [
                 ],
               },
             },
-          ],
-          id: 4,
-          open: false,
-        },
-      },
-      {
-        Module0: {
-          title: "Module 2 :- Product Analytics",
-          content: [
             {
               chap: {
-                // title: "Module 2 :- Product Analytics",
+                title: "Module 2: Product Analytics",
                 desc: [
                   "Product Usage Onboarding",
                   "A/B Testing Techniques",
@@ -1408,19 +1318,10 @@ export const DataScienceMastersinCS = [
                 ],
               },
             },
-          ],
-          id: 4,
-          open: false,
-        },
-      },
 
-      {
-        Module0: {
-          title: "Module 3 :- Productionization of ML systems",
-          content: [
             {
               chap: {
-                // title: "Module 1 :-Introduction to deep learning",
+                title: "Module 3: Productionization of ML systems",
                 desc: [
                   "Introduction to ML Deployment",
                   "Model Serialization",
@@ -1436,24 +1337,57 @@ export const DataScienceMastersinCS = [
                 ],
               },
             },
-          ],
-          id: 4,
-          open: false,
-        },
-      },
-      {
-        Module0: {
-          title: "Module 3 :- Generative AI",
-          content: [
             {
               chap: {
-                // title: "Module 1 :-Introduction to deep learning",
+                title: "Module 4: Generative AI",
                 desc: [
                   "Introduction to Generative AI",
                   "Introduction to Generative Adversarial Networks (GANs)",
                   "Introduction to Variational Autoencoders (VAEs)",
                   "Introduction to Transformer Models in Generative AI",
                   "Ethical Implications and Challenges",
+                ],
+              },
+            },
+            {
+              chap: {
+                title: "Module 5: Google Looker",
+                desc: [
+                  "Introduction to Looker",
+                  "Data Modelling",
+                  "Data exploration with LookML",
+                  "Advanced data modelling techniques",
+                ],
+              },
+            },
+            {
+              chap: {
+                title: "Module 6: Business case studies",
+                desc: [
+                  "Transportation safety domain",
+                  "HR domain",
+                  "Medical survey",
+                  "Sales",
+                  "Sports Analytics",
+                ],
+              },
+            },
+          ],
+          id: 3,
+          open: false,
+        },
+      },
+      {
+        Module0: {
+          title: "S1 :- Industry-Specific DA & Professional Development (20 ECTS Credits)",
+          content: [
+            {
+              chap: {
+                // title: "Module 1: Introduction to deep learning",
+                desc: [
+                  "Domain electives (BFSI, Healthcare, E-Commerce, Supplychain, etc)",
+                  "Real time industrial  capstone projects (3 projects)",
+                  "Professional Development & Industry Readiness",
                 ],
               },
             },
@@ -1464,11 +1398,11 @@ export const DataScienceMastersinCS = [
       },
       {
         Module0: {
-          title: "Deep Learning & Advanced Data Analysis",
+          title: "S2 :- Deep Learning & Advanced Data Analysis (20 ECTS Credits)",
           content: [
             {
               chap: {
-                title: "Module 1 :-Introduction to Deep Learning",
+                title: "Module 1: Introduction to Deep Learning",
                 desc: [
                   "Introduction to Deep Learning",
                   "MLP Architecture",
@@ -1483,7 +1417,7 @@ export const DataScienceMastersinCS = [
             },
             {
               chap: {
-                title: "Module 2 :- Deep learning for computer vision",
+                title: "Module 2: Deep learning for computer vision",
                 desc: [
                   "Introduction to Computer Vision",
                   "Image Filtering and Enhancement",
@@ -1495,7 +1429,7 @@ export const DataScienceMastersinCS = [
             {
               chap: {
                 title:
-                  "Module 3 :- Deep learning for natural language processing",
+                  "Module 3: Deep learning for natural language processing",
                 desc: [
                   "Natural Language Toolkit",
                   "Stemming",
@@ -1508,7 +1442,70 @@ export const DataScienceMastersinCS = [
             },
             {
               chap: {
-                title: "Module 4 :- High Dimensional Data Analysis",
+                title: "Module 4: High Dimensional Data Analysis",
+                desc: [
+                  "Introduction to Big Data",
+                  "Data Locality",
+                  "SQOOP (SQL in HADOOP)",
+                  "Map Reduce",
+                  "Spark",
+                  "Persisting RDD",
+                ],
+              },
+            },
+          ],
+          id: 5,
+          open: false,
+        },
+      },
+      
+      {
+        Module0: {
+          title: "S2 :- Deploymnet & Gen-AI (15 ECTS Credits)",
+          content: [
+            {
+              chap: {
+                title: "Module 1: Introduction to Deep Learning",
+                desc: [
+                  "Introduction to Deep Learning",
+                  "MLP Architecture",
+                  "Weight Initialization",
+                  "Deep learning algorithms",
+                  "Exponentially Weighted Moving Average (EWMA)",
+                  "Padding",
+                  "Pooling",
+                  "Sequential API",
+                ],
+              },
+            },
+            {
+              chap: {
+                title: "Module 2: Deep learning for computer vision",
+                desc: [
+                  "Introduction to Computer Vision",
+                  "Image Filtering and Enhancement",
+                  "Image Recognition",
+                  "Semantic Segmentation",
+                ],
+              },
+            },
+            {
+              chap: {
+                title:
+                  "Module 3: Deep learning for natural language processing",
+                desc: [
+                  "Natural Language Toolkit",
+                  "Stemming",
+                  "N-GRAMS",
+                  "Spacy",
+                  "Word2Vec",
+                  "NLP Spacy",
+                ],
+              },
+            },
+            {
+              chap: {
+                title: "Module 4: High Dimensional Data Analysis",
                 desc: [
                   "Introduction to Big Data",
                   "Data Locality",
@@ -1526,76 +1523,12 @@ export const DataScienceMastersinCS = [
       },
       {
         Module0: {
-          title: "Module 1 :-Generative AI",
+          title: "S2 :- Comprehensive Data Structures (10 ECTS Credits)",
           content: [
             {
               chap: {
-                desc: [
-                  "Introduction to Generative AI",
-                  "Probabilistic Graphical Models",
-                  "Introduction to Generative Adversarial Networks (GANs)",
-                  "Introduction to Variational Autoencoders (VAEs)",
-                  "Ethical Implications and Challenges",
-                  "Advanced Topics and Recent Trends",
-                ],
-              },
-            },
-          ],
-          id: 6,
-          open: false,
-        },
-      },
-      {
-        Module0: {
-          title: "Module 2 :- Product Analytics",
-          content: [
-            {
-              chap: {
-                desc: [
-                  "Product Usage Onboarding",
-                  "A/B Testing Techniques",
-                  "Online Platform Metrics",
-                  "Customer Experience Mapping",
-                  "Marketing Performance Analysis",
-                  "Google Analytics for Beginners",
-                  "Google Analytics Reporting Techniques",
-                  "Data Pre-processing with Google Analytics",
-                ],
-              },
-            },
-          ],
-          id: 6,
-          open: false,
-        },
-      },
-      {
-        Module0: {
-          title: "Module 3 :- Productionization of ML systems",
-          content: [
-            {
-              chap: {
-                desc: [
-                  "ML Deployment Lifecycle",
-                  "Model Serialization",
-                  "Cloud Deployment: AWS SageMaker",
-                  "Cloud Deployment: Azure ML Service",
-                  "Cloud Deployment: GCP AI Platform",
-                  "Model Versioning",
-                ],
-              },
-            },
-          ],
-          id: 6,
-          open: false,
-        },
-      },
-      {
-        Module0: {
-          title:
-            "Module 1 :-Essential Data Structures: Lists, Queues, Stacks",
-          content: [
-            {
-              chap: {
+                title:
+                  "Module 1: Essential Data Structures: Lists, Queues, Stacks",
                 desc: [
                   "Introduction to Data Structures & Lists",
                   "Array vs. Linked List",
@@ -1606,19 +1539,10 @@ export const DataScienceMastersinCS = [
                 ],
               },
             },
-          ],
-          id: 6,
-          open: false,
-        },
-      },
-
-      {
-        Module0: {
-          title:
-            "Module 2 :- Advanced Data Structures: Trees, Graphs, Hash Tables",
-          content: [
             {
               chap: {
+                title:
+            "Module 2: Advanced Data Structures: Trees, Graphs, Hash Tables",
                 desc: [
                   "Binary Trees",
                   "Binary Tree Traversals",
@@ -1637,7 +1561,26 @@ export const DataScienceMastersinCS = [
               },
             },
           ],
-          id: 6,
+          id: 5,
+          open: false,
+        },
+      },
+      {
+        Module0: {
+          title: "S2 :- Industry-Specific DA & Professional Development (20 ECTS Credits)",
+          content: [
+            {
+              chap: {
+                // title: "Module 1: Introduction to deep learning",
+                desc: [
+                  "Domain electives (BFSI, Healthcare, E-Commerce, Supplychain, etc)",
+                  "Real time industrial  capstone projects (3 projects)",
+                  "Professional Development & Industry Readiness",
+                ],
+              },
+            },
+          ],
+          id: 4,
           open: false,
         },
       },
