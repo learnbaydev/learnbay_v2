@@ -350,17 +350,21 @@ const Course = ({
                                             <BsCheckLg
                                               className={styles.checkIcon}
                                             />
-                                            {para[2]}
+                                            {para[1]}
                                           </p>
-                                          <p className={styles.singleP}>
-                                            {/* <TbCurrencyRupee
+                                          {para.length >= 3 ? (
+                                            <p className={styles.singleP}>
+                                              {/* <TbCurrencyRupee
                                           className={styles.checkCircle}
                                         /> */}
-                                            <BsCheckLg
-                                              className={styles.checkIcon}
-                                            />
-                                            {para[2]}
-                                          </p>
+                                              <BsCheckLg
+                                                className={styles.checkIcon}
+                                              />
+                                              {para[2]}
+                                            </p>
+                                          ) : (
+                                            ""
+                                          )}
                                         </div>
                                         <hr className={styles.hr1} />
                                       </div>
