@@ -1,5 +1,5 @@
 import React from "react";
-import Styles from "./GetHire.module.css";
+import Styles from "./Gethire.module.css";
 import Image from "next/image";
 import { FcCheckmark } from "react-icons/fc";
 
