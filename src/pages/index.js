@@ -2,12 +2,8 @@ import Head from "next/head";
 import Navbar from "../../components/Navbar/Navbar";
 import dynamic from "next/dynamic";
 import { DataScienceCourseData } from "../../Data/AdvanceDataScienceCourse";
-
 const BottomBar = dynamic(() =>
   import("../../components/WebPage/BottomBar/BottomBar")
-);
-const OfferPopup = dynamic(() =>
-  import("../../components/OfferPopup/OfferPopup")
 );
 const WhatsappFloat = dynamic(() =>
   import("../../components/WhatappsFloat/WhatsappFloat")
@@ -15,20 +11,10 @@ const WhatsappFloat = dynamic(() =>
 const TrainerSection = dynamic(() =>
   import("../../components/HomePage/TrainerSection/TrainerSection")
 );
-
-const Media = dynamic(() => import("../../components/HomePage/Media/Media"));
-
-const BoxShape = dynamic(() =>
-  import("../../components/HomePage/BoxShape/BoxShape")
-);
-const KeyFeatures = dynamic(() =>
-  import("../../components/HomePage/KeyFeatures/KeyFeatures")
-);
 const Course = dynamic(() => import("../../components/HomePage/Course/Course"));
 const Testimonial = dynamic(() =>
   import("../../components/HomePage/Testimonial/Testimonial")
 );
-const Switch = dynamic(() => import("../../components/HomePage/switch/switch"));
 const ContactUs = dynamic(() =>
   import("../../components/HomePage/ContactUs/ContactUs")
 );
@@ -43,29 +29,18 @@ const HomeLine = dynamic(() =>
   import("../../components/HomePage/HomeLine/HomeLine")
 );
 
-const NewsSection = dynamic(() =>
-  import("../../components/HomePage/NewsSection/NewsSection")
-);
-
-const MasterClass = dynamic(() =>
-  import("../../../learnbay_v2/components/MasterClass/MasterClass")
-);
-
-import { DADataScienceCourseData } from "../../Data/DataAnalyticsData";
 const WhyLearnbay = dynamic(() =>
   import("../../components/HomePage/WhyLearnbay/WhyLearnbay")
 );
 const ProjectSection = dynamic(() =>
   import("../../components/HomePage/ProjectSection/ProjectSection")
 );
-const GetHire = dynamic (()=>
-import ("../../components/MastersCourse/GetHire/GetHire"))
-
-// const ArticleSection = dynamic(() =>
-//   import("../../components/HomePage/Project/ArticleSection")
-// );
+const GetHire = dynamic(() =>
+  import("../../components/MastersCourse/GetHire/GetHire")
+);
 
 export default function Home() {
+  console.log("Home page");
   return (
     <>
       <Head>
@@ -89,20 +64,11 @@ export default function Home() {
       <Navbar radio={true} dataScienceCounselling={true} />
       <FirstSection dataScienceCounselling={true} radio={true} />
       <HomeLine />
-      {/* <BoxShape /> */}
       <Course dataScience={true} radio={true} />
-      {/* <Switch /> */}
-      {/* <KeyFeatures
-        titleCourse="Data Science Placement Report"
-        brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Placement+Report.pdf"
-        popup={true}
-        idss="wSB-phYhG10"
-        dataScience={true}
-        radio={true}
-      /> */}
+
       <WhyLearnbay idss="bfl64ANfSV0" />
       <ProjectSection idss="bfl64ANfSV0" />
-      <GetHire/>
+      <GetHire />
       <TrainerSection idss="eautK0odE7Q" />
       <Testimonial
         redirectDS={true}
@@ -110,10 +76,6 @@ export default function Home() {
         Testimonial={DataScienceCourseData[0].testimonial}
       />
       <ContactUs dataScienceCounselling={true} radio={true} />
-
-      {/* <MasterClass /> */}
-
-      {/* <Media projectData={DataScienceCourseData[0].newsData} /> */}
 
       <SeventhSection />
 

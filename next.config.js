@@ -4,13 +4,10 @@ const nextConfig = {
   },
   reactStrictMode: true,
   images: {
-    domains: [
-      "learnbay-wb.s3.ap-south-1.amazonaws.com",
-      "skillslash-cdn.s3.ap-south-1.amazonaws.com",
-    ],
+    domains: ["learnbay-wb.s3.ap-south-1.amazonaws.com"],
 
     formats: ["image/avif", "image/webp"],
-    minimumCacheTTL: 60,
+    minimumCacheTTL: 120,
   },
   async redirects() {
     return [
@@ -1243,62 +1240,52 @@ const nextConfig = {
         permanent: true,
       },
       {
-        source:
-          "/datascience/best-data-science-courses-in-india",
+        source: "/datascience/best-data-science-courses-in-india",
         destination: "/datascience/advance-data-science-certification-courses",
         permanent: true,
       },
       {
-        source:
-          "/datascience/data-science-ai-for-managers",
+        source: "/datascience/data-science-ai-for-managers",
         destination: "/datascience/advance-data-science-certification-courses",
         permanent: true,
       },
       {
-        source:
-          "/datascience/data-science-ai-masters-program",
+        source: "/datascience/data-science-ai-masters-program",
         destination: "/datascience/data-science-and-ai-masters-in-cs",
         permanent: true,
       },
       {
-        source:
-          "/datascience/data-science-certification-courses",
+        source: "/datascience/data-science-certification-courses",
         destination: "/datascience/data-analytics-certification-course",
         permanent: true,
       },
       {
-        source:
-          "/datascience/data-science-for-bfsi-professional",
+        source: "/datascience/data-science-for-bfsi-professional",
         destination: "/datascience/advance-data-science-certification-courses",
         permanent: true,
       },
       {
-        source:
-          "/datascience/hr-analytics",
+        source: "/datascience/hr-analytics",
         destination: "/datascience/business-analytics-certification-course",
         permanent: true,
       },
       {
-        source:
-          "/datascience/marketing-analytics",
+        source: "/datascience/marketing-analytics",
         destination: "/datascience/business-analytics-certification-course",
         permanent: true,
       },
       {
-        source:
-          "/fullstack/dsa-system-design",
+        source: "/fullstack/dsa-system-design",
         destination: "/fullstack/full-stack-software-development-program",
         permanent: true,
       },
       {
-        source:
-          "/fullstack/dsa-system-design",
+        source: "/fullstack/dsa-system-design",
         destination: "/fullstack/full-stack-software-development-program",
         permanent: true,
       },
       {
-        source:
-          "/fullstack/software-development-program-for-freshers",
+        source: "/fullstack/software-development-program-for-freshers",
         destination: "/fullstack/full-stack-software-development-program",
         permanent: true,
       },

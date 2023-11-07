@@ -4,9 +4,10 @@ import { IoLogoWhatsapp } from "react-icons/io";
 import Link from "next/dist/client/link";
 import Popup from "../../Popup/Popup";
 import Form from "../../Form/Form";
-import styles from "./BottomBar.module.css"
+import styles from "./BottomBar.module.css";
 
 const BottomBar = ({ radio }) => {
+  console.log("bottom bar");
   const [popups, setPopups] = useState(false);
 
   const popupShow = () => {
