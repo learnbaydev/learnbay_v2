@@ -68,6 +68,9 @@ a {
 .imgWrapperMobile {
   display: none;
 }
+.divWrapper {
+  display: none;
+}
 .imgWrapperDesktop {
   display: flex;
   width: 100%;
@@ -138,12 +141,14 @@ a {
   height: 100%;
 }
 
-.swiper-button-next, .swiper-button-prev {
-  color: #0072BC !important;
+.swiper-button-next,
+.swiper-button-prev {
+  color: #0072bc !important;
   --swiper-navigation-size: 20px !important;
 }
 
-.swiper-android .swiper-slide, .swiper-wrapper {
+.swiper-android .swiper-slide,
+.swiper-wrapper {
   padding: 0px 0px 0px 0px;
 }
 
@@ -207,6 +212,9 @@ a {
   .whiteP {
     width: 300px;
   }
+  .FlDiv {
+    display: none;
+  }
   .RightPopup {
     display: flex;
     flex-flow: column;
@@ -248,7 +256,7 @@ a {
   .wrapper {
     padding: 30px 20px;
   }
-  .faqCity .course  .wrapper {
+  .faqCity .course .wrapper {
     padding: 30px 0px !important;
   }
 }
@@ -262,6 +270,36 @@ a {
 }
 
 @media (max-width: 481px) {
+  .FlDiv {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(255, 255, 255);
+    border-radius: 12px;
+    border-top: 1px solid rgba(98, 98, 98, 0.125);
+    height: 60px;
+    width: 100vw;
+    left: 0;
+    position: fixed;
+    bottom: 0;
+    z-index: 999;
+  }
+  .FlDiv div {
+    display: flex;
+    align-items: center;
+  }
+  .flDivLeft {
+    /* border-right: 2px solid #2d9cd7;
+    padding-right: 10px; */
+    margin: 0;
+  }
+  .divWrapper {
+    display: flex;
+    position: relative;
+    width: 100vw;
+  }
   h4 {
     font-size: 24px;
     color: #000;
@@ -272,6 +310,104 @@ a {
   .swiper-horizontal > .swiper-scrollbar {
     width: 80% !important;
     left: 10% !important;
-  
+  }
 }
+.divWrapper {
+  display: none;
+}
+
+.popupModal {
+  display: grid;
+  grid-template-columns: 49% 49%;
+  background-color: white;
+}
+
+.whiteP {
+  background-color: transparent;
+  height: 600px;
+  width: 600px;
+}
+
+.RightPopup h5 {
+  font-size: 20px;
+  text-align: left;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+}
+.RightPopup p {
+  margin: 0;
+  font-size: 16px;
+  color: rgb(143, 143, 143);
+}
+
+.FlDiv {
+  display: none;
+}
+
+.RightPopup {
+  display: flex;
+  flex-flow: column;
+  margin-left: 40px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.RightPopup h5 {
+  font-size: 20px;
+  text-align: left;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+}
+.RightPopup p {
+  margin: 0;
+  font-size: 16px;
+  color: rgb(143, 143, 143);
+}
+
+.bIcon {
+  font-size: 18px;
+  margin-left: 8px;
+  color: #0072bc;
+}
+
+.bIcon {
+  font-size: 18px;
+  margin-left: 8px;
+  color: #0072bc;
+}
+
+@media (max-width: 481px) {
+  .divWrapper {
+    display: flex;
+    position: relative;
+    width: 100vw;
+  }
+  .FlDiv {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(255, 255, 255);
+    border-radius: 12px;
+    border-top: 1px solid rgba(98, 98, 98, 0.125);
+    height: 60px;
+    width: 100vw;
+    left: 0;
+    position: fixed;
+    bottom: 0;
+    z-index: 999;
+  }
+  .FlDiv div {
+    display: flex;
+    align-items: center;
+  }
+  .flDivLeft {
+    border-right: 2px solid #2d9cd7;
+    padding-right: 10px;
+    margin: 0;
+  }
 }
