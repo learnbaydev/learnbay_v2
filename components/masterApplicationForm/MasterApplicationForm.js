@@ -4,7 +4,10 @@ import Image from "next/image";
 import "react-phone-number-input/style.css";
 import styles from "./MasterApplicationForm.module.css";
 import PhoneInput from "react-phone-number-input";
+import data from "../CoursePage/Gethired/GEtHireData";
+import { useRouter } from "next/router";
 const MasterApplicationForm = () => {
+  const router = useRouter();
   const [value, setValue] = useState();
   const [query, setQuery] = useState({
     name: "",
@@ -43,22 +46,23 @@ const MasterApplicationForm = () => {
         method: "POST",
         body: formData,
       }
-    ).then(
-      setQuery({
-        name: "",
-        email: "",
-        phoneNumber: "",
-        highestEducation: "",
-        graduationMarks: "",
-        workExperience: "",
-        currentJobTitle: "",
-        domain: "",
-        programmingKnowledge: "no",
-        // Default: "no"
-      })
     );
+    setQuery({
+      name: "",
+      email: "",
+      phoneNumber: "",
+      highestEducation: "",
+      graduationMarks: "",
+      workExperience: "",
+      currentJobTitle: "",
+      domain: "",
+      programmingKnowledge: "no",
+      // Default: "no"
+    });
+
     console.log(sendData.status);
     setValue();
+    if (sendData.status === 200) router.push("/Thank-you-counselling");
   };
 
   return (
