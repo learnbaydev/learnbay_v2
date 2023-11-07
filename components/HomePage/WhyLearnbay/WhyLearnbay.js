@@ -18,19 +18,12 @@ function WhyLearnbay() {
         <div className={styles.boxDiv}>
           <div className={styles.innerDiv}>
             <div className={styles.imgBox}>
-              <video
-                autoplay
-                loop
-                muted
-                playsInline
-                style={{ height: "60px", width: "60px" }}
-              >
-                <source
-                  src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/why2.webm"
-                  type="video/webm"
-                />
-                Your browser does not support the video tag.
-              </video>
+              <Image
+                src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/bar-chart.gif"
+                width={60}
+                height={60}
+                alt="Learnbay"
+              />
             </div>
             <div>
               <p className={styles.OrangeText}>250%</p>
