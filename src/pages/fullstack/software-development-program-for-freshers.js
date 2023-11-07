@@ -25,9 +25,7 @@ const WhoProgram = dynamic(() =>
 const Switch = dynamic(() =>
   import("../../../components/HomePage/switch/switch")
 );
-const GrowthStats = dynamic(() =>
-  import("../../../components/CoursePage/GrowthStat/GrowthStats")
-);
+// const GrowthStats = dynamic(() => import("../../../components/"));
 const ToolsCovered = dynamic(() =>
   import("../../../components/CoursePage/ToolsCovered/ToolsCovered")
 );
@@ -37,12 +35,12 @@ const FeeSection = dynamic(() =>
 const FourthSection = dynamic(() =>
   import("../../../components/CoursePage/FourthSection/FourthSection")
 );
-const FifthSection = dynamic(() =>
-  import("../../../components/CoursePage/FifthSection/FifthSection")
-);
-const SixthSectionCTA = dynamic(() =>
-  import("../../../components/CoursePage/SixthSectionCTA/Counselling")
-);
+// const FifthSection = dynamic(() =>
+//   import("../../../components/CoursePage/FifthSection/FifthSection")
+// );
+// const SixthSectionCTA = dynamic(() =>
+//   import("../../../components/CoursePage/SixthSectionCTA/Counselling")
+// );
 const Project = dynamic(() =>
   import("../../../components/CoursePage/Project/Project")
 );
@@ -118,8 +116,8 @@ function Blockchain() {
           titleCourse="Full Stack Placement Report"
           brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Placement+Report+(1).pdf"
         />
-        <FifthSection />
-        <SixthSectionCTA dataScienceCounselling={true} />
+        {/* <FifthSection /> */}
+        {/* <SixthSectionCTA dataScienceCounselling={true} /> */}
         <SyllabusNew
           dataScienceCounselling={true}
           dataScience={true}
@@ -129,13 +127,13 @@ function Blockchain() {
           syllabusDesc={FreshersFSDData[0].syllabusDesc}
           popupHead={FreshersFSDData[0].popupHead}
         />
-        <GrowthStats
+        {/* <GrowthStats
           img1="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/SW+Dev+Masters+Scope+Image-min.png"
           heading="Embrace the future of technology & unlock endless career opportunities"
           para1="Higher Growth: Compound annual growth rate of CAGR of 11.9% in 2023"
           para2="Maximize Cloud Opportunities: Unleash your potential & earn 8 LPA"
           para3="Strong Demand: Growing need for tech wizards across various industries"
-        />
+        /> */}
 
         <ToolsCovered
           deskImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Tools-Logo-SDE.png"

@@ -25,9 +25,9 @@ const WhoProgram = dynamic(() =>
 const Switch = dynamic(() =>
   import("../../../components/HomePage/switch/switch")
 );
-const GrowthStats = dynamic(() =>
-  import("../../../components/CoursePage/GrowthStat/GrowthStats")
-);
+// const GrowthStats = dynamic(() =>
+//   import("../../../components/CoursePage/GrowthStat/GrowthStats")
+// );
 const ToolsCovered = dynamic(() =>
   import("../../../components/CoursePage/ToolsCovered/ToolsCovered")
 );
@@ -132,13 +132,13 @@ function Blockchain() {
           syllabusDesc={SDCloudCourseData[0].syllabusDesc}
           popupHead={SDCloudCourseData[0].popupHead}
         />
-        <GrowthStats
+        {/* <GrowthStats
           img1="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Cloud+%26+DevOps+Scope+Image.png"
           heading="Seeking lucrative careers opportunities? Step into the cloud industry"
           para1="Higher Growth: Compound annual growth rate of CAGR of 20% by 2028"
           para2="Big Earning Potential: Unlock your potential in the cloud industry & earn 8 LPA"
           para3="Strong Demand: Growing need for tech wizards across various industries"
-        />
+        /> */}
 
         <ToolsCovered
           deskImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Tools-Logo-SDE.png"
