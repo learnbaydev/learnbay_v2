@@ -1,3 +1,15 @@
+
+.icon {
+    font-size: 36px;
+}
+.iconbox {
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+
 .Container {
     display: grid;
     grid-template-columns: 55% 31%;
