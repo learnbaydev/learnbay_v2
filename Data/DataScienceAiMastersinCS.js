@@ -502,7 +502,16 @@ export const DataScienceMastersinCS = [
           "Complete your training with the internationally recognized certificate.",
           "Validate your Data Science and AI skills with IBM Course Completion Certificate.",
           "Get acknowledged in IT sector by adding IBM Certificate to your profile.",
-          "ECE.org evaluated credits making it equivalent to a master’s degree from the United States. To Know More: https://legal.woolf.university/accreditation",
+          <span>
+            ECE.org evaluated credits making it equivalent to a master’s degree
+            from the United States. To Know More:{" "}
+            <a
+              href="https://legal.woolf.university/accreditation"
+              style={{ color: "#0072bc" }}
+            >
+              https://legal.woolf.university/accreditation
+            </a>
+          </span>,
         ],
       },
       projectCertificate: {
@@ -887,7 +896,8 @@ export const DataScienceMastersinCS = [
         },
         {
           Module0: {
-            title: "Industry-Specific DA & Professional Development (20 ECTS Credits)",
+            title:
+              "Industry-Specific DA & Professional Development (20 ECTS Credits)",
             content: [
               {
                 chap: {
@@ -968,7 +978,7 @@ export const DataScienceMastersinCS = [
             open: true,
           },
         },
-        
+
         {
           Module0: {
             title: "Deploymnet & Gen-AI (15 ECTS Credits)",
@@ -1052,7 +1062,7 @@ export const DataScienceMastersinCS = [
               {
                 chap: {
                   title:
-              "Module 2: Advanced Data Structures: Trees, Graphs, Hash Tables",
+                    "Module 2: Advanced Data Structures: Trees, Graphs, Hash Tables",
                   desc: [
                     "Binary Trees",
                     "Binary Tree Traversals",
@@ -1077,7 +1087,8 @@ export const DataScienceMastersinCS = [
         },
         {
           Module0: {
-            title: "Industry-Specific DA & Professional Development (20 ECTS Credits)",
+            title:
+              "Industry-Specific DA & Professional Development (20 ECTS Credits)",
             content: [
               {
                 chap: {
@@ -1094,7 +1105,6 @@ export const DataScienceMastersinCS = [
             open: false,
           },
         },
-        
       ],
     },
 
@@ -1105,7 +1115,7 @@ export const DataScienceMastersinCS = [
           content: [
             {
               chap: {
-          title: "MODULE 1: Python Fundamentals",
+                title: "MODULE 1: Python Fundamentals",
                 desc: [
                   "Programming Basics & Environment Setup",
                   "Python Programming Overview",
@@ -1117,7 +1127,7 @@ export const DataScienceMastersinCS = [
             },
             {
               chap: {
-          title: "MODULE 2: Numerical Programming",
+                title: "MODULE 2: Numerical Programming",
                 desc: [
                   "Programming Basics & Environment Setup",
                   "Python Programming Overview",
@@ -1379,7 +1389,8 @@ export const DataScienceMastersinCS = [
       },
       {
         Module0: {
-          title: "S1 :- Industry-Specific DA & Professional Development (20 ECTS Credits)",
+          title:
+            "S1 :- Industry-Specific DA & Professional Development (20 ECTS Credits)",
           content: [
             {
               chap: {
@@ -1398,7 +1409,8 @@ export const DataScienceMastersinCS = [
       },
       {
         Module0: {
-          title: "S2 :- Deep Learning & Advanced Data Analysis (20 ECTS Credits)",
+          title:
+            "S2 :- Deep Learning & Advanced Data Analysis (20 ECTS Credits)",
           content: [
             {
               chap: {
@@ -1458,7 +1470,7 @@ export const DataScienceMastersinCS = [
           open: false,
         },
       },
-      
+
       {
         Module0: {
           title: "S2 :- Deploymnet & Gen-AI (15 ECTS Credits)",
@@ -1542,7 +1554,7 @@ export const DataScienceMastersinCS = [
             {
               chap: {
                 title:
-            "Module 2: Advanced Data Structures: Trees, Graphs, Hash Tables",
+                  "Module 2: Advanced Data Structures: Trees, Graphs, Hash Tables",
                 desc: [
                   "Binary Trees",
                   "Binary Tree Traversals",
@@ -1567,7 +1579,8 @@ export const DataScienceMastersinCS = [
       },
       {
         Module0: {
-          title: "S2 :- Industry-Specific DA & Professional Development (20 ECTS Credits)",
+          title:
+            "S2 :- Industry-Specific DA & Professional Development (20 ECTS Credits)",
           content: [
             {
               chap: {

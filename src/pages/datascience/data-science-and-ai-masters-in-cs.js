@@ -36,9 +36,6 @@ const ToolsCovered = dynamic(() =>
 const FeeSection = dynamic(() =>
   import("../../../components/CoursePage/FeeSection/FeeSection")
 );
-const FourthSection = dynamic(() =>
-  import("../../../components/CoursePage/FourthSection/FourthSection")
-);
 const SyllabusNew = dynamic(() =>
   import("../../../components/CoursePage/Syllabus/MasterSyllabus")
 );

@@ -62,7 +62,12 @@ const JobAbroad = () => {
                 </p>
               </div>
             </div>
-            <p className={Styles.woolfText}>Learnbay Excelversity is a constituent college affiliated with <span className={Styles.spanWoolf}>Woolf University, EU</span></p>
+            <p className={Styles.woolfText}>
+              Learnbay Excelversity is a constituent college affiliated with{" "}
+              <a href="https://woolf.university/academics/college-membership/bb43ed7d-edff-4e25-b530-2e950496519c">
+                <span className={Styles.spanWoolf}>Woolf University, EU</span>
+              </a>
+            </p>
           </div>
 
           <div className={Styles.JobAbroadRight}>
