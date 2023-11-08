@@ -95,7 +95,7 @@ function FirstSection({
             <div className={styles.firstDiv}>
               <p className={styles.ptopC}>Learnbay Excelvarsity</p>
               <h1 className={styles.h1}>
-                Masters in Computer Science:
+                Master's in Computer Science:
                 <br />
                 <span style={{ color: "#F99600" }}>Data Science and AI</span>
               </h1>

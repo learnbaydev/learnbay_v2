@@ -499,9 +499,10 @@ export const DataScienceMastersinCS = [
         img: "https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/certificate/degree-woolf.webp",
         title: "Globally recognized degree",
         para: [
-          "Complete your training with the internationally recognized certificate.",
-          "Validate your Data Science and AI skills with IBM Course Completion Certificate.",
-          "Get acknowledged in IT sector by adding IBM Certificate to your profile.",
+          "The ECTS accreditation is recognized across more than 60 countries.",
+          "Equivalent to a Master’s degree in US",
+          "Our EU-accredited degree boosts visa prospects in Europe the US, canada, and more.",
+    
           <span>
             ECE.org evaluated credits making it equivalent to a master’s degree
             from the United States. To Know More:{" "}

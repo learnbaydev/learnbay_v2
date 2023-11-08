@@ -61,7 +61,7 @@
   background: rgb(14, 29, 39);
   padding: 0px 1px;
   gap: 10px;
-  padding: 4px 16px;
+  padding: 5px 16px;
   /* align-items: center; */
   margin-bottom: 0px 20px;
   /* justify-content: center; */
@@ -70,7 +70,7 @@
 .Points p {
   color: #e9eaec;
   /* font-family: Inter; */
-  font-size: 17.543px;
+  font-size: 15.543px;
   font-style: normal;
   font-weight: 600;
   line-height: 26.295px;

@@ -57,7 +57,7 @@ const JobAbroad = () => {
               <div>
                 <h3>Step into High-Value Research Careers</h3>
                 <p>
-                  Degrees for prestigious research jobs and institutional
+                  Degree for prestigious research jobs and institutional
                   collaborations.
                 </p>
               </div>

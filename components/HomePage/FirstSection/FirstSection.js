@@ -84,7 +84,7 @@ const FirstSection = ({ dataScience, radio, dataScienceCounselling }) => {
                     width="580"
                     height="450"
                     priority
-                    quality={40}
+                    quality={80} 
                     alt="data science course"
                   />
                 </div>
@@ -112,6 +112,7 @@ const FirstSection = ({ dataScience, radio, dataScienceCounselling }) => {
                     width="32"
                     height="32"
                     loading="lazy"
+              
                     alt="data science course"
                   />
                 </div>
@@ -155,7 +156,9 @@ const FirstSection = ({ dataScience, radio, dataScienceCounselling }) => {
                   width="580"
                   height="450"
                   priority
-                  quality={40}
+          
+                  quality={100}
+
                   alt="data science course"
                 />
               </div>
@@ -168,6 +171,8 @@ const FirstSection = ({ dataScience, radio, dataScienceCounselling }) => {
               <Image
                 src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/forthSection.webp"
                 fill={true}
+              priority
+              quality={40}
                 alt="Header background"
               />
             </div>
@@ -217,7 +222,7 @@ const FirstSection = ({ dataScience, radio, dataScienceCounselling }) => {
                   width="580"
                   height="450"
                   priority
-                  quality={40}
+                  quality={60}
                   alt="data science course"
                 />
               </div>
@@ -270,7 +275,7 @@ const FirstSection = ({ dataScience, radio, dataScienceCounselling }) => {
                   width="806"
                   height="663"
                   priority
-                  quality={40}
+                  quality={60}
                   alt="data science course"
                 />
               </div>
