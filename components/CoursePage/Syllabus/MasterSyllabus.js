@@ -165,7 +165,7 @@ function SyllabusNew({
           <h4 className={styles.h1}>Explore our Syllabus</h4>
           <p className={styles.ptop}>
             Curriculum is specifically engineered to meet the expectations of
-            leading tech companies.
+            leading tech companies
           </p>
         </div>{" "}
         <div className={styles.pNavg}>

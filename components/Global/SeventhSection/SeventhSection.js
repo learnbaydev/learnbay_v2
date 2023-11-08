@@ -39,8 +39,7 @@ function SeventhSection({ fullStackCont }) {
           <p className={styles.pTop}>Got more questions?</p>
           <h5>Talk to our team directly</h5>
           <p className={styles.pBot}>
-            Reach us and a learning consultant will get in touch with you
-            shortly
+          Contact us and our academic counsellor will get in touch with you shortly
           </p>
           {fullStackCont ? (
             <div className={styles.btnWrap}>
