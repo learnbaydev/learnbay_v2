@@ -10,6 +10,12 @@ import { IoRocketOutline } from "react-icons/io5";
 import { TbCertificate } from "react-icons/tb";
 import VideoPopup from "../../Global/VideoPopup/VideoPopup";
 import Styles from "./WhyLearnbay.module.css";
+import { BsBank } from "react-icons/bs";
+import { FaClinicMedical } from "react-icons/fa";
+import { AiOutlineFundProjectionScreen } from "react-icons/ai";
+import { PiTruck } from "react-icons/pi";
+import { MdOutlinePrecisionManufacturing } from "react-icons/md";
+import { BsFillPeopleFill } from "react-icons/bs";
 
 import "swiper/css";
 import "swiper/css/free-mode";
@@ -101,57 +107,65 @@ function WhyLearnbay({ idss }) {
                 <div className={Styles.iconBoxDesktop}>
                   <div className={Styles.iconBox}>
                     <div className={Styles.BoxIconinner}>
-                      <Image
+                      {/* <Image
                         src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/bank.gif"
                         loading="lazy"
                         width={40}
                         height={40}
-                      />
+                      /> */}
+                      <BsBank className={Styles.icon} />
                       <p>BFSI</p>
                     </div>
                     <div className={Styles.BoxIconinner}>
-                      <Image
+                      {/* <Image
                         src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/heartbeat.gif"
                         loading="lazy"
                         width={40}
                         height={40}
-                      />
+                      /> */}
+                      <FaClinicMedical className={Styles.icon} />
                       <p>HEALTHCARE</p>
                     </div>
                     <div className={Styles.BoxIconinner}>
-                      <Image
+                      {/* <Image
                         src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/live.gif"
                         loading="lazy"
                         width={40}
                         height={40}
-                      />
+                      /> */}
+                      <AiOutlineFundProjectionScreen className={Styles.icon} />
                       <p>MARKETING</p>
                     </div>
 
                     <div className={Styles.BoxIconinner}>
-                      <Image
+                      {/* <Image
                         src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/hr.gif"
                         loading="lazy"
                         width={40}
                         height={40}
-                      />
+                      /> */}
+                      <BsFillPeopleFill className={Styles.icon} />
                       <p>HUMAN RESOURCES</p>
                     </div>
                     <div className={Styles.BoxIconinner}>
-                      <Image
+                      {/* <Image
                         src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/supplychain.gif"
                         loading="lazy"
                         width={40}
                         height={40}
-                      />
+                      /> */}
+                      <PiTruck className={Styles.icon} />
                       <p>SUPPLY CHAIN</p>
                     </div>
                     <div className={Styles.BoxIconinner}>
-                      <Image
+                      {/* <Image
                         src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/manufacturing.gif"
                         loading="lazy"
                         width={40}
                         height={40}
+                      /> */}
+                      <MdOutlinePrecisionManufacturing
+                        className={Styles.icon}
                       />
                       <p>MANUFACTURING</p>
                     </div>
@@ -166,58 +180,66 @@ function WhyLearnbay({ idss }) {
                 <div className={Styles.iconBoxMobile}>
                   <div className={Styles.iconBox}>
                     <div className={Styles.BoxIconinner}>
-                      <Image
+                      {/* <Image
                         src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/bank.gif"
                         loading="lazy"
                         width={40}
                         height={40}
-                      />
+                      /> */}
+                      <BsBank className={Styles.icon} />
                       <p>BFSI</p>
                     </div>
                     <div className={Styles.BoxIconinner}>
-                      <Image
+                      {/* <Image
                         src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/heartbeat.gif"
                         loading="lazy"
                         width={40}
                         height={40}
-                      />
+                      /> */}
+                      <FaClinicMedical className={Styles.icon} />
                       <p>HEALTHCARE</p>
                     </div>
                     <div className={Styles.BoxIconinner}>
-                      <Image
+                      {/* <Image
                         src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/live.gif"
                         loading="lazy"
                         width={40}
                         height={40}
-                      />
+                      /> */}
+                      <AiOutlineFundProjectionScreen className={Styles.icon} />
                       <p>MARKETING & HR</p>
                     </div>
                     <div className={Styles.BoxIconinner}>
-                      <Image
+                      {/* <Image
                         src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/delivery-truck.gif"
                         loading="lazy"
                         width={40}
                         height={40}
-                      />
+                      /> */}
+                      <PiTruck className={Styles.icon} />
                       <p>SUPPLYCHAIN</p>
                     </div>
                     <div className={Styles.BoxIconinner}>
-                      <Image
+                      {/* <Image
                         src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/delivery-truck.gif"
                         loading="lazy"
                         width={40}
                         height={40}
+                      /> */}
+                      <MdOutlinePrecisionManufacturing
+                        className={Styles.icon}
                       />
-                      <p>SUPPLYCHAIN</p>
+                      <p>MANUFACTURING</p>
                     </div>
                     <div className={Styles.BoxIconinner}>
-                      <Image
+                      {/* <Image
                         src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/delivery-truck.gif"
                         loading="lazy"
                         width={40}
                         height={40}
-                      />
-                      <p>SUPPLYCHAIN</p>
+                      /> */}
+                      <BsFillPeopleFill className={Styles.icon} />
+                      <p>HUMAN RESOURCES</p>
                     </div>
                   </div>
                   <div className={Styles.buttonDiv}>
@@ -253,7 +275,8 @@ function WhyLearnbay({ idss }) {
                 <p className={Styles.head}>250%</p>
                 <p className={Styles.Para}>Highest Salary Hike</p>
                 <p style={{ color: "#fff", margin: "10px 0px 0px" }}>
-                Get read to crack highest paying jobs with mokcup interviews led by industry experst
+                  Get read to crack highest paying jobs with mokcup interviews
+                  led by industry experst
                 </p>
               </div>
             </div>
@@ -276,40 +299,42 @@ function WhyLearnbay({ idss }) {
         )}
 
         {projectCert ? (
-                    <div className={Styles.RightSide}>
-                    <div className={Styles.firstBox}>
-                      <div className="imgWrapper">
-                        <Image
-                          src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/masterPage/whylearn1.webp"
-                          loading="lazy"
-                          width="200"
-                          height="212"
-                          alt="profile-Img"
-                          onClick={() => videoSHow()}
-                        />
-                      </div>
-                      <div className={Styles.BlueBox}>
-                        <FaRocket className={Styles.Icon} />
-                        <p className={Styles.head}>35K+</p>
-                        <p className={Styles.Para}>
-                          Mentors help you select the domain & guide you through.
-                        </p>
-                      </div>
-                    </div>
-                    <div className={Styles.left}>
-                      <h6>Key Benefits</h6>
-                      <div className={Styles.mainCont}>
-                        <p className={Styles.para}>
-                          <FaCheckCircle className={Styles.checkCircle} />
-                          Work in an industry like environment and gain practical hands-on experience
-                        </p>
-                        <p className={Styles.para}>
-                          <FaCheckCircle className={Styles.checkCircle} />
-                          Gain the work experience of data scientist with dedicated project mentors from industry.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
+          <div className={Styles.RightSide}>
+            <div className={Styles.firstBox}>
+              <div className="imgWrapper">
+                <Image
+                  src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/masterPage/whylearn1.webp"
+                  loading="lazy"
+                  width="200"
+                  height="212"
+                  alt="profile-Img"
+                  onClick={() => videoSHow()}
+                />
+              </div>
+              <div className={Styles.BlueBox}>
+                <FaRocket className={Styles.Icon} />
+                <p className={Styles.head}>35K+</p>
+                <p className={Styles.Para}>
+                  Mentors help you select the domain & guide you through.
+                </p>
+              </div>
+            </div>
+            <div className={Styles.left}>
+              <h6>Key Benefits</h6>
+              <div className={Styles.mainCont}>
+                <p className={Styles.para}>
+                  <FaCheckCircle className={Styles.checkCircle} />
+                  Work in an industry like environment and gain practical
+                  hands-on experience
+                </p>
+                <p className={Styles.para}>
+                  <FaCheckCircle className={Styles.checkCircle} />
+                  Gain the work experience of data scientist with dedicated
+                  project mentors from industry.
+                </p>
+              </div>
+            </div>
+          </div>
         ) : (
           ""
         )}
