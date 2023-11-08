@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 import {
   FaCheckCircle,
@@ -113,7 +114,7 @@ function WhyLearnbay({ idss }) {
                         width={40}
                         height={40}
                       /> */}
-                      <BsBank className={Styles.icon} />
+                      <BsBank className={Styles.domainicon} />
                       <p>BFSI</p>
                     </div>
                     <div className={Styles.BoxIconinner}>
@@ -123,7 +124,7 @@ function WhyLearnbay({ idss }) {
                         width={40}
                         height={40}
                       /> */}
-                      <FaClinicMedical className={Styles.icon} />
+                      <FaClinicMedical className={Styles.domainicon} />
                       <p>HEALTHCARE</p>
                     </div>
                     <div className={Styles.BoxIconinner}>
@@ -133,7 +134,7 @@ function WhyLearnbay({ idss }) {
                         width={40}
                         height={40}
                       /> */}
-                      <AiOutlineFundProjectionScreen className={Styles.icon} />
+                      <AiOutlineFundProjectionScreen className={Styles.domainicon} />
                       <p>MARKETING</p>
                     </div>
 
@@ -144,7 +145,7 @@ function WhyLearnbay({ idss }) {
                         width={40}
                         height={40}
                       /> */}
-                      <BsFillPeopleFill className={Styles.icon} />
+                      <BsFillPeopleFill className={Styles.domainicon} />
                       <p>HUMAN RESOURCES</p>
                     </div>
                     <div className={Styles.BoxIconinner}>
@@ -154,7 +155,7 @@ function WhyLearnbay({ idss }) {
                         width={40}
                         height={40}
                       /> */}
-                      <PiTruck className={Styles.icon} />
+                      <PiTruck className={Styles.domainicon} />
                       <p>SUPPLY CHAIN</p>
                     </div>
                     <div className={Styles.BoxIconinner}>
@@ -165,16 +166,18 @@ function WhyLearnbay({ idss }) {
                         height={40}
                       /> */}
                       <MdOutlinePrecisionManufacturing
-                        className={Styles.icon}
+                        className={Styles.domainicon}
                       />
                       <p>MANUFACTURING</p>
                     </div>
                   </div>
                   <div className={Styles.iconButton}>
+                  <Link href="/domain">
                     <Button
                       text="Download Domain Brochures"
                       passIcon={<FaDownload className="bIconS" />}
                     />
+                  </Link>
                   </div>
                 </div>
                 <div className={Styles.iconBoxMobile}>
@@ -186,7 +189,7 @@ function WhyLearnbay({ idss }) {
                         width={40}
                         height={40}
                       /> */}
-                      <BsBank className={Styles.icon} />
+                      <BsBank className={Styles.domainicon} />
                       <p>BFSI</p>
                     </div>
                     <div className={Styles.BoxIconinner}>
@@ -196,7 +199,7 @@ function WhyLearnbay({ idss }) {
                         width={40}
                         height={40}
                       /> */}
-                      <FaClinicMedical className={Styles.icon} />
+                      <FaClinicMedical className={Styles.domainicon} />
                       <p>HEALTHCARE</p>
                     </div>
                     <div className={Styles.BoxIconinner}>
@@ -206,7 +209,7 @@ function WhyLearnbay({ idss }) {
                         width={40}
                         height={40}
                       /> */}
-                      <AiOutlineFundProjectionScreen className={Styles.icon} />
+                      <AiOutlineFundProjectionScreen className={Styles.domainicon} />
                       <p>MARKETING & HR</p>
                     </div>
                     <div className={Styles.BoxIconinner}>
@@ -216,7 +219,7 @@ function WhyLearnbay({ idss }) {
                         width={40}
                         height={40}
                       /> */}
-                      <PiTruck className={Styles.icon} />
+                      <PiTruck className={Styles.domainicon} />
                       <p>SUPPLYCHAIN</p>
                     </div>
                     <div className={Styles.BoxIconinner}>
@@ -227,7 +230,7 @@ function WhyLearnbay({ idss }) {
                         height={40}
                       /> */}
                       <MdOutlinePrecisionManufacturing
-                        className={Styles.icon}
+                        className={Styles.domainicon}
                       />
                       <p>MANUFACTURING</p>
                     </div>
@@ -238,7 +241,7 @@ function WhyLearnbay({ idss }) {
                         width={40}
                         height={40}
                       /> */}
-                      <BsFillPeopleFill className={Styles.icon} />
+                      <BsFillPeopleFill className={Styles.domainicon} />
                       <p>HUMAN RESOURCES</p>
                     </div>
                   </div>
