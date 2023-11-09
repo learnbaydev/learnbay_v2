@@ -105,7 +105,7 @@ const FirstSection = ({ dataScience, radio, dataScienceCounselling }) => {
                   />
                 </div>
                 <p className={styles.TextGreen}>
-                  Curricullum inclusive of GenAI and ChatGPT
+                  Curriculum inclusive of GenAI and ChatGPT
                 </p>
               </div>
               <div className={styles.btnWrapper}>

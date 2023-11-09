@@ -268,8 +268,13 @@ function Blockchain({}) {
         />
         <Certificate data={AIMLDataScienceCourseData[0].Certificate} />
         <FeeSection
+        
           Fee="₹ 1,10,000"
           FeeEmi="₹ 7,211/month"
+          weekdaybatch="Weekday Batch"
+          weekendbatch="Weekend Batch"
+          weekday="MON - FRI"
+          weekend="SAT-SUN"
           WeekdayDate="NOV 17th"
           WeekendDate="NOV 26th"
           WeekendTime="09:30 AM - 1:00 PM"

@@ -211,6 +211,10 @@ const Blockchain = () => {
         <FeeSection
           Fee="₹ 2,50,000"
           FeeEmi="12,292/month."
+          weekdaybatch="Weekday Batch"
+          weekendbatch="Weekend Batch"
+          weekday="MON - FRI"
+          weekend="SAT-SUN"
           WeekdayDate="DEC 14th"
           WeekendDate="NOV 5th"
           WeekendTime="09:30 AM - 1:00 PM"
@@ -234,7 +238,9 @@ const Blockchain = () => {
         {/* <FAQNew FAQNewData={DataScienceMastersinCS[0].faq} /> */}
         <SeventhSection />
         <Footer />
-        <BottomBar />
+        <BottomBar
+          masterdegree={true}
+        />
         <WhatsappFloat />
         {popupData.length == 0 ? "" : <OfferPopup popupData={popupData} />}
       </main>

@@ -264,6 +264,11 @@ function Blockchain({}) {
         <FeeSection
           Fee="₹ 1,25,000"
           FeeEmi="₹ 8,194/month"
+
+          weekdaybatch="Weekday Batch"
+          weekendbatch="Weekend Batch"
+          weekday="MON - FRI"
+          weekend="SAT-SUN"
           WeekdayDate="NOV 17th"
           WeekendDate="NOV 26th"
           WeekendTime="09:30 AM - 1:00 PM"
