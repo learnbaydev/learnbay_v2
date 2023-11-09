@@ -17,6 +17,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import ProgressBar from "../../../components/ProgresBar";
 import { IoIosArrowBack } from "react-icons/io";
 import { IoIosArrowForward } from "react-icons/io";
+import Link from "next/link";
 
 SwiperCore.use([Navigation]);
 
@@ -63,7 +64,7 @@ function SyllabusNew({
   const [mSyllabus, setMSyllabus] = useState(masterSyllabusMobile);
   const [cSyllabus, setCSyllabus] = useState(MasterSyllabusDefault);
   const changeSyllabus = (data) => {
-    console.log("hello");
+   
     for (const key in masterSyllabus) {
       if (masterSyllabus.hasOwnProperty(key)) {
         if (key === data) {
@@ -420,13 +421,15 @@ function SyllabusNew({
         </section>
         <div className={styles.buttonDiv}>
           {buttonHide ? ("") : (
-          <div onClick={popupShow}>
+            <Link href="/master-application">
+          <div>
             <Button
               bannerButton={true}
               text="START YOUR APPLICATION"
               // passIcon={<FaDownload style={{ marginLeft: "10px" }} />}
             />
           </div>
+          </Link>
           )}
           <div onClick={popupShow}>
             <Button

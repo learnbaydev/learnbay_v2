@@ -161,7 +161,7 @@ function Blockchain({}) {
 
         setBatchDateData(batchDate);
 
-        console.log("Batch Date Response:", batchDate);
+     
       }
     };
     fetchBatch();

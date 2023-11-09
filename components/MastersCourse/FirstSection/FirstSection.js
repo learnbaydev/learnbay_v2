@@ -82,11 +82,12 @@ function FirstSection({
               Interested in{" "}
               <span className={styles.span}>Master’s Degree?</span>
             </p>
-            <FormInline
-              dataScience={dataScience}
-              dataScienceCounselling={dataScienceCounselling}
-              upSkillingHide={true}
-            />
+            <Form
+                dataScienceCounselling={dataScienceCounselling}
+                fullStack={fullStack}
+                syllabus={true}
+                upSkillingHide={true}
+              />
           </div>
         </>
       ) : (
