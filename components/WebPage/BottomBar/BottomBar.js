@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import { FaArrowRight } from "react-icons/fa";
 import { IoLogoWhatsapp } from "react-icons/io";
 import Link from "next/dist/client/link";
-import Popup from "../Popup/Popup";
-import Form from "../Form/Form";
+import Popup from "../../Popup/Popup";
+import Form from "../../Form/Form";
 
-const BottomBar = ({ whatsappShow }) => {
+const BottomBar = ({ whatsappShow, masterdegree }) => {
   const [popups, setPopups] = useState(false);
 
   const popupShow = () => {
@@ -24,10 +24,23 @@ const BottomBar = ({ whatsappShow }) => {
         </div>
       </Popup>
       <div className="FlDiv">
-        <div className="flDivLeft" onClick={popupShow}>
-          Apply For Couselling
-          <FaArrowRight className="bIcon" />
-        </div>
+
+        {masterdegree ?
+          (
+            <Link href="/master-application">
+              <div className="flDivLeft">
+                Start Your Application
+                <FaArrowRight style={{color:"#fff"}} className="bIcon" />
+              </div>
+            </Link>
+          ) : (
+            <div className="flDivLeft" onClick={popupShow}>
+              Apply For Counselling
+              <FaArrowRight style={{color:"#fff"}} className="bIcon" />
+            </div>
+          )
+        }
+
         {whatsappShow ? (
           <div className="flDivRight">
             <Link href="https://wa.me/+917349222263">Chat with us</Link>

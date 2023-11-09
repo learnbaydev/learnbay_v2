@@ -14,6 +14,7 @@ const MasterApplicationForm = ({ secondForm, title }) => {
   const [query, setQuery] = useState({
     name: "",
     email: "",
+    url: router.asPath,
     phoneNumber: "",
     highestEducation: "",
     graduationMarks: "",
@@ -54,6 +55,7 @@ const MasterApplicationForm = ({ secondForm, title }) => {
     setQuery({
       name: "",
       email: "",
+      url: router.asPath,
       phoneNumber: "",
       highestEducation: "",
       graduationMarks: "",
@@ -107,6 +109,15 @@ const MasterApplicationForm = ({ secondForm, title }) => {
               required
             />
           </div>
+
+          <input
+            type="hidden"
+            id="url"
+            name="url"
+            value={router.asPath}
+          ></input>
+
+
 
           <div className={styles.phoneWrap}>
             <label htmlFor="PhoneNumber">
