@@ -269,7 +269,7 @@ function Blockchain({}) {
           brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Placement+Report.pdf"
         /> */}
 
-        <ContactConsellor />
+        <ContactConsellor dataScienceCounselling={true} />
 
         <SyllabusNew
           masterSyllabusMobile={

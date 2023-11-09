@@ -254,7 +254,7 @@ function Blockchain({}) {
           Testimonial={AIMLDataScienceCourseData[0].testimonial}
         />
 
-<WhoIsProgram
+        <WhoIsProgram
           first="B.tech, M.tech, BCA, B.com, M.com, MBA, MCA, M.sc"
           second="Minimum 6 year of  work experience (tech/non-tech)"
           third="Mid-career professionals interested in data science & AI"
@@ -271,7 +271,7 @@ function Blockchain({}) {
           brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Placement+Report.pdf"
         /> */}
 
-        <ContactConsellor />
+        <ContactConsellor dataScienceCounselling={true} />
 
         <SyllabusNew
           masterSyllabusMobile={

@@ -1,7 +1,10 @@
 import Head from "next/head";
+import { useState } from "react";
 import Navbar from "../../components/Navbar/Navbar";
 import dynamic from "next/dynamic";
+import Form from "../../components/Form/Form";
 import { DataScienceCourseData } from "../../Data/AdvanceDataScienceCourse";
+import AutoPopup from "../../components/autoPopup/AutoPopup";
 const BottomBar = dynamic(() =>
   import("../../components/WebPage/BottomBar/BottomBar")
 );
@@ -41,6 +44,16 @@ const GetHire = dynamic(() =>
 
 export default function Home() {
   console.log("Home page");
+  const [AutoPopups, setAutoPopups] = useState(false);
+  const [popupShown, setPopupShown] = useState(false);
+
+  if (!popupShown) {
+    const autoTimer = setTimeout(() => {
+      setAutoPopups(true);
+      setPopupShown(true); // Set the state to indicate that the popup has been shown
+    }, 10000);
+  }
+
   return (
     <>
       <Head>
@@ -204,7 +217,21 @@ export default function Home() {
 
 
       </Head>
+      <AutoPopup
+        trigger={AutoPopups}
+        setTrigger={setAutoPopups}
+        className="popupModal"
+      >
+        <div className="leftPopup">
+          <div className="whiteP" />
+        </div>
+        <div className="RightPopup">
+          <h5>Apply For Counselling</h5>
+          {/* <p>Fill the below details to get started</p> */}
 
+          <Form popup={true} setTrigger={setAutoPopups} upSkillingHide={true} />
+        </div>
+      </AutoPopup>
       <Navbar radio={true} dataScienceCounselling={true} />
       <FirstSection dataScienceCounselling={true} radio={true} />
       <HomeLine />
