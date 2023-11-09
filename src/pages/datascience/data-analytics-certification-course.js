@@ -184,6 +184,37 @@ function Blockchain({}) {
           rel="canonical"
           href="https://www.learnbay.co/datascience/data-analytics-certification-course"
         />
+<script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: ` {
+              {
+                "@context": "http://schema.org",
+                "@type": "Course",
+                "name": "Data Analytics Certification Program",
+                "description": "Upskill yourself to the top within 6 months with curricullum designed by industry experts.",
+                "url": "https://www.learnbay.co/datascience/data-analytics-certification-course",
+                 "provider": {
+                      "@type": "Organization",
+                      "name": "Learnbay",
+                      "Url": "https://www.learnbay.co/"
+                    },
+                "coursePrerequisites": "There are no prerequisites for this Business Analytics certification course as all modules are beginner-friendly and are taught from scratch. ", 
+                "hasCourseInstance": [
+                  {
+                    "@type": "CourseInstance",
+                    "courseMode": "Online, In-Person",
+                    "courseFee": {
+                      "@type": "PriceSpecification",
+                      "price": "₹ 80,000 + 18% GST",
+                      "priceCurrency": "INR"
+                    }
+                  }
+                ]
+} `,
+          }}
+        />
+
       </Head>
       <main>
         <Navbar popup={true} dataScienceCounselling={true} />
@@ -193,7 +224,7 @@ function Blockchain({}) {
           ThirdTyped="Live Interactive Classes"
           dataScience={true}
           titleCourse="Data Analytics Certification Program"
-          cityParaCont="Upskill yourself to the top within 6 months with curricullum designed by industry experts"
+          cityParaCont="Upskill yourself to the top within 6 months with curriculum designed by industry experts"
           brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Data+Analytics+Certification+Program.pdf"
           FirstRightImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/dahead.webp"
           firstToparaImg=""
@@ -234,7 +265,7 @@ function Blockchain({}) {
           brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Placement+Report.pdf"
         /> */}
 
-        <ContactConsellor />
+        <ContactConsellor dataScienceCounselling={true} />
 
         <SyllabusNew
           masterSyllabusMobile={DADataScienceCourseData[0].masterSyllabusMobile}

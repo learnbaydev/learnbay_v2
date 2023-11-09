@@ -187,6 +187,39 @@ function Blockchain({}) {
           rel="canonical"
           href="https://www.learnbay.co/datascience/advance-data-science-certification-courses"
         />
+
+<script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: ` {
+              {
+                "@context": "http://schema.org",
+                "@type": "Course",
+                "name": "Advance data science and AI Certification",
+                "description": "Our Advance Data Science and AI Certification Course brings you a wide knowledge of Data Science and AI and helps you land your dream job.",
+                "url": "https://www.learnbay.co/datascience/advance-data-science-certification-courses",
+                 "provider": {
+                      "@type": "Organization",
+                      "name": "Learnbay",
+                      "Url": "https://www.learnbay.co/"
+                    },
+                "coursePrerequisites": "There are no prerequisites for Advanced Data Science and AI Program, as all modules are beginner-friendly and are taught from scratch. We provide special classes and assistance for non-IT/Non-Programmers.", 
+                "hasCourseInstance": [
+                  {
+                    "@type": "CourseInstance",
+                    "courseMode": "Online, In-Person",
+                    "courseFee": {
+                      "@type": "PriceSpecification",
+                      "price": "₹ 1,25,000 + 18% GST",
+                      "priceCurrency": "INR"
+                    }
+                  }
+                ]
+              }
+} `,
+          }}
+        />
+
       </Head>
       <main>
         <Navbar popup={true} dataScienceCounselling={true} />
@@ -237,7 +270,7 @@ function Blockchain({}) {
           brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Placement+Report.pdf"
         /> */}
 
-        <ContactConsellor />
+        <ContactConsellor dataScienceCounselling={true} />
 
         <SyllabusNew
           masterSyllabusMobile={DataScienceCourseData[0].masterSyllabusMobile}
@@ -264,6 +297,11 @@ function Blockchain({}) {
         <FeeSection
           Fee="₹ 1,25,000"
           FeeEmi="₹ 8,194/month"
+
+          weekdaybatch="Weekday Batch"
+          weekendbatch="Weekend Batch"
+          weekday="MON - FRI"
+          weekend="SAT-SUN"
           WeekdayDate="NOV 17th"
           WeekendDate="NOV 26th"
           WeekendTime="09:30 AM - 1:00 PM"
@@ -297,7 +335,7 @@ function Blockchain({}) {
         <SeventhSection />
         <Footer />
         <BottomBar />
-      <WhatsappFloat />
+        <WhatsappFloat />
         {popupData.length == 0 ? "" : <OfferPopup popupData={popupData} />}
       </main>
     </>

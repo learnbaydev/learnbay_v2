@@ -2,8 +2,8 @@ import styles from "./HomeLine.module.css";
 import React from "react";
 import Image from "next/image";
 
-const HomeLine = ({ Emi }) => {
-  console.log("Home Line");
+const HomeLine = () => {
+
   return (
     <div className="wrapper">
       <div className={styles.feature}>

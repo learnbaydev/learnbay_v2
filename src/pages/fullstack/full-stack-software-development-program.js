@@ -161,7 +161,7 @@ function Blockchain({}) {
 
         setBatchDateData(batchDate);
 
-        console.log("Batch Date Response:", batchDate);
+     
       }
     };
     fetchBatch();
@@ -190,6 +190,40 @@ function Blockchain({}) {
           rel="canonical"
           href="https://www.learnbay.co/fullstack/full-stack-software-development-program"
         />
+
+<script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: ` {
+              {
+                "@context": "http://schema.org",
+                "@type": "Course",
+                "name": "Software Development Certification Program",
+                "description": "Upskill and switch from service-based to product-based companies with our Software development Certification Program.",
+                "url": "https://www.learnbay.co/fullstack/full-stack-software-development-program",
+                 "provider": {
+                      "@type": "Organization",
+                      "name": "Learnbay",
+                      "Url": "https://www.learnbay.co/"
+                    },
+                "coursePrerequisites": "Nothing but basic coding knowledge is required to start with this course.", 
+                "hasCourseInstance": [
+                  {
+                    "@type": "CourseInstance",
+                    "courseMode": "Online, In-Person",
+                    "courseFee": {
+                      "@type": "PriceSpecification",
+                      "price": "₹ 1,15,000 + 18% GST",
+                      "priceCurrency": "INR"
+                    }
+                  }
+                ]
+              }
+} `,
+          }}
+        />
+
+
       </Head>
       <main>
         <Navbar popup={true} dataScienceCounselling={true} />
@@ -204,7 +238,7 @@ function Blockchain({}) {
           FirstRightImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/fullhead.webp"
           firstToparaImg=""
           firstHeading="Software Development Certification Program"
-          firstTopPara="Curriculum Inclusive of Gen-AI"
+          firstTopPara="Crack Interview in Top MNCs"
           idss="bfl64ANfSV0"
           softwareBtnHide={true}
         />
@@ -235,7 +269,7 @@ function Blockchain({}) {
           brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Placement+Report.pdf"
         /> */}
 
-        <ContactConsellor />
+        <ContactConsellor dataScienceCounselling={true} />
 
         <SyllabusNew
           masterSyllabusMobile={
@@ -262,10 +296,14 @@ function Blockchain({}) {
         <FeeSection
           Fee="₹ 1,15,000"
           FeeEmi="₹ 7,538/month"
-          WeekdayDate="Nov 10th"
-          WeekendDate="Nov 17th"
-          WeekendTime="7:30 AM to 9:30 AM"
-          WeekdayTime="8:00 PM to 10:00 PM"
+          weekdaybatch="Weekday Batch"
+          weekendbatch="Weekday Batch"
+          weekday="MON-WED-FRI"
+          weekend="MON-WED-FRI"
+          WeekdayDate="Nov 17th"
+          WeekendDate="Nov 24th"
+          WeekendTime="07:30AM - 09:30AM"
+          WeekdayTime="08:00PM - 10:00PM"
           FeeContent3="Flexible payment"
           FeeContent4="Easy loan procedure"
           FeeContent5="15 days refund policy"

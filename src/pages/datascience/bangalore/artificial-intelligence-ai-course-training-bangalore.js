@@ -139,6 +139,9 @@ export default function Home() {
             __html: ` ${DataScienceCourseData[0].script4} `,
           }}
         />
+
+
+
       </Head>
       <main>
         {" "}
