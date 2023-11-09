@@ -185,7 +185,7 @@ function Blockchain({}) {
         />
         <link
           rel="canonical"
-          href="https://www.learnbay.co/datascience/advance-data-science-certification-courses"
+          href="https://www.learnbay.co/datascience/business-analytics-certification-course"
         />
       </Head>
       <main>
@@ -220,7 +220,7 @@ function Blockchain({}) {
           Testimonial={BADataScienceCourseData[0].testimonial}
         />
 
-<WhoIsProgram
+        <WhoIsProgram
           first="B.tech, M.tech, BCA, B.com, M.com, MBA, MCA, M.sc"
           second="Minimum 6 year of  work experience (tech/non-tech)"
           third="Mid-career professionals interested in data science & AI"
@@ -237,7 +237,7 @@ function Blockchain({}) {
           brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Placement+Report.pdf"
         /> */}
 
-        <ContactConsellor />
+        <ContactConsellor dataScienceCounselling={true} />
 
         <SyllabusNew
           masterSyllabusMobile={BADataScienceCourseData[0].masterSyllabusMobile}
@@ -262,7 +262,7 @@ function Blockchain({}) {
           deskImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Tools-Logo.png"
           mobImage="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/Mobile-Tools-Covered.png"
         />
-       <Certificate data={BADataScienceCourseData[0].Certificate} />
+        <Certificate data={BADataScienceCourseData[0].Certificate} />
         <FeeSection
           Fee="₹ 90,000"
           FeeEmi="₹ 5,900/month"

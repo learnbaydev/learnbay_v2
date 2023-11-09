@@ -237,7 +237,7 @@ function Blockchain({}) {
           brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Placement+Report.pdf"
         /> */}
 
-        <ContactConsellor />
+        <ContactConsellor dataScienceCounselling={true} />
 
         <SyllabusNew
           masterSyllabusMobile={DataScienceCourseData[0].masterSyllabusMobile}
@@ -297,7 +297,7 @@ function Blockchain({}) {
         <SeventhSection />
         <Footer />
         <BottomBar />
-      <WhatsappFloat />
+        <WhatsappFloat />
         {popupData.length == 0 ? "" : <OfferPopup popupData={popupData} />}
       </main>
     </>

@@ -62,6 +62,7 @@ function TrainerSection({ idss }) {
               <Image
                 src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/learnbay-review.webp"
                 loading="lazy"
+                quality={100}
                 width="358"
                 height="212"
                 alt="profile-Img"

@@ -55,8 +55,7 @@ const FeeSection = ({
       </Popup>
       <h2>Fee & Batch Details</h2>
       <p className={styles.pTop}>
-        Curriculum is specifically engineered to meet the expectations of
-        leading tech companies
+      Invest in your future with affordable degree fees and flexible batch options
       </p>
       {/* <div className={styles.mainbatch}>
         <div className={styles.batch}>
@@ -163,7 +162,7 @@ const FeeSection = ({
           </div>
           <p style={{ marginTop: "10px" }}>
             Scholarships are awarded based on profile review. Eligible
-            candidates can avail upto 25% scholarship on desired courses. Click
+            candidates can avail upto 25% scholarship on desired program. Click
             the button below to apply.
           </p>
           <div className={styles.divButton} onClick={popupShow}>

@@ -1,4 +1,5 @@
 import { useRef, useState } from "react";
+import Link from "next/link";
 import styles from "./ProjectSection.module.css";
 import Image from "next/image";
 import { FaCheckCircle, FaDownload } from "react-icons/fa";
@@ -165,13 +166,13 @@ idss,
                    < PiTruck  className={styles.icon1}/>
                     <p>SUPPLYCHAIN</p>
                   </div>
-                  <a href="/domain">
+                  <Link href="/domain">
                   <Button
                     bannerButton={true}
                     text="Download Domain Brochures"
                     passIcon={<FaDownload className="bIconS" />}
                   />
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div className={styles.iconBoxMobile}>
