@@ -189,6 +189,38 @@ function Blockchain({}) {
           rel="canonical"
           href="https://www.learnbay.co/datascience/artificial-intelligence-certification-course"
         />
+
+<script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: ` {
+              {
+                "@context": "http://schema.org",
+                "@type": "Course",
+                "name": "Advance Artificial Intelligence and ML Program",
+                "description": "Our Advance Artificial Intelligence and ML Certification Course provide you with a wide knowledge of Artificial Intelligence and Machine Learning and helps you land your dream job.",
+                "url": "https://www.learnbay.co/datascience/artificial-intelligence-certification-course",
+                 "provider": {
+                      "@type": "Organization",
+                      "name": "Learnbay",
+                      "Url": "https://www.learnbay.co/"
+                    },
+                "coursePrerequisites": "Basic programming & mathematics knowledge is enough. For strengthening your programming skills we provide special programming classes. We teach required statistics from a very basic.", 
+                "hasCourseInstance": [
+                  {
+                    "@type": "CourseInstance",
+                    "courseMode": "Online, In-Person",
+                    "courseFee": {
+                      "@type": "PriceSpecification",
+                      "price": "₹ 1,10,000 + 18% GST",
+                      "priceCurrency": "INR"
+                    }
+                  }
+                ]
+              }
+} `,
+          }}
+        />
       </Head>
       <main>
         <Navbar popup={true} dataScienceCounselling={true} />
