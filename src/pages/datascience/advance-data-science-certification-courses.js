@@ -187,6 +187,39 @@ function Blockchain({}) {
           rel="canonical"
           href="https://www.learnbay.co/datascience/advance-data-science-certification-courses"
         />
+
+<script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: ` {
+              {
+                "@context": "http://schema.org",
+                "@type": "Course",
+                "name": "Advance data science and AI Certification",
+                "description": "Our Advance Data Science and AI Certification Course brings you a wide knowledge of Data Science and AI and helps you land your dream job.",
+                "url": "https://www.learnbay.co/datascience/advance-data-science-certification-courses",
+                 "provider": {
+                      "@type": "Organization",
+                      "name": "Learnbay",
+                      "Url": "https://www.learnbay.co/"
+                    },
+                "coursePrerequisites": "There are no prerequisites for Advanced Data Science and AI Program, as all modules are beginner-friendly and are taught from scratch. We provide special classes and assistance for non-IT/Non-Programmers.", 
+                "hasCourseInstance": [
+                  {
+                    "@type": "CourseInstance",
+                    "courseMode": "Online, In-Person",
+                    "courseFee": {
+                      "@type": "PriceSpecification",
+                      "price": "₹ 1,25,000 + 18% GST",
+                      "priceCurrency": "INR"
+                    }
+                  }
+                ]
+              }
+} `,
+          }}
+        />
+
       </Head>
       <main>
         <Navbar popup={true} dataScienceCounselling={true} />

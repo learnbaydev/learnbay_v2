@@ -96,7 +96,7 @@ const FirstSection = ({ dataScience, radio, dataScienceCounselling }) => {
               <div className={styles.GenAiBox}>
                 <div className={styles.GenImageBlock}>
                   <Image
-                    src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/genAi.webp"
+                    src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/genAi1.webp"
                     width="32"
                     height="32"
                     loading="lazy"

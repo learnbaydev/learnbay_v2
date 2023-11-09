@@ -184,6 +184,37 @@ function Blockchain({}) {
           rel="canonical"
           href="https://www.learnbay.co/datascience/data-analytics-certification-course"
         />
+<script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: ` {
+              {
+                "@context": "http://schema.org",
+                "@type": "Course",
+                "name": "Data Analytics Certification Program",
+                "description": "Upskill yourself to the top within 6 months with curricullum designed by industry experts.",
+                "url": "https://www.learnbay.co/datascience/data-analytics-certification-course",
+                 "provider": {
+                      "@type": "Organization",
+                      "name": "Learnbay",
+                      "Url": "https://www.learnbay.co/"
+                    },
+                "coursePrerequisites": "There are no prerequisites for this Business Analytics certification course as all modules are beginner-friendly and are taught from scratch. ", 
+                "hasCourseInstance": [
+                  {
+                    "@type": "CourseInstance",
+                    "courseMode": "Online, In-Person",
+                    "courseFee": {
+                      "@type": "PriceSpecification",
+                      "price": "₹ 80,000 + 18% GST",
+                      "priceCurrency": "INR"
+                    }
+                  }
+                ]
+} `,
+          }}
+        />
+
       </Head>
       <main>
         <Navbar popup={true} dataScienceCounselling={true} />

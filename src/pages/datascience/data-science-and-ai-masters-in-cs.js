@@ -161,6 +161,43 @@ const Blockchain = () => {
           rel="canonical"
           href="https://www.learnbay.co/datascience/data-science-and-ai-masters-in-cs"
         />
+
+
+<script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: ` {
+              {
+                "@context": "http://schema.org",
+                "@type": "Course",
+                "name": "Master in CS: Data Science and AI",
+                "description": "A comprehensive online Master's degree program in Computer Science with specializations in Data Science and AI & Machine Learning.",
+                "provider": {
+                  "@type": "Organization",
+                  "name": "Learnbay"
+                },
+                "coursePrerequisites": "Bachelor's degree in Computer Science or related field",
+                "hasCourseInstance": {
+                  "@type": "CourseInstance",
+                  "courseMode": "Part-time",
+                  "courseWorkload": "18 months",
+                  "location": {
+                    "@type": "VirtualLocation",
+                    "name": "Online"
+                  }
+                  },
+                "courseCredential": "Master in CS: Data Science and AI",
+                "coursePrerequisite": "Bachelor's degree in Computer Science or related field",
+                "occupationalCategory": [
+                  "Data Science and Data Analytics",
+                  "AI & Machine Learning"
+                ],
+                "url": "https://www.learnbay.co/datascience/data-science-and-ai-masters-in-cs",
+                "image": "https://www.learnbay.co/_next/image?url=https%3A%2F%2Flearnbay-wb.s3.ap-south-1.amazonaws.com%2Fmain%2FlearnbayMain%2Flearnbay-logo.png&w=256&q=100"
+              }
+} `,
+          }}
+        />
       </Head>
       <main>
         <Navbar popup={true} dataScienceCounselling={true} />
