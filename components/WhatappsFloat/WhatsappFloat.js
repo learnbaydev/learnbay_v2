@@ -1,7 +1,7 @@
 import React from "react";
 
 function WhatsappFloat({ chat360code1 }) {
-  console.log("whatsapp");
+  // console.log("whatsapp");
   return (
     <>
       {chat360code1 ? (

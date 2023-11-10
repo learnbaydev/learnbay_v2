@@ -11,7 +11,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 const Popup = dynamic(() => import("../../Popup/Popup"));
 const Form = lazy(() => import("../../Form/Form"));
 
-function NewProjectSection({ projectSection, dataScience, titleCourse, brochureLink }) {
+function NewProjectSection({ projectSection, dataScience, titleCourse, brochureLink, interstedInHide }) {
   const [mobile, setMobile] = useState(false);
   useEffect(() => {
     let width = window.innerWidth;
@@ -46,6 +46,7 @@ function NewProjectSection({ projectSection, dataScience, titleCourse, brochureL
                 upSkillingHide={true}
                 titleCourse={titleCourse}
                 brochureLink={brochureLink}
+                interstedInHide={interstedInHide}
               />
             </Suspense>
           </div>

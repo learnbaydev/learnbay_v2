@@ -22,6 +22,7 @@ const Navbar = ({
   dataScienceCounselling,
   adPage,
   dataScienceGeneric,
+  interstedInHide,
 }) => {
   // console.log("navbar");
   const [icon, setIcon] = useState(false);
@@ -71,6 +72,7 @@ const Navbar = ({
               dataScienceGeneric={dataScienceGeneric}
               dataScienceCounselling={dataScienceCounselling}
               upSkillingHide={true}
+              interstedInHide={interstedInHide}
             />
           )}
         </div>

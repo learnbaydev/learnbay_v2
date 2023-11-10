@@ -1,16 +1,13 @@
-import React from 'react'
-import styles from '../ContactCounsellor/ContactCounsellor.module.css'
-import { MdOutlineWhatsapp } from 'react-icons/md'
-import { AiOutlineMail } from 'react-icons/ai'
-import Image from 'next/image'
+import React from "react";
+import styles from "../ContactCounsellor/ContactCounsellor.module.css";
+import { MdOutlineWhatsapp } from "react-icons/md";
+import { AiOutlineMail } from "react-icons/ai";
+import Image from "next/image";
 import { useState } from "react";
 import Popup from "../../Popup/Popup";
 import Form from "../../Form/Form";
 
-
 const ContactCounsellor = ({
-
-
   FeeHeading,
   Fee,
   dataScience,
@@ -19,6 +16,7 @@ const ContactCounsellor = ({
   FeeContent4,
   FeeContent5,
   dataScienceCounselling,
+  interstedInHide,
   FeeEmi,
 }) => {
   const [popups, setPopups] = useState(false);
@@ -26,8 +24,6 @@ const ContactCounsellor = ({
   const popupShow = () => {
     setPopups(true);
   };
-
-
 
   const openWhatsApp = () => {
     const phoneNumber = "+917795687988"; // Replace with the desired WhatsApp phone number
@@ -83,6 +79,7 @@ const ContactCounsellor = ({
         // radio={radio}
         dataScience={dataScience}
         dataScienceCounselling={dataScienceCounselling}
+        interstedInHide={interstedInHide}
       >
         <div className="leftPopup">
           <div
@@ -95,38 +92,46 @@ const ContactCounsellor = ({
           <Form
             dataScience={dataScience}
             dataScienceCounselling={dataScienceCounselling}
+            interstedInHide={interstedInHide}
             upSkillingHide={true}
-          // radio={radio}
+            // radio={radio}
           />
         </div>
       </Popup>
       <div>
         <h4>Can’t decide which program to opt for?</h4>
-        <p>Don’t worry, our expert counsellor is there to guide you make the right career choice</p>
-
+        <p>
+          Don’t worry, our expert counsellor is there to guide you make the
+          right career choice
+        </p>
 
         <div className={styles.conbtn}>
-          <button onClick={openWhatsApp} className={styles.inf}><MdOutlineWhatsapp className={styles.conicon} />(+91) 77956 87988</button>
-          <button onClick={sendEmail} className={styles.inf}><AiOutlineMail className={styles.conicon} /> contacts@learnbay.co</button>
+          <button onClick={openWhatsApp} className={styles.inf}>
+            <MdOutlineWhatsapp className={styles.conicon} />
+            (+91) 77956 87988
+          </button>
+          <button onClick={sendEmail} className={styles.inf}>
+            <AiOutlineMail className={styles.conicon} /> contacts@learnbay.co
+          </button>
         </div>
 
-
         <div className={styles.consbtn1} onClick={popupShow}>
-          <button className={styles.consbtn} onClick={null}>Apply for counselling</button>
+          <button className={styles.consbtn} onClick={null}>
+            Apply for counselling
+          </button>
         </div>
       </div>
       <div className={styles.conimg}>
-        <Image src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/masterPage/contact-counseller.webp"
+        <Image
+          src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/masterPage/contact-counseller.webp"
           width={300}
           height={200}
           loading="lazy"
           quality={40}
-
-
         />
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default ContactCounsellor
+export default ContactCounsellor;

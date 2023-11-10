@@ -13,6 +13,7 @@ function FirstSection({
   dataScienceCounselling,
   titleCourse,
   brochureLink,
+  interstedInHide,
 }) {
   const [mobile, setMobile] = useState(false);
   useEffect(() => {
@@ -47,6 +48,7 @@ function FirstSection({
               downloadBrochure
               titleCourse={titleCourse}
               brochureLink={brochureLink}
+              interstedInHide={interstedInHide}
               upSkillingHide={true}
             />
           </Suspense>
@@ -87,6 +89,7 @@ function FirstSection({
                 fullStack={fullStack}
                 syllabus={true}
                 upSkillingHide={true}
+              interstedInHide={interstedInHide}
               />
           </div>
         </>
@@ -142,6 +145,7 @@ function FirstSection({
                 fullStack={fullStack}
                 syllabus={true}
                 upSkillingHide={true}
+              interstedInHide={interstedInHide}
               />
             </div>
           </div>

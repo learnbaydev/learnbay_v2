@@ -37,6 +37,7 @@ function SyllabusNew({
   MasterSyllabusDefault,
   progress,
   setProgress,
+  interstedInHide,
 }) {
   const [popups, setPopups] = useState(false);
   const [active, setActive] = useState([]);
@@ -158,6 +159,7 @@ function SyllabusNew({
               downloadBrochure
               titleCourse={titleCourse}
               brochureLink={brochureLink}
+              interstedInHide={interstedInHide}
               upSkillingHide={true}
             />
           </div>
@@ -410,6 +412,7 @@ function SyllabusNew({
               </h4>
               <Form
                 dataScienceCounselling={dataScienceCounselling}
+                interstedInHide={interstedInHide}
                 titleCourse={titleCourse}
                 brochureLink={brochureLink}
                 fullStack={fullStack}

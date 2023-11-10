@@ -46,7 +46,7 @@ const MasterApplicationForm = ({ secondForm, title }) => {
     const sendData = await fetch(
       secondForm
         ? "https://getform.io/f/c97e799c-c954-4fc8-80c9-47b33ce2bb5d"
-        : "https://getform.io/f/f22d962e-90ad-4ec0-a9cd-ac0881f683ca",
+        : "https://getform.io/f/85e92281-63f9-4d2f-b946-31d1098532f4",
       {
         method: "POST",
         body: formData,
