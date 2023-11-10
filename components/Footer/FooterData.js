@@ -356,54 +356,36 @@ export const CourseData = [
     Courses: [
       {
         id: 1,
-        url: "/datascience/data-science-certification-courses",
-        name: "Data Science Foundation Program",
+        url: "/datascience/advance-data-science-certification-courses",
+        name: "Advance Data Science and AI Certification",
       },
       {
         id: 2,
-        url: "/datascience/advance-data-science-certification-courses",
-        name: "Advance Data Science & AI Program",
+        url: "/datascience/artificial-intelligence-certification-course",
+        name: "Advance AI and ML Certification Program",
       },
       {
         id: 3,
-        url: "/datascience/artificial-intelligence-certification-course",
-        name: "Advance AI & ML Program for Tech Professionals",
+        url: "/datascience/data-science-and-ai-masters-in-cs",
+        name: "Master in CS: Data Science and AI",
       },
       {
         id: 4,
-        url: "/datascience/data-science-ai-for-managers",
-        name: " Data Science & AI For Managers",
+        url: "/fullstack/full-stack-software-development-program",
+        name: "Software Development Certification Program",
       },
       {
         id: 5,
-        url: "/datascience/data-science-ai-masters-program",
-        name: "Data Science & AI Master Program",
-      },
-      {
-        id: 6,
         url: "/datascience/business-analytics-certification-course",
         name: "Business Analytics Program",
       },
       {
-        id: 7,
+        id: 6,
         url: "/datascience/data-analytics-certification-course",
         name: "Data Analytics Program",
       },
-      {
-        id: 8,
-        url: "/fullstack/full-stack-software-development-program",
-        name: "Software Development Master Program",
-      },
-      {
-        id: 9,
-        url: "/fullstack/software-development-program-with-specialization-in-blockchain",
-        name: "Software Development Program in Blockchain",
-      },
-      {
-        id: 10,
-        url: "/fullstack/software-development-program-with-specialization-in-cloud-computing-&-devops",
-        name: "Software Development Program in Cloud and Devops",
-      },
+    
+  
     ],
   },
 ];
