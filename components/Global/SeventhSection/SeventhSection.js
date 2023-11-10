@@ -6,7 +6,7 @@ import Image from "next/image";
 import Button from "../Button/Button";
 
 function SeventhSection({ fullStackCont }) {
-  console.log("seventh section");
+  // console.log("seventh section");
   const [mobile, setMobile] = useState(false);
   useEffect(() => {
     let width = window.innerWidth;

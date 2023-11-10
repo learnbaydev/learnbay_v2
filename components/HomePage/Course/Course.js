@@ -23,7 +23,7 @@ const Course = ({
   organicADS,
   dataScienceGeneric,
 }) => {
-  console.log("course component");
+  // console.log("course component");
   const [mobile, setMobile] = useState(false);
   const [value, setValue] = useState(3.68);
   const [popups, setPopups] = useState(false);
@@ -220,7 +220,7 @@ const Course = ({
                                           <Image
                                             src={img}
                                             fill={true}
-                                            quality={100}
+                                            quality={80}
                                             loading="lazy"
                                             unoptimized={true}
                                             style={{ objectFit: "cover" }}
@@ -237,7 +237,7 @@ const Course = ({
                                           <Image
                                             src={img}
                                             fill={true}
-                                            quality={100}
+                                            quality={80}
                                             loading="lazy"
                                             unoptimized={true}
                                             style={{ objectFit: "cover" }}
@@ -275,7 +275,7 @@ const Course = ({
                                               <Image
                                                 src={img}
                                                 fill={true}
-                                                quality={100}
+                                                quality={80}
                                                 unoptimized={true}
                                                 loading="lazy"
                                                 style={{ objectFit: "cover" }}
@@ -292,7 +292,7 @@ const Course = ({
                                               <Image
                                                 src={img}
                                                 fill={true}
-                                                quality={100}
+                                                quality={80}
                                                 unoptimized={true}
                                                 loading="lazy"
                                                 style={{ objectFit: "cover" }}
