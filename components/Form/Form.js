@@ -59,7 +59,7 @@ const Form = ({
     }));
   };
   const redirection = async () => {
-    console.log("redirect");
+    // console.log("redirect");
     const myTimeout = setTimeout(() => {
       router.push("https://course.learnbay.co/Thank-you");
     }, 500);

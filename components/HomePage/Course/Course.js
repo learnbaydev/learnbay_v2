@@ -23,7 +23,7 @@ const Course = ({
   organicADS,
   dataScienceGeneric,
 }) => {
-  console.log("course component");
+  // console.log("course component");
   const [mobile, setMobile] = useState(false);
   const [value, setValue] = useState(3.68);
   const [popups, setPopups] = useState(false);

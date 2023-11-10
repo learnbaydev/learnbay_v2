@@ -68,7 +68,7 @@ function SyllabusNew({
     for (const key in masterSyllabus) {
       if (masterSyllabus.hasOwnProperty(key)) {
         if (key === data) {
-          console.log(key, data);
+          // console.log(key, data);
           setCSyllabus(masterSyllabus[key]);
         }
       }
@@ -98,7 +98,7 @@ function SyllabusNew({
     }
   }, [Advanced, advSyllabus, syllabus]);
   const handleChange = (index) => {
-    console.log(index, "handelChange");
+    // console.log(index, "handelChange");
     setCSyllabus(
       cSyllabus.map((faq, i) => {
         if (i === index) {
@@ -111,7 +111,7 @@ function SyllabusNew({
     );
   };
   const handleChangeMobile = (index) => {
-    console.log(index, "handelChange");
+    // console.log(index, "handelChange");
     setMSyllabus(
       mSyllabus.map((faq, i) => {
         if (i === index) {

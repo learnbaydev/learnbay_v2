@@ -44,7 +44,7 @@ function BatchDetails({ batchDetails }) {
         <div className={styles.desktopView}>
           <div className={styles.NewBatch}>
             {batchDetails.map((data, index) => {
-              console.log(data, "inside map");
+              
               const { daysInfo, dateInfo, timeInfo } = data;
               return (
                 <div className={styles.NewBlue}>

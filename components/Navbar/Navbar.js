@@ -23,7 +23,7 @@ const Navbar = ({
   adPage,
   dataScienceGeneric,
 }) => {
-  console.log("navbar");
+  // console.log("navbar");
   const [icon, setIcon] = useState(false);
   const [show, setShow] = useState(false);
   const [popups, setPopups] = useState(false);
@@ -49,7 +49,7 @@ const Navbar = ({
       setMobile(false);
     }
   }, []);
-  console.log(masterApplication);
+  // console.log(masterApplication);
   return (
     <div>
       <Popup trigger={popups} setTrigger={setPopups} className="popupModal">
