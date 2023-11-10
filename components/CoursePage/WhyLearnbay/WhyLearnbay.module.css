@@ -72,6 +72,11 @@
   float: right;
   font-size: 25px;
 }
+.domainicon{
+  color: #12558c;
+   
+  font-size: 40px;
+}
 
 .TwoBox {
   display: flex;

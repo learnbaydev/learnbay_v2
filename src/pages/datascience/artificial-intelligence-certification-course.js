@@ -187,7 +187,39 @@ function Blockchain({}) {
         />
         <link
           rel="canonical"
-          href="https://www.learnbay.co/datascience/advance-data-science-certification-courses"
+          href="https://www.learnbay.co/datascience/artificial-intelligence-certification-course"
+        />
+
+<script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: ` {
+              {
+                "@context": "http://schema.org",
+                "@type": "Course",
+                "name": "Advance Artificial Intelligence and ML Program",
+                "description": "Our Advance Artificial Intelligence and ML Certification Course provide you with a wide knowledge of Artificial Intelligence and Machine Learning and helps you land your dream job.",
+                "url": "https://www.learnbay.co/datascience/artificial-intelligence-certification-course",
+                 "provider": {
+                      "@type": "Organization",
+                      "name": "Learnbay",
+                      "Url": "https://www.learnbay.co/"
+                    },
+                "coursePrerequisites": "Basic programming & mathematics knowledge is enough. For strengthening your programming skills we provide special programming classes. We teach required statistics from a very basic.", 
+                "hasCourseInstance": [
+                  {
+                    "@type": "CourseInstance",
+                    "courseMode": "Online, In-Person",
+                    "courseFee": {
+                      "@type": "PriceSpecification",
+                      "price": "₹ 1,10,000 + 18% GST",
+                      "priceCurrency": "INR"
+                    }
+                  }
+                ]
+              }
+} `,
+          }}
         />
       </Head>
       <main>
@@ -222,7 +254,7 @@ function Blockchain({}) {
           Testimonial={AIMLDataScienceCourseData[0].testimonial}
         />
 
-<WhoIsProgram
+        <WhoIsProgram
           first="B.tech, M.tech, BCA, B.com, M.com, MBA, MCA, M.sc"
           second="Minimum 6 year of  work experience (tech/non-tech)"
           third="Mid-career professionals interested in data science & AI"
@@ -239,7 +271,7 @@ function Blockchain({}) {
           brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Placement+Report.pdf"
         /> */}
 
-        <ContactConsellor />
+        <ContactConsellor dataScienceCounselling={true} />
 
         <SyllabusNew
           masterSyllabusMobile={
@@ -268,8 +300,13 @@ function Blockchain({}) {
         />
         <Certificate data={AIMLDataScienceCourseData[0].Certificate} />
         <FeeSection
+        
           Fee="₹ 1,10,000"
           FeeEmi="₹ 7,211/month"
+          weekdaybatch="Weekday Batch"
+          weekendbatch="Weekend Batch"
+          weekday="MON - FRI"
+          weekend="SAT-SUN"
           WeekdayDate="NOV 17th"
           WeekendDate="NOV 26th"
           WeekendTime="09:30 AM - 1:00 PM"

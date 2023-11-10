@@ -549,8 +549,8 @@ const Form = ({
               <option value="Interested In" selected hidden>
                 Interested In
               </option>
-              <option value="Master degree program">
-                Master degree program
+              <option value="Master Degree Program">
+                Master Degree Program
               </option>
               <option value="Certification Program">
                 Certification Program

@@ -17,10 +17,9 @@ import styles from "./FirstSection.module.css";
 const Button = dynamic(() => import("../../Global/Button/Button"));
 SwiperCore.use([Autoplay]);
 const FirstSection = ({ dataScience, radio, dataScienceCounselling }) => {
-  console.log("first section");
   const [popups, setPopups] = useState(false);
   const [mobile, setMobile] = useState(false);
-  const el = useRef(null);
+
   const popupShow = () => {
     setPopups(true);
   };
@@ -54,10 +53,10 @@ const FirstSection = ({ dataScience, radio, dataScienceCounselling }) => {
       </Popup>
       <Swiper
         slidesPerView={1}
-        // autoplay={{
-        //   delay: 5000, // Set the delay in milliseconds (3 seconds in this example)
-        //   disableOnInteraction: false, // Autoplay will not be disabled after user interactions
-        // }}
+        autoplay={{
+          delay: 5000, 
+          disableOnInteraction: false, // Autoplay will not be disabled after user interactions
+        }}
         spaceBetween={mobile ? 0 : 0}
         pagination={{
           clickable: true,
@@ -84,23 +83,12 @@ const FirstSection = ({ dataScience, radio, dataScienceCounselling }) => {
                     width="580"
                     height="450"
                     priority
-                    quality={40}
+                    quality={80} 
                     alt="data science course"
                   />
                 </div>
               </div>
-              {/* <div className={styles.ibmLogoMobile}>
-                <p className={styles.ptop}>In Collaboration With</p>
-                <div className={styles.ImageBlock}>
-                  <Image
-                    src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/FirstSection.png"
-                    width="283"
-                    height="51"
-                    loading="lazy"
-                    alt="data science course"
-                  />
-                </div>
-              </div> */}
+           
               <p className={styles.blink}>
                 Master real world skills with our domain specialised
                 certification and Degree programs
@@ -108,15 +96,16 @@ const FirstSection = ({ dataScience, radio, dataScienceCounselling }) => {
               <div className={styles.GenAiBox}>
                 <div className={styles.GenImageBlock}>
                   <Image
-                    src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/genAi.png"
+                    src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/genAi1.webp"
                     width="32"
                     height="32"
                     loading="lazy"
+                    quality={40}
                     alt="data science course"
                   />
                 </div>
                 <p className={styles.TextGreen}>
-                  Curricullum inclusive of GenAI and ChatGPT
+                  Curriculum inclusive of GenAI and ChatGPT
                 </p>
               </div>
               <div className={styles.btnWrapper}>
@@ -136,17 +125,7 @@ const FirstSection = ({ dataScience, radio, dataScienceCounselling }) => {
                   />
                 </div>
               </div>
-              {/* <div className={styles.box}>
-                <p>
-                  <span className={styles.blue}>35K+ </span>Trusted Learners
-                </p>
-                <p>
-                  <span className={styles.orange}>8LPA </span>Average Salary
-                </p>
-                <p>
-                  <span className={styles.green}>40LPA </span>Highest Salary
-                </p>
-              </div> */}
+          
             </div>
             <div className={styles.secondLeft}>
               <div className={styles.imgWrapperDesktop}>
@@ -155,7 +134,9 @@ const FirstSection = ({ dataScience, radio, dataScienceCounselling }) => {
                   width="580"
                   height="450"
                   priority
-                  quality={40}
+          
+                  quality={100}
+
                   alt="data science course"
                 />
               </div>
@@ -168,6 +149,8 @@ const FirstSection = ({ dataScience, radio, dataScienceCounselling }) => {
               <Image
                 src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/forthSection.webp"
                 fill={true}
+              priority
+              quality={40}
                 alt="Header background"
               />
             </div>
@@ -217,7 +200,7 @@ const FirstSection = ({ dataScience, radio, dataScienceCounselling }) => {
                   width="580"
                   height="450"
                   priority
-                  quality={40}
+                  quality={60}
                   alt="data science course"
                 />
               </div>
@@ -270,7 +253,7 @@ const FirstSection = ({ dataScience, radio, dataScienceCounselling }) => {
                   width="806"
                   height="663"
                   priority
-                  quality={40}
+                  quality={60}
                   alt="data science course"
                 />
               </div>

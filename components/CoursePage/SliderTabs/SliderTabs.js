@@ -184,8 +184,7 @@ const SliderTabs = ({ dataScience, dataScienceCounselling }) => {
                 <div className={styles.mainCont}>
                   <BsCheckCircle className={styles.checkCircle} />
                   <p className={styles.para}>
-                    Industry-specific interview practice so you can crack your
-                    dream job.
+                  Industry-specific interview practice so that you can crack your dream job.
                   </p>
                 </div>
               </div>

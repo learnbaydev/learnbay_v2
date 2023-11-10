@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Styles from "./JobAbroad.module.css";
+import Link from "next/link";
 
 const JobAbroad = () => {
   return (
@@ -12,6 +13,8 @@ const JobAbroad = () => {
 
         <div className={Styles.JobAbroadHead}>
           <div className={Styles.JobAbroadleft}>
+
+        
             <div className={Styles.leftpoints}>
               <div className={Styles.imgBox}>
                 <Image
@@ -57,14 +60,31 @@ const JobAbroad = () => {
               <div>
                 <h3>Step into High-Value Research Careers</h3>
                 <p>
-                  Degrees for prestigious research jobs and institutional
+                  Degree for prestigious research jobs and institutional
                   collaborations.
                 </p>
               </div>
             </div>
-            <p className={Styles.woolfText}>Learnbay Excelversity is a constituent college affiliated with <span className={Styles.spanWoolf}>Woolf University, EU</span></p>
-          </div>
 
+            <div className={Styles.consbtn1}> 
+            <Link href="/master-application"> 
+          <button className={Styles.consbtn}>Start Your Application</button>
+          </Link>  
+        </div>
+            <p className={Styles.woolfText}>
+              Learnbay Excelversity is a constituent college affiliated with{" "}
+              <a href="https://woolf.university/academics/college-membership/bb43ed7d-edff-4e25-b530-2e950496519c">
+                <span className={Styles.spanWoolf}>Woolf University, EU</span>
+              </a>
+            </p>
+
+            
+          </div>
+       
+
+         
+
+      
           <div className={Styles.JobAbroadRight}>
             <Image
               src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/job1.webp"
@@ -72,6 +92,8 @@ const JobAbroad = () => {
               height={400}
             />
           </div>
+
+
         </div>
       </div>
     </div>

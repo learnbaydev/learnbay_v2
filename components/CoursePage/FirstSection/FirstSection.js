@@ -99,7 +99,8 @@ function FirstSection({
               width="508"
               height="327"
               alt="data science course"
-              priority
+              loading="lazy"
+              quality={80}
             />
           </div>
           <div className={styles.Desktop}>
@@ -110,7 +111,8 @@ function FirstSection({
                   src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/ibm-single-home.png"
                   width="127"
                   height="51"
-                  priority
+                  loading="lazy"
+              quality={80}
                   alt="data science course"
                 />
               ) : (
@@ -118,7 +120,8 @@ function FirstSection({
                   src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/ibm%26microsoft.webp"
                   width="266"
                   height="48"
-                  priority
+                  loading="lazy"
+              quality={80}
                   alt="data science course"
                 />
               )}
@@ -155,7 +158,8 @@ function FirstSection({
               width="806"
               height="560"
               alt="data science course"
-              priority
+              loading="lazy"
+              quality={80}
             />
           </div>
         </div>
@@ -167,7 +171,8 @@ function FirstSection({
                 src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/NewDesignImage/ibm-single-home.png"
                 width="127"
                 height="51"
-                priority
+                loading="lazy"
+              quality={80}
                 alt="data science course"
               />
             ) : (
@@ -175,7 +180,8 @@ function FirstSection({
                 src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/ibm%26microsoft.webp"
                 width="283"
                 height="51"
-                priority
+                loading="lazy"
+              quality={80}
                 alt="data science course"
               />
             )}

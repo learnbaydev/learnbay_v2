@@ -14,6 +14,7 @@ import Tabs from "../Tabs/Tabs";
 import { menuItem } from "./NavbarData";
 
 const Navbar = ({
+  masterApplication,
   radio,
   dataScience,
   fullStack,
@@ -49,7 +50,7 @@ const Navbar = ({
       setMobile(false);
     }
   }, []);
-
+  console.log(masterApplication);
   return (
     <div>
       <Popup trigger={popups} setTrigger={setPopups} className="popupModal">
@@ -179,6 +180,7 @@ const Navbar = ({
                   </span>
                 );
               })}
+
           <div onClick={popupShow}>
             <Button text="Apply Now" outline={true} />
           </div>

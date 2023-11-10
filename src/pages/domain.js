@@ -7,7 +7,9 @@ import BottomBar from "../../components/WebPage/BottomBar/BottomBar";
 import Image from "next/image";
 import Head from "next/head";
 import OfferPopup from "../../components/OfferPopup/OfferPopup";
-import DomainSection from "../../components/CoursePage/DomainSection/DomainSection";
+import WhoProgram from "../../components/CoursePage/WhoProgram/ThirdSection"
+import { DataScienceCourseData } from "../../Data/AdvanceDataScienceCourse";
+
 
 const sumbit = () => {
   return (
@@ -26,7 +28,11 @@ const sumbit = () => {
         <link rel="canonical" href="https://www.learnbay.co/submit-info" />
       </Head>
       <Navbar popup={true} radio={true} />
-      <DomainSection />
+      <WhoProgram
+          dataScience={true}
+          leftImage="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/advance-who.webp"
+          ThirdSectionData={DataScienceCourseData[0].thirdSection}
+        />
       <BottomBar radio={true} />
       <Footer />
     </div>

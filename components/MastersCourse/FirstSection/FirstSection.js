@@ -45,12 +45,11 @@ function FirstSection({
           <Suspense>
             <Form
               dataScience={dataScience}
-              dataScienceCounselling={dataScienceCounselling}
               downloadBrochure
-              upSkillingHide={true}
               titleCourse={titleCourse}
               brochureLink={brochureLink}
               interstedInHide={interstedInHide}
+              upSkillingHide={true}
             />
           </Suspense>
         </div>
@@ -85,37 +84,13 @@ function FirstSection({
               Interested in{" "}
               <span className={styles.span}>Master’s Degree?</span>
             </p>
-            <FormInline
-              dataScience={dataScience}
-              dataScienceCounselling={dataScienceCounselling}
-              upSkillingHide={true}
-              interstedInHide={interstedInHide}
-            />
-          </div>
-          <div className={styles.boxDivGreen}>
-            <p className={styles.special}>SPECIALIZATION IN</p>
-            <div className={styles.iconPara}>
-              <p className={styles.boxGreen}>Data Science & Analytics</p>
-              <p className={styles.boxGreen}>Artificial Intelligence & ML</p>
-            </div>
-          </div>
-          <div className={styles.FormDiv}>
-            {/* <div className={styles.boxDiv}>
-                <div className={styles.formBox}>
-                  {" "}
-                  <FaRegUser className={styles.iconUser} /> 7,568 people filled
-                </div>
-              </div> */}
-            <h4>
-              Interested in <span>Master’s Degree?</span>
-            </h4>
             <Form
-              dataScienceCounselling={dataScienceCounselling}
-              fullStack={fullStack}
-              syllabus={true}
-              upSkillingHide={true}
+                dataScienceCounselling={dataScienceCounselling}
+                fullStack={fullStack}
+                syllabus={true}
+                upSkillingHide={true}
               interstedInHide={interstedInHide}
-            />
+              />
           </div>
         </>
       ) : (
@@ -124,7 +99,7 @@ function FirstSection({
             <div className={styles.firstDiv}>
               <p className={styles.ptopC}>Learnbay Excelvarsity</p>
               <h1 className={styles.h1}>
-                Masters in Computer Science:
+                Master's in Computer Science:
                 <br />
                 <span style={{ color: "#F99600" }}>Data Science and AI</span>
               </h1>
@@ -146,11 +121,9 @@ function FirstSection({
                 </div>
               </div>
               <div className={styles.BtnDiv}>
-                <a href="#curriculum">
-                  <div>
-                    <Button bannerButton={true} text="EXPLORE PROGRAM" />
-                  </div>
-                </a>
+                <div onClick={() => popupShow()}>
+                  <Button bannerButton={true} text="DOWNLOAD BROCHURE" />
+                </div>
 
                 <a href="/master-application">
                   <Button whiteBgButton={true} text="START YOUR APPLICATION" />

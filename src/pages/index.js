@@ -1,7 +1,10 @@
 import Head from "next/head";
+import { useState } from "react";
 import Navbar from "../../components/Navbar/Navbar";
 import dynamic from "next/dynamic";
+import Form from "../../components/Form/Form";
 import { DataScienceCourseData } from "../../Data/AdvanceDataScienceCourse";
+
 const BottomBar = dynamic(() =>
   import("../../components/WebPage/BottomBar/BottomBar")
 );
@@ -41,6 +44,7 @@ const GetHire = dynamic(() =>
 
 export default function Home() {
   console.log("Home page");
+
   return (
     <>
       <Head>
@@ -59,6 +63,150 @@ export default function Home() {
           rel="icon"
           href="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/Learnbay-Favicon-L.png"
         />
+<script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: ` {
+              {
+                "@context": "http://schema.org",
+                "@type": "ItemList",
+                "name": "Courses Carousel",
+                "itemListElement": [
+                  {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "item": {
+                      "@type": "Course",
+                      "name": "Advance Data Science and AI Certification",
+                      "description": "Our Advance Data Science and AI Certification Course brings you a wide knowledge of Data Science and AI and helps you land your dream job.",
+                      "provider": {
+                        "@type": "Organization",
+                        "name": "Learnbay"
+                      },
+                      "url": "https://www.learnbay.co/datascience/advance-data-science-certification-courses"
+                    }
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "item": {
+                      "@type": "Course",
+                      "name": "Advance AI and ML Certification Program",
+                      "description": "Our Advance Artificial Intelligence and ML Certification Course provide you with a wide knowledge of Artificial Intelligence and Machine Learning and helps you land your dream job.",
+                      "provider": {
+                        "@type": "Organization",
+                        "name": "Learnbay"
+                      },
+                      "url": "https://www.learnbay.co/datascience/artificial-intelligence-certification-course"
+                    }
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "item": {
+                      "@type": "Course",
+                      "name": "Business Analytics Program",
+                      "description": "Get real-world experience with capstone projects with our  comprehensive program in Business Analytics.",
+                      "provider": {
+                        "@type": "Organization",
+                        "name": "Learnbay"
+                      },
+                      "url": "https://www.learnbay.co/datascience/business-analytics-certification-course"
+                    }
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 4,
+                    "item": {
+                      "@type": "Course",
+                      "name": "Data Analytics Program",
+                      "description": "Upskill yourself to the top within 6 months with curricullum designed by industry experts.",
+                      "provider": {
+                        "@type": "Organization",
+                        "name": "Learnbay"
+                      },
+                      "url": "https://www.learnbay.co/datascience/data-analytics-certification-course"
+                    }
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 5,
+                    "item": {
+                      "@type": "Course",
+                      "name": "Software Development Certification Program",
+                      "description": "Upskill and switch from service-based to product-based companies with our Software development Certification Program.",
+                      "provider": {
+                        "@type": "Organization",
+                        "name": "Learnbay"
+                      },
+                      "url": "https://www.learnbay.co/fullstack/full-stack-software-development-program"
+                    }
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 6,
+                    "item": {
+                      "@type": "EducationalOccupationalCredential",
+                      "name": "Master in CS: Data science and AI",
+                      "description": "A comprehensive Master's degree program in Computer Science with specializations in Data Science and Analytics, and AI & Machine Learning.",
+                      "provider": {
+                        "@type": "Organization",
+                        "name": "Learnbay"
+                      },
+                      "occupationalCategory": [
+                        "Data Science and Analytics",
+                        "AI & Machine Learning"
+                      ],
+                      "url": "https://www.learnbay.co/datascience/data-science-and-ai-masters-in-cs"
+                    }
+                  }
+                ]
+              }
+              
+} `,
+          }}
+        />
+
+
+<script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: ` {
+              {
+                "@context": "http://schema.org",
+                "@type": "EducationalOrganization",
+                "name": "Learnbay",
+                "url": "https://www.learnbay.co/",
+                "logo": "https://www.learnbay.co/_next/image?url=https%3A%2F%2Flearnbay-wb.s3.ap-south-1.amazonaws.com%2Fmain%2FlearnbayMain%2Flearnbay-logo.png&w=256&q=100",
+                "description": "Learnbay is a leading edtech platform providing high-quality courses in programming, data science, and machine learning.",
+                "address": {
+                  "@type": "PostalAddress",
+                  "streetAddress": "1090 , 1st Floor, 18th Cross Road HSR Layout Sector 3",
+                  "addressLocality": "Bangalore",
+                  "addressRegion": "Karnataka",
+                  "postalCode": "560102",
+                  "addressCountry": "India"
+                },
+                "contactPoint": {
+                  "@type": "ContactPoint",
+                  "telephone": "(+91) 77956 87988",
+                  "contactType": "customer support",
+                  "areaServed": ["India", "Canada", "Dubai"]
+                },
+                "sameAs": [
+                    "https://www.facebook.com/learnbay/",
+                              "https://twitter.com/Learbay",
+                              "https://www.instagram.com/learnbayofficial/",
+                              "https://www.youtube.com/channel/UC-ntE_GnjjiUuKYqih9ENYA",
+                              "https://www.linkedin.com/company/learnbay/"
+                ]
+              }
+              
+} `,
+          }}
+        />
+
+
       </Head>
 
       <Navbar radio={true} dataScienceCounselling={true} />

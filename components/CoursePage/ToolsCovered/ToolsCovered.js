@@ -57,7 +57,7 @@ const ToolsCovered = () => {
                   width={80}
                   height={60}
                   loading="lazy"
-                  quality={40}
+                  quality={60}
                  
                 />
               </div>

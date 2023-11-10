@@ -18,6 +18,11 @@ const FeeSection = ({
   CutFee,
   dataScienceCounselling,
   FeeEmi,
+  weekday,
+  weekend,
+  weekdaybatch,
+  weekendbatch,
+  interstedInHide,
   
 }) => {
   const [popups, setPopups] = useState(false);
@@ -48,6 +53,7 @@ const FeeSection = ({
           <Form
             dataScience={dataScience}
             dataScienceCounselling={dataScienceCounselling}
+            interstedInHide={interstedInHide}
             upSkillingHide={true}
             // radio={radio}
           />
@@ -55,97 +61,8 @@ const FeeSection = ({
       </Popup>
       <h2>Fee & Batch Details</h2>
       <p className={styles.pTop}>
-        Curriculum is specifically engineered to meet the expectations of
-        leading tech companies
-      </p>
-      {/* <div className={styles.mainbatch}>
-        <div className={styles.batch}>
-          <div>
-            <ul className={styles.feesbatch}>
-              <li>SEP 24th</li>
-              <li>MON - FRI (8 months)</li>
-              <li>
-                <span>08:00 AM - 10:00 AM</span>
-              </li>
-            </ul>
-            <p className={styles.fill}>Filling Fast!</p>
-            <ul className={styles.feesbatch}>
-              <img
-                className={styles.fillimg}
-                src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/filling-fast.webp"
-                width={90}
-                height={56}
-              />
-              <li>SEP 27th</li>
-              <li>SAT & SUN (8 months)</li>
-              <li>
-                <span>08:00 AM - 10:00 AM</span>
-              </li>
-            </ul>
-            <div className={styles.botttomDiv}>
-              <ul className={styles.fee2}>
-                <li>
-                  {" "}
-                  <FcOk /> No cost EMI
-                </li>
-                <li>
-                  {" "}
-                  <FcOk /> Easy loan procedure
-                </li>
-                <li>
-                  {" "}
-                  <FcOk /> 15 days refund policy
-                </li>
-              </ul>
-              <div className={styles.feeh}>
-                <div>
-                  <p>Payment Partners</p>
-                </div>
-                <div className="imgWrapper" style={{ paddingRight: "10px" }}>
-                  <Image
-                    src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/coursePage/Finance+partners.webp"
-                    alt="Zest"
-                    width="300"
-                    height="80"
-                  />
-                </div>
-                <div></div>
-              </div>
-            </div>
-          </div>
-          <div className={styles.fin}>
-            <div className={styles.firstfin}>
-              <p>Financing as low as</p>
-              <h2>
-                {FeeEmi} <span className={styles.montspan}>month</span>
-              </h2>
-              <div onClick={popupShow}>
-                <Button className={styles.Btn} text="Request a Callback" />
-              </div>
-              <div className={styles.feeh1}>
-                <div>
-                  <p>Payment Partners</p>
-                </div>
-                <div className="imgWrapper" style={{ paddingRight: "10px" }}>
-                  <Image
-                    src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/coursePage/Finance+partners.webp"
-                    alt="Zest"
-                    width="300"
-                    height="80"
-                  />
-                </div>
-                <div></div>
-              </div>
-            </div>
-            <div className={styles.fingst}>
-              <h3>
-                {Fee} <span className={styles.gstspan}>+ 18% GST</span>
-              </h3>
-            </div>
-          </div>
-          <div />
-        </div>
-      </div> */}
+      Invest in your future with affordable degree fees and flexible batch options</p>
+
       <div className={styles.ThreeCard}>
         <div className={styles.first}>
           <p style={{ textAlign: "center" }}>
@@ -163,7 +80,7 @@ const FeeSection = ({
           </div>
           <p style={{ marginTop: "10px" }}>
             Scholarships are awarded based on profile review. Eligible
-            candidates can avail upto 25% scholarship on desired courses. Click
+            candidates can avail upto 25% scholarship on desired program. Click
             the button below to apply.
           </p>
           <div className={styles.divButton} onClick={popupShow}>
@@ -203,11 +120,11 @@ const FeeSection = ({
         <div className={styles.third}>
           <p>Batch Details</p>
           <div className={styles.boxOrange}>
-            <p> Weekday Batch </p>
+            <p> {weekdaybatch}</p>
             <div className={styles.batches}>
               <p className={styles.date}>{WeekdayDate}</p>
               <div className={styles.Time}>
-                <p className={styles.day}>MON - FRI</p>
+                <p className={styles.day}>{weekday}</p>
                 <p className={styles.paraBot}>{WeekdayTime}</p>
               </div>
             </div>
@@ -215,12 +132,12 @@ const FeeSection = ({
           <hr style={{ color: "rgba(0, 0, 0, 0.20)", margin: "30px", border:"0.9px solid" }} />
           <div className={styles.boxOrange}>
             <div className={styles.batchImg}>
-              <p>Weekend Batch</p>
+              <p>{weekendbatch}</p>
             </div>
             <div className={styles.batches}>
               <p className={styles.date}>{WeekendDate}</p>
               <div className={styles.Time}>
-                <p className={styles.day}>SAT - SUN</p>
+                <p className={styles.day}>{weekend}</p>
                 <p className={styles.paraBot}>{WeekendTime}</p>
               </div>
             </div>
