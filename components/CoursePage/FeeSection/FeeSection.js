@@ -22,6 +22,7 @@ const FeeSection = ({
   weekend,
   weekdaybatch,
   weekendbatch,
+  interstedInHide,
   
 }) => {
   const [popups, setPopups] = useState(false);
@@ -52,6 +53,7 @@ const FeeSection = ({
           <Form
             dataScience={dataScience}
             dataScienceCounselling={dataScienceCounselling}
+            interstedInHide={interstedInHide}
             upSkillingHide={true}
             // radio={radio}
           />

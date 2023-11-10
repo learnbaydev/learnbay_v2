@@ -82,7 +82,7 @@ const FirstSection = ({ dataScience, radio, dataScienceCounselling }) => {
                     src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/newHeaderOne.webp"
                     width="580"
                     height="450"
-                    priority
+                    loading="lazy"
                     quality={80} 
                     alt="data science course"
                   />
@@ -133,7 +133,7 @@ const FirstSection = ({ dataScience, radio, dataScienceCounselling }) => {
                   src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/newHeaderOne.webp"
                   width="580"
                   height="450"
-                  priority
+              
           
                   quality={100}
 
@@ -149,7 +149,8 @@ const FirstSection = ({ dataScience, radio, dataScienceCounselling }) => {
               <Image
                 src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/forthSection.webp"
                 fill={true}
-              priority
+                loading="lazy"
+   
               quality={40}
                 alt="Header background"
               />
@@ -173,7 +174,7 @@ const FirstSection = ({ dataScience, radio, dataScienceCounselling }) => {
                     src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/secondSection.webp"
                     width="580"
                     height="450"
-                    priority
+                    loading="lazy"
                     quality={40}
                     alt="data science course"
                   />
@@ -199,7 +200,7 @@ const FirstSection = ({ dataScience, radio, dataScienceCounselling }) => {
                   src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/secondSection.webp"
                   width="580"
                   height="450"
-                  priority
+                  loading="lazy"
                   quality={60}
                   alt="data science course"
                 />
@@ -223,7 +224,7 @@ const FirstSection = ({ dataScience, radio, dataScienceCounselling }) => {
                   src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/ThirdSection1.webp"
                   width="806"
                   height="300"
-                  priority
+                  loading="lazy"
                   quality={40}
                   alt="data science course"
                 />
@@ -252,7 +253,7 @@ const FirstSection = ({ dataScience, radio, dataScienceCounselling }) => {
                   src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/ThirdSection1.webp"
                   width="806"
                   height="663"
-                  priority
+                  loading="lazy"
                   quality={60}
                   alt="data science course"
                 />

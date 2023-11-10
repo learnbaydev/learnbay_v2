@@ -6,7 +6,7 @@ import {HiOutlineBuildingOffice2} from 'react-icons/hi2'
 import {FiVideo} from 'react-icons/fi'
 
 function WhyLearnbay() {
-  console.log("why learnbays");
+  // console.log("why learnbays");
   return (
     <section className={styles.Container}>
       <div>

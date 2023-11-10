@@ -43,7 +43,7 @@ const GetHire = dynamic(() =>
 );
 
 export default function Home() {
-  console.log("Home page");
+  // console.log("Home page");
 
   return (
     <>

@@ -37,6 +37,7 @@ function SyllabusNew({
   MasterSyllabusDefault,
   progress,
   setProgress,
+  interstedInHide,
 }) {
   const [popups, setPopups] = useState(false);
   const [active, setActive] = useState([]);
@@ -68,7 +69,7 @@ function SyllabusNew({
     for (const key in masterSyllabus) {
       if (masterSyllabus.hasOwnProperty(key)) {
         if (key === data) {
-          console.log(key, data);
+          // console.log(key, data);
           setCSyllabus(masterSyllabus[key]);
         }
       }
@@ -98,7 +99,7 @@ function SyllabusNew({
     }
   }, [Advanced, advSyllabus, syllabus]);
   const handleChange = (index) => {
-    console.log(index, "handelChange");
+    // console.log(index, "handelChange");
     setCSyllabus(
       cSyllabus.map((faq, i) => {
         if (i === index) {
@@ -111,7 +112,7 @@ function SyllabusNew({
     );
   };
   const handleChangeMobile = (index) => {
-    console.log(index, "handelChange");
+    // console.log(index, "handelChange");
     setMSyllabus(
       mSyllabus.map((faq, i) => {
         if (i === index) {
@@ -158,6 +159,7 @@ function SyllabusNew({
               downloadBrochure
               titleCourse={titleCourse}
               brochureLink={brochureLink}
+              interstedInHide={interstedInHide}
               upSkillingHide={true}
             />
           </div>
@@ -410,6 +412,7 @@ function SyllabusNew({
               </h4>
               <Form
                 dataScienceCounselling={dataScienceCounselling}
+                interstedInHide={interstedInHide}
                 titleCourse={titleCourse}
                 brochureLink={brochureLink}
                 fullStack={fullStack}
