@@ -613,13 +613,13 @@ export const FullStackChennaiCourseData = [
           {
             id: 0,
             ques: "How much is the full-stack software developer course fee in Chennai?",
-            ans: `The total cost of the full-stack software development course in Chennai is INR Rs. 1,10,000/- +18% GST i.e, Rs. 1,29,800/.`,
+            ans: `The total cost of the full-stack software development course in Chennai is INR Rs. 1,15,000/- +18% GST i.e, Rs. 1,29,800/.`,
             open: true,
           },
           {
             id: 1,
             ques: "Is there any Installment / EMI option available for this course in Chennai?",
-            ans: "YYes, you can use a credit card to pay the installments with a no-fee EMI option for INR ₹10,816/month up to 12 months. By presenting a valid copy of the Aadhar card, Pan card, and the latest three months' salary, you can also avail of an interest-free loan. For further details, you can contact",
+            ans: "YYes, you can use a credit card to pay the installments with a no-fee EMI option for INR ₹7,538/month up to 11 months. By presenting a valid copy of the Aadhar card, Pan card, and the latest three months' salary, you can also avail of an interest-free loan. For further details, you can contact",
             linkText1: "@ +917795687988",
             link1: "tel:+917795687988",
             open: false,

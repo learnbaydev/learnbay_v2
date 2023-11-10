@@ -1248,7 +1248,7 @@ export const BADataScienceCourseData = [
     ],
     faq: [
       {
-        id: 1,
+        id: 0,
         sectionName: "Course Related",
         data: [
           {
@@ -1294,7 +1294,7 @@ export const BADataScienceCourseData = [
         ],
       },
       {
-        id: 2,
+        id: 1,
         sectionName: "Domain Electives",
         data: [
           {
@@ -1342,19 +1342,19 @@ export const BADataScienceCourseData = [
         ],
       },
       {
-        id: 3,
+        id: 2,
         sectionName: "Payments and Scholarships",
         data: [
           {
             id: 0,
             ques: "What is the total fee for the Business Analytics Program?",
-            ans: "The total program fee for the Business Analytics Program is INR 1,10,000 + GST.",
+            ans: "The total program fee for the Business Analytics Program is INR 90,000 + GST.",
             open: true,
           },
           {
             id: 1,
-            ques: "Can I pay in installments for INR 1,10,000/- + GST ?",
-            ans: "Yes, you can pay the installments using a credit card with a no-cost EMI option for INR 10,816/month up to 12 months. You can also choose an interest-free loan by submitting an Aadhar card, Pan Card, and 3-month salary slip. Please check with our sales team to know more.",
+            ques: "Can I pay in installments for INR 90,000/- + GST ?",
+            ans: "Yes, you can pay the installments using a credit card with a no-cost EMI option for INR 5,900/month up to 9 months. You can also choose an interest-free loan by submitting an Aadhar card, Pan Card, and 3-month salary slip. Please check with our sales team to know more.",
             linkText1: " +917795687988 ",
             link1: "tel:+917795687988",
             link: true,
@@ -1386,7 +1386,7 @@ export const BADataScienceCourseData = [
         ],
       },
       {
-        id: 4,
+        id: 3,
         sectionName: "Capstone and Real-Time Projects",
         data: [
           {
@@ -1414,7 +1414,7 @@ export const BADataScienceCourseData = [
         ],
       },
       {
-        id: 5,
+        id: 4,
         sectionName: "Certification",
         data: [
           {
@@ -1426,7 +1426,7 @@ export const BADataScienceCourseData = [
         ],
       },
       {
-        id: 6,
+        id: 5,
         sectionName: "Job Assistance",
         data: [
           {
@@ -1461,7 +1461,7 @@ export const BADataScienceCourseData = [
         ],
       },
       {
-        id: 7,
+        id: 6,
         sectionName: "Mentorship",
         data: [
           {
@@ -1480,7 +1480,7 @@ export const BADataScienceCourseData = [
         ],
       },
       {
-        id: 8,
+        id: 7,
         sectionName: "Support",
         data: [
           {

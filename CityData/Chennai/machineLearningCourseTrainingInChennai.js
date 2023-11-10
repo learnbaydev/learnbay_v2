@@ -665,8 +665,8 @@ export const MachineLearningChennaiCourseData = [
           },
           {
             id: 1,
-            ques: "Can I pay in installments for 1,23,900/-?",
-            ans: "Yes, you can pay the installments using a credit card with a no-cost EMI option for INR 10,817/month up to 12 months. You can also choose an interest-free loan by submitting an Aadhar card, Pan Card, and 3-month salary slip.",
+            ques: "Can I pay in installments for 1,10,900/-?",
+            ans: "Yes, you can pay the installments using a credit card with a no-cost EMI option for INR 7,211/month up to 11 months. You can also choose an interest-free loan by submitting an Aadhar card, Pan Card, and 3-month salary slip.",
             open: false,
           },
           {
