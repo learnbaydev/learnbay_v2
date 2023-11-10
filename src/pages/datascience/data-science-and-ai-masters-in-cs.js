@@ -166,11 +166,12 @@ const Blockchain = () => {
         />
       </Head>
       <main>
-        <Navbar popup={true} dataScienceCounselling={true} />
+        <Navbar popup={true} dataScienceCounselling={true} interstedInHide={true}/>
         <FirstSection
           ThirdTyped="Live Interactive Classes"
           dataScience={true}
           dataScienceCounselling={true}
+          interstedInHide={true}
           titleCourse="Masters in Computer Science: Data Science and AI"
           cityParaCont="Elevate your tech career with our Master's programs"
           brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Masters+in+CS+Data+Science+%26+AI.pdf"
@@ -180,7 +181,7 @@ const Blockchain = () => {
         />
         <MasterSecondSection />
         <JobAbroad />
-        <SecondNavbar dataScienceCounselling={true} />
+        <SecondNavbar dataScienceCounselling={true} interstedInHide={true}/>
         <TrainerSection idss="eautK0odE7Q" />
         <Testimonial
           redirectDS={true}
@@ -188,7 +189,7 @@ const Blockchain = () => {
         />
         <WhyLearnbay idss="fzXzUSvMPv0" />
         <GetHire />
-        <ContactCounsellor dataScienceCounselling={true} />
+        <ContactCounsellor dataScienceCounselling={true} interstedInHide={true}/>
         <SyllabusNew
           masterSyllabusMobile={DataScienceMastersinCS[0].masterSyllabusMobile}
           syllabusHead={DataScienceMastersinCS[0].syllabusHead}
@@ -198,6 +199,7 @@ const Blockchain = () => {
           }
           dataScienceCounselling={true}
           dataScience={true}
+          interstedInHide={true}
           titleCourse="Masters in Computer Science: Data Science and AI"
           brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Masters+in+CS+Data+Science+%26+AI.pdf"
           syllabus={DataScienceMastersinCS[0].syllabus}
@@ -224,12 +226,14 @@ const Blockchain = () => {
           FeeContent5="15 days refund policy"
           FeeContent6="No additional cost"
           dataScienceCounselling={true}
+          interstedInHide={true}
         />
         <MentorsSection />
         <SliderTabs />
         <PlacementCall />
         <NewProjectSection
           dataScience={true}
+          interstedInHide={true}
           titleCourse="Masters in Computer Science: Data Science and AI"
           brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Masters+in+CS+Data+Science+%26+AI.pdf"
           projectSection={DataScienceMastersinCS[0].projectSection}

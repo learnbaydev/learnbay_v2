@@ -13,6 +13,7 @@ function FirstSection({
   dataScienceCounselling,
   titleCourse,
   brochureLink,
+  interstedInHide,
 }) {
   const [mobile, setMobile] = useState(false);
   useEffect(() => {
@@ -49,6 +50,7 @@ function FirstSection({
               upSkillingHide={true}
               titleCourse={titleCourse}
               brochureLink={brochureLink}
+              interstedInHide={interstedInHide}
             />
           </Suspense>
         </div>
@@ -87,6 +89,7 @@ function FirstSection({
               dataScience={dataScience}
               dataScienceCounselling={dataScienceCounselling}
               upSkillingHide={true}
+              interstedInHide={interstedInHide}
             />
           </div>
           <div className={styles.boxDivGreen}>
@@ -111,6 +114,7 @@ function FirstSection({
               fullStack={fullStack}
               syllabus={true}
               upSkillingHide={true}
+              interstedInHide={interstedInHide}
             />
           </div>
         </>
@@ -168,6 +172,7 @@ function FirstSection({
                 fullStack={fullStack}
                 syllabus={true}
                 upSkillingHide={true}
+              interstedInHide={interstedInHide}
               />
             </div>
           </div>
