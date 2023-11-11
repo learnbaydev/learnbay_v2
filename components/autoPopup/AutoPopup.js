@@ -1,10 +1,23 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./AutoPopup.module.scss";
 import { IoClose } from "react-icons/io5";
 
 const AutoPopup = (props) => {
-  let color = "transparent";
   if (props.price) color = "white";
+
+  const [popupShown, setPopupShown] = useState(false);
+
+  useEffect(() => {
+    let timer;
+    if (!popupShown) {
+      timer = setTimeout(() => {
+        props.setTrigger(true);
+        setPopupShown(true);
+      }, 10000); // 10 seconds in milliseconds
+    }
+
+    return () => clearTimeout(timer);
+  }, []);
   useEffect(() => {
     if (props.trigger) {
       document.body.style.overflow = "hidden";

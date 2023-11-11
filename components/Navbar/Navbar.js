@@ -132,7 +132,6 @@ const Navbar = ({
           )}
 
           <>
-            {" "}
             {adPage ? (
               ""
             ) : (

@@ -4,7 +4,7 @@ import Navbar from "../../components/Navbar/Navbar";
 import dynamic from "next/dynamic";
 import Form from "../../components/Form/Form";
 import { DataScienceCourseData } from "../../Data/AdvanceDataScienceCourse";
-
+import AutoPopup from "../../components/autoPopup/AutoPopup";
 const BottomBar = dynamic(() =>
   import("../../components/WebPage/BottomBar/BottomBar")
 );
@@ -44,7 +44,7 @@ const GetHire = dynamic(() =>
 
 export default function Home() {
   console.log("Home page");
-
+  // const [AutoPopups, setAutoPopups] = useState(false);
   return (
     <>
       <Head>
@@ -64,7 +64,21 @@ export default function Home() {
           href="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/Learnbay-Favicon-L.png"
         />
       </Head>
-
+      {/* <AutoPopup
+        trigger={AutoPopups}
+        setTrigger={setAutoPopups}
+        className="popupModal"
+      >
+        <div className="leftPopup">
+          <div className="whiteP" />
+        </div>
+        <div className="RightPopup">
+          <h5>Apply For Counselling</h5> */}
+      {/* <p>Fill the below details to get started</p> */}
+      {/* 
+          <Form popup={true} setTrigger={setAutoPopups} upSkillingHide={true} />
+        </div>
+      </AutoPopup> */}
       <Navbar radio={true} dataScienceCounselling={true} />
       <FirstSection dataScienceCounselling={true} radio={true} />
       <HomeLine />
