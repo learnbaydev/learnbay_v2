@@ -13,7 +13,8 @@ function SecondNavbar({
   radio,
   dataScience,
   fullStack,
-  dataScienceCounselling}) {
+  dataScienceCounselling,
+  interstedInHide,}) {
   const [active, setActive] = useState(false);
   const [active1, setActive1] = useState(false);
   const [active2, setActive2] = useState(true);
@@ -114,6 +115,7 @@ function SecondNavbar({
               fullStack={fullStack}
               dataScience={dataScience}
               dataScienceCounselling={dataScienceCounselling}
+              interstedInHide={interstedInHide}
               upSkillingHide={true}
             />
           )}

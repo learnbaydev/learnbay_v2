@@ -224,7 +224,7 @@ function Blockchain({}) {
           ThirdTyped="Live Interactive Classes"
           dataScience={true}
           titleCourse="Data Analytics Certification Program"
-          cityParaCont="Upskill yourself to the top within 6 months with curricullum designed by industry experts"
+          cityParaCont="Upskill yourself to the top within 6 months with curriculum designed by industry experts"
           brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Data+Analytics+Certification+Program.pdf"
           FirstRightImg="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/dahead.webp"
           firstToparaImg=""
@@ -265,7 +265,7 @@ function Blockchain({}) {
           brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Placement+Report.pdf"
         /> */}
 
-        <ContactConsellor />
+        <ContactConsellor dataScienceCounselling={true} />
 
         <SyllabusNew
           masterSyllabusMobile={DADataScienceCourseData[0].masterSyllabusMobile}

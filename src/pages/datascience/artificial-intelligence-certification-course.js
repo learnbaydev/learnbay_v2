@@ -254,7 +254,7 @@ function Blockchain({}) {
           Testimonial={AIMLDataScienceCourseData[0].testimonial}
         />
 
-<WhoIsProgram
+        <WhoIsProgram
           first="B.tech, M.tech, BCA, B.com, M.com, MBA, MCA, M.sc"
           second="Minimum 6 year of  work experience (tech/non-tech)"
           third="Mid-career professionals interested in data science & AI"
@@ -271,7 +271,7 @@ function Blockchain({}) {
           brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Placement+Report.pdf"
         /> */}
 
-        <ContactConsellor />
+        <ContactConsellor dataScienceCounselling={true} />
 
         <SyllabusNew
           masterSyllabusMobile={
@@ -300,8 +300,13 @@ function Blockchain({}) {
         />
         <Certificate data={AIMLDataScienceCourseData[0].Certificate} />
         <FeeSection
+        
           Fee="₹ 1,10,000"
           FeeEmi="₹ 7,211/month"
+          weekdaybatch="Weekday Batch"
+          weekendbatch="Weekend Batch"
+          weekday="MON - FRI"
+          weekend="SAT-SUN"
           WeekdayDate="NOV 17th"
           WeekendDate="NOV 26th"
           WeekendTime="09:30 AM - 1:00 PM"

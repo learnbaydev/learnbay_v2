@@ -13,6 +13,7 @@ function FirstSection({
   dataScienceCounselling,
   titleCourse,
   brochureLink,
+  interstedInHide,
 }) {
   const [mobile, setMobile] = useState(false);
   useEffect(() => {
@@ -47,6 +48,7 @@ function FirstSection({
               downloadBrochure
               titleCourse={titleCourse}
               brochureLink={brochureLink}
+              interstedInHide={interstedInHide}
               upSkillingHide={true}
             />
           </Suspense>
@@ -82,11 +84,13 @@ function FirstSection({
               Interested in{" "}
               <span className={styles.span}>Master’s Degree?</span>
             </p>
-            <FormInline
-              dataScience={dataScience}
-              dataScienceCounselling={dataScienceCounselling}
-              upSkillingHide={true}
-            />
+            <Form
+                dataScienceCounselling={dataScienceCounselling}
+                fullStack={fullStack}
+                syllabus={true}
+                upSkillingHide={true}
+              interstedInHide={interstedInHide}
+              />
           </div>
         </>
       ) : (
@@ -141,6 +145,7 @@ function FirstSection({
                 fullStack={fullStack}
                 syllabus={true}
                 upSkillingHide={true}
+              interstedInHide={interstedInHide}
               />
             </div>
           </div>

@@ -14,6 +14,7 @@ const MasterApplicationForm = ({ secondForm, title }) => {
   const [query, setQuery] = useState({
     name: "",
     email: "",
+    url: router.asPath,
     phoneNumber: "",
     highestEducation: "",
     graduationMarks: "",
@@ -41,11 +42,11 @@ const MasterApplicationForm = ({ secondForm, title }) => {
     Object.entries(query).forEach(([key, value]) => {
       formData.append(key, value);
     });
-    console.log(query);
+    // console.log(query);
     const sendData = await fetch(
       secondForm
         ? "https://getform.io/f/c97e799c-c954-4fc8-80c9-47b33ce2bb5d"
-        : "https://getform.io/f/f22d962e-90ad-4ec0-a9cd-ac0881f683ca",
+        : "https://getform.io/f/85e92281-63f9-4d2f-b946-31d1098532f4",
       {
         method: "POST",
         body: formData,
@@ -54,6 +55,7 @@ const MasterApplicationForm = ({ secondForm, title }) => {
     setQuery({
       name: "",
       email: "",
+      url: router.asPath,
       phoneNumber: "",
       highestEducation: "",
       graduationMarks: "",
@@ -64,7 +66,7 @@ const MasterApplicationForm = ({ secondForm, title }) => {
       // Default: "no"
     });
 
-    console.log(sendData.status);
+    // console.log(sendData.status);
     setValue();
     if (sendData.status === 200) router.push("/Thank-you-counselling");
   };
@@ -107,6 +109,15 @@ const MasterApplicationForm = ({ secondForm, title }) => {
               required
             />
           </div>
+
+          <input
+            type="hidden"
+            id="url"
+            name="url"
+            value={router.asPath}
+          ></input>
+
+
 
           <div className={styles.phoneWrap}>
             <label htmlFor="PhoneNumber">

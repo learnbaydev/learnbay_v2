@@ -4,7 +4,7 @@ import { BiTimeFive } from "react-icons/bi";
 import styles from "./BatchDetails.module.css";
 
 function BatchDetails({ batchDetails }) {
-  console.log(batchDetails, "inside compo");
+
   return batchDetails === "" ? (
     <p>No batch Date Available</p>
     // hello
@@ -44,7 +44,7 @@ function BatchDetails({ batchDetails }) {
         <div className={styles.desktopView}>
           <div className={styles.NewBatch}>
             {batchDetails.map((data, index) => {
-              console.log(data, "inside map");
+              
               const { daysInfo, dateInfo, timeInfo } = data;
               return (
                 <div className={styles.NewBlue}>

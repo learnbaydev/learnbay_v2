@@ -1,7 +1,10 @@
 import Head from "next/head";
+import { useState } from "react";
 import Navbar from "../../components/Navbar/Navbar";
 import dynamic from "next/dynamic";
+import Form from "../../components/Form/Form";
 import { DataScienceCourseData } from "../../Data/AdvanceDataScienceCourse";
+
 const BottomBar = dynamic(() =>
   import("../../components/WebPage/BottomBar/BottomBar")
 );
@@ -40,7 +43,8 @@ const GetHire = dynamic(() =>
 );
 
 export default function Home() {
-  console.log("Home page");
+  // console.log("Home page");
+
   return (
     <>
       <Head>

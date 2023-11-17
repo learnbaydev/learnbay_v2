@@ -270,7 +270,7 @@ function Blockchain({}) {
           brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Placement+Report.pdf"
         /> */}
 
-        <ContactConsellor />
+        <ContactConsellor dataScienceCounselling={true} />
 
         <SyllabusNew
           masterSyllabusMobile={DataScienceCourseData[0].masterSyllabusMobile}
@@ -297,6 +297,11 @@ function Blockchain({}) {
         <FeeSection
           Fee="₹ 1,25,000"
           FeeEmi="₹ 8,194/month"
+
+          weekdaybatch="Weekday Batch"
+          weekendbatch="Weekend Batch"
+          weekday="MON - FRI"
+          weekend="SAT-SUN"
           WeekdayDate="NOV 17th"
           WeekendDate="NOV 26th"
           WeekendTime="09:30 AM - 1:00 PM"
@@ -330,7 +335,7 @@ function Blockchain({}) {
         <SeventhSection />
         <Footer />
         <BottomBar />
-      <WhatsappFloat />
+        <WhatsappFloat />
         {popupData.length == 0 ? "" : <OfferPopup popupData={popupData} />}
       </main>
     </>

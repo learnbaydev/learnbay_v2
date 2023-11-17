@@ -4,7 +4,7 @@ import FormInline from "../../FormSection/FormInline";
 import Image from "next/image";
 
 function ContactUs({ dataScience, dataScienceCounselling, radio }) {
-  console.log("Contact us");
+  // console.log("Contact us");
   return (
     <section className={styles.ContactUs}>
       <div className={styles.LeftSide}>

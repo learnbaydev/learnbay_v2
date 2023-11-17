@@ -2,78 +2,45 @@ import styles from "./HomeLine.module.css";
 import React from "react";
 import Image from "next/image";
 
-const HomeLine = ({ Emi }) => {
-  console.log("Home Line");
+const HomeLine = () => {
+
   return (
-    <div className="wrapper">
-      <div className={styles.feature}>
-        <p>
-          Get Coached by the Industry's Best: <span>Top 1% Tech Mentors</span>
-        </p>
-        <div className={styles.container}>
-          <div className={styles.left}>
-            <Image
-              src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/microsoft.webp"
-              width="170"
-              height="35"
-              priority={true}
-              alt="data science course"
-            />
-          </div>
-          {/* <hr className={styles.hr} /> */}
-          <div className={styles.middle}>
-            <Image
-              src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/paypal.webp"
-              width="170"
-              height="35"
-              priority={true}
-              alt="data science course"
-            />
-          </div>
-          {/* <hr className={styles.hr} /> */}
-          <div className={styles.right}>
-            <Image
-              src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/globallogic.webp"
-              width="170"
-              height="35"
-              priority={true}
-              alt="data science course"
-            />
-          </div>
-          {/* <hr className={styles.hr} /> */}
-          <div className={styles.right}>
-            <Image
-              src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/walmart.webp"
-              width="170"
-              height="35"
-              priority={true}
-              alt="data science course"
-            />
-          </div>
-          {/* <hr className={styles.hr} /> */}
-          <div className={styles.right}>
-            <Image
-              src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/paytm.webp"
-              width="125"
-              height="35"
-              priority={true}
-              alt="data science course"
-            />
-          </div>
+
+    <div className={styles.feature}>
+      <p>
+        Get Coached by the Industry's Best: <span>Top 1% Tech Mentors</span>
+      </p>
+      <div className={styles.container}>
+
+        <div className="imgWrapper">
+
+        <Image
+          src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/homeline.webp"
+          width="1200"
+          height="60"
+          loading="lazy"
+          quality={40}
+          alt="data science course"
+        />
         </div>
-        <div className={styles.containerMobile}>
-          <div className="imgWrapper">
-            <Image
-              src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/MobileSecond.webp"
-              width="450"
-              height="152"
-              priority={true}
-              alt="data science course"
-            />
-          </div>
+      </div>
+
+
+
+      <div className={styles.containerMobile}>
+        <div className="imgWrapper">
+          <Image
+            src="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/MobileSecond.webp"
+            width="450"
+            height="152"
+            loading="lazy"
+            quality={40}
+            alt="data science course"
+          />
         </div>
       </div>
     </div>
+
   );
 };
 
