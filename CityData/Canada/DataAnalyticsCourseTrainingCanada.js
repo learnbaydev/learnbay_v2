@@ -581,13 +581,13 @@ export const DAcanadaCourseData = [
           {
             id: 0,
             ques: "What is the total fee for the Data Analytics Program in Canada?",
-            ans: `The total program fee for the Data Analytics Program is INR 93,220/- inclusive of GST.`,
+            ans: `The total program fee for the Data Analytics Program is INR 80-,000/- inclusive of GST.`,
             open: true,
           },
           {
             id: 1,
-            ques: "Can I pay in installments for INR 93,220/-?",
-            ans: "Yes, you can pay the installments using a credit card with a no-cost EMI option for INR 7,768/month up to 12 months. You can also choose an interest-free loan by submitting an Aadhar card, Pan Card, and 3-month salary slip.",
+            ques: "Can I pay in installments for INR 80,000/-?",
+            ans: "Yes, you can pay the installments using a credit card with a no-cost EMI option for INR 5,244/month up to 5 months. You can also choose an interest-free loan by submitting an Aadhar card, Pan Card, and 3-month salary slip.",
             open: false,
           },
           {

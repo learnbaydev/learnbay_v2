@@ -1270,7 +1270,7 @@ export const DADataScienceCourseData = [
     // ],
     faq: [
       {
-        id: 1,
+        id: 0,
         sectionName: "Course Related",
         data: [
           {
@@ -1317,7 +1317,7 @@ export const DADataScienceCourseData = [
         ],
       },
       {
-        id: 2,
+        id: 1,
         sectionName: "Domain Electives",
         data: [
           {
@@ -1365,7 +1365,7 @@ export const DADataScienceCourseData = [
         ],
       },
       {
-        id: 3,
+        id: 2,
         sectionName: "Payments and Scholarships",
         data: [
           {
@@ -1376,8 +1376,8 @@ export const DADataScienceCourseData = [
           },
           {
             id: 1,
-            ques: "Can I pay in installments for INR 79,000 + 18% GST ?",
-            ans: "Yes, you can pay the installments using a credit card with a no-cost EMI option for INR 7,768/month up to 12 months. You can also choose an interest-free loan by submitting an Aadhar card, Pan Card, and 3-month salary slip. Please check with our sales team to know more",
+            ques: "Can I pay in installments for INR 80,000 + 18% GST ?",
+            ans: "Yes, you can pay the installments using a credit card with a no-cost EMI option for INR 5,244/month up to 5 months. You can also choose an interest-free loan by submitting an Aadhar card, Pan Card, and 3-month salary slip. Please check with our sales team to know more",
             linkText1: " +917795687988 ",
             link1: "tel:+917795687988",
             link: true,
@@ -1410,7 +1410,7 @@ export const DADataScienceCourseData = [
         ],
       },
       {
-        id: 4,
+        id: 3,
         sectionName: "Capstone and Real-Time Projects",
         data: [
           {
@@ -1433,7 +1433,7 @@ export const DADataScienceCourseData = [
         ],
       },
       {
-        id: 5,
+        id: 4,
         sectionName: "Certification",
         data: [
           {
@@ -1445,7 +1445,7 @@ export const DADataScienceCourseData = [
         ],
       },
       {
-        id: 6,
+        id: 5,
         sectionName: "Job Assistance",
         data: [
           {
@@ -1480,7 +1480,7 @@ export const DADataScienceCourseData = [
         ],
       },
       {
-        id: 7,
+        id: 6,
         sectionName: "Mentorship",
         data: [
           {

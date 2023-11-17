@@ -9,6 +9,7 @@ import Head from "next/head";
 import OfferPopup from "../../components/OfferPopup/OfferPopup";
 import WhoProgram from "../../components/CoursePage/WhoProgram/ThirdSection"
 import { DataScienceCourseData } from "../../Data/AdvanceDataScienceCourse";
+// import  EMIpopup from '../../components/EMIPopup/Emipopup'
 
 
 const sumbit = () => {
@@ -33,6 +34,11 @@ const sumbit = () => {
           leftImage="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/learnbayMain/advance-who.webp"
           ThirdSectionData={DataScienceCourseData[0].thirdSection}
         />
+
+{/* <EMIpopup/> */}
+
+
+
       <BottomBar radio={true} />
       <Footer />
     </div>
