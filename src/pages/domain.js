@@ -9,7 +9,7 @@ import Head from "next/head";
 import OfferPopup from "../../components/OfferPopup/OfferPopup";
 import WhoProgram from "../../components/CoursePage/WhoProgram/ThirdSection"
 import { DataScienceCourseData } from "../../Data/AdvanceDataScienceCourse";
-import  EMIpopup from '../../components/EMIPopup/Emipopup'
+// import  EMIpopup from '../../components/EMIPopup/Emipopup'
 
 
 const sumbit = () => {
