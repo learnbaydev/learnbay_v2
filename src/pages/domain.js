@@ -35,7 +35,7 @@ const sumbit = () => {
           ThirdSectionData={DataScienceCourseData[0].thirdSection}
         />
 
-<EMIpopup/>
+{/* <EMIpopup/> */}
 
 
 
