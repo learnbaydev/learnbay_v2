@@ -9,7 +9,9 @@ export default async function handler(req, res) {
       key_secret: process.env.RAZORPAY_SECRET,
     });
     const body = req.body;
-
+    console.log("====================================");
+    console.log(body);
+    console.log("====================================");
     // body.prop.map((data, i) => {
     //   console.log(data, "inside map");
     // });
@@ -21,6 +23,7 @@ export default async function handler(req, res) {
       (body.prop[0].price - (body.discount / 100) * body.prop[0].price);
     const amount =
       body.prop[0].price - (body.discount / 100) * body.prop[0].price + GST;
+    console.log(amount, "amount");
     const quantity = body.prop[0].quantity;
     const currency = "INR";
 
@@ -38,7 +41,7 @@ export default async function handler(req, res) {
         coursePrice: body.prop[0].price,
         currency: response.currency,
         name: body.prop[0].name,
-        amount: amount,
+        amount: amount * 100,
         GST: GST,
       });
     } catch (err) {

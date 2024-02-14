@@ -2,8 +2,8 @@ import React, { useState, useEffect } from "react";
 import styles from "./ProductList.module.css";
 import { BiTimeFive } from "react-icons/bi";
 import { AiOutlineFundProjectionScreen } from "react-icons/ai";
-import { IoIosCloseCircleOutline } from "react-icons/io";
-import { BsCartFill } from "react-icons/bs";
+import { FaCreditCard } from "react-icons/fa";
+import { BsCartFill, BsBank } from "react-icons/bs";
 import Image from "next/image";
 import { TbCurrencyRupee } from "react-icons/tb";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -169,14 +169,31 @@ const Course = () => {
                                   </div>
                                   <div className={styles.btnWrapper}>
                                     <button
+                                      // onClick={() => {
+                                      //   dispatch(
+                                      //     addToCart(viewAllData.product)
+                                      //   );
+                                      //   router.push("/cart");
+                                      // }}
+                                      style={{
+                                        background: "transparent",
+                                        color: "#0487d9 ",
+                                        border: "1px solid #0487d9",
+                                        borderRadius: "0 0 0 8px",
+                                      }}
+                                    >
+                                      <BsBank /> Loan/EMi
+                                    </button>
+                                    <button
                                       onClick={() => {
                                         dispatch(
                                           addToCart(viewAllData.product)
                                         );
                                         router.push("/cart");
                                       }}
+                                      style={{ borderRadius: "0 0 8px 0" }}
                                     >
-                                      Add To Cart <BsCartFill />
+                                      <FaCreditCard /> Pay by Card
                                     </button>
                                   </div>
                                   {/* {showProduct ? (

@@ -5,7 +5,7 @@ import PhoneInput from "react-phone-number-input";
 
 import { BsArrowRightCircleFill } from "react-icons/bs";
 
-const PaymentForm = ({ popup, setDetails }) => {
+const PaymentForm = ({ popup, setDetails, setCheckout }) => {
   const [value, setValue] = useState();
   const [query, setQuery] = useState({
     name: "",
@@ -52,8 +52,9 @@ const PaymentForm = ({ popup, setDetails }) => {
     //     dateTime: "",
     //   })
     // );
-
+    alert("data send");
     setDetails(query);
+    setCheckout(true);
   };
 
   let btnText = "Submit";

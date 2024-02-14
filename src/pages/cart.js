@@ -1,20 +1,18 @@
 import Image from "next/image";
 import { useState, useRef, useEffect } from "react";
-import { useSelector, useDispatch } from "react-redux";
+import { useDispatch } from "react-redux";
 import Head from "next/head";
 import axios from "axios";
-import {
-  decrementQuantity,
-  removeFromCart,
-  deleteCart,
-} from "../../redux/cart.slice";
+import { deleteCart } from "../../redux/cart.slice";
 import styles from "../styles/CartPage.module.css";
 import PaymentForm from "../../components/Cart/PaymentForm/PaymentForm";
+import { MdOutlineClose } from "react-icons/md";
 import { getCookie, clearCookie } from "../../lib/useCookies";
-import { useRouter } from "next/router";
 import { AiOutlineCloseCircle } from "react-icons/ai";
+import { MdKeyboardArrowDown, MdKeyboardArrowUp } from "react-icons/md";
 import { BsClipboardPlus, BsClipboardCheck } from "react-icons/bs";
 import Toast from "../../components/Toast/Toast";
+import { MdDeleteForever } from "react-icons/md";
 import getConfig from "next/config";
 
 const CartPage = ({ isConnected }) => {
@@ -22,6 +20,8 @@ const CartPage = ({ isConnected }) => {
   const instance = axios.create({
     baseURL: publicRuntimeConfig.backendUrl,
   });
+  const [showPopuP, setShowPopuP] = useState(false);
+  const [promo, setPromo] = useState(false);
   const [mounted, setMounted] = useState(false);
   const [payment, setPayments] = useState(false);
   const couponDataCartRef = useRef();
@@ -48,8 +48,9 @@ const CartPage = ({ isConnected }) => {
     couponCode: "",
     dateTime: new Date(),
   });
+  const [checkout, setCheckout] = useState(false);
   const [pdfNames, setPdfNames] = useState("");
-  const [discount, setDiscount] = useState("");
+  const [discount, setDiscount] = useState(0);
   const [discountMsg, setDiscountMsg] = useState("");
   const [showCancelCode, setShowCancelCode] = useState(false);
 
@@ -121,7 +122,7 @@ const CartPage = ({ isConnected }) => {
       key: process.env.RAZORPAY_KEY, // Enter the Key ID generated from the Dashboard
       name: "Skillslash Pvt Ltd",
       currency: data.currency,
-      amount: data.amount,
+      amount: data.amount * 100,
       order_id: data.id,
       description: `Thank you for Enrolling in our ${data.name}`,
       image:
@@ -296,6 +297,21 @@ const CartPage = ({ isConnected }) => {
     }
   }
 
+  function calculateGST(price, gstRate) {
+    if (typeof price !== "number" || typeof gstRate !== "number") {
+      throw new Error("Price and GST rate must be numbers");
+    }
+
+    if (price < 0 || gstRate < 0) {
+      throw new Error("Price and GST rate cannot be negative");
+    }
+
+    const gstAmount = (price * gstRate) / 100;
+    const totalPrice = price + gstAmount;
+
+    return gstAmount;
+  }
+
   // const generateInvoice = (name) => {
   //   console.log("generatePDF");
   //   // send a post request with the name to our API endpoint
@@ -330,96 +346,164 @@ const CartPage = ({ isConnected }) => {
         <title>cart-Learnbay</title>
       </Head>
       <>
-        <div className={styles.header}>
-          <div>Image</div>
-          <div>Product</div>
-          <div>Price</div>
-          <div>Quantity</div>
-          <div>Actions</div>
-          <div>Total Price</div>
+        <div className={styles.heading}>
+          <h3>Cart({cart.length})</h3>
         </div>
-        {cart.map((item, i) => {
-          return (
-            <div className={styles.body} key={item.title}>
-              <div className={styles.image}>
-                <Image src={item.img} height="120" width="205" alt="hello" />
+        <div className={styles.cartWrap}>
+          <div>
+            {cart.map((item, i) => {
+              return (
+                <div className={styles.ItemBody} key={item.title}>
+                  <div className={styles.leftItem}>
+                    <div className={styles.image}>
+                      <Image
+                        src={item.img}
+                        height="120"
+                        width="205"
+                        alt="hello"
+                      />
+                    </div>
+                    <div>
+                      <p className={styles.ItemName}>{item.name}</p>
+                      <p className={styles.tag}>Live Class</p>
+                    </div>
+                  </div>
+                  <div className={styles.rightItem}>
+                    {/* <p>₹ {item.price.toLocaleString("en-US")}</p> */}
+
+                    <div className={styles.buttons}>
+                      <p>{item.quantity}</p>
+
+                      <MdDeleteForever
+                        style={{ color: "red" }}
+                        onClick={() => {
+                          clearCookie();
+                        }}
+                      />
+                    </div>
+                    <p className={styles.ItemPrice}>
+                      ₹{" "}
+                      {parseFloat(item.quantity * item.price).toLocaleString(
+                        "en-US"
+                      )}
+                    </p>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+          <div className={styles.summery}>
+            <p className={styles.details}>
+              <span style={{ fontWeight: 600 }}>
+                X {cart.length} {cart[0].name}
+              </span>
+              <span>
+                INR{" "}
+                {(
+                  cart[0].price - calculateGST(cart[0].price, 18)
+                ).toLocaleString("en-IN")}
+              </span>
+            </p>
+            <p className={styles.details}>
+              <span style={{ fontWeight: 600 }}>+ GST</span>
+              <span>
+                INR {calculateGST(cart[0].price, 18).toLocaleString("en-IN")}
+              </span>
+            </p>
+            <p className={styles.promo} onClick={() => setPromo(!promo)}>
+              <span style={{ color: "#f29c1d", fontWeight: 600 }}>
+                I have a promo code
+              </span>
+              {promo ? <MdKeyboardArrowUp /> : <MdKeyboardArrowDown />}
+            </p>
+            {promo && (
+              <div className={styles.promo}>
+                <p style={{ fontSize: "14px", color: "#646464", margin: 0 }}>
+                  Apply Coupon
+                </p>
+                <form onSubmit={submitHandler} className={styles.couponForm}>
+                  <div className={styles.formInputWrap}>
+                    <input
+                      type="text"
+                      id="percent"
+                      required
+                      ref={couponDataCartRef}
+                      placeholder="Enter Promo code"
+                    />
+                    {showCancelCode ? (
+                      <button
+                        onClick={() => {
+                          cancelInputCode();
+                        }}
+                      >
+                        X
+                      </button>
+                    ) : (
+                      ""
+                    )}
+
+                    {discountMsg === "" ? "" : <p>{discountMsg}</p>}
+                  </div>
+                  <div>
+                    {loading ? (
+                      <div className="center">
+                        <div className="wave"></div>
+                        <div className="wave"></div>
+                        <div className="wave"></div>
+                        <div className="wave"></div>
+                        <div className="wave"></div>
+                        <div className="wave"></div>
+                        <div className="wave"></div>
+                        <div className="wave"></div>
+                        <div className="wave"></div>
+                        <div className="wave"></div>
+                      </div>
+                    ) : (
+                      <button type="submit">Apply Coupon</button>
+                    )}
+                  </div>
+                </form>
               </div>
-              <p>{item.name}</p>
-              {/* <p>₹ {item.price.toLocaleString("en-US")}</p> */}
-              <p>{item.quantity}</p>
-              <div className={styles.buttons}>
-                <button onClick={() => clearCookie()}>-</button>
+            )}
+
+            <p className={styles.promo}>
+              <span style={{ fontWeight: 600 }}>Grand Total:</span>
+              <span>
+                INR {discount === "" ? getTotalPrice() : getDiscountPrice()}
+              </span>
+            </p>
+            <button
+              className={styles.button}
+              onClick={() => setShowPopuP(true)}
+            >
+              Proceed to Checkout
+            </button>
+          </div>
+        </div>
+        {showPopuP && (
+          <div className={styles.popup}>
+            <div className={styles.popupWrap}>
+              <MdOutlineClose
+                className={styles.close}
+                onClick={() => setShowPopuP(false)}
+              />
+              <h3>Fill the Details</h3>
+              <PaymentForm setDetails={setDetails} setCheckout={setCheckout} />
+              {checkout && (
                 <button
+                  className={styles.button}
                   onClick={() => {
-                    clearCookie();
+                    makePayment();
+                    dispatch(deleteCart);
                   }}
                 >
-                  x
+                  CheckOut
                 </button>
-              </div>
-              <p>
-                ₹{" "}
-                {parseFloat(item.quantity * item.price).toLocaleString("en-US")}
-              </p>
+              )}
             </div>
-          );
-        })}
-        <form onSubmit={submitHandler}>
-          <div>
-            <input
-              type="text"
-              id="percent"
-              required
-              ref={couponDataCartRef}
-              placeholder="Enter Promo code"
-            />
-            {showCancelCode ? (
-              <button
-                onClick={() => {
-                  cancelInputCode();
-                }}
-              >
-                X
-              </button>
-            ) : (
-              ""
-            )}
-
-            {discountMsg === "" ? "" : <p>{discountMsg}</p>}
           </div>
-          <div>
-            {loading ? (
-              <div className="center">
-                <div className="wave"></div>
-                <div className="wave"></div>
-                <div className="wave"></div>
-                <div className="wave"></div>
-                <div className="wave"></div>
-                <div className="wave"></div>
-                <div className="wave"></div>
-                <div className="wave"></div>
-                <div className="wave"></div>
-                <div className="wave"></div>
-              </div>
-            ) : (
-              <button type="submit">Apply Coupon</button>
-            )}
-          </div>
-        </form>
+        )}
 
-        <h2>
-          Grand Total: ₹{discount === "" ? getTotalPrice() : getDiscountPrice()}
-        </h2>
-
-        <PaymentForm setDetails={setDetails} />
-        <button
-          onClick={() => {
-            makePayment();
-            dispatch(deleteCart);
-          }}
-        >
-          CheckOut
-        </button>
         {successHandel ? (
           <div className={styles.paymentShow}>
             <div className={styles.innerPayment}>
